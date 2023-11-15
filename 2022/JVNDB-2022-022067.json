@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-022067.html",
+  "title": "複数のレッドハット製品におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-022067.html",
+  "description": "レッドハットの Keycloak、Single Sign-On、Red Hat OpenShift Container Platform には、クロスサイトスクリプティングの脆弱性が存在します。",
+  "identifier": "JVNDB-2022-022067",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-1274",
+      "source": "CVE",
+      "id": "CVE-2022-1274"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-1274",
+      "source": "NVD",
+      "id": "CVE-2022-1274"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=2073157",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (2073157)"
+    },
+    {
+      "text": "https://github.com/keycloak/keycloak/security/advisories/GHSA-m4fv-gm5m-4725",
+      "source": "関連文書",
+      "id": "github.com (GHSA-m4fv-gm5m-4725)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:keycloak",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Keycloak"
+    },
+    {
+      "text": "cpe:/a:redhat:openshift_container_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenShift Container Platform"
+    },
+    {
+      "text": "cpe:/a:redhat:single_sign-on",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Single Sign-On"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "5.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+    }
+  ],
+  "date": "2023-11-15T12:21+09:00",
+  "issued": "2023-11-15T12:21+09:00",
+  "modified": "2023-11-15T12:21+09:00"
+}
