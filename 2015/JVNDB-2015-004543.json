@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004543.html",
+  "title": "GnuTLS の lib/x509/x509_ext.c におけるメモリ二重解放の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004543.html",
+  "description": "GnuTLS の lib/x509/x509_ext.c には、メモリ二重解放の脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-415: Double Free (二重解放) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/415.html",
+  "identifier": "JVNDB-2015-004543",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3308",
+      "source": "CVE",
+      "id": "CVE-2015-3308"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3308",
+      "source": "NVD",
+      "id": "CVE-2015-3308"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gnutls",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GnuTLS"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-09-03T11:22+09:00",
+  "issued": "2015-09-03T11:22+09:00",
+  "modified": "2015-09-03T11:22+09:00"
+}

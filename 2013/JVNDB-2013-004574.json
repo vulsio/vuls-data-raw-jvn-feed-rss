@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004574.html",
+  "title": "GNU C Library の sysdeps/posix/readdir_r.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004574.html",
+  "description": "GNU C Library (別名 glibc または libc6) の sysdeps/posix/readdir_r.c には、サービス運用妨害 (out-of-bounds write およびクラッシュ) 状態にされる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004574",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4237",
+      "source": "CVE",
+      "id": "CVE-2013-4237"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4237",
+      "source": "NVD",
+      "id": "CVE-2013-4237"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2013/08/12/8",
+      "source": "関連文書",
+      "id": "Re: CVE Request -- glibc: Buffer overwrite when using readdir_r on file systems returning file names longer than NAME_MAX characters"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:glibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU C Library"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-12-26T17:43+09:00",
+  "issued": "2013-10-11T16:43+09:00",
+  "modified": "2013-12-26T17:43+09:00"
+}

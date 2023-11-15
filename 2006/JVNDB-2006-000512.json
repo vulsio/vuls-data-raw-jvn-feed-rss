@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000512.html",
+  "title": "Linux Kernel の PerfMonCTL におけるサービス運用妨害（DoS）の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000512.html",
+  "description": "Linux Kernel の perfmon をサポートしている Itanium (IA-64) システムにおいて、sys_perfmonctl() 関数内でファイルディスクリプタの参照カウンタが適切に処理されずに、全てのファイルディスクリプタを消費してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000512",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3741",
+      "source": "CVE",
+      "id": "CVE-2006-3741"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3741",
+      "source": "NVD",
+      "id": "CVE-2006-3741"
+    },
+    {
+      "text": "http://secunia.com/advisories/22292",
+      "source": "SECUNIA",
+      "id": "SA22292"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/20361",
+      "source": "BID",
+      "id": "20361"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

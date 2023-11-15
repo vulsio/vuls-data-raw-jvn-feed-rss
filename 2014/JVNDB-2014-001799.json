@@ -1,0 +1,92 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001799.html",
+  "title": "Mozilla Network Security Services の certificate-checking の実装における SSL サーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001799.html",
+  "description": "Mozilla Network Security Services (NSS) の certificate-checking の実装の lib/certdb/certdb.c 内の cert_TestHostName 関数は、国際化ドメイン名の U-label に埋め込まれているワイルドカード文字を受け入れるため、SSL サーバになりすまされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-001799",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1492",
+      "source": "CVE",
+      "id": "CVE-2014-1492"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1492",
+      "source": "NVD",
+      "id": "CVE-2014-1492"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:network_security_services",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Network Security Services (NSS)"
+    },
+    {
+      "text": "cpe:/a:mozilla:seamonkey",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla SeaMonkey"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_applications",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Applications"
+    },
+    {
+      "text": "cpe:/a:oracle:enterprise_manager",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Enterprise Manager"
+    },
+    {
+      "text": "cpe:/a:oracle:fusion_middleware",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Fusion Middleware"
+    },
+    {
+      "text": "cpe:/a:oracle:glassfish_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle GlassFish Server"
+    },
+    {
+      "text": "cpe:/a:oracle:iplanet_web_proxy_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle iPlanet Web Proxy Server"
+    },
+    {
+      "text": "cpe:/a:oracle:iplanet_web_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle iPlanet Web Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2016-01-29T16:29+09:00",
+  "issued": "2014-03-27T11:09+09:00",
+  "modified": "2016-01-29T16:29+09:00"
+}

@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005120.html",
+  "title": "FFmpeg および Libav の libavcodec におけるサービス運用妨害 (メモリ破損) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005120.html",
+  "description": "FFmpeg および Libav の libavcodec 内の SVQ1 デコーダ (svq1dec.c) の svq1_decode_frame 関数には、サービス運用妨害 (メモリ破損) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-005120",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4579",
+      "source": "CVE",
+      "id": "CVE-2011-4579"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4579",
+      "source": "NVD",
+      "id": "CVE-2011-4579"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    },
+    {
+      "text": "cpe:/a:libav:libav",
+      "version": "2.2",
+      "vendor": "Libav",
+      "product": "Libav"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-08-22T15:26+09:00",
+  "issued": "2012-08-22T15:26+09:00",
+  "modified": "2012-08-22T15:26+09:00"
+}

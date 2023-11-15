@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005701.html",
+  "title": "Linux Kernel の include/linux/init_task.h におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005701.html",
+  "description": "Linux Kernel の include/linux/init_task.h は、ゼロのプロセスグループ ID を持つ信号が swapper プロセスに達するのを制限しないため、サービス運用妨害 (システムクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-005701",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5328",
+      "source": "CVE",
+      "id": "CVE-2010-5328"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-5328",
+      "source": "NVD",
+      "id": "CVE-2010-5328"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-02-17T11:45+09:00",
+  "issued": "2017-02-17T11:45+09:00",
+  "modified": "2017-02-17T11:45+09:00"
+}

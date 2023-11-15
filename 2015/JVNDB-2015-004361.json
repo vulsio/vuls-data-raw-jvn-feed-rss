@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004361.html",
+  "title": "Cisco Adaptive Security Appliance ソフトウェアの Unicast Reverse Path Forwarding の実装における uRPF の検証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004361.html",
+  "description": "Cisco Adaptive Security Appliance (ASA) ソフトウェアの Unicast Reverse Path Forwarding (uRPF) の実装は、IP アドレスが内部インターフェースに属すが同時に ASA ルーティングテーブルにも存在するというケースにおいて誤った処理をするため、uRPF の検証を回避される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug ID CSCuv60724 として公開しています。",
+  "identifier": "JVNDB-2015-004361",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4321",
+      "source": "CVE",
+      "id": "CVE-2015-4321"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4321",
+      "source": "NVD",
+      "id": "CVE-2015-4321"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cisco:adaptive_security_appliance_software",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Adaptive Security Appliance ソフトウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-08-25T11:48+09:00",
+  "issued": "2015-08-25T11:48+09:00",
+  "modified": "2015-08-25T11:48+09:00"
+}

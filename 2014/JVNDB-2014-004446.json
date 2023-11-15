@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004446.html",
+  "title": "Linux Kernel で使用される Ceph の net/ceph/auth_x.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004446.html",
+  "description": "Linux Kernel で使用される Ceph の net/ceph/auth_x.c は、認証のレスポンスを適切に検証しないため、サービス運用妨害 (システムクラッシュ) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2014-004446",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6418",
+      "source": "CVE",
+      "id": "CVE-2014-6418"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6418",
+      "source": "NVD",
+      "id": "CVE-2014-6418"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2014-09-30T16:20+09:00",
+  "issued": "2014-09-30T16:20+09:00",
+  "modified": "2014-09-30T16:20+09:00"
+}

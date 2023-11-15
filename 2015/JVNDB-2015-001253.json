@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001253.html",
+  "title": "PHP の ext/exif/exif.c 内の exif_process_unicode 関数における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001253.html",
+  "description": "PHP の ext/exif/exif.c 内の exif_process_unicode 関数には、任意のコードを実行される、またはサービス運用妨害 (未初期化ポインタの解放およびアプリケーションクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-824: Access of Uninitialized Pointer (初期化されていないポインタのアクセス) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/824.html",
+  "identifier": "JVNDB-2015-001253",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97220341/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97220341"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0232",
+      "source": "CVE",
+      "id": "CVE-2015-0232"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0232",
+      "source": "NVD",
+      "id": "CVE-2015-0232"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2015-0040.html",
+      "source": "関連文書",
+      "id": "MGASA-2015-0040"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-10-06T10:36+09:00",
+  "issued": "2015-01-29T15:32+09:00",
+  "modified": "2015-10-06T10:36+09:00"
+}

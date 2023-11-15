@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001893.html",
+  "title": "Philips 製 Interoperability Solution XDS に重要な情報の平文送信の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001893.html",
+  "description": "Philips 社が提供する Interoperability Solution XDS document sharing system は、医療用ドキュメント共有システムです。当該製品は TLS 経由で LDAP を構成し、かつドメインコントローラーから LDAP リフェラルを返された場合に、当該製品にて重要な情報を平文で送信 (CWE-319、CVE-2021-32966) される脆弱性が存在します。",
+  "identifier": "JVNDB-2021-001893",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU93414026",
+      "source": "JVN",
+      "id": "JVNVU#93414026"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32966",
+      "source": "CVE",
+      "id": "CVE-2021-32966"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsma-21-175-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSMA-21-175-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/319.html",
+      "id": "CWE-319",
+      "title": "重要な情報の平文での送信(CWE-319)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:philips:interoperability_solution_xds_document_sharing_system",
+      "version": "2.2",
+      "vendor": "フィリップス",
+      "product": "Interoperability Solution XDS document sharing system"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "3.7",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2021-06-29T14:52+09:00",
+  "issued": "2021-06-29T14:52+09:00",
+  "modified": "2021-06-29T14:52+09:00"
+}

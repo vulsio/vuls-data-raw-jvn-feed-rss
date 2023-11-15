@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001079.html",
+  "title": "Apache Derby の BUILTIN 認証機能であるパスワードハッシュ生成アルゴリズムにおけるパスワードを解読される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001079.html",
+  "description": "Apache Derby の BUILTIN 認証機能であるパスワードハッシュ生成アルゴリズムは、 SHA-1 への入力設定のサイズを縮小変換し、小さな検索スペースを生成してしまうため、パスワードを解読される脆弱性が存在します。",
+  "identifier": "JVNDB-2011-001079",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4269",
+      "source": "CVE",
+      "id": "CVE-2009-4269"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-4269",
+      "source": "NVD",
+      "id": "CVE-2009-4269"
+    },
+    {
+      "text": "http://secunia.com/advisories/42970",
+      "source": "SECUNIA",
+      "id": "SA42970"
+    },
+    {
+      "text": "http://secunia.com/advisories/42948",
+      "source": "SECUNIA",
+      "id": "SA42948"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/42637",
+      "source": "BID",
+      "id": "42637"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1024977",
+      "source": "SECTRACK",
+      "id": "1024977"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0149",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0149"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:derby",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Derby"
+    },
+    {
+      "text": "cpe:/a:oracle:industry_applications",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Industry Applications"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2011-02-16T14:00+09:00",
+  "issued": "2011-02-16T14:00+09:00",
+  "modified": "2011-02-16T14:00+09:00"
+}

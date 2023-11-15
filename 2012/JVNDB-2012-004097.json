@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004097.html",
+  "title": "Crowbar の Deployer Barclamp における任意のシェルコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004097.html",
+  "description": "Crowbar の Deployer Barclamp 内の Crowbar Ohai プラグイン (chef/cookbooks/ohai/files/default/plugins/crowbar.rb) には、\"一時ファイルの不安定な取り扱い (insecure handling of tmp files)\" 、および予測可能なファイル名に関する処理に不備があるため、任意のシェルコマンドを実行される脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2012-004097",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3537",
+      "source": "CVE",
+      "id": "CVE-2012-3537"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3537",
+      "source": "NVD",
+      "id": "CVE-2012-3537"
+    },
+    {
+      "text": "http://cloud.watch.impress.co.jp/docs/news/20120903_557204.html",
+      "source": "関連文書",
+      "id": "SUSE、OpenStackベースのプライベートクラウドソリューション「SUSE Cloud」"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:dell:crowbar",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Crowbar"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-07T15:48+09:00",
+  "issued": "2012-09-07T15:48+09:00",
+  "modified": "2012-09-07T15:48+09:00"
+}

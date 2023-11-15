@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002503.html",
+  "title": "Android SDK Platform-tools の Android 用 Android Debug Bridge における整数符号エラーの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002503.html",
+  "description": "Android SDK Platform-tools の Android 4.4 用 Android Debug Bridge (ADB) の system/core/adb/adb_client.c には、整数符号エラーの脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002503",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1909",
+      "source": "CVE",
+      "id": "CVE-2014-1909"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1909",
+      "source": "NVD",
+      "id": "CVE-2014-1909"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:android_debug_bridge",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android Debug Bridge"
+    },
+    {
+      "text": "cpe:/a:google:android_sdk_platform_tools",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android SDK Platform-tools"
+    },
+    {
+      "text": "cpe:/o:novell:opensuse",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "openSUSE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-05-16T15:59+09:00",
+  "issued": "2014-05-16T15:59+09:00",
+  "modified": "2014-05-16T15:59+09:00"
+}

@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000110.html",
+  "title": "Linux Kernel の zlib_inflate () 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000110.html",
+  "description": "Linux Kernel の zlib_inflate () 関数には、zlib 圧縮を使用する不正なファイルシステム (cramfs など) を処理するとメモリ破壊によりカーネルがクラッシュする脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000110",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5823",
+      "source": "CVE",
+      "id": "CVE-2006-5823"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-5823",
+      "source": "NVD",
+      "id": "CVE-2006-5823"
+    },
+    {
+      "text": "http://secunia.com/advisories/23664/",
+      "source": "SECUNIA",
+      "id": "SA23664"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:H/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2008-01-18T14:26+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2008-01-18T14:26+09:00"
+}

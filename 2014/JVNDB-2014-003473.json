@@ -1,0 +1,83 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003473.html",
+  "title": "Apache HTTP Server の mod_deflate モジュールの mod_deflate.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003473.html",
+  "description": "Apache HTTP Server の mod_deflate モジュールの mod_deflate.c 内の deflate_in_filter 関数には、リクエストボディの解凍 (request body decompression) が有効な場合、サービス運用妨害 (リソース消費) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-003473",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91828320/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91828320"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0118",
+      "source": "CVE",
+      "id": "CVE-2014-0118"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0118",
+      "source": "NVD",
+      "id": "CVE-2014-0118"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2014-0304.html",
+      "source": "関連文書",
+      "id": "MGASA-2014-0304"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2014-0305.html",
+      "source": "関連文書",
+      "id": "MGASA-2014-0305"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:oracle:enterprise_manager",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Enterprise Manager"
+    },
+    {
+      "text": "cpe:/a:oracle:http_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle HTTP Server"
+    },
+    {
+      "text": "cpe:/a:oracle:virtualization_secure_global_desktop",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Virtualization"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-05-12T16:03+09:00",
+  "issued": "2014-07-22T14:34+09:00",
+  "modified": "2015-05-12T16:03+09:00"
+}

@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-014076.html",
+  "title": "Quick Emulator における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-014076.html",
+  "description": "Quick Emulator (QEMU) には、境界外読み取りに関する脆弱性、および境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2017-014076",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2633",
+      "source": "CVE",
+      "id": "CVE-2017-2633"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-2633",
+      "source": "NVD",
+      "id": "CVE-2017-2633"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2018-10-17T12:08+09:00",
+  "issued": "2018-10-17T12:08+09:00",
+  "modified": "2018-10-17T12:08+09:00"
+}

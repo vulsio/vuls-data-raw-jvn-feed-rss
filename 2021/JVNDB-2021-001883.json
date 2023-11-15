@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001883.html",
+  "title": "Thales 製 Sentinel LDK Run-Time Environment における不十分なアンインストール処理の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001883.html",
+  "description": "Thales 社が提供する Sentinel LDK Run-Time Environment には、アンインストール時に当該製品で利用しているポートを開放したままにする脆弱性が存在します。\r\n\r\nThales 社が提供する Sentinel LDK Run-Time Environment は、インストール時に「Sentinel License Manager」という名前のファイアウォールルールを追加します。当該ルールは 1947/TCP ポートに対して、プライベートネットワークからの受信、接続を許可するものです。当該製品は、アンインストール時に 1947/TCP ポートの閉鎖に失敗し、開放した状態になる脆弱性 (CWE-459、CVE-2021-32928) が存在します。",
+  "identifier": "JVNDB-2021-001883",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU95634783",
+      "source": "JVN",
+      "id": "JVNVU#95634783"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32928",
+      "source": "CVE",
+      "id": "CVE-2021-32928"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-159-06",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-159-06"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/459.html",
+      "id": "CWE-459",
+      "title": "不完全なクリーンアップ(CWE-459)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:thalesgroup:sentinel_ldk_run-time_environment",
+      "version": "2.2",
+      "vendor": "Thales Group",
+      "product": "Sentinel LDK Run-Time Environment"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.6",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-06-11T15:54+09:00",
+  "issued": "2021-06-11T15:54+09:00",
+  "modified": "2021-06-11T15:54+09:00"
+}

@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006811.html",
+  "title": "NTP におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006811.html",
+  "description": "NTP は、ソースからのレスポンスを受信したインターフェースにピア構造を変更するため、サービス運用妨害 (ソースを伴う通信の制限) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006811",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU99531229/",
+      "source": "JVN",
+      "id": "JVNVU#99531229"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7429",
+      "source": "CVE",
+      "id": "CVE-2016-7429"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7429",
+      "source": "NVD",
+      "id": "CVE-2016-7429"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/633847",
+      "source": "CERT-VN",
+      "id": "VU#633847"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/18.html",
+      "id": "CWE-18",
+      "title": "ソースコード(CWE-18)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/605.html",
+      "id": "CWE-605",
+      "title": "同一ポートに複数のソケットをバインドする問題(CWE-605)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ntp:ntp",
+      "version": "2.2",
+      "vendor": "NTP Project",
+      "product": "NTP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "3.7",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+    }
+  ],
+  "date": "2017-01-26T11:44+09:00",
+  "issued": "2017-01-26T11:44+09:00",
+  "modified": "2017-01-26T11:44+09:00"
+}

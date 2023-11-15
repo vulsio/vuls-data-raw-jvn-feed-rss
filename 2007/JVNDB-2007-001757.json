@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001757.html",
+  "title": "Apache httpd の suexec における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001757.html",
+  "description": "Apache HTTP Server (httpd) の suexec は、競合状態が発生するため、権限を昇格され、任意のコードを実行される脆弱性が存在します。\r\n研究者によると、本脆弱性は「ユーザがドキュメントルートにアクセス可能な、サーバの安全でない設定状態」に依存するため、ベンダは疑問視しています。",
+  "identifier": "JVNDB-2007-001757",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1741",
+      "source": "CVE",
+      "id": "CVE-2007-1741"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-1741",
+      "source": "NVD",
+      "id": "CVE-2007-1741"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.2",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-06-26T15:46+09:00",
+  "issued": "2012-06-26T15:46+09:00",
+  "modified": "2012-06-26T15:46+09:00"
+}

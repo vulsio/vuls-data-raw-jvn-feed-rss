@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004625.html",
+  "title": "Heimdal の gss_userok 関数における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004625.html",
+  "description": "Heimdal の appl/ftp/ftpd/gss_userok.c の gss_userok 関数は、解放コールする前に ticketfile ポインタにメモリを割り当てないため、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2007-004625",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5939",
+      "source": "CVE",
+      "id": "CVE-2007-5939"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-5939",
+      "source": "NVD",
+      "id": "CVE-2007-5939"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:heimdal:heimdal",
+      "version": "2.2",
+      "vendor": "Heimdal",
+      "product": "Heimdal"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-09-25T16:59+09:00",
+  "issued": "2012-09-25T16:59+09:00",
+  "modified": "2012-09-25T16:59+09:00"
+}

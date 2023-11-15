@@ -1,0 +1,129 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001008.html",
+  "title": "PostgreSQL の DBLink モジュールにおける権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001008.html",
+  "description": "PostgreSQL の DBLink モジュールには、local trust もしくは ident 認証を使用している場合、それらの認証を用いてデータベースへアクセスが可能となる脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001008",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6601",
+      "source": "CVE",
+      "id": "CVE-2007-6601"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-6601",
+      "source": "NVD",
+      "id": "CVE-2007-6601"
+    },
+    {
+      "text": "http://secunia.com/advisories/28359",
+      "source": "SECUNIA",
+      "id": "SA28359"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/27163",
+      "source": "BID",
+      "id": "27163"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/39500",
+      "source": "XF",
+      "id": "39500"
+    },
+    {
+      "text": "http://securitytracker.com/id?1019157",
+      "source": "SECTRACK",
+      "id": "1019157"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/0061",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-0061"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:postgresql:postgresql",
+      "version": "2.2",
+      "vendor": "PostgreSQL.org",
+      "product": "PostgreSQL"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2009-12-18T11:13+09:00",
+  "issued": "2008-01-23T16:17+09:00",
+  "modified": "2009-12-18T11:13+09:00"
+}

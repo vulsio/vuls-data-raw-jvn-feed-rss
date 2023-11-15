@@ -1,0 +1,122 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002110.html",
+  "title": "Samba Web Administration Tool におけるクロスサイトリクエストフォージェリの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002110.html",
+  "description": "Samba Web Administration Tool (SWAT) には、クロスサイトリクエストフォージェリの脆弱性が存在します。\r\n\r\nSamba Web Administration Tool (SWAT) は、Web インタフェース上で Samba の設定変更を行うための製品です。SWAT には、クロスサイトリクエストフォージェリの脆弱性が存在します。\r\n\r\nなお、SWAT は、Samba の初期設定では無効になっています。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社ラック 石川 芳浩 氏",
+  "identifier": "JVNDB-2011-002110",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN29529126/index.html",
+      "source": "JVN",
+      "id": "JVN#29529126"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2522",
+      "source": "CVE",
+      "id": "CVE-2011-2522"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2522",
+      "source": "NVD",
+      "id": "CVE-2011-2522"
+    },
+    {
+      "text": "http://secunia.com/advisories/45393",
+      "source": "SECUNIA",
+      "id": "SA45393"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/48899",
+      "source": "BID",
+      "id": "48899"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/68843",
+      "source": "XF",
+      "id": "68843"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1025852",
+      "source": "SECTRACK",
+      "id": "1025852"
+    },
+    {
+      "text": "http://osvdb.org/74071",
+      "source": "OSVDB",
+      "id": "74071"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+      "id": "CWE-352",
+      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:rhel_server_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server EUS"
+    },
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    },
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2012-12-21T17:34+09:00",
+  "issued": "2011-08-18T08:55+09:00",
+  "modified": "2012-12-21T17:34+09:00"
+}

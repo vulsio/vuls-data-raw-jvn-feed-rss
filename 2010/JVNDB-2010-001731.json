@@ -1,0 +1,90 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001731.html",
+  "title": "Cisco Industrial Ethernet 3000 シリーズに SNMP Community String がハードコードされている問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001731.html",
+  "description": "Cisco が提供する Cisco Industrial Ethernet 3000 シリーズに設定されている SNMP Community String は、遠隔の第三者に使用される可能性があります。\r\n\r\nCisco IOS Software リリース 12.2(52)SE または 12.2(52)SE1 を使用している Cisco Industrial Ethernet 3000 シリーズは、SNMP Community String がハードコードされています。また、該当製品を再起動すると、ハードコードされた値が再度設定されます。\r\n\r\nなお、SNMP サービスは、デフォルトで無効になっています。",
+  "identifier": "JVNDB-2010-001731",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU732671",
+      "source": "JVN",
+      "id": "JVNVU#732671"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1574",
+      "source": "CVE",
+      "id": "CVE-2010-1574"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1574",
+      "source": "NVD",
+      "id": "CVE-2010-1574"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/732671",
+      "source": "CERT-VN",
+      "id": "VU#732671"
+    },
+    {
+      "text": "http://secunia.com/advisories/40407",
+      "source": "SECUNIA",
+      "id": "SA40407"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/41436",
+      "source": "BID",
+      "id": "41436"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/60145",
+      "source": "XF",
+      "id": "60145"
+    },
+    {
+      "text": "http://securitytracker.com/id?1024173",
+      "source": "SECTRACK",
+      "id": "1024173"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/1754",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-1754"
+    },
+    {
+      "text": "http://osvdb.org/66120",
+      "source": "OSVDB",
+      "id": "66120"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:cisco:industrial_ethernet_3000",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Industrial Ethernet 3000 シリーズ"
+    },
+    {
+      "text": "cpe:/o:cisco:ios",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2010-09-29T16:00+09:00",
+  "issued": "2010-07-27T17:29+09:00",
+  "modified": "2010-09-29T16:00+09:00"
+}

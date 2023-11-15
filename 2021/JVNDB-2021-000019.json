@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000019.html",
+  "title": "GROWI における複数のクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000019.html",
+  "description": "株式会社WESEEK が提供する GROWI には、次に挙げる複数のクロスサイトスクリプティングの脆弱性が存在します。\r\n・URL のクエリパラメータの検証不備による反射型クロスサイトスクリプティング (CWE-79) - CVE-2021-20672\r\n・管理者画面における格納型クロスサイトスクリプティング (CWE-79) - CVE-2021-20673\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社スリーシェイク 宮口直也 氏",
+  "identifier": "JVNDB-2021-000019",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN86438134/index.html",
+      "source": "JVN",
+      "id": "JVN#86438134"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20672",
+      "source": "CVE",
+      "id": "CVE-2021-20672"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20673",
+      "source": "CVE",
+      "id": "CVE-2021-20673"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:weseek:growi",
+      "version": "2.2",
+      "vendor": "株式会社WESEEK",
+      "product": "GROWI"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.5",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "4.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N"
+    }
+  ],
+  "date": "2021-03-10T12:36+09:00",
+  "issued": "2021-03-10T12:36+09:00",
+  "modified": "2021-03-10T12:36+09:00"
+}

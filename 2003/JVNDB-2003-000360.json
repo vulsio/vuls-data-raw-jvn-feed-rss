@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000360.html",
+  "title": "Apache HTTP Server の mod_python におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000360.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nmod_python は Python スクリプトを処理するために利用されている Apache モジュールであり、Red Hat Linux などの一部 OS に同梱されています。\r\n\r\nMod_python 2.7.8/3.0.3 以前では、特定のクエリ文字列の処理に不備が存在するため、mod_python を有効にしている場合、Apache がクラッシュする問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成したクエリ文字列を標的システムに送信することにより、mod_python を有効にしている Apache をサービス不能状態に陥らせることが可能です。\r\n\r\n当初開発元では、この問題を修正する mod_python 2.7.9/3.0.4 をリリースしましたが、mod_python 2.7.9 ではこの問題を完全に解消しきれていないことが報告されています。",
+  "identifier": "JVNDB-2003-000360",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0973",
+      "source": "CVE",
+      "id": "CVE-2003-0973"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0973",
+      "source": "NVD",
+      "id": "CVE-2003-0973"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9129",
+      "source": "BID",
+      "id": "9129"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2003/Nov/1008335.html",
+      "source": "SECTRACK",
+      "id": "1008335"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

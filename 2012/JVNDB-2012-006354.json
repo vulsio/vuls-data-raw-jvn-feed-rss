@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006354.html",
+  "title": "Expat における暗号保護メカニズムを破られる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006354.html",
+  "description": "Expat には、XML_SetHashSalt を呼び出さない、またはそれを 0 のシードに渡さないパーサで使用される場合、暗号保護メカニズムを破られる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-006354",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6702",
+      "source": "CVE",
+      "id": "CVE-2012-6702"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6702",
+      "source": "NVD",
+      "id": "CVE-2012-6702"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libexpat:expat",
+      "version": "2.2",
+      "vendor": "Expat",
+      "product": "Expat"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2016-06-20T18:00+09:00",
+  "issued": "2016-06-20T18:00+09:00",
+  "modified": "2016-06-20T18:00+09:00"
+}

@@ -1,0 +1,92 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001050.html",
+  "title": "Citrix Presentation Server におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001050.html",
+  "description": "Citrix Presentation Server にはバッファオーバーフローの脆弱性が存在します。\r\n\r\nCitrix Presentation Server はアプリケーションを仮想化して利用できる環境をユーザに提供する Windows アプリケーションデリバリーシステムです。Presentation Server に含まれる Independent Management Architecutre (IMA) サービス (ImaSrv.exe) はデフォルトの設定で 2512/tcp もしくは 2513/tcp で待ち受ける設定になっています。この IMA サービスにはバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001050",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23412228/index.html",
+      "source": "JVN",
+      "id": "JVNVU#412228"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0356",
+      "source": "CVE",
+      "id": "CVE-2008-0356"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-0356",
+      "source": "NVD",
+      "id": "CVE-2008-0356"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/412228",
+      "source": "CERT-VN",
+      "id": "VU#412228"
+    },
+    {
+      "text": "http://secunia.com/advisories/28508",
+      "source": "SECUNIA",
+      "id": "SA28508"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/27329",
+      "source": "BID",
+      "id": "27329"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1019231",
+      "source": "SECTRACK",
+      "id": "1019231"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/0172",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-0172"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:citrix:access_essentials",
+      "version": "2.2",
+      "vendor": "シトリックス・システムズ",
+      "product": "Citrix Access Essentials"
+    },
+    {
+      "text": "cpe:/a:citrix:metaframe",
+      "version": "2.2",
+      "vendor": "シトリックス・システムズ",
+      "product": "Citrix MetaFrame"
+    },
+    {
+      "text": "cpe:/a:citrix:presentation_server",
+      "version": "2.2",
+      "vendor": "シトリックス・システムズ",
+      "product": "Citrix Presentation Server"
+    },
+    {
+      "text": "cpe:/a:citrix:xendesktop",
+      "version": "2.2",
+      "vendor": "シトリックス・システムズ",
+      "product": "Citrix XenDesktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-02-05T16:20+09:00",
+  "issued": "2008-02-05T16:20+09:00",
+  "modified": "2008-02-05T16:20+09:00"
+}

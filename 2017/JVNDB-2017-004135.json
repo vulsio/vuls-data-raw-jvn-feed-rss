@@ -1,0 +1,494 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-004135.html",
+  "title": "複数の Siemens 製品におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-004135.html",
+  "description": "複数の Siemens 製品には、サービス運用妨害 (DoS) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2017-004135",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2681",
+      "source": "CVE",
+      "id": "CVE-2017-2681"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-2681",
+      "source": "NVD",
+      "id": "CVE-2017-2681"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-17-129-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-17-129-02"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:siemens:dk_standard_ethernet_controller_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "DK Standard Ethernet Controller ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:ek-ertec_200p_pn_io_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "EK-ERTEC 200P PN IO ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:ek-ertec_200_pn_io_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "EK-ERTEC 200 PN IO ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:ie%2Fas-i_link_pn_io_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "IE/PB-Link ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:ie%2Fpb-link_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "IE/AS-i Link PN IO ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:pn%2Fpn_coupler_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "PN/PN Coupler ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:scalance_m-800_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SCALANCE M-800 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:scalance_s615_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SCALANCE S615 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:scalance_w700_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SCALANCE W700 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:scalance_x200irt_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SCALANCE X200 IRT ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:scalance_x200_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SCALANCE X200 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:scalance_x300_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SCALANCE X300 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:scalance_x408_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SCALANCE X408 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:scalance_x414_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SCALANCE X414 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:scalance_xm400_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SCALANCE XM400 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:scalance_xr500_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SCALANCE XR500 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cm_1542-1_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CM 1542-1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_1243-1_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 1243-1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_1542sp-1_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 1542SP-1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_1542sp-1_irc_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 1542SP-1 IRC ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_1543-1_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 1543-1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_1543sp-1_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 1543SP-1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_1604_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 1604 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_1616_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 1616 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_343-1_adv_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 343-1 Adv ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_343-1_lean_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 343-1 Lean ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_343-1_std_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 343-1 Std ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_443-1_adv_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 443-1 Adv ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_443-1_opc-ua_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 443-1 Std ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_cp_443-1_std_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC CP 443-1 OPC-UA ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_dk-16xx_pn_io_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC DK-16xx PN IO ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_et_200al_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC ET 200AL ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_et_200ecopn_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC ET 200ecoPN ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_et_200mp_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC ET 200MP ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_et_200m_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC ET 200M ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_et_200pro_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC ET 200pro ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_et_200sp_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC ET 200SP ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_et_200s_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC ET 200S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_hmi_comfort_panels",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC HMI Comfort Panels ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_hmi_mobile_panels",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC HMI Mobile Panels ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_hmi_multi_panels",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC HMI Multi Panels ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_rf650r_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC RF650R ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_rf680r_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC RF680R ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_rf685r_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC RF685R ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_s7-1200_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC S7-1200 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_s7-1500_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC S7-1500 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_s7-1500_software_controller_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC S7-1500 Software Controller ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_s7-200_smart_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC S7-200 SMART ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_s7-300_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC S7-300 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_s7-400_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC S7-400 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_teleservice_adapter_ie_advanced_modem_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC Teleservice Adapter IE Advanced ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_teleservice_adapter_ie_basic_modem_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC Teleservice Adapter IE Basic ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_teleservice_adapter_standard_modem_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC Teleservice Adapter Standard Modem ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simatic_winac_rtx_2010_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMATIC WinAC RTX 2010 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simocode_pro_v_profinet_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMOCODE pro V PROFINET ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:simotion_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIMOTION ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sinamics_dcm_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINAMICS DCM ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sinamics_dcp_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINAMICS DCP ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sinamics_g110m_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINAMICS G110M ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sinamics_g120%28c%2Fp%2Fd%29_w._pn_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINAMICS G120(C/P/D) w. PN ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sinamics_g130_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINAMICS G130 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sinamics_g150_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINAMICS G150 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sinamics_s120_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINAMICS S120 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sinamics_s150_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINAMICS S150 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sinamics_v90_w._pn_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINAMICS V90 w. PN ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sinamics__s110_w._pn_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINAMICS S110 w. PN ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sinumerik_828d_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINUMERIK 828D ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sinumerik_840d_sl_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINUMERIK 840D sl ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sirius_act_3su1_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIRIUS ACT 3SU1 interface module PROFINET ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sirius_motor_starter_m200d_profinet_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIRIUS Motor starter M200D PROFINET ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sirius_soft_starter_3rw44_pn_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SIRIUS Soft starter 3RW44 PN ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:sitop_psu8600_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SITOP PSU8600 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:softnet_profinet_io_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "Softnet PROFINET IO"
+    },
+    {
+      "text": "cpe:/o:siemens:ups1600_profinet_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SITOP UPS1600 PROFINET ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-09-11T14:12+09:00",
+  "issued": "2017-06-16T18:11+09:00",
+  "modified": "2017-09-11T14:12+09:00"
+}

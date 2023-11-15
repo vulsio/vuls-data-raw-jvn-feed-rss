@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001344.html",
+  "title": "フィッシャープライス Smart Toy 向けウェブサービスにおいて認証なしで API を呼び出せる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001344.html",
+  "description": "フィッシャープライスの Smart Toy 向けウェブサービスでは、複数の API 呼出しにおいて適切な認証を行っていません。また、Smart Toy の玩具には脆弱なバージョンの Android OS が使用されている可能性があります。\r\n\r\nフィッシャープライスの Smart Toy Bear は、Wi-Fi 接続機能を持つ IoT 玩具です。この玩具は、ネットワーク機能を使用することで、ユーザである子供との更なるインタラクションを提供します。\r\n\r\n不適切な認証 (CWE-287) - CVE-2015-8269\r\nフィッシャープライスの Smart Toy では、予測可能な番号を使ってユーザアカウントを登録しています。Smart Toy のアカウントを持つ攻撃者は、他のアカウントに対してクエリやコマンドを実行することが可能です。攻撃者は、発行したクエリによって、名前、誕生日、性別など、他のユーザの情報を取得することが可能です。また、他のユーザの一部の情報を編集したり、登録されている玩具を他のアカウントに関連付けることが可能です。\r\n\r\nCWE-287: Improper Authentication\r\nhttp://cwe.mitre.org/data/definitions/287.html\r\n\r\nRapid7 の研究者によると、アカウントのすべてのデータが変更もしくは取得可能ではなく、影響は限定的とのことです。また、この研究者は Smart Toy が Android 4.4 (KitKat) で動作しているとしています。現時点で、Smart Toy 製品に対して最新の Android セキュリティパッチが適用されているかどうかは不明です。\r\n\r\n詳しくは、Rapid7 のセキュリティアドバイザリを参照してください。\r\n\r\nRapid7 のセキュリティアドバイザリ\r\nhttps://community.rapid7.com/community/infosec/blog/2016/02/02/security-vulnerabilities-within-fisher-price-smart-toy-hereo-gps-platform\r\n\r\nフィッシャープライスの Smart Toy を提供する Mattel, Inc. は次のように述べています。\r\n\r\n\"We recently learned of a security vulnerability with our Fisher-Price WiFi-connected Smart Toy Bear. We have remediated the situation and have no reason to believe that customer information was accessed by any unauthorized person. Mattel and Fisher-Price take the safety of our consumers and their personal data very seriously, which is why we act quickly to resolve potential vulnerabilities like this.\r\n\r\n当社は先般、フィッシャープライス Wi-Fi 接続 Smart Toy Bear に関するセキュリティ上の脆弱性を知りました。既にこの問題は修正されており、顧客情報に対する不正アクセスも確認していません。Mattel およびフィッシャープライスでは、顧客と顧客の個人情報の安全を極めて重要であると考え、今回のような脆弱性の迅速な解決に取り組んでいきます。\"",
+  "identifier": "JVNDB-2016-001344",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99349751/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99349751"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8269",
+      "source": "CVE",
+      "id": "CVE-2015-8269"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8269",
+      "source": "NVD",
+      "id": "CVE-2015-8269"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/719736",
+      "source": "CERT-VN",
+      "id": "VU#719736"
+    },
+    {
+      "text": "https://community.rapid7.com/community/infosec/blog/2016/02/02/security-vulnerabilities-within-fisher-price-smart-toy-hereo-gps-platform",
+      "source": "関連文書",
+      "id": "Fisher-Price Smart Toy - Vulnerability R7-2015-27: Improper Authentication Handling (CVE-2015-8269)"
+    },
+    {
+      "text": "http://fortune.com/2016/02/02/fisher-price-smart-toy-bear-data-leak/",
+      "source": "関連文書",
+      "id": "This Fisher-Price Smart Toy Bear Had Data-Leak Vulnerability"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/GWAN-A6LPPW",
+      "source": "関連文書",
+      "id": "Mattel Information for VU#719736"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:fisher-price:smart_toy_bear",
+      "version": "2.2",
+      "vendor": "Mattel, Inc",
+      "product": "フィッシャープライス Smart Toy 向けウェブサービス (API)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2016-02-24T16:59+09:00",
+  "issued": "2016-02-04T11:53+09:00",
+  "modified": "2016-02-24T16:59+09:00"
+}

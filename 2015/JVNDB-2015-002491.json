@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002491.html",
+  "title": "SQLite の printf.c の sqlite3VXPrintf 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002491.html",
+  "description": "SQLite の printf.c の sqlite3VXPrintf 関数は、浮動小数点変換過程において精度と幅の値を適切に処理しないため、サービス運用妨害 (整数オーバーフローおよびスタックベースのバッファオーバーフロー) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2015-002491",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97220341/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97220341"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU99970459/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99970459"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3416",
+      "source": "CVE",
+      "id": "CVE-2015-3416"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3416",
+      "source": "NVD",
+      "id": "CVE-2015-3416"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2015/Apr/31",
+      "source": "関連文書",
+      "id": "several issues in SQLite (+ catching up on several other bugs)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sqlite:sqlite",
+      "version": "2.2",
+      "vendor": "SQLite",
+      "product": "SQLite"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:watchos",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "watchOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-10-05T18:58+09:00",
+  "issued": "2015-04-28T15:51+09:00",
+  "modified": "2015-10-05T18:58+09:00"
+}

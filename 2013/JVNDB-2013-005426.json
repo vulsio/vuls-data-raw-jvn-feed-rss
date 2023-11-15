@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005426.html",
+  "title": "FFmpeg の libavcodec/jpeg2000dec.c の get_siz 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005426.html",
+  "description": "FFmpeg の libavcodec/jpeg2000dec.c の get_siz 関数は、予想されるサンプルの分離 (sample separation) を確認しないため、サービス運用妨害 (配列の領域外へのアクセス) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005426",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7016",
+      "source": "CVE",
+      "id": "CVE-2013-7016"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7016",
+      "source": "NVD",
+      "id": "CVE-2013-7016"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2013/11/26/7",
+      "source": "関連文書",
+      "id": "CVE Request: FFmpeg 2.1 multiple problems"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2013/12/08/3",
+      "source": "関連文書",
+      "id": "Re: CVE Request: FFmpeg 2.1 multiple problems"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-12-11T16:48+09:00",
+  "issued": "2013-12-11T16:48+09:00",
+  "modified": "2013-12-11T16:48+09:00"
+}

@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001269.html",
+  "title": "iOS 用 Starbucks アプリケーションにおけるユーザ名などの情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001269.html",
+  "description": "iOS 用 Starbucks アプリケーションは、Crashlytics ログファイル (/Library/Caches/com.crashlytics.data/com.starbucks.mystarbucks/session.clslog) に平文で重要な情報を格納するため、ユーザ名、パスワード、および電子メールアドレスを取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-001269",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0647",
+      "source": "CVE",
+      "id": "CVE-2014-0647"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0647",
+      "source": "NVD",
+      "id": "CVE-2014-0647"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/90412",
+      "source": "関連文書",
+      "id": "Starbucks session.clslog information disclosure"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2014/Jan/123",
+      "source": "関連文書",
+      "id": "Re: [CVE-2014-0647] Insecure Data Storage of User Data Elements in Starbucks v2.6.1 iOS mobile application"
+    },
+    {
+      "text": "http://www.zdnet.com/the-starbucks-bug-not-as-awful-as-reported-7000025269/",
+      "source": "関連文書",
+      "id": "The Starbucks bug: not as awful as reported"
+    },
+    {
+      "text": "http://www.zdnet.com/starbucks-fixes-ios-app-bugs-7000025323/",
+      "source": "関連文書",
+      "id": "Starbucks fixes iOS app bugs"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:starbucks:starbucks",
+      "version": "2.2",
+      "vendor": "Starbucks Coffee Company",
+      "product": "Starbucks"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2014-01-29T16:20+09:00",
+  "issued": "2014-01-29T16:20+09:00",
+  "modified": "2014-01-29T16:20+09:00"
+}

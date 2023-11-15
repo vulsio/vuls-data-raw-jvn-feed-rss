@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002923.html",
+  "title": "Intel Active Management Technology (AMT) にアクセス制限不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002923.html",
+  "description": "Intel Active Management Technology (AMT) にはアクセス制限不備の脆弱性が存在します。\r\n\r\n不適切なアクセス制御 (CWE-284) - CVE-2017-5689\r\nIntel が提供するファームウェアは、コンピュータシステムのリモート管理機能として、Intel Active Management Technology (AMT)、Intel Small Business Technology (SBT)、Intel Standard Manageability などを提供しています。これらの機能では、複数のポートを使用して管理用コマンドを待ち受けています。Intel の文書によると、AMT に対するウェブインターフェースとしてポート 16992 および 16993 が使われています。また、他のポート 16994 と 16995 あるいは 623 と 664 が使われている場合もあります。\r\n\r\nIntel の文書\r\nhttps://software.intel.com/sites/default/files/article/393789/amt-9-start-here-guide.pdf\r\n\r\nポート 16994 と 16995\r\nhttps://www.symantec.com/connect/articles/why-must-intel-amt-be-configured-and-what-required\r\n\r\nこれらのリモート管理機能に対応した Intel Management Engine には、遠隔の (認証されていない) 第三者によってリモート管理機能にアクセスされる脆弱性があります。 Intel はこの脆弱性に対してセキュリティアドバイザリ (INTEL-SA-00075) および軽減のためのガイド (INTEL-SA-00075 Mitigation Guide) を提供しています。\r\n\r\nセキュリティアドバイザリ (INTEL-SA-00075)\r\nhttps://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00075&languageid=en-fr\r\n\r\n軽減のためのガイド (INTEL-SA-00075 Mitigation Guide)\r\nhttps://downloadcenter.intel.com/download/26754\r\n\r\nまた、OEM 製品においてもこのリモート管理機能が有効になっている可能性があります。",
+  "identifier": "JVNDB-2017-002923",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92793783/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92793783"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5689",
+      "source": "CVE",
+      "id": "CVE-2017-5689"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-5689",
+      "source": "NVD",
+      "id": "CVE-2017-5689"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/491375",
+      "source": "CERT-VN",
+      "id": "VU#491375"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-17-180-01A",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-17-180-01"
+    },
+    {
+      "text": "https://www.embedi.com/news/what-you-need-know-about-intel-amt-vulnerability",
+      "source": "関連文書",
+      "id": "What You Need Know About Intel Amt Vulnerability"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/284.html",
+      "id": "CWE-284",
+      "title": "不適切なアクセス制御(CWE-284)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nec:esmpro_servermanager",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "ESMPRO/ServerManager"
+    },
+    {
+      "text": "cpe:/o:intel:manageability_firmware",
+      "version": "2.2",
+      "vendor": "インテル",
+      "product": "Intel manageability ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-09-11T08:15+09:00",
+  "issued": "2017-05-09T11:07+09:00",
+  "modified": "2017-09-11T08:15+09:00"
+}

@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-003723.html",
+  "title": "H2 Console におけるコードインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-003723.html",
+  "description": "H2 Console には、コードインジェクションの脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2021-42392 とは異なる脆弱性です。\r\n",
+  "identifier": "JVNDB-2022-003723",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-23221",
+      "source": "CVE",
+      "id": "CVE-2022-23221"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-23221",
+      "source": "NVD",
+      "id": "CVE-2022-23221"
+    },
+    {
+      "text": "https://seclists.org/fulldisclosure/2022/Jan/39",
+      "source": "関連文書",
+      "id": "Unauthenticated RCE vuln in the H2 Database console: CVE-2022-23221."
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:h2database:h2",
+      "version": "2.2",
+      "vendor": "H2",
+      "product": "H2"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_cloud_native_core_console",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Cloud Native Core Console"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-03-06T18:28+09:00",
+  "issued": "2023-03-06T18:28+09:00",
+  "modified": "2023-03-06T18:28+09:00"
+}

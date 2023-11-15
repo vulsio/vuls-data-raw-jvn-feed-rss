@@ -1,0 +1,85 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000016.html",
+  "title": "MIT Kerberos 5 の KDC におけるフォーマットストリングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000016.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nKDC Server である krb5kdc(1M) や kerberos を使用しているアプリケーションには、以下のような複数の問題が存在します。全ての問題は MIT Kerberos5 Release 1.2.5 以降で解消することが可能です。\r\n\r\n1.NULL ポインタによる参照読み出しの問題 (CAN-2003-0058)\r\nMIT Kerberos Key Distribution Center (KDC) には、NULL ポインタ参照読み出しによりクラッシュしてしまうという問題が存在します。この問題は、クライアント認証の一つである TGS-REQ 方式の過程で発生すると考えられています。TGS-REQ 方式は、kerberos 認証の初回のリクエストでは使用されません。\r\n    \r\n従って、リモートから任意のユーザがこの問題を利用した攻撃を行える可能性は低いと考えられています。\r\n\r\nしかしながら、この問題により、ローカルの攻撃者 (realm 内のユーザ) は KDC Server である krb5kdc(1M) をクラッシュさせることにより、krb5kdc(1M) 及び kerberos を使用しているアプリケーションをサービス不能状態に陥らせることが可能です。\r\n\r\n2.realm 認証の問題 (CAN-2003-0059)\r\nMIT Kerberos 5 release 1.2.2 以前には、realm 認証 (realm authentication) の実装に不備が存在します。そのため、特定の状況下においてローカルの攻撃者 (realm 内のユーザ) は、他の realm と共有する鍵を使用して他の realm 内に存在するアカウントに偽装することが可能です。結果として、特定の realm 内のユーザは、他の realm へのアクセスが可能です。この問題に限り、バージョン 1.2.3 で既に解消されています。\r\n\r\n尚、この問題は、攻撃者が偽装するアカウント名が重要な制御リスト (Critical ACL) 上に存在する場合に様々な手法を利用して実行される可能性があります。\r\n\r\nまた、この問題は Kerberos 5 をサポートする Microsoft 製品においても影響を受けることが報告されています。現時点では詳細は公開されていませんが、影響を受ける製品のパッチが公開予定です。\r\n\r\n3.フォーマットストリングの問題 (CAN-2003-0060)\r\nKDC の古いバージョンでは、ログ採取のルーチンにおいて '%n' のような printf() 系列の出力関数で書式指定子が利用されており、このような関数には、フォーマットストリングの問題が存在します。この問題を利用することで、リモートの攻撃者は krb5kdc(1M) のクラッシュを引き起こし、結果としてサービス不能状態に陥らせることが可能です。\r\n\r\n尚、この問題を抱えるいくつかの関数は、認証処理以前で使用されているため、不特定多数のリモートユーザがこの問題を利用することが可能です。\r\n\r\nまた、このようなタイプの問題は、特定の状況下において、任意のコードを実行できる可能性もあるため、攻撃者は KDC で管理されるシステムへのアクセスできる可能性も考えられます。\r\n\r\n4.ASN.1 decoder データサイズ上の境界チェックの問題 (CAN-2002-0036)\r\nMIT Kerberos 5 に含まれている Abstract Syntax Notation One (ASN.1) decoder には、データサイズの境界チェックが適切に行われていません。そのため、記憶領域の割り当てが消極的に行われているような特定のシステムでは、データを受け取ることで krb5kdc(1M) 及び kerberos を使用しているアプリケーションがクラッシュしてしまいます。\r\n\r\n結果として、リモートの攻撃者は意図的に作成されたパケットを送信することで、krb5kdc(1M) 及び kerberos を使用しているアプリケーションをサービス不能状態に陥らせることが可能です。\r\n\r\n現時点では詳細は公開されていませんが、これらの問題により、多くのベンダから提供されている kerberos を使用している製品が影響を受ける可能性があると報告されています。\r\n\r\nただし、Solaris 9 x86 版及び Red Hat Linux 8.0、さらには SEAM 1.0 がインストールされていない Solaris 2.6 及び 7 では、これら全ての問題の影響は受けません。\r\n\r\nまた、Sun Microsystems より公開されているパッチ適用により、1. の問題 (NULL ポインタによる参照読み出しの問題: CAN-2003-0058) を解消することが可能です。その他の問題が解消されるかどうかは、現時点では未詳です。",
+  "identifier": "JVNDB-2003-000016",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0060",
+      "source": "CVE",
+      "id": "CVE-2003-0060"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0060",
+      "source": "NVD",
+      "id": "CVE-2003-0060"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/787523",
+      "source": "CERT-VN",
+      "id": "VU#787523"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/684563",
+      "source": "CERT-VN",
+      "id": "VU#684563"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/587579",
+      "source": "CERT-VN",
+      "id": "VU#587579"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/661243",
+      "source": "CERT-VN",
+      "id": "VU#661243"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6714",
+      "source": "BID",
+      "id": "6714"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6713",
+      "source": "BID",
+      "id": "6713"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6712",
+      "source": "BID",
+      "id": "6712"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6683",
+      "source": "BID",
+      "id": "6683"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

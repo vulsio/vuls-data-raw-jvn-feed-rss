@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001633.html",
+  "title": "Hitachi Web Server の RequestHeader ディレクティブによるヘッダカスタマイズにおける破棄したメモリ内のデータが参照される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001633.html",
+  "description": "Hitachi Web Server には、RequestHeader ディレクティブによるヘッダカスタマイズ機能を使用している際、RequestHeader ディレクティブを定義し、かつ LoadModule ディレクティブを使用して mod_headers モジュールを組み込んでいる場合に、破棄したメモリ内のデータが参照される脆弱性が存在します。\r\nRequestHeader ディレクティブによるヘッダカスタマイズ機能を使用していない場合は、本脆弱性は発生しません。",
+  "identifier": "JVNDB-2011-001633",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0434",
+      "source": "CVE",
+      "id": "CVE-2010-0434"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0434",
+      "source": "NVD",
+      "id": "CVE-2010-0434"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:hitachi_web_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Web Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-05-21T18:21+09:00",
+  "issued": "2011-05-26T10:10+09:00",
+  "modified": "2014-05-21T18:21+09:00"
+}

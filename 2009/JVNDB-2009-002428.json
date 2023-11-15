@@ -1,0 +1,83 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002428.html",
+  "title": "acpid のレッドハットパッチにおける権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002428.html",
+  "description": "acpid のレッドハットパッチには、不十分な引数を持つオープン関数を呼ぶ処理に不備があるため、重要な情報を取得される、サービス運用妨害 (DoS) 状態となる、または権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-002428",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4033",
+      "source": "CVE",
+      "id": "CVE-2009-4033"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-4033",
+      "source": "NVD",
+      "id": "CVE-2009-4033"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/37249",
+      "source": "BID",
+      "id": "37249"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/54677",
+      "source": "XF",
+      "id": "54677"
+    },
+    {
+      "text": "http://securitytracker.com/id?1023284",
+      "source": "SECTRACK",
+      "id": "1023284"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:tim_hockin:acpid",
+      "version": "2.2",
+      "vendor": "acpid",
+      "product": "acpid"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2010-01-21T11:43+09:00",
+  "issued": "2010-01-21T11:43+09:00",
+  "modified": "2010-01-21T11:43+09:00"
+}

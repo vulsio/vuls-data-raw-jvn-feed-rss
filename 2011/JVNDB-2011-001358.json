@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001358.html",
+  "title": "IBM WebSphere Application Server の installer におけるログファイルへのアクセス権を保持される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001358.html",
+  "description": "IBM WebSphere Application Server の installer は、ログを保存する一時ディレクトリに対して、パーミッション 777 を使用するため、ログファイルへのアクセス権を保持される脆弱性が存在します。",
+  "identifier": "JVNDB-2011-001358",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1307",
+      "source": "CVE",
+      "id": "CVE-2011-1307"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1307",
+      "source": "NVD",
+      "id": "CVE-2011-1307"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0564",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0564"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:application_client",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Application Client"
+    },
+    {
+      "text": "cpe:/a:ibm:http_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM HTTP Server"
+    },
+    {
+      "text": "cpe:/a:ibm:websphere_application_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Application Server"
+    },
+    {
+      "text": "cpe:/a:ibm:websphere_dmz_secure_proxy_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere DMZ Secure Proxy Server"
+    },
+    {
+      "text": "cpe:/a:ibm:web_server_plugin_for_ibm_http_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "Web server plug-in for IBM HTTP Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2011-08-23T09:50+09:00",
+  "issued": "2011-04-05T15:30+09:00",
+  "modified": "2011-08-23T09:50+09:00"
+}

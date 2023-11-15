@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001966.html",
+  "title": "Django の utils.http.is_safe_url 関数におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001966.html",
+  "description": "Django の utils.http.is_safe_url 関数は、URL を適切に検証しないためクロスサイトスクリプティング攻撃を実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-001966",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2317",
+      "source": "CVE",
+      "id": "CVE-2015-2317"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2317",
+      "source": "NVD",
+      "id": "CVE-2015-2317"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:djangoproject:django",
+      "version": "2.2",
+      "vendor": "Django Software Foundation",
+      "product": "Django"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2015-03-31T10:33+09:00",
+  "issued": "2015-03-31T10:33+09:00",
+  "modified": "2015-03-31T10:33+09:00"
+}

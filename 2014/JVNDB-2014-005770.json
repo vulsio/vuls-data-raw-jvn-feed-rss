@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005770.html",
+  "title": "複数の ZOHO 製品の multipartRequest サーブレットにおけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005770.html",
+  "description": "ZOHO ManageEngine OpManager、Social IT Plus および IT360 の multipartRequest サーブレットには、ディレクトリトラバーサルの脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005770",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6036",
+      "source": "CVE",
+      "id": "CVE-2014-6036"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6036",
+      "source": "NVD",
+      "id": "CVE-2014-6036"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2014/Sep/110",
+      "source": "関連文書",
+      "id": "[The ManageOwnage Series, part V]: RCE / file upload / arbitrary file deletion in OpManager, Social IT and IT360"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:zohocorp:manageengine_it360",
+      "version": "2.2",
+      "vendor": "Zoho Corporation",
+      "product": "ManageEngine IT360"
+    },
+    {
+      "text": "cpe:/a:zohocorp:manageengine_it_plus",
+      "version": "2.2",
+      "vendor": "Zoho Corporation",
+      "product": "ManageEngine Social IT Plus"
+    },
+    {
+      "text": "cpe:/a:zohocorp:manageengine_opmanager",
+      "version": "2.2",
+      "vendor": "Zoho Corporation",
+      "product": "ManageEngine OpManager"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-12-05T16:39+09:00",
+  "issued": "2014-12-05T16:39+09:00",
+  "modified": "2014-12-05T16:39+09:00"
+}

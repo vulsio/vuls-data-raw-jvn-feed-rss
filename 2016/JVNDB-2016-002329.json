@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002329.html",
+  "title": "Pillow の libImaging/Resample.c の ImagingResampleHorizontal 関数における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002329.html",
+  "description": "Pillow の libImaging/Resample.c の ImagingResampleHorizontal 関数には、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2016-002329",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4009",
+      "source": "CVE",
+      "id": "CVE-2016-4009"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4009",
+      "source": "NVD",
+      "id": "CVE-2016-4009"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:python:pillow",
+      "version": "2.2",
+      "vendor": "Python Software Foundation",
+      "product": "Python Pillow"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-04-28T12:06+09:00",
+  "issued": "2016-04-28T12:06+09:00",
+  "modified": "2016-04-28T12:06+09:00"
+}

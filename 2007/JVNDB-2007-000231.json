@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000231.html",
+  "title": "OpenBSD の IPv6 パケット処理にバッファオーバフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000231.html",
+  "description": "OpenBSD の IPv6 パケット処理にはバッファオーバーフローの脆弱性があります。結果として、遠隔の第三者が任意のコードを実行したり、システムをクラッシュさせる可能性があります。\r\nなお、すでに攻撃方法に関する情報が公開されています。\r\n\r\nOpenBSD ではデフォルトのインストール状態で IPv6 パケットを処理するようになっているため、特に IPv6 に関する設定を行っていない場合にもこの問題の影響を受ける可能性があります。",
+  "identifier": "JVNDB-2007-000231",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23986425/index.html",
+      "source": "JVN",
+      "id": "JVNVU#986425"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1365",
+      "source": "CVE",
+      "id": "CVE-2007-1365"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-1365",
+      "source": "NVD",
+      "id": "CVE-2007-1365"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2007/wr071101.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2007-1101"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/986425",
+      "source": "CERT-VN",
+      "id": "VU#986425"
+    },
+    {
+      "text": "http://secunia.com/advisories/24490",
+      "source": "SECUNIA",
+      "id": "SA24490"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/22901",
+      "source": "BID",
+      "id": "22901"
+    },
+    {
+      "text": "http://securitytracker.com/id?1017735",
+      "source": "SECTRACK",
+      "id": "1017735"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:openbsd:openbsd",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenBSD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-27T16:42+09:00",
+  "issued": "2007-04-27T16:42+09:00",
+  "modified": "2007-04-27T16:42+09:00"
+}

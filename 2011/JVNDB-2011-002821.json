@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002821.html",
+  "title": "NJStar Communicator にバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002821.html",
+  "description": "NJStar Communicator には、バッファオーバーフローの脆弱性が存在します。\r\n\r\nNJStar Communicator の MiniSmtp server には、TCP パケットの処理に問題があり、バッファオーバーフローの脆弱性が存在します。\r\nなお、MiniSmtp server は、デフォルトで無効になっています。\r\n\r\n本脆弱性を使用した攻撃コードが公開されています。",
+  "identifier": "JVNDB-2011-002821",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU819630",
+      "source": "JVN",
+      "id": "JVNVU#819630"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4040",
+      "source": "CVE",
+      "id": "CVE-2011-4040"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4040",
+      "source": "NVD",
+      "id": "CVE-2011-4040"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/819630",
+      "source": "CERT-VN",
+      "id": "VU#819630"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:njstar:communicator",
+      "version": "2.2",
+      "vendor": "NJStar Software Company",
+      "product": "NJStar Communicator"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-06-26T13:38+09:00",
+  "issued": "2011-11-14T16:52+09:00",
+  "modified": "2013-06-26T13:38+09:00"
+}

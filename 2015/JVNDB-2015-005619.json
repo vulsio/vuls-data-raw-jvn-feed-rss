@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005619.html",
+  "title": "gdk-pixbuf の io-tga.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005619.html",
+  "description": "gdk-pixbuf の io-tga.c は、割り当てに失敗したヒープメモリを使用するため、サービス運用妨害 (ヒープベースのバッファオーバーフローおよびアプリケーションクラッシュ) 状態にされる、および任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-005619",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7673",
+      "source": "CVE",
+      "id": "CVE-2015-7673"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7673",
+      "source": "NVD",
+      "id": "CVE-2015-7673"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnome:gdk-pixbuf",
+      "version": "2.2",
+      "vendor": "GNOME Project",
+      "product": "gdk-pixbuf"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-10-29T14:37+09:00",
+  "issued": "2015-10-29T14:37+09:00",
+  "modified": "2015-10-29T14:37+09:00"
+}

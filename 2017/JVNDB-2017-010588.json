@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010588.html",
+  "title": "Das U-Boot の AES-CBC 暗号化実装に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010588.html",
+  "description": "Das U-Boot の AES-CBC 暗号化実装には、複数の脆弱性が存在します。\r\n\r\nDENX Software Engineering が提供する Das U-Boot は、AES で暗号化されたファイルから設定を読み込むことができるデバイスブートローダです。Das U-Boot の AES-CBC 暗号化実装には、次の複数の脆弱性が存在します。\r\n\r\nCBC モードで使用する初期化ベクトルの値がランダムでない (CWE-329) - CVE-2017-3225\r\nDas U-Boot の AES-CBC 暗号化では初期化ベクトルの値として 0 を使用しています。攻撃者は Das U-Boot で作成された暗号化データに対して辞書攻撃を行い、情報を取得する可能性があります。\r\n\r\n処理時間の違いに起因する情報漏えい (CWE-208) - CVE-2017-3226\r\nDas U-Boot の AES-CBC 暗号化処理には、暗号化された環境変数を読み込む際の処理に不備があります。\r\nDas U-Boot が使用されているデバイスへ物理的にアクセス可能な攻撃者が、細工された暗号化データを処理させることでタイミング攻撃を行うことが可能です。その結果、攻撃者によって、デバイス内のコンテンツを復号されたり、場合によっては改ざんされたりする可能性があります。",
+  "identifier": "JVNDB-2017-010588",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96769287/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96769287"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3225",
+      "source": "CVE",
+      "id": "CVE-2017-3225"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3226",
+      "source": "CVE",
+      "id": "CVE-2017-3226"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3225",
+      "source": "NVD",
+      "id": "CVE-2017-3225"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3226",
+      "source": "NVD",
+      "id": "CVE-2017-3226"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/166743",
+      "source": "CERT-VN",
+      "id": "VU#166743"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/208.html",
+      "id": "CWE-208",
+      "title": "タイミングの違いに起因する情報漏えい(CWE-208)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/329.html",
+      "id": "CWE-329",
+      "title": "CBC モードにおけるランダムな初期化ベクトルの不使用(CWE-329)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:denx:u-boot",
+      "version": "2.2",
+      "vendor": "DENX Software Engineering",
+      "product": "U-Boot"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:H/Au:N/C:C/I:C/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:P/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2019-07-24T15:54+09:00",
+  "issued": "2017-12-20T12:19+09:00",
+  "modified": "2019-07-24T15:54+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002006.html",
+  "title": "Linux Kernel の virt/kvm/ioapic.c の ioapic_deliver 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002006.html",
+  "description": "Linux Kernel の virt/kvm/ioapic.c の ioapic_deliver 関数は、kvm_irq_delivery_to_apic の戻り値を適切に検証しないため、サービス運用妨害 (ホスト OS クラッシュ) 状態にされる脆弱性が存在します。\r\n\r\nなお、影響を受けるコードは、本脆弱性が公表される前に ioapic_service 関数へ移動されました。",
+  "identifier": "JVNDB-2014-002006",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0155",
+      "source": "CVE",
+      "id": "CVE-2014-0155"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0155",
+      "source": "NVD",
+      "id": "CVE-2014-0155"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:L/Au:S/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2014-04-16T16:15+09:00",
+  "issued": "2014-04-16T16:15+09:00",
+  "modified": "2014-04-16T16:15+09:00"
+}

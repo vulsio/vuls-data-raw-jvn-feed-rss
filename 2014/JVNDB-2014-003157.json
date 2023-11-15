@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003157.html",
+  "title": "Yann Collet LZ4 におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003157.html",
+  "description": "Yann Collet LZ4 は、0x80000000 を超えるメモリの割り当てをした特定の 32-bit プラットフォーム上で使用された場合、整数オーバーフローを適切に検出しないため、サービス運用妨害 (メモリ破損) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-4611 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2014-003157",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4715",
+      "source": "CVE",
+      "id": "CVE-2014-4715"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4715",
+      "source": "NVD",
+      "id": "CVE-2014-4715"
+    },
+    {
+      "text": "http://blog.securitymouse.com/2014/07/i-was-wrong-proving-lz4-exploitable.html",
+      "source": "関連文書",
+      "id": "I Was Wrong - Proving LZ4 Exploitable With Less Than 4MB"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:yann_collet:lz4",
+      "version": "2.2",
+      "vendor": "Yann Collet",
+      "product": "LZ4"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-07-07T16:47+09:00",
+  "issued": "2014-07-07T16:47+09:00",
+  "modified": "2014-07-07T16:47+09:00"
+}

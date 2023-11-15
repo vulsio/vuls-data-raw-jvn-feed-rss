@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002839.html",
+  "title": "Linux Kernel の fs/proc/root.c におけるサービス運用妨害 (リファレンスリークおよびメモリ消費) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002839.html",
+  "description": "Linux Kernel に procfs を実装するために用いられている fs/proc/root.c は、CLONE_NEWPID クローンシステムコールと適切に対話処理しないため、サービス運用妨害 (リファレンスリークおよびメモリ消費) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002839",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2127",
+      "source": "CVE",
+      "id": "CVE-2012-2127"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2127",
+      "source": "NVD",
+      "id": "CVE-2012-2127"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-06-25T16:34+09:00",
+  "issued": "2012-06-25T16:34+09:00",
+  "modified": "2012-06-25T16:34+09:00"
+}

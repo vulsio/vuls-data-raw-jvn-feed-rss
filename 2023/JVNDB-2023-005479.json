@@ -1,0 +1,70 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-005479.html",
+  "title": "sudo project の Sudo 他複数ベンダの製品におけるエンコードおよびエスケープに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-005479.html",
+  "description": "sudo project の Sudo 他複数ベンダの製品には、エンコードおよびエスケープに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2023-005479",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-28486",
+      "source": "CVE",
+      "id": "CVE-2023-28486"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-28486",
+      "source": "NVD",
+      "id": "CVE-2023-28486"
+    },
+    {
+      "text": "https://github.com/sudo-project/sudo/commit/334daf92b31b79ce68ed75e2ee14fca265f029ca",
+      "source": "関連文書",
+      "id": "github.com (334daf92b31b79ce68ed75e2ee14fca265f029ca)"
+    },
+    {
+      "text": "https://github.com/sudo-project/sudo/releases/tag/SUDO_1_9_13",
+      "source": "関連文書",
+      "id": "github.com (SUDO_1_9_13)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202309-12",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202309-12)"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20230420-0002/",
+      "source": "関連文書",
+      "id": "security.netapp.com (ntap-20230420-0002)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/116.html",
+      "id": "CWE-116",
+      "title": "不適切なエンコード、または出力のエスケープ(CWE-116)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:netapp:active_iq_unified_manager",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "Active IQ Unified Manager"
+    },
+    {
+      "text": "cpe:/a:sudo_project:sudo",
+      "version": "2.2",
+      "vendor": "sudo project",
+      "product": "Sudo"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2023-11-08T14:36+09:00",
+  "issued": "2023-11-08T14:36+09:00",
+  "modified": "2023-11-08T14:36+09:00"
+}

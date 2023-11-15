@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002832.html",
+  "title": "Apache mod_fcgid の apr_status_t fcgid_header_bucket_read 関数における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002832.html",
+  "description": "Apache mod_fcgid の fcgid_bucket.c 内にある apr_status_t fcgid_header_bucket_read 関数は、ある特定の状況において bytewise pointer 演算を使用しないため、詳細不明な脆弱性が存在します。\r\n\r\n\r\n",
+  "identifier": "JVNDB-2010-002832",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3872",
+      "source": "CVE",
+      "id": "CVE-2010-3872"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3872",
+      "source": "NVD",
+      "id": "CVE-2010-3872"
+    },
+    {
+      "text": "http://secunia.com/advisories/42288",
+      "source": "SECUNIA",
+      "id": "SA42288"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/44900",
+      "source": "BID",
+      "id": "44900"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/63303",
+      "source": "XF",
+      "id": "63303"
+    },
+    {
+      "text": "http://osvdb.org/69275",
+      "source": "OSVDB",
+      "id": "69275"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:mod_fcgid",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache mod_fcgid"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-06-09T10:22+09:00",
+  "issued": "2011-06-09T10:22+09:00",
+  "modified": "2011-06-09T10:22+09:00"
+}

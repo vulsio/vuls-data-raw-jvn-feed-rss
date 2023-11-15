@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001594.html",
+  "title": "KDE SC の KGet 内にある KGetMetalink::File::isValidNameAttr 関数におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001594.html",
+  "description": "KDE SC の KGet 内にある ui/metalinkcreator/metalinker.cpp の KGetMetalink::File::isValidNameAttr 関数には、Metalink ファイルの file 要素内にある name 属性に関する処理に不備があるため、ディレクトリトラバーサルの脆弱性が存在します。\r\n本脆弱性は CVE-2010-1000 の修正が不完全だったことによる脆弱性です。",
+  "identifier": "JVNDB-2011-001594",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1586",
+      "source": "CVE",
+      "id": "CVE-2011-1586"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1586",
+      "source": "NVD",
+      "id": "CVE-2011-1586"
+    },
+    {
+      "text": "http://secunia.com/advisories/44124",
+      "source": "SECUNIA",
+      "id": "SA44124"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/40141",
+      "source": "BID",
+      "id": "40141"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/66826",
+      "source": "XF",
+      "id": "66826"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/1019",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-1019"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:kde:kde",
+      "version": "2.2",
+      "vendor": "KDE project",
+      "product": "KDE"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2011-05-18T18:25+09:00",
+  "issued": "2011-05-18T18:25+09:00",
+  "modified": "2011-05-18T18:25+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004097.html",
+  "title": "Exim の transports/appendfile.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004097.html",
+  "description": "Exim の transports/appendfile.c は、World-Writable sticky-bit mail ディレクトリが使用されている際、メールボックスファイルの st_nlink フィールドを検証しないため、サービス運用妨害 (DoS) 状態となる、または権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-004097",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2023",
+      "source": "CVE",
+      "id": "CVE-2010-2023"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2023",
+      "source": "NVD",
+      "id": "CVE-2010-2023"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:exim:exim",
+      "version": "2.2",
+      "vendor": "Exim Development",
+      "product": "Exim"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-06-26T16:19+09:00",
+  "issued": "2012-06-26T16:19+09:00",
+  "modified": "2012-06-26T16:19+09:00"
+}

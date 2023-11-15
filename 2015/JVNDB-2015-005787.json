@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005787.html",
+  "title": "OpenAFS の rx/rx.c における重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005787.html",
+  "description": "OpenAFS の rx/rx.c は、Rx acknowledgement (ACK) パケットを構成する際、データ構造のパディングを適切に初期化しないため、重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-005787",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7762",
+      "source": "CVE",
+      "id": "CVE-2015-7762"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7762",
+      "source": "NVD",
+      "id": "CVE-2015-7762"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openafs:openafs",
+      "version": "2.2",
+      "vendor": "OpenAFS",
+      "product": "OpenAFS"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-11-10T16:29+09:00",
+  "issued": "2015-11-10T16:29+09:00",
+  "modified": "2015-11-10T16:29+09:00"
+}

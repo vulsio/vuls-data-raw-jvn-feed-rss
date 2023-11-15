@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005114.html",
+  "title": "PHP の XMLRPC エクステンションにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005114.html",
+  "description": "PHP の XMLRPC エクステンションの libxmlrpc/xmlrpc.c の mkgmtime の実装の date_from_ISO8601 関数には、out-of-bounds read の操作に関する処理に不備があるため、バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005114",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91828320/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91828320"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3668",
+      "source": "CVE",
+      "id": "CVE-2014-3668"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3668",
+      "source": "NVD",
+      "id": "CVE-2014-3668"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-04-13T17:27+09:00",
+  "issued": "2014-10-30T15:28+09:00",
+  "modified": "2015-04-13T17:27+09:00"
+}

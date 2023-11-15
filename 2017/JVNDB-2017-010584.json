@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010584.html",
+  "title": "AssetView および AssetView PLATINUM に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010584.html",
+  "description": "株式会社ハンモックが提供する AssetView および AssetView PLATINUM には、次の2件の脆弱性が存在します。\r\n\r\n　* ハードコードされた暗号化鍵を使用している問題 (CWE-321) - CVE-2017-10866\r\n　* 入力値検査不備 (CWE-20) - CVE-2017-10867\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社リクルートテクノロジーズ　RECRUIT RED TEAM　西村宗晃 氏",
+  "identifier": "JVNDB-2017-010584",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU91625548",
+      "source": "JVN",
+      "id": "JVNVU#91625548"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-10866",
+      "source": "CVE",
+      "id": "CVE-2017-10866"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-10867",
+      "source": "CVE",
+      "id": "CVE-2017-10867"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/321.html",
+      "id": "CWE-321",
+      "title": "ハードコードされた暗号鍵の使用(CWE-321)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hammock:assetview",
+      "version": "2.2",
+      "vendor": "株式会社ハンモック",
+      "product": "AssetView"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:S/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-12-20T11:10+09:00",
+  "issued": "2017-12-20T11:10+09:00",
+  "modified": "2017-12-20T11:10+09:00"
+}

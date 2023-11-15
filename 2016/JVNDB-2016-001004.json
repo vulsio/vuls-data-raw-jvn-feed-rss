@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001004.html",
+  "title": "Ipswitch WhatsUp Gold の XML オブジェクトのデシリアライズ処理に脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001004.html",
+  "description": "Ipswitch, Inc が提供する WhatsUp Gold は、SOAP リクエスト経由で受信した XML オブジェクトのデシリアライズの際、データを適切に検証しません。\r\n\r\n信頼できないデータのデシリアライズ (CWE-502) - CVE-2015-8261\r\nWhatsUp Gold には、SOAP リクエストハンドラ DroneDeleteOldMeasurements が存在します。SOAP リクエストを介することで、シリアライズした XML オブジェクトに含まれたユーザ指定のデータがサニタイジングやエスケープ処理が行われないまま直接 SQL 文に含まれるため、結果として攻撃者が SQL インジェクションを実行することが可能となります。\r\n\r\nCWE-502: Deserialization of Untrusted Data\r\nhttp://cwe.mitre.org/data/definitions/502.html",
+  "identifier": "JVNDB-2016-001004",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU90674343/index.html",
+      "source": "JVN",
+      "id": "JVNVU#90674343"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8261",
+      "source": "CVE",
+      "id": "CVE-2015-8261"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8261",
+      "source": "NVD",
+      "id": "CVE-2015-8261"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/753264",
+      "source": "CERT-VN",
+      "id": "VU#753264"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ipswitch:whatsup_gold",
+      "version": "2.2",
+      "vendor": "Ipswitch, Inc.",
+      "product": "WhatsUp Gold"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2016-01-12T15:20+09:00",
+  "issued": "2016-01-12T15:20+09:00",
+  "modified": "2016-01-12T15:20+09:00"
+}

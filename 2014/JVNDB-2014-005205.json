@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005205.html",
+  "title": "OpenStack Identity における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005205.html",
+  "description": "OpenStack Identity (Keystone) は、ユーザと同一の ID を持つグループにロールが割り当てられた場合、適切に処理しないため、同一の ID を持つグループに割り当てられる権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005205",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0204",
+      "source": "CVE",
+      "id": "CVE-2014-0204"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0204",
+      "source": "NVD",
+      "id": "CVE-2014-0204"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2014/05/21/3",
+      "source": "関連文書",
+      "id": "[OSSA 2014-015] Keystone user and group id mismatch (CVE-2014-0204)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:keystone",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "Openstack Keystone"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-11-05T16:04+09:00",
+  "issued": "2014-11-05T16:04+09:00",
+  "modified": "2014-11-05T16:04+09:00"
+}

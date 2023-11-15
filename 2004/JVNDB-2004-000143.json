@@ -1,0 +1,87 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000143.html",
+  "title": "Linux Kernel の XFS ファイルシステムにおける情報漏洩の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000143.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nJFS (Journaled File System) 、XFS (eXternal File System)、EXT3 (Third Extended Filesystem) はいずれも、ファイルシステム内のデータ変更履歴を保存・管理するジャーナリング機能の付いたファイルシステムであり、クラッシュ時にもファイルシステムの一貫性を保ちます。\r\n\r\nLinux Kernel 2.4.25 以前/2.6.5 以前がサポートしている以下のファイルシステムには、ファイルシステムを作成、または書き込みを行った際に、一部のシステムメモリの内容を raw デバイスに書き込んでしまう問題が存在します。\r\n\r\n・JFS (CAN-2004-0181)\r\n・XFS (CAN-2004-0133)\r\n・EXT3 (CAN-2004-0177)\r\n\r\nraw デバイスの読み込み権限をもつローカルの攻撃者は、これらの問題を利用することにより、書き込まれたメモリに含まれる暗号鍵などの重要な情報を奪取できる可能性があります。",
+  "identifier": "JVNDB-2004-000143",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0133",
+      "source": "CVE",
+      "id": "CVE-2004-0133"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0133",
+      "source": "NVD",
+      "id": "CVE-2004-0133"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10152",
+      "source": "BID",
+      "id": "10152"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10151",
+      "source": "BID",
+      "id": "10151"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10143",
+      "source": "BID",
+      "id": "10143"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Apr/1009799.html",
+      "source": "SECTRACK",
+      "id": "1009799"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Apr/1009798.html",
+      "source": "SECTRACK",
+      "id": "1009798"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Apr/1009797.html",
+      "source": "SECTRACK",
+      "id": "1009797"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

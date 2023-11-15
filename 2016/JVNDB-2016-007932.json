@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007932.html",
+  "title": "pkexec における親セッションにエスケープされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007932.html",
+  "description": "pkexec には、--user nonpriv と共に使用される場合、親セッションにエスケープされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-007932",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2568",
+      "source": "CVE",
+      "id": "CVE-2016-2568"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-2568",
+      "source": "NVD",
+      "id": "CVE-2016-2568"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/116.html",
+      "id": "CWE-116",
+      "title": "不適切なエンコード、または出力のエスケープ(CWE-116)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freedesktop:polkit",
+      "version": "2.2",
+      "vendor": "freedesktop.org",
+      "product": "Polkit"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-03-30T15:47+09:00",
+  "issued": "2017-03-30T15:47+09:00",
+  "modified": "2017-03-30T15:47+09:00"
+}

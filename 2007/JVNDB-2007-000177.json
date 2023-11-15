@@ -1,0 +1,163 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000177.html",
+  "title": "Mozilla Firefox/SeaMonkey における子フレームの文字セットの継承によるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000177.html",
+  "description": "Mozilla Firefox および SeaMonkey には、文字セットが指定されていない子フレームにおいて親ウィンドウの文字セットを継承しまうため、文字セットや文字エンコーディングを指定していないサイトに対するクロスサイトスクリプティングの脆弱性が存在します。Mozilla の情報において、UTF-7 文字セットを使用しての事例が示されています。\r\n",
+  "identifier": "JVNDB-2007-000177",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0996",
+      "source": "CVE",
+      "id": "CVE-2007-0996"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-0996",
+      "source": "NVD",
+      "id": "CVE-2007-0996"
+    },
+    {
+      "text": "http://secunia.com/advisories/24395",
+      "source": "SECUNIA",
+      "id": "SA24395"
+    },
+    {
+      "text": "http://secunia.com/advisories/24290",
+      "source": "SECUNIA",
+      "id": "SA24290"
+    },
+    {
+      "text": "http://secunia.com/advisories/24287",
+      "source": "SECUNIA",
+      "id": "SA24287"
+    },
+    {
+      "text": "http://secunia.com/advisories/24205",
+      "source": "SECUNIA",
+      "id": "SA24205"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/22694",
+      "source": "BID",
+      "id": "22694"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1017702",
+      "source": "SECTRACK",
+      "id": "1017702"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/0718",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-0718"
+    },
+    {
+      "text": "http://www.hardened-php.net/advisory_032007.142.html",
+      "source": "HARDEND-PHP",
+      "id": "advisory_032007.142"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:seamonkey",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla SeaMonkey"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_optional_productivity_applications",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Optional Productivity Applications"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_desktop",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_home",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "ターボリナックス ホーム "
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2007-08-01T17:17+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-08-01T17:17+09:00"
+}

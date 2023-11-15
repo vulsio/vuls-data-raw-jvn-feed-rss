@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005431.html",
+  "title": "FFmpeg の libavfilter/vf_fps.c の filter_frame 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005431.html",
+  "description": "FFmpeg の libavfilter/vf_fps.c の filter_frame 関数は、FIFO コンテンツの可用性を適切に保証しないため、サービス運用妨害 (二重解放) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005431",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7021",
+      "source": "CVE",
+      "id": "CVE-2013-7021"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7021",
+      "source": "NVD",
+      "id": "CVE-2013-7021"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2013/11/26/7",
+      "source": "関連文書",
+      "id": "CVE Request: FFmpeg 2.1 multiple problems"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2013/12/08/3",
+      "source": "関連文書",
+      "id": "Re: CVE Request: FFmpeg 2.1 multiple problems"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-12-11T16:51+09:00",
+  "issued": "2013-12-11T16:51+09:00",
+  "modified": "2013-12-11T16:51+09:00"
+}

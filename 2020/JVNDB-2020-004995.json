@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-004995.html",
+  "title": "SWARCO TRAFFIC SYSTEMS 製 SWARCO CPU LS4000 に不適切なアクセス制御に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-004995.html",
+  "description": "SWARCO CPU LS4000 は、信号機のコントローラに組み込まれているチップソフトウェアです。SWARCO CPU LS4000 には、デバッグに使用するポートが存在し、認証なしでネットワーク経由の接続が可能です。その結果、機器へルート権限で接続可能な不適切なアクセス制御の脆弱性 (CWE-284) が存在します。\r\n",
+  "identifier": "JVNDB-2020-004995",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU90630279/",
+      "source": "JVN",
+      "id": "JVNVU#90630279"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12493",
+      "source": "CVE",
+      "id": "CVE-2020-12493"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-12493",
+      "source": "NVD",
+      "id": "CVE-2020-12493"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/Recommended-Practices",
+      "source": "ICS-CERT",
+      "id": "Recommended Practices | CISA"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/tips/ICS-TIP-12-146-01B",
+      "source": "ICS-CERT",
+      "id": "Targeted Cyber Intrusion Detection and Mitigation Strategies (Update B) | CISA"
+    },
+    {
+      "text": "https://www.us-cert.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf",
+      "source": "ICS-CERT",
+      "id": "Recommended Practice: Defense in Depth"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-154-06",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-154-06"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/269.html",
+      "id": "CWE-269",
+      "title": "不適切な権限管理(CWE-269)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:swarco:cpu_ls4000_firmware",
+      "version": "2.2",
+      "vendor": "SWARCO TRAFFIC SYSTEMS",
+      "product": "CPU LS4000"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-06-04T14:23+09:00",
+  "issued": "2020-06-04T14:23+09:00",
+  "modified": "2020-06-04T14:23+09:00"
+}

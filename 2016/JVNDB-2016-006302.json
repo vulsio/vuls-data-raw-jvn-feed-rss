@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006302.html",
+  "title": "SAP Download Manager における重要な設定情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006302.html",
+  "description": "SAP Download Manager は、Windows および Mac システム上の小さな鍵空間から暗号鍵を生成するため、重要な設定情報を取得される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を SAP Security Note 2282338 として公開しています。",
+  "identifier": "JVNDB-2016-006302",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3685",
+      "source": "CVE",
+      "id": "CVE-2016-3685"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3685",
+      "source": "NVD",
+      "id": "CVE-2016-3685"
+    },
+    {
+      "text": "https://www.coresecurity.com/advisories/sap-download-manager-password-weak-encryption",
+      "source": "関連文書",
+      "id": "SAP Download Manager Password Weak Encryption"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/798.html",
+      "id": "CWE-798",
+      "title": "ハードコードされた認証情報の使用(CWE-798)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sap:download_manager",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "SAP ダウンロードマネージャー"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2016-12-20T15:45+09:00",
+  "issued": "2016-12-20T15:45+09:00",
+  "modified": "2016-12-20T15:45+09:00"
+}

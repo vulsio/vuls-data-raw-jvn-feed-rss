@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004769.html",
+  "title": "CA Gateway Security および CA Total Defense で使用されている CA Gateway Security for HTTP の Icihttp.exe における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004769.html",
+  "description": "CA Gateway Security および CA Total Defense で使用されている CA Gateway Security for HTTP の Icihttp.exe は、URL を適切に構文解析しないため、任意のコードを実行される、またはサービス運用妨害 (ヒープメモリ破損およびデーモンクラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-004769",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2667",
+      "source": "CVE",
+      "id": "CVE-2011-2667"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2667",
+      "source": "NVD",
+      "id": "CVE-2011-2667"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ca:gateway_security",
+      "version": "2.2",
+      "vendor": "CA Technologies",
+      "product": "CA Gateway Security"
+    },
+    {
+      "text": "cpe:/a:ca:total_defense",
+      "version": "2.2",
+      "vendor": "CA Technologies",
+      "product": "total defense"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-03-27T18:43+09:00",
+  "issued": "2012-03-27T18:43+09:00",
+  "modified": "2012-03-27T18:43+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006736.html",
+  "title": "PHP における WSDL インジェクション攻撃を実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006736.html",
+  "description": "PHP の (1) php.ini-production および (2) php.ini-development の soap.wsdl_cache_dir のデフォルト設定は、/tmp ディレクトリを指定しているため、WSDL インジェクション攻撃を実行される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component (インジェクション) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/74.html",
+  "identifier": "JVNDB-2013-006736",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6501",
+      "source": "CVE",
+      "id": "CVE-2013-6501"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6501",
+      "source": "NVD",
+      "id": "CVE-2013-6501"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-08-31T17:31+09:00",
+  "issued": "2015-04-02T16:57+09:00",
+  "modified": "2015-08-31T17:31+09:00"
+}

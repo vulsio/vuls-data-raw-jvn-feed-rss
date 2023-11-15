@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-008312.html",
+  "title": "E2fsprog project の E2fsprogs 他複数ベンダの製品における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-008312.html",
+  "description": "E2fsprog project の E2fsprogs 他複数ベンダの製品には、境界外読み取りに関する脆弱性、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-008312",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-1304",
+      "source": "CVE",
+      "id": "CVE-2022-1304"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-1304",
+      "source": "NVD",
+      "id": "CVE-2022-1304"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=2069726",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (2069726)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:e2fsprogs_project:e2fsprogs",
+      "version": "2.2",
+      "vendor": "E2fsprog project",
+      "product": "E2fsprogs"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-07-25T17:29+09:00",
+  "issued": "2023-07-25T17:29+09:00",
+  "modified": "2023-07-25T17:29+09:00"
+}

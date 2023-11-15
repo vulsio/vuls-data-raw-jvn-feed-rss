@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000374.html",
+  "title": "Ethereal の SMB 解析部におけるセグメンテーションフォルトの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000374.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal 0.9.16 以前には、Sever Message Block (SMB) プロトコルと Q.931 プロトコルの取り扱いに以下のような不備が存在し、結果として Ethereal がクラッシュする問題が存在します。\r\n\r\n1.意図的に作成された SMB パケットに対し、選択した条件と同じものを表示する Display -> Match -> Selected または Display -> Prepare -> Selected の操作を行った場合、セグメンテーションフォルトが発生する\r\n\r\n2.意図的に作成された Q.931 パケットを受信した場合、Null ポインタによる参照読み出しが発生する\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成したパケットを送りつけることにより Ethereal をサービス不能状態に陥らせることが可能です。\r\n\r\n尚、この問題を利用した任意のコード実行の可能性については、現時点では未詳です。",
+  "identifier": "JVNDB-2003-000374",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-1012",
+      "source": "CVE",
+      "id": "CVE-2003-1012"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-1012",
+      "source": "NVD",
+      "id": "CVE-2003-1012"
+    },
+    {
+      "text": "http://secunia.com/advisories/10424/",
+      "source": "SECUNIA",
+      "id": "SA10424"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9248",
+      "source": "BID",
+      "id": "9248"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9249",
+      "source": "BID",
+      "id": "9249"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

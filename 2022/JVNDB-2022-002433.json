@@ -1,0 +1,166 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002433.html",
+  "title": "AES-NI アセンブリ最適化実装を使用する 32 ビット x86 プラットフォームにおける、メモリ内のデータが公開される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002433.html",
+  "description": "AES-NI アセンブリ最適化実装を使用する 32 ビット x86 プラットフォームには、AES OCB モードの際、状況によってはデータ全体が暗号化されないため、メモリ内のデータが公開される脆弱性が存在します。",
+  "identifier": "JVNDB-2022-002433",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96381485/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96381485"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU90782730/",
+      "source": "JVN",
+      "id": "JVNVU#90782730"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU99464755/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99464755"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-2097",
+      "source": "CVE",
+      "id": "CVE-2022-2097"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-2097",
+      "source": "NVD",
+      "id": "CVE-2022-2097"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-23-017-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-017-03"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-166-11",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-166-11"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/326.html",
+      "id": "CWE-326",
+      "title": "不適切な暗号強度(CWE-326)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:advanced_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "日立アドバンストサーバ HA8000V シリーズ"
+    },
+    {
+      "text": "cpe:/a:hitachi:device_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Device Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:tuning_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Tuning Manager"
+    },
+    {
+      "text": "cpe:/a:nec:spoolserver_reportfiling",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SpoolServer/ReportFiling"
+    },
+    {
+      "text": "cpe:/a:nec:witchymail",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WitchyMail"
+    },
+    {
+      "text": "cpe:/a:netapp:active_iq_unified_manager",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "Active IQ Unified Manager"
+    },
+    {
+      "text": "cpe:/a:netapp:clustered_data_ontap_antivirus_connector",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "Clustered Data ONTAP Antivirus Connector"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/h:nec:univerge",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "UNIVERGE"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:nec:nec_cyber_security_platform",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NEC Cyber Security Platform"
+    },
+    {
+      "text": "cpe:/o:netapp:h300s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H300S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h410c_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H410C ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h410s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H410S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h500s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H500S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h700s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H700S ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2023-07-20T15:39+09:00",
+  "issued": "2022-09-27T16:14+09:00",
+  "modified": "2023-07-20T15:39+09:00"
+}

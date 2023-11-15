@@ -1,0 +1,86 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001785.html",
+  "title": "Oracle Java SE および JavaFX の Java Runtime Environment におけるヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001785.html",
+  "description": "Oracle Java SE および JavaFX の Java Runtime Environment (JRE) には、JavaFX に関する処理に不備があるため、ヒープベースのバッファオーバーフローの脆弱性が存在します。\r\n\r\n本脆弱性は、CanSecWest 2013 の Pwn2Own コンペティションにおいて実証されました。",
+  "identifier": "JVNDB-2013-001785",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA13-107A/index.html",
+      "source": "JVN",
+      "id": "JVNTA13-107A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0402",
+      "source": "CVE",
+      "id": "CVE-2013-0402"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0402",
+      "source": "NVD",
+      "id": "CVE-2013-0402"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20130417-jre.html",
+      "source": "IPA CFA",
+      "id": "Oracle Java の脆弱性対策について(CVE-2013-2383等)"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2013/at130021.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2013-0021"
+    },
+    {
+      "text": "https://www.us-cert.gov/ncas/alerts/TA13-107A/",
+      "source": "CERT-TA",
+      "id": "TA13-107A"
+    },
+    {
+      "text": "http://h30499.www3.hp.com/t5/HP-Security-Research-Blog/Pwn2Own-2013/ba-p/5981157",
+      "source": "関連文書",
+      "id": "Pwn2Own 2013"
+    },
+    {
+      "text": "http://www.zdnet.com/pwn2own-down-go-all-the-browsers-7000012283/",
+      "source": "関連文書",
+      "id": "Pwn2Own: Down go all the browsers - ZDNet"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:oracle:javafx",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "JavaFX"
+    },
+    {
+      "text": "cpe:/a:oracle:jdk",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "JDK"
+    },
+    {
+      "text": "cpe:/a:oracle:jre",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "JRE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-08-12T17:55+09:00",
+  "issued": "2013-03-11T16:48+09:00",
+  "modified": "2013-08-12T17:55+09:00"
+}

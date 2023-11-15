@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009954.html",
+  "title": "Host Engineering 製 ECOM100 Module に不適切な入力検証の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009954.html",
+  "description": "Host Engineering 社が提供する ECOM100 Moduke には不適切な入力検証の脆弱性が存在します。\r\n\r\nHosting Engineering 社が提供する ECOM100 Module は、Hosting Engineering 製の機器でイーサネットを使用したデータ通信を可能にするための拡張モジュールです。ECOM100 Module には、当該製品に組み込まれた Web サーバ経由で機器の設定を行う際、クライアント側でしか入力値の検証がされない、不適切な入力検証の脆弱性 (CWE-20) が存在します。",
+  "identifier": "JVNDB-2020-009954",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU98190554",
+      "source": "JVN",
+      "id": "JVNVU#98190554"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25195",
+      "source": "CVE",
+      "id": "CVE-2020-25195"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-20-345-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-345-02"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hostengineering:h0_ecom100",
+      "version": "2.2",
+      "vendor": "Host Engineering",
+      "product": "H0-ECOM100 モジュール"
+    },
+    {
+      "text": "cpe:/a:hostengineering:h2_ecom100",
+      "version": "2.2",
+      "vendor": "Host Engineering",
+      "product": "H2-ECOM100 モジュール"
+    },
+    {
+      "text": "cpe:/a:hostengineering:h4_ecom100",
+      "version": "2.2",
+      "vendor": "Host Engineering",
+      "product": "H4-ECOM100 モジュール"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2020-12-14T17:21+09:00",
+  "issued": "2020-12-14T17:21+09:00",
+  "modified": "2020-12-14T17:21+09:00"
+}

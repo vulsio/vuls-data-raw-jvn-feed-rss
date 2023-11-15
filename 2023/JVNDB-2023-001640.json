@@ -1,0 +1,30 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001640.html",
+  "title": "OpenSSL の64ビット ARM 向け AES-XTS 実装における入力バッファ外読み込みの脆弱性 (Security Advisory [20th April 2023])",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001640.html",
+  "description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20230420.txt\" target=\"blank\">OpenSSL Security Advisory [20th April 2023]</a> （Input buffer over-read in AES-XTS implementation on 64 bit ARM (CVE-2023-1255)）が公開されました。\r\n\r\n深刻度 - 低（Severity: Low）\r\nOpenSSL の 64 ビット ARM プラットフォーム用 AES-XTS 復号処理の実装に、暗号文のサイズが 5 の倍数プラス 4 バイト（例えば、144 バイトや 1024 バイト）の場合に暗号文バッファの末尾を超えて読み込みをする脆弱性があります。\r\n",
+  "identifier": "JVNDB-2023-001640",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91545757/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91545757"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-1255",
+      "source": "CVE",
+      "id": "CVE-2023-1255"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    }
+  ],
+  "date": "2023-10-04T14:31+09:00",
+  "issued": "2023-04-25T13:56+09:00",
+  "modified": "2023-10-04T14:31+09:00"
+}

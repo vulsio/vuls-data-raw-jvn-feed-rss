@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009202.html",
+  "title": "OneDrive for Windows における権限を昇格される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009202.html",
+  "description": "OneDrive for Windows には、シンボリックリンクを適切に処理しない場合、権限を昇格される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を「OneDrive for Windows の特権の昇格の脆弱性」として公開しています。\r\n\r\n本脆弱性は、CVE-2020-16851、CVE-2020-16852 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2020-009202",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16853",
+      "source": "CVE",
+      "id": "CVE-2020-16853"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-16853",
+      "source": "NVD",
+      "id": "CVE-2020-16853"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20200909-ms.html",
+      "source": "IPA CFA",
+      "id": "Microsoft 製品の脆弱性対策について(2020年9月)"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2020/at200036.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2020-0036"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+      "id": "CWE-59",
+      "title": "リンク解釈の問題(CWE-59)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:onedrive",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft OneDrive"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2020-10-23T11:13+09:00",
+  "issued": "2020-10-23T11:13+09:00",
+  "modified": "2020-10-23T11:13+09:00"
+}

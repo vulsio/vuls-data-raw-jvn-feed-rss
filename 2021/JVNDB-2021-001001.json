@@ -1,0 +1,80 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001001.html",
+  "title": "Delta Electronics 製 HMI ソフトウェアに複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001001.html",
+  "description": "Delta Electronics が提供する HMI 関連製品 DOPSoft および CNCSoft ScreenEditor には次の複数の脆弱性が存在します。\r\n\r\nDOPSoft\r\n\r\n　* 境界外書き込み (CWE-787) - CVE-2020-27275\r\n　* 信頼できないポインタ参照 (CWE-822) - CVE-2020-27277\r\n\r\nCNCSoft ScreenEditor\r\n\r\n　* バッファオーバーフロー (CWE-121) - CVE-2020-27281",
+  "identifier": "JVNDB-2021-001001",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU91044574",
+      "source": "JVN",
+      "id": "JVNVU#91044574"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27275",
+      "source": "CVE",
+      "id": "CVE-2020-27275"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27277",
+      "source": "CVE",
+      "id": "CVE-2020-27277"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27281",
+      "source": "CVE",
+      "id": "CVE-2020-27281"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-005-05",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-005-05"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-005-06",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-005-06"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/121.html",
+      "id": "CWE-121",
+      "title": "スタックベースのバッファオーバーフロー(CWE-121)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/822.html",
+      "id": "CWE-822",
+      "title": "信頼できないポインタデリファレンス(CWE-822)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:deltaww:cncsoft_screeneditor",
+      "version": "2.2",
+      "vendor": "Delta Electronics, INC.",
+      "product": "CNCSoft ScreenEditor"
+    },
+    {
+      "text": "cpe:/a:deltaww:dopsoft",
+      "version": "2.2",
+      "vendor": "Delta Electronics, INC.",
+      "product": "DOPSoft"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-01-07T16:38+09:00",
+  "issued": "2021-01-07T16:38+09:00",
+  "modified": "2021-01-07T16:38+09:00"
+}

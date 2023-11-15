@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000253.html",
+  "title": "PHP の session.c におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000253.html",
+  "description": "PHP のセッションの初期化に関連する処理において、セッション名に使用される特定の文字に対するチェックが不適切であるため、クロスサイトスクリプティングの脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000253",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3016",
+      "source": "CVE",
+      "id": "CVE-2006-3016"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3016",
+      "source": "NVD",
+      "id": "CVE-2006-3016"
+    },
+    {
+      "text": "http://secunia.com/advisories/21328/",
+      "source": "SECUNIA",
+      "id": "SA21328"
+    },
+    {
+      "text": "http://secunia.com/advisories/19927",
+      "source": "SECUNIA",
+      "id": "SA19927"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

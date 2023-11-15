@@ -1,0 +1,70 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-000017.html",
+  "title": "IBM WebSphere Application Server におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-000017.html",
+  "description": "IBM WebSphere Application Server (WAS) には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nIBM WebSphere Application Server には、Java Runtime Environment (JRE) の問題に起因するサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\n以下、開発者からのコメントです。\r\nWAS を内部的に含んでいる他のIBMソフトウェア製品においても、WASが対象バージョンに該当する場合は、修正プログラムを適用することが必要です。具体的には、WebSphere Process Server(WPS)、WebSphere Enterprise Service Bus (WESB)、WebSphere Virtual Enterprise (WVE)、WebSphere Commerce等が該当いたします。 なお、IBM HTTP Server はこの問題の影響は受けません。",
+  "identifier": "JVNDB-2011-000017",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN26301278/index.html",
+      "source": "JVN",
+      "id": "JVN#26301278"
+    },
+    {
+      "text": "http://jvn.jp/tr/JVNTR-2011-02",
+      "source": "JVNTR",
+      "id": "JVNTR-2011-02"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4476",
+      "source": "CVE",
+      "id": "CVE-2010-4476"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4476",
+      "source": "NVD",
+      "id": "CVE-2010-4476"
+    },
+    {
+      "text": "http://secunia.com/advisories/43295",
+      "source": "SECUNIA",
+      "id": "SA43295"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1025062",
+      "source": "SECTRACK",
+      "id": "1025062"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hp:systems_insight_manager",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP Systems Insight Manager"
+    },
+    {
+      "text": "cpe:/a:ibm:websphere_application_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Application Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2018-02-07T17:09+09:00",
+  "issued": "2011-03-04T12:01+09:00",
+  "modified": "2018-02-07T17:09+09:00"
+}

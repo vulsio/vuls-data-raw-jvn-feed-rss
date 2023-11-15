@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002207.html",
+  "title": "Asterisk Open Source および Certified Asterisk における任意の SSL サーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002207.html",
+  "description": "Asterisk Open Source および Certified Asterisk は、SIP TLS デバイスを登録する際、X.509 証明書のサブジェクトの Common Name (CN) フィールド内のドメイン名の NULL バイトを適切に処理しないため、任意の SSL サーバになりすまされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-002207",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3008",
+      "source": "CVE",
+      "id": "CVE-2015-3008"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3008",
+      "source": "NVD",
+      "id": "CVE-2015-3008"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2015-0153.html",
+      "source": "関連文書",
+      "id": "MGASA-2015-0153"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:digium:certified_asterisk",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Certified Asterisk"
+    },
+    {
+      "text": "cpe:/a:digium:open_source",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk Open Source"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2015-05-20T17:49+09:00",
+  "issued": "2015-04-15T12:31+09:00",
+  "modified": "2015-05-20T17:49+09:00"
+}

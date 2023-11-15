@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006498.html",
+  "title": "IBM InfoSphere BigInsights などの製品で使用される Apache Hive の HiveServer2 の LDAP の実装における認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006498.html",
+  "description": "IBM InfoSphere BigInsights およびその他の製品で使用される Apache Hive の HiveServer2 の LDAP の実装は、単純な非認証および匿名のバインドの設定を誤って処理するため、認証を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-006498",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1772",
+      "source": "CVE",
+      "id": "CVE-2015-1772"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1772",
+      "source": "NVD",
+      "id": "CVE-2015-1772"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:hive",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Hive"
+    },
+    {
+      "text": "cpe:/a:ibm:infosphere_biginsights",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM InfoSphere BigInsights"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2015-12-24T13:43+09:00",
+  "issued": "2015-12-24T13:43+09:00",
+  "modified": "2015-12-24T13:43+09:00"
+}

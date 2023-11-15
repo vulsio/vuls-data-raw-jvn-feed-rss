@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001018.html",
+  "title": "Rockwell Automation 製 MicroLogix 1400 にバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001018.html",
+  "description": "Rockwell Automation 社が提供する MicroLogix 1400 には、受信した Modbus パケットの処理に起因したバッファオーバーフローの脆弱性 (CWE-120) が存在します。\r\n認証されていない遠隔の第三者によって、当該製品に細工した Modbus パケットを送信されることで、レジスタ内のランダムな値を取得または変更される可能性があります。その結果、バッファオーバーフローの発生、および FAULT LED が赤く点滅し、通信が失われる可能性があります。",
+  "identifier": "JVNDB-2021-001018",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU93359735",
+      "source": "JVN",
+      "id": "JVNVU#93359735"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22659",
+      "source": "CVE",
+      "id": "CVE-2021-22659"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-033-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-033-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/120.html",
+      "id": "CWE-120",
+      "title": "古典的バッファオーバーフロー(CWE-120)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:rockwellautomation:micrologix",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "MicroLogix"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:H"
+    }
+  ],
+  "date": "2021-03-25T16:28+09:00",
+  "issued": "2021-02-04T14:21+09:00",
+  "modified": "2021-03-25T16:28+09:00"
+}

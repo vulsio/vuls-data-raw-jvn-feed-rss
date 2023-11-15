@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007032.html",
+  "title": "GStreamer の NSF デコーダの ROM マッピングにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007032.html",
+  "description": "GStreamer の NSF デコーダの ROM マッピングには、サービス運用妨害 (境界外読み取りまたは書き込み) 状態にされ、任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-007032",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9447",
+      "source": "CVE",
+      "id": "CVE-2016-9447"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9447",
+      "source": "NVD",
+      "id": "CVE-2016-9447"
+    },
+    {
+      "text": "http://scarybeastsecurity.blogspot.jp/2016/11/0day-exploit-compromising-linux-desktop.html",
+      "source": "関連文書",
+      "id": "[0day] [exploit] Compromising a Linux desktop using... 6502 processor opcodes on the NES?!"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gstreamer_project:gstreamer",
+      "version": "2.2",
+      "vendor": "GStreamer",
+      "product": "GStreamer"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-02-08T10:06+09:00",
+  "issued": "2017-02-08T10:06+09:00",
+  "modified": "2017-02-08T10:06+09:00"
+}

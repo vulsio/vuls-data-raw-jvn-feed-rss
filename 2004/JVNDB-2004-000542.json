@@ -1,0 +1,83 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000542.html",
+  "title": "PHP の realpath() 関数におけるファイルパス長の制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000542.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPHP 4.3.9 以前、PHP 5.0.2 以前には、以下のセキュリティ問題が存在します。 \r\n\r\n・shmop_write() 関数に不正なメモリ領域への書き込みアクセスが発生する問題 (CAN-2004-1018) \r\n\r\n・pack() 関数 および unpack() 関数に整数オーバフローが発生する問題 (CAN-2004-1018) \r\n\r\n・unserialize() 関数に、メモリの二重開放解放の問題、および無効なメモリ参照によりアンダーフローが発生する問題 (CAN-2004-1019) \r\n\r\n・addslashes() 関数に、終端文字のエスケープ処理が不適切である問題 (CAN-2004-1020) \r\n\r\n・Web サーバがマルチスレッドで稼動している場合に、safe_mode_exec_dir でのプログラム実行関数の制限が回避される問題 (CAN-2004-1063) \r\n\r\n・ファイルパス長のチェックを回避し、任意のファイルへアクセス可能な問題 (CAN-2004-1064) \r\n\r\n・exif_read_data() 関数で過度に長いセクション名を取り扱うと、オーバーフローが発生する問題 (CAN-2004-1065) \r\n\r\n・magic_quotes_gpc の設定における不備のため、許可されていない上位のディレクトリにファイルをアップロード可能な問題 \r\n\r\nこれらの問題を利用するリモート/ローカルの攻撃者は、結果として標的システムの重要な情報を奪取する、あるいは任意のコードを実行できる可能性があります。",
+  "identifier": "JVNDB-2004-000542",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1064",
+      "source": "CVE",
+      "id": "CVE-2004-1064"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1064",
+      "source": "NVD",
+      "id": "CVE-2004-1064"
+    },
+    {
+      "text": "http://secunia.com/advisories/13481/",
+      "source": "SECUNIA",
+      "id": "SA13481"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11992",
+      "source": "BID",
+      "id": "11992"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11981",
+      "source": "BID",
+      "id": "11981"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11964",
+      "source": "BID",
+      "id": "11964"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

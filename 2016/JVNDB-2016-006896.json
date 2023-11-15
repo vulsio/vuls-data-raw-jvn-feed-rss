@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006896.html",
+  "title": "Smack の XMPP ライブラリにおける TLS の保護を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006896.html",
+  "description": "Smack の XMPP ライブラリには、競合状態により、SecurityMode.required TLS が設定されている際、TLS の保護を回避され、クライアント認証の平文の使用を誘発される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006896",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10027",
+      "source": "CVE",
+      "id": "CVE-2016-10027"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-10027",
+      "source": "NVD",
+      "id": "CVE-2016-10027"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:igniterealtime:smack",
+      "version": "2.2",
+      "vendor": "Ignite Realtime",
+      "product": "Smack API"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2017-01-30T11:40+09:00",
+  "issued": "2017-01-30T11:40+09:00",
+  "modified": "2017-01-30T11:40+09:00"
+}

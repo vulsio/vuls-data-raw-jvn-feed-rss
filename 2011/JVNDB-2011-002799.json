@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002799.html",
+  "title": "Mozilla Firefox および Thunderbird における同一生成元ポリシーを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002799.html",
+  "description": "Mozilla Firefox および Thunderbird には、Azure グラフィックスバックエンドと同時に、Direct2D API が Windows 上で使用される時、同一生成元ポリシー (Same origin policy) を回避される、および異なるドメインから重要なイメージデータを取得される脆弱性が存在します。\r\n本脆弱性は、CVE-2011-2986 のリグレッションに起因した脆弱性です。",
+  "identifier": "JVNDB-2011-002799",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3649",
+      "source": "CVE",
+      "id": "CVE-2011-3649"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3649",
+      "source": "NVD",
+      "id": "CVE-2011-3649"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:thunderbird",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Thunderbird"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2011-11-14T11:39+09:00",
+  "issued": "2011-11-14T11:39+09:00",
+  "modified": "2011-11-14T11:39+09:00"
+}

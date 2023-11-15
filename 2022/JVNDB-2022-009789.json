@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-009789.html",
+  "title": "DENX Software Engineering の U-Boot 他複数ベンダの製品における古典的バッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-009789.html",
+  "description": "DENX Software Engineering の U-Boot 他複数ベンダの製品には、古典的バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2022-009789",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-30767",
+      "source": "CVE",
+      "id": "CVE-2022-30767"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-30767",
+      "source": "NVD",
+      "id": "CVE-2022-30767"
+    },
+    {
+      "text": "https://github.com/u-boot/u-boot/commit/5d14ee4e53a81055d34ba280cb8fd90330f22a96",
+      "source": "関連文書",
+      "id": "github.com (5d14ee4e53a81055d34ba280cb8fd90330f22a96)"
+    },
+    {
+      "text": "https://lists.denx.de/pipermail/u-boot/2022-May/483952.html",
+      "source": "関連文書",
+      "id": "lists.denx.de (483952)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DF62MVMH3QUGMBDCB3DY2ERQ6EBHTADB/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (DF62MVMH3QUGMBDCB3DY2ERQ6EBHTADB)"
+    },
+    {
+      "text": "https://securitylab.github.com/research/uboot-rce-nfs-vulnerability/",
+      "source": "関連文書",
+      "id": "securitylab.github.com (uboot-rce-nfs-vulnerability)"
+    },
+    {
+      "text": "https://source.denx.de/u-boot/u-boot/-/commit/bdbf7a05e26f3c5fd437c99e2755ffde186ddc80",
+      "source": "関連文書",
+      "id": "source.denx.de (bdbf7a05e26f3c5fd437c99e2755ffde186ddc80)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/120.html",
+      "id": "CWE-120",
+      "title": "古典的バッファオーバーフロー(CWE-120)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:denx:u-boot",
+      "version": "2.2",
+      "vendor": "DENX Software Engineering",
+      "product": "U-Boot"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-08-08T17:18+09:00",
+  "issued": "2023-08-08T17:18+09:00",
+  "modified": "2023-08-08T17:18+09:00"
+}

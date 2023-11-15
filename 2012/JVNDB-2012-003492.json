@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003492.html",
+  "title": "Puppet および Puppet Enterprise におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003492.html",
+  "description": "Puppet および Puppet Enterprise の lib/puppet/reports/store.rb には、auth.conf 内の Delete が有効である場合、ディレクトリトラバーサルの脆弱性が存在します。",
+  "identifier": "JVNDB-2012-003492",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3865",
+      "source": "CVE",
+      "id": "CVE-2012-3865"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3865",
+      "source": "NVD",
+      "id": "CVE-2012-3865"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:puppetlabs:puppet",
+      "version": "2.2",
+      "vendor": "Puppet",
+      "product": "Puppet"
+    },
+    {
+      "text": "cpe:/a:puppetlabs:puppet_enterprise",
+      "version": "2.2",
+      "vendor": "Puppet",
+      "product": "Puppet Enterprise"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.5",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:M/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-09-14T16:01+09:00",
+  "issued": "2012-08-09T11:45+09:00",
+  "modified": "2012-09-14T16:01+09:00"
+}

@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002998.html",
+  "title": "Mesa の X.org libGLX における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002998.html",
+  "description": "Mesa の X.org libGLX には、(1) XF86DRIOpenConnection および (2) XF86DRIGetClientDriverName 関数の処理に不備があるため、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002998",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1993",
+      "source": "CVE",
+      "id": "CVE-2013-1993"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1993",
+      "source": "NVD",
+      "id": "CVE-2013-1993"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2013-0190.html",
+      "source": "関連文書",
+      "id": "MGASA-2013-0190"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mesa3d:mesa",
+      "version": "2.2",
+      "vendor": "Mesa 3D",
+      "product": "Mesa"
+    },
+    {
+      "text": "cpe:/a:x.org:libglx",
+      "version": "2.2",
+      "vendor": "X.Org Foundation",
+      "product": "libglx"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-10-31T17:45+09:00",
+  "issued": "2013-06-18T14:28+09:00",
+  "modified": "2013-10-31T17:45+09:00"
+}

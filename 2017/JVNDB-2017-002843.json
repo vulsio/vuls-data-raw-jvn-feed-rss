@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002843.html",
+  "title": "Linux Kernel の fs/crypto/ におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002843.html",
+  "description": "Linux Kernel の fs/crypto/ には、解放済みメモリの使用 (Use-after-free) により、サービス運用妨害 (NULL ポインタデリファレンス) 状態にされる、または権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2017-002843",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7374",
+      "source": "CVE",
+      "id": "CVE-2017-7374"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-7374",
+      "source": "NVD",
+      "id": "CVE-2017-7374"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/416.html",
+      "id": "CWE-416",
+      "title": "解放済みメモリの使用(CWE-416)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-05-02T10:58+09:00",
+  "issued": "2017-05-02T10:58+09:00",
+  "modified": "2017-05-02T10:58+09:00"
+}

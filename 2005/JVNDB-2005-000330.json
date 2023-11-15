@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000330.html",
+  "title": "Linux Kernel の ip_vs_conn_flush() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000330.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には、以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n1) 無線 LAN アクセスポイントを実装する ROSE (Radionet Open Source Environment) 機能において、rose_rt_ioctl() 関数で ndigis 引数の境界チェックを適切に行わないため out-of-bounds エラーを生じる問題が存在します。(CVE-2005-3273) \r\n\r\n現時点では詳細は不明ですが、攻撃者に悪用された場合、システムがサービス不能状態に陥る可能性があります。 \r\n\r\n2) SMP (対称型マルチプロセッサ) を構成しているシステムにおいて、IPVS 機能における ip_vs_conn_flush() 関数で競合状態が発生し、Null ポインタデリファレンスが発生する問題が存在します。(CVE-2005-3274) \r\n\r\nローカルの攻撃者に悪用された場合、カーネルクラッシュが生じ、システムがサービス不能状態に陥る可能性があります。",
+  "identifier": "JVNDB-2005-000330",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3274",
+      "source": "CVE",
+      "id": "CVE-2005-3274"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3274",
+      "source": "NVD",
+      "id": "CVE-2005-3274"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15528",
+      "source": "BID",
+      "id": "15528"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13886",
+      "source": "BID",
+      "id": "13886"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

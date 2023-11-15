@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000952.html",
+  "title": "GNOME Display Manager の .ICEauthority ファイル処理に関する競合状態の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000952.html",
+  "description": "GNOME Display Manager (GDM) の daemon/slave.c には、.ICEauthority ファイルにおける所有者およびパーミッションを変更する処理の際に、競合状態が発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000952",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1057",
+      "source": "CVE",
+      "id": "CVE-2006-1057"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1057",
+      "source": "NVD",
+      "id": "CVE-2006-1057"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17635",
+      "source": "BID",
+      "id": "17635"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/26092",
+      "source": "XF",
+      "id": "26092"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/1465",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-1465"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnome:gnome_display_manager",
+      "version": "2.2",
+      "vendor": "GNOME Project",
+      "product": "GNOME Display Manager"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.7",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-05-22T17:58+09:00",
+  "issued": "2007-05-22T17:58+09:00",
+  "modified": "2007-05-22T17:58+09:00"
+}

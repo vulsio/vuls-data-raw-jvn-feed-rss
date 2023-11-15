@@ -1,0 +1,87 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000098.html",
+  "title": "MySQL の mysql_real_connect() 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000098.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMySQL 3.23.58 以前/4.0.20 以前には、以下のような複数のセキュリティ問題が存在します。 \r\n\r\n・ALTER TABLE RENAME のセキュリティ制限回避の問題 (CAN-2004-0835) \r\nテーブル名を変更する ALTER TABLE RENAME 実行時に、新規テーブルではなく、古いテーブルの CREATE/INSERT 権限が参照されるため、セキュリティ制限が回避される問題が存在します。 \r\n\r\n・mysql_real_connect() 関数のバッファオーバーフローの問題 (CAN-2004-0836) \r\nmysql_real_connect() 関数には、ホスト名の逆引きにより DNS サーバによって返された IP アドレスの長さのチェックに不備があるため、バッファオーバーフローが発生する問題が存在します。リモートの攻撃者の用意した悪意ある DNS サーバを介して任意のコードが実行される可能性があります。 \r\n\r\n・MERGE テーブルに ALTER を実行時にクラッシュする問題 (CAN-2004-0837) \r\n同時に複数のスレッドが、MERGE テーブルの UNION を変更するために ALTER を実行すると、MySQL サーバがクラッシュし、サービス不能状態に陥る可能性があります。 \r\n\r\nこれらの問題を利用する攻撃者は、データベースに対して不正行為を実行する、あるいは MySQL サーバをサービス不能状態に陥らせる、潜在的に任意のコードを実行されてしまう可能性があります。 \r\n\r\nまた、\"_\" (アンダースコア) が含まれているデータベース名に対する権限チェックの問題 (CAN-2004-0957) のため、データベースに対して権限を所有するローカルユーザにより、類似する名前を持つ他のデータベースの権限を取得されてしまう可能性についても報告されています。 \r\n\r\n尚、Red Hat Enterprise Linux 3 に関しては、mysql-server パッケージが同梱されていないため、これらの問題の影響は受けません。 \r\nただし、Red Hat Network の Red Hat Enterprise Linux 3 Extras channel より、mysql-server パッケージを入手し使用している場合には、問題の影響を受けます。",
+  "identifier": "JVNDB-2004-000098",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0836",
+      "source": "CVE",
+      "id": "CVE-2004-0836"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0836",
+      "source": "NVD",
+      "id": "CVE-2004-0836"
+    },
+    {
+      "text": "http://secunia.com/advisories/12783/",
+      "source": "SECUNIA",
+      "id": "SA12783"
+    },
+    {
+      "text": "http://secunia.com/advisories/12305/",
+      "source": "SECUNIA",
+      "id": "SA12305"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11435",
+      "source": "BID",
+      "id": "11435"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10981",
+      "source": "BID",
+      "id": "10981"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11357",
+      "source": "BID",
+      "id": "11357"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mysql:mysql",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

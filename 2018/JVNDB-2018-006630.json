@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006630.html",
+  "title": "Linux の IP 実装におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006630.html",
+  "description": "Linux カーネルの IP 実装には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nリソース枯渇の脆弱性 (CWE-400) - CVE-2018-5391\r\nLinux カーネルの IP フラグメント再構築を行う実装には、特別に細工されたパケット列の処理によって高負荷状態になる問題が報告されています。結果としてサービス運用妨害 (DoS) 攻撃を受ける可能性が存在します。\r\n\r\nIP フラグメントの再構築処理に対しては、何年にもわたって様々な脆弱性が発見・修正されていますが、本脆弱性 (CVE-2018-5391) は、Linux カーネル内に実装されている IP フラグメントキューのサイズが大きくなったことで、現実的な攻撃が可能になったものです。",
+  "identifier": "JVNDB-2018-006630",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU93630542/",
+      "source": "JVN",
+      "id": "JVNVU#93630542"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU95499848/",
+      "source": "JVN",
+      "id": "JVNVU#95499848"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5391",
+      "source": "CVE",
+      "id": "CVE-2018-5391"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5391",
+      "source": "NVD",
+      "id": "CVE-2018-5391"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/641765",
+      "source": "CERT-VN",
+      "id": "VU#641765"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-105-05",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-105-05"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/400.html",
+      "id": "CWE-400",
+      "title": "リソースの枯渇(CWE-400)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2020-04-21T10:32+09:00",
+  "issued": "2018-08-28T16:01+09:00",
+  "modified": "2020-04-21T10:32+09:00"
+}

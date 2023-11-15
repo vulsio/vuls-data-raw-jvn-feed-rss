@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000462.html",
+  "title": "Open-iSCSI の usr/mgmt_ipc.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000462.html",
+  "description": "Open-iSCSI (iscsi-initiator-utils) における iscsid の usr/mgmt_ipc.c にはクライアントの UID をチェックする処理に不備が存在するために、新しいコネクションの代わりに接続要求待ちの AF_LOCAL ソケットを処理してしまうことで、本来権限のない第三者に管理インターフェースにアクセスされ、iscsid をサービス運用妨害 (DoS) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000462",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3099",
+      "source": "CVE",
+      "id": "CVE-2007-3099"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-3099",
+      "source": "NVD",
+      "id": "CVE-2007-3099"
+    },
+    {
+      "text": "http://secunia.com/advisories/25679",
+      "source": "SECUNIA",
+      "id": "SA25679"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/24471",
+      "source": "BID",
+      "id": "24471"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2008-10-30T11:06+09:00",
+  "issued": "2007-06-26T15:35+09:00",
+  "modified": "2008-10-30T11:06+09:00"
+}

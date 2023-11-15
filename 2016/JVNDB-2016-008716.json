@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-008716.html",
+  "title": "McAfee VirusScan Enterprise for Windows にメモリ破損の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-008716.html",
+  "description": "McAfee VirusScan Enterprise for Windows に同梱されている COM オブジェクト scriptproxy には、メモリ破損の脆弱性が存在します。\r\n\r\n初期化されていないポインタのアクセス (CWE-824)\r\n報告者によると、Internet Explorer から HTML ドキュメント内の CLSID に基づいて McAfee VirusScan Enterprise for Windows に同梱されている COM オブジェクト scriptproxy を含む DLL を読み込もうとすると、アクセス違反によって DLL がクラッシュします。結果としてサービス運用妨害 (DoS) 状態が引き起こされる可能性があります。\r\n\r\nCWE-824: Access of Uninitialized Pointer\r\nhttps://cwe.mitre.org/data/definitions/824.html\r\n\r\nMcAfee の親会社である Intel Security は、CERT/CC に対して次のように述べています：\r\n\r\n　　\"Intel Security takes any claim of this kind very seriously. We have requested and are awaiting the information we require to conduct our assessment. We look forward to receiving this information.\r\n　　(Intel Security はこのような報告をすべて真摯に受け止めています。現在は、評価に必要な情報の提供を依頼し、回答を待っている状況です。)\"\r\n\r\nCERT/CC では、Windows 7 の Internet Explorer 11 上の McAfee VirusScan Enterprise for Windows 8.8 patch 7 で本脆弱性が再現することを独自に確認しており、2016年6月に McAfee へ報告しています。その他のバージョンの Internet Explorer が影響を受けるかは不明です。CERT/CC は、引き続き Intel Security および McAfee と調整を進めています。\r\n\r\n本脆弱性は CERT/CC Vulnerability Note VU#245327 の一部として公開されていましたが、対象製品に関する混乱を防ぐため、独立した Vulnerability Notes として分離されました。\r\n\r\nCERT/CC Vulnerability Note VU#245327\r\nhttp://www.kb.cert.org/vuls/id/245327\r\n\r\nJPCERT/CCからの補足情報\r\n本アドバイザリは、2016年12月14日から「McAfee VirusScan Enterprise for Windows における NULL ポインタ参照の脆弱性」として公表していましたが、CERT/CC Vulnerability Notes VU#535111 の更新にあわせ、「McAfee VirusScan Enterprise for Windows にメモリ破損の脆弱性」として内容を刷新しています。\r\n\r\nCERT/CC Vulnerability Note VU#535111\r\nhttp://www.kb.cert.org/vuls/id/535111",
+  "identifier": "JVNDB-2016-008716",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU98579581/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98579581"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/535111",
+      "source": "CERT-VN",
+      "id": "VU#535111"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/245327",
+      "source": "CERT-VN",
+      "id": "VU#245327"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/824.html",
+      "id": "CWE-824",
+      "title": "初期化されていないポインタのアクセス(CWE-824)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mcafee:virusscan_enterprise",
+      "version": "2.2",
+      "vendor": "マカフィー",
+      "product": "McAfee VirusScan Enterprise"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-08-02T14:06+09:00",
+  "issued": "2017-08-02T14:06+09:00",
+  "modified": "2017-08-02T14:06+09:00"
+}

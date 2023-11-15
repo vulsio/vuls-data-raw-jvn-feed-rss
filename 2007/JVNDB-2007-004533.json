@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004533.html",
+  "title": "OpenSSL FIPS Object Module の PRNG 実装におけるランダム性に依存する保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004533.html",
+  "description": "OpenSSL FIPS Object Module の PRNG 実装は、FIPS 自己テスト中に自動シード処理をしないため、想定よりも予測可能なランダムデータが生成されることにより、これに依存する保護メカニズムを回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2007-004533",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5502",
+      "source": "CVE",
+      "id": "CVE-2007-5502"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-5502",
+      "source": "NVD",
+      "id": "CVE-2007-5502"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/150249",
+      "source": "CERT-VN",
+      "id": "VU#150249"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openssl:fips_object_module",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "fips object module"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2012-09-25T16:59+09:00",
+  "issued": "2012-09-25T16:59+09:00",
+  "modified": "2012-09-25T16:59+09:00"
+}

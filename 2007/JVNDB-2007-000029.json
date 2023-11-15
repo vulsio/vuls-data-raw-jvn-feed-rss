@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000029.html",
+  "title": "Squid の ftp.c に関するサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000029.html",
+  "description": "Squid の squid/src/ftp.c において不備が存在するため、リモートの FTP サーバからの FTP ディレクトリリスティングに対する不正な応答メッセージを処理した際にSquid がクラッシュする脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000029",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0247",
+      "source": "CVE",
+      "id": "CVE-2007-0247"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-0247",
+      "source": "NVD",
+      "id": "CVE-2007-0247"
+    },
+    {
+      "text": "http://secunia.com/advisories/23767/",
+      "source": "SECUNIA",
+      "id": "SA23767"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/22079",
+      "source": "BID",
+      "id": "22079"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/0199",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-0199"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:squid-cache:squid",
+      "version": "2.2",
+      "vendor": "Squid-cache.org",
+      "product": "Squid"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

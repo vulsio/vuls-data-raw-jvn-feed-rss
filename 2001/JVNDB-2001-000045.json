@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000045.html",
+  "title": "Microsoft Internet Explorer の MIME 処理不備 による添付ファイル実行の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000045.html",
+  "description": "Microsoft Internet Explorer は、HTML ドキュメントを解析する際、そのドキュメントに MIME 部分が含まれている場合、MIME の種類によって実行するプログラムを判定する対応表を参照します。しかし特定の MIME 形式においてはこの処理が正しく行われず、自動的に添付ファイルを実行してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2001-000045",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0154",
+      "source": "CVE",
+      "id": "CVE-2001-0154"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2001-0154",
+      "source": "NVD",
+      "id": "CVE-2001-0154"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2004/at040002.txt",
+      "source": "JPCERT-AT",
+      "id": "2004-0002"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-2001-06.html",
+      "source": "CERT-A",
+      "id": "CA-2001-06"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/2463",
+      "source": "BID",
+      "id": "2463"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:internet_explorer",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Internet Explorer"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

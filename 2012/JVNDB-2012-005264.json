@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005264.html",
+  "title": "Services_Twitter における SSL サーバを偽装される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005264.html",
+  "description": "Services_Twitter は、サーバホスト名と X.509 証明書上の subject の Common Name (CN) または subjectAltName フィールドのドメイン名を照合しないため、SSL サーバを偽装される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-005264",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-5241",
+      "source": "CVE",
+      "id": "CVE-2011-5241"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-5241",
+      "source": "NVD",
+      "id": "CVE-2011-5241"
+    },
+    {
+      "text": "http://www.unrest.ca/peerjacking",
+      "source": "関連文書",
+      "id": "#PeerJacking - SSL Ecosystem Attacks Against Online Commerce"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:services_twitter",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "Services_Twitter"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2012-11-07T17:38+09:00",
+  "issued": "2012-11-07T17:38+09:00",
+  "modified": "2012-11-07T17:38+09:00"
+}

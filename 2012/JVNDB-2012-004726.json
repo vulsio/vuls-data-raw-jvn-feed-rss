@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004726.html",
+  "title": "PostgreSQL の contrib/xml2 におけるデータを改ざんされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004726.html",
+  "description": "PostgreSQL の contrib/xml2 内の libxslt のサポート機能は、ファイルおよび URL へのアクセスを適切に制限しないため、データを改ざんされる、重要な情報を取得される、または外部の任意のホストに対するアウトバウンドトラフィックを誘発される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004726",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU90360497/",
+      "source": "JVN",
+      "id": "JVNVU#90360497"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3488",
+      "source": "CVE",
+      "id": "CVE-2012-3488"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3488",
+      "source": "NVD",
+      "id": "CVE-2012-3488"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:postgresql:postgresql",
+      "version": "2.2",
+      "vendor": "PostgreSQL.org",
+      "product": "PostgreSQL"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2013-04-02T16:34+09:00",
+  "issued": "2012-10-05T15:43+09:00",
+  "modified": "2013-04-02T16:34+09:00"
+}

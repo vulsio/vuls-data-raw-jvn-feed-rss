@@ -1,0 +1,145 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002213.html",
+  "title": "Adobe Reader および Acrobat の複数の JavaScript メソッドに脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002213.html",
+  "description": "Adobe Reader および Acrobat には、JavaScript メソッドの実行を制限する仕組みに脆弱性が存在します。\r\n\r\nAdobe Reader および Acrobat は、Portable Document Format (PDF) ドキュメントを閲覧および編集するためのソフトウェアです。また、ウェブブラウザにおいて PDF ドキュメントを閲覧するためのプラグインも提供されています。\r\n\r\nAdobe Reader および Acrobat は JavaScript をサポートしています。Adobe が提供する JavaScript for Acrobat API Reference によると、特定の JavaScript メソッドの実行には、セキュリティ上の制限が設けられています。\r\n\r\nAdobe Reader および Acrobat には、JavaScript メソッドの実行を適切に制限していない脆弱性が存在します。",
+  "identifier": "JVNDB-2009-002213",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA09-286B/index.html",
+      "source": "JVN",
+      "id": "JVNTA09-286B"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU257117/index.html",
+      "source": "JVN",
+      "id": "JVNVU#257117"
+    },
+    {
+      "text": "http://jvn.jp/tr/JVNTR-2009-24/index.html",
+      "source": "JVNTR",
+      "id": "JVNTR-2009-24"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2993",
+      "source": "CVE",
+      "id": "CVE-2009-2993"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2993",
+      "source": "NVD",
+      "id": "CVE-2009-2993"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2009/at090021.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2009-0021"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/index.html#topics",
+      "source": "AT-POLICE",
+      "id": "アドビシステムズ社の Adobe Reader および Adobe Acrobat のセキュリティ修正プログラムについて"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA09-286B.html",
+      "source": "CERT-SA",
+      "id": "SA09-286B"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/257117",
+      "source": "CERT-VN",
+      "id": "VU#257117"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA09-286B.html",
+      "source": "CERT-TA",
+      "id": "TA09-286B"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20091014-adobe.html",
+      "source": "IPA",
+      "id": "20091014-adobe"
+    },
+    {
+      "text": "http://secunia.com/advisories/36983",
+      "source": "SECUNIA",
+      "id": "SA36983"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/36664",
+      "source": "BID",
+      "id": "36664"
+    },
+    {
+      "text": "http://securitytracker.com/id?1023007",
+      "source": "SECTRACK",
+      "id": "1023007"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2898",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2898"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:adobe:acrobat",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe Acrobat"
+    },
+    {
+      "text": "cpe:/a:adobe:acrobat_reader",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe Reader"
+    },
+    {
+      "text": "cpe:/a:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Extras"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_desktop_supplementary",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Supplementary"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_supplementary",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Supplementary"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_supplementary_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Supplementary EUS"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2009-11-13T11:47+09:00",
+  "issued": "2009-11-13T11:47+09:00",
+  "modified": "2009-11-13T11:47+09:00"
+}

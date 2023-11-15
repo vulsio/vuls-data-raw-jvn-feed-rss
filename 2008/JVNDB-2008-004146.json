@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-004146.html",
+  "title": "Novell eDirectory の DoLBURPRequest 関数におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-004146.html",
+  "description": "Novell eDirectory の ndsd の libnldap の DoLBURPRequest 関数には、過度に長い Distinguished Name (DN) フィールドに関する不備があるため、スタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2008-004146",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0924",
+      "source": "CVE",
+      "id": "CVE-2008-0924"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-0924",
+      "source": "NVD",
+      "id": "CVE-2008-0924"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:novell:edirectory",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "eDirectory"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T16:59+09:00",
+  "issued": "2012-09-25T16:59+09:00",
+  "modified": "2012-09-25T16:59+09:00"
+}

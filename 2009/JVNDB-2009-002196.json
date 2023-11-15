@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002196.html",
+  "title": "OpenSSH の ChrootDirectory 機能における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002196.html",
+  "description": "Red Hat Enterprise Linux (RHEL) の OpenSSH にある Red Hat 修正 ChrootDirectory 機能には、setuid プログラムのハードリンク処理に不備があるため、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-002196",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2904",
+      "source": "CVE",
+      "id": "CVE-2009-2904"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2904",
+      "source": "NVD",
+      "id": "CVE-2009-2904"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/36552",
+      "source": "BID",
+      "id": "36552"
+    },
+    {
+      "text": "http://osvdb.org/58495",
+      "source": "OSVDB",
+      "id": "58495"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2009-11-10T13:04+09:00",
+  "issued": "2009-11-10T13:04+09:00",
+  "modified": "2009-11-10T13:04+09:00"
+}

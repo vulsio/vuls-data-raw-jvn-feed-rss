@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-002717.html",
+  "title": "MERAK Mail Server および VisNetic MailServer における絶対パスディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-002717.html",
+  "description": "(a) IceWarp Web Mail 以前の Windows 用 MERAK Mail Server および (b) VisNetic MailServer は、securepath 関数が適切にサニタイズしないため、絶対パスディレクトリトラバーサルの脆弱性が存在します。\r\n本脆弱性は、CVE-2005-4556 に関連する脆弱性です。",
+  "identifier": "JVNDB-2006-002717",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0817",
+      "source": "CVE",
+      "id": "CVE-2006-0817"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-0817",
+      "source": "NVD",
+      "id": "CVE-2006-0817"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:deerfield:visnetic_mail_server",
+      "version": "2.2",
+      "vendor": "deerfield",
+      "product": "visnetic mail server"
+    },
+    {
+      "text": "cpe:/a:icewarp:web_mail",
+      "version": "2.2",
+      "vendor": "IceWarp, Inc.",
+      "product": "web mail"
+    },
+    {
+      "text": "cpe:/a:merak:mail_server",
+      "version": "2.2",
+      "vendor": "merak",
+      "product": "mail server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-12-20T18:02+09:00",
+  "issued": "2012-12-20T18:02+09:00",
+  "modified": "2012-12-20T18:02+09:00"
+}

@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001840.html",
+  "title": "Debian jessie の glibc パッケージおよび Ubuntu の elibc ならびに glibcc パッケージの pt_chown におけるキーストロークをキャプチャされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001840.html",
+  "description": "Debian jessie の glibc パッケージ、および Ubuntu の elibc ならびに glibcc パッケージの pt_chown は、ファイル記述子の引渡しに関連付けられた名前空間の確認が欠落しているため、キーストロークをキャプチャされ、データを偽装される、および権限を取得される脆弱性が存在します。\r\n\r\nなお、アップストリームのドキュメンテーションに --enable-pt_chown オプションに対する明確なセキュリティ勧告が存在するため、アップストリームの GNU C Library における脆弱性とはみなされていません。",
+  "identifier": "JVNDB-2016-001840",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2856",
+      "source": "CVE",
+      "id": "CVE-2016-2856"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2856",
+      "source": "NVD",
+      "id": "CVE-2016-2856"
+    },
+    {
+      "text": "http://www.halfdog.net/Security/2015/PtChownArbitraryPtsAccessViaUserNamespace/",
+      "source": "関連文書",
+      "id": "PtChownArbitraryPtsAccessViaUserNamespace"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/03/07/2",
+      "source": "関連文書",
+      "id": "Re: Access to /dev/pts devices via pt_chown and user namespaces"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:glibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU C Library"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2016-06-06T18:03+09:00",
+  "issued": "2016-03-24T14:50+09:00",
+  "modified": "2016-06-06T18:03+09:00"
+}

@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007057.html",
+  "title": "Xen の PCI バックエンドドライバにおける WARN メッセージの連続ストリームを生成される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007057.html",
+  "description": "Xen の PCI バックエンドドライバは、x86 システム上で稼動し、かつドライバドメインとして Linux を使用する場合、WARN メッセージの連続ストリームを生成され、サービス運用妨害 (ディスクの消費) 状態にされる脆弱性が存在します。\r\n\r\n本脆弱性は、\"Linux pciback missing sanity checks\" と呼ばれています。",
+  "identifier": "JVNDB-2015-007057",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8552",
+      "source": "CVE",
+      "id": "CVE-2015-8552"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8552",
+      "source": "NVD",
+      "id": "CVE-2015-8552"
+    },
+    {
+      "text": "http://www.securitytracker.com/id/1034480",
+      "source": "関連文書",
+      "id": "Xen MSI Call Processing Bugs Let Local Users on the Guest System Deny Service on the Target Host System"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:xen:xen",
+      "version": "2.2",
+      "vendor": "Xen プロジェクト",
+      "product": "Xen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.7",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:S/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-04-20T11:46+09:00",
+  "issued": "2016-04-20T11:46+09:00",
+  "modified": "2016-04-20T11:46+09:00"
+}

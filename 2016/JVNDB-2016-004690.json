@@ -1,0 +1,97 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004690.html",
+  "title": "複数の Microsoft Windows 製品の Graphics Device Interface における ASLR 保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004690.html",
+  "description": "複数の Microsoft Windows 製品の Graphics Device Interface (GDI) には、ASLR 保護メカニズムを回避される脆弱性が存在します。\r\n\r\nマイクロソフトセキュリティ情報には、この脆弱性は「GDI の情報漏えいの脆弱性」と記載されています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-254: Security Features (セキュリティ機能) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/254.html",
+  "identifier": "JVNDB-2016-004690",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3354",
+      "source": "CVE",
+      "id": "CVE-2016-3354"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3354",
+      "source": "NVD",
+      "id": "CVE-2016-3354"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20160914-ms.html",
+      "source": "IPA CFA",
+      "id": "Microsoft 製品の脆弱性対策について(2016年9月)"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2016/at160035.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2016-0035"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_10",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 10"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_7",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 7"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_8.1",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 8.1"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_rt",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows RT"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2012",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2012"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_vista",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Vista"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2016-09-15T13:42+09:00",
+  "issued": "2016-09-15T13:42+09:00",
+  "modified": "2016-09-15T13:42+09:00"
+}

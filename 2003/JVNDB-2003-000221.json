@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000221.html",
+  "title": "Linux Kernel に実装されている STP プロトコルにおけるブリッジトポロジを改ざんされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000221.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nRed Hat Linux 等に同梱されている Linux カーネル 2.4 の STP の実装には、受信した STP パケットの長さに対する妥当性の確認に不備が存在します。\r\nこの問題を利用するリモートの攻撃者は意図的な STP パケットを送信することで、ブリッジとして動作している標的ホストをサービス不能状態に陥らせる可能性があります。\r\n\r\nまた、問題を抱えるバージョンのカーネルでは、ブリッジとして動作するかどうかに関係なく STP サポート機能が有効化され、さらには STP に対するアクセスコントロール機能が備わっていないため、リモートの攻撃者は標的ホストが接続されているネットワーク構成を改変する可能性があります。",
+  "identifier": "JVNDB-2003-000221",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0550",
+      "source": "CVE",
+      "id": "CVE-2003-0550"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0550",
+      "source": "NVD",
+      "id": "CVE-2003-0550"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8233",
+      "source": "BID",
+      "id": "8233"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

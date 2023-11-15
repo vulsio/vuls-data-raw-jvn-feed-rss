@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000570.html",
+  "title": "Linux kernel の libcapi におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000570.html",
+  "description": "Linux Kernel および isdn4k-utils で使用されている libcapi の capiutil.c における bufprint() 関数においてバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000570",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1217",
+      "source": "CVE",
+      "id": "CVE-2007-1217"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-1217",
+      "source": "NVD",
+      "id": "CVE-2007-1217"
+    },
+    {
+      "text": "http://secunia.com/advisories/24777",
+      "source": "SECUNIA",
+      "id": "SA24777"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/23333",
+      "source": "BID",
+      "id": "23333"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-10-24T09:52+09:00",
+  "issued": "2007-08-14T14:27+09:00",
+  "modified": "2007-10-24T09:52+09:00"
+}

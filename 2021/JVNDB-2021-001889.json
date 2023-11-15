@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001889.html",
+  "title": "ThroughTek 製 P2P SDK に重要な情報の平文での送信の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001889.html",
+  "description": "ThroughTek 社が提供する P2P Software Development Kit (SDK) には、重要な情報の平文での送信の脆弱性が存在します。\r\n\r\nP2P Software Development Kit (SDK) は、インターネット経由でオーディオストリームやビデオストリームにアクセスするための機能を提供する ThroughTek 社製の開発キットです。当該 SDK には、それが組み込まれたデバイスと同社のサーバ間で転送されるデータが十分に保護されない、重要な情報の平文での送信 (CWE-319、CVE-2021-32934) の脆弱性が存在します。",
+  "identifier": "JVNDB-2021-001889",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU91747873",
+      "source": "JVN",
+      "id": "JVNVU#91747873"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32934",
+      "source": "CVE",
+      "id": "CVE-2021-32934"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-166-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-166-01"
+    },
+    {
+      "text": "https://www.nozominetworks.com/blog/new-iot-security-risk-throughtek-p2p-supply-chain-vulnerability/",
+      "source": "関連文書",
+      "id": "New IoT Security Risk: ThroughTek P2P Supply Chain Vulnerability"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/319.html",
+      "id": "CWE-319",
+      "title": "重要な情報の平文での送信(CWE-319)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:throughtek_p2p_software_development_kit",
+      "version": "2.2",
+      "vendor": "ThroughTek Co., Ltd.",
+      "product": "P2P Software Development Kit"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.1",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2021-06-17T15:30+09:00",
+  "issued": "2021-06-17T15:30+09:00",
+  "modified": "2021-06-17T15:30+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005364.html",
+  "title": "libESMTP における任意の SSL サーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005364.html",
+  "description": "libESMTP は、X.509 証明書のサブジェクトの Common Name (CN) フィールド内のドメイン名の '\\0' キャラクタを適切に処理しないため、任意の SSL サーバになりすまされる脆弱性が存在します。\r\n本問題は、CVE-2009-2408 に関連する問題です。",
+  "identifier": "JVNDB-2010-005364",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1192",
+      "source": "CVE",
+      "id": "CVE-2010-1192"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1192",
+      "source": "NVD",
+      "id": "CVE-2010-1192"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:stafford.uklinux:libesmtp",
+      "version": "2.2",
+      "vendor": "stafford.uklinux",
+      "product": "libesmtp"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-12-20T19:29+09:00",
+  "issued": "2012-12-20T19:29+09:00",
+  "modified": "2012-12-20T19:29+09:00"
+}

@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006322.html",
+  "title": "LedgerSMB で使用される Perl 用 PGObject::Util::DBAdmin モジュールにおけるエンコードおよびエスケープに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006322.html",
+  "description": "LedgerSMB で使用される Perl 用 PGObject::Util::DBAdmin モジュールには、エンコードおよびエスケープに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2018-006322",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-9246",
+      "source": "CVE",
+      "id": "CVE-2018-9246"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-9246",
+      "source": "NVD",
+      "id": "CVE-2018-9246"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/116.html",
+      "id": "CWE-116",
+      "title": "不適切なエンコード、または出力のエスケープ(CWE-116)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ledgersmb:ledgersmb",
+      "version": "2.2",
+      "vendor": "LedgerSMB",
+      "product": "LedgerSMB"
+    },
+    {
+      "text": "cpe:/a:pgobject-util-dbadmin_project:pgobject-util-dbadmin",
+      "version": "2.2",
+      "vendor": "PGObject::Util::DBAdmin project",
+      "product": "PGObject::Util::DBAdmin"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-08-16T17:41+09:00",
+  "issued": "2018-08-16T17:41+09:00",
+  "modified": "2018-08-16T17:41+09:00"
+}

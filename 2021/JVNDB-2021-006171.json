@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006171.html",
+  "title": "Gradle における信頼できない制御領域からの機能の組み込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006171.html",
+  "description": "Gradle には、信頼できない制御領域からの機能の組み込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-006171",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-29427",
+      "source": "CVE",
+      "id": "CVE-2021-29427"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-29427",
+      "source": "NVD",
+      "id": "CVE-2021-29427"
+    },
+    {
+      "text": "https://github.com/gradle/gradle/security/advisories/GHSA-jvmj-rh6q-x395",
+      "source": "関連文書",
+      "id": "Repository content filters do not work in Settings pluginManagement"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/829.html",
+      "id": "CWE-829",
+      "title": "信頼できない制御領域からの機能の組み込み(CWE-829)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gradle:gradle",
+      "version": "2.2",
+      "vendor": "Gradle Inc.",
+      "product": "Gradle"
+    },
+    {
+      "text": "cpe:/a:quarkus:quarkus",
+      "version": "2.2",
+      "vendor": "Quarkus",
+      "product": "Quarkus"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-12-28T16:05+09:00",
+  "issued": "2021-12-28T16:05+09:00",
+  "modified": "2021-12-28T16:05+09:00"
+}

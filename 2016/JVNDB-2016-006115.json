@@ -1,0 +1,933 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006115.html",
+  "title": "ThinkPad システムの BIOS 用署名付きカーネルドライバにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006115.html",
+  "description": "ThinkPad システムの BIOS 用署名付きカーネルドライバには、サービス運用妨害 (DoS) 状態にされる、または特定の BIOS の変数または設定 (ブートシーケンスなど) を変更される脆弱性が存在します。\r\nなお、BIOS パスワードの設定または変更は、本脆弱性の影響を受けません。",
+  "identifier": "JVNDB-2016-006115",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8222",
+      "source": "CVE",
+      "id": "CVE-2016-8222"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8222",
+      "source": "NVD",
+      "id": "CVE-2016-8222"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/284.html",
+      "id": "CWE-284",
+      "title": "不適切なアクセス制御(CWE-284)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:lenovo:thinkpad_10_ella_2",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad 10 (Ella-2)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_11e_beema",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad 11e (Beema)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_11e_braswell",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad 11e (Braswell)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_11e_broadwell",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad 11e (Broadwell)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_11e_skylake",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad 11e (Skylake)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_13e",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad 13e"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_e450",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E450"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_e450c",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E450c"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_e455",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E455"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_e460",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E460"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_e465",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E465"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_e550",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E550"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_e550c",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E550c"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_e555",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E555"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_e560",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E560"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_e565",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E565"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_edge_e440",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Edge E440"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_edge_e445",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Edge E445"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_edge_e540",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Edge E540"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_edge_e545",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Edge E545"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_helix_20cg",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Helix 20CG"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_helix_20ch",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Helix 20CH"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_l440",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad L440"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_l450",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad L450"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_l460",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad L460"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_l540",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad L540"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_l560",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad L560"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_p50",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad P50"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_p50s",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad P50s"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_p70",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad P70"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_s1_yoga_12",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S1 Yoga 12"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_s1_yoga_non_vpro",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S1 Yoga (Non-vPro)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_s1_yoga_vpro",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S1 Yoga (vPro)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_s3_s440",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S3-S440"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_s3_yoga_14",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S3 Yoga 14"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_s540",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S540"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_s5_e560p",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S5/E560p"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_s5_yoga_15",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S5 Yoga 15"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t440",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T440"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t440p",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T440p"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t440s",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T440s"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t440u",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T440u"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t450",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T450"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t450s",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T450s"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t460",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T460"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t460p",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T460p"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t460s",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T460s"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t540",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T540"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t540p",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T540p"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t550",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T550"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_t560",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T560"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_tablet_10",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Tablet 10"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_tablet_8",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Tablet 8"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_w540",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad W540"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_w541",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad W541"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_w550s",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad W550s"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_x140e_amd",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X140e (AMD)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_x1_carbon",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X1 Carbon"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_x1_carbon_20ax",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X1 Carbon (20Ax)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_x1_carbon_20bx",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X1 Carbon (20Bx)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_x1_tablet",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X1 Tablet"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_x1_yoga",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X1 Yoga"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_x240",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X240"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_x240s",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X240s"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_x250_broadwell",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X250 (Broadwell)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_x250_sharkbay",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X250 (Sharkbay)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_x260",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X260"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_yoga_11e",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 11e"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_yoga_11e_beema",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 11e (Beema)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_yoga_11e_braswell",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 11e (Braswell)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_yoga_11e_broadwell",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 11e (Broadwell)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_yoga_11e_skylake",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 11e (Skylake)"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_yoga_14_460_s3",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 14 460 S3"
+    },
+    {
+      "text": "cpe:/h:lenovo:thinkpad_yoga_260_s1",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 260 S1"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_10_ella_2_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad 10 (Ella-2) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_11e_beema_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad 11e (Beema) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_11e_braswell_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad 11e (Braswell) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_11e_broadwell_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad 11e (Broadwell) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_11e_skylake_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad 11e (Skylake) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_13e_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad 13e BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_e450c_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E450c BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_e450_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E450 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_e455_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E455 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_e460_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E460 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_e465_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E465 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_e550c_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E550c BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_e550_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E550 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_e555_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E555 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_e560_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E560 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_e565_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad E565 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_edge_e440_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Edge E440 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_edge_e445_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Edge E445 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_edge_e540_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Edge E540 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_edge_e545_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Edge E545 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_helix_20cg_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Helix 20CG BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_helix_20ch_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Helix 20CH BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_l440_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad L440 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_l450_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad L450 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_l460_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad L460 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_l540_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad L540 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_l560_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad L560 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_p50s_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad P50s BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_p50_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad P50 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_p70_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad P70 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_s1_yoga_12_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S1 Yoga 12 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_s1_yoga_non_vpro_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S1 Yoga (Non-vPro) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_s1_yoga_vpro_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S1 Yoga (vPro) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_s3_s440_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S3-S440 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_s3_yoga_14_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S3 Yoga 14 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_s540_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S540 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_s5_e560p_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S5/E560p BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_s5_yoga_15_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad S5 Yoga 15 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t440p_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T440p BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t440s_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T440s BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t440u_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T440u BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t440_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T440 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t450s_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T450s BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t450_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T450 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t460p_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T460p BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t460s_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T460s BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t460_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T460 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t540p_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T540p BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t540_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T540 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t550_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T550 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_t560_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad T560 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_tablet_10_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Tablet 10 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_tablet_8_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Tablet 8 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_w540_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad W540 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_w541_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad W541 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_w550s_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad W550s BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_x140e_amd_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X140e (AMD) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_x1_carbon_20ax_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X1 Carbon BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_x1_carbon_20bx_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X1 Carbon (20Ax) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_x1_carbon_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X1 Carbon (20Bx) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_x1_tablet_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X1 Tablet BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_x1_yoga_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X1 Yoga BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_x240s_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X240s BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_x240_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X240 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_x250_broadwell_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X250 (Broadwell) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_x250_sharkbay_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X250 (Sharkbay) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_x260_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad X260 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_yoga_11e_beema_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 11e BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_yoga_11e_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 11e (Beema) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_yoga_11e_braswell_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 11e (Braswell) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_yoga_11e_broadwell_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 11e (Broadwell) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_yoga_11e_skylake_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 11e (Skylake) BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_yoga_14_460_s3_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 14 460 S3 BIOS"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkpad_yoga_260_s1_bios",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkPad Yoga 260 S1 BIOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-12-07T17:09+09:00",
+  "issued": "2016-12-07T17:09+09:00",
+  "modified": "2016-12-07T17:09+09:00"
+}

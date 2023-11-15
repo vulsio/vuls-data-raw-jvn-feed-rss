@@ -1,0 +1,95 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000035.html",
+  "title": "Oracle Database における脆弱性 (DB17,DB18)",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000035.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nOracle Application Server および Oracle Database には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) Oracle Application Server の問題\r\n・Portal の問題 (AS01)\r\n・Oracle Forms の問題 (FORM01, FORM02)\r\n・Oracle Reports Developer の問題 (REP01, REP02, REP03, REP04, REP05, REP06)\r\n\r\n2) Oracle Database の問題\r\n・Advanced Queuing の問題 (DB01)\r\n・Change Data Capture の問題 (DB02)\r\n・Connection Manager の問題 (DB03)\r\n・Data Pump の問題 (DB04)\r\n・Data Pump Metadata API の問題 (DB05, DB06)\r\n・Dictionary の問題 (DB07)\r\n・Net Foundation Layer の問題 (DB08)\r\n・Net Listener の問題 (DB09, DB10, DB11)\r\n・Network Communications (RPC) の問題 (DB12, DB13)\r\n・Oracle Label Security の問題 (DB14)\r\n・Oracle Text の問題 (DB15, DB16, DB17)\r\n・Program Interface Network の問題 (DB18)\r\n・Query Optimizer の問題 (DB19, DB20)\r\n・Security の問題 (DB21)\r\n・Streams Apply の問題 (DB22)\r\n・Streams Capture の問題 (DB23, DB24, DB25)\r\n・Streams Subcomponent の問題 (DB26)\r\n・TDE Wallet の問題 (DB27)\r\n・Upgrade & Downgrade の問題 (DB28)\r\n・XML Database の問題 (DB29)\r\n\r\n3) Oracle Application Server および Oracle Database の問題\r\n・Protocol Support の問題 (DBC01)\r\n・Reorganize Objects & Convert Tablespace の問題 (DBC02)\r\n・Java Net の問題 (JN01)\r\n・Oracle HTTP Server の問題 (OHS01, OHS02)\r\n・Oracle Workflow Cartridge の問題 (WF01, WF02, WF03)\r\n\r\nリモート/ローカルの攻撃者に悪用された場合、サービス不能攻撃、任意のコマンドの実行、SQL インジェクション攻撃などに悪用される可能性があります。",
+  "identifier": "JVNDB-2006-000035",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA06-018A/index.html",
+      "source": "JVN",
+      "id": "JVNTA06-018A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA06-018A/",
+      "source": "JVNTR",
+      "id": "TRTA06-018A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0265",
+      "source": "CVE",
+      "id": "CVE-2006-0265"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0265",
+      "source": "NVD",
+      "id": "CVE-2006-0265"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/545804",
+      "source": "CERT-VN",
+      "id": "VU#545804"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/871756",
+      "source": "CERT-VN",
+      "id": "VU#871756"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA06-018A.html",
+      "source": "CERT-TA",
+      "id": "TA06-018A"
+    },
+    {
+      "text": "http://secunia.com/advisories/18493/",
+      "source": "SECUNIA",
+      "id": "SA18493"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/16294",
+      "source": "BID",
+      "id": "16294"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14309",
+      "source": "BID",
+      "id": "14309"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/16287",
+      "source": "BID",
+      "id": "16287"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:oracle:application_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Application Server"
+    },
+    {
+      "text": "cpe:/a:oracle:database_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Database"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000039.html",
+  "title": "Microsoft Internet Explorer におけるヘッダ情報を偽装したファイルにより任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000039.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nInternet Explorer (IE) にはプログラムファイルを自動処理によりダウンロードし、かつそのファイルを実行してしまう問題が存在します。この問題を攻撃者が利用することで、実行可能形式のプログラムファイルを安全なファイルであると IE に認識させることが可能となります。これは、悪意あるプログラムを攻撃対象となるユーザのシステム上へのダウンロードからその後のプログラムの実行までも自動的に処理してしまう可能性があります。 \r\n\r\nIE を利用してのダウンロードする際のファイルの処理は、そのヘッダ情報などのファイル形式から判断します。攻撃者により、ダウンロードファイルのヘッダ情報である Content-Disposition と Content-Type がある特定の方法で変更されている場合、IE では実際とは異なるファイル形式として処理してしまいます。 \r\n\r\nこれは、SNS2001-0539 (MS01-058) の問題と同様の問題と考えれます。しかし SNS2001-0539 (MS01-058) の問題と異なる点は、特定の環境下に限り影響を受ける可能性がある点です。以下のような特定の環境下で影響を受ける可能性があることを確認しました。 \r\n\r\n(1) Windows NT 4.0 Workstation + SP6a \r\n+ IE 6 + 5/16現在で提供済の MS02-023 を除く全ての Hotfix [日本語版] \r\n(2) Windows NT 4.0 Workstation + SP6a + Windows Media Player 6.4 \r\n+ IE 6 + 5/16現在で提供済の MS02-023 を除く全ての Hotfix [日本語版] \r\n(3) Windows 2000 Professional + SP2 + SRP1 + Windows Media Player 6.4 \r\n+ IE 6 + 5/16現在で提供済の MS02-023 を除く全ての Hotfix [日本語版] \r\n(4) Windows 2000 Professional + SP2 + SRP1 + Windows Media Player 6.4 \r\n+ IE 5.01 SP2 + 5/16現在で提供済の MS02-023 を除く全ての Hotfix [日本語版] \r\n(5) Windows 98 + Windows 98 System Update + Windows Media Player 6.4 \r\n+ IE 6 + 5/16現在で提供済の MS02-023 を除く全ての Hotfix [日本語版] \r\n(6) Windows 2000 Professional + SP2 + SRP1 + Windows Media Player 7.1 \r\n+ IE 6 + Office 2000 SR-1 + 5/16現在で提供済の MS02-023 を除く全ての Hotfix \r\n\r\nそのため、この問題を利用する攻撃を成功させるには、攻撃者は攻撃対象となるユーザ環境 (アプリケーションの存在とそのバージョン) について既知である必要があります。 \r\n\r\nこの問題の公開時には IE 6.0 のみがこの問題の影響を受ける可能性があるとしましたが、その後の調査により、IE 5.01 (NoSP, SP1, SP2) もこの問題の影響を受ける可能性があることを確認しております。 \r\n\r\nなお、IE 5.5 ( SP1 および SP2 を含む ) においては影響を受けません。",
+  "identifier": "JVNDB-2002-000039",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0188",
+      "source": "CVE",
+      "id": "CVE-2002-0188"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0188",
+      "source": "NVD",
+      "id": "CVE-2002-0188"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4752",
+      "source": "BID",
+      "id": "4752"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:internet_explorer",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Internet Explorer"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

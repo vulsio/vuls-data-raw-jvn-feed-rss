@@ -1,0 +1,131 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001882.html",
+  "title": "Rockwell Automation 製 ISaGRAF5 Runtime に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001882.html",
+  "description": "Rockwell Automation 社が提供する ISaGRAF5 Runtime には、次の複数の脆弱性が存在します。\r\n\r\n　* 相対的パストラバーサル (CWE-23) - CVE-2020-25176\r\n　* 認証情報の平文保存 (CWE-256) - CVE-2020-25184\r\n　* 重要な情報の平文での送信 (CWE-319) - CVE-2020-25178\r\n　* DLL ファイルの検索パスが適切に制御されていない (CWE-427) - CVE-2020-25182\r\n　* ハードコードされた暗号鍵の使用 (CWE-321) - CVE-2020-25180",
+  "identifier": "JVNDB-2021-001882",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU90811375",
+      "source": "JVN",
+      "id": "JVNVU#90811375"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25176",
+      "source": "CVE",
+      "id": "CVE-2020-25176"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25184",
+      "source": "CVE",
+      "id": "CVE-2020-25184"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25178",
+      "source": "CVE",
+      "id": "CVE-2020-25178"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25182",
+      "source": "CVE",
+      "id": "CVE-2020-25182"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25180",
+      "source": "CVE",
+      "id": "CVE-2020-25180"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-20-280-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-280-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/23.html",
+      "id": "CWE-23",
+      "title": "相対パストラバーサル(CWE-23)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/256.html",
+      "id": "CWE-256",
+      "title": "認証情報の平文保存(CWE-256)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/319.html",
+      "id": "CWE-319",
+      "title": "重要な情報の平文での送信(CWE-319)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/321.html",
+      "id": "CWE-321",
+      "title": "ハードコードされた暗号鍵の使用(CWE-321)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/427.html",
+      "id": "CWE-427",
+      "title": "制御されていない検索パスの要素(CWE-427)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:ge_steam_power_alspa_s6_mfc1000",
+      "version": "2.2",
+      "vendor": "GE Steam Power",
+      "product": "ALSPA S6 MFC1000"
+    },
+    {
+      "text": "cpe:/a:misc:ge_steam_power_alspa_s6_mfc3000",
+      "version": "2.2",
+      "vendor": "GE Steam Power",
+      "product": "ALSPA S6 MFC3000"
+    },
+    {
+      "text": "cpe:/a:misc:xylem_multismart_gen-1",
+      "version": "2.2",
+      "vendor": "Xylem Inc.",
+      "product": "MultiSmart Gen-1"
+    },
+    {
+      "text": "cpe:/a:misc:xylem_multismart_gen-2",
+      "version": "2.2",
+      "vendor": "Xylem Inc.",
+      "product": "MultiSmart Gen-2"
+    },
+    {
+      "text": "cpe:/a:rockwellautomation:aadvance_controller",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "AADvance Controller"
+    },
+    {
+      "text": "cpe:/a:rockwellautomation:isagraf_free_runtime",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "ISaGRAF Free Runtime"
+    },
+    {
+      "text": "cpe:/a:rockwellautomation:isagraf_runtime",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "ISaGRAF Runtime"
+    },
+    {
+      "text": "cpe:/a:rockwellautomation:micro800",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "Micro800"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.1",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-06-21T17:28+09:00",
+  "issued": "2021-06-11T15:50+09:00",
+  "modified": "2021-06-21T17:28+09:00"
+}

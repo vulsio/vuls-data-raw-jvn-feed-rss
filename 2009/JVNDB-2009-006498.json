@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-006498.html",
+  "title": "Piwik の core/Cookie.php における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-006498.html",
+  "description": "Piwik の core/Cookie.php は、unserialize 関数を呼び出す前にクッキーから取得した文字列を検証しない、およびPiwik_Config クラスの __destruct 関数、php://filter URI、Zend フレームワークの __destruct 関数、Zend フレームワークのshutdown 関数、Piwik_View クラスの render 関数、Smarty テンプレート、および Smarty の _eval 関数に関する処理に不備があるため、任意のコードを実行される、および任意のファイルをアップロードされる脆弱性が存在します。",
+  "identifier": "JVNDB-2009-006498",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4137",
+      "source": "CVE",
+      "id": "CVE-2009-4137"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-4137",
+      "source": "NVD",
+      "id": "CVE-2009-4137"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:piwik:piwik",
+      "version": "2.2",
+      "vendor": "Piwik",
+      "product": "Piwik"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-12-20T19:28+09:00",
+  "issued": "2012-12-20T19:28+09:00",
+  "modified": "2012-12-20T19:28+09:00"
+}

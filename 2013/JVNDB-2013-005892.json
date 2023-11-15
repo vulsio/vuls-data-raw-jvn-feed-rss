@@ -1,0 +1,125 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005892.html",
+  "title": "Brocade ルータ上で稼働する OSPF の実装におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005892.html",
+  "description": "Brocade ルータ上で稼働する OSPF の実装は、State Advertisement (LSA) データベース上で操作を実行する前に、LSA パケット内の重複する Link State ID 値の可能性を考慮しないため、サービス運用妨害 (ルーティングの中断) 状態にされる、または重要なパケット情報を取得される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2013-0149 と関連する問題です。",
+  "identifier": "JVNDB-2013-005892",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96465452/",
+      "source": "JVN",
+      "id": "JVNVU#96465452"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7306",
+      "source": "CVE",
+      "id": "CVE-2013-7306"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7306",
+      "source": "NVD",
+      "id": "CVE-2013-7306"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/229804",
+      "source": "CERT-VN",
+      "id": "VU#229804"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/BLUU-98MS25",
+      "source": "CERT-VN",
+      "id": "Brocade Information for VU#229804"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:brocade:adx",
+      "version": "2.2",
+      "vendor": "ブロケード コミュニケーションズ システムズ株式会社",
+      "product": "Brocade ADX"
+    },
+    {
+      "text": "cpe:/h:brocade:bigiron_rx",
+      "version": "2.2",
+      "vendor": "ブロケード コミュニケーションズ システムズ株式会社",
+      "product": "Brocade BigIron RX"
+    },
+    {
+      "text": "cpe:/h:brocade:fastiron",
+      "version": "2.2",
+      "vendor": "ブロケード コミュニケーションズ システムズ株式会社",
+      "product": "Brocade FastIron"
+    },
+    {
+      "text": "cpe:/h:brocade:icx",
+      "version": "2.2",
+      "vendor": "ブロケード コミュニケーションズ システムズ株式会社",
+      "product": "Brocade ICX"
+    },
+    {
+      "text": "cpe:/h:brocade:jetcore",
+      "version": "2.2",
+      "vendor": "ブロケード コミュニケーションズ システムズ株式会社",
+      "product": "Brocade JetCore"
+    },
+    {
+      "text": "cpe:/h:brocade:mlx",
+      "version": "2.2",
+      "vendor": "ブロケード コミュニケーションズ システムズ株式会社",
+      "product": "Brocade MLX"
+    },
+    {
+      "text": "cpe:/h:brocade:netiron_cer",
+      "version": "2.2",
+      "vendor": "ブロケード コミュニケーションズ システムズ株式会社",
+      "product": "Brocade NetIron CER"
+    },
+    {
+      "text": "cpe:/h:brocade:netiron_ces",
+      "version": "2.2",
+      "vendor": "ブロケード コミュニケーションズ システムズ株式会社",
+      "product": "Brocade NetIron CES"
+    },
+    {
+      "text": "cpe:/h:brocade:netiron_xmr",
+      "version": "2.2",
+      "vendor": "ブロケード コミュニケーションズ システムズ株式会社",
+      "product": "Brocade NetIron XMR"
+    },
+    {
+      "text": "cpe:/h:brocade:turboiron",
+      "version": "2.2",
+      "vendor": "ブロケード コミュニケーションズ システムズ株式会社",
+      "product": "Brocade TurboIron"
+    },
+    {
+      "text": "cpe:/h:brocade:vdx",
+      "version": "2.2",
+      "vendor": "ブロケード コミュニケーションズ システムズ株式会社",
+      "product": "Brocade VDX"
+    },
+    {
+      "text": "cpe:/h:brocade:vyatta_vrouter",
+      "version": "2.2",
+      "vendor": "ブロケード コミュニケーションズ システムズ株式会社",
+      "product": "Brocade Vyatta vRouter"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-01-24T20:53+09:00",
+  "issued": "2014-01-24T20:53+09:00",
+  "modified": "2014-01-24T20:53+09:00"
+}

@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005739.html",
+  "title": "Gromacs の GMXRC.bash における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005739.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nGromacs の GMXRC.bash は、LD_LIBRARY_PATH に長さゼロのディレクトリ名をセットするため、権限を取得される脆弱性が存在します。\r\n\r\nなお、CVE は、スクリプトの後半に GMXLDLIB 値が LD_LIBRARY_PATH の先頭に必ず追加される、との理由で、本件を脆弱性とすることに対し異議を唱えています。",
+  "identifier": "JVNDB-2010-005739",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4001",
+      "source": "CVE",
+      "id": "CVE-2010-4001"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4001",
+      "source": "NVD",
+      "id": "CVE-2010-4001"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=644596",
+      "source": "関連文書",
+      "id": "Bug 644596"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gromacs:gromacs",
+      "version": "2.2",
+      "vendor": "Gromacs",
+      "product": "Gromacs"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2019-07-29T12:41+09:00",
+  "issued": "2019-07-29T12:41+09:00",
+  "modified": "2019-07-29T12:41+09:00"
+}

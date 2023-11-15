@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006487.html",
+  "title": "FFmpeg の libavcodec/cavsdsp.c の cavs_idct8_add_c 関数における境界外メモリ読み取りを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006487.html",
+  "description": "FFmpeg の libavcodec/cavsdsp.c の cavs_idct8_add_c 関数には、cavs_decode によるデコーディングの際、境界外メモリ読み取りを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006487",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7502",
+      "source": "CVE",
+      "id": "CVE-2016-7502"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7502",
+      "source": "NVD",
+      "id": "CVE-2016-7502"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/10/08/1",
+      "source": "関連文書",
+      "id": "ffmpeg before 3.1.4 [CVE-2016-7562] [CVE-2016-7122] [CVE-2016-7450] [CVE-2016-7502]  [CVE-2016-7555] [CVE-2016-7785] [CVE-2016-7905]"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-01-05T16:53+09:00",
+  "issued": "2017-01-05T16:53+09:00",
+  "modified": "2017-01-05T16:53+09:00"
+}

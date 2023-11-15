@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000021.html",
+  "title": "rsync の入出力機能に任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000021.html",
+  "description": "rsync において、入出力関連の関数に問題があり、 array index に signed value が使用されている場合に、 rsync は任意のメモリ領域に NULL バイト文字の書き込みを許可する脆弱性が存在します。",
+  "identifier": "JVNDB-2002-000021",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0048",
+      "source": "CVE",
+      "id": "CVE-2002-0048"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0048",
+      "source": "NVD",
+      "id": "CVE-2002-0048"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/3958",
+      "source": "BID",
+      "id": "3958"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

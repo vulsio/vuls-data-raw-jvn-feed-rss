@@ -1,0 +1,30 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000358.html",
+  "title": " tcpdump, libpcap にしかけられたトロイの木馬",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000358.html",
+  "description": "日本時間 2002 年11 月11 日(月) 19時ころから数日間に渡って、 www.tcpdump.org において配布している tcpdump, libpcap のソースパッケージが改ざんされ、トロイの木馬がしかけられていました。また、いくつかのミラーサイトからも同様の状態で配布されていた可能性があります。\r\nなお、www.tcpdump.org において、改ざんされたパッケージの配布が停止されたのは、日本時間 2002 年 11 月14 日(木) 0 時頃です。\r\n\r\n改ざんされたソースパッケージから tcpdump, libpcap をコンパイルすると、コンパイル中にプログラムが起動し、ある特定の IP アドレスのポート番号 80/tcp, 1963/tcp に接続します。",
+  "identifier": "JVNDB-2002-000358",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNCA-2002-30/",
+      "source": "JVN",
+      "id": "JVNCA-2002-30"
+    },
+    {
+      "text": "http://www.cert.org/incident_notes/IN-2001-06.html",
+      "source": "CERT-A",
+      "id": "IN-2001-06"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:tcpdump:tcpdump",
+      "version": "2.2",
+      "vendor": "The Tcpdump Group",
+      "product": "tcpdump"
+    }
+  ],
+  "date": "2009-04-03T10:04+09:00",
+  "issued": "2009-04-03T10:04+09:00",
+  "modified": "2009-04-03T10:04+09:00"
+}

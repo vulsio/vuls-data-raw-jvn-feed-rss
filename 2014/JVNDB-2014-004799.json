@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004799.html",
+  "title": "Cisco Intrusion Detection System の Cisco Intrusion Prevention System の Web フレームワークにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004799.html",
+  "description": "Cisco Intrusion Detection System (IDS) の Cisco Intrusion Prevention System (IPS) の Web フレームワーク内の authentication-manager 処理は、ユーザのトークンを適切に管理しないため、サービス運用妨害 (MainApp の一時ハング) 状態にされる脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug ID CSCuq39550 として公開しています。",
+  "identifier": "JVNDB-2014-004799",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3402",
+      "source": "CVE",
+      "id": "CVE-2014-3402"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3402",
+      "source": "NVD",
+      "id": "CVE-2014-3402"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cisco:intrusion_prevention_system",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Intrusion Prevention System ソフトウェア"
+    },
+    {
+      "text": "cpe:/h:cisco:intrusion_prevention_system",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Intrusion Prevention System"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-10-17T17:53+09:00",
+  "issued": "2014-10-17T17:53+09:00",
+  "modified": "2014-10-17T17:53+09:00"
+}

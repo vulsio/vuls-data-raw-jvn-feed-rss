@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001475.html",
+  "title": "SendQuick Entera および Avera デバイスにおける複数のコマンドを挿入される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001475.html",
+  "description": "SendQuick Entera および Avera デバイスには、複数のコマンドを挿入される脆弱性が存在します。",
+  "identifier": "JVNDB-2017-001475",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10098",
+      "source": "CVE",
+      "id": "CVE-2016-10098"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-10098",
+      "source": "NVD",
+      "id": "CVE-2016-10098"
+    },
+    {
+      "text": "https://niantech.io/blog/2017/02/05/vulns-multiple-vulns-in-sendquick-entera-avera-sms-gateway-appliances/",
+      "source": "関連文書",
+      "id": "[Vulns] Multiple Vulns in SendQuick Entera & Avera SMS Gateway Appliances"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/77.html",
+      "id": "CWE-77",
+      "title": "コマンドインジェクション(CWE-77)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:talariax:avera_sms_gateway",
+      "version": "2.2",
+      "vendor": "TalariaX Pte Ltd",
+      "product": "SendQuick Avera"
+    },
+    {
+      "text": "cpe:/h:talariax:entera_sms_gateway",
+      "version": "2.2",
+      "vendor": "TalariaX Pte Ltd",
+      "product": "SendQuick Entera"
+    },
+    {
+      "text": "cpe:/o:talariax:avera_sms_gateway_firmware",
+      "version": "2.2",
+      "vendor": "TalariaX Pte Ltd",
+      "product": "SendQuick Avera ファームウェア"
+    },
+    {
+      "text": "cpe:/o:talariax:entera_sms_gateway_firmware",
+      "version": "2.2",
+      "vendor": "TalariaX Pte Ltd",
+      "product": "SendQuick Entera ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-02-22T18:12+09:00",
+  "issued": "2017-02-22T18:12+09:00",
+  "modified": "2017-02-22T18:12+09:00"
+}

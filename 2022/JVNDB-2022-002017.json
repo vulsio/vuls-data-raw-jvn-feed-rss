@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002017.html",
+  "title": "U-Boot の squashfs ファイルシステム実装にヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002017.html",
+  "description": "U-Bootは、複数のプラットフォームに対応したブートローダです。バージョンv2020.10-rc2以降ではsquashfsファイルシステムに対応しています（Commit c5100613）。U-Bootのsquashfsファイルシステム実装には、メタデータ読み込み処理の不備に起因するヒープベースのバッファオーバーフロー（CWE-122）の脆弱性が存在します。\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、 JPCERT/CC が開発者との調整を仲介しました。\r\n報告者: ソニー株式会社 安松 達彦 氏",
+  "identifier": "JVNDB-2022-002017",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97846460/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97846460"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-33967",
+      "source": "CVE",
+      "id": "CVE-2022-33967"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/122.html",
+      "id": "CWE-122",
+      "title": "ヒープベースのバッファオーバーフロー(CWE-122)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:denx:u-boot",
+      "version": "2.2",
+      "vendor": "DENX Software Engineering",
+      "product": "U-Boot"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "6.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:P/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-07-25T18:30+09:00",
+  "issued": "2022-07-14T12:30+09:00",
+  "modified": "2022-07-25T18:30+09:00"
+}

@@ -1,0 +1,108 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001538.html",
+  "title": "ntpd autokey におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001538.html",
+  "description": "ntpd にはバッファオーバーフローの脆弱性が存在します。\r\n\r\nNTP (Network Time Protocol) はシステムが持つ時計をネットワーク経由で同期させるためのプロトコルです。NTP を実装した ntpd (NTP daemon) には OpenSSL サポート付でコンパイルした場合に、バッファオーバーフローの脆弱性が存在します。本脆弱性は ntp/ntp.crypto.c に含まれる crypto_recv() 関数内にある sprintf() の使用に起因し、autokey が有効な場合にのみ、本脆弱性の影響を受けます。\r\n\r\nバージョン 4.2.5 系においては、2009年5月18日における開発者からの最新情報 (ChangeLog および RSS) では p177 で本脆弱性を修正したと記載されていますが、実際には 2007年9月にリリースされた p74 で修正されていました。",
+  "identifier": "JVNDB-2009-001538",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU853097/index.html",
+      "source": "JVN",
+      "id": "JVNVU#853097"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1252",
+      "source": "CVE",
+      "id": "CVE-2009-1252"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1252",
+      "source": "NVD",
+      "id": "CVE-2009-1252"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/853097",
+      "source": "CERT-VN",
+      "id": "VU#853097"
+    },
+    {
+      "text": "http://secunia.com/advisories/35130",
+      "source": "SECUNIA",
+      "id": "SA35130"
+    },
+    {
+      "text": "http://secunia.com/advisories/35166",
+      "source": "SECUNIA",
+      "id": "SA35166"
+    },
+    {
+      "text": "http://secunia.com/advisories/35138",
+      "source": "SECUNIA",
+      "id": "SA35138"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/35017",
+      "source": "BID",
+      "id": "35017"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1022243",
+      "source": "SECTRACK",
+      "id": "1022243"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/1361",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-1361"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ntp:ntp",
+      "version": "2.2",
+      "vendor": "NTP Project",
+      "product": "NTP"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-06-30T12:03+09:00",
+  "issued": "2009-06-30T12:03+09:00",
+  "modified": "2009-06-30T12:03+09:00"
+}

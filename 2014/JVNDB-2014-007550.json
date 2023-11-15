@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007550.html",
+  "title": "複数の ASUS ルータで使用される WRT ファームウェアにおける認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007550.html",
+  "description": "ASUS RT-AC66U、RT-N66U、および他のルータで使用される WRT ファームウェアは、リクエストの MAC アドレスを適切にチェックしないため、認証を回避される、および任意のコマンドを実行される脆弱性が存在します。\r\n\r\n本脆弱性は当初、CVE-2014-10000 と採番されていました。しかし、その ID は、2014 年の CVE ID 構成変更に伴い無効となりました。",
+  "identifier": "JVNDB-2014-007550",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9583",
+      "source": "CVE",
+      "id": "CVE-2014-9583"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9583",
+      "source": "NVD",
+      "id": "CVE-2014-9583"
+    },
+    {
+      "text": "http://packetstormsecurity.com/files/129815/ASUSWRT-3.0.0.4.376_1071-LAN-Backdoor-Command-Execution.html",
+      "source": "関連文書",
+      "id": "ASUSWRT 3.0.0.4.376_1071 LAN Backdoor Command Execution"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:asus:rt-ac66u",
+      "version": "2.2",
+      "vendor": "ASUSTeK Computer Inc.",
+      "product": "RT-AC66U"
+    },
+    {
+      "text": "cpe:/h:asus:rt-n66u",
+      "version": "2.2",
+      "vendor": "ASUSTeK Computer Inc.",
+      "product": "RT-N66U"
+    },
+    {
+      "text": "cpe:/o:asus:wrt_firmware",
+      "version": "2.2",
+      "vendor": "ASUSTeK Computer Inc.",
+      "product": "WRT ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2016-02-10T17:04+09:00",
+  "issued": "2015-01-13T14:23+09:00",
+  "modified": "2016-02-10T17:04+09:00"
+}

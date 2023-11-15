@@ -1,0 +1,133 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-008776.html",
+  "title": "複数の Microsoft Windows 製品における情報を公開される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-008776.html",
+  "description": "複数の Microsoft Windows 製品には、特定の中央処理装置 (CPU) が投機的にメモリにアクセスする場合、情報を公開される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を「Windows カーネルの情報漏えいの脆弱性」として公開しています。\r\n\r\n本脆弱性は、CVE-2019-1071 および CVE-2019-1073 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2019-008776",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU99752892/",
+      "source": "JVN",
+      "id": "JVNVU#99752892"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-1125",
+      "source": "CVE",
+      "id": "CVE-2019-1125"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-1125",
+      "source": "NVD",
+      "id": "CVE-2019-1125"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-075-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-075-01"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:virtualization_host",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Virtualization Host"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_10",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 10"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_7",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 7"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_8.1",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 8.1"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_rt_8.1",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows RT 8.1"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2012",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2012"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2016",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2016"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2019",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2019"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2023-03-22T15:07+09:00",
+  "issued": "2019-09-05T18:19+09:00",
+  "modified": "2023-03-22T15:07+09:00"
+}

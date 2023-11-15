@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004987.html",
+  "title": "zope-ldapuserfolder の authenticate 関数における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004987.html",
+  "description": "zope-ldapuserfolder の LDAPUserFolder/LDAPUserFolder.py の authenticate 関数は、emergency アカウントのパスワードを検証しないため、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-004987",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2944",
+      "source": "CVE",
+      "id": "CVE-2010-2944"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2944",
+      "source": "NVD",
+      "id": "CVE-2010-2944"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:jens_vagelpohl:zope-ldapuserfolder",
+      "version": "2.2",
+      "vendor": "jens vagelpohl",
+      "product": "zope-ldapuserfolder"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T17:38+09:00",
+  "issued": "2012-09-25T17:38+09:00",
+  "modified": "2012-09-25T17:38+09:00"
+}

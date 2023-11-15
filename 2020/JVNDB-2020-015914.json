@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015914.html",
+  "title": "JT2Go および Teamcenter Visualization における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015914.html",
+  "description": "JT2Go および Teamcenter Visualization には、境界外書き込みに関する脆弱性が存在します。\r\n\r\nZero Day Initiative は、本脆弱性に ZDI-CAN-12182 を採番していました。",
+  "identifier": "JVNDB-2020-015914",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU91083521/",
+      "source": "JVN",
+      "id": "JVNVU#91083521"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27006",
+      "source": "CVE",
+      "id": "CVE-2020-27006"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-27006",
+      "source": "NVD",
+      "id": "CVE-2020-27006"
+    },
+    {
+      "text": "https://www.zerodayinitiative.com/advisories/ZDI-21-232/",
+      "source": "関連文書",
+      "id": "ZDI-21-232 (Siemens JT2Go PCT File Parsing Memory Corruption Remote Code Execution Vulnerability)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:siemens:jt2go",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "JT2Go"
+    },
+    {
+      "text": "cpe:/a:siemens:teamcenter_visualization",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "Teamcenter Visualization"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-10-22T17:12+09:00",
+  "issued": "2021-10-22T17:12+09:00",
+  "modified": "2021-10-22T17:12+09:00"
+}

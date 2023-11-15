@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006084.html",
+  "title": "Ceph の Ceph Object Gateway における CRLF インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006084.html",
+  "description": "Ceph の Ceph Object Gateway (別名 radosgw または RGW) には、CRLF インジェクションの脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers (HTTP レスポンスの分割) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/113.html",
+  "identifier": "JVNDB-2015-006084",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5245",
+      "source": "CVE",
+      "id": "CVE-2015-5245"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5245",
+      "source": "NVD",
+      "id": "CVE-2015-5245"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:ceph_storage",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Ceph Storage"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2015-12-07T17:25+09:00",
+  "issued": "2015-12-07T17:25+09:00",
+  "modified": "2015-12-07T17:25+09:00"
+}

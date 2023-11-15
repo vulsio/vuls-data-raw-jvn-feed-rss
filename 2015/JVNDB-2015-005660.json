@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005660.html",
+  "title": "仮想マシンモニタ (VMM) のメモリ重複排除機能に脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005660.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\n仮想マシンモニタ (VMM) の複数の実装は、メモリ重複排除機能に対する攻撃に対して脆弱です。\r\n\r\nUSENIX WOOT'15 で発表された論文 \"Cross-VM ASL INtrospection (CAIN)\" では、仮想マシンモニタ (VMM) で動作するひとつの仮想マシン (VM) 上で一般ユーザ権限を持つ攻撃者によって、VMM のメモリ重複排除機能に含まれる脆弱性を攻撃可能であることが報告されています。同一 VMM 内の別の VM で動作している OS 上でランダムに配置されたライブラリや実行ファイルの基底アドレスを特定することが可能となり、結果として ASLR を回避されることに繋がります。\r\n\r\nなお、ベンダは、「Cross-VM ASL INtrospection (CAIN) 攻撃を気にするのであれば、重複排除を無効にすればよい」とし、本件が脆弱性ではなく、潜在的に誤解されやすい動作であるとの見解を述べています。",
+  "identifier": "JVNDB-2015-005660",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97246638/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97246638"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2877",
+      "source": "CVE",
+      "id": "CVE-2015-2877"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-2877",
+      "source": "NVD",
+      "id": "CVE-2015-2877"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/935424",
+      "source": "CERT-VN",
+      "id": "VU#935424"
+    },
+    {
+      "text": "https://www.usenix.org/conference/woot15/workshop-program/presentation/barresi",
+      "source": "関連文書",
+      "id": "CAIN: Silently Breaking ASLR in the Cloud"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2017-04-11T14:47+09:00",
+  "issued": "2015-10-30T10:05+09:00",
+  "modified": "2017-04-11T14:47+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004389.html",
+  "title": "IP.Board のサブスクリプションマネージャにおけるメンバ ID を変更される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004389.html",
+  "description": "Invision Power Board (IPB or IP.Board) のサブスクリプションマネージャは、以下のファイルに不備があるため、メンバ ID を変更される、および任意ユーザの権限レベルを降格される脆弱性が存在します。\r\n(1) sources/classes/paymentgateways/ 配下の class_gw_2checkout.php\r\n(2) sources/classes/paymentgateways/ 配下の class_gw_authorizenet.php\r\n(3) sources/classes/paymentgateways/ 配下の class_gw_nochex.php\r\n(4) sources/classes/paymentgateways/ 配下の class_gw_paypal.php\r\n(5) sources/classes/paymentgateways/ 配下の class_gw_safshop.php",
+  "identifier": "JVNDB-2007-004389",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4914",
+      "source": "CVE",
+      "id": "CVE-2007-4914"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-4914",
+      "source": "NVD",
+      "id": "CVE-2007-4914"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:invision_power_services:invision_power_board",
+      "version": "2.2",
+      "vendor": "Invision Power Services, Inc",
+      "product": "IPS Community Suite (旧 Invision Power Board)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T16:59+09:00",
+  "issued": "2012-09-25T16:59+09:00",
+  "modified": "2012-09-25T16:59+09:00"
+}

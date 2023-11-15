@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004066.html",
+  "title": "Consona Live Assistance の tgctlcm.dll の SdcUser.TgConCtl ActiveX コントロールの RunCmd メソッドにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004066.html",
+  "description": "Consona Live Assistance、Dynamic Agent および Subscriber Assistance の tgctlcm.dll の SdcUser.TgConCtl ActiveX コントロールの RunCmd メソッドは、\"CreateProcess params\" に不備があるため、バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2010-004066",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1909",
+      "source": "CVE",
+      "id": "CVE-2010-1909"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1909",
+      "source": "NVD",
+      "id": "CVE-2010-1909"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/602801",
+      "source": "CERT-VN",
+      "id": "VU#602801"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:consona:consona_dynamic_agent",
+      "version": "2.2",
+      "vendor": "コンソナ",
+      "product": "consona dynamic agent"
+    },
+    {
+      "text": "cpe:/a:consona:consona_live_assistance",
+      "version": "2.2",
+      "vendor": "コンソナ",
+      "product": "consona live assistance"
+    },
+    {
+      "text": "cpe:/a:consona:consona_subscriber_assistance",
+      "version": "2.2",
+      "vendor": "コンソナ",
+      "product": "consona subscriber assistance"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-06-26T16:19+09:00",
+  "issued": "2012-06-26T16:19+09:00",
+  "modified": "2012-06-26T16:19+09:00"
+}

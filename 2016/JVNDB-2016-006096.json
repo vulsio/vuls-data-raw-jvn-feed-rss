@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006096.html",
+  "title": "Mozilla Firefox における解放済みメモリ使用 (use-after-free) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006096.html",
+  "description": "Mozilla Firefox には、解放済みメモリ使用 (use-after-free) の脆弱性が存在します。\r\n\r\nMozilla Firefox は SMIL (Synchronized Multimedia Integration Language) による SVG アニメーション機能をサポートしています。\r\nこの機能に関連する nsSMILTimeContainer オブジェクトには解放済みメモリ使用 (use-after-free) の脆弱性が存在します (CWE-416)。\r\n\r\nなお、Firefox を使用した製品である Tor Browser をターゲットとしたエクスプロイトコードが公開されているとのことです。\r\n\r\nSMIL\r\nhttps://developer.mozilla.org/en-US/docs/Web/SVG/SVG_animation_with_SMIL\r\n\r\nCWE-416\r\nhttps://cwe.mitre.org/data/definitions/416.html",
+  "identifier": "JVNDB-2016-006096",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU93847769",
+      "source": "JVN",
+      "id": "JVNVU#93847769"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9079",
+      "source": "CVE",
+      "id": "CVE-2016-9079"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-9079",
+      "source": "NVD",
+      "id": "CVE-2016-9079"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/791496",
+      "source": "CERT-VN",
+      "id": "VU#791496"
+    },
+    {
+      "text": "https://blog.gdatasoftware.com/2016/11/29346-firefox-0-day-targeting-tor-users",
+      "source": "関連文書",
+      "id": "Firefox 0-Day targeting Tor-Users"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:torproject:tor_browser",
+      "version": "2.2",
+      "vendor": "The Tor Project",
+      "product": "Tor Browser"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2018-08-30T18:05+09:00",
+  "issued": "2016-12-02T16:17+09:00",
+  "modified": "2018-08-30T18:05+09:00"
+}

@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000635.html",
+  "title": "Ethereal の SRVLOC 解析部におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000635.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal には、プロトコル解析部に以下の複数のセキュリティ問題が存在します。 \r\n\r\n・ISAKMP 解析部でシステムメモリを使いきる問題 (0.10.11-0.10.12) \r\n・FC-FCS 解析部でシステムメモリを使いきる問題 (0.9.0-0.10.12) \r\n・RSVP 解析部でシステムメモリを使いきる問題 (0.9.4-0.10.12) \r\n・ISIS LSP 解析部でシステムメモリを使いきる問題 (0.8.18-0.10.12) \r\n・IrDA 解析部のクラッシュ (0.10.0-0.10.12) \r\n・SLIMP3 解析部でのバッファオーバーフロー (0.9.1-0.10.12) \r\n・BER 解析部での無限ループ (0.10.3-0.10.12) \r\n・SCSI 解析部での Null ポインタデリファレンス及びクラッシュ (0.10.3-0.10.12) \r\n・Dissect unknown RPC program numbers オプション有効時 (既定では無効) に ONC RPC 解析部でシステムメモリを使い切る問題 (0.7.7-0.10.12) \r\n・sFlow 解析部での Null ポインタデリファレンス及びクラッシュ (0.9.14-0.10.12) \r\n・Rtnet 解析部での Null ポインタデリファレンス及びクラッシュ (0.10.8-0.10.12) \r\n・SigComp UDVM での無限ループ及びクラッシュ (0.10.12) \r\n・SMB transaction payload reassembly の有効時 (既定では無効) に SMB 解析部のクラッシュ (0.9.7-0.10.12) \r\n・X11 解析部でのゼロ除算によるエラー (0.10.1-0.10.12) \r\n・AgentX 解析部でのバッファオーバーフロー (0.10.10-0.10.12) \r\n・WSP 解析部での無効なポインタの解放 (0.10.1-0.10.12) \r\n・SRVLOC 解析部でのバッファオーバーフロー (0.10.0-0.10.12) \r\n\r\nリモートの攻撃者に悪用された場合、結果として Ethereal をクラッシュさせられサービス不能状態に陥る、利用可能なメモリをすべて消費する、さらには Ethereal の実行権限 (通常 root 権限) で任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2005-000635",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3184",
+      "source": "CVE",
+      "id": "CVE-2005-3184"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3184",
+      "source": "NVD",
+      "id": "CVE-2005-3184"
+    },
+    {
+      "text": "http://secunia.com/advisories/17254/",
+      "source": "SECUNIA",
+      "id": "SA17254"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15148",
+      "source": "BID",
+      "id": "15148"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15158",
+      "source": "BID",
+      "id": "15158"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/2148",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-2148"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

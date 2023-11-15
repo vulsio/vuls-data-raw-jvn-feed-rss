@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005458.html",
+  "title": "QEMU の ui/vnc.c の set_pixel_format 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005458.html",
+  "description": "QEMU の ui/vnc.c の set_pixel_format 関数には、サービス運用妨害 (クラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005458",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7815",
+      "source": "CVE",
+      "id": "CVE-2014-7815"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7815",
+      "source": "NVD",
+      "id": "CVE-2014-7815"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-06-02T17:38+09:00",
+  "issued": "2014-11-17T16:45+09:00",
+  "modified": "2015-06-02T17:38+09:00"
+}

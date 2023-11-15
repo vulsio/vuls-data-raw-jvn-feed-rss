@@ -1,0 +1,108 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002534.html",
+  "title": "CVS の rcs.c 内にある apply_rcs_change 関数における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002534.html",
+  "description": "CVS の rcs.c 内にある apply_rcs_change 関数には、配列インデックスエラーにより、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002534",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3846",
+      "source": "CVE",
+      "id": "CVE-2010-3846"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3846",
+      "source": "NVD",
+      "id": "CVE-2010-3846"
+    },
+    {
+      "text": "http://secunia.com/advisories/41079",
+      "source": "SECUNIA",
+      "id": "SA41079"
+    },
+    {
+      "text": "http://secunia.com/advisories/42409",
+      "source": "SECUNIA",
+      "id": "SA42409"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/44528",
+      "source": "BID",
+      "id": "44528"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/62858",
+      "source": "XF",
+      "id": "62858"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1024795",
+      "source": "SECTRACK",
+      "id": "1024795"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/2845",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-2845"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/3080",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-3080"
+    },
+    {
+      "text": "http://www.osvdb.org/68952",
+      "source": "OSVDB",
+      "id": "68952"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cvs:cvs",
+      "version": "2.2",
+      "vendor": "CVS",
+      "product": "CVS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2010-12-21T15:30+09:00",
+  "issued": "2010-12-21T15:30+09:00",
+  "modified": "2010-12-21T15:30+09:00"
+}

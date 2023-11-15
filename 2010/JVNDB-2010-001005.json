@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001005.html",
+  "title": "Linux kernel の r8169 ドライバにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001005.html",
+  "description": "Linux kernel の r8169 ドライバには、MTU を超えるイーサネットフレームの処理に不備があるため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001005",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4537",
+      "source": "CVE",
+      "id": "CVE-2009-4537"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-4537",
+      "source": "NVD",
+      "id": "CVE-2009-4537"
+    },
+    {
+      "text": "http://secunia.com/advisories/38031",
+      "source": "SECUNIA",
+      "id": "SA38031"
+    },
+    {
+      "text": "http://secunia.com/advisories/35265",
+      "source": "SECUNIA",
+      "id": "SA35265"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/37521",
+      "source": "BID",
+      "id": "37521"
+    },
+    {
+      "text": "http://securitytracker.com/id?1023419",
+      "source": "SECTRACK",
+      "id": "1023419"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2010-04-28T15:21+09:00",
+  "issued": "2010-02-03T14:35+09:00",
+  "modified": "2010-04-28T15:21+09:00"
+}

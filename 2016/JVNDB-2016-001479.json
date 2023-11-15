@@ -1,0 +1,80 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001479.html",
+  "title": "FlexNet Publisher の lmgrd にバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001479.html",
+  "description": "Flexera Software が提供する FlexNet Publisher 11.13.1.2 未満に含まれる lmgrd およびベンダ固有のサーバプログラムにはバッファオーバーフローの脆弱性が存在し、任意のコードを実行される可能性があります。\r\n\r\nFlexera Software の FlexNet Publisher は、ソフトウェアにライセンス管理機能を提供するための製品です。FlexNet Publisher に含まれる lmgrd およびベンダ固有のサーバプログラムで使われている文字列コピー機能には、バッファオーバーフローの脆弱性が存在します。遠隔の攻撃者はサーバ上で任意のコードを実行することが可能です。\r\n\r\nFlexNet Publisher\r\nhttp://learn.flexerasoftware.com/content/ECM-EVAL-FlexNet-Publisher\r\n\r\n詳しくは、本脆弱性の調査を行った研究者たちのブログポストやアドバイザリをご確認ください。\r\n\r\nブログポスト\r\nhttp://securitymumblings.blogspot.jp/2016/02/cve-2015-8277.html\r\n\r\nアドバイザリ\r\nhttps://www.securifera.com/advisories/cve-2015-8277/",
+  "identifier": "JVNDB-2016-001479",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU91895172",
+      "source": "JVN",
+      "id": "JVNVU#91895172"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8277",
+      "source": "CVE",
+      "id": "CVE-2015-8277"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8277",
+      "source": "NVD",
+      "id": "CVE-2015-8277"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/485744",
+      "source": "CERT-VN",
+      "id": "VU#485744"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/ICSA-18-102-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-18-102-02"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/ICSA-18-212-05",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-18-212-05"
+    },
+    {
+      "text": "http://securitymumblings.blogspot.jp/2016/02/cve-2015-8277.html",
+      "source": "関連文書",
+      "id": "Security Mumblings:Finding CVE-2015-8277 in FlexNet Publisher"
+    },
+    {
+      "text": "https://www.securifera.com/advisories/cve-2015-8277/",
+      "source": "関連文書",
+      "id": "Securifera:CVE-2015-8277"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:flexerasoftware:flexnet_publisher",
+      "version": "2.2",
+      "vendor": "フレクセラ・ソフトウェア合同会社",
+      "product": "FlexNet Publisher"
+    },
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2019-07-10T12:29+09:00",
+  "issued": "2016-02-24T11:28+09:00",
+  "modified": "2019-07-10T12:29+09:00"
+}

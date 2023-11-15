@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001355.html",
+  "title": "Adobe Acrobat の Javascript API におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001355.html",
+  "description": "Adobe Acrobat の Javascript API は、危険なメソッドを公開しているため、不正なコールバック関数のある app.checkForUpdate() 関数を含む PDF ファイルによって、任意のコマンドを実行される、または、バッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001355",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2042",
+      "source": "CVE",
+      "id": "CVE-2008-2042"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-2042",
+      "source": "NVD",
+      "id": "CVE-2008-2042"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/27641",
+      "source": "BID",
+      "id": "27641"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/42237",
+      "source": "XF",
+      "id": "42237"
+    },
+    {
+      "text": "http://securitytracker.com/id?1019971",
+      "source": "SECTRACK",
+      "id": "1019971"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:adobe:acrobat",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe Acrobat"
+    },
+    {
+      "text": "cpe:/a:adobe:acrobat_reader",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe Reader"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-07-09T13:55+09:00",
+  "issued": "2008-05-30T15:23+09:00",
+  "modified": "2008-07-09T13:55+09:00"
+}

@@ -1,0 +1,139 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001010.html",
+  "title": "MySQL の RENAME TABLE ステートメント処理におけるシステムテーブルを上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001010.html",
+  "description": "MySQL には、テーブルが DATA DIRECTORY および INDEX DIRECTORY オプションで作成されたシンボリックリンクに依存する場合、RENAME TABLE ステートメントを利用して、シンボリックリンクが指すファイルを変更することで、システムテーブルを上書き可能な脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001010",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5969",
+      "source": "CVE",
+      "id": "CVE-2007-5969"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-5969",
+      "source": "NVD",
+      "id": "CVE-2007-5969"
+    },
+    {
+      "text": "http://secunia.com/advisories/27981/",
+      "source": "SECUNIA",
+      "id": "SA27981"
+    },
+    {
+      "text": "http://secunia.com/advisories/28063/",
+      "source": "SECUNIA",
+      "id": "SA28063"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26765",
+      "source": "BID",
+      "id": "26765"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1019060",
+      "source": "SECTRACK",
+      "id": "1019060"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/4142",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-4142"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/4198",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-4198"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/0560",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-0560"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mysql:mysql",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/a:mysql:mysql_community_server",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL Community Server"
+    },
+    {
+      "text": "cpe:/a:mysql:mysql_enterprise_server",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL Enterprise Server"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2008-10-31T10:43+09:00",
+  "issued": "2007-12-19T15:06+09:00",
+  "modified": "2008-10-31T10:43+09:00"
+}

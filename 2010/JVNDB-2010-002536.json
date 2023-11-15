@@ -1,0 +1,106 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002536.html",
+  "title": "Wireshark の BER 解析部の dissect_ber_unknown 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002536.html",
+  "description": "Wireshark の BER 解析部の epan/dissectors/packet-ber.c 内にある dissect_ber_unknown 関数には、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002536",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3445",
+      "source": "CVE",
+      "id": "CVE-2010-3445"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3445",
+      "source": "NVD",
+      "id": "CVE-2010-3445"
+    },
+    {
+      "text": "http://secunia.com/advisories/42411",
+      "source": "SECUNIA",
+      "id": "SA42411"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/43197",
+      "source": "BID",
+      "id": "43197"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/2613",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-2613"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/3093",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-3093"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wireshark:wireshark",
+      "version": "2.2",
+      "vendor": "Wireshark",
+      "product": "Wireshark"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:oracle:solaris",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Solaris"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-04-04T14:36+09:00",
+  "issued": "2010-12-22T14:07+09:00",
+  "modified": "2011-04-04T14:36+09:00"
+}

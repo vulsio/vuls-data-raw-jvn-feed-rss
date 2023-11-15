@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005703.html",
+  "title": "Linux Kernel の SCTP の実装におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005703.html",
+  "description": "Linux Kernel の SCTP の実装の net/sctp/sm_make_chunk.c 内の sctp_process_param 関数には、ASCONF が使用されている場合、サービス運用妨害 (NULL ポインタデリファレンスおよびシステムクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005703",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7841",
+      "source": "CVE",
+      "id": "CVE-2014-7841"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7841",
+      "source": "NVD",
+      "id": "CVE-2014-7841"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-06-08T17:51+09:00",
+  "issued": "2014-12-02T16:15+09:00",
+  "modified": "2015-06-08T17:51+09:00"
+}

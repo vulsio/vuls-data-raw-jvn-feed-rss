@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002122.html",
+  "title": "複数の OpenStack コンポーネントにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002122.html",
+  "description": "OpenStack Keystone の Essex、Folsom、Grizzly および Compute (Nova) の Essex、Folsom および Cinder の Folsom には、サービス運用妨害 (リソース消費およびクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002122",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1664",
+      "source": "CVE",
+      "id": "CVE-2013-1664"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1664",
+      "source": "NVD",
+      "id": "CVE-2013-1664"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:cinder_folsom",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Cinder Folsom"
+    },
+    {
+      "text": "cpe:/a:openstack:keystone",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "Openstack Keystone"
+    },
+    {
+      "text": "cpe:/a:openstack:nova",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Compute Nova"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-05-21T12:23+09:00",
+  "issued": "2013-04-04T16:01+09:00",
+  "modified": "2013-05-21T12:23+09:00"
+}

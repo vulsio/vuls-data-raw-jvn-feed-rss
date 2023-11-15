@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001374.html",
+  "title": "トレンドマイクロ株式会社製パスワードマネージャーにおける DLL 読み込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001374.html",
+  "description": "トレンドマイクロ株式会社が提供するパスワードマネージャーには、DLL を読み込む際の検索パスに問題があり、同一ディレクトリに存在する特定の DLL を読み込んでしまう脆弱性 (CWE-427) が存在します。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2021-001374",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU98074915",
+      "source": "JVN",
+      "id": "JVNVU#98074915"
+    },
+    {
+      "text": "https://jvn.jp/ta/JVNTA91240916/",
+      "source": "JVN",
+      "id": "JVNTA#91240916"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28647",
+      "source": "CVE",
+      "id": "CVE-2021-28647"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-28647",
+      "source": "NVD",
+      "id": "CVE-2021-28647"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/427.html",
+      "id": "CWE-427",
+      "title": "制御されていない検索パスの要素(CWE-427)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:trendmicro:password_manager",
+      "version": "2.2",
+      "vendor": "トレンドマイクロ",
+      "product": "パスワードマネージャー"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-04-20T11:39+09:00",
+  "issued": "2021-04-20T11:39+09:00",
+  "modified": "2021-04-20T11:39+09:00"
+}

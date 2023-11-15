@@ -1,0 +1,125 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000275.html",
+  "title": "OpenSSH の複数の関数におけるサービス運用妨害 (DoS) および任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000275.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nOpenSSH Project より配布されている OpenSSH 3.7 (Portable 版 OpenSSH 3.7p1) 以前には、バッファの管理に不備が存在します。 \r\n\r\nリモートの攻撃者により、バッファの解放時に近接した他の領域も解放されるような意図的な長さのパケットを受信した場合、ヒープ領域が破壊される可能性が存在します。 \r\n\r\nこの問題を利用するリモートの攻撃者は、結果として sshd をサービス不能状態に陥らせる可能性があり、また、任意のコードの実行も示唆されています。 \r\n\r\n尚、問題が存在するルーチンは OpenSSH の初期のリリースから利用されているため、同様のルーチンを利用している他の SSH の実装も影響を受ける可能性があります。 \r\n\r\nSSH Secure Shell/Ciso IOS に関しては、この問題の影響を受けないことがベンダより報告されています。 \r\nまた、F-Secure SSH に関しては、1.3.14 (for Unix) 以前が影響を受け、2.x 以降は影響を受けないことがベンダより報告されています。 \r\n\r\n当初この問題 (CAN-2003-0693) は buffer.c 内の buffer_append_space() 関数に発見され、OpenSSH 3.7p1 で解消されました。 \r\nしかし、その後、同様の問題が他の箇所にも発見されため、この問題を解消する OpenSSH 3.7.1p1 がリリースされています。(CAN-2003-0695) \r\n\r\nさらに、上記の問題とは異なるメモリ管理に関する問題 (CAN-2003-0682) も報告されており、この問題は OpenSSH 3.7.1p2 にアップデートすることで解消可能です。 \r\n\r\n尚、Red Hat Linux に関しては、ベンダより 2003 年 9 月 17 日付けで公開されたアドバイザリ (RHSA-2003:279-17) で示された RPM パッケージへのアップデート、Turboinux に関しては、ベンダより 2003 年 9 月 24 日付で公開されたアドバイザリ (TLSA-2003-53) で示されたパッケージへのアップデートにより、これら全ての問題 (CAN-2003-0682/CAN-2003-0693/CAN-2003-0695) を解消することが可能です。",
+  "identifier": "JVNDB-2003-000275",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNCA-2003-24",
+      "source": "JVN",
+      "id": "JVNCA-2003-24"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRCA-2003-24",
+      "source": "JVNTR",
+      "id": "TRCA-2003-24"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0695",
+      "source": "CVE",
+      "id": "CVE-2003-0695"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0695",
+      "source": "NVD",
+      "id": "CVE-2003-0695"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2003/wr033801.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2003-3801"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-2003-24.html",
+      "source": "CERT-A",
+      "id": "CA-2003-24"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/333628",
+      "source": "CERT-VN",
+      "id": "VU#333628"
+    },
+    {
+      "text": "http://www.ciac.org/ciac/bulletins/n-151.shtml",
+      "source": "CIAC",
+      "id": "N-151"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8628",
+      "source": "BID",
+      "id": "8628"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/13215",
+      "source": "ISS",
+      "id": "13215"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/13191",
+      "source": "ISS",
+      "id": "13191"
+    },
+    {
+      "text": "http://www.isskk.co.jp/support/techinfo/general/OpenSSH144.html",
+      "source": "ISSKK",
+      "id": "OpenSSH メモリ破損の脆弱性"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openbsd:openssh",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

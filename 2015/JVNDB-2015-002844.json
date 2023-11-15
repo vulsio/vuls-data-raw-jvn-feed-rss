@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002844.html",
+  "title": "PostgreSQL におけるメモリ二重解放の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002844.html",
+  "description": "PostgreSQL には、メモリを二重に解放する不備があるため、サービス運用妨害 (クラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-415: Double Free (二重解放) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/415.html",
+  "identifier": "JVNDB-2015-002844",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99970459/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99970459"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3165",
+      "source": "CVE",
+      "id": "CVE-2015-3165"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3165",
+      "source": "NVD",
+      "id": "CVE-2015-3165"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:postgresql:postgresql",
+      "version": "2.2",
+      "vendor": "PostgreSQL.org",
+      "product": "PostgreSQL"
+    },
+    {
+      "text": "cpe:/o:apple:os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "macOS Server (旧 OS X Server)"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-10-05T16:14+09:00",
+  "issued": "2015-06-01T12:11+09:00",
+  "modified": "2015-10-05T16:14+09:00"
+}

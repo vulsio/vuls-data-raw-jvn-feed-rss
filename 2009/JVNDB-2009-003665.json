@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-003665.html",
+  "title": "複数の Asterisk 製品における SIP チャネルドライバにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-003665.html",
+  "description": "Asterisk Open Source、Asterisk Business Edition および Asterisk Appliance s800i の SIP チャネルドライバには、sscanf style 関数を呼び出す際、最大幅を使用しないため、サービス運用妨害 (スタックメモリ消費) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2009-003665",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2726",
+      "source": "CVE",
+      "id": "CVE-2009-2726"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2726",
+      "source": "NVD",
+      "id": "CVE-2009-2726"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:digium:asterisk_business_edition",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk Business Edition"
+    },
+    {
+      "text": "cpe:/a:digium:open_source",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk Open Source"
+    },
+    {
+      "text": "cpe:/h:digium:appliance_s800i",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Appliance S800i"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-06-26T16:10+09:00",
+  "issued": "2012-06-26T16:10+09:00",
+  "modified": "2012-06-26T16:10+09:00"
+}

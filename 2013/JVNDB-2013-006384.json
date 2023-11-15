@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006384.html",
+  "title": "Android の Java Cryptography Architecture で使用される Apache Harmony における暗号保護メカニズムを破られる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006384.html",
+  "description": "Android の Java Cryptography Architecture (JCA) で使用される Apache Harmony の SecureRandom の実装内の classlib/modules/security/src/main/java/common/org/apache/harmony/security/provider/crypto/SHA1PRNG_SecureRandomImpl.java の engineNextBytes 関数は、ユーザにより提供されたシードがない場合、不正なオフセット値を使用するため、暗号保護メカニズムを破られる脆弱性が存在します。\r\n\r\n本脆弱性の Bitcoin ウォレットアプリケーションを対象とした攻撃が 2013 年 8 月に観測されています。",
+  "identifier": "JVNDB-2013-006384",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7372",
+      "source": "CVE",
+      "id": "CVE-2013-7372"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7372",
+      "source": "NVD",
+      "id": "CVE-2013-7372"
+    },
+    {
+      "text": "http://www.nds.rub.de/media/nds/veroeffentlichungen/2013/03/25/paper_2.pdf",
+      "source": "関連文書",
+      "id": "Randomly Failed! The State of Randomness in Current Java Implementations"
+    },
+    {
+      "text": "https://bitcoin.org/en/alert/2013-08-11-android",
+      "source": "関連文書",
+      "id": "Android Security Vulnerability"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:harmony",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Harmony"
+    },
+    {
+      "text": "cpe:/o:google:android",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2014-05-02T16:45+09:00",
+  "issued": "2014-05-02T16:45+09:00",
+  "modified": "2014-05-02T16:45+09:00"
+}

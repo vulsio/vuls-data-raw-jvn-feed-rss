@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-016447.html",
+  "title": "Android および iOS 用 Mobile@Work におけるハードコードされた認証情報の使用に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-016447.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nAndroid および iOS 用 Mobile@Work には、ハードコードされた認証情報の使用に関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性に対して異議を唱えています。\r\n詳細については、以下の NVD の Current Description を確認してください。\r\nhttps://nvd.nist.gov/vuln/detail/CVE-2020-35138",
+  "identifier": "JVNDB-2020-016447",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35138",
+      "source": "CVE",
+      "id": "CVE-2020-35138"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-35138",
+      "source": "NVD",
+      "id": "CVE-2020-35138"
+    },
+    {
+      "text": "https://www.optiv.com/insights/source-zero/blog/mobileiron-mdm-contains-static-key-allowing-account-enumeration",
+      "source": "関連文書",
+      "id": "MobileIron MDM Contains Static Key Allowing Account Enumeration"
+    },
+    {
+      "text": "https://github.com/optiv/rustyIron",
+      "source": "関連文書",
+      "id": "rustyIron"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/798.html",
+      "id": "CWE-798",
+      "title": "ハードコードされた認証情報の使用(CWE-798)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mobileiron:mobile%40work",
+      "version": "2.2",
+      "vendor": "mobileiron",
+      "product": "mobile@work"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-12-06T17:15+09:00",
+  "issued": "2021-12-06T17:15+09:00",
+  "modified": "2021-12-06T17:15+09:00"
+}

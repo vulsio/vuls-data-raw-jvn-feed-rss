@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007442.html",
+  "title": "PHP の Zend Engine の zend_ts_hash.c の zend_ts_hash_graceful_destroy 関数におけるメモリ二重解放の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007442.html",
+  "description": "PHP の Zend Engine の zend_ts_hash.c の zend_ts_hash_graceful_destroy 関数には、メモリを二重に解放する不備があるため、サービス運用妨害 (DoS) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-415: Double Free (二重解放) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/415.html",
+  "identifier": "JVNDB-2014-007442",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97220341/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97220341"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9425",
+      "source": "CVE",
+      "id": "CVE-2014-9425"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9425",
+      "source": "NVD",
+      "id": "CVE-2014-9425"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2015-0040.html",
+      "source": "関連文書",
+      "id": "MGASA-2015-0040"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-10-06T10:33+09:00",
+  "issued": "2015-01-06T18:15+09:00",
+  "modified": "2015-10-06T10:33+09:00"
+}

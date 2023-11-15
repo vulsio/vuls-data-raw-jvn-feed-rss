@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005035.html",
+  "title": "libguestfs の guestfish コマンドにおけるソケットに書き込まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005035.html",
+  "description": "libguestfs の guestfish コマンドは、--remote または --listen オプションを使用している場合、/tmp/.guestfish-$UID/ ディレクトリ内に一時的なソケットファイルを生成する際、このディレクトリの所有権を適切にチェックしないため、ソケットに書き込まれる、および任意のコマンドを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005035",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4419",
+      "source": "CVE",
+      "id": "CVE-2013-4419"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4419",
+      "source": "NVD",
+      "id": "CVE-2013-4419"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libguestfs:libguestfs",
+      "version": "2.2",
+      "vendor": "libguestfs",
+      "product": "libguestfs"
+    },
+    {
+      "text": "cpe:/a:novell:suse_linux_enterprise_software_development_kit",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "SUSE Linux Enterprise Software Development Kit"
+    },
+    {
+      "text": "cpe:/o:novell:suse_linux_enterprise_server",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "SUSE Linux Enterprise Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-12-05T15:49+09:00",
+  "issued": "2013-11-07T18:12+09:00",
+  "modified": "2013-12-05T15:49+09:00"
+}

@@ -1,0 +1,70 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-015802.html",
+  "title": "Graham Dumpleton の mod_wsgi 他複数ベンダの製品におけるデータの信頼性についての不十分な検証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-015802.html",
+  "description": "Graham Dumpleton の mod_wsgi 他複数ベンダの製品には、データの信頼性についての不十分な検証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-015802",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-2255",
+      "source": "CVE",
+      "id": "CVE-2022-2255"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-2255",
+      "source": "NVD",
+      "id": "CVE-2022-2255"
+    },
+    {
+      "text": "https://github.com/GrahamDumpleton/mod_wsgi/blob/4.9.2/src/server/mod_wsgi.c#L13940-L13941",
+      "source": "関連文書",
+      "id": "github.com (mod_wsgi.c#L13940-L13941)"
+    },
+    {
+      "text": "https://github.com/GrahamDumpleton/mod_wsgi/blob/4.9.2/src/server/mod_wsgi.c#L14046-L14082",
+      "source": "関連文書",
+      "id": "github.com (mod_wsgi.c#L14046-L14082)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2022/09/msg00021.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00021)"
+    },
+    {
+      "text": "https://modwsgi.readthedocs.io/en/latest/release-notes/version-4.9.3.html",
+      "source": "関連文書",
+      "id": "modwsgi.readthedocs.io (version-4.9.3)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/345.html",
+      "id": "CWE-345",
+      "title": "データの信頼性についての不十分な検証(CWE-345)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:modwsgi:mod_wsgi",
+      "version": "2.2",
+      "vendor": "Graham Dumpleton",
+      "product": "mod_wsgi"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2023-09-28T17:10+09:00",
+  "issued": "2023-09-28T17:10+09:00",
+  "modified": "2023-09-28T17:10+09:00"
+}

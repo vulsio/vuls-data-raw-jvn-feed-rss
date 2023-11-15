@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009467.html",
+  "title": "XOOPS 用モジュール XooNIps における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009467.html",
+  "description": "理化学研究所 脳神経科学研究センター 統合計算脳科学連携部門 神経情報基盤開発ユニットが提供する XOOPS 用モジュール XooNIps には、次の複数の脆弱性が存在します。\r\n\r\n　* SQL インジェクション (CWE-89) - CVE-2020-5659\r\n　* 反射型クロスサイトスクリプティング (CWE-79) - CVE-2020-5662\r\n　* 格納型クロスサイトスクリプティング (CWE-79) - CVE-2020-5663\r\n　* 信頼できないデータのデシリアライズ (CWE-502) - CVE-2020-5664\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者:株式会社Flatt Security　stypr 氏",
+  "identifier": "JVNDB-2020-009467",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU92053563/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92053563"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5659",
+      "source": "CVE",
+      "id": "CVE-2020-5659"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5662",
+      "source": "CVE",
+      "id": "CVE-2020-5662"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5663",
+      "source": "CVE",
+      "id": "CVE-2020-5663"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5664",
+      "source": "CVE",
+      "id": "CVE-2020-5664"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/502.html",
+      "id": "CWE-502",
+      "title": "信頼できないデータのデシリアライゼーション(CWE-502)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:riken:xoonips",
+      "version": "2.2",
+      "vendor": "理化学研究所 脳神経科学研究センター 神経情報基盤開発ユニット",
+      "product": "XooNIps"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "6.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2020-11-09T14:06+09:00",
+  "issued": "2020-11-09T14:06+09:00",
+  "modified": "2020-11-09T14:06+09:00"
+}

@@ -1,0 +1,101 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001044.html",
+  "title": "CUPS の SNMP 用バックエンドプログラムにおける整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001044.html",
+  "description": "CUPS には SNMP 用バックエンドプログラム (backend/snmp.c) の asn1_get_string() 関数において、SNMP レスポンスの取り扱いに不備があり、整数オーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001044",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA07-352A/index.html",
+      "source": "JVN",
+      "id": "JVNTA07-352A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA07-352A/index.html",
+      "source": "JVNTR",
+      "id": "TRTA07-352A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5849",
+      "source": "CVE",
+      "id": "CVE-2007-5849"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5849",
+      "source": "NVD",
+      "id": "CVE-2007-5849"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA07-352A.html",
+      "source": "CERT-SA",
+      "id": "SA07-352A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA07-352A.html",
+      "source": "CERT-TA",
+      "id": "TA07-352A"
+    },
+    {
+      "text": "http://secunia.com/advisories/28129",
+      "source": "SECUNIA",
+      "id": "SA28129"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26917",
+      "source": "BID",
+      "id": "26917"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/39101",
+      "source": "XF",
+      "id": "39101"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/4238",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-4238"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/4242",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-4242"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cups:cups",
+      "version": "2.2",
+      "vendor": "CUPS",
+      "product": "CUPS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-01-07T15:31+09:00",
+  "issued": "2008-01-07T15:31+09:00",
+  "modified": "2008-01-07T15:31+09:00"
+}

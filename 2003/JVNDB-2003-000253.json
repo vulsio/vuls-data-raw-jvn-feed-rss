@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000253.html",
+  "title": "Perl CGI.pm の start_form() 関数における不正な URL によるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000253.html",
+  "description": "Perl の CGI.pm に含まれている start_form() 関数には、受け取るパラメータのサニタイズが適切に行われていないため、FORM 要素の ACTION 属性が指定されていない場合に特定のパラメータが与えられると誤った解釈をする脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000253",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0615",
+      "source": "CVE",
+      "id": "CVE-2003-0615"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0615",
+      "source": "NVD",
+      "id": "CVE-2003-0615"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/246409",
+      "source": "CERT-VN",
+      "id": "VU#246409"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8231",
+      "source": "BID",
+      "id": "8231"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:perl:perl",
+      "version": "2.2",
+      "vendor": "The Perl Foundation",
+      "product": "Perl"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

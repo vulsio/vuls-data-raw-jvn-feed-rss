@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005066.html",
+  "title": "LibTIFF の thumbnail ツールの cpStrips および cpTiles 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005066.html",
+  "description": "LibTIFF の thumbnail ツールの (1) cpStrips および (2) cpTiles 関数には、サービス運用妨害 (境界外読み取り) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-125: Out-of-bounds Read (境界外読み取り) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/125.html",
+  "identifier": "JVNDB-2016-005066",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3631",
+      "source": "CVE",
+      "id": "CVE-2016-3631"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3631",
+      "source": "NVD",
+      "id": "CVE-2016-3631"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/04/08/10",
+      "source": "関連文書",
+      "id": "CVE-2016-3631 - libtiff 4.0.6 illegel read"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libtiff_project:libtiff",
+      "version": "2.2",
+      "vendor": "LibTIFF",
+      "product": "LibTIFF"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-10-05T14:01+09:00",
+  "issued": "2016-10-05T14:01+09:00",
+  "modified": "2016-10-05T14:01+09:00"
+}

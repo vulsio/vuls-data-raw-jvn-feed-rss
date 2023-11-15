@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000888.html",
+  "title": "PCRE の名前付きサブパターンを含む正規表現の処理におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000888.html",
+  "description": "Perl-Compatible Regular Expression (PCRE) には、名前付きキャプチャ用サブパターンを適切に数えないため、バッファオーバーフローの脆弱性が存在します。\r\n\r\nなお、本問題は、CVE-2006-7224 の問題に含まれていましたが、CVE-2006-7224 は破棄されました。",
+  "identifier": "JVNDB-2005-000888",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4872",
+      "source": "CVE",
+      "id": "CVE-2005-4872"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4872",
+      "source": "NVD",
+      "id": "CVE-2005-4872"
+    },
+    {
+      "text": "http://secunia.com/advisories/27582",
+      "source": "SECUNIA",
+      "id": "SA27582"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26462",
+      "source": "BID",
+      "id": "26462"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pcre:pcre",
+      "version": "2.2",
+      "vendor": "pcre.org",
+      "product": "PCRE"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2007-12-25T15:26+09:00",
+  "issued": "2007-11-30T17:12+09:00",
+  "modified": "2007-12-25T15:26+09:00"
+}

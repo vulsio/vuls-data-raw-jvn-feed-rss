@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001515.html",
+  "title": "無線接続するキーボードやマウスなどの入力機器が安全でない独自通信プロトコルを使用している問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001515.html",
+  "description": "複数の開発者が提供している無線接続のキーボードやマウスなどの入力機器は、安全でない独自の無線通信プロトコルを使用しています。\r\n\r\nセンシティブなデータを暗号化しない問題 (CWE-311)\r\n複数の無線接続の入力機器 (キーボードやマウスなど) は、2.4GHz 帯 (ISM バンド) を使用する独自の無線通信プロトコルを実装しており、このプロトコルにおける通信の暗号化に不備が存在します。無線通信の到達範囲にいる攻撃者は、ユーザの端末にキー入力を送りつけたり、キーボードに打ち込まれた内容を傍受したり、ユーザの端末を別の入力機器とペアリングさせたりすることが可能です。無線通信の有効範囲は機器によって異なりますが、室内で使用する多くの場合には数メートル程度です。\r\n\r\nCWE-311: Missing Encryption of Sensitive Data\r\nhttp://cwe.mitre.org/data/definitions/311.html\r\n\r\n発見者はさらに詳しい情報を掲載したアドバイザリをリリースし、ウェブサイトも立ち上げています。\r\n\r\nアドバイザリ\r\nhttps://github.com/RFStorm/mousejack/tree/master/doc/advisories\r\n\r\nウェブサイト\r\nhttps://www.mousejack.com/",
+  "identifier": "JVNDB-2016-001515",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU99797968",
+      "source": "JVN",
+      "id": "JVNVU#99797968"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/981271",
+      "source": "CERT-VN",
+      "id": "VU#981271"
+    },
+    {
+      "text": "https://www.mousejack.com/",
+      "source": "関連文書",
+      "id": "MOUSEJACK - Wireless Mouse Hacks & Network Security Protection"
+    },
+    {
+      "text": "https://www.bastille.net/affected-devices",
+      "source": "関連文書",
+      "id": "Affected Devices"
+    },
+    {
+      "text": "https://github.com/RFStorm/mousejack/tree/master/doc/advisories",
+      "source": "関連文書",
+      "id": "mousejack/doc/advisories at master - RFStorm/mousejack - GitHub"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:A/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2016-02-26T16:26+09:00",
+  "issued": "2016-02-26T16:26+09:00",
+  "modified": "2016-02-26T16:26+09:00"
+}

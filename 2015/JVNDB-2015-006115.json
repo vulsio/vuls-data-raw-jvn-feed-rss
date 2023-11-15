@@ -1,0 +1,116 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006115.html",
+  "title": "OpenSSL の crypto/rsa/rsa_ameth.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006115.html",
+  "description": "OpenSSL の crypto/rsa/rsa_ameth.c には、サービス運用妨害 (NULL ポインタデリファレンスおよびアプリケーションクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-476: NULL Pointer Dereference (NULL ポインタデリファレンス) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/476.html",
+  "identifier": "JVNDB-2015-006115",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU95113540/",
+      "source": "JVN",
+      "id": "JVNVU#95113540"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3194",
+      "source": "CVE",
+      "id": "CVE-2015-3194"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3194",
+      "source": "NVD",
+      "id": "CVE-2015-3194"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hp:insight_control",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Insight Control"
+    },
+    {
+      "text": "cpe:/a:hp:matrix_operating_environment",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Matrix Operating Environment"
+    },
+    {
+      "text": "cpe:/a:hp:server_migration_pack",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Server Migration Pack"
+    },
+    {
+      "text": "cpe:/a:hp:systems_insight_manager",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Systems Insight Manager"
+    },
+    {
+      "text": "cpe:/a:hp:system_management_homepage",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "System Management Homepage"
+    },
+    {
+      "text": "cpe:/a:hp:version_control_repository_manager",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Version Control Repository Manager"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:oracle:mysql",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/a:oracle:primavera_p6_enterprise_project_portfolio_management",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Primavera P6 Enterprise Project Portfolio Management"
+    },
+    {
+      "text": "cpe:/a:oracle:secure_global_desktop",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Secure Global Desktop"
+    },
+    {
+      "text": "cpe:/a:oracle:vm_virtualbox",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle VM VirtualBox"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-09-30T11:27+09:00",
+  "issued": "2015-12-08T17:50+09:00",
+  "modified": "2016-09-30T11:27+09:00"
+}

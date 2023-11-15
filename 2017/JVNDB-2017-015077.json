@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-015077.html",
+  "title": "Raptor RDF Syntax Library における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-015077.html",
+  "description": "Raptor RDF Syntax Library には、境界外書き込みに関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2017-015077",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18926",
+      "source": "CVE",
+      "id": "CVE-2017-18926"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-18926",
+      "source": "NVD",
+      "id": "CVE-2017-18926"
+    },
+    {
+      "text": "https://github.com/LibreOffice/core/blob/master/external/redland/raptor/0001-Calcualte-max-nspace-declarations-correctly-for-XML-.patch.1",
+      "source": "関連文書",
+      "id": "core/external/redland/raptor/0001-Calcualte-max-nspace-declarations-correctly-for-XML-.patch.1"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2017/06/07/1",
+      "source": "関連文書",
+      "id": "two heap overflows in raptor"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redland:libraptor",
+      "version": "2.2",
+      "vendor": "Redland",
+      "product": "Redland Raptor"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:H"
+    }
+  ],
+  "date": "2021-06-21T16:36+09:00",
+  "issued": "2021-06-21T16:36+09:00",
+  "modified": "2021-06-21T16:36+09:00"
+}

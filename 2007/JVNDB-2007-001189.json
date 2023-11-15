@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001189.html",
+  "title": "OpenLDAP の slapd におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001189.html",
+  "description": "OpenLDAP の slapd における slapo-pcache には、プロキシキャッシュサーバとして稼働している場合に calloc の代わりに malloc を使用してメモリを割り当て配列の初期化を防止することにより、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001189",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5708",
+      "source": "CVE",
+      "id": "CVE-2007-5708"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-5708",
+      "source": "NVD",
+      "id": "CVE-2007-5708"
+    },
+    {
+      "text": "http://secunia.com/advisories/27424",
+      "source": "SECUNIA",
+      "id": "SA27424"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26245",
+      "source": "BID",
+      "id": "26245"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2007/3645",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2007-3645"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openldap:openldap",
+      "version": "2.2",
+      "vendor": "OpenLDAP Foundation",
+      "product": "OpenLDAP"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_client",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Client"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2008-12-05T11:55+09:00",
+  "issued": "2008-12-05T11:55+09:00",
+  "modified": "2008-12-05T11:55+09:00"
+}

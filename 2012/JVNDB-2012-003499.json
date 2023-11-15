@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003499.html",
+  "title": "Open vSwitch における任意のファイルを削除される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003499.html",
+  "description": "Open vSwitch は、(1) /var/lib/openvswitch/pki/controllerca/incoming/、または (2) /var/lib/openvswitch/pki/switchca/incoming/ に対して、誰でも書き込みできる権限 (world-writable permissions) を用いるため、任意のファイルを削除される、または上書きされる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-003499",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3449",
+      "source": "CVE",
+      "id": "CVE-2012-3449"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3449",
+      "source": "NVD",
+      "id": "CVE-2012-3449"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openvswitch:openvswitch",
+      "version": "2.2",
+      "vendor": "Open vSwitch",
+      "product": "Open vSwitch"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2012-08-09T16:12+09:00",
+  "issued": "2012-08-09T16:12+09:00",
+  "modified": "2012-08-09T16:12+09:00"
+}

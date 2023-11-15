@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002986.html",
+  "title": "X.org libX11 における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002986.html",
+  "description": "X.org libX11 には、下記の関数の処理に不備があるため、整数オーバーフローの脆弱性が存在します。\r\n\r\n(1) XQueryFont 関数\r\n(2) _XF86BigfontQueryFont 関数\r\n(3) XListFontsWithInfo 関数\r\n(4) XGetMotionEvents 関数\r\n(5) XListHosts 関数\r\n(6) XGetModifierMapping 関数\r\n(7) XGetPointerMapping 関数\r\n(8) XGetKeyboardMapping 関数\r\n(9) XGetWindowProperty 関数\r\n(10) XGetImage functions 関数",
+  "identifier": "JVNDB-2013-002986",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1981",
+      "source": "CVE",
+      "id": "CVE-2013-1981"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1981",
+      "source": "NVD",
+      "id": "CVE-2013-1981"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:x.org:libx11",
+      "version": "2.2",
+      "vendor": "X.Org Foundation",
+      "product": "libX11"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-12-06T15:33+09:00",
+  "issued": "2013-06-18T14:04+09:00",
+  "modified": "2013-12-06T15:33+09:00"
+}

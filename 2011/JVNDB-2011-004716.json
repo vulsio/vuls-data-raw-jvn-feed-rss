@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004716.html",
+  "title": "Linux kernel の add_del_listener 関数における サービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004716.html",
+  "description": "Linux kernel の kernel/taskstats.c の add_del_listener 関数は、exit ハンドラの登録処理を制限しないため、サービス運用妨害 (メモリと CPU 消費) 状態となる、または OOM Killer を回避する脆弱性が存在します。",
+  "identifier": "JVNDB-2011-004716",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2484",
+      "source": "CVE",
+      "id": "CVE-2011-2484"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2484",
+      "source": "NVD",
+      "id": "CVE-2011-2484"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/a:vmware:esxi",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESXi"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-11-02T17:53+09:00",
+  "issued": "2012-03-27T18:43+09:00",
+  "modified": "2012-11-02T17:53+09:00"
+}

@@ -1,0 +1,35 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001956.html",
+  "title": "SMA Technologies 製 OpCon の UNIX 向けエージェントにおける SSH 鍵生成の問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001956.html",
+  "description": "SMA Technologies が提供する  OpCon には、UNIX 向けエージェントにおいて、SSH 接続用の鍵生成に関する問題が存在します。\r\n\r\nOpCon は SMA Technologies が提供する IT 管理システムです。OpCon の UNIX 向けエージェントでは、製品に共通の SSH 接続用鍵ペアが用いられており、その秘密鍵がインストールファイル内にハードコードされています。さらに、製品のインストールおよび更新時に、公開鍵が root ユーザの authorized_keys ファイルに追加されるため、インストールファイルから秘密鍵を入手した攻撃者は、他ユーザのシステムに SSH 接続することが可能になります。この問題には CVE-2022-2154 が採番されています。\r\n",
+  "identifier": "JVNDB-2022-001956",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92741585/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92741585"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-2154",
+      "source": "CVE",
+      "id": "CVE-2022-2154"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/142546",
+      "source": "CERT-VN",
+      "id": "VU#142546"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:sam_technologies_opcon",
+      "version": "2.2",
+      "vendor": "SMA Technologies",
+      "product": "OpCon"
+    }
+  ],
+  "date": "2022-06-23T17:34+09:00",
+  "issued": "2022-06-23T17:34+09:00",
+  "modified": "2022-06-23T17:34+09:00"
+}

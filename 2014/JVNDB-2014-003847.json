@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003847.html",
+  "title": "WordPress の wp-includes/pluggable.php における CSRF 保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003847.html",
+  "description": "WordPress の wp-includes/pluggable.php は、CSRF トークン内の action 値と uid 値の結合時に、区切り文字を使用しないため、CSRF 保護メカニズムを回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-003847",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5205",
+      "source": "CVE",
+      "id": "CVE-2014-5205"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5205",
+      "source": "NVD",
+      "id": "CVE-2014-5205"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+      "id": "CWE-352",
+      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wordpress:wordpress",
+      "version": "2.2",
+      "vendor": "WordPress.org",
+      "product": "WordPress"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-08-19T16:39+09:00",
+  "issued": "2014-08-19T16:39+09:00",
+  "modified": "2014-08-19T16:39+09:00"
+}

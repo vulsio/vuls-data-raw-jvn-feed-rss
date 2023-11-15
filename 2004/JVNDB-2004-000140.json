@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000140.html",
+  "title": "Linux Kernel の isofs コンポーネントにおけるカーネルのメモリ消費の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000140.html",
+  "description": "Linux Kernel の isofs コンポーネントには、Rock Ridge 形式のファイルシステムを読み取る際にシンボリックリンクを辿る回数を確認しない不備のため、シンボリックリンクによりカーネルのメモリを消費してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000140",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0109",
+      "source": "CVE",
+      "id": "CVE-2004-0109"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0109",
+      "source": "NVD",
+      "id": "CVE-2004-0109"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10141",
+      "source": "BID",
+      "id": "10141"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

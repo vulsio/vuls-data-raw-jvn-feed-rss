@@ -1,0 +1,39 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-003866.html",
+  "title": "PHP の ext/mcrypt/mcyrpt.c における特定のデータを解読される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-003866.html",
+  "description": "PHP の ext/mcrypt/mcyrpt.c の mcypt_create_iv 関数は、初期化してない seed 変数を伴う php_rand_r を呼び出し、いつも同じ初期化ベクタ (IV) を生成するため、特定のデータを解読される脆弱性が存在します。",
+  "identifier": "JVNDB-2007-003866",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2727",
+      "source": "CVE",
+      "id": "CVE-2007-2727"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-2727",
+      "source": "NVD",
+      "id": "CVE-2007-2727"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2012-09-25T16:47+09:00",
+  "issued": "2012-09-25T16:47+09:00",
+  "modified": "2012-09-25T16:47+09:00"
+}

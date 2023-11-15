@@ -1,0 +1,94 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000419.html",
+  "title": "Quagga の UPDATE メッセージ処理におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000419.html",
+  "description": "ルーティングソフトウェアスイートである Quagga の /gpd/pgp_attr.c には、UPDATE メッセージ中の MP_REACH_NLRI および MP_UNREACH_NLRI 属性における値の長さを適切に検査しないため、アサーションエラーの発生によりサービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000419",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1995",
+      "source": "CVE",
+      "id": "CVE-2007-1995"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-1995",
+      "source": "NVD",
+      "id": "CVE-2007-1995"
+    },
+    {
+      "text": "http://secunia.com/advisories/24808",
+      "source": "SECUNIA",
+      "id": "SA24808"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/23417",
+      "source": "BID",
+      "id": "23417"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/33547",
+      "source": "XF",
+      "id": "33547"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/1336",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-1336"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:quagga:quagga",
+      "version": "2.2",
+      "vendor": "Quagga",
+      "product": "Quagga"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2008-10-30T11:04+09:00",
+  "issued": "2007-06-08T17:19+09:00",
+  "modified": "2008-10-30T11:04+09:00"
+}

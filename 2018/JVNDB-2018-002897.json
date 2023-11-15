@@ -1,0 +1,45 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-002897.html",
+  "title": "統合型 GPU に対する WebGL を利用したサイドチャネル攻撃 および Rowhammer 攻撃",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-002897.html",
+  "description": "スマートフォンなどの GPU が統合されたプラットフォームを利用する機器は、WebGL を利用した DRAM へのサイドチャネル攻撃 および Rowhammer 攻撃を実行される可能性があります。この攻撃は \"GLitch\" と呼ばれています。\r\n\r\nGLitch と呼ばれる攻撃は、当該機器のWeb ブラウザで WebGL を利用させることにより下記の２つの異なるタイプの攻撃を組み合わせて実行します。\r\n\r\n　* DRAM アクセスに対するサイドチャネル攻撃を実行し、物理的なメモリレイアウトを特定する\r\n　* <a href=\"https://en.wikipedia.org/wiki/Row_hammer\"target=\"blank\">Rowhammer 攻撃</a>を実行し、DRAM の物理メモリを数ビットを反転させる\r\n\r\nWebGL が提供する高精度タイマーを利用し、キャッシュされた DRAM とキャッシュされていない DRAM へのアクセス時間の違いを計測することで Rowhammer 攻撃の実行に必要なメモリ領域の情報を特定します。この攻撃によって、Android プラットフォーム上の Firefox sandbox をバイパスできることが示されています。なお、この攻撃は CPU と GPU が同じメモリを共有するプラットフォーム（スマートフォンや類似の機器）に対してのみ適用可能です。\r\n詳細は <a href=\"https://www.kb.cert.org/vuls/id/283803\"target=\"blank\">VU#283803</a> および <a href=\"https://www.vusec.net/projects/glitch/\"target=\"blank\">発見者が提供する情報</a>を参照して下さい。",
+  "identifier": "JVNDB-2018-002897",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU92147586/",
+      "source": "JVN",
+      "id": "JVNVU#92147586"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10229",
+      "source": "CVE",
+      "id": "CVE-2018-10229"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-10229",
+      "source": "NVD",
+      "id": "CVE-2018-10229"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/283803",
+      "source": "CERT-VN",
+      "id": "VU#283803"
+    },
+    {
+      "text": "https://www.vusec.net/projects/glitch/",
+      "source": "関連文書",
+      "id": "GLitch - VUSec"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "date": "2018-08-30T12:06+09:00",
+  "issued": "2018-05-08T10:23+09:00",
+  "modified": "2018-08-30T12:06+09:00"
+}

@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-013230.html",
+  "title": "LibVNC における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-013230.html",
+  "description": "LibVNC には、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2018-013230",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU96592426/",
+      "source": "JVN",
+      "id": "JVNVU#96592426"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20019",
+      "source": "CVE",
+      "id": "CVE-2018-20019"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-20019",
+      "source": "NVD",
+      "id": "CVE-2018-20019"
+    },
+    {
+      "text": "https://ics-cert.kaspersky.com/advisories/klcert-advisories/2018/12/19/klcert-18-029-libvnc-multiple-heap-out-of-bound-vulnerabilities/",
+      "source": "関連文書",
+      "id": "KLCERT-18-029"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libvncserver_project:libvncserver",
+      "version": "2.2",
+      "vendor": "LibVNC",
+      "product": "LibVNCServer"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-12-17T11:31+09:00",
+  "issued": "2019-02-18T11:21+09:00",
+  "modified": "2021-12-17T11:31+09:00"
+}

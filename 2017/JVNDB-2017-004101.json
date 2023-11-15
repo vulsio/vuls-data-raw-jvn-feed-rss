@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-004101.html",
+  "title": "HPE SiteScope に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-004101.html",
+  "description": "HPE SiteScope には複数の脆弱性が存在します。\r\n\r\n重要な機能に対する認証欠如の問題 (CWE-306)\r\nHPE SiteScope には、ファイルアクセス処理において認証不備の脆弱性が存在します。遠隔の第三者によってシステム上の任意のファイルを取得されるなどの可能性があります。報告者は、2012年に公開された Metasploit モジュール hp_sitescope_getfileinternal_access が、SiteScope 11.31.461 に対して使用可能であることを確認しているとのことです。\r\n\r\n暗号化鍵がハードコードされている問題 (CWE-321)\r\nSiteScope に含まれている ss_pu.jar ライブラリには暗号化鍵がハードコードされており、SiteScope の設定ファイルに含まれている認証情報を復号されるなどの可能性があります。\r\n\r\n不完全または危険な暗号化アルゴリズムの使用 (CWE-327)\r\nSiteScope は、設定ファイルに含まれる認証情報の保護などのため、独自にカスタマイズした暗号化関数 (例: ss_pu.jar に含まれる OldEncryptionHandler) を使用していることがあります。\r\n報告者が調査したシステムでは、master.config 内に存在する _httpSecureKeyPassword や _httpSecureKeystorePassword などの項目が OldEncryptionHandler で暗号化されていたとのことです。\r\n\r\n認証情報の不十分な保護 (CWE-522)\r\nSiteScope の設定管理ページでは、認証情報を平文の形で HTTP 経由で送信しています。\r\n\r\n報告者はこれらの問題についてブログで公開しています。\r\n\r\n　* ブログ\r\n　　http://bytesdarkly.com/disclosures/2017/06/exploiting-hp-sitescope-from-zero-to-compromise.html\r\n\r\n　* 重要な機能に対する認証欠如の問題 (CWE-306)\r\n　　https://cwe.mitre.org/data/definitions/306.html\r\n\r\n　* 暗号化鍵がハードコードされている問題 (CWE-321)\r\n　　https://cwe.mitre.org/data/definitions/321.html\r\n\r\n　* 不完全または危険な暗号化アルゴリズムの使用 (CWE-327)\r\n　　https://cwe.mitre.org/data/definitions/327.html\r\n\r\n　* 認証情報の不十分な保護 (CWE-522)\r\n　　https://cwe.mitre.org/data/definitions/522.html",
+  "identifier": "JVNDB-2017-004101",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU97705299",
+      "source": "JVN",
+      "id": "JVNVU#97705299"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/768399",
+      "source": "CERT-VN",
+      "id": "VU#768399"
+    },
+    {
+      "text": "http://bytesdarkly.com/disclosures/2017/06/exploiting-hp-sitescope-from-zero-to-compromise.html",
+      "source": "関連文書",
+      "id": "EXPLOITING HP SITESCOPE FROM ZERO TO COMPROMISE! "
+    },
+    {
+      "text": "http://www.zerodayinitiative.com/advisories/ZDI-12-176/",
+      "source": "関連文書",
+      "id": "(0Day) HP SiteScope SOAP Call getFileInternal Remote Code Execution Vulnerability"
+    },
+    {
+      "text": "https://www.rapid7.com/db/modules/auxiliary/scanner/http/hp_sitescope_getfileinternal_fileaccess",
+      "source": "関連文書",
+      "id": "HP SiteScope SOAP Call getFileInternal Remote File Access"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/306.html",
+      "id": "CWE-306",
+      "title": "重要な機能に対する認証の欠如(CWE-306)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/327.html",
+      "id": "CWE-327",
+      "title": "不完全、または危険な暗号アルゴリズムの使用(CWE-327)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hp:sitescope",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "SiteScope"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.2",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2017-06-21T13:49+09:00",
+  "issued": "2017-06-16T12:26+09:00",
+  "modified": "2017-06-21T13:49+09:00"
+}

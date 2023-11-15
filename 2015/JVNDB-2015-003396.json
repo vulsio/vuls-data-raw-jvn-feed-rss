@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003396.html",
+  "title": "Apple iOS および Apple OS X 上で稼動する Apple Safari などで使用される WebKit の Page Loading 機能における CSRF 保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003396.html",
+  "description": "Apple iOS および Apple OS X 上で稼動する Apple Safari などで使用される WebKit の Page Loading 機能は、Origin ヘッダの送信を決定する際、リダイレクトを適切に考慮しないため、CSRF 保護メカニズムを回避される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-254: Security Features (セキュリティ機能) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/254.html",
+  "identifier": "JVNDB-2015-003396",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3658",
+      "source": "CVE",
+      "id": "CVE-2015-3658"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3658",
+      "source": "NVD",
+      "id": "CVE-2015-3658"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:safari",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Safari"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-07-08T11:27+09:00",
+  "issued": "2015-07-08T11:27+09:00",
+  "modified": "2015-07-08T11:27+09:00"
+}

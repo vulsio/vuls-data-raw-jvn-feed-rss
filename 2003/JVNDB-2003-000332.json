@@ -1,0 +1,120 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000332.html",
+  "title": "Microsoft Windows の Workstation サービスにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000332.html",
+  "description": "Microsoft Windows に含まれている Workstation サービス (WKSSVC.DLL) 内のデバッグログのルーチンにおいて vsprintf() 関数を扱う際、関数に引渡されるメッセージ長のチェックが不適切であるため、バッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000332",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNCA-2003-28",
+      "source": "JVN",
+      "id": "JVNCA-2003-28"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRCA-2003-28",
+      "source": "JVNTR",
+      "id": "TRCA-2003-28"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0812",
+      "source": "CVE",
+      "id": "CVE-2003-0812"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0812",
+      "source": "NVD",
+      "id": "CVE-2003-0812"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2003/at030007.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2003-0007"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2003/wr034601.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2003-4601"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/20031112_080347.html",
+      "source": "AT-POLICE",
+      "id": "Windowsの脆弱性について(MS03-049)(11/12)"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/20031114_174851.html",
+      "source": "AT-POLICE",
+      "id": "Windowsの脆弱性(MS03-049)を攻撃するプログラムについて(11/14)"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyber/warning/ms03_049/151114.htm",
+      "source": "POLICE",
+      "id": "MS03-049の脆弱性を攻撃するプログラムへの緊急の対応について"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-2003-28.html",
+      "source": "CERT-A",
+      "id": "CA-2003-28"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/567620",
+      "source": "CERT-VN",
+      "id": "VU#567620"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20031113-workstation.html",
+      "source": "IPA",
+      "id": "Windows Workstation サービスの脆弱性について"
+    },
+    {
+      "text": "http://www.ciac.org/ciac/bulletins/o-022.shtml",
+      "source": "CIAC",
+      "id": "O-022"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9011",
+      "source": "BID",
+      "id": "9011"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/alerts/id/158",
+      "source": "ISS",
+      "id": "158"
+    },
+    {
+      "text": "http://www.isskk.co.jp/support/techinfo/general/MSwsBo158.html",
+      "source": "ISSKK",
+      "id": "Microsoft Workstation サービスでのバッファ オーバーフロー"
+    },
+    {
+      "text": "http://www.symantec.com/region/jp/sarcj/data/w/w32.welchia.b.worm.html",
+      "source": "SYMANTEC",
+      "id": "W32.Welchia.B.Worm"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

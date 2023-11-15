@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006502.html",
+  "title": "openslp における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006502.html",
+  "description": "openslp には、境界外読み取りに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2012-006502",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4428",
+      "source": "CVE",
+      "id": "CVE-2012-4428"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2012-4428",
+      "source": "NVD",
+      "id": "CVE-2012-4428"
+    },
+    {
+      "text": "https://bugzilla.suse.com/show_bug.cgi?id=CVE-2012-4428",
+      "source": "関連文書",
+      "id": "778508 (VUL-1: CVE-2012-4428: openslp: Denial of Service (Application crash) due to out of bounds read)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openslp:openslp",
+      "version": "2.2",
+      "vendor": "OpenSLP",
+      "product": "OpenSLP"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2019-12-18T15:36+09:00",
+  "issued": "2019-12-18T15:36+09:00",
+  "modified": "2019-12-18T15:36+09:00"
+}

@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000260.html",
+  "title": "Kerberos Administration におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000260.html",
+  "description": "Kerberos 4 administration プロトコルを取り扱うコードには、リクエスト内に含まれるデータの妥当性を十分に確認せずに memcpy() 関数を呼び出し、データをそのままこの関数の引数として利用してしまう問題により、意図的に作成したリクエストを Kerberos に送ることでバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2002-000260",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNCA-2002-29",
+      "source": "JVN",
+      "id": "JVNCA-2002-29"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1235",
+      "source": "CVE",
+      "id": "CVE-2002-1235"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1235",
+      "source": "NVD",
+      "id": "CVE-2002-1235"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr024201.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2002-4201"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-2002-29.html",
+      "source": "CERT-A",
+      "id": "CA-2002-29"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/875073",
+      "source": "CERT-A",
+      "id": "VU#875073"
+    },
+    {
+      "text": "http://www.ciac.org/ciac/bulletins/n-009.shtml",
+      "source": "CIAC",
+      "id": "N-009"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6024",
+      "source": "BID",
+      "id": "6024"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

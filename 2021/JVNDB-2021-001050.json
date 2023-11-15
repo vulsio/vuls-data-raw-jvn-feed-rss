@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001050.html",
+  "title": "Rockwell Automation 製 FactoryTalk Services Platform に不十分な強度のパスワードハッシュを使用する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001050.html",
+  "description": "Rockwell Automation 社が提供する FactoryTalk Services Platform には不十分な強度のパスワードハッシュを使用する脆弱性が存在します。\r\n\r\nRockwell Automation 社が提供する FactoryTalk Services Platform には SHA-256 ハッシュアルゴリズムの実装の不備により、ユーザパスワードが適切にハッシュされていない脆弱性 (CWE-916) が存在します。",
+  "identifier": "JVNDB-2021-001050",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU99344935",
+      "source": "JVN",
+      "id": "JVNVU#99344935"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14516",
+      "source": "CVE",
+      "id": "CVE-2020-14516"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-054-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-054-01"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/916.html",
+      "id": "CWE-916",
+      "title": "強度が不十分なパスワードハッシュの使用(CWE-916)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:rockwellautomation:factorytalk_services_platform",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "FactoryTalk Services Platform"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-02-25T11:44+09:00",
+  "issued": "2021-02-25T11:44+09:00",
+  "modified": "2021-02-25T11:44+09:00"
+}

@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001262.html",
+  "title": "Sun Solaris の inetd におけるシンボリックリンク攻撃を受ける脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001262.html",
+  "description": "Sun Solaris の inetd には、デバックロギング処理が有効になっている際に、/var/tmp/inetd.log 一時ファイルの処理に不備があるためにシンボリックリンク攻撃を受ける脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2008-001262",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1684",
+      "source": "CVE",
+      "id": "CVE-2008-1684"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-1684",
+      "source": "NVD",
+      "id": "CVE-2008-1684"
+    },
+    {
+      "text": "http://secunia.com/advisories/29654/",
+      "source": "SECUNIA",
+      "id": "SA29654"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/28584",
+      "source": "BID",
+      "id": "28584"
+    },
+    {
+      "text": "http://securitytracker.com/id?1019781",
+      "source": "ISS-PA",
+      "id": "1019781"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/1076",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-1076"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+      "id": "CWE-59",
+      "title": "リンク解釈の問題(CWE-59)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2008-04-23T16:44+09:00",
+  "issued": "2008-04-23T16:44+09:00",
+  "modified": "2008-04-23T16:44+09:00"
+}

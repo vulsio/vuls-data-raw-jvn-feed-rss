@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004336.html",
+  "title": "OpenSymphony XWork の Struts サポートにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004336.html",
+  "description": "WebWork および Apache Struts で使用される OpenSymphony XWork の Struts サポートは、altSyntax が有効になっている際、再帰的に全ての入力を Object-Graph Navigation Language (OGNL) 表記として評価するため、サービス運用妨害 (無限ループ) 状態となる、および任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2007-004336",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4556",
+      "source": "CVE",
+      "id": "CVE-2007-4556"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-4556",
+      "source": "NVD",
+      "id": "CVE-2007-4556"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:opensymphony:xwork",
+      "version": "2.2",
+      "vendor": "opensymphony",
+      "product": "xwork"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T16:59+09:00",
+  "issued": "2012-09-25T16:59+09:00",
+  "modified": "2012-09-25T16:59+09:00"
+}

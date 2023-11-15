@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000468.html",
+  "title": "Linux Kernel の XFRM における配列インデックスオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000468.html",
+  "description": "Linux Kernel の xfrm_sk_policy_insert() 関数には、ユーザによる入力値の妥当性がに対するチェックが不適切であるため、配列インデックスでバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000468",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2456",
+      "source": "CVE",
+      "id": "CVE-2005-2456"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2456",
+      "source": "NVD",
+      "id": "CVE-2005-2456"
+    },
+    {
+      "text": "http://secunia.com/advisories/16298/",
+      "source": "SECUNIA",
+      "id": "SA16298"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14477",
+      "source": "BID",
+      "id": "14477"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/1329",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-1329"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

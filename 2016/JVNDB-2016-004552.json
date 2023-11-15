@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004552.html",
+  "title": "Red Hat JBoss BPM Suite のダッシュビルダにおける CSRF 保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004552.html",
+  "description": "Red Hat JBoss BPM Suite のダッシュビルダは、アクティブセッション中に生成された CSRF トークンを適切に処理せず、クエリ文字列に含めるため、(1) CSRF 保護メカニズムを回避される、または (2) クロスサイトリクエストフォージェリ攻撃を実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-004552",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7034",
+      "source": "CVE",
+      "id": "CVE-2016-7034"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7034",
+      "source": "NVD",
+      "id": "CVE-2016-7034"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+      "id": "CWE-352",
+      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:jboss_bpm_suite",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat JBoss BPM Suite"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-09-09T12:12+09:00",
+  "issued": "2016-09-09T12:12+09:00",
+  "modified": "2016-09-09T12:12+09:00"
+}

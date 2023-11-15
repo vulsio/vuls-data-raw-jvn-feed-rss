@@ -1,0 +1,283 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000259.html",
+  "title": "TCP 実装おける Path MTU Discovery (PMTUD) によるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000259.html",
+  "description": "多くの OS に実装されている Path MTU Discovery (PMTUD)では、IP ヘッダ中の分割禁止フラグがセットされるため、この問題を悪用した ICMP メッセージを受信すると、システムのネットワークパフォーマンスが著しく低下する脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000259",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1060",
+      "source": "CVE",
+      "id": "CVE-2004-1060"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1060",
+      "source": "NVD",
+      "id": "CVE-2004-1060"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/222750",
+      "source": "CERT-VN",
+      "id": "VU#222750"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20050413-ms05-019.html",
+      "source": "IPA-VUL",
+      "id": "20050413-ms05-019"
+    },
+    {
+      "text": "http://www.ciac.org/ciac/bulletins/p-177.shtml",
+      "source": "CIAC",
+      "id": "p-177"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/docs/re-20050412-00303.pdf?lang=en",
+      "source": "NISCC",
+      "id": "532967/NISCC/ICMP/2"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20050412-00303.xml",
+      "source": "CPNI",
+      "id": "00303"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13124",
+      "source": "BID",
+      "id": "13124"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/0344",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-0344"
+    },
+    {
+      "text": "http://tools.ietf.org/html/draft-gont-tcpm-icmp-attacks-03",
+      "source": "IETF",
+      "id": "draft-gont-tcpm-icmp-attacks-03"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cisco:ip_contact_center_express",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IP Contact Center (IPCC) Express"
+    },
+    {
+      "text": "cpe:/a:cisco:ip_interactive_voice_response",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IP Interactive Voice Response (IP IVR)"
+    },
+    {
+      "text": "cpe:/a:cisco:personal_assistant",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Personal Assistant"
+    },
+    {
+      "text": "cpe:/a:cisco:secure_access_control_server",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Secure Access Control Server ソフトウェア"
+    },
+    {
+      "text": "cpe:/a:symantec:enterprise_firewall",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Symantec Enterprise Firewall"
+    },
+    {
+      "text": "cpe:/a:symantec:firewall_vpn_appliance",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Symantec Firewall/VPN Appliance"
+    },
+    {
+      "text": "cpe:/a:symantec:gateway_security_300",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Symantec Gateway Security 300 Series"
+    },
+    {
+      "text": "cpe:/a:symantec:gateway_security_400",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Symantec Gateway Security 400 Series"
+    },
+    {
+      "text": "cpe:/a:symantec:gateway_security_5300",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Symantec Gateway Security 5300 Series"
+    },
+    {
+      "text": "cpe:/a:symantec:gateway_security_5400",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Symantec Gateway Security 5400 Series"
+    },
+    {
+      "text": "cpe:/a:symantec:symantec_velociraptor",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Symantec VelociRaptor"
+    },
+    {
+      "text": "cpe:/h:cisco:call_manager",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Call Manager (CCM)"
+    },
+    {
+      "text": "cpe:/h:cisco:conference_connection",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Conference Connection (CCC)"
+    },
+    {
+      "text": "cpe:/h:cisco:crs-1",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco CRS-1"
+    },
+    {
+      "text": "cpe:/h:cisco:emergency_responder",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Emergency Responder"
+    },
+    {
+      "text": "cpe:/h:cisco:internet_service_node",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Internet Service Node (ISN)"
+    },
+    {
+      "text": "cpe:/h:cisco:ip_queue_manager",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IP Queue Manager (IP QM)"
+    },
+    {
+      "text": "cpe:/h:cisco:mds_9000",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco MDS 9000 シリーズ"
+    },
+    {
+      "text": "cpe:/h:cisco:mgx_8250",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco MGX 8250 シリーズ"
+    },
+    {
+      "text": "cpe:/h:cisco:mgx_8850",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco MGX 8850 シリーズ"
+    },
+    {
+      "text": "cpe:/h:cisco:ons_15300",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco ONS 15300 シリーズ"
+    },
+    {
+      "text": "cpe:/h:cisco:pix_firewall",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco PIX Firewall"
+    },
+    {
+      "text": "cpe:/h:cisco:vpn_5000",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco VPN 5000 シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:ix5000",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX5000シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:ix5500",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX5500シリーズ"
+    },
+    {
+      "text": "cpe:/h:symantec:nexland_isb_soho_firewall_appliance",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Nexland ISB SOHO Firewall Appliance"
+    },
+    {
+      "text": "cpe:/h:symantec:nexland_pro_firewall_appliance",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Nexland Pro Series Firewall Appliance"
+    },
+    {
+      "text": "cpe:/o:cisco:ios",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS"
+    },
+    {
+      "text": "cpe:/o:cisco:ios_xr",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS XR"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

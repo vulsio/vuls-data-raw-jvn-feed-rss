@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010767.html",
+  "title": "OpenSSL における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010767.html",
+  "description": "OpenSSL の \"エラー状態 (error state)\"  メカニズムは、SSL_read() または SSL_write() 関数が直接呼び出された場合、正しく動作しないため、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2017-010767",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3737",
+      "source": "CVE",
+      "id": "CVE-2017-3737"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3737",
+      "source": "NVD",
+      "id": "CVE-2017-3737"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-18-226-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-18-226-02"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/388.html",
+      "id": "CWE-388",
+      "title": "エラー処理(CWE-388)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2019-04-10T17:16+09:00",
+  "issued": "2017-12-25T11:44+09:00",
+  "modified": "2019-04-10T17:16+09:00"
+}

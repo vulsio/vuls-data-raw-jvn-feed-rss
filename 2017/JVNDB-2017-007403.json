@@ -1,0 +1,705 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-007403.html",
+  "title": "AMI が開発した UEFI コードを使用する一部の Lenovo 製品におけるコードインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-007403.html",
+  "description": "American Megatrends, Inc. (AMI) が開発した UEFI (BIOS) コードを使用する一部の Lenovo 製品には、コードインジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2017-007403",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3753",
+      "source": "CVE",
+      "id": "CVE-2017-3753"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3753",
+      "source": "NVD",
+      "id": "CVE-2017-3753"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:lenovo:63_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Lenovo 63 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:h50-30g_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Lenovo H50-30g Desktop ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:ideacentre_300-20ish_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "IdeaCentre 300-20ISH ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:ideacentre_300s-11ish_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "IdeaCentre 300S-11ISH ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:ideacentre_510s-08ish_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "IdeaCentre 510S-08ISH ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:ideacentre_510s-23isu_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "IdeaCentre 510S-23ISU ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:ideacentre_700_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "IdeaCentre 700 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:m4500_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Lenovo M4500 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:m4500_id_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Lenovo M4500 ID ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:m4550_id_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Lenovo M4550 ID ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:s200z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Lenovo S200z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:s500_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Lenovo S500 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_e73s_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre E73s ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_e73z_%28aio%29_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre E73Z (AIO) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_e73_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre E73 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_e74s_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre E74s ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_e74z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre E74z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_e74_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre E74 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_e75_t%2Fs_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre E75 t/s ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_e79_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre E79 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_e93z_%28aio%29_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre E93Z (AIO) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_e93_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre E93 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_edge_62z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre Edge 62z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m4500k_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M4500k ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m4500q_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M4500q ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m4500t%2Fs_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M4500t/s ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m4600t%2Fs_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M4600t/s ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m600_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M600 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m610_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M610 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m6500t%2Fs_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M6500t/s  ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m6600q_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M6600q ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m6600t%2Fs_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M6600t/s ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m6600_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M6600 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m700z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M700z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m700_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M700 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m710t%2Fs_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M710t/s ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m715q_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M715q ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m7200z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M7200z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m7250z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M7250z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m72e_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M72e ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m7300z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M7300z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m73p_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M73p ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m73z_%28aio%29_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M73Z (AIO) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m73_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M73 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m79_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M79 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m800z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M800z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m800_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M800 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m810z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M810z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m8200z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M8200z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m8250z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M8250z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m8300z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M8300z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m8350z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M8350z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m83z_%28aio%29_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M83Z (AIO) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m83_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M83 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m8500t%2Fs_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M8500t/s ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m8600t%2Fs_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M8600t/s ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m900z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M900Z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m900_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M900 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m910q_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M910q ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m910t%2Fs_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M910 t/s ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m910x_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M910x ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m92p_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M92P ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m92_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M92 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m93p_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M93P ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m93_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M93 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m9500z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M9500z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_m9550z_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre M9550z ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkcentre_x1_aio_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkCentre X1 AIO ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_rd340_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer RD340 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_rd440_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer RD440 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_rd540_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer RD540 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_rd640_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer RD640 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_rq750_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer RQ750 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_rs140_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer RS140 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_td340_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer TD340 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_ts140_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer TS140 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_ts150_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer TS150 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_ts240_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer TS240 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_ts250_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer TS250 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_ts450_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer TS450 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkserver_ts550_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkServer TS550 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_c30_%281136%29_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation C30 (1136) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_c30_%281137%29_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation C30 (1137) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_d30_%284353%29_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation D30 (4353) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_d30_%284354%29_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation D30 (4354) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_e31_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation E31 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_e32_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation E32 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_p300_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation P300 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_p310_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation P310 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_p320_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation P320 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_p410_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Thinkstation P410 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_p500_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation P500 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_p510_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Thinkstation P510 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_p700_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation P700 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_p710_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Thinkstation P710 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_p900_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation P900 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_p910_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Thinkstation P910 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_s30_%284351%29_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation S30 (4351) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:thinkstation_s30_%284352%29_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "ThinkStation S30 (4352) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:v320-15iap_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Lenovo V320-15IAP ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:yangtian_afh110_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "YANGTIAN AfH110 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:yangtian_afh81_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "YANGTIAN AfH81 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:yangtian_afq150_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "YANGTIAN AfQ150 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:yangtian_mc_carrizo-l_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "YANGTIAN Mc Carrizo-L ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:yangtian_mc_godavari_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "YANGTIAN Mc Godavari ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:yangtian_mc_h110_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "YANGTIAN Mc H110 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:yangtian_mc_h81_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "YANGTIAN Mc H81 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:yangtian_mf%2Fwf_h81_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "YANGTIAN Mf/Wf H81 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:yangtian_s3040_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "YANGTIAN S3040 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:lenovo:yangtian_s800_firmware",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "YANGTIAN S800 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-09-20T17:40+09:00",
+  "issued": "2017-09-20T17:40+09:00",
+  "modified": "2017-09-20T17:40+09:00"
+}

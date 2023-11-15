@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003284.html",
+  "title": "インテルプロセッサ上で稼動する Linux Kernel における競合状態を利用される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003284.html",
+  "description": "インテルプロセッサ上で稼動する Linux Kernel は、IRET を使用しないシステムコールの場合、保存された RIP アドレスの非カノニカル値の使用を適切に制限しないため、競合状態を利用され、権限を取得される、またはサービス運用妨害 (二重フォールト) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-003284",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4699",
+      "source": "CVE",
+      "id": "CVE-2014-4699"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4699",
+      "source": "NVD",
+      "id": "CVE-2014-4699"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-08-06T17:16+09:00",
+  "issued": "2014-07-10T16:08+09:00",
+  "modified": "2014-08-06T17:16+09:00"
+}

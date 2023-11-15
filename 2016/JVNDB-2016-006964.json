@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006964.html",
+  "title": "UnrealIRCd の modules/m_sasl.c の m_authenticate 関数における証明書のフィンガープリントを偽造される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006964.html",
+  "description": "UnrealIRCd の modules/m_sasl.c の m_authenticate 関数には、証明書のフィンガープリントを偽造され、その結果、別のユーザとしてログインされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006964",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7144",
+      "source": "CVE",
+      "id": "CVE-2016-7144"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7144",
+      "source": "NVD",
+      "id": "CVE-2016-7144"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:unrealircd:unrealircd",
+      "version": "2.2",
+      "vendor": "UnrealIRCd",
+      "product": "UnrealIRCd"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-01-31T14:35+09:00",
+  "issued": "2017-01-31T14:35+09:00",
+  "modified": "2017-01-31T14:35+09:00"
+}

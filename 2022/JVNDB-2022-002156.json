@@ -1,0 +1,254 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002156.html",
+  "title": "Apache HTTP Server の ap_rwrite() 関数における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002156.html",
+  "description": "Apache HTTP Server の ap_rwrite() 関数には、ap_rwrite() または ap_rputs() を使用して非常に大きな入力をサーバに反映させることができる場合、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2022-002156",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU94306894/",
+      "source": "JVN",
+      "id": "JVNVU#94306894"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-28614",
+      "source": "CVE",
+      "id": "CVE-2022-28614"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-28614",
+      "source": "NVD",
+      "id": "CVE-2022-28614"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/190.html",
+      "id": "CWE-190",
+      "title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server64",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server(64)"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server_express",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Express"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server_for_developers",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Application Server for Developers"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server_r",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server-R"
+    },
+    {
+      "text": "cpe:/a:hitachi:programming_environment_for_java",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "プログラミング環境 for Java"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Enterprise"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise_custom_edition",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Enterprise Custom Edition"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Smart Edition"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard-r",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Standard-R"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard_custom_edition",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Standard Custom Edition"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_01",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer 01"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Light"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_professional",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Professional"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_professional_for_atm",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Professional for ATM"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_professional_for_plug-in",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Professional for Plug-in"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server_base",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server Base"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server_base64",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server Base(64)"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Architect"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform-messaging",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform - Messaging"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform_64",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform(64)"
+    },
+    {
+      "text": "cpe:/a:nec:actsecure_portal",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "ActSecure ポータル"
+    },
+    {
+      "text": "cpe:/a:nec:connexive_pf",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CONNEXIVE PF"
+    },
+    {
+      "text": "cpe:/a:nec:neoface_monitor",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NeoFace Monitor"
+    },
+    {
+      "text": "cpe:/a:nec:simpwright",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SimpWright"
+    },
+    {
+      "text": "cpe:/a:nec:spoolserver_reportfiling",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SpoolServer/ReportFiling"
+    },
+    {
+      "text": "cpe:/a:nec:tokusengai_gcb",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "得選街・GCB"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Application Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2023-09-27T15:57+09:00",
+  "issued": "2022-08-02T15:43+09:00",
+  "modified": "2023-09-27T15:57+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007417.html",
+  "title": "Linux Kernel の arch/x86/kernel/process_64.c の __switch_to 関数における ASLR 保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007417.html",
+  "description": "Linux Kernel の arch/x86/kernel/process_64.c 内の __switch_to 関数は、スレッドローカルストレージ (TLS) ディスクリプタが他のステップに進む前にロードされることを確認しないため、ASLR 保護メカニズムを回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-007417",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9419",
+      "source": "CVE",
+      "id": "CVE-2014-9419"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9419",
+      "source": "NVD",
+      "id": "CVE-2014-9419"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-01-05T18:51+09:00",
+  "issued": "2015-01-05T18:51+09:00",
+  "modified": "2015-01-05T18:51+09:00"
+}

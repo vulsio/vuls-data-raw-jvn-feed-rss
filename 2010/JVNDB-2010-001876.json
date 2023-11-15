@@ -1,0 +1,52 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001876.html",
+  "title": "JP1/AJS の組み込みDB利用製品におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001876.html",
+  "description": "JP1/Automatic Job Management System 3 (JP1/AJS3) - Manager および JP1/Automatic Job Management System 2 (JP1/AJS2) - Manager で使用している組み込み DB には、組み込み DB のプロセスが意図しないデータを受信した際、サービス運用妨害 (DoS) 状態となり、JP1/AJS3 (JP1/AJS2) - View などのクライアントからの操作や、マネージャー上でのコマンド操作ができなくなるなど、JP1/AJS3 (JP1/AJS2) でのジョブ運用ができなくなる脆弱性が存在します。\r\n\r\n組み込み DB が異常終了した場合は、JP1/AJS3 (JP1/AJS2) および組み込み DB の再起動等により、サービスを再開していただく必要があります。",
+  "identifier": "JVNDB-2010-001876",
+  "references": [
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:job_management_partner_1_automatic_job_management_system_2",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Job Management Partner 1/Automatic Job Management System 2"
+    },
+    {
+      "text": "cpe:/a:hitachi:job_management_partner_1_automatic_job_management_system_3",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Job Management Partner 1/Automatic Job Management System 3"
+    },
+    {
+      "text": "cpe:/a:hitachi:jp1_automatic_job_management_system_2",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "JP1/Automatic Job Management System 2"
+    },
+    {
+      "text": "cpe:/a:hitachi:jp1_automatic_job_management_system_3",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "JP1/Automatic Job Management System 3"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2010-08-26T16:55+09:00",
+  "issued": "2010-08-26T16:55+09:00",
+  "modified": "2010-08-26T16:55+09:00"
+}

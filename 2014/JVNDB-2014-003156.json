@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003156.html",
+  "title": "32-bit プラットフォーム上で稼動する Yann Collet LZ4 および Linux Kernel で使用される LZ4 アルゴリズムの実装における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003156.html",
+  "description": "32-bit プラットフォーム上で稼動する Yann Collet LZ4 および Linux Kernel の lib/lz4/lz4_decompress.c 内の lz4_uncompress 関数で使用される LZ4 アルゴリズムの実装には、整数オーバーフローの脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-4715 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2014-003156",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4611",
+      "source": "CVE",
+      "id": "CVE-2014-4611"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4611",
+      "source": "NVD",
+      "id": "CVE-2014-4611"
+    },
+    {
+      "text": "http://blog.securitymouse.com/2014/06/raising-lazarus-20-year-old-bug-that.html",
+      "source": "関連文書",
+      "id": "Raising Lazarus - The 20 Year Old Bug that Went to Mars"
+    },
+    {
+      "text": "https://www.securitymouse.com/lms-2014-06-16-5",
+      "source": "関連文書",
+      "id": "LMS-2014-06-16-5"
+    },
+    {
+      "text": "https://www.securitymouse.com/lms-2014-06-16-6",
+      "source": "関連文書",
+      "id": "LMS-2014-06-16-6"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:yann_collet:lz4",
+      "version": "2.2",
+      "vendor": "Yann Collet",
+      "product": "LZ4"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-07-07T16:46+09:00",
+  "issued": "2014-07-07T16:46+09:00",
+  "modified": "2014-07-07T16:46+09:00"
+}

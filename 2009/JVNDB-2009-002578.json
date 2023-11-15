@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002578.html",
+  "title": "Google Chrome における任意の https サイトになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002578.html",
+  "description": "Google Chrome は、プロキシサーバによって返される 4xx または 5xx CONNECT レスポンスページのキャッシュされた証明書を表示してしまうため、要求時に、ブラウザにサイトから有効な証明書を取得され、任意の https サイトを偽装される、あるいは後続の要求に応じて、巧妙に細工された 502 レスポンスページをブラウザに送信される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-002578",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2071",
+      "source": "CVE",
+      "id": "CVE-2009-2071"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2071",
+      "source": "NVD",
+      "id": "CVE-2009-2071"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/35411",
+      "source": "BID",
+      "id": "35411"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-10-19T14:49+09:00",
+  "issued": "2010-10-19T14:49+09:00",
+  "modified": "2010-10-19T14:49+09:00"
+}

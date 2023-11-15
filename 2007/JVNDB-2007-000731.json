@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000731.html",
+  "title": "QEMU Cirrus VGA 拡張の cirrus_invalidate_region() 関数における複数のヒープオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000731.html",
+  "description": "QEMU の Cirrus VGA 拡張における cirrus_invalidate_region() 関数には、複数のヒープベースのバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000731",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1320",
+      "source": "CVE",
+      "id": "CVE-2007-1320"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-1320",
+      "source": "NVD",
+      "id": "CVE-2007-1320"
+    },
+    {
+      "text": "http://secunia.com/advisories/25073",
+      "source": "SECUNIA",
+      "id": "SA25073"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/23731",
+      "source": "BID",
+      "id": "23731"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/1597",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-1597"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_virtualization",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Virtualization"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_multi_os",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Multi OS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-12-05T14:37+09:00",
+  "issued": "2007-10-12T10:38+09:00",
+  "modified": "2007-12-05T14:37+09:00"
+}

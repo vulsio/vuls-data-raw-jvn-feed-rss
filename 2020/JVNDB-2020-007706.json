@@ -1,0 +1,84 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-007706.html",
+  "title": "ISC BIND 9 に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-007706.html",
+  "description": "ISC (Internet Systems Consortium) が提供する BIND には、複数の脆弱性が存在します。\r\n\r\n　* 最大バッファサイズの不適切な設定による tcpdns.c でアサーションエラーが発生する - CVE-2020-8620\r\n\r\n　* QNAME minimisation の意図しない許可により resolver.c でアサーションエラーが発生する - CVE-2020-8621\r\n\r\n　* 切り詰められた TSIG レスポンスの確認不備によりアサーションエラーが発生する - CVE-2020-8622\r\n\r\n　* pk11.c でアサーションエラーが発生する - CVE-2020-8623\r\n\r\n　* \"update-policy\" ルールの \"subdomain\" タイプの誤った判定によるアクセス制限の不備 - CVE-2020-8624\r\n",
+  "identifier": "JVNDB-2020-007706",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU98069467/",
+      "source": "JVN",
+      "id": "JVNVU#98069467"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8620",
+      "source": "CVE",
+      "id": "CVE-2020-8620"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8621",
+      "source": "CVE",
+      "id": "CVE-2020-8621"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8622",
+      "source": "CVE",
+      "id": "CVE-2020-8622"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8623",
+      "source": "CVE",
+      "id": "CVE-2020-8623"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8624",
+      "source": "CVE",
+      "id": "CVE-2020-8624"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2020-08-21-bind9-vuln-libuv.html",
+      "source": "JPRS",
+      "id": "BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2020-8620）- バージョンアップを推奨 -"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2020-08-21-bind9-vuln-forwarding.html",
+      "source": "JPRS",
+      "id": "BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2020-8621）- バージョンアップを推奨 -"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2020-08-21-bind9-vuln-tsig.html",
+      "source": "JPRS",
+      "id": "BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2020-8622）- バージョンアップを推奨 -"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2020-08-21-bind9-vuln-pkcs11.html",
+      "source": "JPRS",
+      "id": "BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2020-8623）- ビルド時に「--enable-native-pkcs11」を指定した場合にのみ対象、バージョンアップを推奨 -"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2020-08-21-bind9-vuln-updatepolicy.html",
+      "source": "JPRS",
+      "id": "BIND 9.xの脆弱性（サービス提供者が意図しないDynamic Updateの許可）について（CVE-2020-8624）- バージョンアップを推奨 -"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2020-08-24T14:53+09:00",
+  "issued": "2020-08-24T14:53+09:00",
+  "modified": "2020-08-24T14:53+09:00"
+}

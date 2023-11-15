@@ -1,0 +1,118 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001511.html",
+  "title": "複数の Mozilla 製品における偽サイトの SSL 証明書を受け入れてしまう脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001511.html",
+  "description": "複数の Mozilla 製品には、DN フィールドに CN ドメイン名のユーザが SSL サーバ証明書を受け取った場合、subjectAltName:dNSName フィールド内のドメイン名も受け入れる脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001511",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2809",
+      "source": "CVE",
+      "id": "CVE-2008-2809"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2809",
+      "source": "NVD",
+      "id": "CVE-2008-2809"
+    },
+    {
+      "text": "http://secunia.com/advisories/30911",
+      "source": "SECUNIA",
+      "id": "SA30911"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/30038",
+      "source": "BID",
+      "id": "30038"
+    },
+    {
+      "text": "http://securitytracker.com/id?1018979",
+      "source": "SECTRACK",
+      "id": "1018979"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/1993",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-1993"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:seamonkey",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla SeaMonkey"
+    },
+    {
+      "text": "cpe:/a:mozilla:thunderbird",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Thunderbird"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_optional_productivity_applications",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Optional Productivity Applications"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2009-04-27T12:14+09:00",
+  "issued": "2008-07-25T15:12+09:00",
+  "modified": "2009-04-27T12:14+09:00"
+}

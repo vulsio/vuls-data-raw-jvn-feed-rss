@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007336.html",
+  "title": "Node.js 用 semver パッケージにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007336.html",
+  "description": "Node.js 用 semver パッケージには、サービス運用妨害 (CPU 資源の消費) 状態にされる脆弱性が存在します。\r\n\r\n本脆弱性は、\"正規表現による DoS (ReDoS)\" と呼ばれています。",
+  "identifier": "JVNDB-2015-007336",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8855",
+      "source": "CVE",
+      "id": "CVE-2015-8855"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8855",
+      "source": "NVD",
+      "id": "CVE-2015-8855"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:semver_project_semver",
+      "version": "2.2",
+      "vendor": "semver project",
+      "product": "semver"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-02-07T11:48+09:00",
+  "issued": "2017-02-07T11:48+09:00",
+  "modified": "2017-02-07T11:48+09:00"
+}

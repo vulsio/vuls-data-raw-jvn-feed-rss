@@ -1,0 +1,80 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000167.html",
+  "title": "Microsoft Windows の不正な SYN パケットの処理におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000167.html",
+  "description": "Microsoft Windows には、SYN パケットの取り扱いに不備が存在するため、宛先と送信元の IP アドレスおよびポート番号が同一な、SYN パケットを受信した場合に、一定時間の間 CPU 資源が大量に消費される脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000167",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA05-102A/",
+      "source": "JVN",
+      "id": "JVNTA05-102A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA05-102A/",
+      "source": "JVNTR",
+      "id": "TRTA05-102A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0688",
+      "source": "CVE",
+      "id": "CVE-2005-0688"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0688",
+      "source": "NVD",
+      "id": "CVE-2005-0688"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2005/wr051601.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2005-1601"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA05-102A.html",
+      "source": "CERT-TA",
+      "id": "TA05-102A"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20050413-ms05-019.html",
+      "source": "IPA",
+      "id": "20050413-ms05-019"
+    },
+    {
+      "text": "http://secunia.com/advisories/14512/",
+      "source": "SECUNIA",
+      "id": "SA14512"
+    },
+    {
+      "text": "http://www.securiteam.com/windowsntfocus/5PP0720F5U.html",
+      "source": "SECTEAM",
+      "id": "5PP0720F5U"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

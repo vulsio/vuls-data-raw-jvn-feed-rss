@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006112.html",
+  "title": "Lenovo Solution Center に権限昇格ほか複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006112.html",
+  "description": "Lenovo Solution Center には複数の脆弱性が存在し、攻撃者による SYSTEM 権限での任意のコード実行が可能です。\r\n\r\n重要な情報に対するアクセス権の不適切な割り当て (CWE-732)\r\nLenovo Solution Center を起動すると、SYSTEM 権限で動作するプロセス LSCTaskService が作成されます。このプロセスは 55555番ポートを使って HTTP daemon を実行することで、GET リクエストや POST リクエストによる LSCController.dll モジュール内のメソッドの実行を実現しています。LSCController.dll には安全ではないメソッドが多数含まれています。その1つである RunInstaller は、%APPDATA%\\LSC\\Local Store ディレクトリに置かれた任意のコードを実するよう設計されています。このディレクトリは、システムにログイン可能な全てのユーザに対して作成されるため、ユーザは、システムの管理者権限を持たなくても、このディレクトリへの書込みを行うことができます。この脆弱性を悪用することで、一般ユーザは SYSTEM 権限で任意のコードを実行することができます。\r\n\r\nCWE-732: Incorrect Permission Assignment for Critical Resource\r\nhttp://cwe.mitre.org/data/definitions/732.html\r\n\r\nディレクトリトラバーサル (CWE-22)\r\nディレクトリトラバーサルの脆弱性を悪用することで、攻撃者は、ユーザプロファイルが存在するドライブ上の任意の場所に存在するコードを実行することができます。脆弱なシステム上の予測可能な場所に攻撃者が任意のコードを設置することができれば、攻撃者は SYSTEM 権限で任意のコードを実行することができます。\r\n\r\nCWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')\r\nhttp://cwe.mitre.org/data/definitions/22.html\r\n\r\nクロスサイトリクエストフォージェリ (CWE-352)\r\nLenovo Solution Center の LSCTaskService にはクロスサイトリクエストフォージェリ (CSRF) の脆弱性が存在します。CSRF を悪用することで、攻撃者は悪性のあるいは細工されたウェブサイトを使い SYSTEM 権限でコードを実行することができます。\r\n\r\nCWE-352: Cross-Site Request Forgery (CSRF)\r\nhttp://cwe.mitre.org/data/definitions/352.html\r\n\r\nこれらの脆弱性はいずれも、ユーザが Lenovo Solution Center を一度は起動していることが成立の条件になると考えられます。また Lenovo Solution Center を終了することで、LSCTaskService プロセスが停止すると考えられます。\r\n\r\nLenovo は次の見解を表明しています。\r\n\r\n\"Lenovo was recently alerted by a cyber-security threat intelligence partner and The CERT/CC to a vulnerability report concerning its Lenovo Solution Center (LSC) application. We are urgently assessing the vulnerability report and will provide an update and applicable fixes as rapidly as possible. Additional information and updates will be posted to this Lenovo security advisory page (https://support.lenovo.com/us/en/product_security/len_4326) as they become available.\"\r\n\r\nLenovo は先日、サイバーセキュリティにおけるパートナーと CERT/CC から、Lenovo Solution Center (LSC) に関する脆弱性の連絡を受けました。我々は最優先で脆弱性の報告内容を精査しており、可能な限り早急に、更新および必要な修正を提供する所存です。更なる情報やアップデートは、適宜 Lenovo のセキュリティアドバイザリのページに掲載される予定です。\r\n\r\nLenovo のセキュリティアドバイザリのページ\r\nhttps://support.lenovo.com/us/en/product_security/len_4326\r\n",
+  "identifier": "JVNDB-2015-006112",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94912021/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94912021"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/294607",
+      "source": "CERT-VN",
+      "id": "VU#294607"
+    },
+    {
+      "text": "http://rol.im/oemdrop/",
+      "source": "関連文書",
+      "id": "oemdrop"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+      "id": "CWE-352",
+      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:lenovo:solution_center",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Lenovo Solution Center"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-12-08T16:58+09:00",
+  "issued": "2015-12-08T16:58+09:00",
+  "modified": "2015-12-08T16:58+09:00"
+}

@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005746.html",
+  "title": "Pillow における重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005746.html",
+  "description": "Pillow には、map.c コンポーネントの Image.core.map_buffer に影響がある \"整数オーバーフロー\" の問題に関する処理に不備があるため、重要な情報を取得される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-190: Integer Overflow or Wraparound (整数オーバーフローまたはラップアラウンド) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/190.html\r\n\r\n",
+  "identifier": "JVNDB-2016-005746",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9189",
+      "source": "CVE",
+      "id": "CVE-2016-9189"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9189",
+      "source": "NVD",
+      "id": "CVE-2016-9189"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:python:pillow",
+      "version": "2.2",
+      "vendor": "Python Software Foundation",
+      "product": "Python Pillow"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2016-11-08T17:38+09:00",
+  "issued": "2016-11-08T17:38+09:00",
+  "modified": "2016-11-08T17:38+09:00"
+}

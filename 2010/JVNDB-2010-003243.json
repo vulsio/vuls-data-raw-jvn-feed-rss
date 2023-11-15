@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003243.html",
+  "title": "Red Hat Conga の Luciにおける repoze.who 認証をバイパスすることが容易になる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003243.html",
+  "description": "Red Hat Conga の Luci のデフォルト設定は、[INSERT SECRET HERE] をクッキーの秘密鍵に使うため、repoze.who 認証をバイパスされることが容易になる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-003243",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3852",
+      "source": "CVE",
+      "id": "CVE-2010-3852"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3852",
+      "source": "NVD",
+      "id": "CVE-2010-3852"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:conga",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Conga"
+    },
+    {
+      "text": "cpe:/a:redhat:luci",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "luci"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2012-03-27T18:42+09:00",
+  "issued": "2012-03-27T18:42+09:00",
+  "modified": "2012-03-27T18:42+09:00"
+}

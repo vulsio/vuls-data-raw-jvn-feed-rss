@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001148.html",
+  "title": "D-Bus の dbus-daemon の特定のメソッド呼び出しにおけるアクセス制限回避の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001148.html",
+  "description": "D-Bus の dbus-daemon には、特定のメソッド呼び出しにおいてセキュリティポリシーの適用に不備があり、send_interface 属性を認識してしまうために、アクセス制限を回避可能な脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001148",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0595",
+      "source": "CVE",
+      "id": "CVE-2008-0595"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-0595",
+      "source": "NVD",
+      "id": "CVE-2008-0595"
+    },
+    {
+      "text": "http://secunia.com/advisories/29148/",
+      "source": "SECUNIA",
+      "id": "SA29148"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/28023",
+      "source": "BID",
+      "id": "28023"
+    },
+    {
+      "text": "http://securitytracker.com/id?1019512",
+      "source": "SECTRACK",
+      "id": "1019512"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/0694",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-0694"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:d-bus_project:d-bus",
+      "version": "2.2",
+      "vendor": "D-Bus",
+      "product": "D-Bus"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-04-15T16:17+09:00",
+  "issued": "2008-03-12T13:52+09:00",
+  "modified": "2008-04-15T16:17+09:00"
+}

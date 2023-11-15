@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001710.html",
+  "title": "Katello の katello-configure における Candlepin CA 証明書を改ざんされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001710.html",
+  "description": "Katello の katello-configure の modules/certs/manifests/config.pp は、Candlepin ブートストラップ RPM に対して脆弱なアクセス許可 (666) を用いるため、Candlepin CA 証明書を改ざんされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001710",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6116",
+      "source": "CVE",
+      "id": "CVE-2012-6116"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6116",
+      "source": "NVD",
+      "id": "CVE-2012-6116"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:katello:katello-configure",
+      "version": "2.2",
+      "vendor": "Katello Project",
+      "product": "katello-configure"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2013-04-05T18:51+09:00",
+  "issued": "2013-03-04T14:47+09:00",
+  "modified": "2013-04-05T18:51+09:00"
+}

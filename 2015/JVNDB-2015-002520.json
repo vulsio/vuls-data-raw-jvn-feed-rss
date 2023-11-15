@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002520.html",
+  "title": "EMC AutoStart に任意のコマンド実行が可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002520.html",
+  "description": "EMC AutoStart には、細工されたパケットによる任意のコマンド実行が可能な脆弱性が存在します。\r\n\r\nEMC AutoStart は、ネットワークやサービスの高可用性を確保するためのエンタープライズソフトウェアです。AutoStart は単一のインスタンスだけでなく、複数のアプリケーションやノードを管理することができます。\r\n\r\nEMC AutoStart は、ノード間の通信をセキュアに行わないため、攻撃者によってパケットインジェクションが行われる可能性があります。AutoStart のドメイン名を知る攻撃者は、SYSTEM や root の権限で任意のコマンドを実行することが可能です。攻撃対象のシステム上で実行されている ftagent が細工されたパケットを受け取ると、絶対パスもしくは相対パスで指定された場所に任意のデータを書き込み、それを実行するコマンドを実行される可能性があります。\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-77 として公開されています。\r\n\r\nCWE-77: Improper Neutralization of Special Elements used in a Command (コマンドインジェクション)\r\nhttp://cwe.mitre.org/data/definitions/77.html",
+  "identifier": "JVNDB-2015-002520",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94201974/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94201974"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0538",
+      "source": "CVE",
+      "id": "CVE-2015-0538"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0538",
+      "source": "NVD",
+      "id": "CVE-2015-0538"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/581276",
+      "source": "CERT-VN",
+      "id": "VU#581276"
+    },
+    {
+      "text": "http://seclists.org/bugtraq/2015/May/25",
+      "source": "関連文書",
+      "id": "ESA-2015-084: EMC AutoStart Packet Injection Vulnerability"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:emc:autostart",
+      "version": "2.2",
+      "vendor": "DELL EMC (旧 EMC Corporation)",
+      "product": "EMC AutoStart"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-05-08T11:45+09:00",
+  "issued": "2015-05-01T17:36+09:00",
+  "modified": "2015-05-08T11:45+09:00"
+}

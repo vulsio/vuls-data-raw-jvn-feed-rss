@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000165.html",
+  "title": "Sun Solaris の cachefsd におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000165.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nCache File System (CacheFS) は、サーバやネットワークの負荷を緩和し、NFS サーバのパフォーマンスや便宜性を向上するために用いられるキャッシュファイルサーバーです。\r\nSun Solaris 2.6、7、及び 8 に標準で実装されている CacheFS デーモンには、マウントする際に fscache_setup() 関数で境界チェックを適切に行わないといった不備が存在し、スタック領域でバッファオーバーフローが発生する問題が存在します。\r\nこのことを利用して、ローカルの攻撃者は root 権限を得るために任意のファイルを作成し、cashefsd にそのファイルを処理させ、最終的に任意のコードを実行することができる可能性が存在します。\r\n\r\nこの問題はパッチ ID 105693-13/108800-02/105694-13/108801-02 で解消済みです。しかし、これらのパッチを適用した場合には /etc/inet/inetd.conf がデフォルト設定状態に戻ってしまう問題が発生することがベンダより報告されています。これらのパッチを適用済みの場合には対策情報に従い、適切な対策を行ってください。",
+  "identifier": "JVNDB-2001-000165",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0084",
+      "source": "CVE",
+      "id": "CVE-2002-0084"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0084",
+      "source": "NVD",
+      "id": "CVE-2002-0084"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/161931",
+      "source": "CERT-VN",
+      "id": "VU#161931"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4631",
+      "source": "BID",
+      "id": "4631"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8461",
+      "source": "BID",
+      "id": "8461"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

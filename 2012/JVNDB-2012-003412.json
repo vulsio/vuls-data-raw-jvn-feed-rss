@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003412.html",
+  "title": "FreeBSD および NetBSD 向けの libc の jemalloc における整数オーバーフロー脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003412.html",
+  "description": "FreeBSD および NetBSD 向けの libc の jemalloc 内の libc/stdlib/malloc.c の calloc 関数には、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2012-003412",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-7252",
+      "source": "CVE",
+      "id": "CVE-2006-7252"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-7252",
+      "source": "NVD",
+      "id": "CVE-2006-7252"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:freebsd:freebsd",
+      "version": "2.2",
+      "vendor": "FreeBSD",
+      "product": "FreeBSD"
+    },
+    {
+      "text": "cpe:/o:netbsd:netbsd",
+      "version": "2.2",
+      "vendor": "NetBSD",
+      "product": "NetBSD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-07-30T13:41+09:00",
+  "issued": "2012-07-30T13:41+09:00",
+  "modified": "2012-07-30T13:41+09:00"
+}

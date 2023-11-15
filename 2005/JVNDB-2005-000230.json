@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000230.html",
+  "title": "gzip の zgrep において任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000230.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU zip (gzip) は、ファイルの圧縮・解凍を行うユーティリティであり、圧縮ファイルに対して grep を実行する zgrep や、圧縮ファイルを解凍する gunzip などの各ツールがパッケージングされています。\r\n\r\nGzip 1.2.4 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) gzip 1.2.4 以前に同梱されている zgrep は、引数に対するサニタイズ処理を適切に行わない問題が存在します。(CAN-2005-0758)\r\n\r\n現時点では詳細は不明ですが、この問題を利用するローカルの攻撃者は、zgrep に意図的なファイル名を引き渡すことにより、任意のコマンドを実行する可能性があります。\r\n\r\n2) gzip 1.2.4 以前には、圧縮されたファイルを解凍する際に、解凍したファイルの書き込み処理とパーミッション変更の処理の間で競合状態が発生する問題が存在します。(CAN-2005-0988)\r\n\r\nこの問題を利用するローカルの攻撃者は、解凍されたファイルを、特定のタイミングで任意のファイルへのハードリンクに置き換えることにより、任意のファイルのパーミッションを不正に変更する可能性があります。\r\n\r\n3) gzip 1.2.4 以前に同梱されている gunzip は、-N フラグを指定して圧縮ファイルを解凍する際に、ファイル名の妥当性を適切にチェックしない問題が存在します。(CAN-2005-1228)\r\n\r\nこの問題を利用するリモートの攻撃者は、ファイル名に \"..\" という意図的な文字列を含むファイルを圧縮した圧縮ファイルを送りつけ、標的ユーザに gzip で解凍するように誘導することで、ディレクトリトラバーサル攻撃を行う可能性があります。",
+  "identifier": "JVNDB-2005-000230",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1228",
+      "source": "CVE",
+      "id": "CVE-2005-1228"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1228",
+      "source": "NVD",
+      "id": "CVE-2005-1228"
+    },
+    {
+      "text": "http://secunia.com/advisories/15047",
+      "source": "SECUNIA",
+      "id": "SA15047"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13582",
+      "source": "BID",
+      "id": "13582"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13290",
+      "source": "BID",
+      "id": "13290"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12996",
+      "source": "BID",
+      "id": "12996"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/20199",
+      "source": "XF",
+      "id": "20199"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

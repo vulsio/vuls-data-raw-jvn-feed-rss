@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000824.html",
+  "title": "VERITAS Backup Exec の認証情報に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000824.html",
+  "description": "VERITAS Backup Exec Remote Agent には、認証情報がハードコードされているため、この認証情報を悪用されると、結果として脆弱なシステム上の様々なファイルの操作が行なわれる可能性があります。\r\n\r\nVERITAS Backup Exec Remote Agent は、データバックアップおよびリカバリを行なうための製品で、データバックアップやリカバリのためのプロトコル NDMP (Network Data Management Protocol) をサポートしています。\r\n\r\nネットワーク経由のアクセスには、標準で TCP 10000 番ポートが用いられています。あらかじめ設定されている認証情報を悪用することで、脆弱なシステムへの不正アクセスが可能となり、その結果、SYSTEM 権限にて様々なァイルを操作される可能性があります。\r\n\r\nexploit コードが既に公開されており、TCP 10000 番ポートへのスキャンも観察されていますので、以下の対策を施すことを推奨します。\r\n\r\n    * Firewall などで 外部ネットワークから TCP 10000 番ポートへの接続を拒否する。\r\n    * 周辺ネットワークを含めた総合的な対策を行なう。\r\n    * ポート番号を標準の 10000 番ポートからその他のポートに変更する。 ",
+  "identifier": "JVNDB-2005-000824",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA05-224A/",
+      "source": "JVN",
+      "id": "JVNTA05-224A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2611",
+      "source": "CVE",
+      "id": "CVE-2005-2611"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2005-2611",
+      "source": "NVD",
+      "id": "CVE-2005-2611"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/378957",
+      "source": "CERT-VN",
+      "id": "VU#378957"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:veritas:backup_exec",
+      "version": "2.2",
+      "vendor": "ベリタス",
+      "product": "Backup Exec"
+    },
+    {
+      "text": "cpe:/a:veritas:netbackup",
+      "version": "2.2",
+      "vendor": "ベリタス",
+      "product": "Veritas NetBackup"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2009-04-03T10:11+09:00",
+  "issued": "2009-04-03T10:11+09:00",
+  "modified": "2009-04-03T10:11+09:00"
+}

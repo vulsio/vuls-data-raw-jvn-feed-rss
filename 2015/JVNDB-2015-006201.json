@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006201.html",
+  "title": "TaxiHail に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006201.html",
+  "description": "Mobile Knowledge が提供する HaxiHail には、情報漏えいとセンシティブなデータを暗号化しない問題が存在します。\r\n\r\nMobile Knowledge が提供する TaxiHail は、タクシーの \"利用者が iOS、Android またはウェブからリアルタイムに予約およびその管理ができ、ピーク時の電話の混雑を緩和することができる\" アプリケーションフレームワークです。TaxiHail には、次の脆弱性が報告されています：\r\n\r\n不適切なデフォルトパーミッション (CWE-276)\r\nTaxiHail はユーザの GPS 情報をログに出力します。ログファイルのパーミッションは適切でないため、他のアプリケーションがログに含まれた位置情報を取得することが可能となります。\r\n\r\nCWE-276: Incorrect Default Permissions\r\nhttp://cwe.mitre.org/data/definitions/276.html\r\n\r\nセンシティブなデータを暗号化しない問題 (CWE-311)\r\nTaxiHail はサーバとの通信を暗号化しません。\r\n\r\nCWE-311: Missing Encryption of Sensitive Data\r\nhttp://cwe.mitre.org/data/definitions/311.html\r\n\r\nタクシー会社のサービスが、TaxiHail をカスタマイズして使用している可能性があります。それはつまり、複数の iOS 向け、Android 向けアプリにこの脆弱性が受け継がれていることを意味しています。報告者によると、100 を超えるアプリが TaxiHail から作られているとのことです。",
+  "identifier": "JVNDB-2015-006201",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91109359/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91109359"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/439016",
+      "source": "CERT-VN",
+      "id": "VU#439016"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:mobile_knowledge_taxihail",
+      "version": "2.2",
+      "vendor": "Mobile Knowledge Systems Inc.",
+      "product": "TaxiHail"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-12-10T17:57+09:00",
+  "issued": "2015-12-10T17:57+09:00",
+  "modified": "2015-12-10T17:57+09:00"
+}

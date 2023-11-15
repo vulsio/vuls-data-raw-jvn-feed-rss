@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004394.html",
+  "title": "netqmail の qmail-smtpd の STARTTLS の実装における暗号化された SMTP セッションへコマンドを挿入される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004394.html",
+  "description": "netqmail の qmail-smtpd の qmail-smtpd.c の STARTTLS 実装は、I/O バッファリングを適切に制限しないため、暗号化された SMTP セッションへコマンドを挿入される脆弱性が存在します。\r\n本脆弱性は、平文テキストコマンド挿入攻撃に関連します。\r\n本脆弱性は、CVE-2011-0411 と類似する脆弱性です。",
+  "identifier": "JVNDB-2011-004394",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1431",
+      "source": "CVE",
+      "id": "CVE-2011-1431"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1431",
+      "source": "NVD",
+      "id": "CVE-2011-1431"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/555316",
+      "source": "CERT-VN",
+      "id": "VU#555316"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:frederik_vermeulen:netqmail",
+      "version": "2.2",
+      "vendor": "frederik vermeulen",
+      "product": "netqmail"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-03-27T18:43+09:00",
+  "issued": "2012-03-27T18:43+09:00",
+  "modified": "2012-03-27T18:43+09:00"
+}

@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003462.html",
+  "title": "Data Store Gen プラットフォーム上で稼働する EMC Avamar Server および Avamar Virtual Edition における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003462.html",
+  "description": "Data Store Gen3、Gen4、および Gen4s プラットフォーム上で稼働する EMC Avamar Server および Avamar Virtual Edition は、Java RMI メソッドを呼び出す際の認証を適切に決定しないため、任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003462",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3274",
+      "source": "CVE",
+      "id": "CVE-2013-3274"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3274",
+      "source": "NVD",
+      "id": "CVE-2013-3274"
+    },
+    {
+      "text": "http://archives.neohapsis.com/archives/bugtraq/2013-07/att-0114/ESA-2013-055.txt",
+      "source": "関連文書",
+      "id": "ESA-2013-055: EMC Avamar Multiple Vulnerabilities"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:emc:avamar_server",
+      "version": "2.2",
+      "vendor": "DELL EMC (旧 EMC Corporation)",
+      "product": "EMC Avamar Server"
+    },
+    {
+      "text": "cpe:/a:emc:avamar_server_virtual_edition",
+      "version": "2.2",
+      "vendor": "DELL EMC (旧 EMC Corporation)",
+      "product": "EMC Avamar Virtual Edition"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-07-22T16:22+09:00",
+  "issued": "2013-07-22T16:22+09:00",
+  "modified": "2013-07-22T16:22+09:00"
+}

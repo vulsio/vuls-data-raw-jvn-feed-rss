@@ -1,0 +1,113 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002118.html",
+  "title": "64-bit プラットフォーム上で稼働している Linux kernel の compat_alloc_user_space 関数における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002118.html",
+  "description": "64-bit プラットフォーム上で稼働している Linux kernel の include/asm/compat.h　ファイル内にある compat_alloc_user_space 関数には、32-bit 互換レイヤーに必要とされる、ユーザ空間のメモリ割り当て処理を適切に行わないため、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002118",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3081",
+      "source": "CVE",
+      "id": "CVE-2010-3081"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3081",
+      "source": "NVD",
+      "id": "CVE-2010-3081"
+    },
+    {
+      "text": "http://secunia.com/advisories/41462",
+      "source": "SECUNIA",
+      "id": "SA41462"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/43239",
+      "source": "BID",
+      "id": "43239"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/2423",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-2423"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_els",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux ELS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-03-01T14:46+09:00",
+  "issued": "2010-10-08T17:08+09:00",
+  "modified": "2011-03-01T14:46+09:00"
+}

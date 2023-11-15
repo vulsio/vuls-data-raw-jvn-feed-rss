@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002277.html",
+  "title": "Linux Kernel の Netlink の実装におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002277.html",
+  "description": "Linux Kernel の Netlink の実装は、ソケットの開放に基づいてソケット操作を認証するメカニズムを提供しないため、アクセス制限を回避され、ネットワークの設定を変更される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002277",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0181",
+      "source": "CVE",
+      "id": "CVE-2014-0181"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0181",
+      "source": "NVD",
+      "id": "CVE-2014-0181"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2014-12-18T18:05+09:00",
+  "issued": "2014-04-30T16:08+09:00",
+  "modified": "2014-12-18T18:05+09:00"
+}

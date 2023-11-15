@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001699.html",
+  "title": "libssh の RAND_bytes 関数における重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001699.html",
+  "description": "libssh の RAND_bytes 関数は、フォーキング (forking) が有効になっている場合、OpenSSL の擬似乱数生成器 (PRNG) の状態を適切にリセットしないため、子プロセス間で状態が共有され、重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-001699",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0017",
+      "source": "CVE",
+      "id": "CVE-2014-0017"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0017",
+      "source": "NVD",
+      "id": "CVE-2014-0017"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libssh:libssh",
+      "version": "2.2",
+      "vendor": "libssh",
+      "product": "libssh"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2014-03-28T18:40+09:00",
+  "issued": "2014-03-18T15:50+09:00",
+  "modified": "2014-03-28T18:40+09:00"
+}

@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-002478.html",
+  "title": "Magento 用の CardGate Payments プラグインにおける同一生成元ポリシー違反に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-002478.html",
+  "description": "Magento 用の CardGate Payments プラグインには、同一生成元ポリシー違反に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-002478",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8818",
+      "source": "CVE",
+      "id": "CVE-2020-8818"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-8818",
+      "source": "NVD",
+      "id": "CVE-2020-8818"
+    },
+    {
+      "text": "https://github.com/cardgate/magento2/issues/54",
+      "source": "関連文書",
+      "id": "Public disclosure on CVE-2020-8818"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/346.html",
+      "id": "CWE-346",
+      "title": "同一生成元ポリシー違反(CWE-346)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cardgate:cardgate_payments",
+      "version": "2.2",
+      "vendor": "CardGate",
+      "product": "CardGate Payments"
+    },
+    {
+      "text": "cpe:/a:magento:magento",
+      "version": "2.2",
+      "vendor": "Magento, Inc.",
+      "product": "Magento"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2020-03-17T14:13+09:00",
+  "issued": "2020-03-17T14:13+09:00",
+  "modified": "2020-03-17T14:13+09:00"
+}

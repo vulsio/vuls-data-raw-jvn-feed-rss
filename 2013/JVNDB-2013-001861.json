@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001861.html",
+  "title": "curl および libcurl におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001861.html",
+  "description": "curl および libcurl の lib/curl_sasl.c 内の Curl_sasl_create_digest_md5_message 関数には、SASL DIGEST-MD5 認証のネゴシエーションの際、スタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001861",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU95174988/",
+      "source": "JVN",
+      "id": "JVNVU#95174988"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0249",
+      "source": "CVE",
+      "id": "CVE-2013-0249"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0249",
+      "source": "NVD",
+      "id": "CVE-2013-0249"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:haxx:curl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "cURL"
+    },
+    {
+      "text": "cpe:/a:haxx:libcurl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "libcurl"
+    },
+    {
+      "text": "cpe:/a:oracle:hyperion",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Hyperion"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-07-29T17:41+09:00",
+  "issued": "2013-03-19T18:52+09:00",
+  "modified": "2015-07-29T17:41+09:00"
+}

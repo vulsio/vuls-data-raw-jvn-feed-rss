@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004409.html",
+  "title": "SAP SAPCAR におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004409.html",
+  "description": "SAP SAPCAR は、ファイルを解凍する際に、ファイル操作の戻り値をチェックしないため、サービス運用妨害 (プログラムクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を SAP Security Note 2312905 として公開しています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-252: Unchecked Return Value (戻り値の未チェック) と識別されています。\r\nhttps://cwe.mitre.org/data/definitions/252.html",
+  "identifier": "JVNDB-2016-004409",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5845",
+      "source": "CVE",
+      "id": "CVE-2016-5845"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5845",
+      "source": "NVD",
+      "id": "CVE-2016-5845"
+    },
+    {
+      "text": "https://www.onapsis.com/blog/denial-service-attacks-sap-security-notes-august-2016",
+      "source": "関連文書",
+      "id": "Denial of Service Attacks: SAP Security Notes August 2016"
+    },
+    {
+      "text": "https://www.coresecurity.com/advisories/sap-car-multiple-vulnerabilities",
+      "source": "関連文書",
+      "id": "SAP CAR Multiple Vulnerabilities"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sap:sapcar_archive_tool",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "SAPCAR"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-08-22T15:33+09:00",
+  "issued": "2016-08-22T15:33+09:00",
+  "modified": "2016-08-22T15:33+09:00"
+}

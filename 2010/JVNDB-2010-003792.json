@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003792.html",
+  "title": "FreeBSD の ZIL の replay 機能における不正なファイルを変更される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003792.html",
+  "description": "FreeBSD の ZFS Intent Log (ZIL) の replay 機能は、setattr トランザクションの再生中にファイルを作成する際、元のパーミッションの代わりに 7777 パーミッションを使用するため、システムクラッシュまたは電源障害後、不正なファイルを読まれるまたは変更される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-003792",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0318",
+      "source": "CVE",
+      "id": "CVE-2010-0318"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0318",
+      "source": "NVD",
+      "id": "CVE-2010-0318"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:freebsd:freebsd",
+      "version": "2.2",
+      "vendor": "FreeBSD",
+      "product": "FreeBSD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-06-26T16:19+09:00",
+  "issued": "2012-06-26T16:19+09:00",
+  "modified": "2012-06-26T16:19+09:00"
+}

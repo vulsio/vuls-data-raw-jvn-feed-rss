@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000572.html",
+  "title": "BEA 製品における監査イベントが不正な重大度で記録されてしまう脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000572.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nBEA WebLogic Server 7.0 SP6 以前、8.1 SP4 以前には、以下のような複数のセキュリティ問題が存在します。\r\n\r\n1) デプロイされたアプリケーションの権限が、デプロイメント記述子の run-as 要素を使用することで Deployer セキュリティロールから Admin セキュリティロールに変更されてしまう問題が存在します。(BEA05-88.00)\r\n\r\nローカルの攻撃者に悪用された場合、本来許可されていない処理を行うアプリーケーションが実行される可能性があります。\r\n\r\n2) 高負荷状態において、監査イベントが不正な重大度で記録されてしまう問題が存在します。(BEA05-89.00)\r\n\r\n監査機能を有効にしている場合、重要な監査イベントにも関わらずフィルタリングされてしまい、イベントを見落としてしまう可能性があります。\r\n\r\n3) 管理サーバにおいて管理ポートが有効である場合においても、通信が保護される t3s プロトコルの代わりに、t3 プロトコルにより weblogic.Deployer コマンドを管理サーバに送信することが可能であるため、第三者に盗聴されてしまう問題が存在します。(BEA05-102.00)\r\n\r\nリモートの攻撃者に悪用された場合、管理用のユーザ名やパスワードなど重要な情報が取得されてしまう可能性があります。\r\n\r\n4) サーブレットの Relative forwarding の処理が不適切であるため、処理がループしスタックオーバフローが発生する問題が存在します。(BEA05-106.00)\r\n\r\nリモートの攻撃者に悪用された場合、WebLogic Server の処理能力が低下しサービス不能状態に陥る可能性があります。",
+  "identifier": "JVNDB-2005-000572",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4753",
+      "source": "CVE",
+      "id": "CVE-2005-4753"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4753",
+      "source": "NVD",
+      "id": "CVE-2005-4753"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15052",
+      "source": "BID",
+      "id": "15052"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bea:weblogic_server",
+      "version": "2.2",
+      "vendor": "BEAシステムズ",
+      "product": "BEA WebLogic Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

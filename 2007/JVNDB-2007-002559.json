@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-002559.html",
+  "title": "Entrust ESP における証明書認証を偽装される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-002559.html",
+  "description": "Entrust Entelligence Security Provider (ESP) は、以下を含む特定の状況の証明書を適切に検証しないため、証明書認証を偽装される脆弱性が存在します。\r\n(1) ルート認証局 (CA) 証明書を除外したチェーン\r\n(2) パス検証中は失効ステータス不明を無視するアプリケーション\r\n(3) 証明書パス内の特定のエラーを無視するアプリケーション",
+  "identifier": "JVNDB-2007-002559",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4594",
+      "source": "CVE",
+      "id": "CVE-2007-4594"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-4594",
+      "source": "NVD",
+      "id": "CVE-2007-4594"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:entrust:entelligence_security_provider",
+      "version": "2.2",
+      "vendor": "Entrust",
+      "product": "Entelligence Security Provider"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2012-06-26T15:54+09:00",
+  "issued": "2012-06-26T15:54+09:00",
+  "modified": "2012-06-26T15:54+09:00"
+}

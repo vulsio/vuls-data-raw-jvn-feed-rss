@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000008.html",
+  "title": "Red Hat Linux のシングルユーザモード移行処理における認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000008.html",
+  "description": "Red　Hat Linux では、起動時にシングルユーザモードに移行する必要がある場合、必ずパスワード要求します。この際に ^C (CTRL+C) シーケンスを与えることで認証セッションが取り消され、root 権限のシェルプロンプトがコンソールで利用可能になってしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2000-000008",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-0219",
+      "source": "CVE",
+      "id": "CVE-2000-0219"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2000-0219",
+      "source": "NVD",
+      "id": "CVE-2000-0219"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/1005",
+      "source": "BID",
+      "id": "1005"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

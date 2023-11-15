@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003244.html",
+  "title": "Red Hat JBoss Enterprise Application Platform および JBoss Enterprise Web Platform の Boss Remoting におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003244.html",
+  "description": "Red Hat JBoss Enterprise Application Platform (JBoss EAP または JBEAP) および JBoss Enterprise Web Platform (JBEWP) の Boss Remoting の org.jboss.remoting.transport.bisocket.BisocketServerInvoker$SecondaryServerSocketThread.run メソッドには、サービス運用妨害 (daemon 停止 ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-003244",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3862",
+      "source": "CVE",
+      "id": "CVE-2010-3862"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3862",
+      "source": "NVD",
+      "id": "CVE-2010-3862"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_application_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss Enterprise Application Platform"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_web_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss Enterprise Web Platform"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_remoting",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "jboss remoting"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-03-27T18:42+09:00",
+  "issued": "2012-03-27T18:42+09:00",
+  "modified": "2012-03-27T18:42+09:00"
+}

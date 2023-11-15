@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005896.html",
+  "title": "FFmpeg および Libav の H.263 コーデックにおける脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005896.html",
+  "description": "FFmpeg および Libav の H.263 コーデック (libavcodec/h263dec.c) には、フレームスレッドの幅/高さの変動 (width/height changing with frame threads) に関する処理に不備があるため、特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2012-005896",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3937",
+      "source": "CVE",
+      "id": "CVE-2011-3937"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3937",
+      "source": "NVD",
+      "id": "CVE-2011-3937"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    },
+    {
+      "text": "cpe:/a:libav:libav",
+      "version": "2.2",
+      "vendor": "Libav",
+      "product": "Libav"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-01-08T16:37+09:00",
+  "issued": "2013-01-08T16:37+09:00",
+  "modified": "2013-01-08T16:37+09:00"
+}

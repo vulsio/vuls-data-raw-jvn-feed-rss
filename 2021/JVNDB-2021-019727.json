@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-019727.html",
+  "title": "tipask におけるダウンロードしたコードの完全性検証不備に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-019727.html",
+  "description": "tipask には、ダウンロードしたコードの完全性検証不備に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-019727",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-41714",
+      "source": "CVE",
+      "id": "CVE-2021-41714"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-41714",
+      "source": "NVD",
+      "id": "CVE-2021-41714"
+    },
+    {
+      "text": "https://github.com/sdfsky/tipask/blob/c4e6aa9f6017c9664780570016954c0922d203b7/app/Http/Controllers/AttachController.php#L42",
+      "source": "関連文書",
+      "id": "github.com (AttachController.php#L42)"
+    },
+    {
+      "text": "https://github.com/sdfsky/tipask/commit/9b5f13d1708e9a5dc0959cb8a97be1c32b94ca69",
+      "source": "関連文書",
+      "id": "github.com (9b5f13d1708e9a5dc0959cb8a97be1c32b94ca69)"
+    },
+    {
+      "text": "https://www.yuque.com/henry-weply/penetration/fza5hm",
+      "source": "関連文書",
+      "id": "www.yuque.com (fza5hm)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/494.html",
+      "id": "CWE-494",
+      "title": "ダウンロードしたコードの完全性検証不備(CWE-494)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:tipask:tipask",
+      "version": "2.2",
+      "vendor": "tipask",
+      "product": "tipask"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2023-08-14T17:28+09:00",
+  "issued": "2023-08-14T17:28+09:00",
+  "modified": "2023-08-14T17:28+09:00"
+}

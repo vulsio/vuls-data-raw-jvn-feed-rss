@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004217.html",
+  "title": "Apache Struts などで使用される OpenSymphony XWork におけるコンテキストオブジェクトを変更される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004217.html",
+  "description": "Apache Struts およびその他の製品で使用される OpenSymphony XWork の ParametersInterceptor は、コンテキストオブジェクトへの # (ポンド記号) 参照を適切に制限しないため、Object-Graph Navigation Language (OGNL) 文を実行される、およびサーバ側のコンテキストオブジェクトを変更される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-004217",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-6504",
+      "source": "CVE",
+      "id": "CVE-2008-6504"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-6504",
+      "source": "NVD",
+      "id": "CVE-2008-6504"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:opensymphony:xwork",
+      "version": "2.2",
+      "vendor": "opensymphony",
+      "product": "xwork"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-09-25T17:27+09:00",
+  "issued": "2012-09-25T17:27+09:00",
+  "modified": "2012-09-25T17:27+09:00"
+}

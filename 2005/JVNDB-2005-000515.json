@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000515.html",
+  "title": "Mozilla 製品のコマンドライン上の URL の処理における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000515.html",
+  "description": "Firefox および Mozilla には、コマンドラインから起動する際に使用するシェルスクリプトにおいて、引数に指定する URL の妥当性の確認が不適切であるため、URL 内の `` (backticks) に囲まれた文字列をシェルコマンドとして認識してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000515",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2968",
+      "source": "CVE",
+      "id": "CVE-2005-2968"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2968",
+      "source": "NVD",
+      "id": "CVE-2005-2968"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/914681",
+      "source": "CERT-VN",
+      "id": "VU#914681"
+    },
+    {
+      "text": "http://secunia.com/advisories/16869/",
+      "source": "SECUNIA",
+      "id": "SA16869"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14888",
+      "source": "BID",
+      "id": "14888"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/1794",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-1794"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

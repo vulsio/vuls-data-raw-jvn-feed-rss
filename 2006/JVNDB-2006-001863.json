@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-001863.html",
+  "title": "Apache HTTP Server における tty 端末への権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-001863.html",
+  "description": "Apache HTTP Server の Debian GNU/Linux 033_-F_NO_SETSID パッチは、httpd が対話形式で起動されている際、tty 端末制御から httpd を適切に関連付けを解除しないため、tty 端末への権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2006-001863",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-7098",
+      "source": "CVE",
+      "id": "CVE-2006-7098"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-7098",
+      "source": "NVD",
+      "id": "CVE-2006-7098"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:debian:apache",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "apache"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-06-26T15:38+09:00",
+  "issued": "2012-06-26T15:38+09:00",
+  "modified": "2012-06-26T15:38+09:00"
+}

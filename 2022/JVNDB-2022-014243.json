@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-014243.html",
+  "title": "sigstore の cosign におけるデジタル署名の検証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-014243.html",
+  "description": "sigstore の cosign には、デジタル署名の検証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-014243",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-35929",
+      "source": "CVE",
+      "id": "CVE-2022-35929"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-35929",
+      "source": "NVD",
+      "id": "CVE-2022-35929"
+    },
+    {
+      "text": "https://github.com/sigstore/cosign/commit/c5fda01a8ff33ca981f45a9f13e7fb6bd2080b94",
+      "source": "関連文書",
+      "id": "github.com (c5fda01a8ff33ca981f45a9f13e7fb6bd2080b94)"
+    },
+    {
+      "text": "https://github.com/sigstore/cosign/security/advisories/GHSA-vjxv-45g9-9296",
+      "source": "関連文書",
+      "id": "github.com (GHSA-vjxv-45g9-9296)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/347.html",
+      "id": "CWE-347",
+      "title": "デジタル署名の不適切な検証(CWE-347)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sigstore:cosign",
+      "version": "2.2",
+      "vendor": "sigstore",
+      "product": "cosign"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-09-15T17:07+09:00",
+  "issued": "2023-09-15T17:07+09:00",
+  "modified": "2023-09-15T17:07+09:00"
+}

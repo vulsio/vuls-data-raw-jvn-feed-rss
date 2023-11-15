@@ -1,0 +1,188 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005768.html",
+  "title": "NTP の ntpd の ntp_request.c 内の monlist 機能におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005768.html",
+  "description": "NTP の ntpd の ntp_request.c 内の monlist 機能には、サービス運用妨害 (トラフィック増幅) 状態にされる脆弱性が存在します。\r\n\r\n本脆弱性への攻撃が 2013 年 12 月に観測されています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-406: ネットワークメッセージ量の不十分な制御 (ネットワーク増幅) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/406.html",
+  "identifier": "JVNDB-2013-005768",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU96176042/",
+      "source": "JVN",
+      "id": "JVNVU#96176042"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5211",
+      "source": "CVE",
+      "id": "CVE-2013-5211"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5211",
+      "source": "NVD",
+      "id": "CVE-2013-5211"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/348126",
+      "source": "CERT-VN",
+      "id": "VU#348126"
+    },
+    {
+      "text": "http://www.us-cert.gov/ncas/alerts/TA14-013A",
+      "source": "CERT-TA",
+      "id": "TA14-013A"
+    },
+    {
+      "text": "http://www.us-cert.gov/ncas/alerts/TA14-017A",
+      "source": "CERT-TA",
+      "id": "TA14-017A"
+    },
+    {
+      "text": "http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-dev/ntp-dev-4.2.7p26.tar.gz",
+      "source": "関連文書",
+      "id": "ntp-dev-4.2.7p26.tar.gz"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ntp:ntp",
+      "version": "2.2",
+      "vendor": "NTP Project",
+      "product": "NTP"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax2000r",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX2000Rシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax2400s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX2400Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax3600s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX3600Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax3800s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX3800Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax5400s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX5400Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax6300s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX6300Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax6600s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX6600Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax6700s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX6700Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax7700r",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX7700Rシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax7800r",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX7800Rシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax7800s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX7800Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax8600r",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX8600Rシリーズ"
+    },
+    {
+      "text": "cpe:/h:hitachi:gr2000",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "GR2000"
+    },
+    {
+      "text": "cpe:/h:hitachi:gr4000",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "GR4000"
+    },
+    {
+      "text": "cpe:/h:hitachi:gs3000",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "GS3000"
+    },
+    {
+      "text": "cpe:/h:hitachi:gs4000",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "GS4000"
+    },
+    {
+      "text": "cpe:/h:nec:istorage",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "iStorage"
+    },
+    {
+      "text": "cpe:/h:nec:univerge_ip8800",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "UNIVERGE IP8800"
+    },
+    {
+      "text": "cpe:/h:nec:univerge_pf_series",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "UNIVERGE PFシリーズ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2016-02-01T14:54+09:00",
+  "issued": "2014-01-07T17:19+09:00",
+  "modified": "2016-02-01T14:54+09:00"
+}

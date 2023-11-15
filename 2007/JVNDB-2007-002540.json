@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-002540.html",
+  "title": "Gesytec Easylon OPC Server におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-002540.html",
+  "description": "Gesytec Easylon OPC Server は、サーバーハンドルを適切に検証しないため、任意のコードを実行される、またはサービス運用妨害 (DoS) 状態となる、脆弱性が存在します。\r\n本問題は、特定の Remove 関数による任意のメモリアドレス上の解放操作、および特定の Set、Read、および Write 関数による任意のメモリアドレス上の読み書き操作に不備があるために発生します。",
+  "identifier": "JVNDB-2007-002540",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4473",
+      "source": "CVE",
+      "id": "CVE-2007-4473"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-4473",
+      "source": "NVD",
+      "id": "CVE-2007-4473"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/205073",
+      "source": "CERT-VN",
+      "id": "VU#205073"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gesytec_easylon:opc_server",
+      "version": "2.2",
+      "vendor": "gesytec easylon",
+      "product": "opc server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-06-26T15:54+09:00",
+  "issued": "2012-06-26T15:54+09:00",
+  "modified": "2012-06-26T15:54+09:00"
+}

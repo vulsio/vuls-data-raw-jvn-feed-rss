@@ -1,0 +1,109 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001223.html",
+  "title": "OpenSSL における無効なポインタデリファレンスを誘発される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001223.html",
+  "description": "OpenSSL には、アプリケーションが EVP_PKEY_public_check() 関数によって不正な形式の DSA 公開鍵をチェックされる際、読み込み時、無効なポインタデリファレンスを誘発される脆弱性が存在します。",
+  "identifier": "JVNDB-2023-001223",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU91213144/",
+      "source": "JVN",
+      "id": "JVNVU#91213144"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-0217",
+      "source": "CVE",
+      "id": "CVE-2023-0217"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-0217",
+      "source": "NVD",
+      "id": "CVE-2023-0217"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nec:aquaculture_fish_size_measurement_automation_service",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "養殖魚サイズ測定自動化サービス"
+    },
+    {
+      "text": "cpe:/a:nec:connexive_pf",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CONNEXIVE PF"
+    },
+    {
+      "text": "cpe:/a:nec:esmpro_serveragent",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "ESMPRO/ServerAgent"
+    },
+    {
+      "text": "cpe:/a:nec:nec_enhanced_speech_analysis",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NEC Enhanced Speech Analysis"
+    },
+    {
+      "text": "cpe:/a:nec:nec_multimedia_olap",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NEC Multimedia OLAP for 映像分析サービス"
+    },
+    {
+      "text": "cpe:/a:nec:neoface_monitor",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NeoFace Monitor"
+    },
+    {
+      "text": "cpe:/a:nec:spoolserver_reportfiling",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SpoolServer/ReportFiling"
+    },
+    {
+      "text": "cpe:/a:nec:tokusengai_gcb",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "得選街・GCB"
+    },
+    {
+      "text": "cpe:/a:nec:vran",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "vRAN"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/o:nec:ix_router",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX ルータ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-09-05T17:13+09:00",
+  "issued": "2023-02-28T16:12+09:00",
+  "modified": "2023-09-05T17:13+09:00"
+}

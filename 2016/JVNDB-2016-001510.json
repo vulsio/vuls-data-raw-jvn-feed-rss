@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001510.html",
+  "title": "Kubernetes の API サーバにおける追加のリソースにアクセスされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001510.html",
+  "description": "Kubernetes の API サーバは、アドミッションコントロールを適切にチェックしないため、追加のリソースにアクセスされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-284: Improper Access Control (不適切なアクセス制御) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/284.html",
+  "identifier": "JVNDB-2016-001510",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1905",
+      "source": "CVE",
+      "id": "CVE-2016-1905"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1905",
+      "source": "NVD",
+      "id": "CVE-2016-1905"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:kubernetes",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Kubernetes"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2016-02-26T15:48+09:00",
+  "issued": "2016-02-26T15:48+09:00",
+  "modified": "2016-02-26T15:48+09:00"
+}

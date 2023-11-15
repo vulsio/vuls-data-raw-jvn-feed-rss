@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003126.html",
+  "title": "Android の KeyStore サービスの /system/bin/keystore におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003126.html",
+  "description": "Android の KeyStore サービスの /system/bin/keystore 内の encode_key 関数には、スタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2014-003126",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3100",
+      "source": "CVE",
+      "id": "CVE-2014-3100"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3100",
+      "source": "NVD",
+      "id": "CVE-2014-3100"
+    },
+    {
+      "text": "http://securityintelligence.com/android-keystore-stack-buffer-overflow-to-keep-things-simple-buffers-are-always-larger-than-needed/#.U7X4H1SCgdU",
+      "source": "関連文書",
+      "id": "Android KeyStore Stack Buffer Overflow: To Keep Things Simple, Buffers Are Always Larger Than Needed"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:google:android",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-07-04T13:56+09:00",
+  "issued": "2014-07-04T13:56+09:00",
+  "modified": "2014-07-04T13:56+09:00"
+}

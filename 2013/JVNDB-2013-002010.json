@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002010.html",
+  "title": "複数の OpenStack 製品におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002010.html",
+  "description": "OpenStack Nova Grizzly、Folsom、および Essex は、固定 IP 用のクオータを適切に実装しないため、サービス運用妨害 (リソースの枯渇および新しいインスタンス作成の失敗) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002010",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1838",
+      "source": "CVE",
+      "id": "CVE-2013-1838"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1838",
+      "source": "NVD",
+      "id": "CVE-2013-1838"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:essex",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Essex"
+    },
+    {
+      "text": "cpe:/a:openstack:folsom",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Compute Folsom"
+    },
+    {
+      "text": "cpe:/a:openstack:grizzly",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Grizzly"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-04-11T14:57+09:00",
+  "issued": "2013-03-27T14:42+09:00",
+  "modified": "2013-04-11T14:57+09:00"
+}

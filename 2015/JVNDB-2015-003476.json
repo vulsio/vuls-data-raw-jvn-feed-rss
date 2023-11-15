@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003476.html",
+  "title": "複数の Red Hat Enterprise Linux 製品の openssl-1.0.1e-25.el7 で配布される OpenSSL におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003476.html",
+  "description": "複数の Red Hat Enterprise Linux 製品の openssl-1.0.1e-25.el7 で配布される OpenSSL の ssleay_rand_bytes 関数の PRNG lock の実装の特定の Red Hat のパッチには、競合状態により、サービス運用妨害 (アプリケーションクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-003476",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3216",
+      "source": "CVE",
+      "id": "CVE-2015-3216"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3216",
+      "source": "NVD",
+      "id": "CVE-2015-3216"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-07-10T14:23+09:00",
+  "issued": "2015-07-10T14:23+09:00",
+  "modified": "2015-07-10T14:23+09:00"
+}

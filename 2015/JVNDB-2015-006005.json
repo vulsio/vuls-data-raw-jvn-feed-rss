@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006005.html",
+  "title": "HP Photosmart B210 の SMB サーバにバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006005.html",
+  "description": "HP が提供するプリンタ Photosmart B210 では、印刷キューの管理に SMB サーバを使用しています。細工された SMB パケットによってサービス運用妨害 (DoS) 状態を引き起こすことが可能であり、復旧するには、手動による再起動が必要となります。\r\n\r\n先頭 296 byte を細工した SMB パケットを送る事で Photosmart B210 をサービス運用妨害 (DoS) 状態にする事が可能です。復旧するには、手動による再起動が必要となります。\r\n\r\nHP は次のように述べています：\r\n\r\n　\"HP has examined this issue reported on the Photosmart B210 and has verified the printer could become unresponsive when fuzzed with the code provided. At no time did we identify buffer overflows with this tool nor our code inspection. The attempted attack produces a non-permanent denial of service.\r\n\r\n　HP's recommendation for existing models affected by this attack is to power cycle the device to return it to a working state.\r\n\r\n　HP continually works to improve security and is taking steps to ensure current and future products are not susceptible to this attack.\"\r\n\r\n　HP は Photosmart B210 について報告されたこの問題を検証し、提供されたコードを使用したファジングでプリンタが応答不能となることを確認しています。ただしこのファジングツールでも、また当社のコード検査においても、バッファオーバーフローの発生は確認していません。この攻撃により、非永続的なサービス運用妨害が発生します。\r\n\r\n　この攻撃の影響を受ける既存の製品について、HP は機器を作業状態に戻すために電源を入れなおすことを推奨します。\r\n\r\n　HP は継続して、セキュリティ向上と、現在および将来の製品がこの攻撃を受けにくくなるよう取り組んでいきます。\r\n\r\nクラッシュの根本原因は依然として不明です。\r\n",
+  "identifier": "JVNDB-2015-006005",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU90756914/index.html",
+      "source": "JVN",
+      "id": "JVNVU#90756914"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/840844",
+      "source": "CERT-VN",
+      "id": "VU#840844"
+    },
+    {
+      "text": "http://www.rapid7.com/db/modules/auxiliary/fuzzers/smb/smb2_negotiate_corrupt",
+      "source": "関連文書",
+      "id": "SMB Negotiate SMB2 Dialect Corruption"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:hp:photosmart_plus_e-all-in-one_printer_series",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP Photosmart Plus e-All-in-One Printer series"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2015-11-24T17:55+09:00",
+  "issued": "2015-11-24T17:55+09:00",
+  "modified": "2015-11-24T17:55+09:00"
+}

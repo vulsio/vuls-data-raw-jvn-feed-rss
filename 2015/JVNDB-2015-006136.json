@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006136.html",
+  "title": "OpenLDAP の libraries/libldap/tls_m.c の nss_parse_ciphers 関数における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006136.html",
+  "description": "OpenLDAP の libraries/libldap/tls_m.c の nss_parse_ciphers 関数は、OpenSSL スタイルのマルチキーワードモードの暗号文字列を適切に解析しないため、意図したものより脆弱な暗号を使用される原因となり、不特定の影響を受ける脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-17: Code (コード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/17.html",
+  "identifier": "JVNDB-2015-006136",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3276",
+      "source": "CVE",
+      "id": "CVE-2015-3276"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3276",
+      "source": "NVD",
+      "id": "CVE-2015-3276"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openldap:openldap",
+      "version": "2.2",
+      "vendor": "OpenLDAP Foundation",
+      "product": "OpenLDAP"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2015-12-09T17:10+09:00",
+  "issued": "2015-12-09T17:10+09:00",
+  "modified": "2015-12-09T17:10+09:00"
+}

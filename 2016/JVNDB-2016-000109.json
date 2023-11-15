@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000109.html",
+  "title": "CG-WLR300GNV シリーズにおいて認証試行回数が制限されていない脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000109.html",
+  "description": "株式会社コレガが提供する CG-WLR300GNV および CG-WLR300GNV-W は、無線 LAN ルータです。CG-WLR300GNV および CG-WLR300GNV-W の WPS 機能では、PIN 認証の試行回数が制限されていないため、ブルートフォース攻撃を受ける可能性があります。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 峯岸 孝彰 氏、神奈川工科大学 岡本 剛 氏",
+  "identifier": "JVNDB-2016-000109",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN75028871/index.html",
+      "source": "JVN",
+      "id": "JVN#75028871"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4824",
+      "source": "CVE",
+      "id": "CVE-2016-4824"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4824",
+      "source": "NVD",
+      "id": "CVE-2016-4824"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:corega:cg-wlr300gnv",
+      "version": "2.2",
+      "vendor": "株式会社コレガ",
+      "product": "CG-WLR300GNV"
+    },
+    {
+      "text": "cpe:/h:corega:cg-wlr300gnv-w",
+      "version": "2.2",
+      "vendor": "株式会社コレガ",
+      "product": "CG-WLR300GNV-W"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:A/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2016-06-29T16:02+09:00",
+  "issued": "2016-06-22T14:09+09:00",
+  "modified": "2016-06-29T16:02+09:00"
+}

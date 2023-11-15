@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006750.html",
+  "title": "複数のアプリケーションで使用される GTK+ の gdk/gdkcairo.c における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006750.html",
+  "description": "eom、gnome-photos、eog、gambas3、thunar、pinpoint、およびその他のアプリケーションで使用される GTK+ の gdk/gdkcairo.c の gdk_cairo_set_source_pixbuf 関数には、整数オーバーフローの脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-190: Integer Overflow or Wraparound (整数オーバーフローまたはラップアラウンド) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/190.html",
+  "identifier": "JVNDB-2013-006750",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7447",
+      "source": "CVE",
+      "id": "CVE-2013-7447"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7447",
+      "source": "NVD",
+      "id": "CVE-2013-7447"
+    },
+    {
+      "text": "https://github.com/mate-desktop/eom/issues/93",
+      "source": "関連文書",
+      "id": "EOM crashes when trying to open a large PNG file #93"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gtk:gtk%2B",
+      "version": "2.2",
+      "vendor": "GTK+",
+      "product": "GTK+"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2016-03-16T11:02+09:00",
+  "issued": "2016-03-16T11:02+09:00",
+  "modified": "2016-03-16T11:02+09:00"
+}

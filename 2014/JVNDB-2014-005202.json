@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005202.html",
+  "title": "FFMpeg および Libav におけるヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005202.html",
+  "description": "FFMpeg および Libav の libavcodec/proresenc_kostya.c の encode_slice 関数には、ヒープベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005202",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5271",
+      "source": "CVE",
+      "id": "CVE-2014-5271"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5271",
+      "source": "NVD",
+      "id": "CVE-2014-5271"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    },
+    {
+      "text": "cpe:/a:libav:libav",
+      "version": "2.2",
+      "vendor": "Libav",
+      "product": "Libav"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-11-05T15:40+09:00",
+  "issued": "2014-11-05T15:40+09:00",
+  "modified": "2014-11-05T15:40+09:00"
+}

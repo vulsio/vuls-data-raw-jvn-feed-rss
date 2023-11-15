@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002903.html",
+  "title": "ISC BIND の resolver.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002903.html",
+  "description": "ISC BIND の resolver.c は、再帰的なリゾルバが構成されている場合、サービス運用妨害 (表明違反および named デーモンの終了) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002903",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97537282/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97537282"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3919",
+      "source": "CVE",
+      "id": "CVE-2013-3919"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3919",
+      "source": "NVD",
+      "id": "CVE-2013-3919"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2013/at130026.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2013-0026"
+    },
+    {
+      "text": "http://jprs.jp/tech/security/2013-06-05-bind9-vuln-malformed-zone.html",
+      "source": "JPRS",
+      "id": "（緊急）BIND 9.xの脆弱性（DNSサービスの停止）について（2013年6月5日公開）"
+    },
+    {
+      "text": "https://www.nic.ad.jp/ja/topics/2013/20130605-01.html",
+      "source": "JPNIC",
+      "id": "ISC BIND 9に関する脆弱性について(2013年6月)"
+    },
+    {
+      "text": "http://archives.neohapsis.com/archives/bugtraq/2014-10/0103.html",
+      "source": "関連文書",
+      "id": "APPLE-SA-2014-10-16-3 OS X Server v4.0"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/o:apple:os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "macOS Server (旧 OS X Server)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2014-11-05T17:47+09:00",
+  "issued": "2013-06-07T16:43+09:00",
+  "modified": "2014-11-05T17:47+09:00"
+}

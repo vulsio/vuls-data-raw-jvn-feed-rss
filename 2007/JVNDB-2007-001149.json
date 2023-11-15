@@ -1,0 +1,95 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001149.html",
+  "title": "ClamAV の libclamav/rtf.c および libclamav/htmlnorm.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001149.html",
+  "description": "ClamAV には、libclamav/rtf.c の cli_scanrtf() 関数において、RTF ファイルの取り扱いに不備があり、NULL ポインタデリファレンスによるサービス運用妨害 (DoS) の脆弱性および、libclamav/htmlnorm.c の cli_html_normalise() 関数において HTML ドキュメントの data: URI の取り扱いに不備があり、NULL デリファレンスによるサービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001149",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA08-079A/index.html",
+      "source": "JVN",
+      "id": "JVNTA08-079A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA08-079A/index.html",
+      "source": "JVNTR",
+      "id": "TRTA08-079A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4510",
+      "source": "CVE",
+      "id": "CVE-2007-4510"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4510",
+      "source": "NVD",
+      "id": "CVE-2007-4510"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA08-079A.html",
+      "source": "CERT-SA",
+      "id": "SA08-079A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA08-079A.html",
+      "source": "CERT-TA",
+      "id": "TA08-079A"
+    },
+    {
+      "text": "http://secunia.com/advisories/26530",
+      "source": "SECUNIA",
+      "id": "SA26530"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25398",
+      "source": "BID",
+      "id": "25398"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/36173",
+      "source": "XF",
+      "id": "36173"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/36177",
+      "source": "XF",
+      "id": "36177"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/0924",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-0924"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/2952",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-2952"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:clamav:clamav",
+      "version": "2.2",
+      "vendor": "ClamAV",
+      "product": "ClamAV"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2008-04-11T17:29+09:00",
+  "issued": "2008-04-11T17:29+09:00",
+  "modified": "2008-04-11T17:29+09:00"
+}

@@ -1,0 +1,130 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000140.html",
+  "title": "BIND の DNS リゾルバ機能におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000140.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\n情報を提供するネームサーバに問い合わせをするクライアントのことを、リゾルバと言います。ホスト名から IP アドレスへの変換を必要とするアプリケーションには、このリゾルバの機能が組み込まれています。一般的に、リゾルバとはライブラリとして提供され、アプリケーションにリンクされます。 \r\n\r\nDNS リゾルバライブラリに DNS からのレスポンスの操作の実装に不備が存在します。IPv4 のクライアントは gethostbyname() 関数を使用して DNS サーバにクエリを発行します。これに対する DNS サーバからのレスポンスの文字列長を適切にチェックしないため、バッファオーバーフローが発生する可能性があります。 \r\nこの問題を利用することにより、リモートの攻撃者は DNS リゾルバライブラリを呼び出した時の権限で、任意のコードの実行が可能です。 \r\n\r\n尚、この問題は脆弱な DNS リゾルバライブラリを使用している場合に影響を受けます。Named 自体に問題は存在しません。ISC BIND 9.x の場合、デフォルトインストールでは脆弱なリゾルバライブラリは含まれません。 \r\n\r\nSendmail は BIND リゾルバ API を使用しているため、最新バージョンである 8.12.5 を含めた全てのバージョンでこの問題の影響を受けます。",
+  "identifier": "JVNDB-2002-000140",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNCA-2002-19",
+      "source": "JVN",
+      "id": "JVNCA-2002-19"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0684",
+      "source": "CVE",
+      "id": "CVE-2002-0684"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0684",
+      "source": "NVD",
+      "id": "CVE-2002-0684"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2002/at020005.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2002-0005"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr022501.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2002-2501"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr022901.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2002-2901"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr023201.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2002-3201"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr023401.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2002-3401"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr023801.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2002-3801"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-2002-19.html",
+      "source": "CERT-A",
+      "id": "CA-2002-19"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/542971",
+      "source": "CERT-VN",
+      "id": "VU#542971"
+    },
+    {
+      "text": "http://www.ciac.org/ciac/bulletins/m-110.shtml",
+      "source": "CIAC",
+      "id": "M-110"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/5100",
+      "source": "BID",
+      "id": "5100"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/a:sendmail:sendmail",
+      "version": "2.2",
+      "vendor": "Sendmail Consortium",
+      "product": "sendmail"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

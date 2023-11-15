@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005393.html",
+  "title": "Apache Subversion 用 mod_dontdothat の is_this_legal 関数におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005393.html",
+  "description": "Apache Subversion 用 mod_dontdothat の is_this_legal 関数には、アクセス制限を回避され、サービス運用妨害 (リソース消費) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005393",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4505",
+      "source": "CVE",
+      "id": "CVE-2013-4505"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4505",
+      "source": "NVD",
+      "id": "CVE-2013-4505"
+    },
+    {
+      "text": "http://osvdb.org/100364",
+      "source": "関連文書",
+      "id": "100364 : Apache Subversion mod_dontdothat Serf-based Client Relative URL Handling REPORT Request Restriction Bypass Resource Consumption Remote DoS"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:mod_dontdothat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "mod_dontdothat"
+    },
+    {
+      "text": "cpe:/a:apache:subversion",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Subversion"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-04-07T17:32+09:00",
+  "issued": "2013-12-10T18:34+09:00",
+  "modified": "2014-04-07T17:32+09:00"
+}

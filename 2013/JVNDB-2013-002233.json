@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002233.html",
+  "title": "複数の OpenStack コンポーネントにおけるアクセスの制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002233.html",
+  "description": "OpenStack Keystone の Grizzly 、Folsom および Essex は、EC2-style 認証を使用している場合、(1) ユーザ、(2) テナント、または (3) ドメインが有効かどうか適切に確認しないため、アクセスの制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002233",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0282",
+      "source": "CVE",
+      "id": "CVE-2013-0282"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0282",
+      "source": "NVD",
+      "id": "CVE-2013-0282"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:essex",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Essex"
+    },
+    {
+      "text": "cpe:/a:openstack:folsom",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Compute Folsom"
+    },
+    {
+      "text": "cpe:/a:openstack:grizzly",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Grizzly"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2013-04-16T15:52+09:00",
+  "issued": "2013-04-16T15:52+09:00",
+  "modified": "2013-04-16T15:52+09:00"
+}

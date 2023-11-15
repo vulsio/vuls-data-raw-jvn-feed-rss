@@ -1,0 +1,123 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-006712.html",
+  "title": "The Rust Programming Language の regex 他複数ベンダの製品におけるリソースの枯渇に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-006712.html",
+  "description": "The Rust Programming Language の regex 他複数ベンダの製品には、リソースの枯渇に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-006712",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-24713",
+      "source": "CVE",
+      "id": "CVE-2022-24713"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-24713",
+      "source": "NVD",
+      "id": "CVE-2022-24713"
+    },
+    {
+      "text": "https://github.com/rust-lang/regex/commit/ae70b41d4f46641dbc45c7a4f87954aea356283e",
+      "source": "関連文書",
+      "id": "github.com (ae70b41d4f46641dbc45c7a4f87954aea356283e)"
+    },
+    {
+      "text": "https://github.com/rust-lang/regex/security/advisories/GHSA-m5pq-gvj9-9vr8",
+      "source": "関連文書",
+      "id": "github.com (GHSA-m5pq-gvj9-9vr8)"
+    },
+    {
+      "text": "https://groups.google.com/g/rustlang-security-announcements/c/NcNNL1Jq7Yw",
+      "source": "関連文書",
+      "id": "groups.google.com (NcNNL1Jq7Yw)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2022/04/msg00003.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00003)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2022/04/msg00009.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00009)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JANLZ3JXWJR7FSHE57K66UIZUIJZI67T/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (JANLZ3JXWJR7FSHE57K66UIZUIJZI67T)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/O3YB7CURSG64CIPCDPNMGPE4UU24AB6H/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (O3YB7CURSG64CIPCDPNMGPE4UU24AB6H)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PDOWTHNVGBOP2HN27PUFIGRYNSNDTYRJ/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (PDOWTHNVGBOP2HN27PUFIGRYNSNDTYRJ)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202208-08",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202208-08)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202208-14",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202208-14)"
+    },
+    {
+      "text": "https://www.debian.org/security/2022/dsa-5113",
+      "source": "関連文書",
+      "id": "www.debian.org (dsa-5113)"
+    },
+    {
+      "text": "https://www.debian.org/security/2022/dsa-5118",
+      "source": "関連文書",
+      "id": "www.debian.org (dsa-5118)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/400.html",
+      "id": "CWE-400",
+      "title": "リソースの枯渇(CWE-400)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:rust-lang:regex",
+      "version": "2.2",
+      "vendor": "The Rust Programming Language",
+      "product": "regex"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-07-07T17:27+09:00",
+  "issued": "2023-07-07T17:27+09:00",
+  "modified": "2023-07-07T17:27+09:00"
+}

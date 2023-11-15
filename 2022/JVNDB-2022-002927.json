@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002927.html",
+  "title": "Apache HTTP Server 2 の mod_proxy_ajp における HTTP リクエストスマグリングに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002927.html",
+  "description": "Apache HTTP Server 2 の mod_proxy_ajp には、HTTP リクエストスマグリングに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-002927",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU99928083/",
+      "source": "JVN",
+      "id": "JVNVU#99928083"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-36760",
+      "source": "CVE",
+      "id": "CVE-2022-36760"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-36760",
+      "source": "NVD",
+      "id": "CVE-2022-36760"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/444.html",
+      "id": "CWE-444",
+      "title": "HTTP リクエストスマグリング(CWE-444)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:nec:connexive_pf",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CONNEXIVE PF"
+    },
+    {
+      "text": "cpe:/a:nec:neoface_monitor",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NeoFace Monitor"
+    },
+    {
+      "text": "cpe:/a:nec:spoolserver_reportfiling",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SpoolServer/ReportFiling"
+    },
+    {
+      "text": "cpe:/a:nec:tokusengai_gcb",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "得選街・GCB"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Application Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-06-29T10:50+09:00",
+  "issued": "2023-01-30T11:57+09:00",
+  "modified": "2023-06-29T10:50+09:00"
+}

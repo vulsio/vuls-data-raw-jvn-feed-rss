@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001803.html",
+  "title": "Avahi の AvahiDnsPacket 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001803.html",
+  "description": "Avahi の avahi-daemon の avahi-core/socket.c 内にある AvahiDnsPacket 関数には、有効なチェックサムを持った DNS パケットに続く、不正なチェックサムを持った DNS パケットの処理に関して不備があるため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。\r\n本脆弱性は、CVE-2008-5081 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2010-001803",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2244",
+      "source": "CVE",
+      "id": "CVE-2010-2244"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2244",
+      "source": "NVD",
+      "id": "CVE-2010-2244"
+    },
+    {
+      "text": "http://secunia.com/advisories/40470",
+      "source": "SECUNIA",
+      "id": "SA40470"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/41075",
+      "source": "BID",
+      "id": "41075"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1024200",
+      "source": "SECTRACK",
+      "id": "1024200"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:avahi:avahi",
+      "version": "2.2",
+      "vendor": "Avahi",
+      "product": "Avahi"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:oracle:solaris",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Solaris"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:A/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-04-05T14:38+09:00",
+  "issued": "2010-08-10T18:49+09:00",
+  "modified": "2011-04-05T14:38+09:00"
+}

@@ -1,0 +1,143 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000715.html",
+  "title": "Xpdf の Stream.cc の複数の関数におけるヒープオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000715.html",
+  "description": "Xpdf には xpdf/Stream.cc の DCTStream::readBaselineSOF()、DCTStream::readProgressiveSOF() 関数において、PDF ファイルに含まれる numComps の値に対する境界チェックが不適切であるため、メモリ領域にデータをコピーする際にヒープオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000715",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3191",
+      "source": "CVE",
+      "id": "CVE-2005-3191"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3191",
+      "source": "NVD",
+      "id": "CVE-2005-3191"
+    },
+    {
+      "text": "http://secunia.com/advisories/17897/",
+      "source": "SECUNIA",
+      "id": "SA17897"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15726",
+      "source": "BID",
+      "id": "15726"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15727",
+      "source": "BID",
+      "id": "15727"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/2755",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-2755"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:xpdfreader:xpdf",
+      "version": "2.2",
+      "vendor": "Glyph & Cog, LLC",
+      "product": "Xpdf"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_desktop",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_home",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "ターボリナックス ホーム "
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_workstation",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-06-28T11:51+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-06-28T11:51+09:00"
+}

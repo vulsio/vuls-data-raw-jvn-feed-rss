@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004069.html",
+  "title": "BitTorrent DHT bootstrap サーバの lazy_bdecode 関数における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004069.html",
+  "description": "BitTorrent DHT bootstrap サーバ (bootstrap-dht) の lazy_bdecode 関数には、\"不適切なインデックス\" に関する処理に不備があるため、任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-004069",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5685",
+      "source": "CVE",
+      "id": "CVE-2015-5685"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5685",
+      "source": "NVD",
+      "id": "CVE-2015-5685"
+    },
+    {
+      "text": "http://www.zerodayinitiative.com/advisories/ZDI-15-366/",
+      "source": "関連文書",
+      "id": "ZDI-15-366"
+    },
+    {
+      "text": "http://www.zerodayinitiative.com/advisories/ZDI-15-367/",
+      "source": "関連文書",
+      "id": "ZDI-15-367"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bittorrent:bootstrap-dht",
+      "version": "2.2",
+      "vendor": "BitTorrent, Inc.",
+      "product": "bootstrap-dht"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-08-14T13:59+09:00",
+  "issued": "2015-08-14T13:59+09:00",
+  "modified": "2015-08-14T13:59+09:00"
+}

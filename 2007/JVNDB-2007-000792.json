@@ -1,0 +1,87 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000792.html",
+  "title": "Linux Kernel の ALSA ドライバにおけるカーネルメモリの情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000792.html",
+  "description": "Linux Kernel の Advanced Linux Sound Architecture (ALSA) ドライバには、sound/core/memalloc.c の snd_mem_proc_read() 関数において、書き込みサイズの返り値が不適切に処理されるために、カーネルメモリの情報が漏えいする脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000792",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4571",
+      "source": "CVE",
+      "id": "CVE-2007-4571"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-4571",
+      "source": "NVD",
+      "id": "CVE-2007-4571"
+    },
+    {
+      "text": "http://secunia.com/advisories/26918/",
+      "source": "SECUNIA",
+      "id": "SA26918"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25807",
+      "source": "BID",
+      "id": "25807"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/36780",
+      "source": "XF",
+      "id": "36780"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1018734",
+      "source": "SECTRACK",
+      "id": "1018734"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/3272",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-3272"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2008-10-30T11:08+09:00",
+  "issued": "2007-11-27T16:57+09:00",
+  "modified": "2008-10-30T11:08+09:00"
+}

@@ -1,0 +1,125 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002743.html",
+  "title": "MySQL の sql/spatial.cc におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002743.html",
+  "description": "MySQL の Gis_line_string::init_from_wkb 関数内にある sql/spatial.cc には、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002743",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3840",
+      "source": "CVE",
+      "id": "CVE-2010-3840"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3840",
+      "source": "NVD",
+      "id": "CVE-2010-3840"
+    },
+    {
+      "text": "http://secunia.com/advisories/42936",
+      "source": "SECUNIA",
+      "id": "SA42936"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/43676",
+      "source": "BID",
+      "id": "43676"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0170",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0170"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mysql:mysql",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_client",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Client"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-02-25T13:48+09:00",
+  "issued": "2011-02-08T15:16+09:00",
+  "modified": "2011-02-25T13:48+09:00"
+}

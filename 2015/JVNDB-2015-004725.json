@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004725.html",
+  "title": "WordPress 用 SecureMoz Security Audit プラグインの class/__functions.php における PHP オブジェクトインジェクション攻撃を実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004725.html",
+  "description": "WordPress 用 SecureMoz Security Audit プラグインの class/__functions.php の tweet_info 関数は、シリアル化されたデータのダウンロードに HTTPS セッションを使用しないため、PHP オブジェクトインジェクション攻撃を実行され、任意の PHP コードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-004725",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6828",
+      "source": "CVE",
+      "id": "CVE-2015-6828"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6828",
+      "source": "NVD",
+      "id": "CVE-2015-6828"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2015/09/05/4",
+      "source": "関連文書",
+      "id": "Some Wordpress Plugin Stuff"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2015/09/06/3",
+      "source": "関連文書",
+      "id": "Re: Some Wordpress Plugin Stuff"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:securemoz:securemoz_security_audit",
+      "version": "2.2",
+      "vendor": "SecureMoz",
+      "product": "SecureMoz Security Audit"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-09-18T16:59+09:00",
+  "issued": "2015-09-18T16:59+09:00",
+  "modified": "2015-09-18T16:59+09:00"
+}

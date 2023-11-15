@@ -1,0 +1,83 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002485.html",
+  "title": "MIT Kerberos 5 の Key Distribution Center 内にある kdc_authdata.c における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002485.html",
+  "description": "MIT Kerberos 5 の Key Distribution Center (KDC) 内にある kdc_authdata.c の merge_authdata 関数には、authorization-data リストへのインデックスを適切に管理しないため、サービス運用妨害 (DoS) 状態となる、重要な情報を取得される、管理者になりすまされる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002485",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1322",
+      "source": "CVE",
+      "id": "CVE-2010-1322"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1322",
+      "source": "NVD",
+      "id": "CVE-2010-1322"
+    },
+    {
+      "text": "http://secunia.com/advisories/41684",
+      "source": "SECUNIA",
+      "id": "SA41684"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/43756",
+      "source": "BID",
+      "id": "43756"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/2576",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-2576"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mit:kerberos",
+      "version": "2.2",
+      "vendor": "MIT Kerberos",
+      "product": "Kerberos"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-11-01T14:57+09:00",
+  "issued": "2010-12-13T16:07+09:00",
+  "modified": "2013-11-01T14:57+09:00"
+}

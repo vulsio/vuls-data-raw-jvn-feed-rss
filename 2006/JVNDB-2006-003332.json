@@ -1,0 +1,45 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-003332.html",
+  "title": "RPM Package Manager の librpm におけるヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-003332.html",
+  "description": "RPM Package Manager の librpm の showQueryPackage 関数は、LANG 環境変数が RU.UTF-8 に設定される際、ヒープベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2006-003332",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5466",
+      "source": "CVE",
+      "id": "CVE-2006-5466"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-5466",
+      "source": "NVD",
+      "id": "CVE-2006-5466"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:rpm:package_manager",
+      "version": "2.2",
+      "vendor": "RPM",
+      "product": "package manager"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-12-20T18:02+09:00",
+  "issued": "2012-12-20T18:02+09:00",
+  "modified": "2012-12-20T18:02+09:00"
+}

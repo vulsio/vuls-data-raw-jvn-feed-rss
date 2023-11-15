@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000539.html",
+  "title": "Sun Solaris の UFS ufs_setsecattr() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000539.html",
+  "description": "Sun Solaris に実装されている Unix File System (UFS) には、ufs_setsecattr() 関数においてファイルシステムのロック処理に不備が存在するため、UFS logging 機能を有効にしている場合、デッドロック状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000539",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3071",
+      "source": "CVE",
+      "id": "CVE-2005-3071"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3071",
+      "source": "NVD",
+      "id": "CVE-2005-3071"
+    },
+    {
+      "text": "http://secunia.com/advisories/16924/",
+      "source": "SECUNIA",
+      "id": "SA16924"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14915",
+      "source": "BID",
+      "id": "14915"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2005/Sep/1014967.html",
+      "source": "SECTRACK",
+      "id": "1014967"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/1821",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-1821"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

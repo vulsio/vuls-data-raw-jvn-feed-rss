@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001024.html",
+  "title": "PolyVision RoomWizard に脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001024.html",
+  "description": "PolyVision RoomWizard には、遠隔の第三者によって、管理者インターフェースにアクセスされ、Active Directory の認証情報を入手される可能性があります。\r\n\r\nPolyVision RoomWizard は、ウェブベースの会議室予約システムです。Sync Connector は、RoomWizard が、Microsoft Windows Actitve Directory (AD) 環境の Microsoft Exchange と連携するための機能です。PolyVision RoomWizard の管理者インターフェースには、Sync Connector が使う Active Directory のパスワードが漏えいする脆弱性が存在します。\r\n\r\nまた、PolyVision RoomWizard に HTTP 経由でアクセスするための管理用アカウント情報の出荷時設定は、第三者に入手される可能性があります。",
+  "identifier": "JVNDB-2011-001024",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU870601",
+      "source": "JVN",
+      "id": "JVNVU#870601"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0214",
+      "source": "CVE",
+      "id": "CVE-2010-0214"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0214",
+      "source": "NVD",
+      "id": "CVE-2010-0214"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/870601",
+      "source": "CERT-VN",
+      "id": "VU#870601"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/45699",
+      "source": "BID",
+      "id": "45699"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/64543",
+      "source": "XF",
+      "id": "64543"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0059",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0059"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:polyvision:roomwizard_firmware",
+      "version": "2.2",
+      "vendor": "PolyVision",
+      "product": "RoomWizard firmware"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2011-02-02T14:59+09:00",
+  "issued": "2011-02-02T14:59+09:00",
+  "modified": "2011-02-02T14:59+09:00"
+}

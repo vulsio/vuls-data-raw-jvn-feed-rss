@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001471.html",
+  "title": "phpBB の includes/ucp/ucp_pm_options.php の message_options 関数における CSRF 攻撃を実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001471.html",
+  "description": "phpBB の includes/ucp/ucp_pm_options.php の message_options 関数は、form キーを適切に検証しないため、CSRF 攻撃を実行されるおよびフルフォルダの設定を変更される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-001471",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1432",
+      "source": "CVE",
+      "id": "CVE-2015-1432"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1432",
+      "source": "NVD",
+      "id": "CVE-2015-1432"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+      "id": "CWE-352",
+      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:phpbb:phpbb",
+      "version": "2.2",
+      "vendor": "phpBB",
+      "product": "phpBB"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-02-17T12:19+09:00",
+  "issued": "2015-02-17T12:19+09:00",
+  "modified": "2015-02-17T12:19+09:00"
+}

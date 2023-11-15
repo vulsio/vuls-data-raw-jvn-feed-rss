@@ -1,0 +1,39 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-003651.html",
+  "title": "PHP の Zend Memory Manager における整数符号エラーの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-003651.html",
+  "description": "PHP の Zend Memory Manager の _zend_mm_alloc_int は、符号化された long cast に関する処理に不備があるため、整数符号エラーの脆弱性が存在します。",
+  "identifier": "JVNDB-2007-003651",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1889",
+      "source": "CVE",
+      "id": "CVE-2007-1889"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-1889",
+      "source": "NVD",
+      "id": "CVE-2007-1889"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T16:47+09:00",
+  "issued": "2012-09-25T16:47+09:00",
+  "modified": "2012-09-25T16:47+09:00"
+}

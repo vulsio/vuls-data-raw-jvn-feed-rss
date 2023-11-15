@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000156.html",
+  "title": "RealNetworks 製品の CSmil1Parser::testAttributeFailed 関数における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000156.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nHelix Community の UNIX 用のメディアプレーヤー Helix Player は、WAV、SMIL (Synchronized Multimedia Integration Language)、MP3、Flash、そして RealNetworks によって開発された RealAudio や RealVideo メディアフォーマットなどをサポートしています。\r\n\r\nHelix Player 1.0.2 以前、RealNetworks RealPlayer 10.0.2 以前 (Linux 版) には、WAV ファイルおよび SMIL ファイルの解析処理において境界チェックが適切に行われないために、バッファオーバーフローが発生する問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、Web ページや電子メールを介して、意図的に作成した WAV ファイルや SMIL ファイルを Helix Player や RealPlayer で開かせるように標的ユーザを誘導することにより、結果として標的ユーザの権限で任意のコードを実行することが可能です。\r\n\r\nまた、Windows 版 RealPlayer 10.5 (6.0.12.1040-1056) についてもこの問題の影響を受けることが RealNetworks より報告されています。",
+  "identifier": "JVNDB-2005-000156",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0455",
+      "source": "CVE",
+      "id": "CVE-2005-0455"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0455",
+      "source": "NVD",
+      "id": "CVE-2005-0455"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12698",
+      "source": "BID",
+      "id": "12698"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12697",
+      "source": "BID",
+      "id": "12697"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:realnetworks:realplayer",
+      "version": "2.2",
+      "vendor": "リアルネットワークス",
+      "product": "RealNetworks RealPlayer"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

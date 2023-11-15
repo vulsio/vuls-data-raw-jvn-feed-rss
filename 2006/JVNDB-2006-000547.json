@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000547.html",
+  "title": "XFree86 および X.Org の scan_cidfont() 関数における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000547.html",
+  "description": "CID フォントは、マルチバイトに対応した PostScript フォントの一種であり、\"拡張 Type 1フォント\" とも呼ばれています。\r\nXFree86 および X.Org X11 に同梱される X Server では、\"type1\" フォントモジュールにおける CID フォントの処理の scan_cidfont() 関数において、Cmap と CIDFont のフォントデータの取り扱いに不備が存在するため、整数オーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000547",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3740",
+      "source": "CVE",
+      "id": "CVE-2006-3740"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3740",
+      "source": "NVD",
+      "id": "CVE-2006-3740"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19974",
+      "source": "BID",
+      "id": "19974"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/3582",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-3582"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/3581",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-3581"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

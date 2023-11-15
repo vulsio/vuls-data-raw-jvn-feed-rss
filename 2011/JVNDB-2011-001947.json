@@ -1,0 +1,118 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001947.html",
+  "title": "Linux kernel の next_pidmap 関数における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001947.html",
+  "description": "Linux kernel の kernel/pid.c 内にある next_pidmap 関数には、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2011-001947",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1593",
+      "source": "CVE",
+      "id": "CVE-2011-1593"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1593",
+      "source": "NVD",
+      "id": "CVE-2011-1593"
+    },
+    {
+      "text": "http://secunia.com/advisories/44164",
+      "source": "SECUNIA",
+      "id": "SA44164"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/47497",
+      "source": "BID",
+      "id": "47497"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/66876",
+      "source": "XF",
+      "id": "66876"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1025420",
+      "source": "SECTRACK",
+      "id": "1025420"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:rhel_server_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server EUS"
+    },
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_long_life",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Long Life"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-12-19T17:00+09:00",
+  "issued": "2011-07-27T10:26+09:00",
+  "modified": "2012-12-19T17:00+09:00"
+}

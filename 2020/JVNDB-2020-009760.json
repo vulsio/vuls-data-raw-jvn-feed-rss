@@ -1,0 +1,83 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009760.html",
+  "title": "複数の Microsoft 製品におけるリモートでコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009760.html",
+  "description": "Microsoft 365、Office、Outlook には、Microsoft Outlook ソフトウェアがメモリ内のオブジェクトの適切な処理に失敗した場合、リモートでコードを実行される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を「Microsoft Outlook のリモートでコードが実行される脆弱性」として公開しています。",
+  "identifier": "JVNDB-2020-009760",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16947",
+      "source": "CVE",
+      "id": "CVE-2020-16947"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-16947",
+      "source": "NVD",
+      "id": "CVE-2020-16947"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20201014-ms.html",
+      "source": "IPA CFA",
+      "id": "Microsoft 製品の脆弱性対策について(2020年10月)"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2020/at200038.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2020-0038"
+    },
+    {
+      "text": "https://www.zerodayinitiative.com/advisories/ZDI-20-1250/",
+      "source": "関連文書",
+      "id": "ZDI-20-1250 (Microsoft Outlook HTML Email Out-Of-Bounds Read Information Disclosure Vulnerability)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:365_apps",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft 365 Apps"
+    },
+    {
+      "text": "cpe:/a:microsoft:office",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Office"
+    },
+    {
+      "text": "cpe:/a:microsoft:outlook",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Outlook"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-12-07T17:14+09:00",
+  "issued": "2020-12-07T17:14+09:00",
+  "modified": "2020-12-07T17:14+09:00"
+}

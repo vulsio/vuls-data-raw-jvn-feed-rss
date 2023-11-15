@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004129.html",
+  "title": "Linux kernel の ocfs2_prepare_page_for_write 関数における重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004129.html",
+  "description": "Linux kernel の Oracle Cluster File System 2 (OCFS2) サブシステムの ocfs2_prepare_page_for_write 関数は、ページ境界を越えた欠陥を適切に処理しないため、初期化していないディスクロケーションから重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2011-004129",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0463",
+      "source": "CVE",
+      "id": "CVE-2011-0463"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0463",
+      "source": "NVD",
+      "id": "CVE-2011-0463"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2012-03-27T18:42+09:00",
+  "issued": "2012-03-27T18:42+09:00",
+  "modified": "2012-03-27T18:42+09:00"
+}

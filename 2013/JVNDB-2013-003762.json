@@ -1,0 +1,190 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003762.html",
+  "title": "Dell の BIOS 更新処理にバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003762.html",
+  "description": "Dell が提供する複数の Latitude Laptop および Precision Mobile Workstation の BIOS 更新処理に、バッファオーバーフローの脆弱性が存在します。\r\n\r\nDell が提供する複数の Latitude Laptop および Precision Mobile Workstation では、BIOS 更新処理において、アップデートイメージの署名を検証した上で更新が行われます。この更新処理には、rbu_packet.pktNum および rbu_packet.pktSize の値に起因するバッファオーバーフローの脆弱性が存在します。本脆弱性を使用することで、署名の検証を回避し、細工された BIOS に更新することが可能になります。",
+  "identifier": "JVNDB-2013-003762",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU95005184/",
+      "source": "JVN",
+      "id": "JVNVU#95005184"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3582",
+      "source": "CVE",
+      "id": "CVE-2013-3582"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3582",
+      "source": "NVD",
+      "id": "CVE-2013-3582"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/912156",
+      "source": "CERT-VN",
+      "id": "VU#912156"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/BLUU-99HSLA",
+      "source": "CERT-VN",
+      "id": "Dell Computer Corporation, Inc. Information for VU#912156"
+    },
+    {
+      "text": "http://www.mitre.org/work/cybersecurity/blog/cyber_tools_butterworth.html",
+      "source": "関連文書",
+      "id": "MITRE | Cybersecurity | Cyber Depot:"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:dell:latitude_d530",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude D530"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_d531",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude D531"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_d630",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude D630"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_d631",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude D631"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_d830",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude D830"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_e4200",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude E4200"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_e4300",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude E4300"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_e5400",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude E5400"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_e5500",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude E5500"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_e6400",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude E6400"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_e6400_atg",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude E6400 ATG"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_e6400_atg_xfr",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude E6400 / ATG / XFR"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_e6500",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude E6500"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_xt2",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude XT2"
+    },
+    {
+      "text": "cpe:/h:dell:latitude_z600",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Latitude Z600"
+    },
+    {
+      "text": "cpe:/h:dell:precision_m2300",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Precision M2300"
+    },
+    {
+      "text": "cpe:/h:dell:precision_m2400",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Precision M2400"
+    },
+    {
+      "text": "cpe:/h:dell:precision_m4300",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Precision M4300"
+    },
+    {
+      "text": "cpe:/h:dell:precision_m4400",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Precision M4400"
+    },
+    {
+      "text": "cpe:/h:dell:precision_m6300",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Precision M6300"
+    },
+    {
+      "text": "cpe:/h:dell:precision_m6400",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Precision M6400"
+    },
+    {
+      "text": "cpe:/h:dell:precision_m6500",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Precision M6500"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-08-29T15:54+09:00",
+  "issued": "2013-08-19T17:02+09:00",
+  "modified": "2013-08-29T15:54+09:00"
+}

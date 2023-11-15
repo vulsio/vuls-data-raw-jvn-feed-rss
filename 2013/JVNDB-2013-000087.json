@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-000087.html",
+  "title": "複数のブロードバンドルータがオープンリゾルバとして機能してしまう問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-000087.html",
+  "description": "複数のブロードバンドルータには、オープンリゾルバとして機能してしまう問題が存在します。\r\n\r\n不特定の相手からの再帰的な DNS 問い合わせに対してDNS キャッシュサーバとして動作してしまう機器のことをオープンリゾルバと呼びます。\r\nDNS キャッシュサーバとして働く複数のブロードバンドルータには、オープンリゾルバとして機能してしまう問題が存在します。\r\n\r\nこの脆弱性情報は、JPCERT/CC および IPA の調査によって複数ベンダに影響を受けることを確認し、JPCERT/CC が開発者との調整を行いました。\r\nまた、情報セキュリティ早期警戒パートナーシップに基づき下記の方から JPCERT/CC に報告がありました。\r\n報告者: 株式会社日本レジストリサービス（JPRS）森下泰宏 氏",
+  "identifier": "JVNDB-2013-000087",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN62507275/index.html",
+      "source": "JVN",
+      "id": "JVN#62507275"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2013/at130022.html",
+      "source": "JPCERT-AT",
+      "id": "DNS の再帰的な問い合わせを使った DDoS 攻撃に関する注意喚起"
+    },
+    {
+      "text": "https://www.us-cert.gov/ncas/alerts/TA13-088A",
+      "source": "CERT-TA",
+      "id": "Alert (TA13-088A) DNS Amplification Attacks"
+    },
+    {
+      "text": "http://www.us-cert.gov/ncas/alerts/TA14-017A",
+      "source": "CERT-TA",
+      "id": "Alert (TA14-017A) UDP-based Amplification Attacks"
+    },
+    {
+      "text": "http://jprs.jp/important/2013/130418.html",
+      "source": "JPRS",
+      "id": "DNSサーバーの不適切な設定「オープンリゾルバー」について"
+    },
+    {
+      "text": "https://www.nic.ad.jp/ja/dns/openresolver/",
+      "source": "JPNIC",
+      "id": "オープンリゾルバ(Open Resolver)について"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2014-08-28T19:50+09:00",
+  "issued": "2013-09-19T12:01+09:00",
+  "modified": "2014-08-28T19:50+09:00"
+}

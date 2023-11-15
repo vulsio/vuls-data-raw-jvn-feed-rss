@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001738.html",
+  "title": "LibTIFF の TIFFVStripSize 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001738.html",
+  "description": "LibTIFF の tif_strip.c 内にある TIFFVStripSize 関数には、TIFFGetField 関数を不適切に呼び出してしまう不備があるため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001738",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2597",
+      "source": "CVE",
+      "id": "CVE-2010-2597"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2597",
+      "source": "NVD",
+      "id": "CVE-2010-2597"
+    },
+    {
+      "text": "http://secunia.com/advisories/40527",
+      "source": "SECUNIA",
+      "id": "SA40527"
+    },
+    {
+      "text": "http://secunia.com/advisories/40422",
+      "source": "SECUNIA",
+      "id": "SA40422"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/41295",
+      "source": "BID",
+      "id": "41295"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/1761",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-1761"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libtiff_project:libtiff",
+      "version": "2.2",
+      "vendor": "LibTIFF",
+      "product": "LibTIFF"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2010-07-28T19:31+09:00",
+  "issued": "2010-07-28T19:31+09:00",
+  "modified": "2010-07-28T19:31+09:00"
+}

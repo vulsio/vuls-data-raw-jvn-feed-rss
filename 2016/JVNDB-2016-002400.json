@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002400.html",
+  "title": "Wireshark の PKTC ディセクタの epan/dissectors/packet-pktc.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002400.html",
+  "description": "Wireshark の PKTC ディセクタ (解析機能) の epan/dissectors/packet-pktc.c は、timestamp フィールドを誤って解析するため、サービス運用妨害 (境界外読み取りおよびアプリケーションクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-002400",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4080",
+      "source": "CVE",
+      "id": "CVE-2016-4080"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4080",
+      "source": "NVD",
+      "id": "CVE-2016-4080"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wireshark:wireshark",
+      "version": "2.2",
+      "vendor": "Wireshark",
+      "product": "Wireshark"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-11-17T16:45+09:00",
+  "issued": "2016-05-06T11:28+09:00",
+  "modified": "2016-11-17T16:45+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000302.html",
+  "title": "Sun Solaris の fifo_vfastoff() 関数における競合状態によるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000302.html",
+  "description": "Sun Solaris のカーネル内で利用されている fifo_vfastoff() 関数には、メモリ割り当てと開放手順の不備のため、 lpsched に大量のデータをスプールすることにより、 fifo_vfastoff() 関数に割り当てられる動的バッファの割り当て処理に競合状態を引き起こす脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000302",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-1061",
+      "source": "CVE",
+      "id": "CVE-2003-1061"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-1061",
+      "source": "NVD",
+      "id": "CVE-2003-1061"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8836",
+      "source": "BID",
+      "id": "8836"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

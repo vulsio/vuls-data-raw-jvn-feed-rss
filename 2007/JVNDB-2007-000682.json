@@ -1,0 +1,178 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000682.html",
+  "title": "tcpdump の 802.11 プリンタコードにおけるひとつずれによるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000682.html",
+  "description": "tcpdump には 802.11 プリンタコード (print-802_11.c) の parse_elements() 関数に、一つずれ (off-by-one) によるヒープオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000682",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA07-352A/index.html",
+      "source": "JVN",
+      "id": "JVNTA07-352A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA07-352A/index.html",
+      "source": "JVNTR",
+      "id": "TRTA07-352A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1218",
+      "source": "CVE",
+      "id": "CVE-2007-1218"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-1218",
+      "source": "NVD",
+      "id": "CVE-2007-1218"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA07-352A.html",
+      "source": "CERT-SA",
+      "id": "SA07-352A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA07-352A.html",
+      "source": "CERT-TA",
+      "id": "TA07-352A"
+    },
+    {
+      "text": "http://secunia.com/advisories/24318",
+      "source": "SECUNIA",
+      "id": "SA24318"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/22772",
+      "source": "BID",
+      "id": "22772"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/32749",
+      "source": "XF",
+      "id": "32749"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1017717",
+      "source": "SECTRACK",
+      "id": "1017717"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/0793",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-0793"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:tcpdump:tcpdump",
+      "version": "2.2",
+      "vendor": "The Tcpdump Group",
+      "product": "tcpdump"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_desktop",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_home",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "ターボリナックス ホーム "
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-12-21T14:04+09:00",
+  "issued": "2007-09-20T14:12+09:00",
+  "modified": "2007-12-21T14:04+09:00"
+}

@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004366.html",
+  "title": "SAP HANA のマルチテナントデータベースのコンテナ機能におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004366.html",
+  "description": "SAP HANA のマルチテナントデータベースのコンテナ機能は、通信を適切に暗号化しないため、アクセス制限を回避されるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を SAP Security Note 2233550 として公開しています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-284: Improper Access Control (不適切なアクセス制御) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/284.html",
+  "identifier": "JVNDB-2016-004366",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6150",
+      "source": "CVE",
+      "id": "CVE-2016-6150"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6150",
+      "source": "NVD",
+      "id": "CVE-2016-6150"
+    },
+    {
+      "text": "https://www.onapsis.com/blog/analyzing-sap-security-notes-january-2016",
+      "source": "関連文書",
+      "id": "Analyzing SAP Security Notes January 2016 (2233550)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sap:hana",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "SAP HANA"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-08-17T17:52+09:00",
+  "issued": "2016-08-17T17:52+09:00",
+  "modified": "2016-08-17T17:52+09:00"
+}

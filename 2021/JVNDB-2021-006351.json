@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006351.html",
+  "title": "klibc における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006351.html",
+  "description": "klibc には、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2021-006351",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31870",
+      "source": "CVE",
+      "id": "CVE-2021-31870"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-31870",
+      "source": "NVD",
+      "id": "CVE-2021-31870"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2021/04/30/1",
+      "source": "関連文書",
+      "id": "[ANNOUNCE] klibc 2.0.9"
+    },
+    {
+      "text": "https://lists.zytor.com/archives/klibc/2021-April/004593.html",
+      "source": "関連文書",
+      "id": "[klibc] [ANNOUNCE] klibc 2.0.9"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/190.html",
+      "id": "CWE-190",
+      "title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:klibc_project:klibc",
+      "version": "2.2",
+      "vendor": "klib project",
+      "product": "klibc"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-01-05T16:48+09:00",
+  "issued": "2022-01-05T16:48+09:00",
+  "modified": "2022-01-05T16:48+09:00"
+}

@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001619.html",
+  "title": "e2fsprogs の libext2fs ライブラリの openfs.c におけるヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001619.html",
+  "description": "e2fsprogs の libext2fs ライブラリの openfs.c には、ヒープベースのバッファオーバーフローの脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2015-0247 に対する修正が不十分だったことによる脆弱性です。",
+  "identifier": "JVNDB-2015-001619",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1572",
+      "source": "CVE",
+      "id": "CVE-2015-1572"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1572",
+      "source": "NVD",
+      "id": "CVE-2015-1572"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2015-0088.html",
+      "source": "関連文書",
+      "id": "MGASA-2015-0088"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:e2fsprogs_project:e2fsprogs",
+      "version": "2.2",
+      "vendor": "E2fsprog project",
+      "product": "E2fsprogs"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-04-08T17:51+09:00",
+  "issued": "2015-02-26T17:20+09:00",
+  "modified": "2015-04-08T17:51+09:00"
+}

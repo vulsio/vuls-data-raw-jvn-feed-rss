@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004254.html",
+  "title": "IBM WebSphere Application Server および WAS Feature Pack for Web Services における特権的アクセス権を取得される",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004254.html",
+  "description": "IBM WebSphere Application Server (WAS) および WAS Feature Pack for Web Services の WS-Security の実装は、トラストストア (trust store) が XML デジタル署名用に設定されている場合、X.509 証明書を適切に検証しないため、特権的アクセス権を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004254",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4053",
+      "source": "CVE",
+      "id": "CVE-2013-4053"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4053",
+      "source": "NVD",
+      "id": "CVE-2013-4053"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:websphere_application_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Application Server"
+    },
+    {
+      "text": "cpe:/a:ibm:websphere_application_server_feature_pack_for_web_services",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Application Server Feature Pack for Web Services"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-09-24T16:27+09:00",
+  "issued": "2013-09-24T16:27+09:00",
+  "modified": "2013-09-24T16:27+09:00"
+}

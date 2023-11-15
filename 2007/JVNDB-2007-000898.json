@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000898.html",
+  "title": "Linux Kernel における終了シグナルの取り扱いに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000898.html",
+  "description": "Linux Kernel には、プロセスが終了するシグナル (PR_SET_PDEATHSIG) の取り扱いに不備が存在するため、親プロセスが終了する際に子プロセスへ任意のシグナルを送信可能な脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000898",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3848",
+      "source": "CVE",
+      "id": "CVE-2007-3848"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-3848",
+      "source": "NVD",
+      "id": "CVE-2007-3848"
+    },
+    {
+      "text": "http://secunia.com/advisories/27322/",
+      "source": "SECUNIA",
+      "id": "SA27322"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25387",
+      "source": "BID",
+      "id": "25387"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2009-02-06T12:14+09:00",
+  "issued": "2007-11-06T15:50+09:00",
+  "modified": "2009-02-06T12:14+09:00"
+}

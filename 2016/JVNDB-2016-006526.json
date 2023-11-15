@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006526.html",
+  "title": "Virtio GPU デバイスのエミュレータサポートでビルドされた Quick Emulator における情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006526.html",
+  "description": "Virtio GPU デバイスのエミュレータサポートでビルドされた Quick Emulator (Qemu) には、'VIRTIO_GPU_CMD_GET_CAPSET' コマンドを処理する際、情報漏えいの脆弱性が存在します。  ",
+  "identifier": "JVNDB-2016-006526",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9908",
+      "source": "CVE",
+      "id": "CVE-2016-9908"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9908",
+      "source": "NVD",
+      "id": "CVE-2016-9908"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2017-01-10T17:32+09:00",
+  "issued": "2017-01-10T17:32+09:00",
+  "modified": "2017-01-10T17:32+09:00"
+}

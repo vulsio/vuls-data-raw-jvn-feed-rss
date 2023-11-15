@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005333.html",
+  "title": "SMPlayer で使用される MPlayer2 の subreader.c におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005333.html",
+  "description": "SMPlayer で使用される MPlayer2 の subreader.c 内の sub_read_line_sami 関数には、スタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2011-005333",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3625",
+      "source": "CVE",
+      "id": "CVE-2011-3625"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3625",
+      "source": "NVD",
+      "id": "CVE-2011-3625"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mplayer2:mplayer2",
+      "version": "2.2",
+      "vendor": "mplayer2 project",
+      "product": "mplayer2"
+    },
+    {
+      "text": "cpe:/a:ricardo_villalba:smplayer",
+      "version": "2.2",
+      "vendor": "Ricardo Villalba",
+      "product": "SMPlayer"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-06-16T13:59+09:00",
+  "issued": "2014-06-16T13:59+09:00",
+  "modified": "2014-06-16T13:59+09:00"
+}

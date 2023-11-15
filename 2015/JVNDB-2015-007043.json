@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007043.html",
+  "title": "QEMU の hw/scsi/scsi-bus.c におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007043.html",
+  "description": "QEMU の hw/scsi/scsi-bus.c には、SCSI デバイスのエミュレーションサポートでビルドする場合、スタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2015-007043",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5158",
+      "source": "CVE",
+      "id": "CVE-2015-5158"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5158",
+      "source": "NVD",
+      "id": "CVE-2015-5158"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-04-18T15:10+09:00",
+  "issued": "2016-04-18T15:10+09:00",
+  "modified": "2016-04-18T15:10+09:00"
+}

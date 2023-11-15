@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000522.html",
+  "title": "wget の リダイレクションURLをフィルタリングする処理における任意のファイルが上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000522.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nwget は、HTTP または FTP を使用してファイルのダウンロードを行うユーティリティです。\r\n\r\nWget 1.8.2 以前/1.9.1 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1）リモートサーバがユーザのカレントディレクトリおよびそのサブディレクトリへ任意のファイルを作成、あるいは上書きできる問題が存在します。\r\n\r\n2）リダイレクトされた URL のサニタイズ処理に不備が存在するため、\"..\" を含む URL にリダイレクトされた場合に、特定のファイルが上書きされてしまう問題が存在します。 (CAN-2004-1487)\r\n\r\n3）HTTP レスポンスを出力表示する際に、特定の制御文字をフィルタできないために、任意のコードが挿入されて実行されてしまう問題が存在します。 (CAN-2004-1488)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、攻撃者のサーバ上のファイルを wget を用いてダウンロードするよう標的ユーザを誘導し、意図的な URL あるいは HTTP レスポンスを処理させることにより、wget を実行するユーザの権限で任意のファイルの作成および上書き、あるいは任意のコードを実行する可能性があります。\r\n\r\n尚、wget 1.10 がこれらの問題の影響を受けるかは現時点では不明です。",
+  "identifier": "JVNDB-2004-000522",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1487",
+      "source": "CVE",
+      "id": "CVE-2004-1487"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1487",
+      "source": "NVD",
+      "id": "CVE-2004-1487"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11871",
+      "source": "BID",
+      "id": "11871"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/18421",
+      "source": "XF",
+      "id": "18421"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/18420",
+      "source": "XF",
+      "id": "18420"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2004/Dec/1012472.html",
+      "source": "SECTRACK",
+      "id": "1012472"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

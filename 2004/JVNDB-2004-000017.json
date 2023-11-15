@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000017.html",
+  "title": "tcpdump の print-radius.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000017.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\ntcpdump はネットワークのトラフィックを監視する、コマンドラインツールです。\r\nTcpdump はネットワークに存在するセキュリティプロトコルに対して、Security Association (SA) を確立するための ISAKMP (Internet Security Association and Key Management Protocol) をサポートしています。\r\n\r\nTcpdump には、ISAKMP パケットの解析部に以下の問題が存在します。\r\n\r\n・tcpdump 3.8.1 未満において、特定の ISAKMP パケットを解析した際に、無限ループ状態に陥る問題 (CAN-2003-0989)\r\n\r\n・tcpdump 3.8.1 以前において、print-isakmp.c 内の rawprint() 関数で loc/len 変数のチェックに不備が存在し、バッファオーバーフローを生じる問題 (CAN-2004-0057)\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した ISAKMP パケットを標的システムに送りつけることにより、結果として tcpdump をサービス不能状態に陥らせることが可能です。さらには、pcap 権限で任意のコードを実行できる可能性も示唆されています。\r\n\r\nまた、tcpdump 3.8.1 以前においては RADIUS パケットの解析部に関しても以下の問題が報告されており、上記の問題と同様に tcpdump がサービス不能状態に陥る可能性があります。\r\n\r\n・print-radius.c 内の print_attr_string() 関数において、length/data 変数のチェックに不備が存在し、セグメンテーションフォルトを生じる問題 (CAN-2004-0055)",
+  "identifier": "JVNDB-2004-000017",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0055",
+      "source": "CVE",
+      "id": "CVE-2004-0055"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0055",
+      "source": "NVD",
+      "id": "CVE-2004-0055"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/955526",
+      "source": "CERT-VN",
+      "id": "VU#955526"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/174086",
+      "source": "CERT-VN",
+      "id": "VU#174086"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/738518",
+      "source": "CERT-VN",
+      "id": "VU#738518"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9423",
+      "source": "BID",
+      "id": "9423"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9507",
+      "source": "BID",
+      "id": "9507"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

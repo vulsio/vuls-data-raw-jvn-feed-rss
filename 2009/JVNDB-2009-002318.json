@@ -1,0 +1,90 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002318.html",
+  "title": "OpenLDAP における任意の SSL サーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002318.html",
+  "description": "OpenLDAP には、OpenSSL を使用している場合に X.509 証明書の Common Name (CN) フィールド内の '\\0' 文字を適切に処理しないため、任意の SSL サーバになりすまされる脆弱性が存在します。\r\n本脆弱性は CVE-2009-2408 と関連があります。",
+  "identifier": "JVNDB-2009-002318",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3767",
+      "source": "CVE",
+      "id": "CVE-2009-3767"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3767",
+      "source": "NVD",
+      "id": "CVE-2009-3767"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/36844",
+      "source": "BID",
+      "id": "36844"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/3056",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-3056"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openldap:openldap",
+      "version": "2.2",
+      "vendor": "OpenLDAP Foundation",
+      "product": "OpenLDAP"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_client",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Client"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-09-27T16:23+09:00",
+  "issued": "2009-12-14T12:32+09:00",
+  "modified": "2010-09-27T16:23+09:00"
+}

@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-010493.html",
+  "title": "Linux Kernel における認可・権限・アクセス制御に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-010493.html",
+  "description": "Linux Kernel には、認可・権限・アクセス制御に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2018-010493",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10853",
+      "source": "CVE",
+      "id": "CVE-2018-10853"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-10853",
+      "source": "NVD",
+      "id": "CVE-2018-10853"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-10853",
+      "source": "関連文書",
+      "id": "Bug 1589890"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2018/09/02/1",
+      "source": "関連文書",
+      "id": "CVE-2018-10853 kernel: kvm: guest userspace to guest kernel write"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-12-17T12:31+09:00",
+  "issued": "2018-12-17T12:31+09:00",
+  "modified": "2018-12-17T12:31+09:00"
+}

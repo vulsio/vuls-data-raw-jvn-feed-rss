@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-004167.html",
+  "title": "PHP の Zend/zend_string.h の zend_string_extend 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-004167.html",
+  "description": "PHP の Zend/zend_string.h の zend_string_extend 関数は、負の長さになる文字列オブジェクトへの変更を制限しないため、サービス運用妨害 (アプリケーションクラッシュ) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2017-004167",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8923",
+      "source": "CVE",
+      "id": "CVE-2017-8923"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-8923",
+      "source": "NVD",
+      "id": "CVE-2017-8923"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-06-19T12:14+09:00",
+  "issued": "2017-06-19T12:14+09:00",
+  "modified": "2017-06-19T12:14+09:00"
+}

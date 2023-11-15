@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003086.html",
+  "title": "WordPress の wp-includes/class-phpass.php におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003086.html",
+  "description": "WordPress の wp-includes/class-phpass.php には、パスワードで保護された投稿がある場合に、サービス運用妨害 (CPU 資源の消費) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003086",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2173",
+      "source": "CVE",
+      "id": "CVE-2013-2173"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2173",
+      "source": "NVD",
+      "id": "CVE-2013-2173"
+    },
+    {
+      "text": "https://vndh.net/note:wordpress-351-denial-service",
+      "source": "関連文書",
+      "id": "WordPress 3.5.1, Denial of Service"
+    },
+    {
+      "text": "https://github.com/wpscanteam/wpscan/issues/219",
+      "source": "関連文書",
+      "id": "wpscanteam/wpscan 3.5.1 DoS Issue #219"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wordpress:wordpress",
+      "version": "2.2",
+      "vendor": "WordPress.org",
+      "product": "WordPress"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-08-19T17:54+09:00",
+  "issued": "2013-06-24T15:27+09:00",
+  "modified": "2013-08-19T17:54+09:00"
+}

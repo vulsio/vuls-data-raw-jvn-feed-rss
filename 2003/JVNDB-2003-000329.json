@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000329.html",
+  "title": "Ethereal の SOCKS 解析部におけるヒープオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000329.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal 0.9.15 以前には、以下の複数のプロトコルの取り扱いに不備が存在します。\r\n\r\nGPRS Tunneling Protocol (GTP)\r\nInternet Security Association and Key Management Protocol (ISAKMP)\r\nMedia Gateway Control Protocol (MEGACO)\r\nSOCKS\r\n\r\nGTP プロトコルの解析部には、不正な MSISDN 文字列が与えられることでバッファオーバーフローを生じる問題が存在します。ISAKMP プロトコルと MEGACO プロトコルの解析部には、それぞれに不正な ISAKMP パケットあるいは MEGACO パケットを与えられることで、Ethereal がクラッシュする問題が存在します。\r\nまた、SOCKS プロトコルの解析部にはヒープオーバーフローを生じる問題が存在します。\r\n\r\nこれらの問題を利用し、リモートの攻撃者は意図的に組み立てたパケットを送信することや、意図的に組み立てたパケットを記録した Ethereal 形式のファイルを標的ユーザが読むように誘導することにより、Ethereal をクラッシュさせ、結果としてサービス不能状態に陥らせることが可能です。\r\n更には、Ethereal の実行権限 (通常 root 権限) で任意のコードを実行できる可能性が存在します。",
+  "identifier": "JVNDB-2003-000329",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0927",
+      "source": "CVE",
+      "id": "CVE-2003-0927"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0927",
+      "source": "NVD",
+      "id": "CVE-2003-0927"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8951",
+      "source": "BID",
+      "id": "8951"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

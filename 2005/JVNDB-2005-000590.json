@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000590.html",
+  "title": "Microsoft Windows の MSDTC における特定のホストの TIP サーバに対して大量に接続要求を送信される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000590.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nDistributed Transaction Coordinator (MSDTC) は、複数のサーバ間での分散トランザクションを提供するサービスです。また、TIP (Transaction Internet Protocol) は分散したノード上のデータベースを同時に更新するためのプロトコルで、インターネットトランザクションの一貫性を保証します。Microsoft SQL Server などにおいて、MSDTC が利用されています。\r\n\r\nMicrosoft Windows 2000/XP/2003 に同梱される MSDTC には、TIP メッセージの取り扱いに関して、以下の問題が存在します。\r\n\r\n・外部 TIP サーバからの応答メッセージの妥当性の確認が不適切であるため、不正なコマンドにより MSDTC が強制的に悪意あるサーバに接続させられ、予期されない応答が送信された場合に、MSDTC が終了してしまう問題 (CAN-2005-1979)\r\n\r\n・TIP メッセージにより接続を試みるホストの IP アドレスおよびポート番号が指定可能であるため、特定のホストの TIP サーバに対して大量に接続要求を送信させることが可能となる問題 (CAN-2005-1980)\r\n\r\nリモートの攻撃者に悪用された場合、MSDTC が終了し、MSDTC に依存するサービスがサービス不能状態に陥る可能性があります。また、CAN-2005-1980 の問題により、影響を受けるシステムの MSDTC を踏み台として、別の TIP サーバに対して不正なメッセージが送信される可能性があり、この場合両方のシステムで MSDTC がサービス不能状態に陥る可能性があります。\r\n\r\n尚、MSDTC において TIP が有効となっているシステムのみがこれらの問題の影響を受けます。既定では、Windows 2000 で TIP が有効となっており、Windows XP、Windows Server 2003 では無効となっています。",
+  "identifier": "JVNDB-2005-000590",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1980",
+      "source": "CVE",
+      "id": "CVE-2005-1980"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1980",
+      "source": "NVD",
+      "id": "CVE-2005-1980"
+    },
+    {
+      "text": "http://secunia.com/advisories/17161/",
+      "source": "SECUNIA",
+      "id": "SA17161"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15059",
+      "source": "BID",
+      "id": "15059"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15058",
+      "source": "BID",
+      "id": "15058"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/2048",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-2048"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

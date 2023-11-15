@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005803.html",
+  "title": "OpenStack Nova および Neutron における重要なメタデータを取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005803.html",
+  "description": "OpenStack Nova および Neutron は、リクエストを生成するテナントのインスタンス ID を検証しないため、重要なメタデータを取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005803",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6419",
+      "source": "CVE",
+      "id": "CVE-2013-6419"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6419",
+      "source": "NVD",
+      "id": "CVE-2013-6419"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2013/12/11/8",
+      "source": "関連文書",
+      "id": "[OSSA 2013-033] Metadata queries from Neutron to Nova are not restricted by tenant (CVE-2013-6419)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:compute",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Compute"
+    },
+    {
+      "text": "cpe:/a:openstack:neutron",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Neutron"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-08-10T11:40+09:00",
+  "issued": "2014-01-09T16:08+09:00",
+  "modified": "2015-08-10T11:40+09:00"
+}

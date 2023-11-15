@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000033.html",
+  "title": "Microsoft IIS における不正な文字列を含むリクエストによるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000033.html",
+  "description": "Microsoft IIS には、(1) 本来指定するべき区切り文字が指定されていないパスワード変更リクエストを受信した場合、(2) 既知のファイル拡張子を特定の文字列に変更した場合、において無限に検索を行ってしまう不備があり、結果として処理能力が著しく低下してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2000-000033",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-0457",
+      "source": "CVE",
+      "id": "CVE-2000-0457"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2000-0457",
+      "source": "NVD",
+      "id": "CVE-2000-0457"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/1193",
+      "source": "BID",
+      "id": "1193"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:iis",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft IIS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,102 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002317.html",
+  "title": "CUPS の cupsFileOpen 関数における任意のファイルを上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002317.html",
+  "description": "CUPS の cupsFileOpen 関数には、/var/cache/cups/remote.cache または /var/cache/cups/job.cache ファイルの処理に不備があるため、任意のファイルを上書きされる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002317",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2431",
+      "source": "CVE",
+      "id": "CVE-2010-2431"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2431",
+      "source": "NVD",
+      "id": "CVE-2010-2431"
+    },
+    {
+      "text": "http://secunia.com/advisories/40165",
+      "source": "SECUNIA",
+      "id": "SA40165"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/41131",
+      "source": "BID",
+      "id": "41131"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+      "id": "CWE-59",
+      "title": "リンク解釈の問題(CWE-59)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cups:cups",
+      "version": "2.2",
+      "vendor": "CUPS",
+      "product": "CUPS"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:oracle:solaris",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Solaris"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_client",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Client"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-03-31T13:54+09:00",
+  "issued": "2010-11-18T15:47+09:00",
+  "modified": "2011-03-31T13:54+09:00"
+}

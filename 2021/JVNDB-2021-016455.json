@@ -1,0 +1,110 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-016455.html",
+  "title": "Apache HTTP Server の mod_lua マルチパートパーサにおけるバッファオーバーフローに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-016455.html",
+  "description": "Apache HTTP Server の mod_lua マルチパートパーサには、バッファオーバーフローに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-016455",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU97805418/",
+      "source": "JVN",
+      "id": "JVNVU#97805418"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-44790",
+      "source": "CVE",
+      "id": "CVE-2021-44790"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-44790",
+      "source": "NVD",
+      "id": "CVE-2021-44790"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:netapp:cloud_backup",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "NetApp Cloud Backup"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_element_manager",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Session Element Manager"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_operations_monitor",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Operations Monitor"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_session_report_manager",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Session Report Manager"
+    },
+    {
+      "text": "cpe:/a:tenable:tenable.sc",
+      "version": "2.2",
+      "vendor": "Tenable, Inc.",
+      "product": "Tenable.Sc"
+    },
+    {
+      "text": "cpe:/o:apple:macos",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "macOS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-12-15T11:32+09:00",
+  "issued": "2022-12-15T11:32+09:00",
+  "modified": "2022-12-15T11:32+09:00"
+}

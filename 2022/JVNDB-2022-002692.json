@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002692.html",
+  "title": "複数の UEFI 実装における競合状態に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002692.html",
+  "description": "複数の UEFI 実装において、高い特権で任意のコードが実行される競合状態の問題が発見されました。\r\n\r\n一般的に UEFI は、System Management Mode（SMM）と呼ばれる、カーネル特権（ring-0）よりも高い特権（ring-2）のプロセッサ動作モードで実行されます。SMM はメモリ空間上に SMRAM と呼ばれる専用の領域をマップし、高い優先度のシステム管理割り込み処理により実行されます。この SMRAM に対する検証処理の不備により Time of check to time of use（TOCTOU）競合状態が発生する問題（CVE-2021-33164）が複数の UEFI 実装で発見されました。この問題を悪用した <a href=\"https://eclypsium.com/2020/01/30/direct-memory-access-attacks/\" target=\"blank\">DMA タイミング攻撃</a>（Direct Memory Access timing attack）により、任意のコードが SMM の高い権限で実行される可能性があります。\r\n",
+  "identifier": "JVNDB-2022-002692",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU96604488/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96604488"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-33164",
+      "source": "CVE",
+      "id": "CVE-2021-33164"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/434994",
+      "source": "CERT-VN",
+      "id": "VU#434994 (Multiple race conditions due to TOCTOU flaws in various UEFI Implementations)"
+    },
+    {
+      "text": "https://edk2-docs.gitbook.io/edk-ii-secure-coding-guide/secure_coding_guidelines_general",
+      "source": "関連文書",
+      "id": "Secure Coding Guidelines: General"
+    },
+    {
+      "text": "https://edk2-docs.gitbook.io/a-tour-beyond-bios-memory-protection-in-uefi-bios/memory-protection-in-smm",
+      "source": "関連文書",
+      "id": "Memory Protection in SMM"
+    },
+    {
+      "text": "https://www.intel.com/content/dam/develop/external/us/en/documents/intel-whitepaper-using-iommu-for-dma-protection-in-uefi-820238.pdf",
+      "source": "関連文書",
+      "id": "A Tour Beyond BIOS: Using IOMMU for DMA Protection in UEFI Firmware"
+    },
+    {
+      "text": "http://blog.cr4.sh/2015/09/breaking-uefi-security-with-software.html",
+      "source": "関連文書",
+      "id": "Breaking UEFI security with software DMA attacks"
+    },
+    {
+      "text": "https://www.sentinelone.com/labs/another-brick-in-the-wall-uncovering-smm-vulnerabilities-in-hp-firmware/",
+      "source": "関連文書",
+      "id": "Another Brick in the Wall: Uncovering SMM Vulnerabilities in HP Firmware"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "date": "2022-11-10T17:47+09:00",
+  "issued": "2022-11-10T17:47+09:00",
+  "modified": "2022-11-10T17:47+09:00"
+}

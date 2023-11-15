@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001848.html",
+  "title": "Commvault Edge にスタックバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001848.html",
+  "description": "Commvault が提供する CommVault Edge には、スタックベースのバッファオーバーフローの脆弱性が存在します。\r\n\r\nスタックベースのバッファオーバーフロー (CWE-121) - CVE-2017-3195\r\nCommVault Edge が提供する CommVault Edge Communication Service (cvd) には、鍵交換プロトコルの処理に起因するスタックベースのバッファオーバーフローの脆弱性が存在します。8400/TCP 宛に送信された細工されたパケットを処理することで、任意のコードが実行される可能性があります。",
+  "identifier": "JVNDB-2017-001848",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97075940/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97075940"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3195",
+      "source": "CVE",
+      "id": "CVE-2017-3195"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3195",
+      "source": "NVD",
+      "id": "CVE-2017-3195"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/214283",
+      "source": "CERT-VN",
+      "id": "VU#214283"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/121.html",
+      "id": "CWE-121",
+      "title": "スタックベースのバッファオーバーフロー(CWE-121)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:commvault:edge_server",
+      "version": "2.2",
+      "vendor": "Commvault Systems, Inc",
+      "product": "Commvault Edge Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-03-14T12:25+09:00",
+  "issued": "2017-03-22T10:56+09:00",
+  "modified": "2018-03-14T12:25+09:00"
+}

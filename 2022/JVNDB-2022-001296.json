@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001296.html",
+  "title": "Samba vfs_fruit モジュールにおける拡張ファイル属性の安全でない処理による境界外読み書きの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001296.html",
+  "description": "Samba の vfs_fruit モジュールには、拡張ファイル属性の処理に、ヒープ領域内において境界外読み取りおよび書き込みが可能となる脆弱性が存在します。\r\nそのため、遠隔の攻撃者により任意のコードを実行される可能性があります。\r\n\r\nSamba の vfs_fruit モジュールは、拡張ファイル属性を利用して、「Apple SMB クライアントとの互換性拡張と、Netatalk 3 AFP ファイルサーバーとの相互運用性」を提供するモジュールです。\r\nvfs_fruit を有効にした Samba では、特別に細工された拡張ファイル属性を介して、ヒープ領域内において境界外読み取りおよび書き込みが可能となる脆弱性（CVE-2021-44142）が存在します。",
+  "identifier": "JVNDB-2022-001296",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU92602689/",
+      "source": "JVN",
+      "id": "JVNVU#92602689"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-44142",
+      "source": "CVE",
+      "id": "CVE-2021-44142"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/119678",
+      "source": "CERT-VN",
+      "id": "VU#119678"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.9",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-02-02T11:33+09:00",
+  "issued": "2022-02-02T11:33+09:00",
+  "modified": "2022-02-02T11:33+09:00"
+}

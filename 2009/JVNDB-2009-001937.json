@@ -1,0 +1,105 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001937.html",
+  "title": "Mozilla Firefox の SVG 要素の処理における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001937.html",
+  "description": "Mozilla Firefox には、watch 関数と __defineSetter__ 関数を設定されたプロパティを持つ SVG 要素を正しく処理しないため、サービス運用妨害 (DoS) 状態となる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001937",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2469",
+      "source": "CVE",
+      "id": "CVE-2009-2469"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2469",
+      "source": "NVD",
+      "id": "CVE-2009-2469"
+    },
+    {
+      "text": "http://secunia.com/advisories/35944",
+      "source": "SECUNIA",
+      "id": "SA35944"
+    },
+    {
+      "text": "http://secunia.com/advisories/35914",
+      "source": "SECUNIA",
+      "id": "SA35914"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/35772",
+      "source": "BID",
+      "id": "35772"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/1972",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-1972"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2152",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2152"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2009-10-07T11:12+09:00",
+  "issued": "2009-08-27T11:58+09:00",
+  "modified": "2009-10-07T11:12+09:00"
+}

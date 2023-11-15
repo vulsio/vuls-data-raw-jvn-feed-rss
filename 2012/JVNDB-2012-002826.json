@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002826.html",
+  "title": "Linux Kernel の Reliable Datagram Sockets サブシステムおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002826.html",
+  "description": "Linux Kernel の Reliable Datagram Sockets (RDS) サブシステムは、Congestion (輻輳) Map のアップデートを適切に処理しないため、サービス運用妨害 (BUG_ON およびシステムクラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002826",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1023",
+      "source": "CVE",
+      "id": "CVE-2011-1023"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1023",
+      "source": "NVD",
+      "id": "CVE-2011-1023"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-06-25T14:17+09:00",
+  "issued": "2012-06-25T14:17+09:00",
+  "modified": "2012-06-25T14:17+09:00"
+}

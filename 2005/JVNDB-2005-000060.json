@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000060.html",
+  "title": "Squid における 不適切な Header の取り扱いにおける HTTP Request Smuggling の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000060.html",
+  "description": "HTTP リクエストの解釈において、(1) 複数の Content-Length ヘッダを含む HTTP リクエストを受信した場合に最初の Content-Length ヘッダを解釈する不備、(2) HTTP リクエストヘッダ中の \"CRLF SP CRLF\" を前のヘッダ続きであると解釈する不備が存在するため、これと異なる HTTP リクエストの解釈を行う Web サーバに Squid を介してリクエストが送信される場合に、HTTP Request Smuggling 攻撃が利用可能となる脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000060",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23768702",
+      "source": "JVN",
+      "id": "JVNVU#768702"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0174",
+      "source": "CVE",
+      "id": "CVE-2005-0174"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0174",
+      "source": "NVD",
+      "id": "CVE-2005-0174"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/768702",
+      "source": "CERT-VN",
+      "id": "VU#768702"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13434",
+      "source": "BID",
+      "id": "13434"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12433",
+      "source": "BID",
+      "id": "12433"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2005/Jan/1012992.html",
+      "source": "SECTRACK",
+      "id": "1012992"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:squid-cache:squid",
+      "version": "2.2",
+      "vendor": "Squid-cache.org",
+      "product": "Squid"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

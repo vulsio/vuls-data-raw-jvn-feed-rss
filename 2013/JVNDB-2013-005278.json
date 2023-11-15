@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005278.html",
+  "title": "FFmpeg の libavcodec/gifdec.c の gif_copy_img_rect 関数における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005278.html",
+  "description": "FFmpeg の libavcodec/gifdec.c の gif_copy_img_rect 関数は、\"エンドポインタ\" に対して誤った計算を行うため、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005278",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0864",
+      "source": "CVE",
+      "id": "CVE-2013-0864"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0864",
+      "source": "NVD",
+      "id": "CVE-2013-0864"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-11-27T16:47+09:00",
+  "issued": "2013-11-27T16:47+09:00",
+  "modified": "2013-11-27T16:47+09:00"
+}

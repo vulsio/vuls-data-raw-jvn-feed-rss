@@ -1,0 +1,93 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002274.html",
+  "title": "Linux Kernel の __scm_destroy 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002274.html",
+  "description": "Linux Kernel の net/core/scm.c における __scm_destroy 関数は、fput 関数が呼び出されることにより再帰的に呼び出されてしまうため、サービス運用妨害 (DoS) の脆弱性が存在します。",
+  "identifier": "JVNDB-2008-002274",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5029",
+      "source": "CVE",
+      "id": "CVE-2008-5029"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-5029",
+      "source": "NVD",
+      "id": "CVE-2008-5029"
+    },
+    {
+      "text": "http://secunia.com/advisories/33556/",
+      "source": "SECUNIA",
+      "id": "SA33556"
+    },
+    {
+      "text": "http://secunia.com/advisories/33623/",
+      "source": "SECUNIA",
+      "id": "SA33623"
+    },
+    {
+      "text": "http://secunia.com/advisories/33586/",
+      "source": "SECUNIA",
+      "id": "SA33586"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/32154",
+      "source": "BID",
+      "id": "32154"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1021292",
+      "source": "SECTRACK",
+      "id": "1021292"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2011-03-18T15:29+09:00",
+  "issued": "2009-02-23T12:24+09:00",
+  "modified": "2011-03-18T15:29+09:00"
+}

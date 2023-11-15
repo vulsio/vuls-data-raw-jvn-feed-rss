@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001129.html",
+  "title": "Linux Kernel における mmap_min_addr 制御を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001129.html",
+  "description": "Linux Kernel には、実行ファイルから呼び出される do_brk() 関数の処理に不備があり、mmap_min_addr 制御を回避され、ユーザの仮想メモリ領域に low page を作成可能な脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001129",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6434",
+      "source": "CVE",
+      "id": "CVE-2007-6434"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-6434",
+      "source": "NVD",
+      "id": "CVE-2007-6434"
+    },
+    {
+      "text": "http://secunia.com/advisories/28070",
+      "source": "SECUNIA",
+      "id": "SA28070"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26831",
+      "source": "BID",
+      "id": "26831"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/4200",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-4200"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2008-03-03T15:49+09:00",
+  "issued": "2008-03-03T15:49+09:00",
+  "modified": "2008-03-03T15:49+09:00"
+}

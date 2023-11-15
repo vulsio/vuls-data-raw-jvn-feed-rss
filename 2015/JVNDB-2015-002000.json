@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002000.html",
+  "title": "PHP の ext/standard/basic_functions.c の move_uploaded_file の実装における拡張子の制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002000.html",
+  "description": "PHP の ext/standard/basic_functions.c の move_uploaded_file の実装は、\\x00 文字に遭遇した場合にパス名を切り捨てるため、拡張子の制限を回避され、想定外の名前のファイルを作成される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2006-7243 に対する修正が不十分だったことによる脆弱性です。",
+  "identifier": "JVNDB-2015-002000",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97220341/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97220341"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2348",
+      "source": "CVE",
+      "id": "CVE-2015-2348"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2348",
+      "source": "NVD",
+      "id": "CVE-2015-2348"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2015-10-06T10:36+09:00",
+  "issued": "2015-04-02T12:15+09:00",
+  "modified": "2015-10-06T10:36+09:00"
+}

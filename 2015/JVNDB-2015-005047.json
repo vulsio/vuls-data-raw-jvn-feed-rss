@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005047.html",
+  "title": "Apport の kernel_crashdump におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005047.html",
+  "description": "Apport の kernel_crashdump には、サービス運用妨害 (ディスクの消費) 状態にされる、または権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-005047",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1338",
+      "source": "CVE",
+      "id": "CVE-2015-1338"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1338",
+      "source": "NVD",
+      "id": "CVE-2015-1338"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+      "id": "CWE-59",
+      "title": "リンク解釈の問題(CWE-59)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apport_project:apport",
+      "version": "2.2",
+      "vendor": "Apport project",
+      "product": "Apport"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-10-05T11:53+09:00",
+  "issued": "2015-10-05T11:53+09:00",
+  "modified": "2015-10-05T11:53+09:00"
+}

@@ -1,0 +1,93 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001161.html",
+  "title": "Imagemagick の関数の呼び出し処理の不備によるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001161.html",
+  "description": "ImageMagick には、ReadDCMImage() 関数における ReadBlobByte() 関数の呼び出し、および ReadXCFImage() 関数における ReadBlobMSBLong() 関数の呼び出しにおいて、無限ループが発生することによる、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001161",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4985",
+      "source": "CVE",
+      "id": "CVE-2007-4985"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4985",
+      "source": "NVD",
+      "id": "CVE-2007-4985"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25764",
+      "source": "BID",
+      "id": "25764"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/36740",
+      "source": "XF",
+      "id": "36740"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1018729",
+      "source": "SECTRACK",
+      "id": "1018729"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/3245",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-3245"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:imagemagick:imagemagick",
+      "version": "2.2",
+      "vendor": "ImageMagick",
+      "product": "ImageMagick"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-06-26T14:15+09:00",
+  "issued": "2008-05-16T15:21+09:00",
+  "modified": "2012-06-26T14:15+09:00"
+}

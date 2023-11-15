@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000094.html",
+  "title": "Ximian Evolution の mail-format.c における任意のデータおよび HTML を挿入される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000094.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nXimian Evolution は GNOME 環境で動作する個人情報を管理するソフトウェアであり、電子メールクライアント (MUA) 機能を備えています。\r\n\r\nXimian Evolution 1.2.2 以前には uuencode された内容のデコード処理、および関連するメモリ割り当て処理に問題が存在します。また、これらには MIME Content-Type ヘッダの中で image/* が指定された電子メールに対する妥当性の確認処理が不十分である問題が存在します。\r\n\r\nリモートの攻撃者は意図的に組み立てられた uuencode された内容を含む電子メールを標的ユーザに送信することにより、Evolution をクラッシュし、結果的にサービス不能状態に陥らせることが可能です。\r\n尚、通常状態に復旧するには、GUI 上では削除できないため、手動でこのメールを Mailbox から削除する必要があります。\r\n\r\nまた、リモートの攻撃者は MIME Content-Type ヘッダ内で image/* を指定し、かつ、実際には画像ではない内容を持つ電子メールを標的ユーザに送信することにより、任意の内容 (例えばスクリプト) を電子メール内に挿入可能です。\r\n\r\nこれらの問題を利用することにより、任意のコードを実行される潜在的な可能性が存在します。",
+  "identifier": "JVNDB-2003-000094",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0130",
+      "source": "CVE",
+      "id": "CVE-2003-0130"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0130",
+      "source": "NVD",
+      "id": "CVE-2003-0130"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7119",
+      "source": "BID",
+      "id": "7119"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7118",
+      "source": "BID",
+      "id": "7118"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7117",
+      "source": "BID",
+      "id": "7117"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

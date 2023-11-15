@@ -1,0 +1,91 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-007523.html",
+  "title": "Kopano の Groupware Core における認証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-007523.html",
+  "description": "Kopano の Groupware Core には、認証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-007523",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-26562",
+      "source": "CVE",
+      "id": "CVE-2022-26562"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-26562",
+      "source": "NVD",
+      "id": "CVE-2022-26562"
+    },
+    {
+      "text": "https://bodhi.fedoraproject.org/updates/FEDORA-EPEL-2023-342b96903b",
+      "source": "関連文書",
+      "id": "bodhi.fedoraproject.org (FEDORA-EPEL-2023-342b96903b)"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=2192126",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (2192126)"
+    },
+    {
+      "text": "https://github.com/Kopano-dev/kopano-core/blob/master/provider/libserver/ECKrbAuth.cpp#L137",
+      "source": "関連文書",
+      "id": "github.com (ECKrbAuth.cpp#L137)"
+    },
+    {
+      "text": "https://jira.kopano.io/browse/KC-2021",
+      "source": "関連文書",
+      "id": "jira.kopano.io (KC-2021)"
+    },
+    {
+      "text": "https://kopano.com/",
+      "source": "関連文書",
+      "id": "kopano.com"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2023/03/msg00006.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00006)"
+    },
+    {
+      "text": "https://src.fedoraproject.org/rpms/zarafa/c/a5a8366ccf07f248fae6edffb5123cfda579bfdb?branch=epel7",
+      "source": "関連文書",
+      "id": "src.fedoraproject.org (a5a8366ccf07f248fae6edffb5123cfda579bfdb?branch=epel7)"
+    },
+    {
+      "text": "https://stash.kopano.io/projects/KC/repos/kopanocore/browse/provider/libserver/ECKrbAuth.cpp#137",
+      "source": "関連文書",
+      "id": "stash.kopano.io (ECKrbAuth.cpp#137)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:kopano:groupware_core",
+      "version": "2.2",
+      "vendor": "Kopano",
+      "product": "Groupware Core"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-07-18T17:32+09:00",
+  "issued": "2023-07-18T17:32+09:00",
+  "modified": "2023-07-18T17:32+09:00"
+}

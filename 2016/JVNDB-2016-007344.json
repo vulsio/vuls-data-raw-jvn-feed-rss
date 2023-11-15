@@ -1,0 +1,104 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007344.html",
+  "title": "BIG-IP バーチャルサーバにおけるメモリリークの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007344.html",
+  "description": "BIG-IP バーチャルサーバは、デフォルトでない Session Tickets オプションが有効な Client SSL プロファイルが設定されているため、初期化されていないメモリの 31 バイトまでをリークされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-007344",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9244",
+      "source": "CVE",
+      "id": "CVE-2016-9244"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9244",
+      "source": "NVD",
+      "id": "CVE-2016-9244"
+    },
+    {
+      "text": "https://filippo.io/Ticketbleed/",
+      "source": "関連文書",
+      "id": "Ticketbleed (CVE-2016-9244)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:f5:big-ip_access_policy_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Access Policy Manager (APM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_advanced_firewall_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Advanced Firewall Manager (AFM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_analytics",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Analytics"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_application_acceleration_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Application Acceleration Manager (AAM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_application_security_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Application Security Manager (ASM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_link_controller",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Link Controller"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_local_traffic_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Local Traffic Manager (LTM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_policy_enforcement_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Policy Enforcement Manager (PEM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_protocol_security_module",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Protocol Security Module (PSM)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2017-02-24T14:56+09:00",
+  "issued": "2017-02-24T14:56+09:00",
+  "modified": "2017-02-24T14:56+09:00"
+}

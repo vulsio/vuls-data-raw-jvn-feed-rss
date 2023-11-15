@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000053.html",
+  "title": "GNU enscript の EPS ファイルのサニタイズ処理における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000053.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU Enscript は、ASCII テキストを PostScript などのフォーマットに変換するプログラムです。\r\n\r\nGNU Enscript 1.6.3 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) EPS (Encapsulated PostScript) ファイルのサニタイズ処理に不備が存在し、パイプ処理を経由して任意のコマンドが実行できる問題 (CAN-2004-1184)\r\n\r\n2) enscript コマンドの引数に指定するファイル名に対してサニタイズ処理が実施されないため、意図的に作成されたファイル名を指定することで、任意のコマンドを実行できる問題 (CAN-2004-1185)\r\n\r\n3)util.c および src/psgen.c において、ファイルからの入力値の妥当性の確認が不適切であるため、バッファオーバーフローが発生する問題 (CAN-2004-1186)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成したファイルを enscript を利用するプログラムで取り扱うよう標的ユーザを誘導することで、結果的に標的ユーザの権限で任意のコマンドを実行できる、あるいは任意のコードを実行できる可能性があります。\r\n\r\n尚、開発版である GNU Enscript 1.6.4 もこれらの問題の影響を受けることが、発見者により報告されています。",
+  "identifier": "JVNDB-2005-000053",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1184",
+      "source": "CVE",
+      "id": "CVE-2004-1184"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1184",
+      "source": "NVD",
+      "id": "CVE-2004-1184"
+    },
+    {
+      "text": "http://secunia.com/advisories/13968/",
+      "source": "SECUNIA",
+      "id": "SA13968"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12329",
+      "source": "BID",
+      "id": "12329"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-06-26T13:56+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2009-06-26T13:56+09:00"
+}

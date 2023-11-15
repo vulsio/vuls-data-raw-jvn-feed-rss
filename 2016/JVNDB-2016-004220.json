@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004220.html",
+  "title": "複数の Nexus デバイス上で稼動する Android の Qualcomm コンポーネントの drivers/char/diag/diagfwd.c における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004220.html",
+  "description": "Nexus 5、5X、6、6P、および 7 (2013) デバイス上で稼動する Android の Qualcomm コンポーネントの drivers/char/diag/diagfwd.c は、特定の整数値を誤って処理するため、権限を取得される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Android internal bug 28767796 および Qualcomm internal bug CR483408 として公開しています。",
+  "identifier": "JVNDB-2016-004220",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9876",
+      "source": "CVE",
+      "id": "CVE-2014-9876"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9876",
+      "source": "NVD",
+      "id": "CVE-2014-9876"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:google:android",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-08-10T17:43+09:00",
+  "issued": "2016-08-10T17:43+09:00",
+  "modified": "2016-08-10T17:43+09:00"
+}

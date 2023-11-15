@@ -1,0 +1,94 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002066.html",
+  "title": "GnuTLS の libgnutls における任意の SSL サーバを偽装される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002066.html",
+  "description": "GnuTLS の libgnutls には、X.509 証明書の Common Name (CN) または Subject Alternative Name (SAN) フィールド内のドメイン名にある \"\\0\" 文字を適切に処理しないため、中間者攻撃によって任意の SSL サーバを偽装される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-002066",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2730",
+      "source": "CVE",
+      "id": "CVE-2009-2730"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2730",
+      "source": "NVD",
+      "id": "CVE-2009-2730"
+    },
+    {
+      "text": "http://secunia.com/advisories/36266",
+      "source": "SECUNIA",
+      "id": "SA36266"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/35952",
+      "source": "BID",
+      "id": "35952"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/52404",
+      "source": "XF",
+      "id": "52404"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2244",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2244"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gnutls",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GnuTLS"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-10-06T11:22+09:00",
+  "issued": "2009-10-06T11:22+09:00",
+  "modified": "2009-10-06T11:22+09:00"
+}

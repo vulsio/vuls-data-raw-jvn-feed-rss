@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013235.html",
+  "title": "Samba における認証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013235.html",
+  "description": "Samba には、認証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2019-013235",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14870",
+      "source": "CVE",
+      "id": "CVE-2019-14870"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-14870",
+      "source": "NVD",
+      "id": "CVE-2019-14870"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14870",
+      "source": "関連文書",
+      "id": "Bug 1778589 (CVE-2019-14870) - CVE-2019-14870 samba: The DelegationNotAllowed Kerberos feature restriction was not being applied when processing protocol transition requests (S4U2Self), in the AD DC KDC"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+    }
+  ],
+  "date": "2019-12-23T16:15+09:00",
+  "issued": "2019-12-23T16:15+09:00",
+  "modified": "2019-12-23T16:15+09:00"
+}

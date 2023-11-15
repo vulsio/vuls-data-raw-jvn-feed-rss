@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001612.html",
+  "title": "Linux Kernel におけるリソースの制限を回避される問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001612.html",
+  "description": "Linux Kernel には、RLIMIT_CPU を 0 に設定した場合、リソースの制限を回避される問題が存在します。",
+  "identifier": "JVNDB-2008-001612",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1294",
+      "source": "CVE",
+      "id": "CVE-2008-1294"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-1294",
+      "source": "NVD",
+      "id": "CVE-2008-1294"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/29004",
+      "source": "BID",
+      "id": "29004"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/42145",
+      "source": "XF",
+      "id": "42145"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2008-10-28T14:06+09:00",
+  "issued": "2008-09-04T14:23+09:00",
+  "modified": "2008-10-28T14:06+09:00"
+}

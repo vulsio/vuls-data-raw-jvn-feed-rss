@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001409.html",
+  "title": "Internet Explorer に解放済みメモリ使用 (use-after-free) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001409.html",
+  "description": "Microsoft が提供する Internet Explorer には、解放済みメモリ使用 (use-after-free) の脆弱性が存在します。\r\n\r\nMicrosoft が提供する Internet Explorer には、CMarkup コンポーネントの処理に問題があり、解放済みメモリ使用 (use-after-free) の脆弱性が存在します。\r\n\r\nEnhanced Mitigation Experience Toolkit (EMET) が適用されていない環境の Internet Explorer 10 を対象とした攻撃が観測されています。また、本脆弱性を使用した攻撃コードも公開されています。\r\n\r\nEnhanced Mitigation Experience Toolkit (EMET)\r\nhttps://support.microsoft.com/kb/2458544",
+  "identifier": "JVNDB-2014-001409",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96727848/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96727848"
+    },
+    {
+      "text": "http://jvn.jp/ta/JVNTA99041988/",
+      "source": "JVN",
+      "id": "JVNTA#99041988"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0322",
+      "source": "CVE",
+      "id": "CVE-2014-0322"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0322",
+      "source": "NVD",
+      "id": "CVE-2014-0322"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/732479",
+      "source": "CERT-VN",
+      "id": "VU#732479"
+    },
+    {
+      "text": "https://www.us-cert.gov/ncas/alerts/TA15-119A",
+      "source": "CERT-TA",
+      "id": "TA15-119A"
+    },
+    {
+      "text": "http://www.us-cert.gov/ncas/current-activity/2014/02/14/Internet-Explorer-10-Use-After-Free-Vulnerability-Being-Actively",
+      "source": "CERT-CA",
+      "id": "Internet Explorer 10 Use-After-Free Vulnerability Being Actively Exploited In The Wild"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20140220-ms.html",
+      "source": "IPA",
+      "id": "Internet Explorer の脆弱性対策について(CVE-2014-0322)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:internet_explorer",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Internet Explorer"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-05-11T16:06+09:00",
+  "issued": "2014-02-17T14:50+09:00",
+  "modified": "2015-05-11T16:06+09:00"
+}

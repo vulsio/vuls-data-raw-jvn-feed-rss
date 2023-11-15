@@ -1,0 +1,112 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000430.html",
+  "title": "JRE (Java Runtime Environment) のイメージ解析コードにバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000430.html",
+  "description": "JRE (Java Runtime Environment) のイメージ解析コードには、バッファオーバーフローの脆弱性が存在します。\r\n\r\nJRE に含まれるイメージ解析コードは、ICC（International Color Consortium）が定めている色情報を管理する為の ICC プロファイルを解析する機能を持っています。このイメージ解析コードには、細工された ICC プロファイルを解析する事によってバッファオーバーフローが発生する可能性があります。\r\n\r\nなお、本問題は CVE-2007-3004 として登録しましたが、CVE-2007-2788 へ変更しました。",
+  "identifier": "JVNDB-2007-000430",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23138545/index.html",
+      "source": "JVN",
+      "id": "JVNVU#138545"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2788",
+      "source": "CVE",
+      "id": "CVE-2007-2788"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2788",
+      "source": "NVD",
+      "id": "CVE-2007-2788"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/138545",
+      "source": "CERT-VN",
+      "id": "VU#138545"
+    },
+    {
+      "text": "http://secunia.com/advisories/25295/",
+      "source": "SECUNIA",
+      "id": "SA25295"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/24267",
+      "source": "BID",
+      "id": "24267"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Extras"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_desktop_supplementary",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Supplementary"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_supplementary",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Supplementary"
+    },
+    {
+      "text": "cpe:/a:sun:jdk",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "JDK"
+    },
+    {
+      "text": "cpe:/a:sun:jre",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "JRE"
+    },
+    {
+      "text": "cpe:/a:sun:sdk",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "SDK"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-07-07T13:46+09:00",
+  "issued": "2007-06-14T11:57+09:00",
+  "modified": "2008-07-07T13:46+09:00"
+}

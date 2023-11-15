@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-005858.html",
+  "title": "sentry の Python 用 sentry software development kit における送信データへの重要な情報の挿入に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-005858.html",
+  "description": "sentry の Python 用 sentry software development kit には、送信データへの重要な情報の挿入に関する脆弱性、エラーメッセージによる情報漏えいに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2023-005858",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-28117",
+      "source": "CVE",
+      "id": "CVE-2023-28117"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-28117",
+      "source": "NVD",
+      "id": "CVE-2023-28117"
+    },
+    {
+      "text": "https://github.com/getsentry/sentry-python/pull/1842",
+      "source": "関連文書",
+      "id": "github.com (pull/1842)"
+    },
+    {
+      "text": "https://github.com/getsentry/sentry-python/releases/tag/1.14.0",
+      "source": "関連文書",
+      "id": "github.com (1.14.0)"
+    },
+    {
+      "text": "https://github.com/getsentry/sentry-python/security/advisories/GHSA-29pr-6jr8-q5jm",
+      "source": "関連文書",
+      "id": "github.com (GHSA-29pr-6jr8-q5jm)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/201.html",
+      "id": "CWE-201",
+      "title": "送信データへの重要な情報の挿入(CWE-201)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/209.html",
+      "id": "CWE-209",
+      "title": "エラーメッセージによる情報漏えい(CWE-209)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sentry:sentry_software_development_kit",
+      "version": "2.2",
+      "vendor": "sentry",
+      "product": "sentry software development kit"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2023-11-10T13:35+09:00",
+  "issued": "2023-11-10T13:35+09:00",
+  "modified": "2023-11-10T13:35+09:00"
+}

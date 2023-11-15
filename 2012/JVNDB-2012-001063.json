@@ -1,0 +1,92 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001063.html",
+  "title": "Apache Tomcat の HTTP Digest Access Authentication 実装におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001063.html",
+  "description": "Apache Tomcat の HTTP Digest Access Authentication 実装は、realm 値をチェックしないため、アクセス制限を回避される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2011-1184 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2012-001063",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-5063",
+      "source": "CVE",
+      "id": "CVE-2011-5063"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-5063",
+      "source": "NVD",
+      "id": "CVE-2011-5063"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/a:hp:xp_p9000",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP XP P9000"
+    },
+    {
+      "text": "cpe:/a:nec:infocage",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "InfoCage"
+    },
+    {
+      "text": "cpe:/a:nec:webotx",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Application Server"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_developer",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Developer"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_enterprise_service_bus",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Enterprise Service Bus"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_portal",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Portal"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_sip_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX SIP Application Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2016-08-02T17:34+09:00",
+  "issued": "2012-01-17T16:19+09:00",
+  "modified": "2016-08-02T17:34+09:00"
+}

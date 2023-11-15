@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-015072.html",
+  "title": "LibVNCServer におけるエントロピー不足に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-015072.html",
+  "description": "LibVNCServer には、エントロピー不足に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2017-015072",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU96592426/",
+      "source": "JVN",
+      "id": "JVNVU#96592426"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18922",
+      "source": "CVE",
+      "id": "CVE-2017-18922"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-18922",
+      "source": "NVD",
+      "id": "CVE-2017-18922"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libvncserver_project:libvncserver",
+      "version": "2.2",
+      "vendor": "LibVNC",
+      "product": "LibVNCServer"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:opensuse_project:leap",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "openSUSE Leap"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-12-17T11:26+09:00",
+  "issued": "2020-08-07T17:39+09:00",
+  "modified": "2021-12-17T11:26+09:00"
+}

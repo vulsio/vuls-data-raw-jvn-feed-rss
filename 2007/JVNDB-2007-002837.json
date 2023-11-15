@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-002837.html",
+  "title": "DenyHosts における検出とブロックを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-002837.html",
+  "description": "DenyHosts は、OpenSSH sshd \"AllowUsers にリストされていません\" のログメッセージを IP アドレスと一致しない誤った正規表現で処理するため、AllowUsers に存在しないユーザ名で無効なログインを実行する際、検出とブロックを回避される脆弱性が存在します。\r\n本脆弱性は、CVE-2007-4323 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2007-002837",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5715",
+      "source": "CVE",
+      "id": "CVE-2007-5715"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-5715",
+      "source": "NVD",
+      "id": "CVE-2007-5715"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:phil_schwartz:denyhosts",
+      "version": "2.2",
+      "vendor": "Phil Schwartz",
+      "product": "DenyHosts"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-06-26T15:54+09:00",
+  "issued": "2012-06-26T15:54+09:00",
+  "modified": "2012-06-26T15:54+09:00"
+}

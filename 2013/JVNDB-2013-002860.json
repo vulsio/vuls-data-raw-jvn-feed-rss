@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002860.html",
+  "title": "Apache Tomcat の AsyncContextImpl.java における重要なリクエスト情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002860.html",
+  "description": "Apache Tomcat の java/org/apache/catalina/core/AsyncContextImpl.java は、アプリケーション内の AsyncListener の RuntimeException のスローを適切に処理しないため、他のアプリケーション向けの重要なリクエスト情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002860",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2071",
+      "source": "CVE",
+      "id": "CVE-2013-2071"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2071",
+      "source": "NVD",
+      "id": "CVE-2013-2071"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Application Server"
+    },
+    {
+      "text": "cpe:/a:oracle:supply_chain_products_suite",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Supply Chain Products Suite"
+    },
+    {
+      "text": "cpe:/a:oracle:virtualization_secure_global_desktop",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Virtualization"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2016-11-09T16:39+09:00",
+  "issued": "2013-06-04T13:55+09:00",
+  "modified": "2016-11-09T16:39+09:00"
+}

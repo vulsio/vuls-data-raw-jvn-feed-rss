@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002686.html",
+  "title": "Dell ML6000 と Quantum Scalar i500 に OS コマンドインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002686.html",
+  "description": "Dell が提供する PowerVault ML6000 シリーズ および Quantum が提供する Scalar i500 には、OS コマンドインジェクションの脆弱性 (CWE-78) が存在します。\r\n\r\nCWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')\r\nhttp://cwe.mitre.org/data/definitions/78.html",
+  "identifier": "JVNDB-2014-002686",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99779325/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99779325"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2959",
+      "source": "CVE",
+      "id": "CVE-2014-2959"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2959",
+      "source": "NVD",
+      "id": "CVE-2014-2959"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/124908",
+      "source": "CERT-VN",
+      "id": "VU#124908"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:dell:powervault_ml6000",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "PowerVault ML6000"
+    },
+    {
+      "text": "cpe:/h:quantum:scalar_i500",
+      "version": "2.2",
+      "vendor": "クアンタム",
+      "product": "Scalar i500"
+    },
+    {
+      "text": "cpe:/o:dell:powervault_ml6000_firmware",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "PowerVault ML6000 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:quantum:scalar_i500_firmware",
+      "version": "2.2",
+      "vendor": "クアンタム",
+      "product": "Scalar i500 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:P/A:P"
+    }
+  ],
+  "date": "2014-06-04T17:40+09:00",
+  "issued": "2014-06-02T15:48+09:00",
+  "modified": "2014-06-04T17:40+09:00"
+}

@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002075.html",
+  "title": "UNIX プラットフォーム上の ISC BIND におけるサービス運用妨害 (メモリ消費) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002075.html",
+  "description": "UNIX プラットフォーム上で稼働する ISC BIND の libdns には、サービス運用妨害 (メモリ消費) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002075",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2266",
+      "source": "CVE",
+      "id": "CVE-2013-2266"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2266",
+      "source": "NVD",
+      "id": "CVE-2013-2266"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20130328-bind.html",
+      "source": "IPA CFA",
+      "id": "DNS サーバ BIND の脆弱性対策について(CVE-2013-2494)"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2013/at130017.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2013-0017"
+    },
+    {
+      "text": "http://jprs.jp/tech/security/2013-03-27-bind9-vuln-regexp.html",
+      "source": "JPRS",
+      "id": "（緊急）BIND 9.xの致命的な脆弱性（過度のメモリ消費）について（2013年3月27日公開）"
+    },
+    {
+      "text": "http://www.nic.ad.jp/ja/topics/2013/20130327-01.html",
+      "source": "JPNIC",
+      "id": "JPNIC - ISC BIND 9に関する脆弱性について(2013年3月)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2013-11-25T10:53+09:00",
+  "issued": "2013-04-01T15:47+09:00",
+  "modified": "2013-11-25T10:53+09:00"
+}

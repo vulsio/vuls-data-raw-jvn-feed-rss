@@ -1,0 +1,105 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003486.html",
+  "title": "複数の Triangle MicroWorks 製品に脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003486.html",
+  "description": "Triangle MicroWorks 社が提供する、制御システム向けライブラリ DNP3 Outstation Libraries、および制御システム向けデータ管理アプリケーション SCADA Data Gateway には、次の脆弱性が存在します。\r\n\r\nDNP3 Outstation Libraries\r\n\r\n* スタックベースのバッファオーバーフロー (CWE-121) - CVE-2020-6966\r\n\r\nSCADA Data Gateway\r\n\r\n* 型の取り違え (CWE-843) - CVE-2020-10611\r\n\r\n* 境界外読み取り (CWE-125) - CVE-2020-10613\r\n\r\n* スタックベースのバッファオーバーフロー (CWE-121) - CVE-2020-10615\r\n",
+  "identifier": "JVNDB-2020-003486",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU93838113/",
+      "source": "JVN",
+      "id": "JVNVU#93838113"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6996",
+      "source": "CVE",
+      "id": "CVE-2020-6996"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10611",
+      "source": "CVE",
+      "id": "CVE-2020-10611"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10613",
+      "source": "CVE",
+      "id": "CVE-2020-10613"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10615",
+      "source": "CVE",
+      "id": "CVE-2020-10615"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-10611",
+      "source": "NVD",
+      "id": "CVE-2020-10611"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-10613",
+      "source": "NVD",
+      "id": "CVE-2020-10613"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-10615",
+      "source": "NVD",
+      "id": "CVE-2020-10615"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-6996",
+      "source": "NVD",
+      "id": "CVE-2020-6996"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-105-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-105-02"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-105-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-105-03"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/121.html",
+      "id": "CWE-121",
+      "title": "スタックベースのバッファオーバーフロー(CWE-121)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/843.html",
+      "id": "CWE-843",
+      "title": "型の取り違え(CWE-843)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:trianglemicroworks:dnp3_outstation",
+      "version": "2.2",
+      "vendor": "Triangle MicroWorks",
+      "product": "DNP3 Outstation"
+    },
+    {
+      "text": "cpe:/a:trianglemicroworks:scada_data_gateway",
+      "version": "2.2",
+      "vendor": "Triangle MicroWorks",
+      "product": "SCADA Data Gateway"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-04-17T14:17+09:00",
+  "issued": "2020-04-17T14:17+09:00",
+  "modified": "2020-04-17T14:17+09:00"
+}

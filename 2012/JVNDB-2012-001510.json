@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001510.html",
+  "title": "Microsoft Windows Server 2008 における無効なドメイン名の継続的な名前解決を可能にされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001510.html",
+  "description": "Microsoft Windows Server 2008 内の DNS Server サービスのリゾルバは、A レコードクエリへの応答処理中、NS レコードにキャッシュされたサーバ名および TTL 値の上書きを行うため、無効なドメイン名の継続的な名前解決を可能にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-001510",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU542123",
+      "source": "JVN",
+      "id": "JVNVU#542123"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1194",
+      "source": "CVE",
+      "id": "CVE-2012-1194"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1194",
+      "source": "NVD",
+      "id": "CVE-2012-1194"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/542123",
+      "source": "CERT-VN",
+      "id": "VU#542123"
+    },
+    {
+      "text": "http://jprs.jp/tech/notice/2012-02-17-ghost-domain-names.html",
+      "source": "JPRS",
+      "id": "「ghost domain names（幽霊ドメイン名）」脆弱性について"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2012-02-21T16:25+09:00",
+  "issued": "2012-02-21T16:25+09:00",
+  "modified": "2012-02-21T16:25+09:00"
+}

@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000647.html",
+  "title": "Linux Kernel の NAT 機能 におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000647.html",
+  "description": "Linux Kernel に実装されている NAT の ip_nat_proto_tcp.c および ip_nat_proto_udp.c には、portptr 変数のデータ型の宣言が不適切なため、同じプロトコルの 2 つのパケットを同時に処理した場合、メモリ領域が破壊され、片方のパケットの conntrack 情報が消えてしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000647",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3275",
+      "source": "CVE",
+      "id": "CVE-2005-3275"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3275",
+      "source": "NVD",
+      "id": "CVE-2005-3275"
+    },
+    {
+      "text": "http://secunia.com/advisories/16494/",
+      "source": "SECUNIA",
+      "id": "SA16494"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15531",
+      "source": "BID",
+      "id": "15531"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

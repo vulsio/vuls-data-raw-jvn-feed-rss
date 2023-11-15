@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000345.html",
+  "title": "PostgreSQL の to_ascii() 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000345.html",
+  "description": "PostgreSQL には、非 ASCII 環境の文字列を ASCII 形式に変換するルーチン (to_ascii() 関数) に、意図的な非 ASCII 文字列を PostgreSQL に引き渡すことにより、バッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000345",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0901",
+      "source": "CVE",
+      "id": "CVE-2003-0901"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0901",
+      "source": "NVD",
+      "id": "CVE-2003-0901"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8741",
+      "source": "BID",
+      "id": "8741"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:postgresql:postgresql",
+      "version": "2.2",
+      "vendor": "PostgreSQL.org",
+      "product": "PostgreSQL"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

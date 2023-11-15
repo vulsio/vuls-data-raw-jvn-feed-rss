@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000059.html",
+  "title": "PHP の Move_Uploaded_File() 関数における Open_Basedir の指定を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000059.html",
+  "description": "PHP の move_uploaded_file() 関数には、open_basedir で指定されている PHP で使用可能なベースディレクトリを適切にチェックしない不備があり、PHP が使用可能なディレクトリ外のファイルに対して上書きなどを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2002-000059",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0484",
+      "source": "CVE",
+      "id": "CVE-2002-0484"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0484",
+      "source": "NVD",
+      "id": "CVE-2002-0484"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4325",
+      "source": "BID",
+      "id": "4325"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

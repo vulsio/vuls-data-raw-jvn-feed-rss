@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005262.html",
+  "title": "Linux Kernel における入力確認に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005262.html",
+  "description": "Linux Kernel には、入力確認に関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を CID-19b61392c5a8 として公開しています。",
+  "identifier": "JVNDB-2020-005262",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12769",
+      "source": "CVE",
+      "id": "CVE-2020-12769"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-12769",
+      "source": "NVD",
+      "id": "CVE-2020-12769"
+    },
+    {
+      "text": "https://lkml.org/lkml/2020/2/3/559",
+      "source": "関連文書",
+      "id": "[PATCH 4.14 23/89] spi: spi-dw: Add lock protect dw_spi rx/tx to prevent concurrent calls"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2020-06-10T17:09+09:00",
+  "issued": "2020-06-10T17:09+09:00",
+  "modified": "2020-06-10T17:09+09:00"
+}

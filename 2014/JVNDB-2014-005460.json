@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005460.html",
+  "title": "QEMU の ACPI PCI hotplug インターフェースの pci_read 関数における重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005460.html",
+  "description": "QEMU の ACPI PCI hotplug インターフェース (hw/acpi/pcihp.c) の pci_read 関数には、一つずれエラー (Off-by-One error) により、メモリ破損を誘発する巧妙に細工された PCI デバイスに関する処理に不備があるため、重要な情報を取得されるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005460",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5388",
+      "source": "CVE",
+      "id": "CVE-2014-5388"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5388",
+      "source": "NVD",
+      "id": "CVE-2014-5388"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-11-18T10:37+09:00",
+  "issued": "2014-11-18T10:37+09:00",
+  "modified": "2014-11-18T10:37+09:00"
+}

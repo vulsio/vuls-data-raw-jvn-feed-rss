@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004802.html",
+  "title": "Xen の libxl toolstack ライブラリの libxl_list_cpupool 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004802.html",
+  "description": "Xen の libxl toolstack ライブラリの libxl_list_cpupool 関数は、メモリ不足の状況で実行される場合、realloc 関数が失敗した際にオリジナルのポインタを返すため、解放済みメモリの使用 (Use-after-free) により、サービス運用妨害 (ヒープ破損およびクラッシュ) 状態にされる、および任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004802",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4371",
+      "source": "CVE",
+      "id": "CVE-2013-4371"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4371",
+      "source": "NVD",
+      "id": "CVE-2013-4371"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2013/10/10/12",
+      "source": "関連文書",
+      "id": "Xen Security Advisory 70 (CVE-2013-4371) - use-after-free in libxl_list_cpupool under memory pressure"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:xen:xen",
+      "version": "2.2",
+      "vendor": "Xen プロジェクト",
+      "product": "Xen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-10-21T19:12+09:00",
+  "issued": "2013-10-21T19:12+09:00",
+  "modified": "2013-10-21T19:12+09:00"
+}

@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000829.html",
+  "title": "Sun Solaris の ld.so.1 におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000829.html",
+  "description": "Sun Solaris の ld.so.1 には、doprf() 関数においてバッファオーバーフローが発生する脆弱性が存在します。\r\n\r\nなお、本来この脆弱性だけでは権限昇格に悪用することができません。CVE-2006-6494 のような他の脆弱性などとの組み合わせにより悪用される可能性があります。\r\n",
+  "identifier": "JVNDB-2006-000829",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6495",
+      "source": "CVE",
+      "id": "CVE-2006-6495"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-6495",
+      "source": "NVD",
+      "id": "CVE-2006-6495"
+    },
+    {
+      "text": "http://secunia.com/advisories/23317/",
+      "source": "SECUNIA",
+      "id": "SA23317"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/21564",
+      "source": "BID",
+      "id": "21564"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/4979",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-4979"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

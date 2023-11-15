@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001009.html",
+  "title": "Perl の Locale::Maketext の実装における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001009.html",
+  "description": "Perl の Locale::Maketext の実装の Maketext.pm 内の _compile 関数は、角括弧表記のコンパイルの際に、バックスラッシュおよび完全修飾メソッド名を適切に処理しないため、任意のコマンドを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001009",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6329",
+      "source": "CVE",
+      "id": "CVE-2012-6329"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6329",
+      "source": "NVD",
+      "id": "CVE-2012-6329"
+    },
+    {
+      "text": "https://wiki.mageia.org/en/Support/Advisories/MGASA-2013-0032",
+      "source": "関連文書",
+      "id": "MGASA-2013-0032"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:perl:perl",
+      "version": "2.2",
+      "vendor": "The Perl Foundation",
+      "product": "Perl"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2016-02-16T12:17+09:00",
+  "issued": "2013-01-08T15:13+09:00",
+  "modified": "2016-02-16T12:17+09:00"
+}

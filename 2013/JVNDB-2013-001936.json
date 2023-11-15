@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001936.html",
+  "title": "Apple iOS および Apple TV のカーネルにおける ASLR 保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001936.html",
+  "description": "Apple iOS および Apple TV のカーネル内の ARM プリフェッチアボートハンドラは、アボートコンテキストから呼び出されたことを確認しないため、ASLR 保護メカニズムを回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001936",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU98342319/",
+      "source": "JVN",
+      "id": "JVNVU#98342319"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0978",
+      "source": "CVE",
+      "id": "CVE-2013-0978"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0978",
+      "source": "NVD",
+      "id": "CVE-2013-0978"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:apple_tv",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple TV"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2013-03-22T12:28+09:00",
+  "issued": "2013-03-22T12:28+09:00",
+  "modified": "2013-03-22T12:28+09:00"
+}

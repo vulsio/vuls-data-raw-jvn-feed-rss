@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004674.html",
+  "title": "389 Directory Server における ACL の制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004674.html",
+  "description": "389 Directory Server は、DN のエントリが modrdn 操作によって移動される際、ACL が適切に更新されないため、ACL の制限を回避され、DN エントリにアクセスされる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004674",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4450",
+      "source": "CVE",
+      "id": "CVE-2012-4450"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4450",
+      "source": "NVD",
+      "id": "CVE-2012-4450"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fedoraproject:389_directory_server",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "389 Directory Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-10-02T16:19+09:00",
+  "issued": "2012-10-02T16:19+09:00",
+  "modified": "2012-10-02T16:19+09:00"
+}

@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000222.html",
+  "title": "IBM Lotus Domino の Webmail によりユーザ情報が漏えいする脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000222.html",
+  "description": "IBM Lotus Domino の WebMail には、「全フィールドに HTML を生成する (Generate HTML for all fields)」が有効な場合、Public Address Book (names.nsf) のページにおいて他のユーザに関するパスワードハッシュ値などの特定のフィールド内に格納される重要な情報が、HTML ソース内に隠しフィールドとして記述されてしまう脆弱性が存在します。\r\n\r\nなお、本脆弱性は CVE-2005-2428 とは異なる問題で、defaultview ビューを使用することで悪用されます。",
+  "identifier": "JVNDB-2007-000222",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0977",
+      "source": "CVE",
+      "id": "CVE-2007-0977"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-0977",
+      "source": "NVD",
+      "id": "CVE-2007-0977"
+    },
+    {
+      "text": "http://secunia.com/advisories/16231/",
+      "source": "SECUNIA",
+      "id": "SA16231"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2005/Jul/1014584.html",
+      "source": "SECTRACK",
+      "id": "1014584"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:lotus_domino",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Domino (旧 IBM Lotus Domino)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-26T16:13+09:00",
+  "issued": "2007-04-26T16:13+09:00",
+  "modified": "2007-04-26T16:13+09:00"
+}

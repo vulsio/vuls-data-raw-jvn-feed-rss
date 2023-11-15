@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001507.html",
+  "title": "Google Chrome の Developer Tools サブシステムにおけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001507.html",
+  "description": "Google Chrome の Developer Tools (別名 DevTools) サブシステムは、URL スキームを検証せずに、remoteBase パラメータが chrome-devtools-frontend.appspot.com URL に関連付けられていることを確認するため、アクセス制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-001507",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1627",
+      "source": "CVE",
+      "id": "CVE-2016-1627"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1627",
+      "source": "NVD",
+      "id": "CVE-2016-1627"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:opensuse_project:opensuse",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "openSUSE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2016-11-16T16:32+09:00",
+  "issued": "2016-02-26T13:55+09:00",
+  "modified": "2016-11-16T16:32+09:00"
+}

@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005122.html",
+  "title": "Johnson & Johnson Animas OneTouch Ping デバイスにおける認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005122.html",
+  "description": "Johnson & Johnson Animas OneTouch Ping デバイスには、認証を回避される脆弱性が存在します。\r\n\r\nなお、JVNVU#95089754 では、CWE-294 として公開されています。\r\nhttps://cwe.mitre.org/data/definitions/294.html",
+  "identifier": "JVNDB-2016-005122",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU95089754/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95089754"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5086",
+      "source": "CVE",
+      "id": "CVE-2016-5086"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5086",
+      "source": "NVD",
+      "id": "CVE-2016-5086"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/884840",
+      "source": "CERT-VN",
+      "id": "VU#884840"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSMA-16-279-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSMA-16-279-01"
+    },
+    {
+      "text": "https://community.rapid7.com/community/infosec/blog/2016/10/04/r7-2016-07-multiple-vulnerabilities-in-animas-onetouch-ping-insulin-pump",
+      "source": "関連文書",
+      "id": "R7-2016-07: Multiple Vulnerabilities in Animas OneTouch Ping Insulin Pump"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:animas:onetouch_ping",
+      "version": "2.2",
+      "vendor": "Animas Corporation",
+      "product": "OneTouch Ping"
+    },
+    {
+      "text": "cpe:/o:animas:onetouch_ping_firmware",
+      "version": "2.2",
+      "vendor": "Animas Corporation",
+      "product": "OneTouch Ping ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-10-11T16:45+09:00",
+  "issued": "2016-10-11T16:45+09:00",
+  "modified": "2016-10-11T16:45+09:00"
+}

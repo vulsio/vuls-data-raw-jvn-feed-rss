@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002141.html",
+  "title": "Mozilla Firefox Mobile およびその他の製品で使用される FreeType におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002141.html",
+  "description": "Mozilla Firefox Mobile およびその他の製品で使用される FreeType には、サービス運用妨害 (不正なヒープ読み込み操作およびメモリ破損) 状態となる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002141",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU624491/index.html",
+      "source": "JVN",
+      "id": "JVNVU#624491"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1127",
+      "source": "CVE",
+      "id": "CVE-2012-1127"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1127",
+      "source": "NVD",
+      "id": "CVE-2012-1127"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freetype:freetype",
+      "version": "2.2",
+      "vendor": "FreeType Project",
+      "product": "FreeType"
+    },
+    {
+      "text": "cpe:/a:mozilla:firefox_mobile",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox Mobile"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-10-03T18:06+09:00",
+  "issued": "2012-04-26T16:22+09:00",
+  "modified": "2012-10-03T18:06+09:00"
+}

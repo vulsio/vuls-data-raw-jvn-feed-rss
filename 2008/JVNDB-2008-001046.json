@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001046.html",
+  "title": "MySQL で使用される yaSSL におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001046.html",
+  "description": "MySQL で使用されている yaSSL には、Hello パケットの取り扱いに不備があり、hash.cpp の HASHwithTransform::Update() 関数で、バッファ領域を超えてメモリ領域を参照するため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001046",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0227",
+      "source": "CVE",
+      "id": "CVE-2008-0227"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-0227",
+      "source": "NVD",
+      "id": "CVE-2008-0227"
+    },
+    {
+      "text": "http://secunia.com/advisories/28324/",
+      "source": "SECUNIA",
+      "id": "SA28324"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/27140",
+      "source": "BID",
+      "id": "27140"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/0560",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-0560"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mysql:mysql",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/a:mysql:mysql_community_server",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL Community Server"
+    },
+    {
+      "text": "cpe:/a:mysql:mysql_enterprise_server",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL Enterprise Server"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-02-19T11:37+09:00",
+  "issued": "2008-02-05T16:02+09:00",
+  "modified": "2010-02-19T11:37+09:00"
+}

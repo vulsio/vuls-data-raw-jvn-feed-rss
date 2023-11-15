@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000209.html",
+  "title": "Microsoft ISA Server におけるキャッシュ汚染の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000209.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft ISA Server 2000 では、着信方向の Web 要求リスナに対して基本認証を選択することが可能であり、この認証用情報は、比較的解読が容易な Base64 方式でエンコードされています。\r\n\r\nMicrosoft ISA Server 2000 SP2 以前には、以下の条件をすべて満たしている場合、Web 公開ルールにおいて \"SSL 要求\" が設定されていても、認証用情報を外部 HTTP 接続経由で送信してしまうセキュリティ上の不備が存在します。\r\n\r\n・着信方向の Web 要求リスナに対して基本認証が設定されている\r\n・Web 公開ルールが、このルールに対して HTTPS トラフィックのみを許可するために、[SSL 要求] に設定されている\r\n・Web 公開ルールがユーザ認証に設定されている\r\n・最初のクライアント要求が HTTP を使用して送信され、http://server.domain.tld の形式になっている\r\n\r\nこの問題を利用するリモートの攻撃者により、ユーザの認証用情報が奪取される可能性があります。\r\n\r\n尚、着信方向の Web 要求リスナに対して基本認証を設定していない場合には、この問題の影響を受けません。\r\n\r\nまた、着信方向の Web 要求リスナに対して複数の認証方法を有効に設定されており、クライアント認証が ISA Server を実行しているコンピュータ上で NTLM、あるいはダイジェスト認証を使用して行われる場合、こらの認証用情報も HTTP 経由で送信されますが、NTLM 認証やダイジェスト認証の暗号解除は困難であるため、この問題の影響を受けません。",
+  "identifier": "JVNDB-2003-000209",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1215",
+      "source": "CVE",
+      "id": "CVE-2005-1215"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1215",
+      "source": "NVD",
+      "id": "CVE-2005-1215"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13955",
+      "source": "BID",
+      "id": "13955"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10481",
+      "source": "BID",
+      "id": "10481"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2005/Jul/1014356.html",
+      "source": "SECTRACK",
+      "id": "1014356"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:isa_server",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Internet Security and Acceleration Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

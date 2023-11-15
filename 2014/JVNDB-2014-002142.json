@@ -1,0 +1,85 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002142.html",
+  "title": "cURL および libcurl における任意の SSL サーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002142.html",
+  "description": "cURL および libcurl は、OpenSSL、axTLS、QSOSSL または TLS の GSKit ライブラリを使用する場合、X.509 証明書のサブジェクトの Common Name (CN) フィールド内のワイルドカードの IP アドレスを認識するため、任意の SSL サーバになりすまされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002142",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0139",
+      "source": "CVE",
+      "id": "CVE-2014-0139"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0139",
+      "source": "NVD",
+      "id": "CVE-2014-0139"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2015-0165.html",
+      "source": "関連文書",
+      "id": "MGASA-2015-0165"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:haxx:curl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "cURL"
+    },
+    {
+      "text": "cpe:/a:haxx:libcurl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "libcurl"
+    },
+    {
+      "text": "cpe:/a:ibm:advanced_settings_utility",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Advanced Settings Utility"
+    },
+    {
+      "text": "cpe:/a:ibm:dynamic_system_analysis",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Dynamic System Analysis"
+    },
+    {
+      "text": "cpe:/a:ibm:toolscenter_suite",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM ToolsCenter Suite"
+    },
+    {
+      "text": "cpe:/a:ibm:updatexpress_system_packs",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM UpdateXpress System Packs"
+    },
+    {
+      "text": "cpe:/a:oracle:hyperion",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Hyperion"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2015-07-29T17:40+09:00",
+  "issued": "2014-04-21T14:09+09:00",
+  "modified": "2015-07-29T17:40+09:00"
+}

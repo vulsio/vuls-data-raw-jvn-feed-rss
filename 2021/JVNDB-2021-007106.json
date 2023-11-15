@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007106.html",
+  "title": "TwinCAT OPC UA Server および IPC Diagnostics UA Server における入力確認に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007106.html",
+  "description": "TwinCAT OPC UA Server および IPC Diagnostics UA Server には、入力確認に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-007106",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2020-12526",
+      "source": "CVE",
+      "id": "CVE-2020-12526"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-12526",
+      "source": "NVD",
+      "id": "CVE-2020-12526"
+    },
+    {
+      "text": "https://cert.vde.com/en/advisories/VDE-2020-051/",
+      "source": "関連文書",
+      "id": "VDE-2020-051 (Beckhoff: DoS-Vulnerability for TwinCAT OPC UA Server and IPC Diagnostics UA Server (UPDATE A))"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:beckhoff:ipc_diagnostics_ua_server",
+      "version": "2.2",
+      "vendor": "Beckhoff Automation",
+      "product": "IPC Diagnostics UA Server"
+    },
+    {
+      "text": "cpe:/a:beckhoff:tf6100",
+      "version": "2.2",
+      "vendor": "Beckhoff Automation",
+      "product": "TF6100"
+    },
+    {
+      "text": "cpe:/a:beckhoff:twincat_opc_ua_server",
+      "version": "2.2",
+      "vendor": "Beckhoff Automation",
+      "product": "TwinCAT OPC UA Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+    }
+  ],
+  "date": "2022-02-03T12:30+09:00",
+  "issued": "2022-02-03T12:30+09:00",
+  "modified": "2022-02-03T12:30+09:00"
+}

@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000250.html",
+  "title": "GDM の XDMCP におけるセグメンテーションフォルトの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000250.html",
+  "description": "GNOME Display Manager for X (GDM) に実装されている X Display Manager Control Protocol (XDMCP) には、認証データの \"name\" 鍵の妥当性を適切に検査しないため、サービス運用妨害 (DoS) の脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000250",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0549",
+      "source": "CVE",
+      "id": "CVE-2003-0549"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0549",
+      "source": "NVD",
+      "id": "CVE-2003-0549"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8470",
+      "source": "BID",
+      "id": "8470"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/12972",
+      "source": "XF",
+      "id": "12972"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/12973",
+      "source": "XF",
+      "id": "12973"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnome:gnome_display_manager",
+      "version": "2.2",
+      "vendor": "GNOME Project",
+      "product": "GNOME Display Manager"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-07-17T12:41+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-07-17T12:41+09:00"
+}

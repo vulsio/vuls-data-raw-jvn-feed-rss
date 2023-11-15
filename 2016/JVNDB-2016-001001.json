@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001001.html",
+  "title": "Comcast XFINITY Home Security の無線接続が切断されたときの処理に問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001001.html",
+  "description": "Comcast XFINITY Home Security システムは、センサとベースステーション間の無線接続が切断されたときの処理に問題があり、警報発生が意図的に妨害される可能性があります。\r\n\r\nCWE-636: Not Failing Securely ('Failing Open')\r\nComcast XFINITY Home Security では、システムを構成するセンサやベースステーション間で、周波数 2.4GHz、ZigBee プロトコルによる通信を行っています。Comcast XFINITY Home Security は、無線通信が途切れたときにアラートが発報されず、さらに通信が回復するまでに数分から数時間かかることがあります。通信が途切れている間もアラートは発生しません。したがって、無線接続を妨害することで、Home Security からのアラート発生を抑止することが可能です。\r\n\r\nCWE-636: Not Failing Securely ('Failing Open')\r\nhttps://cwe.mitre.org/data/definitions/636.html\r\n\r\nより詳しい情報は、Rapid7 のブログ記事を参照してください。\r\n\r\nRapid7 のブログ記事\r\nhttps://community.rapid7.com/community/infosec/blog/2016/01/05/r7-2015-23-comcast-xfinity-home-security-system-insecure-fail-open\r\n\r\nなお、National Vulnerability Database (NVD) CVE-2016-2398 では、CWE-254 として公開されています。\r\n\r\nCWE-254: Security Features (セキュリティ機能)\r\nhttp://cwe.mitre.org/data/definitions/254.html",
+  "identifier": "JVNDB-2016-001001",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94556181/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94556181"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2398",
+      "source": "CVE",
+      "id": "CVE-2016-2398"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2398",
+      "source": "NVD",
+      "id": "CVE-2016-2398"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/418072",
+      "source": "CERT-VN",
+      "id": "VU#418072"
+    },
+    {
+      "text": "https://community.rapid7.com/community/infosec/blog/2016/01/05/r7-2015-23-comcast-xfinity-home-security-system-insecure-fail-open",
+      "source": "関連文書",
+      "id": "R7-2015-23: Comcast XFINITY Home Security System Insecure Fail Open"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:comcast:xfinity_home_security_system",
+      "version": "2.2",
+      "vendor": "Comcast",
+      "product": "XFINITY Home Security"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:A/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2016-03-16T14:31+09:00",
+  "issued": "2016-01-07T11:43+09:00",
+  "modified": "2016-03-16T14:31+09:00"
+}

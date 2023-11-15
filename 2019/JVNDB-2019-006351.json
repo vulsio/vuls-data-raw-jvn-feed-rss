@@ -1,0 +1,40 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-006351.html",
+  "title": "LLVM の Arm バックエンドにおいてスタック保護機構が機能しなくなる問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-006351.html",
+  "description": "LLVM の Arm バックエンドにおいて、スタック保護機構が正常に機能せずバッファオーバーフローが検知できなくなる問題があります。\r\n\r\nLLVM の Arm バックエンドにおけるスタック保護機構では、関数のスタックフレーム内においてローカル変数と戻り先アドレスの間にチェック用の cookie 値（カナリア）がスタックプロテクタとして配置されます。関数の実行終了時にこの値が上書きされていないかチェックすることでスタックの改ざんを検知します。\r\nスタックプロテクタが置かれるスタック上の位置はあらかじめ決められていますが、スタック上にローカル変数を配置する処理のなかで新しいスタックプロテクタを設けてしまう可能性があることがわかりました。この場合、スタック保護機構は正常に機能せず、スタックの改ざんを検知することができません。また、スタックプロテクタを指すポインタ値がスタック上に置かれる可能性があることも分かりました。この場合も、スタックの改ざんを検知できない可能性があります。",
+  "identifier": "JVNDB-2019-006351",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU96954584/",
+      "source": "JVN",
+      "id": "JVNVU#96954584"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/129209/",
+      "source": "CERT-VN",
+      "id": "VU#129209"
+    },
+    {
+      "text": "http://www.aosabook.org/en/llvm.html",
+      "source": "関連文書",
+      "id": "The Architecture of Open Source Applications"
+    },
+    {
+      "text": "https://developer.arm.com/tools-and-software/embedded/arm-compiler",
+      "source": "関連文書",
+      "id": "Arm Compiler"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:llvm:llvm",
+      "version": "2.2",
+      "vendor": "LLVM",
+      "product": "LLVM"
+    }
+  ],
+  "date": "2019-07-18T11:22+09:00",
+  "issued": "2019-07-18T11:22+09:00",
+  "modified": "2019-07-18T11:22+09:00"
+}

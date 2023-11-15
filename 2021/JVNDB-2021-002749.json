@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002749.html",
+  "title": "Open Design Alliance Drawings SDK における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002749.html",
+  "description": "Open Design Alliance Drawings SDK には、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-002749",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92291213/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92291213"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-25178",
+      "source": "CVE",
+      "id": "CVE-2021-25178"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-25178",
+      "source": "NVD",
+      "id": "CVE-2021-25178"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-047-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-047-01"
+    },
+    {
+      "text": "https://www.zerodayinitiative.com/advisories/ZDI-21-220/",
+      "source": "関連文書",
+      "id": "ZDI-21-220 (Siemens JT2Go DXF and DWG File Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability)"
+    },
+    {
+      "text": "https://www.zerodayinitiative.com/advisories/ZDI-21-240/",
+      "source": "関連文書",
+      "id": "ZDI-21-240 (Siemens JT2Go DWG File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability)"
+    },
+    {
+      "text": "https://www.zerodayinitiative.com/advisories/ZDI-21-243/",
+      "source": "関連文書",
+      "id": "ZDI-21-243 (Siemens JT2Go DWG File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:opendesign:drawings_sdk",
+      "version": "2.2",
+      "vendor": "Open Design Alliance",
+      "product": "Drawings SDK"
+    },
+    {
+      "text": "cpe:/a:siemens:jt2go",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "JT2Go"
+    },
+    {
+      "text": "cpe:/a:siemens:teamcenter_visualization",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "Teamcenter Visualization"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-09-29T17:27+09:00",
+  "issued": "2021-09-29T17:27+09:00",
+  "modified": "2021-09-29T17:27+09:00"
+}

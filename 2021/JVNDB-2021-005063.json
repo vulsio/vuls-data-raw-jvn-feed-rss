@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005063.html",
+  "title": "OpenEXR における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005063.html",
+  "description": "OpenEXR には、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2021-005063",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3475",
+      "source": "CVE",
+      "id": "CVE-2021-3475"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3475",
+      "source": "NVD",
+      "id": "CVE-2021-3475"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1939144",
+      "source": "関連文書",
+      "id": "Bug 1939144 (CVE-2021-3475) - CVE-2021-3475 OpenEXR: Integer-overflow in Imf_2_5::calculateNumTiles"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/190.html",
+      "id": "CWE-190",
+      "title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openexr:openexr",
+      "version": "2.2",
+      "vendor": "OpenEXR",
+      "product": "OpenEXR"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+    }
+  ],
+  "date": "2021-12-07T11:06+09:00",
+  "issued": "2021-12-07T11:06+09:00",
+  "modified": "2021-12-07T11:06+09:00"
+}

@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002257.html",
+  "title": "Ruby の openssl 拡張機能における Ruby スクリプトのコンテキスト中の署名を偽装される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002257.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nRuby の openssl 拡張機能は、ファイルが再オープンされた後、プロセスメモリの状態を適切に維持しないため、ファイルシステム操作の特定のシーケンスを実行した後、署名の検証を行う Ruby スクリプトのコンテキスト中の署名を偽装される脆弱性が存在します。\r\n\r\nなお、この問題は、Ruby OpenSSL チームおよび第三者から、脆弱性であることに異議を申し立てられています。Ruby OpenSSL チームおよび第三者は、オリジナルのデモ PoC (Proof-of-concept) がエラー、および問題の実証に関連しているとは見えない冗長または不必要に複雑なコードを含んでいると主張しています。\r\n2014 年 5 月 2 日時点において、CVE 管理元では、PoC を公開した研究者による本件へのコメント等は確認できていません。",
+  "identifier": "JVNDB-2014-002257",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2734",
+      "source": "CVE",
+      "id": "CVE-2014-2734"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2734",
+      "source": "NVD",
+      "id": "CVE-2014-2734"
+    },
+    {
+      "text": "https://gist.github.com/10446549",
+      "source": "関連文書",
+      "id": "gdisneyleugers / castealer.rb"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2014/Apr/231",
+      "source": "関連文書",
+      "id": "Ruby OpenSSL private key spoofing ~ CVE-2014-2734 with PoC"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ruby-lang:ruby",
+      "version": "2.2",
+      "vendor": "Ruby-lang.org",
+      "product": "Ruby"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2014-05-26T18:09+09:00",
+  "issued": "2014-04-28T16:36+09:00",
+  "modified": "2014-05-26T18:09+09:00"
+}

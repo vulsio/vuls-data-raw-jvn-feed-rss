@@ -1,0 +1,139 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001449.html",
+  "title": "X.Org の X server の AllocateGlyph 関数における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001449.html",
+  "description": "X.Org の X server における Render 拡張の AllocateGlyph 関数には、ヒーブバッファのサイズ計算処理に不備があるため、任意のコードを実行される整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001449",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2360",
+      "source": "CVE",
+      "id": "CVE-2008-2360"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2360",
+      "source": "NVD",
+      "id": "CVE-2008-2360"
+    },
+    {
+      "text": "http://secunia.com/advisories/30627",
+      "source": "SECUNIA",
+      "id": "SA30627"
+    },
+    {
+      "text": "http://secunia.com/advisories/30628",
+      "source": "SECUNIA",
+      "id": "SA30628"
+    },
+    {
+      "text": "http://secunia.com/advisories/30629",
+      "source": "SECUNIA",
+      "id": "SA30629"
+    },
+    {
+      "text": "http://secunia.com/advisories/30630",
+      "source": "SECUNIA",
+      "id": "SA30630"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/29668",
+      "source": "BID",
+      "id": "29668"
+    },
+    {
+      "text": "http://securitytracker.com/id?1020243",
+      "source": "SECTRACK",
+      "id": "1020243"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/1833",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-1833"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:x.org:x.org_x11",
+      "version": "2.2",
+      "vendor": "X.Org Foundation",
+      "product": "X.Org X11"
+    },
+    {
+      "text": "cpe:/a:xfree86_project:xfree86",
+      "version": "2.2",
+      "vendor": "XFree86 Project",
+      "product": "XFree86"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2009-03-11T14:14+09:00",
+  "issued": "2008-07-07T13:49+09:00",
+  "modified": "2009-03-11T14:14+09:00"
+}

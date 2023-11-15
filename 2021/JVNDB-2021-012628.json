@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-012628.html",
+  "title": "DMIS Mobile Plug-In および SAP S/4HANA における SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-012628.html",
+  "description": "DMIS Mobile Plug-In および SAP S/4HANA には、 SQL インジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2021-012628",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-33701",
+      "source": "CVE",
+      "id": "CVE-2021-33701"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-33701",
+      "source": "NVD",
+      "id": "CVE-2021-33701"
+    },
+    {
+      "text": "https://seclists.org/fulldisclosure/2021/Dec/35",
+      "source": "関連文書",
+      "id": "SEC Consult SA-20211214-0 :: Remote ADBC SQL Injection in SAP Netweaver IUUC_RECON_RC_COUNT_TABLE_BIG"
+    },
+    {
+      "text": "https://seclists.org/fulldisclosure/2021/Dec/36",
+      "source": "関連文書",
+      "id": "SEC Consult SA-20211214-1 :: Remote ABAP Code Injection in SAP Netweaver IUUC_RECON_RC_COUNT_TABLE_BIG"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sap:dmis",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "DMIS"
+    },
+    {
+      "text": "cpe:/a:sap:s4core",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "S4CORE"
+    },
+    {
+      "text": "cpe:/a:sap:sapscore",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "SAPSCORE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.1",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-09-05T11:04+09:00",
+  "issued": "2022-09-05T11:04+09:00",
+  "modified": "2022-09-05T11:04+09:00"
+}

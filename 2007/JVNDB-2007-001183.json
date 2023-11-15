@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001183.html",
+  "title": "rsync における隠しファイルを読込/書込される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001183.html",
+  "description": "rsync には、書き込み可能な rsync デーモンが起動している場合に、symlink、partial-dir、backup-dir、dest オプションの扱いに不備があるため、exclude、exclude_from、filter の回避、および隠しファイルを読まれるまたは書き込まれる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001183",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6200",
+      "source": "CVE",
+      "id": "CVE-2007-6200"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-6200",
+      "source": "NVD",
+      "id": "CVE-2007-6200"
+    },
+    {
+      "text": "http://secunia.com/advisories/27863",
+      "source": "SECUNIA",
+      "id": "27863"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26639",
+      "source": "BID",
+      "id": "26639"
+    },
+    {
+      "text": "http://securitytracker.com/id?1019012",
+      "source": "SECTRACK",
+      "id": "1019012"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/4057",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-4057"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:rsync:rsync",
+      "version": "2.2",
+      "vendor": "rsync.samba.org",
+      "product": "rsync"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-08-01T10:54+09:00",
+  "issued": "2008-09-03T15:45+09:00",
+  "modified": "2011-08-01T10:54+09:00"
+}

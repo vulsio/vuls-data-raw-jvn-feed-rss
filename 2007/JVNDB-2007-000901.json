@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000901.html",
+  "title": "Linux Kernel の hugetlb_vmtruncate_list() および hugetlb_vmtruncate() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000901.html",
+  "description": "Linux Kernel の fs/hugetlbfs/inode.c には、hugetlb_vmtruncate_list() 関数および hugetlb_vmtruncate() 関数において、prio_tree 計算の際に PAGE_SIZE ユニットではなく、HPAGE_SIZE ユニットを使用することで、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000901",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4133",
+      "source": "CVE",
+      "id": "CVE-2007-4133"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4133",
+      "source": "NVD",
+      "id": "CVE-2007-4133"
+    },
+    {
+      "text": "http://secunia.com/advisories/27322",
+      "source": "SECUNIA",
+      "id": "SA27322"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25904",
+      "source": "BID",
+      "id": "25904"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/36925",
+      "source": "XF",
+      "id": "36925"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-12-19T14:17+09:00",
+  "issued": "2007-11-06T15:54+09:00",
+  "modified": "2007-12-19T14:17+09:00"
+}

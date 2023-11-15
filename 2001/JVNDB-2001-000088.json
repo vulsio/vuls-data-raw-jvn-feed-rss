@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000088.html",
+  "title": "Microsoft Windows の Telnet ドメインユーザのアカウントが列挙される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000088.html",
+  "description": "Microsoft Windows には、Telnet ドメイン認証の操作の実装に不備があり、特殊な文字列が追加された正当なユーザアカウントを使用すると、アカウントが所属しているドメインへログインするときに、ドメイン認証を要求しなくなり、Telnet サービスは認証の替わりにサーバドメインと、ユーザアカウントに信頼されているすべてのドメインを列挙する脆弱性が存在します。",
+  "identifier": "JVNDB-2001-000088",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0347",
+      "source": "CVE",
+      "id": "CVE-2001-0347"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2001-0347",
+      "source": "NVD",
+      "id": "CVE-2001-0347"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/2847",
+      "source": "BID",
+      "id": "2847"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

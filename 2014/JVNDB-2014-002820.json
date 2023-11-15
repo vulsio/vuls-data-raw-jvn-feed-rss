@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002820.html",
+  "title": "Google Chrome の clipboard の実装におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002820.html",
+  "description": "Google Chrome の clipboard の実装には、content/renderer/renderer_clipboard_client.cc および content/renderer/webclipboard_impl.cc に関する処理に不備があるため、バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002820",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3156",
+      "source": "CVE",
+      "id": "CVE-2014-3156"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3156",
+      "source": "NVD",
+      "id": "CVE-2014-3156"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-06-12T15:40+09:00",
+  "issued": "2014-06-12T15:40+09:00",
+  "modified": "2014-06-12T15:40+09:00"
+}

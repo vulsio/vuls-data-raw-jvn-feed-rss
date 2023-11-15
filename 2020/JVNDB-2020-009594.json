@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009594.html",
+  "title": "複数の Sensormatic Electronics 製品に不適切な認可処理の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009594.html",
+  "description": "Sensormatic Electronics 社が提供する American Dynamics victor Web Client は、American Dynamics 社のビデオ管理システムである victor にアクセスするためのソフトウェアです。また、Software House C CURE Web Client は、Software House 社の入退室管理システム C CURE を Web ブラウザー経由で監視、管理するためのソフトウェアです。\r\nAmerican Dynamics victor Web Client および Software House C CURE Web Client には、不適切な認可処理の脆弱性 (CWE-285) が存在します。",
+  "identifier": "JVNDB-2020-009594",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU94180712",
+      "source": "JVN",
+      "id": "JVNVU#94180712"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-9049",
+      "source": "CVE",
+      "id": "CVE-2020-9049"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-20-324-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-324-01"
+    },
+    {
+      "text": "https://www.americandynamics.net/products/victor-Web-LT.aspx",
+      "source": "関連文書",
+      "id": "victor Web Client"
+    },
+    {
+      "text": "https://www.swhouse.com/products/ccure-web.aspx",
+      "source": "関連文書",
+      "id": "C CURE Web"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/285.html",
+      "id": "CWE-285",
+      "title": "不適切な認可(CWE-285)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:johnsoncontrols:american_dynamics_victor_web_client",
+      "version": "2.2",
+      "vendor": "ジョンソンコントロールズ",
+      "product": "American Dynamics victor Web Client"
+    },
+    {
+      "text": "cpe:/a:johnsoncontrols:software_house_C_CURE",
+      "version": "2.2",
+      "vendor": "ジョンソンコントロールズ",
+      "product": "Software House C CURE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L"
+    }
+  ],
+  "date": "2020-11-19T17:56+09:00",
+  "issued": "2020-11-19T17:56+09:00",
+  "modified": "2020-11-19T17:56+09:00"
+}

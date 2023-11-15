@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003077.html",
+  "title": "systemd の systemd-logind login manager における任意のファイルを削除される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003077.html",
+  "description": "systemd の systemd-logind login manager の util.c 内の rm_rf_children 関数は、ログアウトの際に、任意のファイルを削除される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-003077",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1174",
+      "source": "CVE",
+      "id": "CVE-2012-1174"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1174",
+      "source": "NVD",
+      "id": "CVE-2012-1174"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:systemd_project:systemd",
+      "version": "2.2",
+      "vendor": "systemd project",
+      "product": "systemd"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-05T18:29+09:00",
+  "issued": "2012-07-17T16:20+09:00",
+  "modified": "2012-09-05T18:29+09:00"
+}

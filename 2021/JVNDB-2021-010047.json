@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-010047.html",
+  "title": "Unicorn Engine における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-010047.html",
+  "description": "Unicorn Engine には、境界外書き込みに関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2021-010047",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-36979",
+      "source": "CVE",
+      "id": "CVE-2021-36979"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-36979",
+      "source": "NVD",
+      "id": "CVE-2021-36979"
+    },
+    {
+      "text": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30391",
+      "source": "関連文書",
+      "id": "Issue 30391: unicorn:fuzz_emu_arm_armbe: Crash in tb_flush_armeb"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:unicorn-engine:unicorn_engine",
+      "version": "2.2",
+      "vendor": "Unicorn Engine",
+      "product": "Unicorn Engine"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2022-06-14T17:14+09:00",
+  "issued": "2022-06-14T17:14+09:00",
+  "modified": "2022-06-14T17:14+09:00"
+}

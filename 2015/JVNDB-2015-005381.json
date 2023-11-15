@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005381.html",
+  "title": "Voice over LTE (VoLTE) の実装に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005381.html",
+  "description": "モバイル端末向け通信網 Long Term Evolution (LTE) は、近年、世界中に普及しています。これら LTE 通信網はすべて IP 化され、以前のような回線交換方式ではなくパケット交換方式で通信を行います。この方式の変更により、過去には不可能であった攻撃が可能になります。LTE 通信網とモバイルアプリケーションの実装には、現時点で、プライバシーの侵害や不正な請求、なりすましに繋がる複数の問題を抱えているものが存在します。\r\n\r\n現在の LTE 通信網は、前世代の回線交換方式ではなく、パケット交換方式で通信を行います。パケット交換と IP プロトコル、特に Session Initiation Protocol (SIP) を使用していることから、前世代に対しては不可能だった新たな種類の攻撃手法が可能になります。これらの攻撃手法はセキュリティの世界ではよく知られているものです。たとえば、Voice over IP (VoIP) に対する過去の攻撃などを参照してください。\r\n\r\nいくつかの LTE 通信網に対してセキュリティ研究者が調査を行った結果、次に挙げるような脆弱性が発見されています。\r\nLTE 通信網の実装は通信キャリアごとに異なっており、これらすべての脆弱性がひとつの LTE 通信網に存在するというわけではないことに注意してください。\r\n\r\n重要な情報への不適切なアクセス権の割り当て (CW-732)\r\nAndroid OS のパーミッションモデルは、現状の LTE 通信網の利用形態に合っていません。CALL_PHONE パーミッションがなくても、INTERNET パーミッションだけあれば直接 SIP/IP パケットを送信することで発呼することができ、また、ユーザへの通知は行われません。このような発呼が連続的に行われることで、過剰な課金請求やサービス運用妨害 (DoS) につながる可能性があります。\r\n\r\nCWE-732: Incorrect Permission Assignment for Critical Resource\r\nhttp://cwe.mitre.org/data/definitions/732.html\r\n\r\nApple は、iOS ではこの問題の影響を受けないと報告しています。\r\n\r\n不適切なアクセス制御 (CWE-284)\r\n一部のネットワークでは、2つの携帯電話間 (ピアツーピア) で直接セッションを確立し、SIP サーバの管理外の通信を行うことが可能です。これらの通信はプロバイダからの請求対象となりません。このような通信が、電話番号の詐称や、無料データ通信でのビデオ通話などに使用される可能性があります。\r\n\r\nCWE-284: Improper Access Control\r\nhttp://cwe.mitre.org/data/definitions/284.html\r\n\r\n認証不備 (CWE-287)\r\nいくつかの通信網では、SIP メッセージの認証が適切に行われていません。これにより、電話番号を詐称される可能性があります。\r\n\r\nCWE-287: Improper Authentication\r\nhttp://cwe.mitre.org/data/definitions/287.html\r\n\r\nセッションの固定化 (CWE-384)\r\n一部の通信網では、1ユーザあたりの音声通信が 1 セッションに制限されておらず、複数の SIP セッションを確立することが可能です。これにより、通信網に対するサービス運用妨害 (DoS) 攻撃が可能になります。また、攻撃者がピアツーピアの通信を確立することに使われる可能性があります。\r\n\r\nCWE-384: Session Fixation\r\nhttp://cwe.mitre.org/data/definitions/384.html\r\n\r\n各プロバイダの通信網や LTE の実装は、これらの問題の一つまたは複数の影響を受ける可能性があります。\r\n\r\nさらに詳しい情報は、ACM CCS 2015 で発表された Kim 氏らによる論文 \"Breaking and Fixing VoLTE: Exploiting Hidden Data Channels and Mis-Implementations\" を参照してください。\r\n\r\nACM CCS 2015\r\nhttp://www.sigsac.org/ccs/CCS2015/pro_paper.html\r\n\r\nBreaking and Fixing VoLTE: Exploiting Hidden Data Channels and Mis-Implementations\r\nhttp://dl.acm.org/citation.cfm?id=2813718",
+  "identifier": "JVNDB-2015-005381",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU93463833/",
+      "source": "JVN",
+      "id": "JVNVU#93463833"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/943167",
+      "source": "CERT-VN",
+      "id": "VU#943167"
+    },
+    {
+      "text": "http://dl.acm.org/citation.cfm?id=2813718",
+      "source": "関連文書",
+      "id": "The ACM Digital Library"
+    },
+    {
+      "text": "http://www.sigsac.org/ccs/CCS2015/pro_paper.html",
+      "source": "関連文書",
+      "id": "ACM/SIGSAC"
+    },
+    {
+      "text": "https://sslab.gtisc.gatech.edu/pages/publications.html#kim:volte",
+      "source": "関連文書",
+      "id": "Publications - Systems Software and Security Lab"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2015-10-21T14:04+09:00",
+  "issued": "2015-10-21T14:04+09:00",
+  "modified": "2015-10-21T14:04+09:00"
+}

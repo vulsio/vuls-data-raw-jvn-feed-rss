@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001394.html",
+  "title": "DELL SonicWALL GMS/Analyzer/UMA にクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001394.html",
+  "description": "DELL の提供する SonicWALL GMS/Analyzer/UMA には、クロスサイトスクリプティングの脆弱性が存在します。\r\n\r\nDELL の提供する SonicWALL GMS/Analyzer/UMA には /sgms/mainPage の node_id パラメータの処理に問題があり、クロスサイトスクリプティング (CWE-79) の脆弱性が存在します。\r\n\r\nCWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\r\nhttp://cwe.mitre.org/data/definitions/79.html",
+  "identifier": "JVNDB-2014-001394",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU95736801/",
+      "source": "JVN",
+      "id": "JVNVU#95736801"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0332",
+      "source": "CVE",
+      "id": "CVE-2014-0332"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0332",
+      "source": "NVD",
+      "id": "CVE-2014-0332"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/727318",
+      "source": "CERT-VN",
+      "id": "VU#727318"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:dell:sonicwall_analyzer",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Dell SonicWALL Analyzer"
+    },
+    {
+      "text": "cpe:/a:dell:sonicwall_global_management_system",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Dell SonicWALL Global Management System"
+    },
+    {
+      "text": "cpe:/a:dell:sonicwall_universal_management_appliance_e5000",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Dell SonicWALL Universal Management Appliance E5000 ソフトウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2014-02-20T13:55+09:00",
+  "issued": "2014-02-13T17:21+09:00",
+  "modified": "2014-02-20T13:55+09:00"
+}

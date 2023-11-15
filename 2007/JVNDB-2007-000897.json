@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000897.html",
+  "title": "Linux Kernel の lcd_write() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000897.html",
+  "description": "Linux Kernel の drivers/usb/misc/usblcd.c には、lcd_write() 関数において、呼び出し元から使用されるメモリの量の制限を適切に処理しないために、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000897",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3513",
+      "source": "CVE",
+      "id": "CVE-2007-3513"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-3513",
+      "source": "NVD",
+      "id": "CVE-2007-3513"
+    },
+    {
+      "text": "http://secunia.com/advisories/25895/",
+      "source": "SECUNIA",
+      "id": "SA25895"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/24734",
+      "source": "BID",
+      "id": "24734"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/2403",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-2403"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2007-12-19T14:13+09:00",
+  "issued": "2007-11-06T15:48+09:00",
+  "modified": "2007-12-19T14:13+09:00"
+}

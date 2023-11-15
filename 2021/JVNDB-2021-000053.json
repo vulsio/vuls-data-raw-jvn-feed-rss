@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000053.html",
+  "title": "日立仮想ファイルプラットフォーム製品における OS コマンドインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000053.html",
+  "description": "日立が提供する Hitachi Virtual File Platform には、HTTP リクエストのパラメータ処理に起因する OS コマンドインジェクション (CWE-78) の脆弱性が存在します。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社サイバーディフェンス研究所 松隈　大樹 氏",
+  "identifier": "JVNDB-2021-000053",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN21298724/index.html",
+      "source": "JVN",
+      "id": "JVN#21298724"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20740",
+      "source": "CVE",
+      "id": "CVE-2021-20740"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:hitachi:virtual_file_platform",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Virtual File Platform"
+    },
+    {
+      "text": "cpe:/h:nec:istorage",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "iStorage"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-06-18T14:06+09:00",
+  "issued": "2021-06-18T14:06+09:00",
+  "modified": "2021-06-18T14:06+09:00"
+}

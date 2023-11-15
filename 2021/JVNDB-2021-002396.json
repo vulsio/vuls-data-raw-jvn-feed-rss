@@ -1,0 +1,85 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002396.html",
+  "title": "AVEVA 製 PCS Portal における DLL 読み込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002396.html",
+  "description": "AVEVA 社が提供する PCS Portal は AVEVA 製品を実行しているノード間のデータ交換のための共通フレームワークです。PCS Portal には、制御されていない検索パス要素を介した DLL 読み込みに関する脆弱性（CWE-427、CVE-2021-38410）が存在します。",
+  "identifier": "JVNDB-2021-002396",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU98046090/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98046090"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38410",
+      "source": "CVE",
+      "id": "CVE-2021-38410"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-252-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-252-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/427.html",
+      "id": "CWE-427",
+      "title": "制御されていない検索パスの要素(CWE-427)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:aveva:aveva_batch_management",
+      "version": "2.2",
+      "vendor": "AVEVA",
+      "product": "AVEVA Batch Management"
+    },
+    {
+      "text": "cpe:/a:aveva:aveva_enterprise_data_management",
+      "version": "2.2",
+      "vendor": "AVEVA",
+      "product": "AVEVA Enterprise Data Management"
+    },
+    {
+      "text": "cpe:/a:aveva:aveva_manufacturing_execution_system",
+      "version": "2.2",
+      "vendor": "AVEVA",
+      "product": "AVEVA Manufacturing Execution System"
+    },
+    {
+      "text": "cpe:/a:aveva:aveva_mobile_operator",
+      "version": "2.2",
+      "vendor": "AVEVA",
+      "product": "AVEVA Mobile Operator"
+    },
+    {
+      "text": "cpe:/a:aveva:aveva_software_platform_common_services",
+      "version": "2.2",
+      "vendor": "AVEVA",
+      "product": "AVEVA Software Platform Common Services"
+    },
+    {
+      "text": "cpe:/a:aveva:aveva_system_platform",
+      "version": "2.2",
+      "vendor": "AVEVA",
+      "product": "AVEVA System Platform"
+    },
+    {
+      "text": "cpe:/a:aveva:aveva_work_tasks",
+      "version": "2.2",
+      "vendor": "AVEVA",
+      "product": "AVEVA Work Tasks"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-09-13T16:19+09:00",
+  "issued": "2021-09-13T16:19+09:00",
+  "modified": "2021-09-13T16:19+09:00"
+}

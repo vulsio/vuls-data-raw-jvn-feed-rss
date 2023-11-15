@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000166.html",
+  "title": "Sun Solaris の AnswerBook2 Documentation Server におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000166.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSun Solaris で提供されている AnswerBook2 Documentation Server は、大量の情報を管理する機能を提供するサーバソフトウェアです。\r\n\r\nSun Solaris 7/8 Documentation CD に同梱されている AnswerBook2 Documentation Server 1.4.4 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1.AnswerBook2 の検索機能において、検索結果を動的に生成するページに任意のスクリプトあるいは HTML を挿入することが可能な問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、Web ページや電子メールを介して意図的に作成した URL に標的ユーザを誘導することにより、動的に生成されるページを改ざんする、あるいは標的ユーザの権限で任意のコマンドを実行することが可能です。\r\n\r\n2.AnswerBook2 の管理用 Web インタフェース (GUI) で提供されている View Log File 機能に、クロスサイトスクリプティング攻撃が可能である問題が存在します。\r\n\r\nこの問題を利用するリモート/ローカルの攻撃者は、View Log File 機能を利用しているユーザの権限で任意のコマンドを実行することが可能です。\r\n\r\n尚、Sun Solaris 9/10 は AnswerBook2 をサポートしていないため、これらの問題の影響を受けません。",
+  "identifier": "JVNDB-2005-000166",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0549",
+      "source": "CVE",
+      "id": "CVE-2005-0549"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0549",
+      "source": "NVD",
+      "id": "CVE-2005-0549"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12746",
+      "source": "BID",
+      "id": "12746"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

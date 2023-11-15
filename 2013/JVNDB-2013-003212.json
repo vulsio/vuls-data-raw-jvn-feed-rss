@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003212.html",
+  "title": "GnuTLS の lib/gnutls_cipher.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003212.html",
+  "description": "GnuTLS の lib/gnutls_cipher.c 内の _gnutls_ciphertext2compressed 関数には、サービス運用妨害 (バッファオーバーリードおよびクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n本問題は、CVE-2013-0169 の修正が不完全だったことによる問題である可能性があります。",
+  "identifier": "JVNDB-2013-003212",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2116",
+      "source": "CVE",
+      "id": "CVE-2013-2116"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2116",
+      "source": "NVD",
+      "id": "CVE-2013-2116"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gnutls",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GnuTLS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-11-01T15:20+09:00",
+  "issued": "2013-07-05T11:03+09:00",
+  "modified": "2013-11-01T15:20+09:00"
+}

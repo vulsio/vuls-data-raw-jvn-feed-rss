@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000198.html",
+  "title": "PostgreSQL の cash_words() 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000198.html",
+  "description": "PostgreSQL の cash_words() 関数には、クエリの取り扱いに不備が存在し、cash_words() 関数に異常に大きいクエリが引き渡すことにより、バッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2002-000198",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1397",
+      "source": "CVE",
+      "id": "CVE-2002-1397"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1397",
+      "source": "NVD",
+      "id": "CVE-2002-1397"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/5497",
+      "source": "BID",
+      "id": "5497"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:postgresql:postgresql",
+      "version": "2.2",
+      "vendor": "PostgreSQL.org",
+      "product": "PostgreSQL"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_4",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ4"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQXTR"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

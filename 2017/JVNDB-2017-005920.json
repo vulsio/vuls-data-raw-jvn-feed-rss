@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005920.html",
+  "title": "yadm における SSH および PGP 鍵へのアクセスを許可される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005920.html",
+  "description": "yadm (yet another dotfile manager) には、新しいファイルおよびディレクトリの権限の設定における git コマンドの動作に関連した競合状態により、SSH および PGP 鍵へのアクセスを許可される脆弱性が存在します。",
+  "identifier": "JVNDB-2017-005920",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11353",
+      "source": "CVE",
+      "id": "CVE-2017-11353"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-11353",
+      "source": "NVD",
+      "id": "CVE-2017-11353"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:yadm_project:yadm",
+      "version": "2.2",
+      "vendor": "yadm project",
+      "product": "yadm"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2017-08-09T17:10+09:00",
+  "issued": "2017-08-09T17:10+09:00",
+  "modified": "2017-08-09T17:10+09:00"
+}

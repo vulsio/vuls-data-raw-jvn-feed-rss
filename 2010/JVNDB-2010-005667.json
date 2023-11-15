@@ -1,0 +1,138 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005667.html",
+  "title": "OpenSSL の s3_pkt.c の ssl3_read_bytes 関数におけるセッション間でデータを挿入される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005667.html",
+  "description": "OpenSSL の s3_pkt.c の ssl3_read_bytes 関数には、SSL_MODE_RELEASE_BUFFERS が有効な場合、競合状態により、セッション間でデータを挿入される、またはサービス運用妨害 (Use-after-free および構文解析エラー) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-005667",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5298",
+      "source": "CVE",
+      "id": "CVE-2010-5298"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-5298",
+      "source": "NVD",
+      "id": "CVE-2010-5298"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-14-198-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-14-198-03"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2014/04/13/1",
+      "source": "関連文書",
+      "id": "Use-after-free race condition,in OpenSSL's read buffer"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:api_management",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM API Management"
+    },
+    {
+      "text": "cpe:/a:ibm:infosphere_master_data_management",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM InfoSphere Master Data Management"
+    },
+    {
+      "text": "cpe:/a:ibm:initiate_master_data_service",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Initiate Master Data Service"
+    },
+    {
+      "text": "cpe:/a:ibm:java_sdk",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM SDK, Java"
+    },
+    {
+      "text": "cpe:/a:ibm:smartcloud_orchestrator",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM SmartCloud Orchestrator"
+    },
+    {
+      "text": "cpe:/a:ibm:smartcloud_provisioning",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM SmartCloud Provisioning"
+    },
+    {
+      "text": "cpe:/a:ibm:tivoli_management_framework",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Tivoli Management Framework"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:oracle:virtualization_secure_global_desktop",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Virtualization"
+    },
+    {
+      "text": "cpe:/a:oracle:vm_virtualbox",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle VM VirtualBox"
+    },
+    {
+      "text": "cpe:/h:hitachi:l20_300",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "L20/300"
+    },
+    {
+      "text": "cpe:/h:hitachi:lto6_drive",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "LTO6ドライブ"
+    },
+    {
+      "text": "cpe:/h:hitachi:lx_30a",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Lx/30A"
+    },
+    {
+      "text": "cpe:/h:ibm:security_access_manager_for_mobile_appliance",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Security Access Manager for Mobile アプライアンス"
+    },
+    {
+      "text": "cpe:/h:ibm:security_access_manager_for_web_appliance",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Security Access Manager for Web アプライアンス"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2015-12-17T17:37+09:00",
+  "issued": "2014-04-16T15:37+09:00",
+  "modified": "2015-12-17T17:37+09:00"
+}

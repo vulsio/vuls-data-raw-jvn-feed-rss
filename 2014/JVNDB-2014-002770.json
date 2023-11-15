@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002770.html",
+  "title": "GnutTLS で使用される GNU Libtasn1 の DER デコーダにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002770.html",
+  "description": "GnutTLS で使用される GNU Libtasn1 の DER デコーダには、サービス運用妨害 (out-of-bounds read) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002770",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3467",
+      "source": "CVE",
+      "id": "CVE-2014-3467"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3467",
+      "source": "NVD",
+      "id": "CVE-2014-3467"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2014-0247.html",
+      "source": "関連文書",
+      "id": "MGASA-2014-0247"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gnutls",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GnuTLS"
+    },
+    {
+      "text": "cpe:/a:gnu:libtasn1",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU Libtasn1"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-06-09T18:06+09:00",
+  "issued": "2014-06-09T18:07+09:00",
+  "modified": "2015-06-09T18:06+09:00"
+}

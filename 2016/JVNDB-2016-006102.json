@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006102.html",
+  "title": "BlueZ の tools/parser/l2cap.c ソースファイルの l2cap_dump 関数におけるバッファオーバーリードの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006102.html",
+  "description": "BlueZ の tools/parser/l2cap.c ソースファイルの l2cap_dump 関数には、バッファオーバーリードの脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006102",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9797",
+      "source": "CVE",
+      "id": "CVE-2016-9797"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9797",
+      "source": "NVD",
+      "id": "CVE-2016-9797"
+    },
+    {
+      "text": "https://www.spinics.net/lists/linux-bluetooth/msg68892.html",
+      "source": "関連文書",
+      "id": "multiple buffer overflows and out-of-bound reads"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bluez:bluez",
+      "version": "2.2",
+      "vendor": "BlueZ Project",
+      "product": "BlueZ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+    }
+  ],
+  "date": "2016-12-06T14:26+09:00",
+  "issued": "2016-12-06T14:26+09:00",
+  "modified": "2016-12-06T14:26+09:00"
+}

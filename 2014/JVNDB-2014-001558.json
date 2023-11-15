@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001558.html",
+  "title": "WordPress 用 Media File Renamer プラグインにおけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001558.html",
+  "description": "WordPress 用 Media File Renamer プラグインの mfrh_class.settings-api.php 内の以下の関数には、クロスサイトスクリプティングの脆弱性が存在します。\r\n\r\n(1)callback_multicheck\r\n(2)callback_radio\r\n(3)callback_wysiwygin",
+  "identifier": "JVNDB-2014-001558",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2040",
+      "source": "CVE",
+      "id": "CVE-2014-2040"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2040",
+      "source": "NVD",
+      "id": "CVE-2014-2040"
+    },
+    {
+      "text": "http://www.vapid.dhs.org/advisories/wordpress/plugins/MediaFileRenamer-1.7.0/index.html",
+      "source": "関連文書",
+      "id": "Persistent XSS in Media File Renamer V1.7.0"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:jordy_meow:media_file_renamer",
+      "version": "2.2",
+      "vendor": "Jordy Meow",
+      "product": "Media File Renamer"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:S/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2014-03-10T15:12+09:00",
+  "issued": "2014-03-05T17:16+09:00",
+  "modified": "2014-03-10T15:12+09:00"
+}

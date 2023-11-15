@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004558.html",
+  "title": "OpenStack Compute の VMWare ドライバにおけるクォータ制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004558.html",
+  "description": "OpenStack Compute (Nova) の VMWare ドライバには、クォータ制限を回避され、サービス運用妨害 (リソース消費) 状態にされる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-2573 に対する修正が不十分だったことによる脆弱性です。",
+  "identifier": "JVNDB-2014-004558",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3608",
+      "source": "CVE",
+      "id": "CVE-2014-3608"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3608",
+      "source": "NVD",
+      "id": "CVE-2014-3608"
+    },
+    {
+      "text": "http://seclists.org/oss-sec/2014/q4/65",
+      "source": "関連文書",
+      "id": "[OSSA 2014-032] Nova VMware driver still leaks rescued images (CVE-2014-3608)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:compute",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Compute"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.7",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:A/AC:L/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-12-02T17:45+09:00",
+  "issued": "2014-10-08T15:52+09:00",
+  "modified": "2014-12-02T17:45+09:00"
+}

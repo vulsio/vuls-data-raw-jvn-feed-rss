@@ -1,0 +1,80 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-008975.html",
+  "title": "LibTIFF における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-008975.html",
+  "description": "LibTIFF には、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2016-008975",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5314",
+      "source": "CVE",
+      "id": "CVE-2016-5314"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-5314",
+      "source": "NVD",
+      "id": "CVE-2016-5314"
+    },
+    {
+      "text": "http://bugzilla.maptools.org/show_bug.cgi?id=2554",
+      "source": "関連文書",
+      "id": "CVE-2016-5314: libtiff 4.0.6 PixarLogDecode() out-of-bound writes"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libtiff_project:libtiff",
+      "version": "2.2",
+      "vendor": "LibTIFF",
+      "product": "LibTIFF"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:opensuse_project:leap",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "openSUSE Leap"
+    },
+    {
+      "text": "cpe:/o:opensuse_project:opensuse",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "openSUSE"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-04-24T18:17+09:00",
+  "issued": "2018-04-24T18:17+09:00",
+  "modified": "2018-04-24T18:17+09:00"
+}

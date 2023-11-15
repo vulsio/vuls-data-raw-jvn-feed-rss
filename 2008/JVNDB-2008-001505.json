@@ -1,0 +1,86 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001505.html",
+  "title": "Ruby の WEBrick におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001505.html",
+  "description": "Ruby の WEBrick には、バックスラッシュ (\\) をパスの区切り文字にしているシステムまたは、ファイル名において英文字の大文字と小文字を区別しない (case-insensitive) システムで起動している場合、ディレクトリトラバーサルの脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001505",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1145",
+      "source": "CVE",
+      "id": "CVE-2008-1145"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-1145",
+      "source": "NVD",
+      "id": "CVE-2008-1145"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/404515",
+      "source": "CERT-VN",
+      "id": "VU#404515"
+    },
+    {
+      "text": "http://secunia.com/advisories/29232",
+      "source": "SECUNIA",
+      "id": "SA29232"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/28123",
+      "source": "BID",
+      "id": "28123"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/41010",
+      "source": "XF",
+      "id": "41010"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1019562",
+      "source": "SECTRACK",
+      "id": "1019562"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/0787",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-0787"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ruby-lang:ruby",
+      "version": "2.2",
+      "vendor": "Ruby-lang.org",
+      "product": "Ruby"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2008-07-24T14:21+09:00",
+  "issued": "2008-07-24T14:21+09:00",
+  "modified": "2008-07-24T14:21+09:00"
+}

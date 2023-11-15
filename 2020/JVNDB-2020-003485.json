@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003485.html",
+  "title": "Eaton 製 HMiSoft VU3 に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003485.html",
+  "description": "HMiSoft VU3 は、Eaton が提供する産業用プログラミングソフトウエアです。HMiSoft VU3 には、次の複数の脆弱性が存在します。\r\nなお、ICS-CERT によると、HMIVU ランタイムは本脆弱性の影響を受けないとのことです。\r\n\r\n* 境界外読み取り (CWE-125) - CVE-2020-10637\r\n\r\n* スタックベースのバッファオーバーフロー (CWE-121) - CVE-2020-10639\r\n",
+  "identifier": "JVNDB-2020-003485",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU94295606/",
+      "source": "JVN",
+      "id": "JVNVU#94295606"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10637",
+      "source": "CVE",
+      "id": "CVE-2020-10637"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10639",
+      "source": "CVE",
+      "id": "CVE-2020-10639"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-10637",
+      "source": "NVD",
+      "id": "CVE-2020-10637"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-10639",
+      "source": "NVD",
+      "id": "CVE-2020-10639"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-105-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-105-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/121.html",
+      "id": "CWE-121",
+      "title": "スタックベースのバッファオーバーフロー(CWE-121)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:eaton:hmisoft_vu3_firmware",
+      "version": "2.2",
+      "vendor": "Eaton",
+      "product": "HMiSoft VU3"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2020-04-17T14:05+09:00",
+  "issued": "2020-04-17T14:05+09:00",
+  "modified": "2020-04-17T14:05+09:00"
+}

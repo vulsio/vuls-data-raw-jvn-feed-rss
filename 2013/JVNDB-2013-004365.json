@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004365.html",
+  "title": "libvirt の qemu driver におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004365.html",
+  "description": "libvirt の qemu driver (qemu/qemu_driver.c) には、サービス運用妨害 (デーモンクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004365",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2230",
+      "source": "CVE",
+      "id": "CVE-2013-2230"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2230",
+      "source": "NVD",
+      "id": "CVE-2013-2230"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2013/07/10/5",
+      "source": "関連文書",
+      "id": "CVE-2013-2230 -- libvirt: multiple registered  events crash"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:libvirt",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "libvirt"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-10-02T14:13+09:00",
+  "issued": "2013-10-02T14:13+09:00",
+  "modified": "2013-10-02T14:13+09:00"
+}

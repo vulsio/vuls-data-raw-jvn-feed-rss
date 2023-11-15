@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003945.html",
+  "title": "ID-software などの製品で使用される libdigidoc における絶対パストラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003945.html",
+  "description": "ID-software およびその他の製品で使用される libdigidoc の DigiDocSAXParser.c 内の handleStartDataFile 関数には、絶対パストラバーサルの脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003945",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5648",
+      "source": "CVE",
+      "id": "CVE-2013-5648"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5648",
+      "source": "NVD",
+      "id": "CVE-2013-5648"
+    },
+    {
+      "text": "http://svnweb.mageia.org/packages/updates/3/libdigidoc/current/SOURCES/libdigidoc-3.6.0.0-security-fix-DataFile-name-tag.patch?revision=472660&view=markup",
+      "source": "関連文書",
+      "id": "Contents of /updates/3/libdigidoc/current/SOURCES/libdigidoc-3.6.0.0-security-fix-DataFile-name-tag.patch"
+    },
+    {
+      "text": "https://bugs.mageia.org/show_bug.cgi?id=11100",
+      "source": "関連文書",
+      "id": "Mageia Bugzilla - Bug 11100"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:id:id-software",
+      "version": "2.2",
+      "vendor": "Id Software",
+      "product": "ID-software"
+    },
+    {
+      "text": "cpe:/a:id:libdigidoc",
+      "version": "2.2",
+      "vendor": "Id Software",
+      "product": "libdigidoc"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-09-02T15:33+09:00",
+  "issued": "2013-09-02T15:33+09:00",
+  "modified": "2013-09-02T15:33+09:00"
+}

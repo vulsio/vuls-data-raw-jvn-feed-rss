@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000459.html",
+  "title": "IBM Lotus Domino の Webmail によりユーザ情報が漏洩する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000459.html",
+  "description": "IBM Lotus Domino の Webmail には、他のユーザに関する (1) Internet Password のハッシュ値（フィールド名: HTTPPassword)、(2) パスワードを変更した日付（フィールド名: HTTPPasswordChangeDate)、(3) クライアントのプラットフォーム（フィールド名: ClntPltfrm）、(4) クライアントのマシン名（フィールド名: ClntMachine）、(5) クライアントの Lotus Domino リリース名（フィールド名: ClntBld）の情報が、HTML ソース内に隠しフィールドとして記述されてしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000459",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2428",
+      "source": "CVE",
+      "id": "CVE-2005-2428"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2428",
+      "source": "NVD",
+      "id": "CVE-2005-2428"
+    },
+    {
+      "text": "http://secunia.com/advisories/16231/",
+      "source": "SECUNIA",
+      "id": "SA16231"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14388",
+      "source": "BID",
+      "id": "14388"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14389",
+      "source": "BID",
+      "id": "14389"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2005/Jul/1014584.html",
+      "source": "SECTRACK",
+      "id": "1014584"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:lotus_domino",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Domino (旧 IBM Lotus Domino)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

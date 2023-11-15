@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005451.html",
+  "title": "GnuTLS の gnutls_ecc.c 内の _gnutls_ecc_ansi_x963_expor 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005451.html",
+  "description": "GnuTLS の gnutls_ecc.c 内の _gnutls_ecc_ansi_x963_expor 関数は、generating key ID に関する処理に不備があるため、サービス運用妨害 (out-of-bounds write) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005451",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8564",
+      "source": "CVE",
+      "id": "CVE-2014-8564"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8564",
+      "source": "NVD",
+      "id": "CVE-2014-8564"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gnutls",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GnuTLS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-11-17T13:48+09:00",
+  "issued": "2014-11-17T13:48+09:00",
+  "modified": "2014-11-17T13:48+09:00"
+}

@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001699.html",
+  "title": "Wireshark の pcapng ファイルパーサの wiretap/pcapng.c の pcapng_read 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001699.html",
+  "description": "Wireshark の pcapng ファイルパーサの wiretap/pcapng.c の pcapng_read 関数には、一つずれエラー (Off-by-One error) により、サービス運用妨害 (out-of-bounds read およびアプリケーションクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-001699",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2189",
+      "source": "CVE",
+      "id": "CVE-2015-2189"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2189",
+      "source": "NVD",
+      "id": "CVE-2015-2189"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2015-0117.html",
+      "source": "関連文書",
+      "id": "MGASA-2015-0117"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wireshark:wireshark",
+      "version": "2.2",
+      "vendor": "Wireshark",
+      "product": "Wireshark"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-04-08T17:57+09:00",
+  "issued": "2015-03-10T18:09+09:00",
+  "modified": "2015-04-08T17:57+09:00"
+}

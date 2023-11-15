@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002722.html",
+  "title": "PowerDNS Recursor および Authoritative Server のラベル展開機能におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002722.html",
+  "description": "PowerDNS Recursor および Authoritative (Auth) Server のラベル展開機能には、サービス運用妨害 (CPU 資源の消費またはクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-002722",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1868",
+      "source": "CVE",
+      "id": "CVE-2015-1868"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1868",
+      "source": "NVD",
+      "id": "CVE-2015-1868"
+    },
+    {
+      "text": "http://jprs.jp/tech/security/2015-04-27-powerdns-vuln-decompression.html",
+      "source": "JPRS",
+      "id": "PowerDNS Authoritative Server及びPowerDNS Recursorの脆弱性 （DNSサービスの停止またはCPU負荷の急上昇）について（2015年5月7日更新）"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:powerdns:authoritative_server",
+      "version": "2.2",
+      "vendor": "PowerDNS",
+      "product": "PowerDNS Authoritative Server"
+    },
+    {
+      "text": "cpe:/a:powerdns:recursor",
+      "version": "2.2",
+      "vendor": "PowerDNS",
+      "product": "PowerDNS Recursor"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2015-05-20T14:13+09:00",
+  "issued": "2015-05-20T14:13+09:00",
+  "modified": "2015-05-20T14:13+09:00"
+}

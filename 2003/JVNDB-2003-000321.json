@@ -1,0 +1,113 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000321.html",
+  "title": "Apache HTTP Server の mod_alias および mod_rewrite モジュールにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000321.html",
+  "description": "Apache HTTP Server に含まれる mod_alias および mod_rewrite モジュールには、ディレクティブ設定において、一つのルールに対して正規表現でパターンマッチさせる領域が 9 箇所より多く含まれている場合、バッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000321",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0542",
+      "source": "CVE",
+      "id": "CVE-2003-0542"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0542",
+      "source": "NVD",
+      "id": "CVE-2003-0542"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/434566",
+      "source": "CERT-VN",
+      "id": "VU#434566"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/549142",
+      "source": "CERT-VN",
+      "id": "VU#549142"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8911",
+      "source": "BID",
+      "id": "8911"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:ibm:http_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM HTTP Server"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_4",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ4"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQXTR"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

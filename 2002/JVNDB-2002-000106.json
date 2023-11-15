@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000106.html",
+  "title": "Sun Solaris の cachefsd におけるヒープオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000106.html",
+  "description": "Sun Solaris に含まれている、NFS/RPC ファイルシステムを運用に必要な cachefsd において、cfsd_calloc function 関数では境界チェックを適切に行わないため、異常に長いキャッシュ名、およびディレクトリ名が含まれた異常な RPC リクエストを cachefsd に送信した場合に、ヒープ領域内でのオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2002-000106",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNCA-2002-11",
+      "source": "JVN",
+      "id": "JVNCA-2002-11"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0033",
+      "source": "CVE",
+      "id": "CVE-2002-0033"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0033",
+      "source": "NVD",
+      "id": "CVE-2002-0033"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr021801.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2002-1801"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-2002-11.html",
+      "source": "CERT-A",
+      "id": "CA-2002-11"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/635811",
+      "source": "CERT-VN",
+      "id": "VU#635811"
+    },
+    {
+      "text": "http://www.ciac.org/ciac/bulletins/m-078.shtml",
+      "source": "CIAC",
+      "id": "M-078"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4674",
+      "source": "BID",
+      "id": "4674"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/8999",
+      "source": "ISS",
+      "id": "8999"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

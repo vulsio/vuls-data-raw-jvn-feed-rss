@@ -1,0 +1,111 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001255.html",
+  "title": "Ghostscript の big2_decode_symbol_dict 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001255.html",
+  "description": "Ghostscript の JBIG2 decoding ライブラリ (jbig2dec) にある big2_decode_symbol_dict 関数には、PDF ファイルの処理に不備があるため、ヒープベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001255",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0196",
+      "source": "CVE",
+      "id": "CVE-2009-0196"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0196",
+      "source": "NVD",
+      "id": "CVE-2009-0196"
+    },
+    {
+      "text": "http://secunia.com/advisories/34732",
+      "source": "SECUNIA",
+      "id": "SA34732"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/34445",
+      "source": "BID",
+      "id": "34445"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1022029",
+      "source": "SECTRACK",
+      "id": "1022029"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/0983",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-0983"
+    },
+    {
+      "text": "http://osvdb.org/53492",
+      "source": "OSVDB",
+      "id": "53492"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:artifex:ghostscript",
+      "version": "2.2",
+      "vendor": "Artifex Software",
+      "product": "Ghostscript"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2009-08-04T11:24+09:00",
+  "issued": "2009-05-26T11:56+09:00",
+  "modified": "2009-08-04T11:24+09:00"
+}

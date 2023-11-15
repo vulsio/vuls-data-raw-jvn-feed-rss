@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002964.html",
+  "title": "Aptexx Resident Anywhere に機微なアカウント情報が漏えいする脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002964.html",
+  "description": "Aptexx Resident Anywhere には、ユーザ認証を行わないため、機微なアカウント情報等の閲覧・変更が可能な脆弱性が存在します。\r\n\r\n別のパスやチャンネルを介した認証回避 (CWE-288) - CVE-2014-4882\r\nAptexx Resident Anywhere は、不動産に関するオンライン決裁やメンテナンスリクエストを受け付けるサービスを提供するアプリケーションです。Aptexx Resident Anywhere は、ユーザのアカウント情報を閲覧・変更する際に認証を要求しません。そのため、アカウント情報にアクセスするための URL を知ることができれば、攻撃者は認証を経ることなくユーザアカウントにアクセスすることができます。アカウントにアクセスすることで、アカウントデータの閲覧や変更、決裁やメンテナンスリクエストの送信が可能です。\r\n\r\nCWE-288: Authentication Bypass Using an Alternate Path or Channel\r\nhttps://cwe.mitre.org/data/definitions/288.html",
+  "identifier": "JVNDB-2015-002964",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU97743379",
+      "source": "JVN",
+      "id": "JVNVU#97743379"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4882",
+      "source": "CVE",
+      "id": "CVE-2014-4882"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4882",
+      "source": "NVD",
+      "id": "CVE-2014-4882"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/595884",
+      "source": "CERT-VN",
+      "id": "VU#595884"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:aptexx:resident_anywhere",
+      "version": "2.2",
+      "vendor": "APTEXX",
+      "product": "Aptexx Resident Anywhere"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-06-24T16:52+09:00",
+  "issued": "2015-06-10T12:24+09:00",
+  "modified": "2015-06-24T16:52+09:00"
+}

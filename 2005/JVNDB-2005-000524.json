@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000524.html",
+  "title": "Util-linux の umount コマンドにおける権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000524.html",
+  "description": "Util-linux の umount コマンドにおいて、 -r オプションを指定して実行し、ファイルシステムのアンマウントが失敗し、再マウントされる際に、ファイルシステムの nosuid (setuid、setgid を無視) 、 noexec (バイナリの実行禁止)、 nodev (デバイスを無視) オプションがクリアされてしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000524",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2876",
+      "source": "CVE",
+      "id": "CVE-2005-2876"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2876",
+      "source": "NVD",
+      "id": "CVE-2005-2876"
+    },
+    {
+      "text": "http://secunia.com/advisories/16785/",
+      "source": "SECUNIA",
+      "id": "SA16785"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14816",
+      "source": "BID",
+      "id": "14816"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:kernel:util-linux",
+      "version": "2.2",
+      "vendor": "kernel.org",
+      "product": "util-linux"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-07-31T17:14+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-07-31T17:14+09:00"
+}

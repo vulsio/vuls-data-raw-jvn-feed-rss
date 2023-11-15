@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003569.html",
+  "title": "Wireshark の DVB-CI 解析機能におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003569.html",
+  "description": "Wireshark の DVB-CI 解析機能の epan/dissectors/packet-dvbci.c 内の dissect_dvbci_tpdu_hdr 関数は、特定の長さの値を減少する前にその値を検証しないため、サービス運用妨害 (表明違反およびアプリケーションの停止) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003569",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4930",
+      "source": "CVE",
+      "id": "CVE-2013-4930"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4930",
+      "source": "NVD",
+      "id": "CVE-2013-4930"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wireshark:wireshark",
+      "version": "2.2",
+      "vendor": "Wireshark",
+      "product": "Wireshark"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-10-24T17:14+09:00",
+  "issued": "2013-07-31T19:19+09:00",
+  "modified": "2013-10-24T17:14+09:00"
+}

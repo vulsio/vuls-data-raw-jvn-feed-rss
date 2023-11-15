@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010070.html",
+  "title": "Microsoft Edge および ChakraCore における Control Flow Guard を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010070.html",
+  "description": "Microsoft Edge および ChakraCore には、Microsoft Edge が Edge Just-In-Time (JIT) コンパイラでコンパイルされたコードでメモリにアクセスする方法に不備があるため、Control Flow Guard (CFG) を回避され、対象のシステム上で任意のコードを実行される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を「Microsoft Edge Security Feature Bypass Vulnerability」として公開しています。\r\n\r\n本脆弱性は、CVE-2017-11863 および CVE-2017-11872 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2017-010070",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11874",
+      "source": "CVE",
+      "id": "CVE-2017-11874"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-11874",
+      "source": "NVD",
+      "id": "CVE-2017-11874"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20171115-ms.html",
+      "source": "IPA CFA",
+      "id": "Microsoft 製品の脆弱性対策について(2017年11月)"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2017/at170044.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2017-0044"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/254.html",
+      "id": "CWE-254",
+      "title": "セキュリティ機能(CWE-254)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:chakracore",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "ChakraCore"
+    },
+    {
+      "text": "cpe:/a:microsoft:edge",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Edge"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "3.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N"
+    }
+  ],
+  "date": "2017-12-04T16:57+09:00",
+  "issued": "2017-12-04T16:57+09:00",
+  "modified": "2017-12-04T16:57+09:00"
+}

@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000320.html",
+  "title": "WU-FTPD の S/Key 認証におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000320.html",
+  "description": "S/Key 認証を有効にしている WU-FTPD には、skey_challenge() 関数内でユーザ名を取り扱う変数に対するチェックが不適切であるため、異常に長いログインユーザ名を含む認証用情報を送りつけることで、バッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000320",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0185",
+      "source": "CVE",
+      "id": "CVE-2004-0185"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0185",
+      "source": "NVD",
+      "id": "CVE-2004-0185"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8893",
+      "source": "BID",
+      "id": "8893"
+    },
+    {
+      "text": "http://www.securiteam.com/unixfocus/6X00Q1P8KC.html",
+      "source": "SECTEAM",
+      "id": "6X00Q1P8KC"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:university_of_washington:wu-ftpd",
+      "version": "2.2",
+      "vendor": "University of Washington",
+      "product": "WU-FTPD"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

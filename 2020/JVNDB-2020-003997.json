@@ -1,0 +1,63 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003997.html",
+  "title": "Red Hat Ceph Storage および Openshift Container Storage における不十分なランダム値の使用に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003997.html",
+  "description": "Red Hat Ceph Storage および Openshift Container Storage には、不十分なランダム値の使用に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-003997",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1759",
+      "source": "CVE",
+      "id": "CVE-2020-1759"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-1759",
+      "source": "NVD",
+      "id": "CVE-2020-1759"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/330.html",
+      "id": "CWE-330",
+      "title": "不十分なランダム値の使用(CWE-330)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:ceph_storage",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Ceph Storage"
+    },
+    {
+      "text": "cpe:/a:redhat:openshift",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenShift"
+    },
+    {
+      "text": "cpe:/a:redhat:openstack",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenStack"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2020-04-30T18:22+09:00",
+  "issued": "2020-04-30T18:22+09:00",
+  "modified": "2020-04-30T18:22+09:00"
+}

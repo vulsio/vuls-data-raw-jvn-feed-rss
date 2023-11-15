@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000550.html",
+  "title": "Microsoft Internet Explorer に含まれる daxctle.ocx の Spline()  メソッドにおけるヒープオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000550.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Multimedia Controls ActiveX control (daxctle.ocx) に実装されている DirectAnimation は、DirectX ファミリの API コンポーネントであり、Dynamic HTML と組み合わせて使うことで Web ページにアニメーション効果を実現するマルチメディアコントロールです。\r\n\r\nMicrosoft Internet Explorer (IE) で利用される DirectAnimation AcitveX コントロールには、パスコントロールを処理する KeyFrame() メソッドおよび spline() メソッドに不備が存在するため、予期されないデータを処理した場合にヒープオーバーフローが発生し、システムメモリが破壊される問題が存在します。\r\n\r\nリモートの攻撃者に悪用された場合、IE を実行するユーザの権限で任意のコードが実行される可能性があります。",
+  "identifier": "JVNDB-2006-000550",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA06-318A/index.html",
+      "source": "JVN",
+      "id": "JVNTA06-318A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA06-318A",
+      "source": "JVNTR",
+      "id": "TRTA06-318A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4446",
+      "source": "CVE",
+      "id": "CVE-2006-4446"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4446",
+      "source": "NVD",
+      "id": "CVE-2006-4446"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2006/at060019.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2006-0019"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA06-318A.html",
+      "source": "CERT-SA",
+      "id": "SA06-318A"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/813588",
+      "source": "CERT-VN",
+      "id": "VU#813588"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA06-318A.html",
+      "source": "CERT-TA",
+      "id": "TA06-318A"
+    },
+    {
+      "text": "http://secunia.com/advisories/21910/",
+      "source": "SECUNIA",
+      "id": "SA21910"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19738",
+      "source": "BID",
+      "id": "19738"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:internet_explorer",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Internet Explorer"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-017019.html",
+  "title": "stealjs の Node.js 用 steal におけるオブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-017019.html",
+  "description": "stealjs の Node.js 用 steal には、オブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-017019",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-37264",
+      "source": "CVE",
+      "id": "CVE-2022-37264"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-37264",
+      "source": "NVD",
+      "id": "CVE-2022-37264"
+    },
+    {
+      "text": "https://github.com/stealjs/steal/blob/c9dd1eb19ed3f97aeb93cf9dcea5d68ad5d0ced9/main.js#L2194",
+      "source": "関連文書",
+      "id": "github.com (main.js#L2194)"
+    },
+    {
+      "text": "https://github.com/stealjs/steal/blob/c9dd1eb19ed3f97aeb93cf9dcea5d68ad5d0ced9/main.js#L647",
+      "source": "関連文書",
+      "id": "github.com (main.js#L647)"
+    },
+    {
+      "text": "https://github.com/stealjs/steal/issues/1533",
+      "source": "関連文書",
+      "id": "github.com (issues/1533)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/1321.html",
+      "id": "CWE-1321",
+      "title": "オブジェクトプロトタイプ属性の不適切に制御された変更 (プロトタイプの汚染)(CWE-1321)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:stealjs:steal",
+      "version": "2.2",
+      "vendor": "stealjs",
+      "product": "steal"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-10-10T17:21+09:00",
+  "issued": "2023-10-10T17:21+09:00",
+  "modified": "2023-10-10T17:21+09:00"
+}

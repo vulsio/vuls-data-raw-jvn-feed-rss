@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000482.html",
+  "title": "Novell Evolution における複数のサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000482.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nNovell Evolution は、GNOME デスクトップ環境用の個人情報管理 (PIM) ツールを集めたパッケージで、統合されたメーラ、連絡先管理、カレンダーなどの機能を提供します。\r\n\r\nNovell Evolution 1.4 - 2.3.6.1 には、次の場合に発生する複数のフォーマットストリングの問題が存在します。\r\n\r\n・電子メールに添付された vCard データに対して [Show Full vCard] をクリックし表示するか、vCard データをアドレスブックに保存した後 [Contacts] タブを選択しすべて表示する場合 (1.5 - 2.3.6.1, CAN-2005-2549)\r\n\r\n・リモートの LDAP サーバから取得した連絡先データを表示する場合 (1.5 - 2.3.6.1, CAN-2005-2549)\r\n\r\n・リモートサーバから取得したタスクリストを表示する場合 (1.5 - 2.3.6.1, CAN-2005-2549)\r\n\r\n・[Calendars] タブを選択して、タスクリストなどのカレンダーに入力できるデータを保存する場合 (1.4 - 2.3.6.1, CAN-2005-2550)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成したデータを Evolution を利用して表示する、あるいは保存するように標的ユーザを誘導することにより、フォーマットストリングエラーを発生させ、結果として Evolution をサービス不能状態に陥らせる、もしくは Evolution を実行するユーザの権限で任意のコードを実行する可能性があります。\r\n\r\n尚、Red Hat Enterprise Linux 3 に同梱されている Evolution については CAN-2005-2550 の問題の影響のみ受けることが Red Hat により報告されています。",
+  "identifier": "JVNDB-2005-000482",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2549",
+      "source": "CVE",
+      "id": "CVE-2005-2549"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2549",
+      "source": "NVD",
+      "id": "CVE-2005-2549"
+    },
+    {
+      "text": "http://secunia.com/advisories/16394",
+      "source": "SECUNIA",
+      "id": "SA16394"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14532",
+      "source": "BID",
+      "id": "14532"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/1378",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-1378"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

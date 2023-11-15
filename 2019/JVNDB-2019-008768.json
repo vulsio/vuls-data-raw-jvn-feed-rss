@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-008768.html",
+  "title": "Rust 用 asn1_der crate におけるリソース管理に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-008768.html",
+  "description": "Rust 用 asn1_der crate には、リソース管理に関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2019-008768",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-15549",
+      "source": "CVE",
+      "id": "CVE-2019-15549"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-15549",
+      "source": "NVD",
+      "id": "CVE-2019-15549"
+    },
+    {
+      "text": "https://rustsec.org/advisories/RUSTSEC-2019-0007.html",
+      "source": "関連文書",
+      "id": "RUSTSEC-2019-0007: asn1_der: Processing of maliciously crafted length fields causes memory allocation SIGABRTs"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:asn1_der_project:asn1_der",
+      "version": "2.2",
+      "vendor": "asn1_der project",
+      "product": "asn1_der"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2019-09-05T18:07+09:00",
+  "issued": "2019-09-05T18:07+09:00",
+  "modified": "2019-09-05T18:07+09:00"
+}

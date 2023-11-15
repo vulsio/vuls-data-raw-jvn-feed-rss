@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-005255.html",
+  "title": "複数のシーメンス製品におけるバッファエラーの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-005255.html",
+  "description": "JT2Go、Solid Edge、 Teamcenter Visualization には、バッファエラーの脆弱性が存在します。\r\n\r\nZero Day Initiative は、本脆弱性に ZDI-CAN-15112 を採番していました。 ",
+  "identifier": "JVNDB-2022-005255",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU98748974/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98748974"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-44018",
+      "source": "CVE",
+      "id": "CVE-2021-44018"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-44018",
+      "source": "NVD",
+      "id": "CVE-2021-44018"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-22-041-07",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-041-07"
+    },
+    {
+      "text": "https://www.zerodayinitiative.com/advisories/ZDI-22-340/",
+      "source": "関連文書",
+      "id": "ZDI-22-340 (Siemens JT2Go PAR File Parsing Out-Of-Bounds Read Remote Code Execution Vulnerability)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:siemens:jt2go",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "JT2Go"
+    },
+    {
+      "text": "cpe:/a:siemens:solid_edge",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "Solid Edge"
+    },
+    {
+      "text": "cpe:/a:siemens:teamcenter_visualization",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "Teamcenter Visualization"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-05-24T16:55+09:00",
+  "issued": "2023-05-24T16:55+09:00",
+  "modified": "2023-05-24T16:55+09:00"
+}

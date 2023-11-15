@@ -1,0 +1,98 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001989.html",
+  "title": "Apache Xerces C++ におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001989.html",
+  "description": "Apache Xerces C++ の validators/DTD/DTDScanner.cpp には、ネストされたカッコおよび不正なバイト値の処理に不備があるため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001989",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU817433/index.html",
+      "source": "JVN",
+      "id": "JVNVU#817433"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1885",
+      "source": "CVE",
+      "id": "CVE-2009-1885"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1885",
+      "source": "NVD",
+      "id": "CVE-2009-1885"
+    },
+    {
+      "text": "http://www.cert.fi/en/reports/2009/vulnerability2009085.html",
+      "source": "CERT-A",
+      "id": "CERT-FI Advisory on XML libraries"
+    },
+    {
+      "text": "http://secunia.com/advisories/36201",
+      "source": "SECUNIA",
+      "id": "SA36201"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/35986",
+      "source": "BID",
+      "id": "35986"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/52321",
+      "source": "XF",
+      "id": "52321"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2196",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2196"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:xerces-c%2B%2B",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Xerces-C++"
+    },
+    {
+      "text": "cpe:/a:nec:csview",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CSVIEW"
+    },
+    {
+      "text": "cpe:/a:nec:expresscluster",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CLUSTERPRO"
+    },
+    {
+      "text": "cpe:/a:nec:infoframe_documentskipper",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "InfoFrame DocumentSkipper"
+    },
+    {
+      "text": "cpe:/a:nec:websam_logcollector",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebSAM LogCollector"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2010-05-06T13:47+09:00",
+  "issued": "2009-09-10T11:33+09:00",
+  "modified": "2010-05-06T13:47+09:00"
+}

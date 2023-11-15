@@ -1,0 +1,176 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002157.html",
+  "title": "Apache HTTP Server における IP ベースの認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002157.html",
+  "description": "Apache HTTP Server には、クライアント側の接続ヘッダの hop-by-hop メカニズムに基づいて X-Forwarded-* ヘッダをオリジンサーバに送信しない場合、IP ベースの認証を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2022-002157",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU94306894/",
+      "source": "JVN",
+      "id": "JVNVU#94306894"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-31813",
+      "source": "CVE",
+      "id": "CVE-2022-31813"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-31813",
+      "source": "NVD",
+      "id": "CVE-2022-31813"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/345.html",
+      "id": "CWE-345",
+      "title": "データの信頼性についての不十分な検証(CWE-345)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_http_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus HTTP Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server64",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server(64)"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server_for_developers",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Application Server for Developers"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server_r",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server-R"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_web_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Web Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server_base",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server Base"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server_base64",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server Base(64)"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Architect"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform_64",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform(64)"
+    },
+    {
+      "text": "cpe:/a:nec:actsecure_portal",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "ActSecure ポータル"
+    },
+    {
+      "text": "cpe:/a:nec:connexive_pf",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CONNEXIVE PF"
+    },
+    {
+      "text": "cpe:/a:nec:neoface_monitor",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NeoFace Monitor"
+    },
+    {
+      "text": "cpe:/a:nec:simpwright",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SimpWright"
+    },
+    {
+      "text": "cpe:/a:nec:spoolserver_reportfiling",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SpoolServer/ReportFiling"
+    },
+    {
+      "text": "cpe:/a:nec:tokusengai_gcb",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "得選街・GCB"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Application Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-06-29T14:20+09:00",
+  "issued": "2022-08-02T15:43+09:00",
+  "modified": "2023-06-29T14:20+09:00"
+}

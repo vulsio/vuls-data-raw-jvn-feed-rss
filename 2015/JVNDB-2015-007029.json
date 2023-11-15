@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007029.html",
+  "title": "Erlang/OTP における平文データを取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007029.html",
+  "description": "Erlang/OTP は、接続終了時に CBC パディングバイトを適切にチェックしないため、平文データを取得される脆弱性が存在します。\r\n\r\n本問題は、CVE-2014-3566 (別名 POODLE) と類似する問題です。",
+  "identifier": "JVNDB-2015-007029",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2774",
+      "source": "CVE",
+      "id": "CVE-2015-2774"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2774",
+      "source": "NVD",
+      "id": "CVE-2015-2774"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:erlang:erlang%2Fotp",
+      "version": "2.2",
+      "vendor": "ERLANG",
+      "product": "Erlang/OTP"
+    },
+    {
+      "text": "cpe:/o:opensuse_project:opensuse",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "openSUSE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2016-04-14T14:25+09:00",
+  "issued": "2016-04-14T14:25+09:00",
+  "modified": "2016-04-14T14:25+09:00"
+}

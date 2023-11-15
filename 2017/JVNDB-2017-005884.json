@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005884.html",
+  "title": "SAP NetWeaver におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005884.html",
+  "description": "SAP NetWeaver には、サービス運用妨害 (DoS) 状態にされ、任意のコードを実行される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を SAP Security Note 2399804 として公開しています。",
+  "identifier": "JVNDB-2017-005884",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9844",
+      "source": "CVE",
+      "id": "CVE-2017-9844"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-9844",
+      "source": "NVD",
+      "id": "CVE-2017-9844"
+    },
+    {
+      "text": "https://erpscan.com/advisories/erpscan-17-014-sap-netweaver-java-deserialization-untrusted-user-value-metadatauploader/",
+      "source": "関連文書",
+      "id": "[ERPSCAN-17-014] SAP Netweaver Java deserialization of untrusted user value in metadatauploader"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/502.html",
+      "id": "CWE-502",
+      "title": "信頼できないデータのデシリアライゼーション(CWE-502)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sap:netweaver",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "SAP NetWeaver"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-08-08T17:07+09:00",
+  "issued": "2017-08-08T17:07+09:00",
+  "modified": "2017-08-08T17:07+09:00"
+}

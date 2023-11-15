@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007293.html",
+  "title": "Linux Kernel の fs/ext4/ext4_jbd2.c の __ext4_journal_stop 関数における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007293.html",
+  "description": "Linux Kernel の fs/ext4/ext4_jbd2.c の __ext4_journal_stop 関数には、権限を取得される、またはサービス運用妨害 (解放済みメモリの使用 (use-after-free)) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-416: Use After Free (解放済みメモリの使用) と識別されています。\r\nhttps://cwe.mitre.org/data/definitions/416.html",
+  "identifier": "JVNDB-2015-007293",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8961",
+      "source": "CVE",
+      "id": "CVE-2015-8961"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8961",
+      "source": "NVD",
+      "id": "CVE-2015-8961"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-11-17T14:31+09:00",
+  "issued": "2016-11-17T14:31+09:00",
+  "modified": "2016-11-17T14:31+09:00"
+}

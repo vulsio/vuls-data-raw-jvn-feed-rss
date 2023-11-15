@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000039.html",
+  "title": "複数ベンダ製品において TCP イニシャルシーケンス番号が予測可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000039.html",
+  "description": "TCP 初期シーケンス番号 (ISN) で用いられる擬似乱数生成機構には、作られた乱数の分散が不十分になり、ISN の予測が可能となる脆弱性が存在します。",
+  "identifier": "JVNDB-2001-000039",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0328",
+      "source": "CVE",
+      "id": "CVE-2001-0328"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2001-0328",
+      "source": "NVD",
+      "id": "CVE-2001-0328"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-2001-09.html",
+      "source": "CERT-A",
+      "id": "CA-2001-09"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/498440",
+      "source": "CERT-VN",
+      "id": "VU#498440"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/2682",
+      "source": "BID",
+      "id": "2682"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:cisco:ios",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2008-02-15T11:50+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2008-02-15T11:50+09:00"
+}

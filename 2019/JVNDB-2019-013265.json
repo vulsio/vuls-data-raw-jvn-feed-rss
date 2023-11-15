@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013265.html",
+  "title": "Red Hat Enterprise Linux で使用される複数のコンテナツールおよび OpenShift Container Platform で使用される CRI-O におけるキャッシュからの情報漏えいに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013265.html",
+  "description": "Red Hat Enterprise Linux で使用される複数のコンテナツールおよび OpenShift Container Platform で使用される CRI-O には、キャッシュからの情報漏えいに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2019-013265",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10214",
+      "source": "CVE",
+      "id": "CVE-2019-10214"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-10214",
+      "source": "NVD",
+      "id": "CVE-2019-10214"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/522.html",
+      "id": "CWE-522",
+      "title": "認証情報の不十分な保護(CWE-522)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:buildah_project:buildah",
+      "version": "2.2",
+      "vendor": "Buildah project",
+      "product": "Buildah"
+    },
+    {
+      "text": "cpe:/a:libpod_project:libpod",
+      "version": "2.2",
+      "vendor": "podman project (旧 libpod project)",
+      "product": "podman (旧 libpod)"
+    },
+    {
+      "text": "cpe:/a:redhat:openshift_container_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenShift Container Platform"
+    },
+    {
+      "text": "cpe:/a:skopeo_project:skopeo",
+      "version": "2.2",
+      "vendor": "skopeo project",
+      "product": "skopeo"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2019-12-24T09:56+09:00",
+  "issued": "2019-12-24T09:56+09:00",
+  "modified": "2019-12-24T09:56+09:00"
+}

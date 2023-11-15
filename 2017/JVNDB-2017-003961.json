@@ -1,0 +1,408 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003961.html",
+  "title": "複数の Hikvision 製品における認証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003961.html",
+  "description": "複数の Hikvision 製品には、認証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2017-003961",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92379282/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92379282"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7921",
+      "source": "CVE",
+      "id": "CVE-2017-7921"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-7921",
+      "source": "NVD",
+      "id": "CVE-2017-7921"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-17-124-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-17-124-01"
+    },
+    {
+      "text": "https://ipcamtalk.com/threads/backdoor-found-in-hikvision-cameras.17523/",
+      "source": "関連文書",
+      "id": "Backdoor found in Hikvision cameras"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2032-i_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2032-I ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2112-i_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2112-I ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2132-i_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2132-I ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2212-i5_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2212-I5 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2232-i5_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2232-I5 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2312-i_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2312-I ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2332-i_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2332-I ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2412f-i%28w%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2412F-I(W) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2432f-i%28w%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2432F-I(W) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2512f-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2512F-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2532f-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2532F-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2612f-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2612F-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2632f-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2632F-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2712f-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2712F-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2732f-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2732F-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2t32-i3_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2T32-I3 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2t32-i5_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2T32-I5 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd2t32-i8_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD2T32-I8 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4012f-%28a%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4012F-(A) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4012f-%28p%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4012F-(P) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4012f-%28w%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4012F-(W) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4012fwd-%28a%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4012FWD-(A) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4012fwd-%28p%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4012FWD-(P) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4012fwd-%28w%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4012FWD-(W) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4024f-%28a%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4024F-(A) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4024f-%28p%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4024F-(P) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4024f-%28w%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4024F-(W) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4032fwd-%28a%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4032FWD-(A) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4032fwd-%28p%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4032FWD-(P) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4032fwd-%28w%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4032FWD-(W) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4112f-i%28z%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4112F-I(Z) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4112fwd-i%28z%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4112FWD-I(Z) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4124f-i%28z%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4124F-I(Z) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4132fwd-i%28z%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4132FWD-I(Z) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4212f-i%28h%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4212F-I(H) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4212f-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4212F-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4212f-i%28z%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4212F-I(Z) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4212fwd-i%28h%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4212FWD-I(H) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4212fwd-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4212FWD-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4212fwd-i%28z%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4212FWD-I(Z) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4224f-i%28h%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4224F-I(H) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4224f-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4224F-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4224f-i%28z%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4224F-I(Z) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4232fwd-i%28h%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4232FWD-I(H) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4232fwd-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4232FWD-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4232fwd-i%28z%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4232FWD-I(Z) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4312f-i%28h%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4312F-I(H) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4312f-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4312F-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4312f-i%28z%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4312F-I(Z) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4324f-i%28h%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4324F-I(H) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4324f-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4324F-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4324f-i%28z%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4324F-I(Z) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4332fwd-i%28h%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4332FWD-I(H) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4332fwd-i%28s%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4332FWD-I(S) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd4332fwd-i%28z%29_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD4332FWD-I(Z) ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd63xx_series_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD63XX シリーズ ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2cd6412fwd_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2CD6412FWD ファームウェア"
+    },
+    {
+      "text": "cpe:/o:hikvision:ds-2dfx_series_firmware",
+      "version": "2.2",
+      "vendor": "Hangzhou Hikvision Digital Technology",
+      "product": "DS-2DFX シリーズ ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-07-13T15:02+09:00",
+  "issued": "2017-06-13T12:25+09:00",
+  "modified": "2017-07-13T15:02+09:00"
+}

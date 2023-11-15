@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004452.html",
+  "title": "FreeRADIUS の cbtls_verify 関数におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004452.html",
+  "description": "FreeRADIUS の cbtls_verify 関数には、TLS ベースの EAP メソッドを使用する際に、スタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004452",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU95174988/",
+      "source": "JVN",
+      "id": "JVNVU95174988"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3547",
+      "source": "CVE",
+      "id": "CVE-2012-3547"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3547",
+      "source": "NVD",
+      "id": "CVE-2012-3547"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freeradius:freeradius",
+      "version": "2.2",
+      "vendor": "FreeRADIUS",
+      "product": "FreeRADIUS"
+    },
+    {
+      "text": "cpe:/o:apple:os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "macOS Server (旧 OS X Server)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-11-07T19:26+09:00",
+  "issued": "2012-09-20T15:25+09:00",
+  "modified": "2013-11-07T19:26+09:00"
+}

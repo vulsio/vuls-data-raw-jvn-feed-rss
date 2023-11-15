@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000072.html",
+  "title": "Cisco IOS の AAA コマンド認可機能における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000072.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nAAA (authentication, authorization, and accounting) は、ネットワーク利用に対する、認証、認可、および課金管理 (アクセス管理) を行うための仕組みです。Cisco IOS では、AAA を利用して認証されたユーザの特権レベルを判別し、レベル毎に特定のコマンドに対して認可を行うように設定することが可能です。\r\n\r\nCisco IOS に実装されている AAA コマンド認可機能には、Tcl シェルモード (tclsh) により実行されたコマンドに対して認可チェックが適切に実行されない問題が存在します。\r\n\r\nTcl シェルモードがサポートされており AAA コマンド認可機能を利用する IOS デバイスでは、ローカルの攻撃者に悪用された場合、高い権限で任意のコマンドを実行される可能性があります。",
+  "identifier": "JVNDB-2006-000072",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0486",
+      "source": "CVE",
+      "id": "CVE-2006-0486"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0486",
+      "source": "NVD",
+      "id": "CVE-2006-0486"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/16383",
+      "source": "BID",
+      "id": "16383"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/0337",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-0337"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:cisco:ios",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

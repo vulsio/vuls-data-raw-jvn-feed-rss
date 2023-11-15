@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004688.html",
+  "title": "Atheme の libathemecore/account.c における異なるユーザにアクセスされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004688.html",
+  "description": "Atheme の libathemecore/account.c 内の myuser_delete 関数は、ユーザが削除される際、CertFP エントリを適切にクリーンアップしないため、異なるユーザにアクセスされる、またはサービス運用妨害 (デーモンクラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004688",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1576",
+      "source": "CVE",
+      "id": "CVE-2012-1576"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1576",
+      "source": "NVD",
+      "id": "CVE-2012-1576"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:atheme:atheme",
+      "version": "2.2",
+      "vendor": "Atheme.org",
+      "product": "Atheme"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-10-03T13:09+09:00",
+  "issued": "2012-10-03T13:09+09:00",
+  "modified": "2012-10-03T13:09+09:00"
+}

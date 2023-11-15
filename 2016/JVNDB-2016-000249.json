@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000249.html",
+  "title": "SKYSEA Client View において任意のコードが実行可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000249.html",
+  "description": "Ｓｋｙ株式会社が提供する SKYSEA Client View は、IT 資産管理用ツールです。SKYSEA Client View のエージェントプログラムには、管理機プログラムとの TCP 通信における認証処理に起因する任意のコードが実行可能な脆弱性が存在します。\r\n\r\nなお、本脆弱性を使用した攻撃活動が観測されています。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2016-000249",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN84995847/index.html",
+      "source": "JVN",
+      "id": "JVN#84995847"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7836",
+      "source": "CVE",
+      "id": "CVE-2016-7836"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-7836",
+      "source": "NVD",
+      "id": "CVE-2016-7836"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20161222-jvn.html",
+      "source": "IPA CFA",
+      "id": "「SKYSEA Client View」において任意のコードが実行可能な脆弱性について(JVN#84995847)"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2016/at160051.html",
+      "source": "JPCERT-AT",
+      "id": "SKYSEA Client View の脆弱性 (CVE-2016-7836) に関する注意喚起"
+    },
+    {
+      "text": "https://www.npa.go.jp/cyberpolice/detect/pdf/20161222.pdf",
+      "source": "AT-POLICE",
+      "id": "ソフトウェアのぜい弱性に関する注意喚起について"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:skygroup:skysea_client_view",
+      "version": "2.2",
+      "vendor": "Ｓｋｙ株式会社",
+      "product": "SKYSEA Client View"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-11-27T16:54+09:00",
+  "issued": "2016-12-22T12:06+09:00",
+  "modified": "2017-11-27T16:54+09:00"
+}

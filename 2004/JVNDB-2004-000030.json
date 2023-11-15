@@ -1,0 +1,96 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000030.html",
+  "title": "Apache HTTP Server の mod_digest モジュールにおける不完全な認証の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000030.html",
+  "description": "Apache HTTP Server に含まれている mod_digest モジュールには、クライアントからの応答パケットに含まれる nonce 値のチェックが不適切であるため、ユーザ名 / パスワードの組み合わせ、および realm 値が同一である場合、 nonce 値がサーバからの応答と異なっていても認証を回避することが可能な脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000030",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0987",
+      "source": "CVE",
+      "id": "CVE-2003-0987"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2003-0987",
+      "source": "NVD",
+      "id": "CVE-2003-0987"
+    },
+    {
+      "text": "http://secunia.com/advisories/12377/",
+      "source": "SECUNIA",
+      "id": "SA12377"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9571",
+      "source": "BID",
+      "id": "9571"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Feb/1008920.html",
+      "source": "SECTRACK",
+      "id": "1008920"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:ibm:http_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM HTTP Server"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-10-29T11:14+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2009-10-29T11:14+09:00"
+}

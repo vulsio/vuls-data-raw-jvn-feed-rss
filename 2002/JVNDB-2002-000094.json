@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000094.html",
+  "title": "Microsoft IIS の CodeBrws.asp におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000094.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft IIS 5.0 にファイルのソースを開示してしまうという問題が存在します。\r\nMicrosoft IIS 5.0 には、デモンストレーション用のサンプルファイルがインストールされています。これらのデモンストレーション用サンプルファイルは .asp 、.inc 、.htm 、.html 等の拡張子を持ち、ウェブルートディレクトリ下に存在しています。\r\nIIS 5.0 の Internet Service Manager が使用する、サンプルプログラムの一つに codebrws.asp というファイルがあります。codebrws.asp 内のユニコードキャラクタの取り扱いに不備が存在するため、このファイルを利用することにより、攻撃者は、ウェブルートディレクトリ下に存在するファイルのソースを取得できる可能性が存在します。ソースを取得できるのは、.html 、.htm 、.asp 、.inc 以上の拡張子を持つファイルに限ります。\r\nデフォルト設定の IIS 5.0 ではリモートから codebrws.asp へアクセスすることが出来ないため、意図的に設定を変更しない限り、ローカルからの攻撃のみ成功します。",
+  "identifier": "JVNDB-2002-000094",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1744",
+      "source": "CVE",
+      "id": "CVE-2002-1744"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1744",
+      "source": "NVD",
+      "id": "CVE-2002-1744"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4543",
+      "source": "BID",
+      "id": "4543"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4525",
+      "source": "BID",
+      "id": "4525"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:iis",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft IIS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

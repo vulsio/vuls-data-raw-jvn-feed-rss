@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007182.html",
+  "title": "Linux Kernel の fs/ext4/super.c の ext4_fill_super 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007182.html",
+  "description": "Linux Kernel の fs/ext4/super.c の ext4_fill_super 関数は、メタブロックグループを適切に検証しないため、サービス運用妨害 (境界外読み取りおよびシステムクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-007182",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10208",
+      "source": "CVE",
+      "id": "CVE-2016-10208"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-10208",
+      "source": "NVD",
+      "id": "CVE-2016-10208"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:P/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-02-14T11:31+09:00",
+  "issued": "2017-02-14T11:31+09:00",
+  "modified": "2017-02-14T11:31+09:00"
+}

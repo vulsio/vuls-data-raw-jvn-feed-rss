@@ -1,0 +1,108 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-000092.html",
+  "title": "INplc における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-000092.html",
+  "description": "株式会社マイクロネットが提供する INplc には、次の複数の脆弱性が存在します。\r\n・DLL 読み込みに関する脆弱性 (CWE-427) - CVE-2018-0667\r\n・バッファオーバーフロー (CWE-119) - CVE-2018-0668\r\n・認証不備 (CWE-287) - CVE-2018-0669\r\n・認証不備 (CWE-287) - CVE-2018-0670\r\n・権限昇格 - CVE-2018-0671\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 東京大学/日本電気株式会社 白木 光達 氏",
+  "identifier": "JVNDB-2018-000092",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN59624986/index.html",
+      "source": "JVN",
+      "id": "JVN#59624986"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0667",
+      "source": "CVE",
+      "id": "CVE-2018-0667"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0668",
+      "source": "CVE",
+      "id": "CVE-2018-0668"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0669",
+      "source": "CVE",
+      "id": "CVE-2018-0669"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0670",
+      "source": "CVE",
+      "id": "CVE-2018-0670"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0671",
+      "source": "CVE",
+      "id": "CVE-2018-0671"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-0667",
+      "source": "NVD",
+      "id": "CVE-2018-0667"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-0668",
+      "source": "NVD",
+      "id": "CVE-2018-0668"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-0669",
+      "source": "NVD",
+      "id": "CVE-2018-0669"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-0670",
+      "source": "NVD",
+      "id": "CVE-2018-0670"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-0671",
+      "source": "NVD",
+      "id": "CVE-2018-0671"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mnc:inplc-rt",
+      "version": "2.2",
+      "vendor": "株式会社マイクロネット",
+      "product": "INplc-RT"
+    },
+    {
+      "text": "cpe:/a:mnc:inplc-rt_sdk_express",
+      "version": "2.2",
+      "vendor": "株式会社マイクロネット",
+      "product": "INplc SDK Express"
+    },
+    {
+      "text": "cpe:/a:mnc:inplc_sdk_pro%2b",
+      "version": "2.2",
+      "vendor": "株式会社マイクロネット",
+      "product": "INplc SDK Pro+"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-08-28T09:49+09:00",
+  "issued": "2018-09-07T14:07+09:00",
+  "modified": "2019-08-28T09:49+09:00"
+}

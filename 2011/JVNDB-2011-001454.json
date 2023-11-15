@@ -1,0 +1,30 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001454.html",
+  "title": "Dell Kace K2000 Systems Deployment Appliance に脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001454.html",
+  "description": "Dell Kace K2000 Systems Deployment Appliance には、脆弱性が存在します。\r\n\r\nDell Kace K2000 Systems Deployment Appliance は、Windows インストール用のファイル共有を使用しています。 このファイル共有には隠し属性が付与されており、Windows の起動時に使用されるファイルが含まれています。このファイル共有にはアクセス制限がかけられておらず、認証なしでアクセスされる可能性があります。\r\n\r\nなお、Dell から以下の脆弱性情報が公開されています。\r\n\"The Dell KACE K2000 Systems Deployment Appliance version 3.3.36822 and earlier uses a read-only CIFS fileshare named \"peinst\" to facilitate Windows deployments. This hidden, read-only fileshare is populated with pre- and post-installation tasks as well as deployment bootfiles and media used for Windows network operating system installs (called \"Scripted Installs\") and imaging (called \"K-images\"). This fileshare is hidden. It provides anonymous read-only access because of limitations with Windows PE 2005 and earlier in accessing a password-protected share as a root drive.\"",
+  "identifier": "JVNDB-2011-001454",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU598700",
+      "source": "JVN",
+      "id": "JVNVU#598700"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/598700",
+      "source": "CERT-VN",
+      "id": "VU#598700"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:dell:kace_k2000_systems_deployment_appliance",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Dell Kace K2000 Systems Deployment Appliance"
+    }
+  ],
+  "date": "2011-04-28T15:21+09:00",
+  "issued": "2011-04-28T15:21+09:00",
+  "modified": "2011-04-28T15:21+09:00"
+}

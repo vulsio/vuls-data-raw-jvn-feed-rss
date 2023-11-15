@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002024.html",
+  "title": "Cisco User-Changeable Password (UCP) の CSuserCGI.exe における複数のリモートからの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002024.html",
+  "description": "Windows 及び ACS Solution Engine の Cisco Secure Access Control Server (ACS) 内の User-Changeable Password (UCP) における securecgi-bin/CSuserCGI.exe には、複数のクロスサイトスクリプティングの脆弱性が存在します。\r\nリモートの攻撃者により、Help 引数の直後に付与される長い引数及び、詳細不明な他の経路を介して、任意の web スクリプトまたは HTML を注入される可能性があります。",
+  "identifier": "JVNDB-2008-002024",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0533",
+      "source": "CVE",
+      "id": "CVE-2008-0533"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-0533",
+      "source": "NVD",
+      "id": "CVE-2008-0533"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cisco:acs_solution_engine",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Secure Access Control Server Solution Engine"
+    },
+    {
+      "text": "cpe:/a:cisco:secure_access_control_server",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Secure Access Control Server ソフトウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2008-12-19T10:34+09:00",
+  "issued": "2008-12-19T10:34+09:00",
+  "modified": "2008-12-19T10:34+09:00"
+}

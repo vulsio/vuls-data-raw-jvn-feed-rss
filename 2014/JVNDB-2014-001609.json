@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001609.html",
+  "title": "Linux Kernel の security/keys/keyring.c 内の keyring_detect_cycle_iterator 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001609.html",
+  "description": "Linux Kernel の security/keys/keyring.c 内の keyring_detect_cycle_iterator 関数は、キーリングが同一かどうかを適切に判定しないため、サービス運用妨害 (OOPS) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-001609",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0102",
+      "source": "CVE",
+      "id": "CVE-2014-0102"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0102",
+      "source": "NVD",
+      "id": "CVE-2014-0102"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2014/03/04/21",
+      "source": "関連文書",
+      "id": "CVE-2014-0102 -- Linux kernel: security: keyring cycle detector DoS"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.2",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:M/Au:S/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2014-03-12T15:35+09:00",
+  "issued": "2014-03-12T15:35+09:00",
+  "modified": "2014-03-12T15:35+09:00"
+}

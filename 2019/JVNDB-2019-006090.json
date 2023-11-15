@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-006090.html",
+  "title": "sks-keyserver code および GnuPG におけるホストの不一致による証明書の検証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-006090.html",
+  "description": "sks-keyserver code および GnuPG には、ホストの不一致による証明書の検証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2019-006090",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13050",
+      "source": "CVE",
+      "id": "CVE-2019-13050"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-13050",
+      "source": "NVD",
+      "id": "CVE-2019-13050"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/297.html",
+      "id": "CWE-297",
+      "title": "ホストの不一致による証明書の不適切な検証(CWE-297)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gnupg",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GnuPG"
+    },
+    {
+      "text": "cpe:/a:sks_keyserver_project:sks_keyserver",
+      "version": "2.2",
+      "vendor": "SKS Keyserver project",
+      "product": "SKS Keyserver"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2019-07-09T18:06+09:00",
+  "issued": "2019-07-09T18:06+09:00",
+  "modified": "2019-07-09T18:06+09:00"
+}

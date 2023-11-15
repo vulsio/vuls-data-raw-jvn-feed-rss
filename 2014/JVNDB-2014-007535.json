@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007535.html",
+  "title": "libvirt の virConnectGetAllDomainStats の qemu の実装におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007535.html",
+  "description": "libvirt の virConnectGetAllDomainStats の qemu の実装は、ACL 制限によりドメインをスキップする場合、ロックを適切に処理しないため、サービス運用妨害 (デッドロック、またはセグメンテーション違反およびクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-007535",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8131",
+      "source": "CVE",
+      "id": "CVE-2014-8131"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8131",
+      "source": "NVD",
+      "id": "CVE-2014-8131"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:libvirt",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "libvirt"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-01-09T16:53+09:00",
+  "issued": "2015-01-09T16:53+09:00",
+  "modified": "2015-01-09T16:53+09:00"
+}

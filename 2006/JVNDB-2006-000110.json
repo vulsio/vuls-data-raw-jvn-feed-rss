@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000110.html",
+  "title": "PostgreSQL の SET SESSION AUTHORIZATION コマンドにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000110.html",
+  "description": "PostgreSQL には、アサーションチェック (debug_assertions) が有効である環境下において、SET SESSION AUTHORIZATION コマンドに不備があるため、PostgreSQL のサーバプロセスがクラッシュしてしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000110",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0678",
+      "source": "CVE",
+      "id": "CVE-2006-0678"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0678",
+      "source": "NVD",
+      "id": "CVE-2006-0678"
+    },
+    {
+      "text": "http://secunia.com/advisories/18890/",
+      "source": "SECUNIA",
+      "id": "SA18890"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/16650",
+      "source": "BID",
+      "id": "16650"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/0605",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-0605"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:postgresql:postgresql",
+      "version": "2.2",
+      "vendor": "PostgreSQL.org",
+      "product": "PostgreSQL"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:H/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

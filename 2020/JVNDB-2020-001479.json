@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001479.html",
+  "title": "apt-cacher-ng における情報漏えいに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001479.html",
+  "description": "apt-cacher-ng には、情報漏えいに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-001479",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5202",
+      "source": "CVE",
+      "id": "CVE-2020-5202"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-5202",
+      "source": "NVD",
+      "id": "CVE-2020-5202"
+    },
+    {
+      "text": "https://seclists.org/oss-sec/2020/q1/21",
+      "source": "関連文書",
+      "id": "CVE-2020-5202: apt-cacher-ng: a local unprivileged user can impersonate the apt-cacher-ng daemon, possible credentials leak"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:debian:apt-cacher-ng",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "apt-cacher-ng"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2020-02-12T11:54+09:00",
+  "issued": "2020-02-12T11:54+09:00",
+  "modified": "2020-02-12T11:54+09:00"
+}

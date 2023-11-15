@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001620.html",
+  "title": "HPLIP の alert-mailing 実装における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001620.html",
+  "description": "HP Linux Imaging and Printing (HPLIP) の alert-mailing 実装には、setalerts メッセージおよびイベントメッセージで構成されたデバイス URI の検査の欠落に関連した、権限昇格の脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001620",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2940",
+      "source": "CVE",
+      "id": "CVE-2008-2940"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2940",
+      "source": "NVD",
+      "id": "CVE-2008-2940"
+    },
+    {
+      "text": "http://secunia.com/advisories/31470",
+      "source": "SECUNIA",
+      "id": "SA31470"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/30683",
+      "source": "BID",
+      "id": "30683"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/44441",
+      "source": "XF",
+      "id": "44441"
+    },
+    {
+      "text": "http://securitytracker.com/id?1020684",
+      "source": "SECTRACK",
+      "id": "1020684"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hp:linux_imaging_and_printing_project",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP Linux Imaging and Printing"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-11-10T14:43+09:00",
+  "issued": "2008-09-05T13:42+09:00",
+  "modified": "2008-11-10T14:43+09:00"
+}

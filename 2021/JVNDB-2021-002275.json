@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002275.html",
+  "title": "GNU C Library における二重解放に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002275.html",
+  "description": "GNU C Library (別名 glibc および libc6) には、二重解放に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-002275",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU99464755/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99464755"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27645",
+      "source": "CVE",
+      "id": "CVE-2021-27645"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-27645",
+      "source": "NVD",
+      "id": "CVE-2021-27645"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-166-10",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-166-10"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/415.html",
+      "id": "CWE-415",
+      "title": "二重解放(CWE-415)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:glibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU C Library"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "2.5",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L"
+    }
+  ],
+  "date": "2023-06-16T14:19+09:00",
+  "issued": "2021-08-19T10:25+09:00",
+  "modified": "2023-06-16T14:19+09:00"
+}

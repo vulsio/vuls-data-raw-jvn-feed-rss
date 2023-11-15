@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005568.html",
+  "title": "JBoss Enterprise SOA Platform の picketlink-sts.war におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005568.html",
+  "description": "JBoss Enterprise SOA Platform の以下の picketlink-sts.war のデプロイメント記述子のデフォルトコンフィグレーションは、GET および POST http メソッド要素を含んでいるため、アクセス制限を回避される脆弱性が存在します。\r\n(1) security_saml クイックスタート\r\n(2) webservice_proxy_security クイックスタート\r\n(3) web-console アプリケーション\r\n(4) http-invoker アプリケーション\r\n(5) gpd-deployer アプリケーション\r\n(6) jbpm-console アプリケーション\r\n(7) contract アプリケーション\r\n(8) uddi-console アプリケーション",
+  "identifier": "JVNDB-2010-005568",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2493",
+      "source": "CVE",
+      "id": "CVE-2010-2493"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2493",
+      "source": "NVD",
+      "id": "CVE-2010-2493"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_soa_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat JBoss SOA Platform"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2012-12-20T19:29+09:00",
+  "issued": "2012-12-20T19:29+09:00",
+  "modified": "2012-12-20T19:29+09:00"
+}

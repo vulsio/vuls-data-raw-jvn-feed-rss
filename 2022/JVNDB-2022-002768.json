@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002768.html",
+  "title": "ユニモテクノロジー製デジタルビデオレコーダにおける複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002768.html",
+  "description": "ユニモテクノロジー株式会社が提供する複数のデジタルビデオレコーダ製品には、次の複数の脆弱性が存在します。\r\n\r\n　* 不適切な認証（推測可能な認証情報）(CWE-287) - CVE-2022-44620\r\n　* OSコマンドインジェクション (CWE-78) - CVE-2022-44606\r\n　* ドキュメント化されていないデバッグ機能を有効化される問題 (CWE-912) - CVE-2022-43464\r\n\r\nなお本件の報告者によると、本脆弱性を悪用した攻撃が確認されているとのことです。\r\n\r\nこの脆弱性情報は、次の方が製品開発者に直接報告し、製品開発者との調整を経て、製品利用者への周知を目的に JVN での公表に至りました。\r\n報告者: 情報通信研究機構 サイバーセキュリティ研究所 森好樹 氏、丑丸逸人 氏、首浦大夢 氏、久保正樹 氏\r\n",
+  "identifier": "JVNDB-2022-002768",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU94514762/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94514762"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-44620",
+      "source": "CVE",
+      "id": "CVE-2022-44620"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-44606",
+      "source": "CVE",
+      "id": "CVE-2022-44606"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-43464",
+      "source": "CVE",
+      "id": "CVE-2022-43464"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/912.html",
+      "id": "CWE-912",
+      "title": "非公開の機能(CWE-912)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:unimo_technology_udr-ja1604_firmware",
+      "version": "2.2",
+      "vendor": "ユニモテクノロジー株式会社",
+      "product": "UDR-JA1604 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:misc:unimo_technology_udr-ja1608_firmware",
+      "version": "2.2",
+      "vendor": "ユニモテクノロジー株式会社",
+      "product": "UDR-JA1608 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:misc:unimo_technology_udr-ja1616_firmware",
+      "version": "2.2",
+      "vendor": "ユニモテクノロジー株式会社",
+      "product": "UDR-JA1616 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-12-02T14:36+09:00",
+  "issued": "2022-12-02T14:36+09:00",
+  "modified": "2022-12-02T14:36+09:00"
+}

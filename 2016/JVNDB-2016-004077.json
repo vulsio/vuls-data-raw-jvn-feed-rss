@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004077.html",
+  "title": "Google Chrome で使用される Blink の CSP の実装の WebKit/Source/core/frame/csp/CSPSource.cpp における特定の HSTS Web サイトへのアクセスの有無を確認される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004077.html",
+  "description": "Google Chrome で使用される Blink の コンテンツセキュリティポリシー (CSP) の実装の WebKit/Source/core/frame/csp/CSPSource.cpp 内の CSPSource::schemeMatches 関数は、https :443 URL に http :80 ポリシーを適用せず、wss :443 URL に ws :80 ポリシーを適用しないため、特定の HSTS Web サイトへのアクセスの有無を確認される脆弱性が存在します。 \r\n\r\n本脆弱性は、CVE-2016-1617 の問題解決後の仕様変更に関連する問題です。",
+  "identifier": "JVNDB-2016-004077",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5137",
+      "source": "CVE",
+      "id": "CVE-2016-5137"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5137",
+      "source": "NVD",
+      "id": "CVE-2016-5137"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2016-07-29T15:16+09:00",
+  "issued": "2016-07-29T15:16+09:00",
+  "modified": "2016-07-29T15:16+09:00"
+}

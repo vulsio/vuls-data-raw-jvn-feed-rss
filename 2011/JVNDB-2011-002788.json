@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002788.html",
+  "title": "Pidgin などの製品で使用される libpurple におけるサービス運用妨害 (クラッシュ) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002788.html",
+  "description": "Pidgin などの製品で使用される libpurple の SILC プロトコル plug-in 内にある g_markup_escape_text 関数には、glib2 の特定バージョンとの相互作用に関する処理に不備があるため、サービス運用妨害 (クラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-002788",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3594",
+      "source": "CVE",
+      "id": "CVE-2011-3594"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3594",
+      "source": "NVD",
+      "id": "CVE-2011-3594"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pidgin:libpurple",
+      "version": "2.2",
+      "vendor": "Pidgin",
+      "product": "libpurple"
+    },
+    {
+      "text": "cpe:/a:pidgin:pidgin",
+      "version": "2.2",
+      "vendor": "Pidgin",
+      "product": "Pidgin"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_optional_productivity_applications",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Optional Productivity Applications"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-01-06T18:46+09:00",
+  "issued": "2011-11-11T11:21+09:00",
+  "modified": "2012-01-06T18:46+09:00"
+}

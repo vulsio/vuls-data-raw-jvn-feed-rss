@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007876.html",
+  "title": "TRE ライブラリおよび musl の libc における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007876.html",
+  "description": "TRE ライブラリおよび musl の libc には、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2016-007876",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8859",
+      "source": "CVE",
+      "id": "CVE-2016-8859"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8859",
+      "source": "NVD",
+      "id": "CVE-2016-8859"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/10/19/1",
+      "source": "関連文書",
+      "id": "CVE Request - TRE & musl libc regex integer overflows in buffer size computations"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/190.html",
+      "id": "CWE-190",
+      "title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:musl-libc:musl",
+      "version": "2.2",
+      "vendor": "musl libc",
+      "product": "musl"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-03-28T16:32+09:00",
+  "issued": "2017-03-28T16:32+09:00",
+  "modified": "2017-03-28T16:32+09:00"
+}

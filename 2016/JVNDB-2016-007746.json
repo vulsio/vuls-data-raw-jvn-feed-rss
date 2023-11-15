@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007746.html",
+  "title": "libiberty の cp-demangle.c の d_print_comp 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007746.html",
+  "description": "libiberty の cp-demangle.c の d_print_comp 関数には、\"自身を 1 度以上先祖に持つ (having itself as ancestor more than once)\" ノードに関する処理に不備があるため、サービス運用妨害 (セグメンテーション違反およびクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-007746",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4491",
+      "source": "CVE",
+      "id": "CVE-2016-4491"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4491",
+      "source": "NVD",
+      "id": "CVE-2016-4491"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:libiberty",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU libiberty"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-03-15T15:21+09:00",
+  "issued": "2017-03-15T15:21+09:00",
+  "modified": "2017-03-15T15:21+09:00"
+}

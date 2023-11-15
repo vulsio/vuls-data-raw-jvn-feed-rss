@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000111.html",
+  "title": "IPsec-Tools の racoon における RSA の署名が正しく検証されない脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000111.html",
+  "description": "Ipsec-Tools に含まれている racoon には、crypto_openssl.c における RSA 署名の検証に不備があり、暗号化形式として RSA 署名を選択した場合に RSA 署名を常に信頼してしまい、結果として X.509 証明書のみによる認証を行なってしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000111",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0155",
+      "source": "CVE",
+      "id": "CVE-2004-0155"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0155",
+      "source": "NVD",
+      "id": "CVE-2004-0155"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/552398",
+      "source": "CERT-VN",
+      "id": "VU#552398"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10072",
+      "source": "BID",
+      "id": "10072"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Apr/1009694.html",
+      "source": "SECTRACK",
+      "id": "1009694"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,95 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000102.html",
+  "title": "ジャストシステム製品における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000102.html",
+  "description": "ジャストシステム製品には、次の複数の脆弱性が存在します。\r\n<ul><li>解放済みメモリの使用 (use-after-free) (CWE-416) - CVE-2023-34366</li><li>整数オーバーフロー (CWE-190) - CVE-2023-38127</li><li>型の取り違え (CWE-843) - CVE-2023-38128</li><li>配列インデックスに対する不適切な検証 (CWE-129) - CVE-2023-35126</li></ul>\r\nこの脆弱性情報は、Cisco Talos Security Intelligence & Research Group が製品開発者に直接報告し、製品開発者との調整を経て、製品利用者への周知を目的に JVN での公表に至りました。",
+  "identifier": "JVNDB-2023-000102",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN28846531/index.html",
+      "source": "JVN",
+      "id": "JVN#28846531"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-34366",
+      "source": "CVE",
+      "id": "CVE-2023-34366"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-38127",
+      "source": "CVE",
+      "id": "CVE-2023-38127"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-38128",
+      "source": "CVE",
+      "id": "CVE-2023-38128"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-35126",
+      "source": "CVE",
+      "id": "CVE-2023-35126"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:justsystems:ichitaro",
+      "version": "2.2",
+      "vendor": "ジャストシステム",
+      "product": "一太郎"
+    },
+    {
+      "text": "cpe:/a:justsystems:just_government",
+      "version": "2.2",
+      "vendor": "ジャストシステム",
+      "product": "JUST Government"
+    },
+    {
+      "text": "cpe:/a:justsystems:just_office",
+      "version": "2.2",
+      "vendor": "ジャストシステム",
+      "product": "JUST Office"
+    },
+    {
+      "text": "cpe:/a:justsystems:just_police",
+      "version": "2.2",
+      "vendor": "ジャストシステム",
+      "product": "JUST Police"
+    },
+    {
+      "text": "cpe:/a:justsystems:rakuraku_hagaki",
+      "version": "2.2",
+      "vendor": "ジャストシステム",
+      "product": "楽々はがき"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+    }
+  ],
+  "date": "2023-10-19T12:06+09:00",
+  "issued": "2023-10-19T12:06+09:00",
+  "modified": "2023-10-19T12:06+09:00"
+}

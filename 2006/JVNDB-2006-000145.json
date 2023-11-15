@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000145.html",
+  "title": "Linux Kernel の複数の関数にカーネルメモリデータが漏洩する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000145.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には、以下のソケットを利用する複数の関数において sockaddr_in.sin_zero を適切に初期化しない不備が存在します。\r\n\r\n・getsockname() 関数、getpeername() 関数、accept() 関数 (CVE-2006-1342)\r\n・SO_ORIGINAL_DST オプション指定時の getsockopt() 関数 (CVE-2006-1343)\r\n\r\nこのため、IPv4 のソケットの名前をユーザ空間に返す際に、正規のデータと一緒にスタック上に存在するデータも返してしまう問題が存在します。\r\n\r\nローカルの攻撃者に悪用された場合、カーネルメモリ内の情報を取得される可能性があります。",
+  "identifier": "JVNDB-2006-000145",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1342",
+      "source": "CVE",
+      "id": "CVE-2006-1342"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1342",
+      "source": "NVD",
+      "id": "CVE-2006-1342"
+    },
+    {
+      "text": "http://secunia.com/advisories/19357",
+      "source": "SECUNIA",
+      "id": "SA19357"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17203",
+      "source": "BID",
+      "id": "17203"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/2071",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-2071"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

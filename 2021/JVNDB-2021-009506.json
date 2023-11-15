@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-009506.html",
+  "title": "Monkshu におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-009506.html",
+  "description": "Monkshu には、クロスサイトスクリプティングの脆弱性、およびエンコードおよびエスケープに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-009506",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-32812",
+      "source": "CVE",
+      "id": "CVE-2021-32812"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32812",
+      "source": "NVD",
+      "id": "CVE-2021-32812"
+    },
+    {
+      "text": "https://github.com/TekMonksGitHub/monkshu/releases/tag/v2.95",
+      "source": "関連文書",
+      "id": "Release 2.95"
+    },
+    {
+      "text": "https://github.com/TekMonksGitHub/monkshu/security/advisories/GHSA-hcpx-66hq-7g4x",
+      "source": "関連文書",
+      "id": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') and Improper Encoding or Escaping of Output in frontend/server/server.js"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/116.html",
+      "id": "CWE-116",
+      "title": "不適切なエンコード、または出力のエスケープ(CWE-116)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:tekmonks:monkshu",
+      "version": "2.2",
+      "vendor": "TekMonks",
+      "product": "Monkshu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+    }
+  ],
+  "date": "2022-05-02T15:15+09:00",
+  "issued": "2022-05-02T15:15+09:00",
+  "modified": "2022-05-02T15:15+09:00"
+}

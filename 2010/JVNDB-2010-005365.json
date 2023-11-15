@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005365.html",
+  "title": "libESMTP の smtp-tls.c における信頼済み証明書を偽装される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005365.html",
+  "description": "libESMTP の smtp-tls.c の match_component 関数は、2 つの文字列において一方が他方のサブストリングである場合は同一として扱うため、信頼済み証明書を偽装される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-005365",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1194",
+      "source": "CVE",
+      "id": "CVE-2010-1194"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1194",
+      "source": "NVD",
+      "id": "CVE-2010-1194"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:stafford.uklinux:libesmtp",
+      "version": "2.2",
+      "vendor": "stafford.uklinux",
+      "product": "libesmtp"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-12-20T19:29+09:00",
+  "issued": "2012-12-20T19:29+09:00",
+  "modified": "2012-12-20T19:29+09:00"
+}

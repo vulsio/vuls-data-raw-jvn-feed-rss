@@ -1,0 +1,105 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001289.html",
+  "title": "Ovarro 製 TBox における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001289.html",
+  "description": "Ovarro 社が提供する TBox は、リモートターミナルユニットです。TBoX には次の複数の脆弱性が存在します。\r\n\r\n　* コードインジェクション (CWE-94) - CVE-2021-22646\r\n　* 重要なリソースへの不適切なパーミッションの割り当て (CWE-732) - CVE-2021-22648\r\n　* リソースの枯渇 (CWE-400) - CVE-2021-22642\r\n　* 認証情報の不十分な保護 (CWE-522) - CVE-2021-22640\r\n　* ハードコードされた暗号鍵の使用 (CWE-321) - CVE-2021-22644\r\n　* 相対的パストラバーサル (CWE-23) - CVE-2021-22650",
+  "identifier": "JVNDB-2021-001289",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU95598949",
+      "source": "JVN",
+      "id": "JVNVU#95598949"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22640",
+      "source": "CVE",
+      "id": "CVE-2021-22640"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22642",
+      "source": "CVE",
+      "id": "CVE-2021-22642"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22644",
+      "source": "CVE",
+      "id": "CVE-2021-22644"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22646",
+      "source": "CVE",
+      "id": "CVE-2021-22646"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22648",
+      "source": "CVE",
+      "id": "CVE-2021-22648"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22650",
+      "source": "CVE",
+      "id": "CVE-2021-22650"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-054-04",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-054-04"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/321.html",
+      "id": "CWE-321",
+      "title": "ハードコードされた暗号鍵の使用(CWE-321)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/400.html",
+      "id": "CWE-400",
+      "title": "リソースの枯渇(CWE-400)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/522.html",
+      "id": "CWE-522",
+      "title": "認証情報の不十分な保護(CWE-522)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/732.html",
+      "id": "CWE-732",
+      "title": "重要なリソースに対する不適切なパーミッションの割り当て(CWE-732)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/23.html",
+      "id": "CWE-23",
+      "title": "相対パストラバーサル(CWE-23)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:ovarro_tbox",
+      "version": "2.2",
+      "vendor": "Ovarro",
+      "product": "TBox"
+    },
+    {
+      "text": "cpe:/a:misc:ovarro_tboxlt2",
+      "version": "2.2",
+      "vendor": "Ovarro",
+      "product": "TBoxLT2"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-09-27T14:50+09:00",
+  "issued": "2021-03-25T16:07+09:00",
+  "modified": "2021-09-27T14:50+09:00"
+}

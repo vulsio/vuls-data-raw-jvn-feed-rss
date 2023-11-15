@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005775.html",
+  "title": "X.Org および XFree86 用 xfs フォントサーバにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005775.html",
+  "description": "X.Org および XFree86 用 xfs フォントサーバの difs/events.c 内の ProcSetEventMask 関数には、SendErrToClient 関数をコールする際に、ポインタではなく mask 値を使用するため、サービス運用妨害 (メモリ破損およびクラッシュ) 状態となる、またはメモリから重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-005775",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1699",
+      "source": "CVE",
+      "id": "CVE-2012-1699"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1699",
+      "source": "NVD",
+      "id": "CVE-2012-1699"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:x.org:x.org_x11",
+      "version": "2.2",
+      "vendor": "X.Org Foundation",
+      "product": "X.Org X11"
+    },
+    {
+      "text": "cpe:/a:xfree86_project:xfree86",
+      "version": "2.2",
+      "vendor": "XFree86 Project",
+      "product": "XFree86"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:P"
+    }
+  ],
+  "date": "2013-01-22T16:45+09:00",
+  "issued": "2012-12-25T14:00+09:00",
+  "modified": "2013-01-22T16:45+09:00"
+}

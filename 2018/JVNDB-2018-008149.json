@@ -1,0 +1,87 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008149.html",
+  "title": "Auto-Maskin DCU 210E、RP 210E および Marine Pro Observer App に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008149.html",
+  "description": "Auto-Maskin RP リモートパネルと DCU コントロールユニットは船舶のエンジンの監視および制御を行う製品です。これらの製品には認証や暗号化に関する複数の脆弱性が存在し、攻撃者によって製品にアクセスされ、船舶のエンジン操作を乗っ取られる可能性があります。\r\n\r\n認証情報がハードコードされている問題 (CWE-798) - CVE-2018-5399\r\nDCU 210E のファームウエアには Dropbear SSH server が含まれていますが、このことはドキュメントに記載されていません。また、SSH 接続のためのユーザ名とパスワードがハードコードされており、そのパスワードは容易に推測可能なものです。\r\n\r\n接続元の妥当性検証の不備 (CWE-346) - CVE-2018-5400\r\n当該製品はドキュメントに記載されていない独自のプロトコルを使用して他の機器との Modbus 通信を行っていますが、機器間の接続の妥当性を検証していません。\r\n\r\n機微な情報がクリアテキストで送信される問題 (CWE-319) - CVE-2018-5401\r\n当該製品は暗号化されていない Modbus 通信を使用して制御情報を送信しています。\r\n\r\n機微な情報がクリアテキストで送信される問題 (CWE-319) - CVE-2018-5402\r\n当該製品に含まれるウェブサーバは暗号化されていないプレーンテキストを使用して管理者 PIN コードを送信しています。\r\n\r\nこれらの脆弱性は Brian Satira 氏および Brian Olson 氏により報告されました。",
+  "identifier": "JVNDB-2018-008149",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU99039923/",
+      "source": "JVN",
+      "id": "JVNVU#99039923"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5399",
+      "source": "CVE",
+      "id": "CVE-2018-5399"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5400",
+      "source": "CVE",
+      "id": "CVE-2018-5400"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5401",
+      "source": "CVE",
+      "id": "CVE-2018-5401"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5402",
+      "source": "CVE",
+      "id": "CVE-2018-5402"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5399",
+      "source": "NVD",
+      "id": "CVE-2018-5399"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5400",
+      "source": "NVD",
+      "id": "CVE-2018-5400"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5401",
+      "source": "NVD",
+      "id": "CVE-2018-5401"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5402",
+      "source": "NVD",
+      "id": "CVE-2018-5402"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/176301",
+      "source": "CERT-VN",
+      "id": "VU#176301"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-051-04",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-051-04"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:auto-maskin:dcu_210e_firmware",
+      "version": "2.2",
+      "vendor": "Auto-Maskin",
+      "product": "DCU 210E ファームウェア"
+    },
+    {
+      "text": "cpe:/o:auto-maskin:marine_pro_observer",
+      "version": "2.2",
+      "vendor": "Auto-Maskin",
+      "product": "Marine Pro Observer"
+    },
+    {
+      "text": "cpe:/o:auto-maskin:rp_210e_firmware",
+      "version": "2.2",
+      "vendor": "Auto-Maskin",
+      "product": "RP 210E ファームウェア"
+    }
+  ],
+  "date": "2020-02-21T16:42+09:00",
+  "issued": "2018-10-10T12:37+09:00",
+  "modified": "2020-02-21T16:42+09:00"
+}

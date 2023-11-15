@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005345.html",
+  "title": "Glibc および eglibc における整数符号エラーの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005345.html",
+  "description": "Glibc および eglibc には、Supplemental Streaming SIMD Extensions 3 (SSSE3) の最適化を使用する場合、整数符号エラーの脆弱性が存在します。",
+  "identifier": "JVNDB-2011-005345",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2702",
+      "source": "CVE",
+      "id": "CVE-2011-2702"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2702",
+      "source": "NVD",
+      "id": "CVE-2011-2702"
+    },
+    {
+      "text": "http://seclists.org/oss-sec/2011/q3/123",
+      "source": "関連文書",
+      "id": "CVE id request: (e)glibc"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:eglibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "Embedded GLIBC"
+    },
+    {
+      "text": "cpe:/a:gnu:glibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU C Library"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-10-30T16:16+09:00",
+  "issued": "2014-10-30T16:16+09:00",
+  "modified": "2014-10-30T16:16+09:00"
+}

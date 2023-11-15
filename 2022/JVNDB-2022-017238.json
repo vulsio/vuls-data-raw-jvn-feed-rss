@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-017238.html",
+  "title": "Google の Google TensorFlow における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-017238.html",
+  "description": "Google の Google TensorFlow には、境界外読み取りに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-017238",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-35937",
+      "source": "CVE",
+      "id": "CVE-2022-35937"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-35937",
+      "source": "NVD",
+      "id": "CVE-2022-35937"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/blob/f463040eb3997e42e60a2ffc6dc72de7ef11dbb4/tensorflow/lite/kernels/gather_nd.cc#L105-L111",
+      "source": "関連文書",
+      "id": "github.com (gather_nd.cc#L105-L111)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/commit/595a65a3e224a0362d7e68c2213acfc2b499a196",
+      "source": "関連文書",
+      "id": "github.com (595a65a3e224a0362d7e68c2213acfc2b499a196)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-pxrw-j2fv-hx3h",
+      "source": "関連文書",
+      "id": "github.com (GHSA-pxrw-j2fv-hx3h)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:tensorflow",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google TensorFlow"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.1",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+    }
+  ],
+  "date": "2023-10-11T17:54+09:00",
+  "issued": "2023-10-11T17:54+09:00",
+  "modified": "2023-10-11T17:54+09:00"
+}

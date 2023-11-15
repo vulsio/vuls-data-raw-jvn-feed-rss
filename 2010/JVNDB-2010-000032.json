@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-000032.html",
+  "title": "SEIL/X シリーズおよび SEIL/B1 における IPv6 Unicast RPF 機能に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-000032.html",
+  "description": "SEIL/X シリーズおよび SEIL/B1 には、IPv6 Unicast Reverse Path Forwarding (RPF) 機能が strict モードで適切に機能しないことに起因する脆弱性が存在します。\r\n\r\nSEIL/X シリーズおよび SEIL/B1 は、ルータ製品です。SEIL/X シリーズおよび SEIL/B1 には、IPv6 Unicast RPF 機能が strict モードで適切に機能しないことに起因する脆弱性が存在します。\r\n\r\nIPv6 Unicast RPF 機能を strict モードで使用している場合、本脆弱性の影響を受けます。なお、開発者によると同機能を loose モードで使用している場合、および IPv4 Unicast RPF 機能は、本脆弱性の影響を受けないとのことです。",
+  "identifier": "JVNDB-2010-000032",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN12683004/index.html",
+      "source": "JVN",
+      "id": "JVN#12683004"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2363",
+      "source": "CVE",
+      "id": "CVE-2010-2363"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2363",
+      "source": "NVD",
+      "id": "CVE-2010-2363"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:iij:seil%2Fb1",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/B1"
+    },
+    {
+      "text": "cpe:/h:iij:seil%2Fx1",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/X1"
+    },
+    {
+      "text": "cpe:/h:iij:seil%2Fx2",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/X2"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2010-08-25T12:01+09:00",
+  "issued": "2010-08-25T12:01+09:00",
+  "modified": "2010-08-25T12:01+09:00"
+}

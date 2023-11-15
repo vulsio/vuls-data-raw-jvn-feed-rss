@@ -1,0 +1,277 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001431.html",
+  "title": "SNMPv3 実装の不適切な HMAC 処理による認証回避の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001431.html",
+  "description": "SNMPv3 の実装には、細工されたパケットを適切に処理しないため認証回避の脆弱性が存在します。\r\n\r\nSNMP (Simple Network Management Protocol) は、ネットワークデバイスの監視や管理のために広く使用されているプロトコルです。SNMPv3 は、認証やプライバシコントロールといったセキュリティ機能をサポートしています。SNMPv3 の認証では、HMAC (keyed-Hash Message Authentication Code) が使用されています。このコードは、秘密鍵と暗号ハッシュ機能を組み合わせてを生成されています。\r\n\r\nSNMPv3 の実装によっては、認証処理に脆弱性があるため細工されたパケットを処理することで認証が回避されてしまう可能性が存在します。",
+  "identifier": "JVNDB-2008-001431",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA08-162A/index.html",
+      "source": "JVN",
+      "id": "JVNTA08-162A"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU878044/",
+      "source": "JVN",
+      "id": "JVNVU#878044"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA08-162A/index.html",
+      "source": "JVNTR",
+      "id": "TRTA08-162A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0960",
+      "source": "CVE",
+      "id": "CVE-2008-0960"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-0960",
+      "source": "NVD",
+      "id": "CVE-2008-0960"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/878044",
+      "source": "CERT-VN",
+      "id": "VU#878044"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA08-162A.html",
+      "source": "CERT-TA",
+      "id": "TA08-162A"
+    },
+    {
+      "text": "http://secunia.com/advisories/30574/",
+      "source": "SECUNIA",
+      "id": "SA30574"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/29623",
+      "source": "BID",
+      "id": "29623"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nec:ip8800_s_r",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IP8800/S,/R"
+    },
+    {
+      "text": "cpe:/a:net-snmp:net-snmp",
+      "version": "2.2",
+      "vendor": "Net-SNMP",
+      "product": "Net-SNMP"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax2400s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX2400Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax3600s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX3600Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax5400s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX5400Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax6300s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX6300Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax6700s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX6700Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax7700r",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX7700Rシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax7800r",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX7800Rシリーズ"
+    },
+    {
+      "text": "cpe:/h:alaxala:ax7800s",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX7800Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:allied_telesis_k.k.:centrecom",
+      "version": "2.2",
+      "vendor": "アライドテレシス",
+      "product": "CentreCOM"
+    },
+    {
+      "text": "cpe:/h:allied_telesis_k.k.:switchblade_5400s",
+      "version": "2.2",
+      "vendor": "アライドテレシス",
+      "product": "SwitchBlade 5400Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:allied_telesis_k.k.:switchblade_7800r",
+      "version": "2.2",
+      "vendor": "アライドテレシス",
+      "product": "SwitchBlade 7800R シリーズ"
+    },
+    {
+      "text": "cpe:/h:allied_telesis_k.k.:switchblade_7800s",
+      "version": "2.2",
+      "vendor": "アライドテレシス",
+      "product": "SwitchBlade 7800Sシリーズ"
+    },
+    {
+      "text": "cpe:/h:allied_telesis_k.k.:switchblade_x908",
+      "version": "2.2",
+      "vendor": "アライドテレシス",
+      "product": "SwitchBlade x908"
+    },
+    {
+      "text": "cpe:/h:allied_telesis_k.k.:x900-12xts",
+      "version": "2.2",
+      "vendor": "アライドテレシス",
+      "product": "x900-12XT/S"
+    },
+    {
+      "text": "cpe:/h:allied_telesis_k.k.:x900-24xs",
+      "version": "2.2",
+      "vendor": "アライドテレシス",
+      "product": "x900-24XS"
+    },
+    {
+      "text": "cpe:/h:allied_telesis_k.k.:x900-24xt",
+      "version": "2.2",
+      "vendor": "アライドテレシス",
+      "product": "x900-24XT"
+    },
+    {
+      "text": "cpe:/h:fujitsu:ipcom",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "IPCOMシリーズ"
+    },
+    {
+      "text": "cpe:/h:hitachi:gr4000",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "GR4000"
+    },
+    {
+      "text": "cpe:/h:hitachi:gs3000",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "GS3000"
+    },
+    {
+      "text": "cpe:/h:hitachi:gs4000",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "GS4000"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:cisco:catos",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco CatOS"
+    },
+    {
+      "text": "cpe:/o:cisco:ios",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS"
+    },
+    {
+      "text": "cpe:/o:cisco:ios_xr",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS XR"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2016-11-10T16:06+09:00",
+  "issued": "2008-07-03T14:08+09:00",
+  "modified": "2016-11-10T16:06+09:00"
+}

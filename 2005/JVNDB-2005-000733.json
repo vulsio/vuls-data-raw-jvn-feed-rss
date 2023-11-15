@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000733.html",
+  "title": "Linux Kernel の atm モジュールにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000733.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・ATM (非同期転送モード) で通信するための ATM モジュールにおいて、特定のソケットで通信を行っている場合にモジュール参照カウントが適切に取り扱われないため、カーネルパニックが発生する問題 (CVE-2005-3359)\r\n\r\n・sg ドライバ (汎用ドライバ) において、メモリをマッピングする際に VM_IO フラグが適切にセットされないため、I/O 領域が適切に確保されずにカーネルがクラッシュする問題 (CVE-2006-1528)\r\n\r\nローカルの攻撃者にこれらの問題を悪用された場合、システムがサービス不能状態に陥る可能性があります。",
+  "identifier": "JVNDB-2005-000733",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3359",
+      "source": "CVE",
+      "id": "CVE-2005-3359"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3359",
+      "source": "NVD",
+      "id": "CVE-2005-3359"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18101",
+      "source": "BID",
+      "id": "18101"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17078",
+      "source": "BID",
+      "id": "17078"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

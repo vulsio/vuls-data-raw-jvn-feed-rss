@@ -1,0 +1,227 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001881.html",
+  "title": "OpenSSL の crypto/asn1/a_type.c の ASN1_TYPE_cmp 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001881.html",
+  "description": "OpenSSL の crypto/asn1/a_type.c の ASN1_TYPE_cmp 関数は、ブール (ブーリアン) 型の比較を適切に実行しないため、サービス運用妨害 (不正な読み取り操作およびアプリケーションクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-17: Code (コード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/17.html",
+  "identifier": "JVNDB-2015-001881",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU95877131/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95877131"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU97220341/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97220341"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU99970459/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99970459"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0286",
+      "source": "CVE",
+      "id": "CVE-2015-0286"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0286",
+      "source": "NVD",
+      "id": "CVE-2015-0286"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hp:icewall_mcrp",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP IceWall MCRP"
+    },
+    {
+      "text": "cpe:/a:hp:icewall_sso",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP IceWall SSO"
+    },
+    {
+      "text": "cpe:/a:nec:csview",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CSVIEW"
+    },
+    {
+      "text": "cpe:/a:nec:enterpriseidentitymanager",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "EnterpriseIdentityManager"
+    },
+    {
+      "text": "cpe:/a:nec:enterprise_directoryserver",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "EnterpriseDirectoryServer"
+    },
+    {
+      "text": "cpe:/a:nec:secureware_pki_application_development_kit",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SecureWare/PKIアプリケーション開発キット"
+    },
+    {
+      "text": "cpe:/a:nec:systemdirector_enterprise",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SystemDirector Enterprise"
+    },
+    {
+      "text": "cpe:/a:nec:webotx",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Application Server"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_enterprise_service_bus",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Enterprise Service Bus"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_portal",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Portal"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_sip_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX SIP Application Server"
+    },
+    {
+      "text": "cpe:/a:nec:websam",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebSAM"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_applications",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Applications"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_policy_management",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Policy Management"
+    },
+    {
+      "text": "cpe:/a:oracle:enterprise_manager",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Enterprise Manager"
+    },
+    {
+      "text": "cpe:/a:oracle:fusion_middleware",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Fusion Middleware"
+    },
+    {
+      "text": "cpe:/a:oracle:mysql",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/a:oracle:peoplesoft_products",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle PeopleSoft Products"
+    },
+    {
+      "text": "cpe:/a:oracle:secure_backup",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Secure Backup"
+    },
+    {
+      "text": "cpe:/a:oracle:virtualization_secure_global_desktop",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Virtualization"
+    },
+    {
+      "text": "cpe:/h:nec:express5800",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "Express5800"
+    },
+    {
+      "text": "cpe:/h:nec:istorage",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "iStorage"
+    },
+    {
+      "text": "cpe:/h:nec:ix2000",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX2000シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:ix3000",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX3000シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:univerge",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "UNIVERGE"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2016-11-22T15:56+09:00",
+  "issued": "2015-03-23T12:30+09:00",
+  "modified": "2016-11-22T15:56+09:00"
+}

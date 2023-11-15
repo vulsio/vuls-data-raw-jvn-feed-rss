@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003297.html",
+  "title": "OpenStack Neutron の IPTables ファイアウォールにおける MAC 偽造保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003297.html",
+  "description": "OpenStack Neutron の IPTables ファイアウォールには、MAC 偽造保護メカニズムを回避され、その結果、サービス運用妨害 (DoS) 状態にされる、またはネットワークトラフィックを傍受される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-254: Security Features (セキュリティ機能) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/254.html",
+  "identifier": "JVNDB-2016-003297",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5363",
+      "source": "CVE",
+      "id": "CVE-2016-5363"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5363",
+      "source": "NVD",
+      "id": "CVE-2016-5363"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:neutron",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Neutron"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+    }
+  ],
+  "date": "2016-06-21T17:32+09:00",
+  "issued": "2016-06-21T17:32+09:00",
+  "modified": "2016-06-21T17:32+09:00"
+}

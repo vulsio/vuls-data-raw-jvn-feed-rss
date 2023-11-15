@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002817.html",
+  "title": "Moodle の assignment モジュールにおける他のユーザのアサインメントを読まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002817.html",
+  "description": "Moodle の assignment モジュール の mod/assign/locallib.php は、ZIP assignment-archive ダウンロード (別名 downloadall) リクエスト を処理している間、機能要件 (capability requirement) を配慮しないため、他のユーザのアサインメントを読まれる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002817",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2079",
+      "source": "CVE",
+      "id": "CVE-2013-2079"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2079",
+      "source": "NVD",
+      "id": "CVE-2013-2079"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:moodle:moodle",
+      "version": "2.2",
+      "vendor": "Moodle",
+      "product": "Moodle"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2013-05-29T13:51+09:00",
+  "issued": "2013-05-29T13:51+09:00",
+  "modified": "2013-05-29T13:51+09:00"
+}

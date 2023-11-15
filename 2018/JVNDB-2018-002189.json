@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-002189.html",
+  "title": "Navarino Infinity のウェブインターフェースにおける複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-002189.html",
+  "description": "Navarino Infinity のウェブインターフェースには、複数の脆弱性が存在します。\r\n\r\nSQL インジェクション (<a href=\"https://cwe.mitre.org/data/definitions/89.html\"target=\"blank\">CWE-89</a>) - CVE-2018-5384\r\nNavarino Infinity には、ブラインド SQL インジェクションが可能になる脆弱性が存在します。\r\n\r\nセッションの固定化 (<a href=\"https://cwe.mitre.org/data/definitions/384.html\"target=\"blank\">CWE-384</a>) - CVE-2018-5385\r\nNavarino Infinity の導入環境によっては、GET パラメータで送信されるセッションIDが利用されるため、二要素認証が回避されセッションの固定化攻撃が行われる可能性があります。\r\n\r\n別のパスやチャネルを介した認証回避 (<a href=\"https://cwe.mitre.org/data/definitions/288.html\"target=\"blank\">CWE-288</a>) - CVE-2018-5386\r\n特定の URL へのアクセスにより使用可能な機能の一部には、認証を回避して重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2018-002189",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU92541395",
+      "source": "JVN",
+      "id": "JVNVU#92541395"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5384",
+      "source": "CVE",
+      "id": "CVE-2018-5384"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5385",
+      "source": "CVE",
+      "id": "CVE-2018-5385"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5386",
+      "source": "CVE",
+      "id": "CVE-2018-5386"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5384",
+      "source": "NVD",
+      "id": "CVE-2018-5384"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5385",
+      "source": "NVD",
+      "id": "CVE-2018-5385"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5386",
+      "source": "NVD",
+      "id": "CVE-2018-5386"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/184077",
+      "source": "CERT-VN",
+      "id": "VU#184077"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/288.html",
+      "id": "CWE-288",
+      "title": "代替パスまたはチャネルを使用した認証回避(CWE-288)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/384.html",
+      "id": "CWE-384",
+      "title": "セッションの固定化(CWE-384)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:navarino:infinity",
+      "version": "2.2",
+      "vendor": "Navarino",
+      "product": "Navarino Infinity"
+    }
+  ],
+  "date": "2019-07-05T18:00+09:00",
+  "issued": "2018-03-30T11:22+09:00",
+  "modified": "2019-07-05T18:00+09:00"
+}

@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009019.html",
+  "title": "Fastify におけるリソースの枯渇に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009019.html",
+  "description": "Fastify には、リソースの枯渇に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-009019",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8192",
+      "source": "CVE",
+      "id": "CVE-2020-8192"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-8192",
+      "source": "NVD",
+      "id": "CVE-2020-8192"
+    },
+    {
+      "text": "https://hackerone.com/reports/903521",
+      "source": "関連文書",
+      "id": "903521 (Fastify uses allErrors: true ajv configuration by default which is susceptible to DoS)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/400.html",
+      "id": "CWE-400",
+      "title": "リソースの枯渇(CWE-400)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fastify:fastify",
+      "version": "2.2",
+      "vendor": "fastify",
+      "product": "fastify"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2020-10-14T17:10+09:00",
+  "issued": "2020-10-14T17:10+09:00",
+  "modified": "2020-10-14T17:10+09:00"
+}

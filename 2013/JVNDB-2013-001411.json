@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001411.html",
+  "title": "Wireshark の epan/dissectors/packet-pw-eth.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001411.html",
+  "description": "Wireshark の epan/dissectors/packet-pw-eth.c 内の dissect_pw_eth_heuristic 関数は、MPLS データの解析の際、明白なイーサネットアドレス値の処理を適切に開始しないため、サービス運用妨害 (ループ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001411",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1578",
+      "source": "CVE",
+      "id": "CVE-2013-1578"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1578",
+      "source": "NVD",
+      "id": "CVE-2013-1578"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wireshark:wireshark",
+      "version": "2.2",
+      "vendor": "Wireshark",
+      "product": "Wireshark"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:A/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-04-09T16:47+09:00",
+  "issued": "2013-02-06T13:43+09:00",
+  "modified": "2013-04-09T16:47+09:00"
+}

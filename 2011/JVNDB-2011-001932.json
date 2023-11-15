@@ -1,0 +1,85 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001932.html",
+  "title": "Linux kernel の do_task_stat 関数における ASLR プロテクション機構を無効化される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001932.html",
+  "description": "Linux kernel の fs/proc/array.c 内にある do_task_stat 関数は、期待される UID チェックを実行しないため、ASLR プロテクション機構を無効化される脆弱性が存在します。",
+  "identifier": "JVNDB-2011-001932",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0726",
+      "source": "CVE",
+      "id": "CVE-2011-0726"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0726",
+      "source": "NVD",
+      "id": "CVE-2011-0726"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/47791",
+      "source": "BID",
+      "id": "47791"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_long_life",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Long Life"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2016-06-30T14:07+09:00",
+  "issued": "2011-07-26T11:35+09:00",
+  "modified": "2016-06-30T14:07+09:00"
+}

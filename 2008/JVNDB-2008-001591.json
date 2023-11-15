@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001591.html",
+  "title": "Oracle Weblogic Apache connector プラグインにバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001591.html",
+  "description": "Oracle Weblogic (旧 BEA Weblogic) Server および Weblogic Express Applicaiton Server の Weblogic Apache connector プラグインにはバッファオーバーフローの脆弱性が存在します。\r\n\r\nOracle Weblogic Server および Weblogic Express Applicaiton Server は、Weblogic Apache connector プラグインである mod_wl を使用することで Apache ウェブサーバ と連動させることができます。\r\n\r\nWeblogic Server および Weblogic Express で使用される Apache Connector プラグインには、細工された POST リクエストを処理する際にバッファオーバーフローの脆弱性が存在します。\r\n\r\nまた、本脆弱性に関する検証コードが公開されています。",
+  "identifier": "JVNDB-2008-001591",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU716387/index.html",
+      "source": "JVN",
+      "id": "JVNVU#716387"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3257",
+      "source": "CVE",
+      "id": "CVE-2008-3257"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-3257",
+      "source": "NVD",
+      "id": "CVE-2008-3257"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/716387",
+      "source": "CERT-VN",
+      "id": "VU#716387"
+    },
+    {
+      "text": "http://secunia.com/advisories/31146",
+      "source": "SECUNIA",
+      "id": "SA31146"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/30273",
+      "source": "BID",
+      "id": "30273"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/43885",
+      "source": "XF",
+      "id": "43885"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1020520",
+      "source": "SECTRACK",
+      "id": "1020520"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/2145",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-2145"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:oracle:weblogic_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle WebLogic Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-09-02T17:56+09:00",
+  "issued": "2008-09-02T17:56+09:00",
+  "modified": "2008-09-02T17:56+09:00"
+}

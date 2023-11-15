@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005176.html",
+  "title": "Google Chrome などで使用される libjpeg-turbo の jdmarker.c における重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005176.html",
+  "description": "Google Chrome およびその他の製品で使用される libjpeg-turbo の jdmarker.c 内の get_dht 関数は、Define Huffman Table (DHT) JPEG マーカーに従うセグメントの読み取り中に、特定のハフマン符号の値の配列のすべての要素を設定しないため、初期化されていないメモリ領域から重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005176",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6630",
+      "source": "CVE",
+      "id": "CVE-2013-6630"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6630",
+      "source": "NVD",
+      "id": "CVE-2013-6630"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2013-0333.html",
+      "source": "関連文書",
+      "id": "MGASA-2013-0333"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    },
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:firefox_esr",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox ESR"
+    },
+    {
+      "text": "cpe:/a:mozilla:seamonkey",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla SeaMonkey"
+    },
+    {
+      "text": "cpe:/a:mozilla:thunderbird",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Thunderbird"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-08-03T17:58+09:00",
+  "issued": "2013-11-20T17:00+09:00",
+  "modified": "2015-08-03T17:58+09:00"
+}

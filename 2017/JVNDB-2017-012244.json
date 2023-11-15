@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-012244.html",
+  "title": "DupScout Enterprise などにおけるバッファエラーの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-012244.html",
+  "description": "DupScout Enterprise、DiskSavvy Enterprise、SyncBreeze Enterprise、および DiskPulse Enterprise には、バッファエラーの脆弱性が存在します。",
+  "identifier": "JVNDB-2017-012244",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13696",
+      "source": "CVE",
+      "id": "CVE-2017-13696"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13696",
+      "source": "NVD",
+      "id": "CVE-2017-13696"
+    },
+    {
+      "text": "https://www.exploit-db.com/exploits/42557",
+      "source": "関連文書",
+      "id": "Dup Scout Enterprise 9.9.14 - Remote Buffer Overflow (SEH)"
+    },
+    {
+      "text": "https://www.exploit-db.com/exploits/42558/",
+      "source": "関連文書",
+      "id": "Disk Savvy Enterprise 9.9.14 - Remote Buffer Overflow (SEH)"
+    },
+    {
+      "text": "https://www.exploit-db.com/exploits/42559/",
+      "source": "関連文書",
+      "id": "Disk Pulse Enterprise 9.9.16 - Remote Buffer Overflow (SEH)"
+    },
+    {
+      "text": "https://www.exploit-db.com/exploits/42560/",
+      "source": "関連文書",
+      "id": "Sync Breeze Enterprise 9.9.16 - Remote Buffer Overflow (SEH)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:flexense:disksavvy",
+      "version": "2.2",
+      "vendor": "Flexense Ltd.",
+      "product": "DiskSavvy"
+    },
+    {
+      "text": "cpe:/a:flexense:disk_pulse",
+      "version": "2.2",
+      "vendor": "Flexense Ltd.",
+      "product": "DiskPulse"
+    },
+    {
+      "text": "cpe:/a:flexense:dupscout",
+      "version": "2.2",
+      "vendor": "Flexense Ltd.",
+      "product": "DupScout"
+    },
+    {
+      "text": "cpe:/a:flexense:syncbreeze",
+      "version": "2.2",
+      "vendor": "Flexense Ltd.",
+      "product": "SyncBreeze"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-02-28T17:20+09:00",
+  "issued": "2018-02-28T17:20+09:00",
+  "modified": "2018-02-28T17:20+09:00"
+}

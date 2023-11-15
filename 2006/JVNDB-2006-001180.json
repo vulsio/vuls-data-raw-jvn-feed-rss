@@ -1,0 +1,39 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-001180.html",
+  "title": "CubeCart における PHP リモートファイルインクルージョン攻撃を誘発する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-001180.html",
+  "description": "CubeCart の includes/content/gateway.inc.php は、magic_quotes_gpc が無効になっている際、gateway パラメータ検証に不十分に制限された正規表現を使用するため、PHP リモートファイルインクルージョン攻撃を誘発する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-001180",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4527",
+      "source": "CVE",
+      "id": "CVE-2006-4527"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-4527",
+      "source": "NVD",
+      "id": "CVE-2006-4527"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:devellion:cubecart",
+      "version": "2.2",
+      "vendor": "devellion",
+      "product": "cubecart"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-06-26T15:37+09:00",
+  "issued": "2012-06-26T15:37+09:00",
+  "modified": "2012-06-26T15:37+09:00"
+}

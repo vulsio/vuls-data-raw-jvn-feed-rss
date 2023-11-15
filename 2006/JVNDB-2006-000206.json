@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000206.html",
+  "title": "Linux Kernel の mprotect における共有メモリへのアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000206.html",
+  "description": "Linux Kernel が実装するシステムコール mprotect に、読み取りのみ許可されている共有メモリ領域に対して、mprotect を実行するプロセスの権限に関わらず書き込み権限を与えてしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000206",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2071",
+      "source": "CVE",
+      "id": "CVE-2006-2071"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-2071",
+      "source": "NVD",
+      "id": "CVE-2006-2071"
+    },
+    {
+      "text": "http://secunia.com/advisories/19657/",
+      "source": "SECUNIA",
+      "id": "SA19657"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17587",
+      "source": "BID",
+      "id": "15787"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

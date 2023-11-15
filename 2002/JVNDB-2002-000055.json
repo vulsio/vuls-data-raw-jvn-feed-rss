@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000055.html",
+  "title": "GNU fileutils の rm と mv コマンドにおける競合状態の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000055.html",
+  "description": "GNU fileutils に含まれている rm コマンドと mv コマンドは、ロック機構が不完全であり、また、不適切に chroot() 関数が利用されているため、競合状態 (race condition) が発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2002-000055",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0435",
+      "source": "CVE",
+      "id": "CVE-2002-0435"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0435",
+      "source": "NVD",
+      "id": "CVE-2002-0435"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4266",
+      "source": "BID",
+      "id": "4266"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

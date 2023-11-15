@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004836.html",
+  "title": "ia64 などのプラットフォーム上の Linux kernel における任意のメモリ配置を上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004836.html",
+  "description": "ia64 および x86 プラットフォーム上で稼動する Linux kernel の SGI GRU ドライバの drivers/misc/sgi-gru/gruprocfs.c の options_write 関数は、一つずれエラー (Off-by-one) が発生するため任意のメモリ配置を上書きされる、および権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-004836",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2584",
+      "source": "CVE",
+      "id": "CVE-2009-2584"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2584",
+      "source": "NVD",
+      "id": "CVE-2009-2584"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-09-25T17:27+09:00",
+  "issued": "2012-09-25T17:27+09:00",
+  "modified": "2012-09-25T17:27+09:00"
+}

@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002317.html",
+  "title": "Linux kernel における競合状態の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002317.html",
+  "description": "Linux kernel には、/proc/*/fd/ パス名を通して匿名パイプを開こうとすることによる競合状態の脆弱性が存在します。",
+  "identifier": "JVNDB-2009-002317",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3547",
+      "source": "CVE",
+      "id": "CVE-2009-3547"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3547",
+      "source": "NVD",
+      "id": "CVE-2009-3547"
+    },
+    {
+      "text": "http://secunia.com/advisories/37233",
+      "source": "SECUNIA",
+      "id": "SA37233"
+    },
+    {
+      "text": "http://secunia.com/advisories/37296",
+      "source": "SECUNIA",
+      "id": "SA37296"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/36901",
+      "source": "BID",
+      "id": "36901"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/3136",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-3136"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2010-02-16T11:44+09:00",
+  "issued": "2009-12-14T12:32+09:00",
+  "modified": "2010-02-16T11:44+09:00"
+}

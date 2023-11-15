@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007582.html",
+  "title": "Linux Kernel の fs/isofs/rock.c におけるカーネルメモリから重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007582.html",
+  "description": "Linux Kernel の fs/isofs/rock.c 内の parse_rock_ridge_inode_internal 関数は、Extensions Reference (ER) System Use Field 内の length 値を検証しないため、カーネルメモリから重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-007582",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9584",
+      "source": "CVE",
+      "id": "CVE-2014-9584"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9584",
+      "source": "NVD",
+      "id": "CVE-2014-9584"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-01-15T11:35+09:00",
+  "issued": "2015-01-15T11:35+09:00",
+  "modified": "2015-01-15T11:35+09:00"
+}

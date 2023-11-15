@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001459.html",
+  "title": "Android Platform の URLConnection クラスに HTTP ヘッダインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001459.html",
+  "description": "Android Platform の URLConnection クラスには、HTTP ヘッダインジェクションの脆弱性が存在します。\r\n\r\nAndroid Platform の URLConnection クラスは、Android のバージョンにより実装が異なっており Android 4.4.2 からは、オープンソースの OkHttp から取り込んだソースコードを使用しています。\r\nOkHttp の 2.5.0 より前のバージョンには HTTP ヘッダインジェクションの脆弱性があります。\r\nAndroid Platform では OkHttp 2.5.0 より前のバージョンのソースコードを取り込んでいる URLConnection クラスに同じ脆弱性が存在しています。\r\n\r\nAndroid Platform の URLConnection.setRequestProperty() や URLConnection.addRequestProperty() を使っている実行環境では、アプリケーションが HTTP ヘッダを設定・追加する際に、外部から受け取った信頼できない値を検証しないまま使っていると HTTP ヘッダインジェクションが行なわれる可能性があります。\r\n\r\nRFC 2616 の 2.2 Basic Rules によると HTTP ヘッダフィールド値は継続行が許可されています。\r\n\r\n\"HTTP/1.1 header field values can be folded onto multiple lines if the continuation line begins with a space or horizontal tab. All linear white space, including folding, has the same semantics as SP. A recipient MAY replace any linear white space with a single SP before interpreting the field value or forwarding the message downstream.\"\r\n\r\nRFC 2616 は RFC7230 から RFC7235 が発行された際に obsoleted になりました。\r\nRFC 7230 の 3.2.4 Field Parsing によると message/http media type 以外は継続行が許可されなくなりました。\r\n\r\n\"Historically, HTTP header field values could be extended over multiple lines by preceding each extra line with at least one space or horizontal tab (obs-fold).  This specification deprecates such line folding except within the message/http media type (Section 8.3.1).  A sender MUST NOT generate a message that includes line folding (i.e., that has any field-value that contains a match to the obs-fold rule) unless the message is intended for packaging within the message/http media type.\"",
+  "identifier": "JVNDB-2016-001459",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99757346/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99757346"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1155",
+      "source": "CVE",
+      "id": "CVE-2016-1155"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-1155",
+      "source": "NVD",
+      "id": "CVE-2016-1155"
+    },
+    {
+      "text": "https://github.com/square/okhttp/blob/master/CHANGELOG.md#version-250",
+      "source": "関連文書",
+      "id": "[Square / OkHttp] Change Log - Version 2.5.0"
+    },
+    {
+      "text": "https://github.com/square/okhttp/issues/891",
+      "source": "関連文書",
+      "id": "[Square / OkHttp] Non-ASCII Header Encoding Issues #891"
+    },
+    {
+      "text": "http://jvn.jp/jp/JVN21612597/",
+      "source": "関連文書",
+      "id": "Apache Cordova プラグイン cordova-plugin-file-transfer における HTTP ヘッダインジェクションの脆弱性 (JVN#21612597)"
+    },
+    {
+      "text": "http://www.slideshare.net/jpcert_securecoding/android-platform-urlconnection-http",
+      "source": "関連文書",
+      "id": "Android Platform の URLConnection クラスに HTTP ヘッダインジェクションの脆弱性"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/74.html",
+      "id": "CWE-74",
+      "title": "インジェクション(CWE-74)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:google:android",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-03-29T11:12+09:00",
+  "issued": "2016-02-19T16:54+09:00",
+  "modified": "2018-03-29T11:12+09:00"
+}

@@ -1,0 +1,35 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002548.html",
+  "title": "OpenSSL の AES-SIV 実装における関連データエントリが正しく認証されない問題 (Security Advisory [14th July 2023])",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002548.html",
+  "description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20230714.txt\" target=\"blank\">OpenSSL Security Advisory [14th July 2023] </a> (AES-SIV implementation ignores empty associated data entries (CVE-2023-2975)) が公開されました。\r\n\r\n深刻度 - 低 (Severity: Low)\r\nOpenSSL の AES-SIV 実装では、複数の関連データ (Associated Data) エントリの認証が可能です。この AES-SIV 実装には、空の関連データエントリの認証要求時にこれを無視し、認証処理を行わず成功を返してしまう問題があります。\r\nなお、OpenSSL Project は、この問題は空でない関連データの認証には影響せず、アプリケーションが空の関連データエントリを使用することは稀であるとしています。\r\n",
+  "identifier": "JVNDB-2023-002548",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92583151/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92583151"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-2975",
+      "source": "CVE",
+      "id": "CVE-2023-2975"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-2975",
+      "source": "NVD",
+      "id": "CVE-2023-2975"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    }
+  ],
+  "date": "2023-08-03T15:35+09:00",
+  "issued": "2023-07-20T14:16+09:00",
+  "modified": "2023-08-03T15:35+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006419.html",
+  "title": "Squid における CONNECT メソッドのアクセス設定を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006419.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nSquid には、CONNECT メソッドのアクセス設定を回避される脆弱性が存在します。\r\n\r\n本問題は、研究者が脆弱なシステムの squid.conf ファイルを提供することができない、および発見された動作が、www.uol.com.br に一致する \"req_header Host\" の ACL 正規表現に基づくアクセスが許可されるように (おそらく不注意で) 設計された squid.conf ファイルと一致する、との理由で、再現性がないかもしれません。",
+  "identifier": "JVNDB-2012-006419",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2213",
+      "source": "CVE",
+      "id": "CVE-2012-2213"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2213",
+      "source": "NVD",
+      "id": "CVE-2012-2213"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:squid-cache:squid",
+      "version": "2.2",
+      "vendor": "Squid-cache.org",
+      "product": "Squid"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2019-07-29T12:41+09:00",
+  "issued": "2019-07-29T12:41+09:00",
+  "modified": "2019-07-29T12:41+09:00"
+}

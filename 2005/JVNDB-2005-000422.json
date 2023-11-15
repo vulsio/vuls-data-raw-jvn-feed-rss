@@ -1,0 +1,87 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000422.html",
+  "title": "MIT Kerberos KDC における特定の TCP 接続によるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000422.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMIT Kerberos で構成される KDC (Key Distribution Center) は、特定のサービスに関してクライアントの要求を受け付けてクライアントの身元を検証し、そしてサービスを許可するための一時的な電子証明書のセットを発行するシステムです。\r\n\r\nMIT Kerberos 5 Release 1.4.1 以前で構成された KDC の実装には、ヒープ破壊およびバッファオーバーフローが発生する問題が存在します。\r\n\r\n1) KDC で有効なリクエストとして取り扱われる特定の TCP 接続によるクライアントリクエストを受け取る際に、ランダムなアドレスにあるメモリが開放され、ヒープメモリが破壊される問題が存在します。\r\n(krb5-1.3 - krb5-1.4.1、CAN-2005-1174)\r\n\r\n2) TCP または UDP 接続のいずれかを介して KDC が上記と同じリクエストを受信した際に、krb5 ライブラリに実装されている krb5_unparse_name() 関数において、シングルバイトバッファーオーバーフローが発生する問題が存在します。\r\nこの問題は、krb5_unparse_name() 関数を呼び出しているサードパーティ製のアプリケーションサーバもこの問題の影響を受ける可能性があります。\r\n(krb5-1.4.1 以前、CAN-2005-1175)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成したリクエストを KDC に送りつけることにより、KDC をクラッシュさせ、サービス不能状態に陥らせる、あるいは KDC ホスト上で root 権限で任意のコードを実行する可能性があります。\r\n尚、攻撃者がこれらの問題を再現させることは困難であることが MIT より報告されていますが、KDC ホスト上で root 権限を取得された場合、Kerberos realm 内全体にセキュリティ上の脅威が及ぶ可能性があります。",
+  "identifier": "JVNDB-2005-000422",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23259798/index.html",
+      "source": "JVN",
+      "id": "JVNVU#259798"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1174",
+      "source": "CVE",
+      "id": "CVE-2005-1174"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1174",
+      "source": "NVD",
+      "id": "CVE-2005-1174"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/885830",
+      "source": "CERT-VN",
+      "id": "VU#885830"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/259798",
+      "source": "CERT-VN",
+      "id": "VU#259798"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14240",
+      "source": "BID",
+      "id": "14240"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14236",
+      "source": "BID",
+      "id": "14236"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/1066",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-1066"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001365.html",
+  "title": "QEMU におけるヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001365.html",
+  "description": "QEMU には、”net socket listen” オプションの付いているソケット処理に不備があり、ヒープベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001365",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5730",
+      "source": "CVE",
+      "id": "CVE-2007-5730"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-5730",
+      "source": "NVD",
+      "id": "CVE-2007-5730"
+    },
+    {
+      "text": "http://secunia.com/advisories/25073/",
+      "source": "SECUNIA",
+      "id": "25073"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/23731",
+      "source": "BID",
+      "id": "23731"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/38239",
+      "source": "XF",
+      "id": "38239"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/1597",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-1597"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:rhel_virtualization",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Virtualization"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_multi_os",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Multi OS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-10-29T14:02+09:00",
+  "issued": "2008-06-05T13:36+09:00",
+  "modified": "2008-10-29T14:02+09:00"
+}

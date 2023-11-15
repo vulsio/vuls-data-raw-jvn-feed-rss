@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013019.html",
+  "title": "NATS nats-server における NULL ポインタデリファレンスに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013019.html",
+  "description": "NATS nats-server には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-013019",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26521",
+      "source": "CVE",
+      "id": "CVE-2020-26521"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-26521",
+      "source": "NVD",
+      "id": "CVE-2020-26521"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2020/11/02/2",
+      "source": "関連文書",
+      "id": "[CVE-2020-26521][CVE-2020-26892] NATS JWT vulnerabilities"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nats:nats_server",
+      "version": "2.2",
+      "vendor": "NATS",
+      "product": "NATS Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2021-06-17T15:12+09:00",
+  "issued": "2021-06-17T15:12+09:00",
+  "modified": "2021-06-17T15:12+09:00"
+}

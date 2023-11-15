@@ -1,0 +1,70 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004045.html",
+  "title": "Arris 製ケーブルモデム Touchstone DG950A に情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004045.html",
+  "description": "Arris が提供する Touchstone DG950A には、情報漏えいの脆弱性が存在します。\r\n\r\nArris が提供する Touchstone DG950A は、デフォルト設定で SNMP を有効にしています。DG950A は、既知の SNMP コミュニティ名を使用しており、ユーザ名、パスワードおよび WiFi の鍵などの情報を漏えいする脆弱性が存在します (CWE-200)。\r\nその他のバージョンも本脆弱性の影響を受ける可能性があります。\r\n\r\nCWE-200: Information Exposure\r\nhttp://cwe.mitre.org/data/definitions/200.html",
+  "identifier": "JVNDB-2014-004045",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU95304841/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95304841"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4863",
+      "source": "CVE",
+      "id": "CVE-2014-4863"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4863",
+      "source": "NVD",
+      "id": "CVE-2014-4863"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/855836",
+      "source": "CERT-VN",
+      "id": "VU#855836"
+    },
+    {
+      "text": "http://www.arrisi.com/support/documentation/user_guides/_docs/DG950_User_Guide_Std1-4.pdf",
+      "source": "関連文書",
+      "id": "Touchstone DG950 Data Gateway User’s Guide"
+    },
+    {
+      "text": "https://community.rapid7.com/community/metasploit/blog/2014/08/21/more-snmp-information-leaks-cve-2014-4862-and-cve-2014-4863",
+      "source": "関連文書",
+      "id": "Rapid7：More SNMP Information Leaks: CVE-2014-4862 and CVE-2014-4863"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:arris:touchstone_dg950a_software",
+      "version": "2.2",
+      "vendor": "ARRIS Group",
+      "product": "Touchstone DG950A ソフトウェア"
+    },
+    {
+      "text": "cpe:/h:arris:touchstone_dg950a",
+      "version": "2.2",
+      "vendor": "ARRIS Group",
+      "product": "Touchstone DG950A"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2014-09-09T16:22+09:00",
+  "issued": "2014-09-08T12:43+09:00",
+  "modified": "2014-09-09T16:22+09:00"
+}

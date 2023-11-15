@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006300.html",
+  "title": "Shibboleth Service Provider における NULL ポインタデリファレンスに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006300.html",
+  "description": "Shibboleth Service Provider には、NULL ポインタデリファレンスに関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2021-006300",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31826",
+      "source": "CVE",
+      "id": "CVE-2021-31826"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-31826",
+      "source": "NVD",
+      "id": "CVE-2021-31826"
+    },
+    {
+      "text": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=987608",
+      "source": "関連文書",
+      "id": "Debian Bug report logs - #987608 shibboleth-sp: CVE-2021-31826: Session recovery feature contains a null pointer deference"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:shibboleth:shibboleth-sp",
+      "version": "2.2",
+      "vendor": "Shibboleth",
+      "product": "Shibboleth Service Provider"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2022-01-04T18:05+09:00",
+  "issued": "2022-01-04T18:05+09:00",
+  "modified": "2022-01-04T18:05+09:00"
+}

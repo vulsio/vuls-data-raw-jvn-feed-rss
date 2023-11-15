@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000005.html",
+  "title": "MAHO-PBX NetDevancerシリーズにおける複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000005.html",
+  "description": "株式会社まほろば工房が提供する MAHO-PBX NetDevancerシリーズには、同製品の管理画面に次の複数の脆弱性が存在します。\r\n<ul><li>OS コマンドインジェクション (CWE-78) - CVE-2023-22279<li>OS コマンドインジェクション (CWE-78) - CVE-2023-22280<li>クロスサイトリクエストフォージェリ (CWE-352) - CVE-2023-22286<li>反射型クロスサイトスクリプティング (CWE-79) - CVE-2023-22296</ul>この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: GMOサイバーセキュリティ byイエラエ株式会社 安里眞夢 氏",
+  "identifier": "JVNDB-2023-000005",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN99957889/index.html",
+      "source": "JVN",
+      "id": "JVN#99957889"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-22279",
+      "source": "CVE",
+      "id": "CVE-2023-22279"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-22280",
+      "source": "CVE",
+      "id": "CVE-2023-22280"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-22286",
+      "source": "CVE",
+      "id": "CVE-2023-22286"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-22296",
+      "source": "CVE",
+      "id": "CVE-2023-22296"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+      "id": "CWE-352",
+      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:mahoroba_kobo_maho-pbx",
+      "version": "2.2",
+      "vendor": "株式会社まほろば工房",
+      "product": "MAHO-PBX"
+    },
+    {
+      "text": "cpe:/o:misc:mahoroba_kobo_maho-pbx_netdevancer_mobilegate",
+      "version": "2.2",
+      "vendor": "株式会社まほろば工房",
+      "product": "MAHO-PBX NetDevancer MobileGate"
+    },
+    {
+      "text": "cpe:/o:misc:mahoroba_kobo_maho-pbx_netdevancer_vsg",
+      "version": "2.2",
+      "vendor": "株式会社まほろば工房",
+      "product": "MAHO-PBX NetDevancer VSG"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-01-11T14:03+09:00",
+  "issued": "2023-01-11T14:03+09:00",
+  "modified": "2023-01-11T14:03+09:00"
+}

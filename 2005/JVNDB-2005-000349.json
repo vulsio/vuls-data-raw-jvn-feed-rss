@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000349.html",
+  "title": "BEA WebLogic Server のログインフォームなどにおける複数のクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000349.html",
+  "description": "BEA WebLogic Server の WebLogic Server console には、以下の複数のセキュリティ上の脆弱性が存在します。\r\n\r\n・ログインページの j_username および j_password パラメータの入力に対するサニタイズ処理に不備があるため、悪意あるスクリプトの挿入が可能となる脆弱性\r\n\r\n・エラーページで出力されるパラメータに対するサニタイズ処理に不備があるため、悪意あるスクリプトの挿入が可能となる脆弱性\r\n\r\n尚、発見者は、WebLogic Server console がセッション管理に用いる Cookie 値 (ADMINCONSOLESESSION) を攻撃者が奪取し、セッションをハイジャックするためには、管理者が WebLogic Server console とセッションを確立している間に悪意あるスクリプトを実行させる必要があることを報告しています。\r\n\r\n※注意: 本脆弱性は BEA システムズが提供するセキュリティ勧告（BEA05-80.02）によって修正された問題です。ベンダでは BEA05-80.02 が破棄された代わりに、新たに BEA07-80.03 が公開されています。詳細は BEA07-80.03 を参照ください。",
+  "identifier": "JVNDB-2005-000349",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1747",
+      "source": "CVE",
+      "id": "CVE-2005-1747"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1747",
+      "source": "NVD",
+      "id": "CVE-2005-1747"
+    },
+    {
+      "text": "http://secunia.com/advisories/15486",
+      "source": "SECUNIA",
+      "id": "SA15486"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14657",
+      "source": "BID",
+      "id": "14657"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13794",
+      "source": "BID",
+      "id": "13794"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13793",
+      "source": "BID",
+      "id": "13793"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13717",
+      "source": "BID",
+      "id": "13717"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/0607",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-0607"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bea:weblogic_express",
+      "version": "2.2",
+      "vendor": "BEAシステムズ",
+      "product": "BEA WebLogic Express"
+    },
+    {
+      "text": "cpe:/a:bea:weblogic_server",
+      "version": "2.2",
+      "vendor": "BEAシステムズ",
+      "product": "BEA WebLogic Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-06-04T18:09+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-06-04T18:09+09:00"
+}

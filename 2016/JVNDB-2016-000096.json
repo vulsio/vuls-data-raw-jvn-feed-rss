@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000096.html",
+  "title": "Apache Struts 1 におけるメモリ上にあるコンポーネントを操作可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000096.html",
+  "description": "Apache Struts 1 の ActionForm は、次の 2 つの条件が成立する場合、Servlet や ClassLoader など、サーバのメモリ上にあるコンポーネントを操作可能な脆弱性が存在します。\r\n\r\n条件1.\r\n次の ActionForm (サブクラスを含む) をセッションスコープに置いており、同一のセッションを処理する複数のスレッドが、同一の ActionForm インスタンスにアクセスできる\r\n・ActionForm (DynaActionForm とそのサブクラスのように、DynaBean インターフェースを実装したクラスは除く)\r\n・ValidatingActionForm\r\n・ValidatorForm\r\n・ValidatorActionForm\r\n\r\n条件2.\r\nマルチパート形式のリクエストを受け付ける\r\n(ウェブアプリケーションがマルチパート形式のフォームを使用していない場合も該当する)",
+  "identifier": "JVNDB-2016-000096",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN03188560/index.html",
+      "source": "JVN",
+      "id": "JVN#03188560"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU91417143/",
+      "source": "JVN",
+      "id": "JVNVU#91417143"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1181",
+      "source": "CVE",
+      "id": "CVE-2016-1181"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1181",
+      "source": "NVD",
+      "id": "CVE-2016-1181"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsma-20-184-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSMA-20-184-01"
+    },
+    {
+      "text": "https://github.com/kawasima/struts1-forever/commit/eda3a79907ed8fcb0387a0496d0cb14332f250e8",
+      "source": "関連文書",
+      "id": "Fixed CVE-2016-1181 and CVE-2016-1182"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:struts",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Struts"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-09-02T10:42+09:00",
+  "issued": "2016-06-07T14:02+09:00",
+  "modified": "2020-09-02T10:42+09:00"
+}

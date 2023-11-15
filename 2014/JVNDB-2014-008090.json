@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008090.html",
+  "title": "Wordpress 用 ThemePunch Slider Revolution プラグインおよび Showbiz Pro プラグインにおける任意のファイルをアップロードされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008090.html",
+  "description": "Wordpress 用 ThemePunch Slider Revolution (revslider) プラグインおよび Showbiz Pro プラグインは、管理者の AJAX 機能へのアクセスを適切に制限しないため、以下の脆弱性が存在します。\r\n\r\n(1) 任意のファイルをアップロードされ、実行される。\r\n(2) 任意のスライダを削除される。\r\n(3) 任意のスライダを作成される。\r\n(4) 任意のスライダをアップデートされる。\r\n(5) 任意のスライダをインポートされる。\r\n(6) 任意のスライダをエクスポートされる。",
+  "identifier": "JVNDB-2014-008090",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9735",
+      "source": "CVE",
+      "id": "CVE-2014-9735"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9735",
+      "source": "NVD",
+      "id": "CVE-2014-9735"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2014/Nov/78",
+      "source": "関連文書",
+      "id": "Slider Revolution/Showbiz Pro shell upload exploit"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:themepunch:showbiz_pro",
+      "version": "2.2",
+      "vendor": "ThemePunch",
+      "product": "Showbiz Pro"
+    },
+    {
+      "text": "cpe:/a:themepunch:slider_revolution",
+      "version": "2.2",
+      "vendor": "ThemePunch",
+      "product": "Slider Revolution"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-07-02T14:28+09:00",
+  "issued": "2015-07-02T14:28+09:00",
+  "modified": "2015-07-02T14:28+09:00"
+}

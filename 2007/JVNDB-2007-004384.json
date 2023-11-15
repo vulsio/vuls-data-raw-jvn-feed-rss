@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004384.html",
+  "title": "Microsoft Visual Studio 6.0 の PDWizard.ocx における任意のプログラムを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004384.html",
+  "description": "Microsoft Visual Studio 6.0 の PDWizard.ocx の特定の ActiveX コントロールは、以下の危険なメソッドを公開するため、任意のプログラムを実行される脆弱性が存在します。\r\n(1) StartProcess メソッド\r\n(2) SyncShell メソッド\r\n(3) SaveAs メソッド\r\n(4) CABDefaultURL メソッド\r\n(5) CABFileName メソッド\r\n(6) CABRunFile メソッド",
+  "identifier": "JVNDB-2007-004384",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4891",
+      "source": "CVE",
+      "id": "CVE-2007-4891"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-4891",
+      "source": "NVD",
+      "id": "CVE-2007-4891"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:visual_studio",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Visual Studio"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T16:59+09:00",
+  "issued": "2012-09-25T16:59+09:00",
+  "modified": "2012-09-25T16:59+09:00"
+}

@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007547.html",
+  "title": "QEMU における情報漏えいに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007547.html",
+  "description": "QEMU には、情報漏えいに関する脆弱性、および初期化されていないリソースの使用に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-007547",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-3545",
+      "source": "CVE",
+      "id": "CVE-2021-3545"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3545",
+      "source": "NVD",
+      "id": "CVE-2021-3545"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1958955",
+      "source": "関連文書",
+      "id": "Bug 1958955 (CVE-2021-3545) - CVE-2021-3545 QEMU: vhost-user-gpu: information disclosure due to uninitialized memory read"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/908.html",
+      "id": "CWE-908",
+      "title": "初期化されていないリソースの使用(CWE-908)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2022-02-15T17:55+09:00",
+  "issued": "2022-02-15T17:55+09:00",
+  "modified": "2022-02-15T17:55+09:00"
+}

@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000134.html",
+  "title": "cURL/libcURL の Kerberos 認証および NTLM 認証におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000134.html",
+  "description": "cURL/libcURL 7.13.0 以前には、Kerberos 認証および NTLM 認証を行うサイトからの Base64 でエンコードされた HTTP 応答をデコードする際に、 (1) Kerberos 認証時に使用される lib/krb4.c の Curl_krb_kauth() 関数、krb4_auth() 関数 (2) NTLM 認証時に使用される lib/http_ntlm.c の Curl_input_ntlm() 関数の箇所においてデータ長を適切にチェックしないため、バッファオーバーフローが発生する問題が存在します。",
+  "identifier": "JVNDB-2005-000134",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0490",
+      "source": "CVE",
+      "id": "CVE-2005-0490"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0490",
+      "source": "NVD",
+      "id": "CVE-2005-0490"
+    },
+    {
+      "text": "http://secunia.com/advisories/14364/",
+      "source": "SECUNIA",
+      "id": "SA14364"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12616",
+      "source": "BID",
+      "id": "12616"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12615",
+      "source": "BID",
+      "id": "12615"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

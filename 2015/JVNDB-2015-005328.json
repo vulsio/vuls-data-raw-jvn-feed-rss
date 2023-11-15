@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005328.html",
+  "title": "複数の SAP BusinessObjects 製品におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005328.html",
+  "description": "SAP BusinessObjects BI プラットフォーム、BusinessObjects Edge および BusinessObjects XI (BOXI) には、サービス運用妨害 (out-of-bounds read およびリスナークラッシュ) 状態にされる脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を SAP Security Note 2001108 として公開しています。",
+  "identifier": "JVNDB-2015-005328",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7730",
+      "source": "CVE",
+      "id": "CVE-2015-7730"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7730",
+      "source": "NVD",
+      "id": "CVE-2015-7730"
+    },
+    {
+      "text": "https://www.onapsis.com/blog/analyzing-sap-security-notes-may-2015-edition",
+      "source": "関連文書",
+      "id": "Analyzing SAP Security Notes May 2015 Edition"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2015/Sep/81",
+      "source": "関連文書",
+      "id": "[Onapsis Security Advisory 2015-013] SAP Business Objects Memory Corruption"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sap:businessobjects",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "SAP BusinessObjects"
+    },
+    {
+      "text": "cpe:/a:sap:businessobjects_edge",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "BussinessObjects Edge"
+    },
+    {
+      "text": "cpe:/a:sap:businessobjects_xi",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "SAP BusinessObjects XI"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-10-19T14:38+09:00",
+  "issued": "2015-10-19T14:38+09:00",
+  "modified": "2015-10-19T14:38+09:00"
+}

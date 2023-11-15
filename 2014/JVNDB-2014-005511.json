@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005511.html",
+  "title": "cURL および libcurl における Cookie を設定される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005511.html",
+  "description": "cURL および libcurl は、Cookie のドメイン名の IP アドレスを適切に処理しないため、特定のサイトに Cookie を設定される、または任意の Cookie を送信される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005511",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3613",
+      "source": "CVE",
+      "id": "CVE-2014-3613"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3613",
+      "source": "NVD",
+      "id": "CVE-2014-3613"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:haxx:curl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "cURL"
+    },
+    {
+      "text": "cpe:/a:haxx:libcurl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "libcurl"
+    },
+    {
+      "text": "cpe:/a:oracle:hyperion",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Hyperion"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2015-08-31T16:57+09:00",
+  "issued": "2014-11-19T16:45+09:00",
+  "modified": "2015-08-31T16:57+09:00"
+}

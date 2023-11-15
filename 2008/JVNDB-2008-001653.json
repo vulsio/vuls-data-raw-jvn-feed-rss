@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001653.html",
+  "title": "Linux kernel の sctp_getsockopt_local_addrs_old 関数における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001653.html",
+  "description": "Linux kernel の Stream Control Transmission Protocol (sctp) 機能 には net/sctp/socket.c の sctp_getsockopt_local_addrs_old 関数において addr_num フィールドの処理に不備があるため、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001653",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2826",
+      "source": "CVE",
+      "id": "CVE-2008-2826"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2826",
+      "source": "NVD",
+      "id": "CVE-2008-2826"
+    },
+    {
+      "text": "http://secunia.com/advisories/31628",
+      "source": "SECUNIA",
+      "id": "SA31628"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/29990",
+      "source": "BID",
+      "id": "29990"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1020514",
+      "source": "SECTRACK",
+      "id": "1020514"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/2511",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-2511"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2008-12-19T11:47+09:00",
+  "issued": "2008-09-12T14:43+09:00",
+  "modified": "2008-12-19T11:47+09:00"
+}

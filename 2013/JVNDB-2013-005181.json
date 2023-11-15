@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005181.html",
+  "title": "Foreman の app/models/concerns/host_common.rb における SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005181.html",
+  "description": "Foreman の app/models/concerns/host_common.rb には、SQL インジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005181",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4386",
+      "source": "CVE",
+      "id": "CVE-2013-4386"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4386",
+      "source": "NVD",
+      "id": "CVE-2013-4386"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:openstack",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenStack"
+    },
+    {
+      "text": "cpe:/a:theforeman:foreman",
+      "version": "2.2",
+      "vendor": "The Foreman",
+      "product": "Foreman"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-11-21T14:45+09:00",
+  "issued": "2013-11-21T14:45+09:00",
+  "modified": "2013-11-21T14:45+09:00"
+}

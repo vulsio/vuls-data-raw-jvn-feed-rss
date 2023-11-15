@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000259.html",
+  "title": "Sun Solaris の kmen_flags パラメータにおけるカーネルがクラッシュする脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000259.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSun Solaris 8 以降のバージョンに実装されている Solaris kernel memory (kmem) アロケータは、カーネルクラッシュのダンプを容易に解析出来るデバッグ機能を提供します。この kmem アロケータは、kmem_flags のカーネルパラメータを変更することでデバッグ機能を制御することが可能です。kmem_flags のカーネルパラメータの 2 ビット目が立てられている場合、kmem アロケータは、全ての未使用バッファに特定のパターンを書き込み、そのパターンに変化が無いかを確認することでメモリ破壊の検知をします。パターンが上書きされた場合、システムがパニック状態に陥ったことを示します。 \r\nkmem_flags のカーネルパラメータの 2 ビット目が立てられている場合、権限の無いローカルの攻撃者がシステムをパニック状態に陥らせることが出来る可能性が存在します。",
+  "identifier": "JVNDB-2002-000259",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-2194",
+      "source": "CVE",
+      "id": "CVE-2002-2194"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-2194",
+      "source": "NVD",
+      "id": "CVE-2002-2194"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6080",
+      "source": "BID",
+      "id": "6080"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

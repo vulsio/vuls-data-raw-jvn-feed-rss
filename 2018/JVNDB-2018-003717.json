@@ -1,0 +1,114 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003717.html",
+  "title": "STARDOM コントローラに複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003717.html",
+  "description": "横河電機株式会社が提供する STARDOM コントローラには、複数の脆弱性が存在します。\r\n\r\n横河電機株式会社が提供する STARDOM は、中小規模工場向け PLC 計装システムです。STARDOM コントローラには、次の複数の脆弱性が存在します。\r\n\r\n　* アカウント ID およびパスワード情報がハードコードされている問題 (CWE-798) - CVE-2018-10592\r\n　* 情報漏えい (CWE-200) - CVE-2018-17900\r\n　* リモート管理機能に対するサービス運用妨害 (DoS) (CWE-119) - CVE-2018-17902\r\n　* メンテナンス機能の認証情報がハードコードされている問題 (CWE-798) - CVE-2018-17896\r\n　* コントローラの HTTP サービスに対するサービス運用妨害 (DoS) (CWE-119) - CVE-2018-17898",
+  "identifier": "JVNDB-2018-003717",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU92639220/",
+      "source": "JVN",
+      "id": "JVNVU#92639220"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10592",
+      "source": "CVE",
+      "id": "CVE-2018-10592"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17900",
+      "source": "CVE",
+      "id": "CVE-2018-17900"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17902",
+      "source": "CVE",
+      "id": "CVE-2018-17902"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17896",
+      "source": "CVE",
+      "id": "CVE-2018-17896"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17898",
+      "source": "CVE",
+      "id": "CVE-2018-17898"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-10592",
+      "source": "NVD",
+      "id": "CVE-2018-10592"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-17896",
+      "source": "NVD",
+      "id": "CVE-2018-17896"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-17898",
+      "source": "NVD",
+      "id": "CVE-2018-17898"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-17900",
+      "source": "NVD",
+      "id": "CVE-2018-17900"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-17902",
+      "source": "NVD",
+      "id": "CVE-2018-17902"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-18-151-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-18-151-03"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:yokogawa:fcj_firmware",
+      "version": "2.2",
+      "vendor": "横河電機株式会社",
+      "product": "STARDOM FCJ"
+    },
+    {
+      "text": "cpe:/o:yokogawa:fcn-100_firmware",
+      "version": "2.2",
+      "vendor": "横河電機株式会社",
+      "product": "STARDOM FCN-100"
+    },
+    {
+      "text": "cpe:/o:yokogawa:fcn-500_firmware",
+      "version": "2.2",
+      "vendor": "横河電機株式会社",
+      "product": "STARDOM FCN-500"
+    },
+    {
+      "text": "cpe:/o:yokogawa:fcn-rtu_firmware",
+      "version": "2.2",
+      "vendor": "横河電機株式会社",
+      "product": "STARDOM FCN-RTU"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-07-24T16:48+09:00",
+  "issued": "2018-06-04T11:44+09:00",
+  "modified": "2019-07-24T16:48+09:00"
+}

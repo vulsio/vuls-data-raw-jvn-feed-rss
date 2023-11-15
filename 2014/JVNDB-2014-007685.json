@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007685.html",
+  "title": "OpenStack Neutron の L3 エージェントにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007685.html",
+  "description": "OpenStack Neutron の L3 エージェントには、radvd 2.0+ を使用する場合、サービス運用妨害 (ルータアップデート処理のブロック) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-007685",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8153",
+      "source": "CVE",
+      "id": "CVE-2014-8153"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8153",
+      "source": "NVD",
+      "id": "CVE-2014-8153"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:litech:router_advertisement_daemon",
+      "version": "2.2",
+      "vendor": "Litech Systems Design",
+      "product": "Router Advertisement Daemon"
+    },
+    {
+      "text": "cpe:/a:openstack:neutron",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Neutron"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-01-19T17:10+09:00",
+  "issued": "2015-01-19T17:10+09:00",
+  "modified": "2015-01-19T17:10+09:00"
+}

@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008925.html",
+  "title": "Ansible におけるインジェクションに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008925.html",
+  "description": "Ansible には、インジェクションに関する脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-4657 に対する修正が不完全だったことに起因する脆弱性です。",
+  "identifier": "JVNDB-2014-008925",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4678",
+      "source": "CVE",
+      "id": "CVE-2014-4678"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2014-4678",
+      "source": "NVD",
+      "id": "CVE-2014-4678"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2014/06/26/30",
+      "source": "関連文書",
+      "id": "Re: Re: Ansible CVE requests"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2014/07/02/2",
+      "source": "関連文書",
+      "id": "Re: Ansible CVE requests"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/74.html",
+      "id": "CWE-74",
+      "title": "インジェクション(CWE-74)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:ansible",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Ansible"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-03-05T16:25+09:00",
+  "issued": "2020-03-05T16:25+09:00",
+  "modified": "2020-03-05T16:25+09:00"
+}

@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000294.html",
+  "title": "NASM の ieee_putascii() 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000294.html",
+  "description": "NASM には、output/outieee.c の ieee_putascii() 関数において、データサイズの妥当性を確認せずに vsprintf() 関数を使用して固定長バッファにコピーを行っているため、バッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000294",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1194",
+      "source": "CVE",
+      "id": "CVE-2005-1194"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1194",
+      "source": "NVD",
+      "id": "CVE-2005-1194"
+    },
+    {
+      "text": "http://secunia.com/advisories/15245/",
+      "source": "SECUNIA",
+      "id": "SA15245"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13506",
+      "source": "BID",
+      "id": "13506"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nasm:nasm",
+      "version": "2.2",
+      "vendor": "The NASM development team",
+      "product": "NASM"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-07-30T18:52+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-07-30T18:52+09:00"
+}

@@ -1,0 +1,118 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000106.html",
+  "title": "tcpdump の isakmp_id_print() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000106.html",
+  "description": "tcpdump には、isakmp_id_print() 関数において ISAKMP ID ペイロードのペイロード長の取り扱いに不備が存在し、キャプチャするパケット長を 325 byte 以上に設定している場合に細工された ISAKMP パケットを処理することで tcpdump がクラッシュする脆弱性が存在します。なお、本脆弱性は -v オプションを指定してパケットの冗長表示を有効にしている場合にのみ再現します。\r\n\r\nまた、本脆弱性は Rapid7 より配布されている Striker テストツールにより確認されている脆弱性です。その他いくつかの脆弱性が確認されています。詳細は JVNVU#725401 (JVN) をご確認ください。",
+  "identifier": "JVNDB-2004-000106",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23725401/",
+      "source": "JVN",
+      "id": "JVNVU#725401"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0184",
+      "source": "CVE",
+      "id": "CVE-2004-0184"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0184",
+      "source": "NVD",
+      "id": "CVE-2004-0184"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/492558",
+      "source": "CERT-VN",
+      "id": "VU#492558"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10004",
+      "source": "BID",
+      "id": "10004"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/15679",
+      "source": "XF",
+      "id": "15679"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Mar/1009593.html",
+      "source": "SECTRACK",
+      "id": "1009593"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:tcpdump:tcpdump",
+      "version": "2.2",
+      "vendor": "The Tcpdump Group",
+      "product": "tcpdump"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_advanced_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Advanced Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_desktop",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_workstation",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-08-07T12:04+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-08-07T12:04+09:00"
+}

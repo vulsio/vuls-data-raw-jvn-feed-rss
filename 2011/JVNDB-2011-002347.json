@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002347.html",
+  "title": "Ted Felix acpid の acpid.c におけるサービス運用妨害 (デーモンハング) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002347.html",
+  "description": "Ted Felix acpid の acpid.c は、プロセスが acpid.socket に接続しただけでデータを読んでいない状況を適切に処理しないため、サービス運用妨害 (デーモンハング) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-002347",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1159",
+      "source": "CVE",
+      "id": "CVE-2011-1159"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1159",
+      "source": "NVD",
+      "id": "CVE-2011-1159"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:tedfelix:acpid2",
+      "version": "2.2",
+      "vendor": "Ted Felix",
+      "product": "acpid"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-10-12T15:55+09:00",
+  "issued": "2011-10-12T15:55+09:00",
+  "modified": "2011-10-12T15:55+09:00"
+}

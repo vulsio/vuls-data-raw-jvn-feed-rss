@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000257.html",
+  "title": "Microsoft VBA における意図的に作成された文書形式ファイルによるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000257.html",
+  "description": "VBA SDK に含まれる Visual Basic Environment ライブラリ (VBE.dll/VBE6.dll) では、Word 文書、Excel ワークシート、PowerPoint プレゼンテーションなど、VBA をサポートする文書形式ファイルを開く際に、文書ファイルのプロパティに対するチェックが不適切であるためバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000257",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0347",
+      "source": "CVE",
+      "id": "CVE-2003-0347"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0347",
+      "source": "NVD",
+      "id": "CVE-2003-0347"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8534",
+      "source": "BID",
+      "id": "8534"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:access",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Access"
+    },
+    {
+      "text": "cpe:/a:microsoft:excel",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Excel"
+    },
+    {
+      "text": "cpe:/a:microsoft:powerpoint",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft PowerPoint"
+    },
+    {
+      "text": "cpe:/a:microsoft:word",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Word"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-017796.html",
+  "title": "Fabrice Bellard の QEMU 他複数ベンダの製品における無限ループに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-017796.html",
+  "description": "Fabrice Bellard の QEMU 他複数ベンダの製品には、無限ループに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-017796",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2020-14394",
+      "source": "CVE",
+      "id": "CVE-2020-14394"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-14394",
+      "source": "NVD",
+      "id": "CVE-2020-14394"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1908004",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (1908004)"
+    },
+    {
+      "text": "https://gitlab.com/qemu-project/qemu/-/issues/646",
+      "source": "関連文書",
+      "id": "gitlab.com (issues/646)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2023/03/msg00013.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00013)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I7J5IRXJYLELW7D43A75LOWRUE5EU54O/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (I7J5IRXJYLELW7D43A75LOWRUE5EU54O)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/835.html",
+      "id": "CWE-835",
+      "title": "無限ループ(CWE-835)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fedoraproject:extra_packages_for_enterprise_linux",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Extra Packages For Enterprise Linux"
+    },
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/a:redhat:openstack_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenStack Platform"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "3.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:L"
+    }
+  ],
+  "date": "2023-09-22T17:29+09:00",
+  "issued": "2023-09-22T17:29+09:00",
+  "modified": "2023-09-22T17:29+09:00"
+}

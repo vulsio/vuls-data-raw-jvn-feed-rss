@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005274.html",
+  "title": "FFmpeg の libavcodec/error_resilience.c における NULL ポインタデリファレンスを誘発される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005274.html",
+  "description": "FFmpeg の libavcodec/error_resilience.c の ff_er_frame_end 関数は、フレームが完全に初期化されることを適切に検証しないため、NULL ポインタデリファレンスを誘発される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005274",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0860",
+      "source": "CVE",
+      "id": "CVE-2013-0860"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0860",
+      "source": "NVD",
+      "id": "CVE-2013-0860"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-11-27T16:34+09:00",
+  "issued": "2013-11-27T16:34+09:00",
+  "modified": "2013-11-27T16:34+09:00"
+}

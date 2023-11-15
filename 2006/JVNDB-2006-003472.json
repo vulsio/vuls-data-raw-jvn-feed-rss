@@ -1,0 +1,39 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-003472.html",
+  "title": "Dovecot におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-003472.html",
+  "description": "Dovecot は、インデックスファイルが使用され、mmap_disable が \"yes\" に設定されている際、一つずれエラー (Off-by-one) によるバッファオーバーフローが発生する、およびキャッシュファイルに関する処理に不備があるため、サービス運用妨害 (クラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2006-003472",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5973",
+      "source": "CVE",
+      "id": "CVE-2006-5973"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-5973",
+      "source": "NVD",
+      "id": "CVE-2006-5973"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:dovecot:dovecot",
+      "version": "2.2",
+      "vendor": "Timo Sirainen",
+      "product": "Dovecot"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-12-20T18:02+09:00",
+  "issued": "2012-12-20T18:02+09:00",
+  "modified": "2012-12-20T18:02+09:00"
+}

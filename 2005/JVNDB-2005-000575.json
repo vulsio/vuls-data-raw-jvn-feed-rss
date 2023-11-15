@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000575.html",
+  "title": "BEA 製品におけるサブジェクトに格納されたプリンシパルを不正に改ざんされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000575.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nWebLogic Server には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) 派生したプリンシパルが部分的にのみ有効となるため、Java クライアントが取得したサブジェクトに格納されたプリンシパルを不正に改ざんすることが可能である問題が存在します。(BEA05-92.00)\r\n\r\nローカルの攻撃者によりプリンシパルの改ざんが行われた場合、不正な権限が取得され、本来アクセスすることのできない WebLogic リソースにアクセスされてしまう可能性があります。\r\n\r\n2) クラスタ構成されたノード間で送信されるマルチキャストメッセージが平文でネットワーク上を伝達される問題が存在します。(BEA05-103.00)\r\n\r\nクラスタを構成する環境下において、サブネット上のリモートの攻撃者によりマルチキャストメッセージが盗聴された場合、メッセージに含まれる重要な情報を取得される可能性があります。",
+  "identifier": "JVNDB-2005-000575",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4756",
+      "source": "CVE",
+      "id": "CVE-2005-4756"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4756",
+      "source": "NVD",
+      "id": "CVE-2005-4756"
+    },
+    {
+      "text": "http://secunia.com/advisories/17138/",
+      "source": "SECUNIA",
+      "id": "SA17138"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15052",
+      "source": "BID",
+      "id": "15052"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/2038",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-2038"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bea:weblogic_server",
+      "version": "2.2",
+      "vendor": "BEAシステムズ",
+      "product": "BEA WebLogic Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000090.html",
+  "title": "Red Hat Linux の sharutils パッケージの uudecode 処理におけるファイルが上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000090.html",
+  "description": "Red Hat Linux の sharutils に含まれる uudecode において、 /tmp のような、安全ではないディレクトリ内に uudecode の復号化されたデータが格納される場合、ファイルの名前と種類、そしてユーザ所有権のチェックをデータの出力前に実行しないため、ファイルの上書きを実行される脆弱性が存在しまsu\r\n.",
+  "identifier": "JVNDB-2002-000090",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0178",
+      "source": "CVE",
+      "id": "CVE-2002-0178"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0178",
+      "source": "NVD",
+      "id": "CVE-2002-0178"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4742",
+      "source": "BID",
+      "id": "4742"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

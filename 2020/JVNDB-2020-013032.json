@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013032.html",
+  "title": "NVIDIA CUDA Toolkit における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013032.html",
+  "description": "NVIDIA CUDA Toolkit には、境界外読み取りに関する脆弱性、および境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-013032",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5991",
+      "source": "CVE",
+      "id": "CVE-2020-5991"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-5991",
+      "source": "NVD",
+      "id": "CVE-2020-5991"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/788.html",
+      "id": "CWE-788",
+      "title": "バッファの終端後のメモリ領域に対するアクセス(CWE-788)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nvidia:cuda_toolkit",
+      "version": "2.2",
+      "vendor": "NVIDIA",
+      "product": "cuda toolkit"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-06-17T15:26+09:00",
+  "issued": "2021-06-17T15:26+09:00",
+  "modified": "2021-06-17T15:26+09:00"
+}

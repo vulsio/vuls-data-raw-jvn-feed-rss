@@ -1,0 +1,99 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000939.html",
+  "title": "t1lib の intT1_EnvGetCompletePath () 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000939.html",
+  "description": "t1lib には lib/t1lib/t1env.c の intT1_EnvGetCompletePath() 関数において、FileName パラメータの取り扱いに不備があり、バッファオーバーフローが発生する脆弱性が存在します。\r\n\r\nなお、本問題は、PHP の gd 拡張 (PHP_GD2) における php_gd2.dll の imagepsloadfont() 関数における脆弱性として報告された問題です。",
+  "identifier": "JVNDB-2007-000939",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4033",
+      "source": "CVE",
+      "id": "CVE-2007-4033"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4033",
+      "source": "NVD",
+      "id": "CVE-2007-4033"
+    },
+    {
+      "text": "http://secunia.com/advisories/26241",
+      "source": "SECUNIA",
+      "id": "SA26241"
+    },
+    {
+      "text": "http://secunia.com/advisories/27599",
+      "source": "SECUNIA",
+      "id": "SA27599"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25079",
+      "source": "BID",
+      "id": "25079"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/35620",
+      "source": "XF",
+      "id": "35620"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1018905",
+      "source": "SECTRACK",
+      "id": "1018905"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/a:t1lib:t1lib",
+      "version": "2.2",
+      "vendor": "T1lib",
+      "product": "T1lib"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2008-06-20T13:40+09:00",
+  "issued": "2007-11-30T17:01+09:00",
+  "modified": "2008-06-20T13:40+09:00"
+}

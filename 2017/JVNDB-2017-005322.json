@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005322.html",
+  "title": "Windows 上で稼動する SWFTools の png2swf における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005322.html",
+  "description": "Windows 上で稼動する SWFTools の png2swf には、\"User Mode Write AV near NULL\" に関連して、任意のコードを実行される、またはサービス運用妨害 (DoS) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2017-005322",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9925",
+      "source": "CVE",
+      "id": "CVE-2017-9925"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-9925",
+      "source": "NVD",
+      "id": "CVE-2017-9925"
+    },
+    {
+      "text": "https://github.com/wlinzi/security_advisories/tree/master/CVE-2017-9925",
+      "source": "関連文書",
+      "id": "CVE-2017-9925"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:swftools:swftools",
+      "version": "2.2",
+      "vendor": "SWFTools",
+      "product": "SWFTools"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-07-26T18:04+09:00",
+  "issued": "2017-07-26T18:04+09:00",
+  "modified": "2017-07-26T18:04+09:00"
+}

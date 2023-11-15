@@ -1,0 +1,81 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002654.html",
+  "title": "Exim における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002654.html",
+  "description": "Exim には、設定ファイルの処理に起因する権限昇格の脆弱性が存在します。\r\n\r\nExim は、Cambridge 大学で開発された Unix システム向けのメール転送エージェントです。 Exim を設定オプション ALT_CONFIG_ROOT_ONLY を指定しないでビルドすると、ユーザは任意の設定ファイルを使用することが可能になります。結果として、指定された設定ファイル内に存在する ${run…} はすべて root 権限で実行されます。\r\n\r\nなお、本脆弱性を使用した攻撃活動が確認されています。",
+  "identifier": "JVNDB-2010-002654",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU758489",
+      "source": "JVN",
+      "id": "JVNVU#758489"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4345",
+      "source": "CVE",
+      "id": "CVE-2010-4345"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4345",
+      "source": "NVD",
+      "id": "CVE-2010-4345"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/758489",
+      "source": "CERT-VN",
+      "id": "VU#758489"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/45341",
+      "source": "BID",
+      "id": "45341"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1024859",
+      "source": "SECTRACK",
+      "id": "1024859"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/3171",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-3171"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:exim:exim",
+      "version": "2.2",
+      "vendor": "Exim Development",
+      "product": "Exim"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-01-19T15:41+09:00",
+  "issued": "2011-01-19T15:41+09:00",
+  "modified": "2011-01-19T15:41+09:00"
+}

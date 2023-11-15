@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000274.html",
+  "title": "IBM WebSphere Application Server のトレース時における複数の情報漏洩の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000274.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nIBM WebSphere Application Server (WAS) には以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・HTTP リクエスト処理におけるセキュリティおよび完全性に関する詳細不明の問題 (6.0.2.x.) (CVE-2006-2429)\r\n\r\n・deployment manager にベースノードを追加する際に、認証情報などの機密情報が addNode.log ファイルに平文で記述されてしまう問題 (5.0.2.x/5.1.1.x/6.0.2.x) (CVE-2006-2430)\r\n\r\n・SOAP ポートに関連する詳細不明の問題 (5.0.2.x/6.0.2.x) (CVE-2006-2431)\r\n\r\n・管理コンソールの詳細不明の問題 (5.1.1.x/6.0.2.x) (CVE-2006-2433)\r\n\r\n・WebSphere Common Configuration Mode、CommonArchive、J2EE Models においてトレース時に機密情報を表示してしまう問題 (5.1.1.x) (CVE-2006-2434)\r\n\r\n・意図的な LTPA トークンが送信された場合に EJB リソースに不正にアクセスすることが可能となる問題 (5.0.2.x/5.1.1.x) (CVE-2006-2432)\r\n\r\n・SnoopServlet において URL に挿入されたスクリプトが実行されてしまうため、クロスサイトスクリプティング攻撃が可能である問題 (5.0.2.x/5.1.1.x) (CVE-2006-2435)\r\n\r\n・FFDC ログファイルに管理者パスワード、LDAP パスワードが平文で記述されてしまう問題 (5.0.2.x) (CVE-2006-2436)\r\n\r\n・Web コンテナの実装の不備により、JSP ファイルのソースコードが公開されてしまう問題 (5.1.1.x) (PK23670)\r\n\r\nリモート/ローカルの攻撃者に悪用された場合、重要な情報が取得される、悪質なスクリプトが実行される、セキュリティ制限が回避されて重要なリソースに不正にアクセスされるなど、様々な影響を受ける可能性があります。",
+  "identifier": "JVNDB-2006-000274",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2434",
+      "source": "CVE",
+      "id": "CVE-2006-2434"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-2434",
+      "source": "NVD",
+      "id": "CVE-2006-2434"
+    },
+    {
+      "text": "http://secunia.com/advisories/20032/",
+      "source": "SECUNIA",
+      "id": "SA20032"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18672",
+      "source": "BID",
+      "id": "18672"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17919",
+      "source": "BID",
+      "id": "17919"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/2552",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-2552"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/1736",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-1736"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:websphere_application_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Application Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

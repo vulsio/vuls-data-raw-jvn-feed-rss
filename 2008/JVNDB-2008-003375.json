@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-003375.html",
+  "title": "Avaya SIP Enablement Services および CM の SES Server におけるログイン資格情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-003375.html",
+  "description": "Avaya SIP Enablement Services および SES が有効な S8300C 上で稼動する Communication Manager (CM) の SIP Enablement Services (SES) Server は、ログイン試行が失敗した際、アカウント名とパスワードを (1) alarm ログおよび (2) system ログに書き込むため、ログイン資格情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2008-003375",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3777",
+      "source": "CVE",
+      "id": "CVE-2008-3777"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-3777",
+      "source": "NVD",
+      "id": "CVE-2008-3777"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:avaya:communication_manager",
+      "version": "2.2",
+      "vendor": "アバイア",
+      "product": "Avaya Communication Manager"
+    },
+    {
+      "text": "cpe:/a:avaya:sip_enablement_services",
+      "version": "2.2",
+      "vendor": "アバイア",
+      "product": "sip enablement services"
+    },
+    {
+      "text": "cpe:/h:avaya:s8300c_server",
+      "version": "2.2",
+      "vendor": "アバイア",
+      "product": "s8300c server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2012-06-26T16:02+09:00",
+  "issued": "2012-06-26T16:02+09:00",
+  "modified": "2012-06-26T16:02+09:00"
+}

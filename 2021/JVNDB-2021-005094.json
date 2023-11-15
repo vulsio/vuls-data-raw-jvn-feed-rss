@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005094.html",
+  "title": "Node.js 用 netmask パッケージにおける入力確認に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005094.html",
+  "description": "Node.js 用 netmask パッケージには、入力確認に関する脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2021-28918 に対する修正が不完全だったことに起因する脆弱性です。",
+  "identifier": "JVNDB-2021-005094",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-29418",
+      "source": "CVE",
+      "id": "CVE-2021-29418"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-29418",
+      "source": "NVD",
+      "id": "CVE-2021-29418"
+    },
+    {
+      "text": "https://vuln.ryotak.me/advisories/6",
+      "source": "関連文書",
+      "id": "Advisory #6 (node-netmask incorrectly parses an IP address that has octal integer with invalid character)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:netmask_project:netmask",
+      "version": "2.2",
+      "vendor": "Netmask project",
+      "product": "Netmask"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+    }
+  ],
+  "date": "2021-12-07T18:04+09:00",
+  "issued": "2021-12-07T18:04+09:00",
+  "modified": "2021-12-07T18:04+09:00"
+}

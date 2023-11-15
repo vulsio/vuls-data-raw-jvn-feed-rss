@@ -1,0 +1,94 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000705.html",
+  "title": "libvorbis の lib/vorbisfile.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000705.html",
+  "description": "libvorbis の libvorbisfile ライブラリにおける lib/vorbisfile.c において、OGG ファイルの取り扱いに不備があり、無限ループによるサービス運用妨害 (DoS) 状態となる脆弱性が存在します。(trac Changeset 13217)",
+  "identifier": "JVNDB-2007-000705",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4065",
+      "source": "CVE",
+      "id": "CVE-2007-4065"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4065",
+      "source": "NVD",
+      "id": "CVE-2007-4065"
+    },
+    {
+      "text": "http://secunia.com/advisories/26232",
+      "source": "SECUNIA",
+      "id": "SA26232"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25082",
+      "source": "BID",
+      "id": "25082"
+    },
+    {
+      "text": "http://securitytracker.com/id?1018712",
+      "source": "SECTRACK",
+      "id": "1018712"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/2698",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-2698"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:xiph:libvorbis",
+      "version": "2.2",
+      "vendor": "Xiph.Org",
+      "product": "Libvorbis"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-11-29T13:45+09:00",
+  "issued": "2007-10-02T14:06+09:00",
+  "modified": "2007-11-29T13:45+09:00"
+}

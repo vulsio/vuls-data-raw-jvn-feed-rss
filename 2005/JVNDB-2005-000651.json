@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000651.html",
+  "title": "PHP の Apache2handler SAPI におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000651.html",
+  "description": "PHP に含まれる Apache モジュールの apache2handler SAPI には、.htaccess あるいは httpd.conf で指定された session.save_path の処理に不備が存在するため、Null ポインタデリファレンスにより Apache の子プロセスでセグメンテーションフォルトが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000651",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3319",
+      "source": "CVE",
+      "id": "CVE-2005-3319"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3319",
+      "source": "NVD",
+      "id": "CVE-2005-3319"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15177",
+      "source": "BID",
+      "id": "15177"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

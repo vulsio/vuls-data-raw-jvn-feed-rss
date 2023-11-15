@@ -1,0 +1,96 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-010149.html",
+  "title": "Google の Google TensorFlow における NULL ポインタデリファレンスに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-010149.html",
+  "description": "Google の Google TensorFlow には、NULL ポインタデリファレンスに関する脆弱性、初期化されていないリソースの使用に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-010149",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-29205",
+      "source": "CVE",
+      "id": "CVE-2022-29205"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-29205",
+      "source": "NVD",
+      "id": "CVE-2022-29205"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/blob/f3b9bf4c3c0597563b289c0512e98d4ce81f886e/tensorflow/python/eager/pywrap_tfe_src.cc#L296-L320",
+      "source": "関連文書",
+      "id": "github.com (pywrap_tfe_src.cc#L296-L320)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/blob/f3b9bf4c3c0597563b289c0512e98d4ce81f886e/tensorflow/python/eager/pywrap_tfe_src.cc#L480-L482",
+      "source": "関連文書",
+      "id": "github.com (pywrap_tfe_src.cc#L480-L482)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/commit/237822b59fc504dda2c564787f5d3ad9c4aa62d9",
+      "source": "関連文書",
+      "id": "github.com (237822b59fc504dda2c564787f5d3ad9c4aa62d9)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/releases/tag/v2.6.4",
+      "source": "関連文書",
+      "id": "github.com (v2.6.4)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/releases/tag/v2.7.2",
+      "source": "関連文書",
+      "id": "github.com (v2.7.2)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/releases/tag/v2.8.1",
+      "source": "関連文書",
+      "id": "github.com (v2.8.1)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/releases/tag/v2.9.0",
+      "source": "関連文書",
+      "id": "github.com (v2.9.0)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-54ch-gjq5-4976",
+      "source": "関連文書",
+      "id": "github.com (GHSA-54ch-gjq5-4976)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/908.html",
+      "id": "CWE-908",
+      "title": "初期化されていないリソースの使用(CWE-908)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:tensorflow",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google TensorFlow"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-08-10T17:25+09:00",
+  "issued": "2023-08-10T17:25+09:00",
+  "modified": "2023-08-10T17:25+09:00"
+}

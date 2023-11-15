@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015198.html",
+  "title": "OpenJPEG における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015198.html",
+  "description": "OpenJPEG には、境界外読み取りに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-015198",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27843",
+      "source": "CVE",
+      "id": "CVE-2020-27843"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-27843",
+      "source": "NVD",
+      "id": "CVE-2020-27843"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1907516",
+      "source": "関連文書",
+      "id": "Bug 1907516 (CVE-2020-27843) - CVE-2020-27843 openjpeg: out-of-bounds read in opj_t2_encode_packet function in openjp2/t2.c"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openjpeg:openjpeg",
+      "version": "2.2",
+      "vendor": "OpenJPEG project",
+      "product": "OpenJPEG"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2021-09-14T15:26+09:00",
+  "issued": "2021-09-14T15:26+09:00",
+  "modified": "2021-09-14T15:26+09:00"
+}

@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002402.html",
+  "title": "PHP の tempnam 関数における safe_mode の制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002402.html",
+  "description": "PHP の tempnam 関数には、safe_mode の制限を回避される、または group-writable、world-writable ディレクトリにファイルを作成される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-002402",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3557",
+      "source": "CVE",
+      "id": "CVE-2009-3557"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3557",
+      "source": "NVD",
+      "id": "CVE-2009-3557"
+    },
+    {
+      "text": "http://secunia.com/advisories/37821",
+      "source": "SECUNIA",
+      "id": "SA37821"
+    },
+    {
+      "text": "http://secunia.com/advisories/37412",
+      "source": "SECUNIA",
+      "id": "SA37412"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/36555",
+      "source": "BID",
+      "id": "36555"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/3593",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-3593"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/h:hp:apache-based_web_server",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX Apache-based Web Server"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2010-12-15T12:42+09:00",
+  "issued": "2010-01-13T12:00+09:00",
+  "modified": "2010-12-15T12:42+09:00"
+}

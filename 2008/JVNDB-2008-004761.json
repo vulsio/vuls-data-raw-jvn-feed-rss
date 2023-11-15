@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-004761.html",
+  "title": "Linux kernel の net/ipv6/route.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-004761.html",
+  "description": "Linux kernel の net/ipv6/route.c の rt6_fill_node 関数には、サービス運用妨害 (カーネル OOPS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2008-004761",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3686",
+      "source": "CVE",
+      "id": "CVE-2008-3686"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-3686",
+      "source": "NVD",
+      "id": "CVE-2008-3686"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-09-25T17:17+09:00",
+  "issued": "2012-09-25T17:17+09:00",
+  "modified": "2012-09-25T17:17+09:00"
+}

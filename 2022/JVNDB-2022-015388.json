@@ -1,0 +1,81 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-015388.html",
+  "title": "Vim の Vim 他複数ベンダの製品における解放済みメモリの使用に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-015388.html",
+  "description": "Vim の Vim 他複数ベンダの製品には、解放済みメモリの使用に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-015388",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-2946",
+      "source": "CVE",
+      "id": "CVE-2022-2946"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-2946",
+      "source": "NVD",
+      "id": "CVE-2022-2946"
+    },
+    {
+      "text": "https://github.com/vim/vim/commit/adce965162dd89bf29ee0e5baf53652e7515762c",
+      "source": "関連文書",
+      "id": "github.com (adce965162dd89bf29ee0e5baf53652e7515762c)"
+    },
+    {
+      "text": "https://huntr.dev/bounties/5d389a18-5026-47df-a5d0-1548a9b555d5",
+      "source": "関連文書",
+      "id": "huntr.dev (5d389a18-5026-47df-a5d0-1548a9b555d5)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2022/11/msg00009.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00009)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/C72HDIMR3KTTAO7QGTXWUMPBNFUFIBRD/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (C72HDIMR3KTTAO7QGTXWUMPBNFUFIBRD)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202305-16",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202305-16)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/416.html",
+      "id": "CWE-416",
+      "title": "解放済みメモリの使用(CWE-416)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vim:vim",
+      "version": "2.2",
+      "vendor": "Vim",
+      "product": "Vim"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-09-26T17:27+09:00",
+  "issued": "2023-09-26T17:27+09:00",
+  "modified": "2023-09-26T17:27+09:00"
+}

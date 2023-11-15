@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-017351.html",
+  "title": "UltraJSON における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-017351.html",
+  "description": "UltraJSON (別名 ujson) には、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-017351",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-45958",
+      "source": "CVE",
+      "id": "CVE-2021-45958"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-45958",
+      "source": "NVD",
+      "id": "CVE-2021-45958"
+    },
+    {
+      "text": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36009",
+      "source": "関連文書",
+      "id": "Issue 36009: ujson:hypothesis_structured_fuzzer: Stack-buffer-overflow in Buffer_AppendIndentUnchecked"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ultrajson_project:ultrajson",
+      "version": "2.2",
+      "vendor": "UltraJSON project",
+      "product": "UltraJSON"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-01-17T13:56+09:00",
+  "issued": "2023-01-17T13:56+09:00",
+  "modified": "2023-01-17T13:56+09:00"
+}

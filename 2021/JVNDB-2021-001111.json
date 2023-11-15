@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001111.html",
+  "title": "Azure Kubernetes Service におけるなりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001111.html",
+  "description": "Azure Kubernetes Service には、Azure Active Directory Pod に不備があるため、なりすまされる脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2021-001111",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1677",
+      "source": "CVE",
+      "id": "CVE-2021-1677"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-1677",
+      "source": "NVD",
+      "id": "CVE-2021-1677"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20210113-ms.html",
+      "source": "IPA CFA",
+      "id": "Microsoft 製品の脆弱性対策について(2021年1月)"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2021/at210001.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2021-0001"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/290.html",
+      "id": "CWE-290",
+      "title": "スプーフィングによる認証回避(CWE-290)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:azure_kubernetes_service",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Azure Kubernetes Service"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2021-03-01T16:49+09:00",
+  "issued": "2021-03-01T16:49+09:00",
+  "modified": "2021-03-01T16:49+09:00"
+}

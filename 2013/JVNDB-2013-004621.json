@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004621.html",
+  "title": "Qemu の virtio-pci の実装におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004621.html",
+  "description": "Qemu の virtio-pci の実装には、解放済みメモリの使用 (Use-after-free) により、サービス運用妨害 (デーモンクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004621",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4377",
+      "source": "CVE",
+      "id": "CVE-2013-4377"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4377",
+      "source": "NVD",
+      "id": "CVE-2013-4377"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:A/AC:M/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-10-16T16:43+09:00",
+  "issued": "2013-10-16T16:43+09:00",
+  "modified": "2013-10-16T16:43+09:00"
+}

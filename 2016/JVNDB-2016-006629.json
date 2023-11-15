@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006629.html",
+  "title": "Docker 用 SwarmKit ツールキットにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006629.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nDocker 用 SwarmKit ツールキットには、サービス運用妨害 (クラスタの join の阻害) 状態にされる脆弱性が存在します。\r\n\r\nベンダは、以下のように述べ、本脆弱性に対して異議を唱えています。\r\n「当該のシーケンスは、古いノードが残したステートを削除しない。マネージャはメモリ不足の状態で稼動しているため、ある時点から新しいノードの受け取りができなくなるのは自明のことである。Docker Swarm および Docker Swarmkit 双方のノードが秘密トークンを提供することが \"必須\" であるため (実際にこれが唯一のオペレーションモードである)、ノードに join されるだけで管理リソースを枯渇させてしまうことはない。メモリ不足の状態で稼動していて、システムに新たな正規のノードを追加することのできないマネージャに関しては、我々は何もできない。本件はリソースのプロビジョニングの問題にすぎず、決して CVE を付与されるような脆弱性ではない。」 \r\n",
+  "identifier": "JVNDB-2016-006629",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6595",
+      "source": "CVE",
+      "id": "CVE-2016-6595"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6595",
+      "source": "NVD",
+      "id": "CVE-2016-6595"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/09/02/8",
+      "source": "関連文書",
+      "id": "Re: Re: cve request: docker swarmkit Dos occurs by repeatly joining and quitting swam cluster as a node (Fri, 2 Sep 2016)"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/09/02/1",
+      "source": "関連文書",
+      "id": "Re: cve request: docker swarmkit Dos occurs by repeatly joining and quitting swam cluster as a node (Thu, 1 Sep 2016)"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/08/04/1",
+      "source": "関連文書",
+      "id": "Re: cve request: docker swarmkit Dos occurs by repeatly joining and quitting swam cluster as a node (Thu,  4 Aug 2016)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:docker:docker",
+      "version": "2.2",
+      "vendor": "Docker",
+      "product": "Docker"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-01-17T16:03+09:00",
+  "issued": "2017-01-17T16:03+09:00",
+  "modified": "2017-01-17T16:03+09:00"
+}

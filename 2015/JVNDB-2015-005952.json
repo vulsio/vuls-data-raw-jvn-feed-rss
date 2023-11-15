@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005952.html",
+  "title": "Ipsilon の Identity Provider サーバの providers/saml2/admin.py におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005952.html",
+  "description": "Ipsilon の Identity Provider (IdP) サーバの providers/saml2/admin.py は、パーミッションを適切にチェックしないため、サービス運用妨害 (DoS) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-005952",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5301",
+      "source": "CVE",
+      "id": "CVE-2015-5301"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5301",
+      "source": "NVD",
+      "id": "CVE-2015-5301"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ipsilon_project:ipsilon",
+      "version": "2.2",
+      "vendor": "Ipsilon project",
+      "product": "Ipsilon"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2015-11-19T13:41+09:00",
+  "issued": "2015-11-19T13:41+09:00",
+  "modified": "2015-11-19T13:41+09:00"
+}

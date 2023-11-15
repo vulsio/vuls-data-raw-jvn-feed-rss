@@ -1,0 +1,102 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000112.html",
+  "title": "Samba における複数のバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000112.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSamba 2.2.8 以前には、非常に長いファイル名を持つファイルを取り扱う際に、smbd/trans2.c 内の StrnCpy() 関数においてバッファオーバーフローが生じる問題が存在します。\r\n\r\nStrnCpy(fname,pname,namelen) と記された StrnCpy() 関数では、namelen を使用して pstring 型 (1024 バイトの char 型配列) の変数 fname 内に pname をコピーします。そのため、pname に 1024 バイトより大きい値が与えられることにより、バッファオーバーフローを発生させ、メモリ領域を上書きすることが可能です。\r\n\r\n結果として、リモートの攻撃者により意図的に作成されたファイルを取り扱うことにより、smbd の実行権限 (通常 root 権限) で任意のコードを実行される可能性があります。(CAN-2003-0201)\r\n\r\nさらに、この問題に由来する潜在的なバッファオーバーフローの問題がこの他 3 箇所でベンダで発見されており (CAN-2003-0196)、これら全ての問題に対して修正されたバージョン Samba 2.2.8a が公開されています。\r\n\r\n尚、現時点でこの問題 (CAN-2003-0196) の詳細は未詳です。",
+  "identifier": "JVNDB-2003-000112",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0196",
+      "source": "CVE",
+      "id": "CVE-2003-0196"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0196",
+      "source": "NVD",
+      "id": "CVE-2003-0196"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/267873",
+      "source": "CERT-VN",
+      "id": "VU#267873"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7295",
+      "source": "BID",
+      "id": "7295"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7294",
+      "source": "BID",
+      "id": "7294"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_4",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ4"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQXTR"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

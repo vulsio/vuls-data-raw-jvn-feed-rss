@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003234.html",
+  "title": "Arduino JSON の Internals/QuotedString.cpp の extractFrom 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003234.html",
+  "description": "Arduino JSON の Internals/QuotedString.cpp の extractFrom 関数には、サービス運用妨害 (クラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-003234",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4590",
+      "source": "CVE",
+      "id": "CVE-2015-4590"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4590",
+      "source": "NVD",
+      "id": "CVE-2015-4590"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:arduino_json_project:arduino_json",
+      "version": "2.2",
+      "vendor": "Benoit Blanchon",
+      "product": "Arduino JSON"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-06-24T12:02+09:00",
+  "issued": "2015-06-24T12:02+09:00",
+  "modified": "2015-06-24T12:02+09:00"
+}

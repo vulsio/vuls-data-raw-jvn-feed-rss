@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006123.html",
+  "title": "BSD libc にバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006123.html",
+  "description": "BSD libc ライブラリには、バッファオーバーフローの脆弱性が存在します。\r\n\r\nバッファオーバーフロー（CWE-120） - CVE-2016-6559\r\nlink_ntoa() 関数には、obuf 変数に関する不適切な処理に起因するバッファオーバーフローの脆弱性が存在します。\r\n\r\nCWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')\r\nhttps://cwe.mitre.org/data/definitions/120.html\r\n\r\nFreeBSD 開発者の分析によると、攻撃可能な状態で link_ntoa() 関数が実装されているアプリケーションは存在しないだろうとの見解です (\"it is very unlikely that applications exist that utilize link_ntoa() in an exploitable manner\")。また、CERT/CC は、2016年12月6日時点で本脆弱性の実証コードは確認していません。",
+  "identifier": "JVNDB-2016-006123",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU91242711",
+      "source": "JVN",
+      "id": "JVNVU#91242711"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6559",
+      "source": "CVE",
+      "id": "CVE-2016-6559"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-6559",
+      "source": "NVD",
+      "id": "CVE-2016-6559"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/548487",
+      "source": "CERT-VN",
+      "id": "VU#548487"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/120.html",
+      "id": "CWE-120",
+      "title": "古典的バッファオーバーフロー(CWE-120)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    },
+    {
+      "text": "cpe:/o:freebsd:freebsd",
+      "version": "2.2",
+      "vendor": "FreeBSD",
+      "product": "FreeBSD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-09-26T15:35+09:00",
+  "issued": "2016-12-08T13:36+09:00",
+  "modified": "2019-09-26T15:35+09:00"
+}

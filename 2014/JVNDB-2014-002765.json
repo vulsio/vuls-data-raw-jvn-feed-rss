@@ -1,0 +1,175 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002765.html",
+  "title": "OpenSSL の d1_both.c の dtls1_reassemble_fragment 関数における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002765.html",
+  "description": "OpenSSL の d1_both.c の dtls1_reassemble_fragment 関数は、DTLS ClientHello メッセージのフラグメントの長さを適切に検証しないため、任意のコードを実行される、またはサービス運用妨害 (バッファオーバーフローおよびアプリケーションクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002765",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU93868849/index.html",
+      "source": "JVN",
+      "id": "JVNVU#93868849"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0195",
+      "source": "CVE",
+      "id": "CVE-2014-0195"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0195",
+      "source": "NVD",
+      "id": "CVE-2014-0195"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fujitsu:integrated_system_ha_database_ready",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "FUJITSU Integrated System HA Database Ready"
+    },
+    {
+      "text": "cpe:/a:fujitsu:symfoware",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Symfoware"
+    },
+    {
+      "text": "cpe:/a:ibm:api_management",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM API Management"
+    },
+    {
+      "text": "cpe:/a:ibm:infosphere_master_data_management",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM InfoSphere Master Data Management"
+    },
+    {
+      "text": "cpe:/a:ibm:initiate_master_data_service",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Initiate Master Data Service"
+    },
+    {
+      "text": "cpe:/a:ibm:java_sdk",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM SDK, Java"
+    },
+    {
+      "text": "cpe:/a:ibm:smartcloud_orchestrator",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM SmartCloud Orchestrator"
+    },
+    {
+      "text": "cpe:/a:ibm:smartcloud_provisioning",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM SmartCloud Provisioning"
+    },
+    {
+      "text": "cpe:/a:ibm:tivoli_composite_application_manager",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "Tivoli Composite Application Manager"
+    },
+    {
+      "text": "cpe:/a:ibm:tivoli_management_framework",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Tivoli Management Framework"
+    },
+    {
+      "text": "cpe:/a:ibm:workload_scheduler",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Workload Scheduler"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:oracle:virtualization_secure_global_desktop",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Virtualization"
+    },
+    {
+      "text": "cpe:/a:oracle:vm_virtualbox",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle VM VirtualBox"
+    },
+    {
+      "text": "cpe:/a:redhat:storage",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Storage"
+    },
+    {
+      "text": "cpe:/h:hitachi:l20_300",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "L20/300"
+    },
+    {
+      "text": "cpe:/h:hitachi:lto6_drive",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "LTO6ドライブ"
+    },
+    {
+      "text": "cpe:/h:hitachi:lx_30a",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Lx/30A"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-12-17T17:37+09:00",
+  "issued": "2014-06-09T14:10+09:00",
+  "modified": "2015-12-17T17:37+09:00"
+}

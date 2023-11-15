@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004375.html",
+  "title": "Red Hat JBoss Fuse および JBoss A-MQ におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004375.html",
+  "description": "Red Hat JBoss Fuse および JBoss A-MQ の Fuse Management Console には、クロスサイトスクリプティングの脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004375",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4372",
+      "source": "CVE",
+      "id": "CVE-2013-4372"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4372",
+      "source": "NVD",
+      "id": "CVE-2013-4372"
+    },
+    {
+      "text": "http://fusesource.com/issues/browse/FMC-495",
+      "source": "関連文書",
+      "id": "[#FMC-495] FMC susceptible to cross site scripting issues"
+    },
+    {
+      "text": "http://fusesource.com/forge/git/fuseenterprise.git/?p=fuseenterprise.git;a=commitdiff;h=f5436ea1c5547c851bb6f92561272fe42c146e68",
+      "source": "関連文書",
+      "id": "fuseenterprise.git / commitdiff "
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:jboss_a-mq",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat JBoss A-MQ"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_fuse",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat JBoss Fuse"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2014-02-18T18:03+09:00",
+  "issued": "2013-10-02T16:24+09:00",
+  "modified": "2014-02-18T18:03+09:00"
+}

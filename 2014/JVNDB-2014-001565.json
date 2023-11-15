@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001565.html",
+  "title": "Apple OS X の OpenSSL 用の特定の Apple パッチにおけるカスタムアプリケーション内の追加検証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001565.html",
+  "description": "Apple OS X の OpenSSL 用の特定の Apple パッチは、SSL_CTX_set_verify コールバック関数のマニュアルで指定されている特定の TLS/SSL ハンドシェイクを終了せずに Trust Evaluation Agent (TEA) 機能を使用するため、カスタムアプリケーション内の追加検証を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-001565",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2234",
+      "source": "CVE",
+      "id": "CVE-2014-2234"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2234",
+      "source": "NVD",
+      "id": "CVE-2014-2234"
+    },
+    {
+      "text": "https://hynek.me/articles/apple-openssl-verification-surprises/",
+      "source": "関連文書",
+      "id": "Apple OpenSSL Verification Surprises"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2014-03-06T11:34+09:00",
+  "issued": "2014-03-06T11:34+09:00",
+  "modified": "2014-03-06T11:34+09:00"
+}

@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006323.html",
+  "title": "Joyent SmartOS の Hyprlofs ファイルシステムにおける整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006323.html",
+  "description": "Joyent SmartOS の Hyprlofs ファイルシステムの Ioctl システムコールの HYPRLOFS_ADD_ENTRIES コマンドには、ネイティブファイルシステムの処理の際に、整数オーバーフローの脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2016-9031 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2016-006323",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8733",
+      "source": "CVE",
+      "id": "CVE-2016-8733"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8733",
+      "source": "NVD",
+      "id": "CVE-2016-8733"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/190.html",
+      "id": "CWE-190",
+      "title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:joyent:smartos",
+      "version": "2.2",
+      "vendor": "Joyent, Inc.",
+      "product": "SmartOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-12-21T14:33+09:00",
+  "issued": "2016-12-21T14:33+09:00",
+  "modified": "2016-12-21T14:33+09:00"
+}

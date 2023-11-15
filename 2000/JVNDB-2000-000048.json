@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000048.html",
+  "title": "ProFTPD の setproctitle() 関数におけるフォーマットストリングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000048.html",
+  "description": "ProFTPD および、それらを元に派生した ftpd の setproctitle() 関数には、Anonymous ログイン時にパスワードとして \"%\" 文字が指定された場合、フォーマットストリングとして扱ってしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2000-000048",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-0574",
+      "source": "CVE",
+      "id": "CVE-2000-0574"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2000-0574",
+      "source": "NVD",
+      "id": "CVE-2000-0574"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-2000-13.html",
+      "source": "CERT-A",
+      "id": "CA-2000-13"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/1425",
+      "source": "BID",
+      "id": "1425"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:proftpd:proftpd",
+      "version": "2.2",
+      "vendor": "ProFTPD Project",
+      "product": "ProFTPD"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

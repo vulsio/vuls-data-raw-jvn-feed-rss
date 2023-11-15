@@ -1,0 +1,101 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-000074.html",
+  "title": "弥生 17 シリーズの複数の製品における DLL 読み込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-000074.html",
+  "description": "弥生株式会社が提供する弥生 17 シリーズの複数の製品には、DLL を読み込む際の検索パスに問題があり、意図しない DLL を読み込んでしまう脆弱性 (CWE-427) が存在します。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 合同会社セキュリティ・プロフェッショナルズ・ネットワーク 吉田 英二（Eiji James Yoshida） 氏",
+  "identifier": "JVNDB-2018-000074",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN06813756/index.html",
+      "source": "JVN",
+      "id": "JVN#06813756"
+    },
+    {
+      "text": "https://jvn.jp/ta/JVNTA91240916/",
+      "source": "JVN",
+      "id": "JVNTA#91240916"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0623",
+      "source": "CVE",
+      "id": "CVE-2018-0623"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0624",
+      "source": "CVE",
+      "id": "CVE-2018-0624"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-0623",
+      "source": "NVD",
+      "id": "CVE-2018-0623"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-0624",
+      "source": "NVD",
+      "id": "CVE-2018-0624"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:yayoi-hanbai",
+      "version": "2.2",
+      "vendor": "弥生株式会社",
+      "product": "弥生販売"
+    },
+    {
+      "text": "cpe:/a:misc:yayoi-kaikei",
+      "version": "2.2",
+      "vendor": "弥生株式会社",
+      "product": "弥生会計"
+    },
+    {
+      "text": "cpe:/a:misc:yayoi_kyuyo",
+      "version": "2.2",
+      "vendor": "弥生株式会社",
+      "product": "弥生給与"
+    },
+    {
+      "text": "cpe:/a:misc:yayoi_no_aoiroshinkoku",
+      "version": "2.2",
+      "vendor": "弥生株式会社",
+      "product": "やよいの青色申告"
+    },
+    {
+      "text": "cpe:/a:misc:yayoi_no_kokyakukanri",
+      "version": "2.2",
+      "vendor": "弥生株式会社",
+      "product": "やよいの顧客管理"
+    },
+    {
+      "text": "cpe:/a:misc:yayoi_no_kyuyokeisan",
+      "version": "2.2",
+      "vendor": "弥生株式会社",
+      "product": "やよいの給与計算"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-07-25T15:01+09:00",
+  "issued": "2018-07-20T12:07+09:00",
+  "modified": "2019-07-25T15:01+09:00"
+}

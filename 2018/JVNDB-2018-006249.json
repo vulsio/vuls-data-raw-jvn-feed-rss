@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006249.html",
+  "title": "mingw-w64 が生成する実行ファイルにおいて ASLR が機能しない問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006249.html",
+  "description": "mingw-w64 がデフォルト状態で生成する Windows 実行ファイルはリロケーションテーブルを持たないため、ASLR (アドレス空間配置のランダム化) が適切に機能しません。\r\n\r\nASLR はメモリ上のコードを使った攻撃への対策として用いられる技術で、近年の Windows プラットフォームでも採用されています。ASLR が機能するためには Windows 実行ファイルがリロケーションテーブルを持つ必要があります。しかし、mingw-w64 によって生成された Windows 実行ファイルは、ASLR の有効化を示す「Dynamic base」PE ヘッダがデフォルトで含まれているにもかかわらず、リロケーションテーブルが削除されてしまいます。結果として、mingw-w64 によって生成された実行ファイルには、return-oriented-programming (ROP) 攻撃に対する脆弱性が存在します。\r\n\r\n",
+  "identifier": "JVNDB-2018-006249",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99390733/",
+      "source": "JVN",
+      "id": "JVNVU#99390733"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5392",
+      "source": "CVE",
+      "id": "CVE-2018-5392"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5392",
+      "source": "NVD",
+      "id": "CVE-2018-5392"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/307144",
+      "source": "CERT-VN",
+      "id": "VU#307144"
+    },
+    {
+      "text": "https://sourceware.org/bugzilla/show_bug.cgi?id=17321",
+      "source": "関連文書",
+      "id": "Bug 17321 - add --enable-reloc-section option to generate proper relocation sections to .exes"
+    },
+    {
+      "text": "https://sourceware.org/bugzilla/show_bug.cgi?id=19011",
+      "source": "関連文書",
+      "id": "Bug 19011 - Issues with ld on mingw-w64 and bad defaults"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mingw-w64:mingw-w64",
+      "version": "2.2",
+      "vendor": "Mingw-w64",
+      "product": "Mingw-w64"
+    }
+  ],
+  "date": "2019-07-25T12:31+09:00",
+  "issued": "2018-08-14T10:33+09:00",
+  "modified": "2019-07-25T12:31+09:00"
+}

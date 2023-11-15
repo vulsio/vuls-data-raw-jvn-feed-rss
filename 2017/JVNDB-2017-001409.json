@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001409.html",
+  "title": "Linux Kernel の drivers/usb/serial/kl5kusb105.c における重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001409.html",
+  "description": "Linux Kernel の drivers/usb/serial/kl5kusb105.c の klsi_105_get_line_state 関数は、行ステータスの読み取りに失敗した際、ログのエントリに初期化されていないヒープメモリの内容を配置するため、重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2017-001409",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5549",
+      "source": "CVE",
+      "id": "CVE-2017-5549"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5549",
+      "source": "NVD",
+      "id": "CVE-2017-5549"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/532.html",
+      "id": "CWE-532",
+      "title": "ログファイルからの情報漏えい(CWE-532)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2017-02-14T11:31+09:00",
+  "issued": "2017-02-14T11:31+09:00",
+  "modified": "2017-02-14T11:31+09:00"
+}

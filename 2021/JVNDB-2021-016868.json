@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-016868.html",
+  "title": "vim における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-016868.html",
+  "description": "vim には、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-016868",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-4136",
+      "source": "CVE",
+      "id": "CVE-2021-4136"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-4136",
+      "source": "NVD",
+      "id": "CVE-2021-4136"
+    },
+    {
+      "text": "https://huntr.dev/bounties/5c6b93c1-2d27-4e98-a931-147877b8c938/",
+      "source": "関連文書",
+      "id": "Heap-based Buffer Overflow in vim/vim"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vim:vim",
+      "version": "2.2",
+      "vendor": "Vim",
+      "product": "Vim"
+    },
+    {
+      "text": "cpe:/o:apple:macos",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "macOS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-12-26T11:14+09:00",
+  "issued": "2022-12-26T11:14+09:00",
+  "modified": "2022-12-26T11:14+09:00"
+}

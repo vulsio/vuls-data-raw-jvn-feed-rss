@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006480.html",
+  "title": "Foomatic の foomatic-filters および cups-filters の foomatic-rip の util.c における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006480.html",
+  "description": "Foomatic の foomatic-filters、および cups-filters の foomatic-rip の util.c には、不完全なブラックリストにより、任意のコマンドを実行される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-184: Incomplete Blacklist (不完全なブラックリスト) と識別されています。\r\nhttps://cwe.mitre.org/data/definitions/184.html",
+  "identifier": "JVNDB-2015-006480",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8327",
+      "source": "CVE",
+      "id": "CVE-2015-8327"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8327",
+      "source": "NVD",
+      "id": "CVE-2015-8327"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:linuxfoundation:cups-filters",
+      "version": "2.2",
+      "vendor": "Linux Foundation",
+      "product": "cups-filters"
+    },
+    {
+      "text": "cpe:/a:linuxfoundation:foomatic-filters",
+      "version": "2.2",
+      "vendor": "Linux Foundation",
+      "product": "foomatic-filters"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-12-21T17:25+09:00",
+  "issued": "2015-12-21T17:25+09:00",
+  "modified": "2015-12-21T17:25+09:00"
+}

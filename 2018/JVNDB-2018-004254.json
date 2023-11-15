@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-004254.html",
+  "title": "ISC BIND の一部のバージョンにおいて再帰的クエリが不適切に許可される問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-004254.html",
+  "description": "ISC BIND の一部のバージョンでは、再帰的クエリが不適切に許可される問題が存在します。\r\n\r\nISC BIND では、明示的に設定しない場合の allow-recursion の初期値は次のように設定されることが想定されています。\r\n\r\n　　*\"recursion no;\" が設定されているとき: 再帰的クエリを許可しない\r\n　　*\"recursion yes;\" の設定とともに allow-query-cache や allow-query でアクセスを許可する範囲が明示的に設定されているとき: allow-query-cache や allow-query の値を継承する\r\n　　*\"recursion yes;\" が有効な状態 (明示的に設定しないときの初期値は yes) で allow-query-cache や allow-query が明示的に設定されていないとき: \"allow-recursion {localhost; localnets;};\" が設定される\r\n\r\n2017年10月に導入された Change #4777 により上記の挙動が影響を受け、\"recursion yes;\" が有効な状態で allow-query-cache や allow-query が明示的に設定されていないときに、allow-query の初期値である、全てのホストからのアクセスを許可する設定が allow-recursion に継承される状態になっていました。\r\n",
+  "identifier": "JVNDB-2018-004254",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92227071/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92227071"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5738",
+      "source": "CVE",
+      "id": "CVE-2018-5738"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5738",
+      "source": "NVD",
+      "id": "CVE-2018-5738"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/newsflash/2018061302.html",
+      "source": "JPCERT",
+      "id": "ISC BIND 9 の脆弱性 (CVE-2018-5738) について"
+    },
+    {
+      "text": "https://www.us-cert.gov/ncas/current-activity/2018/06/13/ISC-Releases-Security-Advisory-BIND",
+      "source": "CERT-CA",
+      "id": "ISC Releases Security Advisory for BIND"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2018-06-13-bind9-vuln-acl.html",
+      "source": "関連文書",
+      "id": "BIND 9.xの脆弱性（サービス提供者が意図しないアクセスの許可）について （CVE-2018-5738）"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2019-09-26T18:02+09:00",
+  "issued": "2018-06-15T11:29+09:00",
+  "modified": "2019-09-26T18:02+09:00"
+}

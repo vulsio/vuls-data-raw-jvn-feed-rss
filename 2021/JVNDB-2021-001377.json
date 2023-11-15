@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001377.html",
+  "title": "三菱電機製 GOT の VNC サーバ機能におけるパスワード認証回避の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001377.html",
+  "description": "三菱電機株式会社が提供する GOT2000 シリーズおよび GOT SIMPLE シリーズの VNC サーバ機能には、不適切な認証（CWE-287）に起因する、VNC サーバへの接続時にパスワード認証が回避される脆弱性（CVE-2021-20590）が存在します。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2021-001377",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU97615777",
+      "source": "JVN",
+      "id": "JVNVU#97615777"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20590",
+      "source": "CVE",
+      "id": "CVE-2021-20590"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-112-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-112-02"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:mitsubishielectric:got2000_series_gt21_model",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GOT2000 シリーズ GT21 モデル"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:got2000_series_gt25_model",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GOT2000 シリーズ GT25 モデル"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:got2000_series_gt27_model",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GOT2000 シリーズ GT27 モデル"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:got_simple_series_gs21_model",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GOT SIMPLE シリーズ GS21 モデル"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2021-07-29T09:19+09:00",
+  "issued": "2021-04-23T16:12+09:00",
+  "modified": "2021-07-29T09:19+09:00"
+}

@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001315.html",
+  "title": "Apple iOS および Apple TV のカーネルにおけるポインタの制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001315.html",
+  "description": "Apple iOS および Apple TV のカーネルは、copyin および copyout 関数の引数を適切に検証しないため、ポインタの制限を回避され、カーネルメモリの最初のページにアクセスされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001315",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0964",
+      "source": "CVE",
+      "id": "CVE-2013-0964"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0964",
+      "source": "NVD",
+      "id": "CVE-2013-0964"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:apple_tv",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple TV"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2013-01-30T16:01+09:00",
+  "issued": "2013-01-30T16:01+09:00",
+  "modified": "2013-01-30T16:01+09:00"
+}

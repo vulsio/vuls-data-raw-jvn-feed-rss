@@ -1,0 +1,98 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000950.html",
+  "title": "FastJar および GNU GCC におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000950.html",
+  "description": "FastJar には、ファイル名に \"../\" を含む jar ファイルを処理した際に、ディレクトリトラバーサルの脆弱性が存在します。FastJar は GNU GCC 4.1.x 以前に含まれているため、GCC にも影響があります。",
+  "identifier": "JVNDB-2006-000950",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3619",
+      "source": "CVE",
+      "id": "CVE-2006-3619"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3619",
+      "source": "NVD",
+      "id": "CVE-2006-3619"
+    },
+    {
+      "text": "http://secunia.com/advisories/21100/",
+      "source": "SECUNIA",
+      "id": "SA21100"
+    },
+    {
+      "text": "http://secunia.com/advisories/17839/",
+      "source": "SECUNIA",
+      "id": "SA17839"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15669",
+      "source": "BID",
+      "id": "15669"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/27806",
+      "source": "XF",
+      "id": "27806"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1017987",
+      "source": "SECTRACK",
+      "id": "1017987"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/2866",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-2866"
+    },
+    {
+      "text": "http://www.osvdb.org/21337",
+      "source": "OSVDB",
+      "id": "21337"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fastjar:fastjar",
+      "version": "2.2",
+      "vendor": "FastJar",
+      "product": "FastJar"
+    },
+    {
+      "text": "cpe:/a:gnu:gcc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU GCC"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-06-22T16:35+09:00",
+  "issued": "2007-05-22T17:56+09:00",
+  "modified": "2007-06-22T16:35+09:00"
+}

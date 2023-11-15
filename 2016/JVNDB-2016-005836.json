@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005836.html",
+  "title": "複数の NVIDIA 製品におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005836.html",
+  "description": "NVIDIA Quadro、NVS、および GeForce には、サービス運用妨害 (カーネルの NULL ポインタデリファレンスおよびブルースクリーンクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-476: NULL Pointer Dereference (NULL ポインタデリファレンス) と識別されています。\r\nhttps://cwe.mitre.org/data/definitions/476.html",
+  "identifier": "JVNDB-2016-005836",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4959",
+      "source": "CVE",
+      "id": "CVE-2016-4959"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4959",
+      "source": "NVD",
+      "id": "CVE-2016-4959"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nvidia:gpu_driver",
+      "version": "2.2",
+      "vendor": "NVIDIA",
+      "product": "NVIDIA GPU ディスプレイドライバ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-11-14T15:55+09:00",
+  "issued": "2016-11-14T15:55+09:00",
+  "modified": "2016-11-14T15:55+09:00"
+}

@@ -1,0 +1,93 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002079.html",
+  "title": "Linux kernel の execve 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002079.html",
+  "description": "Linux kernel の execve 関数には、current→clear_child_tid ポインタを適切に消去しないため、CLONE_CHILD_SETTID または CLONE_CHILD_CLEARTID が指定されて clone システムコールが呼び出された場合に、サービス運用妨害 (DoS) 状態となる、あるいは権限昇格の脆弱性が存在します。",
+  "identifier": "JVNDB-2009-002079",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2848",
+      "source": "CVE",
+      "id": "CVE-2009-2848"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2848",
+      "source": "NVD",
+      "id": "CVE-2009-2848"
+    },
+    {
+      "text": "http://secunia.com/advisories/36759",
+      "source": "SECUNIA",
+      "id": "SA36759"
+    },
+    {
+      "text": "http://secunia.com/advisories/35983",
+      "source": "SECUNIA",
+      "id": "SA35983"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/35930",
+      "source": "BID",
+      "id": "35930"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/52899",
+      "source": "XF",
+      "id": "52899"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2370",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2370"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2010-02-16T11:43+09:00",
+  "issued": "2009-10-08T11:26+09:00",
+  "modified": "2010-02-16T11:43+09:00"
+}

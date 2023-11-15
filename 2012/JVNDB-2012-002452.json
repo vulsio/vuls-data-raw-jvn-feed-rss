@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002452.html",
+  "title": "Linux Kernel の regset 関数におけるサービス運用妨害 (NULL ポインタデリファレンス) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002452.html",
+  "description": "Linux Kernel の regset 関数は、.get および .set メソッドが存在しない場合、適切に処理を行わないため、サービス運用妨害 (NULL ポインタデリファレンス) 状態となる、または詳細不明な影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002452",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1097",
+      "source": "CVE",
+      "id": "CVE-2012-1097"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1097",
+      "source": "NVD",
+      "id": "CVE-2012-1097"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-05-18T15:50+09:00",
+  "issued": "2012-05-18T15:50+09:00",
+  "modified": "2012-05-18T15:50+09:00"
+}

@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001387.html",
+  "title": "WPS Office for Windows のインストーラに ACL 設定不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001387.html",
+  "description": "WPS Office for Windows のインストーラには、ACL 設定不備の脆弱性が存在します。\r\n\r\nWPS Office for Windows のインストーラは、インストール時に Windows サービスを登録します。Windows サービスに登録される実行ファイルは、管理者権限で実行されます。\r\nこの実行ファイルが置かれるディレクトリには、適切な ACL が設定されていません (CWE-276)。\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: Mohammed Hadi 氏\r\n",
+  "identifier": "JVNDB-2022-001387",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU90673830/index.html",
+      "source": "JVN",
+      "id": "JVNVU#90673830"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-259434",
+      "source": "CVE",
+      "id": "CVE-2022-25943"
+    },
+    {
+      "text": "https://github.com/HadiMed/KINGSOFT-WPS-Office-LPE",
+      "source": "関連文書",
+      "id": "GitHub / HadiMed / KINGSOFT-WPS-Offie-LPE"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/276.html",
+      "id": "CWE-276",
+      "title": "不適切なデフォルトパーミッション(CWE-276)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:kingsoft:kingsoft_wps_office",
+      "version": "2.2",
+      "vendor": "Kingsoft Office Software, Inc.",
+      "product": "WPS Office"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:S/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-03-10T17:27+09:00",
+  "issued": "2022-03-09T11:53+09:00",
+  "modified": "2022-03-10T17:27+09:00"
+}

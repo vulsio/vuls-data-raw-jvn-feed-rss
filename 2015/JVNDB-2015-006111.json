@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006111.html",
+  "title": "Google Chrome の media/base/video_frame_pool.cc におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006111.html",
+  "description": "Google Chrome の media/base/video_frame_pool.cc の VideoFramePool::PoolImpl::CreateFrame 関数は、ビデオフレームデータ構造のメモリを初期化しないため、サービス運用妨害 (メモリ領域外へのアクセス) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2015-006111",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8480",
+      "source": "CVE",
+      "id": "CVE-2015-8480"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8480",
+      "source": "NVD",
+      "id": "CVE-2015-8480"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-12-08T16:38+09:00",
+  "issued": "2015-12-08T16:38+09:00",
+  "modified": "2015-12-08T16:38+09:00"
+}

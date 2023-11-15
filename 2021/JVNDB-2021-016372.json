@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-016372.html",
+  "title": "CPAN におけるデジタル署名の検証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-016372.html",
+  "description": "CPAN には、デジタル署名の検証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-016372",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2020-16156",
+      "source": "CVE",
+      "id": "CVE-2020-16156"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-16156",
+      "source": "NVD",
+      "id": "CVE-2020-16156"
+    },
+    {
+      "text": "http://blogs.perl.org/users/neilb/2021/11/addressing-cpan-vulnerabilities-related-to-checksums.html",
+      "source": "関連文書",
+      "id": "Addressing CPAN vulnerabilities related to checksums"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/347.html",
+      "id": "CWE-347",
+      "title": "デジタル署名の不適切な検証(CWE-347)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:perl:comprehensive_perl_archive_network",
+      "version": "2.2",
+      "vendor": "The Perl Foundation",
+      "product": "Comprehensive Perl Archive Network (CPAN)"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-12-13T18:08+09:00",
+  "issued": "2022-12-13T18:08+09:00",
+  "modified": "2022-12-13T18:08+09:00"
+}

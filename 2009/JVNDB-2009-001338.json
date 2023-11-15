@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001338.html",
+  "title": "Ruby の ossl_ocsp.c における X.509 証明書に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001338.html",
+  "description": "Ruby の ext/openssl/ossl_ocsp.c には、OCSP_basic_verify 関数からの戻り値が適切にチェックされない為、X.509 証明書に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001338",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0642",
+      "source": "CVE",
+      "id": "CVE-2009-0642"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0642",
+      "source": "NVD",
+      "id": "CVE-2009-0642"
+    },
+    {
+      "text": "http://secunia.com/advisories/33750",
+      "source": "SECUNIA",
+      "id": "SA33750"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/33769",
+      "source": "BID",
+      "id": "33769"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/0465",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-0465"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ruby-lang:ruby",
+      "version": "2.2",
+      "vendor": "Ruby-lang.org",
+      "product": "Ruby"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-08-06T11:34+09:00",
+  "issued": "2009-06-30T11:12+09:00",
+  "modified": "2009-08-06T11:34+09:00"
+}

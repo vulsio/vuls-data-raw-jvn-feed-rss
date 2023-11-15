@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001017.html",
+  "title": "OpenSSL の DTLS の実装における平文を復元される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001017.html",
+  "description": "OpenSSL の DTLS の実装は、特定のパディングが有効である場合のみ MAC のチェックを実行するため、平文を復元される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-001017",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU91284469/",
+      "source": "JVN",
+      "id": "JVNVU#91284469"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU92046435/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92046435"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4108",
+      "source": "CVE",
+      "id": "CVE-2011-4108"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4108",
+      "source": "NVD",
+      "id": "CVE-2011-4108"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/a:vmware:esxi",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESXi"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2014-06-26T13:52+09:00",
+  "issued": "2012-01-10T15:27+09:00",
+  "modified": "2014-06-26T13:52+09:00"
+}

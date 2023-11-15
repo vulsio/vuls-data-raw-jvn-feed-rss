@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-012965.html",
+  "title": "Samba における競合状態に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-012965.html",
+  "description": "Samba には、競合状態に関する脆弱性、およびリンク解釈に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2017-012965",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2619",
+      "source": "CVE",
+      "id": "CVE-2017-2619"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-2619",
+      "source": "NVD",
+      "id": "CVE-2017-2619"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+      "id": "CWE-59",
+      "title": "リンク解釈の問題(CWE-59)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-05-11T17:20+09:00",
+  "issued": "2018-05-11T17:20+09:00",
+  "modified": "2018-05-11T17:20+09:00"
+}

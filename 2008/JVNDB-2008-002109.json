@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002109.html",
+  "title": "Joomla! のパスワード初期化機能における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002109.html",
+  "description": "Joomla! は PHP's PRNG を初期化する機能に脆弱性が存在します。\r\n攻撃者により、推測したパスワード初期化トークンによって証明された、 PHP's mt_rand 関数によって、生成される擬似乱数をより簡単に推測される可能性があります。\r\n本脆弱性は、CVE-2008-3681とは異なる脆弱性です。",
+  "identifier": "JVNDB-2008-002109",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4102",
+      "source": "CVE",
+      "id": "CVE-2008-4102"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-4102",
+      "source": "NVD",
+      "id": "CVE-2008-4102"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:joomla:joomla",
+      "version": "2.2",
+      "vendor": "Joomla!",
+      "product": "Joomla"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-12-24T12:13+09:00",
+  "issued": "2008-12-24T12:13+09:00",
+  "modified": "2008-12-24T12:13+09:00"
+}

@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006227.html",
+  "title": "Apache HTTP Server の mod_dav モジュールの main/util.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006227.html",
+  "description": "Apache HTTP Server の mod_dav モジュールの main/util.c 内の dav_xml_get_cdata 関数は、CDATA セクションから空白文字を適切に削除しないため、サービス運用妨害 (デーモンクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-006227",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97537282/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97537282"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU91828320/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91828320"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6438",
+      "source": "CVE",
+      "id": "CVE-2013-6438"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6438",
+      "source": "NVD",
+      "id": "CVE-2013-6438"
+    },
+    {
+      "text": "http://archives.neohapsis.com/archives/bugtraq/2014-10/0101.html",
+      "source": "関連文書",
+      "id": "APPLE-SA-2014-10-16-1 OS X Yosemite v10.10"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:oracle:http_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle HTTP Server"
+    },
+    {
+      "text": "cpe:/a:oracle:virtualization_secure_global_desktop",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Virtualization"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-12-02T15:15+09:00",
+  "issued": "2014-03-19T14:33+09:00",
+  "modified": "2015-12-02T15:15+09:00"
+}

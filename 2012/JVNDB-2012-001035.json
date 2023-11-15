@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001035.html",
+  "title": "Apache Struts における任意のファイルを作成または上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001035.html",
+  "description": "Apache Struts の ParameterInterceptor コンポーネントは、パブリックコンストラクタへのアクセスを適切に制限しないため、任意のファイルを作成または上書きされる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-001035",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0393",
+      "source": "CVE",
+      "id": "CVE-2012-0393"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-0393",
+      "source": "NVD",
+      "id": "CVE-2012-0393"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:struts",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Struts"
+    },
+    {
+      "text": "cpe:/a:vmware:vcenter_operations_management_suite",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware vCenter Operations Management Suite"
+    },
+    {
+      "text": "cpe:/a:vmware:vcenter_orchestrator",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware vCenter Orchestrator"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2012-12-19T15:43+09:00",
+  "issued": "2012-01-11T15:12+09:00",
+  "modified": "2012-12-19T15:43+09:00"
+}

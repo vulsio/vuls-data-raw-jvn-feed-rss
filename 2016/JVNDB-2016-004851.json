@@ -1,0 +1,105 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004851.html",
+  "title": "libarchive の ISO パーサにおける整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004851.html",
+  "description": "libarchive の ISO パーサには、整数オーバーフローの脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-190: Integer Overflow or Wraparound (整数オーバーフローまたはラップアラウンド) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/190.html",
+  "identifier": "JVNDB-2016-004851",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5844",
+      "source": "CVE",
+      "id": "CVE-2016-5844"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5844",
+      "source": "NVD",
+      "id": "CVE-2016-5844"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libarchive:libarchive",
+      "version": "2.2",
+      "vendor": "libarchive",
+      "product": "libarchive"
+    },
+    {
+      "text": "cpe:/o:oracle:linux",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Linux"
+    },
+    {
+      "text": "cpe:/o:oracle:solaris",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Solaris"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server_aus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server AUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-11-17T17:58+09:00",
+  "issued": "2016-09-27T11:51+09:00",
+  "modified": "2016-11-17T17:58+09:00"
+}

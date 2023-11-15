@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004940.html",
+  "title": "OpenSSL の t1_lib.c の tls_decrypt_ticket 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004940.html",
+  "description": "OpenSSL の t1_lib.c の tls_decrypt_ticket 関数 には、メモリリークにより、サービス運用妨害 (メモリ消費) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-004940",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96447236/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96447236"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU99970459/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99970459"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3567",
+      "source": "CVE",
+      "id": "CVE-2014-3567"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3567",
+      "source": "NVD",
+      "id": "CVE-2014-3567"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2014-0416.html",
+      "source": "関連文書",
+      "id": "MGASA-2014-0416"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:xcode",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Xcode"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:oracle:fusion_middleware",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Fusion Middleware"
+    },
+    {
+      "text": "cpe:/a:oracle:virtualization_secure_global_desktop",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Virtualization"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2016-10-07T11:49+09:00",
+  "issued": "2014-10-23T19:41+09:00",
+  "modified": "2016-10-07T11:49+09:00"
+}

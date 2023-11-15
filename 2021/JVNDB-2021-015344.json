@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-015344.html",
+  "title": "LibreCad libdxfrw における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-015344.html",
+  "description": "LibreCad libdxfrw には、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-015344",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-21898",
+      "source": "CVE",
+      "id": "CVE-2021-21898"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-21898",
+      "source": "NVD",
+      "id": "CVE-2021-21898"
+    },
+    {
+      "text": "https://talosintelligence.com/vulnerability_reports/TALOS-2021-1349",
+      "source": "関連文書",
+      "id": "TALOS-2021-1349 (LibreCad libdxfrw dwgCompressor::decompress18() out-of-bounds write vulnerability)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:librecad:libdxfrw",
+      "version": "2.2",
+      "vendor": "LibreCAD",
+      "product": "libdxfrw"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-11-16T16:39+09:00",
+  "issued": "2022-11-16T16:39+09:00",
+  "modified": "2022-11-16T16:39+09:00"
+}

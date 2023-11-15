@@ -1,0 +1,30 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001884.html",
+  "title": "Deterministic Network Enhancer に権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001884.html",
+  "description": "Deterministic Network Enhancer (DNE) には権限昇格の脆弱性が存在します。結果として、ローカルユーザが Windows カーネルの権限で任意のコードを実行する可能性があります。\r\n\r\nDeterministic Networks が提供する Deterministic Network Enhancer (DNE)は Microsoft Windows のネットワークスタックを拡張した製品です。DNE は Cisco VPN Client など複数の製品が使用しています。DNE のドライバー dne2000.sys には権限昇格の脆弱性が存在します。\r\n\r\nなお、DNE を使用している Cisco VPN Client、Blue Coat inProxy、SafeNet HighAssurance Remote、SafeNet SoftRemote など複数の製品もこの問題の影響を受ける可能性があります。詳細は、各ベンダが提供する情報をご参照ください。",
+  "identifier": "JVNDB-2008-001884",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU858993/",
+      "source": "JVN",
+      "id": "JVNVU#858993"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/858993",
+      "source": "CERT-VN",
+      "id": "VU#858993"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:citrix:deterministic_network_enhancer",
+      "version": "2.2",
+      "vendor": "シトリックス・システムズ",
+      "product": "Deterministic Network Enhancer"
+    }
+  ],
+  "date": "2008-11-21T11:49+09:00",
+  "issued": "2008-11-21T11:49+09:00",
+  "modified": "2008-11-21T11:49+09:00"
+}

@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-014970.html",
+  "title": "uClibc および uClibc-ng におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-014970.html",
+  "description": "uClibc および uClibc-ng には、クロスサイトスクリプティングの脆弱性が存在します。",
+  "identifier": "JVNDB-2021-014970",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96001661/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96001661"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-43523",
+      "source": "CVE",
+      "id": "CVE-2021-43523"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-43523",
+      "source": "NVD",
+      "id": "CVE-2021-43523"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-234-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-234-01"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2021/11/09/1",
+      "source": "関連文書",
+      "id": "[CVE-2021-43523] Incorrect handling of special characters in domain names in uclibc and uclibc-ng"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:uclibc-ng_project:uclibc-ng",
+      "version": "2.2",
+      "vendor": "uClibc-ng project",
+      "product": "uClibc-ng"
+    },
+    {
+      "text": "cpe:/a:uclibc:uclibc",
+      "version": "2.2",
+      "vendor": "Erik Andersen",
+      "product": "uClibc"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.6",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-08-24T14:21+09:00",
+  "issued": "2022-11-02T18:10+09:00",
+  "modified": "2023-08-24T14:21+09:00"
+}

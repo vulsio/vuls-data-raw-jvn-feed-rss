@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-010327.html",
+  "title": "Pallets project の Werkzeug における HTTP リクエストスマグリングに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-010327.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nPallets project の Werkzeug には、HTTP リクエストスマグリングに関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性に対して異議を唱えています。\r\n詳細については、以下の NVD の Current Description を確認してください。\r\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-29361",
+  "identifier": "JVNDB-2022-010327",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-29361",
+      "source": "CVE",
+      "id": "CVE-2022-29361"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-29361",
+      "source": "NVD",
+      "id": "CVE-2022-29361"
+    },
+    {
+      "text": "https://github.com/pallets/werkzeug/commit/9a3a981d70d2e9ec3344b5192f86fcaf3210cd85",
+      "source": "関連文書",
+      "id": "github.com (9a3a981d70d2e9ec3344b5192f86fcaf3210cd85)"
+    },
+    {
+      "text": "https://github.com/pallets/werkzeug/issues/2420",
+      "source": "関連文書",
+      "id": "github.com (issues/2420)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/444.html",
+      "id": "CWE-444",
+      "title": "HTTP リクエストスマグリング(CWE-444)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:palletsprojects:werkzeug",
+      "version": "2.2",
+      "vendor": "Pallets project",
+      "product": "Werkzeug"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-08-14T17:25+09:00",
+  "issued": "2023-08-14T17:25+09:00",
+  "modified": "2023-08-14T17:25+09:00"
+}

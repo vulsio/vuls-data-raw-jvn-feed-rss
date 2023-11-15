@@ -1,0 +1,494 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001009.html",
+  "title": "OpenSSL の s3_clnt.c の ssl3_get_key_exchange 関数における RSA-to-EXPORT_RSA ダウングレード攻撃を実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001009.html",
+  "description": "OpenSSL の s3_clnt.c の ssl3_get_key_exchange 関数には、RSA-to-EXPORT_RSA ダウングレード攻撃を実行される、および総当たり (brute-force) の復号を容易にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-001009",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU98974537/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98974537"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU95877131/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95877131"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU91828320/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91828320"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU99125992/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99125992"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0204",
+      "source": "CVE",
+      "id": "CVE-2015-0204"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0204",
+      "source": "NVD",
+      "id": "CVE-2015-0204"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20150415-jre.html",
+      "source": "IPA CFA",
+      "id": "Oracle Java の脆弱性対策について(CVE-2015-0469等)"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2015/at150010.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2015-0010"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Application Server Enterprise"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_application_server_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Application Server Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Application Server Version 5"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_client",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Client"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developers_kit_for_java",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer's Kit for Java(TM)"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer Light Version 6"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer Professional Version 6"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer Standard Version 6"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer_version_5",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer Version 5"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_primary_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Primary Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_studio",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Studio"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server_for_developers",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Application Server for Developers"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_developers_kit_for_java",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Developer's Kit for Java"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_web_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Web Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Enterprise"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Smart Edition"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_client",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Client"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Light"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_operator",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Operator"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Architect"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform"
+    },
+    {
+      "text": "cpe:/a:hp:icewall_federation_agent",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP IceWall Federation Agent"
+    },
+    {
+      "text": "cpe:/a:hp:icewall_mcrp",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP IceWall MCRP"
+    },
+    {
+      "text": "cpe:/a:hp:icewall_sso",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP IceWall SSO"
+    },
+    {
+      "text": "cpe:/a:nec:capssuite",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CapsSuite"
+    },
+    {
+      "text": "cpe:/a:nec:csview",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CSVIEW"
+    },
+    {
+      "text": "cpe:/a:nec:enterpriseidentitymanager",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "EnterpriseIdentityManager"
+    },
+    {
+      "text": "cpe:/a:nec:enterprise_directoryserver",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "EnterpriseDirectoryServer"
+    },
+    {
+      "text": "cpe:/a:nec:infocage",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "InfoCage"
+    },
+    {
+      "text": "cpe:/a:nec:secureware_pki_application_development_kit",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SecureWare/PKIアプリケーション開発キット"
+    },
+    {
+      "text": "cpe:/a:nec:systemdirector_enterprise",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SystemDirector Enterprise"
+    },
+    {
+      "text": "cpe:/a:nec:webotx",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Application Server"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_enterprise_service_bus",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Enterprise Service Bus"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_portal",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Portal"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_sip_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX SIP Application Server"
+    },
+    {
+      "text": "cpe:/a:nec:websam",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebSAM"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_core_session_manager",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Core Session Manager"
+    },
+    {
+      "text": "cpe:/a:oracle:database_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Database"
+    },
+    {
+      "text": "cpe:/a:oracle:enterprise_manager",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Enterprise Manager"
+    },
+    {
+      "text": "cpe:/a:oracle:fusion_middleware",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Fusion Middleware"
+    },
+    {
+      "text": "cpe:/a:oracle:jdk",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "JDK"
+    },
+    {
+      "text": "cpe:/a:oracle:jre",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "JRE"
+    },
+    {
+      "text": "cpe:/a:oracle:jrockit",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle JRockit"
+    },
+    {
+      "text": "cpe:/a:oracle:mysql",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/a:oracle:virtualization_secure_global_desktop",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Virtualization"
+    },
+    {
+      "text": "cpe:/a:oracle:xcp",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "XCP"
+    },
+    {
+      "text": "cpe:/a:sun:jdk",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "JDK"
+    },
+    {
+      "text": "cpe:/a:sun:jre",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "JRE"
+    },
+    {
+      "text": "cpe:/h:nec:express5800",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "Express5800"
+    },
+    {
+      "text": "cpe:/h:nec:ip38x_sr100",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IP38X/SR100"
+    },
+    {
+      "text": "cpe:/h:nec:istorage",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "iStorage"
+    },
+    {
+      "text": "cpe:/h:nec:ix2000",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX2000シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:ix3000",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX3000シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:univerge",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "UNIVERGE"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m3000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M3000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m4000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M4000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m5000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M5000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m8000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M8000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m9000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M9000 サーバ"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:oracle:integrated_lights_out_manager_firmware",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Integrated Lights Out Manager"
+    },
+    {
+      "text": "cpe:/o:oracle:solaris",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2017-03-09T15:33+09:00",
+  "issued": "2015-01-13T16:49+09:00",
+  "modified": "2017-03-09T15:33+09:00"
+}

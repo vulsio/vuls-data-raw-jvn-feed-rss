@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000825.html",
+  "title": "EMC Legato NetWorker の portmapper にリモートからの要求を実行する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000825.html",
+  "description": "EMC Legato NetWorker の portmapper の実装 lgtomapper には、遠隔のホストから pmap_set() や pmap_unset() を実行できる脆弱性が存在します。\r\n\r\nportmapper は通常 111番ポートで待ちうけており、RPC プロシージャ番号と TCP や UDP のポート番号との変換機能を提供します。また、RPC プロシージャ番号と TCP や UDP のポート番号との関連付けの登録や解除には pmap_set() や pmap_unset() という関数が使われます。通常、pmap_set() や pmap_unset() の呼び出しは localhost からのみ可能となっています。\r\n\r\nこれに対して EMC Legato NetWorker の lgtomapper は 7938 番ポートで待ち受けており、通常の portmapper 実装と同様、RPC プロシージャ番号と TCP や UDP のポート番号との変換機能を提供します。\r\n\r\nしかし、遠隔のホストから pmap_set() や pmap_unset() を呼び出すことが可能となっています。",
+  "identifier": "JVNDB-2005-000825",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23801089/index.html",
+      "source": "JVN",
+      "id": "JVNVU#801089"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=2005-0359",
+      "source": "CVE",
+      "id": "CVE-2005-0359"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2005-0359",
+      "source": "NVD",
+      "id": "CVE-2005-0359"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/801089",
+      "source": "CERT-VN",
+      "id": "VU#801089"
+    },
+    {
+      "text": "http://secunia.com/advisories/16464",
+      "source": "SECUNIA",
+      "id": "SA16464 "
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14582",
+      "source": "BID",
+      "id": "14582"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/21893",
+      "source": "XF",
+      "id": "21893"
+    },
+    {
+      "text": "http://securitytracker.com/id?1014713",
+      "source": "SECTRACK",
+      "id": "1014713"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:emc:legato_networker",
+      "version": "2.2",
+      "vendor": "DELL EMC (旧 EMC Corporation)",
+      "product": "Legato NetWorker"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+    }
+  ],
+  "date": "2008-11-21T11:48+09:00",
+  "issued": "2008-11-21T11:48+09:00",
+  "modified": "2008-11-21T11:48+09:00"
+}

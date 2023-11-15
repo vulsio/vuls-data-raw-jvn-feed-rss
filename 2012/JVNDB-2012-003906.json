@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003906.html",
+  "title": "Munin の cgi-bin/munin-cgi-graph における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003906.html",
+  "description": "Munin の cgi-bin/munin-cgi-graph は、非印字可能文字 (non-printable characters) を削除せずにログファイルにデータを書き込むため、ターミナルエミュレータのエスケープシーケンスを挿入され、任意のコマンドを実行される、または任意のファイルを削除される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-003906",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2104",
+      "source": "CVE",
+      "id": "CVE-2012-2104"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2104",
+      "source": "NVD",
+      "id": "CVE-2012-2104"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:munin-monitoring:munin",
+      "version": "2.2",
+      "vendor": "Munin",
+      "product": "Munin"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-08-29T10:56+09:00",
+  "issued": "2012-08-29T10:56+09:00",
+  "modified": "2012-08-29T10:56+09:00"
+}

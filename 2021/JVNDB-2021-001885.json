@@ -1,0 +1,99 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001885.html",
+  "title": "ZOLL 製 Defibrillator Dashboard における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001885.html",
+  "description": "ZOLL 社が提供する Defibrillator Dashboard は 除細動器の準備状況やメンテナンス状況を把握するためのソフトウェアです。\r\n当該製品には、次の複数の脆弱性が存在します。\r\n\r\n　* 危険なタイプのファイルの無制限アップロード (CWE-434) - CVE-2021-27489\r\n　* ハードコードされた暗号鍵の使用 (CWE-321) - CVE-2021-27481\r\n　* 重要な情報の平文保存 (CWE-312) - CVE-2021-27487\r\n　* クロスサイトスクリプティング (CWE-79) - CVE-2021-27479\r\n　* 復元可能な形式でのパスワード保存 (CWE-257) - CVE-2021-27485\r\n　* 不適切な権限管理 (CWE-269) - CVE-2021-27483",
+  "identifier": "JVNDB-2021-001885",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU99848546",
+      "source": "JVN",
+      "id": "JVNVU#99848546"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27489",
+      "source": "CVE",
+      "id": "CVE-2021-27489"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27481",
+      "source": "CVE",
+      "id": "CVE-2021-27481"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27487",
+      "source": "CVE",
+      "id": "CVE-2021-27487"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27479",
+      "source": "CVE",
+      "id": "CVE-2021-27479"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27485",
+      "source": "CVE",
+      "id": "CVE-2021-27485"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27483",
+      "source": "CVE",
+      "id": "CVE-2021-27483"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsma-21-161-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSMA-21-161-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/257.html",
+      "id": "CWE-257",
+      "title": "復元可能な形式でのパスワード保存(CWE-257)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/269.html",
+      "id": "CWE-269",
+      "title": "不適切な権限管理(CWE-269)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/312.html",
+      "id": "CWE-312",
+      "title": "重要な情報の平文保存(CWE-312)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/321.html",
+      "id": "CWE-321",
+      "title": "ハードコードされた暗号鍵の使用(CWE-321)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/434.html",
+      "id": "CWE-434",
+      "title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:zoll:defibrillator_dashboard",
+      "version": "2.2",
+      "vendor": "ゾール・メディカル",
+      "product": "Defibrillator Dashboard"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.9",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-06-14T16:48+09:00",
+  "issued": "2021-06-14T16:48+09:00",
+  "modified": "2021-06-14T16:48+09:00"
+}

@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004955.html",
+  "title": "Apple OS X および OS X Server の Apache HTTP Server におけるアプリケーションのアウトバウンド HTTP トラフィックを任意のプロキシサーバへリダイレクトされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004955.html",
+  "description": "Apple OS X および OS X Server の Apache HTTP Server は、RFC 3875 セクション 4.1.18 に準拠する結果、HTTP_PROXY 環境変数の信頼できない CGI クライアントデータの存在からアプリケーションを保護しないため、アプリケーションのアウトバウンド HTTP トラフィックを任意のプロキシサーバへリダイレクトされる脆弱性が存在します。\r\n\r\n本脆弱性は、\"httpoxy\" の問題と呼ばれています。\r\n\r\n本脆弱性は、CVE-2016-5387 と関連する問題です。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-284: Improper Access Control (不適切なアクセス制御) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/284.html\r\n",
+  "identifier": "JVNDB-2016-004955",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU90950877/index.html",
+      "source": "JVN",
+      "id": "JVNVU#90950877"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4694",
+      "source": "CVE",
+      "id": "CVE-2016-4694"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4694",
+      "source": "NVD",
+      "id": "CVE-2016-4694"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "macOS Server (旧 OS X Server)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.1",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2016-09-30T11:39+09:00",
+  "issued": "2016-09-30T11:39+09:00",
+  "modified": "2016-09-30T11:39+09:00"
+}

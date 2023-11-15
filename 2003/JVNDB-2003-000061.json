@@ -1,0 +1,343 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000061.html",
+  "title": " Sendmail に遠隔から攻略可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000061.html",
+  "description": "sendmail のメッセージ処理にバッファオーバーフローの脆弱性が発見されました。脆弱性については、遠隔から第三者が管理者権限を取得する可能性があります。\r\n\r\nこの問題は、sendmail が悪意を持って構成されたヘッダ情報を持つメッセージを受け取ることによって発生します。このため、LAN 内に設置したホスト上で稼動している sendmail であっても、他の MTA (Mail Transfer Agent) から中継された悪質なメッセージを受け取った場合、脆弱性の影響を受ける可能性があります。",
+  "identifier": "JVNDB-2003-000061",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNCA-2003-07",
+      "source": "JVN",
+      "id": "JVNCA-2003-07"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1337",
+      "source": "CVE",
+      "id": "CVE-2002-1337"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1337",
+      "source": "NVD",
+      "id": "CVE-2002-1337"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2003/at030002.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2003-0002"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2003/wr031001.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2003-1001"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/20030314_190827.html",
+      "source": "AT-POLICE",
+      "id": "メールサーバソフト（sendmail）の検証結果について"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/20030305_170302.html",
+      "source": "AT-POLICE",
+      "id": "メールサーバソフト（sendmail）の脆弱性について"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-2003-07.html",
+      "source": "CERT-A",
+      "id": "CA-2003-07"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/398025",
+      "source": "CERT-VN",
+      "id": "VU#398025"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/20030303sendmail.html",
+      "source": "IPA",
+      "id": "Sendmail における深刻なセキュリティ脆弱性について"
+    },
+    {
+      "text": "http://www.ciac.org/ciac/bulletins/n-048.shtml",
+      "source": "CIAC",
+      "id": "N-048"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6991",
+      "source": "BID",
+      "id": "6991"
+    },
+    {
+      "text": "http://www.iss.net/issEn/delivery/xforce/alertdetail.jsp?oid=21950",
+      "source": "ISS",
+      "id": "21950"
+    },
+    {
+      "text": "http://www.isskk.co.jp/support/techinfo/general/SendmailHeader_xforce.html",
+      "source": "ISSKK",
+      "id": "Sendmailのヘッダー処理に対する脆弱性"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/10748",
+      "source": "XF",
+      "id": "10748"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/11653",
+      "source": "XF",
+      "id": "11653"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fujitsu:internet_navigware_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Internet Navigware Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_collaborationring_pm",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage CollaborationRing PM"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_collaborationring_tpm",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage CollaborationRing TPM"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_office_square",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Office Square"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_it_budgetmgr",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "SystemWalker IT BudgetMGR"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_perfmgr",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "SystemWalker PerfMGR"
+    },
+    {
+      "text": "cpe:/a:fujitsu:teamware_office",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "TeamWARE Office"
+    },
+    {
+      "text": "cpe:/a:sendmail:sendmail",
+      "version": "2.2",
+      "vendor": "Sendmail Consortium",
+      "product": "sendmail"
+    },
+    {
+      "text": "cpe:/a:sendmail:sendmail_for_nt",
+      "version": "2.2",
+      "vendor": "センドメール社",
+      "product": "Sendmail for NT"
+    },
+    {
+      "text": "cpe:/a:sendmail:sendmail_pro",
+      "version": "2.2",
+      "vendor": "センドメール社",
+      "product": "Sendmail Pro"
+    },
+    {
+      "text": "cpe:/a:sendmail:sendmail_switch",
+      "version": "2.2",
+      "vendor": "センドメール社",
+      "product": "Sendmail Switch"
+    },
+    {
+      "text": "cpe:/a:sun:linux",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Linux 5.0"
+    },
+    {
+      "text": "cpe:/a:trendmicro:interscan_viruswall",
+      "version": "2.2",
+      "vendor": "トレンドマイクロ",
+      "product": "TrendMicro InterScan VirusWall"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_qube_3",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt Qube3"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_3",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ3"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_4",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ4"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQXTR"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:bsdi:bsd_os",
+      "version": "2.2",
+      "vendor": "フォア・チューン",
+      "product": "BSD/OS"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:freebsd:freebsd",
+      "version": "2.2",
+      "vendor": "FreeBSD",
+      "product": "FreeBSD"
+    },
+    {
+      "text": "cpe:/o:hitachi:hi-ux_we2",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "HI-UX/WE2"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:nec:ews-ux",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "EWS-UX"
+    },
+    {
+      "text": "cpe:/o:nec:up-ux",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "UP-UX"
+    },
+    {
+      "text": "cpe:/o:nec:ux4800",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "UX4800シリーズ"
+    },
+    {
+      "text": "cpe:/o:netbsd:netbsd",
+      "version": "2.2",
+      "vendor": "NetBSD",
+      "product": "NetBSD"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:sco:openlinux",
+      "version": "2.2",
+      "vendor": "SCO",
+      "product": "OpenLinux"
+    },
+    {
+      "text": "cpe:/o:sco:open_unix",
+      "version": "2.2",
+      "vendor": "SCO",
+      "product": "Open UNIX"
+    },
+    {
+      "text": "cpe:/o:sco:unixware",
+      "version": "2.2",
+      "vendor": "SCO",
+      "product": "UnixWare"
+    },
+    {
+      "text": "cpe:/o:sgi:irix",
+      "version": "2.2",
+      "vendor": "SGI",
+      "product": "IRIX"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_advanced_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Advanced Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_workstation",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-08-28T18:06+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-08-28T18:06+09:00"
+}

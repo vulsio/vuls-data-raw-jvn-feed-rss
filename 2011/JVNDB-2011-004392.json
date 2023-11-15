@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004392.html",
+  "title": "Chat の Wee Enhanced Environment における SSL chat サーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004392.html",
+  "description": "Chat の Wee Enhanced Environment は、X.509 証明書の件名のドメイン名を照合するサーバホスト名を検証しないため、SSL chat サーバになりすまされる脆弱性が存在します。\r\n本脆弱性は、GnuTLS API の不正使用に関連します。",
+  "identifier": "JVNDB-2011-004392",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1428",
+      "source": "CVE",
+      "id": "CVE-2011-1428"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1428",
+      "source": "NVD",
+      "id": "CVE-2011-1428"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:flashtux:weechat",
+      "version": "2.2",
+      "vendor": "FlashTux",
+      "product": "WeeChat"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2012-03-27T18:43+09:00",
+  "issued": "2012-03-27T18:43+09:00",
+  "modified": "2012-03-27T18:43+09:00"
+}

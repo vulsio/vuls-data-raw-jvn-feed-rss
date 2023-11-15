@@ -1,0 +1,83 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002454.html",
+  "title": "複数の Apple 製品で使用される WebKit におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002454.html",
+  "description": "複数の Apple 製品で使用される WebKit には、iTunes Store の閲覧に関する処理に不備があるため、任意のコードを実行される、またはサービス運用妨害 (メモリ破損およびアプリケーションクラッシュ) 状態となる脆弱性が存在します。\r\n本脆弱性は、APPLE-SA-2011-10-11-1 のリスト上に掲載されている他の脆弱性とは異なる脆弱性です。",
+  "identifier": "JVNDB-2011-002454",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU177979",
+      "source": "JVN",
+      "id": "JVNVU#177979"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU585859",
+      "source": "JVN",
+      "id": "JVNVU#585859"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU706419",
+      "source": "JVN",
+      "id": "JVNVU#706419"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3236",
+      "source": "CVE",
+      "id": "CVE-2011-3236"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3236",
+      "source": "NVD",
+      "id": "CVE-2011-3236"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:itunes",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iTunes"
+    },
+    {
+      "text": "cpe:/a:apple:safari",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Safari"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-10-24T11:08+09:00",
+  "issued": "2011-10-24T11:08+09:00",
+  "modified": "2011-10-24T11:08+09:00"
+}

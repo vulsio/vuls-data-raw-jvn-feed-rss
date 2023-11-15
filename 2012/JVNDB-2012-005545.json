@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005545.html",
+  "title": "複数の JBoss Enterprise 製品における任意のアプリケーションにアクセスされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005545.html",
+  "description": "複数の JBoss Enterprise の JBoss Server は、JaccAuthorizationRealm を使用するよう構成され、かつ JBossWebRealm で ignoreBaseDecision プロパティが true に設定されている場合、WebPermissionMapping クラスによって作成されたパーミッションを適切にチェックしないため、任意のアプリケーションにアクセスされる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-005545",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1167",
+      "source": "CVE",
+      "id": "CVE-2012-1167"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1167",
+      "source": "NVD",
+      "id": "CVE-2012-1167"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_application_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss Enterprise Application Platform"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_brms_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat JBoss BRMS"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_soa_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat JBoss SOA Platform"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_web_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss Enterprise Web Platform"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_portal",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat JBoss Portal"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-11-27T20:10+09:00",
+  "issued": "2012-11-27T20:10+09:00",
+  "modified": "2012-11-27T20:10+09:00"
+}

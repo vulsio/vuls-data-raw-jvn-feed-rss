@@ -1,0 +1,35 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002778.html",
+  "title": "OpenSSL の X.509 ポリシー制限における二重ロックの問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002778.html",
+  "description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20221213.txt\"target=\"blank\">OpenSSL Security Advisory [13 December 2022]</a> が公開されました。\r\nOpenSSL には、次の脆弱性が存在します。\r\n\r\n深刻度 - 低（Severity: Low）\r\nX.509 証明書に不正なポリシー制限が含まれていて、ポリシー処理が有効な場合、書き込みロックが二重に行われる問題があります。ポリシー処理を有効にするためには、コマンドラインユーティリティに「-policy」引数を渡すか、「X509_VERIFY_PARAM_add0_policy()」または「X509_VERIFY_PARAM_set1_policies()」関数を呼び出すことにより有効になります。なお、OpenSSL Project は公開サーバでポリシー処理を有効にすることは一般的な設定ではないとしています。",
+  "identifier": "JVNDB-2022-002778",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96155097/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96155097"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-3996",
+      "source": "CVE",
+      "id": "CVE-2022-3996"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-3996",
+      "source": "NVD",
+      "id": "CVE-2022-3996"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    }
+  ],
+  "date": "2022-12-16T10:00+09:00",
+  "issued": "2022-12-16T10:00+09:00",
+  "modified": "2022-12-16T10:00+09:00"
+}

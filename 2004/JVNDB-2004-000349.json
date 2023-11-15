@@ -1,0 +1,155 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000349.html",
+  "title": "MIT Kerberos の ASN.1 デコード用ライブラリにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000349.html",
+  "description": "MIT krb5 に実装されている ASN.1 デコード用ライブラリには、asn1buf_skiptail() 関数において無限ループが発生する問題が存在し、サービス不能妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000349",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA04-247A/",
+      "source": "JVN",
+      "id": "JVNTA04-247A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA04-247A/",
+      "source": "JVNTR",
+      "id": "TRTA04-247A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0644",
+      "source": "CVE",
+      "id": "CVE-2004-0644"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0644",
+      "source": "NVD",
+      "id": "CVE-2004-0644"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2004/wr043501.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2004-3501"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/550464",
+      "source": "CERT-VN",
+      "id": "VU#550464"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA04-247A.html",
+      "source": "CERT-TA",
+      "id": "TA04-247A"
+    },
+    {
+      "text": "http://www.ciac.org/ciac/bulletins/o-208.shtml",
+      "source": "CIAC",
+      "id": "O-208"
+    },
+    {
+      "text": "http://secunia.com/advisories/12694/",
+      "source": "SECUNIA",
+      "id": "SA12694"
+    },
+    {
+      "text": "http://secunia.com/advisories/12408/",
+      "source": "SECUNIA",
+      "id": "SA12408"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11079",
+      "source": "BID",
+      "id": "11079"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/17160",
+      "source": "XF",
+      "id": "17160"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mit:kerberos",
+      "version": "2.2",
+      "vendor": "MIT Kerberos",
+      "product": "Kerberos"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_desktop",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

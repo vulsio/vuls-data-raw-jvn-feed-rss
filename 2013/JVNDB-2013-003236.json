@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003236.html",
+  "title": "WordPress の XMLRPC API におけるイントラネットサーバへ HTTP リクエストを送信される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003236.html",
+  "description": "WordPress の XMLRPC API には、サーバサイドのリクエストフォージェリ (SSRF) の問題に関連して、イントラネットサーバへ HTTP リクエストを送信される、およびポートスキャン攻撃 (port-scanning attack) を実行される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-918: Server-Side Request Forgery (SSRF/サーバサイドのリクエストフォージェリ) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/918.html",
+  "identifier": "JVNDB-2013-003236",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0235",
+      "source": "CVE",
+      "id": "CVE-2013-0235"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0235",
+      "source": "NVD",
+      "id": "CVE-2013-0235"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wordpress:wordpress",
+      "version": "2.2",
+      "vendor": "WordPress.org",
+      "product": "WordPress"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2013-07-09T18:41+09:00",
+  "issued": "2013-07-09T18:41+09:00",
+  "modified": "2013-07-09T18:41+09:00"
+}

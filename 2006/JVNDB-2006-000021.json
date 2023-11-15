@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000021.html",
+  "title": "BEA WebLogic Server の新規セキュリティプロバイダ設定において適切な再起動指示がされない脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000021.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nBEA WebLogic Server には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・新しくセキュリティプロバイダが設定された際に、設定を反映するために再起動が必要である旨の指示が、適切に行われない問題 (BEA06-116.00)\r\n\r\n・WebLogic Administration Console を使用して JNDI リソースにセキュリティポリシを追加している場合に、ポリシが適切に反映されず JNDI リソースが保護されない問題 (BEA06-119.00)\r\n\r\nセキュリティプロバイダあるいは JNDI リソースにセキュリティポリシを追加している場合、管理者の意図に反してリモートの攻撃者によりリソースにアクセスされてしまう可能性があります。",
+  "identifier": "JVNDB-2006-000021",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0429",
+      "source": "CVE",
+      "id": "CVE-2006-0429"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0429",
+      "source": "NVD",
+      "id": "CVE-2006-0429"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/16358",
+      "source": "BID",
+      "id": "16358"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bea:weblogic_server",
+      "version": "2.2",
+      "vendor": "BEAシステムズ",
+      "product": "BEA WebLogic Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

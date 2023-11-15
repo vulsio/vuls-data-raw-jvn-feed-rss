@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002639.html",
+  "title": "Apache Tomcat における無効な HTTP ヘッダの取り扱いに関する問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002639.html",
+  "description": "Apache Tomcat には、無効な HTTP ヘッダの取り扱い方法に起因して、リクエストスマグリング攻撃が行われる可能性のある問題が存在します。\r\n\r\nApache Tomcat にて rejectIllegalHeader を false （8.5 系だけは初期設定） とし、無効な HTTP ヘッダを無視する設定としている場合、Tomcat は無効な Content-Length ヘッダを含むリクエストであっても拒否しないという問題 （CVE-2022-42252） があります。\r\n",
+  "identifier": "JVNDB-2022-002639",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU93003913/",
+      "source": "JVN",
+      "id": "JVNVU#93003913"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-42252",
+      "source": "CVE",
+      "id": "CVE-2022-42252"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-42252",
+      "source": "NVD",
+      "id": "CVE-2022-42252"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2022-11-07T15:22+09:00",
+  "issued": "2022-11-04T13:44+09:00",
+  "modified": "2022-11-07T15:22+09:00"
+}

@@ -1,0 +1,93 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007661.html",
+  "title": "三菱電機 MELSEC-Q シリーズの Ethernet インターフェースモジュールに複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007661.html",
+  "description": "三菱電機株式会社が提供する MELSEC-Q シリーズの Ethernet インターフェースモジュールには、次の複数の脆弱性が存在します。\r\nなお、これらの脆弱性を使用した攻撃コードが公開されています。\r\n\r\n不完全または危険な暗号化アルゴリズムの使用 (CWE-327) - CVE-2016-8370\r\n通信データに含まれるパスワードは弱い暗号化アルゴリズムで暗号化されています。\r\n\r\n外部からの操作の制限不備 (CWE-412) - CVE-2016-8368\r\n遠隔の第三者によってポート 5002/TCP 経由で PLC に接続され、結果としてサービス運用妨害 (DoS) 攻撃を受ける可能性があります。\r\n",
+  "identifier": "JVNDB-2016-007661",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99901500/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99901500"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8370",
+      "source": "CVE",
+      "id": "CVE-2016-8370"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8368",
+      "source": "CVE",
+      "id": "CVE-2016-8368"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8370",
+      "source": "NVD",
+      "id": "CVE-2016-8370"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8368",
+      "source": "NVD",
+      "id": "CVE-2016-8368"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-16-336-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-16-336-03"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/412.html",
+      "id": "CWE-412",
+      "title": "外部からの操作の制限不備(CWE-412)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/327.html",
+      "id": "CWE-327",
+      "title": "不完全、または危険な暗号アルゴリズムの使用(CWE-327)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:mitsubishielectric:qj71e71-100_firmware",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "QJ71E71-100"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:qj71e71-b2_firmware",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "QJ71E71-B2"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:qj71e71-b5_firmware",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "QJ71E71-B5"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "8.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2017-04-05T14:43+09:00",
+  "issued": "2017-03-09T15:53+09:00",
+  "modified": "2017-04-05T14:43+09:00"
+}

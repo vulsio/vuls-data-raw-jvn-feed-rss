@@ -1,0 +1,83 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001328.html",
+  "title": "GraphicsMagick と Imagemagick の load_tile() 関数におけるヒープ領域を上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001328.html",
+  "description": "ImageMagick および GraphicsMagick の coders/xcf.c には XCF コーダの load_tile() 関数において、.xcf ファイルの取り扱いに不備があり、ヒープ領域を上書きされる脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001328",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1096",
+      "source": "CVE",
+      "id": "CVE-2008-1096"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-1096",
+      "source": "NVD",
+      "id": "CVE-2008-1096"
+    },
+    {
+      "text": "http://secunia.com/advisories/29786",
+      "source": "SECUNIA",
+      "id": "SA29786"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/28821",
+      "source": "BID",
+      "id": "28821"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1019880",
+      "source": "SECTRACK",
+      "id": "1019880"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:graphicsmagick:graphicsmagick",
+      "version": "2.2",
+      "vendor": "GraphicsMagick",
+      "product": "GraphicsMagick"
+    },
+    {
+      "text": "cpe:/a:imagemagick:imagemagick",
+      "version": "2.2",
+      "vendor": "ImageMagick",
+      "product": "ImageMagick"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-05-16T16:15+09:00",
+  "issued": "2008-05-16T16:15+09:00",
+  "modified": "2008-05-16T16:15+09:00"
+}

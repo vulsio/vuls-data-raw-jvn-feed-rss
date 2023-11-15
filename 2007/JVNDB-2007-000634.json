@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000634.html",
+  "title": "BIND8 の乱数生成に脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000634.html",
+  "description": "BIND8 には、生成する ID 情報が推測されやすい乱数になっているためキャッシュ汚染を引き起こされる可能性があります。\r\n\r\nInternet Systems Consortium (ISC) が提供する BIND は DNS サービスを行なうために広く使用されているソフトウェアのひとつです。BIND8 には、生成する ID 情報が推測されやすい乱数になっているためキャッシュ汚染を引き起こされる可能性があります。",
+  "identifier": "JVNDB-2007-000634",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23927905/index.html",
+      "source": "JVN",
+      "id": "JVNVU#927905"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23252735",
+      "source": "JVN",
+      "id": "JVNVU#252735"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA08-190B/index.html",
+      "source": "JVN",
+      "id": "JVNTA08-190B"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2930",
+      "source": "CVE",
+      "id": "CVE-2007-2930"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2930",
+      "source": "NVD",
+      "id": "CVE-2007-2930"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/927905",
+      "source": "CERT-VN",
+      "id": "VU#927905"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:M/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-12-11T14:27+09:00",
+  "issued": "2007-09-13T09:55+09:00",
+  "modified": "2007-12-11T14:27+09:00"
+}

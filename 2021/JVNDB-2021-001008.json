@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001008.html",
+  "title": "Reolink 製 P2P Cameras シリーズにおける複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001008.html",
+  "description": "Reolink P2P Cameras シリーズは Reolink が提供するネットワーク IP カメラです。当該製品には、次の複数の脆弱性が存在します。\r\n\r\n　* ハードコードされた暗号鍵の使用 (CWE-321) - CVE-2020-25173\r\n　* 重要な情報の平文での送信 (CWE-319) - CVE-2020-25169",
+  "identifier": "JVNDB-2021-001008",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU96898747",
+      "source": "JVN",
+      "id": "JVNVU#96898747"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25169",
+      "source": "CVE",
+      "id": "CVE-2020-25169"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25173",
+      "source": "CVE",
+      "id": "CVE-2020-25173"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-019-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-019-02"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/319.html",
+      "id": "CWE-319",
+      "title": "重要な情報の平文での送信(CWE-319)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/321.html",
+      "id": "CWE-321",
+      "title": "ハードコードされた暗号鍵の使用(CWE-321)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:reolink:rlc-4xx_series",
+      "version": "2.2",
+      "vendor": "Reolink Digital Technology",
+      "product": "RLC-4XX シリーズ"
+    },
+    {
+      "text": "cpe:/o:reolink:rlc-5xx_series",
+      "version": "2.2",
+      "vendor": "Reolink Digital Technology",
+      "product": "RLC-5XX シリーズ"
+    },
+    {
+      "text": "cpe:/o:reolink:rnc-x10_series",
+      "version": "2.2",
+      "vendor": "Reolink Digital Technology",
+      "product": "RLN-X10 シリーズ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.7",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2021-01-21T14:01+09:00",
+  "issued": "2021-01-21T14:01+09:00",
+  "modified": "2021-01-21T14:01+09:00"
+}

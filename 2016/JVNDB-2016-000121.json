@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000121.html",
+  "title": "Apache Commons FileUpload におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000121.html",
+  "description": "Apache Software Foundation が提供する Apache Commons FileUpload には、マルチパートリクエストの処理に問題があり、 結果としてサービス運用妨害 (DoS) 攻撃を受ける可能性があります。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社NTTデータ TERASOLUNA FW(Struts1)チーム",
+  "identifier": "JVNDB-2016-000121",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN89379547/index.html",
+      "source": "JVN",
+      "id": "JVN#89379547"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3092",
+      "source": "CVE",
+      "id": "CVE-2016-3092"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3092",
+      "source": "NVD",
+      "id": "CVE-2016-3092"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:commons_fileupload",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Commons FileUpload"
+    },
+    {
+      "text": "cpe:/a:apache:struts",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Struts"
+    },
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+    }
+  ],
+  "date": "2018-01-29T10:27+09:00",
+  "issued": "2016-06-30T12:06+09:00",
+  "modified": "2018-01-29T10:27+09:00"
+}

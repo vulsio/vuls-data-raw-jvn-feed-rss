@@ -1,0 +1,45 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001016.html",
+  "title": "Adobe ColdFusion にインストールディレクトリの ACL 設定不備による権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001016.html",
+  "description": "Adobe ColdFusion には、デフォルトのインストールディレクトリにおいて ACL が適切に設定されないことに起因する権限昇格の脆弱性が存在します。\r\n\r\nAdobe ColdFusion インストーラは、C:\\ColdFusion2021\\ のようなデフォルトのインストールディレクトリに対して ACL を適切に設定できません。そのため、管理者権限を持たない Windows ユーザによって当該フォルダに悪意のある DLL ファイルを配置され、SYSTEM 権限で任意のコードを実行してしまう可能性があります。",
+  "identifier": "JVNDB-2021-001016",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU91588948",
+      "source": "JVN",
+      "id": "JVNVU#91588948"
+    },
+    {
+      "text": "https://jvn.jp/ta/JVNTA91240916/",
+      "source": "JVN",
+      "id": "JVNTA#91240916"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10145",
+      "source": "CVE",
+      "id": "CVE-2020-10145"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/125331",
+      "source": "CERT-VN",
+      "id": "VU#125331"
+    },
+    {
+      "text": "https://attack.mitre.org/techniques/T1574/001/",
+      "source": "関連文書",
+      "id": "T1574.001 (Hijack Execution Flow: DLL Search Order Hijacking)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:adobe:coldfusion",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe ColdFusion"
+    }
+  ],
+  "date": "2021-02-03T11:54+09:00",
+  "issued": "2021-02-03T11:54+09:00",
+  "modified": "2021-02-03T11:54+09:00"
+}

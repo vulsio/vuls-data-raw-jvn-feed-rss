@@ -1,0 +1,107 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000796.html",
+  "title": "Perl の正規表現エンジンにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000796.html",
+  "description": "Perl には正規表現エンジン (regcomp.c) には、正規表現内の Unicode (UTF) 文字をバイトから変換する処理に不備があり、バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000796",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5116",
+      "source": "CVE",
+      "id": "CVE-2007-5116"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5116",
+      "source": "NVD",
+      "id": "CVE-2007-5116"
+    },
+    {
+      "text": "http://secunia.com/advisories/27546",
+      "source": "SECUNIA",
+      "id": "SA27546"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26350",
+      "source": "BID",
+      "id": "26350"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/38270",
+      "source": "XF",
+      "id": "38270"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/3724",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-3724"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:perl:perl",
+      "version": "2.2",
+      "vendor": "The Perl Foundation",
+      "product": "Perl"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_application_stack",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Application Stack"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-02-20T11:46+09:00",
+  "issued": "2007-11-27T16:58+09:00",
+  "modified": "2009-02-20T11:46+09:00"
+}

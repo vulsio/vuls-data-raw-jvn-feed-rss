@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004867.html",
+  "title": "MySQL における権限チェックを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004867.html",
+  "description": "MySQL には、mysql_unpacked_real_data_home 値の計算に不備があるため、MyISAM テーブル上で、変更された DATA DIRECTORY または INDEX DIRECTORY 引数をもつ CREATE TABLE を呼び出すことにより、権限チェックを回避される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2009-4030 のリグレッションに起因する脆弱性です。",
+  "identifier": "JVNDB-2012-004867",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4452",
+      "source": "CVE",
+      "id": "CVE-2012-4452"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4452",
+      "source": "NVD",
+      "id": "CVE-2012-4452"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mysql:mysql",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2013-01-24T17:39+09:00",
+  "issued": "2012-10-12T14:51+09:00",
+  "modified": "2013-01-24T17:39+09:00"
+}

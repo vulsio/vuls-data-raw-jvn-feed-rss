@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000122.html",
+  "title": "Xinetd の svc_request() 関数におけるメモリリークの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000122.html",
+  "description": "svc_request() 関数には、メモリの取り扱いに不備により、 Xinetd を介して拒否されるように設定されたサービスへの接続を取り扱う際に、メモリが開放されない脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000122",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0211",
+      "source": "CVE",
+      "id": "CVE-2003-0211"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0211",
+      "source": "NVD",
+      "id": "CVE-2003-0211"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7382",
+      "source": "BID",
+      "id": "7382"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2003/Apr/1006604.html",
+      "source": "SECTRACK",
+      "id": "1006604"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

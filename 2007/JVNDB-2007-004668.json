@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004668.html",
+  "title": "Ingate Firewall および SIParator における有効なログイン認証情報を推測される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004668.html",
+  "description": "Ingate Firewall および SIParator は、切り捨て処理した (1) ICMP、(2) UDP および (3) TCP パケットのログを記録しないため、不特定の影響を受ける脆弱性、および (4) 存在しないユーザ名によるシリアルコンソールログインの試行のログを記録しないため検出を回避しながら、有効なログイン認証情報を推測される脆弱性が存在します。",
+  "identifier": "JVNDB-2007-004668",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6098",
+      "source": "CVE",
+      "id": "CVE-2007-6098"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-6098",
+      "source": "NVD",
+      "id": "CVE-2007-6098"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:ingate:ingate_firewall",
+      "version": "2.2",
+      "vendor": "ingate",
+      "product": "ingate firewall"
+    },
+    {
+      "text": "cpe:/h:ingate:ingate_siparator",
+      "version": "2.2",
+      "vendor": "ingate",
+      "product": "ingate siparator"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T16:59+09:00",
+  "issued": "2012-09-25T16:59+09:00",
+  "modified": "2012-09-25T16:59+09:00"
+}

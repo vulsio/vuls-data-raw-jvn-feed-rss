@@ -1,0 +1,125 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001002.html",
+  "title": "sendmail における X.509 証明書の処理に関する任意の SSL-based SMTP サーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001002.html",
+  "description": "sendmail には、X.509 証明書内の Common Name (CN) フィールドにある '\\0' 文字を適切に処理しないため、任意の SSL-based SMTP サーバになりすまされる、またはアクセス制限を回避される脆弱性が存在します。\r\n本脆弱性は CVE-2009-2408 と関連があります。",
+  "identifier": "JVNDB-2010-001002",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4565",
+      "source": "CVE",
+      "id": "CVE-2009-4565"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-4565",
+      "source": "NVD",
+      "id": "CVE-2009-4565"
+    },
+    {
+      "text": "http://secunia.com/advisories/37998",
+      "source": "SECUNIA",
+      "id": "SA37998"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/37543",
+      "source": "BID",
+      "id": "37543"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/3661",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-3661"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:vios",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM VIOS"
+    },
+    {
+      "text": "cpe:/a:sendmail:sendmail",
+      "version": "2.2",
+      "vendor": "Sendmail Consortium",
+      "product": "sendmail"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2011-05-26T09:52+09:00",
+  "issued": "2010-02-02T11:43+09:00",
+  "modified": "2011-05-26T09:52+09:00"
+}

@@ -1,0 +1,91 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-020572.html",
+  "title": "systemd project の systemd 他複数ベンダの製品における境界条件の判定に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-020572.html",
+  "description": "systemd project の systemd 他複数ベンダの製品には、境界条件の判定に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-020572",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-3821",
+      "source": "CVE",
+      "id": "CVE-2022-3821"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-3821",
+      "source": "NVD",
+      "id": "CVE-2022-3821"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=2139327",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (2139327)"
+    },
+    {
+      "text": "https://github.com/systemd/systemd/commit/9102c625a673a3246d7e73d8737f3494446bad4e",
+      "source": "関連文書",
+      "id": "github.com (9102c625a673a3246d7e73d8737f3494446bad4e)"
+    },
+    {
+      "text": "https://github.com/systemd/systemd/issues/23928",
+      "source": "関連文書",
+      "id": "github.com (issues/23928)"
+    },
+    {
+      "text": "https://github.com/systemd/systemd/pull/23933",
+      "source": "関連文書",
+      "id": "github.com (pull/23933)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2023/06/msg00036.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00036)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (RVBQC2VLSDVQAPJTEMTREXDL4HYLXG2P)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202305-15",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202305-15)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/193.html",
+      "id": "CWE-193",
+      "title": "境界条件の判定(CWE-193)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:systemd_project:systemd",
+      "version": "2.2",
+      "vendor": "systemd project",
+      "product": "systemd"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-11-02T17:04+09:00",
+  "issued": "2023-11-02T17:04+09:00",
+  "modified": "2023-11-02T17:04+09:00"
+}

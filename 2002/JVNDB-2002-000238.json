@@ -1,0 +1,91 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000238.html",
+  "title": "BIND の glibc リゾルバライブラリにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000238.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nISC BIND に同梱されている DNS スタブリゾルバライブラリは、ホスト名の IP アドレスを特定する際の Web ブラウザの実装等に利用されています。この際 DNS リゾルバライブラリには、潜在的な DNS レスポンスの最大サイズより小さいバッファサイズが渡されます。 \r\n\r\n割り当てられたバッファサイズを超える DNS レスポンスを受け取る際の実装に問題が存在します。これは、取り扱うレスポンスサイズのチェックが適切に行われないため、呼び出しているアプリケーションは、実際のレスポンスサイズの終端を越えて読み込んでしまいます。このため、リンクしてビルドされているプログラムがクラッシュしてしまう可能性が存在します。 \r\n\r\nさらに、BIND 4 由来のリゾルバライブラリの glibc や libresolv においても同様の問題が存在し、glibc や libresolv をリンクしてビルドされているプログラムがクラッシュする可能性があります。また、C ライブラリの拡張セットである nss_ldap もこの問題の影響を受ける可能性が存在します。 \r\n\r\nこの問題を利用する悪意ある DNS レスポンスの送信が可能なリモートの攻撃者は、アプリケーション、もしくはシステムをサービス不能状態に陥らせることが可能です。また、特定の環境下ではメモリに格納されている内容が漏洩してしまう可能性も存在します。 \r\n\r\n尚、named デーモン自体は、この問題の影響を受けることはありません。",
+  "identifier": "JVNDB-2002-000238",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1146",
+      "source": "CVE",
+      "id": "CVE-2002-1146"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1146",
+      "source": "NVD",
+      "id": "CVE-2002-1146"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/738331",
+      "source": "CERT-VN",
+      "id": "VU#738331"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/10295",
+      "source": "XF",
+      "id": "10295"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_4",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ4"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQXTR"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

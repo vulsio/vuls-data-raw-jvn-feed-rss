@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-008608.html",
+  "title": "audiofile における古典的バッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-008608.html",
+  "description": "audiofile (別名 libaudiofile and Audio File Library) には、古典的バッファオーバーフローの脆弱性が存在が存在します。",
+  "identifier": "JVNDB-2015-008608",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7747",
+      "source": "CVE",
+      "id": "CVE-2015-7747"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-7747",
+      "source": "NVD",
+      "id": "CVE-2015-7747"
+    },
+    {
+      "text": "https://github.com/ccrisan/motioneyeos/blob/master/package/audiofile/0008-CVE-2015-7747.patch",
+      "source": "関連文書",
+      "id": "motioneyeos/package/audiofile/0008-CVE-2015-7747.patch"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/120.html",
+      "id": "CWE-120",
+      "title": "古典的バッファオーバーフロー(CWE-120)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:68k:audiofile",
+      "version": "2.2",
+      "vendor": "68k.org",
+      "product": "audiofile"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-03-10T14:16+09:00",
+  "issued": "2020-03-10T14:16+09:00",
+  "modified": "2020-03-10T14:16+09:00"
+}

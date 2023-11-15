@@ -1,0 +1,151 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000780.html",
+  "title": "CUPS におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000780.html",
+  "description": "CUPS (Common Unix Printing System) には、バッファオーバーフローの脆弱性が存在します。\r\n\r\nCUPS (Common Unix Printing System) は、IPP (Internet Printing Protocol)に対応した印刷サービスです。 cups/ipp.c に含まれる ippReadIO() 関数には、細工された IPP リクエストを処理する際にバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000780",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23446897/index.html",
+      "source": "JVN",
+      "id": "JVNVU#446897"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4351",
+      "source": "CVE",
+      "id": "CVE-2007-4351"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4351",
+      "source": "NVD",
+      "id": "CVE-2007-4351"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/446897",
+      "source": "CERT-VN",
+      "id": "VU#446897"
+    },
+    {
+      "text": "http://secunia.com/advisories/27233",
+      "source": "SECUNIA",
+      "id": "SA27233"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26268",
+      "source": "BID",
+      "id": "26268"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/38190",
+      "source": "XF",
+      "id": "38190"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1018879",
+      "source": "SECTRACK",
+      "id": "1018879"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/3681",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-3681"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cups:cups",
+      "version": "2.2",
+      "vendor": "CUPS",
+      "product": "CUPS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_wizpy",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "wizpy"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-07-01T14:07+09:00",
+  "issued": "2007-11-26T10:48+09:00",
+  "modified": "2008-07-01T14:07+09:00"
+}

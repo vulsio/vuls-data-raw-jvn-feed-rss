@@ -1,0 +1,103 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-012068.html",
+  "title": "複数の Festo 製品における OS コマンドインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-012068.html",
+  "description": "controller cecc-x-m1 ファームウェア、controller cecc-x-m1-mv ファームウェア、controller cecc-x-m1-mv-s1 ファームウェア等複数の Festo 製品には、OS コマンドインジェクションの脆弱性、不正な認証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-012068",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-30310",
+      "source": "CVE",
+      "id": "CVE-2022-30310"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-30310",
+      "source": "NVD",
+      "id": "CVE-2022-30310"
+    },
+    {
+      "text": "https://cert.vde.com/en/advisories/VDE-2022-020/",
+      "source": "関連文書",
+      "id": "cert.vde.com (VDE-2022-020)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/863.html",
+      "id": "CWE-863",
+      "title": "不正な認証(CWE-863)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:festo:controller_cecc-x-m1-mv-s1_firmware",
+      "version": "2.2",
+      "vendor": "Festo",
+      "product": "controller cecc-x-m1-mv-s1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:festo:controller_cecc-x-m1-mv_firmware",
+      "version": "2.2",
+      "vendor": "Festo",
+      "product": "controller cecc-x-m1-mv ファームウェア"
+    },
+    {
+      "text": "cpe:/o:festo:controller_cecc-x-m1-y-yjkp_firmware",
+      "version": "2.2",
+      "vendor": "Festo",
+      "product": "controller cecc-x-m1-y-yjkp ファームウェア"
+    },
+    {
+      "text": "cpe:/o:festo:controller_cecc-x-m1-ys-l1_firmware",
+      "version": "2.2",
+      "vendor": "Festo",
+      "product": "controller cecc-x-m1-ys-l1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:festo:controller_cecc-x-m1-ys-l2_firmware",
+      "version": "2.2",
+      "vendor": "Festo",
+      "product": "controller cecc-x-m1-ys-l2 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:festo:controller_cecc-x-m1_firmware",
+      "version": "2.2",
+      "vendor": "Festo",
+      "product": "controller cecc-x-m1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:festo:servo_press_kit_yjkp-_firmware",
+      "version": "2.2",
+      "vendor": "Festo",
+      "product": "servo press kit yjkp- ファームウェア"
+    },
+    {
+      "text": "cpe:/o:festo:servo_press_kit_yjkp_firmware",
+      "version": "2.2",
+      "vendor": "Festo",
+      "product": "servo press kit yjkp ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-08-25T17:13+09:00",
+  "issued": "2023-08-25T17:13+09:00",
+  "modified": "2023-08-25T17:13+09:00"
+}

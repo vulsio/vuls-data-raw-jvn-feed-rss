@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004643.html",
+  "title": "Microsoft Virtual PC 2007 などの Virtual Machine Monitor におけるデータ漏洩保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004643.html",
+  "description": "Microsoft Virtual PC 2007 Gold および SP1、Virtual Server 2005 Gold および R2 SP1、および Windows Virtual PC の Virtual Machine Monitor のメモリ管理の実装は、ゲスト OS からの VMM ワークエリア内のメモリ領域へのアクセス権を適切に制限しないため、ゲスト OS 上で特定のデータ漏洩保護メカニズムを回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-004643",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1225",
+      "source": "CVE",
+      "id": "CVE-2010-1225"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1225",
+      "source": "NVD",
+      "id": "CVE-2010-1225"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:virtual_pc",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Virtual PC"
+    },
+    {
+      "text": "cpe:/a:microsoft:virtual_server",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Virtual Server"
+    },
+    {
+      "text": "cpe:/a:microsoft:windows_virtual_pc",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "windows virtual pc"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-09-25T17:38+09:00",
+  "issued": "2012-09-25T17:38+09:00",
+  "modified": "2012-09-25T17:38+09:00"
+}

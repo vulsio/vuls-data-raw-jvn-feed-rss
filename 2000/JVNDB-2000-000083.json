@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000083.html",
+  "title": "Red Hat Linux の Ping におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000083.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n-----------\r\n\r\nUnix/Linux システム上においては、raw ソケットを開く必要があるため (ICMP を送受信するために)、setuid root で Ping ユーティリティは通常インストールされます。特定のバージョンの RedHat Linux に付随する Ping はバッファオーバーフローを発生させてしまう問題があります。この問題を悪意あるローカルのユーザに利用されてしまった場合、 root 権限を奪取されてしまう可能性があります。",
+  "identifier": "JVNDB-2000-000083",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-1214",
+      "source": "CVE",
+      "id": "CVE-2000-1214"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2000-1214",
+      "source": "NVD",
+      "id": "CVE-2000-1214"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/1813",
+      "source": "BID",
+      "id": "1813"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

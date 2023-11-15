@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005037.html",
+  "title": "複数の OpenStack 製品の XenAPI バックエンドにおける制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005037.html",
+  "description": "OpenStack Compute (Nova) Folsom、Grizzly および Havana の XenAPI バックエンドは、(1) イメージのサイズ変更時、または (2) ライブマイグレーション中に、セキュリティグループを適切に適用しないため、制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005037",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4497",
+      "source": "CVE",
+      "id": "CVE-2013-4497"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4497",
+      "source": "NVD",
+      "id": "CVE-2013-4497"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:folsom",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Compute Folsom"
+    },
+    {
+      "text": "cpe:/a:openstack:grizzly",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Grizzly"
+    },
+    {
+      "text": "cpe:/a:openstack:havana",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Havana"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2013-11-07T18:21+09:00",
+  "issued": "2013-11-07T18:21+09:00",
+  "modified": "2013-11-07T18:21+09:00"
+}

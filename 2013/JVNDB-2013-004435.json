@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004435.html",
+  "title": "Google Chrome で使用される Blink の core/xml/parser/XMLDocumentParser.cpp におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004435.html",
+  "description": "Google Chrome で使用される Blink の core/xml/parser/XMLDocumentParser.cpp 内の XMLDocumentParser::append 関数には、解放済みメモリの使用 (Use-after-free) により、サービス運用妨害 (DoS) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004435",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2913",
+      "source": "CVE",
+      "id": "CVE-2013-2913"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2913",
+      "source": "NVD",
+      "id": "CVE-2013-2913"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-01-09T18:11+09:00",
+  "issued": "2013-10-03T17:58+09:00",
+  "modified": "2014-01-09T18:11+09:00"
+}

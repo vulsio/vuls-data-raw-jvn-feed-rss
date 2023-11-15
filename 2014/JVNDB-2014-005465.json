@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005465.html",
+  "title": "Ruby の pack.c のエンコード関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005465.html",
+  "description": "Ruby の pack.c のエンコード関数には、特定のフォーマットストリング指定子を使用する場合、一つずれエラー (Off-by-One error) により、サービス運用妨害 (セグメンテーション違反) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005465",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4975",
+      "source": "CVE",
+      "id": "CVE-2014-4975"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4975",
+      "source": "NVD",
+      "id": "CVE-2014-4975"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2014-0472.html",
+      "source": "関連文書",
+      "id": "MGASA-2014-0472"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ruby-lang:ruby",
+      "version": "2.2",
+      "vendor": "Ruby-lang.org",
+      "product": "Ruby"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-06-08T17:03+09:00",
+  "issued": "2014-11-18T12:02+09:00",
+  "modified": "2015-06-08T17:03+09:00"
+}

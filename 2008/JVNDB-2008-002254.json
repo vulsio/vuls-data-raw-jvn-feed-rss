@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002254.html",
+  "title": "University of Washington (UW) c-client ライブラリにおける一つずれエラーの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002254.html",
+  "description": "University of Washington (UW) c-client ライブラリの RFC822BUFFER ルーチンにおける rfc822_output_char 関数には、UW IMAP ツールキットを使用している場合に、一つずれ (Off-by-one) エラーの脆弱性が存在します。",
+  "identifier": "JVNDB-2008-002254",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5514",
+      "source": "CVE",
+      "id": "CVE-2008-5514"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-5514",
+      "source": "NVD",
+      "id": "CVE-2008-5514"
+    },
+    {
+      "text": "http://secunia.com/advisories/33275",
+      "source": "SECUNIA",
+      "id": "SA33275"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/32958",
+      "source": "BID",
+      "id": "32958"
+    },
+    {
+      "text": "http://securitytracker.com/id?1021485",
+      "source": "SECTRACK",
+      "id": "1021485"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2008/3490",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2008-3490"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:university_of_washington:imap_toolkit",
+      "version": "2.2",
+      "vendor": "University of Washington",
+      "product": "University of Washington IMAP Toolkit"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2009-02-06T12:16+09:00",
+  "issued": "2009-02-06T12:16+09:00",
+  "modified": "2009-02-06T12:16+09:00"
+}

@@ -1,0 +1,96 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-010150.html",
+  "title": "Google の Google TensorFlow における入力確認に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-010150.html",
+  "description": "Google の Google TensorFlow には、入力確認に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-010150",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-29204",
+      "source": "CVE",
+      "id": "CVE-2022-29204"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-29204",
+      "source": "NVD",
+      "id": "CVE-2022-29204"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/blob/f3b9bf4c3c0597563b289c0512e98d4ce81f886e/tensorflow/core/kernels/unsorted_segment_join_op.cc#L83-L14",
+      "source": "関連文書",
+      "id": "github.com (unsorted_segment_join_op.cc#L83-L14)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/advisory/tfsa-2021-198.md",
+      "source": "関連文書",
+      "id": "github.com (tfsa-2021-198.md)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/commit/20cb18724b0bf6c09071a3f53434c4eec53cc147",
+      "source": "関連文書",
+      "id": "github.com (20cb18724b0bf6c09071a3f53434c4eec53cc147)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/commit/84563f265f28b3c36a15335c8b005d405260e943",
+      "source": "関連文書",
+      "id": "github.com (84563f265f28b3c36a15335c8b005d405260e943)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/releases/tag/v2.6.4",
+      "source": "関連文書",
+      "id": "github.com (v2.6.4)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/releases/tag/v2.7.2",
+      "source": "関連文書",
+      "id": "github.com (v2.7.2)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/releases/tag/v2.8.1",
+      "source": "関連文書",
+      "id": "github.com (v2.8.1)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/releases/tag/v2.9.0",
+      "source": "関連文書",
+      "id": "github.com (v2.9.0)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-hx9q-2mx4-m4pg",
+      "source": "関連文書",
+      "id": "github.com (GHSA-hx9q-2mx4-m4pg)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:tensorflow",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google TensorFlow"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-08-10T17:25+09:00",
+  "issued": "2023-08-10T17:25+09:00",
+  "modified": "2023-08-10T17:25+09:00"
+}

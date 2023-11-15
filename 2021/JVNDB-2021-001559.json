@@ -1,0 +1,40 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001559.html",
+  "title": "Checkbox Survey に安全でないデシリアライゼーションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001559.html",
+  "description": "Checkbox 社が提供する Checkbox Survey は、Webサイトに調査機能を追加できる ASP.NET アプリケーションです。当該製品は安全でないデシリアライゼーションの脆弱性 (CWE-502、CVE-2021-27852) が存在します。当該製品は、ビューステート機能への引数の検証を独自の処理で実装しているため、Message Authentication Code による検証が行われません。その結果、任意のデータをデシリアライズできる可能性があります。",
+  "identifier": "JVNDB-2021-001559",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU99816551",
+      "source": "JVN",
+      "id": "JVNVU#99816551"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27852",
+      "source": "CVE",
+      "id": "CVE-2021-27852"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/706695",
+      "source": "CERT-VN",
+      "id": "VU#706695"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/502.html",
+      "id": "CWE-502",
+      "title": "信頼できないデータのデシリアライゼーション(CWE-502)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:checkbox_checkbox_survey",
+      "version": "2.2",
+      "vendor": "Checkbox",
+      "product": "Checkbox Survey"
+    }
+  ],
+  "date": "2021-05-28T16:48+09:00",
+  "issued": "2021-05-28T16:48+09:00",
+  "modified": "2021-05-28T16:48+09:00"
+}

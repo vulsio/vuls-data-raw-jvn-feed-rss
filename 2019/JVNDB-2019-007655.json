@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-007655.html",
+  "title": "KDE Frameworks の Kconfig におけるコマンドインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-007655.html",
+  "description": "KDE Frameworks の Kconfig には、コマンドインジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2019-007655",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14744",
+      "source": "CVE",
+      "id": "CVE-2019-14744"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-14744",
+      "source": "NVD",
+      "id": "CVE-2019-14744"
+    },
+    {
+      "text": "https://packetstormsecurity.com/files/153981/Slackware-Security-Advisory-kdelibs-Updates.html",
+      "source": "関連文書",
+      "id": "Slackware Security Advisory - kdelibs Updates"
+    },
+    {
+      "text": "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00013.html",
+      "source": "関連文書",
+      "id": "[security-announce] openSUSE-SU-2019:1851-1: important: Security update for kconfig, kdelibs4"
+    },
+    {
+      "text": "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00016.html",
+      "source": "関連文書",
+      "id": "[security-announce] openSUSE-SU-2019:1855-1: important: Security update for kconfig, kdelibs4"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5IRIKH7ZWXELIQT6WSLV7EG3VTFWKZPD/",
+      "source": "関連文書",
+      "id": "[SECURITY] Fedora 30 Update: kdelibs-4.14.38-15.fc30"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/WTFBQRJAU7ITD3TOMPZAUQMYYCAZ6DTX/",
+      "source": "関連文書",
+      "id": "[SECURITY] Fedora 30 Update: kf5-kconfig-5.59.0-1.fc30.1"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/77.html",
+      "id": "CWE-77",
+      "title": "コマンドインジェクション(CWE-77)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:kde:kconfig",
+      "version": "2.2",
+      "vendor": "KDE project",
+      "product": "Kconfig"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-08-16T16:49+09:00",
+  "issued": "2019-08-16T16:49+09:00",
+  "modified": "2019-08-16T16:49+09:00"
+}

@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-004255.html",
+  "title": "Panda Internet Security などの cpoint.sys ドライバにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-004255.html",
+  "description": "Panda Internet Security および Antivirus and Firewall の cpoint.sys ドライバには、サービス運用妨害 (システムクラッシュまたはカーネルパニック) 状態となる、メモリを上書きされる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2008-004255",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1471",
+      "source": "CVE",
+      "id": "CVE-2008-1471"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-1471",
+      "source": "NVD",
+      "id": "CVE-2008-1471"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pandasecurity:panda_antivirus_and_firewall",
+      "version": "2.2",
+      "vendor": "Panda Security",
+      "product": "panda antivirus and firewall"
+    },
+    {
+      "text": "cpe:/a:pandasecurity:panda_internet_security",
+      "version": "2.2",
+      "vendor": "Panda Security",
+      "product": "Panda Internet Security"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-09-25T17:16+09:00",
+  "issued": "2012-09-25T17:16+09:00",
+  "modified": "2012-09-25T17:16+09:00"
+}

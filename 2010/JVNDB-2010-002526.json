@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002526.html",
+  "title": "PGP Desktop にデータインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002526.html",
+  "description": "PGP Desktop 10.1.0 と PGP Desktop 10.0.3 およびそれ以前には、データインジェクションの脆弱性が存在します。なお、PGP Command Line 9.6 およびそれ以降のバージョンについては、この脆弱性は存在しません。\r\n\r\nPGP Desktop のユーザインターフェースでは、正規に署名されたデータに署名されていないデータを混入させたメッセージに対して、メッセージ全体が署名されていると誤って表示される問題が存在します。この場合、ユーザは細工された署名されていないデータと署名されている正規データを識別することができません。",
+  "identifier": "JVNDB-2010-002526",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU300785",
+      "source": "JVN",
+      "id": "JVNVU#300785"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3618",
+      "source": "CVE",
+      "id": "CVE-2010-3618"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3618",
+      "source": "NVD",
+      "id": "CVE-2010-3618"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/300785",
+      "source": "CERT-VN",
+      "id": "VU#300785"
+    },
+    {
+      "text": "http://secunia.com/advisories/42293",
+      "source": "SECUNIA",
+      "id": "SA42293"
+    },
+    {
+      "text": "http://secunia.com/advisories/42307",
+      "source": "SECUNIA",
+      "id": "SA42307"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/63366",
+      "source": "XF",
+      "id": "63366"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1024760",
+      "source": "SECTRACK",
+      "id": "1024760"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:symantec:pgp_desktop",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Symantec PGP Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2010-12-20T14:44+09:00",
+  "issued": "2010-12-20T14:44+09:00",
+  "modified": "2010-12-20T14:44+09:00"
+}

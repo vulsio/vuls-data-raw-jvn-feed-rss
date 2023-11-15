@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002009.html",
+  "title": "複数の製品で使用される Webkit における同一生成元ポリシーを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002009.html",
+  "description": "Google Chrome には、IFRAME 要素の置換えに関する処理に不備があるため、同一生成元ポリシー (Same origin policy) を回避される脆弱性が存在します。\r\n\r\n本脆弱性は Webkit における脆弱性です。\r\nGoogle Chrome 以外の Webkit を利用する製品も影響を受ける可能性があります。",
+  "identifier": "JVNDB-2012-002009",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU624491/index.html",
+      "source": "JVN",
+      "id": "JVNVU#624491"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3067",
+      "source": "CVE",
+      "id": "CVE-2011-3067"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3067",
+      "source": "NVD",
+      "id": "CVE-2011-3067"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:safari",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Safari"
+    },
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-10-17T10:59+09:00",
+  "issued": "2012-04-09T15:38+09:00",
+  "modified": "2012-10-17T10:59+09:00"
+}

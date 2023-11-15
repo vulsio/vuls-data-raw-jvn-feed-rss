@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006052.html",
+  "title": "Dell Foundation Services (DFS) がルート証明書と秘密鍵 (eDellRoot) をインストールする問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006052.html",
+  "description": "Dell Foundation Services (DFS) は、信頼されたルート証明書として eDellRoot を Windows にインストールします。この証明書は秘密鍵を含んでいます。攻撃者は信頼された証明書を作成することで、ユーザになりすましたり、中間者 (man-in-the-middle) 攻撃により、通信内容を解読したりすることが可能となります。結果として、機密情報が漏えいする可能性があります。\r\n\r\nDell Foundation Services (DFS) は、いくつかの Dell 製の機器にプリインストールされている、遠隔サポート用のコンポーネントです。DFS は、秘密鍵を含む eDellRoot を信頼されたルート証明書としてインストールします。",
+  "identifier": "JVNDB-2015-006052",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91791008/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91791008"
+    },
+    {
+      "text": "http://insights.sei.cmu.edu/cert/2015/03/the-risks-of-ssl-inspection.html",
+      "source": "CERT/CC blog",
+      "id": "The Risks of SSL Inspection"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/870761",
+      "source": "CERT-VN",
+      "id": "VU#870761"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:dell:dell_foundation_services",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Dell Foundation Services"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.4",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:N"
+    }
+  ],
+  "date": "2015-11-30T17:45+09:00",
+  "issued": "2015-11-30T17:45+09:00",
+  "modified": "2015-11-30T17:45+09:00"
+}

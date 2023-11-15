@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004119.html",
+  "title": "libxml2 の xmlreader におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004119.html",
+  "description": "libxml2 の xmlreader には、XML エンティティ拡張 (XEE) 攻撃に関する処理に不備があるため、サービス運用妨害 (メモリ消費) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-004119",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97668313/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97668313"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1819",
+      "source": "CVE",
+      "id": "CVE-2015-1819"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1819",
+      "source": "NVD",
+      "id": "CVE-2015-1819"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:xmlsoft:libxml2",
+      "version": "2.2",
+      "vendor": "xmlsoft.org",
+      "product": "libxml2"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:tvos",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "tvOS"
+    },
+    {
+      "text": "cpe:/o:apple:watchos",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "watchOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2016-03-29T15:41+09:00",
+  "issued": "2015-08-18T15:15+09:00",
+  "modified": "2016-03-29T15:41+09:00"
+}

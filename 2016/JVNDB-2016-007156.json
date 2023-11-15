@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007156.html",
+  "title": "Windows 上で稼動する MyBB および Merge System における任意の CSS ファイルを上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007156.html",
+  "description": "Windows 上で稼動する MyBB (別名 MyBulletinBoard) および Merge System には、任意の CSS ファイルを上書きされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-007156",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9415",
+      "source": "CVE",
+      "id": "CVE-2016-9415"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9415",
+      "source": "NVD",
+      "id": "CVE-2016-9415"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/284.html",
+      "id": "CWE-284",
+      "title": "不適切なアクセス制御(CWE-284)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mybb:merge_system",
+      "version": "2.2",
+      "vendor": "MyBB Group",
+      "product": "Merge System"
+    },
+    {
+      "text": "cpe:/a:mybb:mybb",
+      "version": "2.2",
+      "vendor": "MyBB Group",
+      "product": "MyBB"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2017-02-13T15:32+09:00",
+  "issued": "2017-02-13T15:32+09:00",
+  "modified": "2017-02-13T15:32+09:00"
+}

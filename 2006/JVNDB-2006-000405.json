@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000405.html",
+  "title": "Wireshark の NCP NMAS/NDPS 解析部における 0ff-by-one エラーの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000405.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nWireshark (Ethereal) には以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・GSM BSSMAP 解析部でのクラッシュ (0.10.11 - 0.99.0) (CVE-2006-3627)\r\n・ANSI MAP 解析部でのフォーマットストリング (0.10.0 - 0.99.0) (CVE-2006-3628)\r\n・Checkpoint FW-1 解析部でのフォーマットストリング (0.10.10 - 0.99.0) (CVE-2006-3628)\r\n・MQ 解析部でのフォーマットストリング (0.10.4 - 0.99.0) (CVE-2006-3628)\r\n・XML 解析部でのフォーマットストリング (0.10.13 - 0.99.0) (CVE-2006-3628)\r\n・MOUNT 解析部でのメモリの大量消費 (0.9.4 - 0.99.0) (CVE-2006-3629)\r\n・NCP NMAS/NDPS 解析部での 1 つずれによるエラー (0.9.7 - 0.99.0) (CVE-2006-3630)\r\n・NTP 解析部でのフォーマットストリング (0.10.13 - 0.99.0) (CVE-2006-3628)\r\n・SSH 解析部での無限ループ (0.9.10 - 0.99.0) (CVE-2006-3631)\r\n・NFS 解析部でのバッファオーバーフロー (0.8.16 - 0.99.0) (CVE-2006-3632)\r\n\r\nリモートの攻撃者に悪用された場合、Wireshark がクラッシュしサービス不能状態に陥る、あるいは Wireshark の実行権限 (通常 root 権限) で任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2006-000405",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3630",
+      "source": "CVE",
+      "id": "CVE-2006-3630"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3630",
+      "source": "NVD",
+      "id": "CVE-2006-3630"
+    },
+    {
+      "text": "http://secunia.com/advisories/21078",
+      "source": "SECUNIA",
+      "id": "SA21078"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19051",
+      "source": "BID",
+      "id": "19051"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/2850",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-2850"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

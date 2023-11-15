@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005626.html",
+  "title": "Apache Commons FileUpload の DiskFileItem におけるファイルを操作される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005626.html",
+  "description": "Apache Commons FileUpload の DiskFileItem には、ファイルを操作される、およびリモートでコードを実行される脆弱性が存在します。\r\n\r\nなお、ベンダは、「調査の結果、Apache Commons File Upload の脆弱性ではないとの結論に至りました。アプリケーションが信頼できないソースからのデータをフィルタリングせずに、あるいは検証せずにデシリアライズした場合、攻撃者に利用される可能性があるのはアプリケーションの脆弱性であってライブラリの脆弱性ではありません。」と述べています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-284: Improper Access Control (不適切なアクセス制御) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/284.html",
+  "identifier": "JVNDB-2016-005626",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1000031",
+      "source": "CVE",
+      "id": "CVE-2016-1000031"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1000031",
+      "source": "NVD",
+      "id": "CVE-2016-1000031"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:commons_fileupload",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Commons FileUpload"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-10-31T16:54+09:00",
+  "issued": "2016-10-31T16:54+09:00",
+  "modified": "2016-10-31T16:54+09:00"
+}

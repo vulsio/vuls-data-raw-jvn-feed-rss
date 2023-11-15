@@ -1,0 +1,85 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000159.html",
+  "title": "Linux Kernel の ip_route_input() 関数における Null ポインタデリファレンスの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000159.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には以下の複数の問題が存在します。\r\n\r\n1) __keyring_search_one() 関数におけるチェックの不備のため、キーリングに特定のユーザキーを追加すると無効なメモリ参照が発生する問題が存在します。(Linux Kernel 2.6.16.3 未満, CVE-2006-1522)\r\n\r\n2) Intel EM64T CPU で稼動するシステムにおいて、特定のリターンアドレスの処理が不適切であるため、適切な命令が実行されずに SYSRET 命令が実行されてしまう問題が存在します。(Linux Kernel 2.6.16.5 未満, CVE-2006-0744)\r\n\r\n3) ip_route_input() 関数において、マルチキャストアドレスを処理する際に NULL ポインタデリファレンスが発生する問題が存在します。(Linux Kernel 2.6.16.8 未満, CVE-2006-1525)\r\n\r\n4) readv() および writev() システムコールにおいて、Linux Security Modules (LSM) によりファイルパーミッションチェックを行うコードが含まれていないため、これらのシステムコールにより LSM によるアクセス制限が回避される問題が存在します。(Linux Kernel 2.6.16.12 未満, CVE-2006-1856)\r\n\r\n5) SCTP-netfilter を実装するコードにおいて、SCTP chunk サイズチェックが不適切であるため、無限ループが発生する問題が存在します。(Linux Kernel 2.6.16.13 未満, CVE-2006-1527)\r\n\r\n6) SMBFS (Server Message Block File System) において、相対パスの処理が不適切であるため、chroot によりルートディレクトリが設定されている場合、相対パス表記により設定したルートディレクトリより上位のディレクトリにアクセス可能となる問題が存在します。(Linux Kernel 2.6.16.14 未満, CVE-2006-1864)\r\n\r\n7) SCTP プロトコルの実装において、ECNE チャンクの処理に不備が存在するため、セッションが CLOSED の状態で予期しないチャンクを処理した場合にカーネルパニックが発生する問題が存在します。(Linux Kernel 2.6.16.15 未満, CVE-2006-2271)\r\n\r\n8) SCTP プロトコルの実装において IP フラグメントされた SCTP 制御チャンク (COOKIE_ECHO、HEARTBEAT) の処理に不備が存在するため、カーネルパニックが発生する問題が存在します。(Linux Kernel 2.6.16.15 未満, CVE-2006-2272)\r\n\r\n9) SCTP プロトコルの実装において sctp_skb_pull() 関数に不備が存在し、複数の DATA フラグメントを含むパケットを処理した場合に無限ループが発生し、Linux Kernel がクラッシュする問題が存在します。(Linux Kernel 2.6.16.15 未満, CVE-2006-2274)\r\n\r\nリモート/ローカルの攻撃者にこれらの問題を悪用された場合、本来許可されていない処理やアクセスが許可される、あるいはシステムがサービス不能状態に陥る可能性があります。",
+  "identifier": "JVNDB-2006-000159",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1525",
+      "source": "CVE",
+      "id": "CVE-2006-1525"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1525",
+      "source": "NVD",
+      "id": "CVE-2006-1525"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17910",
+      "source": "BID",
+      "id": "17910"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17806",
+      "source": "BID",
+      "id": "17806"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17735",
+      "source": "BID",
+      "id": "17735"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17593",
+      "source": "BID",
+      "id": "17593"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17541",
+      "source": "BID",
+      "id": "17541"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17451",
+      "source": "BID",
+      "id": "17451"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17955",
+      "source": "BID",
+      "id": "17955"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18105",
+      "source": "BID",
+      "id": "18105"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

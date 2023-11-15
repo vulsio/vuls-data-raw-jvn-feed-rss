@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000053.html",
+  "title": "IPTables の FTP Stateful Inspection における任意のフィルタルールが挿入される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000053.html",
+  "description": "FTP と ftp-data プロトコルの中継に用いられる iptables のモジュールは、 FTP の PORT コマンドが利用された場合、RELATED へさらに許可ルールを追加し、結果として iptables で設定されたアクセスコントロールは回避され、本来の意図とは異なる方向のコネクションを確立されてしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2001-000053",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0405",
+      "source": "CVE",
+      "id": "CVE-2001-0405"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2001-0405",
+      "source": "NVD",
+      "id": "CVE-2001-0405"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/2602",
+      "source": "BID",
+      "id": "2602"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

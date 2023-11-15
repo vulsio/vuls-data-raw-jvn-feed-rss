@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001259.html",
+  "title": "Logsurfer および Logsurfer+ におけるメモリ二重解放の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001259.html",
+  "description": "Logsurfer および Logsurfer+ の src/exec.c 内にある prepare_exec 関数には、メモリ二重解放の脆弱性が存在します。",
+  "identifier": "JVNDB-2012-001259",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3626",
+      "source": "CVE",
+      "id": "CVE-2011-3626"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3626",
+      "source": "NVD",
+      "id": "CVE-2011-3626"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:drusus:logsurfer",
+      "version": "2.2",
+      "vendor": "drusus",
+      "product": "Logsurfer"
+    },
+    {
+      "text": "cpe:/a:kerry_thompson:logsurfer%2B",
+      "version": "2.2",
+      "vendor": "Kerry Thompson",
+      "product": "Logsurfer+"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-02-01T16:24+09:00",
+  "issued": "2012-02-01T16:24+09:00",
+  "modified": "2012-02-01T16:24+09:00"
+}

@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001117.html",
+  "title": "FATEK Automation 製 FvDesigner に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001117.html",
+  "description": "FATEK Automation 社が提供する FvDesigner は、FATEK FVHMI シリーズ製品プロジェクトの設計と開発に使用されるソフトウェアツールです。\r\nFvDesigner には、次の複数の脆弱性が存在します。\r\n\r\n　* 解放済みメモリの使用 (Use-after-free) (CWE-416) - CVE-2021-22662\r\n　* 初期化されていないポインタのアクセス (CWE-824) - CVE-2021-22670\r\n　* スタックベースのバッファオーバーフロー (CWE-121) - CVE-2021-22666\r\n　* 境界外書き込み (CWE-787) - CVE-2021-22683\r\n　* 境界外読み取り (CWE-125) - CVE-2021-22638",
+  "identifier": "JVNDB-2021-001117",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU96453957",
+      "source": "JVN",
+      "id": "JVNVU#96453957"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22662",
+      "source": "CVE",
+      "id": "CVE-2021-22662"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22670",
+      "source": "CVE",
+      "id": "CVE-2021-22670"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22666",
+      "source": "CVE",
+      "id": "CVE-2021-22666"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22683",
+      "source": "CVE",
+      "id": "CVE-2021-22683"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22638",
+      "source": "CVE",
+      "id": "CVE-2021-22638"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-056-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-056-02"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/121.html",
+      "id": "CWE-121",
+      "title": "スタックベースのバッファオーバーフロー(CWE-121)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/416.html",
+      "id": "CWE-416",
+      "title": "解放済みメモリの使用(CWE-416)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/824.html",
+      "id": "CWE-824",
+      "title": "初期化されていないポインタのアクセス(CWE-824)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fatek:fvdesigner",
+      "version": "2.2",
+      "vendor": "FATEK Automation Corporation",
+      "product": "FvDesigner"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-03-01T17:26+09:00",
+  "issued": "2021-03-01T17:26+09:00",
+  "modified": "2021-03-01T17:26+09:00"
+}

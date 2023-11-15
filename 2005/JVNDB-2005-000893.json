@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000893.html",
+  "title": "Linux kernel の smbfs に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000893.html",
+  "description": "Linux kernel の smbfs には、UNIX 拡張を有効にしている場合、特定の mount オプションを無視するため、クライアントにサーバで指定された uid、gid、および mode 設定を使用させる脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000893",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5871",
+      "source": "CVE",
+      "id": "CVE-2006-5871"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-5871",
+      "source": "NVD",
+      "id": "CVE-2006-5871"
+    },
+    {
+      "text": "http://secunia.com/advisories/23361",
+      "source": "SECUNIA",
+      "id": "SA23361"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/21523",
+      "source": "BID",
+      "id": "21523"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-03-15T16:40+09:00",
+  "issued": "2010-03-15T16:40+09:00",
+  "modified": "2010-03-15T16:40+09:00"
+}

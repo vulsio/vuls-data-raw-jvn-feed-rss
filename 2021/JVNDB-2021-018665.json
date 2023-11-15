@@ -1,0 +1,99 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-018665.html",
+  "title": "レッドハットの libvirt 他複数ベンダの製品における重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-018665.html",
+  "description": "レッドハットの libvirt 他複数ベンダの製品には、重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-018665",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-3631",
+      "source": "CVE",
+      "id": "CVE-2021-3631"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3631",
+      "source": "NVD",
+      "id": "CVE-2021-3631"
+    },
+    {
+      "text": "https://access.redhat.com/errata/RHSA-2021:3631",
+      "source": "関連文書",
+      "id": "access.redhat.com (RHSA-2021:3631)"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1977726",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (1977726)"
+    },
+    {
+      "text": "https://gitlab.com/libvirt/libvirt/-/commit/15073504dbb624d3f6c911e85557019d3620fdb2",
+      "source": "関連文書",
+      "id": "gitlab.com (15073504dbb624d3f6c911e85557019d3620fdb2)"
+    },
+    {
+      "text": "https://gitlab.com/libvirt/libvirt/-/issues/153",
+      "source": "関連文書",
+      "id": "gitlab.com (issues/153)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202210-06",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202210-06)"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20220331-0010/",
+      "source": "関連文書",
+      "id": "security.netapp.com (ntap-20220331-0010)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/732.html",
+      "id": "CWE-732",
+      "title": "重要なリソースに対する不適切なパーミッションの割り当て(CWE-732)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:netapp:ontap_select_deploy_administration_utility",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "ONTAP Select Deploy administration utility"
+    },
+    {
+      "text": "cpe:/a:redhat:libvirt",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "libvirt"
+    },
+    {
+      "text": "cpe:/a:redhat:openshift_container_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenShift Container Platform"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2023-07-04T17:36+09:00",
+  "issued": "2023-07-04T17:36+09:00",
+  "modified": "2023-07-04T17:36+09:00"
+}

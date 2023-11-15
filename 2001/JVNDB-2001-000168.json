@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000168.html",
+  "title": "Red Hat Linux の IPTables における情報漏洩の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000168.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nRedHat Linux のシステムに同梱されている、ファイアウォールコンポーネントである iptables に、設定ファイルの適用の実装の不備が存在します。 \r\n\r\nIptables のルールを設定する際に、 -c というオプションを使用すると、作成した設定ファイルの読み込みが不可能になります。そのため、システムを再起動した際に、設定ファイルが適用されないという問題が発生します。 \r\nこの問題が直接システムに被害を与えることはありませんが、ファイアウォールのルールが適切に適用されないため、任意のリモートユーザから、許可されていないシステムリソースへのアクセスが可能になる可能性があります。",
+  "identifier": "JVNDB-2001-000168",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1387",
+      "source": "CVE",
+      "id": "CVE-2001-1387"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2001-1387",
+      "source": "NVD",
+      "id": "CVE-2001-1387"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/3520",
+      "source": "BID",
+      "id": "3520"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

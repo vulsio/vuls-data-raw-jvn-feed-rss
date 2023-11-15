@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000361.html",
+  "title": "OpenOffice.org の BASIC マクロ処理時に確認ダイアログを表示しない脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000361.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nOpenOffice.org には以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・OpenOffice.org ドキュメントに埋め込まれた BASIC マクロの処理に不備が存在するため、ユーザにマクロを実行するか確認するダイアログが表示されずに BASIC マクロが実行される問題 (CVE-2006-2198)\r\n\r\n・OpenOffice.org ドキュメント内の特定の Java アプレットの処理に不備が存在するため、サンドボックスによるセキュリティ制限が回避される問題 (CVE-2006-2199)\r\n\r\n・特定の XML ドキュメントの処理に不備が存在するため、ヒープオーバーフローを生じる問題 (CVE-2006-3117)\r\n\r\nリモートの攻撃者に悪用された場合、OpenOffice.org アプリケーションを実行するユーザの権限で、システム上のファイルの削除/読み取りなどの操作、あるいは任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2006-000361",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2198",
+      "source": "CVE",
+      "id": "CVE-2006-2198"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-2198",
+      "source": "NVD",
+      "id": "CVE-2006-2198"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/170113",
+      "source": "CERT-VN",
+      "id": "VU#170113"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/243681",
+      "source": "CERT-VN",
+      "id": "VU#243681"
+    },
+    {
+      "text": "http://secunia.com/advisories/20867/",
+      "source": "SECUNIA",
+      "id": "SA20867"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18739",
+      "source": "BID",
+      "id": "18739"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18738",
+      "source": "BID",
+      "id": "18738"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18737",
+      "source": "BID",
+      "id": "18737"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/2607",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-2607"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

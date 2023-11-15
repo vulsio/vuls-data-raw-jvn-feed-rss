@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005630.html",
+  "title": "phpMyAdmin におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-005630.html",
+  "description": "phpMyAdmin は、以下のファイルに関する処理に不備があるため、クロスサイトスクリプティングの脆弱性が存在します。\r\n(1) db_search.php\r\n(2) db_sql.php\r\n(3) db_structure.php\r\n(4) js/messages.php\r\n(5) libraries/common.lib.php\r\n(6) libraries/database_interface.lib.php\r\n(7) libraries/dbi/mysql.dbi.lib.php\r\n(8) libraries/dbi/mysqli.dbi.lib.php\r\n(9) libraries/db_info.inc.php\r\n(10) libraries/sanitizing.lib.php\r\n(11) libraries/sqlparser.lib.php\r\n(12) server_databases.php\r\n(13) server_privileges.php\r\n(14) setup/config.php\r\n(15) sql.php\r\n(16) tbl_replace.php\r\n(17) tbl_sql.php.",
+  "identifier": "JVNDB-2010-005630",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3056",
+      "source": "CVE",
+      "id": "CVE-2010-3056"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3056",
+      "source": "NVD",
+      "id": "CVE-2010-3056"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:phpmyadmin:phpmyadmin",
+      "version": "2.2",
+      "vendor": "The phpMyAdmin Project",
+      "product": "phpMyAdmin"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-12-20T19:29+09:00",
+  "issued": "2012-12-20T19:29+09:00",
+  "modified": "2012-12-20T19:29+09:00"
+}

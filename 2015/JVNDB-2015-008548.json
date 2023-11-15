@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-008548.html",
+  "title": "LibreSSL における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-008548.html",
+  "description": "LibreSSL には、境界外書き込みに関する脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-3508 に対する修正が不完全だったことに起因する脆弱性です。",
+  "identifier": "JVNDB-2015-008548",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5334",
+      "source": "CVE",
+      "id": "CVE-2015-5334"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-5334",
+      "source": "NVD",
+      "id": "CVE-2015-5334"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openbsd:libressl",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "LibreSSL"
+    },
+    {
+      "text": "cpe:/o:opensuse_project:opensuse",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "openSUSE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-02-13T12:20+09:00",
+  "issued": "2020-02-13T12:20+09:00",
+  "modified": "2020-02-13T12:20+09:00"
+}

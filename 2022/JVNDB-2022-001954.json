@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001954.html",
+  "title": "三菱電機製 MELSEC および MELIPC シリーズにおける不適切なリソースロックの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001954.html",
+  "description": "三菱電機株式会社が提供する MELSEC シリーズの CPU ユニットおよび MELIPC シリーズには、不適切なリソースロックの脆弱性（CWE-413、CVE-2022-24946）が存在します。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、 JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2022-001954",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU90895626/index.html",
+      "source": "JVN",
+      "id": "JVNVU#90895626"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-24946",
+      "source": "CVE",
+      "id": "CVE-2022-24946"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-172-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-172-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/413.html",
+      "id": "CWE-413",
+      "title": "不適切なリソースロック(CWE-413)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mitsubishielectric:melipc_series",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "MELIPC シリーズ"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:melsec-l_firmware",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "MELSEC L シリーズ"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:melsec-q_firmware",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "MELSEC Q シリーズ"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:melsec_iq-r_firmware",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "MELSEC iQ-R シリーズ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-07-28T12:30+09:00",
+  "issued": "2022-06-15T17:56+09:00",
+  "modified": "2023-07-28T12:30+09:00"
+}

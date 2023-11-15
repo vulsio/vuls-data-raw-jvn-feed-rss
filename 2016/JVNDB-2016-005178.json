@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005178.html",
+  "title": "Xen におけるゲストの任意のタスクに属する複数のレジスタのステート情報を読まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005178.html",
+  "description": "Xen は、CR0.TS および CR0.EM を適切に履行しないため、ゲストの任意のタスクに属する FPU、MMX、または XMM レジスタのステート情報を読まれるまたは変更される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-005178",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7777",
+      "source": "CVE",
+      "id": "CVE-2016-7777"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7777",
+      "source": "NVD",
+      "id": "CVE-2016-7777"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:citrix:xenserver",
+      "version": "2.2",
+      "vendor": "シトリックス・システムズ",
+      "product": "Citrix XenServer"
+    },
+    {
+      "text": "cpe:/o:xen:xen",
+      "version": "2.2",
+      "vendor": "Xen プロジェクト",
+      "product": "Xen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2016-10-13T15:09+09:00",
+  "issued": "2016-10-13T15:09+09:00",
+  "modified": "2016-10-13T15:09+09:00"
+}

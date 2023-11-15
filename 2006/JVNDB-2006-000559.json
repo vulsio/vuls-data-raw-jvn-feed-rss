@@ -1,0 +1,90 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000559.html",
+  "title": "Mozilla 製品の JavaScript エンジンにおけるバッファオーバーリードの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000559.html",
+  "description": "Mozilla 製品には JavaScript エンジンにおいて、閉じられていない文字セット中で \"＼\" (バックスラッシュ ※本来は半角) で終わる正規表現（例えば、\"[＼＼\"）を処理した場合に、終端を超えてバッファを読み込んでしまうためクラッシュする脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000559",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4566",
+      "source": "CVE",
+      "id": "CVE-2006-4566"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4566",
+      "source": "NVD",
+      "id": "CVE-2006-4566"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/141528",
+      "source": "CERT-VN",
+      "id": "VU#141528"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/20042",
+      "source": "BID",
+      "id": "20042"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/28958",
+      "source": "XF",
+      "id": "28958"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:seamonkey",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla SeaMonkey"
+    },
+    {
+      "text": "cpe:/a:mozilla:thunderbird",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Thunderbird"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

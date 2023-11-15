@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005701.html",
+  "title": "DenyHosts におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005701.html",
+  "description": "DenyHosts は、認証ログの解析に誤った正規表現を使用するため、サービス運用妨害 (IP アドレスの不正なブロック) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005701",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6890",
+      "source": "CVE",
+      "id": "CVE-2013-6890"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6890",
+      "source": "NVD",
+      "id": "CVE-2013-6890"
+    },
+    {
+      "text": "http://seclists.org/oss-sec/2013/q4/535",
+      "source": "関連文書",
+      "id": "Re: [SECURITY] [DSA 2826-1] denyhosts security update"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:phil_schwartz:denyhosts",
+      "version": "2.2",
+      "vendor": "Phil Schwartz",
+      "product": "DenyHosts"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-12-25T16:25+09:00",
+  "issued": "2013-12-25T16:25+09:00",
+  "modified": "2013-12-25T16:25+09:00"
+}

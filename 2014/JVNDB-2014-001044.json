@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001044.html",
+  "title": "Microsoft Windows 7 および Windows Server 2008 R2 のカーネルモードドライバの win32k.sys における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001044.html",
+  "description": "Microsoft Windows 7 および Windows Server 2008 R2 のカーネルモードドライバの win32k.sys は、ウィンドウハンドルの処理中に thread-owned オブジェクトを適切に配慮しないため、権限を取得される脆弱性が存在します。\r\n\r\nマイクロソフトセキュリティ情報には、この脆弱性は「Win32k のウィンドウ ハンドルの脆弱性」と記載されています。",
+  "identifier": "JVNDB-2014-001044",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0262",
+      "source": "CVE",
+      "id": "CVE-2014-0262"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0262",
+      "source": "NVD",
+      "id": "CVE-2014-0262"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2014/at140005.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2014-0005"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/topics?seq=12876",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS14-001,002,003,004)(2014年01月15日)"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20140115-ms.html",
+      "source": "IPA",
+      "id": "Microsoft 製品の脆弱性対策について(2014年1月)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_7",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 7"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-01-16T11:50+09:00",
+  "issued": "2014-01-16T11:50+09:00",
+  "modified": "2014-01-16T11:50+09:00"
+}

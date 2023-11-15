@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004185.html",
+  "title": "iOS 用 Facebook アプリおよび Facebook Messenger アプリにおけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004185.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\niOS 用 Facebook アプリおよび Facebook Messenger アプリには、クロスサイトスクリプティングの脆弱性が存在します。\r\n\r\nなお、ベンダは、「ユーザは HTML ファイルのコンテンツがレンダリングされる前にインタースティシャル警告 (interstitial warning) を受け入れているはずであり、また HTML コンテンツのオリジンはサンドボックスのドメインである」との理由から、本レポートの重要性に異議を唱えています。",
+  "identifier": "JVNDB-2014-004185",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6392",
+      "source": "CVE",
+      "id": "CVE-2014-6392"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6392",
+      "source": "NVD",
+      "id": "CVE-2014-6392"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2014/Sep/13",
+      "source": "関連文書",
+      "id": "Reflected XSS Attacks vulnerabilities used MIME Sniffing in Facebook Messenger and Facebook App for iOS."
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:facebook:facebook",
+      "version": "2.2",
+      "vendor": "Facebook",
+      "product": "facebook"
+    },
+    {
+      "text": "cpe:/a:facebook:facebook_messenger",
+      "version": "2.2",
+      "vendor": "Facebook",
+      "product": "Facebook Messenger"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2015-10-21T16:01+09:00",
+  "issued": "2014-09-16T16:55+09:00",
+  "modified": "2015-10-21T16:01+09:00"
+}

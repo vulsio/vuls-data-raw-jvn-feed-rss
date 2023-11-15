@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-007510.html",
+  "title": "OpenBSD における古典的バッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-007510.html",
+  "description": "OpenBSD には、古典的バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2022-007510",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-27881",
+      "source": "CVE",
+      "id": "CVE-2022-27881"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-27881",
+      "source": "NVD",
+      "id": "CVE-2022-27881"
+    },
+    {
+      "text": "https://blog.quarkslab.com/heap-overflow-in-openbsds-slaacd-via-router-advertisement.html",
+      "source": "関連文書",
+      "id": "blog.quarkslab.com (heap-overflow-in-openbsds-slaacd-via-router-advertisement)"
+    },
+    {
+      "text": "https://ftp.openbsd.org/pub/OpenBSD/patches/6.9/common/030_slaacd.patch.sig",
+      "source": "関連文書",
+      "id": "ftp.openbsd.org (030_slaacd.patch.sig)"
+    },
+    {
+      "text": "https://ftp.openbsd.org/pub/OpenBSD/patches/7.0/common/014_slaacd.patch.sig",
+      "source": "関連文書",
+      "id": "ftp.openbsd.org (014_slaacd.patch.sig)"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20220506-0005/",
+      "source": "関連文書",
+      "id": "security.netapp.com (ntap-20220506-0005)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/120.html",
+      "id": "CWE-120",
+      "title": "古典的バッファオーバーフロー(CWE-120)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:openbsd:openbsd",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenBSD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-07-18T17:31+09:00",
+  "issued": "2023-07-18T17:31+09:00",
+  "modified": "2023-07-18T17:31+09:00"
+}

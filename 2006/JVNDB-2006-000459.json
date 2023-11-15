@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000459.html",
+  "title": "Cisco IOS/PIX Firewall の IKE におけるリソースが大量に消費される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000459.html",
+  "description": "Cisco IOS 、PIX Firewall が実装する IKE version 1 プロトコルには、新たな IKE セッションリクエストを受信した後に、そのセッションが失効となる前に再度新たな IKE リクエストを繰り返し受信した場合、IKE セッションを確立するためのリソースを過度に消費してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000459",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3906",
+      "source": "CVE",
+      "id": "CVE-2006-3906"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3906",
+      "source": "NVD",
+      "id": "CVE-2006-3906"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19176",
+      "source": "BID",
+      "id": "19176"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/27972",
+      "source": "XF",
+      "id": "27972"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:cisco:pix_asa",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco PIX/ASA"
+    },
+    {
+      "text": "cpe:/h:cisco:pix_firewall",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco PIX Firewall"
+    },
+    {
+      "text": "cpe:/o:cisco:ios",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005064.html",
+  "title": "Linux Kernel 用 OpenVZ 修正におけるカーネルスタックメモリから重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005064.html",
+  "description": "Linux Kernel 用 OpenVZ 修正の 042stab080.2 未満の vzkernel は、特定の長さの変数を初期化しないため、カーネルスタックメモリから重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005064",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2239",
+      "source": "CVE",
+      "id": "CVE-2013-2239"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2239",
+      "source": "NVD",
+      "id": "CVE-2013-2239"
+    },
+    {
+      "text": "http://wiki.openvz.org/Download/kernel/rhel6-testing/042stab080.2",
+      "source": "関連文書",
+      "id": "OpenVZ Linux Containers project：Download/kernel/rhel6-testing/042stab080.2"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:N/A:N"
+    }
+  ],
+  "date": "2013-11-13T14:45+09:00",
+  "issued": "2013-11-13T14:45+09:00",
+  "modified": "2013-11-13T14:45+09:00"
+}

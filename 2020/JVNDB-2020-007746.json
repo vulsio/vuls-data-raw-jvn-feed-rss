@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-007746.html",
+  "title": "Xen における権限管理に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-007746.html",
+  "description": "Xen には、権限管理に関する脆弱性、および競合状態に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-007746",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15567",
+      "source": "CVE",
+      "id": "CVE-2020-15567"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-15567",
+      "source": "NVD",
+      "id": "CVE-2020-15567"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/269.html",
+      "id": "CWE-269",
+      "title": "不適切な権限管理(CWE-269)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:xen:xen",
+      "version": "2.2",
+      "vendor": "Xen プロジェクト",
+      "product": "Xen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-08-25T15:31+09:00",
+  "issued": "2020-08-25T15:31+09:00",
+  "modified": "2020-08-25T15:31+09:00"
+}

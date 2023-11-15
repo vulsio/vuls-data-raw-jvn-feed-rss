@@ -1,0 +1,87 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000740.html",
+  "title": "ELinks において https の POST リクエストで平文が含まれる問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000740.html",
+  "description": "ELinks には、https URL の POST リクエストを送信する際に、平文で POST リクエストの body と content ヘッダを加える問題が存在します。\r\nこの問題は、プロキシで https が有効である場合に発生します。",
+  "identifier": "JVNDB-2007-000740",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5034",
+      "source": "CVE",
+      "id": "CVE-2007-5034"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5034",
+      "source": "NVD",
+      "id": "CVE-2007-5034"
+    },
+    {
+      "text": "http://secunia.com/advisories/26956/",
+      "source": "SECUNIA",
+      "id": "SA26956"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25799",
+      "source": "BID",
+      "id": "25799"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1018764",
+      "source": "SECTRACK",
+      "id": "1018764"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/3278",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-3278"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:elinks:elinks",
+      "version": "2.2",
+      "vendor": "ELinks",
+      "product": "Elinks"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-11-29T13:46+09:00",
+  "issued": "2007-10-16T16:15+09:00",
+  "modified": "2007-11-29T13:46+09:00"
+}

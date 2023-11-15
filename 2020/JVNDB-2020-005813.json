@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005813.html",
+  "title": "QEMU における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005813.html",
+  "description": "QEMU には、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-005813",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13361",
+      "source": "CVE",
+      "id": "CVE-2020-13361"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-13361",
+      "source": "NVD",
+      "id": "CVE-2020-13361"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2020/05/28/1",
+      "source": "関連文書",
+      "id": "CVE-2020-13361 QEMU: es1370: OOB access due to incorrect frame count  leads to DoS"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "3.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:L/A:L"
+    }
+  ],
+  "date": "2020-06-23T12:36+09:00",
+  "issued": "2020-06-23T12:36+09:00",
+  "modified": "2020-06-23T12:36+09:00"
+}

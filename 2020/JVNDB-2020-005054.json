@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005054.html",
+  "title": "Linux ディストリビューション用の SQLiteODBC パッケージにおける競合状態に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005054.html",
+  "description": "Linux ディストリビューション用の SQLiteODBC パッケージには、競合状態に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-005054",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12050",
+      "source": "CVE",
+      "id": "CVE-2020-12050"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-12050",
+      "source": "NVD",
+      "id": "CVE-2020-12050"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1825762",
+      "source": "関連文書",
+      "id": "Bug 1825762 - Packaging vulnerability in sqliteODBC exposing to local privilege escalation to root "
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:opensuse_project:backports_sle",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "Backports SLE"
+    },
+    {
+      "text": "cpe:/a:sqliteodbc_project:sqliteodbc",
+      "version": "2.2",
+      "vendor": "SQLiteODBC project",
+      "product": "SQLiteODBC"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-06-05T13:45+09:00",
+  "issued": "2020-06-05T13:45+09:00",
+  "modified": "2020-06-05T13:45+09:00"
+}

@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002514.html",
+  "title": "X.Org libXfont における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002514.html",
+  "description": "X.Org libXfont の (1) fs_get_reply、(2) fs_alloc_glyphs、および (3) fs_read_extent_info 関数には、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002514",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0211",
+      "source": "CVE",
+      "id": "CVE-2014-0211"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0211",
+      "source": "NVD",
+      "id": "CVE-2014-0211"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2014-0278.html",
+      "source": "関連文書",
+      "id": "MGASA-2014-0278"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:oracle:virtualization_secure_global_desktop",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Virtualization"
+    },
+    {
+      "text": "cpe:/a:x.org:libxfont",
+      "version": "2.2",
+      "vendor": "X.Org Foundation",
+      "product": "libXfont"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-06-26T16:23+09:00",
+  "issued": "2014-05-19T15:11+09:00",
+  "modified": "2015-06-26T16:23+09:00"
+}

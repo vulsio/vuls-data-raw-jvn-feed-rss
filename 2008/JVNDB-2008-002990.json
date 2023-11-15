@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002990.html",
+  "title": "grsecurity の RBAC 機能における関数の呼び出し制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002990.html",
+  "description": "grsecurity の RBAC 機能は、(1) sys_setfsuid および (2) sys_setfsgid 呼び出しに対して、user_transition_deny、および user_transition_allowcalls ルールを強制しないため、呼び出し制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2008-002990",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1940",
+      "source": "CVE",
+      "id": "CVE-2008-1940"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-1940",
+      "source": "NVD",
+      "id": "CVE-2008-1940"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:grsecurity:grsecurity_kernel_patch",
+      "version": "2.2",
+      "vendor": "grsecurity",
+      "product": "grsecurity kernel patch"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-06-26T16:02+09:00",
+  "issued": "2012-06-26T16:02+09:00",
+  "modified": "2012-06-26T16:02+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004413.html",
+  "title": "WordPress の wp-includes/class-wp-atom-server.php におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004413.html",
+  "description": "WordPress の wp-includes/class-wp-atom-server.php 内の create_post 関数は、機能のチェックを適切に行わないため、アクセス制限を回避され、新しい投稿を公開される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004413",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4421",
+      "source": "CVE",
+      "id": "CVE-2012-4421"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4421",
+      "source": "NVD",
+      "id": "CVE-2012-4421"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wordpress:wordpress",
+      "version": "2.2",
+      "vendor": "WordPress.org",
+      "product": "WordPress"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-09-19T11:24+09:00",
+  "issued": "2012-09-19T11:24+09:00",
+  "modified": "2012-09-19T11:24+09:00"
+}

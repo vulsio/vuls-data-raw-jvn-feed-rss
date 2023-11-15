@@ -1,0 +1,83 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001876.html",
+  "title": "Linux kernel の e1000_clean_rx_irq 関数における整数アンダーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001876.html",
+  "description": "Linux kernel の e1000 ドライバにある e1000_clean_rx_irq 関数には、フレームサイズの処理に不備があるため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001876",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1385",
+      "source": "CVE",
+      "id": "CVE-2009-1385"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1385",
+      "source": "NVD",
+      "id": "CVE-2009-1385"
+    },
+    {
+      "text": "http://secunia.com/advisories/35265",
+      "source": "SECUNIA",
+      "id": "SA35265"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/35185",
+      "source": "BID",
+      "id": "35185"
+    },
+    {
+      "text": "http://osvdb.org/54892",
+      "source": "OSVDB",
+      "id": "54892"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2010-02-15T11:03+09:00",
+  "issued": "2009-08-13T10:38+09:00",
+  "modified": "2010-02-15T11:03+09:00"
+}

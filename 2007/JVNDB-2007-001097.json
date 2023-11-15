@@ -1,0 +1,94 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001097.html",
+  "title": "Linux Kernel のコアダンプファイルの UID の取り扱いに関する情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001097.html",
+  "description": "Linux Kernel には fs/exec.c の do_coredump() 関数において、root プロセスが作成する箇所に以前のコアダンプファイルがあった場合、コアダンプファイルの UID を変更しないため、情報漏えいの脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001097",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6206",
+      "source": "CVE",
+      "id": "CVE-2007-6206"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-6206",
+      "source": "NVD",
+      "id": "CVE-2007-6206"
+    },
+    {
+      "text": "http://secunia.com/advisories/27908/",
+      "source": "SECUNIA",
+      "id": "SA27908"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26701",
+      "source": "BID",
+      "id": "26701"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/38841",
+      "source": "XF",
+      "id": "38841"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/4090",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-4090"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2009-02-06T12:14+09:00",
+  "issued": "2008-02-05T16:13+09:00",
+  "modified": "2009-02-06T12:14+09:00"
+}

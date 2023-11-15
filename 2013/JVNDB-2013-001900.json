@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001900.html",
+  "title": "Google Chrome OS などの製品で使用される Linux Kernel における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001900.html",
+  "description": "Google Chrome OS およびその他の製品で使用される、Linux Kernel の Direct Rendering Manager (DRM) サブシステムにおける i915 ドライバ内の drivers/gpu/drm/i915/i915_gem_execbuffer.c には、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001900",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0913",
+      "source": "CVE",
+      "id": "CVE-2013-0913"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0913",
+      "source": "NVD",
+      "id": "CVE-2013-0913"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-08-11T16:15+09:00",
+  "issued": "2013-03-21T15:32+09:00",
+  "modified": "2014-08-11T16:15+09:00"
+}

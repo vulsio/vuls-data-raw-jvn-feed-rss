@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000088.html",
+  "title": "SHIRASAGI における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000088.html",
+  "description": "SHIRASAGI Project が提供する SHIRASAGI には、次の複数の脆弱性が存在します。<ul><li>反射型クロスサイトスクリプティング (CWE-79) - CVE-2023-36492<li>格納型クロスサイトスクリプティング (CWE-79) - CVE-2023-38569<li>ディレクトリトラバーサル (CWE-22) - CVE-2023-39448</ul>CVE-2023-36492, CVE-2023-38569\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 三井物産セキュアディレクション株式会社 白倉大河 氏\r\n\r\nCVE-2023-39448\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社ラック 山根将司 氏",
+  "identifier": "JVNDB-2023-000088",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN82758000/index.html",
+      "source": "JVN",
+      "id": "JVN#82758000"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-36492",
+      "source": "CVE",
+      "id": "CVE-2023-36492"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-38569",
+      "source": "CVE",
+      "id": "CVE-2023-38569"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-39448",
+      "source": "CVE",
+      "id": "CVE-2023-39448"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ss-proj:shirasagi",
+      "version": "2.2",
+      "vendor": "SHIRASAGI Project",
+      "product": "SHIRASAGI"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+    }
+  ],
+  "date": "2023-09-04T12:10+09:00",
+  "issued": "2023-09-04T12:10+09:00",
+  "modified": "2023-09-04T12:10+09:00"
+}

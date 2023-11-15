@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008127.html",
+  "title": "FreeType の type1/t1load.c 内の parse_encoding 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008127.html",
+  "description": "FreeType の type1/t1load.c 内の parse_encoding 関数には、サービス運用妨害 (無限ループ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-008127",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9745",
+      "source": "CVE",
+      "id": "CVE-2014-9745"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9745",
+      "source": "NVD",
+      "id": "CVE-2014-9745"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freetype:freetype",
+      "version": "2.2",
+      "vendor": "FreeType Project",
+      "product": "FreeType"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-09-17T14:38+09:00",
+  "issued": "2015-09-17T14:38+09:00",
+  "modified": "2015-09-17T14:38+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-005010.html",
+  "title": "FireFTP Extension の src/content/js/connection/sftp.js などにおけるユーザにパーミッションを変更させる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-005010.html",
+  "description": "Firefox 用の FireFTP Extension の (1) src/content/js/connection/sftp.js および (2) src/content/js/connection/controlSocket.js.in には、引数の挿入により、ユーザに間違ったファイルのパーミッションを変更させる、削除させる、ダウンロードさせる、または移動させる脆弱性が存在します。",
+  "identifier": "JVNDB-2009-005010",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3478",
+      "source": "CVE",
+      "id": "CVE-2009-3478"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3478",
+      "source": "NVD",
+      "id": "CVE-2009-3478"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nightlight:fireftp",
+      "version": "2.2",
+      "vendor": "nightlight",
+      "product": "fireftp"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T17:38+09:00",
+  "issued": "2012-09-25T17:38+09:00",
+  "modified": "2012-09-25T17:38+09:00"
+}

@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003674.html",
+  "title": "複数の Apple 製品のカーネルコンポーネントにおけるメモリ読み取りの制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003674.html",
+  "description": "複数の Apple 製品のカーネルコンポーネントには、競合状態により、メモリ読み取りの制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2018-003674",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99446427/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99446427"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-4092",
+      "source": "CVE",
+      "id": "CVE-2018-4092"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-4092",
+      "source": "NVD",
+      "id": "CVE-2018-4092"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:tvos",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "tvOS"
+    },
+    {
+      "text": "cpe:/o:apple:watchos",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "watchOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2018-06-01T16:42+09:00",
+  "issued": "2018-06-01T16:42+09:00",
+  "modified": "2018-06-01T16:42+09:00"
+}

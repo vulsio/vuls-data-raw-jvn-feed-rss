@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002129.html",
+  "title": "OpenStack Compute および Icehouse の Nova EC2 API セキュリティグループの実装における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002129.html",
+  "description": "OpenStack Compute (Nova) および Icehouse の Nova EC2 API セキュリティグループの実装は、デフォルト以外のポリシーを使用する際、(1) add_rule、(2) remove_rule、(3) destroy、および compute/api.py のその他の不特定のメソッドに対して RBAC ポリシーを適用しないため、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002129",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0167",
+      "source": "CVE",
+      "id": "CVE-2014-0167"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0167",
+      "source": "NVD",
+      "id": "CVE-2014-0167"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2014/04/09/26",
+      "source": "関連文書",
+      "id": "[oss-security] 20140409 [OSSA 2014-011] RBAC policy not properly enforced in Nova EC2 API (CVE-2014-0167)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:compute",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Compute"
+    },
+    {
+      "text": "cpe:/a:openstack:icehouse",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Icehouse"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-04-18T15:21+09:00",
+  "issued": "2014-04-18T15:21+09:00",
+  "modified": "2014-04-18T15:21+09:00"
+}

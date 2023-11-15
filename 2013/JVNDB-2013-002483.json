@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002483.html",
+  "title": "Ruby 用 Karteek Docsplit gem における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002483.html",
+  "description": "Ruby 用 Karteek Docsplit (karteek-docsplit) gem の lib/docsplit/text_extractor.rb 内の extract_from_ocr 関数には、任意のコマンドを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002483",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1933",
+      "source": "CVE",
+      "id": "CVE-2013-1933"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1933",
+      "source": "NVD",
+      "id": "CVE-2013-1933"
+    },
+    {
+      "text": "http://vapid.dhs.org/advisories/karteek-docsplit-cmd-inject.html",
+      "source": "関連文書",
+      "id": "Remote Command Injection Karteek Docsplit 0.5.4"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:documentcloud:karteek-docsplit",
+      "version": "2.2",
+      "vendor": "karteek-docsplit",
+      "product": "karteek-docsplit"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-04-30T17:49+09:00",
+  "issued": "2013-04-30T17:49+09:00",
+  "modified": "2013-04-30T17:49+09:00"
+}

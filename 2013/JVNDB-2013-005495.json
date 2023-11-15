@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005495.html",
+  "title": "Linux Kernel の net/ipv4/ping.c の ping_recvmsg 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005495.html",
+  "description": "Linux Kernel の net/ipv4/ping.c の ping_recvmsg 関数は、ping ソケット上の read システムコールを適切に対話処理しないため、サービス運用妨害 (NULL ポインタデリファレンスおよびシステムクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-476: NULL Pointer Dereference (NULL ポインタデリファレンス) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/476.html",
+  "identifier": "JVNDB-2013-005495",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6432",
+      "source": "CVE",
+      "id": "CVE-2013-6432"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6432",
+      "source": "NVD",
+      "id": "CVE-2013-6432"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2013/12/06/6",
+      "source": "関連文書",
+      "id": "Re: CVE request: Kernel: ping: NULL pointer dereference"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:S/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2013-12-16T15:31+09:00",
+  "issued": "2013-12-16T15:31+09:00",
+  "modified": "2013-12-16T15:31+09:00"
+}

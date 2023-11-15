@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001845.html",
+  "title": "PostgreSQL における不正なインデックスを作成される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001845.html",
+  "description": "PostgreSQL の (1) CREATE INDEX および (2) 不特定の ALTER TABLE コマンドには、競合状態により、不正なインデックスを作成される、または許可されていないテーブルの一部を読み取られる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-001845",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU93868849/index.html",
+      "source": "JVN",
+      "id": "JVNVU#93868849"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU97537282/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97537282"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0062",
+      "source": "CVE",
+      "id": "CVE-2014-0062"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0062",
+      "source": "NVD",
+      "id": "CVE-2014-0062"
+    },
+    {
+      "text": "http://archives.neohapsis.com/archives/bugtraq/2014-10/0103.html",
+      "source": "関連文書",
+      "id": "APPLE-SA-2014-10-16-3 OS X Server v4.0"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fujitsu:integrated_system_ha_database_ready",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "FUJITSU Integrated System HA Database Ready"
+    },
+    {
+      "text": "cpe:/a:fujitsu:symfoware",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Symfoware"
+    },
+    {
+      "text": "cpe:/a:postgresql:postgresql",
+      "version": "2.2",
+      "vendor": "PostgreSQL.org",
+      "product": "PostgreSQL"
+    },
+    {
+      "text": "cpe:/o:apple:os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "macOS Server (旧 OS X Server)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2014-11-05T18:03+09:00",
+  "issued": "2014-04-01T18:09+09:00",
+  "modified": "2014-11-05T18:03+09:00"
+}

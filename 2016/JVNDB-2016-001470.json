@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001470.html",
+  "title": "OpenJPEG の opj_j2k_update_image_data 関数におけるヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001470.html",
+  "description": "OpenJPEG の opj_j2k_update_image_data 関数には、ヒープベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2016-001470",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1923",
+      "source": "CVE",
+      "id": "CVE-2016-1923"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1923",
+      "source": "NVD",
+      "id": "CVE-2016-1923"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/01/18/4",
+      "source": "関連文書",
+      "id": "Out-of-bounds Read in the OpenJpeg's opj_j2k_update_image_data and  opj_tgt_reset function"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/01/18/7",
+      "source": "関連文書",
+      "id": "Re: Out-of-bounds Read in the OpenJpeg's opj_j2k_update_image_data and opj_tgt_reset function"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openjpeg:openjpeg",
+      "version": "2.2",
+      "vendor": "OpenJPEG project",
+      "product": "OpenJPEG"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2016-02-23T11:53+09:00",
+  "issued": "2016-02-23T11:53+09:00",
+  "modified": "2016-02-23T11:53+09:00"
+}

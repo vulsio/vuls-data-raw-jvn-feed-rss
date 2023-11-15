@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000549.html",
+  "title": "Linux Kernel の exec_mmap() 関数における競合状態の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000549.html",
+  "description": "Linux Kernel の exec_mmap() 関数には、CLONE_VM によりメモリ空間を共有する複数のスレッドの処理において、一方のスレッドでコアダンプが発生し、ほかのスレッドで execve システムコールが実行される状況下で、競合状態が発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000549",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3106",
+      "source": "CVE",
+      "id": "CVE-2005-3106"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3106",
+      "source": "NVD",
+      "id": "CVE-2005-3106"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15049",
+      "source": "BID",
+      "id": "15049"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

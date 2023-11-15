@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000743.html",
+  "title": "Cisco IOS の PVLAN プロトコルにおける トラフィックの偽装およびセグメント回避の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000743.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nVLAN (Virtual LAN) は LAN において、物理的な接続形態とは別の仮想的なグループを設定することで、LAN スイッチの機能を利用して端末の持つ MAC アドレスや IP アドレス、利用するプロトコルなどに応じてグループ化します。また、PVLAN (Private VLAN) は複数の VLAN を組み合わせて一つのサブネットを構成する機能です。\r\n\r\nIEEE によって標準化された VLAN の規格 802.1q は、Cisco IOS が動作する Cisco Catalyst をはじめ、多くのスイッチングデバイスでサポートされています。802.1q によりネットワークを流れるフレーム上に VLAN の識別 ID (タグ) を付けることで、スイッチがどの VLAN に属するフレームかを判別し、複数のスイッチ間で VLAN を構成することができます。\r\n\r\nCisco IOS に実装される VLAN/PVLAN には、分離された異なるセグメント上のホストへの通信が可能となる、以下のセキュリティ上の問題が存在します。\r\n\r\n1) 意図的に作成した 2 つの IEEE 802.1q タグを含むパケットが送信された場合に、VLAN で分離されたセグメント上のホストにパケットを送信可能である問題が存在します。\r\n\r\n2) 送信先 MAC アドレスがゲートウェイルータのものに変更されたパケットが送信された場合に、PVLAN で分離されたセグメント上のホストにパケットを送信可能である問題が存在します。\r\n\r\nさらに、これらの問題を悪用するパケットにおいて、標的ホストと通信を行うことが可能であるホスト (攻撃者が管理するホスト) の送信元 IP アドレスを偽装することで、標的ホストからの応答パケットの送信先をコントロールすることが可能です。\r\n\r\nリモートの攻撃者に利用された場合、結果として攻撃者は本来アクセスできない標的ホストにアクセスし、更なる攻撃を試みる可能性があります。",
+  "identifier": "JVNDB-2005-000743",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4441",
+      "source": "CVE",
+      "id": "CVE-2005-4441"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4441",
+      "source": "NVD",
+      "id": "CVE-2005-4441"
+    },
+    {
+      "text": "http://www.securiteam.com/securitynews/6L00O00EUC.html",
+      "source": "SECTEAM",
+      "id": "6L00O00EUC"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:cisco:ios",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

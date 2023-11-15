@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007647.html",
+  "title": "Wordpress 用 Eshop プラグインの checkout.php の eshop_checkout 関数におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007647.html",
+  "description": "Wordpress 用 Eshop プラグインの checkout.php の eshop_checkout 関数は、\"eshopcart\" HTTP Cookie の変数を検証しないため、クロスサイトスクリプティング攻撃を実行される、またはパスを公開される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-007647",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3421",
+      "source": "CVE",
+      "id": "CVE-2015-3421"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-3421",
+      "source": "NVD",
+      "id": "CVE-2015-3421"
+    },
+    {
+      "text": "https://www.htbridge.com/advisory/HTB23255",
+      "source": "関連文書",
+      "id": "HTB23255"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:elfden:eshop_plugin",
+      "version": "2.2",
+      "vendor": "elfden",
+      "product": "eshop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+    }
+  ],
+  "date": "2017-08-14T15:26+09:00",
+  "issued": "2017-08-14T15:26+09:00",
+  "modified": "2017-08-14T15:26+09:00"
+}

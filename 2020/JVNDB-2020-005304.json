@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005304.html",
+  "title": "Linux Kernel における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005304.html",
+  "description": "Linux Kernel には、整数オーバーフローの脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を CID-7395ea4e65c2 として公開しています。",
+  "identifier": "JVNDB-2020-005304",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12826",
+      "source": "CVE",
+      "id": "CVE-2020-12826"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-12826",
+      "source": "NVD",
+      "id": "CVE-2020-12826"
+    },
+    {
+      "text": "https://www.openwall.com/lists/kernel-hardening/2020/03/25/1",
+      "source": "関連文書",
+      "id": "Curiosity around 'exec_id' and some problems associated with it (2020/03/25/1)"
+    },
+    {
+      "text": "https://lists.openwall.net/linux-kernel/2020/03/24/1803",
+      "source": "関連文書",
+      "id": "Curiosity around 'exec_id' and some problems associated with it (2020/03/24/1803)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/190.html",
+      "id": "CWE-190",
+      "title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:enterprise_mrg",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise MRG"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2020-06-11T16:09+09:00",
+  "issued": "2020-06-11T16:09+09:00",
+  "modified": "2020-06-11T16:09+09:00"
+}

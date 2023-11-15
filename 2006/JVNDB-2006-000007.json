@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000007.html",
+  "title": "PHP の create_named_pipe() 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000007.html",
+  "description": "PHP に実装される libmysql.c の create_named_pipe() 関数には、mysql_connect() 組み込み関数の Server パラメータに渡される名前付きパイプ名の妥当性の確認に不備があるため、過度に長い名前付きパイプ名が引き渡された場合にバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000007",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0097",
+      "source": "CVE",
+      "id": "CVE-2006-0097"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0097",
+      "source": "NVD",
+      "id": "CVE-2006-0097"
+    },
+    {
+      "text": "http://secunia.com/advisories/18275/",
+      "source": "SECUNIA",
+      "id": "SA18275"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/16145",
+      "source": "BID",
+      "id": "16145"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/0046",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-0046"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

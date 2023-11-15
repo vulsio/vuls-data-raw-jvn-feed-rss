@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005926.html",
+  "title": "Linux Kernel の SELinux LSM におけるデータの信頼性についての不十分な検証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005926.html",
+  "description": "Linux Kernel の SELinux LSM には、データの信頼性についての不十分な検証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-005926",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10751",
+      "source": "CVE",
+      "id": "CVE-2020-10751"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-10751",
+      "source": "NVD",
+      "id": "CVE-2020-10751"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/345.html",
+      "id": "CWE-345",
+      "title": "データの信頼性についての不十分な検証(CWE-345)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:kernel:selinux",
+      "version": "2.2",
+      "vendor": "kernel.org",
+      "product": "SELinux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N"
+    }
+  ],
+  "date": "2020-06-25T15:00+09:00",
+  "issued": "2020-06-25T15:00+09:00",
+  "modified": "2020-06-25T15:00+09:00"
+}

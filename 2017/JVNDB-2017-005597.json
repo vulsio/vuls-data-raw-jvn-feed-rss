@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005597.html",
+  "title": "FineCMS における格納型クロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005597.html",
+  "description": "FineCMS には、ユーザ情報変更の際の route=admin、およびユーザアカウント登録の際の route=register において、格納型クロスサイトスクリプティングの脆弱性が存在します。",
+  "identifier": "JVNDB-2017-005597",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11179",
+      "source": "CVE",
+      "id": "CVE-2017-11179"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-11179",
+      "source": "NVD",
+      "id": "CVE-2017-11179"
+    },
+    {
+      "text": "http://www.yuesec.com/img/cccccve/finecms_storedxss/finecms_storedxss26543.html",
+      "source": "関連文書",
+      "id": "andrzuk/FineCMS before 2017-07-08 is vulnerable to a Stored XSS in application\\core\\controller\\users.php and application\\core\\controller\\logins.php."
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:finecms_project:finecms",
+      "version": "2.2",
+      "vendor": "FineCMS project",
+      "product": "FineCMS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+    }
+  ],
+  "date": "2017-08-01T17:34+09:00",
+  "issued": "2017-08-01T17:34+09:00",
+  "modified": "2017-08-01T17:34+09:00"
+}

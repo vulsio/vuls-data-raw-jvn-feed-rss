@@ -1,0 +1,453 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002090.html",
+  "title": "複数の TCP の実装におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002090.html",
+  "description": "Transmission Control Protocol (TCP) の複数の実装には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nRFC793 などで規定されている Transmission Control Protocol (TCP) の実装には、接続確立後に利用可能なリソースを悪用することに起因するサービス運用妨害 (DoS) の脆弱性が存在します。",
+  "identifier": "JVNDB-2009-002090",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA09-251A/",
+      "source": "JVN",
+      "id": "JVNTA09-251A"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU943657/index.html",
+      "source": "JVN",
+      "id": "JVNVU#943657"
+    },
+    {
+      "text": "http://jvn.jp/tr/JVNTR-2009-22",
+      "source": "JVNTR",
+      "id": "JVNTR-2009-22"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4609",
+      "source": "CVE",
+      "id": "CVE-2008-4609"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-4609",
+      "source": "NVD",
+      "id": "CVE-2008-4609"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2009/at090018.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2009-0018"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2009/at090019.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2009-0019"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/#topics",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS09-045,046,047,048,049)"
+    },
+    {
+      "text": "https://www.cert.fi/haavoittuvuudet/2008/tcp-vulnerabilities.html",
+      "source": "CERT-A",
+      "id": "CERT-FI Advisory on the Outpost24 TCP Issues"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA09-251A.html",
+      "source": "CERT-SA",
+      "id": "SA09-251A"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/723308",
+      "source": "CERT-VN",
+      "id": "VU#723308"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA09-251A.html",
+      "source": "CERT-TA",
+      "id": "TA09-251A"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/vuln/vuln_TCPIP.html",
+      "source": "IPA-VUL",
+      "id": "TCP/IPに係る既知の脆弱性に関する調査報告書 改訂第4版"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/Products/technicalnotes/Feb-09-security-assessment-TCP.aspx",
+      "source": "CPNI",
+      "id": "Security assessment of the Transmission Control Protocol (TCP)"
+    },
+    {
+      "text": "http://secunia.com/advisories/36603",
+      "source": "SECUNIA",
+      "id": "SA36603"
+    },
+    {
+      "text": "http://secunia.com/advisories/36602",
+      "source": "SECUNIA",
+      "id": "SA36602"
+    },
+    {
+      "text": "http://secunia.com/advisories/36597",
+      "source": "SECUNIA",
+      "id": "SA36597"
+    },
+    {
+      "text": "http://secunia.com/advisories/36802",
+      "source": "SECUNIA",
+      "id": "SA36802"
+    },
+    {
+      "text": "http://secunia.com/advisories/37044/",
+      "source": "SECUNIA",
+      "id": "SA37044"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/31545",
+      "source": "BID",
+      "id": "31545"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2567",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2567"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2954",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2954"
+    },
+    {
+      "text": "http://tools.ietf.org/html/rfc793",
+      "source": "IETF",
+      "id": "RFC793"
+    },
+    {
+      "text": "http://tools.ietf.org/html/draft-ananth-tcpm-persist-01",
+      "source": "IETF",
+      "id": "draft-ananth-tcpm-persist"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:checkpoint:connectra",
+      "version": "2.2",
+      "vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
+      "product": "Connectra"
+    },
+    {
+      "text": "cpe:/a:checkpoint:vpn-1_power_utm",
+      "version": "2.2",
+      "vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
+      "product": "VPN-1 Power/UTM"
+    },
+    {
+      "text": "cpe:/a:checkpoint:vpn-1_power_vsx",
+      "version": "2.2",
+      "vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
+      "product": "VPN-1 Power VSX"
+    },
+    {
+      "text": "cpe:/a:checkpoint:vpn-1_pro_express",
+      "version": "2.2",
+      "vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
+      "product": "VPN-1 Pro/Express"
+    },
+    {
+      "text": "cpe:/h:bluecoat:proxysg",
+      "version": "2.2",
+      "vendor": "ブルーコートシステムズ",
+      "product": "ProxySG"
+    },
+    {
+      "text": "cpe:/h:cisco:pix_asa",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco PIX/ASA"
+    },
+    {
+      "text": "cpe:/h:furukawa_electric:fitelnet",
+      "version": "2.2",
+      "vendor": "古河電気工業",
+      "product": "FITELnet-Eシリーズ"
+    },
+    {
+      "text": "cpe:/h:furukawa_electric:fitelnet-f",
+      "version": "2.2",
+      "vendor": "古河電気工業",
+      "product": "FITELnet-Fシリーズ"
+    },
+    {
+      "text": "cpe:/h:furukawa_electric:mucho",
+      "version": "2.2",
+      "vendor": "古河電気工業",
+      "product": "MUCHOシリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:ip38x",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IP38X シリーズ"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt100i",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT100i"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt102i",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT102i"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt103i",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT103i"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt105",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT105シリーズ"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt107e",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT107e"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt140",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT140シリーズ"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt200i",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT200i"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt250i",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT250i"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt300i",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT300i"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt56v",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT56v"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt60w",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT60w"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt80i",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT80i"
+    },
+    {
+      "text": "cpe:/h:yamaha:rta50i",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTA50i"
+    },
+    {
+      "text": "cpe:/h:yamaha:rta52i",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTA52i"
+    },
+    {
+      "text": "cpe:/h:yamaha:rta54i",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTA54i"
+    },
+    {
+      "text": "cpe:/h:yamaha:rta55i",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTA55i"
+    },
+    {
+      "text": "cpe:/h:yamaha:rtv700",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTV700"
+    },
+    {
+      "text": "cpe:/h:yamaha:rtw65b",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTW65b"
+    },
+    {
+      "text": "cpe:/h:yamaha:rtw65i",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTW65i"
+    },
+    {
+      "text": "cpe:/h:yamaha:rtx1000",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTX1000"
+    },
+    {
+      "text": "cpe:/h:yamaha:rtx1100",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTX1100"
+    },
+    {
+      "text": "cpe:/h:yamaha:rtx1200",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTX1200"
+    },
+    {
+      "text": "cpe:/h:yamaha:rtx1500",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTX1500"
+    },
+    {
+      "text": "cpe:/h:yamaha:rtx2000",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTX2000"
+    },
+    {
+      "text": "cpe:/h:yamaha:rtx3000",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RTX3000"
+    },
+    {
+      "text": "cpe:/h:yamaha:srt100",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "SRT100"
+    },
+    {
+      "text": "cpe:/o:bluecoat:sgos",
+      "version": "2.2",
+      "vendor": "ブルーコートシステムズ",
+      "product": "SGOS"
+    },
+    {
+      "text": "cpe:/o:cisco:catos",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco CatOS"
+    },
+    {
+      "text": "cpe:/o:cisco:ios",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS"
+    },
+    {
+      "text": "cpe:/o:cisco:ios_xe",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS XE"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_vista",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Vista"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    },
+    {
+      "text": "cpe:/o:oracle:solaris",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Solaris"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:yamaha:rt57i_firmware",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT57i"
+    },
+    {
+      "text": "cpe:/o:yamaha:rt58i_firmware",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT58i"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-07-20T15:35+09:00",
+  "issued": "2009-10-14T14:47+09:00",
+  "modified": "2012-07-20T15:35+09:00"
+}

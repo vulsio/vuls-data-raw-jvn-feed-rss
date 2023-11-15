@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001002.html",
+  "title": "OpenAM Web Policy Agent (OpenAMコンソーシアム版) におけるパストラバーサル脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001002.html",
+  "description": "OpenAM Web Policy Agent (OpenAMコンソーシアム版) には、URL のパース処理の不備に起因するパストラバーサルの脆弱性 (CWE-22) が存在します。\r\nさらに、本脆弱性を悪用するような URL に対し、アクセスポリシーの判定が正しく行われない場合があります。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2023-001002",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91740661/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91740661"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-22320",
+      "source": "CVE",
+      "id": "CVE-2023-22320"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:osstech:openam_web_policy_agent",
+      "version": "2.2",
+      "vendor": "OpenAM コンソーシアム",
+      "product": "OpenAM Web Policy Agent"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2023-01-11T16:34+09:00",
+  "issued": "2023-01-11T16:34+09:00",
+  "modified": "2023-01-11T16:34+09:00"
+}

@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-020221.html",
+  "title": "Fabrice Bellard の QEMU 他複数ベンダの製品における NULL ポインタデリファレンスに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-020221.html",
+  "description": "Fabrice Bellard の QEMU 他複数ベンダの製品には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-020221",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-4158",
+      "source": "CVE",
+      "id": "CVE-2021-4158"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-4158",
+      "source": "NVD",
+      "id": "CVE-2021-4158"
+    },
+    {
+      "text": "https://access.redhat.com/security/cve/CVE-2021-4158",
+      "source": "関連文書",
+      "id": "access.redhat.com (CVE-2021-4158)"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=2035002",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (2035002)"
+    },
+    {
+      "text": "https://gitlab.com/qemu-project/qemu/-/commit/9bd6565ccee68f72d5012e24646e12a1c662827e",
+      "source": "関連文書",
+      "id": "gitlab.com (9bd6565ccee68f72d5012e24646e12a1c662827e)"
+    },
+    {
+      "text": "https://gitlab.com/qemu-project/qemu/-/issues/770",
+      "source": "関連文書",
+      "id": "gitlab.com (issues/770)"
+    },
+    {
+      "text": "https://www.mail-archive.com/qemu-devel%40nongnu.org/msg857944.html",
+      "source": "関連文書",
+      "id": "www.mail-archive.com (msg857944)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-09-28T17:11+09:00",
+  "issued": "2023-09-28T17:11+09:00",
+  "modified": "2023-09-28T17:11+09:00"
+}

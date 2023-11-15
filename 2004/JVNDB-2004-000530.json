@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000530.html",
+  "title": "Microsoft の MSWRD632.WPC における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000530.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nWord for Windows 6.0 コンバータは、Word 6.0 形式の文書ファイル (.wri、.rtf、.doc など) を WordPad ファイル形式に変換するためのプログラムです。\r\n\r\nMicrosoft Windows に同梱されている Word for Windows 6.0 コンバータには、テーブル変換およびフォント変換の処理において、特定のデータ長のチェックが不適切であるため、バッファオーバーフローが発生する問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、悪意ある Web サイトや電子メールを介して、意図的に作成した Word for Windows 6.0 の文書ファイルを WordPad で開くように標的ユーザを誘導することにより、標的ユーザの権限で任意のコードを実行することが可能です。\r\n\r\n尚、Windows XP SP2 および Windows Server 2003 では、問題のあるコンポーネントが有効になっていないため、既定ではこの問題の影響を受けません。\r\n\r\nまた、サポートされるバージョンの Microsoft Word がインストールされている場合、.rtf ファイルおよび .doc ファイルは WordPad では開かれずに Microsoft Word で開かれます。Microsoft Word は、この問題の影響を受けません。",
+  "identifier": "JVNDB-2004-000530",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0901",
+      "source": "CVE",
+      "id": "CVE-2004-0901"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0901",
+      "source": "NVD",
+      "id": "CVE-2004-0901"
+    },
+    {
+      "text": "http://secunia.com/advisories/13462/",
+      "source": "SECUNIA",
+      "id": "SA13462"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11929",
+      "source": "BID",
+      "id": "11929"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11927",
+      "source": "BID",
+      "id": "11927"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_nt",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows NT"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

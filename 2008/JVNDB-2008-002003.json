@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002003.html",
+  "title": "Cisco Unified Communications Manager の RIS Data Collector サービスにおける認証回避の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002003.html",
+  "description": "Cisco Unified Communications Manager (CUCM) の Real-Time Information Server (RIS) Data Collector サービスには、脆弱性が存在します。\r\nサービスポートへの直接のTCPコネクションを介して、リモートの攻撃者に認証を回避され、クラスタ設定情報と統計情報を読み取られる可能性があります。\r\n本問題は、Bug ID：CSCsq35151 の問題です。",
+  "identifier": "JVNDB-2008-002003",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2062",
+      "source": "CVE",
+      "id": "CVE-2008-2062"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2062",
+      "source": "NVD",
+      "id": "CVE-2008-2062"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cisco:unified_callmanager",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Unified CallManager"
+    },
+    {
+      "text": "cpe:/a:cisco:unified_communications_manager",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Unified Communications Manager"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2008-12-19T10:14+09:00",
+  "issued": "2008-12-19T10:14+09:00",
+  "modified": "2008-12-19T10:14+09:00"
+}

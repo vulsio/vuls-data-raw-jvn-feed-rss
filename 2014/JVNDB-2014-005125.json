@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005125.html",
+  "title": "Pidgin の libpurple にバンドルされている GnuTLS SSL/TLS および OpenSSL SSL/TLS プラグインにおけるサーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005125.html",
+  "description": "Pidgin の libpurple にバンドルされている (1) GnuTLS SSL/TLS および (2) OpenSSL SSL/TLS プラグインは、SSL サーバからの X.509 証明書の検証中に Basic Constraints 拡張機能を適切に考慮しないため、サーバになりすまされ、重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005125",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3694",
+      "source": "CVE",
+      "id": "CVE-2014-3694"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3694",
+      "source": "NVD",
+      "id": "CVE-2014-3694"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pidgin:pidgin",
+      "version": "2.2",
+      "vendor": "Pidgin",
+      "product": "Pidgin"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2015-06-19T16:43+09:00",
+  "issued": "2014-10-30T16:37+09:00",
+  "modified": "2015-06-19T16:43+09:00"
+}

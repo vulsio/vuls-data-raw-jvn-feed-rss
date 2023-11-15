@@ -1,0 +1,132 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003630.html",
+  "title": "Windows の Adobe Type Manager モジュールに特権昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003630.html",
+  "description": "Windows の Adobe Type Manager モジュールにはメモリ破損の脆弱性が存在します。結果として、当該 Windows システムの SYSTEM 権限を取得される可能性があります。\r\n\r\nMicrosoft Windows OS のカーネルモジュール Adobe Type Manager ( atmfd.dll ) は、OpenType フォントのサポートを提供するモジュールです。\r\nAdobe Type Manager にはメモリ破損の脆弱性が存在し、Windows OS カーネルメモリが操作される可能性があります。\r\n\r\nなお、本脆弱性を使用した攻撃コードが Hacking Team から漏えいした情報の一部として公開されています。CERT/CC では、この攻撃コードを使用して、「影響を受けるシステム」に記載されているバージョンの Windows OS 上で SYSTEM 権限を取得可能であることを確認しました。",
+  "identifier": "JVNDB-2015-003630",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92689788/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92689788"
+    },
+    {
+      "text": "http://jvn.jp/ta/JVNTA97243368/",
+      "source": "JVN",
+      "id": "JVNTA#97243368"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2387",
+      "source": "CVE",
+      "id": "CVE-2015-2387"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2387",
+      "source": "NVD",
+      "id": "CVE-2015-2387"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20150715-ms.html",
+      "source": "IPA CFA",
+      "id": "Microsoft 製品の脆弱性対策について(2015年7月)"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2015/at150025.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2015-0025"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/topics/?seq=16615",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS15-058,065,066,067,068,069,070,071,072,073,074,075,076,077)(2015年07月15日)"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/103336",
+      "source": "CERT-VN",
+      "id": "VU#103336"
+    },
+    {
+      "text": "https://www.us-cert.gov/ncas/alerts/TA15-195A",
+      "source": "CERT-TA",
+      "id": "TA15-195A"
+    },
+    {
+      "text": "http://j00ru.vexillium.org/?p=2520",
+      "source": "関連文書",
+      "id": "Results of my recent PostScript Charstring security research unveiled"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_7",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 7"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_8",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 8"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_8.1",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 8.1"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_rt",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows RT"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_rt_8.1",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows RT 8.1"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2012",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2012"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_vista",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Vista"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-09-03T16:40+09:00",
+  "issued": "2015-07-16T17:39+09:00",
+  "modified": "2015-09-03T16:40+09:00"
+}

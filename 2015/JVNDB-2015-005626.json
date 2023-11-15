@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005626.html",
+  "title": "Polkit の authentication_agent_new_cookie 関数における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005626.html",
+  "description": "Polkit (旧 PolicyKit) の authentication_agent_new_cookie 関数には、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2015-005626",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4625",
+      "source": "CVE",
+      "id": "CVE-2015-4625"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4625",
+      "source": "NVD",
+      "id": "CVE-2015-4625"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freedesktop:polkit",
+      "version": "2.2",
+      "vendor": "freedesktop.org",
+      "product": "Polkit"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:novell:opensuse",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "openSUSE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-10-29T15:55+09:00",
+  "issued": "2015-10-29T15:55+09:00",
+  "modified": "2015-10-29T15:55+09:00"
+}

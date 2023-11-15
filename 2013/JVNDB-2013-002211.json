@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002211.html",
+  "title": "Red Hat OpenStack Essex および Folsom の PackStack におけるデプロイされたシステムを変更される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002211.html",
+  "description": "Red Hat OpenStack Essex および Folsom の PackStack は、/tmp やカレントワーキングディレクトリのような、安全でないディレクトリにアンサーファイルを作成できるため、デプロイされたシステムを変更される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002211",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1815",
+      "source": "CVE",
+      "id": "CVE-2013-1815"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1815",
+      "source": "NVD",
+      "id": "CVE-2013-1815"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:openstack_essex",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenStack Essex"
+    },
+    {
+      "text": "cpe:/a:redhat:openstack_folsom",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenStack Folsom"
+    },
+    {
+      "text": "cpe:/a:redhat:packstack",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "PackStack"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-04-12T15:56+09:00",
+  "issued": "2013-04-12T15:56+09:00",
+  "modified": "2013-04-12T15:56+09:00"
+}

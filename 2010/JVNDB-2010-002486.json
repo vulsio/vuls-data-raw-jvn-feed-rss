@@ -1,0 +1,164 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002486.html",
+  "title": "OpenSSL の ssl/t1_lib.c における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002486.html",
+  "description": "OpenSSL の ssl/t1_lib.c は、TLS サーバ上でマルチスレッドおよび内部キャッシュが有効の際、 TLS サーバ名の拡張子や楕円曲線暗号に関する処理に不備があるため、競合状態となり、任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002486",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU976710",
+      "source": "JVN",
+      "id": "JVNVU#976710"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU91284469/",
+      "source": "JVN",
+      "id": "JVNVU#91284469"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3864",
+      "source": "CVE",
+      "id": "CVE-2010-3864"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3864",
+      "source": "NVD",
+      "id": "CVE-2010-3864"
+    },
+    {
+      "text": "http://secunia.com/advisories/42243",
+      "source": "SECUNIA",
+      "id": "SA42243"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/44884",
+      "source": "BID",
+      "id": "44884"
+    },
+    {
+      "text": "http://securitytracker.com/id?1024743",
+      "source": "SECTRACK",
+      "id": "1024743"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/3001",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-3001"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:adobe:flash_media_server",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe Flash Media Server"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:vmware:ace",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ACE"
+    },
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/a:vmware:esxi",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESXi"
+    },
+    {
+      "text": "cpe:/a:vmware:fusion",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Fusion"
+    },
+    {
+      "text": "cpe:/a:vmware:player",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Player"
+    },
+    {
+      "text": "cpe:/a:vmware:vcenter",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware vCenter"
+    },
+    {
+      "text": "cpe:/a:vmware:workstation",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Workstation"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-06-20T17:08+09:00",
+  "issued": "2010-12-14T13:52+09:00",
+  "modified": "2012-06-20T17:08+09:00"
+}

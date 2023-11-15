@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001118.html",
+  "title": "ProSoft Technology 製 ICX35 におけるパスワード変更時の認証不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001118.html",
+  "description": "ProSoft Technology 製 ICX35-HWC-A および ICX35-HWC-E には、パスワード変更処理において認証不備の脆弱性が存在します。当該機器のユーザパスワードをWeb ページ上で変更する場合、現在のパスワードを入力する必要がありません。そのため、現在のパスワードを知らない場合でも、パスワードを変更することが可能です。",
+  "identifier": "JVNDB-2021-001118",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU91857323",
+      "source": "JVN",
+      "id": "JVNVU#91857323"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22661",
+      "source": "CVE",
+      "id": "CVE-2021-22661"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-056-04",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-056-04"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:prosoft-technology:icx35-hwc-a",
+      "version": "2.2",
+      "vendor": "ProSoft Technology",
+      "product": "ICX35-HWC-A"
+    },
+    {
+      "text": "cpe:/a:prosoft-technology:icx35-hwc-e",
+      "version": "2.2",
+      "vendor": "ProSoft Technology",
+      "product": "ICX35-HWC-E"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "8.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L"
+    }
+  ],
+  "date": "2021-03-01T17:30+09:00",
+  "issued": "2021-03-01T17:30+09:00",
+  "modified": "2021-03-01T17:30+09:00"
+}

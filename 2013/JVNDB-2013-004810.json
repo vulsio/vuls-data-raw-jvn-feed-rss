@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004810.html",
+  "title": "Watchguard Extensible Threat Management (XTM) にバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004810.html",
+  "description": "Watchguard Extensible Threat Management (XTM) には、スタックバッファオーバーフローの脆弱性が存在します。\r\n\r\nWatchguard Extensible Threat Management (XTM) の WGagent プロセスには、受信した cookie の sessionid 値の処理に問題があり、スタックバッファオーバーフロー (CWE-121) の脆弱性が存在します。\r\n\r\nCWE-121: Stack-based Buffer Overflow\r\nhttp://cwe.mitre.org/data/definitions/121.html\r\n\r\nなお、仮想アプライアンス環境 (XTMv) では、デフォルト設定で 8080/tcp によるリモート管理が有効になっています。",
+  "identifier": "JVNDB-2013-004810",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU97653535/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97653535"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6021",
+      "source": "CVE",
+      "id": "CVE-2013-6021"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6021",
+      "source": "NVD",
+      "id": "CVE-2013-6021"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/233990",
+      "source": "CERT-VN",
+      "id": "VU#233990"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:watchguard:fireware",
+      "version": "2.2",
+      "vendor": "ウォッチガード・テクノロジー",
+      "product": "WatchGuard Fireware"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-10-22T15:43+09:00",
+  "issued": "2013-10-22T15:43+09:00",
+  "modified": "2013-10-22T15:43+09:00"
+}

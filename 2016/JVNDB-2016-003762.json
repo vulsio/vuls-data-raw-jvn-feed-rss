@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003762.html",
+  "title": "Apache Qpid AMQP 0-x JMS Client および JMS における任意のオブジェクトをデシリアライズされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003762.html",
+  "description": "Apache Qpid AMQP 0-x JMS Client および JMS (AMQP 1.0) は、クラスパスで使用可能なクラスを制限しないため、任意のオブジェクトをデシリアライズされる、および任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-003762",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4974",
+      "source": "CVE",
+      "id": "CVE-2016-4974"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4974",
+      "source": "NVD",
+      "id": "CVE-2016-4974"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:amqp_0-x_jms_client",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "AMQP 0-x JMS Client"
+    },
+    {
+      "text": "cpe:/a:apache:jms_client_amqp",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "JMS Client (AMQP 1.0)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-09-06T15:25+09:00",
+  "issued": "2016-07-20T16:46+09:00",
+  "modified": "2016-09-06T15:25+09:00"
+}

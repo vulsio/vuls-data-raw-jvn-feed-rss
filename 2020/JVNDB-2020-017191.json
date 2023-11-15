@@ -1,0 +1,96 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-017191.html",
+  "title": "binutils における入力確認に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-017191.html",
+  "description": "binutils には、入力確認に関する脆弱性、ヒープベースのバッファオーバーフローの脆弱性、および境界外読み取りに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-017191",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35493",
+      "source": "CVE",
+      "id": "CVE-2020-35493"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-35493",
+      "source": "NVD",
+      "id": "CVE-2020-35493"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1911437",
+      "source": "関連文書",
+      "id": "Bug 1911437 (CVE-2020-35493) - CVE-2020-35493 binutils: heap-based buffer overflow in bfd_pef_parse_function_stubs function in bfd/pef.c via crafted PEF file"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/122.html",
+      "id": "CWE-122",
+      "title": "ヒープベースのバッファオーバーフロー(CWE-122)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:binutils",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU Binutils"
+    },
+    {
+      "text": "cpe:/a:netapp:hci_management_node",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "NetApp HCI Management Node"
+    },
+    {
+      "text": "cpe:/a:netapp:ontap_select_deploy_administration_utility",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "ONTAP Select Deploy administration utility"
+    },
+    {
+      "text": "cpe:/a:netapp:solidfire",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "NetApp SolidFire"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:netapp:hci_compute_node",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "NetApp HCI Compute Node"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2022-06-29T14:11+09:00",
+  "issued": "2022-06-29T14:11+09:00",
+  "modified": "2022-06-29T14:11+09:00"
+}

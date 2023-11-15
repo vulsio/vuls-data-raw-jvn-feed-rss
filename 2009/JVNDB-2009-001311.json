@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001311.html",
+  "title": "Perl の DBD::Pg モジュールにおける任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001311.html",
+  "description": "Perl の DBD::Pg モジュールには、データベース読み込み時の getline 関数および pg_getline 関数に関する処理に不備があることにより、任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001311",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0663",
+      "source": "CVE",
+      "id": "CVE-2009-0663"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0663",
+      "source": "NVD",
+      "id": "CVE-2009-0663"
+    },
+    {
+      "text": "http://secunia.com/advisories/35058",
+      "source": "SECUNIA",
+      "id": "SA35058"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/34755",
+      "source": "BID",
+      "id": "34755"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/50467",
+      "source": "XF",
+      "id": "50467"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:perl:perl",
+      "version": "2.2",
+      "vendor": "The Perl Foundation",
+      "product": "Perl"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_application_stack",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Application Stack"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-06-25T14:47+09:00",
+  "issued": "2009-06-25T14:47+09:00",
+  "modified": "2009-06-25T14:47+09:00"
+}

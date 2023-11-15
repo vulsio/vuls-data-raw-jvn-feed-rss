@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-010987.html",
+  "title": "HDF HDF5 におけるゼロ除算に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-010987.html",
+  "description": "HDF HDF5 には、ゼロ除算に関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2018-010987",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17434",
+      "source": "CVE",
+      "id": "CVE-2018-17434"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-17434",
+      "source": "NVD",
+      "id": "CVE-2018-17434"
+    },
+    {
+      "text": "https://github.com/SegfaultMasters/covering360/tree/master/HDF5/vuln4#divided-by-zero---poc_apply_filters_h5repack_filters",
+      "source": "関連文書",
+      "id": "Divided By Zero - POC_apply_filters_h5repack_filters (CVE-2018-17434)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/369.html",
+      "id": "CWE-369",
+      "title": "ゼロ除算(CWE-369)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hdfgroup:hdf5",
+      "version": "2.2",
+      "vendor": "The HDF Group",
+      "product": "HDF5"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2018-12-28T16:05+09:00",
+  "issued": "2018-12-28T16:05+09:00",
+  "modified": "2018-12-28T16:05+09:00"
+}

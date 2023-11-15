@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001895.html",
+  "title": "Linux Kernel の暗号ユーザ設定 API におけるカーネルメモリから重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001895.html",
+  "description": "Linux Kernel の暗号ユーザ設定 API (crypto user configuration API) のレポート API の crypto/crypto_user.c 内の crypto_report_one 関数は、コピー処理中に誤った長さの値を使用するため、カーネルメモリから重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001895",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2548",
+      "source": "CVE",
+      "id": "CVE-2013-2548"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2548",
+      "source": "NVD",
+      "id": "CVE-2013-2548"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:enterprise_mrg",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise MRG"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2013-05-21T14:05+09:00",
+  "issued": "2013-03-21T14:31+09:00",
+  "modified": "2013-05-21T14:05+09:00"
+}

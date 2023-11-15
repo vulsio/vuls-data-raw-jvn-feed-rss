@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006710.html",
+  "title": "CHICKEN の \"spiffy-cgi-handlers\" egg の CGI プログラムにおける攻撃者が指定した HTTP プロキシサーバの使用を強制される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006710.html",
+  "description": "CHICKEN の \"spiffy-cgi-handlers\" egg の CGI プログラムには、攻撃者が指定した HTTP プロキシサーバの使用を強制される (別名 \"httpoxy\" 攻撃) 脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006710",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6286",
+      "source": "CVE",
+      "id": "CVE-2016-6286"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6286",
+      "source": "NVD",
+      "id": "CVE-2016-6286"
+    },
+    {
+      "text": "https://httpoxy.org/",
+      "source": "関連文書",
+      "id": "A CGI application vulnerability"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/92105",
+      "source": "関連文書",
+      "id": "Multiple CHICKEN Egg Products Multiple Security Bypass Vulnerabilities"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/19.html",
+      "id": "CWE-19",
+      "title": "データ処理(CWE-19)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:call-cc:chicken",
+      "version": "2.2",
+      "vendor": "The Chicken Team",
+      "product": "CHICKEN"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2017-01-23T15:33+09:00",
+  "issued": "2017-01-23T15:33+09:00",
+  "modified": "2017-01-23T15:33+09:00"
+}

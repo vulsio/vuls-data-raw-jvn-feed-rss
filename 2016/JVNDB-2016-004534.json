@@ -1,0 +1,96 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004534.html",
+  "title": "HTTPS プロトコルにおける平文データを取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004534.html",
+  "description": "HTTPS プロトコルは、コンテンツの長さに関する情報を提供する際の TCP Congestion Window の役割を考慮しないため、平文データを取得される脆弱性が存在します。\r\n\r\n本脆弱性は、\"HEIST\" 攻撃と呼ばれています。",
+  "identifier": "JVNDB-2016-004534",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7152",
+      "source": "CVE",
+      "id": "CVE-2016-7152"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7152",
+      "source": "NVD",
+      "id": "CVE-2016-7152"
+    },
+    {
+      "text": "https://tom.vg/papers/heist_blackhat2016.pdf",
+      "source": "関連文書",
+      "id": "HEIST: HTTP Encrypted Information can be Stolen through TCP-windows"
+    },
+    {
+      "text": "http://arstechnica.com/security/2016/08/new-attack-steals-ssns-e-mail-addresses-and-more-from-https-pages/",
+      "source": "関連文書",
+      "id": "New attack steals SSNs, e-mail addresses, and more from HTTPS pages"
+    },
+    {
+      "text": "https://tools.ietf.org/html/rfc2818",
+      "source": "IETF",
+      "id": "RFC 2818（HTTP over TLS)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:safari",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Safari"
+    },
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    },
+    {
+      "text": "cpe:/a:microsoft:edge",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Edge"
+    },
+    {
+      "text": "cpe:/a:microsoft:internet_explorer",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Internet Explorer"
+    },
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:opera:opera_browser",
+      "version": "2.2",
+      "vendor": "Opera Software ASA",
+      "product": "Opera"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2016-09-07T13:58+09:00",
+  "issued": "2016-09-07T13:58+09:00",
+  "modified": "2016-09-07T13:58+09:00"
+}

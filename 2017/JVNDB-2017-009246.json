@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-009246.html",
+  "title": "Savitech 製 USB オーディオドライバがルート CA 証明書を許可なくインストールする問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-009246.html",
+  "description": "Savitech が提供する一部の USB オーディオ機器向けドライバは、Savitech のルート CA 証明書を、ユーザーの許可なく Windows の信頼されたルート証明機関ストアにインストールします。\r\n\r\nSavitech は、多くのオーディオ製品向け USB オーディオドライバを提供しています。Savitech ドライバパッケージは、一部のバージョンにおいて、Savitech のルート CA 証明書をユーザの許可なく Windows の信頼されたルート証明機関ストアにインストールします。",
+  "identifier": "JVNDB-2017-009246",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU99936709",
+      "source": "JVN",
+      "id": "JVNVU#99936709"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9758",
+      "source": "CVE",
+      "id": "CVE-2017-9758"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-9758",
+      "source": "NVD",
+      "id": "CVE-2017-9758"
+    },
+    {
+      "text": "https://insights.sei.cmu.edu/cert/2015/03/the-risks-of-ssl-inspection.html",
+      "source": "CERT/CC blog",
+      "id": "The Risks of SSL Inspection"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/446847",
+      "source": "CERT-VN",
+      "id": "VU#446847"
+    },
+    {
+      "text": "http://huagati.blogspot.jp/2015/07/do-you-know-which-cas-can-issue-ssltls.html",
+      "source": "関連文書",
+      "id": "KristoferA's blog"
+    },
+    {
+      "text": "https://community.rsa.com/community/products/netwitness/blog/2017/11/03/inaudible-subversion-did-your-hi-fi-just-subvert-your-pc",
+      "source": "関連文書",
+      "id": "Inaudible Subversion - Did your Hi-Fi just subvert your PC?"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:savitech-ic:savitech_driver",
+      "version": "2.2",
+      "vendor": "SAVITECH CORP",
+      "product": "Savitech ドライバ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2018-03-14T14:06+09:00",
+  "issued": "2017-11-07T12:23+09:00",
+  "modified": "2018-03-14T14:06+09:00"
+}

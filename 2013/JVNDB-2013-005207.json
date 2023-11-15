@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005207.html",
+  "title": "Mozilla Firefox および SeaMonkey で使用される Mozilla Netscape Portable Runtime における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005207.html",
+  "description": "Mozilla Firefox および SeaMonkey で使用される Mozilla Netscape Portable Runtime (NSPR) の PL_ArenaAllocate 関数には、整数オーバーフローの脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2013-1741 と関連する問題です。",
+  "identifier": "JVNDB-2013-005207",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5607",
+      "source": "CVE",
+      "id": "CVE-2013-5607"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5607",
+      "source": "NVD",
+      "id": "CVE-2013-5607"
+    },
+    {
+      "text": "https://groups.google.com/forum/message/raw?msg=mozilla.dev.tech.nspr/_8AcygMEjSA/mm_cqQzLPFQJ",
+      "source": "関連文書",
+      "id": "[ANNOUNCE] NSPR 4.10.2 Release"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:firefox_esr",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox ESR"
+    },
+    {
+      "text": "cpe:/a:mozilla:netscape_portable_runtime",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Netscape Portable Runtime"
+    },
+    {
+      "text": "cpe:/a:mozilla:seamonkey",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla SeaMonkey"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-03-10T15:32+09:00",
+  "issued": "2013-11-21T17:52+09:00",
+  "modified": "2014-03-10T15:32+09:00"
+}

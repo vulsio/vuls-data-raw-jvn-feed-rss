@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001504.html",
+  "title": "Ubuntu の dbus リクエストハンドラにおけるネットワーク接続情報が漏えいする脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001504.html",
+  "description": "Ubuntu の (1) network-manager-applet および (2) NetworkManager で利用されている dbus リクエストハンドラには、権限を適切に検証しないため、 (a) ネットワーク接続パスワードおよび (b) 事前共有キーが漏えいする脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001504",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0365",
+      "source": "CVE",
+      "id": "CVE-2009-0365"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0365",
+      "source": "NVD",
+      "id": "CVE-2009-0365"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/33966",
+      "source": "BID",
+      "id": "33966"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:S/C:C/I:N/A:N"
+    }
+  ],
+  "date": "2009-10-06T11:10+09:00",
+  "issued": "2009-06-30T11:49+09:00",
+  "modified": "2009-10-06T11:10+09:00"
+}

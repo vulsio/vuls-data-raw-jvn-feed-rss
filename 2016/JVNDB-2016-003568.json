@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003568.html",
+  "title": "Android の toolbox/lsof.c の print_maps 関数における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003568.html",
+  "description": "Android の toolbox/lsof.c の print_maps 関数には、権限を取得される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug 28175237 として公開しています。\r\n\r\nなお、print_maps には Vic Abell lsof 製品との関連はありません。",
+  "identifier": "JVNDB-2016-003568",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3757",
+      "source": "CVE",
+      "id": "CVE-2016-3757"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3757",
+      "source": "NVD",
+      "id": "CVE-2016-3757"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:google:android",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-07-13T17:54+09:00",
+  "issued": "2016-07-13T17:54+09:00",
+  "modified": "2016-07-13T17:54+09:00"
+}

@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002112.html",
+  "title": "WordPress および他の製品で使用される Plupload における同一生成元ポリシーを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002112.html",
+  "description": "WordPress の wp-includes/js/plupload/、および他の製品で使用される Plupload は、SWF コンテンツが読み込まれたドメインに関わらずスクリプトを有効にするため、同一生成元ポリシー (Same origin policy) を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002112",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2401",
+      "source": "CVE",
+      "id": "CVE-2012-2401"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2401",
+      "source": "NVD",
+      "id": "CVE-2012-2401"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:moxiecode:plupload",
+      "version": "2.2",
+      "vendor": "Moxiecode Systems",
+      "product": "Plupload"
+    },
+    {
+      "text": "cpe:/a:wordpress:wordpress",
+      "version": "2.2",
+      "vendor": "WordPress.org",
+      "product": "WordPress"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-04-24T15:35+09:00",
+  "issued": "2012-04-24T15:35+09:00",
+  "modified": "2012-04-24T15:35+09:00"
+}

@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005562.html",
+  "title": "複数の Linux ディストリビューションの Tomcat パッケージにおける root 権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005562.html",
+  "description": "Red Hat Enterprise Linux (RHEL) 7、Fedora、CentOS、Oracle Linux、およびその他の Linux ディストリビューションの Tomcat パッケージは、/usr/lib/tmpfiles.d/tomcat.conf に脆弱なパーミッションを使用するため、root 権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-005562",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5425",
+      "source": "CVE",
+      "id": "CVE-2016-5425"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5425",
+      "source": "NVD",
+      "id": "CVE-2016-5425"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/o:oracle:linux",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-12-05T17:01+09:00",
+  "issued": "2016-10-24T17:16+09:00",
+  "modified": "2016-12-05T17:01+09:00"
+}

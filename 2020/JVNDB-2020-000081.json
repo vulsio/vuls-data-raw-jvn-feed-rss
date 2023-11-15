@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000081.html",
+  "title": "Apache Cordova Plugin camera における情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000081.html",
+  "description": "Apache Cordova Plugin camera は、Apache Cordova アプリ向けに写真撮影や画像ライブラリからの選択操作などに関する API を提供するプラグインです。\r\nApache Cordova Plugin camera が Android アプリに組み込まれて使用される場合、当該デバイスに外部ストレージが存在していると画像ファイルのキャッシュとして使用されるため、READ_EXTERNAL_STORAGE (や WRITE_EXTERNAL_STORAGE) パーミッションが許可されているアプリケーションからはこれらのキャッシュファイルにアクセス可能です(CWE-200)。\r\n\r\nなお、本脆弱性の修正はソースコードリポジトリ上ではバージョン 4.2.0 で行われていますが、バージョン 4.2.0 は正式にはリリースされていないため、修正が行われたバージョンとしては 5.0.0 となります。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社 セゾン情報システムズ 松村 章宏 氏",
+  "identifier": "JVNDB-2020-000081",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN59779918/index.html",
+      "source": "JVN",
+      "id": "JVN#59779918"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11990",
+      "source": "CVE",
+      "id": "CVE-2020-11990"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:cordova_plugin_camera",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Cordova Plugin camera"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2020-12-07T12:04+09:00",
+  "issued": "2020-12-07T12:04+09:00",
+  "modified": "2020-12-07T12:04+09:00"
+}

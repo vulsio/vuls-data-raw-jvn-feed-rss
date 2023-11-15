@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004455.html",
+  "title": "GNOME Vino の vino-server.c の vino_server_client_data_pending 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004455.html",
+  "description": "GNOME Vino の vino-server.c の vino_server_client_data_pending 関数は、暗号化が無効になっている場合、認証中のエラーによる接続終了時にクライアントデータを適切に消去しないため、サービス運用妨害 (無限ループ、CPU およびディスク消費) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004455",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5745",
+      "source": "CVE",
+      "id": "CVE-2013-5745"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5745",
+      "source": "NVD",
+      "id": "CVE-2013-5745"
+    },
+    {
+      "text": "https://www.trustwave.com/spiderlabs/advisories/TWSL2013-028.txt",
+      "source": "関連文書",
+      "id": "Trustwave SpiderLabs Security Advisory TWSL2013-028"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:david_king:vino",
+      "version": "2.2",
+      "vendor": "David King",
+      "product": "Vino"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2014-03-05T17:26+09:00",
+  "issued": "2013-10-04T18:50+09:00",
+  "modified": "2014-03-05T17:26+09:00"
+}

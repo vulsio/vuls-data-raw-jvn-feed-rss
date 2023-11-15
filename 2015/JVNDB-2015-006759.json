@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006759.html",
+  "title": "Intel McAfee ePolicy Orchestrator における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006759.html",
+  "description": "Intel McAfee ePolicy Orchestrator (ePO) には、任意のコードを実行される脆弱性が存在します。\r\n\r\n本件は、Apache Commons Collections (ACC) ライブラリの問題に関する脆弱性です。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-502: Deserialization of Untrusted Data (信頼性のないデータのデシリアライゼーション) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/502.html",
+  "identifier": "JVNDB-2015-006759",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94276522/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94276522"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8765",
+      "source": "CVE",
+      "id": "CVE-2015-8765"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8765",
+      "source": "NVD",
+      "id": "CVE-2015-8765"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/576313",
+      "source": "CERT-VN",
+      "id": "VU#576313"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mcafee:epolicy_orchestrator",
+      "version": "2.2",
+      "vendor": "マカフィー",
+      "product": "McAfee ePolicy Orchestrator"
+    },
+    {
+      "text": "cpe:/a:nec:capssuite",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CapsSuite"
+    },
+    {
+      "text": "cpe:/a:nec:infoframe_relational_store",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "InfoFrame Relational Store"
+    },
+    {
+      "text": "cpe:/a:nec:systemdirector_enterprise",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SystemDirector Enterprise"
+    },
+    {
+      "text": "cpe:/a:nec:webotx",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2018-02-07T16:11+09:00",
+  "issued": "2016-01-14T17:11+09:00",
+  "modified": "2018-02-07T16:11+09:00"
+}

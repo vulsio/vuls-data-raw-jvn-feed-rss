@@ -1,0 +1,120 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004310.html",
+  "title": "複数の D-Link 製ルータにバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004310.html",
+  "description": "D-Link が提供する複数のルータ製品には、スタックベースのバッファオーバーフローの脆弱性が存在します。\r\n\r\nスタックベースのバッファオーバーフロー(CWE-121) - CVE-2016-5681\r\nプログラム cgibin 内の関数に含まれるセッションクッキーを検証する処理には、スタックベースのバッファオーバーフローが存在します。\r\nこの関数は、WAN 側インターフェースの 8181/tcp で待ち受けるサービスでも使用されています。\r\n\r\nCWE-121: Stack-based Buffer Overflow\r\nhttps://cwe.mitre.org/data/definitions/121.html",
+  "identifier": "JVNDB-2016-004310",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94906777",
+      "source": "JVN",
+      "id": "JVNVU#94906777"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5681",
+      "source": "CVE",
+      "id": "CVE-2016-5681"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5681",
+      "source": "NVD",
+      "id": "CVE-2016-5681"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/332115",
+      "source": "CERT-VN",
+      "id": "VU#332115"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:dlink:dir-817l%28w%29",
+      "version": "2.2",
+      "vendor": "D-Link Systems, Inc.",
+      "product": "DIR-817L(W)"
+    },
+    {
+      "text": "cpe:/h:dlink:dir-818l%28w%29",
+      "version": "2.2",
+      "vendor": "D-Link Systems, Inc.",
+      "product": "DIR-818L(W)"
+    },
+    {
+      "text": "cpe:/h:dlink:dir-822",
+      "version": "2.2",
+      "vendor": "D-Link Systems, Inc.",
+      "product": "DIR-822"
+    },
+    {
+      "text": "cpe:/h:dlink:dir-823",
+      "version": "2.2",
+      "vendor": "D-Link Systems, Inc.",
+      "product": "DIR-823"
+    },
+    {
+      "text": "cpe:/h:dlink:dir-850l",
+      "version": "2.2",
+      "vendor": "D-Link Systems, Inc.",
+      "product": "DIR-850L"
+    },
+    {
+      "text": "cpe:/h:dlink:dir-868l",
+      "version": "2.2",
+      "vendor": "D-Link Systems, Inc.",
+      "product": "DIR-868L"
+    },
+    {
+      "text": "cpe:/h:dlink:dir-880l",
+      "version": "2.2",
+      "vendor": "D-Link Systems, Inc.",
+      "product": "DIR-880L"
+    },
+    {
+      "text": "cpe:/h:dlink:dir-885l",
+      "version": "2.2",
+      "vendor": "D-Link Systems, Inc.",
+      "product": "DIR-885L"
+    },
+    {
+      "text": "cpe:/h:dlink:dir-890l",
+      "version": "2.2",
+      "vendor": "D-Link Systems, Inc.",
+      "product": "DIR-890L"
+    },
+    {
+      "text": "cpe:/h:dlink:dir-895l",
+      "version": "2.2",
+      "vendor": "D-Link Systems, Inc.",
+      "product": "DIR-895L"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-08-29T15:37+09:00",
+  "issued": "2016-08-15T18:17+09:00",
+  "modified": "2016-08-29T15:37+09:00"
+}

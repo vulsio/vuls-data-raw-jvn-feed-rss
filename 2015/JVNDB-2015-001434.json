@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001434.html",
+  "title": "Topline Systems Opportunity Form に情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001434.html",
+  "description": "Topline Systems が提供する Opportunity Form には、情報漏えいの脆弱性が存在します。\r\n\r\n情報漏えい (CWE-200)\r\nCWE-200: Information Exposure\r\nhttp://cwe.mitre.org/data/definitions/200.html\r\n\r\nTopline Systems が提供する Opportunity Form は、マクロ機能が有効な Excel のスプレッドシートです。このスプレッドシートには、公開データベースへの接続文字列が保存されています。スプレッドシート内の手順で処理を行うことによって、ユーザ名、メールアドレス、パスワードが平文で公開されます。",
+  "identifier": "JVNDB-2015-001434",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96466523/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96466523"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1608",
+      "source": "CVE",
+      "id": "CVE-2015-1608"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1608",
+      "source": "NVD",
+      "id": "CVE-2015-1608"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/669156",
+      "source": "CERT-VN",
+      "id": "VU#669156"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/BLUU-9RUTH4",
+      "source": "CERT-VN",
+      "id": " Topline Systems Information for VU#669156"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:topline_systems:opportunity_form",
+      "version": "2.2",
+      "vendor": "Topline Systems",
+      "product": "Opportunity Form"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-02-19T09:46+09:00",
+  "issued": "2015-02-13T17:01+09:00",
+  "modified": "2015-02-19T09:46+09:00"
+}

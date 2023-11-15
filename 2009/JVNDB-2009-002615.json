@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002615.html",
+  "title": "Zabbix サーバの zbx_get_next_field 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002615.html",
+  "description": "Zabbix サーバの libs/zbxcommon/str.c 内にある zbx_get_next_field 関数には、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2009-002615",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4501",
+      "source": "CVE",
+      "id": "CVE-2009-4501"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-4501",
+      "source": "NVD",
+      "id": "CVE-2009-4501"
+    },
+    {
+      "text": "http://secunia.com/advisories/37740",
+      "source": "SECUNIA",
+      "id": "SA37740"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/3514",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-3514"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:zabbix:zabbix",
+      "version": "2.2",
+      "vendor": "Zabbix",
+      "product": "Zabbix"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2010-11-15T15:40+09:00",
+  "issued": "2010-11-15T15:40+09:00",
+  "modified": "2010-11-15T15:40+09:00"
+}

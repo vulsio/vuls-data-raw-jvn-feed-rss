@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-016556.html",
+  "title": "サムスンの tizenrt における有効なライフタイム後のリソースの解放の欠如に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-016556.html",
+  "description": "サムスンの tizenrt には、有効なライフタイム後のリソースの解放の欠如に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-016556",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-40280",
+      "source": "CVE",
+      "id": "CVE-2022-40280"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-40280",
+      "source": "NVD",
+      "id": "CVE-2022-40280"
+    },
+    {
+      "text": "https://github.com/Samsung/TizenRT/blob/f8f776dd183246ad8890422c1ee5e8f33ab2aaaf/external/iotivity/iotivity_1.2-rel/resource/csdk/security/provisioning/src/provisioningdatabasemanager.c#L100",
+      "source": "関連文書",
+      "id": "github.com (provisioningdatabasemanager.c#L100)"
+    },
+    {
+      "text": "https://github.com/Samsung/TizenRT/issues/5627",
+      "source": "関連文書",
+      "id": "github.com (issues/5627)"
+    },
+    {
+      "text": "https://www.sqlite.org/c3ref/open.html",
+      "source": "関連文書",
+      "id": "www.sqlite.org (open)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/772.html",
+      "id": "CWE-772",
+      "title": "有効なライフタイム後のリソースの解放の欠如(CWE-772)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:samsung:tizenrt",
+      "version": "2.2",
+      "vendor": "サムスン",
+      "product": "tizenrt"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-10-05T17:31+09:00",
+  "issued": "2023-10-05T17:31+09:00",
+  "modified": "2023-10-05T17:31+09:00"
+}

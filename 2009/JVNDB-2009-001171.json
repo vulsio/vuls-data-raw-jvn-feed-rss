@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001171.html",
+  "title": "net-snmp の netsnmp_udp_fmtaddr 関数におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001171.html",
+  "description": "net-snmp の netsnmp_udp_fmtaddr 関数には、クライアント認証に TCP wrappers を使用している場合、hosts.allow ルールが正しく解析されないため、アクセス制限を回避され、SNMP クエリを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001171",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-6123",
+      "source": "CVE",
+      "id": "CVE-2008-6123"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-6123",
+      "source": "NVD",
+      "id": "CVE-2008-6123"
+    },
+    {
+      "text": "http://secunia.com/advisories/34499",
+      "source": "SECUNIA",
+      "id": "SA34499"
+    },
+    {
+      "text": "http://secunia.com/advisories/33884",
+      "source": "SECUNIA",
+      "id": "SA33884"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/33755",
+      "source": "BID",
+      "id": "33755"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1021921",
+      "source": "SECTRACK",
+      "id": "1021921"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:net-snmp:net-snmp",
+      "version": "2.2",
+      "vendor": "Net-SNMP",
+      "product": "Net-SNMP"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2009-04-24T11:53+09:00",
+  "issued": "2009-04-24T11:53+09:00",
+  "modified": "2009-04-24T11:53+09:00"
+}

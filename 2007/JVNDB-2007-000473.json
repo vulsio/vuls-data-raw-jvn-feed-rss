@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000473.html",
+  "title": "Linux Kernel の Netfilter における SCTP コネクション追跡モジュールに Null ポインタデリファレンスの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000473.html",
+  "description": "Linux Kernel の Netfilter で使用される SCTP コネクション追跡モジュール (ip_conntrack_proto_sctp.c, nf_conntrack_proto_sctp.c) で使用される sctp_new() 関数には、特定の無効な値が指定された SCTP パケットの処理により Null ポインタデリファレンスが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000473",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2876",
+      "source": "CVE",
+      "id": "CVE-2007-2876"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2876",
+      "source": "NVD",
+      "id": "CVE-2007-2876"
+    },
+    {
+      "text": "http://secunia.com/advisories/25594/",
+      "source": "SECUNIA",
+      "id": "SA25594"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/24376",
+      "source": "BID",
+      "id": "24376"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/34777",
+      "source": "XF",
+      "id": "34777"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/2105",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-2105"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2007-09-25T11:25+09:00",
+  "issued": "2007-06-29T17:05+09:00",
+  "modified": "2007-09-25T11:25+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004502.html",
+  "title": "Papoo CMS の lib/classes/message_class.php におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004502.html",
+  "description": "Papoo CMS の lib/classes/message_class.php には、register_globals が有効で magic_quotes_qpc が無効になっている際、ディレクトリトラバーサルの脆弱性が存在します。",
+  "identifier": "JVNDB-2009-004502",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0735",
+      "source": "CVE",
+      "id": "CVE-2009-0735"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0735",
+      "source": "NVD",
+      "id": "CVE-2009-0735"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:papoo:papoo",
+      "version": "2.2",
+      "vendor": "Papoo Software",
+      "product": "papoo"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T17:27+09:00",
+  "issued": "2012-09-25T17:27+09:00",
+  "modified": "2012-09-25T17:27+09:00"
+}

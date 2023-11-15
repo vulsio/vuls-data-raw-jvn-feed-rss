@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001424.html",
+  "title": "Bugzilla におけるランダムなトークンの生成に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001424.html",
+  "description": "mod_perl 下で動作している Bugzilla には、起動時に srand 関数が呼び出される場合、\r\nApache children が同一のシードを持つことで不十分な乱数を生成するため、ランダムなトークンの生成に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001424",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0486",
+      "source": "CVE",
+      "id": "CVE-2009-0486"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0486",
+      "source": "NVD",
+      "id": "CVE-2009-0486"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+      "id": "CWE-352",
+      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:bugzilla",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Bugzilla"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-06-30T11:33+09:00",
+  "issued": "2009-06-30T11:33+09:00",
+  "modified": "2009-06-30T11:33+09:00"
+}

@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002091.html",
+  "title": "複数の Asterisk 製品の SIP チャンネルドライバにおけるアカウント名を列挙される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002091.html",
+  "description": "Asterisk Open Source、Certified Asterisk、Asterisk Business Edition (BE) および Asterisk Digiumphones の SIP チャンネルドライバは、ユーザアカウントの有無によって、無効な INVITE、SUBSCRIBE および REGISTER トランザクションの動作が異なるため、アカウント名を列挙される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002091",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2264",
+      "source": "CVE",
+      "id": "CVE-2013-2264"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2264",
+      "source": "NVD",
+      "id": "CVE-2013-2264"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:digium:asterisk_business_edition",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk Business Edition"
+    },
+    {
+      "text": "cpe:/a:digium:asterisk_digiumphones",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk with Digiumphones"
+    },
+    {
+      "text": "cpe:/a:digium:certified_asterisk",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Certified Asterisk"
+    },
+    {
+      "text": "cpe:/a:digium:open_source",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk Open Source"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2013-04-02T14:34+09:00",
+  "issued": "2013-04-02T14:34+09:00",
+  "modified": "2013-04-02T14:34+09:00"
+}

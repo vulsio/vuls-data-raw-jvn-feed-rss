@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002112.html",
+  "title": "Secure Access Link (SAL) Gateway に情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002112.html",
+  "description": "Avaya が提供する Secure Access Link (SAL) Gateway には、情報漏えいの脆弱性が存在します。\r\n\r\nAvaya が提供する Secure Access Link (SAL) Gateway には、インストール時のデフォルト設定に問題があります。Secondary Core Server と Secondary Remote Server に不適切な URL が設定されているため、情報漏えいの脆弱性が存在します。\r\n\r\nAvaya から、以下の脆弱性情報が公開されています。\r\n\r\n\"On installation of SAL Gateway with the default properties provided along with the installer, the Secondary Core Server URL and the Remote Server URL points to the secavaya.com and secaxeda.com respectively which are invalid public domain servers and not owned by Avaya. These servers resolve to invalid domains and pose a security threat. Secondary Core Server URL should be same as the primary Core Server URL and Secondary Remote Server URL should be same as the primary Remote Server URL.\"",
+  "identifier": "JVNDB-2011-002112",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU690315",
+      "source": "JVN",
+      "id": "JVNVU#690315"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3008",
+      "source": "CVE",
+      "id": "CVE-2011-3008"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3008",
+      "source": "NVD",
+      "id": "CVE-2011-3008"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/690315",
+      "source": "CERT-VN",
+      "id": "VU#690315"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/48942",
+      "source": "BID",
+      "id": "48942"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/68922",
+      "source": "XF",
+      "id": "68922"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:avaya:secure_access_link",
+      "version": "2.2",
+      "vendor": "アバイア",
+      "product": "Avaya Secure Access Link"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2011-08-18T08:58+09:00",
+  "issued": "2011-08-18T08:58+09:00",
+  "modified": "2011-08-18T08:58+09:00"
+}

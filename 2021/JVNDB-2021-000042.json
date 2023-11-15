@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000042.html",
+  "title": "複数の PHP工房製品における複数のクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000042.html",
+  "description": "PHP工房が提供する複数の製品には、次に挙げる複数のクロスサイトスクリプティングの脆弱性が存在します。\r\n・反射型クロスサイトスクリプティング - CVE-2021-20723\r\n・管理者画面における反射型クロスサイトスクリプティング - CVE-2021-20724\r\n・管理者画面における反射型クロスサイトスクリプティング - CVE-2021-20725\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: apple502j 氏",
+  "identifier": "JVNDB-2021-000042",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN53910556/index.html",
+      "source": "JVN",
+      "id": "JVN#53910556"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20723",
+      "source": "CVE",
+      "id": "CVE-2021-20723"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20724",
+      "source": "CVE",
+      "id": "CVE-2021-20724"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20725",
+      "source": "CVE",
+      "id": "CVE-2021-20725"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php_kobo:headline_cms_free",
+      "version": "2.2",
+      "vendor": "PHP工房",
+      "product": "【Telop01】PHPテロップ・ニュースティッカー・ヘッドラインCMS フリー（無料）版"
+    },
+    {
+      "text": "cpe:/a:php_kobo:multifunctional_mailform_free",
+      "version": "2.2",
+      "vendor": "PHP工房",
+      "product": "【MailForm01】PHP多機能メールフォーム フリー（無料）版"
+    },
+    {
+      "text": "cpe:/a:php_kobo:schedule_calendar_free",
+      "version": "2.2",
+      "vendor": "PHP工房",
+      "product": "【Calendar01】（3デバイス対応）PHP営業日・スケジュールカレンダーフリー（無料）版"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+    }
+  ],
+  "date": "2021-05-21T12:17+09:00",
+  "issued": "2021-05-21T12:17+09:00",
+  "modified": "2021-05-21T12:17+09:00"
+}

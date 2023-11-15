@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000343.html",
+  "title": "DeleGate における DNS メッセージの展開処理によるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000343.html",
+  "description": "DeleGate における DNS プロトコルの実装において、DNS パケット中に含まれる圧縮されたデータを展開する処理に不備が存在するため、無限ループに陥る脆弱性が存在します。\r\n\r\nなお、DeleGate 以外の一部 DNS パケット処理を行なうその他システムにおいても本脆弱性に関連する脆弱性が確認されています。その他システムに関する情報については NISCC-589088 (JVN)、NISCC Advisory 589088/NISCC/DNS (CPNI Advisory 00432) をご確認ください。",
+  "identifier": "JVNDB-2005-000343",
+  "references": [
+    {
+      "text": "http://jvn.jp/niscc/NISCC-589088/index.html",
+      "source": "JVN",
+      "id": "NISCC-589088"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0036",
+      "source": "CVE",
+      "id": "CVE-2005-0036"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0036",
+      "source": "NVD",
+      "id": "CVE-2005-0036"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/docs/re-20050524-00432.pdf?lang=en",
+      "source": "NISCC",
+      "id": "589088/NISCC/DNS"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20050524-00432.xml",
+      "source": "CPNI",
+      "id": "00432"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13729",
+      "source": "BID",
+      "id": "13729"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/0610",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-0610"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:delegate:delegate",
+      "version": "2.2",
+      "vendor": "DeleGate.org",
+      "product": "DeleGate"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

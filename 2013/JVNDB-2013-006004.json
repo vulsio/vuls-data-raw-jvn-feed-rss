@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006004.html",
+  "title": "Pidgin の libpurple の XMPP プロトコルプラグインにおける iq トラフィックを偽装される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006004.html",
+  "description": "Pidgin の libpurple の XMPP プロトコルプラグインは、iq 応答の from のアドレスが iq 要求の to のアドレスと一致するかどうかを適切に判定しないため、iq トラフィックを偽装される、またはサービス運用妨害 (NULL ポインタデリファレンスおよびアプリケーションクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-006004",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6483",
+      "source": "CVE",
+      "id": "CVE-2013-6483"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6483",
+      "source": "NVD",
+      "id": "CVE-2013-6483"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pidgin:pidgin",
+      "version": "2.2",
+      "vendor": "Pidgin",
+      "product": "Pidgin"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2015-08-04T17:59+09:00",
+  "issued": "2014-02-10T11:42+09:00",
+  "modified": "2015-08-04T17:59+09:00"
+}

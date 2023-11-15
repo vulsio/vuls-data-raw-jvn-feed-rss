@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000225.html",
+  "title": "Microsoft SQL Server の名前つきパイプのハイジャックにおける権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000225.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft SQL Server 7.0/2000、Microsoft Data Engine (MSDE) 1.0、および Microsoft SQL Server 2000 Desktop Engine (MSDE 2000) には、名前付きパイプに関する複数の問題が存在します。\r\n\r\nMicrosoft SQL Server では、ログオンする際の認証として名前付きパイプを用いる方法があります。問題を抱える SQL Server には、名前付きパイプの妥当性の確認を適切に行わない問題が存在するため、他のユーザが名前付きパイプや Windows 認証を用いて SQL Server へのログオンを行う際に、攻撃者により名前付きパイプを乗っ取られる可能性が存在します。\r\n\r\nこの問題を利用するローカルの攻撃者は、SQL Server の稼動する標的ホストにログオンし、認証時に使用する名前付きパイプと同じパイプを作成することで、SQL Server へ認証し、標的ユーザと同等の権限を奪取することが可能です。\r\n\r\nまた、SQL Server には、名前付きパイプを介して、予想以上に大きなサイズのデータを受け取る場合、サービス不能状態に陥る可能性があります。\r\n\r\nリモートの攻撃者が、意図的に作成したパケットを名前付きパイプに送りつけることにより、標的サーバをサービス不能状態に陥らせることが可能です。\r\n通常状態に復旧するためには、手動で SQL Server を再起動する必要があります。\r\n\r\n尚、Universal Description, Discovery, and Integration (UDDI) をサポートするよう設定してインストールした Microsoft Windows Server 2003 には、この問題の影響を受ける Microsoft SQL Server 2000 Desktop Engine (Windows) が同梱されています。",
+  "identifier": "JVNDB-2003-000225",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0230",
+      "source": "CVE",
+      "id": "CVE-2003-0230"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0230",
+      "source": "NVD",
+      "id": "CVE-2003-0230"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/556356",
+      "source": "CERT-VN",
+      "id": "VU#556356"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8276",
+      "source": "BID",
+      "id": "8276"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8274",
+      "source": "BID",
+      "id": "8274"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:sql_server",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft SQL Server"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

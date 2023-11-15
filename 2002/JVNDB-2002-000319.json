@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000319.html",
+  "title": "MySQL の libmysqlclient ライブラリにおけるバッファオーバフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000319.html",
+  "description": "MySQL に含まれている libmysqlclient ライブラリには、Read_Rows() 関数及び Read_One_Row() 関数において、フィールドサイズに対するチェックが不適切であるため、バッファオーバフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2002-000319",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1376",
+      "source": "CVE",
+      "id": "CVE-2002-1376"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1376",
+      "source": "NVD",
+      "id": "CVE-2002-1376"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6370",
+      "source": "BID",
+      "id": "6370"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6374",
+      "source": "BID",
+      "id": "6374"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mysql:mysql",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

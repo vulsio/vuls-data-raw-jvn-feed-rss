@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002485.html",
+  "title": "Windows 上で稼働する Opera におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002485.html",
+  "description": "Windows 上で稼働する Opera には、以下の処理において不備があるため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。\r\n(1) 多数の MIME パーツが付与された multipart/mixed 電子メールメッセージ\r\n(2) 多数の “Content-type: message/rfc822;” ヘッダが付与された電子メールメッセージ\r\n本問題は、CVE-2006-1173 と関連する問題です。",
+  "identifier": "JVNDB-2008-002485",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5428",
+      "source": "CVE",
+      "id": "CVE-2008-5428"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-5428",
+      "source": "NVD",
+      "id": "CVE-2008-5428"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:opera:opera_browser",
+      "version": "2.2",
+      "vendor": "Opera Software ASA",
+      "product": "Opera"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2010-09-27T16:07+09:00",
+  "issued": "2010-09-27T16:07+09:00",
+  "modified": "2010-09-27T16:07+09:00"
+}

@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-011646.html",
+  "title": "Telestream Tektronix Medius および Sentry における SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-011646.html",
+  "description": "Telestream Tektronix Medius および Sentry には、SQL インジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2020-011646",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8887",
+      "source": "CVE",
+      "id": "CVE-2020-8887"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-8887",
+      "source": "NVD",
+      "id": "CVE-2020-8887"
+    },
+    {
+      "text": "https://github.com/google/security-research/security/advisories/GHSA-g69r-8jwh-2462",
+      "source": "関連文書",
+      "id": "Telestream: SQL injection in Sentry/Medius"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:telestream:medius",
+      "version": "2.2",
+      "vendor": "telestream",
+      "product": "Medius"
+    },
+    {
+      "text": "cpe:/a:telestream:sentry",
+      "version": "2.2",
+      "vendor": "telestream",
+      "product": "Sentry"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2021-04-08T16:52+09:00",
+  "issued": "2021-04-08T16:52+09:00",
+  "modified": "2021-04-08T16:52+09:00"
+}

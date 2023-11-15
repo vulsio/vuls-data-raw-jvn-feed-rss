@@ -1,0 +1,116 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001663.html",
+  "title": "sudo の secure path 機能における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001663.html",
+  "description": "sudo の env.c の secure path 機能には、環境変数 PATH を適切に処理しないため、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001663",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1646",
+      "source": "CVE",
+      "id": "CVE-2010-1646"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1646",
+      "source": "NVD",
+      "id": "CVE-2010-1646"
+    },
+    {
+      "text": "http://secunia.com/advisories/40002",
+      "source": "SECUNIA",
+      "id": "SA40002"
+    },
+    {
+      "text": "http://secunia.com/advisories/40215",
+      "source": "SECUNIA",
+      "id": "SA40215"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/40538",
+      "source": "BID",
+      "id": "40538"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1024101",
+      "source": "SECTRACK",
+      "id": "1024101"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/1478",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-1478"
+    },
+    {
+      "text": "http://www.osvdb.org/65083",
+      "source": "OSVDB",
+      "id": "65083"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:todd_miller:sudo",
+      "version": "2.2",
+      "vendor": "Todd C. Miller",
+      "product": "Sudo"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_client",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Client"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.2",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2010-09-08T15:50+09:00",
+  "issued": "2010-07-12T18:12+09:00",
+  "modified": "2010-09-08T15:50+09:00"
+}

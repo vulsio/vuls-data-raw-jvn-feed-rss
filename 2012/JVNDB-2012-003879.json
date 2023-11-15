@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003879.html",
+  "title": "SquidClamav の squidclamav.c におけるサービス運用妨害 (デーモンクラッシュ) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003879.html",
+  "description": "SquidClamav の squidclamav.c 内の squidclamav_check_preview_handler 関数は、システムコマンドの呼び出しにエスケープされない URL を渡すため、サービス運用妨害 (デーモンクラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-003879",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3501",
+      "source": "CVE",
+      "id": "CVE-2012-3501"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3501",
+      "source": "NVD",
+      "id": "CVE-2012-3501"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:darold:squidclamav",
+      "version": "2.2",
+      "vendor": "Gilles Darold",
+      "product": "SquidClamav"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-08-28T15:34+09:00",
+  "issued": "2012-08-28T15:34+09:00",
+  "modified": "2012-08-28T15:34+09:00"
+}

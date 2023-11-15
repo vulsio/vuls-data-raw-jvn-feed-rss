@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002536.html",
+  "title": "Linux Kernel の tomoyo_mount_acl 関数におけるサービス運用妨害 (OOPS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002536.html",
+  "description": "Linux Kernel の security/tomoyo/mount.c 内の tomoyo_mount_acl 関数は、mount システムコールから直接受け取った引数を持つ kern_path 関数を呼び出すため、サービス運用妨害 (OOPS) 状態となる、またはその他の詳細不明な影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002536",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2518",
+      "source": "CVE",
+      "id": "CVE-2011-2518"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2518",
+      "source": "NVD",
+      "id": "CVE-2011-2518"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-05-28T15:43+09:00",
+  "issued": "2012-05-28T15:43+09:00",
+  "modified": "2012-05-28T15:43+09:00"
+}

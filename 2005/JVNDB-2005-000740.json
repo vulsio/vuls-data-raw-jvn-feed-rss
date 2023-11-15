@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000740.html",
+  "title": "BIND における送信元 IP アドレスを偽装した DNS クエリによるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000740.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nDNS における名前解決のリクエストは Recursive（再帰）と Iterative（反復）に大別され、再帰問い合わせを受けた DNS サーバは、リクエストされたドメイン名が自身で管理するドメイン名でない場合、ルートネームサーバに問い合わせて解決を行います。\r\n\r\n信頼のない送信元からの再帰問い合わせを許可する ISC BIND および Microsoft Windows の DNS Server service では、送信元アドレスが偽装された DNS リクエストを大量に処理した場合に、偽装された送信元ホストに対して大量のレスポンスを送信し、そのホストにおけるネットワークトラフィックおよびシステムリソースを過度に消費させてしまう問題が存在します。\r\n\r\nリモートの攻撃者に悪用された場合、第三者への DDoS 攻撃に利用されてしまう可能性があります。",
+  "identifier": "JVNDB-2005-000740",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0987",
+      "source": "CVE",
+      "id": "CVE-2006-0987"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0988",
+      "source": "NVD",
+      "id": "CVE-2006-0987"
+    },
+    {
+      "text": "http://www.us-cert.gov/reading_room/DNS-recursion121605.pdf",
+      "source": "CERT-P",
+      "id": "DNS-recursion121605"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

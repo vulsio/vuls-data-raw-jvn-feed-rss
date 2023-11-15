@@ -1,0 +1,166 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001226.html",
+  "title": "CUPS の cgiCompileSearch() 関数におけるヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001226.html",
+  "description": "CUPS の cgiCompileSearch() 関数には、プリンタ共有が有効になっている場合、検索式の取り扱いに不備があり、ヒープベースのバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001226",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA08-079A/index.html",
+      "source": "JVN",
+      "id": "JVNTA08-079A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA08-079A/index.html",
+      "source": "JVNTR",
+      "id": "TRTA08-079A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0047",
+      "source": "CVE",
+      "id": "CVE-2008-0047"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-0047",
+      "source": "NVD",
+      "id": "CVE-2008-0047"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA08-079A.html",
+      "source": "CERT-SA",
+      "id": "SA08-079A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA08-079A.html",
+      "source": "CERT-TA",
+      "id": "TA08-079A"
+    },
+    {
+      "text": "http://secunia.com/advisories/29420",
+      "source": "SECUNIA",
+      "id": "SA29420"
+    },
+    {
+      "text": "http://secunia.com/advisories/29431",
+      "source": "SECUNIA",
+      "id": "SA29431"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/28307",
+      "source": "BID",
+      "id": "28307"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1019646",
+      "source": "SECTRACK",
+      "id": "1019646"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/0924",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-0924"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/0921",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-0921"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cups:cups",
+      "version": "2.2",
+      "vendor": "CUPS",
+      "product": "CUPS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_wizpy",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "wizpy"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-07-01T14:46+09:00",
+  "issued": "2008-04-10T15:48+09:00",
+  "modified": "2008-07-01T14:46+09:00"
+}

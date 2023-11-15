@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000118.html",
+  "title": "Linux Kernel の shmctl 関数におけるメモリ情報が漏洩する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000118.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.6.10 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・共有メモリを制御する shmctl() 関数で権限のチェックが適切に行われないために、任意のプロセスが RLIMIT_MEMLOCK の範囲内の System V 共用メモリに存在する他のプロセスにロックされたメモリをアンロックして SWAP 領域に退避させることにより、重要な情報が奪取される可能性がある問題 (CAN-2005-0176, Linux Kernel 2.6.9 以前)\r\n\r\n・nls_ascii.c のテーブルサイズが本来の 256 ではなく 128 に設定されているためにバッファオーバーフローが発生し、カーネルのクラッシュを引き起こす問題 (CAN-2005-0177, Linux Kernel 2.6.10 以前)\r\n\r\n・ターミナルにおいて、新しいプロセスのセッションを開始する際の setuid() 関数の処理に競合状態が発生する問題 (CAN-2005-0178, Linux Kernel 2.6.10 以前)\r\n\r\n・パケットフィルタリング機能を提供する netfilter/iptables モジュールに設計上の不備が存在し、意図的なパケットを受信した際にカーネルのクラッシュまたはファイアウォールによる制限を回避する問題 (CAN-2005-0449, Linux Kernel 2.6.10 以前)\r\n\r\n現時点では攻撃手法の詳細は不明ですが、これらの問題を利用するリモート/ローカルの攻撃者は、結果として、カーネルをクラッシュさせる、あるいは重要な情報を奪取できる可能性があります。\r\n\r\n尚、CAN-2005-0449 の問題に関しては、Linux Kernel 2.4.29 以前も問題の影響を受けます。ただし、その他の問題に関しては、現時点において Linux Kernel 2.4.x への影響は不明です。",
+  "identifier": "JVNDB-2005-000118",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0176",
+      "source": "CVE",
+      "id": "CVE-2005-0176"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0176",
+      "source": "NVD",
+      "id": "CVE-2005-0176"
+    },
+    {
+      "text": "http://secunia.com/advisories/14295/",
+      "source": "SECUNIA",
+      "id": "SA14295"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12598",
+      "source": "BID",
+      "id": "12598"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

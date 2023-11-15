@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005098.html",
+  "title": "Ceph の RGW コードにおけるバケットのコンテンツを一覧表示される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005098.html",
+  "description": "Ceph の RGW コードには、バケットに authenticated-read ACL が適用されている場合、バケットのコンテンツを一覧表示される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-254: Security Features (セキュリティ機能) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/254.html",
+  "identifier": "JVNDB-2016-005098",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7031",
+      "source": "CVE",
+      "id": "CVE-2016-7031"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7031",
+      "source": "NVD",
+      "id": "CVE-2016-7031"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ceph_project:ceph",
+      "version": "2.2",
+      "vendor": "Ceph project",
+      "product": "Ceph"
+    },
+    {
+      "text": "cpe:/a:redhat:ceph_storage",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Ceph Storage"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2016-10-06T14:31+09:00",
+  "issued": "2016-10-06T14:31+09:00",
+  "modified": "2016-10-06T14:31+09:00"
+}

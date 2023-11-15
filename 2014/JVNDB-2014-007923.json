@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007923.html",
+  "title": "MIT Kerberos 5 の kadmind の kadmin/server/kadm_rpc_svc.c における kadmin/* 認証チェックを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007923.html",
+  "description": "MIT Kerberos 5 (別名 krb5) の kadmind の kadmin/server/kadm_rpc_svc.c 内の check_rpcsec_auth 関数には、kadmin/* 認証チェックを回避される、および管理アクセス権を取得される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-284: Improper Access Control (不適切なアクセス制御) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/284.html",
+  "identifier": "JVNDB-2014-007923",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9422",
+      "source": "CVE",
+      "id": "CVE-2014-9422"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9422",
+      "source": "NVD",
+      "id": "CVE-2014-9422"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mit:kerberos",
+      "version": "2.2",
+      "vendor": "MIT Kerberos",
+      "product": "Kerberos"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:S/C:P/I:P/A:C"
+    }
+  ],
+  "date": "2015-06-08T17:26+09:00",
+  "issued": "2015-02-23T18:09+09:00",
+  "modified": "2015-06-08T17:26+09:00"
+}

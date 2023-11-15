@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001684.html",
+  "title": "System Security Services Daemon におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001684.html",
+  "description": "System Security Services Daemon (SSSD) の以下の関数には、サービス運用妨害 (領域外メモリの読み込み、クラッシュおよび再起動) 状態となる脆弱性が存在します。\r\n\r\n(1) responder/autofs/autofssrv_cmd.c の sss_autofs_cmd_getautomntent 関数\r\n(2) responder/autofs/autofssrv_cmd.c の sss_autofs_cmd_getautomntbyname 関数\r\n(3) responder/ssh/sshsrv_cmd.c の ssh_cmd_parse_request 関数",
+  "identifier": "JVNDB-2013-001684",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0220",
+      "source": "CVE",
+      "id": "CVE-2013-0220"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0220",
+      "source": "NVD",
+      "id": "CVE-2013-0220"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fedoraproject:sssd",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "sssd"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-03-05T16:15+09:00",
+  "issued": "2013-02-27T15:25+09:00",
+  "modified": "2013-03-05T16:15+09:00"
+}

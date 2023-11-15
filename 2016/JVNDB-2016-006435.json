@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006435.html",
+  "title": "Oracle MySQL およびその他のデータベースの mysqld_safe における root 権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006435.html",
+  "description": "Oracle MySQL、MariaDB、Percona Server、および Percona XtraDB Cluster の mysqld_safe には、ファイルベースのログインを使用する際、root 権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006435",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6664",
+      "source": "CVE",
+      "id": "CVE-2016-6664"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6664",
+      "source": "NVD",
+      "id": "CVE-2016-6664"
+    },
+    {
+      "text": "http://legalhackers.com/advisories/MySQL-Maria-Percona-RootPrivEsc-CVE-2016-6664-5617-Exploit.html",
+      "source": "関連文書",
+      "id": "MySQL-Maria-Percona-RootPrivEsc-CVE-2016-6664-5617-Exploit"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+      "id": "CWE-59",
+      "title": "リンク解釈の問題(CWE-59)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mariadb:mariadb",
+      "version": "2.2",
+      "vendor": "MariaDB Corporation Ab.",
+      "product": "MariaDB"
+    },
+    {
+      "text": "cpe:/a:oracle:mysql",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/a:percona:percona_server",
+      "version": "2.2",
+      "vendor": "Percona",
+      "product": "Percona Server"
+    },
+    {
+      "text": "cpe:/a:percona:xtradb_cluster",
+      "version": "2.2",
+      "vendor": "Percona",
+      "product": "Percona XtraDB Cluster"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-12-28T11:45+09:00",
+  "issued": "2016-12-28T11:45+09:00",
+  "modified": "2016-12-28T11:45+09:00"
+}

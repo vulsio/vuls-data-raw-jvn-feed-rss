@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-009390.html",
+  "title": "OWASP ModSecurity Core Rule Set における SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-009390.html",
+  "description": "OWASP ModSecurity Core Rule Set (owasp-modsecurity-crs) には、SQL インジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2018-009390",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16384",
+      "source": "CVE",
+      "id": "CVE-2018-16384"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-16384",
+      "source": "NVD",
+      "id": "CVE-2018-16384"
+    },
+    {
+      "text": "https://github.com/SpiderLabs/owasp-modsecurity-crs/issues/1167",
+      "source": "関連文書",
+      "id": "Bypass the latest crs v3.1.0-rc3 rules for SQL injection #1167"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:trustwave:owasp_modsecurity_core_rule_set",
+      "version": "2.2",
+      "vendor": "Trustwave",
+      "product": "OWASP ModSecurity Core Rule Set"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2018-11-19T15:14+09:00",
+  "issued": "2018-11-19T15:14+09:00",
+  "modified": "2018-11-19T15:14+09:00"
+}

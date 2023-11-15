@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000019.html",
+  "title": "GNU Mailman の driver スクリプトによる最適化処理におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000019.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU Mailman は、電子メールのメーリングリストを管理するためのソフトウェアです。Mailman の driver スクリプト (scripts/driver) は、エラーを検出し、それに対する有用な情報をレポートする機能を提供します。\r\n\r\nMailman 2.1.5 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・パスワードの自動生成機能で弱い暗号化アルゴリズムを使用しているため、約 500 万通りの異なるパスワードしか生成しない問題 (CAN-2004-1143)\r\n\r\n・driver スクリプトによる最適化処理が不適切であるため、クロスサイトスクリプティング攻撃が可能である問題 (CAN-2004-1177)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、ブルートフォース (総当り) 攻撃や、Web ページもしくは電子メールを介して意図的に作成した URL に標的ユーザを誘導することにより、認証情報などの重要な情報を奪取できる可能性があります。",
+  "identifier": "JVNDB-2005-000019",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1177",
+      "source": "CVE",
+      "id": "CVE-2004-1177"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1177",
+      "source": "NVD",
+      "id": "CVE-2004-1177"
+    },
+    {
+      "text": "http://secunia.com/advisories/13603/",
+      "source": "SECUNIA",
+      "id": "SA13603"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12243",
+      "source": "BID",
+      "id": "12243"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

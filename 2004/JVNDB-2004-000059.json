@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000059.html",
+  "title": "ISS RealSecure Network Sensor/Server Sensor の不正な SMB リクエストの処理によるヒープオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000059.html",
+  "description": "ISS RealSecure Network Sensor 、Server Sensor の PAM コンポーネントには、SMB プロトコルの解析の不備により、SMB セッションの Session Setup And X リクエストに対する AccountName パラメータのサイズチェックを適切に行わない脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000059",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0193",
+      "source": "CVE",
+      "id": "CVE-2004-0193"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0193",
+      "source": "NVD",
+      "id": "CVE-2004-0193"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/150326",
+      "source": "CERT-VN",
+      "id": "VU#150326"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9752",
+      "source": "BID",
+      "id": "9752"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:iss:realsecure_network_sensor",
+      "version": "2.2",
+      "vendor": "インターネット セキュリティ システムズ",
+      "product": "RealSecure Network Sensor"
+    },
+    {
+      "text": "cpe:/a:iss:realsecure_server_sensor",
+      "version": "2.2",
+      "vendor": "インターネット セキュリティ システムズ",
+      "product": "RealSecure Server Sensor"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

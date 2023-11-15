@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002426.html",
+  "title": "複数の SSL VPN (Web VPN) 製品においてウェブブラウザのセキュリティが迂回される問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002426.html",
+  "description": "複数の SSL VPN (Web VPN) 製品には、ウェブブラウザのセキュリティメカニズムを迂回可能な問題が存在します。\r\n\r\nSL VPN (Web VPN) は、ウェブブラウザを用いて組織内のネットワークリソース (ウェブサーバやメールサーバなど) へ安全にアクセス可能な手段を提供するための製品です。SSL VPN (Web VPN) 製品は、ウェブブラウザとサーバ間のプロキシとして、必要に応じてコンテンツの書き換えを行います。\r\n\r\nSSL VPN (Web VPN) を通じて細工したウェブページをアクセスすることにより、ウェブブラウザのセキュリティメカニズム (Same Origin Policy) を迂回される可能性があります。\r\n\r\nSSL VPN (Web VPN) を実装している製品が本脆弱性の影響を受ける可能性があります。",
+  "identifier": "JVNDB-2009-002426",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU261869/index.html",
+      "source": "JVN",
+      "id": "JVNVU#261869"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2631",
+      "source": "CVE",
+      "id": "CVE-2009-2631"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2631",
+      "source": "NVD",
+      "id": "CVE-2009-2631"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/261869",
+      "source": "CERT-VN",
+      "id": "VU#261869"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:cisco:adaptive_security_appliance",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Adaptive Security Appliance"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-01-20T14:15+09:00",
+  "issued": "2010-01-20T14:15+09:00",
+  "modified": "2010-01-20T14:15+09:00"
+}

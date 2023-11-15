@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-008845.html",
+  "title": "chafa project の chafa 他複数ベンダの製品における NULL ポインタデリファレンスに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-008845.html",
+  "description": "chafa project の chafa 他複数ベンダの製品には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-008845",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-1507",
+      "source": "CVE",
+      "id": "CVE-2022-1507"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-1507",
+      "source": "NVD",
+      "id": "CVE-2022-1507"
+    },
+    {
+      "text": "https://github.com/hpjansson/chafa/commit/e4b777c7b7c144cd16a0ea96108267b1004fe6c9",
+      "source": "関連文書",
+      "id": "github.com (e4b777c7b7c144cd16a0ea96108267b1004fe6c9)"
+    },
+    {
+      "text": "https://huntr.dev/bounties/104d8c5d-cac5-4baa-9ac9-291ea0bcab95",
+      "source": "関連文書",
+      "id": "huntr.dev (104d8c5d-cac5-4baa-9ac9-291ea0bcab95)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3PLHKTQYK6AO3M5NAVM3CDVQTZZS6MCO/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (3PLHKTQYK6AO3M5NAVM3CDVQTZZS6MCO)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DIOAZPITFL2Y7Y6KHCZ4OIK7P7KWFN22/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (DIOAZPITFL2Y7Y6KHCZ4OIK7P7KWFN22)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/L54UEP5S254VP5FZWGFPHLTPMFJVOGYT/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (L54UEP5S254VP5FZWGFPHLTPMFJVOGYT)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:chafa_project:chafa",
+      "version": "2.2",
+      "vendor": "chafa project",
+      "product": "chafa"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-07-31T17:22+09:00",
+  "issued": "2023-07-31T17:22+09:00",
+  "modified": "2023-07-31T17:22+09:00"
+}

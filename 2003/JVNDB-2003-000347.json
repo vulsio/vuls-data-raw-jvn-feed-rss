@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000347.html",
+  "title": "XFree86 のフォントライブラリにおける整数オーバーフロー脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000347.html",
+  "description": "XFree86 のフォントライブラリには、フォント情報の転送を行う関数と列挙を行う関数において、フォントサーバから送られる情報についての妥当性の確認の不備により、特定のフォント情報を X クライアントが受信した場合、ヒープ領域やスタック領域で整数桁あふれによるオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000347",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0730",
+      "source": "CVE",
+      "id": "CVE-2003-0730"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0730",
+      "source": "NVD",
+      "id": "CVE-2003-0730"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8514",
+      "source": "BID",
+      "id": "8514"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2003/Aug/1007598.html",
+      "source": "SECTRACK",
+      "id": "1007598"
+    },
+    {
+      "text": "http://www.securiteam.com/unixfocus/5EP010KB5K.html",
+      "source": "SECTEAM",
+      "id": "5EP010KB5K"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

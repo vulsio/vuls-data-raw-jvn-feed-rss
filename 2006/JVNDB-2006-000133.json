@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000133.html",
+  "title": "Microsoft Excel の BIFF ファイルの解析処理におけるメモリ領域が破壊される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000133.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Excel には、Excel ファイルの処理において以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・BIFF 形式のファイルの解析処理において、BOOLERR レコードに対する妥当性の確認が不適切であるため、メモリ領域が破壊される問題 (CVE-2006-0028)\r\n\r\n・description フィールドに対する妥当性の確認が不適切であるため、メモリ領域が破壊される問題 (CVE-2006-0029)\r\n\r\n・グラフィックデータに対する妥当性の確認が不適切であるため、メモリ領域が破壊される問題 (CVE-2006-0030)\r\n\r\n・特定のレコードに対する妥当性の確認が不適切であるため、メモリ領域が破壊される問題 (CVE-2006-0031)\r\n\r\nリモートの攻撃者により悪用された場合、Microsoft Excel を実行するユーザの権限で任意のコードが実行される可能性があります。",
+  "identifier": "JVNDB-2006-000133",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA06-073A/",
+      "source": "JVN",
+      "id": "JVNTA06-073A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA06-073A/",
+      "source": "JVNTR",
+      "id": "TRTA06-073A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0028",
+      "source": "CVE",
+      "id": "CVE-2006-0028"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0028",
+      "source": "NVD",
+      "id": "CVE-2006-0028"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA06-073A.html",
+      "source": "CERT-SA",
+      "id": "SA06-073A"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/339878",
+      "source": "CERT-VN",
+      "id": "VU#339878"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA06-073A.html",
+      "source": "CERT-TA",
+      "id": "TA06-073A"
+    },
+    {
+      "text": "http://secunia.com/advisories/19138/",
+      "source": "SECUNIA",
+      "id": "SA19138"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17108",
+      "source": "BID",
+      "id": "17108"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15926",
+      "source": "BID",
+      "id": "15926"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:excel",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Excel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

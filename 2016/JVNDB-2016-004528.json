@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004528.html",
+  "title": "CPython の zipimport.c の get_data 関数における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004528.html",
+  "description": "CPython (別名 Python) の zipimport.c の get_data 関数には、整数オーバーフローの脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-190: Integer Overflow or Wraparound (整数オーバーフローまたはラップアラウンド) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/190.html",
+  "identifier": "JVNDB-2016-004528",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5636",
+      "source": "CVE",
+      "id": "CVE-2016-5636"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5636",
+      "source": "NVD",
+      "id": "CVE-2016-5636"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:python:python",
+      "version": "2.2",
+      "vendor": "Python Software Foundation",
+      "product": "Python"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-11-16T17:21+09:00",
+  "issued": "2016-09-05T16:45+09:00",
+  "modified": "2016-11-16T17:21+09:00"
+}

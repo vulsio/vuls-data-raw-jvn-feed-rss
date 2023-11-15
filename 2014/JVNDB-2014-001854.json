@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001854.html",
+  "title": "Oracle VirtualBox の VBox/GuestHost/OpenGL/util/net.c における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001854.html",
+  "description": "Oracle VirtualBox の VBox/GuestHost/OpenGL/util/net.c には、3D アクセラレーションを使用する場合、Chromium サーバ上で任意のコードを実行される脆弱性が存在します。\r\n\r\n本問題は、CVE-2014-0982 と同一バージョンに影響を受ける同じタイプの脆弱性であるため、統合されました。\r\nCVE-2014-0982 の詳細については、CVE-2014-0981 を参照してください。",
+  "identifier": "JVNDB-2014-001854",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0981",
+      "source": "CVE",
+      "id": "CVE-2014-0981"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0981",
+      "source": "NVD",
+      "id": "CVE-2014-0981"
+    },
+    {
+      "text": "http://www.coresecurity.com/advisories/oracle-virtualbox-3d-acceleration-multiple-memory-corruption-vulnerabilities",
+      "source": "関連文書",
+      "id": "Oracle VirtualBox 3D Acceleration Multiple Memory Corruption Vulnerabilities"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:oracle:vm_virtualbox",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle VM VirtualBox"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-04-17T15:30+09:00",
+  "issued": "2014-04-02T10:46+09:00",
+  "modified": "2014-04-17T15:30+09:00"
+}

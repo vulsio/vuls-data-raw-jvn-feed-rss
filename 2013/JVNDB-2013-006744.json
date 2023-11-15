@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006744.html",
+  "title": "GNU C Library の getaddrinfo 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006744.html",
+  "description": "GNU C Library (別名 glibc または libc6) の getaddrinfo 関数には、libidn でコンパイルされる、および AI_IDN フラグが使用されている場合、サービス運用妨害 (無効なメモリ解放) 状態にされる、および任意のコードを実行される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-17: Code (コード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/17.html",
+  "identifier": "JVNDB-2013-006744",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7424",
+      "source": "CVE",
+      "id": "CVE-2013-7424"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7424",
+      "source": "NVD",
+      "id": "CVE-2013-7424"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:glibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU C Library"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-08-28T16:50+09:00",
+  "issued": "2015-08-28T16:50+09:00",
+  "modified": "2015-08-28T16:50+09:00"
+}

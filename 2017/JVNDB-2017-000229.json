@@ -1,0 +1,86 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-000229.html",
+  "title": "ホームユニット KX-HJB1000 における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-000229.html",
+  "description": "パナソニック株式会社が提供するホームユニット KX-HJB1000 は、ホームネットワーク内のシステムを制御するための機器です。ホームユニット KX-HJB1000 には、次の複数の脆弱性が存在します。\r\n・アクセス制限不備 - CVE-2017-2131\r\n・特定ディレクトリ内の任意のファイル削除 - CVE-2017-2132\r\n・SQL インジェクション (CWE-89) - CVE-2017-2133\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 三井物産セキュアディレクション株式会社 塚本 泰三 氏",
+  "identifier": "JVNDB-2017-000229",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN54795166/index.html",
+      "source": "JVN",
+      "id": "JVN#54795166"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2131",
+      "source": "CVE",
+      "id": "CVE-2017-2131"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2132",
+      "source": "CVE",
+      "id": "CVE-2017-2132"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2133",
+      "source": "CVE",
+      "id": "CVE-2017-2133"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-2131",
+      "source": "NVD",
+      "id": "CVE-2017-2131"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-2132",
+      "source": "NVD",
+      "id": "CVE-2017-2132"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-2133",
+      "source": "NVD",
+      "id": "CVE-2017-2133"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:panasonic:kx-hjb1000_firmware",
+      "version": "2.2",
+      "vendor": "パナソニック株式会社",
+      "product": "ホームユニット KX-HJB1000 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2018-03-07T14:06+09:00",
+  "issued": "2017-10-17T12:03+09:00",
+  "modified": "2018-03-07T14:06+09:00"
+}

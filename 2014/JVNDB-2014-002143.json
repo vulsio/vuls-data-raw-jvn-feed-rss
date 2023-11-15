@@ -1,0 +1,169 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002143.html",
+  "title": "Apache Xalan-Java の TransformerFactory における期待した制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002143.html",
+  "description": "Apache Xalan-Java の TransformerFactory は、FEATURE_SECURE_PROCESSING が有効な場合、特定のプロパティを適切に制限しないため、期待した制限を回避され、任意のクラスをロードされる、または外部リソースにアクセスされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002143",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0107",
+      "source": "CVE",
+      "id": "CVE-2014-0107"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0107",
+      "source": "NVD",
+      "id": "CVE-2014-0107"
+    },
+    {
+      "text": "http://www.ocert.org/advisories/ocert-2014-002.html",
+      "source": "関連文書",
+      "id": "#2014-002 Xalan-Java insufficient secure processing"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:xalan-java",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Xalan-Java"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_xml_processor",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus XML Processor"
+    },
+    {
+      "text": "cpe:/a:hitachi:infrastructure_analytics_advisor",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Infrastructure Analytics Advisor"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Enterprise"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Smart Edition"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_client",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Client"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Light"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_operator",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Operator"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Architect"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform"
+    },
+    {
+      "text": "cpe:/a:ibm:qradar_security_information_and_event_manager",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Security QRadar SIEM"
+    },
+    {
+      "text": "cpe:/a:ibm:sterling_b2b_integrator",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Sterling B2B Integrator"
+    },
+    {
+      "text": "cpe:/a:ibm:sterling_control_center",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Sterling Control Center"
+    },
+    {
+      "text": "cpe:/a:ibm:sterling_file_gateway",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Sterling File Gateway"
+    },
+    {
+      "text": "cpe:/a:oracle:fusion_middleware",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Fusion Middleware"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2019-04-16T17:11+09:00",
+  "issued": "2014-04-21T15:35+09:00",
+  "modified": "2019-04-16T17:11+09:00"
+}

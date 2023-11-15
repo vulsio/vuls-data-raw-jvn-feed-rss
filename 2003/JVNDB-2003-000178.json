@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000178.html",
+  "title": "Ethereal の OSI 解析部におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000178.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal 0.9.12 以前には、以下の複数のプロトコルの取り扱いに不備が存在します。\r\n\r\nDCERPC\r\nOSI\r\nSPNEGO\r\nBGP\r\nWTP\r\nDNS\r\n802.11\r\nISAKMP\r\nWSP\r\nCLNP\r\nISIS\r\nRMI\r\n\r\nDCE プロトコルの解析部には NDR 文字列の復号時に必要以上のメモリを割り当てる問題が存在し、OSI プロトコルの解析部には不正な IPv4 prefix 長、あるいは不正な IPv6 prefix 長が与えられることでバッファオーバーフローを生じる問題が存在します。\r\n\r\nまた、SPNEGO プロトコルの解析部には不正な ASN.1 値が設定されている際にセグメンテーション違反を生じる問題が存在し、tvb_get_nstringz0() 関数では長さが 0 のバッファを適切に取り扱っていない問題が存在します。\r\n\r\n更には、この他のプロトコル (BGP, WTP, DNS, 802.11, ISAKMP, WSP, CLNP, ISIS, RMI) の解析部では、文字列を適切に取り扱っていない問題が存在します。\r\n\r\nこれらの問題を利用し、リモートの攻撃者は意図的に組み立てたパケットを送信することにより、Ethereal をクラッシュさせ、結果としてサービス不能状態に陥らせることが可能です。更には、Ethereal の実行権限で任意のコードを実行できる可能性が存在します。",
+  "identifier": "JVNDB-2003-000178",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0429",
+      "source": "CVE",
+      "id": "CVE-2003-0429"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0429",
+      "source": "NVD",
+      "id": "CVE-2003-0429"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/542540",
+      "source": "CERT-VN",
+      "id": "VU#542540"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7878",
+      "source": "BID",
+      "id": "7878"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7879",
+      "source": "BID",
+      "id": "7879"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7880",
+      "source": "BID",
+      "id": "7880"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7881",
+      "source": "BID",
+      "id": "7881"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7883",
+      "source": "BID",
+      "id": "7883"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

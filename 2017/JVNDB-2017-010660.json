@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010660.html",
+  "title": "Adobe Reader および Acrobat における重要なデータを破壊される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010660.html",
+  "description": "Adobe Reader および Acrobat は、対象のバッファの終端を越えてデータを書き込まれるため、重要なデータを破壊される、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2017-010660",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16416",
+      "source": "CVE",
+      "id": "CVE-2017-16416"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-16416",
+      "source": "NVD",
+      "id": "CVE-2017-16416"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20171115-adobereader.html",
+      "source": "IPA CFA",
+      "id": "Adobe Reader および Acrobat の脆弱性対策について(APSB17-36)(CVE-2017-16377等)"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2017/at170043.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2017-0043"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:adobe:acrobat",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe Acrobat"
+    },
+    {
+      "text": "cpe:/a:adobe:acrobat_dc",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe Acrobat DC"
+    },
+    {
+      "text": "cpe:/a:adobe:acrobat_reader",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe Reader"
+    },
+    {
+      "text": "cpe:/a:adobe:acrobat_reader_dc",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe Acrobat Reader DC"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-12-20T20:44+09:00",
+  "issued": "2017-12-20T20:44+09:00",
+  "modified": "2017-12-20T20:44+09:00"
+}

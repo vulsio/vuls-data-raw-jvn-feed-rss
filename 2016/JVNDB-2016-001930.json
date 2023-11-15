@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001930.html",
+  "title": "Eaglesoft (Patterson Dental) でパスワードがハードコードされている問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001930.html",
+  "description": "Patterson Dental Supply, Inc. が提供する Eaglesoft (Patterson Dental) は、歯科医向けの情報管理ソフトウェアです。Eaglesoft には、データベースのパスワードがハードコードされています。\r\n\r\n認証情報がハードコードされている問題 (CWE-798) - CVE-2016-2343\r\n研究者によると、Eaglesoft にはバックエンドのデータベースの認証情報がハードコードされています。この認証情報はすべての Eaglesoft で共通です。Eaglesoft のデータベースには、患者に関する機微な情報が保存されています。この認証情報を変更すると、データベースへアクセスできなくなります。\r\n研究者はさらに詳しい情報をブログポストで公開しています。\r\n\r\nCWE-798: Use of Hard-coded Credentials\r\nhttp://cwe.mitre.org/data/definitions/798.html\r\n\r\nブログポスト\r\nhttp://justinshafer.blogspot.com/2016/02/moving-onto-eaglesoft-aka-patterson.html",
+  "identifier": "JVNDB-2016-001930",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91828421/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91828421"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2343",
+      "source": "CVE",
+      "id": "CVE-2016-2343"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2343",
+      "source": "NVD",
+      "id": "CVE-2016-2343"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/344432",
+      "source": "CERT-VN",
+      "id": "VU#344432"
+    },
+    {
+      "text": "http://justinshafer.blogspot.jp/2016/02/moving-onto-eaglesoft-aka-patterson.html",
+      "source": "関連文書",
+      "id": "Moving onto Eaglesoft aka Patterson Dental"
+    },
+    {
+      "text": "http://justinshafer.blogspot.jp/2016/03/eaglesoft-18-security.html",
+      "source": "関連文書",
+      "id": "Eaglesoft 18 Security"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:patterson_dental:eaglesoft",
+      "version": "2.2",
+      "vendor": "Patterson Dental Supply, Inc.",
+      "product": "Eaglesoft"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-04-05T12:24+09:00",
+  "issued": "2016-04-01T12:01+09:00",
+  "modified": "2016-04-05T12:24+09:00"
+}

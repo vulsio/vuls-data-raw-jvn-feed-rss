@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002300.html",
+  "title": "apng2gif におけるヒープベースのバッファオーバーリードの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002300.html",
+  "description": "apng2gif には、load_apng 関数および imagesize 変数に関する処理に不備があるため、整数オーバーフローにより、ヒープベースのバッファオーバーリードの脆弱性が存在します。",
+  "identifier": "JVNDB-2017-002300",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6960",
+      "source": "CVE",
+      "id": "CVE-2017-6960"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-6960",
+      "source": "NVD",
+      "id": "CVE-2017-6960"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/190.html",
+      "id": "CWE-190",
+      "title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apng2gif_project:apng2gif",
+      "version": "2.2",
+      "vendor": "apng2gif project",
+      "product": "apng2gif"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-04-11T16:21+09:00",
+  "issued": "2017-04-11T16:21+09:00",
+  "modified": "2017-04-11T16:21+09:00"
+}

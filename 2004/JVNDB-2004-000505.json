@@ -1,0 +1,96 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000505.html",
+  "title": "Microsoft WINS における WINS レプリケーションパケットによる任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000505.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Windows のサーバ系のオペレーティングシステムに実装されている WINS (Windows Internet Naming Service) サービスは、NetBIOS 名と IP アドレスのマッピングを行うサービスです。 \r\nWINS には、複数の WINS サーバ間でネットワーク情報を共有するためにレプリケーション機能が実装されています。レプリケーションにおける処理では、Microsoft 独自のプロトコルと TCP ポート 42 が使用され、通信のためにメモリポインタが送信されます。 \r\n\r\nWINS に実装されるレプリケーション機能には、取り扱うパケットの処理に不備が存在し、意図的に作成されたパケットを受信することにより、参照を行うメモリポインタが不正に上書きされる問題 (CAN-2004-1080) が存在します。 \r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成したパケットを標的 WINS サーバに送信し、メモリポインタを操作することにより、Local System 権限で任意のコードを実行できる可能性があります。 \r\n\r\nこの問題に加え、Microsoft アドバイザリ (MS04-045) の公開により、パケット内の特定の名前の値に対するチェックの問題 (CAN-2004-0567) が新たに報告されており、この問題はレプリケーション機能における問題 (CAN-2004-1080) と同様の影響を受けます。 \r\nまた、Windows Server 2003 上の WINS サーバの場合、これらの問題を利用することで WINS サーバがサービス不能状態に陥る可能性があります。Microsoft では、この Windows Server 2003 上の WINS サーバに対する攻撃が、最も可能性が高いシナリオであるとしています。 \r\n\r\n尚、Microsoft Windows のデフォルトインストール (Microsoft Windows Small Business Server 2003 を除く) では、WINS はインストールされないため、これらの問題の影響を受けません。",
+  "identifier": "JVNDB-2004-000505",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1080",
+      "source": "CVE",
+      "id": "CVE-2004-1080"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1080",
+      "source": "NVD",
+      "id": "CVE-2004-1080"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/145134",
+      "source": "CERT-VN",
+      "id": "VU#145134"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/378160",
+      "source": "CERT-VN",
+      "id": "VU#378160"
+    },
+    {
+      "text": "http://secunia.com/advisories/13466/",
+      "source": "SECUNIA",
+      "id": "SA13466"
+    },
+    {
+      "text": "http://secunia.com/advisories/13328/",
+      "source": "SECUNIA",
+      "id": "SA13328"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11763",
+      "source": "BID",
+      "id": "11763"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11922",
+      "source": "BID",
+      "id": "11922"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/alerts/id/184",
+      "source": "ISS",
+      "id": "184"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Nov/1012341.html",
+      "source": "SECTRACK",
+      "id": "1012341"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Dec/1012517.html",
+      "source": "SECTRACK",
+      "id": "1012517"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_nt",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows NT"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

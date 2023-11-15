@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002897.html",
+  "title": "Apple iOS の dyld の dyld.cpp におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002897.html",
+  "description": "Apple iOS の dyld の dyld.cpp 内の openSharedCacheFile 関数には、スタックベースのバッファオーバーフローの脆弱性が存在します。\r\n\r\n本脆弱性は、SyScan 2013 において発表されました。",
+  "identifier": "JVNDB-2013-002897",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU98681940/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98681940"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU95174988/",
+      "source": "JVN",
+      "id": "JVNVU#95174988"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3950",
+      "source": "CVE",
+      "id": "CVE-2013-3950"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3950",
+      "source": "NVD",
+      "id": "CVE-2013-3950"
+    },
+    {
+      "text": "http://antid0te.com/syscan_2013/SyScan2013_Mountain_Lion_iOS_Vulnerabilities_Garage_Sale_Whitepaper.pdf",
+      "source": "関連文書",
+      "id": "Mountain Lion/iOS Vulnerabilities Garage Sale"
+    },
+    {
+      "text": "http://www.syscan.org/index.php/sg/program/day/2",
+      "source": "関連文書",
+      "id": "SyScan'13 Singapore - Day 2 (26th April 2013)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:apple_tv",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple TV"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2013-11-08T10:13+09:00",
+  "issued": "2013-06-07T14:59+09:00",
+  "modified": "2013-11-08T10:13+09:00"
+}

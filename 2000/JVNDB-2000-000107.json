@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000107.html",
+  "title": "HP-UX の auto_parms における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000107.html",
+  "description": "HP-UX の auto_parms は OS 起動時に /tmp に存在する install.vars ファイルを読み込み、root 権限で実行していますが、/tmp はあらゆるユーザに対して読み込み、書き込み権限が与えられているため、OS そのもののサービス運用妨害 (DoS) や、不正なプログラムの実行が可能となる脆弱性が存在します。",
+  "identifier": "JVNDB-2000-000107",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-1126",
+      "source": "CVE",
+      "id": "CVE-2000-1126"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2000-1126",
+      "source": "NVD",
+      "id": "CVE-2000-1126"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/1954",
+      "source": "BID",
+      "id": "1954"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

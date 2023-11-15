@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000334.html",
+  "title": "CUPS の filters/image-gif.c における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000334.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nCommon Unix Printing System (CUPS) はいくつかの UNIX に同梱されている、UNIX 環境で汎用に利用可能な Internet Printing Protocol バージョン 1.1 (IPP/1.1) をサポートする印刷システムです。Red Hat Linux 7.3 及び 8.0 にも同梱されています。\r\nこの CUPS には以下のようなセキュリティの問題が存在します。尚、Red Hat Linux では CUPS はデフォルトインストールで無効化されています。\r\n\r\n1.整数桁あふれによるオーバーフローが発生する問題  　[CAN-2002-1383]\r\nCUPS には整数桁あふれによるオーバーフローが発生する問題がいくつか存在します。例えば、HTTP インタフェース介してこの問題を利用することで、リモートの攻撃者は CUPSd の実行権限 (ユーザ lp) で任意のコードを実行可能です。\r\n\r\n2. 一時ファイルの生成処理に資源の競合状態 (race condition) を起こす問題 　 [CAN-2002-1366]\r\nCUPS は /etc/cups/certs/ 以下に pid (生成時の CUPS のプロセスID) のファイル名を持つ一時ファイルを作成するため、ローカルの攻撃者は一時ファイル名の決定方法が予測可能です。そのため、意図するファイルを指し示す一時ファイルと同一の名称でファイルを作成することにより、root 権限で任意のファイルの上書き、もしくは作成が可能です。尚、この攻撃を実行するためには、上記 1. の問題などを利用して、予め lp ユーザの権限が必要です。\r\n\r\n3.プリンタ追加機構/アクセスコントロール機能の問題 　 [CAN-2002-1367]\r\nリモートから意図的に作成された悪意ある UDP パケットを CUPS に送信することで、認証を回避してプリンタを追加可能です。さらに、プリンタ追加機構のアクセスコントロール機構に妥当性の確認を怠る問題が存在します。追加されたプリンタ用情報は root 権限で解釈されるため、これらの問題を併せて利用することで、任意のプリントを追加可能です。結果として、ローカルの攻撃者は root 権限への昇格が可能です。\r\n\r\n4. 意図的に作成された HTTP 通信により CUPSd がクラッシュする問題　　[CAN-2002-1368]\r\nCUPS では IPP でのコネクションを受け入れるために、バックエンド用の HTTP サーバ (CUPSd) が同梱されています。この HTTP サーバの HTTP の取り扱い部分には受信した値の範囲に関する妥当性の確認が不十分であるために、リモートの攻撃者は Contents-Length: フィールドに負の値を設定する、もしくは意図的に組み立てられてチャンク化された HTTP プロトコルでの通信を試みることにより、CUPS をサービス不能状態に陥らせることが可能です。尚、通常動作への復旧には CUPSd の再起動が必要です。\r\n\r\n5. strncat 関数によるバッファオーバーフローが発生する問題　  [CAN-2002-1369]\r\nCUPS には特定の属性値が与えられたプリンタジョブを受け取ることでバッファオーバーフローが発生する問題が存在します。この問題を利用することで、リモートの攻撃者は root 権限で任意のコードを実行することが可能です。この問題を利用するためには、上記 3. の問題を利用する必要があります。\r\n\r\n6.GIF 形式のファイルを取り扱う際の問題　  [CAN-2002-1371]\r\nCUPS には GIF 形式のファイルを取り扱う部分において横幅 (width) の値の妥当性の確認処理が不十分な問題が存在します。このため、リモートの攻撃者は意図的に組み立てられた横幅 (width) が '0' である GIF 形式のファイルを解釈させることで割り当てられたメモリ内容を上書きし、CUPS の実行権限で任意のコードを実行する可能性があります。\r\n\r\n7.ソケットやファイルに関するファイルディスクリプタの問題 　 [CAN-2002-1372]\r\nCUPS にはソケットやファイルに関するファイルディスクリプタを適切に閉じていない問題が存在します。このため、ローカルの攻撃者はこの問題を利用してメモリリークを引き起こし、CUPSを稼動させているシステム全体をサービス不能状態に陥らせることが可能です。",
+  "identifier": "JVNDB-2002-000334",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1371",
+      "source": "CVE",
+      "id": "CVE-2002-1371"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1371",
+      "source": "NVD",
+      "id": "CVE-2002-1371"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6439",
+      "source": "BID",
+      "id": "6439"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6437",
+      "source": "BID",
+      "id": "6437"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6434",
+      "source": "BID",
+      "id": "6434"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6433",
+      "source": "BID",
+      "id": "6433"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6435",
+      "source": "BID",
+      "id": "6435"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6436",
+      "source": "BID",
+      "id": "6436"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6438",
+      "source": "BID",
+      "id": "6438"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6440",
+      "source": "BID",
+      "id": "6440"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

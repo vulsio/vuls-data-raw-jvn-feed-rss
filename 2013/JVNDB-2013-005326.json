@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005326.html",
+  "title": "AMD Family 16h Models 00h-0Fh プロセッサ上で動作するマイクロコードにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005326.html",
+  "description": "AMD Family 16h Models 00h-0Fh プロセッサ上で動作するマイクロコードは、ロック命令と書き込み結合メモリタイプとの間の対話処理を適切に行わないため、サービス運用妨害 (システムハング) 状態にされる脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Errata 793 の問題として公開しています。",
+  "identifier": "JVNDB-2013-005326",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6885",
+      "source": "CVE",
+      "id": "CVE-2013-6885"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6885",
+      "source": "NVD",
+      "id": "CVE-2013-6885"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2013/11/28/1",
+      "source": "関連文書",
+      "id": "CVE-2013-6885 AMD Publ. 51810 Errata 793 system hang"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:amd:16h_model_00h-0fh_processor",
+      "version": "2.2",
+      "vendor": "Advanced Micro Devices (AMD)",
+      "product": "AMD Family 16h Models 00h-0Fh プロセッサ"
+    },
+    {
+      "text": "cpe:/o:amd:16h_model_processor_firmware",
+      "version": "2.2",
+      "vendor": "Advanced Micro Devices (AMD)",
+      "product": "AMD Family 16h Models 00h-0Fh プロセッサ ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2015-08-03T16:46+09:00",
+  "issued": "2013-12-02T16:29+09:00",
+  "modified": "2015-08-03T16:46+09:00"
+}

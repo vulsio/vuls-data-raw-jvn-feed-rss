@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000433.html",
+  "title": "Mozilla Firefox の InstallVersion.compareTo() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000433.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMozilla Firefox 1.0.4 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) ブラウザのユーザインターフェースにおいて、web コンテンツが生成するイベントと実際のマウスクリックやキー操作によるイベントが適切に区別されない問題が存在します。(CAN-2005-2260、mfsa2005-45)\r\n\r\nこの問題を利用するリモートの攻撃者は、mfsa2005-34 の問題を応用することで、より高度な権限で任意のスクリプトを実行する問題が存在します。\r\n\r\n2) ソフトウェアインストールを起動する InstallTrigger.install() 関数には、インストール処理において別のページに遷移する際、インストールステータスによって呼び出されるコールバック関数を受け入れてしまうためにクロスサイトスクリプティング攻撃を受ける問題が存在します。(CAN-2005-2263、mfsa2005-48)\r\n\r\nこの問題を利用するリモートの攻撃者は、遷移した別のページで任意のスクリプトを実行し、重要な情報を奪取する可能性があります。\r\n\r\n尚、この問題はソフトウェアインストール機能を有効としている場合にのみ影響を受けます。\r\n\r\n3) InstallVersion.compareTo() 関数において、引数として JavaScript オブジェクトが渡された場合に入力値の妥当性チェックが適切に行われない問題が存在します。(CAN-2005-2265、mfsa2005-50)\r\n\r\nこの問題を利用するリモートの攻撃者は、ブラウザをクラッシュさせサービス不能状態に陥らせる、あるいは任意のコード実行するのに利用される可能性があります。\r\n\r\n4) 以前修正された問題であるフレームへのコンテンツインジェクションによるサイト偽装の問題が、修正漏れのために存在します。(CAN-2005-1937、mfsa2005-51)\r\n\r\nこの問題を利用するリモートの攻撃者は、他のサイトの Web コンテンツを偽装する可能性があります。\r\n\r\n5) 親フレームとは異なる生成元である子フレームが、不正に top.focus() を呼び出した際、focus() ルーチンを上書きされてしまうために、クロスサイトスクリプティング攻撃を受ける問題が存在します。(CAN-2005-2266、mfsa2005- 52)\r\n\r\nこの問題を利用するリモートの攻撃者は、Cookie やパスワードなどの重要な情報を奪取する可能性があります。\r\n\r\n6) XHTML ノードの妥当性の確認に不備が存在し、HTML 要素の信頼された組み込みプロパティであるかのように偽装可能である問題が存在します。(CAN-2005-2269、mfsa2005-55)\r\n\r\nこの問題を利用するリモートの攻撃者は、より高度な「クローム」特権で任意のスクリプトを実行する可能性があります。\r\n\r\n7) ベースオブジェクトの不正なクローンが、Web コンテンツのスクリプトに対し、プロトタイプチェーンを上って特権付きオブジェクトを取得できる問題が存在します。(CAN-2005-2270、mfsa2005-56)\r\n\r\nこの問題を利用するリモートの攻撃者は、より高度な特権で任意のスクリプトを実行する可能性があります。",
+  "identifier": "JVNDB-2005-000433",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2265",
+      "source": "CVE",
+      "id": "CVE-2005-2265"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2265",
+      "source": "NVD",
+      "id": "CVE-2005-2265"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/652366",
+      "source": "CERT-VN",
+      "id": "VU#652366"
+    },
+    {
+      "text": "http://secunia.com/advisories/15601/",
+      "source": "SECUNIA",
+      "id": "SA15601"
+    },
+    {
+      "text": "http://secunia.com/advisories/15549/",
+      "source": "SECUNIA",
+      "id": "SA15549"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/1075",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-1075"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

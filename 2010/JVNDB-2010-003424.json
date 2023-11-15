@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003424.html",
+  "title": "Apache Tomcat の デフォルト設定におけるセッションハイジャックの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003424.html",
+  "description": "Apache Tomcat のデフォルト設定は、Set-Cookie ヘッダ内の HTTPOnly のフラグを含めないため、セッションハイジャックされる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-003424",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4312",
+      "source": "CVE",
+      "id": "CVE-2010-4312"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4312",
+      "source": "NVD",
+      "id": "CVE-2010-4312"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-28T17:02+09:00",
+  "issued": "2012-03-27T18:42+09:00",
+  "modified": "2012-09-28T17:02+09:00"
+}

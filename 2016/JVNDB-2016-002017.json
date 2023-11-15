@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002017.html",
+  "title": "Drupal の drupal_goto 関数におけるオープンリダイレクトの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002017.html",
+  "description": "Drupal の drupal_goto 関数には、PHP 5.4.7 未満で使用される場合、オープンリダイレクトの脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-601: URL Redirection to Untrusted Site (オープンリダイレクト) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/601.html",
+  "identifier": "JVNDB-2016-002017",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3167",
+      "source": "CVE",
+      "id": "CVE-2016-3167"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3167",
+      "source": "NVD",
+      "id": "CVE-2016-3167"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:drupal:drupal",
+      "version": "2.2",
+      "vendor": "Drupal",
+      "product": "Drupal"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.4",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2016-04-15T10:44+09:00",
+  "issued": "2016-04-15T10:44+09:00",
+  "modified": "2016-04-15T10:44+09:00"
+}

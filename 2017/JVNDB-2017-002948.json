@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002948.html",
+  "title": "Go SSH ライブラリにおける鍵管理のエラーに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002948.html",
+  "description": "Go SSH ライブラリ (x/crypto/ssh) には、鍵管理のエラーに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2017-002948",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3204",
+      "source": "CVE",
+      "id": "CVE-2017-3204"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3204",
+      "source": "NVD",
+      "id": "CVE-2017-3204"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/320.html",
+      "id": "CWE-320",
+      "title": "鍵管理のエラー(CWE-320)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:golang:go",
+      "version": "2.2",
+      "vendor": "The Go Project",
+      "product": "Go"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-05-09T16:25+09:00",
+  "issued": "2017-05-09T16:25+09:00",
+  "modified": "2017-05-09T16:25+09:00"
+}

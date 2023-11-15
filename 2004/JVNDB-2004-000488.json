@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000488.html",
+  "title": "Sudo の環境変数の解析処理における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000488.html",
+  "description": "Sudo には、環境変数の妥当性の確認に不備が存在するため、Sudo ユーザが実行する bash シェルスクリプトから、実行権限を持たないプログラムが呼び出されることにより、そのプログラムの実行を許してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000488",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1051",
+      "source": "CVE",
+      "id": "CVE-2004-1051"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1051",
+      "source": "NVD",
+      "id": "CVE-2004-1051"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11668",
+      "source": "BID",
+      "id": "11668"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Nov/1012224.html",
+      "source": "SECTRACK",
+      "id": "1012224"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

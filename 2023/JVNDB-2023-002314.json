@@ -1,0 +1,85 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002314.html",
+  "title": "BIND におけるリモートで終了される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002314.html",
+  "description": "BIND には、DNSSEC-Validated Cache (RFC 8198) の積極的な使用オプション ('synth-from-dnssec') が有効な場合、DNSSEC-validating 再帰リゾルバとして実行するように構成された 'named' インスタンスに不備があるため、リモートで終了される脆弱性が存在します。",
+  "identifier": "JVNDB-2023-002314",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU99441653/",
+      "source": "JVN",
+      "id": "JVNVU#99441653"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-2829",
+      "source": "CVE",
+      "id": "CVE-2023-2829"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-2829",
+      "source": "NVD",
+      "id": "CVE-2023-2829"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/a:netapp:active_iq_unified_manager",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "Active IQ Unified Manager"
+    },
+    {
+      "text": "cpe:/o:netapp:h300s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H300S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h410c_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H410C ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h410s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H410S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h500s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H500S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h700s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H700S ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-07-05T13:53+09:00",
+  "issued": "2023-07-05T13:53+09:00",
+  "modified": "2023-07-05T13:53+09:00"
+}

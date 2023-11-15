@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002492.html",
+  "title": "FFmpeg の libavcodec/h264.c 内の ff_h264_free_tables 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002492.html",
+  "description": "FFmpeg の libavcodec/h264.c 内の ff_h264_free_tables 関数には、解放済みメモリの使用 (Use-after-free) により、サービス運用妨害 (DoS) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-416: Use-after-free (解放済みメモリの使用) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/416.html",
+  "identifier": "JVNDB-2015-002492",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3417",
+      "source": "CVE",
+      "id": "CVE-2015-3417"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3417",
+      "source": "NVD",
+      "id": "CVE-2015-3417"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2015/Apr/31",
+      "source": "関連文書",
+      "id": "several issues in SQLite (+ catching up on several other bugs)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-06-22T17:38+09:00",
+  "issued": "2015-04-28T15:51+09:00",
+  "modified": "2015-06-22T17:38+09:00"
+}

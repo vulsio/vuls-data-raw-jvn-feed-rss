@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002167.html",
+  "title": "PHP の chdir 関数および ftok 関数におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002167.html",
+  "description": "PHP には、chdir 関数および ftok 関数において、http URL 内の \"../\" の処理に不備があるため、ディレクトリトラバーサルの脆弱性が存在します。",
+  "identifier": "JVNDB-2008-002167",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2666",
+      "source": "CVE",
+      "id": "CVE-2008-2666"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2666",
+      "source": "NVD",
+      "id": "CVE-2008-2666"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/29796",
+      "source": "BID",
+      "id": "29796"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/43198",
+      "source": "XF",
+      "id": "43198"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1020328",
+      "source": "SECTRACK",
+      "id": "1020328"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2009-11-16T11:35+09:00",
+  "issued": "2009-01-13T15:16+09:00",
+  "modified": "2009-11-16T11:35+09:00"
+}

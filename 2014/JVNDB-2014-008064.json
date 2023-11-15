@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008064.html",
+  "title": "Linux Kernel の netfilter サブシステムの include/net/netfilter/nf_conntrack_extend.h におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008064.html",
+  "description": "Linux Kernel の netfilter サブシステムの include/net/netfilter/nf_conntrack_extend.h は、特定の拡張 (extension) データに不十分な大きさのデータ型を使用するため、サービス運用妨害 (NULL ポインタデリファレンスおよび OOPS) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-476: NULL Pointer Dereference (NULL ポインタデリファレンス) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/476.html",
+  "identifier": "JVNDB-2014-008064",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9715",
+      "source": "CVE",
+      "id": "CVE-2014-9715"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9715",
+      "source": "NVD",
+      "id": "CVE-2014-9715"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2015-09-03T17:36+09:00",
+  "issued": "2015-05-29T16:20+09:00",
+  "modified": "2015-09-03T17:36+09:00"
+}

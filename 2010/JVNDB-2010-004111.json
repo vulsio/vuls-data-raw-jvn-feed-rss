@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004111.html",
+  "title": "Apache ServiceMix などで使用される Apache CXF における任意のファイルを読まれ任意の HTTP リクエストをサーバに送信される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004111.html",
+  "description": "Apache ServiceMix、Apache Camel、Apache Chemistry、Apache jUDDI、Apache Geronimo などで使用される Apache CXF は、SOAP メッセージ内で DTD を拒否しないため、任意のファイルを読まれ任意の HTTP リクエストをサーバに送信される、またはサービス運用妨害 (CPU およびメモリ消費) 状態となる脆弱性が存在します。\r\n本脆弱性は、CVE-2010-1632 と類似しています。",
+  "identifier": "JVNDB-2010-004111",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2076",
+      "source": "CVE",
+      "id": "CVE-2010-2076"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2076",
+      "source": "NVD",
+      "id": "CVE-2010-2076"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:cxf",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache CXF"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-06-26T16:19+09:00",
+  "issued": "2012-06-26T16:19+09:00",
+  "modified": "2012-06-26T16:19+09:00"
+}

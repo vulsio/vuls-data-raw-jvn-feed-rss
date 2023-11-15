@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002656.html",
+  "title": "Linux Kernel の kernel/events/core.c における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002656.html",
+  "description": "Linux Kernel の kernel/events/core.c 内の perf_swevent_init 関数は、不適切な整数データ型を使用するため、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002656",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU98369979/",
+      "source": "JVN",
+      "id": "JVNVU#98369979"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2094",
+      "source": "CVE",
+      "id": "CVE-2013-2094"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2094",
+      "source": "NVD",
+      "id": "CVE-2013-2094"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/774103",
+      "source": "CERT-VN",
+      "id": "VU#774103"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-07-05T11:44+09:00",
+  "issued": "2013-05-15T17:50+09:00",
+  "modified": "2013-07-05T11:44+09:00"
+}

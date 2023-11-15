@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003452.html",
+  "title": "Mozilla Firefox および Thunderbird の YCbCr の実装の YCbCrImageDataDeserializer::ToDataSourceSurface 関数における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003452.html",
+  "description": "Mozilla Firefox および Thunderbird の YCbCr の実装の YCbCrImageDataDeserializer::ToDataSourceSurface 関数は、初期化されていないメモリ領域からデータを読み込むため、不特定の影響および攻撃を受ける脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-17: Code (コード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/17.html",
+  "identifier": "JVNDB-2015-003452",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2738",
+      "source": "CVE",
+      "id": "CVE-2015-2738"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2738",
+      "source": "NVD",
+      "id": "CVE-2015-2738"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:firefox_esr",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox ESR"
+    },
+    {
+      "text": "cpe:/a:mozilla:thunderbird",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Thunderbird"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-11-06T15:21+09:00",
+  "issued": "2015-07-09T12:31+09:00",
+  "modified": "2015-11-06T15:21+09:00"
+}

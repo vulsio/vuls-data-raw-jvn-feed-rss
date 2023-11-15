@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001304.html",
+  "title": "ジェイテクトエレクトロニクス製 Kostac PLC Programming Software における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001304.html",
+  "description": "株式会社ジェイテクトエレクトロニクスが提供する Kostac PLC Programming Software には、次の複数の脆弱性が存在します。\r\n\r\n　* 境界外読み込み（CWE-125）- CVE-2023-22419、CVE-2023-22421\r\n　* 解放済みメモリの使用（Use-after-free）（CWE-416）- CVE-2023-22424\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: Michael Heinzl 氏\r\n",
+  "identifier": "JVNDB-2023-001304",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94966432/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94966432"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-22419",
+      "source": "CVE",
+      "id": "CVE-2023-22419"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-22421",
+      "source": "CVE",
+      "id": "CVE-2023-22421"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-22424",
+      "source": "CVE",
+      "id": "CVE-2023-22424"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-096-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-096-03"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/416.html",
+      "id": "CWE-416",
+      "title": "解放済みメモリの使用(CWE-416)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:jtekt_electronics_kostac_plc_programming_software",
+      "version": "2.2",
+      "vendor": "株式会社ジェイテクトエレクトロニクス",
+      "product": "Kostac PLC Programming Software"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-04-10T15:31+09:00",
+  "issued": "2023-03-06T14:45+09:00",
+  "modified": "2023-04-10T15:31+09:00"
+}

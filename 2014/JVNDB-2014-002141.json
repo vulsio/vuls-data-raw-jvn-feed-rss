@@ -1,0 +1,96 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002141.html",
+  "title": "cURL および libcurl のデフォルト設定における他のユーザとして接続される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002141.html",
+  "description": "cURL および libcurl のデフォルト設定は、(1) SCP、(2) SFTP、(3) POP3、(4) POP3S、(5) IMAP、(6) IMAPS、(7) SMTP、(8) SMTPS、(9) LDAP、および (10) LDAPS 接続を再使用するため、他のユーザとして接続される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-0015 と同様の問題です。",
+  "identifier": "JVNDB-2014-002141",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU95860308/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95860308"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0138",
+      "source": "CVE",
+      "id": "CVE-2014-0138"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0138",
+      "source": "NVD",
+      "id": "CVE-2014-0138"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-242-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-242-03"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:haxx:curl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "cURL"
+    },
+    {
+      "text": "cpe:/a:haxx:libcurl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "libcurl"
+    },
+    {
+      "text": "cpe:/a:ibm:advanced_settings_utility",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Advanced Settings Utility"
+    },
+    {
+      "text": "cpe:/a:ibm:dynamic_system_analysis",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Dynamic System Analysis"
+    },
+    {
+      "text": "cpe:/a:ibm:toolscenter_suite",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM ToolsCenter Suite"
+    },
+    {
+      "text": "cpe:/a:ibm:updatexpress_system_packs",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM UpdateXpress System Packs"
+    },
+    {
+      "text": "cpe:/a:oracle:hyperion",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Hyperion"
+    },
+    {
+      "text": "cpe:/o:vmware:esxi",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESXi"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2022-09-01T16:05+09:00",
+  "issued": "2014-04-21T14:08+09:00",
+  "modified": "2022-09-01T16:05+09:00"
+}

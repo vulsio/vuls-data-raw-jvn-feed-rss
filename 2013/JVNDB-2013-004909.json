@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004909.html",
+  "title": "NMap の http-domino-enum-passwords.nse スクリプトにおける任意の名前のファイルをアップロードされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004909.html",
+  "description": "NMap の http-domino-enum-passwords.nse スクリプトには、domino-enum-passwords.idpath が設定されている場合、任意の名前のファイルをアップロードされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-434: Unrestricted Upload of File with Dangerous Type (危険なタイプのファイルの無制限のアップロード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/434.html",
+  "identifier": "JVNDB-2013-004909",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4885",
+      "source": "CVE",
+      "id": "CVE-2013-4885"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4885",
+      "source": "NVD",
+      "id": "CVE-2013-4885"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nmap:nmap",
+      "version": "2.2",
+      "vendor": "Nmap",
+      "product": "Nmap"
+    },
+    {
+      "text": "cpe:/o:novell:opensuse",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "openSUSE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-08-11T18:37+09:00",
+  "issued": "2013-10-29T15:45+09:00",
+  "modified": "2014-08-11T18:37+09:00"
+}

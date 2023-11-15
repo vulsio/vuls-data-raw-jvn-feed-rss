@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000995.html",
+  "title": "Linux kernel の do_coredump 関数における任意のファイルを改ざんされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000995.html",
+  "description": "Linux kernel の fs/exec.c の do_coredump 関数には、O_EXCL に flag 変数を設定するが使用しないため、任意のファイルを改ざんされる脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000995",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6304",
+      "source": "CVE",
+      "id": "CVE-2006-6304"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-6304",
+      "source": "NVD",
+      "id": "CVE-2006-6304"
+    },
+    {
+      "text": "http://secunia.com/advisories/23349",
+      "source": "SECUNIA",
+      "id": "SA23349"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/21591",
+      "source": "BID",
+      "id": "21591"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:enterprise_virtualization",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Virtualization"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-02-18T14:28+09:00",
+  "issued": "2010-02-18T14:28+09:00",
+  "modified": "2010-02-18T14:28+09:00"
+}

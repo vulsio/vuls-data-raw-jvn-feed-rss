@@ -1,0 +1,84 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002433.html",
+  "title": "Apache HTTP Server の mod_proxy における重要なレスポンスを取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002433.html",
+  "description": "Apache HTTP Server の httpd 内にある mod_proxy には、Unix 上で稼働させた際、タイムアウトの検出処理に不備があり、バックエンドの接続を終了しないため、他のクライアントの重要なレスポンスを取得される脆弱性が存在します。\r\n本脆弱性は、CVE-2010-2068 と同様ですが、OS と影響のあるバージョンのセットが異なります。",
+  "identifier": "JVNDB-2008-002433",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2791",
+      "source": "CVE",
+      "id": "CVE-2010-2791"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2791",
+      "source": "NVD",
+      "id": "CVE-2010-2791"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/42102",
+      "source": "BID",
+      "id": "42102"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/60883",
+      "source": "ISS",
+      "id": "60883"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:oracle:http_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle HTTP Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2013-04-19T14:55+09:00",
+  "issued": "2010-08-25T17:04+09:00",
+  "modified": "2013-04-19T14:55+09:00"
+}

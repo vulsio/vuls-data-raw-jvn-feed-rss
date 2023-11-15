@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-002044.html",
+  "title": "HDF HDF5 における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-002044.html",
+  "description": "HDF HDF5 には、境界外読み取りに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2019-002044",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9151",
+      "source": "CVE",
+      "id": "CVE-2019-9151"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9151",
+      "source": "NVD",
+      "id": "CVE-2019-9151"
+    },
+    {
+      "text": "https://github.com/magicSwordsMan/PAAFS/tree/master/vul7",
+      "source": "関連文書",
+      "id": "H5VM_memcpyvv_invalid-read-memory-access (CVE-2019-9151)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hdfgroup:hdf5",
+      "version": "2.2",
+      "vendor": "The HDF Group",
+      "product": "HDF5"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-04-01T17:41+09:00",
+  "issued": "2019-04-01T17:41+09:00",
+  "modified": "2019-04-01T17:41+09:00"
+}

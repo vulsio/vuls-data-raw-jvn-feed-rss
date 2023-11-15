@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-011511.html",
+  "title": "biscuitsec の biscuit-auth 他複数ベンダの製品におけるデジタル署名の検証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-011511.html",
+  "description": "biscuitsec の biscuit-auth 他複数ベンダの製品には、デジタル署名の検証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-011511",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-31053",
+      "source": "CVE",
+      "id": "CVE-2022-31053"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-31053",
+      "source": "NVD",
+      "id": "CVE-2022-31053"
+    },
+    {
+      "text": "https://eprint.iacr.org/2020/1484",
+      "source": "関連文書",
+      "id": "eprint.iacr.org (2020/1484)"
+    },
+    {
+      "text": "https://github.com/biscuit-auth/biscuit/security/advisories/GHSA-75rw-34q6-72cr",
+      "source": "関連文書",
+      "id": "github.com (GHSA-75rw-34q6-72cr)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/347.html",
+      "id": "CWE-347",
+      "title": "デジタル署名の不適切な検証(CWE-347)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:biscuitsec:biscuit-auth",
+      "version": "2.2",
+      "vendor": "biscuitsec",
+      "product": "biscuit-auth"
+    },
+    {
+      "text": "cpe:/a:biscuitsec:biscuit-go",
+      "version": "2.2",
+      "vendor": "biscuitsec",
+      "product": "biscuit-go"
+    },
+    {
+      "text": "cpe:/a:biscuitsec:biscuit-haskell",
+      "version": "2.2",
+      "vendor": "biscuitsec",
+      "product": "biscuit-haskell"
+    },
+    {
+      "text": "cpe:/a:clever-cloud:biscuit-java",
+      "version": "2.2",
+      "vendor": "clever-cloud",
+      "product": "biscuit-java"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-08-22T17:12+09:00",
+  "issued": "2023-08-22T17:12+09:00",
+  "modified": "2023-08-22T17:12+09:00"
+}

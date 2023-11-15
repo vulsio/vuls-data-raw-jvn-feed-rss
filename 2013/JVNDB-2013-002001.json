@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002001.html",
+  "title": "Linux Kernel の virt/kvm/ioapic.c における重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002001.html",
+  "description": "Linux Kernel の virt/kvm/ioapic.c 内の ioapic_read_indirect 関数は、不正な IOAPIC_REG_SELECT、および IOAPIC_REG_WINDOW に関連した特定の操作の組み合わせを適切に処理しないため、ホスト OS メモリから重要な情報を取得される、またはサービス運用妨害 (ホスト OS OOPS) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002001",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1798",
+      "source": "CVE",
+      "id": "CVE-2013-1798"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1798",
+      "source": "NVD",
+      "id": "CVE-2013-1798"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.2",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:H/Au:N/C:C/I:N/A:C"
+    }
+  ],
+  "date": "2014-02-27T18:31+09:00",
+  "issued": "2013-03-26T13:37+09:00",
+  "modified": "2014-02-27T18:31+09:00"
+}

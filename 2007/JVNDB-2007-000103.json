@@ -1,0 +1,153 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000103.html",
+  "title": "GD ライブラリの gdImageStringFTEx() 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000103.html",
+  "description": "GD ライブラリの gdft.c における gdImageStringFTEx() 関数には、JIS エンコードされたフォントの文字列の取り扱いに不備が存在するため、バッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000103",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0455",
+      "source": "CVE",
+      "id": "CVE-2007-0455"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-0455",
+      "source": "NVD",
+      "id": "CVE-2007-0455"
+    },
+    {
+      "text": "http://secunia.com/advisories/23916/",
+      "source": "SECUNIA",
+      "id": "SA23916"
+    },
+    {
+      "text": "http://secunia.com/advisories/24965",
+      "source": "SECUNIA",
+      "id": "SA24965"
+    },
+    {
+      "text": "http://secunia.com/advisories/24924",
+      "source": "SECUNIA",
+      "id": "SA24924"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/22289",
+      "source": "BID",
+      "id": "22289"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/0400",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-0400"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libgd:libgd",
+      "version": "2.2",
+      "vendor": "LibGD project",
+      "product": "LibGD"
+    },
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_application_stack",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Application Stack"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_desktop",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_home",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "ターボリナックス ホーム "
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2008-04-15T16:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2008-04-15T16:00+09:00"
+}

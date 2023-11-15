@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000101.html",
+  "title": "Samba における任意のファイルを作成される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000101.html",
+  "description": "Samba において、NetBIOS のホスト名を確認する機構に Log file = /var/log/samba/%m と設定している場合に、 UNIX パス名を含ませることで、任意のファイルが上書き可能な脆弱性が存在します。",
+  "identifier": "JVNDB-2001-000101",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1162",
+      "source": "CVE",
+      "id": "CVE-2001-1162"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2001-1162",
+      "source": "NVD",
+      "id": "CVE-2001-1162"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/2928",
+      "source": "BID",
+      "id": "2928"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/6731",
+      "source": "XF",
+      "id": "6731"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hp:cifs_9000_server",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP CIFS/9000 Server"
+    },
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

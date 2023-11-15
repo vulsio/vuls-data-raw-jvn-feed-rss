@@ -1,0 +1,311 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001003.html",
+  "title": "Apache Tomcat におけるサービス運用妨害 (CPU 資源の消費) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001003.html",
+  "description": "Apache Tomcat は、ハッシュ衝突を想定した制限を行わずにフォームパラメータのハッシュ値を算出するため、サービス運用妨害 (CPU 資源の消費) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-001003",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU903934",
+      "source": "JVN",
+      "id": "JVNVU#903934"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4858",
+      "source": "CVE",
+      "id": "CVE-2011-4858"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4858",
+      "source": "NVD",
+      "id": "CVE-2011-4858"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/903934",
+      "source": "CERT-VN",
+      "id": "VU#903934"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20120106-web.html",
+      "source": "IPA",
+      "id": "20120106-web"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/a:cybozu:garoon",
+      "version": "2.2",
+      "vendor": "サイボウズ",
+      "product": "サイボウズ ガルーン"
+    },
+    {
+      "text": "cpe:/a:fujitsu:internet_navigware_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Internet Navigware Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_application_development_cycle_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Application Development Cycle Manager"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_application_framework_suite",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Application Framework Suite"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_application_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Application Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_business_application_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Business Application Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_form_coordinator_workflow",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Form Coordinator Workflow"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_job_workload_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Job Workload Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_list_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage List Manager"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_list_works",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage List Works"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_service_integrator",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Service Integrator"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_shunsaku_data_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Shunsaku Data Manager"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_web_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Web Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_xml_business_activity_recorder",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage XML Business Activity Recorder"
+    },
+    {
+      "text": "cpe:/a:fujitsu:serverview",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "ServerView"
+    },
+    {
+      "text": "cpe:/a:fujitsu:success_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "SUCCESS SERVER"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_availability_view",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Availability View"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_desktop_inspection",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Desktop Inspection"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_it_change_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker IT Change Manager"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_it_process_master",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker IT Process Master"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_operation_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Operation Manager"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_runbook_automation",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Runbook Automation"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_service_catalog_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Service Catalog Manager"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_service_quality_coordinator",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Service Quality Coordinator"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_software_configuration_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Software Configuration Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_component_container",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Component Container"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_primary_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Primary Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_studio",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Studio"
+    },
+    {
+      "text": "cpe:/a:hitachi:it_operations_analyzer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi IT Operations Analyzer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service"
+    },
+    {
+      "text": "cpe:/a:ibm:cognos_business_intelligence",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Cognos Business Intelligence"
+    },
+    {
+      "text": "cpe:/a:nec:csview",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CSVIEW"
+    },
+    {
+      "text": "cpe:/a:nec:infocage",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "InfoCage"
+    },
+    {
+      "text": "cpe:/a:nec:infoframe_documentskipper",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "InfoFrame DocumentSkipper"
+    },
+    {
+      "text": "cpe:/a:nec:webotx",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Application Server"
+    },
+    {
+      "text": "cpe:/a:nec:websam_securemaster",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebSAM SECUREMASTER"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-03-08T15:39+09:00",
+  "issued": "2012-01-06T10:06+09:00",
+  "modified": "2013-03-08T15:39+09:00"
+}

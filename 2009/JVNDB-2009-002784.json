@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002784.html",
+  "title": "Csound の VST プラグインにおける任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002784.html",
+  "description": "Csound の (1) \"Python スクリプティングを伴う VST プラグイン\"、および (2) \"Python にスコアを書き込む VST プラグイン\" には、検索パスの不備があるため、任意のコードを実行される脆弱性が存在します。\r\n本脆弱性は、PySys_SetArgv 関数 (CVE-2008-5983) 内の脆弱性に関連します。",
+  "identifier": "JVNDB-2009-002784",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5986",
+      "source": "CVE",
+      "id": "CVE-2008-5986"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-5986",
+      "source": "NVD",
+      "id": "CVE-2008-5986"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:csounds:csound",
+      "version": "2.2",
+      "vendor": "Csound",
+      "product": "Csound"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-06-26T16:10+09:00",
+  "issued": "2012-06-26T16:10+09:00",
+  "modified": "2012-06-26T16:10+09:00"
+}

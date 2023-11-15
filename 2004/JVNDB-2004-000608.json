@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000608.html",
+  "title": "DNSプロトコル実装における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000608.html",
+  "description": "[CERT/CC VU#887766 も参照]\r\n\r\nDNSプロトコル実装における脆弱性が確認されています。\r\n\r\n実装によっては、サーバ間で クエリ-レスポンス ストームが起きる可能性があります。また、localhost UDP 53ポートがFromとなっているクエリが送られた場合、サーバがそのサーバ自身へレスポンスし続けることでリソースが枯渇する可能性があります。",
+  "identifier": "JVNDB-2004-000608",
+  "references": [
+    {
+      "text": "http://jvn.jp/niscc/NISCC-758884/",
+      "source": "JVN",
+      "id": "NISCC-758884"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=2004-0789",
+      "source": "CVE",
+      "id": "CVE-2004-0789"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2004-0789",
+      "source": "NVD",
+      "id": "CVE-2004-0789"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/17996",
+      "source": "XF",
+      "id": "17996"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/17997",
+      "source": "XF",
+      "id": "17997"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2009-04-03T10:08+09:00",
+  "issued": "2009-04-03T10:08+09:00",
+  "modified": "2009-04-03T10:08+09:00"
+}

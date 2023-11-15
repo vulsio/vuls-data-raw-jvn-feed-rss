@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004308.html",
+  "title": "Dedicated Micros のデジタルビデオレコーダが、平文で通信し、パスワード認証をしていない問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004308.html",
+  "description": "Dedicated Micros のデジタルビデオレコーダ製品は、デフォルト設定では、暗号化されていない平文で通信し、また、パスワードによるユーザ認証を行いません。\r\n\r\nセンシティブなデータを暗号化しない (CWE-311)\r\nDedicated Micros のデジタルビデオレコーダ製品は、デフォルト設定では、通信内容を暗号化しないプロトコルである HTTP、Telnet、FTP を用いており、よりセキュアなプロトコルを使用するよう設定するのはエンドユーザの責任としています。そのためデフォルト設定では、第三者によって通信が閲覧されたり改ざんされたりする可能性があります。\r\n\r\nCWE-311: Missing Encryption of Sensitive Data\r\nhttps://cwe.mitre.org/data/definitions/311.html\r\n\r\n不適切なアクセス制御 (CWE-284) - CVE-2015-2909\r\nDedicated Micros のデジタルビデオレコーダ製品は、デフォルト設定ではユーザ認証を要求しません。エンドユーザはデバイスにパスワードを設定することができますが、必須ではありません。デフォルト設定では、第三者によって自由にデバイスにアクセスされたりデータを改ざんされたりする可能性があります。\r\n\r\nCWE-284: Improper Access Control\r\nhttps://cwe.mitre.org/data/definitions/284.html",
+  "identifier": "JVNDB-2015-004308",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97413676/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97413676"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2909",
+      "source": "CVE",
+      "id": "CVE-2015-2909"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-2909",
+      "source": "NVD",
+      "id": "CVE-2015-2909"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/276148",
+      "source": "CERT-VN",
+      "id": "VU#276148"
+    },
+    {
+      "text": "https://www.shodan.io/search?query=command+line+processor+-username",
+      "source": "関連文書",
+      "id": "command line processor -username"
+    },
+    {
+      "text": "http://cybergibbons.com/security-2/shodan-searches/interesting-shodan-searches-sd-advanced-dvrs/",
+      "source": "関連文書",
+      "id": "Interesting Shodan searches: Dedicated Micros DVRs"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:netvu:ds2_firmware",
+      "version": "2.2",
+      "vendor": "Dedicated Micros",
+      "product": "Digital Sprite 2"
+    },
+    {
+      "text": "cpe:/o:netvu:dv-ip_express_firmware",
+      "version": "2.2",
+      "vendor": "Dedicated Micros",
+      "product": "DV-IP Express"
+    },
+    {
+      "text": "cpe:/o:netvu:ecosense_firmware",
+      "version": "2.2",
+      "vendor": "Dedicated Micros",
+      "product": "EcoSense"
+    },
+    {
+      "text": "cpe:/o:netvu:sd-advanced_firmware",
+      "version": "2.2",
+      "vendor": "Dedicated Micros",
+      "product": "SD Advanced"
+    },
+    {
+      "text": "cpe:/o:netvu:sd_firmware",
+      "version": "2.2",
+      "vendor": "Dedicated Micros",
+      "product": "SD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-08-24T13:53+09:00",
+  "issued": "2015-08-24T13:53+09:00",
+  "modified": "2015-08-24T13:53+09:00"
+}

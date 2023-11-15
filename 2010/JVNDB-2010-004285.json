@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004285.html",
+  "title": "wxBitcoin および bitcoind におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004285.html",
+  "description": "wxBitcoin および bitcoind は、ゼロの確認を伴う Bitcoin 取引において、ビットコインを適切に処理しないため、サービス運用妨害 (不正なトランザクションフラッド) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-004285",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5140",
+      "source": "CVE",
+      "id": "CVE-2010-5140"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-5140",
+      "source": "NVD",
+      "id": "CVE-2010-5140"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bitcoin:bitcoind",
+      "version": "2.2",
+      "vendor": "Bitcoin Project",
+      "product": "bitcoind"
+    },
+    {
+      "text": "cpe:/a:bitcoin:wxbitcoin",
+      "version": "2.2",
+      "vendor": "Bitcoin Project",
+      "product": "wxBitcoin"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-08-09T10:54+09:00",
+  "issued": "2012-08-09T10:54+09:00",
+  "modified": "2012-08-09T10:54+09:00"
+}

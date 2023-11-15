@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004450.html",
+  "title": "Microsoft Windows XP のシステム DLL ファイルにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004450.html",
+  "description": "Microsoft Windows Explorer (explorer.exe) 6、Don Ho Notepad++、不特定の Adobe Macromedia アプリケーションおよびその他のプログラムで使用される Microsoft Windows XP のシステム DLL ファイルには、以下の関数による拡張ファイルの属性が適切に処理されない不備があるため、バッファオーバーフローの脆弱性が存在します。\r\n(a) ntdll.dll の NtQueryInformationFile 関数\r\n(b) ntdll.dll の NtQueryDirectoryFile 関数\r\n(c) ntdll.dll の NtSetInformationFile 関数\r\n(d) ntdll.dll の FileAllInformation 関数\r\n(e) ntdll.dll の FileNameInformation などの FILE_INFORMATION_CLASS 関数\r\n(f) kernel32.dll の GetFileAttributesExW 関数\r\n(g) kernel32.dll の GetFileAttributesW 関数\r\n本問題は、CVE-2007-1347 に関連する可能性があります。",
+  "identifier": "JVNDB-2007-004450",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5145",
+      "source": "CVE",
+      "id": "CVE-2007-5145"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-5145",
+      "source": "NVD",
+      "id": "CVE-2007-5145"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-09-25T16:59+09:00",
+  "issued": "2012-09-25T16:59+09:00",
+  "modified": "2012-09-25T16:59+09:00"
+}

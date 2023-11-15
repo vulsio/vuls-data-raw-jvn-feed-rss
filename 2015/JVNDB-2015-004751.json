@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004751.html",
+  "title": "Apple iOS の processor_set_tasks API の実装におけるエンタイトルメント保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004751.html",
+  "description": "Apple iOS の processor_set_tasks API の実装には、エンタイトルメント保護メカニズムを回避され、任意のプロセスのタスクポートへのアクセス権を取得される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-284: Improper Access Control (不適切なアクセス制御) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/284.html",
+  "identifier": "JVNDB-2015-004751",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99970459/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99970459"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU97220341/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97220341"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5882",
+      "source": "CVE",
+      "id": "CVE-2015-5882"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5882",
+      "source": "NVD",
+      "id": "CVE-2015-5882"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:watchos",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "watchOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-10-06T10:38+09:00",
+  "issued": "2015-09-24T16:53+09:00",
+  "modified": "2015-10-06T10:38+09:00"
+}

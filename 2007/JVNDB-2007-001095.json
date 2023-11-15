@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001095.html",
+  "title": "ia64 システムで動作する Xen における物理メモリにアクセスされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001095.html",
+  "description": "ia64 システムで動作する Xen には PAL エミュレータ機能の copy_to_user() 関数において、物理メモリのマッピング処理に不備があり、物理メモリにアクセスされる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001095",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6416",
+      "source": "CVE",
+      "id": "CVE-2007-6416"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-6416",
+      "source": "NVD",
+      "id": "CVE-2007-6416"
+    },
+    {
+      "text": "http://secunia.com/advisories/28146/",
+      "source": "SECUNIA",
+      "id": "SA28146"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26954",
+      "source": "BID",
+      "id": "26954"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:xen:xen",
+      "version": "2.2",
+      "vendor": "Xen プロジェクト",
+      "product": "Xen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-02-05T16:08+09:00",
+  "issued": "2008-02-05T16:08+09:00",
+  "modified": "2008-02-05T16:08+09:00"
+}

@@ -1,0 +1,91 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001779.html",
+  "title": "複数の SolarWinds 製品で使用される Orion Platform の AccountManagement.asmx サービスの Manage アカウントページにおける SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001779.html",
+  "description": "複数の SolarWinds 製品で使用される Orion Platform の AccountManagement.asmx サービスの Manage アカウントページには、SQL インジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2015-001779",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9566",
+      "source": "CVE",
+      "id": "CVE-2014-9566"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9566",
+      "source": "NVD",
+      "id": "CVE-2014-9566"
+    },
+    {
+      "text": "http://volatile-minds.blogspot.jp/2015/02/authenticated-stacked-sql-injection-in.html",
+      "source": "関連文書",
+      "id": "Authenticated Stacked SQL injection in core Solarwinds Orion service (CVE-2014-9566)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:solarwinds:orion_ip_address_manager",
+      "version": "2.2",
+      "vendor": "SolarWinds",
+      "product": "Orion IP Address Manager"
+    },
+    {
+      "text": "cpe:/a:solarwinds:orion_netflow_traffic_analyzer",
+      "version": "2.2",
+      "vendor": "SolarWinds",
+      "product": "Orion NetFlow Traffic Analyzer"
+    },
+    {
+      "text": "cpe:/a:solarwinds:orion_network_configuration_manager",
+      "version": "2.2",
+      "vendor": "SolarWinds",
+      "product": "Orion Network Configuration Manager"
+    },
+    {
+      "text": "cpe:/a:solarwinds:orion_network_performance_monitor",
+      "version": "2.2",
+      "vendor": "SolarWinds",
+      "product": "Orion Network Performance Monitor"
+    },
+    {
+      "text": "cpe:/a:solarwinds:orion_server_and_application_manager",
+      "version": "2.2",
+      "vendor": "SolarWinds",
+      "product": "Orion Server & Application Manager"
+    },
+    {
+      "text": "cpe:/a:solarwinds:orion_user_device_tracker",
+      "version": "2.2",
+      "vendor": "SolarWinds",
+      "product": "Orion User Device Tracker"
+    },
+    {
+      "text": "cpe:/a:solarwinds:orion_voip_%26_network_quality_manager",
+      "version": "2.2",
+      "vendor": "SolarWinds",
+      "product": "Orion VoIP & Network Quality Manager"
+    },
+    {
+      "text": "cpe:/a:solarwinds:orion_web_performance_monitor",
+      "version": "2.2",
+      "vendor": "SolarWinds",
+      "product": "Orion Web Performance Monitor"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-03-13T15:06+09:00",
+  "issued": "2015-03-13T15:06+09:00",
+  "modified": "2015-03-13T15:06+09:00"
+}

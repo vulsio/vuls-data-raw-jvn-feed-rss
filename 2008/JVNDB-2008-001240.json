@@ -1,0 +1,99 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001240.html",
+  "title": "OpenSSH の ForceCommand 命令を回避可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001240.html",
+  "description": "OpenSSH には、.ssh/rc セッションファイルを修正することで、sshd_config の ForceCommand 命令を回避可能な脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001240",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1657",
+      "source": "CVE",
+      "id": "CVE-2008-1657"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-1657",
+      "source": "NVD",
+      "id": "CVE-2008-1657"
+    },
+    {
+      "text": "http://secunia.com/advisories/29602",
+      "source": "SECUNIA",
+      "id": "SA29602"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/28531",
+      "source": "BID",
+      "id": "28531"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/41549",
+      "source": "XF",
+      "id": "41549"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1019733",
+      "source": "SECTRACK",
+      "id": "1019733"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/1035",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-1035"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openbsd:openssh",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-10-01T14:47+09:00",
+  "issued": "2008-04-18T15:03+09:00",
+  "modified": "2008-10-01T14:47+09:00"
+}

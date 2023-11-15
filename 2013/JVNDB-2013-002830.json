@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002830.html",
+  "title": "Wireshark における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002830.html",
+  "description": "Wireshark には、Websocket 解析機能のクラッシュ、MySQL 解析機能における無限ループ、および ETCH 解析機能における大きなループ (a large loop) に関する処理に不備があるため、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002830",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3561",
+      "source": "CVE",
+      "id": "CVE-2013-3561"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3561",
+      "source": "NVD",
+      "id": "CVE-2013-3561"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wireshark:wireshark",
+      "version": "2.2",
+      "vendor": "Wireshark",
+      "product": "Wireshark"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2013-10-31T18:16+09:00",
+  "issued": "2013-05-29T16:26+09:00",
+  "modified": "2013-10-31T18:16+09:00"
+}

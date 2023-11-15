@@ -1,0 +1,131 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000272.html",
+  "title": "PHP の mail() 関数おける CRLF インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000272.html",
+  "description": "PHP の mail() 関数には、Subject と To ヘッダの改行コードの処理に不備が存在するために、CRLF インジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000272",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1718",
+      "source": "CVE",
+      "id": "CVE-2007-1718"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-1718",
+      "source": "NVD",
+      "id": "CVE-2007-1718"
+    },
+    {
+      "text": "http://secunia.com/advisories/24965",
+      "source": "SECUNIA",
+      "id": "SA24965"
+    },
+    {
+      "text": "http://secunia.com/advisories/24924",
+      "source": "SECUNIA",
+      "id": "SA24924"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/23145",
+      "source": "BID",
+      "id": "23145"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1017946",
+      "source": "SECTRACK",
+      "id": "1017946"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_application_stack",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Application Stack"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_desktop",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_home",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "ターボリナックス ホーム "
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:C/A:N"
+    }
+  ],
+  "date": "2007-07-23T16:54+09:00",
+  "issued": "2007-05-14T11:10+09:00",
+  "modified": "2007-07-23T16:54+09:00"
+}

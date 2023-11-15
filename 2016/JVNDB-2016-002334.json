@@ -1,0 +1,63 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002334.html",
+  "title": "複数の VMware 製品の Client Integration Plugin におけるセッションをハイジャックされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002334.html",
+  "description": "VMware vCenter Server、vCloud Director、および vRealize Automation Identity Appliance の Client Integration Plugin (CIP) は、セッションコンテンツを誤って処理するため、セッションをハイジャックされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-002334",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2076",
+      "source": "CVE",
+      "id": "CVE-2016-2076"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2076",
+      "source": "NVD",
+      "id": "CVE-2016-2076"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:vcenter_server",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware vCenter Server"
+    },
+    {
+      "text": "cpe:/a:vmware:vcloud_director",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware vCloud Director"
+    },
+    {
+      "text": "cpe:/a:vmware:vrealize_automation",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware vRealize Automation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L"
+    }
+  ],
+  "date": "2016-05-31T15:58+09:00",
+  "issued": "2016-04-28T15:35+09:00",
+  "modified": "2016-05-31T15:58+09:00"
+}

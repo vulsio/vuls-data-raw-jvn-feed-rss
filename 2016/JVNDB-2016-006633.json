@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006633.html",
+  "title": "LXC におけるコンテナから脱出される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006633.html",
+  "description": "Linux Containers (LXC) は、lxc-attach を用いてプログラムを実行する場合、nonpriv セッションが TIOCSTI ioctl を使用してターミナルの入力バッファに文字を入れ込むことで親セッションへのエスケープが可能であるため、コンテナから脱出される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006633",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10124",
+      "source": "CVE",
+      "id": "CVE-2016-10124"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-10124",
+      "source": "NVD",
+      "id": "CVE-2016-10124"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/284.html",
+      "id": "CWE-284",
+      "title": "不適切なアクセス制御(CWE-284)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:linuxcontainers:lxc",
+      "version": "2.2",
+      "vendor": "Linux Containers",
+      "product": "LXC"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "8.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2017-01-17T17:34+09:00",
+  "issued": "2017-01-17T17:34+09:00",
+  "modified": "2017-01-17T17:34+09:00"
+}

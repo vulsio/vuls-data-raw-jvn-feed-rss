@@ -1,0 +1,133 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000678.html",
+  "title": "IKEv1 における複数のフォーマットストリングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000678.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nＩSAKMP (Internet Security Association and Key Management Protocol) は、認証、鍵管理、および SA (security association) の 3 つの複数のプロトコルの総称です。ISAKMP から派生した IKE は、IPSec 暗号化通信における鍵交換プロトコルです。多くの環境では IKEv1 が使用されています。\r\n\r\nIKE による通信は、フェーズ 1 とフェーズ 2 に分かれており、フェーズ 1 では安全な通信路を確立し、ISAKMP SA と呼ばれる IKE 自身のメッセージをやり取りします。\r\n\r\n複数の製品における ISAKMP/IKE の実装では、不正な ISAKMP フェーズ 1 のパケットの処理に不備が存在するため、このパケットを受け取った場合に異常な振る舞いを起こす問題が存在します。\r\n\r\nIKE による通信のための特定の情報を有するリモートの攻撃者により、意図的に作成されたパケットが送信された場合、ISAKMP を実装するサービスやデバイスがサービス不能状態に陥る可能性があります。",
+  "identifier": "JVNDB-2005-000678",
+  "references": [
+    {
+      "text": "http://jvn.jp/niscc/NISCC-273756/index.html",
+      "source": "JVN",
+      "id": "NISCC-273756"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3666",
+      "source": "CVE",
+      "id": "CVE-2005-3666"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3666",
+      "source": "NVD",
+      "id": "CVE-2005-3666"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/2005/20051118_193244.html",
+      "source": "AT-POLICE",
+      "id": "ISAKMPを実装した機器の脆弱性について"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/226364",
+      "source": "CERT-VN",
+      "id": "VU#226364"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/docs/re-20051114-01014.pdf?lang=en",
+      "source": "NISCC",
+      "id": "273756/NISCC/ISAKMP"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20051114-01014.xml",
+      "source": "CPNI",
+      "id": " 01014"
+    },
+    {
+      "text": "http://secunia.com/advisories/17621/",
+      "source": "SECUNIA",
+      "id": "SA17621"
+    },
+    {
+      "text": "http://secunia.com/advisories/17553/",
+      "source": "SECUNIA",
+      "id": "SA17553"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17902",
+      "source": "BID",
+      "id": "17902"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:checkpoint:vpn-1_firewall-1",
+      "version": "2.2",
+      "vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
+      "product": "VPN-1/FireWall-1"
+    },
+    {
+      "text": "cpe:/a:symantec:enterprise_firewall",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Symantec Enterprise Firewall"
+    },
+    {
+      "text": "cpe:/h:cisco:pix_asa",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco PIX/ASA"
+    },
+    {
+      "text": "cpe:/h:cisco:pix_firewall",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco PIX Firewall"
+    },
+    {
+      "text": "cpe:/o:cisco:ios",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:juniper:screenos",
+      "version": "2.2",
+      "vendor": "ジュニパーネットワークス",
+      "product": "ScreenOS"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

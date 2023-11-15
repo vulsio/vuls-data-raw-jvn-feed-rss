@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000579.html",
+  "title": "Sybase Adaptive Server におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000579.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSybase Adaptive Server Enterprise 12.5.3 以前には、以下の複数のセキュリティ問題が存在します。 \r\n\r\n・Transact-SQL 拡張において、データタイプの操作を行う attrib_valid ファンクションにバッファオーバーフローを生じる問題 \r\n\r\n・SQL 拡張において、データタイプの変換を行う convert ファンクションにバッファオーバーフローを生じる問題 \r\n\r\n・SQL 拡張において、変数タイプの定義を行う declare ステートメントにバッファオーバーフローを生じる問題 \r\n\r\n・特定のクエリプランにおいてバッファオーバーフローを生じるため、Sybase Server の権限で任意のコードが実行可能となる問題 \r\n\r\n・カスタム Java クラスを定義する install java ステートメントにバッファオーバーフローを生じる問題 \r\n\r\n・拡張ストアドプロシージャを実装する xp_server が、意図的に作成されたデータを受信するとクラッシュする問題 \r\n\r\nこれらの問題を利用するローカルの攻撃者は、バッファオーバーフローを発生させ Sybase Server の権限で任意のコードを実行する、あるいは xp_server をサービス不能状態に陥らせる可能性があります。",
+  "identifier": "JVNDB-2004-000579",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0441",
+      "source": "CVE",
+      "id": "CVE-2005-0441"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0441",
+      "source": "NVD",
+      "id": "CVE-2005-0441"
+    },
+    {
+      "text": "http://secunia.com/advisories/13632/",
+      "source": "SECUNIA",
+      "id": "SA13632"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13009",
+      "source": "BID",
+      "id": "13009"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13020",
+      "source": "BID",
+      "id": "13020"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13015",
+      "source": "BID",
+      "id": "13015"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13014",
+      "source": "BID",
+      "id": "13014"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13013",
+      "source": "BID",
+      "id": "13013"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13012",
+      "source": "BID",
+      "id": "13012"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12080",
+      "source": "BID",
+      "id": "12080"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sybase:adaptive_server_enterprise",
+      "version": "2.2",
+      "vendor": "サイベース",
+      "product": "SAP Sybase Adaptive Server Enterprise"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

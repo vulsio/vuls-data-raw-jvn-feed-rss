@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002215.html",
+  "title": "WinSCP における SSL サーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002215.html",
+  "description": "WinSCP は、TLS による FTP を使用した際、サーバのホスト名が X.509 証明書のサブジェクトの Common Name (CN) または subjectAltName フィールドのドメイン名と一致することを検証しないため、SSL サーバになりすまされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002215",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2735",
+      "source": "CVE",
+      "id": "CVE-2014-2735"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2735",
+      "source": "NVD",
+      "id": "CVE-2014-2735"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:winscp:winscp",
+      "version": "2.2",
+      "vendor": "WinSCP",
+      "product": "WinSCP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2014-04-24T17:01+09:00",
+  "issued": "2014-04-24T17:01+09:00",
+  "modified": "2014-04-24T17:01+09:00"
+}

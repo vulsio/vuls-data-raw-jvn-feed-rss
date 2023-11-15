@@ -1,0 +1,122 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-018164.html",
+  "title": "Fabrice Bellard の QEMU 他複数ベンダの製品における無限ループに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-018164.html",
+  "description": "Fabrice Bellard の QEMU 他複数ベンダの製品には、無限ループに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-018164",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2014-0148",
+      "source": "CVE",
+      "id": "CVE-2014-0148"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2014-0148",
+      "source": "NVD",
+      "id": "CVE-2014-0148"
+    },
+    {
+      "text": "http://git.qemu.org/?p=qemu.git%3Ba=commit%3Bh=1d7678dec4761acdc43439da6ceda41a703ba1a6",
+      "source": "関連文書",
+      "id": "git.qemu.org (p=qemu.git;a=commit;h=1d7678dec4761acdc43439da6ceda41a703ba1a6)"
+    },
+    {
+      "text": "http://rhn.redhat.com/errata/RHSA-2014-0420.html",
+      "source": "関連文書",
+      "id": "rhn.redhat.com (RHSA-2014-0420)"
+    },
+    {
+      "text": "http://rhn.redhat.com/errata/RHSA-2014-0421.html",
+      "source": "関連文書",
+      "id": "rhn.redhat.com (RHSA-2014-0421)"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2014/03/26/8",
+      "source": "関連文書",
+      "id": "www.openwall.com (oss-security/2014/03/26/8)"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1078212",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (1078212)"
+    },
+    {
+      "text": "https://lists.gnu.org/archive/html/qemu-devel/2014-03/msg04994.html",
+      "source": "関連文書",
+      "id": "lists.gnu.org (msg04994)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/835.html",
+      "id": "CWE-835",
+      "title": "無限ループ(CWE-835)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/a:redhat:virtualization",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Virtualization"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_openstack_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "enterprise linux openstack platform"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server_aus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server AUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server_tus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server TUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-10-18T17:14+09:00",
+  "issued": "2023-10-18T17:14+09:00",
+  "modified": "2023-10-18T17:14+09:00"
+}

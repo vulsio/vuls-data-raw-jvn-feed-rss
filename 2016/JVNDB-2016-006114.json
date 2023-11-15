@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006114.html",
+  "title": "Android アプリ「株式会社三菱東京ＵＦＪ銀行」に SSL/TLS ダウングレード攻撃が可能となる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006114.html",
+  "description": "株式会社三菱東京ＵＦＪ銀行が提供する Android アプリ「株式会社三菱東京ＵＦＪ銀行」には、SSL/TLS ダウングレード攻撃が可能となる脆弱性が存在します。\r\n\r\n株式会社三菱東京ＵＦＪ銀行が提供する Android アプリ「株式会社三菱東京ＵＦＪ銀行」は、サーバとの通信時に TLS v1.2 でのネゴシエーションを試みますが、サーバからのレスポンスで SSL v3.0 が指定されている場合、そのまま SSL v3.0 での通信を行います (CWE-757)。その結果、POODLE 攻撃などの影響を受ける可能性があります。\r\n\r\nCWE-757: Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade')\r\nhttps://cwe.mitre.org/data/definitions/757.html\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 吉田麗生 氏",
+  "identifier": "JVNDB-2016-006114",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92900492/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92900492"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7812",
+      "source": "CVE",
+      "id": "CVE-2016-7812"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-7812",
+      "source": "NVD",
+      "id": "CVE-2016-7812"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/757.html",
+      "id": "CWE-757",
+      "title": "アルゴリズムのダウングレード(CWE-757)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mufg:mitsubishi_ufj",
+      "version": "2.2",
+      "vendor": "株式会社三菱東京ＵＦＪ銀行",
+      "product": "株式会社三菱東京ＵＦＪ銀行"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "3.7",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2018-02-28T11:48+09:00",
+  "issued": "2016-12-07T16:08+09:00",
+  "modified": "2018-02-28T11:48+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006577.html",
+  "title": "Samba の modules/vfs_shadow_copy2.c の shadow_copy2_get_shadow_copy_data 関数におけるスナップショットにアクセスされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006577.html",
+  "description": "Samba の modules/vfs_shadow_copy2.c の shadow_copy2_get_shadow_copy_data 関数は、DIRECTORY_LIST アクセス権が許可されていることを検証しないため、スナップショットにアクセスされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-006577",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5299",
+      "source": "CVE",
+      "id": "CVE-2015-5299"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5299",
+      "source": "NVD",
+      "id": "CVE-2015-5299"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2016-01-05T13:57+09:00",
+  "issued": "2016-01-05T13:57+09:00",
+  "modified": "2016-01-05T13:57+09:00"
+}

@@ -1,0 +1,94 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-018979.html",
+  "title": "OPC Foundation の ua-nodeset 他複数ベンダの製品における NULL ポインタデリファレンスに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-018979.html",
+  "description": "OPC Foundation の ua-nodeset 他複数ベンダの製品には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-018979",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU92977068/",
+      "source": "JVN",
+      "id": "JVNVU#92977068"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-45117",
+      "source": "CVE",
+      "id": "CVE-2021-45117"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-45117",
+      "source": "NVD",
+      "id": "CVE-2021-45117"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-22-132-08",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-132-08"
+    },
+    {
+      "text": "https://cert-portal.siemens.com/productcert/pdf/ssa-285795.pdf",
+      "source": "関連文書",
+      "id": "cert-portal.siemens.com (ssa-285795.pdf)"
+    },
+    {
+      "text": "https://files.opcfoundation.org/SecurityBulletins/OPC%20Foundation%20Security%20Bulletin%20CVE-2021-45117.pdf",
+      "source": "関連文書",
+      "id": "files.opcfoundation.org (OPC Foundation Security Bulletin CVE-2021-45117.pdf)"
+    },
+    {
+      "text": "https://www.youtube.com/watch?v=qv-RBdCaV4k",
+      "source": "関連文書",
+      "id": "www.youtube.com (watch?v=qv-RBdCaV4k)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:opcfoundation:ua-nodeset",
+      "version": "2.2",
+      "vendor": "OPC Foundation",
+      "product": "ua-nodeset"
+    },
+    {
+      "text": "cpe:/a:siemens:simatic_net_pc",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "simatic net pc"
+    },
+    {
+      "text": "cpe:/a:siemens:sitop_manager",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "sitop manager"
+    },
+    {
+      "text": "cpe:/a:siemens:telecontrol_server_basic",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "telecontrol server basic"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-07-12T17:30+09:00",
+  "issued": "2023-07-12T17:30+09:00",
+  "modified": "2023-07-12T17:30+09:00"
+}

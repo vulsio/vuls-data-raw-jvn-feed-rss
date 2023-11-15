@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003929.html",
+  "title": "MSM デバイス用 Qualcomm Innovation Center Android コントリビューションなどで配布される Little Kernel ブートローダにおける制御可能なメモリ領域にデータを書き込まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003929.html",
+  "description": "MSM デバイス用 Qualcomm Innovation Center (QuIC) Android コントリビューション、およびその他の製品で配布される Little Kernel (LK) ブートローダの app/aboot/aboot.c 内の boot_linux_from_mmc 関数は、特定の address 値を適切に検証しないため、制御可能なメモリ領域にデータを書き込まれる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-003929",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0974",
+      "source": "CVE",
+      "id": "CVE-2014-0974"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0974",
+      "source": "NVD",
+      "id": "CVE-2014-0974"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:little_kernel_project:little_kernel_bootloader",
+      "version": "2.2",
+      "vendor": "Little Kernel project",
+      "product": "Little Kernel ブートローダ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2014-08-26T15:39+09:00",
+  "issued": "2014-08-26T15:39+09:00",
+  "modified": "2014-08-26T15:39+09:00"
+}

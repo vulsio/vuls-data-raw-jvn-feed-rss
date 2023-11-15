@@ -1,0 +1,102 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-019241.html",
+  "title": "async project の async 他複数ベンダの製品におけるオブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-019241.html",
+  "description": "async project の async 他複数ベンダの製品には、オブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-019241",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-43138",
+      "source": "CVE",
+      "id": "CVE-2021-43138"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-43138",
+      "source": "NVD",
+      "id": "CVE-2021-43138"
+    },
+    {
+      "text": "https://github.com/caolan/async/blob/master/lib/internal/iterator.js",
+      "source": "関連文書",
+      "id": "github.com (iterator.js)"
+    },
+    {
+      "text": "https://github.com/caolan/async/blob/master/lib/mapValuesLimit.js",
+      "source": "関連文書",
+      "id": "github.com (mapValuesLimit.js)"
+    },
+    {
+      "text": "https://github.com/caolan/async/blob/v2.6.4/CHANGELOG.md#v264",
+      "source": "関連文書",
+      "id": "github.com (CHANGELOG.md#v264)"
+    },
+    {
+      "text": "https://github.com/caolan/async/commit/e1ecdbf79264f9ab488c7799f4c76996d5dca66d",
+      "source": "関連文書",
+      "id": "github.com (e1ecdbf79264f9ab488c7799f4c76996d5dca66d)"
+    },
+    {
+      "text": "https://github.com/caolan/async/compare/v2.6.3...v2.6.4",
+      "source": "関連文書",
+      "id": "github.com (v2.6.3...v2.6.4)"
+    },
+    {
+      "text": "https://github.com/caolan/async/pull/1828",
+      "source": "関連文書",
+      "id": "github.com (pull/1828)"
+    },
+    {
+      "text": "https://jsfiddle.net/oz5twjd9/",
+      "source": "関連文書",
+      "id": "jsfiddle.net (oz5twjd9)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MTEUUTNIEBHGKUKKLNUZSV7IEP6IP3Q3/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (MTEUUTNIEBHGKUKKLNUZSV7IEP6IP3Q3)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UM6XJ73Q3NAM5KSGCOKJ2ZIA6GUWUJLK/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (UM6XJ73Q3NAM5KSGCOKJ2ZIA6GUWUJLK)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/1321.html",
+      "id": "CWE-1321",
+      "title": "オブジェクトプロトタイプ属性の不適切に制御された変更 (プロトタイプの汚染)(CWE-1321)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:async_project:async",
+      "version": "2.2",
+      "vendor": "async project",
+      "product": "async"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-07-20T17:16+09:00",
+  "issued": "2023-07-20T17:16+09:00",
+  "modified": "2023-07-20T17:16+09:00"
+}

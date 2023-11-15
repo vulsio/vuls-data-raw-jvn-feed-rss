@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000538.html",
+  "title": "IBM Lotus Domino Server の DWA における不正アクセスを受ける脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000538.html",
+  "description": "IBM Lotus Domino Server の Lotus Domino Web Accses (DWA) におけるセッショントークン (Cookie) である LtpaToken の実装に不備があり、ユーザのログアウト時に LtpaToken が破棄されず、設定されている期限 (デフォルトでは 30 分) が経過するまで DWA サーバ上で有効なままである脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000538",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4763",
+      "source": "CVE",
+      "id": "CVE-2006-4763"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4763",
+      "source": "NVD",
+      "id": "CVE-2006-4763"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19966",
+      "source": "BID",
+      "id": "19966"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:lotus_domino",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Domino (旧 IBM Lotus Domino)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002078.html",
+  "title": "Linux kernel の do_sigaltstack 関数における情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002078.html",
+  "description": "Linux kernel の do_sigaltstack 関数には、64-bit システム上で稼働している場合に、構造体の処理に関して不備があるため、カーネルスタックから重要な情報を読まれる脆弱性が存在します。",
+  "identifier": "JVNDB-2009-002078",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2847",
+      "source": "CVE",
+      "id": "CVE-2009-2847"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2847",
+      "source": "NVD",
+      "id": "CVE-2009-2847"
+    },
+    {
+      "text": "http://secunia.com/advisories/36759",
+      "source": "SECUNIA",
+      "id": "SA36759"
+    },
+    {
+      "text": "http://secunia.com/advisories/36136",
+      "source": "SECUNIA",
+      "id": "SA36136"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/35929",
+      "source": "BID",
+      "id": "35929"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2370",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2370"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:N/A:N"
+    }
+  ],
+  "date": "2010-02-16T11:43+09:00",
+  "issued": "2009-10-08T11:25+09:00",
+  "modified": "2010-02-16T11:43+09:00"
+}

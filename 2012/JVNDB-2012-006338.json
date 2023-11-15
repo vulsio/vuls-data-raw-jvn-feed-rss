@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006338.html",
+  "title": "Android の Bionic の DNS リゾルバの PRNG の実装における DNS レスポンスを偽装される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006338.html",
+  "description": "Android の Bionic の DNS リゾルバの PRNG の実装は、クエリ ID の値および UDP ソースポートの乱数を生成中に、時間と PID 情報を不適切に使用するため、DNS レスポンスを偽装される脆弱性が存在します。\r\n\r\n本件は、CVE-2015-0800 の問題に関する脆弱性です。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-330: Use of Insufficiently Random Values (不十分なランダム値の使用) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/330.html",
+  "identifier": "JVNDB-2012-006338",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2808",
+      "source": "CVE",
+      "id": "CVE-2012-2808"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2808",
+      "source": "NVD",
+      "id": "CVE-2012-2808"
+    },
+    {
+      "text": "http://blog.watchfire.com/files/androiddnsweakprng.pdf",
+      "source": "関連文書",
+      "id": "Weak randomness in Android's DNS resolver"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:bionic",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Bionic"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-04-06T14:16+09:00",
+  "issued": "2015-04-06T14:16+09:00",
+  "modified": "2015-04-06T14:16+09:00"
+}

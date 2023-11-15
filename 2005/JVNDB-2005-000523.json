@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000523.html",
+  "title": "FreeRADIUS の rlm_sqlcounter モジュールにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000523.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nFreeRADIUS は、RADIUS プロトコルを実装したオープンソースのインターネット認証サーバです。\r\n\r\nFreeRADIUS 1.0.4 以前に実装されている rlm_sqlcounter モジュールには、要求の処理に不備が存在するため、SQL インジェクションが可能となる、あるいはバッファオーバーフローが発生する問題が存在します。\r\n\r\n現時点で詳細は不明ですが、これらの問題を利用するリモートの攻撃者は、意図的に作成した要求を FreeRADIUS サーバに送りつけることにより、結果として SQL インジェクションを実行し、バックエンドデータベースのデータを追加、変更、または削除する、あるいは FreeRADIUS サーバをクラッシュさせサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、上記の問題以外にも FreeRADIUS 1.0.4 以前に関するセキュリティ問題が SUSE Linux や Red Hat Bugzilla において報告されていますが、freeradius.org の分析によると、これらは攻撃者が悪用可能なセキュリティ上の問題ではなくバグであることが報告されています。",
+  "identifier": "JVNDB-2005-000523",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4746",
+      "source": "CVE",
+      "id": "CVE-2005-4746"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4746",
+      "source": "NVD",
+      "id": "CVE-2005-4746"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17294",
+      "source": "BID",
+      "id": "17294"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17293",
+      "source": "BID",
+      "id": "17293"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

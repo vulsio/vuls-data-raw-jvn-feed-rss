@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005096.html",
+  "title": "python-gnupg の shell_quote 関数における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005096.html",
+  "description": "python-gnupg の shell_quote 関数には、\"固定引数を通して不正に埋め込まれたオプション\" に関する処理に不備があるため、不特定の影響を受ける脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2013-7323 に対する修正が不十分だったことによる脆弱性です。",
+  "identifier": "JVNDB-2014-005096",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1929",
+      "source": "CVE",
+      "id": "CVE-2014-1929"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1929",
+      "source": "NVD",
+      "id": "CVE-2014-1929"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vinay_sajip:python-gnupg",
+      "version": "2.2",
+      "vendor": "Vinay Sajip",
+      "product": "python-gnupg"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-10-29T15:28+09:00",
+  "issued": "2014-10-29T15:28+09:00",
+  "modified": "2014-10-29T15:28+09:00"
+}

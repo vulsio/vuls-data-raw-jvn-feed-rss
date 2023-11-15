@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002941.html",
+  "title": "Red Hat Network Satellite Server の Cobbler における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002941.html",
+  "description": "Red Hat Network Satellite Server の Cobbler のtemplate_api.py は、Cheetah テンプレートエンジンが持つ テンプレート内に含まれる Python 命令文の実行権限を無効にしないため、任意のコードを実行される脆弱性が存在します。\r\n本脆弱性は、CVE-2008-6954 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2010-002941",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2235",
+      "source": "CVE",
+      "id": "CVE-2010-2235"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2235",
+      "source": "NVD",
+      "id": "CVE-2010-2235"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cobbler_project:cobbler",
+      "version": "2.2",
+      "vendor": "Cobbler project",
+      "product": "Cobbler"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-03-27T18:42+09:00",
+  "issued": "2012-03-27T18:42+09:00",
+  "modified": "2012-03-27T18:42+09:00"
+}

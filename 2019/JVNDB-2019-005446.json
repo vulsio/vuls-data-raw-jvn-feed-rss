@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-005446.html",
+  "title": "dbus および Ubuntu における認証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-005446.html",
+  "description": "dbus および Ubuntu には、認証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2019-005446",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12749",
+      "source": "CVE",
+      "id": "CVE-2019-12749"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-12749",
+      "source": "NVD",
+      "id": "CVE-2019-12749"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2019/06/11/2",
+      "source": "関連文書",
+      "id": "CVE-2019-12749: DBusServer DBUS_COOKIE_SHA1 authentication bypass"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freedesktop:dbus",
+      "version": "2.2",
+      "vendor": "freedesktop.org",
+      "product": "D-Bus"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2019-06-20T14:53+09:00",
+  "issued": "2019-06-20T14:53+09:00",
+  "modified": "2019-06-20T14:53+09:00"
+}

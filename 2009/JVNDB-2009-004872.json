@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004872.html",
+  "title": "Linux kernel の flat サブシステムにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004872.html",
+  "description": "Linux kernel の flat サブシステムの fs/binfmt_flat.c の load_flat_shared_library 関数には、サービス運用妨害 (NULL ポインタデリファレンスおよびシステムクラッシュ) 状態となるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2009-004872",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2768",
+      "source": "CVE",
+      "id": "CVE-2009-2768"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2768",
+      "source": "NVD",
+      "id": "CVE-2009-2768"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-09-25T17:27+09:00",
+  "issued": "2012-09-25T17:27+09:00",
+  "modified": "2012-09-25T17:27+09:00"
+}

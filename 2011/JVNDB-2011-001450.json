@@ -1,0 +1,134 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001450.html",
+  "title": "GNU C Library および Embedded GLIBC における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001450.html",
+  "description": "GNU C Library (aka glibc or libc6) および Embedded GLIBC (EGLIBC) には、任意のコードを実行される、またはサービス運用妨害 (メモリの破損) 状態となる脆弱性が存在します。\r\n本脆弱性は、CVE-2010-2898 と関連する脆弱性です。",
+  "identifier": "JVNDB-2011-001450",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1071",
+      "source": "CVE",
+      "id": "CVE-2011-1071"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1071",
+      "source": "NVD",
+      "id": "CVE-2011-1071"
+    },
+    {
+      "text": "http://secunia.com/advisories/43492",
+      "source": "SECUNIA",
+      "id": "SA43492"
+    },
+    {
+      "text": "http://secunia.com/advisories/43830",
+      "source": "SECUNIA",
+      "id": "SA43830"
+    },
+    {
+      "text": "http://secunia.com/advisories/43989",
+      "source": "SECUNIA",
+      "id": "SA43989"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/46563",
+      "source": "BID",
+      "id": "46563"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1025290",
+      "source": "SECTRACK",
+      "id": "1025290"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0863",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0863"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:eglibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "Embedded GLIBC"
+    },
+    {
+      "text": "cpe:/a:gnu:glibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU C Library"
+    },
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/a:vmware:esxi",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESXi"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_long_life",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Long Life"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-12-18T17:10+09:00",
+  "issued": "2011-04-28T15:15+09:00",
+  "modified": "2012-12-18T17:10+09:00"
+}

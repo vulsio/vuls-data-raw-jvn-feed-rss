@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000463.html",
+  "title": "Open-iSCSI の usr/log.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000463.html",
+  "description": "Open-iSCSI (iscsi-initiator-utils) における iscsid の usr/log.c には、共有メモリを使用するログメッセージの管理で使用されるセマフォが不適切なパーミッションである問題があります。",
+  "identifier": "JVNDB-2007-000463",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3100",
+      "source": "CVE",
+      "id": "CVE-2007-3100"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-3100",
+      "source": "NVD",
+      "id": "CVE-2007-3100"
+    },
+    {
+      "text": "http://secunia.com/advisories/25679",
+      "source": "SECUNIA",
+      "id": "SA25679"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/24471",
+      "source": "BID",
+      "id": "24471"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1018246",
+      "source": "SECTRACK",
+      "id": "1018246"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2008-10-30T11:07+09:00",
+  "issued": "2007-06-26T15:36+09:00",
+  "modified": "2008-10-30T11:07+09:00"
+}

@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006605.html",
+  "title": "ISC BIND の named におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006605.html",
+  "description": "ISC BIND の named には、サービス運用妨害 (表明違反およびデーモンの停止) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006605",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94085539/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94085539"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9147",
+      "source": "CVE",
+      "id": "CVE-2016-9147"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9147",
+      "source": "NVD",
+      "id": "CVE-2016-9147"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2017/at170004.html",
+      "source": "JPCERT",
+      "id": "JPCERT-AT-2017-0004"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2017-01-12-bind9-vuln-inconsistent-dnssec.html",
+      "source": "JPRS",
+      "id": "（緊急）BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2016-9147） "
+    },
+    {
+      "text": "https://www.nic.ad.jp/ja/topics/2017/20170112-01.html",
+      "source": "JPNIC",
+      "id": "BIND 9における複数の脆弱性について(2017年1月)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-01-16T11:13+09:00",
+  "issued": "2017-01-16T11:13+09:00",
+  "modified": "2017-01-16T11:13+09:00"
+}

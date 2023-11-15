@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-007314.html",
+  "title": "Grafana Labs の Grafana 他複数ベンダの製品における重要な情報の平文保存に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-007314.html",
+  "description": "Grafana Labs の Grafana 他複数ベンダの製品には、重要な情報の平文保存に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-007314",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-26148",
+      "source": "CVE",
+      "id": "CVE-2022-26148"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-26148",
+      "source": "NVD",
+      "id": "CVE-2022-26148"
+    },
+    {
+      "text": "https://2k8.org/post-319.html",
+      "source": "関連文書",
+      "id": "2k8.org (post-319)"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20220425-0005/",
+      "source": "関連文書",
+      "id": "security.netapp.com (ntap-20220425-0005)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/312.html",
+      "id": "CWE-312",
+      "title": "重要な情報の平文保存(CWE-312)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:grafana:grafana",
+      "version": "2.2",
+      "vendor": "Grafana Labs",
+      "product": "Grafana"
+    },
+    {
+      "text": "cpe:/a:redhat:ceph_storage",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Ceph Storage"
+    },
+    {
+      "text": "cpe:/a:redhat:storage",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Storage"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-07-13T17:28+09:00",
+  "issued": "2023-07-13T17:28+09:00",
+  "modified": "2023-07-13T17:28+09:00"
+}

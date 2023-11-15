@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-013821.html",
+  "title": "Blockstream c-lightning における制限またはスロットリング無しのリソースの割り当てに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-013821.html",
+  "description": "Blockstream c-lightning には、制限またはスロットリング無しのリソースの割り当てに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-013821",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-41592",
+      "source": "CVE",
+      "id": "CVE-2021-41592"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-41592",
+      "source": "NVD",
+      "id": "CVE-2021-41592"
+    },
+    {
+      "text": "https://lists.linuxfoundation.org/pipermail/lightning-dev/2020-May/002714.html",
+      "source": "関連文書",
+      "id": "[Lightning-dev] Miners Dust Inflation attacks on Lightning Network"
+    },
+    {
+      "text": "https://bitcoinmagazine.com/technical/good-griefing-a-lingering-vulnerability-on-lightning-network-that-still-needs-fixing",
+      "source": "関連文書",
+      "id": "GOOD GRIEFING: A LINGERING VULNERABILITY ON LIGHTNING NETWORK THAT STILL NEEDS FIXING"
+    },
+    {
+      "text": "https://lists.linuxfoundation.org/pipermail/lightning-dev/2021-October/003257.html",
+      "source": "関連文書",
+      "id": "[Lightning-dev] Full Disclosure: CVE-2021-41591/ CVE-2021-41592 / CVE-2021-41593 \"Dust HTLC Exposure Considered Harmful\" (Mon Oct 4 15:09:28 UTC 2021)"
+    },
+    {
+      "text": "https://lists.linuxfoundation.org/pipermail/lightning-dev/2021-October/003264.html",
+      "source": "関連文書",
+      "id": "[Lightning-dev] Full Disclosure: CVE-2021-41591/ CVE-2021-41592 / CVE-2021-41593 \"Dust HTLC Exposure Considered Harmful\" (Mon Oct 4 19:11:59 UTC 2021)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/770.html",
+      "id": "CWE-770",
+      "title": "制限またはスロットリング無しのリソースの割り当て(CWE-770)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:elementsproject:c-lightning",
+      "version": "2.2",
+      "vendor": "ElementsProject",
+      "product": "c-lightning"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.4",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H"
+    }
+  ],
+  "date": "2022-09-28T14:53+09:00",
+  "issued": "2022-09-28T14:53+09:00",
+  "modified": "2022-09-28T14:53+09:00"
+}

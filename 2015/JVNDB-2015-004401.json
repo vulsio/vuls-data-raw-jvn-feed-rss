@@ -1,0 +1,85 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004401.html",
+  "title": "OpenSSH の sshd におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004401.html",
+  "description": "OpenSSH の sshd は、TTY デバイスに誰でも書き込み可能な (world-writable) パーミッションを使用するため、サービス運用妨害 (ターミナルの中断) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2015-004401",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6565",
+      "source": "CVE",
+      "id": "CVE-2015-6565"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6565",
+      "source": "NVD",
+      "id": "CVE-2015-6565"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2015/08/22/1",
+      "source": "関連文書",
+      "id": "Re: CVE request - OpenSSH 6.9 PAM privilege separation vulnerabilities"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hp:insight_control",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Insight Control"
+    },
+    {
+      "text": "cpe:/a:hp:matrix_operating_environment",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Matrix Operating Environment"
+    },
+    {
+      "text": "cpe:/a:hp:server_migration_pack",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Server Migration Pack"
+    },
+    {
+      "text": "cpe:/a:hp:systems_insight_manager",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Systems Insight Manager"
+    },
+    {
+      "text": "cpe:/a:hp:system_management_homepage",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "System Management Homepage"
+    },
+    {
+      "text": "cpe:/a:hp:version_control_repository_manager",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Version Control Repository Manager"
+    },
+    {
+      "text": "cpe:/a:openbsd:openssh",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2016-09-30T11:27+09:00",
+  "issued": "2015-08-26T10:22+09:00",
+  "modified": "2016-09-30T11:27+09:00"
+}

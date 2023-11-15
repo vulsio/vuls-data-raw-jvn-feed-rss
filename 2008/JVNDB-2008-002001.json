@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002001.html",
+  "title": "Cisco Secure ACS における EAP-Response パケット処理に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002001.html",
+  "description": "シスコシステムズが提供する Cisco Secure ACS には、サービス運用妨害 (DoS) の脆弱性および、任意のコードを実行される脆弱性があります。 \r\n適切な長さを超えた length フィールドを含む EAP Response パケットの処理が不適切なため、リモート認証されたユーザにより、サービス運用妨害 (DoS)状態にされる可能性があります。\r\nまた、不正な RADIUS (1) EAP-Response/Identity  (2) EAP-Response/MD5 (3) EAP-Response/TLS のメッセージアトリビュートパケットにより、任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2008-002001",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2441",
+      "source": "CVE",
+      "id": "CVE-2008-2441"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2441",
+      "source": "NVD",
+      "id": "CVE-2008-2441"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cisco:secure_access_control_server",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Secure Access Control Server ソフトウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-12-19T10:13+09:00",
+  "issued": "2008-12-19T10:13+09:00",
+  "modified": "2008-12-19T10:13+09:00"
+}

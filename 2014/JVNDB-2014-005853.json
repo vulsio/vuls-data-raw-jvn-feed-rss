@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005853.html",
+  "title": "Xen におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005853.html",
+  "description": "Xen は、大量の VCPU を使用する場合、読み込みおよび書き込みのロックを適切に処理しないため、サービス運用妨害 (書き込み拒否、または NMI ウォッチドッグタイムアウトおよびホストクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-9065 とは異なる脆弱性です。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-17: Code (コード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/17.html",
+  "identifier": "JVNDB-2014-005853",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9066",
+      "source": "CVE",
+      "id": "CVE-2014-9066"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9066",
+      "source": "NVD",
+      "id": "CVE-2014-9066"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:xen:xen",
+      "version": "2.2",
+      "vendor": "Xen プロジェクト",
+      "product": "Xen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2014-12-11T14:03+09:00",
+  "issued": "2014-12-11T14:03+09:00",
+  "modified": "2014-12-11T14:03+09:00"
+}

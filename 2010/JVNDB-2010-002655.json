@@ -1,0 +1,86 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002655.html",
+  "title": "ISC DHCP にサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002655.html",
+  "description": "ISC DHCP サーバには、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC から、以下の脆弱性情報が公開されています。\r\n\r\nIf a TCP connection is established to the server on a port which has been configured for communication with a failover peer, this can cause it to become non-responsive to all normal DHCP protocol traffic. The server will progress to a communications-interrupted state - but in addition will also cease to provide DHCP services to clients. The server must be restarted to resume normal operation.\r\n\r\nThis can be used as an attack vector against servers that are configured for failover partnerships.",
+  "identifier": "JVNDB-2010-002655",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU159528",
+      "source": "JVN",
+      "id": "JVNVU#159528"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3616",
+      "source": "CVE",
+      "id": "CVE-2010-3616"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3616",
+      "source": "NVD",
+      "id": "CVE-2010-3616"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/159528",
+      "source": "CERT-VN",
+      "id": "VU#159528"
+    },
+    {
+      "text": "http://secunia.com/advisories/42618",
+      "source": "SECUNIA",
+      "id": "SA42618"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/45360",
+      "source": "BID",
+      "id": "45360"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1024862",
+      "source": "SECTRACK",
+      "id": "1024862"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/3208",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-3208"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:dhcp",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "ISC DHCP"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-06-10T10:04+09:00",
+  "issued": "2011-01-19T15:46+09:00",
+  "modified": "2011-06-10T10:04+09:00"
+}

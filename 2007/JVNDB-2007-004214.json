@@ -1,0 +1,39 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004214.html",
+  "title": "IndexScript における SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004214.html",
+  "description": "IndexScript は、include/utils.php において以下のパラメータの使用に不備があるため、SQL インジェクションの脆弱性が存在します。\r\n本問題は、CVE-2007-4069 と重複する可能性があります。\r\n(1) cat_id パラメータ\r\n(2) start_id パラメータ\r\n(3) row[parent_id] パラメータ\r\n(4) row[cat_id] パラメータ",
+  "identifier": "JVNDB-2007-004214",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4163",
+      "source": "CVE",
+      "id": "CVE-2007-4163"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-4163",
+      "source": "NVD",
+      "id": "CVE-2007-4163"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:index_script:index_script",
+      "version": "2.2",
+      "vendor": "index script",
+      "product": "index script"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T16:59+09:00",
+  "issued": "2012-09-25T16:59+09:00",
+  "modified": "2012-09-25T16:59+09:00"
+}

@@ -1,0 +1,129 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001004.html",
+  "title": "PostgreSQL の index() 関数における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001004.html",
+  "description": "PostgreSQL には、index() 関数内の VACUUM および ANALYZE オペレーションの権限をテーブル所有者の権限ではなく、スーパーユーザ権限を使用する、および index() 関数内に SET ROLE および SET SESSION AUTHORIZATION を定義することが可能な脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001004",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6600",
+      "source": "CVE",
+      "id": "CVE-2007-6600"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-6600",
+      "source": "NVD",
+      "id": "CVE-2007-6600"
+    },
+    {
+      "text": "http://secunia.com/advisories/28359",
+      "source": "SECUNIA",
+      "id": "SA28359"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/27163",
+      "source": "BID",
+      "id": "27163"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/39496",
+      "source": "XF",
+      "id": "39496"
+    },
+    {
+      "text": "http://securitytracker.com/id?1019157",
+      "source": "SECTRACK",
+      "id": "1019157"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/0061",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-0061"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:postgresql:postgresql",
+      "version": "2.2",
+      "vendor": "PostgreSQL.org",
+      "product": "PostgreSQL"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2009-12-18T11:13+09:00",
+  "issued": "2008-01-23T16:15+09:00",
+  "modified": "2009-12-18T11:13+09:00"
+}

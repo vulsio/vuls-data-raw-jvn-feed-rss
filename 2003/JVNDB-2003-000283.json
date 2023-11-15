@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000283.html",
+  "title": "OpenSSH の PAM 認証におけるログイン認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000283.html",
+  "description": "OpenSSH には PAM 認証を使用してのチャレンジ / レスポンス認証の実装の不備により、空のパスワードを使用した場合、ログイン認証を回避可能な脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000283",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0786",
+      "source": "CVE",
+      "id": "CVE-2003-0786"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0786",
+      "source": "NVD",
+      "id": "CVE-2003-0786"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/602204",
+      "source": "CERT-VN",
+      "id": "VU#602204"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openbsd:openssh",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

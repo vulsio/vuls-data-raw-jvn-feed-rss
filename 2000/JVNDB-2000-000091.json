@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000091.html",
+  "title": "Microsoft Windows の Netmon におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000091.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nWindows NT 4.0 と Windows 2000 及び Systems Management Server (SMS) 1.2 と 2.0 に同梱されている Network Monitor ツール (Netmon) は、ネットワーク上の全てのトラフィックの収集・解析を行うことができます。\r\nこの Netmon にはいくつかの DLL が含まれますが、このうち、\"browser.dll\" にはセキュリティ上の問題があります。悪意ある攻撃者はこの DLL に含まれている様々な関数を利用してバッファオーバーフローを発生させ、 Netmon の実行されているターゲットホスト上で任意のコードを実行することが可能です。 Netmon の実行には管理者権限が必要となります。したがって、この任意のコードは管理者権限で実行されてしまうため、ターゲットとなってしまったホストを完全にコントロールされてしまう可能性があります。",
+  "identifier": "JVNDB-2000-000091",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-0885",
+      "source": "CVE",
+      "id": "CVE-2000-0885"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2000-0885",
+      "source": "NVD",
+      "id": "CVE-2000-0885"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/1882",
+      "source": "BID",
+      "id": "1882"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_nt",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows NT"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

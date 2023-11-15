@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003232.html",
+  "title": "PostgreSQL の CREATE TRIGGER における制限されたトリガを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003232.html",
+  "description": "PostgreSQL の CREATE TRIGGER は、トリガされる SECURITY DEFINER が付与された関数の実行権限を適切に確認しないため、任意のデータ上の制限されたトリガを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-003232",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0866",
+      "source": "CVE",
+      "id": "CVE-2012-0866"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-0866",
+      "source": "NVD",
+      "id": "CVE-2012-0866"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:postgresql:postgresql",
+      "version": "2.2",
+      "vendor": "PostgreSQL.org",
+      "product": "PostgreSQL"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-11-14T14:41+09:00",
+  "issued": "2012-07-23T11:41+09:00",
+  "modified": "2012-11-14T14:41+09:00"
+}

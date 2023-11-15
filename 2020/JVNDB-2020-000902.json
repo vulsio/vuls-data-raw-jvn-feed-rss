@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000902.html",
+  "title": "私本管理 Plus GOOUT における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000902.html",
+  "description": "EKAKIN が提供する私本管理 Plus GOOUT は、私本管理 Plus のデータを外出先でも閲覧できるようにする CGI です。\r\n私本管理 Plus GOOUT には、入力パラメータのチェック不備に起因した、任意のファイルに対するアクセス (読み込みおよび書き込み) が可能な次の脆弱性が存在します。\r\n・ディレクトリトラバーサル (CWE-22) - CVE-2020-5554\r\n・任意のファイルを操作される脆弱性 (CWE-20) - CVE-2020-5555\r\n\r\nこの案件は、2020年1月16日に開催された公表判定委員会による判定にて、平成29年経済産業省告示第19号および、情報セキュリティ早期警戒パートナーシップガイドラインにおける、次のすべての条件を満たすことを確認したため、JVN で公表することが適当と判定されました。IPA は、その判定を踏まえ、脆弱性情報を公表すると判断しました。\r\n\r\n1. 当該案件が調整不能であること\r\n2. 脆弱性の存在が認められると判断できること\r\n3. IPA が公表しない限り、当該脆弱性情報を知り得ない製品利用者がいるおそれがあること\r\n4. 製品開発者や製品利用者の状況等を総合的に勘案して、公表が適当でないと判断する理由・事情がないこと",
+  "identifier": "JVNDB-2020-000902",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN32415420/index.html",
+      "source": "JVN",
+      "id": "JVN#32415420"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5554",
+      "source": "CVE",
+      "id": "CVE-2020-5554"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5555",
+      "source": "CVE",
+      "id": "CVE-2020-5555"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-5554",
+      "source": "NVD",
+      "id": "CVE-2020-5554"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-5555",
+      "source": "NVD",
+      "id": "CVE-2020-5555"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ekakin:shihonkanri_plus_goout",
+      "version": "2.2",
+      "vendor": "EKAKIN",
+      "product": "私本管理Plus GOOUT"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2020-03-24T15:24+09:00",
+  "issued": "2020-03-24T15:24+09:00",
+  "modified": "2020-03-24T15:24+09:00"
+}

@@ -1,0 +1,136 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005434.html",
+  "title": "Rockwell Automation 製 FactoryTalk Linx Software に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005434.html",
+  "description": "Rockwell Automation 社が提供する FactoryTalk Linx Software には次の複数の脆弱性が存在します。\r\n\r\n* 不適切な入力確認 (CWE-20) - CVE-2020-11999\r\n* 不適切な入力確認 (CWE-20) - CVE-2020-12001\r\n* ディレクトリトラバーサル (CWE-22) - CVE-2020-12003\r\n* 任意のファイルのアップロード (CWE-434) - CVE-2020-12005\r\n",
+  "identifier": "JVNDB-2020-005434",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU91454414/",
+      "source": "JVN",
+      "id": "JVNVU#91454414"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11999",
+      "source": "CVE",
+      "id": "CVE-2020-11999"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12001",
+      "source": "CVE",
+      "id": "CVE-2020-12001"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12003",
+      "source": "CVE",
+      "id": "CVE-2020-12003"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12005",
+      "source": "CVE",
+      "id": "CVE-2020-12005"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-11999",
+      "source": "NVD",
+      "id": "CVE-2020-11999"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-12001",
+      "source": "NVD",
+      "id": "CVE-2020-12001"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-12003",
+      "source": "NVD",
+      "id": "CVE-2020-12003"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-12005",
+      "source": "NVD",
+      "id": "CVE-2020-12005"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-163-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-163-02"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/434.html",
+      "id": "CWE-434",
+      "title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:rockwellautomation:connected_components_workbench",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "Connected Components Workbench"
+    },
+    {
+      "text": "cpe:/a:rockwellautomation:controlflash",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "ControlFLASH"
+    },
+    {
+      "text": "cpe:/a:rockwellautomation:controlflash_plus",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "ControlFLASH Plus"
+    },
+    {
+      "text": "cpe:/a:rockwellautomation:factorytalk_asset_centre",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "FactoryTalk Asset Centre"
+    },
+    {
+      "text": "cpe:/a:rockwellautomation:factorytalk_linx",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "FactoryTalk Linx"
+    },
+    {
+      "text": "cpe:/a:rockwellautomation:factorytalk_linx_commdtm",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "FactoryTalk Linx CommDTM"
+    },
+    {
+      "text": "cpe:/a:rockwellautomation:studio_5000_launcher",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "Studio 5000 Launcher"
+    },
+    {
+      "text": "cpe:/a:rockwellautomation:studio_5000_logix_designer",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "Studio 5000 Logix Designer"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.6",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2020-07-13T13:46+09:00",
+  "issued": "2020-06-15T15:37+09:00",
+  "modified": "2020-07-13T13:46+09:00"
+}

@@ -1,0 +1,101 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000597.html",
+  "title": "Apache Tomcat における「\\」の取り扱い不備によりセッションハイジャック攻撃に利用される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000597.html",
+  "description": "Apache Tomcat には、クッキーにおける区切り文字の、バックスラッシュ「\\」の取り扱いに不備が存在するために、セッションデータの ID などの重要な情報を奪取され、セッションハイジャック攻撃に利用される脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000597",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3385",
+      "source": "CVE",
+      "id": "CVE-2007-3385"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-3385",
+      "source": "NVD",
+      "id": "CVE-2007-3385"
+    },
+    {
+      "text": "http://secunia.com/advisories/26466/",
+      "source": "SECUNIA",
+      "id": "SA26466"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25316",
+      "source": "BID",
+      "id": "25316"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/2902",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-2902"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2008-07-11T14:30+09:00",
+  "issued": "2007-08-24T13:58+09:00",
+  "modified": "2008-07-11T14:30+09:00"
+}

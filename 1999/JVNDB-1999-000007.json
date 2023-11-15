@@ -1,0 +1,39 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/1999/JVNDB-1999-000007.html",
+  "title": "Sun Solaris の write コマンドにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/1999/JVNDB-1999-000007.html",
+  "description": "Sun Solaris の write コマンドには、引数の値を読み込む処理において、文字列の長さを適切にチェックしていないため、過度に長い文字列によりバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-1999-000007",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-1371",
+      "source": "CVE",
+      "id": "CVE-1999-1371"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-1999-1371",
+      "source": "NVD",
+      "id": "CVE-1999-1371"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

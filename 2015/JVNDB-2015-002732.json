@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002732.html",
+  "title": "Docker Engine におけるホストを変更される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002732.html",
+  "description": "Docker Engine は、(1) /proc/asound、(2) /proc/timer_stats、(3) /proc/latency_stats、および (4) /proc/fs に脆弱なパーミッションを使用するため、ホストを変更される、重要な情報を取得される、およびプロトコルのダウングレードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-002732",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3630",
+      "source": "CVE",
+      "id": "CVE-2015-3630"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3630",
+      "source": "NVD",
+      "id": "CVE-2015-3630"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:docker:docker",
+      "version": "2.2",
+      "vendor": "Docker",
+      "product": "Docker"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-05-20T16:54+09:00",
+  "issued": "2015-05-20T16:54+09:00",
+  "modified": "2015-05-20T16:54+09:00"
+}

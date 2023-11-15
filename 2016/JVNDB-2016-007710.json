@@ -1,0 +1,91 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007710.html",
+  "title": "PHP FormMail Generator で作成した PHP コードに複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007710.html",
+  "description": "PHP FormMail Generator は、PHP アプリケーションや WordPress を使って作成されているウェブサイト上に簡易なウェブフォームを埋め込むための PHP コードを生成するウェブサービスです。PHP FormMail Generator によって作成された PHP コードには、複数の脆弱性が存在します。\r\n\r\nPHP FormMail Generator\r\nhttp://www.formmail-maker.com/generator.php\r\n\r\n認証回避 (CWE-302) - CVE-2016-9482\r\n遠隔の第三者が次の URL に直接アクセスすることで認証を回避し、ウェブフォームの管理パネルにアクセスする可能性があります。\r\n\r\n　　/admin.php?mod=admin&func=panel\r\n\r\n信頼できないデータのデシリアライズ (CWE-502) - CVE-2016-9483\r\nPHP FormMail Generator で生成された PHP コードに含まれる phpfmg_filman_download() 関数は、信頼できない入力値をデシリアライズします。遠隔の第三者はこの脆弱性を使用して、サーバ上で PHP コードを実行したり、次に述べる CVE-2016-9484 と組み合わせて、ファイルインクルード攻撃によりサーバ上の任意のファイルを取得したりする可能性があります。\r\n\r\nディレクトリトラバーサル (CWE-22) - CVE-2016-9484\r\nPHP FormMail Generator で生成された PHP コードは、入力されたディレクトリ名を適切に検証していないため、遠隔の第三者がディレクトリトラバーサルによってサーバ上の任意のファイルにアクセスする可能性があります。\r\n",
+  "identifier": "JVNDB-2016-007710",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99577809/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99577809"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9482",
+      "source": "CVE",
+      "id": "CVE-2016-9482"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9483",
+      "source": "CVE",
+      "id": "CVE-2016-9483"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9484",
+      "source": "CVE",
+      "id": "CVE-2016-9484"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-9482",
+      "source": "NVD",
+      "id": "CVE-2016-9482"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-9483",
+      "source": "NVD",
+      "id": "CVE-2016-9483"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-9484",
+      "source": "NVD",
+      "id": "CVE-2016-9484"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/494015",
+      "source": "CERT-VN",
+      "id": "VU#494015"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/502.html",
+      "id": "CWE-502",
+      "title": "信頼できないデータのデシリアライゼーション(CWE-502)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/302.html",
+      "id": "CWE-302",
+      "title": "認証回避の脆弱性(CWE-302)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:jqueryform:php_formmail_generator",
+      "version": "2.2",
+      "vendor": "PHP Form Mail Maker",
+      "product": "PHP FormMail Generator"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-03-13T17:05+09:00",
+  "issued": "2017-03-13T17:05+09:00",
+  "modified": "2017-03-13T17:05+09:00"
+}

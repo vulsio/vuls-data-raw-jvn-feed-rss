@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004421.html",
+  "title": "EMC RSA Authentication Manager Prime Self-Service のセルフサービスポータルにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004421.html",
+  "description": "EMC RSA Authentication Manager (AM) Prime Self-Service のセルフサービスポータルには、\"安全でないオブジェクトの直接参照の脆弱性\" に関する処理に不備があるため、サービス運用妨害 (任意ユーザの PIN 変更) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-004421",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0915",
+      "source": "CVE",
+      "id": "CVE-2016-0915"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0915",
+      "source": "NVD",
+      "id": "CVE-2016-0915"
+    },
+    {
+      "text": "http://seclists.org/bugtraq/2016/Aug/71",
+      "source": "関連文書",
+      "id": "ESA-2016-070: RSA Authentication Manager Prime SelfService Insecure Direct Object Reference Vulnerability"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:emc:authentication_manager_prime_self-service",
+      "version": "2.2",
+      "vendor": "DELL EMC (旧 EMC Corporation)",
+      "product": "RSA Authentication Manager Prime Self-Service"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
+    }
+  ],
+  "date": "2016-08-23T15:01+09:00",
+  "issued": "2016-08-23T15:01+09:00",
+  "modified": "2016-08-23T15:01+09:00"
+}

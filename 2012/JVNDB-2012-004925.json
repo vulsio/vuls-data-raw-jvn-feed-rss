@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004925.html",
+  "title": "hostapd の EAP authentication server におけるヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004925.html",
+  "description": "hostapd の EAP authentication server の eap_server_tls_common.c 内の eap_server_tls_process_fragment 関数には、ヒープベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004925",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4445",
+      "source": "CVE",
+      "id": "CVE-2012-4445"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4445",
+      "source": "NVD",
+      "id": "CVE-2012-4445"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:w1.fi:hostapd",
+      "version": "2.2",
+      "vendor": "w1.fi",
+      "product": "hostapd"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-10-15T14:57+09:00",
+  "issued": "2012-10-15T14:57+09:00",
+  "modified": "2012-10-15T14:57+09:00"
+}

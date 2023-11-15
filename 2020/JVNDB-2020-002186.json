@@ -1,0 +1,80 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-002186.html",
+  "title": "複数の Gocloud 製品における OS コマンドインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-002186.html",
+  "description": "複数の Gocloud 製品には、OS コマンドインジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2020-002186",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8949",
+      "source": "CVE",
+      "id": "CVE-2020-8949"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-8949",
+      "source": "NVD",
+      "id": "CVE-2020-8949"
+    },
+    {
+      "text": "https://sku11army.blogspot.com/2020/02/gocloud-rce-in-gocloud-routers.html",
+      "source": "関連文書",
+      "id": "[GOCLOUD] - RCE in Gocloud Routers (authenticated) - (CVE-2020-8949)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:gocloud:isp3000_firmware",
+      "version": "2.2",
+      "vendor": "Gocloud",
+      "product": "ISP3000 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:gocloud:s2a_firmware",
+      "version": "2.2",
+      "vendor": "Gocloud",
+      "product": "S2A ファームウェア"
+    },
+    {
+      "text": "cpe:/o:gocloud:s2a_wl_firmware",
+      "version": "2.2",
+      "vendor": "Gocloud",
+      "product": "S2A_WL ファームウェア"
+    },
+    {
+      "text": "cpe:/o:gocloud:s3a_firmware",
+      "version": "2.2",
+      "vendor": "Gocloud",
+      "product": "S3A ファームウェア"
+    },
+    {
+      "text": "cpe:/o:gocloud:s3a_k2p_mtk_firmware",
+      "version": "2.2",
+      "vendor": "Gocloud",
+      "product": "S3A K2P MTK ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-03-06T10:21+09:00",
+  "issued": "2020-03-06T10:21+09:00",
+  "modified": "2020-03-06T10:21+09:00"
+}

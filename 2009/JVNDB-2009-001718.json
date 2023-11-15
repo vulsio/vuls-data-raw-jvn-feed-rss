@@ -1,0 +1,30 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001718.html",
+  "title": "NSD におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001718.html",
+  "description": "NSD にはバッファオーバーフローの脆弱性が存在します。\r\n\r\nNLnet Labs が提供する Name Server Daemon (NSD) はオープンソースの DNS サーバソフトウェアです。NSD には特定のパケットを処理する際に off-by-one エラーによるバッファオーバーフローの脆弱性が存在します。本脆弱性はバージョン 3.x では packet.c に含まれる packet_read_query_section() 関数、バージョン 2.x では query.c に含まれる process_query_section() 関数にそれぞれ起因します。",
+  "identifier": "JVNDB-2009-001718",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU710316/index.html",
+      "source": "JVN",
+      "id": "JVNVU#710316"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/710316",
+      "source": "CERT-VN",
+      "id": "VU#710316"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nlnet_labs:nsd",
+      "version": "2.2",
+      "vendor": "Stichting NLnet Labs",
+      "product": "NSD"
+    }
+  ],
+  "date": "2009-07-08T12:14+09:00",
+  "issued": "2009-07-08T12:14+09:00",
+  "modified": "2009-07-08T12:14+09:00"
+}

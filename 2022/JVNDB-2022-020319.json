@@ -1,0 +1,94 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-020319.html",
+  "title": "Net-SNMP の Net-SNMP 他複数ベンダの製品における NULL ポインタデリファレンスに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-020319.html",
+  "description": "Net-SNMP の Net-SNMP 他複数ベンダの製品には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-020319",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-44793",
+      "source": "CVE",
+      "id": "CVE-2022-44793"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-44793",
+      "source": "NVD",
+      "id": "CVE-2022-44793"
+    },
+    {
+      "text": "https://gist.github.com/menglong2234/d07a65b5028145c9f4e1d1db8c4c202f",
+      "source": "関連文書",
+      "id": "gist.github.com (d07a65b5028145c9f4e1d1db8c4c202f)"
+    },
+    {
+      "text": "https://github.com/net-snmp/net-snmp/issues/475",
+      "source": "関連文書",
+      "id": "github.com (issues/475)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2023/01/msg00010.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00010)"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20230223-0011/",
+      "source": "関連文書",
+      "id": "security.netapp.com (ntap-20230223-0011)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:net-snmp:net-snmp",
+      "version": "2.2",
+      "vendor": "Net-SNMP",
+      "product": "Net-SNMP"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:netapp:h300s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H300S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h410s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H410S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h500s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H500S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h700s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H700S ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-11-01T17:16+09:00",
+  "issued": "2023-11-01T17:16+09:00",
+  "modified": "2023-11-01T17:16+09:00"
+}

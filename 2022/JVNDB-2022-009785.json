@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-009785.html",
+  "title": "gitea project の gitea におけるエンコードおよびエスケープに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-009785.html",
+  "description": "gitea project の gitea には、エンコードおよびエスケープに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-009785",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-30781",
+      "source": "CVE",
+      "id": "CVE-2022-30781"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-30781",
+      "source": "NVD",
+      "id": "CVE-2022-30781"
+    },
+    {
+      "text": "http://packetstormsecurity.com/files/168400/Gitea-1.16.6-Remote-Code-Execution.html",
+      "source": "関連文書",
+      "id": "packetstormsecurity.com (Gitea-1.16.6-Remote-Code-Execution)"
+    },
+    {
+      "text": "http://packetstormsecurity.com/files/169928/Gitea-Git-Fetch-Remote-Code-Execution.html",
+      "source": "関連文書",
+      "id": "packetstormsecurity.com (Gitea-Git-Fetch-Remote-Code-Execution)"
+    },
+    {
+      "text": "https://blog.gitea.io/2022/05/gitea-1.16.7-is-released/",
+      "source": "関連文書",
+      "id": "blog.gitea.io (gitea-1.16.7-is-released)"
+    },
+    {
+      "text": "https://github.com/go-gitea/gitea/pull/19487",
+      "source": "関連文書",
+      "id": "github.com (pull/19487)"
+    },
+    {
+      "text": "https://github.com/go-gitea/gitea/pull/19490",
+      "source": "関連文書",
+      "id": "github.com (pull/19490)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/116.html",
+      "id": "CWE-116",
+      "title": "不適切なエンコード、または出力のエスケープ(CWE-116)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gitea:gitea",
+      "version": "2.2",
+      "vendor": "gitea project",
+      "product": "gitea"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2023-08-08T17:18+09:00",
+  "issued": "2023-08-08T17:18+09:00",
+  "modified": "2023-08-08T17:18+09:00"
+}

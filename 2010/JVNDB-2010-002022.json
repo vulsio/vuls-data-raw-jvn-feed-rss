@@ -1,0 +1,100 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002022.html",
+  "title": "Linux kernel の do_anonymous_page 関数における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002022.html",
+  "description": "Linux kernel の mm/memory.c 内にある do_anonymous_page 関数には、スタックおよびヒープを適切に区別しないため、任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002022",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2240",
+      "source": "CVE",
+      "id": "CVE-2010-2240"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2240",
+      "source": "NVD",
+      "id": "CVE-2010-2240"
+    },
+    {
+      "text": "http://secunia.com/advisories/40965",
+      "source": "SECUNIA",
+      "id": "SA40965"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/42505",
+      "source": "BID",
+      "id": "42505"
+    },
+    {
+      "text": "http://securitytracker.com/id?1024344",
+      "source": "SECTRACK",
+      "id": "1024344"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/2113",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-2113"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_els",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux ELS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-06-10T10:03+09:00",
+  "issued": "2010-09-22T16:00+09:00",
+  "modified": "2011-06-10T10:03+09:00"
+}

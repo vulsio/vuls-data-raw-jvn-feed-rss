@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003167.html",
+  "title": "Retrospect Backup Client が弱いパスワードハッシュを使用する問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003167.html",
+  "description": "Retrospect Backup Client はネットワーク経由でバックアップを行うためのソフトウェアです。このソフトウェアは、パスワードをハッシュ化された形式で保存しますが、ハッシュの衝突が起こりやすい弱い形式を使用しています。そのため攻撃者は、ハッシュ値の衝突を悪用し、攻撃対象であるクライアントのバックアップファイルにアクセスすることが可能です。\r\n\r\n強度が不十分なパスワードハッシュの使用 (CWE-916) - 2015-2864\r\nRetrospect Backup Client には、パスワードハッシュの生成アルゴリズムに問題があります。ハッシュの生成時にパスワードを完全に使用ないため、高い確率で他のパスワードと衝突する弱いハッシュ値を生成します。Retrospect Backup Client が動作するマシンにネットワーク経由でアクセスできる攻撃者は、最大でも 128回の試行でハッシュ値の衝突を起こすパスワードを生成することができます。この問題を発見したセキュリティ研究者 Josep Pi Rodriguez と Pedro Guillen Nunez による攻撃のデモンストレーションが YouTube に公開されています。\r\n\r\nCWE-916: Use of Password Hash With Insufficient Computational Effort\r\nhttps://cwe.mitre.org/data/definitions/916.html\r\n\r\n攻撃のデモンストレーション\r\nhttps://www.youtube.com/watch?v=MB8AL5u7JCA\r\n\r\nパスワード認証を使用するクライアントのみが脆弱性の影響を受けます。公開鍵認証を使用しているクライアントは影響を受けません。開発者は、公開鍵認証を使用することを推奨しています。脆弱性の詳細や公開鍵認証の設定方法については、開発者のアドバイザリを参照してください。\r\n\r\nアドバイザリ\r\nhttp://www.retrospect.com/support/kb/cve_2015_2864",
+  "identifier": "JVNDB-2015-003167",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU99598689",
+      "source": "JVN",
+      "id": "JVNVU#99598689"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2864",
+      "source": "CVE",
+      "id": "CVE-2015-2864"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2864",
+      "source": "NVD",
+      "id": "CVE-2015-2864"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/101500",
+      "source": "CERT-VN",
+      "id": "VU#101500"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:retrospect:retrospect",
+      "version": "2.2",
+      "vendor": "Retrospect, Inc.",
+      "product": "Retrospect"
+    },
+    {
+      "text": "cpe:/a:retrospect:retrospect_client",
+      "version": "2.2",
+      "vendor": "Retrospect, Inc.",
+      "product": "Retrospect Client"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-10-05T18:06+09:00",
+  "issued": "2015-06-18T16:31+09:00",
+  "modified": "2015-10-05T18:06+09:00"
+}

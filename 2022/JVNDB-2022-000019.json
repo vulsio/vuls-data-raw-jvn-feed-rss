@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-000019.html",
+  "title": "pfSense-pkg-WireGuard におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-000019.html",
+  "description": "pfSense が提供する pfSense-pkg-WireGuard は pfSense CE および pfSense Plus 用のアドオンパッケージです。\r\npfSense-pkg-WireGuard には、ディレクトリトラバーサル (CWE-22) の脆弱性が存在します。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社イエラエセキュリティ 渡部 裕 氏\r\n",
+  "identifier": "JVNDB-2022-000019",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN85572374/index.html",
+      "source": "JVN",
+      "id": "JVN#85572374"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-21132",
+      "source": "CVE",
+      "id": "CVE-2022-21132"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:electric_sheep_fencing:pfsense_pfsense-pkg-wireguard",
+      "version": "2.2",
+      "vendor": "Electric Sheep Fencing",
+      "product": "pfSense-pkg-WireGuard"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2022-03-03T12:11+09:00",
+  "issued": "2022-03-03T12:11+09:00",
+  "modified": "2022-03-03T12:11+09:00"
+}

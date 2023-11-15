@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002901.html",
+  "title": "Apple Mac OS X の XNU kernel におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002901.html",
+  "description": "Apple Mac OS X の XNU kernel の posix_spawn システムコールは、ファイルアクションおよびポートアクション用のデータを適切に検証しないため、(1) サービス運用妨害 (パニック) 状態にされる、または (2) カーネルヒープメモリから重要な情報を取得される脆弱性が存在します。\r\n\r\n本脆弱性は、SyScan 2013 において発表されました。",
+  "identifier": "JVNDB-2013-002901",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU98681940/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98681940"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU95174988/",
+      "source": "JVN",
+      "id": "JVNVU#95174988"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3954",
+      "source": "CVE",
+      "id": "CVE-2013-3954"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3954",
+      "source": "NVD",
+      "id": "CVE-2013-3954"
+    },
+    {
+      "text": "http://antid0te.com/syscan_2013/SyScan2013_Mountain_Lion_iOS_Vulnerabilities_Garage_Sale_Whitepaper.pdf",
+      "source": "関連文書",
+      "id": "Mountain Lion/iOS Vulnerabilities Garage Sale"
+    },
+    {
+      "text": "http://www.syscan.org/index.php/sg/program/day/2",
+      "source": "関連文書",
+      "id": "SyScan'13 Singapore - Day 2 (26th April 2013)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:apple_tv",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple TV"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:C"
+    }
+  ],
+  "date": "2013-11-08T10:08+09:00",
+  "issued": "2013-06-07T16:22+09:00",
+  "modified": "2013-11-08T10:08+09:00"
+}

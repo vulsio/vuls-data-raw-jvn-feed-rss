@@ -1,0 +1,83 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-012358.html",
+  "title": "ImageMagick の ImageMagick 他複数ベンダの製品における不正な型変換に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-012358.html",
+  "description": "ImageMagick の ImageMagick 他複数ベンダの製品には、不正な型変換に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-012358",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-32547",
+      "source": "CVE",
+      "id": "CVE-2022-32547"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-32547",
+      "source": "NVD",
+      "id": "CVE-2022-32547"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=2091813",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (2091813)"
+    },
+    {
+      "text": "https://github.com/ImageMagick/ImageMagick/commit/eac8ce4d873f28bb6a46aa3a662fb196b49b95d0",
+      "source": "関連文書",
+      "id": "github.com (eac8ce4d873f28bb6a46aa3a662fb196b49b95d0)"
+    },
+    {
+      "text": "https://github.com/ImageMagick/ImageMagick6/commit/dc070da861a015d3c97488fdcca6063b44d47a7b",
+      "source": "関連文書",
+      "id": "github.com (dc070da861a015d3c97488fdcca6063b44d47a7b)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2023/05/msg00020.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00020)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/704.html",
+      "id": "CWE-704",
+      "title": "不正な型変換またはキャスト(CWE-704)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:imagemagick:imagemagick",
+      "version": "2.2",
+      "vendor": "ImageMagick",
+      "product": "ImageMagick"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-08-29T17:03+09:00",
+  "issued": "2023-08-29T17:03+09:00",
+  "modified": "2023-08-29T17:03+09:00"
+}

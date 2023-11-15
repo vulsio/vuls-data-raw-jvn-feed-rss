@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002446.html",
+  "title": "Digi International 製 PortServer TS 16 における不適切な認証の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002446.html",
+  "description": "Digi International 社が提供する Ethernet ターミナルサーバである PortServer TS 16 には、不適切な認証の脆弱性（CWE-287、CVE-2021-38412）が存在します。\r\nPortServer TS 16 Rack デバイスは、HTTP および HTTPSWeb サーバー上の複数のリソースへのフォーマットされた POST リクエストに対して、認証または認証トークンを必要としません。",
+  "identifier": "JVNDB-2021-002446",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU90903314/index.html",
+      "source": "JVN",
+      "id": "JVNVU#90903314"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38412",
+      "source": "CVE",
+      "id": "CVE-2021-38412"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-257-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-257-01"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:digi:portserver_ts_16_firmware",
+      "version": "2.2",
+      "vendor": "Digi International Inc.",
+      "product": "PortServer TS 16 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.6",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L"
+    }
+  ],
+  "date": "2021-09-16T16:23+09:00",
+  "issued": "2021-09-16T16:23+09:00",
+  "modified": "2021-09-16T16:23+09:00"
+}

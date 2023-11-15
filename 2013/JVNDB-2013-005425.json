@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005425.html",
+  "title": "FFmpeg の libavcodec/flashsv.c の flashsv_decode_frame 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005425.html",
+  "description": "FFmpeg の libavcodec/flashsv.c の flashsv_decode_frame 関数は、特定の height 値を適切に検証しないため、サービス運用妨害 (配列の領域外へのアクセス) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005425",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7015",
+      "source": "CVE",
+      "id": "CVE-2013-7015"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7015",
+      "source": "NVD",
+      "id": "CVE-2013-7015"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2013/11/26/7",
+      "source": "関連文書",
+      "id": "CVE Request: FFmpeg 2.1 multiple problems"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2013/12/08/3",
+      "source": "関連文書",
+      "id": "Re: CVE Request: FFmpeg 2.1 multiple problems"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-12-11T16:47+09:00",
+  "issued": "2013-12-11T16:47+09:00",
+  "modified": "2013-12-11T16:47+09:00"
+}

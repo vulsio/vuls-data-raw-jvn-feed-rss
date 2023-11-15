@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-003697.html",
+  "title": "Rust 用 xcb crate における未チェックの戻り値に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-003697.html",
+  "description": "Rust 用 xcb crate には、未チェックの戻り値に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-003697",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26955",
+      "source": "CVE",
+      "id": "CVE-2021-26955"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-26955",
+      "source": "NVD",
+      "id": "CVE-2021-26955"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/252.html",
+      "id": "CWE-252",
+      "title": "未チェックの戻り値(CWE-252)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:xcb_project:xcb",
+      "version": "2.2",
+      "vendor": "xcb project",
+      "product": "xcb"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-11-02T15:14+09:00",
+  "issued": "2021-11-02T15:14+09:00",
+  "modified": "2021-11-02T15:14+09:00"
+}

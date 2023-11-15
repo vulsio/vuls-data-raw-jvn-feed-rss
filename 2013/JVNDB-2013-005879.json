@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005879.html",
+  "title": "Plone の in_portal.py の URLTool クラスにおける allow_external_login_sites フィルタリングプロパティを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005879.html",
+  "description": "Plone の in_portal.py の URLTool クラスの isURLInPortal メソッドは、相対 URL としてスペースで始まる URL を扱うため、\r\nallow_external_login_sites フィルタリングプロパティを回避され、ユーザを任意の Web サイトへリダイレクトされることで、フィッシング攻撃を実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005879",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4200",
+      "source": "CVE",
+      "id": "CVE-2013-4200"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4200",
+      "source": "NVD",
+      "id": "CVE-2013-4200"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:plone:plone",
+      "version": "2.2",
+      "vendor": "Plone Foundation",
+      "product": "Plone"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2014-01-23T17:52+09:00",
+  "issued": "2014-01-23T17:52+09:00",
+  "modified": "2014-01-23T17:52+09:00"
+}

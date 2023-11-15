@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007050.html",
+  "title": "GD Graphics ライブラリの gdImageWebPtr 関数におけるメモリ二重解放の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007050.html",
+  "description": "GD Graphics ライブラリ (別名 libgd) の gdImageWebPtr 関数には、メモリ二重解放の脆弱性が存在します。",
+  "identifier": "JVNDB-2016-007050",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6912",
+      "source": "CVE",
+      "id": "CVE-2016-6912"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6912",
+      "source": "NVD",
+      "id": "CVE-2016-6912"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/415.html",
+      "id": "CWE-415",
+      "title": "二重解放(CWE-415)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libgd:libgd",
+      "version": "2.2",
+      "vendor": "LibGD project",
+      "product": "LibGD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-02-08T17:03+09:00",
+  "issued": "2017-02-08T17:03+09:00",
+  "modified": "2017-02-08T17:03+09:00"
+}

@@ -1,0 +1,90 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002298.html",
+  "title": "Quagga の bgpd の bgp_route_refresh_receive 関数におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002298.html",
+  "description": "Quagga の bgpd の bgp_packet.c 内にある bgp_route_refresh_receive 関数には、スタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002298",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2948",
+      "source": "CVE",
+      "id": "CVE-2010-2948"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2948",
+      "source": "NVD",
+      "id": "CVE-2010-2948"
+    },
+    {
+      "text": "http://secunia.com/advisories/41038",
+      "source": "SECUNIA",
+      "id": "SA41038"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/42635",
+      "source": "BID",
+      "id": "42635"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:quagga:quagga",
+      "version": "2.2",
+      "vendor": "Quagga",
+      "product": "Quagga"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-04-17T18:20+09:00",
+  "issued": "2010-11-15T15:38+09:00",
+  "modified": "2012-04-17T18:20+09:00"
+}

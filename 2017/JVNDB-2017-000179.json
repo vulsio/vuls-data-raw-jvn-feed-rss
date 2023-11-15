@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-000179.html",
+  "title": "バッファロー製の複数の無線 LAN アクセスポイントにおける認証不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-000179.html",
+  "description": "株式会社バッファローが提供する WAPM-1166D および WAPM-APG600H は、無線 LAN アクセスポイントです。WAPM-1166D および WAPM-APG600H には、認証不備 (CWE-287) の脆弱性が存在します。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 東京大学 笹部哲郎 氏",
+  "identifier": "JVNDB-2017-000179",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN48823557/index.html",
+      "source": "JVN",
+      "id": "JVN#48823557"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2126",
+      "source": "CVE",
+      "id": "CVE-2017-2126"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:buffalo_inc:wapm-1166d_firmware",
+      "version": "2.2",
+      "vendor": "バッファロー",
+      "product": "WAPM-1166D ファームウェア"
+    },
+    {
+      "text": "cpe:/o:buffalo_inc:wapm-apg600h_firmware",
+      "version": "2.2",
+      "vendor": "バッファロー",
+      "product": "WAPM-APG600H ファームウエア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-07-20T12:03+09:00",
+  "issued": "2017-07-20T12:03+09:00",
+  "modified": "2017-07-20T12:03+09:00"
+}

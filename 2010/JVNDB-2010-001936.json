@@ -1,0 +1,93 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001936.html",
+  "title": "dbus-glib の GObject プロパティにおけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001936.html",
+  "description": "dbus-glib には、エクスポートされた GObject プロパティの access フラグを適切に適用しない不備があるため、アクセス制限を回避される、またはプロパティの変更によりサービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001936",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1172",
+      "source": "CVE",
+      "id": "CVE-2010-1172"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1172",
+      "source": "NVD",
+      "id": "CVE-2010-1172"
+    },
+    {
+      "text": "http://secunia.com/advisories/40908",
+      "source": "SECUNIA",
+      "id": "SA40908"
+    },
+    {
+      "text": "http://secunia.com/advisories/40925",
+      "source": "SECUNIA",
+      "id": "SA40925"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/42347",
+      "source": "BID",
+      "id": "42347"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/61041",
+      "source": "XF",
+      "id": "61041"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/2063",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-2063 "
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freedesktop:dbus-glib",
+      "version": "2.2",
+      "vendor": "freedesktop.org",
+      "product": "dbus-glib"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2010-09-03T16:32+09:00",
+  "issued": "2010-09-03T16:32+09:00",
+  "modified": "2010-09-03T16:32+09:00"
+}

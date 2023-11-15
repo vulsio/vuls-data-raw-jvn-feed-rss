@@ -1,0 +1,205 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001951.html",
+  "title": "ISC BIND 9 におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001951.html",
+  "description": "Internet Systems Consortium (ISC) が提供する BIND 9 には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nBerkeley Internet Name Domain (BIND) は ISC が提供する Domain Name System (DNS) の実装であり、RFC 2136 で規定されている dynamic DNS updates をサポートしています。BIND 9 には、細工された dynamic update パケットを処理する際に、サービス運用妨害 (DoS) 攻撃を受ける可能性があります。ISC によると、dynamic update の設定をされていないサーバでも本脆弱性の影響を受ける可能性があるとしています。詳しくは ISC が提供する情報をご確認ください。\r\n\r\n2009年7月31日、日本国内での本脆弱性に対する攻撃活動が報告されました。",
+  "identifier": "JVNDB-2009-001951",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU725188/index.html",
+      "source": "JVN",
+      "id": "JVNVU#725188"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0696",
+      "source": "CVE",
+      "id": "CVE-2009-0696"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0696",
+      "source": "NVD",
+      "id": "CVE-2009-0696"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2009/at090016.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2009-0016"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/725188",
+      "source": "CERT-VN",
+      "id": "VU#725188"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20090731-bind.html",
+      "source": "IPA",
+      "id": "20090731-bind"
+    },
+    {
+      "text": "http://secunia.com/advisories/36192",
+      "source": "SECUNIA",
+      "id": "SA36192"
+    },
+    {
+      "text": "http://secunia.com/advisories/36086",
+      "source": "SECUNIA",
+      "id": "SA36086"
+    },
+    {
+      "text": "http://secunia.com/advisories/36038",
+      "source": "SECUNIA",
+      "id": "SA36038"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/35848",
+      "source": "BID",
+      "id": "35848"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1022613",
+      "source": "SECTRACK",
+      "id": "1022613"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2171",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2171"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2088",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2088"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2036",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2036"
+    },
+    {
+      "text": "http://tools.ietf.org/html/rfc2136",
+      "source": "IETF",
+      "id": "RFC 2136"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/a:trendmicro:interscan_messaging_security_suite",
+      "version": "2.2",
+      "vendor": "トレンドマイクロ",
+      "product": "InterScan Messaging Security Suite"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:hp:tru64",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP Tru64 UNIX"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_client",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Client"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2009-09-30T10:56+09:00",
+  "issued": "2009-09-01T11:27+09:00",
+  "modified": "2009-09-30T10:56+09:00"
+}

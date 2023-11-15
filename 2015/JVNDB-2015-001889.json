@@ -1,0 +1,151 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001889.html",
+  "title": "OpenSSL の s3_srvr.c の ssl3_get_client_key_exchange 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001889.html",
+  "description": "OpenSSL の s3_srvr.c の ssl3_get_client_key_exchange 関数には、クライアント認証および一時的に Diffie-Hellman 暗号スイートが有効になっている場合、サービス運用妨害 (デーモンクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-001889",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU95877131/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95877131"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1787",
+      "source": "CVE",
+      "id": "CVE-2015-1787"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1787",
+      "source": "NVD",
+      "id": "CVE-2015-1787"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nec:csview",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CSVIEW"
+    },
+    {
+      "text": "cpe:/a:nec:enterpriseidentitymanager",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "EnterpriseIdentityManager"
+    },
+    {
+      "text": "cpe:/a:nec:secureware_pki_application_development_kit",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SecureWare/PKIアプリケーション開発キット"
+    },
+    {
+      "text": "cpe:/a:nec:systemdirector_enterprise",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SystemDirector Enterprise"
+    },
+    {
+      "text": "cpe:/a:nec:webotx",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Application Server"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_enterprise_service_bus",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Enterprise Service Bus"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_portal",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Portal"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_sip_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX SIP Application Server"
+    },
+    {
+      "text": "cpe:/a:nec:websam",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebSAM"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:oracle:enterprise_manager",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Enterprise Manager"
+    },
+    {
+      "text": "cpe:/a:oracle:fusion_middleware",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Fusion Middleware"
+    },
+    {
+      "text": "cpe:/h:nec:express5800",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "Express5800"
+    },
+    {
+      "text": "cpe:/h:nec:istorage",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "iStorage"
+    },
+    {
+      "text": "cpe:/h:nec:ix2000",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX2000シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:ix3000",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX3000シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:univerge",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "UNIVERGE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2016-11-09T15:45+09:00",
+  "issued": "2015-03-23T12:30+09:00",
+  "modified": "2016-11-09T15:45+09:00"
+}

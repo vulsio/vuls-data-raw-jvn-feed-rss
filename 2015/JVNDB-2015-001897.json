@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001897.html",
+  "title": "NSIS Inetc プラグインに SSL サーバ証明書の検証不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001897.html",
+  "description": "NSIS インストーラの Inetc プラグインには、SSL サーバ証明書の検証不備の脆弱性が存在します。このプラグインを使用するインストーラは、HTTPS スプーフィングの影響を受ける可能性があります。\r\n\r\nInetc はインターネットからのファイルダウンロード機能を提供する NSIS インストーラ用プラグインです。Inetc は HTTPS プロトコルをサポートしていますが、SSL サーバ証明書チェーンを検証していません。\r\n\r\nInetc\r\nhttp://nsis.sourceforge.net/Inetc_plug-in\r\nNSIS インストーラ\r\nhttp://nsis.sourceforge.net/Main_Page",
+  "identifier": "JVNDB-2015-001897",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU93435107/index.html",
+      "source": "JVN",
+      "id": "JVNVU#93435107"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0941",
+      "source": "CVE",
+      "id": "CVE-2015-0941"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0941",
+      "source": "NVD",
+      "id": "CVE-2015-0941"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/894897",
+      "source": "CERT-VN",
+      "id": "VU#894897"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/WDON-9U3KUC",
+      "source": "CERT-VN",
+      "id": "Nullsoft Information for VU#894897"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/WDON-9USNGA",
+      "source": "CERT-VN",
+      "id": "Dropbox Information for VU#894897"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/WDON-9USNH3",
+      "source": "CERT-VN",
+      "id": "CERT/CC Information for VU#894897"
+    },
+    {
+      "text": "http://forums.winamp.com/showthread.php?p=3018645",
+      "source": "関連文書",
+      "id": "Winamp & SHOUTcast Forums"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nullsoft:nsis_inetc",
+      "version": "2.2",
+      "vendor": "Nullsoft",
+      "product": "NSIS Inetc"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:M/Au:N/C:C/I:C/A:N"
+    }
+  ],
+  "date": "2015-03-24T12:33+09:00",
+  "issued": "2015-03-24T12:33+09:00",
+  "modified": "2015-03-24T12:33+09:00"
+}

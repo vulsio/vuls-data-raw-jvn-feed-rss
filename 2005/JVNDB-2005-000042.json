@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000042.html",
+  "title": "Xpdf の Decrypt::makeFileKey2() 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000042.html",
+  "description": "Xpdf には、Xref.cc の Xref::checkEncrypted 関数において、暗号鍵長を格納する \"/Encrypt /Length\" タグの境界チェックに不備があり、Decrypt.cc の Decrypt::makeFileKey2 関数の処理によりバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000042",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0064",
+      "source": "CVE",
+      "id": "CVE-2005-0064"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0064",
+      "source": "NVD",
+      "id": "CVE-2005-0064"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12302",
+      "source": "BID",
+      "id": "12302"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006228.html",
+  "title": "EpubCheck に XML 外部実体参照 (XXE) に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006228.html",
+  "description": "EpubCheck には、XML 外部実体参照 (XXE) に関する脆弱性が存在します。\r\n\r\nXML 外部実体参照 (XXE) (CWE-611) - CVE-2016-9487\r\nEpubCheck は、EPUB ファイルが適切な形式になっているか検証するためのツールです。単体でコマンドラインツールとして使用されたり、EPUB リーダなどのソフトウェアプロジェクトのなかで使用されたりします。\r\n\r\nEpubCheck 4.0.1 には、EPUB ファイル検証処理において XML データを解析する際、外部実体参照を適切に制限していない問題が存在します。\r\n\r\nCWE-611: Improper Restriction of XML External Entity Reference ('XXE')\r\nhttps://cwe.mitre.org/data/definitions/611.html",
+  "identifier": "JVNDB-2016-006228",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU96226231",
+      "source": "JVN",
+      "id": "JVNVU#96226231"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9487",
+      "source": "CVE",
+      "id": "CVE-2016-9487"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-9487",
+      "source": "NVD",
+      "id": "CVE-2016-9487"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/779243",
+      "source": "CERT-VN",
+      "id": "VU#779243"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/611.html",
+      "id": "CWE-611",
+      "title": "XML 外部エンティティ参照の不適切な制限(CWE-611)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:idpf:epubcheck",
+      "version": "2.2",
+      "vendor": "International Digital Publishing Forum",
+      "product": "EpubCheck"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2016-12-15T16:42+09:00",
+  "issued": "2016-12-15T16:42+09:00",
+  "modified": "2016-12-15T16:42+09:00"
+}

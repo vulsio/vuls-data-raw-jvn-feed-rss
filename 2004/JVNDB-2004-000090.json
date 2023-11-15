@@ -1,0 +1,100 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000090.html",
+  "title": "Apache HTTP Server の HTTP 要求の処理におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000090.html",
+  "description": "Apache HTTP Server には、複数ソケットを利用して HTTP 要求を処理している場合、ほとんど利用されないソケットに対し、転送データ量が少なく生存時間の短いコネクションが確立されると、競合状態が発生するために、HTTP 要求を処理する子プロセスが新規接続を拒否する脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000090",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0174",
+      "source": "CVE",
+      "id": "CVE-2004-0174"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0174",
+      "source": "NVD",
+      "id": "CVE-2004-0174"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/132110",
+      "source": "CERT-VN",
+      "id": "VU#132110"
+    },
+    {
+      "text": "http://secunia.com/advisories/12377/",
+      "source": "SECUNIA",
+      "id": "SA12377"
+    },
+    {
+      "text": "http://secunia.com/advisories/11170/",
+      "source": "SECUNIA",
+      "id": "SA11170"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9921",
+      "source": "BID",
+      "id": "9921"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Mar/1009495.html",
+      "source": "SECTRACK",
+      "id": "1009495"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:ibm:http_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM HTTP Server"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

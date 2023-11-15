@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002442.html",
+  "title": "U818A WIFI に anonymous FTP でフルアクセス可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002442.html",
+  "description": "U818A WIFI は、自身をアクセスポイントとして Wi-Fi 接続機能が実装されています。また、FTP サーバが動作しており、anonymous ユーザが当該ドローン内のファイルシステムにフルアクセス可能です。\r\n\r\nU818A WIFI は、空中からの画像や動画の撮影に対応したクアッドコプター ドローンです。マニュアルに記載はありませんが U818A WIFI では FTP サーバが動作しており、ドローンに搭載されている Wi-Fi アクセスポイントを通じて FTP アクセスが可能です。\r\n\r\n不適切なデフォルトパーミッション (CWE-276) - CVE-2017-3209\r\n報告者によると、U818A WIFI では FTP サーバが稼働しており、初期設定ではパスワードを必要としない anonymous ユーザによるアクセスが可能となっています。また、当該ドローン内のファイルシステム全域に対して読み書き可能であるとのことです。\r\n\r\nまた、U818A WIFI は BusyBox 1.20.2 を使用しています。BusyBox 1.20.2 は 2012年にリリースされたバージョンで、既知の脆弱性が複数存在します。",
+  "identifier": "JVNDB-2017-002442",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91711014/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91711014"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3209",
+      "source": "CVE",
+      "id": "CVE-2017-3209"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3209",
+      "source": "NVD",
+      "id": "CVE-2017-3209"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/334207",
+      "source": "CERT-VN",
+      "id": "VU#334207"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/276.html",
+      "id": "CWE-276",
+      "title": "不適切なデフォルトパーミッション(CWE-276)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:dbpower:u818a_firmware",
+      "version": "2.2",
+      "vendor": "DBPOWER",
+      "product": "U818A WIFI"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:L/Au:N/C:C/I:C/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2019-07-24T16:08+09:00",
+  "issued": "2017-04-13T18:35+09:00",
+  "modified": "2019-07-24T16:08+09:00"
+}

@@ -1,0 +1,126 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-009181.html",
+  "title": "OpenSSL における CMS/PKCS7 で転送された暗号鍵を復元される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-009181.html",
+  "description": "OpenSSL には、CMS/PKCS7 で転送された暗号鍵を復元される、または RSA 公開鍵で暗号化された RSA 暗号化メッセージをすべて復号化される脆弱性が存在します。",
+  "identifier": "JVNDB-2019-009181",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU94367039/",
+      "source": "JVN",
+      "id": "JVNVU#94367039"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU90348129/",
+      "source": "JVN",
+      "id": "JVNVU#90348129"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-1563",
+      "source": "CVE",
+      "id": "CVE-2019-1563"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-1563",
+      "source": "NVD",
+      "id": "CVE-2019-1563"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-336-06",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-336-06"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/311.html",
+      "id": "CWE-311",
+      "title": "重要なデータの暗号化の欠如(CWE-311)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:automation_director",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Automation Director"
+    },
+    {
+      "text": "cpe:/a:hitachi:device_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Device Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:global_link_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Global Link Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_ops_center_analyzer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Ops Center Analyzer"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_ops_center_api_configuration_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Ops Center API Configuration Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_ops_center_automator",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Ops Center Automator"
+    },
+    {
+      "text": "cpe:/a:hitachi:infrastructure_analytics_advisor",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Infrastructure Analytics Advisor"
+    },
+    {
+      "text": "cpe:/a:hitachi:replication_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Replication Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:tiered_storage_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Tiered Storage Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:tuning_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Tuning Manager"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "3.7",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2023-07-20T15:25+09:00",
+  "issued": "2019-09-13T12:03+09:00",
+  "modified": "2023-07-20T15:25+09:00"
+}

@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-003011.html",
+  "title": "Asterisk Open Source における有効なユーザ名を使用して認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-003011.html",
+  "description": "Asterisk Open Source および Business Edition は、データベースをベースにした登録 \"realtime\" およびホストベースの認証を使用している際、ユーザ名とパスワードが正確でないおよびパスワードがない場合は、IP アドレスをチェックしないため、有効なユーザ名を使用して認証を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2007-003011",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6430",
+      "source": "CVE",
+      "id": "CVE-2007-6430"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-6430",
+      "source": "NVD",
+      "id": "CVE-2007-6430"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:digium:asterisk_business_edition",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk Business Edition"
+    },
+    {
+      "text": "cpe:/a:digium:open_source",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk Open Source"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2012-06-26T15:54+09:00",
+  "issued": "2012-06-26T15:54+09:00",
+  "modified": "2012-06-26T15:54+09:00"
+}

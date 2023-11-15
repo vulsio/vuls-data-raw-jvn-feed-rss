@@ -1,0 +1,213 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000373.html",
+  "title": "Samba NDR MS-RPC におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000373.html",
+  "description": "Samba には細工された MS-RPC パケットの取り扱いに問題があり、バッファオーバーフローの脆弱性が存在します。\r\n\r\nSamba は SMB/CIFS を実装したオープンソースのソフトウェアです。Samba の NDR 処理には、メモリ割り当て処理に使われる引数の値を適切にチェックしない問題があります。結果として、バッファオーバーフローが発生する可能性があります。\r\n\r\n詳しくは、Samba Security Announcement をご参照下さい。",
+  "identifier": "JVNDB-2007-000373",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23773720/index.html",
+      "source": "JVN",
+      "id": "JVNVU#773720"
+    },
+    {
+      "text": "http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2446",
+      "source": "CVE",
+      "id": "CVE-2007-2446"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2446",
+      "source": "NVD",
+      "id": "CVE-2007-2446"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2007/wr071901.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2007-1901"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/773720",
+      "source": "CERT-VN",
+      "id": "VU#773720"
+    },
+    {
+      "text": "http://secunia.com/advisories/25232",
+      "source": "SECUNIA",
+      "id": "SAS25232"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/24198",
+      "source": "BID",
+      "id": "24198"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/24197",
+      "source": "BID",
+      "id": "24197"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/24196",
+      "source": "BID",
+      "id": "24196"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/24195",
+      "source": "BID",
+      "id": "24195"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/23973",
+      "source": "BID",
+      "id": "23973"
+    },
+    {
+      "text": "http://www.iss.net/threats/266.html",
+      "source": "ISS",
+      "id": "266"
+    },
+    {
+      "text": "http://www.isskk.co.jp/support/techinfo/general/samba_266.html",
+      "source": "ISSKK",
+      "id": "samba_266"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/34314",
+      "source": "XF",
+      "id": "34314"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/34316",
+      "source": "XF",
+      "id": "34316"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/34309",
+      "source": "XF",
+      "id": "34309"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/34311",
+      "source": "XF",
+      "id": "34311"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/34312",
+      "source": "XF",
+      "id": "34312"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1018050",
+      "source": "SECTRACK",
+      "id": "1018050"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/1805",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-1805"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_desktop",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_home",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "ターボリナックス ホーム "
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-07-30T18:53+09:00",
+  "issued": "2007-05-30T17:43+09:00",
+  "modified": "2007-07-30T18:53+09:00"
+}

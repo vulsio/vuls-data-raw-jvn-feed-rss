@@ -1,0 +1,100 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002434.html",
+  "title": "OPENSSL におけるメモリ破損の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002434.html",
+  "description": "OPENSSL には、AVX512IFMA 命令をサポートする X86_64 CPU の RSA 実装に不備があり、2048 ビットの秘密鍵を使用した RSA 実装が正しくなくなるため、計算の際にメモリ破損の脆弱性が存在します。",
+  "identifier": "JVNDB-2022-002434",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU96381485/",
+      "source": "JVN",
+      "id": "JVNVU#96381485"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU90782730/",
+      "source": "JVN",
+      "id": "JVNVU#90782730 "
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU99464755/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99464755"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-2274",
+      "source": "CVE",
+      "id": "CVE-2022-2274"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-2274",
+      "source": "NVD",
+      "id": "CVE-2022-2274"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-166-11",
+      "source": "IPA SECURITY ALERTS",
+      "id": "ICSA-23-166-11"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-23-017-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-017-03"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nec:spoolserver_reportfiling",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SpoolServer/ReportFiling"
+    },
+    {
+      "text": "cpe:/a:nec:witchymail",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WitchyMail"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/h:nec:univerge",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "UNIVERGE"
+    },
+    {
+      "text": "cpe:/o:nec:nec_cyber_security_platform",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NEC Cyber Security Platform"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-06-16T18:10+09:00",
+  "issued": "2022-09-27T16:15+09:00",
+  "modified": "2023-06-16T18:10+09:00"
+}

@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004043.html",
+  "title": "複数の Android アプリに SSL 証明書を適切に検証しない脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004043.html",
+  "description": "複数の Android アプリには、SSL 証明書を適切に検証しない脆弱性が存在します。\r\nCERT/CC では、CERT Tapioca を使用して本脆弱性を調査しました。調査手法の詳細は、CERT/CC blog をご確認ください。\r\nまた、本脆弱性については、CERT Oracle Secure Coding Standard for Java の DRD19-J. Properly verify server certificate on SSL/TLS も参照してください。\r\n\r\nCERT Tapioca\r\nhttps://www.cert.org/vulnerability-analysis/tools/cert-tapioca.cfm\r\n\r\nCERT/CC blog\r\nhttps://www.cert.org/blogs/certcc/post.cfm?EntryID=204\r\n\r\nDRD19-J. Properly verify server certificate on SSL/TLS\r\nhttps://www.securecoding.cert.org/confluence/x/CQAJC",
+  "identifier": "JVNDB-2014-004043",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU90369988/index.html",
+      "source": "JVN",
+      "id": "JVNVU#90369988"
+    },
+    {
+      "text": "http://www.ipa.go.jp/about/press/20140919_1.html",
+      "source": "IPA CFA",
+      "id": "【注意喚起】HTTPSで通信するAndroidアプリの開発者はSSLサーバー証明書の検証処理の実装を"
+    },
+    {
+      "text": "https://www.cert.org/vulnerability-analysis/tools/cert-tapioca.cfm",
+      "source": "CERT Vulnerability Analysis",
+      "id": "CERT Tapioca"
+    },
+    {
+      "text": "https://www.cert.org/blogs/certcc/post.cfm?EntryID=204",
+      "source": "CERT/CC blog",
+      "id": "Finding Android SSL Vulnerabilities with CERT Tapioca"
+    },
+    {
+      "text": "https://www.securecoding.cert.org/confluence/pages/viewpage.action;jsessionid=38139E999B01085A7AE8552AC02EAC05?pageId=134807561",
+      "source": "CERT Secure Coding",
+      "id": "DRD19-J. Properly verify server certificate on SSL/TLS"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/582497",
+      "source": "CERT-VN",
+      "id": "VU#582497"
+    },
+    {
+      "text": "https://docs.google.com/spreadsheets/d/1t5GXwjw82SyunALVJb2w0zi3FoLRIkfGPc7AMjRF0r4/edit?usp=sharing",
+      "source": "関連文書",
+      "id": "Google スプレッドシート (Android apps that fail to validate SSL)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-09-19T18:04+09:00",
+  "issued": "2014-09-05T17:02+09:00",
+  "modified": "2014-09-19T18:04+09:00"
+}

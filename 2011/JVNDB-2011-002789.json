@@ -1,0 +1,80 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002789.html",
+  "title": "Microsoft Windows の win32k.sys におけるにおけるサービス運用妨害 (リブート) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002789.html",
+  "description": "Microsoft Windows の kernel-mode ドライバ内にある win32k.sys は、配列インデックスエラーにより、サービス運用妨害 (リブート) 状態となる脆弱性が存在します。\r\n本脆弱性は、CVE-2011-3402 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2011-002789",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA11-312A",
+      "source": "JVN",
+      "id": "JVNTA11-312A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2004",
+      "source": "CVE",
+      "id": "CVE-2011-2004"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2004",
+      "source": "NVD",
+      "id": "CVE-2011-2004"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2011/at110029.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2011-0029"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/#topics",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS11-083,084,085,086)(2011年11月09日)"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA11-312A.html",
+      "source": "CERT-SA",
+      "id": "SA11-312A"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/675073",
+      "source": "CERT-VN",
+      "id": "VU#675073"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA11-312A.html",
+      "source": "CERT-TA",
+      "id": "TA11-312A"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_7",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 7"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2011-11-14T11:19+09:00",
+  "issued": "2011-11-14T11:19+09:00",
+  "modified": "2011-11-14T11:19+09:00"
+}

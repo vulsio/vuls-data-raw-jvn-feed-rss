@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000295.html",
+  "title": "saned のコネクションの中断検知機能におけるセグメンテーションフォルトの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000295.html",
+  "description": "SANE sane-backend に同梱されている saned にはコネクションの中断を検知するのに時間がかかるため、割り当てられたメモリを消費しつくし、セグメンテーションフォルトが発生する問題が存在します。",
+  "identifier": "JVNDB-2003-000295",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0774",
+      "source": "CVE",
+      "id": "CVE-2003-0774"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0774",
+      "source": "NVD",
+      "id": "CVE-2003-0774"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8594",
+      "source": "BID",
+      "id": "8594"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sane:sane",
+      "version": "2.2",
+      "vendor": "SANE",
+      "product": "SANE"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-08-02T14:17+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-08-02T14:17+09:00"
+}

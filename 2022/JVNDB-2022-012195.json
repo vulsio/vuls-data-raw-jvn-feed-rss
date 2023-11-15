@@ -1,0 +1,81 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-012195.html",
+  "title": "redis における有効期限後のメモリの解放の欠如に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-012195.html",
+  "description": "redis には、有効期限後のメモリの解放の欠如に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-012195",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-33105",
+      "source": "CVE",
+      "id": "CVE-2022-33105"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-33105",
+      "source": "NVD",
+      "id": "CVE-2022-33105"
+    },
+    {
+      "text": "https://github.com/redis/redis/commit/4a7a4e42db8ff757cdf3f4a824f66426036034ef",
+      "source": "関連文書",
+      "id": "github.com (4a7a4e42db8ff757cdf3f4a824f66426036034ef)"
+    },
+    {
+      "text": "https://github.com/redis/redis/pull/10753",
+      "source": "関連文書",
+      "id": "github.com (pull/10753)"
+    },
+    {
+      "text": "https://github.com/redis/redis/pull/10829",
+      "source": "関連文書",
+      "id": "github.com (pull/10829)"
+    },
+    {
+      "text": "https://raw.githubusercontent.com/redis/redis/7.0.1/00-RELEASENOTES",
+      "source": "関連文書",
+      "id": "raw.githubusercontent.com (00-RELEASENOTES)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202209-17",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202209-17)"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20220729-0005/",
+      "source": "関連文書",
+      "id": "security.netapp.com (ntap-20220729-0005)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/401.html",
+      "id": "CWE-401",
+      "title": "有効期限後のメモリの解放の欠如(CWE-401)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redis:redis",
+      "version": "2.2",
+      "vendor": "redis",
+      "product": "redis"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-08-28T17:04+09:00",
+  "issued": "2023-08-28T17:04+09:00",
+  "modified": "2023-08-28T17:04+09:00"
+}

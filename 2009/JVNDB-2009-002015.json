@@ -1,0 +1,116 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002015.html",
+  "title": "Subversion の libsvn_delta ライブラリにおける整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002015.html",
+  "description": "Subversion の libsvn_delta ライブラリには、大きなウィンドウを持つ svndiff ストリームの処理に不備があるため、整数オーバーフローの脆弱性が存在します。\r\n本脆弱性は CVE-2009-2412 と関連があります。",
+  "identifier": "JVNDB-2009-002015",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2411",
+      "source": "CVE",
+      "id": "CVE-2009-2411"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2411",
+      "source": "NVD",
+      "id": "CVE-2009-2411"
+    },
+    {
+      "text": "http://secunia.com/advisories/36257",
+      "source": "SECUNIA",
+      "id": "SA36257"
+    },
+    {
+      "text": "http://secunia.com/advisories/36184",
+      "source": "SECUNIA",
+      "id": "SA36184"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/35983",
+      "source": "BID",
+      "id": "35983"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1022697",
+      "source": "SECTRACK",
+      "id": "1022697"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2180",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2180"
+    },
+    {
+      "text": "http://osvdb.org/56856",
+      "source": "OSVDB",
+      "id": "56856"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:collabnet:subversion",
+      "version": "2.2",
+      "vendor": "CollabNet, Inc.",
+      "product": "Subversion"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2009-12-17T13:35+09:00",
+  "issued": "2009-09-17T12:04+09:00",
+  "modified": "2009-12-17T13:35+09:00"
+}

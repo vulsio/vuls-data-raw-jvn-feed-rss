@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002447.html",
+  "title": "Linux Kernel の drm_mode_dirtyfb_ioctl 関数における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002447.html",
+  "description": "Linux Kernel の Direct Rendering Manager (DRM) サブシステム内にある drivers/gpu/drm/drm_crtc.c の drm_mode_dirtyfb_ioctl 関数には、整数オーバーフロー脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002447",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0044",
+      "source": "CVE",
+      "id": "CVE-2012-0044"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-0044",
+      "source": "NVD",
+      "id": "CVE-2012-0044"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-05-18T14:59+09:00",
+  "issued": "2012-05-18T14:59+09:00",
+  "modified": "2012-05-18T14:59+09:00"
+}

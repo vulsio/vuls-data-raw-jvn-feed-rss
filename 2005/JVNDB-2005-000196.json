@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000196.html",
+  "title": "ImageMagick における不正な PSD ファイルによるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000196.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nImageMagick は、X Window システム上で画像の表示や対話的な画像操作を行なうためのアプリケーションです。\r\n\r\nImageMagick 5.x/6.x には、特定の形式の画像ファイルを取り扱うことでサービス不能状態に陥る以下の複数の問題が存在します。\r\n\r\n・ImageMagick 5.5.7 以前における TIFF タグの取り扱いの不備により、無効なタグを含んだ TIFF 形式の画像ファイルを処理した場合、サービス不能状態に陥る問題 (CAN-2005-0759)\r\n\r\n・ImageMagick 5.5.7 以前における TIFF デコーダの不備により、意図的に作成された TIFF ファイルを処理した場合、サービス不能状態に陥る問題 (CAN-2005-0760)\r\n\r\n・PSD (Photoshop Document) 形式の画像ファイルの取り扱いの不備により、意図的に作成された PSD ファイルを処理した場合、サービス不能状態に陥る問題 (CAN-2005-0761)\r\n\r\n・ImageMagick 6.0.1 以前における SGI 形式の画像ファイルの取り扱いの不備により、バッファオーバーフローが発生する問題 (CAN-2005-0762)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した TIFF、PSD、または SGI 形式の画像ファイルを ImageMagick より開くように標的ユーザを誘導することにより、結果として ImageMagick をサービス不能状態に陥らせることが可能です。また、CAN-2005-0762 の問題を利用することにより、ImageMagick を実行する標的ユーザの権限で任意のコードを実行できる可能性があります。\r\n\r\n尚、現時点では CAN-2005-0761 の問題の影響を受ける詳細なバージョンについては不明ですが、ImageMagick 6.2.0-8 以降においては解消されています。",
+  "identifier": "JVNDB-2005-000196",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0761",
+      "source": "CVE",
+      "id": "CVE-2005-0761"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0761",
+      "source": "NVD",
+      "id": "CVE-2005-0761"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12873",
+      "source": "BID",
+      "id": "12873"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12874",
+      "source": "BID",
+      "id": "12874"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12875",
+      "source": "BID",
+      "id": "12875"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12876",
+      "source": "BID",
+      "id": "12876"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-06-26T14:14+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2012-06-26T14:14+09:00"
+}

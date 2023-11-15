@@ -1,0 +1,93 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001513.html",
+  "title": "MySQL の my_net_skip_rest 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001513.html",
+  "description": "MySQL の sql/net_serv.cc にある my_net_skip_rest 関数には、最大の長さを超えている多数のパケット送信に関する処理に不備があるため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001513",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU331391",
+      "source": "JVN",
+      "id": "JVNVU#331391"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1849",
+      "source": "CVE",
+      "id": "CVE-2010-1849"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1849",
+      "source": "NVD",
+      "id": "CVE-2010-1849"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/40100",
+      "source": "BID",
+      "id": "40100"
+    },
+    {
+      "text": "http://securitytracker.com/id?1024032",
+      "source": "SECTRACK",
+      "id": "1024032"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/1137",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-1137"
+    },
+    {
+      "text": "http://secunia.com/advisories/39792/",
+      "source": "SECUNIA-R",
+      "id": "SA39792"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mysql:mysql",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_client",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Client"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2010-11-26T16:54+09:00",
+  "issued": "2010-06-10T17:56+09:00",
+  "modified": "2010-11-26T16:54+09:00"
+}

@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002791.html",
+  "title": "三菱電機製 GOT2000 シリーズおよび GOT SIMPLE シリーズの FTP サーバ機能にデータコネクションを待ち受けるポート番号を容易に推測可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002791.html",
+  "description": "三菱電機株式会社が提供する GOT2000 シリーズおよび GOT SIMPLE シリーズには FTP サーバ機能が実装されています。クライアントからの FTP 接続に対してパッシブモードで動作する際、FTP サーバはクライアントからの接続を待ち受けますが、このとき使われるポート番号は容易に推測可能です (CWE-342、CVE-2023-3373)。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n",
+  "identifier": "JVNDB-2023-002791",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92167394/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92167394"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-3373",
+      "source": "CVE",
+      "id": "CVE-2023-3373"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-3373",
+      "source": "NVD",
+      "id": "CVE-2023-3373"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-215-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-215-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/342.html",
+      "id": "CWE-342",
+      "title": "以前の値から予測可能な正確な値(CWE-342)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:mitsubishielectric:got2000_series_gt21_model",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GOT2000 シリーズ GT21 モデル"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:got_simple_series_gs21_model",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GOT SIMPLE シリーズ GS21 モデル"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:L"
+    }
+  ],
+  "date": "2023-08-07T13:49+09:00",
+  "issued": "2023-08-07T13:49+09:00",
+  "modified": "2023-08-07T13:49+09:00"
+}

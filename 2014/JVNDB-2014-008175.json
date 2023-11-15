@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008175.html",
+  "title": "FreeType の type42/t42parse.c の t42_parse_encoding 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008175.html",
+  "description": "FreeType の type42/t42parse.c の t42_parse_encoding 関数は、immediates-only モードのカレントポジションを適切に更新しないため、サービス運用妨害 (無限ループ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-008175",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9747",
+      "source": "CVE",
+      "id": "CVE-2014-9747"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9747",
+      "source": "NVD",
+      "id": "CVE-2014-9747"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freetype:freetype",
+      "version": "2.2",
+      "vendor": "FreeType Project",
+      "product": "FreeType"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-06-09T14:38+09:00",
+  "issued": "2016-06-09T14:38+09:00",
+  "modified": "2016-06-09T14:38+09:00"
+}

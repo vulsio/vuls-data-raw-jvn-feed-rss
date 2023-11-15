@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001576.html",
+  "title": "Wireshark の RSL ディセクタの epan/dissectors/packet-rsl.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001576.html",
+  "description": "Wireshark の RSL ディセクタ (解析機能) の epan/dissectors/packet-rsl.c には、一つずれエラー (Off-by-One error) により、サービス運用妨害 (out-of-bounds read およびアプリケーションクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2016-2530 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2016-001576",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2531",
+      "source": "CVE",
+      "id": "CVE-2016-2531"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2531",
+      "source": "NVD",
+      "id": "CVE-2016-2531"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wireshark:wireshark",
+      "version": "2.2",
+      "vendor": "Wireshark",
+      "product": "Wireshark"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2016-11-17T16:05+09:00",
+  "issued": "2016-03-04T14:36+09:00",
+  "modified": "2016-11-17T16:05+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002823.html",
+  "title": "Wireshark の Android Logcat ファイルパーサの wiretap/logcat.c 内の logcat_dump_text 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002823.html",
+  "description": "Wireshark の Android Logcat ファイルパーサの wiretap/logcat.c 内の logcat_dump_text 関数は、終端の \\0 の欠如を適切に処理しないため、サービス運用妨害 (out-of-bounds read およびアプリケーションクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2015-3815 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2015-002823",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3906",
+      "source": "CVE",
+      "id": "CVE-2015-3906"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3906",
+      "source": "NVD",
+      "id": "CVE-2015-3906"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wireshark:wireshark",
+      "version": "2.2",
+      "vendor": "Wireshark",
+      "product": "Wireshark"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-05-28T16:44+09:00",
+  "issued": "2015-05-28T16:44+09:00",
+  "modified": "2015-05-28T16:44+09:00"
+}

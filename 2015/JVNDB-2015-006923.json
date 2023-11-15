@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006923.html",
+  "title": "Apache Tomcat の Mapper コンポーネントにおけるディレクトリの存在を特定される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006923.html",
+  "description": "Apache Tomcat の Mapper コンポーネントは、セキュリティー制約およびフィルタを考慮する前にリダイレクト処理を行うため、ディレクトリの存在を特定される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-006923",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94679988/",
+      "source": "JVN",
+      "id": "JVNVU#94679988"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5345",
+      "source": "CVE",
+      "id": "CVE-2015-5345"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5345",
+      "source": "NVD",
+      "id": "CVE-2015-5345"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/a:hp:tomcat-based_servlet_engine",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HP-UX Tomcat-based Servlet Engine"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:hp:openvms",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "OpenVMS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2016-12-05T17:01+09:00",
+  "issued": "2016-03-02T15:58+09:00",
+  "modified": "2016-12-05T17:01+09:00"
+}

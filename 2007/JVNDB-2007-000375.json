@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000375.html",
+  "title": "Samba における SID/Name 相互変換に関する権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000375.html",
+  "description": "Samba の smbd デーモンには SID/Name 相互変換の処理に不備が存在するために、SMB/CIFS プロトコルを root 権限で操作可能となる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000375",
+  "references": [
+    {
+      "text": "http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2444",
+      "source": "CVE",
+      "id": "CVE-2007-2444"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2444",
+      "source": "NVD",
+      "id": "CVE-2007-2444"
+    },
+    {
+      "text": "http://secunia.com/advisories/25232/",
+      "source": "SECUNIA",
+      "id": "SAS25232"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/23974",
+      "source": "BID",
+      "id": "23974"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1018049",
+      "source": "SECTRACK",
+      "id": "1018049"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/1805",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-1805"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-06-22T16:05+09:00",
+  "issued": "2007-05-31T11:37+09:00",
+  "modified": "2007-06-22T16:05+09:00"
+}

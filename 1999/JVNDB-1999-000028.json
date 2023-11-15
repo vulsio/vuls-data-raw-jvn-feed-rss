@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/1999/JVNDB-1999-000028.html",
+  "title": "Microsoft IIS に電子メールの中継点として利用される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/1999/JVNDB-1999-000028.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nExchange サーバが MTA として設定されており、このサーバがインターネットに接続されている場合において、外部から第三者による電子メールの中継を許してしまう問題があります。これは電子メール中にある特定の文字を挿入することで実行することが可能です。この問題を悪意あるリモートの攻撃者に利用されてしまった場合、 SPAM メールの中継点として利用されてしまう場合があります。さらには、大きな負荷をかけるに足りるような、大きなサイズの電子メールをこの問題を利用してターゲットの Exchange サーバから送信させることで処理能力を奪うことができ、結果的に DoS 攻撃を成功させることになってしまいます。 \r\n尚、Microsoft IIS (Internet Information Server) 4.0/5.0 に標準で実装されている SMTP サービスにも同様の問題が存在します。",
+  "identifier": "JVNDB-1999-000028",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1790",
+      "source": "CVE",
+      "id": "CVE-2002-1790"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1790",
+      "source": "NVD",
+      "id": "CVE-2002-1790"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/5213",
+      "source": "BID",
+      "id": "5213"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/567",
+      "source": "BID",
+      "id": "567"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:exchange_server",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Exchange Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

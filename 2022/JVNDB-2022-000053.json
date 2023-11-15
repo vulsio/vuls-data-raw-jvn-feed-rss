@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-000053.html",
+  "title": "Django の Extract 関数および Trunc 関数における SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-000053.html",
+  "description": "Django Software Foundation が提供する Django は、Web アプリケーションフレームワークです。Django の日付操作用の Extract 関数 および Trunc 関数には、SQL インジェクション (CWE-89) の脆弱性が存在します。\r\n\r\nこの脆弱性情報は、次の方が製品開発者に直接報告し、製品開発者との調整を経て、製品利用者への周知を目的に JVN での公表に至りました。\r\n報告者: 株式会社エーアイセキュリティラボ 吉開拓人 氏",
+  "identifier": "JVNDB-2022-000053",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN12610194/index.html",
+      "source": "JVN",
+      "id": "JVN#12610194"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-34265",
+      "source": "CVE",
+      "id": "CVE-2022-34265"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:djangoproject:django",
+      "version": "2.2",
+      "vendor": "Django Software Foundation",
+      "product": "Django"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2022-07-12T12:02+09:00",
+  "issued": "2022-07-12T12:02+09:00",
+  "modified": "2022-07-12T12:02+09:00"
+}

@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000881.html",
+  "title": "Net-SNMP の snmpd における Master AgentX に関するサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000881.html",
+  "description": "Net-SNMP の snmpd には、master agentx モードでの動作時において特別な TCP 切断により誤った変数が解放されるため、snmpd がクラッシュしサービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000881",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4837",
+      "source": "CVE",
+      "id": "CVE-2005-4837"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4837",
+      "source": "NVD",
+      "id": "CVE-2005-4837"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/23762",
+      "source": "BID",
+      "id": "23762"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:net-snmp:net-snmp",
+      "version": "2.2",
+      "vendor": "Net-SNMP",
+      "product": "Net-SNMP"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-06-07T11:50+09:00",
+  "issued": "2007-06-07T11:50+09:00",
+  "modified": "2007-06-07T11:50+09:00"
+}

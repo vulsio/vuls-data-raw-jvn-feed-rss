@@ -1,0 +1,46 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006033.html",
+  "title": "Linux Kernel の security/keys/big_key.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006033.html",
+  "description": "Linux Kernel の security/keys/big_key.c は、鍵型登録の成功に関連した暗号登録の失敗を誤って処理するため、サービス運用妨害 (NULL ポインタデリファレンスおよびパニック) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-476: NULL Pointer Dereference (NULL ポインタデリファレンス) と識別されています。\r\nhttps://cwe.mitre.org/data/definitions/476.html",
+  "identifier": "JVNDB-2016-006033",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9313",
+      "source": "CVE",
+      "id": "CVE-2016-9313"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9313",
+      "source": "NVD",
+      "id": "CVE-2016-9313"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-11-30T16:04+09:00",
+  "issued": "2016-11-30T16:04+09:00",
+  "modified": "2016-11-30T16:04+09:00"
+}

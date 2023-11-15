@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007755.html",
+  "title": "OpenVPN における平文データを取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007755.html",
+  "description": "OpenVPN には、64-bit ブロックサイファーを使用する際、平文データを取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-007755",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6329",
+      "source": "CVE",
+      "id": "CVE-2016-6329"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6329",
+      "source": "NVD",
+      "id": "CVE-2016-6329"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-19-192-04",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-19-192-04"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:infrastructure_analytics_advisor",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Infrastructure Analytics Advisor"
+    },
+    {
+      "text": "cpe:/a:openvpn:openvpn",
+      "version": "2.2",
+      "vendor": "OpenVPN Technologies",
+      "product": "OpenVPN"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2019-07-16T11:11+09:00",
+  "issued": "2017-03-15T16:51+09:00",
+  "modified": "2019-07-16T11:11+09:00"
+}

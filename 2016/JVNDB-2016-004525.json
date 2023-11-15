@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004525.html",
+  "title": "QEMU の hw/scsi/megasas.c の megasas_dcmd_set_properties 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004525.html",
+  "description": "QEMU (別名 Quick Emulator) の hw/scsi/megasas.c の megasas_dcmd_set_properties 関数には、MegaRAID SAS 8708EM2 ホストバスアダプタのエミュレーションサポートを伴いビルドされている場合、サービス運用妨害 (境界外書き込みアクセス) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-787: Out-of-bounds Write (境界外書き込み) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/787.html",
+  "identifier": "JVNDB-2016-004525",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5106",
+      "source": "CVE",
+      "id": "CVE-2016-5106"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5106",
+      "source": "NVD",
+      "id": "CVE-2016-5106"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.5",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:S/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-10-28T16:28+09:00",
+  "issued": "2016-09-05T15:20+09:00",
+  "modified": "2016-10-28T16:28+09:00"
+}

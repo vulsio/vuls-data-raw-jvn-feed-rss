@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001962.html",
+  "title": "ruby-mysql におけるファイル参照に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001962.html",
+  "description": "ruby-mysql は Ruby プログラムから MySQL を操作するためのライブラリです。ruby-mysql には、MySQL サーバからクライアント側のローカルファイルに適切な認可処理を経ずにアクセスすることが可能となる脆弱性（CWE-610）が存在します。\r\n\r\nこの脆弱性は次の方が発見し、Rapid7 へ報告しました。\r\nその後 Rapid7 が CERT/CC ならびに JPCERT/CC を含めて開発者との調整を行い、JPCERT/CC は製品利用者への周知を目的に JVN での公表に至りました。\r\n\r\n報告者: MOGWAI LABS GmbH Hans-Martin Munch 氏\r\n",
+  "identifier": "JVNDB-2022-001962",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92799903/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92799903"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-3779",
+      "source": "CVE",
+      "id": "CVE-2021-3779"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/610.html",
+      "id": "CWE-610",
+      "title": "別領域リソースに対する外部からの制御可能な参照(CWE-610)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:tommy_ruby_mysql",
+      "version": "2.2",
+      "vendor": "tommy",
+      "product": "ruby-mysql"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2022-06-30T13:43+09:00",
+  "issued": "2022-06-30T13:43+09:00",
+  "modified": "2022-06-30T13:43+09:00"
+}

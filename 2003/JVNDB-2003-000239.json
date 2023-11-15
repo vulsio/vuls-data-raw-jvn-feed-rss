@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000239.html",
+  "title": "Postfix のメールアドレス解析部におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000239.html",
+  "description": "Postfix が実装するメールアドレス解析部分のコードに、メールアドレスの妥当性に対するチェックが不適切であるため、メールヘッダ内に意図的なメールアドレスを含む電子メールを標的ホストに送りつけることで、Postfix キューマネージャ (nqmgr) がサービス不能状態 (DoS) となる脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000239",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0540",
+      "source": "CVE",
+      "id": "CVE-2003-0540"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0540",
+      "source": "NVD",
+      "id": "CVE-2003-0540"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/895508",
+      "source": "CERT-VN",
+      "id": "VU#895508"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8362",
+      "source": "BID",
+      "id": "8362"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8333",
+      "source": "BID",
+      "id": "8333"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:postfix:postfix",
+      "version": "2.2",
+      "vendor": "Postfix Project",
+      "product": "postfix"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

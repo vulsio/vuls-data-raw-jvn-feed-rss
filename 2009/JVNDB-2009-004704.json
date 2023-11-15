@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004704.html",
+  "title": "IBM WAS などで使用される IBM FileNet Content Manager におけるアクセス権を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004704.html",
+  "description": "IBM WebSphere Application Server (WAS) および Oracle BEA WebLogic Application Server で使用される IBM FileNet Content Manager は、CE Web Services リスナーが特定の WSEAF 設定を有する際、キャッシュされた Subject の使用を適切に制限しないため、新しい認証されたユーザの資格情報を持つアクセス権を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-004704",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1953",
+      "source": "CVE",
+      "id": "CVE-2009-1953"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1953",
+      "source": "NVD",
+      "id": "CVE-2009-1953"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:filenet_content_manager",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "FileNet Content Manager"
+    },
+    {
+      "text": "cpe:/a:ibm:websphere_application_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Application Server"
+    },
+    {
+      "text": "cpe:/a:oracle:weblogic_application_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "weblogic application server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T17:27+09:00",
+  "issued": "2012-09-25T17:27+09:00",
+  "modified": "2012-09-25T17:27+09:00"
+}

@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001797.html",
+  "title": "BIND におけるキャッシュが誤ったレコードで汚染される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001797.html",
+  "description": "BIND には、キャッシュが誤ったレコードで汚染され、間違ったサーバに対してクエリが実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2022-001797",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU98927070/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98927070"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU99475301/",
+      "source": "JVN",
+      "id": "JVNVU#99475301"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-25220",
+      "source": "CVE",
+      "id": "CVE-2021-25220"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-25220",
+      "source": "NVD",
+      "id": "CVE-2021-25220"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-258-05",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-258-05"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/a:nec:esmpro_serveragent",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "ESMPRO/ServerAgent"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "8.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2022-09-20T15:12+09:00",
+  "issued": "2022-05-12T17:54+09:00",
+  "modified": "2022-09-20T15:12+09:00"
+}

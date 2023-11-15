@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000155.html",
+  "title": "IBM AIX の LVM コマンドにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000155.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nIBM AIX に同梱されている論理ボリューム管理機能 LVM（Logical Volume Manager）は、ファイルシステムに割り当てるディスクボリューム容量を動的に拡張/縮小したりする時に利用されるコマンド群です。\r\n\r\nIBM AIX 5.1/5.2 に同梱されている幾つかの LVM コマンドには、シンボリックリンク攻撃を受ける問題が存在します。\r\nこの問題を利用するローカルの攻撃者は、シンボリックリンクを利用する攻撃を試みることにより、任意のファイルの上書きや作成を実行することが可能です。これにより、データの改変やサービス不能状態を招く可能性があります。\r\n\r\nまた、これら LVM コマンドによって頻繁に利用されている Putlvcb および Getlvcb コマンドでは、特定のコマンドライン引数に対する妥当性の確認が適切に行われていないため、バッファオーバーフローが生じる問題が存在します。\r\n\r\nこの問題を利用するローカルの攻撃者は、それぞれ非常に長いコマンドラインオプションを付与することでバッファオーバーフローを発生させ、結果として root 権限を奪取できる可能性があります。\r\nただし、この攻撃を実行するためには、攻撃者はこの他のセキュリティ問題を利用するなど、予め system グループ権限を取得する必要があります。\r\n\r\nバッファオーバーフローの問題に関しては、既に発見者から Exploit コードが公開されており、現在ベンダでサポートが終了している AIX 4.3.3 において再現しています。\r\n今回はベンダより、現在のサポート OS レベルである 5.1/5.2 での影響を受ける可能性が報告されています。\r\n\r\n尚、このシンボリックリンクおよびバッファオーバーフローの問題はファイルセット bos.rte.lvm がインストールされている場合に影響を受けます。",
+  "identifier": "JVNDB-2004-000155",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0544",
+      "source": "CVE",
+      "id": "CVE-2004-0544"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0544",
+      "source": "NVD",
+      "id": "CVE-2004-0544"
+    },
+    {
+      "text": "http://secunia.com/advisories/11158/",
+      "source": "SECUNIA",
+      "id": "SA11158"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10230",
+      "source": "BID",
+      "id": "10230"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9906",
+      "source": "BID",
+      "id": "9906"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9905",
+      "source": "BID",
+      "id": "9905"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/15555",
+      "source": "XF",
+      "id": "15555"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

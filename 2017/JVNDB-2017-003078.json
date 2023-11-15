@@ -1,0 +1,262 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003078.html",
+  "title": "Java で実装された複数の Action Message Format (AMF3) ライブラリに脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003078.html",
+  "description": "Java で実装された複数の Action Message Format (AMF3) ライブラリに、次の複数の脆弱性が報告されています。\r\n\r\n信頼できないデータのデシリアライズ (CWE-502)\r\nJava で実装された複数の AMF3 ライブラリのデシリアライズ処理では、AMF3 仕様で推奨されている flash.utils.IExternalizable ではなく java.io.Externalizable が使用されています。そのため、偽装された RMI サーバやコンテンツを細工された正規の RMI サーバから受信したシリアライズデータをデシリアライズすることで、任意のコードを実行される可能性があります。\r\n報告者が本脆弱性の影響を確認している製品およびバージョンと、それぞれに対応する CVE 番号は次のとおりです。 \r\n\r\n　・Atlassian JIRA 4.2.4 から 6.3.0 より前のバージョンまで - CVE-2017-5983\r\n　・Flamingo amf-serializer by Exadel 2.2.0 - CVE-2017-3201\r\n　・GraniteDS 3.1.1.GA - CVE-2017-3199\r\n　・Pivotal/Spring spring-flex - CVE-2017-3203\r\n　・WebORB for Java by Midnight Coders 5.1.1.0 - CVE-2017-3207\r\n\r\nこれらのライブラリを使用している製品も本脆弱性の影響を受ける可能性があります。\r\n\r\n動的に操作されるコードリソースの不適切な制御 (CWE-913)\r\nJava で実装された複数の AMF3 ライブラリのデシリアライズ処理において、パラメータ 0個のコンストラクタが存在する任意のクラスのオブジェクトを生成させることが可能です。そのため、任意の Java Beans オブジェクトの setter メソッドを呼び出される可能性があります。\r\n報告者が本脆弱性の影響を確認している製品およびバージョンと、それぞれに対応する CVE 番号は次のとおりです。 \r\n\r\n　・Flamingo amf-serializer by Exadel 2.2.0 - CVE-2017-3202\r\n　・Flex BlazeDS 4.6.0.23207 および 4.7.2 - CVE-2017-5641\r\n　・GraniteDS 3.1.1.GA - CVE-2017-3200\r\n\r\nこれらのライブラリを使用している製品も本脆弱性の影響を受ける可能性があります。\r\n\r\nXML 外部実体参照 (XXE) (CWE-611)\r\nJava で実装された複数の AMF3 ライブラリのデシリアライズ処理には、XML 外部実体参照 (XXE) に関する脆弱性が存在します。そのため、サーバ上の機微なデータを取得されたり、サービス運用妨害 (DoS) 攻撃やサーバサイドリクエストフォージェリ (SSRF) 攻撃が行われたりする可能性があります。\r\n報告者が本脆弱性の影響を確認している製品およびバージョンと、それぞれに対応する CVE 番号は次のとおりです。 \r\n\r\n　・Flamingo amf-serializer by Exadel 2.2.0 - CVE-2017-3206\r\n　・Flex BlazeDS4.6.0.23207 - CVE-2015-3269\r\n　・GraniteDS 3.1.1.GA - CVE-2016-2340 (JVNVU#95707407)\r\n　・WebORB for Java by Midnight Coders 5.1.1.0 - CVE-2017-3208\r\n\r\nこれらのライブラリを使用している製品も本脆弱性の影響を受ける可能性があります。\r\n\r\n詳細は、報告者のアドバイザリをご確認ください。\r\n\r\nアドバイザリ\r\nhttps://codewhitesec.blogspot.jp/2017/04/amf.html",
+  "identifier": "JVNDB-2017-003078",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97538972/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97538972"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU95707407/",
+      "source": "JVN",
+      "id": "JVNVU#95707407"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5983",
+      "source": "CVE",
+      "id": "CVE-2017-5983"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3201",
+      "source": "CVE",
+      "id": "CVE-2017-3201"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3199",
+      "source": "CVE",
+      "id": "CVE-2017-3199"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3203",
+      "source": "CVE",
+      "id": "CVE-2017-3203"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3207",
+      "source": "CVE",
+      "id": "CVE-2017-3207"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3202",
+      "source": "CVE",
+      "id": "CVE-2017-3202"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5641",
+      "source": "CVE",
+      "id": "CVE-2017-5641"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3200",
+      "source": "CVE",
+      "id": "CVE-2017-3200"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3206",
+      "source": "CVE",
+      "id": "CVE-2017-3206"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3269",
+      "source": "CVE",
+      "id": "CVE-2015-3269"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3208",
+      "source": "CVE",
+      "id": "CVE-2017-3208"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2340",
+      "source": "CVE",
+      "id": "CVE-2016-2340"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-5983",
+      "source": "NVD",
+      "id": "CVE-2017-5983"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-2340",
+      "source": "NVD",
+      "id": "CVE-2016-2340"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-5641",
+      "source": "NVD",
+      "id": "CVE-2017-5641"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3201",
+      "source": "NVD",
+      "id": "CVE-2017-3201"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3199",
+      "source": "NVD",
+      "id": "CVE-2017-3199"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3203",
+      "source": "NVD",
+      "id": "CVE-2017-3203"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3207",
+      "source": "NVD",
+      "id": "CVE-2017-3207"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3202",
+      "source": "NVD",
+      "id": "CVE-2017-3202"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3200",
+      "source": "NVD",
+      "id": "CVE-2017-3200"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3206",
+      "source": "NVD",
+      "id": "CVE-2017-3206"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3269",
+      "source": "NVD",
+      "id": "CVE-2017-3269"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3208",
+      "source": "NVD",
+      "id": "CVE-2017-3208"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/java-rules/#c13",
+      "source": "JPCERT",
+      "id": "Java セキュアコーディングスタンダード CERT/Oracle 版 - シリアライズ (SER) "
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/307983",
+      "source": "CERT-VN",
+      "id": "VU#307983"
+    },
+    {
+      "text": "http://codewhitesec.blogspot.jp/2017/04/amf.html",
+      "source": "関連文書",
+      "id": "code white"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/502.html",
+      "id": "CWE-502",
+      "title": "信頼できないデータのデシリアライゼーション(CWE-502)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/611.html",
+      "id": "CWE-611",
+      "title": "XML 外部エンティティ参照の不適切な制限(CWE-611)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/913.html",
+      "id": "CWE-913",
+      "title": "動的に操作されるコードリソースの不適切な制御(CWE-913)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:flex_blazeds",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Flex BlazeDS"
+    },
+    {
+      "text": "cpe:/a:atlassian:jira",
+      "version": "2.2",
+      "vendor": "Atlassian",
+      "product": "JIRA"
+    },
+    {
+      "text": "cpe:/a:graniteds:granite_data_services",
+      "version": "2.2",
+      "vendor": "Granite Data Services",
+      "product": "Granite Data Services"
+    },
+    {
+      "text": "cpe:/a:greenplum:spring-flex",
+      "version": "2.2",
+      "vendor": "Greenplum",
+      "product": "Spring spring-flex"
+    },
+    {
+      "text": "cpe:/a:hitachi:automation_director",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Automation Director"
+    },
+    {
+      "text": "cpe:/a:hitachi:compute_systems_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Compute Systems Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:device_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Device Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:replication_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Replication Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:tiered_storage_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Tiered Storage Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:tuning_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Tuning Manager"
+    },
+    {
+      "text": "cpe:/a:misc:exadel",
+      "version": "2.2",
+      "vendor": "Exadel",
+      "product": "Exadel"
+    },
+    {
+      "text": "cpe:/a:misc:midnight_coders",
+      "version": "2.2",
+      "vendor": "Midnight Coders",
+      "product": "midnight_coders"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-08-30T15:34+09:00",
+  "issued": "2017-05-12T16:55+09:00",
+  "modified": "2018-08-30T15:34+09:00"
+}

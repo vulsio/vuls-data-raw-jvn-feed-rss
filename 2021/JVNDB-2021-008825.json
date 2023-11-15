@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-008825.html",
+  "title": "SELinux における解放済みメモリの使用に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-008825.html",
+  "description": "SELinux には、解放済みメモリの使用に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-008825",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-36084",
+      "source": "CVE",
+      "id": "CVE-2021-36084"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-36084",
+      "source": "NVD",
+      "id": "CVE-2021-36084"
+    },
+    {
+      "text": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31065",
+      "source": "関連文書",
+      "id": "Issue 31065: selinux:secilc-fuzzer: Heap-use-after-free in __cil_verify_classperms"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/416.html",
+      "id": "CWE-416",
+      "title": "解放済みメモリの使用(CWE-416)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:selinux_project:selinux",
+      "version": "2.2",
+      "vendor": "SELinuxProject",
+      "product": "SELinux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+    }
+  ],
+  "date": "2022-03-29T16:57+09:00",
+  "issued": "2022-03-29T16:57+09:00",
+  "modified": "2022-03-29T16:57+09:00"
+}

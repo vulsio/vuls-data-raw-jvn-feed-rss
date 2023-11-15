@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002719.html",
+  "title": "複数の Hancom 製品で使用される Hancom Office HanWord プロセッサの HwpApp::CHncSDS_Manager 関数における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002719.html",
+  "description": "Hancom Hwp 2014、HanWord Viewer 2007、HanWord Viewer 2010、および HwpViewer 2014 で使用される、Hancom Office HanWord プロセッサの HwpApp::CHncSDS_Manager 関数には、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2015-002719",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2810",
+      "source": "CVE",
+      "id": "CVE-2015-2810"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2810",
+      "source": "NVD",
+      "id": "CVE-2015-2810"
+    },
+    {
+      "text": "http://seclists.org/bugtraq/2015/Apr/89",
+      "source": "関連文書",
+      "id": "[CVE-2015-2810] Integer Overflow leading to heap corruption when assigning a long paragraph size value to a HanWord document"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hancom:hanword_viewer_2007",
+      "version": "2.2",
+      "vendor": "Hancom Inc.",
+      "product": "HanWord Viewer 2007"
+    },
+    {
+      "text": "cpe:/a:hancom:hanword_viewer_2010",
+      "version": "2.2",
+      "vendor": "Hancom Inc.",
+      "product": "HanWord Viewer 2010"
+    },
+    {
+      "text": "cpe:/a:hancom:hwpviewer_2014",
+      "version": "2.2",
+      "vendor": "Hancom Inc.",
+      "product": "HwpViewer 2014"
+    },
+    {
+      "text": "cpe:/a:hancom:hwp_2014",
+      "version": "2.2",
+      "vendor": "Hancom Inc.",
+      "product": "Hwp 2014"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-05-20T10:14+09:00",
+  "issued": "2015-05-20T10:14+09:00",
+  "modified": "2015-05-20T10:14+09:00"
+}

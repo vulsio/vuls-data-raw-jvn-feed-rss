@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001753.html",
+  "title": "FreeType の cff/cf2ft.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001753.html",
+  "description": "FreeType の cff/cf2ft.c の (1) cf2_initLocalRegionBuffer 関数および (2) cf2_initGlobalRegionBuffer 関数は、サブルーチンが存在するかどうかを適切にチェックしないため、サービス運用妨害 (表明違反) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-001753",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2241",
+      "source": "CVE",
+      "id": "CVE-2014-2241"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2241",
+      "source": "NVD",
+      "id": "CVE-2014-2241"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freetype:freetype",
+      "version": "2.2",
+      "vendor": "FreeType Project",
+      "product": "FreeType"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-03-24T17:23+09:00",
+  "issued": "2014-03-24T17:23+09:00",
+  "modified": "2014-03-24T17:23+09:00"
+}

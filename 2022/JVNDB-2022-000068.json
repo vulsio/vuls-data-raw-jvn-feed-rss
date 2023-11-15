@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-000068.html",
+  "title": "シンクグラフィカ製メールフォームプロ CGI における情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-000068.html",
+  "description": "シンクグラフィカが提供するメールフォームプロ CGI には、情報漏えい (CWE-200) の脆弱性が存在します。\r\n\r\n当該製品では、入力内容を thanks モジュールから参照できるよう一定時間保持しており、本脆弱性を悪用するにはこの時間内でのアクセスが必要です。この保持時間は、configs/thanks.cgi ファイルの初期設定では 30秒となっています。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が　IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n 報告者: 三井物産セキュアディレクション株式会社 東内 裕二 氏",
+  "identifier": "JVNDB-2022-000068",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN34205166/index.html",
+      "source": "JVN",
+      "id": "JVN#34205166"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-38400",
+      "source": "CVE",
+      "id": "CVE-2022-38400"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:synck_graphica:mailform_pro_cgi",
+      "version": "2.2",
+      "vendor": "シンクグラフィカ",
+      "product": "メールフォームプロCGI"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "3.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2022-09-05T12:04+09:00",
+  "issued": "2022-09-05T12:04+09:00",
+  "modified": "2022-09-05T12:04+09:00"
+}

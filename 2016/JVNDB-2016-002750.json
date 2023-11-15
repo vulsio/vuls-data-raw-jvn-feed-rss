@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002750.html",
+  "title": "CloudBees Jenkins におけるオープンリダイレクトの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002750.html",
+  "description": "CloudBees Jenkins には、オープンリダイレクトの脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-601: URL Redirection to Untrusted Site (オープンリダイレクト) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/601.html",
+  "identifier": "JVNDB-2016-002750",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3726",
+      "source": "CVE",
+      "id": "CVE-2016-3726"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3726",
+      "source": "NVD",
+      "id": "CVE-2016-3726"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cloudbees:jenkins",
+      "version": "2.2",
+      "vendor": "CloudBees",
+      "product": "Jenkins"
+    },
+    {
+      "text": "cpe:/a:redhat:openshift",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenShift"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.4",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2016-08-31T12:25+09:00",
+  "issued": "2016-05-20T15:43+09:00",
+  "modified": "2016-08-31T12:25+09:00"
+}

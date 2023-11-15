@@ -1,0 +1,114 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001594.html",
+  "title": "Microsoft Windows の win32k.sys における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001594.html",
+  "description": "Microsoft Windows の win32k.sys のカーネルモードドライバには、新しいウィンドウを作成する際、全てのコールバックパラメータを適切にチェックしないため、任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001594",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA10-159B/index.html",
+      "source": "JVN",
+      "id": "JVNTA10-159B"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0485",
+      "source": "CVE",
+      "id": "CVE-2010-0485"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0485",
+      "source": "NVD",
+      "id": "CVE-2010-0485"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2010/at100014.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2010-0014"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/#topics",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS10-032,033,034,035,036,037,038,039,040,041)"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA10-159B.html",
+      "source": "CERT-SA",
+      "id": "SA10-159B"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA10-159B.html",
+      "source": "CERT-TA",
+      "id": "TA10-159B"
+    },
+    {
+      "text": "http://secunia.com/advisories/39655",
+      "source": "SECUNIA",
+      "id": "SA39655"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/40569",
+      "source": "BID",
+      "id": "40569"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/1389",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-1389"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_7",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 7"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_vista",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Vista"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2010-07-01T16:20+09:00",
+  "issued": "2010-07-01T16:20+09:00",
+  "modified": "2010-07-01T16:20+09:00"
+}

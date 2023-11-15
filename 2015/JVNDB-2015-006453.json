@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006453.html",
+  "title": "Kaspersky Total Security における DEP および ASLR 保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006453.html",
+  "description": "Kaspersky Total Security は、ユーザモードプロセスを保護する場合、予測可能なアドレスに Read、Write、Execute (RWX) のパーミッションでメモリ割り当てを行うため、DEP および ASLR 保護メカニズムを回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-006453",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8579",
+      "source": "CVE",
+      "id": "CVE-2015-8579"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8579",
+      "source": "NVD",
+      "id": "CVE-2015-8579"
+    },
+    {
+      "text": "http://blog.ensilo.com/the-av-vulnerability-that-bypasses-mitigations",
+      "source": "関連文書",
+      "id": "You’re so predictable: the AV vulnerability that bypasses mitigations"
+    },
+    {
+      "text": "http://breakingmalware.com/vulnerabilities/sedating-watchdog-abusing-security-products-bypass-mitigations/",
+      "source": "関連文書",
+      "id": "Sedating the Watchdog: Abusing Security Products to Bypass Mitigations"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:kaspersky:total_security",
+      "version": "2.2",
+      "vendor": "カスペルスキー",
+      "product": "Kaspersky Total Security"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2015-12-18T16:54+09:00",
+  "issued": "2015-12-18T16:54+09:00",
+  "modified": "2015-12-18T16:54+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004585.html",
+  "title": "Linux kernel の kernel/signal.c における名前空間の全プロセスへ任意の信号を送信される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004585.html",
+  "description": "Linux kernel の kernel/signal.c の kill_something_info 関数は、PID -1 へ向けられた信号を処理する際、PID 名前空間を考慮しないため、名前空間の分離を回避される、名前空間の全プロセスへ任意の信号を送信される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-004585",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1338",
+      "source": "CVE",
+      "id": "CVE-2009-1338"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1338",
+      "source": "NVD",
+      "id": "CVE-2009-1338"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T17:27+09:00",
+  "issued": "2012-09-25T17:27+09:00",
+  "modified": "2012-09-25T17:27+09:00"
+}

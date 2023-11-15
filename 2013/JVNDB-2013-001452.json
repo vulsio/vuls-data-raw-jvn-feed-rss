@@ -1,0 +1,104 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001452.html",
+  "title": "libvirt におけるサービス運用妨害 (クラッシュ) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001452.html",
+  "description": "libvirt の rpc/virnetserverclient.c 内の virNetMessageFree 関数には、解放済みメモリの使用 (Use-after-free) により、サービス運用妨害 (クラッシュ) 状態となる、および任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001452",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0170",
+      "source": "CVE",
+      "id": "CVE-2013-0170"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0170",
+      "source": "NVD",
+      "id": "CVE-2013-0170"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:novell:suse_linux_enterprise_software_development_kit",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "SUSE Linux Enterprise Software Development Kit"
+    },
+    {
+      "text": "cpe:/a:redhat:libvirt",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "libvirt"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:novell:opensuse",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "openSUSE"
+    },
+    {
+      "text": "cpe:/o:novell:suse_linux",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "SUSE Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-11-01T15:58+09:00",
+  "issued": "2013-02-12T16:54+09:00",
+  "modified": "2013-11-01T15:58+09:00"
+}

@@ -1,0 +1,254 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005869.html",
+  "title": "複数の F5 製品の SSL プロファイルコンポーネントにおける平文データを取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005869.html",
+  "description": "複数の F5 製品の SSL プロファイルコンポーネントは、TLS (1.2 未満の 1.x) を使用する場合、接続終了時の CBC パディングバイトを適切にチェックしないため、平文データを取得される脆弱性が存在します。\r\n\r\n本問題は、CVE-2014-3566 (別名 POODLE) と類似する問題です。\r\n\r\n本脆弱性の識別範囲は F5 の実装に限定されています。TLS 1.x 自体の設計に脆弱性が存在するわけではないため、他の脆弱な実装については固有の CVE ID が割り当てられます。",
+  "identifier": "JVNDB-2014-005869",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8730",
+      "source": "CVE",
+      "id": "CVE-2014-8730"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8730",
+      "source": "NVD",
+      "id": "CVE-2014-8730"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:f5:big-ip_access_policy_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Access Policy Manager (APM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_advanced_firewall_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Advanced Firewall Manager (AFM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_analytics",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Analytics"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_application_acceleration_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Application Acceleration Manager (AAM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_application_security_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Application Security Manager (ASM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_edge_gateway",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Edge Gateway"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_local_traffic_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Local Traffic Manager (LTM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_policy_enforcement_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Policy Enforcement Manager (PEM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_protocol_security_module",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP Protocol Security Module (PSM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_wan_optimization_manager",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP WAN Optimization Manager (WOM)"
+    },
+    {
+      "text": "cpe:/a:f5:big-ip_webaccelerator",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IP WebAccelerator"
+    },
+    {
+      "text": "cpe:/a:f5:big-iq_cloud",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IQ Cloud"
+    },
+    {
+      "text": "cpe:/a:f5:big-iq_device",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IQ Device"
+    },
+    {
+      "text": "cpe:/a:f5:big-iq_security",
+      "version": "2.2",
+      "vendor": "F5 Networks",
+      "product": "BIG-IQ Security"
+    },
+    {
+      "text": "cpe:/a:fujitsu:cloud_infrastructure_management_software",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "クラウド インフラ マネージメント ソフトウェア"
+    },
+    {
+      "text": "cpe:/a:fujitsu:internet_navigware_e-Learning_Pack",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Internet Navigware e-Learning Pack"
+    },
+    {
+      "text": "cpe:/a:fujitsu:internet_navigware_Enterprise_LMS_Server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Internet Navigware Enterprise LMS Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_application_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Application Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_apworks",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Apworks"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_business_application_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Business Application Manager"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_studio",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Studio"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_web_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Web Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_web_server_express",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Web Server Express"
+    },
+    {
+      "text": "cpe:/a:fujitsu:safeauthor",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Safeauthor"
+    },
+    {
+      "text": "cpe:/a:fujitsu:serverview",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "ServerView"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_centric_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Centric Manager"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_desktop_inspection",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Desktop Inspection"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_desktop_keeper",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Desktop Keeper"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_desktop_patrol",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Desktop Patrol"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_it_change_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker IT Change Manager"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_operation_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Operation Manager"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_runbook_automation",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Runbook Automation"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_security_control",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Security Control"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_service_catalog_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Service Catalog Manager"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_software_configuration_manager",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Software Configuration Manager"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-03-03T16:13+09:00",
+  "issued": "2014-12-11T18:10+09:00",
+  "modified": "2015-03-03T16:13+09:00"
+}

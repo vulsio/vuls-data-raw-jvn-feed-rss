@@ -1,0 +1,175 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005429.html",
+  "title": "Apache Log4j における任意のコードが実行可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005429.html",
+  "description": "Log4j には JNDI Lookup 機能による外部入力値の検証不備に起因して任意の Java コードを実行可能な脆弱性が存在します。\r\n\r\nThe Apache Software Foundation が提供する Log4j は、Java ベースのロギングライブラリです。Log4j には、ログに記載された文字列から一部の値を変数として評価する Lookup 機能が実装されています。\r\nその Lookup 機能の内、JNDI Lookup 機能を悪用することにより、ログに含まれる外部の URL もしくは内部パスから Java のクラス情報をデシリアライズして実行してしまう問題（CWE-20, CVE-2021-44228）が発見されました。\r\nこれにより、遠隔の攻撃者が細工した文字列を脆弱なシステムのログに記載させ、結果として任意の Java コードをシステムに実行させることが可能です。\r\n",
+  "identifier": "JVNDB-2021-005429",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU96768815/",
+      "source": "JVN",
+      "id": "JVNVU#96768815"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU94360308/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94360308"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU98748974/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98748974"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228",
+      "source": "CVE",
+      "id": "CVE-2021-44228"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45046",
+      "source": "CVE",
+      "id": "CVE-2021-45046"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45105",
+      "source": "CVE",
+      "id": "CVE-2021-45105"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-44832",
+      "source": "CVE",
+      "id": "CVE-2021-44832"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-44228",
+      "source": "NVD",
+      "id": "CVE-2021-44228"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-45046",
+      "source": "NVD",
+      "id": "CVE-2021-45046"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-45105",
+      "source": "NVD",
+      "id": "CVE-2021-45105"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-44832",
+      "source": "NVD",
+      "id": "CVE-2021-44832"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2021/at210050.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2021-0050"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/930724",
+      "source": "CERT-VN",
+      "id": "VU#930724"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-034-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-034-01"
+    },
+    {
+      "text": "https://github.com/apache/logging-log4j2/pull/608",
+      "source": "関連文書",
+      "id": "Restrict LDAP access via JNDI #608"
+    },
+    {
+      "text": "https://www.lunasec.io/docs/blog/log4j-zero-day/",
+      "source": "関連文書",
+      "id": "Log4Shell: RCE 0-day exploit found in log4j 2, a popular Java logging package"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:log4j",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Log4j"
+    },
+    {
+      "text": "cpe:/a:nec:acos_access_toolkit",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "ACOS Access Toolkit"
+    },
+    {
+      "text": "cpe:/a:nec:connexive_application_platform",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CONNEXIVE Application Platform"
+    },
+    {
+      "text": "cpe:/a:nec:connexive_edge_device_management",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CONNEXIVE Edge Device Management"
+    },
+    {
+      "text": "cpe:/a:nec:connexive_pf",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CONNEXIVE PF"
+    },
+    {
+      "text": "cpe:/a:nec:esmpro_upsmanager",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "ESMPRO/UPSManager"
+    },
+    {
+      "text": "cpe:/a:nec:iot_common_base",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IoT 共通基盤"
+    },
+    {
+      "text": "cpe:/a:nec:systemdirector_enterprise",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SystemDirector Enterprise"
+    },
+    {
+      "text": "cpe:/a:nec:universalbackup",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "UniversalBackup"
+    },
+    {
+      "text": "cpe:/a:nec:websam_systemmanager_g",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebSAM SystemManager G"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-12-15T10:24+09:00",
+  "issued": "2021-12-14T16:37+09:00",
+  "modified": "2022-12-15T10:24+09:00"
+}

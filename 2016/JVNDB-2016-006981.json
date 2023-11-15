@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006981.html",
+  "title": "WordPress の wp-admin/includes/ajax-actions.php の wp_ajax_update_plugin 関数におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006981.html",
+  "description": "WordPress の wp-admin/includes/ajax-actions.php の wp_ajax_update_plugin 関数には、ディレクトリトラバーサルの脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006981",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6896",
+      "source": "CVE",
+      "id": "CVE-2016-6896"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6896",
+      "source": "NVD",
+      "id": "CVE-2016-6896"
+    },
+    {
+      "text": "https://sumofpwn.nl/advisory/2016/path_traversal_vulnerability_in_wordpress_core_ajax_handlers.html",
+      "source": "関連文書",
+      "id": "Path traversal vulnerability in WordPress Core Ajax handlers (Summer of Pwnage)"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/08/20/1",
+      "source": "関連文書",
+      "id": "Path traversal vulnerability in WordPress Core Ajax handlers (Openwall)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wordpress:wordpress",
+      "version": "2.2",
+      "vendor": "WordPress.org",
+      "product": "WordPress"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H"
+    }
+  ],
+  "date": "2017-02-01T10:37+09:00",
+  "issued": "2017-02-01T10:37+09:00",
+  "modified": "2017-02-01T10:37+09:00"
+}

@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-000904.html",
+  "title": "PHP 2chBBS におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-000904.html",
+  "description": "鏡の国が提供する PHP 2chBBS は、インターネットでダウンロード可能なソフトウェアです。PHP 2chBBS は、ウェブサイトに設置して使用する、掲示板ソフトウエアです。PHP 2chBBS には、当該製品が設置されたウェブサイトの閲覧者（以降、被害者）が攻撃者の作成した罠ページにアクセスすることにより、意図しないスクリプトが実行されるクロスサイトスクリプティング (CWE-79) の脆弱性が存在します。\r\n\r\nこの案件は、2015年11月24日に開催された公表判定委員会による審議にて、平成26年経済産業省告示第110号および、情報セキュリティ早期警戒パートナーシップガイドラインにおける、次のすべての条件を満たすことを確認したため、JVN で公表することが適当と判定されたものです。\r\n\r\n1.\t当該案件が連絡不能であること\r\n2.\t脆弱性が存在すると判断できること\r\n3.\t公表しない限り、当該脆弱性情報を知り得ない製品利用者がいるおそれがあること\r\n4.\t公表が不適切であると判断する理由・事情がないこと",
+  "identifier": "JVNDB-2018-000904",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN48774168/index.html",
+      "source": "JVN",
+      "id": "JVN#48774168"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0535",
+      "source": "CVE",
+      "id": "CVE-2018-0535"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-0535",
+      "source": "NVD",
+      "id": "CVE-2018-0535"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php_2chbbs_project:php_2chbbs",
+      "version": "2.2",
+      "vendor": "鏡の国",
+      "product": "PHP 2chBBS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+    }
+  ],
+  "date": "2018-06-14T13:54+09:00",
+  "issued": "2018-03-13T15:14+09:00",
+  "modified": "2018-06-14T13:54+09:00"
+}

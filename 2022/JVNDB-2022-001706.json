@@ -1,0 +1,41 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001706.html",
+  "title": "Qt 製 Windows アプリケーションにおける権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001706.html",
+  "description": "The Qt Company が提供する Qt はマルチプラットフォーム向けアプリケーションフレームワークです。Qt で作成されたWindowsアプリケーションでは、 Qt 開発ツールのインストールパスが qt_prfxpath にハードコードされており、当該アプリケーションはこれらのパスから必要なモジュールをロードしようとします。\r\n\r\nqt_prfxpath が指しているディレクトリは、例えば Qt の Windows インストーラーの初期設定では C:\\Qt\\ のサブディレクトリとなっており、Windows システムの一般ユーザがこのディレクトリを作成して悪意あるファイルを置き、Qt アプリケーションに読み込ませることが可能となっている場合があります。\r\n",
+  "identifier": "JVNDB-2022-001706",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU92669710/",
+      "source": "JVN",
+      "id": "JVNVU#92669710"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-26873",
+      "source": "CVE",
+      "id": "CVE-2022-26873"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/411271",
+      "source": "CERT-VN",
+      "id": "VU#411271"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qt:qt",
+      "version": "2.2",
+      "vendor": "The Qt Company",
+      "product": "Qt"
+    },
+    {
+      "text": "cpe:/a:qt:qtwebkit_windeployqt",
+      "version": "2.2",
+      "vendor": "The Qt Company",
+      "product": "windeployqt"
+    }
+  ],
+  "date": "2022-05-10T14:55+09:00",
+  "issued": "2022-05-10T14:55+09:00",
+  "modified": "2022-05-10T14:55+09:00"
+}

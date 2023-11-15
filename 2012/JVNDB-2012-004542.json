@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004542.html",
+  "title": "Apple iOS の ImageIO におけるメモリ二重解放の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004542.html",
+  "description": "Apple iOS の ImageIO には、メモリを二重に解放する不備があるため、任意のコードを実行される、またはサービス運用妨害 (アプリケーションクラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004542",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU624491/",
+      "source": "JVN",
+      "id": "JVNVU#624491"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3726",
+      "source": "CVE",
+      "id": "CVE-2012-3726"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3726",
+      "source": "NVD",
+      "id": "CVE-2012-3726"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:apple_tv",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple TV"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-02-07T17:27+09:00",
+  "issued": "2012-09-24T18:59+09:00",
+  "modified": "2013-02-07T17:27+09:00"
+}

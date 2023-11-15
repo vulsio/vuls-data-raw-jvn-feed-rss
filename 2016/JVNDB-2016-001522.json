@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001522.html",
+  "title": "JanRain PHP OpenID ライブラリ の examples/consumer/common.php における任意のユーザの認証をハイジャックされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001522.html",
+  "description": "JanRain PHP OpenID ライブラリ (別名 php-openid) の examples/consumer/common.php は、SERVER スーパーグローバルの配列の SERVER_NAME 要素に対する openid.realm パラメータを適切にチェックしないため、任意のユーザの認証をハイジャックされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-284: Improper Access Control (不適切なアクセス制御) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/284.html",
+  "identifier": "JVNDB-2016-001522",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2049",
+      "source": "CVE",
+      "id": "CVE-2016-2049"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2049",
+      "source": "NVD",
+      "id": "CVE-2016-2049"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/01/24/2",
+      "source": "関連文書",
+      "id": "CVE Request: Host based account hijack attack on php-openid"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/01/24/5",
+      "source": "関連文書",
+      "id": "Re: CVE Request: Host based account hijack attack on php-openid"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:janrain:php-openid",
+      "version": "2.2",
+      "vendor": "JanRain",
+      "product": "PHP OpenID"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2016-03-07T16:10+09:00",
+  "issued": "2016-02-29T18:12+09:00",
+  "modified": "2016-03-07T16:10+09:00"
+}

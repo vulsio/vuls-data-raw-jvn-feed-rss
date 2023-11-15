@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-019555.html",
+  "title": "Fabrice Bellard の QEMU 他複数ベンダの製品における解放済みメモリの使用に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-019555.html",
+  "description": "Fabrice Bellard の QEMU 他複数ベンダの製品には、解放済みメモリの使用に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-019555",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-3750",
+      "source": "CVE",
+      "id": "CVE-2021-3750"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3750",
+      "source": "NVD",
+      "id": "CVE-2021-3750"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1999073",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (1999073)"
+    },
+    {
+      "text": "https://gitlab.com/qemu-project/qemu/-/issues/541",
+      "source": "関連文書",
+      "id": "gitlab.com (issues/541)"
+    },
+    {
+      "text": "https://gitlab.com/qemu-project/qemu/-/issues/556",
+      "source": "関連文書",
+      "id": "gitlab.com (issues/556)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202208-27",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202208-27)"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20220624-0003/",
+      "source": "関連文書",
+      "id": "security.netapp.com (ntap-20220624-0003)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/416.html",
+      "id": "CWE-416",
+      "title": "解放済みメモリの使用(CWE-416)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-08-03T17:32+09:00",
+  "issued": "2023-08-03T17:32+09:00",
+  "modified": "2023-08-03T17:32+09:00"
+}

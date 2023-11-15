@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007337.html",
+  "title": "複数のブロードバンドルータに、脆弱性が存在するバージョンの Allegro RomPager を使用している問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007337.html",
+  "description": "複数のブロードバンドルータのファームウェアには、脆弱性が存在する古いバージョンの Allegro RomPager を使用している問題が存在します。\r\n\r\nAllegro RomPager 4.34 より前のバージョンには、第三者にデバイスの管理者権限を取得される脆弱性が存在します。本脆弱性は Allegro が 2005年に修正していますが、複数のブロードバンドルータのファームウェアには、いまだに脆弱性が存在する古いバージョンの Allegro RomPager が使用されています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-17: Code (コード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/17.html",
+  "identifier": "JVNDB-2014-007337",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96446762/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96446762"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9222",
+      "source": "CVE",
+      "id": "CVE-2014-9222"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9222",
+      "source": "NVD",
+      "id": "CVE-2014-9222"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/561444",
+      "source": "CERT-VN",
+      "id": "VU#561444"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/ICSMA-18-240-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSMA-18-240-01"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:allegrosoft:rompager",
+      "version": "2.2",
+      "vendor": "Allegro Software Development Corporation",
+      "product": "RomPager"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2019-07-10T13:56+09:00",
+  "issued": "2014-12-24T14:27+09:00",
+  "modified": "2019-07-10T13:56+09:00"
+}

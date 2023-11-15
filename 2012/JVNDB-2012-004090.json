@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004090.html",
+  "title": "GNU Binutils で使用される GNU libiberty における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004090.html",
+  "description": "GNU Binutils で使用される GNU libiberty の include/objalloc.h の (1) objalloc.c 内の _objalloc_alloc 関数、および (2) objalloc_alloc マクロには、\"length への CHUNK_HEADER_SIZE の追加\" に関する処理に不備があるため、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004090",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3509",
+      "source": "CVE",
+      "id": "CVE-2012-3509"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3509",
+      "source": "NVD",
+      "id": "CVE-2012-3509"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:binutils",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU Binutils"
+    },
+    {
+      "text": "cpe:/a:gnu:libiberty",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU libiberty"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-09-07T15:23+09:00",
+  "issued": "2012-09-07T15:23+09:00",
+  "modified": "2012-09-07T15:23+09:00"
+}

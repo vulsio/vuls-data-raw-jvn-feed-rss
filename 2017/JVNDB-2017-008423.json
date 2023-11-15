@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-008423.html",
+  "title": "Infineon 製 RSA ライブラリが RSA 鍵ペアを適切に生成しない問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-008423.html",
+  "description": "Infineon 製 RSA ライブラリには、 RSA 鍵ペアを適切に生成しない問題があります。結果として、このライブラリを使って生成した RSA 公開鍵に対応する秘密鍵が取得される可能性があります。\r\n\r\n暗号の問題 (CWE-310) - CVE-2017-15361\r\nInfineon 製 RSA ライブラリには、 RSA 鍵ペアを適切に生成しない問題があります。当該ライブラリを使って RSA 鍵ペアを生成している場合、鍵の全数探索よりも効率的な探索手法が適用可能です。少なくとも 2048 ビット以下の鍵長において秘密鍵を取得される可能性があります。この攻撃は、当該ライブラリで生成した RSA 公開鍵を取得するだけで適用が可能です。なお、本件は当該ライブラリにおける RSA の鍵生成に関する問題であり、ECC (楕円曲線暗号) は影響を受けません。また、他のデバイスやライブラリで生成した RSA 鍵 も当該ライブラリで安全に使用できます。\r\n当該ライブラリは、Trusted Platform Modules (TPM) やスマートカードで使用されている可能性があります。開発者のサイトにて、影響を受けるベンダの情報を提供しています。\r\n\r\n詳細は発見者が公開している情報を参照してください。\r\n\r\n開発者のサイト\r\nhttps://www.infineon.com/cms/en/product/promopages/tpm-update/?redirId=59160\r\n\r\n発見者が公開している情報\r\nhttps://crocs.fi.muni.cz/public/papers/rsa_ccs17",
+  "identifier": "JVNDB-2017-008423",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU95530052/",
+      "source": "JVN",
+      "id": "JVNVU#95530052"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15361",
+      "source": "CVE",
+      "id": "CVE-2017-15361"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-15361",
+      "source": "NVD",
+      "id": "CVE-2017-15361"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/307015",
+      "source": "CERT-VN",
+      "id": "VU#307015"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/ICSA-18-058-01A",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-18-058-01"
+    },
+    {
+      "text": "https://crocs.fi.muni.cz/public/papers/rsa_ccs17",
+      "source": "関連文書",
+      "id": "ROCA: Vulnerable RSA generation (CVE-2017-15361)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:infineon:rsa_library",
+      "version": "2.2",
+      "vendor": "Infineon Technologies AG",
+      "product": "RSA ライブラリ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.4",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2019-07-09T15:35+09:00",
+  "issued": "2017-10-18T16:01+09:00",
+  "modified": "2019-07-09T15:35+09:00"
+}

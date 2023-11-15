@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-010003.html",
+  "title": "Linux Kernel  におけるデジタル署名の検証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-010003.html",
+  "description": "Linux Kernel には、デジタル署名の検証に関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2021-010003",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-35039",
+      "source": "CVE",
+      "id": "CVE-2021-35039"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-35039",
+      "source": "NVD",
+      "id": "CVE-2021-35039"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2021/07/06/3",
+      "source": "関連文書",
+      "id": "CVE-2021-35039: Linux kernel loading unsigned kernel modules via init_module syscall"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/347.html",
+      "id": "CWE-347",
+      "title": "デジタル署名の不適切な検証(CWE-347)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-06-13T16:39+09:00",
+  "issued": "2022-06-13T16:39+09:00",
+  "modified": "2022-06-13T16:39+09:00"
+}

@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003954.html",
+  "title": "KDirStat の kcleanup.cpp における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003954.html",
+  "description": "KDirStat の kcleanup.cpp は、ディレクトリを削除する際、適切に文字列を引用しないため、任意のコマンドを実行される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-2528 とは異なる脆弱性です。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-77: Improper Neutralization of Special Elements used in a Command (コマンドインジェクション) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/77.html",
+  "identifier": "JVNDB-2014-003954",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2527",
+      "source": "CVE",
+      "id": "CVE-2014-2527"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2527",
+      "source": "NVD",
+      "id": "CVE-2014-2527"
+    },
+    {
+      "text": "https://bitbucket.org/jeromerobert/k4dirstat/commits/1ad2e96d73fa06cd9be0f3749b337c03575016aa",
+      "source": "関連文書",
+      "id": "Jerome Robert committed 1ad2e96"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:kdirstat_project:kdirstat",
+      "version": "2.2",
+      "vendor": "KDirStat project",
+      "product": "KDirStat"
+    },
+    {
+      "text": "cpe:/o:novell:opensuse",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "openSUSE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-08-28T14:38+09:00",
+  "issued": "2014-08-28T14:38+09:00",
+  "modified": "2014-08-28T14:38+09:00"
+}

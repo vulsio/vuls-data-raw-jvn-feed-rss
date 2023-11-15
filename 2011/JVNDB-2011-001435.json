@@ -1,0 +1,93 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001435.html",
+  "title": "rsync における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001435.html",
+  "description": "rsync には、--recursive、--delete、--owner のオプションを使用した際、サービス運用妨害 (ヒープメモリの破損およびアプリケーションクラッシュ) 状態となる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2011-001435",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1097",
+      "source": "CVE",
+      "id": "CVE-2011-1097"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1097",
+      "source": "NVD",
+      "id": "CVE-2011-1097"
+    },
+    {
+      "text": "http://secunia.com/advisories/44071",
+      "source": "SECUNIA",
+      "id": "SA44071"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/47064",
+      "source": "BID",
+      "id": "47064"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1025256",
+      "source": "SECTRACK",
+      "id": "1025256"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0792",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0792"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0793",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0793"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:rsync:rsync",
+      "version": "2.2",
+      "vendor": "rsync.samba.org",
+      "product": "rsync"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2011-04-27T11:32+09:00",
+  "issued": "2011-04-27T11:32+09:00",
+  "modified": "2011-04-27T11:32+09:00"
+}

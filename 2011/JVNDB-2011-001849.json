@@ -1,0 +1,149 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001849.html",
+  "title": "ISC BIND にサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001849.html",
+  "description": "ISC BIND には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC BIND には、細工された DNS パケットを処理することで named プロセスが終了する、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC から、以下の脆弱性情報が公開されています。\r\n\r\n\"A defect in the affected BIND 9 versions allows an attacker to remotely cause the \"named\" process to exit using a specially crafted packet. This defect affects both recursive and authoritative servers. The code location of the defect makes it impossible to protect BIND using ACLs configured within named.conf or by disabling any features at compile-time or run-time.\r\n\r\nA remote attacker would need to be able to send a specially crafted packet directly to a server running a vulnerable version of BIND. There is also the potential for an indirect attack via malware that is inadvertently installed and run, where infected machines have direct access to an organization's nameservers.\"",
+  "identifier": "JVNDB-2011-001849",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU142646",
+      "source": "JVN",
+      "id": "JVNVU#142646"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2464",
+      "source": "CVE",
+      "id": "CVE-2011-2464"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2464",
+      "source": "NVD",
+      "id": "CVE-2011-2464"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2011/at110019.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2011-0019"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/142646",
+      "source": "CERT-VN",
+      "id": "VU#142646"
+    },
+    {
+      "text": "http://jprs.jp/tech/security/2011-07-05-bind9-vuln-remote-packet-auth-and-recurse.html",
+      "source": "JPRS",
+      "id": "（緊急）BIND 9.xの脆弱性を利用したサービス不能（DoS）攻撃について"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20110706-bind9.html",
+      "source": "IPA",
+      "id": "20110706-bind9"
+    },
+    {
+      "text": "http://secunia.com/advisories/45082",
+      "source": "SECUNIA",
+      "id": "SA45082"
+    },
+    {
+      "text": "http://secunia.com/advisories/45185",
+      "source": "SECUNIA",
+      "id": "SA45185"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/48566",
+      "source": "BID",
+      "id": "48566"
+    },
+    {
+      "text": "http://www.securitytracker.com/id/1025742",
+      "source": "SECTRACK",
+      "id": "1025742"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_server_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server EUS"
+    },
+    {
+      "text": "cpe:/o:oracle:solaris",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Solaris"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_long_life",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Long Life"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-08-05T09:55+09:00",
+  "issued": "2011-07-11T14:24+09:00",
+  "modified": "2011-08-05T09:55+09:00"
+}

@@ -1,0 +1,106 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000686.html",
+  "title": "Apple QuickTime に任意のコマンドが実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000686.html",
+  "description": "Apple QuickTime には、任意のコマンドが実行される脆弱性が存在します。\r\n\r\nApple QuickTime は、Windows や Apple OS X に対応したメディアプレーヤーです。また、Internet Explorer や Safari、Netscape 互換のブラウザ用プラグインも提供されています。\r\n\r\nWeb ページの作成者は、Web ページ内に QuickTime Movie を組み込む際に QuickTime link (.qtl) ファイルを用いてアプリケーションを起動する際のパラメータを指定することができます。指定できるパラーメータのひとつである qtnext は、読み込み再生するマルチメディアファイルの場所を指定するために使用されます。この qtnext パラメータを使用して任意のコマンドが実行される脆弱性が存在します。\r\n\r\n既にこの脆弱性を使用した検証コードが公開されています。",
+  "identifier": "JVNDB-2007-000686",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23751808/index.html",
+      "source": "JVN",
+      "id": "JVNVU#751808"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4673",
+      "source": "CVE",
+      "id": "CVE-2007-4673"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4965",
+      "source": "CVE",
+      "id": "CVE-2006-4965"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4673",
+      "source": "NVD",
+      "id": "CVE-2007-4673"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4965",
+      "source": "NVD",
+      "id": "CVE-2006-4965"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/2007/20071005_152642.html",
+      "source": "AT-POLICE",
+      "id": "QuickTime の脆弱性について"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/751808",
+      "source": "CERT-VN",
+      "id": "VU#751808"
+    },
+    {
+      "text": "http://secunia.com/advisories/22048",
+      "source": "SECUNIA",
+      "id": "SA22048"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/20138",
+      "source": "BID",
+      "id": "20138"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1018687",
+      "source": "SECTRACK",
+      "id": "1018687"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/3155",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-3155"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:quicktime",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "QuickTime"
+    },
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:seamonkey",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla SeaMonkey"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-10-17T15:42+09:00",
+  "issued": "2007-09-25T12:30+09:00",
+  "modified": "2007-10-17T15:42+09:00"
+}

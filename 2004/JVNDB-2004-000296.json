@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000296.html",
+  "title": "Linux Kernel の CD-writer ドライバにおけるセキュリティ制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000296.html",
+  "description": "Linux Kernel において、ATAPI/IDE インターフェースに CD-writer ドライブが接続されている場合、このドライブに対して読み取りの権限のみを与えられたユーザーが、ドライブ内のメディアに対して、許可されていない任意のデータの書き込み、あるいはデータの消去を行うことができる脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000296",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0813",
+      "source": "CVE",
+      "id": "CVE-2004-0813"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0813",
+      "source": "NVD",
+      "id": "CVE-2004-0813"
+    },
+    {
+      "text": "http://secunia.com/advisories/12498/",
+      "source": "SECUNIA",
+      "id": "SA12498"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/17505",
+      "source": "XF",
+      "id": "17505"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Sep/1011412.html",
+      "source": "SECTRACK",
+      "id": "1011412"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-06-22T16:27+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-06-22T16:27+09:00"
+}

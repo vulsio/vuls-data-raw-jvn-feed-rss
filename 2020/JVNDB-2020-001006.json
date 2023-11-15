@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001006.html",
+  "title": "Microsoft Windows CryptoAPI における Elliptic Curve Cryptography (ECC) 証明書の検証不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001006.html",
+  "description": "Microsoft の Crypt32.dll が提供する Windows CryptoAPI には、Elliptic Curve Cryptography (ECC) 証明書の検証不備の脆弱性が存在します。\r\nCertGetCertificateChain() 関数により ECC キーを持つ証明書を信頼されたルート CA までトレースが可能か判断する場合、証明書チェーンの信頼性を適切に検証できないため、正当な証明書になりすませる可能性があります。\r\n",
+  "identifier": "JVNDB-2020-001006",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU91499458/",
+      "source": "JVN",
+      "id": "JVNVU#91499458"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0601",
+      "source": "CVE",
+      "id": "CVE-2020-0601"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-0601",
+      "source": "NVD",
+      "id": "CVE-2020-0601"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/849224/",
+      "source": "CERT-VN",
+      "id": "VU#849224"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/295.html",
+      "id": "CWE-295",
+      "title": "不正な証明書検証(CWE-295)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_10",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 10"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2016",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2016"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2019",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2019"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2020-01-16T12:14+09:00",
+  "issued": "2020-01-16T12:14+09:00",
+  "modified": "2020-01-16T12:14+09:00"
+}

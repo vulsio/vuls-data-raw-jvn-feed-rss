@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002857.html",
+  "title": "cURL および libcurl におけるサーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002857.html",
+  "description": "cURL および libcurl の (1) lib/vtls/mbedtls.c の mbed_connect_step1 関数、および (2) lib/vtls/polarssl.c の polarssl_connect_step1 関数には、SSLv3 を使用する、または数値 IP アドレスを使用する URL に TLS 接続する場合、サーバになりすまされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-002857",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3739",
+      "source": "CVE",
+      "id": "CVE-2016-3739"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3739",
+      "source": "NVD",
+      "id": "CVE-2016-3739"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:haxx:curl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "cURL"
+    },
+    {
+      "text": "cpe:/a:haxx:libcurl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "libcurl"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2016-05-24T15:08+09:00",
+  "issued": "2016-05-24T15:08+09:00",
+  "modified": "2016-05-24T15:08+09:00"
+}

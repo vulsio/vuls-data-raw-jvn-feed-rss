@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007109.html",
+  "title": "OptiPNG で使用される gif2png の gifread.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007109.html",
+  "description": "OptiPNG で使用される gif2png の gifread.c には、サービス運用妨害 (初期化されていないメモリの読み込み) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-007109",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7802",
+      "source": "CVE",
+      "id": "CVE-2015-7802"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7802",
+      "source": "NVD",
+      "id": "CVE-2015-7802"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:optipng:optipng",
+      "version": "2.2",
+      "vendor": "OptiPNG",
+      "product": "OptiPNG"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-05-02T14:09+09:00",
+  "issued": "2016-05-02T14:09+09:00",
+  "modified": "2016-05-02T14:09+09:00"
+}

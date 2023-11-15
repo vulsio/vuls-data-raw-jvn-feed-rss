@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000121.html",
+  "title": "Linux Kernel の nfs_get_user_pages() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000121.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) nfs_get_user_pages() 関数において、get_user_pages() 関数からの戻り値のチェックが不適切である不備が存在します。そのため、ユーザメモリ領域に一部がメモリマッピングされている NFS ファイルに対して O_DIRECT フラグを使用して書き込みを行った場合に NFS クライアントがパニック状態に陥る問題が存在します。(CVE-2006-0555)\r\n\r\nローカルの攻撃者に悪用された場合、NFS クライアントがサービス不能状態に陥る可能性があります。\r\n\r\n2) binfmt_elf.c において、ELF ファイルヘッダに含まれる e_entry (プロセスを開始する仮想アドレスを示す) に対するチェックが不適切であるため、不正なアドレスが指定された ELF ファイルを処理した場合に無限ループが発生する問題が存在します。(CVE-2006-0741)\r\n\r\nローカルの攻撃者に悪用された場合、システムがサービス不能状態に陥る可能性があります。",
+  "identifier": "JVNDB-2006-000121",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0741",
+      "source": "CVE",
+      "id": "CVE-2006-0741"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0741",
+      "source": "NVD",
+      "id": "CVE-2006-0741"
+    },
+    {
+      "text": "http://secunia.com/advisories/19083/",
+      "source": "SECUNIA",
+      "id": "SA19083"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/16925",
+      "source": "BID",
+      "id": "16925"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/0804",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-0804"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

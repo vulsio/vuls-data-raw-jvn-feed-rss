@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001312.html",
+  "title": "Open Ticket Request System の Kernel/Modules/ 内の複数の .pm ファイルにおけるクロスサイトリクエストフォージェリの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001312.html",
+  "description": "Open Ticket Request System (OTRS) の Kernel/Modules/ 内の以下の .pm ファイルには、クロスサイトリクエストフォージェリの脆弱性が存在します。\r\n\r\n(1) CustomerPreferences.pm\r\n(2) CustomerTicketMessage.pm\r\n(3) CustomerTicketProcess.pm\r\n(4) CustomerTicketZoom.pm",
+  "identifier": "JVNDB-2014-001312",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1694",
+      "source": "CVE",
+      "id": "CVE-2014-1694"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1694",
+      "source": "NVD",
+      "id": "CVE-2014-1694"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+      "id": "CWE-352",
+      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:otrs:otrs",
+      "version": "2.2",
+      "vendor": "OTRS プロジェクト",
+      "product": "OTRS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-02-06T14:08+09:00",
+  "issued": "2014-02-06T14:08+09:00",
+  "modified": "2014-02-06T14:08+09:00"
+}

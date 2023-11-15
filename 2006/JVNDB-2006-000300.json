@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000300.html",
+  "title": "Linux Kernel の SCTP プロトコルにおける整数オーバフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000300.html",
+  "description": "Linux Kernel の SCTP プロトコルの実装には、SCTP パラメータに対するチェックを行う際、実際のチャンク長およびパラメータ長ではなく、近似値を用いるため、近似値と実際の値に誤差が生じた場合に整数オーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000300",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1858",
+      "source": "CVE",
+      "id": "CVE-2006-1858"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1858",
+      "source": "NVD",
+      "id": "CVE-2006-1858"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18085",
+      "source": "BID",
+      "id": "18085"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

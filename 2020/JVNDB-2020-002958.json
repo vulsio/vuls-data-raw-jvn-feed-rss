@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-002958.html",
+  "title": "三菱電機製 MELSEC シリーズの MELSOFT 交信ポートにおけるリソース枯渇の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-002958.html",
+  "description": "三菱電機株式会社が提供する MELSEC iQ-R，iQ-F，Q，L，F シリーズの MELSOFT 交信ポート (UDP/IP) には、リソース枯渇の脆弱性 (CWE-400) が存在します。MELSOFT 交信ポートに大量のデータを送信すると、リソースが枯渇することにより当該ポートにおいて処理が行われなくなり、サービス運用妨害 (DoS) 状態となる場合があります。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2020-002958",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU91553662/",
+      "source": "JVN",
+      "id": "JVNVU#91553662"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5527",
+      "source": "CVE",
+      "id": "CVE-2020-5527"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-091-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-091-02"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mitsubishielectric:melsec_f_series",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "MELSEC F シリーズ"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:melsec-l_firmware",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "MELSEC L シリーズ"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:melsec-q_firmware",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "MELSEC Q シリーズ"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:melsec_iq-f_firmware",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "MELSEC iQ-F シリーズ"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:melsec_iq-r_firmware",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "MELSEC iQ-R シリーズ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+    }
+  ],
+  "date": "2020-04-01T14:44+09:00",
+  "issued": "2020-03-31T12:14+09:00",
+  "modified": "2020-04-01T14:44+09:00"
+}

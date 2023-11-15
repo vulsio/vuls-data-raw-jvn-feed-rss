@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003028.html",
+  "title": "複数の Asterisk 製品におけるサービス運用妨害 (RTP ポートの枯渇) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003028.html",
+  "description": "複数の Asterisk 製品は、SIP reINVITE リクエストへの暫定的な応答を適切に処理しないため、サービス運用妨害 (RTP ポートの枯渇) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-003028",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3863",
+      "source": "CVE",
+      "id": "CVE-2012-3863"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3863",
+      "source": "NVD",
+      "id": "CVE-2012-3863"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:digium:asterisk",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk"
+    },
+    {
+      "text": "cpe:/a:digium:asterisk_business_edition",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk Business Edition"
+    },
+    {
+      "text": "cpe:/a:digium:certified_asterisk",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Certified Asterisk"
+    },
+    {
+      "text": "cpe:/a:digium:open_source",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk Open Source"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-11-08T17:51+09:00",
+  "issued": "2012-07-10T13:42+09:00",
+  "modified": "2012-11-08T17:51+09:00"
+}

@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006611.html",
+  "title": "PHP で使用される GD Graphics Library の gd_io_dp.c の dynamicGetbuf 関数における整数符号エラーの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006611.html",
+  "description": "PHP で使用される GD Graphics Library (別名 libgd) の gd_io_dp.c の dynamicGetbuf 関数には、整数符号エラーの脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006611",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8670",
+      "source": "CVE",
+      "id": "CVE-2016-8670"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8670",
+      "source": "NVD",
+      "id": "CVE-2016-8670"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libgd:libgd",
+      "version": "2.2",
+      "vendor": "LibGD project",
+      "product": "LibGD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-01-16T17:03+09:00",
+  "issued": "2017-01-16T17:03+09:00",
+  "modified": "2017-01-16T17:03+09:00"
+}

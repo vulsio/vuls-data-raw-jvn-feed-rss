@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000282.html",
+  "title": "tcpdump における不正なパケットによるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000282.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\ntcpdump はネットワークのトラフィックをキャプチャするための管理ツールで複数のプロトコルをサポートしています。\r\n\r\nTcpdump 3.7.x/3.8.x/3.9.x には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・ print-isoclns.c の isis_print() 関数において、GRE パケットの解析処理が適切でないために無限ループに陥る問題 (CAN-2005-1278) (3.8.x/3.9.x)\r\n\r\n・ print-bgp.c の RT_ROUTING_INFO ルーチンにおいて、BGP パケットの解析処理が適切でないために無限ループに陥る問題 (CAN-2005-1279) (3.7.x/3.8.x/3.9.x)\r\n\r\n・ print-ldp.c の ldp_print() 関数において、LDP パケットの解析処理が適切でないために無限ループに陥る問題 (CAN-2005-1279) (3.8.x/3.9.x)\r\n\r\n・ print-rsvp.c の rsvp_print() 関数において、RSVP パケットの解析処理が適切でないために無限ループに陥る問題 (CAN-2005-1280) (3.8.x/3.9.x)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した GRE、BGP、LDP、あるいは RSVP パケットを送りつけることにより、tcpdump をサービス不能状態に陥らせることが可能です。",
+  "identifier": "JVNDB-2005-000282",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1279",
+      "source": "CVE",
+      "id": "CVE-2005-1279"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1279",
+      "source": "NVD",
+      "id": "CVE-2005-1279"
+    },
+    {
+      "text": "http://secunia.com/advisories/15125",
+      "source": "SECUNIA",
+      "id": "SA15125"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13392",
+      "source": "BID",
+      "id": "13392"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13390",
+      "source": "BID",
+      "id": "13390"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13389",
+      "source": "BID",
+      "id": "13389"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13380",
+      "source": "BID",
+      "id": "13380"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2009-08-10T11:52+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2009-08-10T11:52+09:00"
+}

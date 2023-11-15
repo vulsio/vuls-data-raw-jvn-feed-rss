@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005999.html",
+  "title": "Honeywell OPOS Suite にスタックバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005999.html",
+  "description": "Honeywell OPOS Suite には、スタックバッファオーバーフローの脆弱性が存在します。\r\n\r\nHoneywell OPOS (OLE for Retail Point-of-Sale (POS)) Suite は、Microsoft Windows OS で稼動する小売向け POS システムで使われるソフトウェアです。Honeywell OPOS Suite に含まれる HWOPOSScale.ocx および HWOPOSSCANNER.ocx の Open メソッドは、渡された文字列の長さをチェックせずにスタック上の固定長バッファにコピーしており、スタックバッファオーバーフロー (CWE-121) の脆弱性が存在します。\r\n\r\nCWE-121: Stack-based Buffer Overflow\r\nhttp://cwe.mitre.org/data/definitions/121.html \r\n\r\n本脆弱性について、Zero Day Initiative からアドバイザリ (ZDI-14-423 および ZDI-14-424) が公開されています。\r\n\r\nZero Day Initiative Advisory ZDI-14-423\r\nhttp://www.zerodayinitiative.com/advisories/ZDI-14-423/\r\nZero Day Initiative Advisory ZDI-14-424\r\nhttp://www.zerodayinitiative.com/advisories/ZDI-14-424/",
+  "identifier": "JVNDB-2014-005999",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU98107585/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98107585"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8269",
+      "source": "CVE",
+      "id": "CVE-2014-8269"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8269",
+      "source": "NVD",
+      "id": "CVE-2014-8269"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/659684",
+      "source": "CERT-VN",
+      "id": "VU#659684"
+    },
+    {
+      "text": "http://www.zerodayinitiative.com/advisories/ZDI-14-423/",
+      "source": "関連文書",
+      "id": "Zero Day Initiative Advisory ZDI-14-423"
+    },
+    {
+      "text": "http://www.zerodayinitiative.com/advisories/ZDI-14-424/",
+      "source": "関連文書",
+      "id": "Zero Day Initiative Advisory ZDI-14-424"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:honeywell:opos_suite",
+      "version": "2.2",
+      "vendor": "Honeywell International Inc.",
+      "product": "Honeywell OPOS Suite"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-12-16T16:52+09:00",
+  "issued": "2014-12-16T16:52+09:00",
+  "modified": "2014-12-16T16:52+09:00"
+}

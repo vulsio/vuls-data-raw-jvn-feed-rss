@@ -1,0 +1,90 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005603.html",
+  "title": "ISC BIND に複数のサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005603.html",
+  "description": "ISC BIND には、次の複数のサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\n* DNS64 を有効にし \"break-dnssec yes;\" を設定しているサーバにおいてクエリの処理における assertion failure - CVE-2017-3136\r\n* CNAME または DNAME を含むレスポンスの answer セクションの処理における assertion failure - CVE-2017-3137\r\n* control channel の入力処理における REQUIRE assertion failure - CVE-2017-3138",
+  "identifier": "JVNDB-2017-005603",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97322649/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97322649"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3136",
+      "source": "CVE",
+      "id": "CVE-2017-3136"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3137",
+      "source": "CVE",
+      "id": "CVE-2017-3137"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3138",
+      "source": "CVE",
+      "id": "CVE-2017-3138"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3136",
+      "source": "NVD",
+      "id": "CVE-2017-3136"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3137",
+      "source": "NVD",
+      "id": "CVE-2017-3137"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3138",
+      "source": "NVD",
+      "id": "CVE-2017-3138"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2017/at170016.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2017-0016"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2017-04-13-bind9-vuln-dns64.html",
+      "source": "JPRS",
+      "id": "BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2017-3136）"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2017-04-13-bind9-vuln-cname-dname.html",
+      "source": "JPRS",
+      "id": "（緊急）BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2017-3137）"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2017-04-13-bind9-vuln-control-channel.html",
+      "source": "JPRS",
+      "id": "BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2017-3138）"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/h:nec:express5800",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "Express5800"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2019-08-27T17:30+09:00",
+  "issued": "2017-08-02T13:39+09:00",
+  "modified": "2019-08-27T17:30+09:00"
+}

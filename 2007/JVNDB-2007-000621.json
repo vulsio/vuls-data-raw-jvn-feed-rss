@@ -1,0 +1,96 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000621.html",
+  "title": "GNU tar の contains_dot_dot() 関数におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000621.html",
+  "description": "GNU tar の contains_dot_dot() 関数には TAR アーカイブファイルのシンボリックリンクの処理に不備が存在するために、「//..」を含むディレクトリ名が指定された際に、ディレクトリトラバーサルの脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000621",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4131",
+      "source": "CVE",
+      "id": "CVE-2007-4131"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4131",
+      "source": "NVD",
+      "id": "CVE-2007-4131"
+    },
+    {
+      "text": "http://secunia.com/advisories/26573/",
+      "source": "SECUNIA",
+      "id": "SA26573"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25417",
+      "source": "BID",
+      "id": "25417"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/2958",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-2958"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:tar",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU tar"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-01-18T12:21+09:00",
+  "issued": "2007-08-30T15:05+09:00",
+  "modified": "2010-01-18T12:21+09:00"
+}

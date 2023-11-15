@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005827.html",
+  "title": "MyBB の inc/class_parser.php 内の mycode_parse_video 関数におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005827.html",
+  "description": "MyBB (別名 MyBulletinBoard) の inc/class_parser.php 内の mycode_parse_video 関数には、Yahoo 動画の URL に関する処理に不備があるため、クロスサイトスクリプティングの脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005827",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7288",
+      "source": "CVE",
+      "id": "CVE-2013-7288"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7288",
+      "source": "NVD",
+      "id": "CVE-2013-7288"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mybb:mybb",
+      "version": "2.2",
+      "vendor": "MyBB Group",
+      "product": "MyBB"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2014-01-14T18:07+09:00",
+  "issued": "2014-01-14T18:07+09:00",
+  "modified": "2014-01-14T18:07+09:00"
+}

@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001343.html",
+  "title": "Huawei E5151 および Huawei E5186 に不十分なランダム値を使用している問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001343.html",
+  "description": "Huawei が提供するモバイル Wi-Fi ルータ E5151 および E5186 には、不十分なランダム値を使用している問題が存在します。\r\n\r\n不十分なランダム値の使用 (CWE-330) - CVE-2015-8265\r\nHuawei E5151 および Huawei E5186 から送信される DNS クエリのソースポート番号は固定されています。攻撃者は DNS スプーフィングにより、LAN 内の端末を悪意のあるサーバに誘導することが可能です。\r\n\r\nCWE-330: Use of Insufficiently Random Values\r\nhttp://cwe.mitre.org/data/definitions/330.html",
+  "identifier": "JVNDB-2016-001343",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92574416/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92574416"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8265",
+      "source": "CVE",
+      "id": "CVE-2015-8265"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8265",
+      "source": "NVD",
+      "id": "CVE-2015-8265"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/972224",
+      "source": "CERT-VN",
+      "id": "VU#972224"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:huawei:e5151_firmware",
+      "version": "2.2",
+      "vendor": "Huawei",
+      "product": "E5151 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:huawei:e5186_firmware",
+      "version": "2.2",
+      "vendor": "Huawei",
+      "product": "E5186 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2016-03-31T17:51+09:00",
+  "issued": "2016-02-03T11:48+09:00",
+  "modified": "2016-03-31T17:51+09:00"
+}

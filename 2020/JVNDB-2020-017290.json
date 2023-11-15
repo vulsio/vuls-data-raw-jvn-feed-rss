@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-017290.html",
+  "title": "Linux Kernel における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-017290.html",
+  "description": "Linux Kernel には、境界外読み取りに関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を CID-51c19bf3d5cf として公開しています。",
+  "identifier": "JVNDB-2020-017290",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2020-36386",
+      "source": "CVE",
+      "id": "CVE-2020-36386"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-36386",
+      "source": "NVD",
+      "id": "CVE-2020-36386"
+    },
+    {
+      "text": "https://sites.google.com/view/syzscope/kasan-slab-out-of-bounds-read-in-hci_extended_inquiry_result_evt",
+      "source": "関連文書",
+      "id": "KASAN: slab-out-of-bounds Read in hci_extended_inquiry_result_evt"
+    },
+    {
+      "text": "https://syzkaller.appspot.com/bug?id=4bf11aa05c4ca51ce0df86e500fce486552dc8d2",
+      "source": "関連文書",
+      "id": "KASAN: slab-out-of-bounds Read in hci_extended_inquiry_result_evt"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H"
+    }
+  ],
+  "date": "2022-08-30T10:01+09:00",
+  "issued": "2022-08-30T10:01+09:00",
+  "modified": "2022-08-30T10:01+09:00"
+}

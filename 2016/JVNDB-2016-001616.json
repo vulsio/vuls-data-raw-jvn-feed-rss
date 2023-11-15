@@ -1,0 +1,98 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001616.html",
+  "title": "OpenSSL の crypto/bio/b_print.c の fmtstr 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001616.html",
+  "description": "OpenSSL の crypto/bio/b_print.c の fmtstr 関数は、文字列の長さを適切に計算しないため、サービス運用妨害 (オーバーフローおよび out-of-bounds read) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2016-2842 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2016-001616",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0799",
+      "source": "CVE",
+      "id": "CVE-2016-0799"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0799",
+      "source": "NVD",
+      "id": "CVE-2016-0799"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-054-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-054-03"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hp:insight_control_server_deployment",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Insight Controlサーバー配備"
+    },
+    {
+      "text": "cpe:/a:hp:oneview",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Oneview"
+    },
+    {
+      "text": "cpe:/a:hp:systems_insight_manager",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Systems Insight Manager"
+    },
+    {
+      "text": "cpe:/a:hp:system_management_homepage",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "System Management Homepage"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:oracle:mysql",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/h:hp:virtual_connect",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Virtual Connect"
+    },
+    {
+      "text": "cpe:/o:hp:bladesystem",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE BladeSystem"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-02-26T17:21+09:00",
+  "issued": "2016-03-08T16:26+09:00",
+  "modified": "2021-02-26T17:21+09:00"
+}

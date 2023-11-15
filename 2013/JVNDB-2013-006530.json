@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006530.html",
+  "title": "libguestfs の inspect-fs.c におけるメモリ二重解放の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006530.html",
+  "description": "libguestfs の inspect-fs.c には、メモリを二重に解放する不備があるため、サービス運用妨害 (クラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-415: Double Free (二重解放) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/415.html",
+  "identifier": "JVNDB-2013-006530",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2124",
+      "source": "CVE",
+      "id": "CVE-2013-2124"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2124",
+      "source": "NVD",
+      "id": "CVE-2013-2124"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libguestfs:libguestfs",
+      "version": "2.2",
+      "vendor": "libguestfs",
+      "product": "libguestfs"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-05-29T14:37+09:00",
+  "issued": "2014-05-29T14:37+09:00",
+  "modified": "2014-05-29T14:37+09:00"
+}

@@ -1,0 +1,94 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001060.html",
+  "title": "Apache HTTP Server の mod-auth-mysql モジュールにおける SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001060.html",
+  "description": "Apache HTTP Server の mod-auth-mysql モジュールには、マルチバイト文字のエンコード処理に不備があるため、SQL インジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001060",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2384",
+      "source": "CVE",
+      "id": "CVE-2008-2384"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2384",
+      "source": "NVD",
+      "id": "CVE-2008-2384"
+    },
+    {
+      "text": "http://secunia.com/advisories/33627",
+      "source": "SECUNIA",
+      "id": "SA33627"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/33392",
+      "source": "BID",
+      "id": "33392"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/48163",
+      "source": "XF",
+      "id": "48163"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/0226",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-0226"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2011-01-12T15:03+09:00",
+  "issued": "2009-03-09T12:09+09:00",
+  "modified": "2011-01-12T15:03+09:00"
+}

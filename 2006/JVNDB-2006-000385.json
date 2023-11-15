@@ -1,0 +1,123 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000385.html",
+  "title": "Microsoft Office の文字列の解析処理におけるメモリ領域が破壊される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000385.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Office アプリケーションである Microsoft Access、Excel、Outlook、PowerPoint、Word には、以下の複数の問題が存在します。\r\n\r\n・不正な形式の文字列の解析に不備が存在するため、メモリ領域が破壊される問題 (CVE-2006-1316)\r\n\r\n・不正な形式のコントロールの解析に不備が存在するため、メモリ領域が破壊される問題 (CVE-2006-1318)\r\n\r\n・mso.dll における文字列の解析に不備が存在するため、整数オーバーフローが生じる問題 (CVE-2006-1540)\r\n\r\n・不正な形式のプロパティの解析に不備が存在するため、メモリ領域が破壊される問題 (CVE-2006-2389)\r\n\r\nリモートの攻撃者に悪用された場合、標的ユーザの権限で任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2006-000385",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA06-192A/index.html",
+      "source": "JVN",
+      "id": "JVNTA06-192A"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA06-167A/",
+      "source": "JVN",
+      "id": "JVNTA06-167A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA06-192A/",
+      "source": "JVNTR",
+      "id": "TRTA06-192A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA06-167A/",
+      "source": "JVNTR",
+      "id": "TRTA06-167A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1316",
+      "source": "CVE",
+      "id": "CVE-2006-1316"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1316",
+      "source": "NVD",
+      "id": "CVE-2006-1316"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2006/at060010.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2006-0010"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/2006/20060712_072107.html",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/2006/20060621_110225.html",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社の Microsoft Excel の脆弱性について"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA06-192A.html",
+      "source": "CERT-SA",
+      "id": "SA06-192A"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/580036",
+      "source": "CERT-VN",
+      "id": "VU#580036"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA06-167A.html",
+      "source": "CERT-TA",
+      "id": "TA06-167A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA06-192A.html",
+      "source": "CERT-TA",
+      "id": "TA06-192A"
+    },
+    {
+      "text": "http://secunia.com/advisories/21012/",
+      "source": "SECUNIA",
+      "id": "SA21012"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:access",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Access"
+    },
+    {
+      "text": "cpe:/a:microsoft:excel",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Excel"
+    },
+    {
+      "text": "cpe:/a:microsoft:outlook",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Outlook"
+    },
+    {
+      "text": "cpe:/a:microsoft:powerpoint",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft PowerPoint"
+    },
+    {
+      "text": "cpe:/a:microsoft:word",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Word"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

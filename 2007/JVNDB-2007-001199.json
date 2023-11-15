@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001199.html",
+  "title": "Elinks の add_filename_to_string 関数におけるフォーマットストリングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001199.html",
+  "description": "Elinks の add_filename_to_string 関数には、\"../po\" directory 内の信頼されていない gettext メッセージカタログを使用することによる、フォーマットストリング攻撃をされる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001199",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2027",
+      "source": "CVE",
+      "id": "CVE-2007-2027"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-2027",
+      "source": "NVD",
+      "id": "CVE-2007-2027"
+    },
+    {
+      "text": "http://secunia.com/advisories/25169",
+      "source": "SECUNIA",
+      "id": "SA25169"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/23844",
+      "source": "BID",
+      "id": "23844"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2007/1686",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2007-1686"
+    },
+    {
+      "text": "http://osvdb.org/35668",
+      "source": "OSVDB",
+      "id": "35668"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-134.html",
+      "id": "CWE-134",
+      "title": "書式文字列の問題(CWE-134)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:elinks:elinks",
+      "version": "2.2",
+      "vendor": "ELinks",
+      "product": "Elinks"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-11-10T13:05+09:00",
+  "issued": "2009-11-10T13:05+09:00",
+  "modified": "2009-11-10T13:05+09:00"
+}

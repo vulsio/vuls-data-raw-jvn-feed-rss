@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001800.html",
+  "title": "Android で使用される Linux Kernel の fs/proc/task_mmu.c における重要な物理アドレス情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001800.html",
+  "description": "Android で使用される Linux Kernel の fs/proc/task_mmu.c の pagemap_open 関数には、重要な物理アドレス情報を取得される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug 25739721 として公開しています。",
+  "identifier": "JVNDB-2016-001800",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0823",
+      "source": "CVE",
+      "id": "CVE-2016-0823"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0823",
+      "source": "NVD",
+      "id": "CVE-2016-0823"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:google:android",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2016-03-22T15:57+09:00",
+  "issued": "2016-03-22T15:57+09:00",
+  "modified": "2016-03-22T15:57+09:00"
+}

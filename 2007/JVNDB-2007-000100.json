@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000100.html",
+  "title": "Linux Kernel の不正な ELF ファイルによるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000100.html",
+  "description": "IA64 あるいは SPARC プラットフォーム上で動作する Linux Kernel には、不正な ELF ファイルを処理した場合に、メモリ領域の境界をまたいでマッピングしてしまう脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2007-000100",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4538",
+      "source": "CVE",
+      "id": "CVE-2006-4538"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-4538",
+      "source": "NVD",
+      "id": "CVE-2006-4538"
+    },
+    {
+      "text": "http://secunia.com/advisories/21999/",
+      "source": "SECUNIA",
+      "id": "SA21999"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19702",
+      "source": "BID",
+      "id": "19702"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/3670",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-3670"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2009-02-06T12:13+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2009-02-06T12:13+09:00"
+}

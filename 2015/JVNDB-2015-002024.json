@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002024.html",
+  "title": "Android 上で稼働する Mozilla Firefox の DNS リゾルバの PRNG の実装における DNS レスポンスを偽装される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002024.html",
+  "description": "Android 上で稼働する Mozilla Firefox (別名 Fennec) の DNS リゾルバの PRNG の実装は、クエリ ID の値および UDP ソースポート用に乱数を適切に生成しないため、DNS レスポンスを偽装される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2012-2808 と関連する問題です。",
+  "identifier": "JVNDB-2015-002024",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0800",
+      "source": "CVE",
+      "id": "CVE-2015-0800"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0800",
+      "source": "NVD",
+      "id": "CVE-2015-0800"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-04-03T19:42+09:00",
+  "issued": "2015-04-03T19:42+09:00",
+  "modified": "2015-04-03T19:42+09:00"
+}

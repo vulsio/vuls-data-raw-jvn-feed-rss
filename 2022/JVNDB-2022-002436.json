@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002436.html",
+  "title": "Apache Tomcat に Http11Processor インスタンスにおける競合状態による情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002436.html",
+  "description": "The Apache Software Foundationから、Apache Tomcatの脆弱性に対するアップデートが公開されました。\r\n\r\nHttp11Processorインスタンスにおける競合状態による情報漏えいの脆弱性 (CWE-362) - CVE-2021-43980\r\n\r\nTomcat 10 で導入し、Tomcat 9.0.47 以降にバックポートされた、ブロッキング処理の簡素化実装によって生じた脆弱性とのことです。",
+  "identifier": "JVNDB-2022-002436",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU98868043/",
+      "source": "JVN",
+      "id": "JVNVU#98868043"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-43980",
+      "source": "CVE",
+      "id": "CVE-2021-43980"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-43980",
+      "source": "NVD",
+      "id": "CVE-2021-43980"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2023-08-09T11:57+09:00",
+  "issued": "2022-10-03T14:24+09:00",
+  "modified": "2023-08-09T11:57+09:00"
+}

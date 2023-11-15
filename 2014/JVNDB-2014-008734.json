@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008734.html",
+  "title": "python-requests-Kerberos における認証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008734.html",
+  "description": "python-requests-Kerberos には、認証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2014-008734",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8650",
+      "source": "CVE",
+      "id": "CVE-2014-8650"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2014-8650",
+      "source": "NVD",
+      "id": "CVE-2014-8650"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2014/11/07/1",
+      "source": "関連文書",
+      "id": "Re: CVE Request for requests-kerberos"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2014-8650",
+      "source": "関連文書",
+      "id": "Bug 1161650 (CVE-2014-8650) - CVE-2014-8650 python-requests-kerberos: improper handling of mutual authentication"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:requests-kerberos_project:requests-kerberos",
+      "version": "2.2",
+      "vendor": "requests-Kerberos project",
+      "product": "python-requests-Kerberos"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-12-25T14:07+09:00",
+  "issued": "2019-12-25T14:07+09:00",
+  "modified": "2019-12-25T14:07+09:00"
+}

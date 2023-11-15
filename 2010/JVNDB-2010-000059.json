@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-000059.html",
+  "title": "EPSON 製プリンタドライバのインストーラがアクセス権を変更する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-000059.html",
+  "description": "EPSON 製のプリンタドライバのインストーラには、特定のフォルダへのアクセス権を変更してしまう脆弱性が存在します。\r\n\r\nEPSON 製のプリンタドライバをインストールすると、プログラムファイル等を格納するフォルダ(C:\\Program Files) のアクセス権を変更してしまいます。その結果、本来アクセス権のないユーザがそのフォルダ以下へアクセス可能になってしまいます。\r\n\r\n開発者によると、2010年5月発売当初から2010年11月25日までに出荷された製品に同梱されたプリンタドライバおよび上記期間に開発者サイトよりダウンロードしたプリンタドライバが本脆弱性の影響を受けます。\r\nまた、Windows Vista 以降の OS では本脆弱性の影響を受けません。",
+  "identifier": "JVNDB-2010-000059",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN62736872/index.html",
+      "source": "JVN",
+      "id": "JVN#62736872"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3920",
+      "source": "CVE",
+      "id": "CVE-2010-3920"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3920",
+      "source": "NVD",
+      "id": "CVE-2010-3920"
+    },
+    {
+      "text": "http://secunia.com/advisories/42540",
+      "source": "SECUNIA",
+      "id": "SA42540"
+    },
+    {
+      "text": "http://osvdb.org/69678",
+      "source": "OSVDB",
+      "id": "69678"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:epson:lp-s7100",
+      "version": "2.2",
+      "vendor": "セイコーエプソン株式会社",
+      "product": "LP-S7100 用のドライバ"
+    },
+    {
+      "text": "cpe:/a:epson:lp-s9000",
+      "version": "2.2",
+      "vendor": "セイコーエプソン株式会社",
+      "product": "LP-S9000 用のドライバ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2010-12-08T14:01+09:00",
+  "issued": "2010-12-08T14:01+09:00",
+  "modified": "2010-12-08T14:01+09:00"
+}

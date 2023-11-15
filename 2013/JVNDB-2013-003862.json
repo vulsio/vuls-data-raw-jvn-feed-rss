@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003862.html",
+  "title": "Xen の Elf パーサにおける脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003862.html",
+  "description": "Xen の Elf パーサ (libelf) には、予期しない計算を含む \"ポインタの逆参照\" に関する処理に不備があるため、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003862",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2195",
+      "source": "CVE",
+      "id": "CVE-2013-2195"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2195",
+      "source": "NVD",
+      "id": "CVE-2013-2195"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:citrix:xenserver",
+      "version": "2.2",
+      "vendor": "シトリックス・システムズ",
+      "product": "Citrix XenServer"
+    },
+    {
+      "text": "cpe:/o:xen:xen",
+      "version": "2.2",
+      "vendor": "Xen プロジェクト",
+      "product": "Xen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-11-08T15:59+09:00",
+  "issued": "2013-08-27T13:38+09:00",
+  "modified": "2013-11-08T15:59+09:00"
+}

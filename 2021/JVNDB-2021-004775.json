@@ -1,0 +1,186 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-004775.html",
+  "title": "OpenSSL における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-004775.html",
+  "description": "OpenSSL には、入力長がプラットフォーム上の整数の最大許容長に近い場合、EVP_CipherUpdate、EVP_EncryptUpdate、EVP_DecryptUpdate の呼び出しに不備があるため、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2021-004775",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU94508446/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94508446"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU90348129/",
+      "source": "JVN",
+      "id": "JVNVU#90348129"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23840",
+      "source": "CVE",
+      "id": "CVE-2021-23840"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-23840",
+      "source": "NVD",
+      "id": "CVE-2021-23840"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-336-06",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-336-06"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/190.html",
+      "id": "CWE-190",
+      "title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:device_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Device Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server64",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server(64)"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server_r",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server-R"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_ops_center_analyzer_viewpoint",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Ops Center Analyzer viewpoint"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_ops_center_common_services",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Ops Center Common Services"
+    },
+    {
+      "text": "cpe:/a:hitachi:tuning_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Tuning Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server_base",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server Base"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server_base64",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server Base(64)"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Architect"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform_64",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform(64)"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:oracle:enterprise_manager_ops_center",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Enterprise Manager Ops Center"
+    },
+    {
+      "text": "cpe:/a:oracle:graalvm",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle GraalVM"
+    },
+    {
+      "text": "cpe:/a:oracle:mysql",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/a:oracle:nosql_database",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle NoSQL Database"
+    },
+    {
+      "text": "cpe:/a:tenable:log_correlation_engine",
+      "version": "2.2",
+      "vendor": "Tenable, Inc.",
+      "product": "Log Correlation Engine"
+    },
+    {
+      "text": "cpe:/a:tenable:nessus_network_monitor",
+      "version": "2.2",
+      "vendor": "Tenable, Inc.",
+      "product": "Nessus Network Monitor"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-07-20T15:25+09:00",
+  "issued": "2021-11-30T09:23+09:00",
+  "modified": "2023-07-20T15:25+09:00"
+}

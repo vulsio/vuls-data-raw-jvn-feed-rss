@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001955.html",
+  "title": "BlueDriver LSB2 に認証なしで Bluetooth アクセスが可能な問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001955.html",
+  "description": "Lemur Vehicle Monitors の BlueDriver LSB2 は、OBD2 ポートに接続して車両の性能に関する情報を提供するデバイスです。BlueDriver LSB2 は Bluetooth によるアクセスに PIN を必要としないため、Bluetooth の無線範囲内にいる誰もが車両の CAN (Controller Area Network) バスに任意のコマンドを送信することが可能です。\r\n\r\n重要な機能に対する認証の欠如 (CWE-306) - CVE-2016-2354\r\nCERT/CC は、BlueDriver LSB2 へ Bluetooth でアクセスする際に PIN が必要ないことを確認しました。この問題により、Bluetooth の無線範囲内にいる誰もが、当該車両の標準的な OBD2 診断情報である燃費やトラブルコード、速度、排気量の情報などを取得することが可能です。また、攻撃者は CAN (Controller Area Network) バスに対して、任意のコマンドを送信することが可能です。車両によっては、攻撃者がステアリングやブレーキなどに影響を与える可能性があります。\r\n\r\nCWE-306: Missing Authentication for Critical Function\r\nhttp://cwe.mitre.org/data/definitions/306.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-284 として公開されています。\r\n\r\nCWE-284: Improper Access Control\r\nhttp://cwe.mitre.org/data/definitions/284.html",
+  "identifier": "JVNDB-2016-001955",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU92749596",
+      "source": "JVN",
+      "id": "JVNVU#92749596"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2354",
+      "source": "CVE",
+      "id": "CVE-2016-2354"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2354",
+      "source": "NVD",
+      "id": "CVE-2016-2354"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/615456",
+      "source": "CERT-VN",
+      "id": "VU#615456"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:lemur_monitors:bluedriver",
+      "version": "2.2",
+      "vendor": "Lemur Vehicle Monitors",
+      "product": "BlueDriver"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:L/Au:N/C:P/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-05-31T17:28+09:00",
+  "issued": "2016-04-11T15:52+09:00",
+  "modified": "2016-05-31T17:28+09:00"
+}

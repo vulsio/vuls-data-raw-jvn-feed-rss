@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-007580.html",
+  "title": "ISC BIND に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-007580.html",
+  "description": "ISC BIND には、次の複数の脆弱性が存在します。\r\n\r\n　　* Response Policy Zones (RPZ) を使用し NSDNAME あるいは NSIP ポリシールールを設定している場合のエラー処理におけるサービス運用妨害 (DoS) - CVE-2017-3140\r\n\r\n　　* Windows 版 BIND インストーラによってサービスに登録されるプログラムパスがクォートされていない - CVE-2017-3141",
+  "identifier": "JVNDB-2017-007580",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU94071181",
+      "source": "JVN",
+      "id": "JVNVU#94071181"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3140",
+      "source": "CVE",
+      "id": "CVE-2017-3140"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3141",
+      "source": "CVE",
+      "id": "CVE-2017-3141"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3140",
+      "source": "NVD",
+      "id": "CVE-2017-3140"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3141",
+      "source": "NVD",
+      "id": "CVE-2017-3141"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2017-06-15-bind9-vuln-rpz-loop.html",
+      "source": "JPRS",
+      "id": "BIND 9.xの脆弱性（サービス性能の劣化及びパケットの連続送信）について（CVE-2017-3140）"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2017-06-15-bind9-vuln-unquoted-service-path.html",
+      "source": "JPRS",
+      "id": "（緊急）BIND 9.xの脆弱性（権限の昇格）について（CVE-2017-3141）"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "3.7",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+    }
+  ],
+  "date": "2019-08-27T17:27+09:00",
+  "issued": "2017-09-26T12:06+09:00",
+  "modified": "2019-08-27T17:27+09:00"
+}

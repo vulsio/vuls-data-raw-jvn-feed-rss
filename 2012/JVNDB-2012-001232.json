@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001232.html",
+  "title": "Linux kernel の xfs_readlink 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001232.html",
+  "description": "Linux kernel の XFS の fs/xfs/xfs_vnodeops.c 内にある xfs_readlink 関数には、CONFIG_XFS_DEBUG が無効の場合、バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2012-001232",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4077",
+      "source": "CVE",
+      "id": "CVE-2011-4077"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4077",
+      "source": "NVD",
+      "id": "CVE-2011-4077"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-01-31T16:19+09:00",
+  "issued": "2012-01-31T16:19+09:00",
+  "modified": "2012-01-31T16:19+09:00"
+}

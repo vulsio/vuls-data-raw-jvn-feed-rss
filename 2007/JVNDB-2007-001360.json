@@ -1,0 +1,39 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001360.html",
+  "title": "FreeBSD の jail rc.d スクリプトにおける任意のファイルを上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001360.html",
+  "description": "FreeBSD の jail rc.d スクリプトは、jail 起動中に /var/log/console.log へ書き込まれている際、またはファイルシステムがマウントまたはマウント解除されている際、パス名を確認しないため、任意のファイルを上書きされる、または jail の外にファイルをマウント／マウント解除される脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001360",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0166",
+      "source": "CVE",
+      "id": "CVE-2007-0166"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-0166",
+      "source": "NVD",
+      "id": "CVE-2007-0166"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:freebsd:freebsd",
+      "version": "2.2",
+      "vendor": "FreeBSD",
+      "product": "FreeBSD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-06-26T15:45+09:00",
+  "issued": "2012-06-26T15:45+09:00",
+  "modified": "2012-06-26T15:45+09:00"
+}

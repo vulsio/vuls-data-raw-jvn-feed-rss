@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005490.html",
+  "title": "NetBSD で使用される tnftp の usr.bin/ftp/fetch.c 内の fetch_url 関数における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005490.html",
+  "description": "NetBSD で使用される tnftp の usr.bin/ftp/fetch.c 内の fetch_url 関数には、任意のコマンドを実行される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-77: Improper Neutralization of Special Elements used in a Command (コマンドインジェクション) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/77.html",
+  "identifier": "JVNDB-2014-005490",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96447236/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96447236"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8517",
+      "source": "CVE",
+      "id": "CVE-2014-8517"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8517",
+      "source": "NVD",
+      "id": "CVE-2014-8517"
+    },
+    {
+      "text": "http://seclists.org/oss-sec/2014/q4/459",
+      "source": "関連文書",
+      "id": "ftp(1) can be made execute arbitrary commands by malicious webserver"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:netbsd:netbsd",
+      "version": "2.2",
+      "vendor": "NetBSD",
+      "product": "NetBSD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-02-02T13:26+09:00",
+  "issued": "2014-11-19T10:06+09:00",
+  "modified": "2015-02-02T13:26+09:00"
+}

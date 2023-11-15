@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013052.html",
+  "title": "Visual Studio Live Share におけるなりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013052.html",
+  "description": "Visual Studio Live Share には、Live Share セッションに接続されたゲストがセッションホストによって指定された任意の URL にリダイレクトされる場合、なりすまされる脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を「Visual Studio Live Share のなりすましの脆弱性」として公開しています。",
+  "identifier": "JVNDB-2019-013052",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-1486",
+      "source": "CVE",
+      "id": "CVE-2019-1486"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-1486",
+      "source": "NVD",
+      "id": "CVE-2019-1486"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20191211-ms.html",
+      "source": "IPA CFA",
+      "id": "Microsoft 製品の脆弱性対策について(2019年12月)"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2019/at190046.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2019-0046"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/601.html",
+      "id": "CWE-601",
+      "title": "オープンリダイレクト(CWE-601)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:visual_studio",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Visual Studio"
+    },
+    {
+      "text": "cpe:/a:microsoft:visual_studio_live_share",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Visual Studio Live Share"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+    }
+  ],
+  "date": "2019-12-19T10:45+09:00",
+  "issued": "2019-12-19T10:45+09:00",
+  "modified": "2019-12-19T10:45+09:00"
+}

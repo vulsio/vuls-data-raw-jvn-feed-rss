@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007676.html",
+  "title": "QEMU における有効期限後のメモリの解放の欠如に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007676.html",
+  "description": "QEMU には、有効期限後のメモリの解放の欠如に関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2021-007676",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-3544",
+      "source": "CVE",
+      "id": "CVE-2021-3544"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3544",
+      "source": "NVD",
+      "id": "CVE-2021-3544"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2021/05/31/1",
+      "source": "関連文書",
+      "id": "QEMU: security issues in vhost-user-gpu"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1958935",
+      "source": "関連文書",
+      "id": "Bug 1958935 (CVE-2021-3544) - CVE-2021-3544 QEMU: vhost-user-gpu: multiple memory leaks"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/401.html",
+      "id": "CWE-401",
+      "title": "有効期限後のメモリの解放の欠如(CWE-401)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2022-02-21T15:30+09:00",
+  "issued": "2022-02-21T15:30+09:00",
+  "modified": "2022-02-21T15:30+09:00"
+}

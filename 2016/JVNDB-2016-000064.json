@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000064.html",
+  "title": "WordPress 用プラグイン「Ninja Forms」における PHP オブジェクトインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000064.html",
+  "description": "WordPress 用プラグイン「Ninja Forms」には、信頼できない POST の値をアンシリアライズする問題に起因する PHP オブジェクトインジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2016-000064",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN44657371/index.html",
+      "source": "JVN",
+      "id": "JVN#44657371"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1209",
+      "source": "CVE",
+      "id": "CVE-2016-1209"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1209",
+      "source": "NVD",
+      "id": "CVE-2016-1209"
+    },
+    {
+      "text": "http://www.pritect.net/blog/ninja-forms-2-9-42-critical-security-vulnerabilities",
+      "source": "関連文書",
+      "id": "Ninja Forms <= 2.9.42 Multiple Critical Security Vulnerabilities"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ninjaforms:ninja_forms",
+      "version": "2.2",
+      "vendor": "WP Ninjas, LLC.",
+      "product": "Ninja Forms"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2016-06-01T17:01+09:00",
+  "issued": "2016-05-13T12:06+09:00",
+  "modified": "2016-06-01T17:01+09:00"
+}

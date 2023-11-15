@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001324.html",
+  "title": " ある種の範囲チェックを破棄するC コンパイラの最適化の問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001324.html",
+  "description": "C コンパイラの中には、最適化処理において、ポインタ演算のオーバーフローチェックを行うコードブロックを省略することがあります。従って、こうしたコンパイラを使ってコンパイルしたアプリケーションは、バッファオーバーフローの影響を受ける可能性があります。\r\n\r\ngcc 4.2 およびそれ以降のバージョンで本問題が確認されていますが、他のベンダが提供するコンパイラにも同様の問題が存在する可能性があります。\r\n\r\nC 言語で次のような型が与えられたとき\r\n\r\n     　char *buf;\r\n     　int len;\r\n\r\nC コンパイラの中には buf+len >= buf が成立すると仮定するものが存在します。その結果、次に示すような長さチェックを行うコードがコンパイラの最適化によって省かれてしまうことがあります。\r\n\r\n      len = 1<<30;\r\n      [...]\r\n      if(buf+len < buf)  /* 長さチェック */\r\n        [...オーバーフローに対処するコード...]\r\n\r\n長さチェックを行うコードが最適化により省略された場合、それに続く len を扱うコードがオーバーフローを引き起こす可能性があります。その結果、この手のチェックを行うプログラムはバッファオーバーフローに対して脆弱になる可能性があります。\r\n\r\n上述のような長さチェックの手法はC言語の仕様上は未定義となっている部分の動作に依存しています。 コンパイラが行うこのような最適化は、ISO/IEC 9899:1999 C specification (§6.5.6p8) の定める未定義の動作に該当するため、C 言語の仕様に沿った実装であると考えられます。コンパイラは、たとえ現時点では該当部分のオブジェクトコードを生成していたとしても、将来にわたってそうする義務はありません。むしろそのような箇所は、将来、最適化の対象となる可能性があります。コンパイラに対するこうした変更がプログラム上の想定される動作を無効にしないためにも、開発者は CERT C Secure Coding recommendation の MSC15-A および ARR38-Cを参考にエラーを回避するべきです。コンパイラは未定義の動作に対して警告メッセージを出力する義務はないため、多くの場合、問題となる動作を発見することは困難であると考えられます。\r\n\r\nこの問題はコンパイラ自身の脆弱性ではない点に注意してください。むしろ、上述のようなコードを含み、かつ本問題の影響を受けるコンパイラを使ってコンパイルされたプログラムに脆弱性が作りこまれる可能性があることが問題です。 ",
+  "identifier": "JVNDB-2008-001324",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23162289/",
+      "source": "JVN",
+      "id": "JVNVU#162289"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1685",
+      "source": "CVE",
+      "id": "CVE-2008-1685"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-1685",
+      "source": "NVD",
+      "id": "CVE-2008-1685"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2008/wr081402.html#3",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2008-1403"
+    },
+    {
+      "text": "https://www.securecoding.cert.org/confluence/display/seccode/MSC15-A.+Do+not+depend+on+undefined+behavior",
+      "source": "CERT Secure Coding",
+      "id": "MSC15-A"
+    },
+    {
+      "text": "https://www.securecoding.cert.org/confluence/display/seccode/ARR38-C.+Do+not+add+or+subtract+an+integer+to+a+pointer+if+the+resulting+value+does+not+refer+to+an+element+within+the+array",
+      "source": "CERT Secure Coding",
+      "id": "ARR38-C"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/162289",
+      "source": "CERT-VN",
+      "id": "VU#162289"
+    },
+    {
+      "text": "http://www.fefe.de/intof.html",
+      "source": "fefes",
+      "id": "intof"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gcc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU GCC"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-05-14T12:31+09:00",
+  "issued": "2008-05-14T12:31+09:00",
+  "modified": "2008-05-14T12:31+09:00"
+}

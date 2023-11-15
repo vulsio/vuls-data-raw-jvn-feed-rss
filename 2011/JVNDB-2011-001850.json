@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001850.html",
+  "title": "ISC BIND 9.8 系にサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001850.html",
+  "description": "ISC BIND 9 には、特定の RPZ 設定を実装している場合においてサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC BIND 9.8 には、キャッシュ DNS サーバがクエリを受信したときに named プロセスが終了する、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n本脆弱性は、RPZ 機能を有効にした named において、RPZ のゾーンファイルに DNAME レコードおよび特定の CNAME レコードが含まれている場合に発生します。\r\n\r\nISC から、以下の脆弱性情報が公開されています。\r\n\r\n\"A defect in the affected versions of BIND could cause the \"named\" process to exit when queried, if the server has recursion enabled and was configured with an RPZ zone containing certain types of records. Specifically, these are any DNAME record and certain kinds of CNAME records.\r\n\r\nThe patch release of BIND 9.8.0-P4 alters the behavior of RPZ zones by ignoring any DNAME records in an RPZ zone, and correctly returning CNAME records from RPZ zones.\r\n\r\nNote that DNAME has no defined effect on the RPZ engine and its presence in an RPZ zone is ignored. The definitive list of meaningful patterns in an RPZ zone is given in the BIND 9 Administrative Reference Manual and also in ISC Technical Note 2010-1.\"",
+  "identifier": "JVNDB-2011-001850",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU137968",
+      "source": "JVN",
+      "id": "JVNVU#137968"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2465",
+      "source": "CVE",
+      "id": "CVE-2011-2465"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2465",
+      "source": "NVD",
+      "id": "CVE-2011-2465"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2011/at110019.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2011-0019"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/137968",
+      "source": "CERT-VN",
+      "id": "VU#137968"
+    },
+    {
+      "text": "http://jprs.jp/tech/security/2011-07-05-bind98-vuln-rpz-dname.html",
+      "source": "JPRS",
+      "id": "BIND 9.8.xのResponse Policy Zones（RPZ）機能の実装上のバグによるnamedのサービス停止について"
+    },
+    {
+      "text": "http://secunia.com/advisories/45185",
+      "source": "SECUNIA",
+      "id": "SA45185"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/48565",
+      "source": "BID",
+      "id": "48565"
+    },
+    {
+      "text": "http://www.securitytracker.com/id/1025743",
+      "source": "SECTRACK",
+      "id": "1025743"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-07-11T14:25+09:00",
+  "issued": "2011-07-11T14:25+09:00",
+  "modified": "2011-07-11T14:25+09:00"
+}

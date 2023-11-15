@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000209.html",
+  "title": "XFree86 の XDM におけるポートへのアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000209.html",
+  "description": "一部の Linux ディストリビューションに含まれている XFree86 パッケージの XDM には、設定ファイル上で DisplayManager.requestPort の値を \"0\" に設定している場合においても、\"chooserFd\" TCP ソケットが開かれてしまい、ネットワークを介した X クライアントからのアクセスを受けてしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000209",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0419",
+      "source": "CVE",
+      "id": "CVE-2004-0419"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0419",
+      "source": "NVD",
+      "id": "CVE-2004-0419"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10423",
+      "source": "BID",
+      "id": "10423"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

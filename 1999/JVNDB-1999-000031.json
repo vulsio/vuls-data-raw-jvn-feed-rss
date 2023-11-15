@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/1999/JVNDB-1999-000031.html",
+  "title": "WU-FTPD の mapped_path におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/1999/JVNDB-1999-000031.html",
+  "description": "WU-FTPD の mapped_path には、スタック上のバッファにコピーした際にデータを格納するバッファサイズを適切にチェックしないため、バッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-1999-000031",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-0878",
+      "source": "CVE",
+      "id": "CVE-1999-0878"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-1999-0878",
+      "source": "NVD",
+      "id": "CVE-1999-0878"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-1999-13.html",
+      "source": "CERT-A",
+      "id": "CA-1999-13"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/599",
+      "source": "BID",
+      "id": "599"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:university_of_washington:wu-ftpd",
+      "version": "2.2",
+      "vendor": "University of Washington",
+      "product": "WU-FTPD"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

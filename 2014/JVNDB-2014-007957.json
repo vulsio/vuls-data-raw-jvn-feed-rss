@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007957.html",
+  "title": "Google Chrome の content/renderer/device_sensors/device_orientation_event_pump.cc における音声信号をキャプチャされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007957.html",
+  "description": "Google Chrome の content/renderer/device_sensors/device_orientation_event_pump.cc は、ハイレートのジャイロスコープのデータへのアクセスを適切に制限しないため、デバイスの物理環境から音声信号をキャプチャされる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2015-1231 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2014-007957",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9689",
+      "source": "CVE",
+      "id": "CVE-2014-9689"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9689",
+      "source": "NVD",
+      "id": "CVE-2014-9689"
+    },
+    {
+      "text": "https://crypto.stanford.edu/gyrophone/files/gyromic.pdf",
+      "source": "関連文書",
+      "id": "Gyrophone: Recognizing Speech From Gyroscope Signals"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-03-10T16:50+09:00",
+  "issued": "2015-03-10T16:50+09:00",
+  "modified": "2015-03-10T16:50+09:00"
+}

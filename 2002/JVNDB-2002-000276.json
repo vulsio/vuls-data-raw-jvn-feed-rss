@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000276.html",
+  "title": "Microsoft Virtual Machine の Load メソッドにおける 任意の .cab アーカイブが呼び出される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000276.html",
+  "description": "Microsoft VM に実装されている com.ms.vm.loader.CabCracker クラスを呼び出す load() メソッドにおいて、 load0() メソッドの処理に不備が存在し、セキュリティチェックを省略してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2002-000276",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1257",
+      "source": "CVE",
+      "id": "CVE-2002-1257"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1257",
+      "source": "NVD",
+      "id": "CVE-2002-1257"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6137",
+      "source": "BID",
+      "id": "6137"
+    },
+    {
+      "text": "http://www.securiteam.com/windowsntfocus/6B00E0060S.html",
+      "source": "SECTEAM",
+      "id": "6B00E0060S"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows-9x",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 9X"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_nt",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows NT"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

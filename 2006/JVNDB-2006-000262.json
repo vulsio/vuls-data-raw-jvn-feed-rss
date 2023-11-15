@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000262.html",
+  "title": "PHP の zend_hash_del() 関数における認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000262.html",
+  "description": "PHP には、zend_hash.c の zend_hash_del() 関数に不備があるため、unset() 関数による変数の破棄が適切に行われない脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000262",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3017",
+      "source": "CVE",
+      "id": "CVE-2006-3017"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3017",
+      "source": "NVD",
+      "id": "CVE-2006-3017"
+    },
+    {
+      "text": "http://secunia.com/advisories/19927",
+      "source": "SECUNIA",
+      "id": "SA19927"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17843",
+      "source": "BID",
+      "id": "17843"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

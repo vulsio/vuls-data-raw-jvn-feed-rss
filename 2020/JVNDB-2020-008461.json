@@ -1,0 +1,35 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-008461.html",
+  "title": "CTKD を用いる Bluetooth BR/EDR および BLE 端末において鍵情報が上書きされる問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-008461.html",
+  "description": "Bluetooth Basic Rate/Enhanced Data Rate (BR/EDR) と Bluetooth Low Energy (BLE) は本来互換性を持ちませんが、これらを両方ともサポートする機器においては、Cross-Transport Key Derivation (CTKD) を用いたペアリングを行うことにより、相互接続に必要な Long Term Key (LTK) や Link Key (LK) の生成・交換を同時に管理することができます。\r\n\r\nCTKD によって生成された LTK や LK が、機器間の通信に割り込んだ攻撃者により上書き可能となる脆弱性 (CVE-2020-15802) が発見されました。この問題は \"BLURtooth\" と呼称されています。攻撃者はこの脆弱性を悪用して鍵情報を上書きし、認証されていない鍵の使用や、より強度の低い鍵の使用を強制することが可能です。\r\n\r\n攻撃を成功させるためには、以下の条件が必要となります。\r\n\r\n* 攻撃対象の機器が Bluetooth Core Specification 4.0 から 5.0 に基づいて CTKD を実装していること\r\n* 攻撃対象の機器が、JustWorks のような認証を必要としないペアリング方式あるいはペアリングの際にユーザによる操作を必要としない方式を利用していること\r\n\r\n\r\nこれらの条件を満たす脆弱な機器に対して攻撃者の機器がペアリングした場合、攻撃対象の機器が他の端末との通信のために生成した既存の LTK や LK が攻撃者により上書きされる可能性があります。",
+  "identifier": "JVNDB-2020-008461",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU95246155",
+      "source": "JVN",
+      "id": "JVNVU#95246155"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15802",
+      "source": "CVE",
+      "id": "CVE-2020-15802"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/589825",
+      "source": "CERT-VN",
+      "id": "VU#589825"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bluetooth:Bluetooth_SIG_multiple_product",
+      "version": "2.2",
+      "vendor": "Bluetooth SIG, Inc.",
+      "product": "(複数の製品)"
+    }
+  ],
+  "date": "2020-09-14T15:38+09:00",
+  "issued": "2020-09-14T15:38+09:00",
+  "modified": "2020-09-14T15:38+09:00"
+}

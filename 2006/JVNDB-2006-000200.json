@@ -1,0 +1,103 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000200.html",
+  "title": "Mozilla 製品の CSS border-rendering コードにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000200.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMozilla Firefox には、以下の複数の問題が存在します。\r\n\r\n1) 連続した特定の HTML タグの処理に不備が存在し、メモリ領域が破壊される問題が存在します。(CVE-2006-0749)\r\n\r\nリモートの攻撃者に悪用された場合、Firefox を実行するユーザの権限で任意のコードが実行される可能性があります。\r\n\r\n2) 特権を持つ組み込み XBL バインディングの編集スコープには、Web コンテンツからの保護が不完全である不備が存在し、valueOf.call() および valueOf.apply() メソッドや、DOM document.body プロトタイプチェインを用いてアクセス可能である問題が存在します。(CVE-2006-1733)\r\n\r\nリモートの攻撃者に悪用された場合、特権で任意のスクリプトが実行される可能性があります。\r\n\r\n3) Object.watch() メソッドを使用して内部関数オブジェクトである clone parent に不適切にアクセスすることが可能である問題が存在します。(CVE-2006-1734)\r\n\r\nリモートの攻撃者に悪用された場合、特権で任意のスクリプトが実行される可能性があります。\r\n\r\n4) XBL.method.eval メソッドを使用して、誤って特権が付与された JavaScript 関数を作成することが可能である問題が存在します。(CVE-2006-1735)\r\n\r\nリモートの攻撃者に悪用された場合、特権で任意のスクリプトが実行される可能性があります。\r\n\r\n5) 以下の複数の不備によりメモリ領域を破壊される問題が存在します。(CVE-2006-1739/CVE-2006-1737/CVE-2006-1738/CVE-2006-1790)\r\n\r\n・不正な CSS border-rendering プロパティの処理\r\n・JavaScript の過度に長い正規表現の処理による整数オーバフロー\r\n・display プロパティの不正な -moz-grid および -moz-grid-group の処理\r\n・不正な InstallTrigger.install() メソッドの処理\r\n\r\nリモートの攻撃者に悪用された場合、Firefox がクラッシュする、あるいは Firefox を実行するユーザの権限で任意のコードが実行される可能性があります。\r\n\r\n6) JavaScript エンジンの一時変数の処理ルーチンがガベージコレクションから適切に保護されていないため、一時変数の生存期間中にガベージコレクションが発生した場合に、メモリ領域が破壊される問題が存在します。(CVE-2006-1742)\r\n\r\nリモートの攻撃者に悪用された場合、Firefox を実行するユーザの権限で任意のコードが実行される可能性があります。",
+  "identifier": "JVNDB-2006-000200",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA06-107A/index.html",
+      "source": "JVN",
+      "id": "JVNTA06-107A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA06-107A/",
+      "source": "JVNTR",
+      "id": "TRTA06-107A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1739",
+      "source": "CVE",
+      "id": "CVE-2006-1739"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1739",
+      "source": "NVD",
+      "id": "CVE-2006-1739"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA06-107A.html",
+      "source": "CERT-SA",
+      "id": "SA06-107A"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/935556",
+      "source": "CERT-VN",
+      "id": "VU#935556"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA06-107A.html",
+      "source": "CERT-TA",
+      "id": "TA06-107A"
+    },
+    {
+      "text": "http://secunia.com/advisories/19631/",
+      "source": "SECUNIA",
+      "id": "SA19631"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/1356",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-1356"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

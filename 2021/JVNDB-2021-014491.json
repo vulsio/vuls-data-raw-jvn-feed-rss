@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-014491.html",
+  "title": "Akka HTTP における再帰制御に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-014491.html",
+  "description": "Akka HTTP には、再帰制御に関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2021-014491",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-42697",
+      "source": "CVE",
+      "id": "CVE-2021-42697"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-42697",
+      "source": "NVD",
+      "id": "CVE-2021-42697"
+    },
+    {
+      "text": "http://packetstormsecurity.com/files/167018/Akka-HTTP-10.1.14-Denial-Of-Service.html",
+      "source": "関連文書",
+      "id": "Akka HTTP 10.1.14 Denial Of Service"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/674.html",
+      "id": "CWE-674",
+      "title": "不適切な再帰制御(CWE-674)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:akka:http_server",
+      "version": "2.2",
+      "vendor": "Akka",
+      "product": "Akka HTTP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2022-10-20T09:07+09:00",
+  "issued": "2022-10-20T09:07+09:00",
+  "modified": "2022-10-20T09:07+09:00"
+}

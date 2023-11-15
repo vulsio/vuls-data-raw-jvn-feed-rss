@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007644.html",
+  "title": "OpenEXR における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007644.html",
+  "description": "OpenEXR には、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-007644",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-23169",
+      "source": "CVE",
+      "id": "CVE-2021-23169"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-23169",
+      "source": "NVD",
+      "id": "CVE-2021-23169"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1947612",
+      "source": "関連文書",
+      "id": "Bug 1947612 (CVE-2021-23169) - CVE-2021-23169 OpenEXR: Heap-buffer-overflow in Imf_2_5::copyIntoFrameBuffer"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openexr:openexr",
+      "version": "2.2",
+      "vendor": "OpenEXR",
+      "product": "OpenEXR"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-02-18T16:27+09:00",
+  "issued": "2022-02-18T16:27+09:00",
+  "modified": "2022-02-18T16:27+09:00"
+}

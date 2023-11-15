@@ -1,0 +1,92 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000140.html",
+  "title": "Mozilla Firefox における privileged content をロードするプラグインにより任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000140.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nFirefox 1.0 以前、Mozilla 1.7.5 以前には、以下の複数のセキュリティ問題が存在します。\r\n\r\n・「安全なサイト」を示す鍵アイコンやセキュリティ証明書の表示を偽装可能な問題 (mfsa2005-14、CAN-2005-0593)\r\n\r\n・UTF-8 から Unicode への変換過程でヒープオーバーフローが生じる問題 (mfsa2005-15、CAN-2005-0592)\r\n\r\n・任意のホストから XSLT スタイルシートを取り込むことが可能な問題 (mfsa2005-20、CAN-2005-0588)\r\n\r\n・意図的な Content-Disposition ヘッダにより、ダウンロードダイアログに表示されるファイルタイプを偽装可能な問題 (mfsa2005-22、CAN-2005-0586)\r\n\r\n・HTTP 認証プロンプトが、認証を要求したタブと異なるタブのコンテンツ上に表示されるため、認証情報が奪取される問題 (mfsa2005-24、CAN-2005-0584)\r\n\r\n・「javascript:」または「date:」形式の URI のリンクをタブ上にドラッグアンドドロップすると、そのタブコンテンツにおいてスクリプトが実行されるため、クロスサイトスクリプティング攻撃が可能な問題 (mfsa2005-26、CAN-2005-0231)\r\n\r\n・特定のプラグインにより、様々な設定を変更するコンテンツ (about:config) が読み込みが可能であり、偽装したサイト上でユーザのクリック操作を誘導することによりその真偽値を変更し、結果として任意のコードが実行可能な問題 (mfsa2005-27、CAN-2005-0232、CAN-2005-0527)\r\n\r\n・特定のプラグインが予測可能な一時ディレクトリ名を使用しているため、ローカルの攻撃者がシンボリックリンク攻撃が可能な問題 (mfsa2005-28、CAN-2005-0578)\r\n\r\n・国際化ドメイン名 (IDN) を利用することでドメイン名を偽装可能な問題 (mfsa2005-29、CAN-2005-0233)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、標的ユーザを悪意ある Web ページに誘導し、特定の操作を誘導することにより、結果として標的ユーザの情報を奪取することが可能です。また、上記のいくつかの問題を組み合わせることにより、任意のコードを実行することが可能です。\r\n\r\n尚、CAN-2005-0586 の問題に関してのみ、Mozilla 1.7.5 において解消されています。",
+  "identifier": "JVNDB-2005-000140",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0527",
+      "source": "CVE",
+      "id": "CVE-2005-0527"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0527",
+      "source": "NVD",
+      "id": "CVE-2005-0527"
+    },
+    {
+      "text": "http://secunia.com/advisories/14160/",
+      "source": "SECUNIA",
+      "id": "SA14160"
+    },
+    {
+      "text": "http://secunia.com/advisories/14163/",
+      "source": "SECUNIA",
+      "id": "SA14163"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12728",
+      "source": "BID",
+      "id": "12728"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12466",
+      "source": "BID",
+      "id": "12466"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12465",
+      "source": "BID",
+      "id": "12465"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12655",
+      "source": "BID",
+      "id": "12655"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12659",
+      "source": "BID",
+      "id": "12659"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

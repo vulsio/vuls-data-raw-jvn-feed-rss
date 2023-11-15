@@ -1,0 +1,70 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005068.html",
+  "title": "Centreon および Centreon Enterprise Server の displayServiceStatus.php における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005068.html",
+  "description": "Centreon および Centreon Enterprise Server の displayServiceStatus.php には、command_line 変数に関する処理に不備があるため、任意のコマンドを実行される脆弱性が存在します。\r\n\r\nなお、JVNVU#96948961 では、CWE-77 として公開されています。\r\n\r\nCWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')\r\nhttp://cwe.mitre.org/data/definitions/77.html",
+  "identifier": "JVNDB-2014-005068",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96948961",
+      "source": "JVN",
+      "id": "JVNVU#96948961"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3829",
+      "source": "CVE",
+      "id": "CVE-2014-3829"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3829",
+      "source": "NVD",
+      "id": "CVE-2014-3829"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/298796",
+      "source": "CERT-VN",
+      "id": "VU#298796"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2014/Oct/78",
+      "source": "関連文書",
+      "id": "Multiple unauthenticated SQL injections and unauth enticated remote command injection in Centreon <= 2.5.2 and Centreon Enterprise Server <= 2.2|3.0"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:centreon:centreon",
+      "version": "2.2",
+      "vendor": "Centreon",
+      "product": "Centreon"
+    },
+    {
+      "text": "cpe:/a:centreon:centreon_enterprise_server",
+      "version": "2.2",
+      "vendor": "Centreon",
+      "product": "Centreon Enterprise Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-10-28T17:36+09:00",
+  "issued": "2014-10-28T17:36+09:00",
+  "modified": "2014-10-28T17:36+09:00"
+}

@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004282.html",
+  "title": "Mono の RuntimeHelpers.InitializeArray メソッドにおける読取り専用の内部データ構造を変更される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004282.html",
+  "description": "Mono の metadata/icall.c の RuntimeHelpers.InitializeArray メソッドは、Moonlight が使用される際、データタイプを適切に制限しないため、読取り専用の内部データ構造を変更される、およびサービス運用妨害 (プラグインクラッシュ) 状態となる、またはセキュリティマネージャの内部状態を破損する脆弱性が存在します。",
+  "identifier": "JVNDB-2011-004282",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0989",
+      "source": "CVE",
+      "id": "CVE-2011-0989"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0989",
+      "source": "NVD",
+      "id": "CVE-2011-0989"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mono:mono",
+      "version": "2.2",
+      "vendor": "Mono Project",
+      "product": "Mono"
+    },
+    {
+      "text": "cpe:/a:novell:moonlight",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "moonlight"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2012-03-27T18:43+09:00",
+  "issued": "2012-03-27T18:43+09:00",
+  "modified": "2012-03-27T18:43+09:00"
+}

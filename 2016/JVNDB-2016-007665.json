@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007665.html",
+  "title": "ForeScout CounterACT SecureConnector エージェントに権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007665.html",
+  "description": "ForeScout CounterACT SecureConnector の Windows 向けエージェントには、権限昇格の脆弱性が存在します。\r\n\r\nSecureConnector の Windows 向けエージェントは、全ての機能を有効にするために SYSTEM アカウントなどの管理者権限を必要とし、通常は Windows サービスとして SYSTEM アカウントの権限で動作します。\r\nSecureConnector の Windows 向けエージェントは、ホストに関する情報収集や、収集した情報を CounterACT 管理アプライアンスへ送信するために、多数のプラグインを実行します。これらのプラグインは、必要に応じて CounterACT 管理アプライアンスからダウンロードされます。\r\n\r\n\r\nSecureConnector の Windows 向けエージェントには、次の脆弱性が存在します。\r\n\r\n\r\n不適切なアクセスパーミションでの一時ファイル作成 (CWE-378) - CVE-2016-9485\r\n\r\nSecureConnector エージェントは、ダウンロードしたファイルオブジェクトに適切なアクセス権限を設定していません。そのため、ファイルの保存場所に関係なく、ユーザがファイルを改ざんすることが可能です。SecureConnector エージェントがダウンロードしたファイルは SYSTEM 権限で実行されるため、管理者権限のないユーザがファイルを改ざんし、そのファイルを SecureConnector エージェントが実行することで、SYSTEM 権限で悪意あるコードが実行される可能性があります。\r\n\r\n不適切なアクセスパーミションのディレクトリに一時ファイル作成 (CWE-379) - CVE-2016-9486\r\n\r\nSecureConnector エージェントは SYSTEM 権限で動作しており、ダウンロードするプラグインファイルは、ユーザの %TEMP% ディレクトリに保存され実行されます。また、ダウンロードするプラグイン以外に、SecureConnector エージェントが SYSTEM 権限で実行するバッチファイルも同じディレクトリに保存され実行されます。そのため、管理者権限のないユーザがバッチファイルを改ざんし、そのバッチファイルを SecureConnector エージェントが実行することで、SYSTEM 権限で悪意あるコードが実行される可能性があります。\r\n\r\nプラグインファイルをダウンロードするディレクトリは、CounterACT 管理アプライアンスのローカルプロパティ設定ファイルにて config.script_run_folder.value を設定することで変更可能ですが、バッチファイルの保存先は、この設定では変更できません。",
+  "identifier": "JVNDB-2016-007665",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96676747/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96676747"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9485",
+      "source": "CVE",
+      "id": "CVE-2016-9485"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9486",
+      "source": "CVE",
+      "id": "CVE-2016-9486"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-9485",
+      "source": "NVD",
+      "id": "CVE-2016-9485"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-9486",
+      "source": "NVD",
+      "id": "CVE-2016-9486"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/768331",
+      "source": "CERT-VN",
+      "id": "VU#768331"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/378.html",
+      "id": "CWE-378",
+      "title": "不適切なアクセスパーミションでの一時ファイル作成(CWE-378)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/379.html",
+      "id": "CWE-379",
+      "title": "不適切なアクセスパーミションのディレクトリに一時ファイル作成(CWE-379)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:forescout:secureconnector",
+      "version": "2.2",
+      "vendor": "ForeScout Technologies",
+      "product": "SecureConnector"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:S/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-07-05T17:00+09:00",
+  "issued": "2017-03-09T16:04+09:00",
+  "modified": "2019-07-05T17:00+09:00"
+}

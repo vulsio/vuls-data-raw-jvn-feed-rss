@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000739.html",
+  "title": "NFSv4 ID mapper の getpwnam_r() 関数におけるファイル所有者の取り扱いの問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000739.html",
+  "description": "NFSv4 ID mapper (nfsidmap) には、username の取り扱いの際、getpwnam_r() 関数からの返り値の取り扱いに不備があり、任意のファイルの所有者を root に変更される問題が存在します。",
+  "identifier": "JVNDB-2007-000739",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4135",
+      "source": "CVE",
+      "id": "CVE-2007-4135"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4135",
+      "source": "NVD",
+      "id": "CVE-2007-4135"
+    },
+    {
+      "text": "http://secunia.com/advisories/26674",
+      "source": "SECUNIA",
+      "id": "SA26674"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/36396",
+      "source": "XF",
+      "id": "36396"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-12-03T16:57+09:00",
+  "issued": "2007-10-16T16:14+09:00",
+  "modified": "2007-12-03T16:57+09:00"
+}

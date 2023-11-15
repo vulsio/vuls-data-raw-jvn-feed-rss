@@ -1,0 +1,88 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002722.html",
+  "title": "FastJar の jartool.c 内にある extract_jar 関数におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002722.html",
+  "description": "FastJar の jartool.c 内にある extract_jar 関数には、.jar アーカイブ内において、ファイルパスの先頭以外の箇所に .. (dot dot) を含むファイル名の処理に不備があるため、ディレクトリトラバーサルの脆弱性が存在します。\r\n本問題は、CVE-2005-1080 と関連する問題であり、CVE-2010-0179 の修正が不完全だったことによる脆弱性です。",
+  "identifier": "JVNDB-2010-002722",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0831",
+      "source": "CVE",
+      "id": "CVE-2010-0831"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0831",
+      "source": "NVD",
+      "id": "CVE-2010-0831"
+    },
+    {
+      "text": "http://secunia.com/advisories/42892",
+      "source": "SECUNIA",
+      "id": "42892"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/41006",
+      "source": "BID",
+      "id": "41006"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0121",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0121"
+    },
+    {
+      "text": "http://osvdb.org/65467",
+      "source": "OSVDB",
+      "id": "65467"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fastjar:fastjar",
+      "version": "2.2",
+      "vendor": "FastJar",
+      "product": "FastJar"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2011-02-03T14:52+09:00",
+  "issued": "2011-02-03T14:52+09:00",
+  "modified": "2011-02-03T14:52+09:00"
+}

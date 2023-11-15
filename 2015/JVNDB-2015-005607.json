@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005607.html",
+  "title": "IBM WebSphere Message Broker および Integration Bus におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005607.html",
+  "description": "IBM WebSphere Message Broker および Integration Bus は、MQSISTARTMSGFLOW および MQSISTOPMSGFLOW コマンドの権限をチェックしないため、アクセス制限を回避され、サービスをスタートまたはストップされる脆弱性を存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-77: Improper Neutralization of Special Elements used in a Command (コマンドインジェクション) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/77.html",
+  "identifier": "JVNDB-2015-005607",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5011",
+      "source": "CVE",
+      "id": "CVE-2015-5011"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5011",
+      "source": "NVD",
+      "id": "CVE-2015-5011"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:integration_bus",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Integration Bus"
+    },
+    {
+      "text": "cpe:/a:ibm:websphere_message_broker",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Message Broker"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:S/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2015-10-28T15:06+09:00",
+  "issued": "2015-10-28T15:06+09:00",
+  "modified": "2015-10-28T15:06+09:00"
+}

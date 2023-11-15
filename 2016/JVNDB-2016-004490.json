@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004490.html",
+  "title": "複数の NUUO 製品および NETGEAR ReadyNAS Surveillance の cgi-bin/cgi_system における管理者パスワードをリセットされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004490.html",
+  "description": "NUUO NVRmini 2、NVRsolo および NETGEAR ReadyNAS Surveillance の cgi-bin/cgi_system には、管理者パスワードをリセットされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-285: Improper Authorization (不適切な認証) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/285.html",
+  "identifier": "JVNDB-2016-004490",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97220922/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97220922"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5676",
+      "source": "CVE",
+      "id": "CVE-2016-5676"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5676",
+      "source": "NVD",
+      "id": "CVE-2016-5676"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/856152",
+      "source": "CERT-VN",
+      "id": "VU#856152"
+    },
+    {
+      "text": "https://raw.githubusercontent.com/pedrib/PoC/master/advisories/nuuo-nvr-vulns.txt",
+      "source": "関連文書",
+      "id": "Multiple vulnerabilities in NUUO NVRmini2 / NVRsolo / Crystal devices and NETGEAR ReadyNAS Surveillance application"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:netgear:readynas_surveillance",
+      "version": "2.2",
+      "vendor": "ネットギア",
+      "product": "ReadyNAS Surveillance"
+    },
+    {
+      "text": "cpe:/o:nuuo:nvrmini_2",
+      "version": "2.2",
+      "vendor": "NUUO INC.",
+      "product": "NUUO NVRmini 2 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:nuuo:nvrsolo",
+      "version": "2.2",
+      "vendor": "NUUO INC.",
+      "product": "NUUO NVRsolo ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2016-09-01T16:07+09:00",
+  "issued": "2016-09-01T16:07+09:00",
+  "modified": "2016-09-01T16:07+09:00"
+}

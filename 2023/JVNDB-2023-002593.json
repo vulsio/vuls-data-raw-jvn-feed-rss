@@ -1,0 +1,35 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002593.html",
+  "title": "OpenSSL の DH_check() 関数における DH キーとパラメータのチェックに過剰な時間がかかる問題（OpenSSL Security Advisory [19th July 2023]）",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002593.html",
+  "description": "OpenSSL Project より、 <a href=\"https://www.openssl.org/news/secadv/20230719.txt\" target=\"blank\">OpenSSL Security Advisory [19th July 2023]</a> が公開されました。\r\n\r\n深刻度 - 低（ Severity: Low ）\r\nOpenSSL の DH_check() 関数は、DH パラメータに対してさまざまなチェックを実行します。これらのチェックの 1 つでは、係数（pパラメータ）が大きすぎないことを確認しますが、非常に大きな係数を使用しようとすると処理速度が遅くなります。\r\nOpenSSL は通常、長さが10,000 ビットを超える係数を使用しませんが、 DH_check() 関数は、指定されたキーまたはパラメタが大きすぎる場合でもチェックを行います。\r\nDH_check() 関数は、DH_check_ex() 関数と EVP_PKEY_param_check() 関数から呼び出されるため、 DH_check() 関数だけでなくこれらの関数を呼び出すアプリケーションも影響を受ける可能性があります。また、「-check」オプションを使用するOpenSSL dhparam および pkeyparam コマンドラインアプリケーションも本脆弱性の影響を受けます。\r\n\r\nなお、 OpenSSL Project は、OpenSSL SSL/TLS 実装および、OpenSSL 3.0 と 3.1 の FIPS プロバイダは本脆弱性の影響を受けないとしています。\r\n",
+  "identifier": "JVNDB-2023-002593",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU95617114/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95617114"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-3446",
+      "source": "CVE",
+      "id": "CVE-2023-3446"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-3446",
+      "source": "NVD",
+      "id": "CVE-2023-3446"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    }
+  ],
+  "date": "2023-08-03T17:25+09:00",
+  "issued": "2023-07-21T15:26+09:00",
+  "modified": "2023-08-03T17:25+09:00"
+}

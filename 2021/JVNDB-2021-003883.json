@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-003883.html",
+  "title": "stunnel における証明書検証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-003883.html",
+  "description": "stunnel には、証明書検証に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-003883",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20230",
+      "source": "CVE",
+      "id": "CVE-2021-20230"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-20230",
+      "source": "NVD",
+      "id": "CVE-2021-20230"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1925226",
+      "source": "関連文書",
+      "id": "Bug 1925226 (CVE-2021-20230) - CVE-2021-20230 stunnel: client certificate not correctly verified when redirect and verifyChain options are used "
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/295.html",
+      "id": "CWE-295",
+      "title": "不正な証明書検証(CWE-295)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:stunnel:stunnel",
+      "version": "2.2",
+      "vendor": "stunnel",
+      "product": "stunnel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2021-11-09T17:07+09:00",
+  "issued": "2021-11-09T17:07+09:00",
+  "modified": "2021-11-09T17:07+09:00"
+}

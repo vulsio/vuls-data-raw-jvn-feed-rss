@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004569.html",
+  "title": "Cisco Adaptive Security Appliance ソフトウェアの SSL VPN の実装における任意の RAMFS キャッシュファイルを上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004569.html",
+  "description": "Cisco Adaptive Security Appliance (ASA) ソフトウェアの SSL VPN の実装は、SharePoint ハンドラの作成中にセッション情報を適切に管理しないため、任意の RAMFS キャッシュファイルを上書きされる、または Lua プログラムを挿入され、その結果、サービス運用妨害 (ポータルの停止またはシステムのリロード) 状態にされる脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug ID CSCup54208 として公開しています。",
+  "identifier": "JVNDB-2014-004569",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3399",
+      "source": "CVE",
+      "id": "CVE-2014-3399"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3399",
+      "source": "NVD",
+      "id": "CVE-2014-3399"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cisco:adaptive_security_appliance_software",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Adaptive Security Appliance ソフトウェア"
+    },
+    {
+      "text": "cpe:/h:cisco:adaptive_security_appliance",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Adaptive Security Appliance"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2014-10-09T10:23+09:00",
+  "issued": "2014-10-09T10:23+09:00",
+  "modified": "2014-10-09T10:23+09:00"
+}

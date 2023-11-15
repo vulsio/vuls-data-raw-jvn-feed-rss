@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002009.html",
+  "title": "三菱電機製 GOT の MODBUS/TCP スレーブ通信機能における共有リソースへのアクセス同期不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002009.html",
+  "description": "三菱電機製 GOT2000 シリーズおよび GT SoftGOT2000 の MODBUS/TCP スレーブ通信機能には、次の条件で通信を使用している場合、共有リソースへのアクセス同期不備 (CWE-820) に起因するサービス運用妨害 (DoS) の脆弱性 (CVE-2021-20592) が存在します。\r\n\r\n　* GOT2000シリーズで「MODBUS/TCP スレーブ,ゲートウェイ」通信ドライバを使用している場合\r\n　* GT SoftGOT2000 で接続設定の機種に「MODBUS/TCP Slave」を選択して使用している場合\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2021-002009",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU92414172/",
+      "source": "JVN",
+      "id": "JVNVU#92414172"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20592",
+      "source": "CVE",
+      "id": "CVE-2021-20592"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-208-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-208-02"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/820.html",
+      "id": "CWE-820",
+      "title": "同期の欠如(CWE-820)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mitsubishielectric:gt_softgot2000",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GT SoftGOT2000"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:got2000_series_gt23_model",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GOT2000 シリーズ GT23 モデル"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:got2000_series_gt25_model",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GOT2000 シリーズ GT25 モデル"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:got2000_series_gt27_model",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GOT2000 シリーズ GT27 モデル"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2021-07-28T17:20+09:00",
+  "issued": "2021-07-28T17:20+09:00",
+  "modified": "2021-07-28T17:20+09:00"
+}

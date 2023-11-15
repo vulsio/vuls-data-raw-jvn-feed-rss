@@ -1,0 +1,83 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001594.html",
+  "title": "libxslt の RC4 暗号/復号関数におけるヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001594.html",
+  "description": "libxslt の libexslt には、cypto.c の RC4 暗号/復号関数 (exsltCryptoRc4EncryptFunction/exsltCryptoRc4DecryptFunction) において、XML ファイルの XSL 入力引数の取り扱いに不備があり、ヒープベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001594",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2935",
+      "source": "CVE",
+      "id": "CVE-2008-2935"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2935",
+      "source": "NVD",
+      "id": "CVE-2008-2935"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/30467",
+      "source": "BID",
+      "id": "30467"
+    },
+    {
+      "text": "http://securitytracker.com/id?1020580",
+      "source": "SECTRACK",
+      "id": "1020580"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/2266",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-2266"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:xmlsoft:libxslt",
+      "version": "2.2",
+      "vendor": "xmlsoft.org",
+      "product": "libxslt"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-11-14T12:15+09:00",
+  "issued": "2008-09-02T17:59+09:00",
+  "modified": "2008-11-14T12:15+09:00"
+}

@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-010132.html",
+  "title": "Go における HTTP リクエストスマグリングに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-010132.html",
+  "description": "Go には、HTTP リクエストスマグリングに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2019-010132",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16276",
+      "source": "CVE",
+      "id": "CVE-2019-16276"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-16276",
+      "source": "NVD",
+      "id": "CVE-2019-16276"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/444.html",
+      "id": "CWE-444",
+      "title": "HTTP リクエストスマグリング(CWE-444)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:golang:go",
+      "version": "2.2",
+      "vendor": "The Go Project",
+      "product": "Go"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2019-10-07T16:49+09:00",
+  "issued": "2019-10-07T16:49+09:00",
+  "modified": "2019-10-07T16:49+09:00"
+}

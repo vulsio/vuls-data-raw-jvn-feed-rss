@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004063.html",
+  "title": "Apache Subversion の mod_authz_svn における隠しファイルを読まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004063.html",
+  "description": "Apache Subversion の mod_authz_svn は、Apache httpd を使用する場合、匿名のアクセスを適切に制限しないため、隠しファイルを読まれる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-004063",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97668313/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97668313"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3184",
+      "source": "CVE",
+      "id": "CVE-2015-3184"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3184",
+      "source": "NVD",
+      "id": "CVE-2015-3184"
+    },
+    {
+      "text": "http://www.securitytracker.com/id/1033215",
+      "source": "関連文書",
+      "id": "Apache Subversion Bugs Let Remote Users Obtain Potentially Sensitive Information"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:apache:subversion",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Subversion"
+    },
+    {
+      "text": "cpe:/a:apple:xcode",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Xcode"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2016-03-29T15:39+09:00",
+  "issued": "2015-08-13T18:07+09:00",
+  "modified": "2016-03-29T15:39+09:00"
+}

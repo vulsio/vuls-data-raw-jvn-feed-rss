@@ -1,0 +1,101 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001379.html",
+  "title": "OpenLDAP の chain.c における内部プログラムの認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001379.html",
+  "description": "OpenLDAP の back-ldap 内にある chain.c は、chain overlay 機能を伴うマスタースレーブの設定および ppolicy_forward_updates を使用する際、内部プログラムの認証を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2011-001379",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1024",
+      "source": "CVE",
+      "id": "CVE-2011-1024"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1024",
+      "source": "NVD",
+      "id": "CVE-2011-1024"
+    },
+    {
+      "text": "http://secunia.com/advisories/43331",
+      "source": "SECUNIA",
+      "id": "SA43331"
+    },
+    {
+      "text": "http://securitytracker.com/id?1025188",
+      "source": "SECTRACK",
+      "id": "1025188"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0665",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0665"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openldap:openldap",
+      "version": "2.2",
+      "vendor": "OpenLDAP Foundation",
+      "product": "OpenLDAP"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2011-04-08T13:33+09:00",
+  "issued": "2011-04-08T13:33+09:00",
+  "modified": "2011-04-08T13:33+09:00"
+}

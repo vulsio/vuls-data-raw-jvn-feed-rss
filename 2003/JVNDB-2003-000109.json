@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000109.html",
+  "title": "libesmtp の protocol.c におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000109.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nテキストベースの電子メールクライアントである Mutt、GNOME 用の電子メールクライアントである Balsa にはバッファーオーバーフローを発生する問題が存在します。 \r\n\r\nMutt 1.4 には、IMAP サーバから返されたメールボックス名を解析する際にバッファオーバーフローが発生する問題が存在します。この問題を利用するリモートの攻撃者は IMAP サーバを介して Mutt の実行権限で任意のコードを実行することが可能です。 \r\n尚、Red Hat Linux 8.0/9 には、問題を抱えるバージョンの Mutt が同梱されています。 \r\n\r\nBalsa 1.2 - 1.4.2 には、Mutt の問題を抱えるコードが組み込まれているため、同様の影響を受けます。 \r\n尚、Red Hat Linux 7.2/7.3/8.0/9 に問題を抱えるバージョンの Balsa が同梱されています。 \r\n\r\nまた、Balsa が利用している SMTP ライブラリ、libesmtp 0.8.10 以前には、read_smtp_response に不備が存在し、バッファオーバーフローが発生する問題が存在します。リモートの攻撃者は SMTP サーバを介して悪意あるレスポンスを送りつけることにより、任意のコードを実行出来る可能性があります。また、過度に長いレスポンスを送りつけることにより、サービス不能状態に陥らせることが可能です。 \r\n尚、Red Hat Linux 7.2/7.3 に問題を抱えるバージョンの libesmtp が同梱されています。",
+  "identifier": "JVNDB-2003-000109",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1090",
+      "source": "CVE",
+      "id": "CVE-2002-1090"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1090",
+      "source": "NVD",
+      "id": "CVE-2002-1090"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7269",
+      "source": "BID",
+      "id": "7269"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/7120",
+      "source": "BID",
+      "id": "7120"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

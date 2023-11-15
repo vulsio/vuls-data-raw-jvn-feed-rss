@@ -1,0 +1,123 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001120.html",
+  "title": "Microsoft Windows の SChannel 認証コンポーネントにおけるなりすましの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001120.html",
+  "description": "Microsoft Windows の SChannel 認証コンポーネント には、証明書認証を使用している場合に TLS ハンドシェークメッセージ内のクライアントの鍵交換データを正しく検証しないため、秘密鍵なしに認証を偽装される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001120",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA09-069A/",
+      "source": "JVN",
+      "id": "JVNTA09-069A"
+    },
+    {
+      "text": "http://jvn.jp/tr/JVNTR-2009-08",
+      "source": "JVNTR",
+      "id": "JVNTR-2009-08"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0085",
+      "source": "CVE",
+      "id": "CVE-2009-0085"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0085",
+      "source": "NVD",
+      "id": "CVE-2009-0085"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2009/at090005.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2009-0005"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/2009/20090311_110434.html",
+      "source": "AT-POLICE",
+      "id": "20090311_110434"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA09-069A.html",
+      "source": "CERT-SA",
+      "id": "SA09-069A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA09-069A.html",
+      "source": "CERT-TA",
+      "id": "TA09-069A"
+    },
+    {
+      "text": "http://secunia.com/advisories/34215/",
+      "source": "SECUNIA",
+      "id": "SA34215"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/34015",
+      "source": "BID",
+      "id": "34015"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1021828",
+      "source": "SECTRACK",
+      "id": "1021828"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/0660",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-0660"
+    },
+    {
+      "text": "http://osvdb.org/52521",
+      "source": "OSVDB",
+      "id": "52521"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_vista",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Vista"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:C/A:N"
+    }
+  ],
+  "date": "2009-04-07T11:17+09:00",
+  "issued": "2009-04-07T11:17+09:00",
+  "modified": "2009-04-07T11:17+09:00"
+}

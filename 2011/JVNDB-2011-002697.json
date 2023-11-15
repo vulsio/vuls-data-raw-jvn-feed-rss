@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002697.html",
+  "title": "Puppet および Puppet Enterprise Users における Puppet master になりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002697.html",
+  "description": "Puppet Labs の Puppet および Puppet Enterprise Users は、エージェントの証明書に署名する際、証明書の X.509 Subject Alternative Name フィールドに、Puppet master の certdnsnames 値を追加するため、Puppet master になりすまされる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-002697",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3872",
+      "source": "CVE",
+      "id": "CVE-2011-3872"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3872",
+      "source": "NVD",
+      "id": "CVE-2011-3872"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:puppetlabs:puppet",
+      "version": "2.2",
+      "vendor": "Puppet",
+      "product": "Puppet"
+    },
+    {
+      "text": "cpe:/a:puppetlabs:puppet_enterprise",
+      "version": "2.2",
+      "vendor": "Puppet",
+      "product": "Puppet Enterprise"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2011-11-04T15:03+09:00",
+  "issued": "2011-11-04T15:03+09:00",
+  "modified": "2011-11-04T15:03+09:00"
+}

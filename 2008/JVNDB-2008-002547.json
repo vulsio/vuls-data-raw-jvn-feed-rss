@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002547.html",
+  "title": "LScube Feng におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002547.html",
+  "description": "LScube Feng には、ヘッダが異なる行に分割されている際は行区切り文字として扱われますが、RTSP_utils.c 内の log_user_agent が User-Agent 行のコンテンツを解析する際には、解釈の不一致が発生するため、サービス運用妨害 (NULL デリファレンスおよびデーモンクラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2008-002547",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6629",
+      "source": "CVE",
+      "id": "CVE-2007-6629"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-6629",
+      "source": "NVD",
+      "id": "CVE-2007-6629"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:feng:feng",
+      "version": "2.2",
+      "vendor": "feng",
+      "product": "feng"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-06-26T15:54+09:00",
+  "issued": "2012-06-26T15:54+09:00",
+  "modified": "2012-06-26T15:54+09:00"
+}

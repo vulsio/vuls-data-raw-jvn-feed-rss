@@ -1,0 +1,108 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-002746.html",
+  "title": "Adobe Type Manager Library におけるリモートコード実行の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-002746.html",
+  "description": "Windows Adobe Type Manager Library には、Adobe Type 1 フォント形式を不適切に処理することによるリモートコード実行の脆弱性が存在します。マイクロソフトによると既に本脆弱性を悪用した攻撃を確認しているとのことです。",
+  "identifier": "JVNDB-2020-002746",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU95854306",
+      "source": "JVN",
+      "id": "JVNVU#95854306"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1020",
+      "source": "CVE",
+      "id": "CVE-2020-1020"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-1020",
+      "source": "NVD",
+      "id": "CVE-2020-1020"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2020/at200015.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2020-0015"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/354840/",
+      "source": "CERT-VN",
+      "id": "VU#354840"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_10",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 10"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_7",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 7"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_8.1",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 8.1"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_rt_8.1",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows RT 8.1"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2012",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2012"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2016",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2016"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2019",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2019"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.6",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-06-01T14:11+09:00",
+  "issued": "2020-03-25T13:50+09:00",
+  "modified": "2020-06-01T14:11+09:00"
+}

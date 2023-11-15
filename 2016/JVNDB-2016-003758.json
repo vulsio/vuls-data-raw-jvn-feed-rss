@@ -1,0 +1,63 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003758.html",
+  "title": "KDE Frameworks の kinit における他のユーザの X11 Cookie を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003758.html",
+  "description": "KDE Frameworks の kinit は、/tmp/xauth-xxx-_y に脆弱なパーミッション (644) を使用するため、他のユーザの X11 Cookie を取得され、その結果、キーストロークをキャプチャされ、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-003758",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3100",
+      "source": "CVE",
+      "id": "CVE-2016-3100"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3100",
+      "source": "NVD",
+      "id": "CVE-2016-3100"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:kde:kde_frameworks",
+      "version": "2.2",
+      "vendor": "KDE project",
+      "product": "KDE Frameworks"
+    },
+    {
+      "text": "cpe:/o:opensuse_project:leap",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "openSUSE Leap"
+    },
+    {
+      "text": "cpe:/o:opensuse_project:opensuse",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "openSUSE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "8.4",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-07-20T15:42+09:00",
+  "issued": "2016-07-20T15:42+09:00",
+  "modified": "2016-07-20T15:42+09:00"
+}

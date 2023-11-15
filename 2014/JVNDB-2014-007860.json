@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007860.html",
+  "title": "FreeType の sfnt/sfobjs.c の woff_open_font 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007860.html",
+  "description": "FreeType の sfnt/sfobjs.c の woff_open_font 関数は、length 値を制限せずに offset+length の計算を継続するため、サービス運用妨害 (整数オーバーフローおよびヒープベースのバッファオーバーフロー) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2014-007860",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9668",
+      "source": "CVE",
+      "id": "CVE-2014-9668"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9668",
+      "source": "NVD",
+      "id": "CVE-2014-9668"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freetype:freetype",
+      "version": "2.2",
+      "vendor": "FreeType Project",
+      "product": "FreeType"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-02-17T09:47+09:00",
+  "issued": "2015-02-17T09:47+09:00",
+  "modified": "2015-02-17T09:47+09:00"
+}

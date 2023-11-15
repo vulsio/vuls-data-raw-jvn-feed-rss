@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-017360.html",
+  "title": "Tinyproxy project の Tinyproxy におけるリソースの安全ではないデフォルト値への初期化に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-017360.html",
+  "description": "Tinyproxy project の Tinyproxy には、リソースの安全ではないデフォルト値への初期化に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-017360",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-40468",
+      "source": "CVE",
+      "id": "CVE-2022-40468"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-40468",
+      "source": "NVD",
+      "id": "CVE-2022-40468"
+    },
+    {
+      "text": "https://github.com/tinyproxy/tinyproxy",
+      "source": "関連文書",
+      "id": "github.com (tinyproxy)"
+    },
+    {
+      "text": "https://github.com/tinyproxy/tinyproxy/blob/84f203fb1c4733608c7283bbe794005a469c4b00/src/reqs.c#L346",
+      "source": "関連文書",
+      "id": "github.com (reqs.c#L346)"
+    },
+    {
+      "text": "https://github.com/tinyproxy/tinyproxy/issues/457",
+      "source": "関連文書",
+      "id": "github.com (issues/457)"
+    },
+    {
+      "text": "https://github.com/tinyproxy/tinyproxy/issues/457#issuecomment-1264176815",
+      "source": "関連文書",
+      "id": "github.com (457#issuecomment-1264176815)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202305-27",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202305-27)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/1188.html",
+      "id": "CWE-1188",
+      "title": "リソースの安全ではないデフォルト値への初期化(CWE-1188)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:tinyproxy_project:tinyproxy",
+      "version": "2.2",
+      "vendor": "Tinyproxy project",
+      "product": "Tinyproxy"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2023-10-12T17:21+09:00",
+  "issued": "2023-10-12T17:21+09:00",
+  "modified": "2023-10-12T17:21+09:00"
+}

@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001210.html",
+  "title": "BIND におけるリゾルバがクラッシュされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001210.html",
+  "description": "BIND には、古いキャッシュおよび answer が有効で、オプション `stale-answer-client-timeout` が正の整数に設定している場合、リゾルバが RRSIG クエリを受信した際、リゾルバがクラッシュされる脆弱性が存在します。",
+  "identifier": "JVNDB-2023-001210",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU98318144/",
+      "source": "JVN",
+      "id": "JVNVU#98318144"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-3736",
+      "source": "CVE",
+      "id": "CVE-2022-3736"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-3736",
+      "source": "NVD",
+      "id": "CVE-2022-3736"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-02-07T10:58+09:00",
+  "issued": "2023-02-07T10:58+09:00",
+  "modified": "2023-02-07T10:58+09:00"
+}

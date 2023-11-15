@@ -1,0 +1,81 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006728.html",
+  "title": "Microsoft Windows タスクスケジューラの ALPC インターフェースにおけるローカル権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006728.html",
+  "description": "Microsoft Windows タスクスケジューラの ALPC インターフェースには、ローカル権限昇格が可能になる脆弱性が存在します。ローカルユーザによって、SYSTEM 権限が取得される可能性があります。\r\n\r\nMicrosoft Windows タスクスケジューラの SchRpcSetSecurity API には、Advanced Local Procedure Call (ALPC) の処理に脆弱性が存在します。認証されたユーザによって、ACL (Access Control List、アクセス制御リスト) で保護されているファイルを上書きされ、SYSTEM 権限を取得される可能性があります。\r\nCERT/CC では、公開されたエクスプロイトコードが 64-bit Windows 10 および Windows Server 2016 Server で動作すること、さらに若干の変更により 32-bit Windows 10 で動作することを確認しています。他のバージョンの Windows でも動作する可能性があります。\r\nなお、本脆弱性を悪用したマルウェアが確認されています。",
+  "identifier": "JVNDB-2018-006728",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU96222149/",
+      "source": "JVN",
+      "id": "JVNVU#96222149"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8440",
+      "source": "CVE",
+      "id": "CVE-2018-8440"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-8440",
+      "source": "NVD",
+      "id": "CVE-2018-8440"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2018/at180038.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2018-0038"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/906424",
+      "source": "CERT-VN",
+      "id": "VU#906424"
+    },
+    {
+      "text": "https://github.com/SandboxEscaper/randomrepo/blob/master/PoC-LPE.rar",
+      "source": "関連文書",
+      "id": "randomrepo/PoC-LPE.rar"
+    },
+    {
+      "text": "https://doublepulsar.com/task-scheduler-alpc-exploit-high-level-analysis-ff08cda6ad4f",
+      "source": "関連文書",
+      "id": "Task Scheduler ALPC exploit high level analysis"
+    },
+    {
+      "text": "https://twitter.com/karsten_nilsen/status/1034406706879578112",
+      "source": "関連文書",
+      "id": "Short term solution on VU#906424"
+    },
+    {
+      "text": "https://www.welivesecurity.com/2018/09/05/powerpool-malware-exploits-zero-day-vulnerability/",
+      "source": "関連文書",
+      "id": "PowerPool malware exploits zero-day vulnerability"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:windows_task_scheduler",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Windows タスクスケジューラ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:S/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-07-25T16:36+09:00",
+  "issued": "2018-08-30T14:49+09:00",
+  "modified": "2019-07-25T16:36+09:00"
+}

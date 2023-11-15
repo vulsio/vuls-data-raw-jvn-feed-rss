@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003746.html",
+  "title": "libxml2 の HTMLparser.c の htmlParseTryOrFinish 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003746.html",
+  "description": "libxml2 の HTMLparser.c の htmlParseTryOrFinish 関数には、サービス運用妨害 (バッファオーバーリード) 状態にされる、または情報を公開される脆弱性が存在します。",
+  "identifier": "JVNDB-2017-003746",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU90348129/",
+      "source": "JVN",
+      "id": "JVNVU#90348129"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8872",
+      "source": "CVE",
+      "id": "CVE-2017-8872"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-8872",
+      "source": "NVD",
+      "id": "CVE-2017-8872"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-336-06",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-336-06"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:xmlsoft:libxml2",
+      "version": "2.2",
+      "vendor": "xmlsoft.org",
+      "product": "libxml2"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.1",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+    }
+  ],
+  "date": "2021-12-08T11:19+09:00",
+  "issued": "2017-06-06T17:12+09:00",
+  "modified": "2021-12-08T11:19+09:00"
+}

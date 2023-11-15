@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001835.html",
+  "title": "JBoss RichFaces の webapp/PushHandlerFilter.java の doFilter 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001835.html",
+  "description": "JBoss RichFaces の webapp/PushHandlerFilter.java の doFilter 関数には、サービス運用妨害 (メモリ消費および out-of-memory エラー) 状態とされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-001835",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0086",
+      "source": "CVE",
+      "id": "CVE-2014-0086"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0086",
+      "source": "NVD",
+      "id": "CVE-2014-0086"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:jboss_web_framework_kit",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss Web Framework Kit"
+    },
+    {
+      "text": "cpe:/a:redhat:richfaces",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss RichFaces"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-04-01T14:27+09:00",
+  "issued": "2014-04-01T14:27+09:00",
+  "modified": "2014-04-01T14:27+09:00"
+}

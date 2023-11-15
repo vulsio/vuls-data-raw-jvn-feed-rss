@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001337.html",
+  "title": "Google Chrome の content/browser/service_worker/service_worker_dispatcher_host.cc における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001337.html",
+  "description": "Google Chrome の content/browser/service_worker/service_worker_dispatcher_host.cc の OriginCanAccessServiceWorkers 関数は、ServiceWorker の登録中、URI スキームを適切に制限しないため、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-001337",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1211",
+      "source": "CVE",
+      "id": "CVE-2015-1211"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1211",
+      "source": "NVD",
+      "id": "CVE-2015-1211"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-02-25T18:01+09:00",
+  "issued": "2015-02-12T13:43+09:00",
+  "modified": "2015-02-25T18:01+09:00"
+}

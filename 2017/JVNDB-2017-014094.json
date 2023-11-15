@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-014094.html",
+  "title": "Quick Emulator におけるリソースの枯渇に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-014094.html",
+  "description": "Quick Emulator (QEMU) には、リソースの枯渇に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2017-014094",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15119",
+      "source": "CVE",
+      "id": "CVE-2017-15119"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-15119",
+      "source": "NVD",
+      "id": "CVE-2017-15119"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2017/11/28/9",
+      "source": "関連文書",
+      "id": "CVE-2017-15119 Qemu: DoS via large option request"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/400.html",
+      "id": "CWE-400",
+      "title": "リソースの枯渇(CWE-400)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/a:redhat:virtualization",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Virtualization"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2018-10-17T17:44+09:00",
+  "issued": "2018-10-17T17:44+09:00",
+  "modified": "2018-10-17T17:44+09:00"
+}

@@ -1,0 +1,102 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000236.html",
+  "title": "Apache HTTP Server のデフォルトエラーページにおけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000236.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nApache HTTP Server には HTTP/1.1 の Host ヘッダフィールドの文字列の取り扱いに不備が存在します。 \r\n\r\nそのため、何らかの原因によりユーザからのリクエストを完了できなかった場合、エラーページを表示させます。UseCanonicalName ディレクティブを無効にしていた場合、エラーページに文字列のチェック以前に、ユーザから送信された Host 情報をそのまま挿入し表示してしまう問題が存在します。 \r\n\r\nHTTP/1.1 において、Host ヘッダフィールドには URI のネットワークロケーションが格納されています。 \r\nしたがって、リモートの攻撃者は、任意の文字列を含む URL にアクセスするよう標的ユーザを誘導し、不正なスクリプトを含むエラーページを表示させることで、クロスサイトスクリプティング攻撃を行うことが可能です。",
+  "identifier": "JVNDB-2002-000236",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0840",
+      "source": "CVE",
+      "id": "CVE-2002-0840"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0840",
+      "source": "NVD",
+      "id": "CVE-2002-0840"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/5847",
+      "source": "BID",
+      "id": "5847"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6029",
+      "source": "BID",
+      "id": "6029"
+    },
+    {
+      "text": "http://www.securiteam.com/unixfocus/6O0020K5PE.html",
+      "source": "SECTEAM",
+      "id": "6O0020K5PE"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:ibm:http_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM HTTP Server"
+    },
+    {
+      "text": "cpe:/a:oracle:application_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Application Server"
+    },
+    {
+      "text": "cpe:/a:oracle:database_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Database"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_4",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ4"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQXTR"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

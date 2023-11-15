@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001215.html",
+  "title": "図研エルミック製 KASAGO における不十分なランダム値の使用の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001215.html",
+  "description": "図研エルミック株式会社が提供する組込み用 TCP/IP プロトコルスタック KASAGO では、TCP 初期シーケンス番号の生成時に KASAGO 独自のランダム値取得関数を使用しており、十分なランダム値が使用されていません（CWE-330）。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2023-001215",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99551468/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99551468"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-43501",
+      "source": "CVE",
+      "id": "CVE-2022-43501"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/330.html",
+      "id": "CWE-330",
+      "title": "不十分なランダム値の使用(CWE-330)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:zuken_elmic_kasago_ipv4",
+      "version": "2.2",
+      "vendor": "図研エルミック株式会社",
+      "product": "KASAGO IPv4"
+    },
+    {
+      "text": "cpe:/a:misc:zuken_elmic_kasago_ipv4_light",
+      "version": "2.2",
+      "vendor": "図研エルミック株式会社",
+      "product": "KASAGO IPv4 Light"
+    },
+    {
+      "text": "cpe:/a:misc:zuken_elmic_kasago_ipv6%2Fv4_dual",
+      "version": "2.2",
+      "vendor": "図研エルミック株式会社",
+      "product": "KASAGO IPv6/v4 Dual"
+    },
+    {
+      "text": "cpe:/a:misc:zuken_elmic_kasago_mobile_ipv6",
+      "version": "2.2",
+      "vendor": "図研エルミック株式会社",
+      "product": "KASAGO mobile IPv6"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2023-05-18T11:59+09:00",
+  "issued": "2023-02-13T12:28+09:00",
+  "modified": "2023-05-18T11:59+09:00"
+}

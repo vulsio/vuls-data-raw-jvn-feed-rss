@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005709.html",
+  "title": "Ubuntu Linux Kernel における有効期限後のメモリの解放の欠如に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005709.html",
+  "description": "Ubuntu Linux Kernel には、有効期限後のメモリの解放の欠如に関する脆弱性、および二重解放に関する脆弱性が存在します。\r\n\r\nZero Day Initiative は、本脆弱性に ZDI-CAN-13562 を採番していました。",
+  "identifier": "JVNDB-2021-005709",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3492",
+      "source": "CVE",
+      "id": "CVE-2021-3492"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3492",
+      "source": "NVD",
+      "id": "CVE-2021-3492"
+    },
+    {
+      "text": "https://www.zerodayinitiative.com/advisories/ZDI-21-422/",
+      "source": "関連文書",
+      "id": "ZDI-21-422 ((Pwn2Own) Canonical Ubuntu ShiftFS File System Double Free Privilege Escalation Vulnerability)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/401.html",
+      "id": "CWE-401",
+      "title": "有効期限後のメモリの解放の欠如(CWE-401)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/415.html",
+      "id": "CWE-415",
+      "title": "二重解放(CWE-415)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-12-17T12:15+09:00",
+  "issued": "2021-12-17T12:15+09:00",
+  "modified": "2021-12-17T12:15+09:00"
+}

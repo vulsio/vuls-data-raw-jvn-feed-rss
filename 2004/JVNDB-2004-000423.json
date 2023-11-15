@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000423.html",
+  "title": "Microsoft IIS の WebDAV におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000423.html",
+  "description": "Microsoft Windows に含まれている Microsoft IIS には、WebDAV のリクエストにおいて XML 要素に含まれる属性の数が制限されていない不備があり、意図的に作成した HTTP リクエストを繰り返し送りつけることにより、XML メッセージの処理に大量のメモリや CPU 資源を消費させることが可能な脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000423",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0718",
+      "source": "CVE",
+      "id": "CVE-2003-0718"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0718",
+      "source": "NVD",
+      "id": "CVE-2003-0718"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA04-286A.html",
+      "source": "CERT-TA",
+      "id": "SA04-286A"
+    },
+    {
+      "text": "http://secunia.com/advisories/12801",
+      "source": "SECUNIA",
+      "id": "SA12801"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11384",
+      "source": "BID",
+      "id": "11384"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2004/Oct/1011633.html",
+      "source": "SECTRACK",
+      "id": "1011633"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:iis",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft IIS"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004655.html",
+  "title": "OpenBSD の glob 実装における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004655.html",
+  "description": "OpenBSD の libc の glob 実装には、整数オーバーフローの脆弱性が存在します。\r\n本脆弱性は、GLOB_APPEND および GLOB_DOOFFS フラグと関連します。\r\n本脆弱性は、CVE-2011-0418 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2011-004655",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2168",
+      "source": "CVE",
+      "id": "CVE-2011-2168"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2168",
+      "source": "NVD",
+      "id": "CVE-2011-2168"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:openbsd:openbsd",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenBSD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-03-27T18:43+09:00",
+  "issued": "2012-03-27T18:43+09:00",
+  "modified": "2012-03-27T18:43+09:00"
+}

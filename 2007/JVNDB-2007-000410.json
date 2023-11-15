@@ -1,0 +1,109 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000410.html",
+  "title": "file プログラムにおける整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000410.html",
+  "description": "file プログラムには、過剰に大きいサイズのファイルを扱う場合 assert() 関数を迂回し、整数オーバーフローの攻撃を受ける脆弱性が存在します。なお、本脆弱性は JVNDB-2007-000235 (CVE-2007-1536) を修正するパッチに起因します。",
+  "identifier": "JVNDB-2007-000410",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA08-079A/index.html",
+      "source": "JVN",
+      "id": "JVNTA08-079A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA08-079A/index.html",
+      "source": "JVNTR",
+      "id": "TRTA08-079A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2799",
+      "source": "CVE",
+      "id": "CVE-2007-2799"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2799",
+      "source": "NVD",
+      "id": "CVE-2007-2799"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA08-079A.html",
+      "source": "CERT-SA",
+      "id": "SA08-079A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA08-079A.html",
+      "source": "CERT-TA",
+      "id": "TA08-079A"
+    },
+    {
+      "text": "http://secunia.com/advisories/24548",
+      "source": "SECUNIA",
+      "id": "SA24548"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/24146",
+      "source": "BID",
+      "id": "24146"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/1040",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-1040"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:file_project:file",
+      "version": "2.2",
+      "vendor": "file project",
+      "product": "file"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-03-31T16:44+09:00",
+  "issued": "2007-06-07T17:13+09:00",
+  "modified": "2008-03-31T16:44+09:00"
+}

@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-006275.html",
+  "title": "Pidgin で使用される libpurple の MSN プロトコルプラグインにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-006275.html",
+  "description": "Pidgin で使用される libpurple の MSN プロトコルプラグインの libpurple/protocols/msn/slpcall.c の msn_slp_process_msg 関数は、初期化されていない変数および間違った \"UTF16-LE\" 文字セット名に関連する不備があるため、サービス運用妨害 (アプリケーションクラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2009-006275",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3084",
+      "source": "CVE",
+      "id": "CVE-2009-3084"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3084",
+      "source": "NVD",
+      "id": "CVE-2009-3084"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pidgin:libpurple",
+      "version": "2.2",
+      "vendor": "Pidgin",
+      "product": "libpurple"
+    },
+    {
+      "text": "cpe:/a:pidgin:pidgin",
+      "version": "2.2",
+      "vendor": "Pidgin",
+      "product": "Pidgin"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-12-20T19:28+09:00",
+  "issued": "2012-12-20T19:28+09:00",
+  "modified": "2012-12-20T19:28+09:00"
+}

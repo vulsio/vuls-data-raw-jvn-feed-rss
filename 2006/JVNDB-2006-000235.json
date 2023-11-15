@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000235.html",
+  "title": "Ethereal の sniffer キャプチャデータの処理および SMB PIPE 解析部におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000235.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal には下記の複数のセキュリティ上の問題が存在します。\r\n\r\n- 以下の部位の不備により Ethereal がクラッシュする問題\r\n\r\n・H.248、X.509if 解析部 (0.10.14) (CVE-2006-1937)\r\n・SRVLOC 解析部、statistics コンテナ (0.10.0 - 0.10.14) (CVE-2006-1937)\r\n・H.245 解析部 (0.10.13 - 0.10.14) (CVE-2006-1937)\r\n・パケット共通の解析部 (0.10.9 - 0.10.14) (CVE-2006-1937)\r\n・AIM 解析部 (0.10.7 - 0.10.14) (CVE-2006-1937)\r\n・H.248 解析部 (0.10.11 - 0.10.14) (CVE-2006-1937)\r\n・sniffer キャプチャデータの処理 (0.8.12 - 0.10.14) (CVE-2006-1938)\r\n・SMB PIPE 解析部 (0.8.20 - 0.10.14) (CVE-2006-1938)\r\n・ディスプレイフィルタ、DCERPC 解析部、GSM SMS 解析部 (0.9.16 - 0.10.14) (CVE-2006-1939)\r\n・RPC 解析部、ASN.1 解析部 (0.9.8 - 0.10.14) (CVE-2006-1939)\r\n・ASN.1-based 解析部 (0.9.10 - 0.10.14) (CVE-2006-1939)\r\n・DCERPC NT 解析部、PER 解析部 (0.9.14 - 0.10.14) (CVE-2006-1939)\r\n・SNDCP 解析部 (0.10.4 - 0.10.14) (CVE-2006-1940)\r\n\r\n- 以下の部位の不備により Ethereal が無限ループに陥る問題\r\n\r\n・UMA 解析部 (0.10.12 - 0.10.14) (CVE-2006-1933)\r\n・BER 解析部 (0.10.4 - 0.10.14) (CVE-2006-1933)\r\n\r\n- 以下の部位の不備により Ethereal が 1 つずれによるエラーを生じる問題\r\n\r\n・Ethereal の OID 表示ルーチン (0.10.14) (CVE-2006-1932)\r\n\r\n- 以下の部位の不備により Ethereal がバッファオーバーフローを生じる問題\r\n\r\n・ALCAP 解析部 (0.10.14) (CVE-2006-1934)\r\n・Network Instruments ファイルの処理 (0.10.0 - 0.10.14) (CVE-2006-1934)\r\n・NetXray/Windows sniffer ファイルの処理 (0.10.13 - 0.10.14) (CVE-2006-1934)\r\n・COPS 解析部 (0.9.15 - 0.10.14) (CVE-2006-1935)\r\n・telnet 解析部 (0.8.5 - 0.10.14) (CVE-2006-1936)\r\n\r\nリモートの攻撃者に悪用された場合、Ethereal がクラッシュしサービス不能状態に陥る、あるいは Ethereal の実行権限 (通常 root 権限) で任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2006-000235",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1938",
+      "source": "CVE",
+      "id": "CVE-2006-1938"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1938",
+      "source": "NVD",
+      "id": "CVE-2006-1938"
+    },
+    {
+      "text": "http://secunia.com/advisories/19769",
+      "source": "SECUNIA",
+      "id": "SA19769"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17682",
+      "source": "BID",
+      "id": "17682"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

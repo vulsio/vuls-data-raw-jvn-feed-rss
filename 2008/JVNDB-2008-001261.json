@@ -1,0 +1,135 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001261.html",
+  "title": "OpenSSH における X11-forwarded コネクション処理の不備によるセッションハイジャックの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001261.html",
+  "description": "OpenSSH には、他のプロセスがポートを LISTENING 状態でも、ssh で DISPLAY 環境変数に :10 が設定されている場合、ローカルユーザに X コネクションを乗っ取られる脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2008-001261",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1483",
+      "source": "CVE",
+      "id": "CVE-2008-1483"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-1483",
+      "source": "NVD",
+      "id": "CVE-2008-1483"
+    },
+    {
+      "text": "http://secunia.com/advisories/29522/",
+      "source": "SECUNIA",
+      "id": "SA29522"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/28444",
+      "source": "BID",
+      "id": "28444"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/41438",
+      "source": "ISS-PA",
+      "id": "41438"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1019707",
+      "source": "SECTRACK",
+      "id": "1019707"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/0994",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-0994"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openbsd:openssh",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:H/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-08-05T09:50+09:00",
+  "issued": "2008-04-23T16:38+09:00",
+  "modified": "2011-08-05T09:50+09:00"
+}

@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005078.html",
+  "title": "複数の OS 上で稼動する IBM DB2 におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005078.html",
+  "description": "Linux、UNIX、および Windows 上で稼動する IBM DB2 (DB2 Connect Server を含む) には、不適切な境界チェックにより、スタックベースのバッファオーバーフローの脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を IBM X-Force ID: 125159 として公開しています。",
+  "identifier": "JVNDB-2017-005078",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1297",
+      "source": "CVE",
+      "id": "CVE-2017-1297"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-1297",
+      "source": "NVD",
+      "id": "CVE-2017-1297"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:db2",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM DB2"
+    },
+    {
+      "text": "cpe:/a:ibm:db2_connect",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM DB2 Connect"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-07-14T15:01+09:00",
+  "issued": "2017-07-14T15:01+09:00",
+  "modified": "2017-07-14T15:01+09:00"
+}

@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002842.html",
+  "title": "ICU の common/uloc.c 内の _canonicalize 関数におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002842.html",
+  "description": "International Components for Unicode (ICU) の common/uloc.c 内の _canonicalize 関数には、スタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002842",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU381963/index.html",
+      "source": "JVN",
+      "id": "JVNVU#381963"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU624491/index.html",
+      "source": "JVN",
+      "id": "JVNVU#624491"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4599",
+      "source": "CVE",
+      "id": "CVE-2011-4599"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4599",
+      "source": "NVD",
+      "id": "CVE-2011-4599"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:apple_tv",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple TV"
+    },
+    {
+      "text": "cpe:/a:icu_project:international_components_for_unicode",
+      "version": "2.2",
+      "vendor": "ICU project",
+      "product": "ICU"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-01-31T16:00+09:00",
+  "issued": "2012-06-25T16:42+09:00",
+  "modified": "2013-01-31T16:00+09:00"
+}

@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000176.html",
+  "title": "grip の CDDB 調査結果に対する処理が適切に行われないことによるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000176.html",
+  "description": "grip において、CDDB サーバから返される取得データの取り扱いに不備が存在するため、1 つの CD につき 17 件以上の取得データを処理した場合、バッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000176",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0706",
+      "source": "CVE",
+      "id": "CVE-2005-0706"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2005-0706",
+      "source": "NVD",
+      "id": "CVE-2005-0706"
+    },
+    {
+      "text": "http://secunia.com/advisories/14441/",
+      "source": "SECUNIA",
+      "id": "SA14441"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12770",
+      "source": "BID",
+      "id": "12770"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-03-12T11:39+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2009-03-12T11:39+09:00"
+}

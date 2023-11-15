@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009055.html",
+  "title": "Fieldcomm Group 製 HARP-IP Developer kit および hipserver にバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009055.html",
+  "description": "Fieldcomm Group 社が提供する HARP-IP Developer kit および hipserver には、バッファオーバーフローの脆弱性が存在します。\r\n\r\nhipserver は HART-IP Developer Kit に含まれるコンポーネントの一つであり、HART-IP とクライアントプログラム間の通信の管理等に使われるソフトウェアです。\r\nhipserver には、スタックベースのバッファオーバーフロー (CWE-121) の脆弱性が存在します。",
+  "identifier": "JVNDB-2020-009055",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU98382209/",
+      "source": "JVN",
+      "id": "JVNVU#98382209"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16209",
+      "source": "CVE",
+      "id": "CVE-2020-16209"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-20-287-04",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-287-04"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/121.html",
+      "id": "CWE-121",
+      "title": "スタックベースのバッファオーバーフロー(CWE-121)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:fieldcom_group_harp-ip_developer_kit",
+      "version": "2.2",
+      "vendor": "Fieldcomm Group",
+      "product": "HARP-IP Developer kit"
+    },
+    {
+      "text": "cpe:/a:misc:fieldcom_group_hipserver",
+      "version": "2.2",
+      "vendor": "Fieldcomm Group",
+      "product": "hipserver"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-10-15T17:35+09:00",
+  "issued": "2020-10-15T17:35+09:00",
+  "modified": "2020-10-15T17:35+09:00"
+}

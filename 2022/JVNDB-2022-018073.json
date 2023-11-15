@@ -1,0 +1,70 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-018073.html",
+  "title": "snyk の cli および golang cli における OS コマンドインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-018073.html",
+  "description": "snyk の cli および golang cli には、OS コマンドインジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2022-018073",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-40764",
+      "source": "CVE",
+      "id": "CVE-2022-40764"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-40764",
+      "source": "NVD",
+      "id": "CVE-2022-40764"
+    },
+    {
+      "text": "https://github.com/snyk/cli/releases/tag/v1.996.0",
+      "source": "関連文書",
+      "id": "github.com (v1.996.0)"
+    },
+    {
+      "text": "https://github.com/snyk/snyk-go-plugin/releases/tag/v1.19.1",
+      "source": "関連文書",
+      "id": "github.com (v1.19.1)"
+    },
+    {
+      "text": "https://support.snyk.io/hc/en-us/articles/7015908293789-CVE-2022-40764-Command-Injection-vulnerability-affecting-Snyk-CLI-versions-prior-to-1-996-0",
+      "source": "関連文書",
+      "id": "support.snyk.io (7015908293789-CVE-2022-40764-Command-Injection-vulnerability-affecting-Snyk-CLI-versions-prior-to-1-996-0)"
+    },
+    {
+      "text": "https://www.imperva.com/blog/how-scanning-your-projects-for-security-issues-can-lead-to-remote-code-execution/",
+      "source": "関連文書",
+      "id": "www.imperva.com (how-scanning-your-projects-for-security-issues-can-lead-to-remote-code-execution)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:snyk:cli",
+      "version": "2.2",
+      "vendor": "snyk",
+      "product": "cli"
+    },
+    {
+      "text": "cpe:/a:snyk:golang_cli",
+      "version": "2.2",
+      "vendor": "snyk",
+      "product": "golang cli"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-10-18T17:10+09:00",
+  "issued": "2023-10-18T17:10+09:00",
+  "modified": "2023-10-18T17:10+09:00"
+}

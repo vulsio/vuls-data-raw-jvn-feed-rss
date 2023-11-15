@@ -1,0 +1,92 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-014954.html",
+  "title": "Busybox の awk アプレットにおける解放済みメモリの使用に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-014954.html",
+  "description": "Busybox の awk アプレットには、解放済みメモリの使用に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-014954",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99752892/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99752892"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU99464755/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99464755"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-42383",
+      "source": "CVE",
+      "id": "CVE-2021-42383"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-42383",
+      "source": "NVD",
+      "id": "CVE-2021-42383"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-075-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-075-01"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20211223-0002/",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-080-07"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-166-10",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-166-10"
+    },
+    {
+      "text": "https://jfrog.com/blog/unboxing-busybox-14-new-vulnerabilities-uncovered-by-claroty-and-jfrog/",
+      "source": "関連文書",
+      "id": "Unboxing BusyBox - 14 new vulnerabilities uncovered by Claroty and JFro"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20211223-0002/",
+      "source": "関連文書",
+      "id": " NTAP-20211223-0002 (November 20BusyBox Vulnerabilities in NetApp Products)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/416.html",
+      "id": "CWE-416",
+      "title": "解放済みメモリの使用(CWE-416)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:busybox:busybox",
+      "version": "2.2",
+      "vendor": "BusyBox",
+      "product": "BusyBox"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-06-16T18:00+09:00",
+  "issued": "2022-11-02T16:27+09:00",
+  "modified": "2023-06-16T18:00+09:00"
+}

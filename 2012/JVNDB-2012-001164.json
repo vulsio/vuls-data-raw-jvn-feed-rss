@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001164.html",
+  "title": "IBM Rational License Key Server その他の製品におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001164.html",
+  "description": "IBM の Telelogic License Server の Rational Common Licensing 内の vendor デーモン、Rational License Server、および Rational License Key Server (RLKS) の ibmratl には、ログファイルの保存、名称変更、およびロード操作に関する処理に不備があるため、ディレクトリトラバーサルの脆弱性が存在します。\r\n本脆弱性は CVE-2011-4135 と重複している可能性があります。",
+  "identifier": "JVNDB-2012-001164",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1389",
+      "source": "CVE",
+      "id": "CVE-2011-1389"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1389",
+      "source": "NVD",
+      "id": "CVE-2011-1389"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:rational_license_key_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Rational License Key Server"
+    },
+    {
+      "text": "cpe:/a:ibm:rational_license_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "Rational License Server"
+    },
+    {
+      "text": "cpe:/a:ibm:telelogic_license_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "Telelogic License Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-01-24T16:19+09:00",
+  "issued": "2012-01-24T16:19+09:00",
+  "modified": "2012-01-24T16:19+09:00"
+}

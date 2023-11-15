@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002665.html",
+  "title": "複数の Mozilla 製品の Math.random 関数におけるユーザを追跡される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002665.html",
+  "description": "複数の Mozilla 製品の JavaScript 実装内にある Math.random 関数は、ドキュメントのオブジェクトごとに一度だけ実行されるランダム数値生成コードを使用しているため、シード値を計算されることにより、ユーザを追跡される、または偽装したポップアップメッセージを作動させユーザをだます脆弱性が存在します。\r\n本脆弱性は、CVE-2008-5913 に対する誤った修正が原因です。",
+  "identifier": "JVNDB-2010-002665",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3171",
+      "source": "CVE",
+      "id": "CVE-2010-3171"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3171",
+      "source": "NVD",
+      "id": "CVE-2010-3171"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/43222",
+      "source": "BID",
+      "id": "43222"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:seamonkey",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla SeaMonkey"
+    },
+    {
+      "text": "cpe:/o:oracle:solaris",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2011-01-20T13:51+09:00",
+  "issued": "2011-01-20T13:51+09:00",
+  "modified": "2011-01-20T13:51+09:00"
+}

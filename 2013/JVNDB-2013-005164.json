@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005164.html",
+  "title": "Xen におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005164.html",
+  "description": "Xen は、ネストされた仮想化が無効になっている場合、(1) VMLAUNCH および (2) VMRESUME のエミュレーションパスを適切にチェックしないため、サービス運用妨害 (ホストクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005164",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4551",
+      "source": "CVE",
+      "id": "CVE-2013-4551"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4551",
+      "source": "NVD",
+      "id": "CVE-2013-4551"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2013/11/11/1",
+      "source": "関連文書",
+      "id": "Xen Security Advisory 75 (CVE-2013-4551) - Host crash due to  guest VMX instruction execution"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:xen:xen",
+      "version": "2.2",
+      "vendor": "Xen プロジェクト",
+      "product": "Xen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2013-11-20T14:09+09:00",
+  "issued": "2013-11-20T14:09+09:00",
+  "modified": "2013-11-20T14:09+09:00"
+}

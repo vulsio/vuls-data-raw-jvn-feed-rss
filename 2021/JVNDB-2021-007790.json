@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007790.html",
+  "title": "kiali-operator におけるパーミッションの不適切な保持に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007790.html",
+  "description": "kiali-operator には、パーミッションの不適切な保持に関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2021-007790",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-3495",
+      "source": "CVE",
+      "id": "CVE-2021-3495"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3495",
+      "source": "NVD",
+      "id": "CVE-2021-3495"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1947361",
+      "source": "関連文書",
+      "id": "Bug 1947361 (CVE-2021-3495) - CVE-2021-3495 kiali/kiali-operator: can deploy specified image to any namespace"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/281.html",
+      "id": "CWE-281",
+      "title": "パーミッションの不適切な保持(CWE-281)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:netlify:kiali-operator",
+      "version": "2.2",
+      "vendor": "Netlify",
+      "product": "kiali-operator"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-02-22T17:53+09:00",
+  "issued": "2022-02-22T17:53+09:00",
+  "modified": "2022-02-22T17:53+09:00"
+}

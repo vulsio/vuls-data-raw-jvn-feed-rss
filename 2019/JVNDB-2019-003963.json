@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-003963.html",
+  "title": "三菱電機製 MELSEC-Q シリーズ Ethernet インタフェースユニットにおけるサービス運用妨害(DoS)の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-003963.html",
+  "description": "三菱電機株式会社が提供する MELSEC-Q シリーズの Ethernet インタフェースユニットの FTP 機能には、サービス運用妨害 (DoS) (CWE-400)の脆弱性が存在します。\r\n\r\n三菱電機株式会社が提供する MELSEC-Q シリーズの Ethernet インタフェースユニットには、遠隔の第三者によって細工された TCP パケットを FTP サービスが受信した際、Ethernet インタフェースユニットにシステムエラーが起き、サービスが停止する可能性があります。",
+  "identifier": "JVNDB-2019-003963",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU93268101/",
+      "source": "JVN",
+      "id": "JVNVU#93268101"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10977",
+      "source": "CVE",
+      "id": "CVE-2019-10977"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-10977",
+      "source": "NVD",
+      "id": "CVE-2019-10977"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-19-141-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-19-141-02"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:mitsubishielectric:qj71e71-100_firmware",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "QJ71E71-100"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2019-05-24T13:53+09:00",
+  "issued": "2019-05-24T13:53+09:00",
+  "modified": "2019-05-24T13:53+09:00"
+}

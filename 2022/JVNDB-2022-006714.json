@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-006714.html",
+  "title": "GPAC における NULL ポインタデリファレンスに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-006714.html",
+  "description": "GPAC には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-006714",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-24577",
+      "source": "CVE",
+      "id": "CVE-2022-24577"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-24577",
+      "source": "NVD",
+      "id": "CVE-2022-24577"
+    },
+    {
+      "text": "https://github.com/gpac/gpac/blob/105d67985ff3c3f4b98a98f312e3d84ae77a4463/share/doc/man/gpac.1#L2226-L2229",
+      "source": "関連文書",
+      "id": "github.com (gpac.1#L2226-L2229)"
+    },
+    {
+      "text": "https://github.com/gpac/gpac/blob/105d67985ff3c3f4b98a98f312e3d84ae77a4463/src/utils/utf.c#L35-L59",
+      "source": "関連文書",
+      "id": "github.com (utf.c#L35-L59)"
+    },
+    {
+      "text": "https://huntr.dev/bounties/0758b3a2-8ff2-45fc-8543-7633d605d24e/",
+      "source": "関連文書",
+      "id": "huntr.dev (0758b3a2-8ff2-45fc-8543-7633d605d24e)"
+    },
+    {
+      "text": "https://www.debian.org/security/2023/dsa-5411",
+      "source": "関連文書",
+      "id": "www.debian.org (dsa-5411)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gpac_project:gpac",
+      "version": "2.2",
+      "vendor": "GPAC",
+      "product": "GPAC"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-07-07T17:27+09:00",
+  "issued": "2023-07-07T17:27+09:00",
+  "modified": "2023-07-07T17:27+09:00"
+}

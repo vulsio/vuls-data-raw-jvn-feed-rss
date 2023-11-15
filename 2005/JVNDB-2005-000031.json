@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000031.html",
+  "title": "GNU Midnight Commander の未割り当てメモリ領域の解放によるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000031.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU Midnight Commander (mc) は、UNIX 系システムで広く利用されているファイルマネージャ風のビジュアルシェルです。 \r\n\r\nMc 4.5.55 以前には、以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n・複数のフォーマットストリングの問題 (CAN-2004-1004) \r\n\r\n・複数のバッファオーバーフローの問題 (CAN-2004-1005) \r\n\r\n・無限ループによりサービス不能状態に陥る問題 (CAN-2004-1009) \r\n\r\n・セクションヘッダの処理に不備が存在するため、サービス不能状態に陥る問題 \r\n　(CAN-2004-1090) \r\n\r\n・NULL ポインタがデリファレンスされ、サービス不能状態に陥る問題 \r\n　(CAN-2004-1091) \r\n\r\n・未割り当てのメモリ領域の解放により、サービス不能状態に陥る問題 \r\n　(CAN-2004-1092) \r\n\r\n・解放済みメモリ領域の使用により、サービス不能状態に陥る問題 \r\n　(CAN-2004-1093) \r\n\r\n・存在しないファイルの処理の不備のため、サービス不能状態に陥る問題 \r\n　(CAN-2004-1174) \r\n\r\n・fish.c の不備のため、不正なファイル名を処理した場合に、任意のコードが実行される問題 (CAN-2004-1175) \r\n\r\n・extfs.c にバッファオーバーフローが発生する問題が存在するため、サービス不能状態に陥る問題 (CAN-2004-1176) \r\n\r\n現時点において多くの問題は詳細が不明ですが、これらの問題を利用するリモートの攻撃者は、mc をサービス不能状態に陥らせる、あるいは mc を実行するユーザの権限で任意のコードを実行できる可能性があります。 \r\n\r\n尚、CAN-2004-1176 の問題に関しては、mc 4.6.0 においても影響を受ける可能性があります。",
+  "identifier": "JVNDB-2005-000031",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1092",
+      "source": "CVE",
+      "id": "CVE-2004-1092"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1092",
+      "source": "NVD",
+      "id": "CVE-2004-1092"
+    },
+    {
+      "text": "http://secunia.com/advisories/13859/",
+      "source": "SECUNIA",
+      "id": "SA13859"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12263",
+      "source": "BID",
+      "id": "12263"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

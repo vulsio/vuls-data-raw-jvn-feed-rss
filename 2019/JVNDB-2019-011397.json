@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-011397.html",
+  "title": "Microsoft Office for Mac において XLM マクロに対する挙動が不適切な問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-011397.html",
+  "description": "Microsoft Office for Mac では、「Disable all macros without notification」を有効にしておくと、プロンプトが表示されずに XLM マクロが実行されます。\r\n\r\nMicrosoft Office では、SYLK ファイル形式および XLM マクロ形式をサポートしています。SYLK 形式のファイルをオープンする際には保護されたビューは適用されません。また、Outflank のブログで述べられているように、SYLK ファイルには XLM マクロを組み込むことができます。\r\n\r\nOutflank の別のブログ記事によれば、Office 2011 for Mac では XLM マクロを含む SYLK ファイルを開く際にユーザへの警告を行いません。この件を Microsoft に報告した際の応答は、Office 2011 for Mac はすでにサポート終了であり対策を行う予定はない、Office 2016 for Mac および Office 2019 for Mac では SYLK ファイル中の XLM マクロを実行する際には適切にプロンプトを表示する、であったとのことです。\r\n\r\nしかし、CERT/CC において Office 2016 for Mac および Office 2019 for Mac の動作を検証したところ、\"Disable all macros without notification\" と設定している場合、SYLK ファイル中の XLM マクロはユーザへの警告なしに実行されたとのことです。",
+  "identifier": "JVNDB-2019-011397",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU98504876",
+      "source": "JVN",
+      "id": "JVNVU#98504876"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-1457",
+      "source": "CVE",
+      "id": "CVE-2019-1457"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/125336/",
+      "source": "CERT-VN",
+      "id": "VU#125336"
+    },
+    {
+      "text": "https://outflank.nl/blog/2019/10/30/abusing-the-sylk-file-format/",
+      "source": "関連文書",
+      "id": "Abusing the SYLK file format"
+    },
+    {
+      "text": "https://outflank.nl/blog/2018/10/12/sylk-xlm-code-execution-on-office-2011-for-mac/",
+      "source": "関連文書",
+      "id": "Sylk + XLM = Code execution on Office 2011 for Mac"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:office_for_mac",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Office for Mac"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-11-08T17:59+09:00",
+  "issued": "2019-11-07T11:28+09:00",
+  "modified": "2019-11-08T17:59+09:00"
+}

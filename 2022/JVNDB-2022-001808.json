@@ -1,0 +1,45 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001808.html",
+  "title": "ISC BIND におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001808.html",
+  "description": "ISC（Internet Systems Consortium）が提供する ISC BIND には、TLS セッションが早期に切断された場合にアサーションエラーが発生する、サービス運用妨害（DoS）の脆弱性が存在します。\r\n\r\nnamed.conf 内の listen-on の記述に http への参照が含まれる場合、TLS セッションが早期に切断されるとアサーションエラーが発生し、named デーモンが異常終了するサービス運用妨害（DoS）の脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2022-001808",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU94035450/",
+      "source": "JVN",
+      "id": "JVNVU#94035450"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-1183",
+      "source": "CVE",
+      "id": "CVE-2022-1183"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-1183",
+      "source": "NVD",
+      "id": "CVE-2022-1183"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/newsflash/2022051901.html",
+      "source": "JPCERT",
+      "id": "ISC BIND 9における脆弱性について（2022年5月）"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2022-05-19-bind9-vuln-dnsoverhttps.html",
+      "source": "JPRS",
+      "id": "（緊急）BIND 9.18.xの脆弱性（DNSサービスの停止）について（CVE-2022-1183）- BIND 9.18系列のみが対象、バージョンアップを強く推奨 -"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    }
+  ],
+  "date": "2022-05-20T16:37+09:00",
+  "issued": "2022-05-20T16:37+09:00",
+  "modified": "2022-05-20T16:37+09:00"
+}

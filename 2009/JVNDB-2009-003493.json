@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-003493.html",
+  "title": "Worldweaver DX Studio Player における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-003493.html",
+  "description": "Worldweaver DX Studio Player には、Firefox のプラグインとして使用される際、shell.execute JavaScript API メソッドへのアクセスを制限しないため、任意のコマンドを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-003493",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2011",
+      "source": "CVE",
+      "id": "CVE-2009-2011"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2011",
+      "source": "NVD",
+      "id": "CVE-2009-2011"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:dxstudio:dx_studio_player",
+      "version": "2.2",
+      "vendor": "dxstudio",
+      "product": "dx studio player"
+    },
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-06-26T16:10+09:00",
+  "issued": "2012-06-26T16:10+09:00",
+  "modified": "2012-06-26T16:10+09:00"
+}

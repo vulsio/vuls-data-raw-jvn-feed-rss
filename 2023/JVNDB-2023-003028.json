@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-003028.html",
+  "title": "Phoenix Technologies 製 Windows カーネルドライバーにおける IOCTL に対する不十分なアクセス制御の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-003028.html",
+  "description": "Phoenix Technologies Inc. が提供する Windows カーネルドライバーの一部には、IOCTL に対する不十分なアクセス制御の脆弱性 (CWE-782、CVE-2023-35841) が存在します。\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: VMware 春山敬宏 氏\r\n",
+  "identifier": "JVNDB-2023-003028",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU93886750/index.html",
+      "source": "JVN",
+      "id": "JVNVU#93886750"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-35841",
+      "source": "CVE",
+      "id": "CVE-2023-35841"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/782.html",
+      "id": "CWE-782",
+      "title": "不十分なアクセス制御による IOCTL の公開(CWE-782)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:phoenix:tdklib64.sys",
+      "version": "2.2",
+      "vendor": "Phoenix Technologies Inc.",
+      "product": "TdkLib64.sys"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+    }
+  ],
+  "date": "2023-08-30T09:36+09:00",
+  "issued": "2023-08-30T09:36+09:00",
+  "modified": "2023-08-30T09:36+09:00"
+}

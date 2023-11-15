@@ -1,0 +1,39 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-003628.html",
+  "title": "PHP における open_basedir 制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-003628.html",
+  "description": "PHP には、空のセッション保存パス (session.save_path) を使用する際、制限を確認した後 TMPDIR デフォルトを使用するため、open_basedir 制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2007-003628",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1835",
+      "source": "CVE",
+      "id": "CVE-2007-1835"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-1835",
+      "source": "NVD",
+      "id": "CVE-2007-1835"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T16:47+09:00",
+  "issued": "2012-09-25T16:47+09:00",
+  "modified": "2012-09-25T16:47+09:00"
+}

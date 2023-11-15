@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003859.html",
+  "title": "Total Commander 用プラグイン FileInfo にサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003859.html",
+  "description": "Total Commander 用プラグイン FileInfo には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nTotal Commander 用のプラグインである FileInfo には、細工されたファイルの処理により、範囲外 (out-of-bounds) の読み込みが発生する脆弱性 (CWE-125) が存在します。攻撃者はこの脆弱性を使用し、Total Commander を停止させることが可能です。\r\n\r\nCWE-125: Out-of-bounds Read\r\nhttps://cwe.mitre.org/data/definitions/125.html\r\n\r\nこの問題は strncmp 関数の不適切な使用に起因しており、少なくとも 2種類のファイルの処理で確認されています。\r\n\r\n　* Archive Member Header の 'Size' フィールド、もしくは 1st Linker Member の \"Number Of Symbols\" フィールドに過大な値を指定した COFF 形式ファイル (.lib)\r\n\r\n　* LE Header の \"Resource Table Count\" フィールド、もしくは \"Resource Table Entry\" のオフセット 0x8 に位置する \"Object\" フィールドに過大な値を指定した Linear Executable ファイル",
+  "identifier": "JVNDB-2015-003859",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91359631/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91359631"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2869",
+      "source": "CVE",
+      "id": "CVE-2015-2869"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2869",
+      "source": "NVD",
+      "id": "CVE-2015-2869"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/813631",
+      "source": "CERT-VN",
+      "id": "VU#813631"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fransois_gannier:fileinfo_plugin",
+      "version": "2.2",
+      "vendor": "TOTALCMD.NET",
+      "product": "FileInfo"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-07-23T10:21+09:00",
+  "issued": "2015-07-23T10:21+09:00",
+  "modified": "2015-07-23T10:21+09:00"
+}

@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002415.html",
+  "title": "policycoreutils の seunshare における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002415.html",
+  "description": "policycoreutils の seunshare は、4755 パーミッションを持つ root に 所有され、setuid システムコールと set-user-ID 値で保存された getresuid の関係を変更するプログラムを実行するため、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002415",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3215",
+      "source": "CVE",
+      "id": "CVE-2014-3215"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3215",
+      "source": "NVD",
+      "id": "CVE-2014-3215"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2014/04/29/7",
+      "source": "関連文書",
+      "id": "local privilege escalation due to capng_lock as used in seunshare"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2014/04/30/4",
+      "source": "関連文書",
+      "id": "Re: local privilege escalation due to capng_lock as used in seunshare (2014/04/30)"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2014/05/08/1",
+      "source": "関連文書",
+      "id": "Re: local privilege escalation due to capng_lock as used in seunshare (2014/05/08)"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2014-0251.html",
+      "source": "関連文書",
+      "id": "MGASA-2014-0251"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:policycoreutils",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "policycoreutils"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-06-09T18:03+09:00",
+  "issued": "2014-05-09T14:56+09:00",
+  "modified": "2015-06-09T18:03+09:00"
+}

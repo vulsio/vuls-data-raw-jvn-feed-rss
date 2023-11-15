@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002421.html",
+  "title": "nfs-utils における TCP Wrapper に関するアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002421.html",
+  "description": "nfs-utils には、hosts_ctl 関数を呼び出す際に、誤った順序で引数を渡すことで、TCP Wrapper が　netgroups を無視するため、アクセス制限を回避可能な脆弱性が存在します。",
+  "identifier": "JVNDB-2008-002421",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4552",
+      "source": "CVE",
+      "id": "CVE-2008-4552"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-4552",
+      "source": "NVD",
+      "id": "CVE-2008-4552"
+    },
+    {
+      "text": "http://secunia.com/advisories/32346",
+      "source": "SECUNIA",
+      "id": "SA32346"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/31823",
+      "source": "BID",
+      "id": "31823"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/45895",
+      "source": "XF",
+      "id": "45895"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2008/2855",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2008-2855"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:linux-nfs:nfs-utils",
+      "version": "2.2",
+      "vendor": "Linux NFS",
+      "product": "nfs-utils"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-10-09T13:20+09:00",
+  "issued": "2009-10-09T13:20+09:00",
+  "modified": "2009-10-09T13:20+09:00"
+}

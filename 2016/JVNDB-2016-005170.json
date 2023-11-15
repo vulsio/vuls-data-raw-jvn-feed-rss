@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005170.html",
+  "title": "SAP Netweaver の SCTC サブパッケージの複数の関数における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005170.html",
+  "description": "SAP Netweaver の SCTC サブパッケージの (1) SCTC_REFRESH_EXPORT_TAB_COMP、(2) SCTC_REFRESH_CHECK_ENV、および (3) SCTC_TMS_MAINTAIN_ALOG 関数には、任意のコマンドを実行される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を SAP Security Note 2260344 として公開しています。",
+  "identifier": "JVNDB-2016-005170",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7435",
+      "source": "CVE",
+      "id": "CVE-2016-7435"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7435",
+      "source": "NVD",
+      "id": "CVE-2016-7435"
+    },
+    {
+      "text": "https://www.onapsis.com/blog/analyzing-sap-security-notes-march-2016",
+      "source": "関連文書",
+      "id": "Analyzing SAP Security Notes March 2016 (2260344)"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2016/Oct/0",
+      "source": "関連文書",
+      "id": "Onapsis Security Advisory ONAPSIS-2016-041: SAP OS Command Injection in SCTC_REFRESH_EXPORT_TAB_COMP"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2016/Oct/2",
+      "source": "関連文書",
+      "id": "Onapsis Security Advisory ONAPSIS-2016-042: SAP OS Command Injection in SCTC_REFRESH_CHECK_ENV"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2016/Oct/1",
+      "source": "関連文書",
+      "id": "Onapsis Security Advisory ONAPSIS-2016-043: SAP OS Command Injection in SCTC_TMS_MAINTAIN_ALOG"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sap:netweaver",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "SAP NetWeaver"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.1",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-10-13T11:34+09:00",
+  "issued": "2016-10-13T11:34+09:00",
+  "modified": "2016-10-13T11:34+09:00"
+}

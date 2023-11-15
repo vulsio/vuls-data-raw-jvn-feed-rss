@@ -1,0 +1,93 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000111.html",
+  "title": "Perl の rmtree() 関数における削除するファイルやディレクトリに対し不適切なパーミッション設定をしてしまう脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000111.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPerl は CGI の開発などに活用されているプログラミング言語です。Perl の File::Path モジュールにはディレクトリツリーを一括で削除する関数である rmtree() 関数が実装されています。\r\n\r\nPerl 5.x に実装される File::Path モジュールでは、rmtree() 関数の処理において、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1.削除するファイルやディレクトリに対し、セキュリティ上不適切なパーミッションを設定する問題 (CVE-2004-0452)\r\n\r\n2.ディレクトリを削除するための前処理としてディレクトリのパーミッションを変更する際に競合状態が発生し、ディレクトリ内に任意のファイルへのシンボリックリンクが作成されてしまう問題 (CVE-2005-0448)\r\n\r\nこれらの問題を利用するローカルの攻撃者は、結果として本来アクセス権のないファイルやディレクトリを削除する、あるいはシンボリックリンク攻撃を試み任意のファイルやディレクトリのパーミッションを変更することが可能です。",
+  "identifier": "JVNDB-2005-000111",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0452",
+      "source": "CVE",
+      "id": "CVE-2004-0452"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0452",
+      "source": "NVD",
+      "id": "CVE-2004-0452"
+    },
+    {
+      "text": "http://secunia.com/advisories/14531/",
+      "source": "SECUNIA",
+      "id": "SA14531"
+    },
+    {
+      "text": "http://secunia.com/advisories/13643/",
+      "source": "SECUNIA",
+      "id": "SA13643"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12767",
+      "source": "BID",
+      "id": "12767"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12072",
+      "source": "BID",
+      "id": "12072"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/18650",
+      "source": "XF",
+      "id": "18650"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2005/Jun/1014213.html",
+      "source": "SECTRACK",
+      "id": "1014213"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:perl:perl",
+      "version": "2.2",
+      "vendor": "The Perl Foundation",
+      "product": "Perl"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2013-11-01T14:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2013-11-01T14:00+09:00"
+}

@@ -1,0 +1,157 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000035.html",
+  "title": "Microsoft Windows の SNMP エージェントにおけるサービス運用妨害 (DoS) 及び任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000035.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSNMP プロトコルは、ステータスやパフォーマンス情報である MIB (Management Information Base) を交換するために利用されるプロトコルです。 \r\n管理側の SNMP マネージャーが、管理される側のルータやスイッチ、プリンタなどの SNMP エージェントと呼ばれる管理ネットワークデバイスと通信します。 \r\n市場で広く受入れられていることから、SNMP の標準ともなっている SNMP プロトコルversion1 である SNMPv1 は中でも最も広く実装されています。 \r\n\r\nこの SNMPv1 の実装において、エージェントからマネージャーに送られる SNMP トラップメッセージ、およびマネージャーからエージェント送られる SNMP リクエストメッセージの解読/解釈する際に問題が存在します。 \r\n\r\nこの問題を攻撃者に利用されることで、以下のような行為が実行されてしまう可能性があります。プロトコルに問題が存在するため、実装する上記以外の数多くのプログラムも影響を受ける可能性があります。 \r\n\r\n・ターゲットとなるホスト上に SNMP サービスが稼動している場合、攻撃者に任意のコードを実行されてしまう可能性がある \r\n\r\n・バッファオーバフロー攻撃が実行可能である場合で、かつ非常に長いトラップメッセージを SNMP サービスが稼動しているホストが受け取る場合、アプリケーションがサービス不能状態に陥る可能性がある \r\n\r\n上記で説明した影響については、アプリケーションによって異なります。詳細については、各製品ごとにご参照ください。",
+  "identifier": "JVNDB-2002-000035",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNCA-2002-03",
+      "source": "JVN",
+      "id": "JVNCA-2002-03"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0053",
+      "source": "CVE",
+      "id": "CVE-2002-0053"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0053",
+      "source": "NVD",
+      "id": "CVE-2002-0053"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2002/at020001.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2002-0001"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr020701.txt",
+      "source": "JPCERT-WR",
+      "id": "wr020701"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr020901.txt",
+      "source": "JPCERT-WR",
+      "id": "wr020901"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-2002-03.html",
+      "source": "CERT-A",
+      "id": "CA-2002-03"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/854306",
+      "source": "CERT-VN",
+      "id": "VU#854306"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/107186",
+      "source": "CERT-VN",
+      "id": "VU#107186"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/20020213snmp.html",
+      "source": "IPA",
+      "id": "広範囲に該当する SNMP の脆弱性について"
+    },
+    {
+      "text": "http://www.ciac.org/ciac/bulletins/m-042.shtml",
+      "source": "CIAC",
+      "id": "M-042"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4088",
+      "source": "BID",
+      "id": "4088"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4089",
+      "source": "BID",
+      "id": "4089"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/8176",
+      "source": "ISS",
+      "id": "8176"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/8177",
+      "source": "ISS",
+      "id": "8177"
+    },
+    {
+      "text": "http://www.isskk.co.jp/support/techinfo/general/PROTOS_SNMP_xforce.html",
+      "source": "ISSKK",
+      "id": "PROTOS リモート SNMP 攻撃ツール"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:hp:vvos",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX (VVOS)"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows-9x",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 9X"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_nt",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows NT"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

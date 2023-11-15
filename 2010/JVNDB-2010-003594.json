@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003594.html",
+  "title": "Exim の open_log 機能における任意のファイルにログデータをアペンドさせる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003594.html",
+  "description": "Exim の log.c の open_log 機能は、(1) setuid または (2) setgid システムコールの戻り値をチェックしないため、任意のファイルへログデータをアペンドさせる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-003594",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0017",
+      "source": "CVE",
+      "id": "CVE-2011-0017"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0017",
+      "source": "NVD",
+      "id": "CVE-2011-0017"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+      "id": "CWE-59",
+      "title": "リンク解釈の問題(CWE-59)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:exim:exim",
+      "version": "2.2",
+      "vendor": "Exim Development",
+      "product": "Exim"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-03-27T18:42+09:00",
+  "issued": "2012-03-27T18:42+09:00",
+  "modified": "2012-03-27T18:42+09:00"
+}

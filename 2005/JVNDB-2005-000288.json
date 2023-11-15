@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000288.html",
+  "title": "FreeRADIUS の sql_escape_func() 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000288.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nFreeRADIUS は、RADIUS プロトコルを実装したオープンソースのインターネット認証サーバです。\r\n\r\nFreeRADIUS 1.0.2 以前の SQL モジュール (rlm_sql.c) に実装されている特定の関数において、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) radius_xlat() 関数においてユーザが入力した値が適切にサニタイズされない問題が存在します。(CAN-2005-1454)\r\n\r\nこの問題を利用するローカルの攻撃者は、意図的なリクエストを送信することで group_membership_query、simul_count_query または  simul_verify_query において SQL インジェクションを実行し、バックエンドデータベースのデータを追加、変更、または削除する可能性があります。\r\n\r\n尚、group_membership_query に関しては radiusd.conf の authorize セクションにおける任意のモジュールで SQL-Group 属性が設定されている場合、simul_count_query および simul_verify_query はユーザ名に引用符 (') が含まれるユーザが存在する場合にそれぞれ悪用可能であることが freeradius.org より報告されています。\r\n\r\n2) sql_escape_func() 関数においてユーザが入力した値の長さの妥当性が適切にチェックされないために、バッファオーバーフローが発生する問題が存在します。(CAN-2005-1455)\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した要求を FreeRADIUS サーバに送りつけることで、FreeRADIUS サーバをクラッシュさせ、結果としてサービス不能状態に陥らせる可能性があります。\r\n\r\nただし、攻撃者が認証情報を必要とするかは FreeRADIUS サーバの設定に依存します。また、この問題により任意のコードを実行することは極めて困難であることが freeradius.org より報告されています。\r\n\r\n尚、FreeRADIUS サーバにおいて SQL モジュールを使用していない場合には、これらの問題の影響を受けません。",
+  "identifier": "JVNDB-2005-000288",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1455",
+      "source": "CVE",
+      "id": "CVE-2005-1455"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1455",
+      "source": "NVD",
+      "id": "CVE-2005-1455"
+    },
+    {
+      "text": "http://secunia.com/advisories/15361/",
+      "source": "SECUNIA",
+      "id": "SA15361"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13541",
+      "source": "BID",
+      "id": "13541"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13540",
+      "source": "BID",
+      "id": "13540"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/20450",
+      "source": "XF",
+      "id": "20450"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/20449",
+      "source": "XF",
+      "id": "20449"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2005/May/1013909.html",
+      "source": "SECTRACK",
+      "id": "1013909"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

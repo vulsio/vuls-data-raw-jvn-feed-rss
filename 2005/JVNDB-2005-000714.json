@@ -1,0 +1,141 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000714.html",
+  "title": "IPSec 通信の設定に存在する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000714.html",
+  "description": "IPSec 通信の際に、機密性 (Confidentiality) 保護のみで、完全性 (Integrity) 保護を設定していない時に発生する脆弱性が発見されました。ESP の使用している鍵 (AES、DES、Triple-DES) のバージョン・鍵サイズに関わらず発生します。\r\n\r\n本脆弱性は暗号化された IPSec 通信に対し bit-flipping 手法を用いることで IP ヘッダ (送信元アドレス、ヘッダ長、プロトコルフィールド) 内のデータを改ざんされることで悪用されます。\r\nデータを改ざんされた後、送信元に送られる ICMP エラーメッセージを受け取ることで通信内容が取得されてしまう可能性があります。",
+  "identifier": "JVNDB-2005-000714",
+  "references": [
+    {
+      "text": "http://jvn.jp/niscc/NISCC-004033/index.html",
+      "source": "JVN",
+      "id": "NISCC-004033"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0039",
+      "source": "CVE",
+      "id": "CVE-2005-0039"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0039",
+      "source": "NVD",
+      "id": "CVE-2005-0039"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/2005/20050512_115848.html",
+      "source": "AT-POLICE",
+      "id": "IPsecに関する脆弱性について"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/302220",
+      "source": "CERT-VN",
+      "id": "VU#302220"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/docs/re-20050509-00385.pdf?lang=en",
+      "source": "NISCC",
+      "id": "004033/NISCC/IPSEC"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20050509-00385.xml",
+      "source": "CPNI",
+      "id": "00385"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13562",
+      "source": "BID",
+      "id": "13562"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:alaxala:ax2000r",
+      "version": "2.2",
+      "vendor": "アラクサラネットワークス",
+      "product": "AX2000Rシリーズ"
+    },
+    {
+      "text": "cpe:/h:allied_telesis_k.k.:router",
+      "version": "2.2",
+      "vendor": "アライドテレシス",
+      "product": "ルーター"
+    },
+    {
+      "text": "cpe:/h:furukawa_electric:fitelnet-f",
+      "version": "2.2",
+      "vendor": "古河電気工業",
+      "product": "FITELnet-Fシリーズ"
+    },
+    {
+      "text": "cpe:/h:furukawa_electric:mucho",
+      "version": "2.2",
+      "vendor": "古河電気工業",
+      "product": "MUCHOシリーズ"
+    },
+    {
+      "text": "cpe:/h:hitachi:gr2000",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "GR2000"
+    },
+    {
+      "text": "cpe:/h:nec:ip38x",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IP38X シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:ix1000",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX1000シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:ix2000",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX2000シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:ix3000",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX3000シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:ix5000",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX5000シリーズ"
+    },
+    {
+      "text": "cpe:/h:nec:qx",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "QXシリーズ"
+    },
+    {
+      "text": "cpe:/h:yamaha:rt",
+      "version": "2.2",
+      "vendor": "ヤマハ",
+      "product": "RT シリーズ"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

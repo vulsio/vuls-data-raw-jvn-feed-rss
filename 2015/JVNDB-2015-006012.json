@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006012.html",
+  "title": "Red Hat Enterprise Linux の grub2 パッケージにおける Secure Boot 制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006012.html",
+  "description": "Red Hat Enterprise Linux (RHEL) の grub2 パッケージは、UEFI システム上で使用される場合、Secure Boot 制限を回避され、検証されていないコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-006012",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5281",
+      "source": "CVE",
+      "id": "CVE-2015-5281"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5281",
+      "source": "NVD",
+      "id": "CVE-2015-5281"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:grub_2",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GRUB 2"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2015-11-26T10:53+09:00",
+  "issued": "2015-11-26T10:53+09:00",
+  "modified": "2015-11-26T10:53+09:00"
+}

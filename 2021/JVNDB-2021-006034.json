@@ -1,0 +1,30 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006034.html",
+  "title": "Saviynt 製 Enterprise Identity Cloud における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006034.html",
+  "description": "Saviynt 社が提供する Enterprise Identity Cloud には、ローカル認証システムのためのパスワードリセット機能において、次の複数の脆弱性があります。\r\n\r\n　* 次のような URI にて id パラメタを指定されると、管理者ユーザーを含むをユーザ名返却してしまう脆弱\r\n　　　* /ECM/maintenance/forgotpasswordstep1?otpConfig=false&id=5\r\n\r\n　* ユーザ名を取得後、ボタンの再表示を行うまたは検証をバイパスすることで、パスワードを変更できる URL にアクセス可能な脆弱性\r\n\r\nその後、新しい資格情報を使用してログイン URL にアクセスすると、Enerprise Identity Cloud インスタンスへの認証に使用できる Cookie が生成されます。",
+  "identifier": "JVNDB-2021-006034",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU93410694/",
+      "source": "JVN",
+      "id": "JVNVU#93410694"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/692873",
+      "source": "CERT-VN",
+      "id": "VU#692873"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:saviynt:saviynt_saviynt_iga_release",
+      "version": "2.2",
+      "vendor": "Saviynt",
+      "product": "Saviynt IGA Release"
+    }
+  ],
+  "date": "2021-12-24T14:25+09:00",
+  "issued": "2021-12-24T14:25+09:00",
+  "modified": "2021-12-24T14:25+09:00"
+}

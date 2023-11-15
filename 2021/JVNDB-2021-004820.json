@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-004820.html",
+  "title": "複数の Azure 製品における情報を公開される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-004820.html",
+  "description": "複数の Azure 製品には、Azure Active Directory に不備があるため、情報を公開される脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2021-004820",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42306",
+      "source": "CVE",
+      "id": "CVE-2021-42306"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-42306",
+      "source": "NVD",
+      "id": "CVE-2021-42306"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/668.html",
+      "id": "CWE-668",
+      "title": "誤った領域へのリソースの漏えい(CWE-668)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:azure_active_directory",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Azure Active Directory"
+    },
+    {
+      "text": "cpe:/a:microsoft:azure_automation",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Azure Automation"
+    },
+    {
+      "text": "cpe:/a:microsoft:azure_migrate",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Azure Migrate"
+    },
+    {
+      "text": "cpe:/a:microsoft:azure_site_recovery",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Azure Site Recovery"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2021-12-01T12:27+09:00",
+  "issued": "2021-12-01T12:27+09:00",
+  "modified": "2021-12-01T12:27+09:00"
+}

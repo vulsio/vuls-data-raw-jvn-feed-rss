@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004291.html",
+  "title": "suds の cache.py における SOAP クエリをリダイレクトされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004291.html",
+  "description": "suds の cache.py には、tempdir が None に設定されている場合、SOAP クエリをリダイレクトされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004291",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2217",
+      "source": "CVE",
+      "id": "CVE-2013-2217"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2217",
+      "source": "NVD",
+      "id": "CVE-2013-2217"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+      "id": "CWE-59",
+      "title": "リンク解釈の問題(CWE-59)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:jeff_ortel:suds",
+      "version": "2.2",
+      "vendor": "Jeff Ortel",
+      "product": "suds"
+    },
+    {
+      "text": "cpe:/o:novell:opensuse",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "openSUSE"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2013-11-12T17:26+09:00",
+  "issued": "2013-09-26T11:14+09:00",
+  "modified": "2013-11-12T17:26+09:00"
+}

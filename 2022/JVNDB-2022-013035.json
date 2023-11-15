@@ -1,0 +1,107 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-013035.html",
+  "title": "Fabrice Bellard の QEMU 他複数ベンダの製品における初期化されていないリソースの使用に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-013035.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nFabrice Bellard の QEMU 他複数ベンダの製品には、初期化されていないリソースの使用に関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性に対して異議を唱えています。\r\n詳細については、以下の NVD の Current Description を確認してください。\r\nhttps://nvd.nist.gov/vuln/detail/CVE-2022-35414",
+  "identifier": "JVNDB-2022-013035",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-35414",
+      "source": "CVE",
+      "id": "CVE-2022-35414"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-35414",
+      "source": "NVD",
+      "id": "CVE-2022-35414"
+    },
+    {
+      "text": "https://github.com/qemu/qemu/blob/f200ff158d5abcb974a6b597a962b6b2fbea2b06/softmmu/physmem.c",
+      "source": "関連文書",
+      "id": "github.com (physmem.c)"
+    },
+    {
+      "text": "https://github.com/qemu/qemu/blob/v7.0.0/include/exec/cpu-all.h#L145-L148",
+      "source": "関連文書",
+      "id": "github.com (cpu-all.h#L145-L148)"
+    },
+    {
+      "text": "https://github.com/qemu/qemu/commit/3517fb726741c109cae7995f9ea46f0cab6187d6#diff-83c563ed6330dc5d49876f1116e7518b5c16654bbc6e9b4ea8e28f5833d576fcR482",
+      "source": "関連文書",
+      "id": "github.com (3517fb726741c109cae7995f9ea46f0cab6187d6#diff-83c563ed6330dc5d49876f1116e7518b5c16654bbc6e9b4ea8e28f5833d576fcR482)"
+    },
+    {
+      "text": "https://github.com/qemu/qemu/commit/3517fb726741c109cae7995f9ea46f0cab6187d6#diff-83c563ed6330dc5d49876f1116e7518b5c16654bbc6e9b4ea8e28f5833d576fcR482.aa",
+      "source": "関連文書",
+      "id": "github.com (3517fb726741c109cae7995f9ea46f0cab6187d6#diff-83c563ed6330dc5d49876f1116e7518b5c16654bbc6e9b4ea8e28f5833d576fcR482.aa)"
+    },
+    {
+      "text": "https://github.com/qemu/qemu/commit/418ade7849ce7641c0f7333718caf5091a02fd4c",
+      "source": "関連文書",
+      "id": "github.com (418ade7849ce7641c0f7333718caf5091a02fd4c)"
+    },
+    {
+      "text": "https://gitlab.com/qemu-project/qemu/-/issues/1065",
+      "source": "関連文書",
+      "id": "gitlab.com (issues/1065)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2022/09/msg00008.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00008)"
+    },
+    {
+      "text": "https://sick.codes/sick-2022-113",
+      "source": "関連文書",
+      "id": "sick.codes (sick-2022-113)"
+    },
+    {
+      "text": "https://www.mail-archive.com/qemu-devel@nongnu.org/msg895266.html",
+      "source": "関連文書",
+      "id": "www.mail-archive.com (msg895266)"
+    },
+    {
+      "text": "https://www.qemu.org/docs/master/system/security.html#non-virtualization-use-case",
+      "source": "関連文書",
+      "id": "www.qemu.org (security.html#non-virtualization-use-case)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/908.html",
+      "id": "CWE-908",
+      "title": "初期化されていないリソースの使用(CWE-908)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-09-05T17:15+09:00",
+  "issued": "2023-09-05T17:15+09:00",
+  "modified": "2023-09-05T17:15+09:00"
+}

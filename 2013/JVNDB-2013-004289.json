@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004289.html",
+  "title": "Telepathy Gabble の Wocky モジュールにおける TLS の検証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004289.html",
+  "description": "Telepathy Gabble の Wocky モジュールは、レガシーの Jabber サーバに接続している場合、WockyConnector:tls-required フラグを適切に処理しないため、TLS の検証を回避される、および中間者攻撃 (man-in-the-middle attack) を実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004289",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1431",
+      "source": "CVE",
+      "id": "CVE-2013-1431"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1431",
+      "source": "NVD",
+      "id": "CVE-2013-1431"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:simonmcvittie:telepathy_gabble",
+      "version": "2.2",
+      "vendor": "Simon McVittie",
+      "product": "Telepathy Gabble"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-10-09T11:22+09:00",
+  "issued": "2013-09-26T11:01+09:00",
+  "modified": "2013-10-09T11:22+09:00"
+}

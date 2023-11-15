@@ -1,0 +1,86 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001210.html",
+  "title": "Microsoft Exchange 2013 およびそれ以降における NTLM 中継攻撃が可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001210.html",
+  "description": "Microsoft Exchange 2013 およびそれ以降では、HTTP を介した NTLM 認証で Sign フラグおよび Seal フラグを設定しておらず、NTLM 認証中継攻撃によって Exchange サーバの管理者権限を取得される可能性があります。\r\n\r\nMicrosoft Exchange は <a href=\"https://docs.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2010/dd877045(v%3Dexchg.140)\"target=\"blank\">Exchange Web Services (EWS)</a> と呼ばれる API をサポートしており、そのなかの <a href=\"https://docs.microsoft.com/pt-br/dotnet/api/microsoft.exchange.webservices.data.pushsubscription?view=exchange-ews-api\"target=\"blank\">PushSubscriptionRequest</a> を使うと Exchange サーバを任意の web サイトに接続させることが可能です。PushSubscriptionRequest で登録された web サイトへの接続では NTLM 認証が行われます。\r\n\r\nExchange 2013 およびそれ以降では、HTTP を介した NTLM 認証で NTLM <a href=\"https://msdn.microsoft.com/en-us/library/cc236707.aspx\"target=\"blank\">Sign</a> フラグおよび <a href=\"https://msdn.microsoft.com/en-us/library/cc236707.aspx\"target=\"blank\">Seal</a> フラグが設定されていません。署名が行われていないため NTLM 認証データを中継することによる攻撃が可能です。\r\n\r\nMicrosoft Exchange は、初期設定において Active Directory ドメイン内のオブジェクトに対し大きな権限を持っています。また、Exchange Windows Permissions グループにはオブジェクトへの WriteDacl 権限が許可されています。このことから、本脆弱性を悪用して Exchange サーバの権限を取得されることで、さらに Domain Admin 権限を取得される可能性があります。\r\n",
+  "identifier": "JVNDB-2019-001210",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU97449410/",
+      "source": "JVN",
+      "id": "JVNVU#97449410"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0686",
+      "source": "CVE",
+      "id": "CVE-2019-0686"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-0686",
+      "source": "NVD",
+      "id": "CVE-2019-0686"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/465632/",
+      "source": "CERT-VN",
+      "id": "VU#465632"
+    },
+    {
+      "text": "https://dirkjanm.io/abusing-exchange-one-api-call-away-from-domain-admin/",
+      "source": "関連文書",
+      "id": "Abusing Exchange: One API call away from Domain Admin"
+    },
+    {
+      "text": "https://www.thezdi.com/blog/2018/12/19/an-insincere-form-of-flattery-impersonating-users-on-microsoft-exchange",
+      "source": "関連文書",
+      "id": "An Insincere Form of Flattery: Impersonating Users on Microsoft Exchange"
+    },
+    {
+      "text": "https://docs.microsoft.com/en-us/dotnet/api/microsoft.exchange.webservices.data.pushsubscription?view=exchange-ews-api+",
+      "source": "関連文書",
+      "id": "PushSubscription Class"
+    },
+    {
+      "text": "https://docs.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2010/dd877045(v%3Dexchg.140)",
+      "source": "関連文書",
+      "id": "Exchange Web Services (EWS) in Exchange 2010"
+    },
+    {
+      "text": "https://msdn.microsoft.com/en-us/library/cc236702.aspx",
+      "source": "関連文書",
+      "id": "3.4.2 Message Integrity"
+    },
+    {
+      "text": "https://msdn.microsoft.com/en-us/library/cc236707.aspx",
+      "source": "関連文書",
+      "id": "3.4.3 Message Confidentiality"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:exchange",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Exchange"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-09-27T10:33+09:00",
+  "issued": "2019-01-30T11:13+09:00",
+  "modified": "2019-09-27T10:33+09:00"
+}

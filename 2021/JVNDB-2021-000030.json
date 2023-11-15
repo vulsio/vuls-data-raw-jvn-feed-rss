@@ -1,0 +1,104 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000030.html",
+  "title": "Aterm WF1200CR、Aterm WG1200CR、Aterm WG2600HS および Aterm WX3000HP における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000030.html",
+  "description": "日本電気株式会社が提供する Aterm WF1200CR、Aterm WG1200CR、Aterm WG2600HS および Aterm WX3000HP には、複数の脆弱性が存在します。\r\n\r\nAterm WF1200CR、Aterm WG1200CR および Aterm WG2600HS\r\n・OS コマンドインジェクション (CWE-78) - CVE-2021-20708\r\n・ダウンロードしたファイルの完全性検証不備 (CWE-354) - CVE-2021-20709\r\nAterm WG2600HS\r\n・クロスサイトスクリプティング (CWE-79) - CVE-2021-20710\r\n・OS コマンドインジェクション (CWE-78) - CVE-2021-20711\r\nAterm WG2600HS および WX3000HP\r\n・アクセス制限不備 (CWE-284) - CVE-2021-20712\r\n\r\nCVE-2021-20708、CVE-2021-20709\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 三井物産セキュアディレクション株式会社 塚本 泰三 氏\r\n\r\nCVE-2021-20710、CVE-2021-20711\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社サイバーディフェンス研究所 永岡 悟 氏\r\n\r\nCVE-2021-20712\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 加藤 吉光 氏",
+  "identifier": "JVNDB-2021-000030",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN29739718/index.html",
+      "source": "JVN",
+      "id": "JVN#29739718"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20708",
+      "source": "CVE",
+      "id": "CVE-2021-20708"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20709",
+      "source": "CVE",
+      "id": "CVE-2021-20709"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20710",
+      "source": "CVE",
+      "id": "CVE-2021-20710"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20711",
+      "source": "CVE",
+      "id": "CVE-2021-20711"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20712",
+      "source": "CVE",
+      "id": "CVE-2021-20712"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/284.html",
+      "id": "CWE-284",
+      "title": "不適切なアクセス制御(CWE-284)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:nec:aterm_wf1200cr_firmware",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "Aterm WF1200CR ファームウェア"
+    },
+    {
+      "text": "cpe:/o:nec:aterm_wg1200cr_firmware",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "Aterm WG1200CR ファームウェア"
+    },
+    {
+      "text": "cpe:/o:nec:aterm_wg2600hs_firmware",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "Aterm WG2600HS ファームウェア"
+    },
+    {
+      "text": "cpe:/o:nec:aterm_wx3000hp_firmware",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "Aterm WX3000HP ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-04-09T14:21+09:00",
+  "issued": "2021-04-09T14:21+09:00",
+  "modified": "2021-04-09T14:21+09:00"
+}

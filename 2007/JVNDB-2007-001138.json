@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001138.html",
+  "title": "IA64 システムで動作する Xen における情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001138.html",
+  "description": "IA64 システムで動作する、Xen には、mov_to_rr の RID 値の取り扱いに不備があり、VTi ドメインによって、他のドメインのメモリを読み取られる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001138",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6207",
+      "source": "CVE",
+      "id": "CVE-2007-6207"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-6207",
+      "source": "NVD",
+      "id": "CVE-2007-6207"
+    },
+    {
+      "text": "http://secunia.com/advisories/27915/",
+      "source": "SECUNIA",
+      "id": "SA27915"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26716",
+      "source": "BID",
+      "id": "26716"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:xen:xen",
+      "version": "2.2",
+      "vendor": "Xen プロジェクト",
+      "product": "Xen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2008-03-21T11:28+09:00",
+  "issued": "2008-03-21T11:28+09:00",
+  "modified": "2008-03-21T11:28+09:00"
+}

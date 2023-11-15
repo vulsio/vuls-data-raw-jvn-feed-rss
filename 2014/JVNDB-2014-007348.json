@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007348.html",
+  "title": "ZNC の modules/webadmin.cpp の CWebAdminMod::ChanPage 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007348.html",
+  "description": "ZNC の modules/webadmin.cpp の CWebAdminMod::ChanPage 関数には、 \"use-after-delete\" エラーに関する処理に不備があるため、サービス運用妨害 (NULL ポインタデリファレンスおよびクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-476: NULL Pointer Dereference (NULL ポインタデリファレンス) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/476.html",
+  "identifier": "JVNDB-2014-007348",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9403",
+      "source": "CVE",
+      "id": "CVE-2014-9403"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9403",
+      "source": "NVD",
+      "id": "CVE-2014-9403"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2014-0543.html",
+      "source": "関連文書",
+      "id": "MGASA-2014-0543"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:znc:znc",
+      "version": "2.2",
+      "vendor": "ZNC",
+      "product": "ZNC"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-05-14T17:55+09:00",
+  "issued": "2014-12-24T14:58+09:00",
+  "modified": "2015-05-14T17:55+09:00"
+}

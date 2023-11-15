@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001014.html",
+  "title": "Wireshark の WCCP ディセクタの epan/dissectors/packet-wccp.c 内の dissect_wccp2r1_address_table_info 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001014.html",
+  "description": "Wireshark の WCCP ディセクタ (解析機能) の epan/dissectors/packet-wccp.c 内の dissect_wccp2r1_address_table_info 関数は、特定のデータ構造を初期化しないため、サービス運用妨害 (アプリケーションクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-19: Data Handling (データ処理) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/19.html",
+  "identifier": "JVNDB-2015-001014",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0560",
+      "source": "CVE",
+      "id": "CVE-2015-0560"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0560",
+      "source": "NVD",
+      "id": "CVE-2015-0560"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wireshark:wireshark",
+      "version": "2.2",
+      "vendor": "Wireshark",
+      "product": "Wireshark"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-01-14T12:11+09:00",
+  "issued": "2015-01-14T12:11+09:00",
+  "modified": "2015-01-14T12:11+09:00"
+}

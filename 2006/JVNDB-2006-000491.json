@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000491.html",
+  "title": "IBM Websphere Application Server の SOAP プロトコル処理における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000491.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\n \tIBM WebSphere Application Server (WAS) には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・SOAP プロトコルのリクエスト、およびレスポンス処理が不適切である問題 (PK24334, CVE-2006-4136)\r\n\r\n・ThreadIdentitySupport の潜在的な権限の問題 (PK25199, CVE-2006-4136)\r\n\r\n・mbean の詳細不明の問題 (PK26498, CVE-2006-4136)\r\n\r\n・trace の機密情報を表示してしまう問題 (PK27857/PK28408, CVE-2006-4137)\r\n\r\n・wsadmin コマンドライン上、またはログファイル内に機密情報を表示してしまう問題 (PK27547, CVE-2006-4137)\r\n\r\n現時点で詳細は不明ですが、リモート/ローカルの攻撃者に悪用された場合、結果として重要な情報が取得されるなど様々な影響を受ける可能性があります。",
+  "identifier": "JVNDB-2006-000491",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4136",
+      "source": "CVE",
+      "id": "CVE-2006-4136"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4136",
+      "source": "NVD",
+      "id": "CVE-2006-4136"
+    },
+    {
+      "text": "http://secunia.com/advisories/21440/",
+      "source": "SECUNIA",
+      "id": "SA21440"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19463",
+      "source": "BID",
+      "id": "19463"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/3262",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-3262"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:websphere_application_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Application Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

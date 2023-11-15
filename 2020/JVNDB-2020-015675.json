@@ -1,0 +1,115 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015675.html",
+  "title": "STM32Cube デバイスにおける暗号アルゴリズムの使用に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015675.html",
+  "description": "STM32Cube (UM1924) デバイスには、暗号アルゴリズムの使用に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-015675",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-20949",
+      "source": "CVE",
+      "id": "CVE-2020-20949"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-20949",
+      "source": "NVD",
+      "id": "CVE-2020-20949"
+    },
+    {
+      "text": "http://archiv.infsec.ethz.ch/education/fs08/secsem/bleichenbacher98.pdf",
+      "source": "関連文書",
+      "id": "Chosen Ciphertext Attacks Against Protocols Based on the RSA Encryption Standard PKCS #1"
+    },
+    {
+      "text": "https://bi-zone.medium.com/silence-will-fall-or-how-it-can-take-2-years-to-get-your-vuln-registered-e6134846f5bb",
+      "source": "関連文書",
+      "id": "Silence Will Fall (Or How It Can Take 2 Years to Get Your Vuln Registered)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/327.html",
+      "id": "CWE-327",
+      "title": "不完全、または危険な暗号アルゴリズムの使用(CWE-327)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:stmicroelectronics:stm32cubef0",
+      "version": "2.2",
+      "vendor": "STMicroelectronics",
+      "product": "STM32CubeF0"
+    },
+    {
+      "text": "cpe:/a:stmicroelectronics:stm32cubef1",
+      "version": "2.2",
+      "vendor": "STMicroelectronics",
+      "product": "STM32CubeF1"
+    },
+    {
+      "text": "cpe:/a:stmicroelectronics:stm32cubef2",
+      "version": "2.2",
+      "vendor": "STMicroelectronics",
+      "product": "STM32CubeF2"
+    },
+    {
+      "text": "cpe:/a:stmicroelectronics:stm32cubef3",
+      "version": "2.2",
+      "vendor": "STMicroelectronics",
+      "product": "STM32CubeF3"
+    },
+    {
+      "text": "cpe:/a:stmicroelectronics:stm32cubef4",
+      "version": "2.2",
+      "vendor": "STMicroelectronics",
+      "product": "STM32CubeF4"
+    },
+    {
+      "text": "cpe:/a:stmicroelectronics:stm32cubef7",
+      "version": "2.2",
+      "vendor": "STMicroelectronics",
+      "product": "STM32CubeF7"
+    },
+    {
+      "text": "cpe:/a:stmicroelectronics:stm32cubeg0",
+      "version": "2.2",
+      "vendor": "STMicroelectronics",
+      "product": "STM32CubeG0"
+    },
+    {
+      "text": "cpe:/a:stmicroelectronics:stm32cubeg4",
+      "version": "2.2",
+      "vendor": "STMicroelectronics",
+      "product": "STM32CubeG4"
+    },
+    {
+      "text": "cpe:/a:stmicroelectronics:stm32cubeh7",
+      "version": "2.2",
+      "vendor": "STMicroelectronics",
+      "product": "STM32CubeH7"
+    },
+    {
+      "text": "cpe:/a:stmicroelectronics:stm32cubeide",
+      "version": "2.2",
+      "vendor": "STMicroelectronics",
+      "product": "STM32CubeIDE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2021-10-08T18:11+09:00",
+  "issued": "2021-10-08T18:11+09:00",
+  "modified": "2021-10-08T18:11+09:00"
+}

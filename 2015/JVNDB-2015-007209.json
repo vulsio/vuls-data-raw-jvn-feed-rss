@@ -1,0 +1,91 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007209.html",
+  "title": "mDNSResponder の handle_regservice_request 関数における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007209.html",
+  "description": "mDNSResponder の handle_regservice_request 関数には、任意のコードを実行される、またはサービス運用妨害 (NULL ポインタデリファレンス) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-476: NULL Pointer Dereference (NULL ポインタデリファレンス) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/476.html",
+  "identifier": "JVNDB-2015-007209",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU97008560",
+      "source": "JVN",
+      "id": "JVNVU#97008560"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7988",
+      "source": "CVE",
+      "id": "CVE-2015-7988"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7988",
+      "source": "NVD",
+      "id": "CVE-2015-7988"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/143335",
+      "source": "CERT-VN",
+      "id": "VU#143335"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:mdnsresponder",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "mDNSResponder"
+    },
+    {
+      "text": "cpe:/h:apple:airport_base_station",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "AirMac (AirPort) ベースステーション"
+    },
+    {
+      "text": "cpe:/o:apple:airport_base_station_firmware",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "AirMac (AirPort) ベースステーションファームウェア"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:watchos",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "watchOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-06-28T14:34+09:00",
+  "issued": "2016-06-28T14:34+09:00",
+  "modified": "2016-06-28T14:34+09:00"
+}

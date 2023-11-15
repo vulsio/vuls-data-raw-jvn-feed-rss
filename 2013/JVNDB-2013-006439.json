@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006439.html",
+  "title": "GitLab で使用される gitlab-shell のリポジトリのインポート機能における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006439.html",
+  "description": "GitLab で使用される gitlab-shell のリポジトリのインポート機能には、任意のコマンドを実行される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-77: Improper Neutralization of Special Elements used in a Command (コマンドインジェクション) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/77.html",
+  "identifier": "JVNDB-2013-006439",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4546",
+      "source": "CVE",
+      "id": "CVE-2013-4546"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4546",
+      "source": "NVD",
+      "id": "CVE-2013-4546"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gitlab:gitlab",
+      "version": "2.2",
+      "vendor": "GitLab.org",
+      "product": "GitLab"
+    },
+    {
+      "text": "cpe:/a:gitlab:gitlab-shell",
+      "version": "2.2",
+      "vendor": "GitLab.org",
+      "product": "gitlab-shell"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-05-15T16:36+09:00",
+  "issued": "2014-05-15T16:36+09:00",
+  "modified": "2014-05-15T16:36+09:00"
+}

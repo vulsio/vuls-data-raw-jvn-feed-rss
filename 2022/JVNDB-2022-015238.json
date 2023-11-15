@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-015238.html",
+  "title": "Git における制御されていない検索パスの要素に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-015238.html",
+  "description": "Git には、制御されていない検索パスの要素に関する脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2022-24765 と関連する脆弱性です。\r\n\r\n",
+  "identifier": "JVNDB-2022-015238",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-29187",
+      "source": "CVE",
+      "id": "CVE-2022-29187"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-29187",
+      "source": "NVD",
+      "id": "CVE-2022-29187"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2022/07/14/1",
+      "source": "関連文書",
+      "id": "Git v2.37.1 and friends for CVE-2022-29187"
+    },
+    {
+      "text": "https://lore.kernel.org/git/xmqqv8s2fefi.fsf@gitster.g/T/#u",
+      "source": "関連文書",
+      "id": "[ANNOUNCE] Git v2.37.1 and others"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/427.html",
+      "id": "CWE-427",
+      "title": "制御されていない検索パスの要素(CWE-427)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:xcode",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Xcode"
+    },
+    {
+      "text": "cpe:/a:git-scm:git",
+      "version": "2.2",
+      "vendor": "Git SCM",
+      "product": "Git"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-09-26T11:09+09:00",
+  "issued": "2023-09-26T11:09+09:00",
+  "modified": "2023-09-26T11:09+09:00"
+}

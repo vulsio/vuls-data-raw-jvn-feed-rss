@@ -1,0 +1,91 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002484.html",
+  "title": "cURL および libcurl における他のユーザとして接続される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002484.html",
+  "description": "cURL および libcurl は、NTLM コネクションを適切に再利用しないため、他のユーザとして接続される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-0015 と同様の問題です。",
+  "identifier": "JVNDB-2015-002484",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3143",
+      "source": "CVE",
+      "id": "CVE-2015-3143"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3143",
+      "source": "NVD",
+      "id": "CVE-2015-3143"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2015-0179.html",
+      "source": "関連文書",
+      "id": "MGASA-2015-0179"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:haxx:curl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "cURL"
+    },
+    {
+      "text": "cpe:/a:haxx:libcurl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "libcurl"
+    },
+    {
+      "text": "cpe:/a:hp:comware",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "Comware"
+    },
+    {
+      "text": "cpe:/a:hp:intelligent_management_center_platform",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "HPE Intelligent Management Center (IMC) PLAT"
+    },
+    {
+      "text": "cpe:/a:hp:system_management_homepage",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "System Management Homepage"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2016-09-08T18:03+09:00",
+  "issued": "2015-04-28T14:59+09:00",
+  "modified": "2016-09-08T18:03+09:00"
+}

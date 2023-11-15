@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001639.html",
+  "title": "Bluetooth Stack for Windows by Toshiba および TOSHIBA Service Station に権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001639.html",
+  "description": "株式会社東芝が提供する Bluetooth 制御ソフトウエアである Bluetooth Stack for Windows by Toshiba およびシステム管理アプリケーションソフトウエアである TOSHIBA Service Station には、引用符で囲まれていない Windows 検索パスに起因する権限昇格の脆弱性が存在します (CWE-428)。\r\n\r\nCWE-428: Unquoted Search Path or Element (引用されない検索パスまたは要素)\r\nhttp://cwe.mitre.org/data/definitions/428.html",
+  "identifier": "JVNDB-2015-001639",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99205169/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99205169"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0884",
+      "source": "CVE",
+      "id": "CVE-2015-0884"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0884",
+      "source": "NVD",
+      "id": "CVE-2015-0884"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/632140",
+      "source": "CERT-VN",
+      "id": "VU#632140"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:toshiba:bluetooth_stack",
+      "version": "2.2",
+      "vendor": "東芝",
+      "product": "Bluetoooth Stack"
+    },
+    {
+      "text": "cpe:/a:toshiba:service_station",
+      "version": "2.2",
+      "vendor": "東芝",
+      "product": "TOSHIBA Service Station"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-03-03T15:54+09:00",
+  "issued": "2015-03-02T14:25+09:00",
+  "modified": "2015-03-03T15:54+09:00"
+}

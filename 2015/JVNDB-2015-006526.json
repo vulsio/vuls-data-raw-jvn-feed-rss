@@ -1,0 +1,112 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006526.html",
+  "title": "Seagate および LaCie ワイヤレスストレージ製品に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006526.html",
+  "description": "Seagate が提供するワイヤレスストレージ製品には、複数の脆弱性が存在します。\r\n\r\n\r\n認証情報 (パスワード) がハードコードされている問題 (CWE-798) - CVE-2015-2874\r\nマニュアルに記載のない telnet サービスが立ち上がっており、ユーザ名 \"root\"、デフォルトのパスワードを使用してアクセス可能です。\r\n\r\nCWE-798: Use of Hard-coded Credentials\r\nhttps://cwe.mitre.org/data/definitions/798.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-255 として公開されています。\r\n\r\n\r\nリクエストの直接送信 (Forced Browsing) (CWE-425) - CVE-2015-2875\r\nデフォルト設定で、機器に無線でアクセスした際に、誰でもファイルをダウンロードすることが可能です。ファイルシステム上の任意のファイルを直接ダウンロードできます。\r\n\r\nCWE-425: Direct Request ('Forced Browsing')\r\nhttps://cwe.mitre.org/data/definitions/425.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-22 として公開されています。\r\n\r\n\r\n危険なタイプのファイルの無制限アップロード (CWE-434) - CVE-2015-2876\r\nデフォルト設定で、機器に無線でアクセスした際に、/media/sda2 ファイルシステムにファイルをアップロードすることが可能です。このファイルシステムはファイル共有のために用意されているものです。\r\n\r\nCWE-434: Unrestricted Upload of File with Dangerous Type\r\nhttps://cwe.mitre.org/data/definitions/434.html",
+  "identifier": "JVNDB-2015-006526",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92833570/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92833570"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2874",
+      "source": "CVE",
+      "id": "CVE-2015-2874"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2875",
+      "source": "CVE",
+      "id": "CVE-2015-2875"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2876",
+      "source": "CVE",
+      "id": "CVE-2015-2876"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2874",
+      "source": "NVD",
+      "id": "CVE-2015-2874"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2875",
+      "source": "NVD",
+      "id": "CVE-2015-2875"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2876",
+      "source": "NVD",
+      "id": "CVE-2015-2876"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/903500",
+      "source": "CERT-VN",
+      "id": "VU#903500"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/GWAN-A26L3F",
+      "source": "CERT-VN",
+      "id": "LaCie Information for VU#903500"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/GWAN-9ZGTUH",
+      "source": "CERT-VN",
+      "id": "Seagate Technology LLC Information for VU#903500"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:lacie:lacie_fuel",
+      "version": "2.2",
+      "vendor": "LaCie",
+      "product": "LaCie FUEL"
+    },
+    {
+      "text": "cpe:/h:seagate:goflex_sattelite",
+      "version": "2.2",
+      "vendor": "Seagate Technology LLC",
+      "product": "Seagate GoFlex Satellite"
+    },
+    {
+      "text": "cpe:/h:seagate:wireless_mobile_storage",
+      "version": "2.2",
+      "vendor": "Seagate Technology LLC",
+      "product": "Seagate Wireless Mobile Storage"
+    },
+    {
+      "text": "cpe:/h:seagate:wireless_plus_mobile_storage",
+      "version": "2.2",
+      "vendor": "Seagate Technology LLC",
+      "product": "Seagate Wireless Plus Mobile Storage"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2016-01-14T18:13+09:00",
+  "issued": "2015-12-28T10:28+09:00",
+  "modified": "2016-01-14T18:13+09:00"
+}

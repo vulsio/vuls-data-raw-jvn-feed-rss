@@ -1,0 +1,70 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-015385.html",
+  "title": "Vim の Vim 他複数ベンダの製品における NULL ポインタデリファレンスに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-015385.html",
+  "description": "Vim の Vim 他複数ベンダの製品には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-015385",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-2980",
+      "source": "CVE",
+      "id": "CVE-2022-2980"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-2980",
+      "source": "NVD",
+      "id": "CVE-2022-2980"
+    },
+    {
+      "text": "https://github.com/vim/vim/commit/80525751c5ce9ed82c41d83faf9ef38667bf61b1",
+      "source": "関連文書",
+      "id": "github.com (80525751c5ce9ed82c41d83faf9ef38667bf61b1)"
+    },
+    {
+      "text": "https://huntr.dev/bounties/6e7b12a5-242c-453d-b39e-9625d563b0ea",
+      "source": "関連文書",
+      "id": "huntr.dev (6e7b12a5-242c-453d-b39e-9625d563b0ea)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XWOJOA7PZZAMBI5GFTL6PWHXMWSDLUXL/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (XWOJOA7PZZAMBI5GFTL6PWHXMWSDLUXL)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202305-16",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202305-16)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vim:vim",
+      "version": "2.2",
+      "vendor": "Vim",
+      "product": "Vim"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-09-26T17:27+09:00",
+  "issued": "2023-09-26T17:27+09:00",
+  "modified": "2023-09-26T17:27+09:00"
+}

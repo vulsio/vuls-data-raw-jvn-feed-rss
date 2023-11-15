@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002988.html",
+  "title": "Apache Traffic Server における内部 DNS キャッシュポイズニングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002988.html",
+  "description": "Apache Traffic Server は、DNS ソースポートおよびトランザクション ID を適切に選択しないため、またレスポンスを確認する際に DNS クエリフィールドを適切に使用しないため、内部 DNS キャッシュポイズニングされる中間者攻撃を容易にする脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002988",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2952",
+      "source": "CVE",
+      "id": "CVE-2010-2952"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2952",
+      "source": "NVD",
+      "id": "CVE-2010-2952"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:traffic_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Traffic Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-03-27T18:42+09:00",
+  "issued": "2012-03-27T18:42+09:00",
+  "modified": "2012-03-27T18:42+09:00"
+}

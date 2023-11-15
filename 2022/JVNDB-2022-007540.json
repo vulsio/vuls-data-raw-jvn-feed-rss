@@ -1,0 +1,124 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-007540.html",
+  "title": "Moby Project の Moby 他複数ベンダの製品における重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-007540.html",
+  "description": "Moby Project の Moby 他複数ベンダの製品には、重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-007540",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-24769",
+      "source": "CVE",
+      "id": "CVE-2022-24769"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-24769",
+      "source": "NVD",
+      "id": "CVE-2022-24769"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2022/05/12/1",
+      "source": "関連文書",
+      "id": "www.openwall.com (oss-security/2022/05/12/1)"
+    },
+    {
+      "text": "https://github.com/moby/moby/commit/2bbc786e4c59761d722d2d1518cd0a32829bc07f",
+      "source": "関連文書",
+      "id": "github.com (2bbc786e4c59761d722d2d1518cd0a32829bc07f)"
+    },
+    {
+      "text": "https://github.com/moby/moby/releases/tag/v20.10.14",
+      "source": "関連文書",
+      "id": "github.com (v20.10.14)"
+    },
+    {
+      "text": "https://github.com/moby/moby/security/advisories/GHSA-2mm7-x5h6-5pvq",
+      "source": "関連文書",
+      "id": "github.com (GHSA-2mm7-x5h6-5pvq)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6PMQKCAPK2AR3DCYITJYMMNBEGQBGLCC/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (6PMQKCAPK2AR3DCYITJYMMNBEGQBGLCC)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/A5AFKOQ5CE3CEIULWW4FLQKHFFU6FSYG/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (A5AFKOQ5CE3CEIULWW4FLQKHFFU6FSYG)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/A5FQJ3MLFSEKQYCFPFZIKYGBXPZUJFVY/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (A5FQJ3MLFSEKQYCFPFZIKYGBXPZUJFVY)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/FPOJUJZXGMIVKRS4QR75F6OIXNQ6LDBL/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (FPOJUJZXGMIVKRS4QR75F6OIXNQ6LDBL)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HIMAHZ6AUIKN7AX26KHZYBXVECIOVWBH/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (HIMAHZ6AUIKN7AX26KHZYBXVECIOVWBH)"
+    },
+    {
+      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HQCVS7WBFSTKJFNX5PGDRARMTOFWV2O7/",
+      "source": "関連文書",
+      "id": "lists.fedoraproject.org (HQCVS7WBFSTKJFNX5PGDRARMTOFWV2O7)"
+    },
+    {
+      "text": "https://www.debian.org/security/2022/dsa-5162",
+      "source": "関連文書",
+      "id": "www.debian.org (dsa-5162)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/732.html",
+      "id": "CWE-732",
+      "title": "重要なリソースに対する不適切なパーミッションの割り当て(CWE-732)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:linuxfoundation:runc",
+      "version": "2.2",
+      "vendor": "Linux Foundation",
+      "product": "runc"
+    },
+    {
+      "text": "cpe:/a:mobyproject:moby",
+      "version": "2.2",
+      "vendor": "Moby Project",
+      "product": "Moby"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2023-07-18T17:32+09:00",
+  "issued": "2023-07-18T17:32+09:00",
+  "modified": "2023-07-18T17:32+09:00"
+}

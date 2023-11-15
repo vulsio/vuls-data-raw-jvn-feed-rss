@@ -1,0 +1,119 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001009.html",
+  "title": "Apple QuickTime RTSP の Content-Type ヘッダの処理にスタックバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001009.html",
+  "description": "Apple QuickTime RTSP の Content-Type ヘッダの処理には、スタックバッファオーバーフローの脆弱性が存在します。\r\n\r\nWinodws 版および Mac 版の QuickTime が本脆弱性の影響を受けます。また、iTunes など QuickTime を使用するソフトウェアをインストールしているシステムも本脆弱性の影響を受けます。\r\n\r\nRTSP (Real Time Streaming Protocol) は、ストリーミングメディアシステムで使用されるプロトコルであり Apple QuickTime Streaming サーバや QuickTime Player でサポートされています。QuickTime の RTSP Content-Type ヘッダ処理にはスタックバッファオーバーフローの脆弱性が存在します。\r\n\r\nまた、既にこの脆弱性を使用した検証コードが公開されています。",
+  "identifier": "JVNDB-2007-001009",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23659761/index.html",
+      "source": "JVN",
+      "id": "JVNVU#659761"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA07-334A/index.html",
+      "source": "JVN",
+      "id": "JVNTA07-334A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA07-334A/index.html",
+      "source": "JVNTR",
+      "id": "TRTA07-334A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6166",
+      "source": "CVE",
+      "id": "CVE-2007-6166"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-6166",
+      "source": "NVD",
+      "id": "CVE-2007-6166"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2007/at070023.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2007-0023"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2007/wr074701.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2007-4701"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2007/wr074901.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2007-4901"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/2007/20071214_142118.html",
+      "source": "AT-POLICE",
+      "id": "QuickTime の脆弱性について"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA07-334A.html",
+      "source": "CERT-SA",
+      "id": "SA07-334A"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/659761",
+      "source": "CERT-VN",
+      "id": "VU#659761"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA07-334A.html",
+      "source": "CERT-TA",
+      "id": "TA07-334A"
+    },
+    {
+      "text": "http://secunia.com/advisories/27755",
+      "source": "SECUNIA",
+      "id": "SA27755"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26549",
+      "source": "BID",
+      "id": "26549"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/38604",
+      "source": "XF",
+      "id": "38604"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1018989",
+      "source": "SECTRACK",
+      "id": "1018989"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/3984",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-3984"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:quicktime",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "QuickTime"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-12-18T13:56+09:00",
+  "issued": "2007-12-18T13:56+09:00",
+  "modified": "2007-12-18T13:56+09:00"
+}

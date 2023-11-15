@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004417.html",
+  "title": "WEB-DAV Linux File System における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004417.html",
+  "description": "WEB-DAV Linux File System (davfs2) には、\"system\" 関数に関する処理に不備があるため、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004417",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4362",
+      "source": "CVE",
+      "id": "CVE-2013-4362"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4362",
+      "source": "NVD",
+      "id": "CVE-2013-4362"
+    },
+    {
+      "text": "http://seclists.org/oss-sec/2013/q3/627",
+      "source": "関連文書",
+      "id": "Re: CVE request: davfs2 - Unsecure use of system() "
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:werner_baumann:davfs2",
+      "version": "2.2",
+      "vendor": "Werner Baumann",
+      "product": "WEB-DAV Linux File System"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-10-24T17:12+09:00",
+  "issued": "2013-10-03T14:32+09:00",
+  "modified": "2013-10-24T17:12+09:00"
+}

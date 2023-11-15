@@ -1,0 +1,103 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-019746.html",
+  "title": "レッドハットの integration 他複数ベンダの製品におけるリソースの枯渇に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-019746.html",
+  "description": "レッドハットの integration 他複数ベンダの製品には、リソースの枯渇に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-019746",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-3629",
+      "source": "CVE",
+      "id": "CVE-2021-3629"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3629",
+      "source": "NVD",
+      "id": "CVE-2021-3629"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1977362",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (1977362)"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20220729-0008/",
+      "source": "関連文書",
+      "id": "security.netapp.com (ntap-20220729-0008)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/400.html",
+      "id": "CWE-400",
+      "title": "リソースの枯渇(CWE-400)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:netapp:active_iq_unified_manager",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "Active IQ Unified Manager"
+    },
+    {
+      "text": "cpe:/a:netapp:oncommand_insight",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "OnCommand Insight"
+    },
+    {
+      "text": "cpe:/a:netapp:oncommand_workflow_automation",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "OnCommand Workflow Automation"
+    },
+    {
+      "text": "cpe:/a:redhat:integration",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "integration"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_application_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss Enterprise Application Platform"
+    },
+    {
+      "text": "cpe:/a:redhat:single_sign-on",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Single Sign-On"
+    },
+    {
+      "text": "cpe:/a:redhat:undertow",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Undertow"
+    },
+    {
+      "text": "cpe:/a:redhat:wildfly_core",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "WildFly Core"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-08-15T17:13+09:00",
+  "issued": "2023-08-15T17:13+09:00",
+  "modified": "2023-08-15T17:13+09:00"
+}

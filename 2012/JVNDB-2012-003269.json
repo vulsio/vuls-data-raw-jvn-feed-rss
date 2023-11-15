@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003269.html",
+  "title": "OpenStack Compute (Nova) Folsom および Essex におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003269.html",
+  "description": "OpenStack Compute (Nova) Folsom (2012.2) および Essex (2012.1) の virt/disk/api.py には、libvirt ベースのハイパーバイザー上で使用される場合、ディレクトリトラバーサルの脆弱性が存在します。",
+  "identifier": "JVNDB-2012-003269",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3360",
+      "source": "CVE",
+      "id": "CVE-2012-3360"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3360",
+      "source": "NVD",
+      "id": "CVE-2012-3360"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:essex",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Essex"
+    },
+    {
+      "text": "cpe:/a:openstack:nova",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "OpenStack Compute Nova"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-04T17:49+09:00",
+  "issued": "2012-07-24T16:37+09:00",
+  "modified": "2012-09-04T17:49+09:00"
+}

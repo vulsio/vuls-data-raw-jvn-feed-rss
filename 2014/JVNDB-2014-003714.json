@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003714.html",
+  "title": "Cobham Sailor 6000 シリーズの衛星通信用端末に認証情報がハードコードされている問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003714.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nCobham の Sailor 6000 シリーズの衛星通信用端末には、認証情報がハードコードされている問題が存在します。\r\n\r\nCobham の Sailor 6000 シリーズの衛星通信用端末には、Tbus 2 プロトコル通信で使用される認証情報がハードコードされている問題 (CWE-798) が存在します。Tbus 2 プロトコルはデバイスのメンテナンスに使用されるプロトコルです。\r\n\r\nなお、本脆弱性は VU#460687 とは異なる問題です。\r\n\r\nCWE-798: Use of Hard-coded Credentials\r\nhttps://cwe.mitre.org/data/definitions/798.html\r\n\r\nなお、ベンダは本件に対し、「他のユーザの証明書を悪用する可能性はない」と述べているとのことです。",
+  "identifier": "JVNDB-2014-003714",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91780498/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91780498"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2941",
+      "source": "CVE",
+      "id": "CVE-2014-2941"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2941",
+      "source": "NVD",
+      "id": "CVE-2014-2941"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/269991",
+      "source": "CERT-VN",
+      "id": "VU#269991"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:cobham:sailor_6006_message_terminal",
+      "version": "2.2",
+      "vendor": "Cobham plc",
+      "product": "SAILOR 6006 Message Terminal"
+    },
+    {
+      "text": "cpe:/h:cobham:sailor_6110_mini-c_gmdss",
+      "version": "2.2",
+      "vendor": "Cobham plc",
+      "product": "SAILOR 6110 mini-C GMDSS"
+    },
+    {
+      "text": "cpe:/h:cobham:sailor_6222_vhf",
+      "version": "2.2",
+      "vendor": "Cobham plc",
+      "product": "SAILOR 6222 VHF"
+    },
+    {
+      "text": "cpe:/h:cobham:sailor_6300_mf_%2F_hf",
+      "version": "2.2",
+      "vendor": "Cobham plc",
+      "product": "SAILOR 6300 MF/HF"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:C/A:N"
+    }
+  ],
+  "date": "2015-11-11T17:37+09:00",
+  "issued": "2014-08-11T14:07+09:00",
+  "modified": "2015-11-11T17:37+09:00"
+}

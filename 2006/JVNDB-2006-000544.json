@@ -1,0 +1,85 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000544.html",
+  "title": "Macromedia Flash Player の 不正な .swf ファイルの処理により任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000544.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMacromedia Flash Player は、Web コンテンツで Flash ムービーファイル (.swf ファイル) を表示するためのソフトウェアで、Internet Explorer や Mozilla などの様々な Web ブラウザでプラグインとして利用されています。\r\n\r\nMacromedia Flash Player には、以下の複数の問題が存在します。\r\n\r\n・複数の箇所において入力値に対するチェックに不備が存在するため、任意のコードが実行可能な問題 (CVE-2006-3311、CVE-2006-3587、CVE-2006-3588)\r\n\r\n・詳細不明のエラーにより、\"allowScriptAccess\" オプションを回避可能な問題 (CVE-2006-4640)\r\n\r\n・Microsoft Windows プラットフォームにおける Flash Player ActiveX コントロールの処理に不備が存在するため、Microsoft Office ドキュメントを介して JavaScript が自動的に実行されてしまう問題 (CVE-2006-3014)\r\n\r\nリモートの攻撃者に悪用された場合、Web ブラウザを実行するユーザの権限で任意のコードを実行される、あるいは不正なスクリプトを実行される可能性があります。",
+  "identifier": "JVNDB-2006-000544",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA06-318A/index.html",
+      "source": "JVN",
+      "id": "JVNTA06-318A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA06-318A",
+      "source": "JVNTR",
+      "id": "TRTA06-318A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3587",
+      "source": "CVE",
+      "id": "CVE-2006-3587"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3587",
+      "source": "NVD",
+      "id": "CVE-2006-3587"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2006/at060019.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2006-0019"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA06-318A.html",
+      "source": "CERT-SA",
+      "id": "SA06-318A"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/474593",
+      "source": "CERT-VN",
+      "id": "VU#474593"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA06-318A.html",
+      "source": "CERT-TA",
+      "id": "TA06-318A"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18894",
+      "source": "BID",
+      "id": "18894"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19980",
+      "source": "BID",
+      "id": "19980"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

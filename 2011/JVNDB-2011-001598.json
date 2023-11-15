@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001598.html",
+  "title": "Steinar H. Gunderson mpm-itk Multi-Processing Module における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001598.html",
+  "description": "Steinar H. Gunderson mpm-itk Multi-Processing Module の itk.c 内にある configuration merger は、NiceValue が設定されており、AssignUserID が指定されていない状態のセクション設定を適切に処理しないため、権限を取得される可能性があります。",
+  "identifier": "JVNDB-2011-001598",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1176",
+      "source": "CVE",
+      "id": "CVE-2011-1176"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1176",
+      "source": "NVD",
+      "id": "CVE-2011-1176"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/46953",
+      "source": "BID",
+      "id": "46953"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/66248",
+      "source": "XF",
+      "id": "66248"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0748",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0748"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:steinar_h_gunderson:mpm-itk",
+      "version": "2.2",
+      "vendor": "Steinar H. Gunderson",
+      "product": "Steinar H. Gunderson mpm-itk Multi-Processing Module"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2011-05-19T11:04+09:00",
+  "issued": "2011-05-19T11:04+09:00",
+  "modified": "2011-05-19T11:04+09:00"
+}

@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002979.html",
+  "title": "Expat の expat/lib/xmlparse.c におけるサービス運用妨害 (メモリ消費) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002979.html",
+  "description": "Expat の expat/lib/xmlparse.c 内の poolGrow 関数には、メモリリークの発生によって、サービス運用妨害 (メモリ消費) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002979",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97526033/",
+      "source": "JVN",
+      "id": "JVNVU#97526033"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1148",
+      "source": "CVE",
+      "id": "CVE-2012-1148"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1148",
+      "source": "NVD",
+      "id": "CVE-2012-1148"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libexpat:expat",
+      "version": "2.2",
+      "vendor": "Expat",
+      "product": "Expat"
+    },
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-12-15T15:21+09:00",
+  "issued": "2012-07-05T11:38+09:00",
+  "modified": "2015-12-15T15:21+09:00"
+}

@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002601.html",
+  "title": "Linux kernel の napi_reuse_skb 関数におけるサービス運用妨害 (NULL ポインタデリファレンス) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002601.html",
+  "description": "Linux kernel の Generic Receive Offload (GRO) 実装における net/core/dev.c の napi_reuse_skb 関数は、特定の構造体メンバの値をリセットしないため、サービス運用妨害 (NULL ポインタデリファレンス) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-002601",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1478",
+      "source": "CVE",
+      "id": "CVE-2011-1478"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1478",
+      "source": "NVD",
+      "id": "CVE-2011-1478"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-12-25T18:45+09:00",
+  "issued": "2011-10-31T10:10+09:00",
+  "modified": "2012-12-25T18:45+09:00"
+}

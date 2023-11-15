@@ -1,0 +1,104 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001243.html",
+  "title": "Kerberos の do_standalone 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001243.html",
+  "description": "Kerberos の MIT krb5 KDC database propagation daemon (kpropd) 内にあるdo_standalone 関数は、スタンドアロンモードで稼働している際、ワーカーの子プロセスが異常終了した時に、適切に処理しないため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-001243",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4022",
+      "source": "CVE",
+      "id": "CVE-2010-4022"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4022",
+      "source": "NVD",
+      "id": "CVE-2010-4022"
+    },
+    {
+      "text": "http://secunia.com/advisories/43275",
+      "source": "SECUNIA",
+      "id": "SA43275"
+    },
+    {
+      "text": "http://secunia.com/advisories/43260",
+      "source": "SECUNIA",
+      "id": "SA43260"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/46269",
+      "source": "BID",
+      "id": "46269"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1025035",
+      "source": "SECTRACK",
+      "id": "1025035"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0329",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0329"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0333",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0333"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mit:kerberos",
+      "version": "2.2",
+      "vendor": "MIT Kerberos",
+      "product": "Kerberos"
+    },
+    {
+      "text": "cpe:/o:oracle:solaris",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Solaris"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-03-17T15:51+09:00",
+  "issued": "2011-03-17T15:51+09:00",
+  "modified": "2011-03-17T15:51+09:00"
+}

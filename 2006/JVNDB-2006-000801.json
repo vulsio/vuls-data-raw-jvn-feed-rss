@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000801.html",
+  "title": "ProFTPD の mod_tls モジュールにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000801.html",
+  "description": "ProFTPD の mod_tls モジュールに含まれる tls_x509_name_oneline () 関数には過度に長いデータが送信された場合に、バッファオーバーフローが発生する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2006-000801",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6170",
+      "source": "CVE",
+      "id": "CVE-2006-6170"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-6170",
+      "source": "NVD",
+      "id": "CVE-2006-6170"
+    },
+    {
+      "text": "http://secunia.com/advisories/23141",
+      "source": "SECUNIA",
+      "id": "SA23141"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/21326",
+      "source": "BID",
+      "id": "21326"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/4745",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-4745"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:proftpd:proftpd",
+      "version": "2.2",
+      "vendor": "ProFTPD Project",
+      "product": "ProFTPD"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-10-17T15:33+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-10-17T15:33+09:00"
+}

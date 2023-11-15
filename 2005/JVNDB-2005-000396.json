@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000396.html",
+  "title": "Ruby の XMLRPC モジュールにおけるセキュリティ制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000396.html",
+  "description": "Ruby に実装されている XMLRPC サーバモジュールでは、utils.rb ライブラリに定義される public_instance_methods() 関数における引数のデフォルト値が不適切に設定されているために、権限の高い関数が公開されてしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000396",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1992",
+      "source": "CVE",
+      "id": "CVE-2005-1992"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1992",
+      "source": "NVD",
+      "id": "CVE-2005-1992"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/684913",
+      "source": "CERT-VN",
+      "id": "VU#684913"
+    },
+    {
+      "text": "http://secunia.com/advisories/15767/",
+      "source": "SECUNIA",
+      "id": "SA15767"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14016",
+      "source": "BID",
+      "id": "14016"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2005/Jun/1014253.html",
+      "source": "SECTRACK",
+      "id": "1014253"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/0833",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-0833"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ruby-lang:ruby",
+      "version": "2.2",
+      "vendor": "Ruby-lang.org",
+      "product": "Ruby"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

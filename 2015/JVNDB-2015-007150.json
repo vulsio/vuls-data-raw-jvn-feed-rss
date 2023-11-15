@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007150.html",
+  "title": "PHP の SoapClient の実装におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007150.html",
+  "description": "PHP の SoapClient の実装には、以下のメソッドの \"型の取り違え (type confusion)\" に関する処理に不備があるため、サービス運用妨害 (アプリケーションクラッシュ) 状態にされる、または任意のコードを実行される脆弱性が存在します。\r\n\r\n(1) SoapClient::__getLastRequest メソッド\r\n(2) SoapClient::__getLastResponse メソッド\r\n(3) SoapClient::__getLastRequestHeaders メソッド\r\n(4) SoapClient::__getLastResponseHeaders メソッド\r\n(5) SoapClient::__getCookies メソッド\r\n(6) SoapClient::__setCookie メソッド\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-843:Access of Resource Using Incompatible Type (型の取り違え) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/843.html",
+  "identifier": "JVNDB-2015-007150",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4600",
+      "source": "CVE",
+      "id": "CVE-2015-4600"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4600",
+      "source": "NVD",
+      "id": "CVE-2015-4600"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-05-19T17:42+09:00",
+  "issued": "2016-05-19T17:42+09:00",
+  "modified": "2016-05-19T17:42+09:00"
+}

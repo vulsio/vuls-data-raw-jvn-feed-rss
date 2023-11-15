@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003279.html",
+  "title": "KUKA 製 KUKA.Sim Pro における通信チャネルで送信中のメッセージの整合性への不適切な強制の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003279.html",
+  "description": "KUKA.Sim Pro は、KUKA が提供する産業用機器向けのシミュレーションおよびプログラミングソフトウエアです。\r\nKUKA.Sim Pro には、通信チャネルで送信中のメッセージの整合性への不適切な強制の脆弱性(CWE-924) が存在します。シミュレーションモデルは、KUKA の管理サーバで管理されています。各機器が管理サーバに対してこのモデルを要求した際に、管理サーバは機器に対して平文で応答します。遠隔の第三者は、この脆弱性を悪用することで、シミュレーションモデルの整合性へ影響を与えることが可能です。",
+  "identifier": "JVNDB-2020-003279",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU93617857/",
+      "source": "JVN",
+      "id": "JVNVU#93617857"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10635",
+      "source": "CVE",
+      "id": "CVE-2020-10635"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-098-05",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-098-05"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/924.html",
+      "id": "CWE-924",
+      "title": "通信チャネルで送信中のメッセージの整合性への不適切な強制(CWE-924)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:kuka_sin_pro",
+      "version": "2.2",
+      "vendor": "KUKA",
+      "product": "KUKA.Sim Pro"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+    }
+  ],
+  "date": "2020-04-13T12:27+09:00",
+  "issued": "2020-04-13T12:27+09:00",
+  "modified": "2020-04-13T12:27+09:00"
+}

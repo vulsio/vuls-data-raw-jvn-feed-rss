@@ -1,0 +1,84 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007621.html",
+  "title": "KeyShot における Datakit Software ライブラリの複数のモジュールにおける境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007621.html",
+  "description": "KeyShot における Datakit Software ライブラリの複数のモジュールには、境界外読み取りに関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2021-007621",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU98395603/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98395603"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-27490",
+      "source": "CVE",
+      "id": "CVE-2021-27490"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-27490",
+      "source": "NVD",
+      "id": "CVE-2021-27490"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-21-145-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-145-01"
+    },
+    {
+      "text": "https://www.zerodayinitiative.com/advisories/ZDI-21-566/",
+      "source": "関連文書",
+      "id": "ZDI-21-566 ((0Day) Siemens Solid Edge Viewer JT File Parsing Out-Of-Bounds Read Remote Code Execution Vulnerability)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:datakit:crosscadware",
+      "version": "2.2",
+      "vendor": "Datakit",
+      "product": "CrossCad/Ware"
+    },
+    {
+      "text": "cpe:/a:luxion:keyshot",
+      "version": "2.2",
+      "vendor": "Luxion Inc.",
+      "product": "KeyShot"
+    },
+    {
+      "text": "cpe:/o:siemens:solid_edge_se2020_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "Solid Edge SE2020 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:siemens:solid_edge_se2021_firmware",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "Solid Edge SE2021 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-02-18T10:19+09:00",
+  "issued": "2022-02-18T10:19+09:00",
+  "modified": "2022-02-18T10:19+09:00"
+}

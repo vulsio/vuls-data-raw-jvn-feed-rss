@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-003270.html",
+  "title": "OptiPNG の lib/pngxtern/gif/gifread.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-003270.html",
+  "description": "OptiPNG の lib/pngxtern/gif/gifread.c の GIFReadNextExtension 関数には、サービス運用妨害 (アプリケーションクラッシュ) 状態となる脆弱性が存在します。\r\n本脆弱性は、新規ポインタを返す realloc 関数の不備が生じることに起因します。",
+  "identifier": "JVNDB-2009-003270",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0749",
+      "source": "CVE",
+      "id": "CVE-2009-0749"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0749",
+      "source": "NVD",
+      "id": "CVE-2009-0749"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:optipng:optipng",
+      "version": "2.2",
+      "vendor": "OptiPNG",
+      "product": "OptiPNG"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-06-26T16:10+09:00",
+  "issued": "2012-06-26T16:10+09:00",
+  "modified": "2012-06-26T16:10+09:00"
+}

@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001771.html",
+  "title": "Telerik Analytics Monitor ライブラリに DLL ハイジャックが可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001771.html",
+  "description": "Telerik Analytics Monitor ライブラリは、アプリケーション使用に関するメトリクス情報を収集するためのアプリケーション使用解析サービスです。特定のバージョンの Telerik Analytics Monitor ライブラリには、DLL ハイジャックが可能な脆弱性が存在するため、ライブラリを実装するアプリケーションのコンテキストで任意のコードをロードさせられる可能性があります。\r\n\r\nプロセスの制御 (CWE-114)\r\nCWE-114: Process Control\r\nhttps://cwe.mitre.org/data/definitions/114.html\r\n\r\nTelerik Analytics Monitor ライブラリは、アプリケーションに統合する DLL として提供されています。このライブラリは、HTTPS 通信をサポートする目的で、独自にビルドした OpenSSL を含んでいます。\r\n\r\n本脆弱性は、2014年8月3日にリリースされた Telerik Analytics Monitor ライブラリ バージョン 3.2.96 において作りこまれました。このバージョンでは、OpenSSL ライブラリが暗号化演算ハードウェアをサポートする形でビルドされており、関連する DLL を実行時にロードしようとします。具体的には、4つの DLL (sunsapi.dll、swift.dll、nfhwcrhk.dll、surewarehook.dll) をロードしようとしますが、これらは Telerik からは提供されていません。本脆弱性の影響を受ける Telerik Analytics Monitor ライブラリのファイル名は、EQATEC.Analytics.Monitor.Win32_vc100.dll (32-bit 版システム向け) と EQATEC.Analytics.Monitor.Win32_vc100-x64.dll (64-bit 版システム向け) です。\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-426 として公開されています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-426: Untrusted Search Path (信頼性のない検索パス) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/426.html\r\n",
+  "identifier": "JVNDB-2015-001771",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU98897821/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98897821"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2264",
+      "source": "CVE",
+      "id": "CVE-2015-2264"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2264",
+      "source": "NVD",
+      "id": "CVE-2015-2264"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/794095",
+      "source": "CERT-VN",
+      "id": "VU#794095"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-15-069-04A",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-15-069-04A"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:telerik:analytics_monitor_library",
+      "version": "2.2",
+      "vendor": "Telerik",
+      "product": "Analytics Monitor ライブラリ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-03-16T16:57+09:00",
+  "issued": "2015-03-13T11:24+09:00",
+  "modified": "2015-03-16T16:57+09:00"
+}

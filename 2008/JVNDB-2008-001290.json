@@ -1,0 +1,87 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001290.html",
+  "title": "Autonomy KeyView の foliosr.dll におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001290.html",
+  "description": "Autonomy KeyView の Folio Flat File スピードリーダの foliosr.dll には、.fff ファイル中の以下の属性値の取り扱いに不備があり、スタックベースのバッファオーバーフローの脆弱性が存在します。\r\n・DI タグ　・FD タグ　・FT タグ　・JD タグ　・JL タグ\r\n・LE タグ　・OB タグ　・OD タグ　・OL タグ　・PN タグ\r\n・PS タグ　・PW タグ　・RD タグ　・QL タグ　・TS タグ",
+  "identifier": "JVNDB-2008-001290",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6020",
+      "source": "CVE",
+      "id": "CVE-2007-6020"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-6020",
+      "source": "NVD",
+      "id": "CVE-2007-6020"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/28454",
+      "source": "BID",
+      "id": "28454"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/41716",
+      "source": "XF",
+      "id": "41716"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1019841",
+      "source": "SECTRACK",
+      "id": "1019841"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/1156",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-1156"
+    },
+    {
+      "text": "http://secunia.com/secunia_research/2007-107/advisory/",
+      "source": "SECUNIA-R",
+      "id": "2007-107"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:autonomy:keyview_export_sdk",
+      "version": "2.2",
+      "vendor": "Autonomy",
+      "product": "KeyView Export SDK"
+    },
+    {
+      "text": "cpe:/a:autonomy:keyview_filter_sdk",
+      "version": "2.2",
+      "vendor": "Autonomy",
+      "product": "KeyView Filter SDK"
+    },
+    {
+      "text": "cpe:/a:autonomy:keyview_viewer_sdk",
+      "version": "2.2",
+      "vendor": "Autonomy",
+      "product": "KeyView Viewer SDK"
+    },
+    {
+      "text": "cpe:/a:ibm:notes",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Notes"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-05-02T16:10+09:00",
+  "issued": "2008-05-02T16:10+09:00",
+  "modified": "2008-05-02T16:10+09:00"
+}

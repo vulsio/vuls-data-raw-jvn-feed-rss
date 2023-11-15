@@ -1,0 +1,92 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001288.html",
+  "title": "Autonomy KeyView の emlsr.dll における複数のバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001288.html",
+  "description": "Autonomy KeyView には、EML リーダの emlsr.dll において、以下の複数の箇所の処理にヒープベースのバッファオーバーフローが発生する脆弱性が存在します。\r\n・To\r\n・Cc\r\n・Bcc\r\n・From\r\n・Data\r\n・Subject\r\n・Priority\r\n・Importance\r\n・X-MSMail-Priority ヘッダ\r\n・RFC2047 エンコードされたヘッダ",
+  "identifier": "JVNDB-2008-001288",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5399",
+      "source": "CVE",
+      "id": "CVE-2007-5399"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5399",
+      "source": "NVD",
+      "id": "CVE-2007-5399"
+    },
+    {
+      "text": "http://secunia.com/advisories/28210/",
+      "source": "SECUNIA",
+      "id": "SA28210"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/28454",
+      "source": "BID",
+      "id": "28210"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/41723",
+      "source": "XF",
+      "id": "41723"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1019842",
+      "source": "SECTRACK",
+      "id": "1019842"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/1156",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-1156"
+    },
+    {
+      "text": "http://secunia.com/secunia_research/2007-92/advisory/",
+      "source": "SECUNIA-R",
+      "id": "2007-92"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:autonomy:keyview_export_sdk",
+      "version": "2.2",
+      "vendor": "Autonomy",
+      "product": "KeyView Export SDK"
+    },
+    {
+      "text": "cpe:/a:autonomy:keyview_filter_sdk",
+      "version": "2.2",
+      "vendor": "Autonomy",
+      "product": "KeyView Filter SDK"
+    },
+    {
+      "text": "cpe:/a:autonomy:keyview_viewer_sdk",
+      "version": "2.2",
+      "vendor": "Autonomy",
+      "product": "KeyView Viewer SDK"
+    },
+    {
+      "text": "cpe:/a:ibm:notes",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Notes"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-05-02T16:01+09:00",
+  "issued": "2008-05-02T16:01+09:00",
+  "modified": "2008-05-02T16:01+09:00"
+}

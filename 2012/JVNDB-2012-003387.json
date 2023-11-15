@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003387.html",
+  "title": "Boehm-Demers-Weiser GC における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003387.html",
+  "description": "Boehm-Demers-Weiser GC (libgc) の以下の関数には、整数オーバーフローの脆弱性が存在します。\r\n\r\n(1) malloc.c の GC_generic_malloc 関数\r\n(2) malloc.c の calloc 関数\r\n(3) mallocx.c の GC_generic_malloc_ignore_off_page 関数",
+  "identifier": "JVNDB-2012-003387",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2673",
+      "source": "CVE",
+      "id": "CVE-2012-2673"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2673",
+      "source": "NVD",
+      "id": "CVE-2012-2673"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:boehm-demers-weiser:garbage_collector",
+      "version": "2.2",
+      "vendor": "Boehm-Demers-Weiser",
+      "product": "Boehm-Demers-Weiser Garbage Collector"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-09-14T10:34+09:00",
+  "issued": "2012-07-30T10:30+09:00",
+  "modified": "2012-09-14T10:34+09:00"
+}

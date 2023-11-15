@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003127.html",
+  "title": "Mozilla Firefox および Thunderbird におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003127.html",
+  "description": "Mozilla Firefox および Thunderbird は、ページの再読み込みに関連した onreadystatechange イベントを適切に処理しないため、サービス運用妨害 (アプリケーションクラッシュ) 状態にされる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003127",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1690",
+      "source": "CVE",
+      "id": "CVE-2013-1690"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1690",
+      "source": "NVD",
+      "id": "CVE-2013-1690"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:firefox_esr",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox ESR"
+    },
+    {
+      "text": "cpe:/a:mozilla:thunderbird",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Thunderbird"
+    },
+    {
+      "text": "cpe:/a:mozilla:thunderbird_esr",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Thunderbird ESR"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-08-14T16:37+09:00",
+  "issued": "2013-06-27T15:56+09:00",
+  "modified": "2013-08-14T16:37+09:00"
+}

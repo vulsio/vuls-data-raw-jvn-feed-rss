@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000057.html",
+  "title": "tcpdump の isakmp_sub_print におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000057.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\n\tネットワークトラフィック解析ツール tcpdump では、UDP port 500 番を使用して IPSEC や TLS などのセキュリティプロトコルのための Security Association (SA) の確立に利用される ISAKMP (Internet Security Association and Key Management Protocol) がサポートされています。\r\n\r\n特定のバージョンの tcpdump には、意図的に作成された特定の悪意ある ISAKMP パケットを受け取り、パケットを解析することにより、無限ループ状態に陥る問題が存在します。\r\n\r\nこの問題を利用することで、リモートの攻撃者は tcpdump をサービス不能状態に陥らせることが可能です。結果として、攻撃者は標的ホストで管理されているネットワークトラフィック解析を妨げることが可能です。\r\n通常動作への復旧には、tcpdump を再起動する必要があります。\r\n\r\nこの問題は libpcap 0.6.x および 0.7.x に対してビルドされた tcpdump 3.6、3.6.3、3.7.1 において再現することが報告されており、tcpdump 3.6 から 3.7.1 以前、もしくは tcpdump が同梱されている多くのディストリビューションが影響を受ける可能性があります。\r\nさらには、tcpdump のコードをベースに作成されているアプリケーションにも影響が及ぶ可能性があります。\r\n\r\nしかし、2002/09/06 時点での CVS バージョン管理による print-isakmp.c バージョン 1.34 へのアップデート、もしくは最新バージョン tcpdump 3.7.2 へのアップデートを済ませたユーザは、これらの問題の影響は受けません。\r\n\r\nTcpdump 3.7.2 へのアップデートにより、この他に重要なセキュリティの問題 (悪意ある BGP パケットを取り扱うことにより、無限ループに陥る問題、および悪意ある NFS パケットを取り扱うことにより、バッファオーバーフローが生じる問題) を解消することが可能です。\r\nまた、各ディストリビューションより提供されているパッチを適用することによっても、tcpdump 3.7.2 で解消された問題を解消することが可能です。\r\n\r\nRed Hat Linux より提供されている RPM を適用する場合、この他にも tcpdump 3.6.2-2.2 で解消されている問題 (BGP デコーディングルーチンにおいて、データのコピー時の境界チェックが適切に行われていない問題) も解消することが可能です。\r\nこの問題は、意図的に作成された BGP パケットを受け取ることで、サービス不能状態に陥る、さらには任意のコードを実行されてしまう可能性が示唆されています。",
+  "identifier": "JVNDB-2003-000057",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0108",
+      "source": "CVE",
+      "id": "CVE-2003-0108"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0108",
+      "source": "NVD",
+      "id": "CVE-2003-0108"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6213",
+      "source": "BID",
+      "id": "6213"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4890",
+      "source": "BID",
+      "id": "4890"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6974",
+      "source": "BID",
+      "id": "6974"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

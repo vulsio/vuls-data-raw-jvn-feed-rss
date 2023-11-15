@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006967.html",
+  "title": "QNAP Signage Station に同梱されている iArtist Lite における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006967.html",
+  "description": "QNAP Signage Station に同梱されている iArtist Lite には、権限を取得され、その後、リブート後に特権付きコンテキスト内で当該ファイルを実行される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-18: Source Code (ソースコード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/18.html\r\n\r\nなお、JVNVU#92717873 では、CWE-427 として公開されています。\r\n\r\nCWE-427: Uncontrolled Search Path Element\r\nhttp://cwe.mitre.org/data/definitions/427.html",
+  "identifier": "JVNDB-2015-006967",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92717873/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92717873"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7262",
+      "source": "CVE",
+      "id": "CVE-2015-7262"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7262",
+      "source": "NVD",
+      "id": "CVE-2015-7262"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/444472",
+      "source": "CERT-VN",
+      "id": "VU#444472"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:inds:iartist_lite",
+      "version": "2.2",
+      "vendor": "iNDS Technology, Inc",
+      "product": "iArtist Lite"
+    },
+    {
+      "text": "cpe:/a:qnap:signage_station",
+      "version": "2.2",
+      "vendor": "QNAP Systems",
+      "product": "Signage Station"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2016-03-09T14:44+09:00",
+  "issued": "2016-03-09T14:44+09:00",
+  "modified": "2016-03-09T14:44+09:00"
+}

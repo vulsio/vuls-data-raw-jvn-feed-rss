@@ -1,0 +1,94 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-003121.html",
+  "title": "OpenSSH サーバにおける二重解放に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-003121.html",
+  "description": "OpenSSH サーバ (sshd) には、二重解放に関する脆弱性が存在します。\r\n\r\n",
+  "identifier": "JVNDB-2023-003121",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-25136",
+      "source": "CVE",
+      "id": "CVE-2023-25136"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-25136",
+      "source": "NVD",
+      "id": "CVE-2023-25136"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2023/03/09/2",
+      "source": "関連文書",
+      "id": "Re: Re: double-free vulnerability in OpenSSH server 9.1 (CVE-2023-25136)"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2023/02/02/2",
+      "source": "関連文書",
+      "id": "double-free vulnerability in OpenSSH server 9.1"
+    },
+    {
+      "text": "https://news.ycombinator.com/item?id=34711565",
+      "source": "関連文書",
+      "id": "34711565 (Hacker News)"
+    },
+    {
+      "text": "https://bugzilla.mindrot.org/show_bug.cgi?id=3522",
+      "source": "関連文書",
+      "id": "Bug 3522 - Crash with \"free(): double free detected\" with old clients"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/415.html",
+      "id": "CWE-415",
+      "title": "二重解放(CWE-415)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:netapp:ontap_select_deploy_administration_utility",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "ONTAP Select Deploy administration utility"
+    },
+    {
+      "text": "cpe:/a:openbsd:openssh",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:netapp:500f_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "500F ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:a250_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "A250 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:c250_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "C250 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H"
+    }
+  ],
+  "date": "2023-09-01T09:13+09:00",
+  "issued": "2023-09-01T09:13+09:00",
+  "modified": "2023-09-01T09:13+09:00"
+}

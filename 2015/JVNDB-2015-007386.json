@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007386.html",
+  "title": "Wind River VxWorks の svc_auth.c の _authenticate 関数における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007386.html",
+  "description": "Wind River VxWorks の svc_auth.c の _authenticate 関数には、Remote Procedure Call (RPC) プロトコルが有効な場合、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2015-007386",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7599",
+      "source": "CVE",
+      "id": "CVE-2015-7599"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7599",
+      "source": "NVD",
+      "id": "CVE-2015-7599"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/190.html",
+      "id": "CWE-190",
+      "title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:windriver:vxworks",
+      "version": "2.2",
+      "vendor": "ウインドリバー株式会社",
+      "product": "VxWorks"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-03-16T17:32+09:00",
+  "issued": "2017-03-16T17:32+09:00",
+  "modified": "2017-03-16T17:32+09:00"
+}

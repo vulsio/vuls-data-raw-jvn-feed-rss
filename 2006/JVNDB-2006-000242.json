@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000242.html",
+  "title": "DeleGate における不正な DNS パケットによるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000242.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\n複数の製品における DNS プロトコルの実装には、DNS プロトコルの仕様に起因する不備が存在し、特定の DNS パケットを処理した際にメモリ領域の破壊やバッファオーバーフローなどを生じる問題が存在します。\r\n\r\n製品の実装に依存して影響は異なりますが、リモートの攻撃者に悪用された場合、DNS パケットを処理するサービス、あるいはアプリケーションがサービス不能状態に陥る可能性があります。また、発見者からは任意のコード実行の可能性があることも示唆されています。",
+  "identifier": "JVNDB-2006-000242",
+  "references": [
+    {
+      "text": "http://jvn.jp/niscc/NISCC-144154/index.html",
+      "source": "JVN",
+      "id": "NISCC-144154"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2072",
+      "source": "CVE",
+      "id": "CVE-2006-2072"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-2072",
+      "source": "NVD",
+      "id": "CVE-2006-2072"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/955777",
+      "source": "CERT-VN",
+      "id": "VU#955777"
+    },
+    {
+      "text": "http://www.niscc.gov.uk/niscc/docs/re-20060425-00312.pdf?lang=en",
+      "source": "NISCC",
+      "id": "144154/NISCC/DNS"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20060425-00312.xml",
+      "source": "CPNI",
+      "id": "00312"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17692",
+      "source": "BID",
+      "id": "17692"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17691",
+      "source": "BID",
+      "id": "17691"
+    },
+    {
+      "text": "http://isc.sans.org/diary.php?storyid=1290",
+      "source": "SANS",
+      "id": "1290"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:delegate:delegate",
+      "version": "2.2",
+      "vendor": "DeleGate.org",
+      "product": "DeleGate"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

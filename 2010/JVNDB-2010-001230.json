@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001230.html",
+  "title": "GnuTLS の gnutls_x509_crt_get_serial 関数におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001230.html",
+  "description": "GnuTLS の gnutls_x509_crt_get_serial 関数には、64bit プラットフォームの big-endian が稼働している場合、不正なデータタイプ、または不正な長さの値のポインタを含む asn1_read_value を呼び出すため、certificate revocation list (CRL) のチェックを回避される、またはスタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001230",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0731",
+      "source": "CVE",
+      "id": "CVE-2010-0731"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0731",
+      "source": "NVD",
+      "id": "CVE-2010-0731"
+    },
+    {
+      "text": "http://secunia.com/advisories/15193/",
+      "source": "SECUNIA",
+      "id": "SA15193"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/38959",
+      "source": "BID",
+      "id": "38959"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/0713",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-0713"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gnutls",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GnuTLS"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-04-09T16:21+09:00",
+  "issued": "2010-04-09T16:21+09:00",
+  "modified": "2010-04-09T16:21+09:00"
+}

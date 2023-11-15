@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000380.html",
+  "title": "Mailman の admin CGI スクリプトにおけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000380.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU Mailman は Python および C 言語を用いて開発されたオープンソースなメーリングリストマネージャです。\r\n\r\nMailman 2.1.3 以前には、以下のような複数のセキュリティ上の問題が存在します。\r\n\r\n・Mailman 2.1.3 以前に同梱されている管理者用のページの admin CGI スクリプトには、ユーザが入力した値の妥当性の確認が不適切であるため、クロスサイトスクリプティング攻撃可能な問題 (CAN-2003-0965)\r\n\r\n・Mailman 2.1.2 以前に同梱されている管理者用のページの create CGI スクリプトには、ユーザが入力した値の妥当性の確認が不適切であるため、クロスサイトスクリプティング攻撃可能な問題 (CAN-2003-0992)\r\n\r\n・Mailman 2.0.13 以前では、件名フィールドが空の電子メールの取り扱いが不適切であるため、Mailman がクラッシュする問題 (CAN-2004-0182)\r\n\r\nこれらの問題を利用するリモートの攻撃者は管理用ページを利用するユーザを意図的に作成した Web ページに誘導することにより、標的ユーザの Web ブラウザ上で任意のスクリプトを実行することが可能です。\r\nまた、攻撃者は意図的に作成した電子メールを標的ユーザに送りつけることにより、Mailman をサービス不能状態に陥らせることが可能です。",
+  "identifier": "JVNDB-2003-000380",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0965",
+      "source": "CVE",
+      "id": "CVE-2003-0965"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0965",
+      "source": "NVD",
+      "id": "CVE-2003-0965"
+    },
+    {
+      "text": "http://secunia.com/advisories/10519/",
+      "source": "SECUNIA",
+      "id": "SA10519"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10413",
+      "source": "BID",
+      "id": "10413"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10147",
+      "source": "BID",
+      "id": "10147"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9336",
+      "source": "BID",
+      "id": "9336"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001997.html",
+  "title": "Redmine における属性を設定される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001997.html",
+  "description": "Redmine は、model 属性の値を提供するためのハッシュの使用を適切に制限しないため、下記の属性を設定される脆弱性が存在します。\r\n(1) Comment\r\n(2) Document\r\n(3) IssueCategory\r\n(4) MembersController\r\n(5) Message\r\n(6) News\r\n(7) TimeEntry\r\n(8) Version\r\n(9) Wiki\r\n(10) UserPreference\r\n(11) Board model\r\n本脆弱性は、CVE-2012-0327 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2012-001997",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2054",
+      "source": "CVE",
+      "id": "CVE-2012-2054"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2054",
+      "source": "NVD",
+      "id": "CVE-2012-2054"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redmine:redmine",
+      "version": "2.2",
+      "vendor": "Redmine",
+      "product": "Redmine"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-04-06T16:21+09:00",
+  "issued": "2012-04-06T16:21+09:00",
+  "modified": "2012-04-06T16:21+09:00"
+}

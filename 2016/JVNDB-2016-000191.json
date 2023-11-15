@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000191.html",
+  "title": "サイボウズ Office における情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000191.html",
+  "description": "サイボウズ株式会社が提供するサイボウズ Office の CGI 環境変数の表示ページには、情報漏えいの脆弱性が存在します。\r\n\r\nセッション情報を保持している Cookie には httponly 属性が付与されており、その値を JavaScript コードから取得することは通常できません。しかし、CGI 環境変数の表示ページでは環境変数に格納された Cookie の値が表示されるため、何らかの方法で CGI 環境変数の表示ページの内容を読み取られると、セッション情報が漏えいする可能性があります。\r\n\r\nこの脆弱性情報は、次の方が開発者に報告し、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n発見者: Masato Kinugawa 氏",
+  "identifier": "JVNDB-2016-000191",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN09736331/index.html",
+      "source": "JVN",
+      "id": "JVN#09736331"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4869",
+      "source": "CVE",
+      "id": "CVE-2016-4869"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-4869",
+      "source": "NVD",
+      "id": "CVE-2016-4869"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cybozu:office",
+      "version": "2.2",
+      "vendor": "サイボウズ",
+      "product": "サイボウズ Office"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2017-04-24T15:12+09:00",
+  "issued": "2016-10-03T12:16+09:00",
+  "modified": "2017-04-24T15:12+09:00"
+}

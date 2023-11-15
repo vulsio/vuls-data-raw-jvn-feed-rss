@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008920.html",
+  "title": "ImageMagick における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008920.html",
+  "description": "ImageMagick には、境界外書き込みに関する脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-2030 とは異なる脆弱性です。\r\n",
+  "identifier": "JVNDB-2014-008920",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1947",
+      "source": "CVE",
+      "id": "CVE-2014-1947"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2014-1947",
+      "source": "NVD",
+      "id": "CVE-2014-1947"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2014/02/12/2",
+      "source": "関連文書",
+      "id": "information on \"ImageMagick PSD Images Processing RLE Decoding Buffer  Overflow Vulnerability\""
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:imagemagick:imagemagick",
+      "version": "2.2",
+      "vendor": "ImageMagick",
+      "product": "ImageMagick"
+    },
+    {
+      "text": "cpe:/o:suse:linux_enterprise_desktop",
+      "version": "2.2",
+      "vendor": "SUSE",
+      "product": "SUSE Linux Enterprise Desktop"
+    },
+    {
+      "text": "cpe:/o:suse:linux_enterprise_server",
+      "version": "2.2",
+      "vendor": "SUSE",
+      "product": "SUSE Linux Enterprise Server"
+    },
+    {
+      "text": "cpe:/o:suse:linux_enterprise_software_development_kit",
+      "version": "2.2",
+      "vendor": "SUSE",
+      "product": "SUSE Linux Enterprise Software Development Kit"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-03-04T18:16+09:00",
+  "issued": "2020-03-04T18:16+09:00",
+  "modified": "2020-03-04T18:16+09:00"
+}

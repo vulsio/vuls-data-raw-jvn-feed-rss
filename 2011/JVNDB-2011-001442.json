@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001442.html",
+  "title": "IPComp パケットの受信処理に脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001442.html",
+  "description": "複数の IPComp 実装の受信処理には、メモリ破損の脆弱性が存在します。\r\n\r\nIPComp (RFC 3173) は、一般的に IPsec の実装と共に使用されています。 KAME プロジェクトや NetBSD プロジェクトなどで IPComp および IPsec を実装しているコードには、細工された IPComp ペイロードを処理する際にスタックベースのバッファオーバーフローが発生する可能性があります。\r\n\r\nなお、本脆弱性を使用した攻撃コードが公開されています。",
+  "identifier": "JVNDB-2011-001442",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU668220",
+      "source": "JVN",
+      "id": "JVNVU#668220"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1547",
+      "source": "CVE",
+      "id": "CVE-2011-1547"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1547",
+      "source": "NVD",
+      "id": "CVE-2011-1547"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/668220",
+      "source": "CERT-VN",
+      "id": "VU#668220"
+    },
+    {
+      "text": "http://tools.ietf.org/html/rfc3173",
+      "source": "RFC",
+      "id": "RFC 3173"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:iij:seil%252fb1_firmware",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/B1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:iij:seil%252fneu_2fe_plus_firmware",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/neu 2FE Plus ファームウェア"
+    },
+    {
+      "text": "cpe:/o:iij:seil%252fturbo_firmware",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/Turbo ファームウェア"
+    },
+    {
+      "text": "cpe:/o:iij:seil%252fx1_firmware",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/X1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:iij:seil%252fx2_firmware",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/X2 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:iij:seil%252fx86_firmware",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/x86 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-10-28T18:22+09:00",
+  "issued": "2011-04-27T11:48+09:00",
+  "modified": "2013-10-28T18:22+09:00"
+}

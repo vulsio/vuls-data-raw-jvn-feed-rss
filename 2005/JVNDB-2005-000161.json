@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000161.html",
+  "title": "Squid における不適切な Set-Cookie ヘッダ処理による情報漏洩の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000161.html",
+  "description": "Squid には、既に廃止された Netscape 仕様に沿ったセッション管理を行う Web サイトからクライアントに送られてくる Set-Cookie ヘッダの取り扱いに不備が存在し、Squid サーバにおいて競合状態が発生してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000161",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0626",
+      "source": "CVE",
+      "id": "CVE-2005-0626"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0626",
+      "source": "NVD",
+      "id": "CVE-2005-0626"
+    },
+    {
+      "text": "http://secunia.com/advisories/14451/",
+      "source": "SECUNIA",
+      "id": "SA14451"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12716",
+      "source": "BID",
+      "id": "12716"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:squid-cache:squid",
+      "version": "2.2",
+      "vendor": "Squid-cache.org",
+      "product": "Squid"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

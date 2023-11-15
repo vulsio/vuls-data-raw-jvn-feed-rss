@@ -1,0 +1,130 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000659.html",
+  "title": "PHP の複数のモジュールに safe_mode および open_basedir ディレクティブによる保護を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000659.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPHP には以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n1) extract() 関数、import_request_variables() 関数における処理に不備が存在するため、ファイルアップロードを行う特定の POST リクエストによりグローバル変数が上書きされる問題が存在します。(CVE-2005-3390) \r\n\r\nリモートの攻撃者により悪用された場合、任意の PHP コードを実行される可能性があります。 \r\n\r\n2) parse_str() 関数には、関数が予期しない終わり方をした場合、register_globals ディレクティブが有効になってしまう問題が存在します。(CVE-2005-3389) \r\n\r\nリモートの攻撃者により悪用された場合、不正に register_globals ディレクティブの設定を変更され、さらなる攻撃に利用される可能性があります。 \r\n\r\n3) phpinfo() 関数に渡される引数に対するサニタイズ処理が適切に行われていないため、意図的に作成された URL によりクロスサイトスクリプティング攻撃が可能となる問題が存在します。(CVE-2005-3388) \r\n\r\nリモートの攻撃者により悪用された場合、cookie などの重要な情報を取得される可能性があります。 \r\n\r\n4) fopen_wrappers.c における処理に不備が存在するため、open_basedir ディレクティブによる保護が不正に回避される問題が存在します。(CVE-2005-3054) \r\n\r\nリモートの攻撃者により悪用された場合、本来保護される特定のリソースにアクセスされてしまう可能性があります。 \r\n\r\n5) ext/curl、ext/gd モジュールにおける処理に不備が存在するため、safe_mode、open_basedir ディレクティブによる保護が不正に回避される問題が存在します。(CVE-2005-3391) \r\n\r\nリモートの攻撃者により悪用された場合、本来保護される特定のリソースにアクセスされてしまう可能性があります。 \r\n\r\n6) virtual() 関数を呼び出す処理に不備が存在するため、safe_mode、open_basedir ディレクティブによる保護が不正に回避される問題が存在します。(CVE-2005-3392) \r\n\r\nリモートの攻撃者により悪用された場合、本来保護される特定のリソースにアクセスされてしまう可能性があります。",
+  "identifier": "JVNDB-2005-000659",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3391",
+      "source": "CVE",
+      "id": "CVE-2005-3391"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3391",
+      "source": "NVD",
+      "id": "CVE-2005-3391"
+    },
+    {
+      "text": "http://secunia.com/advisories/16971/",
+      "source": "SECUNIA",
+      "id": "SA16971"
+    },
+    {
+      "text": "http://secunia.com/advisories/17371/",
+      "source": "SECUNIA",
+      "id": "SA17371"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15413",
+      "source": "BID",
+      "id": "15413"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15119",
+      "source": "BID",
+      "id": "15119"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15411",
+      "source": "BID",
+      "id": "15411"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15248",
+      "source": "BID",
+      "id": "15248"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14957",
+      "source": "BID",
+      "id": "14957"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15249",
+      "source": "BID",
+      "id": "15249"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15250",
+      "source": "BID",
+      "id": "15250"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/1862",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-1862"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/2254",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-2254"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_4",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ4"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_550",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQ550"
+    },
+    {
+      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Cobalt RaQXTR"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

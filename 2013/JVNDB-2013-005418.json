@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005418.html",
+  "title": "FFmpeg の libavcodec/h264.c の decode_slice_header 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005418.html",
+  "description": "FFmpeg の libavcodec/h264.c の decode_slice_header 関数は、特定の削除可能なフィールドに不正に依存しているため、サービス運用妨害 (デッドロック) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005418",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7008",
+      "source": "CVE",
+      "id": "CVE-2013-7008"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7008",
+      "source": "NVD",
+      "id": "CVE-2013-7008"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2013/11/26/7",
+      "source": "関連文書",
+      "id": "CVE Request: FFmpeg 2.1 multiple problems"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2013/12/08/3",
+      "source": "関連文書",
+      "id": "Re: CVE Request: FFmpeg 2.1 multiple problems"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-12-11T16:44+09:00",
+  "issued": "2013-12-11T16:44+09:00",
+  "modified": "2013-12-11T16:44+09:00"
+}

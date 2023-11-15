@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002445.html",
+  "title": "libarchive の入力値検証不備に起因するバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002445.html",
+  "description": "細工した ZIP ファイルを libarchive に解凍させることで、ユーザ権限で任意のコードを実行させることが可能です。\r\n\r\n不適切な入力検査 (CWE-20) - CVE-2016-1541\r\n圧縮後のサイズを細工した ZIP ファイルを libarchive に処理させることにより、ヒープ領域に任意のコードを配置し、libarchive を実行しているユーザの権限で、そのコードを実行することが可能です。\r\n\r\nCWE-20: Improper Input Validation\r\nhttp://cwe.mitre.org/data/definitions/20.html",
+  "identifier": "JVNDB-2016-002445",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU93657776",
+      "source": "JVN",
+      "id": "JVNVU#93657776"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1541",
+      "source": "CVE",
+      "id": "CVE-2016-1541"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/862384",
+      "source": "CERT-VN",
+      "id": "VU#862384"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libarchive:libarchive",
+      "version": "2.2",
+      "vendor": "libarchive",
+      "product": "libarchive"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2016-05-10T09:47+09:00",
+  "issued": "2016-05-10T09:47+09:00",
+  "modified": "2016-05-10T09:47+09:00"
+}

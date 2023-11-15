@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008938.html",
+  "title": "musl libc における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008938.html",
+  "description": "musl libc には、境界外書き込みに関する脆弱性が存在が存在します。",
+  "identifier": "JVNDB-2014-008938",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3484",
+      "source": "CVE",
+      "id": "CVE-2014-3484"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2014-3484",
+      "source": "NVD",
+      "id": "CVE-2014-3484"
+    },
+    {
+      "text": "http://seclists.org/oss-sec/2014/q2/495",
+      "source": "関連文書",
+      "id": "Security advisory for musl libc - remote stack-based buffer overflow in DNS response parsing [CVE-2014-3484] "
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:musl-libc:musl",
+      "version": "2.2",
+      "vendor": "musl libc",
+      "product": "musl"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-03-10T13:56+09:00",
+  "issued": "2020-03-10T13:56+09:00",
+  "modified": "2020-03-10T13:56+09:00"
+}

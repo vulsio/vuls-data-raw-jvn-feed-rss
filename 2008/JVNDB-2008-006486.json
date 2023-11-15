@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-006486.html",
+  "title": "xine-lib におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-006486.html",
+  "description": "xine-lib は、信頼されない入力値に依存してメモリ割り当てをする、および以下の結果をチェックしないため、サービス運用妨害 (NULL ポインタデリファレンスおよびクラッシュ) 状態となる、または任意のコードを実行される脆弱性が存在します。\r\n(1) demux_matroska.c が処理する MATROSKA_ID_TR_CODECPRIVATE トラックエントリ要素\r\n(2) demux_real.c の real_parse_headers 関数が処理する PROP_TAG チャンク\r\n(3) demux_real.c の real_parse_headers 関数が処理する MDPR_TAG チャンク\r\n(4) demux_real.c の real_parse_headers 関数が処理する CONT_TAG チャンク",
+  "identifier": "JVNDB-2008-006486",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5240",
+      "source": "CVE",
+      "id": "CVE-2008-5240"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-5240",
+      "source": "NVD",
+      "id": "CVE-2008-5240"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:xine:xine-lib",
+      "version": "2.2",
+      "vendor": "Xine",
+      "product": "xine-lib"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-12-20T18:52+09:00",
+  "issued": "2012-12-20T18:52+09:00",
+  "modified": "2012-12-20T18:52+09:00"
+}

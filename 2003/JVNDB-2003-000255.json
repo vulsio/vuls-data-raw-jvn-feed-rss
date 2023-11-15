@@ -1,0 +1,45 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000255.html",
+  "title": "Linux Kernel の C-Media PCI ドライバの 不備により不正にユーザ空間へアクセスされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000255.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel に実装されている get_user() は、ユーザ空間のデータをカーネル空間に読み込むための関数です。\r\n\r\nLinux Kernel 2.4.22 以前には、C-Media PCI サウンドドライバの取り扱いに不備が存在し、get_user() を使用せずにユーザ空間へ直接アクセスしてしまう問題が存在します。\r\n\r\n現時点ではこの問題の詳細は不明ですが、ローカルの攻撃者はこの問題をさらなる攻撃に利用する可能性があります。",
+  "identifier": "JVNDB-2003-000255",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0699",
+      "source": "CVE",
+      "id": "CVE-2003-0699"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0699",
+      "source": "NVD",
+      "id": "CVE-2003-0699"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-011296.html",
+  "title": "Perl-DBI におけるバッファエラーの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-011296.html",
+  "description": "Perl-DBI には、バッファエラーの脆弱性が存在します。",
+  "identifier": "JVNDB-2020-011296",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14392",
+      "source": "CVE",
+      "id": "CVE-2020-14392"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-14392",
+      "source": "NVD",
+      "id": "CVE-2020-14392"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1877402",
+      "source": "関連文書",
+      "id": "Bug 1877402 (CVE-2020-14392) - CVE-2020-14392 perl-dbi: Memory corruption in XS functions when Perl stack is reallocated"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:perl:perl_dbi",
+      "version": "2.2",
+      "vendor": "The Perl Foundation",
+      "product": "Perl DBI"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:opensuse_project:leap",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "openSUSE Leap"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2021-03-26T15:34+09:00",
+  "issued": "2021-03-26T15:34+09:00",
+  "modified": "2021-03-26T15:34+09:00"
+}

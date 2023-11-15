@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004107.html",
+  "title": "Intel Crosswalk Project に SSL サーバ証明書の検証が行われなくなる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004107.html",
+  "description": "Intel Crosswalk Project は、Android および iOS 向けのハイブリッドアプリを開発するためのフレームワークです。Crosswalk Project には、不正な SSL サーバ証明書をユーザが許可した際の処理に問題があり、アプリによるそれ以降の SSL サーバ証明書すべての検証が阻害される可能性があります。\r\n\r\n安全でない操作であることをユーザに警告しない問題 (CWE-356) - CVE-2016-5672\r\n\r\n不正な SSL サーバ証明書が検出されると、Crosswalk Project を使用して作成されたアプリはエラーメッセージを表示します。ユーザがこのエラーメッセージで \"OK\" を選択すると、当該アプリはそれ以降 SSL サーバ証明書の検証を行わなくなります。エラーメッセージには、アプリが永続的に SSL サーバ証明書を検証しなくなることが明確に記載されておらず、再び同じメッセージが表示されることはありません。\r\n\r\nCWE-356: Product UI does not Warn User of Unsafe Actions\r\nhttp://cwe.mitre.org/data/definitions/356.html\r\n\r\n研究者は、さらに詳しい情報をセキュリティアドバイザリとして公開しています。また、Intel Corporation もこの問題についてブログ記事を作成しています。\r\n\r\nセキュリティアドバイザリ\r\nhttps://wwws.nightwatchcybersecurity.com/2016/07/29/advisory-intel-crosswalk-ssl-prompt-issue/\r\n\r\nブログ記事\r\nhttp://blogs.intel.com/evangelists/2016/07/28/crosswalk-security-vulnerability/",
+  "identifier": "JVNDB-2016-004107",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU93087310/index.html",
+      "source": "JVN",
+      "id": "JVNVU#93087310"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5672",
+      "source": "CVE",
+      "id": "CVE-2016-5672"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5672",
+      "source": "NVD",
+      "id": "CVE-2016-5672"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/217871",
+      "source": "CERT-VN",
+      "id": "VU#217871"
+    },
+    {
+      "text": "https://wwws.nightwatchcybersecurity.com/2016/07/29/advisory-intel-crosswalk-ssl-prompt-issue/",
+      "source": "関連文書",
+      "id": "Advisory: Intel Crosswalk SSL Prompt Issue [CVE 2016-5672]"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:intel:crosswalk",
+      "version": "2.2",
+      "vendor": "インテル",
+      "product": "Crosswalk Project"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2016-08-05T17:29+09:00",
+  "issued": "2016-08-02T10:54+09:00",
+  "modified": "2016-08-05T17:29+09:00"
+}

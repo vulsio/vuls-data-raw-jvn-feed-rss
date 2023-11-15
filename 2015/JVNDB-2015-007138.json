@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007138.html",
+  "title": "Botan の BER デコーダにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007138.html",
+  "description": "Botan の BER デコーダには、length フィールドに関する処理に不備があるため、サービス運用妨害 (メモリ消費) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-007138",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5727",
+      "source": "CVE",
+      "id": "CVE-2015-5727"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5727",
+      "source": "NVD",
+      "id": "CVE-2015-5727"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:botan_project:botan",
+      "version": "2.2",
+      "vendor": "Botan project",
+      "product": "Botan"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-05-18T10:07+09:00",
+  "issued": "2016-05-18T10:07+09:00",
+  "modified": "2016-05-18T10:07+09:00"
+}

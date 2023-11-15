@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000520.html",
+  "title": "Wireshark の SCSI 解析部におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000520.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nWireshark (Ethereal) には以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・SCSI 解析部でのクラッシュ (0.99.2) (CVE-2006-4330)\r\n・IPSec ESP 解析部での一つずれによるエラー (0.99.2) (CVE-2006-4331)\r\n・Glib の不備による DHCP 解析部およびその他解析部でのクラッシュ (0.10.13 - 0.99.2) (CVE-2006-4332)\r\n・Q.2391 解析部の不備による過剰なメモリ消費 (0.7.9 - 0.99.2) (CVE-2006-4333)\r\n\r\nリモートの攻撃者に悪用された場合、Wireshark がサービス不能状態に陥る、システムメモリが大量に消費される、あるいは Wireshark の実行権限 (通常 root 権限) で任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2006-000520",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4330",
+      "source": "CVE",
+      "id": "CVE-2006-4330"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4330",
+      "source": "NVD",
+      "id": "CVE-2006-4330"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/335656",
+      "source": "CERT-VN",
+      "id": "VU#335656"
+    },
+    {
+      "text": "http://secunia.com/advisories/21597/",
+      "source": "SECUNIA",
+      "id": "SA21597"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19690",
+      "source": "BID",
+      "id": "19690"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/3370",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-3370"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

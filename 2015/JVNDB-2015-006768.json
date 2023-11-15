@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006768.html",
+  "title": "QEMU の hw/net/pcnet.c の pcnet_receive 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006768.html",
+  "description": "QEMU の hw/net/pcnet.c の pcnet_receive 関数には、ゲストの NIC が過度に大きな MTU を持つ場合、バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2015-006768",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7512",
+      "source": "CVE",
+      "id": "CVE-2015-7512"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7512",
+      "source": "NVD",
+      "id": "CVE-2015-7512"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2015/11/30/3",
+      "source": "関連文書",
+      "id": "CVE-2015-7512 Qemu: net: pcnet: buffer overflow in non-loopback mode"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2016-01-15T16:05+09:00",
+  "issued": "2016-01-15T16:05+09:00",
+  "modified": "2016-01-15T16:05+09:00"
+}

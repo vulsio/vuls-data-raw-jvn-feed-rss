@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000183.html",
+  "title": "xSANE におけるシンボリックリンク攻撃を受ける脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000183.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSANE (Scanner Access Now Easy) は、イメージスキャナやデジタルカメラ等のキャプチャ機器にアクセスする際に使用する API です。ほとんどの Unix Linux に対応し、Red Hat Linux にも標準搭載されています。SANE は、Frontend と呼ばれる GUI と Backend と呼ばれるドライバから構成されています。 \r\n\r\nこの SANE および X に基づいたインタフェースを提供する Xsane には、推測されやすい名前を持つ一時ファイルを /tmp ディレクトリに作成してしまう問題が存在します。そのため、ローカルの攻撃者は SANE が実行されているユーザ権限で書込可能な任意のファイルにシンボリックリンクを作成する事により、ファイルを上書きできる可能性が存在します。 \r\n\r\nローカルの攻撃者によるファイルの上書きは、重要なファイルの削除、サービス不能攻撃、権限の昇格等の攻撃に繋がる恐れがあります。",
+  "identifier": "JVNDB-2001-000183",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0887",
+      "source": "CVE",
+      "id": "CVE-2001-0887"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2001-0887",
+      "source": "NVD",
+      "id": "CVE-2001-0887"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/3987",
+      "source": "BID",
+      "id": "3987"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/3700",
+      "source": "BID",
+      "id": "3700"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

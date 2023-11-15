@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-005870.html",
+  "title": "SlySoft AnyDVD などに同梱されている Elaborate Bytes ElbyCDIO.sys におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-005870.html",
+  "description": "SlySoft AnyDVD、Virtual CloneDrive、CloneDV、および CloneCD に同梱されている Elaborate Bytes ElbyCDIO.sys は、IOCTL 用の METHOD_NEITHER 通信メソッドを使用する、および Irp オブジェクトに関連するバッファを適切に検証しないため、サービス運用妨害 (システムクラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2009-005870",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0824",
+      "source": "CVE",
+      "id": "CVE-2009-0824"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0824",
+      "source": "NVD",
+      "id": "CVE-2009-0824"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:slysoft:anydvd",
+      "version": "2.2",
+      "vendor": "slysoft",
+      "product": "anydvd"
+    },
+    {
+      "text": "cpe:/a:slysoft:clonecd",
+      "version": "2.2",
+      "vendor": "slysoft",
+      "product": "clonecd"
+    },
+    {
+      "text": "cpe:/a:slysoft:clonedvd",
+      "version": "2.2",
+      "vendor": "slysoft",
+      "product": "clonedvd"
+    },
+    {
+      "text": "cpe:/a:slysoft:virtualclonedrive",
+      "version": "2.2",
+      "vendor": "slysoft",
+      "product": "virtualclonedrive"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-12-20T19:10+09:00",
+  "issued": "2012-12-20T19:10+09:00",
+  "modified": "2012-12-20T19:10+09:00"
+}

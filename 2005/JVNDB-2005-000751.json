@@ -1,0 +1,137 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000751.html",
+  "title": "Microsoft Windows の GDI における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000751.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nWMF (Windows メタファイル) は Windows で使用される描画命令（GDI）レコードから構成されているファイルで、直線、矩形、テキストなどの描画、領域の塗りつぶしなどといった描画命令や、色やフォントに関する情報などを含むベクター画像ファイルです。既定では「Windows 画像と Fax ビューア」(Shimgvw.dll) によって開かれます。\r\n\r\nMicrosoft Windows の GDI32.dll に実装されている、Escape 関数を含む特定の GDI 関数には、WMF ファイルの不正なレコードが処理された場合に、任意のコードが実行可能となる問題が存在します。\r\n\r\n「Windows 画像と Fax ビューア」やその他の GDI32.dll を利用するプログラムにより、不正な WMF ファイルが処理された場合、リモートの攻撃者に標的ユーザの権限で任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2005-000751",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA05-362A/index.html",
+      "source": "JVN",
+      "id": "JVNTA05-362A"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23181038",
+      "source": "JVN",
+      "id": "JVNVU#181038"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA06-005A/",
+      "source": "JVN",
+      "id": "JVNTA06-005A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA05-362A",
+      "source": "JVNTR",
+      "id": "TRTA05-362A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA06-005A",
+      "source": "JVNTR",
+      "id": "TRTA06-005A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4560",
+      "source": "CVE",
+      "id": "CVE-2005-4560"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4560",
+      "source": "NVD",
+      "id": "CVE-2005-4560"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2005/at050014.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2005-0014"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2006/at060001.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2006-0001"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/181038",
+      "source": "CERT-VN",
+      "id": "VU#181038"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA05-362A.html",
+      "source": "CERT-TA",
+      "id": "TA05-362A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA06-005A.html",
+      "source": "CERT-TA",
+      "id": "TA06-005A"
+    },
+    {
+      "text": "http://secunia.com/advisories/18255/",
+      "source": "SECUNIA",
+      "id": "SA18255"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/16074",
+      "source": "BID",
+      "id": "16074"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/alerts/id/212",
+      "source": "ISS",
+      "id": "212"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/alerts/id/211",
+      "source": "ISS",
+      "id": "211"
+    },
+    {
+      "text": "http://www.securiteam.com/windowsntfocus/6G00P2AEVE.html",
+      "source": "SECTEAM",
+      "id": "6G00P2AEVE"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/3086",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-3086"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows-9x",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 9X"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

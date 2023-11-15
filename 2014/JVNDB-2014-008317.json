@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008317.html",
+  "title": "Android の b/libs/gui/ISurfaceComposer.cpp におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008317.html",
+  "description": "Android の b/libs/gui/ISurfaceComposer.cpp には、サービス運用妨害 (NULL ポインタデリファレンスおよびプロセスクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-008317",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7919",
+      "source": "CVE",
+      "id": "CVE-2014-7919"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2014-7919",
+      "source": "NVD",
+      "id": "CVE-2014-7919"
+    },
+    {
+      "text": "https://github.com/alexpark07/Bookmark/issues/1",
+      "source": "関連文書",
+      "id": "can you match up one of your disclosures? #1"
+    },
+    {
+      "text": "https://github.com/alexpark07/Bookmark/blob/master/BugHunting.md",
+      "source": "関連文書",
+      "id": "Bookmark/BugHunting.md"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:google:android",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-07-05T16:41+09:00",
+  "issued": "2017-07-05T16:41+09:00",
+  "modified": "2017-07-05T16:41+09:00"
+}

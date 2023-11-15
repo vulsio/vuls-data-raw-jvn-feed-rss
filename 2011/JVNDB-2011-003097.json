@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003097.html",
+  "title": "IBM WebSphere MQ における listener プロセス強制終了の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003097.html",
+  "description": "OpenVMS 上で稼働する IBM WebSphere MQ は、User Authorization File (UAF) データを適切に検証しないため、listener プロセス、およびコマンドサーバを強制終了される脆弱性が存在します。",
+  "identifier": "JVNDB-2011-003097",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1378",
+      "source": "CVE",
+      "id": "CVE-2011-1378"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1378",
+      "source": "NVD",
+      "id": "CVE-2011-1378"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:websphere_mq",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere MQ"
+    },
+    {
+      "text": "cpe:/o:hp:openvms",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "OpenVMS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-11-29T16:14+09:00",
+  "issued": "2011-11-29T16:14+09:00",
+  "modified": "2011-11-29T16:14+09:00"
+}

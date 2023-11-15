@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-008259.html",
+  "title": "Linux Kernel の ext4 および f2fs ファイルシステムの暗号化サポートにおける別のユーザが所有するディレクトリに暗号化ポリシーを割り当てられる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-008259.html",
+  "description": "Linux Kernel の ext4 および f2fs ファイルシステムの暗号化サポートの fs/crypto/policy.c 内の fscrypt_process_policy 関数には、認証チェックの欠落により、別のユーザが所有するディレクトリに暗号化ポリシーを割り当てられ、サービス運用妨害 (DoS) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-008259",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10318",
+      "source": "CVE",
+      "id": "CVE-2016-10318"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-10318",
+      "source": "NVD",
+      "id": "CVE-2016-10318"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-05-09T16:56+09:00",
+  "issued": "2017-05-09T16:56+09:00",
+  "modified": "2017-05-09T16:56+09:00"
+}

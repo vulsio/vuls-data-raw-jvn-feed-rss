@@ -1,0 +1,117 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001127.html",
+  "title": "curl および libcurl の redirect 実装における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001127.html",
+  "description": "curl および libcurl の redirect 実装には、CURLOPT_FOLLOWLOCATION が有効な場合に、任意の Location 値を受け入れることにより、任意のファイルの読み込みまたは改ざんを行われる、あるいは任意のコマンドを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001127",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0037",
+      "source": "CVE",
+      "id": "CVE-2009-0037"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0037",
+      "source": "NVD",
+      "id": "CVE-2009-0037"
+    },
+    {
+      "text": "http://secunia.com/advisories/34138/",
+      "source": "SECUNIA",
+      "id": "SA34138"
+    },
+    {
+      "text": "http://secunia.com/advisories/34399/",
+      "source": "SECUNIA",
+      "id": "SA34399"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/33962",
+      "source": "BID",
+      "id": "33962"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/49030",
+      "source": "XF",
+      "id": "49030"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/0581",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-0581"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+      "id": "CWE-352",
+      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:haxx:curl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "cURL"
+    },
+    {
+      "text": "cpe:/a:haxx:libcurl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "libcurl"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-04-13T14:45+09:00",
+  "issued": "2009-04-09T11:59+09:00",
+  "modified": "2010-04-13T14:45+09:00"
+}

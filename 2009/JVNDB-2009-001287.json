@@ -1,0 +1,165 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001287.html",
+  "title": "Adobe Reader および Acrobat の JavaScript API における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001287.html",
+  "description": "Adobe Reader および Acrobat の JavaScript API における getAnnots Doc メソッドには、PDF ファイルの処理に不備があるため、サービス運用妨害 (DoS) 状態となる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001287",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU970180/",
+      "source": "JVN",
+      "id": "JVNVU#970180"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA09-133B/",
+      "source": "JVN",
+      "id": "JVNTA09-133B"
+    },
+    {
+      "text": "http://jvn.jp/tr/JVNTR-2009-13/",
+      "source": "JVNTR",
+      "id": "JVNTR-2009-13"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1492",
+      "source": "CVE",
+      "id": "CVE-2009-1492"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1492",
+      "source": "NVD",
+      "id": "CVE-2009-1492"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2009/at090009.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2009-0009"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/index.html#topics",
+      "source": "AT-POLICE",
+      "id": "アドビシステムズ社の Adobe Reader と Acrobat のセキュリティ修正プログラムについて"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA09-133B.html",
+      "source": "CERT-SA",
+      "id": "SA09-133B"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/970180",
+      "source": "CERT-VN",
+      "id": "VU#970180"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA09-133B.html",
+      "source": "CERT-TA",
+      "id": "TA09-133B"
+    },
+    {
+      "text": "http://secunia.com/advisories/34924",
+      "source": "SECUNIA",
+      "id": "SA34924"
+    },
+    {
+      "text": "http://secunia.com/advisories/35096",
+      "source": "SECUNIA",
+      "id": "SA35096"
+    },
+    {
+      "text": "http://secunia.com/advisories/35055",
+      "source": "SECUNIA",
+      "id": "SA35055"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/34736",
+      "source": "BID",
+      "id": "34736"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/50145",
+      "source": "XF",
+      "id": "50145"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1022139",
+      "source": "SECTRACK",
+      "id": "1022139"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/1189",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-1189"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/1317",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-1317"
+    },
+    {
+      "text": "http://osvdb.org/54130",
+      "source": "OSVDB",
+      "id": "54130"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:adobe:acrobat",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe Acrobat"
+    },
+    {
+      "text": "cpe:/a:adobe:acrobat_reader",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe Reader"
+    },
+    {
+      "text": "cpe:/a:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Extras"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_desktop_supplementary",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Supplementary"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_supplementary",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Supplementary"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_supplementary_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Supplementary EUS"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2009-06-22T18:45+09:00",
+  "issued": "2009-06-22T18:45+09:00",
+  "modified": "2009-06-22T18:45+09:00"
+}

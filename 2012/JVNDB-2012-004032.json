@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004032.html",
+  "title": "複数の Asterisk 製品の channels/chan_iax2.c における制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004032.html",
+  "description": "複数の Asterisk 製品の channels/chan_iax2.c は、特定のピア証明書を使用する場合、ACL ルールを強制しないため、アウトバウンドコールの制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004032",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4737",
+      "source": "CVE",
+      "id": "CVE-2012-4737"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4737",
+      "source": "NVD",
+      "id": "CVE-2012-4737"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:digium:asterisk_business_edition",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk Business Edition"
+    },
+    {
+      "text": "cpe:/a:digium:asterisk_digiumphones",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk with Digiumphones"
+    },
+    {
+      "text": "cpe:/a:digium:certified_asterisk",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Certified Asterisk"
+    },
+    {
+      "text": "cpe:/a:digium:open_source",
+      "version": "2.2",
+      "vendor": "Digium",
+      "product": "Asterisk Open Source"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-11-08T17:52+09:00",
+  "issued": "2012-09-05T09:45+09:00",
+  "modified": "2012-11-08T17:52+09:00"
+}

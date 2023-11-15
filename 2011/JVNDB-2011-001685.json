@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001685.html",
+  "title": "Erlang/OTP SSH ライブラリで生成される乱数が推測可能な問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001685.html",
+  "description": "Erlang/OTP SSH ライブラリには、生成される乱数が推測可能な問題が存在します。\r\n\r\nErlang/OTP SSH ライブラリは、生成した乱数を用いて様々な暗号化処理を行います。Erlang/OTP SSH ライブラリで実装されている乱数生成の手法には、生成された乱数が推測可能な問題が存在します。\r\n\r\n発見者の報告では以下のように記載されています。\r\n\r\nThe Erlang/OTP ssh library implements a number of cryptographic operations that depend on cryptographically strong random numbers. Unfortunately the RNG used by the library is not cryptographically strong, and is further weakened by the use of predictable seed material. The RNG (Wichman-Hill) is not mixed with an entropy source.\r\n\r\nThe seed used for all ssh connections in the library is the current time (to approximately microsecond resolution). By observing the time a connection from this library is established, the first two components of the three RNG seed can be guessed.The third component can be recovered by brute-force; trying each possible value (1..1000000).\r\n\r\nGuessing the exact seed is made easier by the 16 byte random session cookie that the library will send in its plaintext kexinit message. This cookie will be bytes 17-32 of the RNG sequence.\r\n\r\nOnce the session RNG seed is recovered, an attacker can simply perform the same DH key exchange operation as the SSH library and recover the session secret. Additionally, if the ssh library is used on the server side of the connection and DSA host key is used, the private key can be recovered from the kex_dh messages. The secret signing value k is known from the RNG seed (bytes 170 - 190 of the sequence), so with the public DSA key data in the kex_dh_reply message the private part can be recovered by inverting the signature operation.",
+  "identifier": "JVNDB-2011-001685",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU178990",
+      "source": "JVN",
+      "id": "JVNVU#178990"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0766",
+      "source": "CVE",
+      "id": "CVE-2011-0766"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0766",
+      "source": "NVD",
+      "id": "CVE-2011-0766"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/178990",
+      "source": "CERT-VN",
+      "id": "VU#178990"
+    },
+    {
+      "text": "http://secunia.com/advisories/44709",
+      "source": "SECUNIA",
+      "id": "SA44709"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/47980",
+      "source": "BID",
+      "id": "47980"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:erlang:erlang%2Fotp",
+      "version": "2.2",
+      "vendor": "ERLANG",
+      "product": "Erlang/OTP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:N/A:N"
+    }
+  ],
+  "date": "2011-06-08T11:54+09:00",
+  "issued": "2011-06-08T11:54+09:00",
+  "modified": "2011-06-08T11:54+09:00"
+}

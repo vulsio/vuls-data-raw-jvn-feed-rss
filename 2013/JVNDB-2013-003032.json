@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003032.html",
+  "title": "Apple iOS の環境設定の generateDefaultPassword メソッドにおけるアクセス権を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003032.html",
+  "description": "Apple iOS の環境設定の WifiPasswordController クラスの generateDefaultPassword メソッドは、Wi-Fi ホットスポットの WPA2 PSK のパスフレーズ (暗号化キー) を選択する UITextChecker クラスの suggestWordInLanguage メソッドに依存しているため、アクセス権を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003032",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU98681940/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98681940"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4616",
+      "source": "CVE",
+      "id": "CVE-2013-4616"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4616",
+      "source": "NVD",
+      "id": "CVE-2013-4616"
+    },
+    {
+      "text": "http://lists.owasp.org/pipermail/owasp-mobile-security-project/2013-June/000640.html",
+      "source": "関連文書",
+      "id": "[Owasp-mobile-security-project] Cracking iOS personal hotspots using a Scrabble crossword game word list"
+    },
+    {
+      "text": "http://www1.cs.fau.de/filepool/projects/hotspot/hotspot.pdf",
+      "source": "関連文書",
+      "id": "Department Informatik"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-10-28T18:19+09:00",
+  "issued": "2013-06-19T14:50+09:00",
+  "modified": "2013-10-28T18:19+09:00"
+}

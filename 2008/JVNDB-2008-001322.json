@@ -1,0 +1,81 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001322.html",
+  "title": "Apple Webkit の PCRE 正規表現コンパイラにおける整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001322.html",
+  "description": "Apple WebKit の PCRE コンパイラ (JavaScriptCore/pcre/pcre_compile.cpp) には、正規表現の入れ子になった繰り返しのカウント処理に不備があり、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001322",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1026",
+      "source": "CVE",
+      "id": "CVE-2008-1026"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-1026",
+      "source": "NVD",
+      "id": "CVE-2008-1026"
+    },
+    {
+      "text": "http://secunia.com/advisories/29846",
+      "source": "SECUNIA",
+      "id": "SA29846"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/28815",
+      "source": "BID",
+      "id": "28815"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/41859",
+      "source": "XF",
+      "id": "41859"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1019870",
+      "source": "SECTRACK",
+      "id": "1019870"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/1250/references",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-1250"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:safari",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Safari"
+    },
+    {
+      "text": "cpe:/h:apple:iphone",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iPhone"
+    },
+    {
+      "text": "cpe:/h:apple:ipod_touch",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iPod touch"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-07-29T14:53+09:00",
+  "issued": "2008-05-13T14:17+09:00",
+  "modified": "2008-07-29T14:53+09:00"
+}

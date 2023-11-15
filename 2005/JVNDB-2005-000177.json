@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000177.html",
+  "title": "Linux Kernel の sys_epoll_wait 関数における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000177.html",
+  "description": "Linux Kernel において、 epoll ファイルディスクリプタの I/O イベント処理を実装する sys_epoll_wait 関数の最大イベント数を格納する変数 maxevents のチェックに不備が存在するため、整数オーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000177",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0736",
+      "source": "CVE",
+      "id": "CVE-2005-0736"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0736",
+      "source": "NVD",
+      "id": "CVE-2005-0736"
+    },
+    {
+      "text": "http://secunia.com/advisories/14548/",
+      "source": "SECUNIA",
+      "id": "SA14548"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12763",
+      "source": "BID",
+      "id": "12763"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

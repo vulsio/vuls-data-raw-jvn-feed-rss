@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003813.html",
+  "title": "OpenSSL の t1_lib.c 内の ssl_parse_serverhello_tlsext 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003813.html",
+  "description": "OpenSSL の t1_lib.c 内の ssl_parse_serverhello_tlsext 関数には、マルチスレッドおよびセッション再開 (session resumption）が使用されている場合、競合状態により、サービス運用妨害 (メモリの上書きおよびクライアントのアプリケーションクラッシュ) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2014-003813",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3509",
+      "source": "CVE",
+      "id": "CVE-2014-3509"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3509",
+      "source": "NVD",
+      "id": "CVE-2014-3509"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2016-10-07T11:49+09:00",
+  "issued": "2014-08-15T16:55+09:00",
+  "modified": "2016-10-07T11:49+09:00"
+}

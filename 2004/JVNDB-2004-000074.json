@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000074.html",
+  "title": "KDE の Konqueror における cookie のアクセス制御を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000074.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nWeb ブラウザで利用される Cookie には、発行したサーバ上の特定の範囲内のみで使用できるよう Path 情報が含まれており、例え同一ホスト上であっても範囲外のディレクトリからはアクセスできないようになっています。\r\n\r\n複数のベンダの Web ブラウザには、Cookie の取り扱いに不備が存在します。リクエスト URL を解釈する際に、Cookie の Path 情報とその URL の Path 情報が比較される時、'/%2E%2E/' 等のエンコードされた文字列を含む URL を適切に取り扱わない為、本来保護されたディレクトリの範囲外のコンテンツに対して Cookie を送信してしまう問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した Web ページに誘導することにより、Cookie を奪取できる可能性があります。  \r\n\r\n2004 年 3 月 11 日現在、以下の Web ブラウザに問題があることが発見者により報告されています。ただし、Internet Explorer/Mozilla に関しては、本問題の影響を受けるバージョンは不明です。\r\n\r\nKDE 3.1.3 以前の Konqueror\r\nMicrosoft Internet Explorer\r\nMozilla\r\n\r\n尚、Mozilla に関しては、この問題を解消する Mozilla 1.4.2 がリリースされる予定です。\r\n\r\nRed Hat Enterprise Linux 2.1/Red Hat Linux 9 においては、KDE Konqueror に関する問題を修正する RPM がベンダよりリリースされていましたが、Mozilla に関する問題も影響を受ける可能性があるため、新たに Mozilla を修正する RPM がリリースされています。\r\nRed Hat Enterprise Linux 3 においては、Mozilla に関する問題のみ影響を受けます。",
+  "identifier": "JVNDB-2004-000074",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0592",
+      "source": "CVE",
+      "id": "CVE-2003-0592"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0592",
+      "source": "NVD",
+      "id": "CVE-2003-0592"
+    },
+    {
+      "text": "http://secunia.com/advisories/11095/",
+      "source": "SECUNIA",
+      "id": "SA11095"
+    },
+    {
+      "text": "http://secunia.com/advisories/9680/",
+      "source": "SECUNIA",
+      "id": "SA9680"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9323",
+      "source": "BID",
+      "id": "9323"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9841",
+      "source": "BID",
+      "id": "9841"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

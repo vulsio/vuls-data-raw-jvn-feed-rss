@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001697.html",
+  "title": "複数の OS 上で稼働する Google Chrome の ui/base/clipboard/scoped_clipboard_writer.cc におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001697.html",
+  "description": "OS X、Linux、および Windows 上で稼働する Google Chrome の ui/base/clipboard/scoped_clipboard_writer.cc の ScopedClipboardWriter::WritePickledData 関数は、特定のフォーマット値を検証しないため、サービス運用妨害 (DoS) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2014-001697",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1714",
+      "source": "CVE",
+      "id": "CVE-2014-1714"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1714",
+      "source": "NVD",
+      "id": "CVE-2014-1714"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-03-18T15:30+09:00",
+  "issued": "2014-03-18T15:30+09:00",
+  "modified": "2014-03-18T15:30+09:00"
+}

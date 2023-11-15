@@ -1,0 +1,35 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001684.html",
+  "title": "Tychon における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001684.html",
+  "description": "Tychon は OpenSSL を配置するためのフォルダを環境変数 OPENSSLDIR により指定しますが、指定されたディレクトリは管理者権限をもたない Windows ユーザが制御可能です。Tychon は OpenSSL を利用する特権サービスを起動するため、管理者権限をもたない Windows ユーザによって当該フォルダに細工した openssl.cnf ファイルを配置され、SYSTEM 権限で任意のコードを実行してしまう脆弱性があります。\r\n",
+  "identifier": "JVNDB-2022-001684",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU94851904/",
+      "source": "JVN",
+      "id": "JVNVU#94851904"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-26872",
+      "source": "CVE",
+      "id": "CVE-2022-26872"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/730007",
+      "source": "CERT-VN",
+      "id": "VU#730007"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:tychon_tychon",
+      "version": "2.2",
+      "vendor": "Tychon, LLC",
+      "product": "Tychon"
+    }
+  ],
+  "date": "2022-05-09T16:06+09:00",
+  "issued": "2022-05-09T16:06+09:00",
+  "modified": "2022-05-09T16:06+09:00"
+}

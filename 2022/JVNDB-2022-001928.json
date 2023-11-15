@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001928.html",
+  "title": "Spring Security の RegexRequestMatcher における認証回避の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001928.html",
+  "description": "VMware が提供する Spring Security の RegexRequestMatcher には、認証回避の脆弱性 (CWE-287) が存在します。\r\nSpring Security では認証が必要な箇所に対してパスやパラメータを指定することで該当の箇所に認証機能を提供することができます。\r\n\r\nパスを指定する関数として正規表現が指定できる RegexRequestMatcher を指定しており、かつパスの正規表現内に「.」を含んで認証ページを構成している場合、特定のリクエストを送信することで認証を回避し、本来権限のない第三者がページを閲覧可能となっている場合があります。\r\n\r\n2022 年 5 月 26 日現在、本脆弱性の実証コードの公開を確認しています。\r\n",
+  "identifier": "JVNDB-2022-001928",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU96405576/",
+      "source": "JVN",
+      "id": "JVNVU#96405576"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-22978",
+      "source": "CVE",
+      "id": "CVE-2022-22978"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:springsource_spring_security",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "Spring Security"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "8.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N"
+    }
+  ],
+  "date": "2022-05-27T14:36+09:00",
+  "issued": "2022-05-27T14:36+09:00",
+  "modified": "2022-05-27T14:36+09:00"
+}

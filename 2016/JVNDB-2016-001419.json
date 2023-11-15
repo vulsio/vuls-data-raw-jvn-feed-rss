@@ -1,0 +1,183 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001419.html",
+  "title": "glibc にバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001419.html",
+  "description": "glibc には、バッファオーバーフローの脆弱性が存在します。\r\n\r\nglibc には、send_dg() および send_vc() の処理に起因するスタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2016-001419",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97236594/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97236594"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7547",
+      "source": "CVE",
+      "id": "CVE-2015-7547"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7547",
+      "source": "NVD",
+      "id": "CVE-2015-7547"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2016/at160009.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2016-0009"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/457759",
+      "source": "CERT-VN",
+      "id": "VU#457759"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-16-103-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-16-103-01"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2016-02-18-glibc-vuln-getaddrinfo.html",
+      "source": "JPRS",
+      "id": "（緊急）GNU C Library（glibc）の脆弱性について（CVE-2015-7547）"
+    },
+    {
+      "text": "https://googleonlinesecurity.blogspot.jp/2016/02/cve-2015-7547-glibc-getaddrinfo-stack.html",
+      "source": "関連文書",
+      "id": "Google Online Security Blog - CVE-2015-7547: glibc getaddrinfo stack-based buffer overflow"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:glibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU C Library"
+    },
+    {
+      "text": "cpe:/a:nec:enterpriseidentitymanager",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "EnterpriseIdentityManager"
+    },
+    {
+      "text": "cpe:/a:nec:enterprise_directoryserver",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "EnterpriseDirectoryServer"
+    },
+    {
+      "text": "cpe:/a:nec:expresscluster",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CLUSTERPRO"
+    },
+    {
+      "text": "cpe:/a:nec:mailshooter",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "MailShooter"
+    },
+    {
+      "text": "cpe:/a:nec:simpwright",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SimpWright"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Application Server"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_developer",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Developer"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_enterprise_service_bus",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Enterprise Service Bus"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_portal",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Portal"
+    },
+    {
+      "text": "cpe:/a:nec:websam",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebSAM"
+    },
+    {
+      "text": "cpe:/a:nec:websam_assetsuite",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebSAM AssetSuite"
+    },
+    {
+      "text": "cpe:/a:oracle:exalogic_infrastructure",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Exalogic Infrastructure"
+    },
+    {
+      "text": "cpe:/a:oracle:xcp",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "XCP"
+    },
+    {
+      "text": "cpe:/a:vmware:virtual_appliances",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Virtual Appliances"
+    },
+    {
+      "text": "cpe:/h:nec:express5800",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "Express5800"
+    },
+    {
+      "text": "cpe:/h:nec:istorage",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "iStorage"
+    },
+    {
+      "text": "cpe:/o:vmware:esxi",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESXi"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-07-25T13:45+09:00",
+  "issued": "2016-02-18T11:09+09:00",
+  "modified": "2017-07-25T13:45+09:00"
+}

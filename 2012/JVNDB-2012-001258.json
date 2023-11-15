@@ -1,0 +1,319 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001258.html",
+  "title": "Apache HTTP Server の protocol.c における HTTPOnly Cookie の値を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001258.html",
+  "description": "Apache HTTP Server の protocol.c は、Bad Request (400) エラー中のヘッダ情報を適切に制限しないため、HTTPOnly Cookie の値を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-001258",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU381963/index.html",
+      "source": "JVN",
+      "id": "JVNVU#381963"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0053",
+      "source": "CVE",
+      "id": "CVE-2012-0053"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-0053",
+      "source": "NVD",
+      "id": "CVE-2012-0053"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_application_framework_suite",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Application Framework Suite"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_application_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Application Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_apworks",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Apworks"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_business_application_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Business Application Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_job_workload_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Job Workload Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_studio",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Studio"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_web_server",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Web Server"
+    },
+    {
+      "text": "cpe:/a:fujitsu:interstage_web_server_express",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Interstage Web Server Express"
+    },
+    {
+      "text": "cpe:/a:fujitsu:systemwalker_resource_coordinator",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Systemwalker Resource Coordinator"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Application Server Enterprise"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_application_server_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Application Server Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Application Server Version 5"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer Light Version 6"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer Professional Version 6"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer Standard Version 6"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer_version_5",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer Version 5"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_http_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus HTTP Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_primary_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Primary Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:device_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Device Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:global_link_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Global Link Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_web_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Web Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:provisioning_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Provisioning Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:replication_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Replication Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:tiered_storage_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Tiered Storage Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:tuning_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Tuning Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Enterprise"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Smart Edition"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Light"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Architect"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform"
+    },
+    {
+      "text": "cpe:/a:hp:system_management_homepage",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP System Management Homepage"
+    },
+    {
+      "text": "cpe:/a:hp:xp_p9000",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP XP P9000"
+    },
+    {
+      "text": "cpe:/a:oracle:xcp",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "XCP"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m3000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M3000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m4000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M4000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m5000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M5000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m8000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M8000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m9000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M9000 サーバ"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-01-30T17:58+09:00",
+  "issued": "2012-02-01T16:23+09:00",
+  "modified": "2015-01-30T17:58+09:00"
+}

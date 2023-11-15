@@ -1,0 +1,69 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004349.html",
+  "title": "特定の カスタム PHP の設定で使用される GD Graphics Library の gd_xbm.c におけるプロセスメモリから重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004349.html",
+  "description": "特定の カスタム PHP の設定で使用される GD Graphics Library (別名 libgd) の gd_xbm.c には、プロセスメモリから重要な情報を取得される、またはサービス運用妨害 (スタックベースのバッファアンダーリードおよびアプリケーションクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-004349",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5116",
+      "source": "CVE",
+      "id": "CVE-2016-5116"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5116",
+      "source": "NVD",
+      "id": "CVE-2016-5116"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libgd:libgd",
+      "version": "2.2",
+      "vendor": "LibGD project",
+      "product": "LibGD"
+    },
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:opensuse_project:leap",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "openSUSE Leap"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.1",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+    }
+  ],
+  "date": "2016-11-21T10:37+09:00",
+  "issued": "2016-08-17T15:55+09:00",
+  "modified": "2016-11-21T10:37+09:00"
+}

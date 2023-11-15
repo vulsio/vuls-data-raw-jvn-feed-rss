@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004292.html",
+  "title": "OpenStack Identity Folsom および Grizzly の mamcache および KVS トークンバックエンドにおけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004292.html",
+  "description": "OpenStack Identity Folsom および Grizzly の (1) mamcache および (2) KVS トークンバックエンドは、PKI トークンを含む PKI トークン失効リストを適切に比較しないため、アクセス制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004292",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4294",
+      "source": "CVE",
+      "id": "CVE-2013-4294"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4294",
+      "source": "NVD",
+      "id": "CVE-2013-4294"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:keystone",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "Openstack Keystone"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2013-11-13T17:47+09:00",
+  "issued": "2013-09-26T11:15+09:00",
+  "modified": "2013-11-13T17:47+09:00"
+}

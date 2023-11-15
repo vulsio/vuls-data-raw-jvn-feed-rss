@@ -1,0 +1,112 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001283.html",
+  "title": "Ghostscript の ICC Format ライブラリにおける整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001283.html",
+  "description": "Ghostscript および Argyll Color Management System (CMS) の使用している International Color Consortium (ICC) フォーマットライブラリには、画像の組み込まれた PostScript または PDF ファイルの処理に不備があるため、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001283",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0792",
+      "source": "CVE",
+      "id": "CVE-2009-0792"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0792",
+      "source": "NVD",
+      "id": "CVE-2009-0792"
+    },
+    {
+      "text": "http://secunia.com/advisories/34732",
+      "source": "SECUNIA",
+      "id": "SA34732"
+    },
+    {
+      "text": "http://secunia.com/advisories/34726",
+      "source": "SECUNIA",
+      "id": "SA34726"
+    },
+    {
+      "text": "http://secunia.com/advisories/34373",
+      "source": "SECUNIA",
+      "id": "SA34373"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/50381",
+      "source": "XF",
+      "id": "50381"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:argyllcms:argyllcms",
+      "version": "2.2",
+      "vendor": "Argyll CMS",
+      "product": "Argyll CMS"
+    },
+    {
+      "text": "cpe:/a:artifex:ghostscript",
+      "version": "2.2",
+      "vendor": "Artifex Software",
+      "product": "Ghostscript"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2010-02-17T11:44+09:00",
+  "issued": "2009-06-19T14:48+09:00",
+  "modified": "2010-02-17T11:44+09:00"
+}

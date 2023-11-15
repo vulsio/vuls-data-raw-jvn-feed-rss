@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004457.html",
+  "title": "International Color Consortium Format library における整数アンダーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004457.html",
+  "description": "Ghostscript および Argyll Color Management System で使用される International Color Consortium (ICC) Format library (icclib) の icmLut_allocate 関数には、整数アンダーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004457",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4405",
+      "source": "CVE",
+      "id": "CVE-2012-4405"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4405",
+      "source": "NVD",
+      "id": "CVE-2012-4405"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:argyllcms:argyllcms",
+      "version": "2.2",
+      "vendor": "Argyll CMS",
+      "product": "Argyll CMS"
+    },
+    {
+      "text": "cpe:/a:artifex:ghostscript",
+      "version": "2.2",
+      "vendor": "Artifex Software",
+      "product": "Ghostscript"
+    },
+    {
+      "text": "cpe:/a:color:icclib",
+      "version": "2.2",
+      "vendor": "International Color Consortium (ICC)",
+      "product": "icclib"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-11-13T10:25+09:00",
+  "issued": "2012-09-20T15:56+09:00",
+  "modified": "2012-11-13T10:25+09:00"
+}

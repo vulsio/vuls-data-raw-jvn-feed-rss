@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003472.html",
+  "title": "ISC BIND 9 にサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003472.html",
+  "description": "ISC BIND 9 には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC BIND 9 には、DNSSEC 検証を有効にした再帰的名前解決処理が、特定の条件下において異常終了する脆弱性が存在します。\r\n\r\nISC のアドバイザリには次のように記載されています。\r\n\r\nCVE-2015-4620: Specially Constructed Zone Data Can Cause a Resolver to Crash when Validating\r\nhttps://kb.isc.org/article/AA-01267\r\n\r\nA very uncommon combination of zone data has been found that triggers a bug in BIND, with the result that named will exit with a \"REQUIRE\" failure in name.c when validating the data returned in answer to a recursive query.\r\n\r\nThis means that a recursive resolver that is performing DNSSEC validation can be deliberately stopped by an attacker who can cause the resolver to perform a query against a maliciously-constructed zone.\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-17 として公開されています。\r\n\r\nCWE-17: Code\r\nhttp://cwe.mitre.org/data/definitions/17.html",
+  "identifier": "JVNDB-2015-003472",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU93531657/index.html",
+      "source": "JVN",
+      "id": "JVNVU#93531657"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4620",
+      "source": "CVE",
+      "id": "CVE-2015-4620"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4620",
+      "source": "NVD",
+      "id": "CVE-2015-4620"
+    },
+    {
+      "text": "http://jprs.jp/tech/security/2015-07-08-bind9-vuln-dnssec-validation.html",
+      "source": "JPRS",
+      "id": "（緊急）BIND 9.xの脆弱性（DNSサービスの停止）について（2015年7月8日公開）"
+    },
+    {
+      "text": "http://jprs.jp/tech/index.html#dns-software-update-info",
+      "source": "JPRS",
+      "id": "DNS ソフトウェアアップデート情報"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/h:nec:express5800",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "Express5800"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2016-06-23T13:35+09:00",
+  "issued": "2015-07-10T12:09+09:00",
+  "modified": "2016-06-23T13:35+09:00"
+}

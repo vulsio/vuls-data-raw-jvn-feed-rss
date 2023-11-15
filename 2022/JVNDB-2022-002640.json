@@ -1,0 +1,106 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002640.html",
+  "title": "OpenSSL におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002640.html",
+  "description": "OpenSSL には、X.509証明書の検証を行う際、バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2022-002640",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU92673251/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92673251"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU91561630/",
+      "source": "JVN",
+      "id": "JVNVU#91561630"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU99602271/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99602271"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU95910765/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95910765"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-3602",
+      "source": "CVE",
+      "id": "CVE-2022-3602"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-3602",
+      "source": "NVD",
+      "id": "CVE-2022-3602"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/alert20221102.html",
+      "source": "IPA CFA",
+      "id": "OpenSSL の脆弱性対策について(CVE-2022-3602、CVE-2022-3786)"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2022/at220030.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2022-0030"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/794340",
+      "source": "CERT-VN",
+      "id": "VU#794340"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-349-09",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-349-09"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-23-005-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-005-03"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-23-019-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-019-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/120.html",
+      "id": "CWE-120",
+      "title": "古典的バッファオーバーフロー(CWE-120)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nec:witchymail",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WitchyMail"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-03-29T13:42+09:00",
+  "issued": "2022-11-04T14:08+09:00",
+  "modified": "2023-03-29T13:42+09:00"
+}

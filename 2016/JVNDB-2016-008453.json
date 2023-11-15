@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-008453.html",
+  "title": "WordPress 用 Clean Login プラグインにおけるクロスサイトリクエストフォージェリの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-008453.html",
+  "description": "WordPress 用 Clean Login プラグインには、クロスサイトリクエストフォージェリの脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2016-008453",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8875",
+      "source": "CVE",
+      "id": "CVE-2017-8875"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-8875",
+      "source": "NVD",
+      "id": "CVE-2017-8875"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2017/May/23",
+      "source": "関連文書",
+      "id": "CSRF in wordpress plugin clean login allows remote attacker change wordpress login redirect url or logout redirect url to evil address"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+      "id": "CWE-352",
+      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:codection:clean_login",
+      "version": "2.2",
+      "vendor": "Codection",
+      "product": "Clean Login"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2017-05-19T15:56+09:00",
+  "issued": "2017-05-19T15:56+09:00",
+  "modified": "2017-05-19T15:56+09:00"
+}

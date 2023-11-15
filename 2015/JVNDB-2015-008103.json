@@ -1,0 +1,93 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-008103.html",
+  "title": "複数のベンダの NIC ファームウェアの Linux kernel ixgbe ドライバなどにおけるセキュリティ機能に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-008103.html",
+  "description": "複数のベンダの NIC ファームウェアの Linux kernel ixgbe、i40e/i40evf、および DPDK ドライバには、セキュリティ機能に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2015-008103",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1142857",
+      "source": "CVE",
+      "id": "CVE-2015-1142857"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-1142857",
+      "source": "NVD",
+      "id": "CVE-2015-1142857"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/254.html",
+      "id": "CWE-254",
+      "title": "セキュリティ機能(CWE-254)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:dpdk:dpdk",
+      "version": "2.2",
+      "vendor": "DPDK",
+      "product": "DPDK"
+    },
+    {
+      "text": "cpe:/o:intel:82576_firmware",
+      "version": "2.2",
+      "vendor": "インテル",
+      "product": "Intel 82576 Gigabit Ethernet Controller ファームウェア"
+    },
+    {
+      "text": "cpe:/o:intel:82599_firmware",
+      "version": "2.2",
+      "vendor": "インテル",
+      "product": "Intel 10G 82599 Ethernet controller ファームウェア"
+    },
+    {
+      "text": "cpe:/o:intel:ethernet_controler_x710_firmware",
+      "version": "2.2",
+      "vendor": "インテル",
+      "product": "Intel Ethernet Controller X710 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:intel:i350_firmware",
+      "version": "2.2",
+      "vendor": "インテル",
+      "product": "Intel Ethernet Controller I350 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:intel:x540_firmware",
+      "version": "2.2",
+      "vendor": "インテル",
+      "product": "Intel Ethernet Controller X540 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel_i40e%2fi40evf",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "i40e/i40evf"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel_ixgbe",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "ixgbe"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2018-03-05T17:17+09:00",
+  "issued": "2018-03-05T17:17+09:00",
+  "modified": "2018-03-05T17:17+09:00"
+}

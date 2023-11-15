@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002841.html",
+  "title": "Synology の OS X 向け Cloud Station Client ユーティリティに一般ユーザによるシステムファイルの所有者変更が可能になる問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002841.html",
+  "description": "Synology が提供する OS X 向け Cloud Station Client ユーティリティには、一般ユーザがシステムファイルの所有者を変更できる問題が存在します。\r\n\r\n不適切なデフォルトパーミッション (CWE-276) - CVE-2015-2851\r\nSynology が提供する OS X 向け Cloud Station Client ユーティリティには、ファイルの所有者を変更するための client_chown という実行ファイルが含まれています。このファイルは setuid root された実行ファイルとしてインストールされるため、一般ユーザが任意のシステムファイルの所有者を変更することが可能です。\r\n\r\nCWE-276\r\nhttp://cwe.mitre.org/data/definitions/276.html",
+  "identifier": "JVNDB-2015-002841",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU98783868/",
+      "source": "JVN",
+      "id": "JVNVU#98783868"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2851",
+      "source": "CVE",
+      "id": "CVE-2015-2851"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2851",
+      "source": "NVD",
+      "id": "CVE-2015-2851"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/551972",
+      "source": "CERT-VN",
+      "id": "VU#551972"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:synology:cloud_station",
+      "version": "2.2",
+      "vendor": "Synology Inc.",
+      "product": "Cloud Station"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-06-03T18:04+09:00",
+  "issued": "2015-05-29T16:59+09:00",
+  "modified": "2015-06-03T18:04+09:00"
+}

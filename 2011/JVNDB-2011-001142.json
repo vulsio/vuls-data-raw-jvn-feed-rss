@@ -1,0 +1,113 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001142.html",
+  "title": "ISC DHCPv6 にサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001142.html",
+  "description": "ISC DHCPv6 サーバには、DHCPDECLINE メッセージの処理に起因するサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC から、以下の脆弱性情報が公開されています。\r\n\r\n“When the DHCPv6 server code processes a message for an address that was previously declined and internally tagged as abandoned it can trigger an assert failure resulting in the server crashing. This could be used to crash DHCPv6 servers remotely. This issue only affects DHCPv6 servers. DHCPv4 servers are unaffected.”\r\n\r\nなおベンダによると、DHCPv6 サーバは影響を受けますが、DHCPv4 サーバは影響を受けません。",
+  "identifier": "JVNDB-2011-001142",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU686084",
+      "source": "JVN",
+      "id": "JVNVU#686084"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0413",
+      "source": "CVE",
+      "id": "CVE-2011-0413"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0413",
+      "source": "NVD",
+      "id": "CVE-2011-0413"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/686084",
+      "source": "CERT-VN",
+      "id": "VU#686084"
+    },
+    {
+      "text": "http://secunia.com/advisories/43104",
+      "source": "SECUNIA",
+      "id": "SA43104"
+    },
+    {
+      "text": "http://secunia.com/advisories/43006",
+      "source": "SECUNIA",
+      "id": "SA43006"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/46035",
+      "source": "BID",
+      "id": "46035"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/64959",
+      "source": "XF",
+      "id": "64959"
+    },
+    {
+      "text": "http://securitytracker.com/id?1024999",
+      "source": "SECTRACK",
+      "id": "1024999"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0235",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0235"
+    },
+    {
+      "text": "http://osvdb.org/70680",
+      "source": "OSVDB",
+      "id": "70680"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:dhcp",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "ISC DHCP"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2011-03-01T15:10+09:00",
+  "issued": "2011-03-01T15:10+09:00",
+  "modified": "2011-03-01T15:10+09:00"
+}

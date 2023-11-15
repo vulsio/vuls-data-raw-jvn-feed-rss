@@ -1,0 +1,177 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010189.html",
+  "title": "OpenSSL における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010189.html",
+  "description": "OpenSSL には、x86_64 Montgomery squaring プロシージャのキャリー伝播に関する問題があるため、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2017-010189",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3736",
+      "source": "CVE",
+      "id": "CVE-2017-3736"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3736",
+      "source": "NVD",
+      "id": "CVE-2017-3736"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:automation_director",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Automation Director"
+    },
+    {
+      "text": "cpe:/a:hitachi:compute_systems_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Compute Systems Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:configuration_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Configuration Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_http_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus HTTP Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:device_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Device Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:global_link_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Global Link Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:infrastructure_analytics_advisor",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Infrastructure Analytics Advisor"
+    },
+    {
+      "text": "cpe:/a:hitachi:jp1_automatic_job_management_system_3",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "JP1/Automatic Job Management System 3"
+    },
+    {
+      "text": "cpe:/a:hitachi:jp1_automatic_operation",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "JP1/Automatic Operation"
+    },
+    {
+      "text": "cpe:/a:hitachi:jp1_it_desktop_management",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "JP1/IT Desktop Management"
+    },
+    {
+      "text": "cpe:/a:hitachi:jp1_operation_analytics",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "JP1/Operations Analytics"
+    },
+    {
+      "text": "cpe:/a:hitachi:jp1_performance_management",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "JP1/Performance Management"
+    },
+    {
+      "text": "cpe:/a:hitachi:jp1_snmp_system_observer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "JP1/SNMP System Observer"
+    },
+    {
+      "text": "cpe:/a:hitachi:replication_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Replication Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:tiered_storage_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Tiered Storage Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:tuning_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Tuning Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Architect"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2019-08-01T15:50+09:00",
+  "issued": "2017-12-07T11:03+09:00",
+  "modified": "2019-08-01T15:50+09:00"
+}

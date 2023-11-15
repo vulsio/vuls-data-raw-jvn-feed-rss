@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000249.html",
+  "title": "LibTIFF の TIFFToRGB() 関数におけるメモリアクセスエラーの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000249.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLibTIFF は、TIFF 形式の画像ファイルのサポートに必要なライブラリであり、GNOME や KDE などを含め、多くの OS やアプリケーションで広く使用されています。\r\n\r\nLibTIFF 3.8.0 以前には、以下の複数の問題が存在します。\r\n\r\n・TIFFFetchAnyArray() 関数におけるエラー処理および TIFFPredictorCleanup() 関数におけるコーデックの処理、cleanup() 関数における setfield/getfield メソッドのリストア処理が不適切であるため、LibTIFF による処理がクラッシュする問題 (CVE-2006-2024)\r\n\r\n・TIFFFetchData() 関数や他の関数における不備により、整数オーバーフローが発生する問題 (CVE-2006-2025)\r\n\r\n・cleanup() 関数の setfield/getfield メソッドに関連するエラーにより、メモリを二重開放してしまう問題 (CVE-2006-2026)\r\n\r\n・TIFFToRGB() 関数においてホワイトポイントの YCR/YCG/YCB 値を超える Yr/Yg/Yb 値をマップする際にメモリアクセスエラー (out-of-bounds) が発生する問題 (CVE-2006-2120) \r\n\r\nこれらの問題をリモートの攻撃者に利用された場合、LibTIFF を使用するアプリケーションがクラッシュする、あるいはアプリケーションを使用するユーザの権限で任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2006-000249",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2120",
+      "source": "CVE",
+      "id": "CVE-2006-2120"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-2120",
+      "source": "NVD",
+      "id": "CVE-2006-2120"
+    },
+    {
+      "text": "http://secunia.com/advisories/19838/",
+      "source": "SECUNIA",
+      "id": "SA19838"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17809",
+      "source": "BID",
+      "id": "17809"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17733",
+      "source": "BID",
+      "id": "17733"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17732",
+      "source": "BID",
+      "id": "17732"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17730",
+      "source": "BID",
+      "id": "17730"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/1563",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-1563"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

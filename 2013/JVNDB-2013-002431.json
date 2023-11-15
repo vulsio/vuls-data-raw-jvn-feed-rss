@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002431.html",
+  "title": "Linux Kernel の net/bluetooth/af_bluetooth.c における重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002431.html",
+  "description": "Linux Kernel の net/bluetooth/af_bluetooth.c 内の bt_sock_recvmsg 関数は、特定の長さの変数を適切に初期化しないため、カーネルスタックメモリから重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002431",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3224",
+      "source": "CVE",
+      "id": "CVE-2013-3224"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3224",
+      "source": "NVD",
+      "id": "CVE-2013-3224"
+    },
+    {
+      "text": "https://lkml.org/lkml/2013/4/14/107",
+      "source": "関連文書",
+      "id": "[linux-kernel] 20130414 Linux 3.9-rc7"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:N/A:N"
+    }
+  ],
+  "date": "2014-03-10T17:01+09:00",
+  "issued": "2013-04-23T16:19+09:00",
+  "modified": "2014-03-10T17:01+09:00"
+}

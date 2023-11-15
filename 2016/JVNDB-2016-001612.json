@@ -1,0 +1,201 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001612.html",
+  "title": "OpenSSL の crypto/bn/bn_exp.c の MOD_EXP_CTIME_COPY_FROM_PREBUF 関数における RSA の鍵を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001612.html",
+  "description": "OpenSSL の crypto/bn/bn_exp.c の MOD_EXP_CTIME_COPY_FROM_PREBUF 関数は、モジュールの指数演算中のキャッシュバンクアクセス回数を適切に考慮しないため、RSA の鍵を取得される脆弱性が存在します。\r\n\r\n本脆弱性は、\"CacheBleed\" 攻撃と呼ばれています。",
+  "identifier": "JVNDB-2016-001612",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0702",
+      "source": "CVE",
+      "id": "CVE-2016-0702"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0702",
+      "source": "NVD",
+      "id": "CVE-2016-0702"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Application Server Enterprise"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_application_server_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Application Server Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Application Server Version 5"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer Light Version 6"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer Professional Version 6"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer Standard Version 6"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developer_version_5",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer Version 5"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_primary_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Primary Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_web_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Web Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Enterprise"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Smart Edition"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Light"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Architect"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform"
+    },
+    {
+      "text": "cpe:/a:hp:icewall_federation_agent",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "IceWall Federation Agent"
+    },
+    {
+      "text": "cpe:/a:hp:icewall_mcrp",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "IceWall MCRP"
+    },
+    {
+      "text": "cpe:/a:hp:icewall_sso",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード・エンタープライズ",
+      "product": "IceWall SSO"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_session_border_controller",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Session Border Controller"
+    },
+    {
+      "text": "cpe:/a:oracle:mysql",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "MySQL"
+    },
+    {
+      "text": "cpe:/a:oracle:secure_global_desktop",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Secure Global Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2016-11-21T15:32+09:00",
+  "issued": "2016-03-08T16:26+09:00",
+  "modified": "2016-11-21T15:32+09:00"
+}

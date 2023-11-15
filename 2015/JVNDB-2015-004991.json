@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004991.html",
+  "title": "AdNovum nevisAuth の SAML 2.0 の実装における任意の SAML アサーションを挿入される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004991.html",
+  "description": "AdNovum nevisAuth の SAML 2.0 の実装は、SAML POST-Binding を使用する場合、アサーションを組み込んだ X.509 証明書のすべての属性が Identity Provider（IdP）からの証明書と一致しないため、任意の SAML アサーションを挿入される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-004991",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5372",
+      "source": "CVE",
+      "id": "CVE-2015-5372"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5372",
+      "source": "NVD",
+      "id": "CVE-2015-5372"
+    },
+    {
+      "text": "http://blog.csnc.ch/2015/09/saml-sp-authentication-bypass-vulnerability-in-nevisauth/",
+      "source": "関連文書",
+      "id": "Compass Security Blog"
+    },
+    {
+      "text": "http://www.csnc.ch/misc/files/advisories/CVE-2015-5372_AdNovum_nevisAuth_Authentication_Bypass.txt",
+      "source": "関連文書",
+      "id": "COMPASS SECURITY ADVISORY"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:adnovum:nevisauth",
+      "version": "2.2",
+      "vendor": "AdNovum Informatik AG",
+      "product": "nevisAuth"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2015-10-01T14:27+09:00",
+  "issued": "2015-10-01T14:27+09:00",
+  "modified": "2015-10-01T14:27+09:00"
+}

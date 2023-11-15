@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000098.html",
+  "title": "e-Gov電子申請アプリケーションにおける Custom URL Scheme の処理にアクセス制限不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000098.html",
+  "description": "デジタル庁が提供する e-Gov電子申請アプリケーションをインストールすると、システムに Custom URL Scheme が登録され、Web ブラウザなどから特定の URL にアクセスすることで当該アプリケーションが起動されるようになります。\r\nこのとき使用される URL には当該アプリケーションがアクセスする Web サイトの情報が含まれており、細工された URL から当該アプリケーションを起動すると、想定されていない Web サイトにアクセスさせられる可能性があります (CWE-939)。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 日本電気株式会社 外山 拓 氏\r\n",
+  "identifier": "JVNDB-2023-000098",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN15808274/index.html",
+      "source": "JVN",
+      "id": "JVN#15808274"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-44689",
+      "source": "CVE",
+      "id": "CVE-2023-44689"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:digital_agency_e-gov_electronic_application",
+      "version": "2.2",
+      "vendor": "デジタル庁",
+      "product": "e-Gov電子申請アプリケーション"
+    },
+    {
+      "text": "cpe:/a:misc:digital_agency_e-gov_electronic_application",
+      "version": "2.2",
+      "vendor": "デジタル庁",
+      "product": "e-Gov電子申請アプリケーション"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+    }
+  ],
+  "date": "2023-10-06T12:05+09:00",
+  "issued": "2023-10-06T12:05+09:00",
+  "modified": "2023-10-06T12:05+09:00"
+}

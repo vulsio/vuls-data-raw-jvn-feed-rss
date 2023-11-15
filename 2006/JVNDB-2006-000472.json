@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000472.html",
+  "title": "MIT Kerberos5 の krshd および v4rcp における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000472.html",
+  "description": "Kerberos5 に含まれるプログラムである krshd および v4rcp には、setuid() システムコールの戻り値に対するチェックが不適切であるため、ユーザに許可される最大プロセス数等の特定のリソース制限のために setuid() システムコールが失敗した場合、これらプログラムに対して不適切に root 権限が付与されてしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000472",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23580124/index.html",
+      "source": "JVN",
+      "id": "JVNVU#580124"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3083",
+      "source": "CVE",
+      "id": "CVE-2006-3083"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3083",
+      "source": "NVD",
+      "id": "CVE-2006-3083"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/580124",
+      "source": "CERT-VN",
+      "id": "VU#580124"
+    },
+    {
+      "text": "http://secunia.com/advisories/21402/",
+      "source": "SECUNIA",
+      "id": "SA21402"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19427",
+      "source": "BID",
+      "id": "19427"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/3225",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-3225"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

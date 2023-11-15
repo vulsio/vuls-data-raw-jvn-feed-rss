@@ -1,0 +1,169 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005049.html",
+  "title": "信頼できないパラメータを使用して生成した Dual_EC_DRBG の出力結果が推測可能な問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005049.html",
+  "description": "Dual Elliptic Curve Deterministic Random Bit Generator (Dual_EC_DRBG) には、楕円曲線を計算するためのパラメータの信頼性に関する問題が指摘されています。\r\n\r\nDual Elliptic Curve Deterministic Random Bit Generator (Dual_EC_DRBG) は、NIST Special Publication 800-90A で規定されています。以前から、Dual_EC_DRBG の信頼性について研究者らから疑問を投げかけられており、NIST はこの問題についてのコメントを求めています。\r\n\r\nNIST は、ITL Security Bulletins で次のように述べています。\r\n\r\nITL Security Bulletins\r\nhttp://csrc.nist.gov/publications/nistbul/itlbul2013_09_supplemental.pdf\r\n\r\n　　Concern has been expressed about one of the DRBG algorithms in SP 800-90/90A and ANS X9.82: the Dual Elliptic Curve Deterministic Random Bit Generation (Dual_EC_DRBG) algorithm. This algorithm includes default elliptic curve points for three elliptic curves, the provenance of which were not described. Security researchers have highlighted the importance of generating these elliptic curve points in a trustworthy way. This issue was identified during the development process, and the concern was initially addressed by including specifications for generating different points than the default values that were provided. However, recent community commentary has called into question the trustworthiness of these default elliptic curve points.\r\n\r\nこの問題は、次の CWE に分類されます。\r\n\r\n　* CWE-327: Use of a Broken or Risky Cryptographic Algorithm\r\n　　http://cwe.mitre.org/data/definitions/327.html",
+  "identifier": "JVNDB-2013-005049",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU92615138/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92615138"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6755",
+      "source": "CVE",
+      "id": "CVE-2007-6755"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-6755",
+      "source": "NVD",
+      "id": "CVE-2007-6755"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/274923",
+      "source": "CERT-VN",
+      "id": "VU#274923"
+    },
+    {
+      "text": "http://csrc.nist.gov/publications/nistbul/itlbul2013_09_supplemental.pdf",
+      "source": "関連文書",
+      "id": "SUPPLEMENTAL ITL BULLETIN FOR SEPTEMBER 2013"
+    },
+    {
+      "text": "http://rump2007.cr.yp.to/15-shumow.pdf",
+      "source": "関連文書",
+      "id": "On the Possibility of a Back Door in the NIST SP800-90 Dual Ec Prng"
+    },
+    {
+      "text": "http://eprint.iacr.org/2006/117.pdf",
+      "source": "関連文書",
+      "id": "Conjectured Security of the ANSI-NIST Elliptic Curve RNG"
+    },
+    {
+      "text": "http://csrc.nist.gov/publications/nistpubs/800-90A/SP800-90A.pdf",
+      "source": "関連文書",
+      "id": "NIST Special Publication 800-90A"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:cosminexus_developers_kit_for_java",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Developer's Kit for Java(TM)"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_http_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus HTTP Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_web_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Web Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Enterprise"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Smart Edition"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_client",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Client"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Light"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer Standard"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_operator",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Operator"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Architect"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform"
+    },
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2015-07-01T17:17+09:00",
+  "issued": "2013-11-11T12:34+09:00",
+  "modified": "2015-07-01T17:17+09:00"
+}

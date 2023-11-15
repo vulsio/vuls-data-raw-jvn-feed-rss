@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000124.html",
+  "title": "xterm にエスケープシーケンスによりウィンドウタイトルを改変される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000124.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nHanterm (hanterm-xf) は、X Window システムに用いられるハングル文字対応のターミナルエミュレータです。\r\n\r\nHanterm には、エスケープシーケンスを用いてウインドウタイトルを設定できる機能とエスケープシーケンスを用いてウインドウタイトルの内容をターミナルエミュレータのコマンドライン上に表示する機能が備わっています。\r\nHanterm-xf 2.0.4 以前には、これらのエスケープシーケンスを利用することで、ウィンドウタイトルにコマンドを含む文字列を設定し、コマンドライン上にそれを表示可能な問題が存在します。\r\n  \r\nこの問題を利用するリモートの攻撃者は、ウインドウタイトルに任意のコマンドを含む文字列を設定し、それを標的ホストのターミナルエミュレータ内のコマンドライン上で実行することが可能です。\r\n尚、ウインドウタイトルには CR コード (改行文字コード) を挿入不能であるため、攻撃者はユーザに攻撃対象のターミナルエミュレータ内のコマンドライン上で明示的に改行キーをキーボードから入力させる必要があります。\r\n\r\nまた、Hanterm -xf 2.0.4 以前には、DEC UDK 処理中に適切にエスケープシーケンスを取り扱わないため、無限ループに陥る可能性が存在します。\r\n\r\nこの問題を利用する攻撃者は、悪意あるエスケープシーケンスをターミナルエミュレータで表示させることにより、エミュレータをクラッシュさせることが可能です。\r\n\r\n尚、ウインドウタイトルに関する問題と同様の問題が XFree86 4.2.0 以前に、また DEC UDK に関する問題と同様の問題が XFree86 4.2.99.4 以前に存在することが報告されています。",
+  "identifier": "JVNDB-2002-000124",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0063",
+      "source": "CVE",
+      "id": "CVE-2003-0063"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2003-0063",
+      "source": "NVD",
+      "id": "CVE-2003-0063"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6950",
+      "source": "BID",
+      "id": "6950"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6940",
+      "source": "BID",
+      "id": "6940"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6946",
+      "source": "BID",
+      "id": "6946"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6944",
+      "source": "BID",
+      "id": "6944"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-04-26T16:44+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2010-04-26T16:44+09:00"
+}

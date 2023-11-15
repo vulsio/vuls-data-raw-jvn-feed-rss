@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004594.html",
+  "title": "Mutt における信頼されたサーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004594.html",
+  "description": "Mutt は、(1) OpenSSL (mutt_ssl.c) または (2) GnuTLS (mutt_ssl_gnutls.c) にリンクされる際、チェーン内全体を検証せずに、1 つの TLS の証明書が承認されると接続を許可するため、信頼されたサーバになりすまされる脆弱性が存在します。",
+  "identifier": "JVNDB-2009-004594",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1390",
+      "source": "CVE",
+      "id": "CVE-2009-1390"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1390",
+      "source": "NVD",
+      "id": "CVE-2009-1390"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mutt:mutt",
+      "version": "2.2",
+      "vendor": "Mutt",
+      "product": "Mutt"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T17:27+09:00",
+  "issued": "2012-09-25T17:27+09:00",
+  "modified": "2012-09-25T17:27+09:00"
+}

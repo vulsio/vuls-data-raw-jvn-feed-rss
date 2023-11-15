@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000093.html",
+  "title": "PostgreSQL の  gen_salt() 関数におけるハッシュの推測が容易となる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000093.html",
+  "description": "PostgreSQL に実装されるハッシュ化関数 gen_salt() には、MD5 および XDES アルゴリズムでパスワードをハッシュ化する際、ソルト生成においてソルト空間の半分しか使用しないため、本来の半分のサイズのソルトによりハッシュ化が行われてしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000093",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0591",
+      "source": "CVE",
+      "id": "CVE-2006-0591"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0591",
+      "source": "NVD",
+      "id": "CVE-2006-0591"
+    },
+    {
+      "text": "http://secunia.com/advisories/18772/",
+      "source": "SECUNIA",
+      "id": "SA18772"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/0477",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-0477"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:postgresql:postgresql",
+      "version": "2.2",
+      "vendor": "PostgreSQL.org",
+      "product": "PostgreSQL"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003221.html",
+  "title": "Linux Kernel の SCTP の実装の net/sctp/sm_statefuns.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003221.html",
+  "description": "Linux Kernel の SCTP の実装の net/sctp/sm_statefuns.c 内の sctp_sf_do_5_2_4_dupcook 関数は、重複した COOKIE ECHO チャンクの処理中に、関連付け (association) を適切に処理しないため、サービス運用妨害 (NULL ポインタデリファレンスおよびシステムクラッシュ) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003221",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2206",
+      "source": "CVE",
+      "id": "CVE-2013-2206"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2206",
+      "source": "NVD",
+      "id": "CVE-2013-2206"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2014-02-27T17:25+09:00",
+  "issued": "2013-07-08T14:37+09:00",
+  "modified": "2014-02-27T17:25+09:00"
+}

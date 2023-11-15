@@ -1,0 +1,70 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003316.html",
+  "title": "Raritan PX Power Distribution ソフトウェアに cipher zero 攻撃を受ける脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003316.html",
+  "description": "Raritan PX Power Distribution ソフトウェアに cipher zero 攻撃を受ける脆弱性が存在します。\r\n\r\nRaritan PX (DPXR20A-16) に使用されている Raritan PX Power Distribution ソフトウェア バージョン 01.05.08 およびそれ以前のバージョンには、遠隔の第三者により、cipher suite 0 (別名 cipher zero) および任意のパスワードを使用されることで、認証を回避されて任意の IPMI コマンドを実行される脆弱性 (CWE-287) が存在します。",
+  "identifier": "JVNDB-2014-003316",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94415561/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94415561"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2955",
+      "source": "CVE",
+      "id": "CVE-2014-2955"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2955",
+      "source": "NVD",
+      "id": "CVE-2014-2955"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/712660",
+      "source": "CERT-VN",
+      "id": "VU#712660"
+    },
+    {
+      "text": "http://fish2.com/ipmi/cipherzero.html",
+      "source": "関連文書",
+      "id": "The Infamous Cipher Zero"
+    },
+    {
+      "text": "http://productselector.appspot.com/showimage?fName=DPXR20A-16_spec.pdf&mName=DPXR20A-16&Type=pdf",
+      "source": "関連文書",
+      "id": "Raritan PX Model Number: DPXR20A-16"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:raritan:dpxr20a-16",
+      "version": "2.2",
+      "vendor": "ラリタン・ジャパン株式会社",
+      "product": "DPXR20A-16"
+    },
+    {
+      "text": "cpe:/o:raritan:px",
+      "version": "2.2",
+      "vendor": "ラリタン・ジャパン株式会社",
+      "product": "Raritan PX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-07-16T15:09+09:00",
+  "issued": "2014-07-11T15:47+09:00",
+  "modified": "2014-07-16T15:09+09:00"
+}

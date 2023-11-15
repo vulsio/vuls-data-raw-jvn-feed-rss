@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-004662.html",
+  "title": "Qt における解放済みメモリの使用に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-004662.html",
+  "description": "Qt には、解放済みメモリの使用に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-004662",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12267",
+      "source": "CVE",
+      "id": "CVE-2020-12267"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-12267",
+      "source": "NVD",
+      "id": "CVE-2020-12267"
+    },
+    {
+      "text": "https://codereview.qt-project.org/c/qt/qtbase/+/291706",
+      "source": "関連文書",
+      "id": "291706: QTextMarkdownImporter: fix use after free; add fuzz-generated tests"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/416.html",
+      "id": "CWE-416",
+      "title": "解放済みメモリの使用(CWE-416)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qt:qt",
+      "version": "2.2",
+      "vendor": "The Qt Company",
+      "product": "Qt"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-05-25T15:23+09:00",
+  "issued": "2020-05-25T15:23+09:00",
+  "modified": "2020-05-25T15:23+09:00"
+}

@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-006908.html",
+  "title": "rails における危険なタイプのファイルの無制限アップロードに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-006908.html",
+  "description": "rails には、危険なタイプのファイルの無制限アップロードに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-006908",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8162",
+      "source": "CVE",
+      "id": "CVE-2020-8162"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-8162",
+      "source": "NVD",
+      "id": "CVE-2020-8162"
+    },
+    {
+      "text": "https://hackerone.com/reports/789579",
+      "source": "関連文書",
+      "id": "789579 (ActiveStorage direct upload fails to sign content-length header for S3 service)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/434.html",
+      "id": "CWE-434",
+      "title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:rubyonrails:rails_xss_plugin",
+      "version": "2.2",
+      "vendor": "Ruby on Rails project",
+      "product": "RailsXss plugin"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2020-07-22T12:30+09:00",
+  "issued": "2020-07-22T12:30+09:00",
+  "modified": "2020-07-22T12:30+09:00"
+}

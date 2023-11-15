@@ -1,0 +1,30 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001789.html",
+  "title": "Apache Tomcat の EncryptInterceptor のドキュメントにおける記載誤りの問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001789.html",
+  "description": "Apache Tomcat の EncryptInterceptor のドキュメントには、Tomcat クラスタリングが信頼できないネットワーク上で実行される際に、十分な保護を提供できると認識されるような誤った記載がされていました（CVE-2022-29885）。\r\nEncryptInterceptor は、機密性と整合性の保護を提供しますが、信頼できないネットワーク上での実行に関連するすべてのリスクへの保護を提供するわけではなく、特にサービス運用妨害（DoS）リスクは保護していません。",
+  "identifier": "JVNDB-2022-001789",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU98578492/",
+      "source": "JVN",
+      "id": "JVNVU#98578492"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-29885",
+      "source": "CVE",
+      "id": "CVE-2022-29885"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    }
+  ],
+  "date": "2022-05-12T17:44+09:00",
+  "issued": "2022-05-12T17:44+09:00",
+  "modified": "2022-05-12T17:44+09:00"
+}

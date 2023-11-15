@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003864.html",
+  "title": "Apache Subversion の Serf RA レイヤにおけるサーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003864.html",
+  "description": "Apache Subversion の Serf RA レイヤは、X.509 証明書の Common Name (CN) または subjectAltName フィールドのワイルドカードを適切に処理しないため、サーバになりすまされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-297: Improper Validation of Certificate with Host Mismatch (ホストの不一致による証明書の不適切な検証) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/297.html",
+  "identifier": "JVNDB-2014-003864",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU90171154/index.html",
+      "source": "JVN",
+      "id": "JVNVU#90171154"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3522",
+      "source": "CVE",
+      "id": "CVE-2014-3522"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3522",
+      "source": "NVD",
+      "id": "CVE-2014-3522"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/95090",
+      "source": "関連文書",
+      "id": "apache-subversion-cve20143528-info-disc (95090)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:subversion",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Subversion"
+    },
+    {
+      "text": "cpe:/a:apple:xcode",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Xcode"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2015-10-30T16:46+09:00",
+  "issued": "2014-08-21T16:29+09:00",
+  "modified": "2015-10-30T16:46+09:00"
+}

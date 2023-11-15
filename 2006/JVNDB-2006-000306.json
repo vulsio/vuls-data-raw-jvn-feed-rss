@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000306.html",
+  "title": "PostgreSQL における特定のマルチバイト文字コードによる SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000306.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPostgreSQL には、SQL インジェクション攻撃が可能となる以下の複数の問題が存在します。\r\n\r\n1) PostgreSQL サーバにおいて、無効なマルチバイト文字列の処理が不適切であるため、データベースと連携する Web アプリケーションでエスケープ処理が行われている場合に、このエスケープ処理を回避して SQL インジェクションが可能となる問題が存在します。(CVE-2006-2313)\r\n\r\nリモートの攻撃者に悪用された場合、結果としてデータベース上で任意の SQL クエリを実行されてしまう可能性があります。\r\n\r\n2) PostgreSQL サーバにおいて、特定のマルチバイト文字コード (SJIS, BIG5, GBK, GB18030, UHC など) が使用されている場合に、ASCII コードでバックスラッシュを表す \"0x5c\" の処理に不備が存在するため、データベースと連携する Web アプリケーションで ASCII シングルクォート文字を \"＼’\" (本来は半角) のようにエスケープ処理を行っている場合に、このエスケープ処理を回避して SQL インジェクション攻撃が可能となる問題が存在します。(CVE-2006-2314)\r\n\r\nリモートの攻撃者に悪用された場合、結果としてデータベース上で任意の SQL クエリを実行されてしまう可能性があります。",
+  "identifier": "JVNDB-2006-000306",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2314",
+      "source": "CVE",
+      "id": "CVE-2006-2314"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-2314",
+      "source": "NVD",
+      "id": "CVE-2006-2314"
+    },
+    {
+      "text": "http://secunia.com/advisories/20231/",
+      "source": "SECUNIA",
+      "id": "SA20231"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18092",
+      "source": "BID",
+      "id": "18092"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/1941",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-1941"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:postgresql:postgresql",
+      "version": "2.2",
+      "vendor": "PostgreSQL.org",
+      "product": "PostgreSQL"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-12-18T11:12+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2009-12-18T11:12+09:00"
+}

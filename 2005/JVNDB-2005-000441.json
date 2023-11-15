@@ -1,0 +1,115 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000441.html",
+  "title": "Microsoft Internet Explorer の JPEG デコーダにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000441.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Internet Explorer 6.0 SP2 以前に実装されている JPEG デコーダは、特定の画像の解析処理を行う際に、大量にメモリ資源や CPU 資源を消費する、あるいはメモリアクセス違反を生じる問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した JPEG 画像を含む HTML 形式の電子メールや Web ページを表示するように標的ユーザを誘導することにより、大量にメモリ資源あるいは CPU 資源を消費し、結果として標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\nまた、この問題により潜在的に任意のコードが実行できる可能性があることが、発見者より報告されています。",
+  "identifier": "JVNDB-2005-000441",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA05-284A/",
+      "source": "JVN",
+      "id": "JVNTA05-284A"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA05-221A/",
+      "source": "JVN",
+      "id": "JVNTA05-221A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA05-284A/",
+      "source": "JVNTR",
+      "id": "TRTA05-284A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA05-221A/",
+      "source": "JVNTR",
+      "id": "TRTA05-221A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2308",
+      "source": "CVE",
+      "id": "CVE-2005-2308"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2308",
+      "source": "NVD",
+      "id": "CVE-2005-2308"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2005/at050007.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2005-0007"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA05-284A.html",
+      "source": "CERT-TA",
+      "id": "TA05-284A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA05-221A.html",
+      "source": "CERT-TA",
+      "id": "TA05-221A"
+    },
+    {
+      "text": "http://secunia.com/advisories/16373/",
+      "source": "SECUNIA",
+      "id": "SA16373"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14285",
+      "source": "BID",
+      "id": "14285"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14284",
+      "source": "BID",
+      "id": "14284"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14282",
+      "source": "BID",
+      "id": "14282"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14286",
+      "source": "BID",
+      "id": "14286"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2005/Jul/1014500.html",
+      "source": "SECTRACK",
+      "id": "1014500"
+    },
+    {
+      "text": "http://www.securiteam.com/windowsntfocus/5HP0E2AGAQ.html",
+      "source": "SECTEAM",
+      "id": "5HP0E2AGAQ"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:internet_explorer",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Internet Explorer"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

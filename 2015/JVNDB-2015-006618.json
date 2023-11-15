@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006618.html",
+  "title": "Wireshark の UMTS FP ディセクタの epan/dissectors/packet-umts_fp.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006618.html",
+  "description": "Wireshark の UMTS FP ディセクタ (解析機能) の epan/dissectors/packet-umts_fp.c は、チャンネル ID のマッピング用のメモリを適切に確保しないため、サービス運用妨害 (メモリ領域外へのアクセスおよびアプリケーションクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-006618",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8713",
+      "source": "CVE",
+      "id": "CVE-2015-8713"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8713",
+      "source": "NVD",
+      "id": "CVE-2015-8713"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wireshark:wireshark",
+      "version": "2.2",
+      "vendor": "Wireshark",
+      "product": "Wireshark"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2016-01-07T16:34+09:00",
+  "issued": "2016-01-07T16:34+09:00",
+  "modified": "2016-01-07T16:34+09:00"
+}

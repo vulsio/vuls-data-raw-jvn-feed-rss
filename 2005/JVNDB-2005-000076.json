@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000076.html",
+  "title": "Perl の PerlIO の実装における任意のファイルを上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000076.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPerl は、CGI の開発などに活用されているプログラミング言語であり、UNIX や LINUX などの広範なオペレーティングシステムで利用されています。 \r\nPERLIO_DEBUG は PerlIO サブシステムの一定の操作を記録するファイル名を指定する環境変数です。 \r\n\r\nPerl には、PERLIO_DEBUG 環境変数の取り扱いに不備による、以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n・setuid-root ビットが付与された Perl スクリプトが実行される際に、PERLIO_DEBUG 環境変数により指定される任意のファイルが Perl デバッグメッセージによって上書きされる問題 (CVE-2005-0155) \r\n\r\n・PERLIO_DEBUG 環境変数が設定されている場合、Perl スクリプトのパス名の妥当性が適切にチェックされずに、バッファオーバーフローが発生する問題 (CVE-2005-0156) \r\n\r\nローカルの攻撃者に悪用された場合、root 権限で任意のファイルを上書きされる、あるいは任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2005-000076",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3813",
+      "source": "CVE",
+      "id": "CVE-2006-3813"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3813",
+      "source": "NVD",
+      "id": "CVE-2006-3813"
+    },
+    {
+      "text": "http://www.auscert.org.au/render.html?it=4856",
+      "source": "AUSCERT",
+      "id": "ESB-2005.0174"
+    },
+    {
+      "text": "http://secunia.com/advisories/14345/",
+      "source": "SECUNIA",
+      "id": "SA14345"
+    },
+    {
+      "text": "http://secunia.com/advisories/14120/",
+      "source": "SECUNIA",
+      "id": "SA14120"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12426",
+      "source": "BID",
+      "id": "12426"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:perl:perl",
+      "version": "2.2",
+      "vendor": "The Perl Foundation",
+      "product": "Perl"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

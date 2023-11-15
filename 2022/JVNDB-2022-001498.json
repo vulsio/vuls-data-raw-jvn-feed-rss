@@ -1,0 +1,116 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001498.html",
+  "title": "Spring Framework における不適切なデータバインディング処理による任意コード実行の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001498.html",
+  "description": "Spring Framework は、Java 言語で Web アプリケーションなどを作成するために用いられるフレームワークです。Spring Framework には、データバインディングで使用する、CachedIntrospectionResults クラス内の PropertyDescriptor オブジェクトを安全に処理しない脆弱性（CVE-2022-22965）があります。その結果、攻撃者により class.classLoader を呼び出され、システム内で任意の Java コードが実行される可能性があります。\r\n\r\n2010年に同種の脆弱性が CVE-2010-1622 として報告され、Spring Framework 2.5.6.SEC02 において修正されました。今回報告された CVE-2022-22965 はこの修正を回避する新たな攻撃手法を提供するものです。\r\n\r\nなお、VMWare によると本脆弱性を悪用する攻撃を成功させるためには複数の条件が必要であることが示唆されています。2022年4月1日現在、同社が報告を受けた攻撃シナリオにおいては、以下の条件が必要であったとのことです。\r\n\r\n　* JDK 9 以上を使用している\r\n　* Apache Tomcat をサーブレットコンテナとして使用している\r\n　* WAR 形式でデプロイされている\r\n　* プログラムが spring-webmvc あるいは spring-webflux に依存している\r\n\r\nただし、上記以外にも攻撃が成功するための条件が存在する可能性があります。今後公開される情報を注視してください。",
+  "identifier": "JVNDB-2022-001498",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94675398/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94675398"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU98836905/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98836905"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-22965",
+      "source": "CVE",
+      "id": "CVE-2022-22965"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-22965",
+      "source": "NVD",
+      "id": "CVE-2022-22965"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/970766",
+      "source": "CERT-VN",
+      "id": "VU#970766"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-286-05",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-286-05"
+    },
+    {
+      "text": "https://unit42.paloaltonetworks.com/cve-2022-22965-springshell/",
+      "source": "関連文書",
+      "id": "CVE-2022-22965: Spring Core Remote Code Execution Vulnerability Exploited In the Wild (SpringShell)"
+    },
+    {
+      "text": "https://github.com/tweedge/springcore-0day-en",
+      "source": "関連文書",
+      "id": "springcore-0day-en"
+    },
+    {
+      "text": "https://www.cyberkendra.com/2022/03/springshell-rce-0-day-vulnerability.html",
+      "source": "関連文書",
+      "id": "SpringShell: Spring Core RCE 0-day Vulnerability"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/newsflash/2022040101.html",
+      "source": "関連文書",
+      "id": "Spring Frameworkの任意のコード実行の脆弱性（CVE-2022-22965）について"
+    },
+    {
+      "text": "https://github.com/NCSC-NL/spring4shell/blob/main/software/README.md",
+      "source": "関連文書",
+      "id": "Overview of software (un)affected by vulnerability"
+    },
+    {
+      "text": "https://dev.classmethod.jp/articles/springboot-spring4shell/",
+      "source": "関連文書",
+      "id": "cve-2022-22965 Spring4Shell の影響調査"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:device_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Device Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:global_link_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Global Link Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:replication_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Replication Manager"
+    },
+    {
+      "text": "cpe:/a:hitachi:tiered_storage_manager",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Hitachi Tiered Storage Manager"
+    },
+    {
+      "text": "cpe:/a:nec:nec_enhanced_video_analytics",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NEC Enhanced Video Analytics"
+    },
+    {
+      "text": "cpe:/a:nec:simpwright",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SimpWright"
+    },
+    {
+      "text": "cpe:/a:vmware:spring_framework",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "Spring Framework"
+    }
+  ],
+  "date": "2023-09-05T16:45+09:00",
+  "issued": "2022-04-05T16:32+09:00",
+  "modified": "2023-09-05T16:45+09:00"
+}

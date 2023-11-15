@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005922.html",
+  "title": "VideoLAN VLC media player で使用される Live Networks Live555 Streaming Media におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005922.html",
+  "description": "VideoLAN VLC media player で使用される Live Networks Live555 Streaming Media の parseRTSPRequestString 関数には、サービス運用妨害 (クラッシュ) 状態にされる、および任意のコードを実行される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2013-6933 に対する修正が不十分だったことによる脆弱性です。",
+  "identifier": "JVNDB-2013-005922",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6934",
+      "source": "CVE",
+      "id": "CVE-2013-6934"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6934",
+      "source": "NVD",
+      "id": "CVE-2013-6934"
+    },
+    {
+      "text": "http://isecpartners.github.io/fuzzing/vulnerabilities/2013/12/30/vlc-vulnerability.html",
+      "source": "関連文書",
+      "id": "Fuzzing RTSP to discover an exploitable vulnerability in VLC"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:live555:streaming_media",
+      "version": "2.2",
+      "vendor": "live555",
+      "product": "LIVE555 Streaming Media"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-01-27T18:54+09:00",
+  "issued": "2014-01-27T18:54+09:00",
+  "modified": "2014-01-27T18:54+09:00"
+}

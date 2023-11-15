@@ -1,0 +1,85 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002623.html",
+  "title": "複数の Microsoft Windows 製品におけるリモートでコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002623.html",
+  "description": "複数の Microsoft Windows 製品は、ホストサーバ上で Windows Hyper-V ネットワーク スイッチを稼動する場合、ゲストオペレーティングシステム上の認証されているユーザからの入力を適切に検証しないため、リモートでコードを実行される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を「Hyper-V のリモートでコードが実行される脆弱性」として公開しています。\r\n\r\n本脆弱性は、CVE-2017-0162、CVE-2017-0180、および CVE-2017-0181 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2017-002623",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0163",
+      "source": "CVE",
+      "id": "CVE-2017-0163"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-0163",
+      "source": "NVD",
+      "id": "CVE-2017-0163"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20170412-ms.html",
+      "source": "IPA CFA",
+      "id": "Microsoft 製品の脆弱性対策について(2017年4月)"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2017/at170015.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2017-0015"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_10",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 10"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_8.1",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 8.1"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2012",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2012"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2016",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2016"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.4",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:M/Au:S/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:A/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-04-24T14:01+09:00",
+  "issued": "2017-04-24T14:01+09:00",
+  "modified": "2017-04-24T14:01+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001974.html",
+  "title": "System Security Services Daemon におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001974.html",
+  "description": "System Security Services Daemon (SSSD) の Simple Access Provider は、Active Directory プロバイダが使用されている場合、simple_deny_groups オプションを適切に強制しないため、アクセス制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001974",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0287",
+      "source": "CVE",
+      "id": "CVE-2013-0287"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0287",
+      "source": "NVD",
+      "id": "CVE-2013-0287"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fedoraproject:sssd",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "sssd"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2013-05-17T18:20+09:00",
+  "issued": "2013-03-25T16:13+09:00",
+  "modified": "2013-05-17T18:20+09:00"
+}

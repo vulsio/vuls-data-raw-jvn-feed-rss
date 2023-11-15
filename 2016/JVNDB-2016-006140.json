@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006140.html",
+  "title": "QEMU の hw/net/vmxnet_tx_pkt.c の vmxnet_tx_pkt_parse_headers 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006140.html",
+  "description": "QEMU (別名 Quick Emulator) の hw/net/vmxnet_tx_pkt.c の vmxnet_tx_pkt_parse_headers 関数には、サービス運用妨害 (バッファオーバーリード) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006140",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6835",
+      "source": "CVE",
+      "id": "CVE-2016-6835"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6835",
+      "source": "NVD",
+      "id": "CVE-2016-6835"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-12-13T16:00+09:00",
+  "issued": "2016-12-13T16:00+09:00",
+  "modified": "2016-12-13T16:00+09:00"
+}

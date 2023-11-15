@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-011440.html",
+  "title": "vim/vim における解放済みメモリの使用に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-011440.html",
+  "description": "vim/vim には、解放済みメモリの使用に関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2022-011440",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-1616",
+      "source": "CVE",
+      "id": "CVE-2022-1616"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-1616",
+      "source": "NVD",
+      "id": "CVE-2022-1616"
+    },
+    {
+      "text": "https://huntr.dev/bounties/40f1d75f-fb2f-4281-b585-a41017f217e2/",
+      "source": "関連文書",
+      "id": "Use after free in append_command in vim/vim"
+    },
+    {
+      "text": "https://seclists.org/fulldisclosure/2022/Oct/41",
+      "source": "関連文書",
+      "id": "APPLE-SA-2022-10-27-5 Additional information for APPLE-SA-2022-10-24-2 macOS Ventura 13"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/416.html",
+      "id": "CWE-416",
+      "title": "解放済みメモリの使用(CWE-416)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vim:vim",
+      "version": "2.2",
+      "vendor": "Vim",
+      "product": "Vim"
+    },
+    {
+      "text": "cpe:/o:apple:macos",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "macOS"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-08-22T14:58+09:00",
+  "issued": "2023-08-22T14:58+09:00",
+  "modified": "2023-08-22T14:58+09:00"
+}

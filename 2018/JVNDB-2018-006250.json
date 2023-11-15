@@ -1,0 +1,87 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006250.html",
+  "title": "複数の TCP 実装にサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006250.html",
+  "description": "複数の TCP 実装に、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nリソース枯渇の脆弱性 (CWE-400) - CVE-2018-5390\r\nLinux カーネルに対し、tcp_collapse_ofo_queue() や tcp_prune_ofo_queue() 関数による処理がパケット毎に行われるよう細工したパケットを送りつけることで、サービス運用妨害 (DoS) 攻撃が可能であることが報告されています。\r\n\r\nリソース枯渇の脆弱性 (CWE-400) - CVE-2018-6922\r\nFreeBSD の TCP 実装では、分割された状態で受信した TCP セグメントを再構築する際に非効率なアルゴリズムが使用されてます。\r\n\r\nなお双方の脆弱性に対し、攻撃者は TCP セッション中に細工したパケットを送ることで攻撃を行います。DoS 状態を維持するためには細工したパケットを処理させ続ける必要があるため、送信元 IP アドレスを偽装した攻撃を行うことはできません。\r\n",
+  "identifier": "JVNDB-2018-006250",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91510483/",
+      "source": "JVN",
+      "id": "JVNVU#91510483"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU95499848/",
+      "source": "JVN",
+      "id": "JVNVU#95499848"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5390",
+      "source": "CVE",
+      "id": "CVE-2018-5390"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-6922",
+      "source": "CVE",
+      "id": "CVE-2018-6922"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5390",
+      "source": "NVD",
+      "id": "CVE-2018-5390"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-6922",
+      "source": "NVD",
+      "id": "CVE-2018-6922"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/962459",
+      "source": "CERT-VN",
+      "id": "VU#962459"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-105-05",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-105-05"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/400.html",
+      "id": "CWE-400",
+      "title": "リソースの枯渇(CWE-400)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:freebsd:freebsd",
+      "version": "2.2",
+      "vendor": "FreeBSD",
+      "product": "FreeBSD"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2020-05-13T16:05+09:00",
+  "issued": "2018-08-14T10:37+09:00",
+  "modified": "2020-05-13T16:05+09:00"
+}

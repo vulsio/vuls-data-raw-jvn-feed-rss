@@ -1,0 +1,63 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002090.html",
+  "title": "Pillow および Python Imaging Library の PcdDecode.c の ImagingPcdDecode 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002090.html",
+  "description": "Pillow および Python Imaging Library (PIL) の PcdDecode.c の ImagingPcdDecode 関数には、バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2016-002090",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2533",
+      "source": "CVE",
+      "id": "CVE-2016-2533"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2533",
+      "source": "NVD",
+      "id": "CVE-2016-2533"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:debian:python-imaging",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Python Imaging"
+    },
+    {
+      "text": "cpe:/a:python:pillow",
+      "version": "2.2",
+      "vendor": "Python Software Foundation",
+      "product": "Python Pillow"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-12-06T17:01+09:00",
+  "issued": "2016-04-19T16:22+09:00",
+  "modified": "2016-12-06T17:01+09:00"
+}

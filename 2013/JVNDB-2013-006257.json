@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006257.html",
+  "title": "IBM Tivoli Storage Manager for Mail および Tivoli Storage FlashCopy Manager における他のユーザの電子メールを読まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006257.html",
+  "description": "IBM Tivoli Storage Manager for Mail の (1) Data Protection for Exchange コンポーネントおよび Tivoli Storage FlashCopy Manager の (2) FlashCopy Manager for Exchange コンポーネントは、特定の PST ファイルのリストア操作中にメールボックスのコンテンツを適切に制限しないため、他のユーザの個人的な電子メールを読まれる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-006257",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3976",
+      "source": "CVE",
+      "id": "CVE-2013-3976"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3976",
+      "source": "NVD",
+      "id": "CVE-2013-3976"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/84881",
+      "source": "関連文書",
+      "id": "tsm-cve20133976-info-disclosure(84881)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:data_protection",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "Data Protection"
+    },
+    {
+      "text": "cpe:/a:ibm:flashcopy_manager",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "FlashCopy Manager"
+    },
+    {
+      "text": "cpe:/a:ibm:tivoli_storage_flashcopy_manager",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Tivoli Storage FlashCopy Manager"
+    },
+    {
+      "text": "cpe:/a:ibm:tivoli_storage_manager_for_mail",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Tivoli Storage Manager for Mail"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:S/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2014-03-27T18:24+09:00",
+  "issued": "2014-03-27T18:24+09:00",
+  "modified": "2014-03-27T18:24+09:00"
+}

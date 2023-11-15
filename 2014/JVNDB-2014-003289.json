@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003289.html",
+  "title": "PHP の Fileinfo コンポーネントで使用される file の cdf.c 内の cdf_check_stream_offset 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003289.html",
+  "description": "PHP の Fileinfo コンポーネントで使用される file の cdf.c 内の cdf_check_stream_offset 関数は、不正なセクタサイズのデータに依存するため、サービス運用妨害 (アプリケーションクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-003289",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU93868849/index.html",
+      "source": "JVN",
+      "id": "JVNVU#93868849"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU91828320/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91828320"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3479",
+      "source": "CVE",
+      "id": "CVE-2014-3479"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3479",
+      "source": "NVD",
+      "id": "CVE-2014-3479"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:file_project:file",
+      "version": "2.2",
+      "vendor": "file project",
+      "product": "file"
+    },
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-04-10T17:58+09:00",
+  "issued": "2014-07-10T17:40+09:00",
+  "modified": "2015-04-10T17:58+09:00"
+}

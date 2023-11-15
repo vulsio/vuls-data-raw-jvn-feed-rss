@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000750.html",
+  "title": "Cisco 製品の IP ACL 機能における認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000750.html",
+  "description": "複数の Cisco 製品が実装する IP ACL 機能では、デバイスが ACL をダウンロードする際、ACL 名を RAS/NAS による認証のためのユーザ名およびパスワード (ユーザ名と同一) として利用しているため、ACL 名が既知である場合に、ACL 名を利用して不正に認証を通過することが可能となる脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000750",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4499",
+      "source": "CVE",
+      "id": "CVE-2005-4499"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4499",
+      "source": "NVD",
+      "id": "CVE-2005-4499"
+    },
+    {
+      "text": "http://secunia.com/advisories/18141/",
+      "source": "SECUNIA",
+      "id": "SA18141"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/16025",
+      "source": "BID",
+      "id": "16025"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:cisco:pix_asa",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco PIX/ASA"
+    },
+    {
+      "text": "cpe:/h:cisco:pix_firewall",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco PIX Firewall"
+    },
+    {
+      "text": "cpe:/o:cisco:ios",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

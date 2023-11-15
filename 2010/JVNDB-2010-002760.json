@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002760.html",
+  "title": "WebKit の CSSParser::parseFontFaceSrc 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002760.html",
+  "description": "WebKit の WebCore/css/CSSParser.cpp 内にある CSSParser::parseFontFaceSrc 関数は、Cascading Style Sheets (CSS) のトークンシーケンスを適切に構文解析しないため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002760",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4577",
+      "source": "CVE",
+      "id": "CVE-2010-4577"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4577",
+      "source": "NVD",
+      "id": "CVE-2010-4577"
+    },
+    {
+      "text": "http://secunia.com/advisories/43086",
+      "source": "SECUNIA",
+      "id": "SA43086"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/45722",
+      "source": "BID",
+      "id": "45722"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0216",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0216"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    },
+    {
+      "text": "cpe:/o:google:chrome_os",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Chrome OS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-02-22T14:07+09:00",
+  "issued": "2011-02-22T14:07+09:00",
+  "modified": "2011-02-22T14:07+09:00"
+}

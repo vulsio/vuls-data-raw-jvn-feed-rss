@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-007675.html",
+  "title": "Apple iOS の LEAP の実装におけるヒープオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-007675.html",
+  "description": "Apple iOS の LEAP (Low Energy Audio Protocol) の実装には、「BlueBorne」の影響により、ヒープオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2017-007675",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU95513538/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95513538"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14315",
+      "source": "CVE",
+      "id": "CVE-2017-14315"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-14315",
+      "source": "NVD",
+      "id": "CVE-2017-14315"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20170914_blueborne.html",
+      "source": "IPA CFA",
+      "id": "Bluetooth の実装における複数の脆弱性について"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2017/at170037.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2017-0037"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/240311",
+      "source": "CERT-VN",
+      "id": "VU#240311"
+    },
+    {
+      "text": "https://www.armis.com/blueborne/",
+      "source": "関連文書",
+      "id": "The Attack Vector “BlueBorne” Exposes Almost Every Connected Device"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nec:systemdirector_enterprise",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SystemDirector Enterprise"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.9",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-02-07T16:57+09:00",
+  "issued": "2017-09-28T17:12+09:00",
+  "modified": "2018-02-07T16:57+09:00"
+}

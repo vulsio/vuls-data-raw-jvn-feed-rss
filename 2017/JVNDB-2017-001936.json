@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001936.html",
+  "title": "Apache HTTP サーバ用 OpenID Connect Relying Party and OAuth 2.0 Resource Server モジュールにおける認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001936.html",
+  "description": "Apache HTTP サーバ用 OpenID Connect Relying Party and OAuth 2.0 Resource Server (別名 mod_auth_openidc) モジュールは、\"OIDCUnAuthAction pass\" 設定で OIDC_CLAIM_ および OIDCAuthNHeader ヘッダをスキップしないため、認証を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2017-001936",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6062",
+      "source": "CVE",
+      "id": "CVE-2017-6062"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-6062",
+      "source": "NVD",
+      "id": "CVE-2017-6062"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pingidentity:mod_auth_openidc",
+      "version": "2.2",
+      "vendor": "Ping Identity",
+      "product": "mod_auth_openidc"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "8.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2017-03-23T17:28+09:00",
+  "issued": "2017-03-23T17:28+09:00",
+  "modified": "2017-03-23T17:28+09:00"
+}

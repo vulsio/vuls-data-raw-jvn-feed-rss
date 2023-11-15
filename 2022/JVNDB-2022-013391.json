@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-013391.html",
+  "title": "The Go Project の Go 他複数ベンダの製品における無限ループに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-013391.html",
+  "description": "The Go Project の Go 他複数ベンダの製品には、無限ループに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-013391",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-30634",
+      "source": "CVE",
+      "id": "CVE-2022-30634"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-30634",
+      "source": "NVD",
+      "id": "CVE-2022-30634"
+    },
+    {
+      "text": "https://go.dev/cl/402257",
+      "source": "関連文書",
+      "id": "go.dev (cl/402257)"
+    },
+    {
+      "text": "https://go.dev/issue/52561",
+      "source": "関連文書",
+      "id": "go.dev (issue/52561)"
+    },
+    {
+      "text": "https://go.googlesource.com/go/+/bb1f4416180511231de6d17a1f2f55c82aafc863",
+      "source": "関連文書",
+      "id": "go.googlesource.com (bb1f4416180511231de6d17a1f2f55c82aafc863)"
+    },
+    {
+      "text": "https://groups.google.com/g/golang-announce/c/TzIC9-t8Ytg/m/IWz5T6x7AAAJ",
+      "source": "関連文書",
+      "id": "groups.google.com (IWz5T6x7AAAJ)"
+    },
+    {
+      "text": "https://pkg.go.dev/vuln/GO-2022-0477",
+      "source": "関連文書",
+      "id": "pkg.go.dev (GO-2022-0477)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/835.html",
+      "id": "CWE-835",
+      "title": "無限ループ(CWE-835)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:golang:go",
+      "version": "2.2",
+      "vendor": "The Go Project",
+      "product": "Go"
+    },
+    {
+      "text": "cpe:/a:netapp:cloud_insights_telegraf_agent",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "Cloud Insights Telegraf Agent"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-09-07T17:25+09:00",
+  "issued": "2023-09-07T17:25+09:00",
+  "modified": "2023-09-07T17:25+09:00"
+}

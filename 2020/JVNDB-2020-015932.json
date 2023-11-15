@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015932.html",
+  "title": "JT2Go および Teamcenter Visualization における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015932.html",
+  "description": "JT2Go および Teamcenter Visualization には、境界外読み取りに関する脆弱性が存在します。\r\n\r\nZero Day Initiative は、本脆弱性に ZDI-CAN-12040 を採番していました。",
+  "identifier": "JVNDB-2020-015932",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26998",
+      "source": "CVE",
+      "id": "CVE-2020-26998"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-26998",
+      "source": "NVD",
+      "id": "CVE-2020-26998"
+    },
+    {
+      "text": "https://www.zerodayinitiative.com/advisories/ZDI-21-238/",
+      "source": "関連文書",
+      "id": "ZDI-21-238 (Siemens JT2Go PAR File Parsing Out-Of-Bounds Read Remote Code Execution Vulnerability)"
+    },
+    {
+      "text": "https://www.zerodayinitiative.com/advisories/ZDI-21-857/",
+      "source": "関連文書",
+      "id": "ZDI-21-857 (Siemens JT2Go ASM File Parsing Out-Of-Bounds Read Remote Code Execution Vulnerability)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:siemens:jt2go",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "JT2Go"
+    },
+    {
+      "text": "cpe:/a:siemens:teamcenter_visualization",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "Teamcenter Visualization"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2021-10-25T16:20+09:00",
+  "issued": "2021-10-25T16:20+09:00",
+  "modified": "2021-10-25T16:20+09:00"
+}

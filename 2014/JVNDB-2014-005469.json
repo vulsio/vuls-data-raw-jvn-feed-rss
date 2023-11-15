@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005469.html",
+  "title": "ZendOpenId の Consumer コンポーネントの GenericConsumer クラスおよび Zend Framework の Zend_OpenId_Consumer クラスにおける認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005469.html",
+  "description": "ZendOpenId の Consumer コンポーネントの GenericConsumer クラスおよび Zend Framework の Zend_OpenId_Consumer クラスは、同一の Identity Provider を関連付けハンドル (association handle) で使用されるプロバイダであると識別する openid_op_endpoint の値を検証しないため、認証を回避され、任意の OpenID identity をなりすまされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005469",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2684",
+      "source": "CVE",
+      "id": "CVE-2014-2684"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2684",
+      "source": "NVD",
+      "id": "CVE-2014-2684"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2014-0151.html",
+      "source": "関連文書",
+      "id": "MGASA-2014-0151"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:zend:zend_framework",
+      "version": "2.2",
+      "vendor": "Zend Technologies Ltd.",
+      "product": "Zend Framework"
+    },
+    {
+      "text": "cpe:/a:zend:zend_openid",
+      "version": "2.2",
+      "vendor": "Zend Technologies Ltd.",
+      "product": "ZendOpenId"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2014-11-18T12:47+09:00",
+  "issued": "2014-11-18T12:47+09:00",
+  "modified": "2014-11-18T12:47+09:00"
+}

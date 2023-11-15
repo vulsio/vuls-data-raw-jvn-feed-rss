@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002134.html",
+  "title": "Android 上の Mozilla Firefox における Firefox のアドオンを変更される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002134.html",
+  "description": "Android 上で稼働する Mozilla Firefox は、ローカルファイルシステムの app_tmp インストレーションディレクトリに対して、誰でも書き込みできる (world-writable)、および誰でも読み込みできる (world-readable) パーミッションを持ちいるため、サードパーティ製アプリケーションがインストールされる前に、そのアプリケーションによって Firefox のアドオンを変更される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002134",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0798",
+      "source": "CVE",
+      "id": "CVE-2013-0798"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0798",
+      "source": "NVD",
+      "id": "CVE-2013-0798"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2013-06-13T15:33+09:00",
+  "issued": "2013-04-04T16:54+09:00",
+  "modified": "2013-06-13T15:33+09:00"
+}

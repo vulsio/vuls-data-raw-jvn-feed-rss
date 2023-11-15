@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007438.html",
+  "title": "Apache HTTP Server の mod_lua モジュールの mod_lua.c におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007438.html",
+  "description": "Apache HTTP Server の mod_lua モジュールの mod_lua.c は、同一の Lua authorization provider が異なるコンテキスト内の異なる引数を使用する httpd 設定をサポートしないため、アクセス制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-007438",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99970459/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99970459"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8109",
+      "source": "CVE",
+      "id": "CVE-2014-8109"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8109",
+      "source": "NVD",
+      "id": "CVE-2014-8109"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2015-0011.html",
+      "source": "関連文書",
+      "id": "MGASA-2015-0011"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:oracle:enterprise_manager",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Enterprise Manager"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "macOS Server (旧 OS X Server)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2016-01-29T16:28+09:00",
+  "issued": "2015-01-06T16:51+09:00",
+  "modified": "2016-01-29T16:28+09:00"
+}

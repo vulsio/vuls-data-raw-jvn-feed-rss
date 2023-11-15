@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002902.html",
+  "title": "iPad デバイス上の Apple iOS の XNU kernel におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002902.html",
+  "description": "iPad デバイス上の Apple iOS の XNU kernel 内の get_xattrinfo 関数は、AppleDouble ファイルのヘッダを適切に検証しないため、サービス運用妨害 (メモリ破損) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n本脆弱性は、SyScan 2013 において発表されました。",
+  "identifier": "JVNDB-2013-002902",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU98681940/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98681940"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3955",
+      "source": "CVE",
+      "id": "CVE-2013-3955"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3955",
+      "source": "NVD",
+      "id": "CVE-2013-3955"
+    },
+    {
+      "text": "http://antid0te.com/syscan_2013/SyScan2013_Mountain_Lion_iOS_Vulnerabilities_Garage_Sale_Whitepaper.pdf",
+      "source": "関連文書",
+      "id": "Mountain Lion/iOS Vulnerabilities Garage Sale"
+    },
+    {
+      "text": "http://www.syscan.org/index.php/sg/program/day/2",
+      "source": "関連文書",
+      "id": "SyScan'13 Singapore - Day 2 (26th April 2013)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:apple:ipad",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iPad"
+    },
+    {
+      "text": "cpe:/h:apple:ipad2",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iPad 2"
+    },
+    {
+      "text": "cpe:/h:apple:ipad_mini",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iPad mini"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.7",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-10-15T17:15+09:00",
+  "issued": "2013-06-07T16:38+09:00",
+  "modified": "2013-10-15T17:15+09:00"
+}

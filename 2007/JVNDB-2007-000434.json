@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000434.html",
+  "title": "ADPLAN におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000434.html",
+  "description": "株式会社オプトのウェブアクセス測定システムである ADPLAN Version 3 の SEO モジュールには、クロスサイトスクリプティングの脆弱性が存在します。\r\n\r\nADPLAN Version 3 サービスを導入したサイトにおいては、ブラウザから送られた HTTP ヘッダ情報を使ってウェブページに出力する処理が行なわれています。しかし、この出力処理が不適切であるため、当該サイトを閲覧したユーザのブラウザ上でスクリプトが実行されてしまう可能性があります。",
+  "identifier": "JVNDB-2007-000434",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN%2323891849/index.html",
+      "source": "JVN",
+      "id": "JVN#23891849"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3117",
+      "source": "CVE",
+      "id": "CVE-2007-3117"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-3117",
+      "source": "NVD",
+      "id": "CVE-2007-3117"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/vuln/documents/2007/JVN_23891849.html",
+      "source": "IPA-VUL",
+      "id": "JVN_23891849"
+    },
+    {
+      "text": "http://secunia.com/advisories/25527",
+      "source": "SECUNIA",
+      "id": "SA25527"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/24356",
+      "source": "BID",
+      "id": "24356"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:adplan:seo",
+      "version": "2.2",
+      "vendor": "オプト",
+      "product": "ADPLAN"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-06-14T16:38+09:00",
+  "issued": "2007-06-14T16:38+09:00",
+  "modified": "2007-06-14T16:38+09:00"
+}

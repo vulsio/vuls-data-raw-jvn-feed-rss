@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006081.html",
+  "title": "Samba の nsswitch/pam_winbind.c の winbind_name_list_to_sid_string_list 関数におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006081.html",
+  "description": "Samba の nsswitch/pam_winbind.c 内の winbind_name_list_to_sid_string_list 関数は、すべてのユーザによる認証を受け入れることで無効な require_membership_of グループ名を処理するため、アクセス制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-006081",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6150",
+      "source": "CVE",
+      "id": "CVE-2012-6150"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6150",
+      "source": "NVD",
+      "id": "CVE-2012-6150"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2014-03-05T17:22+09:00",
+  "issued": "2013-12-04T15:03+09:00",
+  "modified": "2014-03-05T17:22+09:00"
+}

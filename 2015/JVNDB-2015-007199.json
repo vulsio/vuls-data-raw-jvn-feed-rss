@@ -1,0 +1,105 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007199.html",
+  "title": "複数の Doctrine 製品における追加の権限で任意の PHP コードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007199.html",
+  "description": "複数の Doctrine 製品は、キャッシュディレクトリに誰でも書き込み可能な (world-writable) パーミッションを使用するため、追加の権限で任意の PHP コードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-007199",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5723",
+      "source": "CVE",
+      "id": "CVE-2015-5723"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5723",
+      "source": "NVD",
+      "id": "CVE-2015-5723"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:doctrine-project:annotations",
+      "version": "2.2",
+      "vendor": "Doctrine Project",
+      "product": "Annotations"
+    },
+    {
+      "text": "cpe:/a:doctrine-project:cache",
+      "version": "2.2",
+      "vendor": "Doctrine Project",
+      "product": "Cache"
+    },
+    {
+      "text": "cpe:/a:doctrine-project:common",
+      "version": "2.2",
+      "vendor": "Doctrine Project",
+      "product": "Common"
+    },
+    {
+      "text": "cpe:/a:doctrine-project:doctrinemongodbbundle",
+      "version": "2.2",
+      "vendor": "Doctrine Project",
+      "product": "MongoDB ODM Bundle"
+    },
+    {
+      "text": "cpe:/a:doctrine-project:mongodb-odm",
+      "version": "2.2",
+      "vendor": "Doctrine Project",
+      "product": "MongoDB ODM"
+    },
+    {
+      "text": "cpe:/a:doctrine-project:object_relational_mapper",
+      "version": "2.2",
+      "vendor": "Doctrine Project",
+      "product": "ORM"
+    },
+    {
+      "text": "cpe:/a:zend:zend-cache",
+      "version": "2.2",
+      "vendor": "Zend Technologies Ltd.",
+      "product": "zend-cache"
+    },
+    {
+      "text": "cpe:/a:zend:zend_framework",
+      "version": "2.2",
+      "vendor": "Zend Technologies Ltd.",
+      "product": "Zend Framework"
+    },
+    {
+      "text": "cpe:/a:zend:zf-apigility-doctrine",
+      "version": "2.2",
+      "vendor": "Zend Technologies Ltd.",
+      "product": "zf-apigility-doctrine"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-06-09T16:00+09:00",
+  "issued": "2016-06-09T16:00+09:00",
+  "modified": "2016-06-09T16:00+09:00"
+}

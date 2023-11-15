@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001339.html",
+  "title": "FreeBSD の telnetd に含まれる sys_term.c における任意のコードが実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001339.html",
+  "description": "FreeBSD の telnetd に含まれる sys_term.c には、古い FreeBSD にのみ有効であった危険な環境変数を削除している為、任意のコードが実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001339",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0641",
+      "source": "CVE",
+      "id": "CVE-2009-0641"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0641",
+      "source": "NVD",
+      "id": "CVE-2009-0641"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:freebsd:freebsd",
+      "version": "2.2",
+      "vendor": "FreeBSD",
+      "product": "FreeBSD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2009-06-30T11:12+09:00",
+  "issued": "2009-06-30T11:12+09:00",
+  "modified": "2009-06-30T11:12+09:00"
+}

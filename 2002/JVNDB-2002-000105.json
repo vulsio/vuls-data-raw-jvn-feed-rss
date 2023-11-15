@@ -1,0 +1,91 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000105.html",
+  "title": "BIND における dns_message_findtype (） 関数におけるサービス運用妨害 （DoS） の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000105.html",
+  "description": "BIND において、message.c 内の dns_message_findtype() 関数のパラメータにNULL 文字以外の文字列を渡した場合に、BIND はエラーメッセージを表示しシャットダウンする脆弱性が存在します。",
+  "identifier": "JVNDB-2002-000105",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNCA-2002-15",
+      "source": "JVN",
+      "id": "JVNCA-2002-15"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0400",
+      "source": "CVE",
+      "id": "CVE-2002-0400"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0400",
+      "source": "NVD",
+      "id": "CVE-2002-0400"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr022201.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2002-2201"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr022901.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2002-2901"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-2002-15.html",
+      "source": "CERT-A",
+      "id": "CA-2002-15"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/739123",
+      "source": "CERT-VN",
+      "id": "VU#739123"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4936",
+      "source": "BID",
+      "id": "4936"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/9250",
+      "source": "ISS",
+      "id": "9250"
+    },
+    {
+      "text": "http://www.isskk.co.jp/support/techinfo/general/DoS_ISCBIND_xforce.html",
+      "source": "ISSKK",
+      "id": "ISC BIND におけるリモートからのサービス不能攻撃の脆弱点"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

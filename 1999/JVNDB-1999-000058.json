@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/1999/JVNDB-1999-000058.html",
+  "title": "GNU C Library における未チェックの戻り値に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/1999/JVNDB-1999-000058.html",
+  "description": "GNU C Library (別名 glibc) には、未チェックの戻り値に関する脆弱性が存在します。",
+  "identifier": "JVNDB-1999-000058",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-0199",
+      "source": "CVE",
+      "id": "CVE-1999-0199"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-1999-0199",
+      "source": "NVD",
+      "id": "CVE-1999-0199"
+    },
+    {
+      "text": "https://www.cee.studio/tdelete.html",
+      "source": "関連文書",
+      "id": "tdelete()'s return values cannot be trusted"
+    },
+    {
+      "text": "https://github.com/bminor/glibc/commit/2864e767053317538feafa815046fff89e5a16be#diff-94e8c502f255fdfc346df0e29fd4ef40",
+      "source": "関連文書",
+      "id": "bminor / glibc"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/252.html",
+      "id": "CWE-252",
+      "title": "未チェックの戻り値(CWE-252)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:glibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU C Library"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-04-28T15:16+09:00",
+  "issued": "2021-04-28T15:16+09:00",
+  "modified": "2021-04-28T15:16+09:00"
+}

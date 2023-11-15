@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001003.html",
+  "title": "複数の UEFI システムにおいて EFI S3 Resume Boot Path で使われる boot script が適切に保護されていない問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001003.html",
+  "description": "複数の UEFI システムでは、EFI S3 Resume Boot Path で使用される boot script へのアクセスを適切に制限していません。\r\n\r\nMITRE の Rafal Wojtczuk 氏および Corey Kallenberg 氏は次のように述べています。\r\n\r\n　\"During the UEFI S3 Resume path, a boot script is interpreted to re-initialize the platform. The boot script dictates various memory and port read/write operations to facilitate this re-initialization. The boot script is interpreted early enough where important platform security mechanisms have not yet been configured. For example, BIOS_CNTL, which helps protects the platform firmware against arbitrary writes, is unlocked. TSEGMB, which protects SMRAM against DMA, is also unlocked.\r\n\r\n　Given this, the boot script is in a security critical position and maintaining its integrity is important. However, we have discovered that on certain systems the boot script resides in unprotected memory which can be tampered with by an attacker with access to physical memory.\"\r\n\r\n　(UEFI S3 Resume path では、プラットフォームの再初期化のために boot script が使用されます。boot script には再初期化のための様々なメモリやポートへの読み書き操作が書かれており、boot script が実行されるときにはプラットフォームのセキュリティ設定は十分になされてはいません。たとえば、ファームウェアへの書き込みを制限する BIOS_CNTL はロックされていません。同様に DMA による SMRAM への書き込みを制限する TSEGMB もロックされていません。\r\n\r\n　boot script はセキュリティ上重要な存在であり、完全性を保つ必要があります。しかし我々は、特定のシステムにおいて boot script が保護されていないメモリ領域に置かれ、物理メモリへのアクセス権を持つ攻撃者によって改ざん可能であることを発見しました。)",
+  "identifier": "JVNDB-2015-001003",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU91050570/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91050570"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8274",
+      "source": "CVE",
+      "id": "CVE-2014-8274"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/976132",
+      "source": "CERT-VN",
+      "id": "VU#976132"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.2",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-01-07T17:05+09:00",
+  "issued": "2015-01-07T17:05+09:00",
+  "modified": "2015-01-07T17:05+09:00"
+}

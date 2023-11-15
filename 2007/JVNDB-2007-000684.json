@@ -1,0 +1,87 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000684.html",
+  "title": "Samba の idmap_ad.so ライブラリにおける権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000684.html",
+  "description": "Samba の idmap_ad.so ライブラリにおける nss_info 拡張 (nsswitch/idmap_ad.c) には、”winbind nss info” オプションに RFC2307 もしくは SFU が設定されている場合、グループ属性の処理に不備があり権限昇格の脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000684",
+  "references": [
+    {
+      "text": "http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4138",
+      "source": "CVE",
+      "id": "CVE-2007-4138"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4138",
+      "source": "NVD",
+      "id": "CVE-2007-4138"
+    },
+    {
+      "text": "http://secunia.com/advisories/26764/",
+      "source": "SECUNIA",
+      "id": "SAS26764"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25636",
+      "source": "BID",
+      "id": "25636"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/36560",
+      "source": "XF",
+      "id": "36560"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1018681",
+      "source": "SECTRACK",
+      "id": "1018681"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/3120",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-3120"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-01-18T14:30+09:00",
+  "issued": "2007-09-20T14:28+09:00",
+  "modified": "2008-01-18T14:30+09:00"
+}

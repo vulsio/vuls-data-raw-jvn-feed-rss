@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004088.html",
+  "title": "PHP の ext/exif/exif.c の exif_process_IFD_in_MAKERNOTE 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004088.html",
+  "description": "PHP の ext/exif/exif.c の exif_process_IFD_in_MAKERNOTE 関数には、サービス運用妨害 (配列の境界外アクセスおよびメモリ破損) 状態にされる、プロセスメモリから重要な情報を取得されるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2016-004088",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU90950877/index.html",
+      "source": "JVN",
+      "id": "JVNVU#90950877"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6291",
+      "source": "CVE",
+      "id": "CVE-2016-6291"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6291",
+      "source": "NVD",
+      "id": "CVE-2016-6291"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-10-07T16:37+09:00",
+  "issued": "2016-08-01T14:12+09:00",
+  "modified": "2016-10-07T16:37+09:00"
+}

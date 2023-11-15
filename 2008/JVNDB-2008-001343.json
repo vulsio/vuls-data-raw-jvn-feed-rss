@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001343.html",
+  "title": "gcc における cld 命令を生成しないことによるメモリ破壊の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001343.html",
+  "description": "gcc には x86 システムや i386 システム上において、memcpy() 関数や memmove() 関数のような文字列操作のためのコンパイル処理を行う際、ABI 規約の違反によるダイレクションフラグ (DF) のリセットを妨害されることによって、cld 命令を生成されないため、Linux カーネルによるシグナルハンドリングを行う際に誤ってダイレクションにデータがコピーされるメモリ破壊の脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001343",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1367",
+      "source": "CVE",
+      "id": "CVE-2008-1367"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-1367",
+      "source": "NVD",
+      "id": "CVE-2008-1367"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/29084",
+      "source": "BID",
+      "id": "29084"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/41340",
+      "source": "XF",
+      "id": "41340"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gcc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU GCC"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-10-28T14:02+09:00",
+  "issued": "2008-05-27T12:19+09:00",
+  "modified": "2008-10-28T14:02+09:00"
+}

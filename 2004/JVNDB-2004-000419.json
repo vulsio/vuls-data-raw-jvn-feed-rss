@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000419.html",
+  "title": "Microsoft Word における不正な .doc ファイルによるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000419.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Word 2000 SP3 以前、2002 SP3 以前、2003 SP1 以前には、Word 文書を解釈する際の入力チェックに不備が存在するため、2 つのバッファオーバーフローが発生する問題 (CAN-2004-0963/CAN-2005-0558) が存在します。 \r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した Word 文書を標的ユーザに送りつけ、開くよう誘導することにより、結果として標的ユーザの権限で任意のコードを実行する可能性があります。\r\n\r\n2005 年 4 月 13 日現在、Microsoft よりセキュリティ情報が公開され、攻撃手法が公開されている既知の問題 (CAN-2004-0963) とは異なる、新たなバッファオーバーフローの問題 (CAN-2005-0558) が発見されています。",
+  "identifier": "JVNDB-2004-000419",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA05-102A/",
+      "source": "JVN",
+      "id": "JVNTA05-102A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA05-102A/",
+      "source": "JVNTR",
+      "id": "TRTA05-102A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0558",
+      "source": "CVE",
+      "id": "CVE-2005-0558"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0558",
+      "source": "NVD",
+      "id": "CVE-2005-0558"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2005/wr051601.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2005-1601"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/752591",
+      "source": "CERT-VN",
+      "id": "VU#752591"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA05-102A.html",
+      "source": "CERT-TA",
+      "id": "TA05-102A"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20050413-ms05-023.html",
+      "source": "IPA",
+      "id": "20050413-ms05-023"
+    },
+    {
+      "text": "http://secunia.com/advisories/12758/",
+      "source": "SECUNIA",
+      "id": "SA12758"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13119",
+      "source": "BID",
+      "id": "13119"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11350",
+      "source": "BID",
+      "id": "11350"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13122",
+      "source": "BID",
+      "id": "13122"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

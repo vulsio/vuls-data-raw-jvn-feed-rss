@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004863.html",
+  "title": "OpenStack Keystone における任意のユーザのロールを読まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004863.html",
+  "description": "OpenStack Keystone の (1) OS-KSADM/services および (2) tenant API は、X-Auth-Token を適切に検証しないため、任意のユーザのロールを読まれる、または任意のサービスを取得される、生成される、または削除される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004863",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4456",
+      "source": "CVE",
+      "id": "CVE-2012-4456"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4456",
+      "source": "NVD",
+      "id": "CVE-2012-4456"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:keystone",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "Openstack Keystone"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-10-12T11:31+09:00",
+  "issued": "2012-10-12T11:31+09:00",
+  "modified": "2012-10-12T11:31+09:00"
+}

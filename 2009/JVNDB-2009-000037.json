@@ -1,0 +1,169 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-000037.html",
+  "title": "Apache Tomcat におけるサービス運用妨害（DoS）の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-000037.html",
+  "description": "The Apache Software Foundation が提供する Apache Tomcat には、サービス運用妨害（DoS）の脆弱性が存在します。\r\n\r\nThe Apache Software Foundation が提供する Apache Tomcat は、Java Servlet と JavaServer Pages のサーバ実装です。 Apache Tomcat は、Java AJP コネクタ経由で送られた不正なヘッダを含むリクエストを処理する際、エラーを返さず AJP との接続を切断します。その際、コネクタが mod_jk lb ワーカである場合はエラー状態となり、約１分間利用不可能となります。その結果、サービス運用妨害（DoS）攻撃などに使用される可能性があります。\r\n\r\n開発者によると、現在サポート対象外となっている Apache Tomcat 3.x、4.0.x、および 5.0.x も、本脆弱性の影響を受ける可能性があるとのことです。\r\n詳しくは開発者が提供する情報をご確認ください。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC がベンダとの調整を行いました。\r\n報告者：NTT OSS センタ 福山 義仁 氏",
+  "identifier": "JVNDB-2009-000037",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN87272440/index.html",
+      "source": "JVN",
+      "id": "JVN#87272440"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0033",
+      "source": "CVE",
+      "id": "CVE-2009-0033"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0033",
+      "source": "NVD",
+      "id": "CVE-2009-0033"
+    },
+    {
+      "text": "http://secunia.com/advisories/35326",
+      "source": "SECUNIA",
+      "id": "SA35326"
+    },
+    {
+      "text": "http://secunia.com/advisories/35344",
+      "source": "SECUNIA",
+      "id": "SA35344"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/35193",
+      "source": "BID",
+      "id": "35193"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/50928",
+      "source": "XF",
+      "id": "50928"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2009/Jun/1022331.html",
+      "source": "SECTRACK",
+      "id": "1022331"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/1496",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-1496"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/a:hp:tomcat-based_servlet_engine",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX Tomcat-based Servlet Engine"
+    },
+    {
+      "text": "cpe:/a:nec:infoframe_documentskipper",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "InfoFrame DocumentSkipper"
+    },
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/a:vmware:server",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Server"
+    },
+    {
+      "text": "cpe:/a:vmware:vcenter",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware vCenter"
+    },
+    {
+      "text": "cpe:/a:vmware:virtualcenter",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware VirtualCenter"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-09-28T13:37+09:00",
+  "issued": "2009-06-18T14:56+09:00",
+  "modified": "2012-09-28T13:37+09:00"
+}

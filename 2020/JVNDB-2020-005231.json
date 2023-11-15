@@ -1,0 +1,63 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005231.html",
+  "title": "Keycloak におけるセッション期限に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005231.html",
+  "description": "Keycloak には、セッション期限に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-005231",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1724",
+      "source": "CVE",
+      "id": "CVE-2020-1724"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-1724",
+      "source": "NVD",
+      "id": "CVE-2020-1724"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/613.html",
+      "id": "CWE-613",
+      "title": "不適切なセッション期限(CWE-613)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:keycloak",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Keycloak"
+    },
+    {
+      "text": "cpe:/a:redhat:openshift_application_runtimes",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenShift Application Runtimes"
+    },
+    {
+      "text": "cpe:/a:redhat:single_sign-on",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Single Sign-On"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2020-06-09T17:21+09:00",
+  "issued": "2020-06-09T17:21+09:00",
+  "modified": "2020-06-09T17:21+09:00"
+}

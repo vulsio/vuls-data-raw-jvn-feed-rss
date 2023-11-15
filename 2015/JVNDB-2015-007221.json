@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007221.html",
+  "title": "Xen におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007221.html",
+  "description": "Xen は、32-bit の例外およびイベントの配信内でホワイトリストを作成する Supervisor Mode Access Prevention (SMAP) を実装しないため、サービス運用妨害 (ハイパーバイザーおよび VM クラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-007221",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6259",
+      "source": "CVE",
+      "id": "CVE-2016-6259"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6259",
+      "source": "NVD",
+      "id": "CVE-2016-6259"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:citrix:xenserver",
+      "version": "2.2",
+      "vendor": "シトリックス・システムズ",
+      "product": "Citrix XenServer"
+    },
+    {
+      "text": "cpe:/o:xen:xen",
+      "version": "2.2",
+      "vendor": "Xen プロジェクト",
+      "product": "Xen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "6.2",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-08-05T15:51+09:00",
+  "issued": "2016-08-05T15:51+09:00",
+  "modified": "2016-08-05T15:51+09:00"
+}

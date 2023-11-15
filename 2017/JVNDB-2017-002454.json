@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002454.html",
+  "title": "Linux Kernel の security/keys/keyring.c の keyring_search_aux 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002454.html",
+  "description": "Linux Kernel の security/keys/keyring.c の keyring_search_aux 関数には、サービス運用妨害 (NULL ポインタデリファレンスおよび OOPS) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2017-002454",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6951",
+      "source": "CVE",
+      "id": "CVE-2017-6951"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-6951",
+      "source": "NVD",
+      "id": "CVE-2017-6951"
+    },
+    {
+      "text": "http://www.spinics.net/lists/keyrings/msg01845.html",
+      "source": "関連文書",
+      "id": "PROBLEM: null-ptr deref in keyring_search_aux may lead to denial of service"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-04-14T16:24+09:00",
+  "issued": "2017-04-14T16:24+09:00",
+  "modified": "2017-04-14T16:24+09:00"
+}

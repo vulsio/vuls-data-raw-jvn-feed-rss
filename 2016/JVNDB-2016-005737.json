@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005737.html",
+  "title": "Data Processing Card 2 を伴う Cisco ASR 5000 シリーズルータの StarOS における加入者セッションの一部を切断される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005737.html",
+  "description": "Data Processing Card 2 (DPC2) を伴う Cisco ASR 5000 シリーズルータの StarOS の Slowpath には、加入者セッションの一部 (subset) を切断され、その結果、サービス運用妨害 (DoS) 状態にされる脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug ID CSCvb12081 として公開しています。",
+  "identifier": "JVNDB-2016-005737",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6455",
+      "source": "CVE",
+      "id": "CVE-2016-6455"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6455",
+      "source": "NVD",
+      "id": "CVE-2016-6455"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cisco:asr_5000_series_software",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco ASR 5000 シリーズソフトウェア"
+    },
+    {
+      "text": "cpe:/h:cisco:asr_5500",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco ASR 5500 ルータ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-11-08T14:13+09:00",
+  "issued": "2016-11-08T14:13+09:00",
+  "modified": "2016-11-08T14:13+09:00"
+}

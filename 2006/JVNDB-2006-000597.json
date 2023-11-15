@@ -1,0 +1,45 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000597.html",
+  "title": "OpenSSH クライアントの無効なパケットの処理によるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000597.html",
+  "description": "OpenSSH クライアントにおけるセッション確立後の鍵交換の処理において、newkeys[mode] に対する NULL 値のチェックに不備が存在するため、意図的な SSH パケットを処理した場合、Null ポインタデリファレンスが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000597",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4925",
+      "source": "CVE",
+      "id": "CVE-2006-4925"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4925",
+      "source": "NVD",
+      "id": "CVE-2006-4925"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openbsd:openssh",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

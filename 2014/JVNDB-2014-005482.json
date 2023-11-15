@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005482.html",
+  "title": "複数の Puppet 製品における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005482.html",
+  "description": "複数の Puppet 製品には、Ruby で稼働する場合、検索パスに関する処理に不備があるため、権限を取得される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-17: Code (コード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/17.html",
+  "identifier": "JVNDB-2014-005482",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3248",
+      "source": "CVE",
+      "id": "CVE-2014-3248"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3248",
+      "source": "NVD",
+      "id": "CVE-2014-3248"
+    },
+    {
+      "text": "http://rowediness.com/2014/06/13/cve-2014-3248-a-little-problem-with-puppet/",
+      "source": "関連文書",
+      "id": "CVE-2014-3248 - A little problem with Puppet"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:puppetlabs:facter",
+      "version": "2.2",
+      "vendor": "Puppet",
+      "product": "Facter"
+    },
+    {
+      "text": "cpe:/a:puppetlabs:hiera",
+      "version": "2.2",
+      "vendor": "Puppet",
+      "product": "Hiera"
+    },
+    {
+      "text": "cpe:/a:puppetlabs:mcollective",
+      "version": "2.2",
+      "vendor": "Puppet",
+      "product": "Mcollective"
+    },
+    {
+      "text": "cpe:/a:puppetlabs:puppet",
+      "version": "2.2",
+      "vendor": "Puppet",
+      "product": "Puppet"
+    },
+    {
+      "text": "cpe:/a:puppetlabs:puppet_enterprise",
+      "version": "2.2",
+      "vendor": "Puppet",
+      "product": "Puppet Enterprise"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.2",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-12-25T14:58+09:00",
+  "issued": "2014-11-18T17:51+09:00",
+  "modified": "2014-12-25T14:58+09:00"
+}

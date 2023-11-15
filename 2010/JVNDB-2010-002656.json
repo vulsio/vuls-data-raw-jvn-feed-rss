@@ -1,0 +1,41 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002656.html",
+  "title": "Wonderware InBatch と I/A Series Batch の database lock manager service (lm_tcp) にバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002656.html",
+  "description": "Invensys Wonderware InBatch および Foxboro I/A Series Batch の lm_tcp サービスには、バッファオーバーフローが起きる可能性があります。\r\n\r\nWonderware InBatch および Foxboro I/A Batch の database lock manager (lm_tcp) サービスには、150 バイトのバッファに文字列をコピーする際に、バッファオーバーフローが起きる可能性があります。\r\n\r\nなお、このサービスは、9001/tcp を使用しています。",
+  "identifier": "JVNDB-2010-002656",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU647928",
+      "source": "JVN",
+      "id": "JVNVU#647928"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/647928",
+      "source": "CERT-VN",
+      "id": "VU#647928"
+    },
+    {
+      "text": "http://secunia.com/advisories/42528",
+      "source": "SECUNIA",
+      "id": "SA42528"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:invensys:foxboro_i%2Fa_series_batch",
+      "version": "2.2",
+      "vendor": "Invensys",
+      "product": "I/A Batch"
+    },
+    {
+      "text": "cpe:/a:invensys:wonderware_inbatch",
+      "version": "2.2",
+      "vendor": "Invensys",
+      "product": "Wonderware InBatch"
+    }
+  ],
+  "date": "2011-01-19T15:54+09:00",
+  "issued": "2011-01-19T15:54+09:00",
+  "modified": "2011-01-19T15:54+09:00"
+}

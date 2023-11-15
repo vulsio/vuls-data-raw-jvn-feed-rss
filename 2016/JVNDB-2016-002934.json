@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002934.html",
+  "title": "Uptime Infrastructure Monitor (旧称 up.time) の Linux 向けエージェントに認証欠如の問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002934.html",
+  "description": "Uptime Infrastructure Monitor (旧称 up.time) の Linux 向けエージェントには、ユーザがシステム内の任意のファイルを参照可能な問題が存在します。\r\n\r\n重要な機能に対する認証の欠如 (CWE-306) - CVE-2015-8268\r\n研究者は「Linux 向けの uptime.agent version 7.5 が読み出し権限を持つ任意のファイルをリモートから認証なしで取得できる」と述べています。開発者は、version 7.5 および 7.6 がこの問題の影響を受けることを確認しています。\r\n\r\nCWE-306: Missing Authentication for Critical Function\r\nhttp://cwe.mitre.org/data/definitions/306.html\r\n\r\n関連する脆弱性情報が JVNVU#99135508 で報告されています。\r\n\r\nJVNVU#99135508\r\nhttp://jvn.jp/vu/JVNVU99135508/",
+  "identifier": "JVNDB-2016-002934",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU97365498",
+      "source": "JVN",
+      "id": "JVNVU#97365498"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8268",
+      "source": "CVE",
+      "id": "CVE-2015-8268"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8268",
+      "source": "NVD",
+      "id": "CVE-2015-8268"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/204232",
+      "source": "CERT-VN",
+      "id": "VU#204232"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:idera:uptime_infrastructure_monitor",
+      "version": "2.2",
+      "vendor": "IDERA, Inc.",
+      "product": "Uptime Infrastructure Monitor"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2016-06-14T16:08+09:00",
+  "issued": "2016-05-30T14:32+09:00",
+  "modified": "2016-06-14T16:08+09:00"
+}

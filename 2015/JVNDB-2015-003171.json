@@ -1,0 +1,53 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003171.html",
+  "title": "** 削除 ** Samsung Galaxy S にプリインストールされた Swiftkey が言語パックのアップデートを正しく検証しない脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003171.html",
+  "description": "** 削除 ** 本案件は、CVE-2015-4640 および CWE-2015-4641 に分割されたことを受け削除されました。\r\nCVE-2015-4640 および CWE-2015-4641 を参照してください。\r\n\r\nSamsung Galaxy S にプリインストールされている、Swiftkey SDK を用いたキーボード機能には、言語パックのアップデートを正しく検証しない脆弱性が存在します。\r\n\r\nデータの信頼性についての不十分な検証 (CWE-345) - CVE-2015-2865\r\nSamsung Galaxy S には Swiftkey SDK を用いたキーボード機能がプリインストールされています。このキーボード機能には Samsung の署名がなされており、システム権限で動作します。このキーボード機能は言語パックのアップデートを定期的に確認しますが、通信は HTTP 経由で行われています。中間者攻撃によって通信内容を改ざんされると、当該機器への任意のデータ書き込みに悪用される可能性があります。\r\n\r\nCWE-345: Insufficient Verification of Data Authenticity\r\nhttp://cwe.mitre.org/data/definitions/345.html",
+  "identifier": "JVNDB-2015-003171",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94598171/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94598171"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2865",
+      "source": "CVE",
+      "id": "CVE-2015-2865"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/155412",
+      "source": "CERT-VN",
+      "id": "VU#155412"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:samsung:galaxy_s4",
+      "version": "2.2",
+      "vendor": "サムスン",
+      "product": "Galaxy S4"
+    },
+    {
+      "text": "cpe:/h:samsung:galaxy_s4_mini",
+      "version": "2.2",
+      "vendor": "サムスン",
+      "product": "Galaxy S4 Mini"
+    },
+    {
+      "text": "cpe:/h:samsung:galaxy_s5",
+      "version": "2.2",
+      "vendor": "サムスン",
+      "product": "Galaxy S5"
+    },
+    {
+      "text": "cpe:/h:samsung:galaxy_s6",
+      "version": "2.2",
+      "vendor": "サムスン",
+      "product": "Galaxy S6"
+    }
+  ],
+  "date": "2015-06-22T16:30+09:00",
+  "issued": "2015-06-18T16:33+09:00",
+  "modified": "2015-06-22T16:30+09:00"
+}

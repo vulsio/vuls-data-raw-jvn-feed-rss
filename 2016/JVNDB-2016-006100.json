@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006100.html",
+  "title": "BMC Patrol における root 権限へ昇格される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006100.html",
+  "description": "BMC Patrol には、setuid ビットで設定されているバイナリ \"listguests64\" を実行する際、root 権限へ昇格される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006100",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9638",
+      "source": "CVE",
+      "id": "CVE-2016-9638"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9638",
+      "source": "NVD",
+      "id": "CVE-2016-9638"
+    },
+    {
+      "text": "http://www.nes.fr/securitylab/index.php/2016/12/02/privilege-escalation-on-bmc-patrol/",
+      "source": "関連文書",
+      "id": "CVE-2016-9638 - Privilege escalation on BMC Patrol"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bmc:patrol",
+      "version": "2.2",
+      "vendor": "BMC Software",
+      "product": "PATROL"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-12-05T14:09+09:00",
+  "issued": "2016-12-05T14:09+09:00",
+  "modified": "2016-12-05T14:09+09:00"
+}

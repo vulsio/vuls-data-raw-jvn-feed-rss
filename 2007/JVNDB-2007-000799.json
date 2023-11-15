@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000799.html",
+  "title": "OpenSSH の linux_audit_record_event() 関数における監査ログに不正な文字を埋め込まれる問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000799.html",
+  "description": "OpenSSH には linux_audit_record_event() 関数に不備があり、細工された username によって、監査ログに任意の文字列を書き込まれる問題が存在します。",
+  "identifier": "JVNDB-2007-000799",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3102",
+      "source": "CVE",
+      "id": "CVE-2007-3102"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-3102",
+      "source": "NVD",
+      "id": "CVE-2007-3102"
+    },
+    {
+      "text": "http://secunia.com/advisories/27235",
+      "source": "SECUNIA",
+      "id": "SA27235"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26097",
+      "source": "BID",
+      "id": "26097"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openbsd:openssh",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-12-17T14:00+09:00",
+  "issued": "2007-11-29T14:10+09:00",
+  "modified": "2007-12-17T14:00+09:00"
+}

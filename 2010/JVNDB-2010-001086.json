@@ -1,0 +1,81 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001086.html",
+  "title": "gzip の huft_build 関数における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001086.html",
+  "description": "gzip の huft_build 関数には、不適切なサイズの hufts テーブルを生成する不備があるため、サービス運用妨害 (DoS) 状態となる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001086",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU188937/",
+      "source": "JVN",
+      "id": "JVNVU#188937"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU331391",
+      "source": "JVN",
+      "id": "JVNVU#331391"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2624",
+      "source": "CVE",
+      "id": "CVE-2009-2624"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2624",
+      "source": "NVD",
+      "id": "CVE-2009-2624"
+    },
+    {
+      "text": "http://www.cert.fi/en/reports/2010/vulnerability216853.html",
+      "source": "CERT-FI",
+      "id": "CERT-FI Advisory on GNU gzip"
+    },
+    {
+      "text": "http://secunia.com/advisories/38132",
+      "source": "SECUNIA",
+      "id": "SA38132"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/0185",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-0185"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gzip",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU gzip"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-05-14T15:32+09:00",
+  "issued": "2010-02-26T11:35+09:00",
+  "modified": "2012-05-14T15:32+09:00"
+}

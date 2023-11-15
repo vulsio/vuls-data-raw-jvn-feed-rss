@@ -1,0 +1,95 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001212.html",
+  "title": "Marvell 製 Avastar ワイヤレス SoC における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001212.html",
+  "description": "複数の Marvell 製 Avastar ワイヤレス SoC モデルには、Wi-Fi ネットワークスキャン中のメモリブロックプールのオーバーフローを含む複数の脆弱性が存在します。\r\n\r\nZeroNights 2018 Conference において Marvell Avastar SoC の脆弱性が複数紹介され、メモリブロックプールのオーバーフローについて詳細が発表されました。Wi-Fi ネットワークのスキャン中にオーバーフロー状態が発生し、特定のメモリブロックプールのデータが上書きされます。多くの機器は自動でバックグラウンドでのネットワークスキャンを実行するため、標的となる機器が無線ネットワークに接続されているか否かに関わらず、またユーザ操作を必要とすることなく本脆弱性を悪用される可能性があります。\r\n",
+  "identifier": "JVNDB-2019-001212",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU92674930/",
+      "source": "JVN",
+      "id": "JVNVU#92674930"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6496",
+      "source": "CVE",
+      "id": "CVE-2019-6496"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-6496",
+      "source": "NVD",
+      "id": "CVE-2019-6496"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/730261/",
+      "source": "CERT-VN",
+      "id": "VU#730261"
+    },
+    {
+      "text": "https://2018.zeronights.ru/wp-content/uploads/materials/19-Researching-Marvell-Avastar-Wi-Fi.pdf",
+      "source": "関連文書",
+      "id": "RESEARCHING MARVELL AVASTARWI-FI: FROM ZERO KNOWLEDGE TO OVER-THE-AIR ZERO-TOUCH RCE"
+    },
+    {
+      "text": "https://embedi.org/blog/remotely-compromise-devices-by-using-bugs-in-marvell-avastar-wi-fi-from-zero-knowledge-to-zero-click-rce/",
+      "source": "関連文書",
+      "id": "Remotely compromise devices by using bugs in Marvell Avastar Wi-Fi: from zero knowledge to zero-click RCE"
+    },
+    {
+      "text": "https://www.youtube.com/watch?v=Him_Lf5ZJ38&feature=youtu.be",
+      "source": "関連文書",
+      "id": "Selyanin D. - Researching Marvell Avastar Wi Fi from zero knowledge to over the air zero touch RCE"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:marvell:avastar_88w8787",
+      "version": "2.2",
+      "vendor": "Marvell",
+      "product": "Avastar 88W8787"
+    },
+    {
+      "text": "cpe:/h:marvell:avastar_88w8797",
+      "version": "2.2",
+      "vendor": "Marvell",
+      "product": "Avastar 88W8797"
+    },
+    {
+      "text": "cpe:/h:marvell:avastar_88w8801",
+      "version": "2.2",
+      "vendor": "Marvell",
+      "product": "Avastar 88W8801"
+    },
+    {
+      "text": "cpe:/h:marvell:avastar_88w8897",
+      "version": "2.2",
+      "vendor": "Marvell",
+      "product": "Avastar 88W8897"
+    },
+    {
+      "text": "cpe:/h:marvell:avastar_88w8997",
+      "version": "2.2",
+      "vendor": "Marvell",
+      "product": "Avastar 88W8997"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-09-27T09:49+09:00",
+  "issued": "2019-02-07T14:35+09:00",
+  "modified": "2019-09-27T09:49+09:00"
+}

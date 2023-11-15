@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004846.html",
+  "title": "Juniper Junos におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004846.html",
+  "description": "Juniper Junos には、4バイト AS 番号をサポートしているが、BGP ピアが 4バイト AS 番号をサポートしていない場合、サービス運用妨害 (メモリ破損、および RDP ルーティング処理のクラッシュおよび再起動) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-004846",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3818",
+      "source": "CVE",
+      "id": "CVE-2014-3818"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3818",
+      "source": "NVD",
+      "id": "CVE-2014-3818"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:juniper:junos",
+      "version": "2.2",
+      "vendor": "ジュニパーネットワークス",
+      "product": "Junos OS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2015-12-02T15:45+09:00",
+  "issued": "2014-10-20T18:20+09:00",
+  "modified": "2015-12-02T15:45+09:00"
+}

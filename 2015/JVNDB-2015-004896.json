@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004896.html",
+  "title": "Symantec Ghost Solutions Suite および Symantec Deployment Solution の Ghost Explorer ユーティリティの ghostexp.exe における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004896.html",
+  "description": "Symantec Ghost Solutions Suite (GSS) および Symantec Deployment Solution (DS) の Ghost Explorer ユーティリティの ghostexp.exe は、配列要素のアクセス前に不適切な符号拡張オペレーションを行うため、任意のコードを実行される、サービス運用妨害 (アプリケーションクラッシュ) 状態にされる、または重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-004896",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5689",
+      "source": "CVE",
+      "id": "CVE-2015-5689"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5689",
+      "source": "NVD",
+      "id": "CVE-2015-5689"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:symantec:deployment_solution",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Symantec Deployment Solution"
+    },
+    {
+      "text": "cpe:/a:symantec:ghost_solutions_suite",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Symantec Ghost Solution Suite"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-09-29T15:05+09:00",
+  "issued": "2015-09-29T15:05+09:00",
+  "modified": "2015-09-29T15:05+09:00"
+}

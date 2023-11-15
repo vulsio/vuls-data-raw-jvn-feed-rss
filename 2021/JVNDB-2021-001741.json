@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001741.html",
+  "title": "ISC DHCP におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001741.html",
+  "description": "ISC (Internet Systems Consortium) が提供する ISC DHCP には、バッファオーバーフローの脆弱性が存在します。\r\n\r\nISC DHCP には、ネットワークパケット内にカプセル化されたオプション情報の処理とディスクに格納された情報の処理の間の相違に起因する、バッファオーバーフローの脆弱性が存在します。 (CVE-2021-25217)",
+  "identifier": "JVNDB-2021-001741",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU95111565",
+      "source": "JVN",
+      "id": "JVNVU#95111565"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU99475301/",
+      "source": "JVN",
+      "id": "JVNVU#99475301"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-25217",
+      "source": "CVE",
+      "id": "CVE-2021-25217"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-258-05",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-258-05"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:dhcp",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "ISC DHCP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.4",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2022-09-20T15:10+09:00",
+  "issued": "2021-06-04T14:53+09:00",
+  "modified": "2022-09-20T15:10+09:00"
+}

@@ -1,0 +1,81 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002609.html",
+  "title": "PHP の IMAP 拡張 (ext/imap/php_imap.c) における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002609.html",
+  "description": "PHP の IMAP 拡張 (ext/imap/php_imap.c) の imap_do_open 関数は、サービス運用妨害 (DoS) 状態となる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002609",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU636925",
+      "source": "JVN",
+      "id": "JVNVU#636925"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4150",
+      "source": "CVE",
+      "id": "CVE-2010-4150"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4150",
+      "source": "NVD",
+      "id": "CVE-2010-4150"
+    },
+    {
+      "text": "http://secunia.com/advisories/41724",
+      "source": "SECUNIA",
+      "id": "SA41724"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/44980",
+      "source": "BID",
+      "id": "44980"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/63390",
+      "source": "XF",
+      "id": "63390"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/3168",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-3168"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-04-04T14:31+09:00",
+  "issued": "2011-01-12T15:34+09:00",
+  "modified": "2011-04-04T14:31+09:00"
+}

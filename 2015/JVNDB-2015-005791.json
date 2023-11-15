@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005791.html",
+  "title": "MIT Kerberos 5 の lib/gssapi/krb5/iakerb.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005791.html",
+  "description": "MIT Kerberos 5 (別名 krb5) の lib/gssapi/krb5/iakerb.c は、不適切なコンテキストのハンドルに依存するため、サービス運用妨害 (不正なポインタの読み込みおよびプロセスクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-18: Source Code (ソースコード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/18.html",
+  "identifier": "JVNDB-2015-005791",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2696",
+      "source": "CVE",
+      "id": "CVE-2015-2696"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2696",
+      "source": "NVD",
+      "id": "CVE-2015-2696"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mit:kerberos",
+      "version": "2.2",
+      "vendor": "MIT Kerberos",
+      "product": "Kerberos"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2015-11-10T16:46+09:00",
+  "issued": "2015-11-10T16:46+09:00",
+  "modified": "2015-11-10T16:46+09:00"
+}

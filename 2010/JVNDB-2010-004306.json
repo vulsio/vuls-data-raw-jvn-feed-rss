@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004306.html",
+  "title": "SilverStripe におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004306.html",
+  "description": "SilverStripe は、下記のためにトークンが生成する際、脆弱なエントロピーを使用するため、アクセス制限を回避される脆弱性が存在します。\r\n\r\n(1) CSRF 保護メカニズム\r\n(2) 自動ログイン\r\n(3) \"forgot password (パスワードを忘れた場合の)\" 機能\r\n(4) パスワードソルト",
+  "identifier": "JVNDB-2010-004306",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5079",
+      "source": "CVE",
+      "id": "CVE-2010-5079"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-5079",
+      "source": "NVD",
+      "id": "CVE-2010-5079"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:silverstripe:silverstripe",
+      "version": "2.2",
+      "vendor": "SilverStripe",
+      "product": "SilverStripe"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-09-20T10:45+09:00",
+  "issued": "2012-09-20T10:45+09:00",
+  "modified": "2012-09-20T10:45+09:00"
+}

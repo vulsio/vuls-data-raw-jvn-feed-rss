@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-015462.html",
+  "title": "isync における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-015462.html",
+  "description": "isync には、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-015462",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-44143",
+      "source": "CVE",
+      "id": "CVE-2021-44143"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-44143",
+      "source": "NVD",
+      "id": "CVE-2021-44143"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2021/12/03/2",
+      "source": "関連文書",
+      "id": "CVE-2021-44143: heap overflow in isync/mbsync"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202208-15",
+      "source": "関連文書",
+      "id": "isync: Multiple Vulnerabilities - GLSA 202208-15"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isync_project:isync",
+      "version": "2.2",
+      "vendor": "Isync project",
+      "product": "Isync"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-11-21T18:18+09:00",
+  "issued": "2022-11-21T18:18+09:00",
+  "modified": "2022-11-21T18:18+09:00"
+}

@@ -1,0 +1,97 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001005.html",
+  "title": "複数の Microsoft Windows 製品の Windows Adobe Type Manager フォントドライバにおける情報を公開される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001005.html",
+  "description": "複数の Microsoft Windows 製品の Windows Adobe Type Manager フォントドライバ (ATMFD.dll) には、メモリ内のオブジェクト処理に不備があるため、情報を公開される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を「ATMFD.dll の情報漏えいの脆弱性」として公開しています。",
+  "identifier": "JVNDB-2018-001005",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0754",
+      "source": "CVE",
+      "id": "CVE-2018-0754"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-0754",
+      "source": "NVD",
+      "id": "CVE-2018-0754"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20180110-ms.html",
+      "source": "IPA CFA",
+      "id": "Microsoft 製品の脆弱性対策について(2018年01月)"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2018/at180002.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2018-0002"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_10",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 10"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_7",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 7"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_8.1",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 8.1"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_1709",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server バージョン 1709"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2012",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2012"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2016",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2016"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2018-01-19T15:21+09:00",
+  "issued": "2018-01-19T15:21+09:00",
+  "modified": "2018-01-19T15:21+09:00"
+}

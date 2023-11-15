@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002096.html",
+  "title": "Drupal における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002096.html",
+  "description": "Drupal の Project Issue Tracking モジュールには、複数の脆弱性が存在します。\r\nコア Upload モジュールが有効な場合、添付されたファイルの拡張子を制限しないため、リモートの攻撃者によりファイルをアップロードされ、任意のコードを実行される可能性があります。また、付属のファイルアップロード機能が有効な場合、アップロードが許可される拡張子に .html が含まれるため、任意の Web スクリプトまたは HTML を挿入される可能性があります。",
+  "identifier": "JVNDB-2008-002096",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0577",
+      "source": "CVE",
+      "id": "CVE-2008-0577"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-0577",
+      "source": "NVD",
+      "id": "CVE-2008-0577"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:drupal:project_issue_tracking_module",
+      "version": "2.2",
+      "vendor": "Drupal",
+      "product": "Project issue tracking"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2008-12-24T12:10+09:00",
+  "issued": "2008-12-24T12:10+09:00",
+  "modified": "2008-12-24T12:10+09:00"
+}

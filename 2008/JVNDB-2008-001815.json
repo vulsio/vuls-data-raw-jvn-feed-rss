@@ -1,0 +1,98 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001815.html",
+  "title": "PCRE ライブラリにおける正規表現の処理に関するバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001815.html",
+  "description": "Perl-Compatible Regular Expression (PCRE) ライブラリの pcre_compile.c には、正規表現の処理に不備があるため、ヒープベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001815",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2371",
+      "source": "CVE",
+      "id": "CVE-2008-2371"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2371",
+      "source": "NVD",
+      "id": "CVE-2008-2371"
+    },
+    {
+      "text": "http://secunia.com/advisories/32222",
+      "source": "SECUNIA",
+      "id": "SA32222"
+    },
+    {
+      "text": "http://secunia.com/advisories/30916",
+      "source": "SECUNIA",
+      "id": "SA30916"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/30087",
+      "source": "BID",
+      "id": "30087"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/32688",
+      "source": "BID",
+      "id": "32688"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/2780",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-2780"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2008/2005",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2008-2005"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pcre:pcre",
+      "version": "2.2",
+      "vendor": "pcre.org",
+      "product": "PCRE"
+    },
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-11-16T11:35+09:00",
+  "issued": "2008-11-07T12:10+09:00",
+  "modified": "2009-11-16T11:35+09:00"
+}

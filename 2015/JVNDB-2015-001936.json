@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001936.html",
+  "title": "tcpdump の Ethernet プリンタの print-isoclns.c 内の osi_print_cksum 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001936.html",
+  "description": "tcpdump の Ethernet プリンタの print-isoclns.c 内の osi_print_cksum 関数には、サービス運用妨害 (out-of-bounds read およびクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-001936",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2154",
+      "source": "CVE",
+      "id": "CVE-2015-2154"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2154",
+      "source": "NVD",
+      "id": "CVE-2015-2154"
+    },
+    {
+      "text": "http://packetstormsecurity.com/files/130730/tcpdump-Denial-Of-Service-Code-Execution.html",
+      "source": "関連文書",
+      "id": "tcpdump Denial Of Service / Code Execution"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2015-0114.html",
+      "source": "関連文書",
+      "id": "MGASA-2015-0114"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:tcpdump:tcpdump",
+      "version": "2.2",
+      "vendor": "The Tcpdump Group",
+      "product": "tcpdump"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-04-08T17:55+09:00",
+  "issued": "2015-03-27T13:55+09:00",
+  "modified": "2015-04-08T17:55+09:00"
+}

@@ -1,0 +1,97 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001082.html",
+  "title": "Autonomy KeyView における複数のバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001082.html",
+  "description": "IBM Lotus Notes で使用されている Autonomy (Verity) の KeyView SDK には、l123sr.dll において、Worksheet ファイル (WKS) フォーマットの Lotus 1-2-3 (.123) ファイル中の Length フィールドおよび Value フィールドのチェック処理に不備があり、複数のバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2007-001082",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6593",
+      "source": "CVE",
+      "id": "CVE-2007-6593"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-6593",
+      "source": "NVD",
+      "id": "CVE-2007-6593"
+    },
+    {
+      "text": "http://secunia.com/advisories/27835",
+      "source": "SECUNIA",
+      "id": "SA27835"
+    },
+    {
+      "text": "http://secunia.com/advisories/27836",
+      "source": "SECUNIA",
+      "id": "SA27836"
+    },
+    {
+      "text": "http://secunia.com/advisories/27849",
+      "source": "SECUNIA",
+      "id": "SA27849"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/38645",
+      "source": "XF",
+      "id": "38645"
+    },
+    {
+      "text": "http://securitytracker.com/id?1019002",
+      "source": "SECTRACK",
+      "id": "1019002"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/4012",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-4012"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/4020",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-4020"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:autonomy:keyview_export_sdk",
+      "version": "2.2",
+      "vendor": "Autonomy",
+      "product": "KeyView Export SDK"
+    },
+    {
+      "text": "cpe:/a:autonomy:keyview_filter_sdk",
+      "version": "2.2",
+      "vendor": "Autonomy",
+      "product": "KeyView Filter SDK"
+    },
+    {
+      "text": "cpe:/a:autonomy:keyview_viewer_sdk",
+      "version": "2.2",
+      "vendor": "Autonomy",
+      "product": "KeyView Viewer SDK"
+    },
+    {
+      "text": "cpe:/a:ibm:notes",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Notes"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:N"
+    }
+  ],
+  "date": "2008-01-18T15:08+09:00",
+  "issued": "2008-01-18T15:08+09:00",
+  "modified": "2008-01-18T15:08+09:00"
+}

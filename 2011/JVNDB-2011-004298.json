@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004298.html",
+  "title": "cgit の convert_query_hexchar 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004298.html",
+  "description": "cgit の cgit.cgi の html.c の convert_query_hexchar 関数には、一つずれエラーが発生するため、サービス運用妨害 (無限ループ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-004298",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1027",
+      "source": "CVE",
+      "id": "CVE-2011-1027"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1027",
+      "source": "NVD",
+      "id": "CVE-2011-1027"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:lars_hjemli:cgit",
+      "version": "2.2",
+      "vendor": "Lars Hjemli",
+      "product": "cgit"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-03-27T18:43+09:00",
+  "issued": "2012-03-27T18:43+09:00",
+  "modified": "2012-03-27T18:43+09:00"
+}

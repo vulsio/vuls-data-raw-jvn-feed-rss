@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006412.html",
+  "title": "GLib におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006412.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nGLib は、g_str_hash 関数を使用している場合、予測可能なハッシュ衝突を制限せずにハッシュ値を計算するため、サービス運用妨害 (CPU 資源の消費) 状態にされる脆弱性が存在します。\r\n\r\nなお、ベンダは、本問題は、g_hash_table_new 関数および g_hash_table_new_full 関数の呼び出し元は、アプリケーションに適した任意のハッシュ関数を指定できる、との理由で、g_str_hash 関数の存在はライブラリの脆弱性ではないとして、異議を唱える可能性があります。",
+  "identifier": "JVNDB-2012-006412",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0039",
+      "source": "CVE",
+      "id": "CVE-2012-0039"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-0039",
+      "source": "NVD",
+      "id": "CVE-2012-0039"
+    },
+    {
+      "text": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=655044",
+      "source": "関連文書",
+      "id": "655044"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnome:glib",
+      "version": "2.2",
+      "vendor": "GNOME Project",
+      "product": "GLib"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2019-07-29T12:41+09:00",
+  "issued": "2019-07-29T12:41+09:00",
+  "modified": "2019-07-29T12:41+09:00"
+}

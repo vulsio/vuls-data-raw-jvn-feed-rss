@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-021492.html",
+  "title": "Google の Google TensorFlow における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-021492.html",
+  "description": "Google の Google TensorFlow には、境界外読み取りに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-021492",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-41883",
+      "source": "CVE",
+      "id": "CVE-2022-41883"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-41883",
+      "source": "NVD",
+      "id": "CVE-2022-41883"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/dynamic_stitch_op.cc",
+      "source": "関連文書",
+      "id": "github.com (dynamic_stitch_op.cc)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/ops/data_flow_ops.cc",
+      "source": "関連文書",
+      "id": "github.com (data_flow_ops.cc)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/commit/f5381e0e10b5a61344109c1b7c174c68110f7629",
+      "source": "関連文書",
+      "id": "github.com (f5381e0e10b5a61344109c1b7c174c68110f7629)"
+    },
+    {
+      "text": "https://github.com/tensorflow/tensorflow/security/advisories/GHSA-w58w-79xv-6vcj",
+      "source": "関連文書",
+      "id": "github.com (GHSA-w58w-79xv-6vcj)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:tensorflow",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google TensorFlow"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-11-10T17:17+09:00",
+  "issued": "2023-11-10T17:17+09:00",
+  "modified": "2023-11-10T17:17+09:00"
+}

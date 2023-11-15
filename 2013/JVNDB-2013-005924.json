@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005924.html",
+  "title": "libvirt におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005924.html",
+  "description": "libvirt の下記の関数には、競合状態により、サービス運用妨害 (libvirtd クラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n(1) virDomainBlockStats 関数\r\n(2) virDomainGetBlockInf 関数\r\n(3) qemuDomainBlockJobImpl 関数\r\n(4) virDomainGetBlockIoTune 関数",
+  "identifier": "JVNDB-2013-005924",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6458",
+      "source": "CVE",
+      "id": "CVE-2013-6458"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6458",
+      "source": "NVD",
+      "id": "CVE-2013-6458"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:libvirt",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "libvirt"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-08-04T17:57+09:00",
+  "issued": "2014-01-28T10:57+09:00",
+  "modified": "2015-08-04T17:57+09:00"
+}

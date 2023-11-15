@@ -1,0 +1,164 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-006468.html",
+  "title": "OpenClinic GA に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-006468.html",
+  "description": "財務管理、臨床、薬局などのデータ管理を行える病院向け情報管理システムである OpenClinic GA には複数の脆弱性が存在します。\r\n\r\nOpenClinic GA には次の脆弱性が存在します。\r\n\r\n* 別のパスやチャンネルを介した認証回避 (CWE-288) - CVE-2020-14485\r\n* 過度な認証試行の不適切な制限 (CWE-307) - CVE-2020-14484\r\n* 不適切な認証 (CWE-287) - CVE-2020-14494\r\n* 認証の欠如 (CWE-862) - CVE-2020-14491\r\n* 不要な特権による実行 (CWE-250) - CVE-2020-14493\r\n* 危険なタイプのファイルの無制限アップロード (CWE-434) - CVE-2020-14488\r\n* パス・トラバーサル(CWE-22) - CVE-2020-14490\r\n* 不適切な認可処理 (CWE-285) - CVE-2020-14486\r\n* クロスサイトスクリプティング(CWE-79) - CVE-2020-14492\r\n* メンテナンスされていないサードパーティ製品の使用 (CWE-1104) - CVE-2020-14495、CVE-2016-1181、CVE-2016-1182 に起因\r\n* 認証情報の不十分な保護 (CWE-522) - CVE-2020-14489\r\n* 隠れた機能 (CWE-912) - CVE-2020-14487\r\n※ただし、本脆弱性は Version 5.89.05b には影響しません",
+  "identifier": "JVNDB-2020-006468",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96290700/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96290700"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14485",
+      "source": "CVE",
+      "id": "CVE-2020-14485"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14484",
+      "source": "CVE",
+      "id": "CVE-2020-14484"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14494",
+      "source": "CVE",
+      "id": "CVE-2020-14494"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14491",
+      "source": "CVE",
+      "id": "CVE-2020-14491"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14493",
+      "source": "CVE",
+      "id": "CVE-2020-14493"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14488",
+      "source": "CVE",
+      "id": "CVE-2020-14488"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14490",
+      "source": "CVE",
+      "id": "CVE-2020-14490"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14486",
+      "source": "CVE",
+      "id": "CVE-2020-14486"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14492",
+      "source": "CVE",
+      "id": "CVE-2020-14492"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14489",
+      "source": "CVE",
+      "id": "CVE-2020-14489"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14487",
+      "source": "CVE",
+      "id": "CVE-2020-14487"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/Recommended-Practices",
+      "source": "ICS-CERT",
+      "id": "CISA Recommended Practices"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsma-20-184-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSMA-20-184-01"
+    },
+    {
+      "text": "https://www.fda.gov/medical-devices/digital-health/cybersecurity",
+      "source": "関連文書",
+      "id": "FDA Cybersecurity"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/1104.html",
+      "id": "CWE-1104",
+      "title": "メンテナンスされていないサードパーティ製コンポーネントの使用(CWE-1104)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/250.html",
+      "id": "CWE-250",
+      "title": "不要な特権による実行(CWE-250)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/285.html",
+      "id": "CWE-285",
+      "title": "不適切な認可(CWE-285)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/288.html",
+      "id": "CWE-288",
+      "title": "代替パスまたはチャネルを使用した認証回避(CWE-288)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/307.html",
+      "id": "CWE-307",
+      "title": "過度な認証試行の不適切な制限(CWE-307)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/434.html",
+      "id": "CWE-434",
+      "title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/522.html",
+      "id": "CWE-522",
+      "title": "認証情報の不十分な保護(CWE-522)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/862.html",
+      "id": "CWE-862",
+      "title": "認証の欠如(CWE-862)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/912.html",
+      "id": "CWE-912",
+      "title": "非公開の機能(CWE-912)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openclinic_ga_project:openclinic_ga",
+      "version": "2.2",
+      "vendor": "OpenClinic GA project",
+      "product": "OpenClinic GA"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.4",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
+    }
+  ],
+  "date": "2020-09-01T16:30+09:00",
+  "issued": "2020-07-09T14:36+09:00",
+  "modified": "2020-09-01T16:30+09:00"
+}

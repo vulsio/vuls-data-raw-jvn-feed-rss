@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005169.html",
+  "title": "SAP Netweaver の SAP_BASIS および SAP_ABA コンポーネントにおける Security Audit ログに書かれる IP アドレスを偽装される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005169.html",
+  "description": "SAP Netweaver の (1) SAP_BASIS および (2) SAP_ABA コンポーネントには、Security Audit ログに書かれる IP アドレスを偽装される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を SAP Security Note 2190621 として公開しています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-284: Improper Access Control (不適切なアクセス制御) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/284.html",
+  "identifier": "JVNDB-2016-005169",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4551",
+      "source": "CVE",
+      "id": "CVE-2016-4551"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4551",
+      "source": "NVD",
+      "id": "CVE-2016-4551"
+    },
+    {
+      "text": "https://www.onapsis.com/blog/analyzing-sap-security-notes-december-2015",
+      "source": "関連文書",
+      "id": "Analyzing SAP Security Notes December 2015 (2190621)"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2016/Oct/3",
+      "source": "関連文書",
+      "id": "Onapsis Security Advisory ONAPSIS-2016-036: SAP Security Audit Log invalid address logging"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sap:netweaver",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "SAP NetWeaver"
+    },
+    {
+      "text": "cpe:/a:sap:sap_aba",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "SAP_ABA"
+    },
+    {
+      "text": "cpe:/a:sap:sap_basis",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "SAP_BASIS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2016-10-13T11:34+09:00",
+  "issued": "2016-10-13T11:34+09:00",
+  "modified": "2016-10-13T11:34+09:00"
+}

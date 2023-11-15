@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001401.html",
+  "title": "Cisco TelePresence MCU ソフトウェアのカーネルのプロプライエタリデバイスドライバにおける任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001401.html",
+  "description": "Cisco TelePresence Multipoint Control Unit (MCU) ソフトウェアのカーネルのプロプライエタリデバイスドライバは、フラグメント化された IPv4 または IPv6 パケットの再アッセンブルの際、不正なサイズ検証に関する処理に不備があるため、任意のコードを実行される、またはサービス運用妨害 (DoS) 状態にされる脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug ID CSCuu67675 として公開しています。",
+  "identifier": "JVNDB-2017-001401",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3792",
+      "source": "CVE",
+      "id": "CVE-2017-3792"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-3792",
+      "source": "NVD",
+      "id": "CVE-2017-3792"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cisco:telepresence_mcu_software",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco TelePresence MCU ソフトウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-02-10T15:18+09:00",
+  "issued": "2017-02-10T15:18+09:00",
+  "modified": "2017-02-10T15:18+09:00"
+}

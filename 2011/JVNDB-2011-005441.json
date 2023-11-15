@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005441.html",
+  "title": "WordPress のインストールコンポーネントの wp-admin/setup-config.php における総当たり攻撃を実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005441.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nWordPress のインストールコンポーネントの wp-admin/setup-config.php は、MySQL 認証情報が有効かどうかに応じて、dbname パラメータが不足しているリクエストに対して異なるエラーメッセージを生成するため、総当たり (brute-force) 攻撃を実行される脆弱性が存在します。\r\n\r\nなお、ベンダはこの問題の深刻性に異議を唱えています。また、インストール中に故意に不確かなエラーメッセージを表示することがユーザビリティの観点から妥当かどうかについては不明であるとしています。",
+  "identifier": "JVNDB-2011-005441",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4898",
+      "source": "CVE",
+      "id": "CVE-2011-4898"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4898",
+      "source": "NVD",
+      "id": "CVE-2011-4898"
+    },
+    {
+      "text": "https://www.exploit-db.com/exploits/18417",
+      "source": "関連文書",
+      "id": "WordPress 3.3.1 - Multiple Vulnerabilities"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wordpress:wordpress",
+      "version": "2.2",
+      "vendor": "WordPress.org",
+      "product": "WordPress"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2019-07-29T12:41+09:00",
+  "issued": "2019-07-29T12:41+09:00",
+  "modified": "2019-07-29T12:41+09:00"
+}

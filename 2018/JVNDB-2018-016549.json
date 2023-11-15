@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-016549.html",
+  "title": "Foxit Reader および PhantomPDF における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-016549.html",
+  "description": "Foxit Reader および PhantomPDF には、境界外書き込みに関する脆弱性、境界外読み取りに関する脆弱性、および競合状態に関する脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2018-20310 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2018-016549",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20312",
+      "source": "CVE",
+      "id": "CVE-2018-20312"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-20312",
+      "source": "NVD",
+      "id": "CVE-2018-20312"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:foxitsoftware:phantompdf",
+      "version": "2.2",
+      "vendor": "Foxit Software Inc",
+      "product": "Foxit PhantomPDF"
+    },
+    {
+      "text": "cpe:/a:foxitsoftware:reader",
+      "version": "2.2",
+      "vendor": "Foxit Software Inc",
+      "product": "Foxit Reader"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-09-14T13:38+09:00",
+  "issued": "2021-09-14T13:38+09:00",
+  "modified": "2021-09-14T13:38+09:00"
+}

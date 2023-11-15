@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-003645.html",
+  "title": "Cisco VPN Client などの製品で使用される dne2000.sys における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-003645.html",
+  "description": "(1) Cisco VPN Client、(2) Blue Coat WinProxy、および (3) SafeNet SoftRemote および HighAssurance Remote で使用される Citrix Deterministic Network Enhancer (DNE) の dne2000.sys には、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2008-003645",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5121",
+      "source": "CVE",
+      "id": "CVE-2008-5121"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-5121",
+      "source": "NVD",
+      "id": "CVE-2008-5121"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/858993",
+      "source": "CERT-VN",
+      "id": "VU#858993"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bluecoat:winproxy",
+      "version": "2.2",
+      "vendor": "ブルーコートシステムズ",
+      "product": "winproxy"
+    },
+    {
+      "text": "cpe:/a:cisco:vpn_client",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco VPN Client"
+    },
+    {
+      "text": "cpe:/a:citrix:deterministic_network_enhancer",
+      "version": "2.2",
+      "vendor": "シトリックス・システムズ",
+      "product": "Deterministic Network Enhancer"
+    },
+    {
+      "text": "cpe:/a:safenet-inc:highassurance_remote",
+      "version": "2.2",
+      "vendor": "SafeNet, Inc",
+      "product": "highassurance remote"
+    },
+    {
+      "text": "cpe:/a:safenet-inc:softremote_vpn_client",
+      "version": "2.2",
+      "vendor": "SafeNet, Inc",
+      "product": "softremote vpn client"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-06-26T16:03+09:00",
+  "issued": "2012-06-26T16:03+09:00",
+  "modified": "2012-06-26T16:03+09:00"
+}

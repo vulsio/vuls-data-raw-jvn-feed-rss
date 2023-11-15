@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000017.html",
+  "title": "FTP クライアントのファイル処理における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000017.html",
+  "description": "殆どの UNIX 由来のオペレーティングシステムに含まれる FTP クライアントでは、パイプ文字 '|' で始まるファイル名の取り扱いに不備が存在し、パイプ文字を除くファイル名をシェルコマンドとして解釈して実行してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000017",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-0097",
+      "source": "CVE",
+      "id": "CVE-1999-0097"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-1999-0097",
+      "source": "NVD",
+      "id": "CVE-1999-0097"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/258721",
+      "source": "CERT-VN",
+      "id": "VU#258721"
+    },
+    {
+      "text": "http://secunia.com/advisories/11843/",
+      "source": "SECUNIA",
+      "id": "SA11843"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/396",
+      "source": "BID",
+      "id": "396"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

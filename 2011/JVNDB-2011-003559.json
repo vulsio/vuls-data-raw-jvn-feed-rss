@@ -1,0 +1,79 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003559.html",
+  "title": "Microsoft .NET Framework における任意のユーザアカウントへアクセスされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003559.html",
+  "description": "Microsoft .NET Framework の ASP.NET のサブシステムにおけるフォーム認証機能は、sliding expiry が有効な時に、キャッシュされたコンテンツを適切に処理しないため、任意のユーザアカウントへのアクセス権を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2011-003559",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3417",
+      "source": "CVE",
+      "id": "CVE-2011-3417"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3417",
+      "source": "NVD",
+      "id": "CVE-2011-3417"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/#topics",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS11-100)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:.net_framework",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft .NET Framework"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_7",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 7"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_vista",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Vista"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-01-04T16:34+09:00",
+  "issued": "2012-01-04T16:34+09:00",
+  "modified": "2012-01-04T16:34+09:00"
+}

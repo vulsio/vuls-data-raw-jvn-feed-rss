@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000535.html",
+  "title": "SELinux の sock_dgram_sendmsg() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000535.html",
+  "description": "Linux Kernel に含まれる SELinux には、sock_dgram_sendmsg() 関数において \"SOCK_SEQPACKET\" UNIX ドメインソケットの取り扱いに不備が存在するため、競合状態が発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000535",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1069",
+      "source": "CVE",
+      "id": "CVE-2004-1069"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1069",
+      "source": "NVD",
+      "id": "CVE-2004-1069"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11939",
+      "source": "BID",
+      "id": "11939"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

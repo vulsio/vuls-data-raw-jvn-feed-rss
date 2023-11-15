@@ -1,0 +1,83 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002205.html",
+  "title": "Wireshark の erf ファイル処理に脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002205.html",
+  "description": "Wireshark には、細工された erf ファイルの処理に脆弱性が存在します。\r\n\r\nWireshark はプロトコルを分析するためのソフトウェアです。Wireshark には、細工された erf ファイル処理に起因する脆弱性が存在します。\r\n\r\nなお、同梱されている Tshark も本脆弱性の影響を受けます。",
+  "identifier": "JVNDB-2009-002205",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU676492/",
+      "source": "JVN",
+      "id": "JVNVU#676492"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3829",
+      "source": "CVE",
+      "id": "CVE-2009-3829"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3829",
+      "source": "NVD",
+      "id": "CVE-2009-3829"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/676492",
+      "source": "CERT-VN",
+      "id": "VU#676492"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/36591",
+      "source": "BID",
+      "id": "36591"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wireshark:wireshark",
+      "version": "2.2",
+      "vendor": "Wireshark",
+      "product": "Wireshark"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2010-05-19T17:42+09:00",
+  "issued": "2009-11-11T13:42+09:00",
+  "modified": "2010-05-19T17:42+09:00"
+}

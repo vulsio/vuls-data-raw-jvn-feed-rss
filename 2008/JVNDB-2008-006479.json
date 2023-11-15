@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-006479.html",
+  "title": "xine-lib におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-006479.html",
+  "description": "xine-lib は、以下の状況で malloc 違反をチェックしないため、サービス運用妨害 (クラッシュ) 状態となる、または任意のコードを実行される脆弱性が存在します。\r\n(1) demux_mng.c 内の mymng_process_header 関数\r\n(2) demux_mod.c 内の open_mod_file 関数\r\n(3) demux_real.c 内の real_parse_audio_specific_data 関数内の frame_buffer 割り当て",
+  "identifier": "JVNDB-2008-006479",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5233",
+      "source": "CVE",
+      "id": "CVE-2008-5233"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-5233",
+      "source": "NVD",
+      "id": "CVE-2008-5233"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:xine:xine-lib",
+      "version": "2.2",
+      "vendor": "Xine",
+      "product": "xine-lib"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-12-20T18:52+09:00",
+  "issued": "2012-12-20T18:52+09:00",
+  "modified": "2012-12-20T18:52+09:00"
+}

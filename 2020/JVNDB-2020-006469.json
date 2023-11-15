@@ -1,0 +1,111 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-006469.html",
+  "title": "三菱電機製 GOT2000 シリーズの TCP/IP 機能における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-006469.html",
+  "description": "三菱電機株式会社が提供する GOT2000 シリーズの GT27、GT25、GT23 のファームウェアに組込まれている TCP/IP 機能には、次の複数の脆弱性が存在します。\r\n\r\n* バッファエラー (CWE-119) - CVE-2020-5595\r\n* セッションの固定化 (CWE-384) - CVE-2020-5596\r\n* NULL ポインタデリファレンス (CWE-476) - CVE-2020-5597\r\n* 不適切なアクセス制御 (CWE-284) - CVE-2020-5598\r\n* 引数の挿入または変更 (CWE-88) - CVE-2020-5599\r\n* リソース管理の問題 (CWE-399) - CVE-2020-5600\r\n",
+  "identifier": "JVNDB-2020-006469",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU95413676/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95413676"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5595",
+      "source": "CVE",
+      "id": "CVE-2020-5595"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5596",
+      "source": "CVE",
+      "id": "CVE-2020-5596"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5597",
+      "source": "CVE",
+      "id": "CVE-2020-5597"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5598",
+      "source": "CVE",
+      "id": "CVE-2020-5598"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5599",
+      "source": "CVE",
+      "id": "CVE-2020-5599"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5600",
+      "source": "CVE",
+      "id": "CVE-2020-5600"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-20-189-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-189-02"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/284.html",
+      "id": "CWE-284",
+      "title": "不適切なアクセス制御(CWE-284)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/384.html",
+      "id": "CWE-384",
+      "title": "セッションの固定化(CWE-384)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    },
+    {
+      "text": "http://cwe.mitre.org/data/definitions/476.html",
+      "id": "CWE-476",
+      "title": "NULL ポインタデリファレンス(CWE-476)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/88.html",
+      "id": "CWE-88",
+      "title": "引数の挿入または変更(CWE-88)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:mitsubishielectric:gt23_model",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GT23 モデル"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:gt25_model",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GT25 モデル"
+    },
+    {
+      "text": "cpe:/o:mitsubishielectric:gt27_model",
+      "version": "2.2",
+      "vendor": "三菱電機",
+      "product": "GT27 モデル"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-07-09T14:43+09:00",
+  "issued": "2020-07-09T14:43+09:00",
+  "modified": "2020-07-09T14:43+09:00"
+}

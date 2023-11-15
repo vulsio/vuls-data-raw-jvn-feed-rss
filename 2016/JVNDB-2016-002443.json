@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002443.html",
+  "title": "ImageMagick に入力値検証不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002443.html",
+  "description": "ImageMagick は、delegate の仕組みを使って入力データの処理を行う前の検証が適切に実行されていないため、結果として任意のコードを実行される可能性があります。この問題は \"ImageTragick\" としても知られています。\r\n\r\n不適切な入力検査 (CWE-20) - CVE-2016-3714\r\n\r\nCWE-20: Improper Input Validation\r\nhttp://cwe.mitre.org/data/definitions/20.html\r\n\r\n研究者は、メーリングリストに次のように投稿しています:\r\n\r\n\r\n　Insufficient filtering for filename passed to delegate's command allows remote code execution during conversion of several file formats.\r\n\r\n　ImageMagick allows to process files with external libraries. This feature is called 'delegate'. It is implemented as a system() with command string ('command') from the config file delegates.xml with actual value for different params (input/output filenames etc). Due to insufficient %M param filtering it is possible to conduct shell command injection.\r\n\r\n　delegate 先のコマンドに渡す前のファイル名のフィルタリングが不十分なため、ファイル形式の変換中に任意のコードを実行される可能性がある。\r\n\r\n　ImageMagick には外部ライブラリを使用してファイルを処理する 'delegate' と呼ばれる機能が存在する。この機能は、設定ファイル delegates.xml で指定されたコマンド名 ('command') と、入力ファイル名や出力ファイル名などのパラメータの値を使って組み立てられた文字列を system() 関数に渡して実行する形で実装されている。パラメータ %M に当てはめる入力値のフィルタリングが不十分なため、シェルコマンドインジェクションが可能である。\r\n\r\n\r\nImageMagick に画像ファイルを処理させることで、攻撃者は ImageMagick が動作しているシステム上で任意のコマンドを実行することが可能です。本脆弱性の影響を受ける典型的な構成例としては、ファイルのアップロードを許可しているウェブサーバで、アップロードされたファイルを ImageMagick で処理しているケースが考えられます。\r\n\r\n本脆弱性を使用した攻撃コードが公開されています。ウェブサイト ImageTragick (imagetragick.com) によれば、既に本脆弱性を使用した攻撃活動が観測されているとのことです。\r\n\r\nImageTragick\r\nhttps://imagetragick.com/",
+  "identifier": "JVNDB-2016-002443",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU92998929/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92998929"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3714",
+      "source": "CVE",
+      "id": "CVE-2016-3714"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3714",
+      "source": "NVD",
+      "id": "CVE-2016-3714"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2016/at160021.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2016-0021"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/250519",
+      "source": "CERT-VN",
+      "id": "VU#250519"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:imagemagick:imagemagick",
+      "version": "2.2",
+      "vendor": "ImageMagick",
+      "product": "ImageMagick"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.4",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-11-18T16:58+09:00",
+  "issued": "2016-05-09T16:43+09:00",
+  "modified": "2016-11-18T16:58+09:00"
+}

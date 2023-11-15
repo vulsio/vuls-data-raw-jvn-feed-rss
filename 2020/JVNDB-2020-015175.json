@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015175.html",
+  "title": "openjpeg の src/lib/openjp2/pi.c における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015175.html",
+  "description": "openjpeg の src/lib/openjp2/pi.c には、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-015175",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27841\\",
+      "source": "CVE",
+      "id": "CVE-2020-27841"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-27841",
+      "source": "NVD",
+      "id": "CVE-2020-27841"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1907510",
+      "source": "関連文書",
+      "id": "Bug 1907510 (CVE-2020-27841) - CVE-2020-27841 openjpeg: heap-based buffer overflows in lib/openjp2/pi.c"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openjpeg:openjpeg",
+      "version": "2.2",
+      "vendor": "OpenJPEG project",
+      "product": "OpenJPEG"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2021-09-13T15:38+09:00",
+  "issued": "2021-09-13T15:38+09:00",
+  "modified": "2021-09-13T15:38+09:00"
+}

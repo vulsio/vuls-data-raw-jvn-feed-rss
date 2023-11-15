@@ -1,0 +1,126 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-010092.html",
+  "title": "複数の PTC 製品に脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-010092.html",
+  "description": "PTC 社が提供する複数の製品には、次の脆弱性が存在します。\r\n\r\n　* スタックベースのバッファオーバーフロー (CWE-121) - CVE-2020-27265\r\n　* ヒープベースのバッファオーバーフロー (CWE-122) - CVE-2020-27263\r\n　* 解放済みメモリの使用 (use-after-free) (CWE-416) - CVE-2020-27267\r\n　* 不適切な初期設定の権限 (CWE-276) - CVE-2020-13535",
+  "identifier": "JVNDB-2020-010092",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU98489812",
+      "source": "JVN",
+      "id": "JVNVU#98489812"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13535",
+      "source": "CVE",
+      "id": "CVE-2020-13535"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27263",
+      "source": "CVE",
+      "id": "CVE-2020-27263"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27265",
+      "source": "CVE",
+      "id": "CVE-2020-27265"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27267",
+      "source": "CVE",
+      "id": "CVE-2020-27267"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-20-352-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-352-02"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-20-352-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-352-03"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/121.html",
+      "id": "CWE-121",
+      "title": "スタックベースのバッファオーバーフロー(CWE-121)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/122.html",
+      "id": "CWE-122",
+      "title": "ヒープベースのバッファオーバーフロー(CWE-122)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/276.html",
+      "id": "CWE-276",
+      "title": "不適切なデフォルトパーミッション(CWE-276)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/416.html",
+      "id": "CWE-416",
+      "title": "解放済みメモリの使用(CWE-416)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ge_digital:industrial_gateway_server",
+      "version": "2.2",
+      "vendor": "GE デジタル",
+      "product": "Industrial Gateway Server"
+    },
+    {
+      "text": "cpe:/a:ptc:kepserverex",
+      "version": "2.2",
+      "vendor": "PTC Inc.",
+      "product": "KEPServerEX"
+    },
+    {
+      "text": "cpe:/a:ptc:kepware_linkmaster",
+      "version": "2.2",
+      "vendor": "PTC Inc.",
+      "product": "Kepware LinkMaster "
+    },
+    {
+      "text": "cpe:/a:ptc:opc-aggregator",
+      "version": "2.2",
+      "vendor": "PTC Inc.",
+      "product": "OPC-Aggregator"
+    },
+    {
+      "text": "cpe:/a:ptc:thingWorx_industrial_connectivity",
+      "version": "2.2",
+      "vendor": "PTC Inc.",
+      "product": "ThingWorx Industrial Connectivity"
+    },
+    {
+      "text": "cpe:/a:ptc:thingworx_kepware_server",
+      "version": "2.2",
+      "vendor": "PTC Inc.",
+      "product": "ThingWorx Kepware Server"
+    },
+    {
+      "text": "cpe:/a:rockwellautomation:kepserver_enterprise",
+      "version": "2.2",
+      "vendor": "Rockwell Automation",
+      "product": "KEPServer Enterprise"
+    },
+    {
+      "text": "cpe:/h:software_toolbox:top_server",
+      "version": "2.2",
+      "vendor": "Software Toolbox",
+      "product": "TOP Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-12-21T18:01+09:00",
+  "issued": "2020-12-21T18:01+09:00",
+  "modified": "2020-12-21T18:01+09:00"
+}

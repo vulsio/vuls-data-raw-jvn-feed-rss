@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004414.html",
+  "title": "WordPress の wp-admin/plugins.php におけるプラグインを変更される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004414.html",
+  "description": "WordPress の wp-admin/plugins.php は、マルチサイト機能が有効である場合、インストールされたプラグインが network-wide アクティベーションを行う前に、network-administrator 権限をチェックしないため、意図しないプラグインを変更される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004414",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4422",
+      "source": "CVE",
+      "id": "CVE-2012-4422"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4422",
+      "source": "NVD",
+      "id": "CVE-2012-4422"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wordpress:wordpress",
+      "version": "2.2",
+      "vendor": "WordPress.org",
+      "product": "WordPress"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.5",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:M/Au:S/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-09-19T11:24+09:00",
+  "issued": "2012-09-19T11:24+09:00",
+  "modified": "2012-09-19T11:24+09:00"
+}

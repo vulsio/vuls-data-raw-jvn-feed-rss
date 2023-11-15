@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001003.html",
+  "title": "GE 製 Reason RT43X Clocks シリーズに複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001003.html",
+  "description": "Reason RT43X Clocks シリーズは General Electric が提供する GNSS (Global Navigation Satellite System) 向け高精度クロックです。当該製品には、次の複数の脆弱性が存在します。\r\n\r\n　* コード・インジェクション (CWE-94) - CVE-2020-25197\r\n　* ハードコードされた暗号鍵の使用 (CWE-321) - CVE-2020-25193",
+  "identifier": "JVNDB-2021-001003",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU90523924",
+      "source": "JVN",
+      "id": "JVNVU#90523924"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25193",
+      "source": "CVE",
+      "id": "CVE-2020-25193"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25197",
+      "source": "CVE",
+      "id": "CVE-2020-25197"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-005-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-005-03"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/321.html",
+      "id": "CWE-321",
+      "title": "ハードコードされた暗号鍵の使用(CWE-321)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:ge:rt430_firmware",
+      "version": "2.2",
+      "vendor": "General Electric Company",
+      "product": "RT430 ファームウエア"
+    },
+    {
+      "text": "cpe:/o:ge:rt431_firmware",
+      "version": "2.2",
+      "vendor": "General Electric Company",
+      "product": "RT431 ファームウエア"
+    },
+    {
+      "text": "cpe:/o:ge:rt434_firmware",
+      "version": "2.2",
+      "vendor": "General Electric Company",
+      "product": "RT434 ファームウエア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-02-17T16:52+09:00",
+  "issued": "2021-01-07T16:38+09:00",
+  "modified": "2021-02-17T16:52+09:00"
+}

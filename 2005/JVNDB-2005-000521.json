@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000521.html",
+  "title": "FreeRADIUS の sql_unixodbc.c における off-by-one エラーが発生する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000521.html",
+  "description": "FreeRADIUS の sql_unixodbc モジュール (sql_unixodbc.c) には、認証に利用する外部データベースから返される SQL エラーの処理において、メモリ割り当てが不適切であるため、off-by-one エラーによるオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000521",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4744",
+      "source": "CVE",
+      "id": "CVE-2005-4744"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4744",
+      "source": "NVD",
+      "id": "CVE-2005-4744"
+    },
+    {
+      "text": "http://secunia.com/advisories/16712/",
+      "source": "SECUNIA",
+      "id": "SA16712"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14775",
+      "source": "BID",
+      "id": "14775"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

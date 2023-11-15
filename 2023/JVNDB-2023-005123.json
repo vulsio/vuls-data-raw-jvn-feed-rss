@@ -1,0 +1,84 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-005123.html",
+  "title": "Linux の Linux Kernel 他複数ベンダの製品における二重解放に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-005123.html",
+  "description": "Linux の Linux Kernel 他複数ベンダの製品には、二重解放に関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2023-005123",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-26545",
+      "source": "CVE",
+      "id": "CVE-2023-26545"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-26545",
+      "source": "NVD",
+      "id": "CVE-2023-26545"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2023/05/msg00005.html",
+      "source": "関連文書",
+      "id": "[SECURITY] [DLA 3404-1] linux-5.10 security update"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2023/05/msg00006.html",
+      "source": "関連文書",
+      "id": "[SECURITY] [DLA 3403-1] linux security update"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/415.html",
+      "id": "CWE-415",
+      "title": "二重解放(CWE-415)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:netapp:h300s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H300S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h410c_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H410C ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h410s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H410S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h500s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H500S ファームウェア"
+    },
+    {
+      "text": "cpe:/o:netapp:h700s_firmware",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "H700S ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-11-07T10:09+09:00",
+  "issued": "2023-11-07T10:09+09:00",
+  "modified": "2023-11-07T10:09+09:00"
+}

@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006212.html",
+  "title": "phpMyAdmin におけるディレクトリのフルパスを含むエラーメッセージを表示される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006212.html",
+  "description": "phpMyAdmin は、予期せずスクリプトを呼び出すため、ディレクトリのフルパスを含むエラーメッセージを表示される脆弱性が存在します。\r\n\r\n本脆弱性は、fopen のラッパーに関する問題です。",
+  "identifier": "JVNDB-2016-006212",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9853",
+      "source": "CVE",
+      "id": "CVE-2016-9853"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9853",
+      "source": "NVD",
+      "id": "CVE-2016-9853"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:phpmyadmin:phpmyadmin",
+      "version": "2.2",
+      "vendor": "The phpMyAdmin Project",
+      "product": "phpMyAdmin"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2016-12-15T14:56+09:00",
+  "issued": "2016-12-15T14:56+09:00",
+  "modified": "2016-12-15T14:56+09:00"
+}

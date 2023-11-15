@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002060.html",
+  "title": "SAP EMR Unwired および Clinical Task Tracker における backendurl などの設定を変更される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002060.html",
+  "description": "SAP EMR Unwired (com.sap.mobile.healthcare.emr.v2) および Clinical Task Tracker (com.sap.mobile.healthcare.ctt) は、アクセスを適切に制限しないため、backendurl、clientid、ssourl、および infopageurl の設定を変更される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を SAP Security Note 2117079 として公開しています。",
+  "identifier": "JVNDB-2015-002060",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2814",
+      "source": "CVE",
+      "id": "CVE-2015-2814"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2814",
+      "source": "NVD",
+      "id": "CVE-2015-2814"
+    },
+    {
+      "text": "http://erpscan.com/advisories/erpscan-15-002-sap-mobile-healthcare-emr-v2-unauthorized-access/",
+      "source": "関連文書",
+      "id": "[ERPSCAN-15-002] SAP Mobile .healthcare.emr.v2 - Unauthorized access"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sap:clinical_task_tracker",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "Clinical Task Tracker"
+    },
+    {
+      "text": "cpe:/a:sap:emr_unwired",
+      "version": "2.2",
+      "vendor": "SAP",
+      "product": "SAP EMR Unwired"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2015-04-06T17:33+09:00",
+  "issued": "2015-04-06T17:33+09:00",
+  "modified": "2015-04-06T17:33+09:00"
+}

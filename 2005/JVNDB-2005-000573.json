@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000573.html",
+  "title": "BEA 製品におけるイントラネットの IP アドレス情報が漏洩する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000573.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nBEA WebLogic Server 8.1 SP3 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) ファイアウォール等で NAT される前の WebLogic Server が動作するマシンの IP アドレスが漏洩する問題が存在します。(BEA05-90.00)\r\n\r\nリモートの攻撃者に悪用された場合、ファイアウォールによって保護されているネットワーク上の IP アドレスを取得される可能性があります。\r\n\r\n2) サーバの秘密鍵および証明書が保管されているキーストアを開くときに必要とされるパスワードが、nodemanager.config 内に平文で表示される問題が存在します。(BEA05-91.00)\r\n\r\nnodemanager.config を閲覧可能なローカルの攻撃者に悪用された場合、サーバの秘密鍵にアクセスされる可能性があります。\r\n\r\n3) Admin セキュリティロールを保持するユーザ (WebLogic Server 管理者) が、ローカルファイルシステム上のファイルにリモートからアクセス可能な問題が存在します。(BEA05-94.00)\r\n\r\nAdmin セキュリティロールを保持するローカルの攻撃者に悪用された場合、リモートから HTTP あるいは HTTPS を介して内部サーブレットにアクセスされ、ローカルファイル上のファイルを閲覧される可能性があります。\r\n\r\n4) 設定ウィザードを使用して新規 WebLogic ドメインを作成する際に、SSL の設定に使用した秘密鍵のパスワードが画面上およびサーバのログファイルに平文で表示されてしまう問題が存在します。(BEA05-96.00)\r\n\r\n新規 WebLogic ドメインを作成可能なローカルの攻撃者に悪用された場合、SSL の設定に使用した秘密鍵のパスワードを取得される可能性があります。",
+  "identifier": "JVNDB-2005-000573",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4754",
+      "source": "CVE",
+      "id": "CVE-2005-4754"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4754",
+      "source": "NVD",
+      "id": "CVE-2005-4754"
+    },
+    {
+      "text": "http://secunia.com/advisories/17138/",
+      "source": "SECUNIA",
+      "id": "SA17138"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15052",
+      "source": "BID",
+      "id": "15052"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/2038",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-2038"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bea:weblogic_server",
+      "version": "2.2",
+      "vendor": "BEAシステムズ",
+      "product": "BEA WebLogic Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

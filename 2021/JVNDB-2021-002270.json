@@ -1,0 +1,40 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002270.html",
+  "title": "HTTP Web プロキシや Web アクセラレータの HTTP/2 実装不備による HTTP リクエストスマグリングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002270.html",
+  "description": "HTTP/2 をサポートする HTTP Web プロキシや Web アクセラレータに対して、HTTP/1 への変換処理の実装不備により HTTP Request Smuggling 攻撃が可能になる脆弱性が報告されています。\r\n\r\nHTTP/2 をサポートする Web プロキシやアクセラレータを、HTTP/1 のみをサポートしている Web サーバと組み合わせて使用している場合、HTTP/2 リクエストは HTTP/1 リクエストに変換されて Web サーバに届けられます。\r\n一部の Web プロキシやアクセラレータでは、HTTP/2 から HTTP/1 への変換処理において、不正な形式のリクエストやレスポンスを生成してしまうことが報告されています。\r\n\r\n例えば、HTTP/1 リクエスト (やレスポンス) では、ヘッダ名やヘッダの値に改行文字やナル文字を入れる、などの形式は禁止されていますが、HTTP/2 フレームには HTTP/1 では禁止されているような形式のヘッダ名やヘッダの値をエンコードすることが可能です。そのため、HTTP/2 を規定している <a href=\"https://datatracker.ietf.org/doc/html/rfc7540\"target=\"blank\">RFC7540</a> では、そのような不正な内容の HTTP/2 フレームをエラーにすることと規定しています (セクション <a href=\"https://datatracker.ietf.org/doc/html/rfc7540#section-8.1.2.6\"target=\"blank\">8.1.2.6</a> および <a href=\"https://datatracker.ietf.org/doc/html/rfc7540#section-10.3\"target=\"blank\">10.3</a>)。\r\nしかし、一部の Web プロキシやアクセラレータでは、このような不正な HTTP/2 フレームを不正な HTTP/1 リクエストに変換してバックエンドの Web サーバに送ってしまうことが報告されています。\r\nまた、HTTP/2 では必要のない Content-Length ヘッダや Transfer-Encoding ヘッダを挿入された場合の扱い方の不備から、攻撃への悪用が可能となる例も報告されています。\r\n\r\n\r\n",
+  "identifier": "JVNDB-2021-002270",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU99039870/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99039870"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/357312",
+      "source": "CERT-VN",
+      "id": "VU#357312"
+    },
+    {
+      "text": "https://portswigger.net/research/http2",
+      "source": "関連文書",
+      "id": "HTTP/2: The Sequel is Always Worse"
+    },
+    {
+      "text": "https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/15-Testing_for_HTTP_Splitting_Smuggling",
+      "source": "関連文書",
+      "id": "Testing for HTTP Splitting Smuggling"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "date": "2021-08-13T14:57+09:00",
+  "issued": "2021-08-13T14:57+09:00",
+  "modified": "2021-08-13T14:57+09:00"
+}

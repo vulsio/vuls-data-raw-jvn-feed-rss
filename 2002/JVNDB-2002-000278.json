@@ -1,0 +1,107 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000278.html",
+  "title": "BIND の SIG RR におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000278.html",
+  "description": "BIND において、 DNS サーバの再帰的問い合わせに対する応答を行う機能を無効に設定していない場合に、SIG RR (Signature Resource Record) を含む DNS レスポンスの生成処理の不備により、バッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2002-000278",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNCA-2002-31/",
+      "source": "JVN",
+      "id": "JVNCA-2002-31"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1219",
+      "source": "CVE",
+      "id": "CVE-2002-1219"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1219",
+      "source": "NVD",
+      "id": "CVE-2002-1219"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr024501.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2002-4501"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr024801.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2002-4801"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2002/wr025001.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2002-5001"
+    },
+    {
+      "text": "http://www.cert.org/advisories/CA-2002-31.html",
+      "source": "CERT-A",
+      "id": "CA-2002-31"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/852283",
+      "source": "CERT-VN",
+      "id": "VU#852283"
+    },
+    {
+      "text": "http://www.ciac.org/ciac/bulletins/n-013.shtml",
+      "source": "CIAC",
+      "id": "N-013"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6160",
+      "source": "BID",
+      "id": "6160"
+    },
+    {
+      "text": "http://bvlive01.iss.net/issEn/delivery/xforce/alertdetail.jsp?oid=21469",
+      "source": "ISS",
+      "id": "21469"
+    },
+    {
+      "text": "http://www.isskk.co.jp/support/techinfo/general/BIND4and8_xforce.html",
+      "source": "ISSKK",
+      "id": "BIND4and8_xforce"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:hp:vvos",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX (VVOS)"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

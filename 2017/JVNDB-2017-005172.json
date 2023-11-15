@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005172.html",
+  "title": "Dahua 製 IP カメラの Sonia ウェブインタフェースにスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005172.html",
+  "description": "Dahua 製 IP カメラ製品が使用している Sonia ウェブインタフェースにはスタックベースのバッファオーバーフローの脆弱性が存在します。\r\n\r\nスタックベースのバッファオーバーフロー (CWE-121) - CVE-2017-3223\r\nDahua 社製の IP カメラ製品では、IP カメラを操作するウェブインタフェースやその他のサービスを提供する Sonia (/usr/bin/sonia) というアプリケーションが使用されています。\r\nDH_IPC-Consumer-Zi-Themis_Eng_P_V2.408.0000.11.R.20170621 より前のバージョンのファームウェアに組み込まれた Sonia では、受信したリクエストを処理する際、 'password' フィールドのデータの長さを検証していません。遠隔の第三者から送信された、細工された POST リクエストを処理することで、スタックベースのバッファオーバーフローが発生する可能性があります。\r\nこの問題は、ファームウェア DH_IPC-HX1X2X-Themis_EngSpnFrn_N_V2.400.0000.30.R.20160803 で最初に特定されました。",
+  "identifier": "JVNDB-2017-005172",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97102517/",
+      "source": "JVN",
+      "id": "JVNVU#97102517"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3223",
+      "source": "CVE",
+      "id": "CVE-2017-3223"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3223",
+      "source": "NVD",
+      "id": "CVE-2017-3223"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/547255",
+      "source": "CERT-VN",
+      "id": "VU#547255"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/121.html",
+      "id": "CWE-121",
+      "title": "スタックベースのバッファオーバーフロー(CWE-121)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:dahuasecurity:ip_camera_firmware",
+      "version": "2.2",
+      "vendor": "Dahua Technology Co., Ltd",
+      "product": "IP Camera ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-07-24T14:06+09:00",
+  "issued": "2017-07-20T11:03+09:00",
+  "modified": "2019-07-24T14:06+09:00"
+}

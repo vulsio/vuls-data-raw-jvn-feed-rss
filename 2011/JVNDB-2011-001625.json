@@ -1,0 +1,30 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001625.html",
+  "title": "Proofpoint Protection Server に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001625.html",
+  "description": "Proofpoint Protection Server には、複数の脆弱性が存在します。\r\n\r\nProofpoint Protection Server には、認証回避、コマンドインジェクション、SQL インジェクション、ディレクトリトラバーサルなど、複数の脆弱性が存在します。\r\n\r\nClear Skies Security's advisory の TECHNICAL DETAILS に、各脆弱性について以下のように記載されています。\r\n\r\n\"Enduser Authentication Bypass\r\nUser-level access to the Proofpoint mail filter web interface can be obtained as any available user without providing the user’s login credentials.\r\n\r\nPath Traversal Allows Access to System Files\r\nArbitrary files on the Proofpoint appliance can be obtained by manipulating a flaw in the web interface.\r\n\r\nProofpoint SQL Injection\r\nA publicly accessible function in the Proofpoint interface is vulnerable to SQL Injection.\r\n\r\nProofpoint Command Injection\r\nA function in the Proofpoint web interface can be manipulated into executing any command on the server.\r\n\r\nProofpoint Forced Browsing / Insufficient Page Authorization\r\nSome administrative modules are accessible without authenticating with the application.\"",
+  "identifier": "JVNDB-2011-001625",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU790980",
+      "source": "JVN",
+      "id": "JVNVU#790980"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/790980",
+      "source": "CERT-VN",
+      "id": "VU#790980"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:proofpoint:protection_server",
+      "version": "2.2",
+      "vendor": "Proofpoint, Inc.",
+      "product": "Proofpoint Protection Server"
+    }
+  ],
+  "date": "2011-05-25T12:07+09:00",
+  "issued": "2011-05-25T12:07+09:00",
+  "modified": "2011-05-25T12:07+09:00"
+}

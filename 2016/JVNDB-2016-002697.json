@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002697.html",
+  "title": "Debian wheezy の linux パッケージおよび Red Hat Enterprise Linux の kernel パッケージの特定の Linux Kernel バックポートの fs/pipe.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002697.html",
+  "description": "Debian wheezy の linux パッケージおよび Red Hat Enterprise Linux (RHEL) の kernel パッケージの特定の Linux Kernel バックポートの fs/pipe.c の (1) pipe_read および (2) pipe_write の実装は、__copy_to_user_inatomic および __copy_from_user_inatomic コールの失敗による副作用を適切に考慮しないため、サービス運用妨害 (システムクラッシュ) 状態にされる、または権限を取得される脆弱性が存在します。\r\n\r\n本脆弱性は、\"I/O ベクタの配列オーバーラン\" と呼ばれています。\r\n\r\n本脆弱性は CVE-2015-1805 の修正が不完全だったことによる脆弱性です。",
+  "identifier": "JVNDB-2016-002697",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0774",
+      "source": "CVE",
+      "id": "CVE-2016-0774"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0774",
+      "source": "NVD",
+      "id": "CVE-2016-0774"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:google:android",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+    }
+  ],
+  "date": "2016-05-17T14:51+09:00",
+  "issued": "2016-05-17T14:51+09:00",
+  "modified": "2016-05-17T14:51+09:00"
+}

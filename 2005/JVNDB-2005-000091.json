@@ -1,0 +1,236 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000091.html",
+  "title": "libpng における不正な PNG イメージによる複数のバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000091.html",
+  "description": "libpng には、画像の透過を指定する tRNS チャンクのデータセグメントの長さのチェック、または png_handle_sBIT() や png_handle_hIST() 関数で取り扱うデータの境界チェックが適切に行われないため、バッファオーバーフローの脆弱性が存在します。\r\n\r\n本脆弱性は、脆弱な libpng ライブラリを使用しているプログラムの実装にも影響を与えます。",
+  "identifier": "JVNDB-2005-000091",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA04-217A/",
+      "source": "JVN",
+      "id": "JVNTA04-217A"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA05-039A/",
+      "source": "JVN",
+      "id": "JVNTA05-039A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA05-039A",
+      "source": "JVNTR",
+      "id": "TRTA05-039A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA04-217A/",
+      "source": "JVNTR",
+      "id": "TRTA04-217A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0597",
+      "source": "CVE",
+      "id": "CVE-2004-0597"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0597",
+      "source": "NVD",
+      "id": "CVE-2004-0597"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2004/at040010.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2004-0010"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2004/wr043101.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2004-3101"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/817368",
+      "source": "CERT-VN",
+      "id": "VU#817368"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/388984",
+      "source": "CERT-VN",
+      "id": "VU#388984"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA05-039A.html",
+      "source": "CERT-TA",
+      "id": "TA05-039A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA04-217A.html",
+      "source": "CERT-TA",
+      "id": "TA04-217A"
+    },
+    {
+      "text": "http://www.ciac.org/ciac/bulletins/o-192.shtml",
+      "source": "CIAC",
+      "id": "O-192"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/12506",
+      "source": "BID",
+      "id": "12506"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/16894",
+      "source": "XF",
+      "id": "16894"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libpng:libpng",
+      "version": "2.2",
+      "vendor": "PNG Development Group",
+      "product": "libpng"
+    },
+    {
+      "text": "cpe:/a:microsoft:msn_messenger",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft MSN Messenger"
+    },
+    {
+      "text": "cpe:/a:microsoft:windows_media_player",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Windows Media Player"
+    },
+    {
+      "text": "cpe:/a:microsoft:windows_messenger",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Messenger"
+    },
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:mozilla_suite",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Suite"
+    },
+    {
+      "text": "cpe:/a:mozilla:thunderbird",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Thunderbird"
+    },
+    {
+      "text": "cpe:/a:sun:java_desktop_system",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Java Desktop System"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:gentoo:linux",
+      "version": "2.2",
+      "vendor": "Gentoo Linux",
+      "product": "Gentoo Linux"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows-9x",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 9X"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:misc:vine_linux",
+      "version": "2.2",
+      "vendor": "Vine Linux",
+      "product": "Vine Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_desktop",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_workstation",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

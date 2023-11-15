@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004818.html",
+  "title": "Norton AntiVirus などで使用される Symantec NAVOPTS.DLL ActiveX コントロールにおけるコントロールをクラッシュされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004818.html",
+  "description": "Norton AntiVirus、Internet Security、および System Works で使用される Symantec NAVOPTS.DLL ActiveX コントロールは、以下の脆弱性が存在します。\r\n(1) アプリケーションに組み込まれた Web ブラウザのみ使用するように設計されている、Web 上のコンテンツ処理に関する不備があるため、\"コントロールをクラッシュ\" される脆弱性が存在します。\r\n(2) Internet Explorer を \"defunc state\" に配置するため、スクリプティングが安全か否かの設定に関わらず、他の Symantec ActiveX コントロールと共に、任意のコードを実行される脆弱性が存在します。\r\n本脆弱性は、E-mail Auto-Protect の問題となっていましたが、その問題には、CVE-2007-3771 が割り当てられました。",
+  "identifier": "JVNDB-2007-004818",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3456",
+      "source": "CVE",
+      "id": "CVE-2006-3456"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-3456",
+      "source": "NVD",
+      "id": "CVE-2006-3456"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:symantec:norton_antivirus",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Norton AntiVirus"
+    },
+    {
+      "text": "cpe:/a:symantec:norton_internet_security",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Norton Internet Security"
+    },
+    {
+      "text": "cpe:/a:symantec:norton_system_works",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Norton SystemWorks"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-12-20T18:02+09:00",
+  "issued": "2012-12-20T18:02+09:00",
+  "modified": "2012-12-20T18:02+09:00"
+}

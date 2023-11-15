@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005557.html",
+  "title": "Intellian Satellite TV および Satellite Communications に機器共通の認証情報が設定されている問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005557.html",
+  "description": "Intellian Satellite TV t-Series および Satellite Communications v-Series には、機器共通の認証情報が設定されています。\r\n\r\n証明書やパスワードの管理 (CWE-255) - CVE-2016-6551\r\nIntellian Satellite TV t-Series および Satellite Communications v-Series の初期設定では、認証情報として \"ftp/ftp\" または \"intellian:12345678\" が設定されています。",
+  "identifier": "JVNDB-2016-005557",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91832696/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91832696"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6551",
+      "source": "CVE",
+      "id": "CVE-2016-6551"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-6551",
+      "source": "NVD",
+      "id": "CVE-2016-6551"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/200907",
+      "source": "CERT-VN",
+      "id": "VU#200907"
+    },
+    {
+      "text": "https://www.akamai.com/us/en/multimedia/documents/state-of-the-internet/sshowdown-exploitation-of-iot-devices-for-launching-mass-scale-attack-campaigns.pdf",
+      "source": "関連文書",
+      "id": "Akamai Technologies - SSHowDowN: Exploitation of IoT devices for Launching Mass-Scale Attack Campaigns"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:intelliantech:satellite_communications_v-series",
+      "version": "2.2",
+      "vendor": "Intellian Technologies, Inc.",
+      "product": "Satellite Communications v-Series"
+    },
+    {
+      "text": "cpe:/o:intelliantech:satellite_tv_t-series",
+      "version": "2.2",
+      "vendor": "Intellian Technologies, Inc.",
+      "product": "Satellite TV t-Series"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2016-10-24T16:58+09:00",
+  "issued": "2016-10-24T16:58+09:00",
+  "modified": "2016-10-24T16:58+09:00"
+}

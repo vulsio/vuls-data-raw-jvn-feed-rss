@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-004541.html",
+  "title": "NASM の ppscan 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-004541.html",
+  "description": "Netwide Assembler (NASM) の ppscan 関数 (preproc.c) には、一つずれエラー (Off-by-one) が発生するため、サービス運用妨害 (クラッシュ) 状態となる、および任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2008-004541",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2719",
+      "source": "CVE",
+      "id": "CVE-2008-2719"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2719",
+      "source": "NVD",
+      "id": "CVE-2008-2719"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nasm:nasm",
+      "version": "2.2",
+      "vendor": "The NASM development team",
+      "product": "NASM"
+    },
+    {
+      "text": "cpe:/a:nasm:netwide_assembler",
+      "version": "2.2",
+      "vendor": "The NASM development team",
+      "product": "Netwide Assembler"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T17:17+09:00",
+  "issued": "2012-09-25T17:17+09:00",
+  "modified": "2012-09-25T17:17+09:00"
+}

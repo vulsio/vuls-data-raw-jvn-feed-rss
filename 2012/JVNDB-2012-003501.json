@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003501.html",
+  "title": "logol における任意のファイルを削除または上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003501.html",
+  "description": "logol は、/var/lib/logol/results ディレクトリに対して world-writable パーミッション (誰でも書き込み可能な権限) を用いるため、任意のファイルを削除または上書きされる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-003501",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3453",
+      "source": "CVE",
+      "id": "CVE-2012-3453"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3453",
+      "source": "NVD",
+      "id": "CVE-2012-3453"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:debian:logol",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "logol"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2012-08-09T16:22+09:00",
+  "issued": "2012-08-09T16:22+09:00",
+  "modified": "2012-08-09T16:22+09:00"
+}

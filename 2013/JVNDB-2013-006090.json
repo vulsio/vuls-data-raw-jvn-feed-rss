@@ -1,0 +1,98 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006090.html",
+  "title": "Apache Tomcat におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006090.html",
+  "description": "Apache Tomcat は、(1) 大量のチャンクデータの総量、または (2) トレーラフィールド内の HTTP ヘッダ値の空白文字を適切に処理せずに、チャンク形式転送コーディング (chunked transfer coding) を処理するため、サービス運用妨害 (DoS) 状態にされる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2012-3544 に対する修正が不十分だったことによる脆弱性です。",
+  "identifier": "JVNDB-2013-006090",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4322",
+      "source": "CVE",
+      "id": "CVE-2013-4322"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4322",
+      "source": "NVD",
+      "id": "CVE-2013-4322"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/a:ibm:ims_enterprise_suite",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM IMS Enterprise Suite"
+    },
+    {
+      "text": "cpe:/a:ibm:qradar_security_information_and_event_manager",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Security QRadar SIEM"
+    },
+    {
+      "text": "cpe:/a:ibm:rational_connector_for_sap_solution_manager",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "Rational Connector for SAP Solution Manager"
+    },
+    {
+      "text": "cpe:/a:ibm:rational_lifecycle_integration_adapter",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "Rational Lifecycle Integration Adapter"
+    },
+    {
+      "text": "cpe:/a:ibm:rational_test_virtualization_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "Rational Test Virtualization Server"
+    },
+    {
+      "text": "cpe:/a:ibm:rational_test_workbench",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "Rational Test Workbench"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_policy_management",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Policy Management"
+    },
+    {
+      "text": "cpe:/a:oracle:fusion_middleware",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Fusion Middleware"
+    },
+    {
+      "text": "cpe:/a:oracle:virtualization_secure_global_desktop",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Virtualization"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2016-11-22T16:00+09:00",
+  "issued": "2014-02-27T16:31+09:00",
+  "modified": "2016-11-22T16:00+09:00"
+}

@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000349.html",
+  "title": "MySQL の str_to_date() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000349.html",
+  "description": "MySQL の str_to_date() 関数において、第 2 引数 (フォーマット指定子) に NULL が渡された際に、mysqld がサービス運用妨害　（DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000349",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3081",
+      "source": "CVE",
+      "id": "CVE-2006-3081"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3081",
+      "source": "NVD",
+      "id": "CVE-2006-3081"
+    },
+    {
+      "text": "http://secunia.com/advisories/19929/",
+      "source": "SECUNIA",
+      "id": "SA19929"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18439",
+      "source": "BID",
+      "id": "18439"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mysql:mysql",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

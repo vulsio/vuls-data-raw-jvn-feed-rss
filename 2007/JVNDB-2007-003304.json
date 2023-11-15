@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-003304.html",
+  "title": "OpenEMR の interface/globals.php における任意のプログラム変数を上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-003304.html",
+  "description": "OpenEMR の interface/globals.php は、(1) POST および (2) GET superglobal 配列上の演算抽出に関する処理に不備があるため、任意のプログラム変数を上書きされる、およびその他の不正な操作を実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2007-003304",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0649",
+      "source": "CVE",
+      "id": "CVE-2007-0649"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-0649",
+      "source": "NVD",
+      "id": "CVE-2007-0649"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:open-emr:openemr",
+      "version": "2.2",
+      "vendor": "OpenEMR",
+      "product": "OpenEMR"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:M/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T16:47+09:00",
+  "issued": "2012-09-25T16:47+09:00",
+  "modified": "2012-09-25T16:47+09:00"
+}

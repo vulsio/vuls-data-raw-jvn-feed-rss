@@ -1,0 +1,139 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002318.html",
+  "title": "CUPS の cupsd 内にある ipp.c における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002318.html",
+  "description": "CUPS の cupsd 内にある ipp.c は、不正な文字列のデータタイプが付与された属性値のメモリを適切に割り当てないため、サービス運用妨害 (DoS) 状態となる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002318",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU331391",
+      "source": "JVN",
+      "id": "JVNVU#331391"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2941",
+      "source": "CVE",
+      "id": "CVE-2010-2941"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2941",
+      "source": "NVD",
+      "id": "CVE-2010-2941"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/44530",
+      "source": "BID",
+      "id": "44530"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/62882",
+      "source": "XF",
+      "id": "62882"
+    },
+    {
+      "text": "http://securitytracker.com/id?1024662",
+      "source": "SECTRACK",
+      "id": "1024662"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/2856",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-2856"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/2992",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-2992"
+    },
+    {
+      "text": "http://osvdb.org/68951",
+      "source": "OSVDB",
+      "id": "68951"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cups:cups",
+      "version": "2.2",
+      "vendor": "CUPS",
+      "product": "CUPS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:oracle:solaris",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Solaris"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.9",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-03-31T13:51+09:00",
+  "issued": "2010-11-18T15:48+09:00",
+  "modified": "2011-03-31T13:51+09:00"
+}

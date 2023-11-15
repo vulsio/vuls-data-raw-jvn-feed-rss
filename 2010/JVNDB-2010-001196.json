@@ -1,0 +1,130 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001196.html",
+  "title": "GNU tar および GNU cpio の rmt_read__ 関数におけるヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001196.html",
+  "description": "GNU tar および GNU cpio の rmt クライアント機能の rmt_read__ 関数には、サービス運用妨害 (DoS) 状態となる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001196",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0624",
+      "source": "CVE",
+      "id": "CVE-2010-0624"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0624",
+      "source": "NVD",
+      "id": "CVE-2010-0624"
+    },
+    {
+      "text": "http://secunia.com/advisories/38836/",
+      "source": "SECUNIA",
+      "id": "SA38836"
+    },
+    {
+      "text": "http://secunia.com/advisories/38869/",
+      "source": "SECUNIA",
+      "id": "SA38869"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/0584",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-0584"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/0585",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-0585"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:cpio",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU cpio"
+    },
+    {
+      "text": "cpe:/a:gnu:tar",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU tar"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_client",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Client"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-06-11T18:45+09:00",
+  "issued": "2010-03-30T16:41+09:00",
+  "modified": "2010-06-11T18:45+09:00"
+}

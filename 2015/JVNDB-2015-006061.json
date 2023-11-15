@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006061.html",
+  "title": "PCRE および PCRE2 におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006061.html",
+  "description": "PCRE の pcre_compile.c の compile_regex 関数、および PCRE2 の pcre2_compile.c は、特定のグループ参照を持つ以下のパターンを誤って処理するため、サービス運用妨害 (ヒープベースのバッファオーバーフロー) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n(1) /(?J:(?|(:(?|(?'R')(\\k'R')|((?'R')))H'Rk'Rf)|s(?'R'))))/\r\n(2) /(?J:(?|(:(?|(?'R')(\\z(?|(?'R')(\\k'R')|((?'R')))k'R')|((?'R')))H'Ak'Rf)|s(?'R')))/\r\n(3) その他の関連するパターン",
+  "identifier": "JVNDB-2015-006061",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8381",
+      "source": "CVE",
+      "id": "CVE-2015-8381"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8381",
+      "source": "NVD",
+      "id": "CVE-2015-8381"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2015/11/29/1",
+      "source": "関連文書",
+      "id": "Re: Heap Overflow in PCRE"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pcre:pcre",
+      "version": "2.2",
+      "vendor": "pcre.org",
+      "product": "PCRE"
+    },
+    {
+      "text": "cpe:/a:pcre:pcre2",
+      "version": "2.2",
+      "vendor": "pcre.org",
+      "product": "PCRE2"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-12-03T16:34+09:00",
+  "issued": "2015-12-03T16:34+09:00",
+  "modified": "2015-12-03T16:34+09:00"
+}

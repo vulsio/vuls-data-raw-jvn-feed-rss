@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000484.html",
+  "title": "Linux Kernel の open_exec() 関数における不正に ELF バイナリを読み込まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000484.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nELF (Executable and Linking Format) は、多くの Linux ディストリビューションで標準とされる、バイナリフォーマットです。 \r\n\r\nLinux Kernel に同梱されている ELF バイナリローダ には、setuid バイナリの処理において以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n・binfmt_elf.c の load_elf_binary() 関数内において、kernel_read() 関数の返り値のチェックが不適切である問題 (CVE-2004-1070) \r\n\r\n・mmap() 関数の呼び出しに失敗した際の処理が不適切である問題 (CVE-2004-1071) \r\n\r\n・プログラムインタプリタをメモリ空間にマッピングを行う際の返り値のチェックが不適切である問題 \r\n\r\n・インタプリタをロードする処理において、NULL 文字で終端されていないインタプリタ名が存在する問題 (CVE-2004-1072) \r\n\r\n・exec.c の execve() に含まれる open_exec() に、読み込み禁止に設定されている ELF バイナリに対して読み込みアクセスを許可してしまう問題 (CVE-2004-1073) \r\n\r\nこれらの問題を利用するローカルの攻撃者は、意図的に作成した setuid バイナリをロードすることにより setuid バイナリの動作を操作し、潜在的に root 権限で任意のコードを実行できる可能性があります。",
+  "identifier": "JVNDB-2004-000484",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1073",
+      "source": "CVE",
+      "id": "CVE-2004-1073"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1073",
+      "source": "NVD",
+      "id": "CVE-2004-1073"
+    },
+    {
+      "text": "http://secunia.com/advisories/13126/",
+      "source": "SECUNIA",
+      "id": "SA13126"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11646",
+      "source": "BID",
+      "id": "11646"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Nov/1012165.html",
+      "source": "SECTRACK",
+      "id": "1012165"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

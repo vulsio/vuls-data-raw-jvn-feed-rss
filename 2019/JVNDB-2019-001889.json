@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001889.html",
+  "title": "複数の ASPEED ast 製品および Baseband Management Controller におけるアクセス制御に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001889.html",
+  "description": "ASPEED ast2400、ast2500、Baseband Management Controller (BMC) には、アクセス制御に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2019-001889",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6260",
+      "source": "CVE",
+      "id": "CVE-2019-6260"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-6260",
+      "source": "NVD",
+      "id": "CVE-2019-6260"
+    },
+    {
+      "text": "https://www.flamingspork.com/blog/2019/01/23/cve-2019-6260:-gaining-control-of-bmc-from-the-host-processor/",
+      "source": "関連文書",
+      "id": "CVE-2019-6260: Gaining control of BMC from the host processor"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/284.html",
+      "id": "CWE-284",
+      "title": "不適切なアクセス制御(CWE-284)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:netapp:fas%2faff_baseboard_management_controller",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "Baseboard Management Controller"
+    },
+    {
+      "text": "cpe:/o:aspeedtech:ast2400_firmware",
+      "version": "2.2",
+      "vendor": "ASPEED",
+      "product": "ast2400 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:aspeedtech:ast2500_firmware",
+      "version": "2.2",
+      "vendor": "ASPEED",
+      "product": "ast2500 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-03-28T16:46+09:00",
+  "issued": "2019-03-28T16:46+09:00",
+  "modified": "2019-03-28T16:46+09:00"
+}

@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001464.html",
+  "title": "PolarSSL の SSL モジュールにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001464.html",
+  "description": "PolarSSL の SSL モジュールは、配列のインデックスエラーにより、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2013-0169 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2013-001464",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1621",
+      "source": "CVE",
+      "id": "CVE-2013-1621"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1621",
+      "source": "NVD",
+      "id": "CVE-2013-1621"
+    },
+    {
+      "text": "http://www.isg.rhul.ac.uk/tls/TLStiming.pdf",
+      "source": "関連文書",
+      "id": "Lucky Thirteen: Breaking the TLS and DTLS Record Protocols"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:polarssl:polarssl",
+      "version": "2.2",
+      "vendor": "ARM Ltd. (旧 Offspark)",
+      "product": "PolarSSL"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-04-09T17:08+09:00",
+  "issued": "2013-02-13T11:49+09:00",
+  "modified": "2013-04-09T17:08+09:00"
+}

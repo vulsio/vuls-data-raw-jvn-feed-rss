@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001781.html",
+  "title": "Internet Explorer 用 Google Chrome Frame プラグインにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001781.html",
+  "description": "Internet Explorer 用 Google Chrome Frame プラグインの chrome_frame/protocol_sink_wrap.cc 内の Hook_Terminate 関数は、\"attach tab\" リクエストを適切に処理しないため、サービス運用妨害 (アプリケーションクラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001781",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2493",
+      "source": "CVE",
+      "id": "CVE-2013-2493"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2493",
+      "source": "NVD",
+      "id": "CVE-2013-2493"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome_frame",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome Frame"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-03-11T16:46+09:00",
+  "issued": "2013-03-11T16:46+09:00",
+  "modified": "2013-03-11T16:46+09:00"
+}

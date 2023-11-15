@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006856.html",
+  "title": "アクセス制御の API におけるメモリ範囲のチェックを誤って返される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006856.html",
+  "description": "アクセス制御の API は、入力検証が不適切であるため、メモリ範囲のチェックを誤って返される脆弱性が存在します。\r\n\r\n本脆弱性は、Android ID: A-31623057 および Qualcomm QC-CR#1009695 として公開されています。",
+  "identifier": "JVNDB-2016-006856",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8437",
+      "source": "CVE",
+      "id": "CVE-2016-8437"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8437",
+      "source": "NVD",
+      "id": "CVE-2016-8437"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-01-27T10:13+09:00",
+  "issued": "2017-01-27T10:13+09:00",
+  "modified": "2017-01-27T10:13+09:00"
+}

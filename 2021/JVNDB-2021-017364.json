@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-017364.html",
+  "title": "Dnsmasq における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-017364.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nDnsmasq には、境界外書き込みに関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性に対して異議を唱えています。\r\n詳細については、以下の NVD の Current Description を確認してください。\r\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-45951",
+  "identifier": "JVNDB-2021-017364",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-45951",
+      "source": "CVE",
+      "id": "CVE-2021-45951"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-45951",
+      "source": "NVD",
+      "id": "CVE-2021-45951"
+    },
+    {
+      "text": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35868",
+      "source": "関連文書",
+      "id": "Issue 35868: dnsmasq:fuzz_rfc1035: Heap-buffer-overflow in check_bad_address"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:thekelleys:dnsmasq",
+      "version": "2.2",
+      "vendor": "thekelleys",
+      "product": "Dnsmasq"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-01-17T14:32+09:00",
+  "issued": "2023-01-17T14:32+09:00",
+  "modified": "2023-01-17T14:32+09:00"
+}

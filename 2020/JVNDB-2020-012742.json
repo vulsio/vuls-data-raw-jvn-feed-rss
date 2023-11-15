@@ -1,0 +1,110 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-012742.html",
+  "title": "SPICE における古典的バッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-012742.html",
+  "description": "SPICE には、古典的バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2020-012742",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14355",
+      "source": "CVE",
+      "id": "CVE-2020-14355"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-14355",
+      "source": "NVD",
+      "id": "CVE-2020-14355"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2020/10/06/10",
+      "source": "関連文書",
+      "id": "spice: multiple buffer overflow vulnerabilities in QUIC decoding code"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/120.html",
+      "id": "CWE-120",
+      "title": "古典的バッファオーバーフロー(CWE-120)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:enterprise_linux_update_services_for_sap_solutions",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux for SAP Solutions"
+    },
+    {
+      "text": "cpe:/a:redhat:openstack",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenStack"
+    },
+    {
+      "text": "cpe:/a:spice_project:spice",
+      "version": "2.2",
+      "vendor": "Spice Project",
+      "product": "SPICE"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:opensuse_project:leap",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "openSUSE Leap"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_aus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux AUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_tus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux TUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2021-05-26T16:19+09:00",
+  "issued": "2021-05-26T16:19+09:00",
+  "modified": "2021-05-26T16:19+09:00"
+}

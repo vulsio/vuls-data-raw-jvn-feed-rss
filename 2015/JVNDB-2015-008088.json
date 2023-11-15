@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-008088.html",
+  "title": "Mono における証明書検証に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-008088.html",
+  "description": "Mono には、証明書検証に関する脆弱性が存在します。\r\n\r\n本脆弱性は、\"SMACK SKIP-TLS\" の問題と呼ばれています。",
+  "identifier": "JVNDB-2015-008088",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2318",
+      "source": "CVE",
+      "id": "CVE-2015-2318"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-2318",
+      "source": "NVD",
+      "id": "CVE-2015-2318"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/295.html",
+      "id": "CWE-295",
+      "title": "不正な証明書検証(CWE-295)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mono:mono",
+      "version": "2.2",
+      "vendor": "Mono Project",
+      "product": "Mono"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-02-13T16:01+09:00",
+  "issued": "2018-02-13T16:01+09:00",
+  "modified": "2018-02-13T16:01+09:00"
+}

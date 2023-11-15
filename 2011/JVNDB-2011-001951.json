@@ -1,0 +1,118 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001951.html",
+  "title": "Apple iOS などの製品で使用される FreeType における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001951.html",
+  "description": "Apple iOS の CoreGraphics などの製品で使用される FreeType の psaux/t1decode.c には、任意のコードを実行される、またはサービス運用妨害 (メモリ破損およびアプリケーションクラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-001951",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU619694",
+      "source": "JVN",
+      "id": "JVNVU#619694"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0226",
+      "source": "CVE",
+      "id": "CVE-2011-0226"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0226",
+      "source": "NVD",
+      "id": "CVE-2011-0226"
+    },
+    {
+      "text": "http://secunia.com/advisories/45167",
+      "source": "SECUNIA",
+      "id": "SA45167"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/48619",
+      "source": "BID",
+      "id": "48619"
+    },
+    {
+      "text": "http://www.securitytracker.com/id/1025757",
+      "source": "SECTRACK",
+      "id": "1025757"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freetype:freetype",
+      "version": "2.2",
+      "vendor": "FreeType Project",
+      "product": "FreeType"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_server_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server EUS"
+    },
+    {
+      "text": "cpe:/h:apple:ipad",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iPad"
+    },
+    {
+      "text": "cpe:/h:apple:iphone",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iPhone"
+    },
+    {
+      "text": "cpe:/h:apple:ipod_touch",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iPod touch"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-05-18T16:42+09:00",
+  "issued": "2011-07-27T10:30+09:00",
+  "modified": "2012-05-18T16:42+09:00"
+}

@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006696.html",
+  "title": "webfs 用 Gentoo init スクリプトにおける脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006696.html",
+  "description": "webfs 用 Gentoo init スクリプトには、/var/log/webfsd.log に対して誰でも読み取り可能な権限 (world-readable permission) を使用するため、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-006696",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0347",
+      "source": "CVE",
+      "id": "CVE-2013-0347"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0347",
+      "source": "NVD",
+      "id": "CVE-2013-0347"
+    },
+    {
+      "text": "http://osvdb.org/90585",
+      "source": "関連文書",
+      "id": "90585 : webfs on Gentoo Linux webfsd.log Permission Weakness Local Information Disclosure"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:webfs:webfs",
+      "version": "2.2",
+      "vendor": "Gerd Knorr",
+      "product": "webfs"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-11-18T16:55+09:00",
+  "issued": "2014-11-18T16:55+09:00",
+  "modified": "2014-11-18T16:55+09:00"
+}

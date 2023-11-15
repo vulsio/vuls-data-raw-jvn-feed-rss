@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002507.html",
+  "title": "Linux kernel の collect_rx_frame 関数における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002507.html",
+  "description": "Linux kernel の drivers/isdn/hisax/hfc_usb.c の collect_rx_frame 関数には、詳細不明な脆弱性が存在します。",
+  "identifier": "JVNDB-2009-002507",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4005",
+      "source": "CVE",
+      "id": "CVE-2009-4005"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-4005",
+      "source": "NVD",
+      "id": "CVE-2009-4005"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/37036",
+      "source": "BID",
+      "id": "37036"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/54310",
+      "source": "XF",
+      "id": "54310"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/3267",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-3267"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2010-03-11T12:05+09:00",
+  "issued": "2010-02-24T12:26+09:00",
+  "modified": "2010-03-11T12:05+09:00"
+}

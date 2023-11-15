@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002924.html",
+  "title": "gst-plugins-bad における古典的バッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002924.html",
+  "description": "gst-plugins-bad には、古典的バッファオーバーフローの脆弱性、およびスタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2021-002924",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3185",
+      "source": "CVE",
+      "id": "CVE-2021-3185"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3185",
+      "source": "NVD",
+      "id": "CVE-2021-3185"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1917192",
+      "source": "関連文書",
+      "id": "Bug 1917192 (CVE-2021-3185) - CVE-2021-3185 gstreamer: buffer overflow in gst_h264_slice_parse_dec_ref_pic_marking"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/120.html",
+      "id": "CWE-120",
+      "title": "古典的バッファオーバーフロー(CWE-120)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/121.html",
+      "id": "CWE-121",
+      "title": "スタックベースのバッファオーバーフロー(CWE-121)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freedesktop:gst-plugins-bad",
+      "version": "2.2",
+      "vendor": "freedesktop.org",
+      "product": "gst-plugins-bad"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-10-11T16:19+09:00",
+  "issued": "2021-10-11T16:19+09:00",
+  "modified": "2021-10-11T16:19+09:00"
+}

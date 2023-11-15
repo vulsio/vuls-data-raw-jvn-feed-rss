@@ -1,0 +1,115 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000739.html",
+  "title": "Microsoft IIS における不正な HTTP リクエストの処理によるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000739.html",
+  "description": "Microsoft IIS には、仮想ディレクトリに対して [スクリプトおよび実行可能ファイル] の実行アクセス権を有効にしている場合、この仮想ディレクトリに対する特定の HTTP リクエスト (URL) の取り扱いに不備が存在するため、inetinfo.exe がクラッシュしてしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000739",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA07-191A/index.html",
+      "source": "JVN",
+      "id": "JVNTA07-191A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA07-191A/index.html",
+      "source": "JVNTR",
+      "id": "TRTA07-191A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4360",
+      "source": "CVE",
+      "id": "CVE-2005-4360"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4360",
+      "source": "NVD",
+      "id": "CVE-2005-4360"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2007/at070017.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2007-0017"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/index.html#topics",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS07-036,037,038,039,040,041)"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA07-191A.html",
+      "source": "CERT-SA",
+      "id": "SA07-191A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA07-191A.html",
+      "source": "CERT-TA",
+      "id": "TA07-191A"
+    },
+    {
+      "text": "http://secunia.com/advisories/18106/",
+      "source": "SECUNIA",
+      "id": "SA18106"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15921",
+      "source": "BID",
+      "id": "15921"
+    },
+    {
+      "text": "http://www.iss.net/threats/268.html",
+      "source": "ISS",
+      "id": "268"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2005/Dec/1015376.html",
+      "source": "SECTRACK",
+      "id": "1015376"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/2963",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-2963"
+    },
+    {
+      "text": "http://isc.sans.org/diary.php?storyid=944",
+      "source": "SANS",
+      "id": "944"
+    },
+    {
+      "text": "http://www.osvdb.org/21805",
+      "source": "OSVDB",
+      "id": "21805"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:iis",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft IIS"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2007-07-18T17:24+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-07-18T17:24+09:00"
+}

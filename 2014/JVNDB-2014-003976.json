@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003976.html",
+  "title": "Monkey HTTP Server におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003976.html",
+  "description": "Monkey HTTP Server には、ファイル記述子テーブル (FDT) が有効、およびカスタムエラーメッセージが設定されている場合、サービス運用妨害 (ファイル記述子の消費) 状態にされる脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2014-003976",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5336",
+      "source": "CVE",
+      "id": "CVE-2014-5336"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5336",
+      "source": "NVD",
+      "id": "CVE-2014-5336"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:monkey-project:monkey_http_daemon",
+      "version": "2.2",
+      "vendor": "Monkey Project",
+      "product": "Monkey HTTP Daemon"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-08-29T10:45+09:00",
+  "issued": "2014-08-29T10:45+09:00",
+  "modified": "2014-08-29T10:45+09:00"
+}

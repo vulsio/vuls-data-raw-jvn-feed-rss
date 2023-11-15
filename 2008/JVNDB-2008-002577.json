@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002577.html",
+  "title": "GForge の utils/include.pl におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002577.html",
+  "description": "GForge の utils/include.pl の write_array_file 関数は、ゼロ長になるまで短縮し、新規データを書き込むことで設定ファイルを更新されるため、アクセス制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2008-002577",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0167",
+      "source": "CVE",
+      "id": "CVE-2008-0167"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-0167",
+      "source": "NVD",
+      "id": "CVE-2008-0167"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+      "id": "CWE-59",
+      "title": "リンク解釈の問題(CWE-59)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gforgegroup:gforge",
+      "version": "2.2",
+      "vendor": "GForge Group",
+      "product": "GForge Advanced Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-06-26T15:54+09:00",
+  "issued": "2012-06-26T15:54+09:00",
+  "modified": "2012-06-26T15:54+09:00"
+}

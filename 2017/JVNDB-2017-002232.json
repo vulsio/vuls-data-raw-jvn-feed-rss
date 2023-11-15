@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002232.html",
+  "title": "複数の Web ブラウザに実装されている W3C High Resolution Time API における AnC 攻撃を実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002232.html",
+  "description": "複数の Web ブラウザに実装されている W3C High Resolution Time API は、https://bugzilla.mozilla.org/show_bug.cgi?id=1167489#c9 の保護メカニズムが実施されているとしても、メモリ参照時間が performance.now によって測定されることを考慮しないため、AnC 攻撃を実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2017-002232",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5928",
+      "source": "CVE",
+      "id": "CVE-2017-5928"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-5928",
+      "source": "NVD",
+      "id": "CVE-2017-5928"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/97036/info",
+      "source": "関連文書",
+      "id": "W3C High Resolution Time API CVE-2017-5928 Security Vulnerability"
+    },
+    {
+      "text": "https://www.vusec.net/projects/anc/",
+      "source": "関連文書",
+      "id": "AnC: The AnC attack"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/361.html",
+      "id": "CWE-361",
+      "title": "時間とステータス(CWE-361)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:w3c:high_resolution_time_api",
+      "version": "2.2",
+      "vendor": "W3C",
+      "product": "High Resolution Time"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "3.7",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2017-04-05T16:44+09:00",
+  "issued": "2017-04-05T16:44+09:00",
+  "modified": "2017-04-05T16:44+09:00"
+}

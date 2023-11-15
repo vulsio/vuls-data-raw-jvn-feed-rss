@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007473.html",
+  "title": "Facebook Proxygen におけるハイジャック攻撃を実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007473.html",
+  "description": "Facebook Proxygen は、HTTPMessage.request ステートを誤って管理するため、ハイジャック攻撃を実行され、ACL チェックを回避される脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2015-007473",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7265",
+      "source": "CVE",
+      "id": "CVE-2015-7265"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-7265",
+      "source": "NVD",
+      "id": "CVE-2015-7265"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/284.html",
+      "id": "CWE-284",
+      "title": "不適切なアクセス制御(CWE-284)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:proxygen_project:proxygen",
+      "version": "2.2",
+      "vendor": "proxygen project",
+      "product": "proxygen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2017-05-11T16:22+09:00",
+  "issued": "2017-05-11T16:22+09:00",
+  "modified": "2017-05-11T16:22+09:00"
+}

@@ -1,0 +1,99 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-000070.html",
+  "title": "Internet Explorer における CDO によるダウンロードのダイアログボックス回避の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-000070.html",
+  "description": "Internet Explorer には、CDO (Collaboration Data Objects) によりダウンロードのダイアログボックスを回避可能な問題が存在します。\r\n\r\nInternet Explorer には、CDO (Collaboration Data Objects) でウェブサイトにアクセスする際に、Content-Disposition を正しく処理せず、本来ダウンロードのダイアログボックスが表示されるべき個所で表示しない問題があります。\r\n\r\nこの問題は Internet Explorer で CDO の処理に使用している Office コンポーネントに原因があり、修正は Microsoft Office 側で行われています。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC がベンダとの調整を行いました。\r\n報告者：ネットエージェント株式会社\r\n",
+  "identifier": "JVNDB-2008-000070",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN55410403/index.html",
+      "source": "JVN",
+      "id": "JVN#55410403"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA08-288A/index.html",
+      "source": "JVN",
+      "id": "JVNTA08-288A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA08-288A/",
+      "source": "JVNTR",
+      "id": "TRTA08-288A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4020",
+      "source": "CVE",
+      "id": "CVE-2008-4020"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-4020",
+      "source": "NVD",
+      "id": "CVE-2008-4020"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2008/at080017.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2008-0017"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/2008/20081015_110510.html",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA08-288A.html",
+      "source": "CERT-SA",
+      "id": "SA08-288A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA08-288A.html",
+      "source": "CERT-TA",
+      "id": "TA08-288A"
+    },
+    {
+      "text": "http://secunia.com/advisories/32138/",
+      "source": "SECUNIA",
+      "id": "SA32138"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/31693",
+      "source": "BID",
+      "id": "31693"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/2807",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-2807"
+    },
+    {
+      "text": "http://jvndb.jvn.jp/en/contents/2008/JVNDB-2008-000070.html",
+      "source": "JVNDB_En",
+      "id": "JVNDB-2008-000070"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:office",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Office"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2008-10-20T15:05+09:00",
+  "issued": "2008-10-20T15:05+09:00",
+  "modified": "2008-10-20T15:05+09:00"
+}

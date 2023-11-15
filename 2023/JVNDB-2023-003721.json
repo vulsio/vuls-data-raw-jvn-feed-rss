@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-003721.html",
+  "title": "複数のトレンドマイクロ製企業向けエンドポイントセキュリティ製品において任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-003721.html",
+  "description": "トレンドマイクロ株式会社が提供する複数の企業向けエンドポイントセキュリティ製品には、サードパーティ製セキュリティ製品をアンインストールする機能において任意のコードが実行可能な脆弱性（CWE-94、CVE-2023-41179）が存在します。\r\n\r\nなお、開発者により本脆弱性を悪用した攻撃が確認されています。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2023-003721",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU90967486/",
+      "source": "JVN",
+      "id": "JVNVU#90967486"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-41179",
+      "source": "CVE",
+      "id": "CVE-2023-41179"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2023/at230021.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2023-0021"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:trendmicro:apex_one",
+      "version": "2.2",
+      "vendor": "トレンドマイクロ",
+      "product": "Apex One"
+    },
+    {
+      "text": "cpe:/a:trendmicro:business_security",
+      "version": "2.2",
+      "vendor": "トレンドマイクロ",
+      "product": "ウイルスバスター ビジネスセキュリティ"
+    },
+    {
+      "text": "cpe:/a:trendmicro:business_security_services",
+      "version": "2.2",
+      "vendor": "トレンドマイクロ",
+      "product": "ウイルスバスター ビジネスセキュリティサービス"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.1",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-09-20T12:16+09:00",
+  "issued": "2023-09-20T12:16+09:00",
+  "modified": "2023-09-20T12:16+09:00"
+}

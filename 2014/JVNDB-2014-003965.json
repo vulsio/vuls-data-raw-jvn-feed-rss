@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003965.html",
+  "title": "QEMU の hw/usb/hcd-xhci.c の vmstate_xhci_event におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003965.html",
+  "description": "QEMU の hw/usb/hcd-xhci.c の vmstate_xhci_event は、VMSTATE_END_OF_LIST マクロを含むリストを終了しないため、サービス運用妨害 (領域外のアクセス、無限ループおよびメモリ破損) 状態にされる、および権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-003965",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5263",
+      "source": "CVE",
+      "id": "CVE-2014-5263"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5263",
+      "source": "NVD",
+      "id": "CVE-2014-5263"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-08-28T17:53+09:00",
+  "issued": "2014-08-28T17:53+09:00",
+  "modified": "2014-08-28T17:53+09:00"
+}

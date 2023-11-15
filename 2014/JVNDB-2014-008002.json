@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008002.html",
+  "title": "PHP の Fileinfo コンポーネントで使用される file の readelf.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008002.html",
+  "description": "PHP の Fileinfo コンポーネントで使用される file の readelf.c は、pread が利用可能なデータの一部しか読まないことがあることを考慮しないため、サービス運用妨害 (未初期化メモリへのアクセス) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2014-008002",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9653",
+      "source": "CVE",
+      "id": "CVE-2014-9653"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9653",
+      "source": "NVD",
+      "id": "CVE-2014-9653"
+    },
+    {
+      "text": "http://mx.gw.com/pipermail/file/2014/001649.html",
+      "source": "関連文書",
+      "id": "[PATCH] readelf.c: better checks for values returned by pread"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:file_project:file",
+      "version": "2.2",
+      "vendor": "file project",
+      "product": "file"
+    },
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-07-30T16:20+09:00",
+  "issued": "2015-04-02T16:04+09:00",
+  "modified": "2015-07-30T16:20+09:00"
+}

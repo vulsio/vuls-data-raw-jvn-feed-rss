@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001149.html",
+  "title": "Cisco Tandberg E, EX および C Series における root アカウントのデフォルト認証情報の問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001149.html",
+  "description": "ソフトウェアのバージョンが TC4.0.0 より前の Cisco Tandberg C Series Endpoints および E/EX Personal Video は、デフォルト設定で root アカウントがパスワード無しの状態で有効になっています。\r\n\r\nCisco Advisory cisco-sa-20110202-tandberg に記載された情報:\r\n\r\nThis vulnerability affects Tandberg C Series Endpoints and E/EX Personal Video units, including software that is running on the C20, C40, C60, C90, E20, EX60, and EX90 codecs. The software version of the Tandberg unit can be determined by logging into the web-based user interface (UI) or using the “xStatus SystemUnit” command.\r\n\r\nUsers can determine the Tandberg software version by entering the IP address of the codec in a web browser, authenticating (if the device is configured for authentication), and then selecting the “system info” menu option. The version number is displayed after the “Software Version” label in the System Info box.\r\n\r\nAlternatively the software version can be determined from the device's application programmer interface using the “xStatus SystemUnit” command. The software version running on the codec is displayed after the “SystemUnit Software Version” label. The output from “xStatus SystemUnit” will display a result similar to the following:”\r\n\r\nxStatus SystemUnit 　*s SystemUnit ProductType: “Cisco TelePresence Codec”\r\n*s SystemUnit ProductId: “Cisco TelePresence Codec C90”\r\n*s SystemUnit ProductPlatform: “C90”\r\n*s SystemUnit Uptime: 597095\r\n*s SystemUnit Software Application: “Endpoint”\r\n*s SystemUnit Software Version: “TC4.0”\r\n*s SystemUnit Software Name: “s52000”\r\n*s SystemUnit Software ReleaseDate: “2010-11-01”\r\n*s SystemUnit Software MaxVideoCalls: 3\r\n*s SystemUnit Software MaxAudioCalls: 4\r\n*s SystemUnit Software ReleaseKey: “true”\r\n*s SystemUnit Software OptionKeys NaturalPresenter: “true”\r\n*s SystemUnit Software OptionKeys MultiSite: “true”\r\n*s SystemUnit Software OptionKeys PremiumResolution: “true”\r\n*s SystemUnit Hardware Module SerialNumber: “B1AD25A00003”\r\n*s SystemUnit Hardware Module Identifier: “0”\r\n*s SystemUnit Hardware MainBoard SerialNumber: “PH0497201”\r\n*s SystemUnit Hardware MainBoard Identifier: “101401-3 [04]“\r\n*s SystemUnit Hardware VideoBoard SerialNumber: “PH0497874”\r\n*s SystemUnit Hardware VideoBoard Identifier: “101560-1 [02]“\r\n*s SystemUnit Hardware AudioBoard SerialNumber: “N/A”\r\n*s SystemUnit Hardware AudioBoard Identifier: ”“\r\n*s SystemUnit Hardware BootSoftware: “U-Boot 2009.03-65”\r\n*s SystemUnit State System: Initialized\r\n*s SystemUnit State MaxNumberOfCalls: 3\r\n*s SystemUnit State MaxNumberOfActiveCalls: 3\r\n*s SystemUnit State NumberOfActiveCalls: 1\r\n*s SystemUnit State NumberOfSuspendedCalls: 0\r\n*s SystemUnit State NumberOfInProgressCalls: 0\r\n*s SystemUnit State Subsystem Application: Initialized\r\n*s SystemUnit ContactInfo: “helpdesk@company.com”\r\n** end",
+  "identifier": "JVNDB-2011-001149",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU436854",
+      "source": "JVN",
+      "id": "JVNVU#436854"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0354",
+      "source": "CVE",
+      "id": "CVE-2011-0354"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0354",
+      "source": "NVD",
+      "id": "CVE-2011-0354"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/436854",
+      "source": "CERT-VN",
+      "id": "VU#436854"
+    },
+    {
+      "text": "http://secunia.com/advisories/43158",
+      "source": "SECUNIA",
+      "id": "SA43158"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/46107",
+      "source": "BID",
+      "id": "46107"
+    },
+    {
+      "text": "http://securitytracker.com/id?1025017",
+      "source": "SECTRACK",
+      "id": "1025017"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:cisco:tandberg_endpoint",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Tandberg C Series Endpoints"
+    },
+    {
+      "text": "cpe:/h:cisco:tandberg_personal_video_unit",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Tandberg E/EX Personal Video units"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-03-03T16:28+09:00",
+  "issued": "2011-03-03T16:28+09:00",
+  "modified": "2011-03-03T16:28+09:00"
+}

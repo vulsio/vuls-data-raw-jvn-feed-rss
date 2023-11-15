@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002309.html",
+  "title": "ProFTPD の mod_tls モジュールにおける client-hostname 制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002309.html",
+  "description": "ProFTPD の mod_tls モジュールには、dNSNameRequired TLS オプションが有効な場合、X.509 クライアント証明書内の Subject Alternative Name フィールドにある '\\0' を適切に処理しないため、client-hostname 制限を回避される脆弱性が存在します。\r\n本脆弱性は CVE-2009-2408 と関連があります。",
+  "identifier": "JVNDB-2009-002309",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3639",
+      "source": "CVE",
+      "id": "CVE-2009-3639"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3639",
+      "source": "NVD",
+      "id": "CVE-2009-3639"
+    },
+    {
+      "text": "http://secunia.com/advisories/37131",
+      "source": "SECUNIA",
+      "id": "SA37131"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/36804",
+      "source": "BID",
+      "id": "36795"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/53936",
+      "source": "XF",
+      "id": "53936"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:proftpd:proftpd",
+      "version": "2.2",
+      "vendor": "ProFTPD Project",
+      "product": "ProFTPD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2009-12-10T17:05+09:00",
+  "issued": "2009-12-10T17:05+09:00",
+  "modified": "2009-12-10T17:05+09:00"
+}

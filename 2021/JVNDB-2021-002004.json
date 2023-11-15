@@ -1,0 +1,80 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002004.html",
+  "title": "Ypsomed 製 mylife に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002004.html",
+  "description": "Ypsomed 社が提供する mylife Cloud および、モバイルアプリケーションである mylife App には、複数の脆弱性が存在します。\r\n \r\nYpsomed 社が提供する mylife Cloud、mylife App には、次の複数の脆弱性が存在します。\r\n\r\n　* 認証情報の不十分な保護 (CWE-522) - CVE-2021-27491\r\n　* 認証情報の不十分な保護 (CWE-522) - CVE-2021-27495\r\n　* CBC モードで使用する初期化ベクトルがランダム値ではない問題 (CWE-329) - CVE-2021-27499\r\n　* ハードコードされた認証情報を使用している問題 (CWE-798) - CVE-2021-27503",
+  "identifier": "JVNDB-2021-002004",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU92529180",
+      "source": "JVN",
+      "id": "JVNVU#92529180"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27491",
+      "source": "CVE",
+      "id": "CVE-2021-27491"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27495",
+      "source": "CVE",
+      "id": "CVE-2021-27495"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27499",
+      "source": "CVE",
+      "id": "CVE-2021-27499"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27503",
+      "source": "CVE",
+      "id": "CVE-2021-27503"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsma-21-196-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSMA-21-196-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/329.html",
+      "id": "CWE-329",
+      "title": "CBC モードにおけるランダムな初期化ベクトルの不使用(CWE-329)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/522.html",
+      "id": "CWE-522",
+      "title": "認証情報の不十分な保護(CWE-522)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/798.html",
+      "id": "CWE-798",
+      "title": "ハードコードされた認証情報の使用(CWE-798)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:vpsomed_ypsomed_mylife_app",
+      "version": "2.2",
+      "vendor": "Ypsomed AG",
+      "product": "Ypsomed mylife App"
+    },
+    {
+      "text": "cpe:/a:misc:vpsomed_ypsomed_mylife_cloud",
+      "version": "2.2",
+      "vendor": "Ypsomed AG",
+      "product": "Ypsomed mylife Cloud"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "6.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:N"
+    }
+  ],
+  "date": "2021-07-19T16:16+09:00",
+  "issued": "2021-07-19T16:16+09:00",
+  "modified": "2021-07-19T16:16+09:00"
+}

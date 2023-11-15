@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002846.html",
+  "title": "OpenOffice.org で使用される libwpd における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002846.html",
+  "description": "OpenOffice.org (OOo) で使用される libwpd の WPXContentListener.cpp 内の WPXContentListener::_closeTableRow 関数には、任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002846",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2149",
+      "source": "CVE",
+      "id": "CVE-2012-2149"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2149",
+      "source": "NVD",
+      "id": "CVE-2012-2149"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libwpd:libwpd",
+      "version": "2.2",
+      "vendor": "libwpd project",
+      "product": "libwpd"
+    },
+    {
+      "text": "cpe:/a:openoffice:openoffice.org",
+      "version": "2.2",
+      "vendor": "OpenOffice.org Project",
+      "product": "OpenOffice.org"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-07-26T16:59+09:00",
+  "issued": "2012-06-25T16:48+09:00",
+  "modified": "2012-07-26T16:59+09:00"
+}

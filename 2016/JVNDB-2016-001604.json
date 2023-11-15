@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001604.html",
+  "title": "Android のセットアップ ウィザードにおける Factory Reset Protection 保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001604.html",
+  "description": "Android のセットアップ ウィザードの policy/src/com/android/internal/policy/impl/PhoneWindowManager.java の interceptKeyBeforeDispatching 関数は、セットアップの完了を適切にチェックしないため、Factory Reset Protection 保護メカニズムを回避され、データを削除される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug 25229538 として公開しています。",
+  "identifier": "JVNDB-2016-001604",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0812",
+      "source": "CVE",
+      "id": "CVE-2016-0812"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0812",
+      "source": "NVD",
+      "id": "CVE-2016-0812"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:google:android",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:C/A:C"
+    }
+  ],
+  "date": "2016-03-16T12:26+09:00",
+  "issued": "2016-03-07T17:46+09:00",
+  "modified": "2016-03-16T12:26+09:00"
+}

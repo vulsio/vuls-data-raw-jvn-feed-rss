@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-016904.html",
+  "title": "Buildah project の Buildah 他複数ベンダの製品における誤ったグループへのユーザの配置に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-016904.html",
+  "description": "Buildah project の Buildah 他複数ベンダの製品には、誤ったグループへのユーザの配置に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-016904",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-2990",
+      "source": "CVE",
+      "id": "CVE-2022-2990"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-2990",
+      "source": "NVD",
+      "id": "CVE-2022-2990"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=2121453",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (2121453)"
+    },
+    {
+      "text": "https://www.benthamsgaze.org/2022/08/22/vulnerability-in-linux-containers-investigation-and-mitigation/",
+      "source": "関連文書",
+      "id": "www.benthamsgaze.org (vulnerability-in-linux-containers-investigation-and-mitigation)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/842.html",
+      "id": "CWE-842",
+      "title": "誤ったグループへのユーザの配置(CWE-842)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:buildah_project:buildah",
+      "version": "2.2",
+      "vendor": "Buildah project",
+      "product": "Buildah"
+    },
+    {
+      "text": "cpe:/a:redhat:openshift_container_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenShift Container Platform"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+    }
+  ],
+  "date": "2023-10-06T17:13+09:00",
+  "issued": "2023-10-06T17:13+09:00",
+  "modified": "2023-10-06T17:13+09:00"
+}

@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002174.html",
+  "title": "Apache Tomcat で使用される Apache Commons の jsvc における読み取り権限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002174.html",
+  "description": "Apache Tomcat で使用される Apache Commons の Daemon コンポーネント内にある jsvc の native/unix/native/jsvc-unix.c は、ケーパビリティコードに関する処理に不備があるため、ファイルの読み取り権限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2011-002174",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2729",
+      "source": "CVE",
+      "id": "CVE-2011-2729"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2729",
+      "source": "NVD",
+      "id": "CVE-2011-2729"
+    },
+    {
+      "text": "http://secunia.com/advisories/45641",
+      "source": "SECUNIA",
+      "id": "SA45641"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/49143",
+      "source": "BID",
+      "id": "49143"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/69161",
+      "source": "XF",
+      "id": "69161"
+    },
+    {
+      "text": "http://www.securitytracker.com/id/1025925",
+      "source": "SECTRACK",
+      "id": "1025925"
+    },
+    {
+      "text": "http://osvdb.org/74541",
+      "source": "OSVDB",
+      "id": "74541"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/a:hp:xp_9000_performance_advisor_software",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP XP P9000 Performance Advisor ソフトウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-03-05T18:16+09:00",
+  "issued": "2011-09-02T14:22+09:00",
+  "modified": "2015-03-05T18:16+09:00"
+}

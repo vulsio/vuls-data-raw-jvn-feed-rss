@@ -1,0 +1,145 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002544.html",
+  "title": "ISC BIND named validator に脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002544.html",
+  "description": "Internet Systems Consortium (ISC) が提供する BIND named には、特定の状況下で、ゾーンデータの状態を insecure としてしまう脆弱性が存在します。\r\n\r\nISC から以下の脆弱性情報が公開されています。\r\n\r\nISC named, acting as a DNSSEC validator, was determining if an NS RRset is insecure based on a value that could mean either that the RRset is actually insecure or that there wasn't a matching key for the RRSIG in the DNSKEY RRset when resuming from validating the DNSKEY RRset. This can happen when in the middle of a DNSKEY algorithm rollover, when two different algorithms were used to sign a zone but only the new set of keys are in the zone DNSKEY RRset.",
+  "identifier": "JVNDB-2010-002544",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU837744",
+      "source": "JVN",
+      "id": "JVNVU#837744"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3614",
+      "source": "CVE",
+      "id": "CVE-2010-3614"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3614",
+      "source": "NVD",
+      "id": "CVE-2010-3614"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/837744",
+      "source": "CERT-VN",
+      "id": "VU#837744"
+    },
+    {
+      "text": "http://secunia.com/advisories/42435",
+      "source": "SECUNIA",
+      "id": "SA42435"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/45137",
+      "source": "BID",
+      "id": "45137"
+    },
+    {
+      "text": "http://securitytracker.com/id?1024817",
+      "source": "SECTRACK",
+      "id": "1024817"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/3102",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-3102"
+    },
+    {
+      "text": "http://osvdb.org/69559",
+      "source": "OSVDB",
+      "id": "69559"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/a:vmware:esxi",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESXi"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:oracle:solaris",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Solaris"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2011-07-27T09:47+09:00",
+  "issued": "2010-12-24T15:36+09:00",
+  "modified": "2011-07-27T09:47+09:00"
+}

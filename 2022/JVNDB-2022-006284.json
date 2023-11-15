@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-006284.html",
+  "title": "sha256crypt project の sha256crypt 他複数ベンダの製品における制限またはスロットリング無しのリソースの割り当てに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-006284.html",
+  "description": "sha256crypt project の sha256crypt 他複数ベンダの製品には、制限またはスロットリング無しのリソースの割り当てに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-006284",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2016-20013",
+      "source": "CVE",
+      "id": "CVE-2016-20013"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
+      "source": "NVD",
+      "id": "CVE-2016-20013"
+    },
+    {
+      "text": "https://akkadia.org/drepper/SHA-crypt.txt",
+      "source": "関連文書",
+      "id": "akkadia.org (SHA-crypt.txt)"
+    },
+    {
+      "text": "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+      "source": "関連文書",
+      "id": "pthree.org (do-not-use-sha256crypt-sha512crypt-theyre-dangerous)"
+    },
+    {
+      "text": "https://twitter.com/solardiz/status/795601240151457793",
+      "source": "関連文書",
+      "id": "twitter.com (status/795601240151457793)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/770.html",
+      "id": "CWE-770",
+      "title": "制限またはスロットリング無しのリソースの割り当て(CWE-770)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sha256crypt_project:sha256crypt",
+      "version": "2.2",
+      "vendor": "sha256crypt project",
+      "product": "sha256crypt"
+    },
+    {
+      "text": "cpe:/a:sha512crypt_project:sha512crypt",
+      "version": "2.2",
+      "vendor": "sha512crypt project",
+      "product": "sha512crypt"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-07-03T18:00+09:00",
+  "issued": "2023-07-03T18:00+09:00",
+  "modified": "2023-07-03T18:00+09:00"
+}

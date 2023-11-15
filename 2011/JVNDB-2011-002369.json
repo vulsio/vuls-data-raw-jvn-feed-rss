@@ -1,0 +1,95 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002369.html",
+  "title": "Quagga の ospf6_lsa.c 内にある ospf6_lsa_is_changed 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002369.html",
+  "description": "Quagga ospf6d の OSPFv3 実装の ospf6_lsa.c 内にある ospf6_lsa_is_changed 関数には、サービス運用妨害 (表明違反および Daemon Exit) 状態となる脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2011-002369",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU668534",
+      "source": "JVN",
+      "id": "JVNVU#668534"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3324",
+      "source": "CVE",
+      "id": "CVE-2011-3324"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3324",
+      "source": "NVD",
+      "id": "CVE-2011-3324"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/668534",
+      "source": "CERT-VN",
+      "id": "VU#668534"
+    },
+    {
+      "text": "https://www.cert.fi/en/reports/2011/vulnerability539178.html",
+      "source": "CERT-FI",
+      "id": "CERT-FI Advisory on Quagga"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:quagga:quagga",
+      "version": "2.2",
+      "vendor": "Quagga",
+      "product": "Quagga"
+    },
+    {
+      "text": "cpe:/o:iij:seil%252fb1_firmware",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/B1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:iij:seil%252fneu_2fe_plus_firmware",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/neu 2FE Plus ファームウェア"
+    },
+    {
+      "text": "cpe:/o:iij:seil%252fturbo_firmware",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/Turbo ファームウェア"
+    },
+    {
+      "text": "cpe:/o:iij:seil%252fx1_firmware",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/X1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:iij:seil%252fx2_firmware",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/X2 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:iij:seil%252fx86_firmware",
+      "version": "2.2",
+      "vendor": "インターネットイニシアティブ",
+      "product": "SEIL/x86 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-11-13T15:08+09:00",
+  "issued": "2011-10-14T15:48+09:00",
+  "modified": "2012-11-13T15:08+09:00"
+}

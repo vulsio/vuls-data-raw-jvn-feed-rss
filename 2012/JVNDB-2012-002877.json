@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002877.html",
+  "title": "複数の製品で使用される Webkit におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002877.html",
+  "description": "Google Chrome には、Cascading Style Sheets (CSS) のカウンタ機能を使用するドキュメントのレイアウトに関する処理に不備があるため、解放済みメモリの使用 (Use-after-free) により、サービス運用妨害 (DoS) 状態となるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n本脆弱性は Webkit における脆弱性です。\r\nGoogle Chrome 以外の Webkit を利用する製品も影響を受ける可能性があります。",
+  "identifier": "JVNDB-2012-002877",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU503755/index.html",
+      "source": "JVN",
+      "id": "JVNVU#503755"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU624491/index.html",
+      "source": "JVN",
+      "id": "JVNVU#624491"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2818",
+      "source": "CVE",
+      "id": "CVE-2012-2818"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2818",
+      "source": "NVD",
+      "id": "CVE-2012-2818"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:safari",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Safari"
+    },
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-10-04T16:57+09:00",
+  "issued": "2012-06-28T15:23+09:00",
+  "modified": "2012-10-04T16:57+09:00"
+}

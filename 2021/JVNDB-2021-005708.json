@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005708.html",
+  "title": "Ubuntu Kernel における権限管理に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005708.html",
+  "description": "Ubuntu Kernel には、権限管理に関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2021-005708",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3493",
+      "source": "CVE",
+      "id": "CVE-2021-3493"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3493",
+      "source": "NVD",
+      "id": "CVE-2021-3493"
+    },
+    {
+      "text": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=7c03e2cda4a584cadc398e8f6641ca9988a39d52",
+      "source": "関連文書",
+      "id": "vfs: move cap_convert_nscap() call into vfs_setxattr()"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/269.html",
+      "id": "CWE-269",
+      "title": "不適切な権限管理(CWE-269)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-12-17T12:13+09:00",
+  "issued": "2021-12-17T12:13+09:00",
+  "modified": "2021-12-17T12:13+09:00"
+}

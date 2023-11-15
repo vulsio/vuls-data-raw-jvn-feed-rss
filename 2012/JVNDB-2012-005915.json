@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005915.html",
+  "title": "GnuPG の g10/import.c における公開鍵リングのデータベースを破壊される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005915.html",
+  "description": "GnuPG の g10/import.c 内の read_block 関数には、鍵をインポートする際、公開鍵リングのデータベースを破壊される、またはサービス運用妨害 (アプリケーションクラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-005915",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6085",
+      "source": "CVE",
+      "id": "CVE-2012-6085"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6085",
+      "source": "NVD",
+      "id": "CVE-2012-6085"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gnupg",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GnuPG"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2013-01-25T14:18+09:00",
+  "issued": "2013-01-25T14:18+09:00",
+  "modified": "2013-01-25T14:18+09:00"
+}

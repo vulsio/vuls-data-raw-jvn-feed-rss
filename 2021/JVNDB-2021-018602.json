@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-018602.html",
+  "title": "Canonical の snapd および Ubuntu における不適切なデフォルトパーミッションに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-018602.html",
+  "description": "Canonical の snapd および Ubuntu には、不適切なデフォルトパーミッションに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-018602",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-3155",
+      "source": "CVE",
+      "id": "CVE-2021-3155"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3155",
+      "source": "NVD",
+      "id": "CVE-2021-3155"
+    },
+    {
+      "text": "https://github.com/snapcore/snapd/commit/6bcaeeccd16ed8298a301dd92f6907f88c24cc85",
+      "source": "関連文書",
+      "id": "github.com (6bcaeeccd16ed8298a301dd92f6907f88c24cc85)"
+    },
+    {
+      "text": "https://github.com/snapcore/snapd/commit/7d2a966620002149891446a53cf114804808dcca",
+      "source": "関連文書",
+      "id": "github.com (7d2a966620002149891446a53cf114804808dcca)"
+    },
+    {
+      "text": "https://ubuntu.com/security/notices/USN-5292-1",
+      "source": "関連文書",
+      "id": "ubuntu.com (USN-5292-1)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/276.html",
+      "id": "CWE-276",
+      "title": "不適切なデフォルトパーミッション(CWE-276)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:canonical:snapd",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "snapd"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2023-07-03T17:36+09:00",
+  "issued": "2023-07-03T17:36+09:00",
+  "modified": "2023-07-03T17:36+09:00"
+}

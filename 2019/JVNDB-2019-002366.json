@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-002366.html",
+  "title": "UltraVNC における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-002366.html",
+  "description": "UltraVNC には、境界外読み取りに関する脆弱性、および境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2019-002366",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU97501786/",
+      "source": "JVN",
+      "id": "JVNVU#97501786"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU91051134/index.html",
+      "source": "JVN",
+      "id": "JVNVU#91051134"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-8265",
+      "source": "CVE",
+      "id": "CVE-2019-8265"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-8265",
+      "source": "NVD",
+      "id": "CVE-2019-8265"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-161-06",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-161-06"
+    },
+    {
+      "text": "https://ics-cert.kaspersky.com/advisories/klcert-advisories/2019/03/01/klcert-19-012-ultravnc-access-of-memory-location-after-end-of-buffer/",
+      "source": "関連文書",
+      "id": "KLCERT-19-012: UltraVNC Access of Memory Location After End of Buffer"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:uvnc:ultravnc",
+      "version": "2.2",
+      "vendor": "UVNC",
+      "product": "Ultra VNC"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-05-19T16:00+09:00",
+  "issued": "2019-04-08T13:36+09:00",
+  "modified": "2021-05-19T16:00+09:00"
+}

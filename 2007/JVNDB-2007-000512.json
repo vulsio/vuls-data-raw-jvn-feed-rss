@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000512.html",
+  "title": "Perl モジュール Net::DNS の Header.pm における DNS クエリ ID を容易に推測可能な問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000512.html",
+  "description": "Perl モジュール Net::DNS の Header.pm には DNS クエリ ID が一定に増加する生成方法であり、また、同じ DNS クエリ ID をすべての子プロセスが使用するため、DNS クエリ ID が容易に推測可能な問題が存在します。",
+  "identifier": "JVNDB-2007-000512",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3377",
+      "source": "CVE",
+      "id": "CVE-2007-3377"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-3377",
+      "source": "NVD",
+      "id": "CVE-2007-3377"
+    },
+    {
+      "text": "http://secunia.com/advisories/25829/",
+      "source": "SECUNIA",
+      "id": "SA25829"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/24669",
+      "source": "BID",
+      "id": "24669"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:net_dns:net_dns",
+      "version": "2.2",
+      "vendor": "net-dns.org",
+      "product": "Net::DNS"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-07-20T17:06+09:00",
+  "issued": "2007-07-20T17:06+09:00",
+  "modified": "2007-07-20T17:06+09:00"
+}

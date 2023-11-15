@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-000034.html",
+  "title": "Java Web Start における設定ファイル読み込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-000034.html",
+  "description": "Oracle の提供する Java Web Start には、設定ファイルの読み込みに関する脆弱性が存在します。\r\n\r\nJava Web Start は、Oracle が提供する JRE (Java Runtime Environment) 等の Java 実行環境に含まれるソフトウェアです。Java Web Start には、設定ファイル読み込み処理に問題があり、意図しない設定ファイルを読み込んでしまう脆弱性が存在します。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社富士通研究所 兒島 尚 氏",
+  "identifier": "JVNDB-2011-000034",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN09206238/",
+      "source": "JVN",
+      "id": "JVN#09206238"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0786",
+      "source": "CVE",
+      "id": "CVE-2011-0786"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0786",
+      "source": "NVD",
+      "id": "CVE-2011-0786"
+    },
+    {
+      "text": "http://www.ipa.go.jp/about/press/20110610.html",
+      "source": "IPA CFA",
+      "id": "「Java Web Start」における3件のセキュリティ上の弱点（脆弱性）の注意喚起"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2011/at110015.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2011-0015"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/#topics",
+      "source": "AT-POLICE",
+      "id": "アドビシステムズ社の Adobe Flash Player のセキュリティ修正プログラムについて(2011年06月06日)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hp:systems_insight_manager",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP Systems Insight Manager"
+    },
+    {
+      "text": "cpe:/a:sun:jdk",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "JDK"
+    },
+    {
+      "text": "cpe:/a:sun:jre",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "JRE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-03-26T14:44+09:00",
+  "issued": "2011-06-10T11:03+09:00",
+  "modified": "2013-03-26T14:44+09:00"
+}

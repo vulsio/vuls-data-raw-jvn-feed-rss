@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000498.html",
+  "title": "Sun Java SDK および JRE の readObject におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000498.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nJava Virtual Machine (JVM) には、内部的に使用されるプライベートな Java パッケージが多数存在し、アプレットからこれらのパッケージにアクセスすることはセキュリティ機構により制限されています。 \r\n\r\nSun Java SDK and JRE 1.3.1_12 以前/1.4.2_05 以前 の Sun Java プラグインに実装されているセキュリティ機構には不備が存在し、本来 Java アプレットからのアクセスが制限されるクラスに対して、JavaScript を用いることでアクセス可能となる問題が存在します。 \r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した Web ページを、Java プラグインを使用する Web ブラウザで閲覧するよう標的ユーザを誘導することにより、標的ユーザの権限で任意のファイルへのアクセス、任意のファイルのダウンロードあるいはアップロード、さらには任意のコードを実行することが可能です。 \r\n\r\n尚、Windows、HP-UX、Solaris、Linux の全てのプラットフォームにおいてこの問題の影響を受けることがベンダより報告されています。ただし Sun JDK and JRE 5.0 には、この問題の影響はありません。",
+  "identifier": "JVNDB-2004-000498",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2540",
+      "source": "CVE",
+      "id": "CVE-2004-2540"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-2540",
+      "source": "NVD",
+      "id": "CVE-2004-2540"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/760344",
+      "source": "CERT-VN",
+      "id": "VU#760344"
+    },
+    {
+      "text": "http://www.us-cert.gov/current/current_activity.html#javaapi",
+      "source": "CERT-CA",
+      "id": "javaapi"
+    },
+    {
+      "text": "http://secunia.com/advisories/13271/",
+      "source": "SECUNIA",
+      "id": "SA13271"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11726",
+      "source": "BID",
+      "id": "11726"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:symantec:enterprise_firewall",
+      "version": "2.2",
+      "vendor": "シマンテック",
+      "product": "Symantec Enterprise Firewall"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

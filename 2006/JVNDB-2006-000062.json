@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000062.html",
+  "title": "BEA WebLogic Server におけるサービス運用妨害 (DoS) および Mbean 属性に不正アクセスされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000062.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nBEA WebLogic Server には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・Remote Method Invocation (RMI) によるアクセスが許可されている場合、保護されている Managed Bean (Mbean) 属性に Java クライアントが不正にアクセス可能となる、あるいは WebLogic Server に対してサービス不能状態を起こすことが可能な問題 (BEA06-109.00)\r\n\r\n・サーバログに対するアクセス権限が不適切に設定されているため、administrative ロール以外のユーザがサーバログにアクセスすることが可能である問題 (BEA06-111.00)\r\n\r\nリモート/ローカルの攻撃者に悪用された場合、標的 WebLogic Server がサービス不能状態に陥る、あるいは Mbean 属性やサーバログより、重要な情報が取得されてしまう可能性があります。",
+  "identifier": "JVNDB-2006-000062",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0422",
+      "source": "CVE",
+      "id": "CVE-2006-0422"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0422",
+      "source": "NVD",
+      "id": "CVE-2006-0422"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/16358",
+      "source": "BID",
+      "id": "16358"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bea:weblogic_server",
+      "version": "2.2",
+      "vendor": "BEAシステムズ",
+      "product": "BEA WebLogic Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

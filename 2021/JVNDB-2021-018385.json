@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-018385.html",
+  "title": "SQLite Project SQLite3 における有効期限後のメモリの解放の欠如に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-018385.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nSQLite Project SQLite3 には、有効期限後のメモリの解放の欠如に関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性に対して異議を唱えています。\r\n詳細については、以下の NVD の Current Description を確認してください。\r\nhttps://nvd.nist.gov/vuln/detail/CVE-2021-45346\r\n\r\n",
+  "identifier": "JVNDB-2021-018385",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-45346",
+      "source": "CVE",
+      "id": "CVE-2021-45346"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-45346",
+      "source": "NVD",
+      "id": "CVE-2021-45346"
+    },
+    {
+      "text": "https://github.com/guyinatuxedo/sqlite3_record_leaking",
+      "source": "関連文書",
+      "id": "guyinatuxedo/sqlite3_record_leaking"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/401.html",
+      "id": "CWE-401",
+      "title": "有効期限後のメモリの解放の欠如(CWE-401)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:netapp:ontap_select_deploy_administration_utility",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "ONTAP Select Deploy administration utility"
+    },
+    {
+      "text": "cpe:/a:sqlite:sqlite",
+      "version": "2.2",
+      "vendor": "SQLite",
+      "product": "SQLite"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2023-06-07T14:03+09:00",
+  "issued": "2023-06-07T14:03+09:00",
+  "modified": "2023-06-07T14:03+09:00"
+}

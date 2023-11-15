@@ -1,0 +1,87 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000314.html",
+  "title": "Microsoft Virtual Machine におけるセキュリティチェックを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000314.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nJava VM 5.0.3805 以前には、アプレットの実装に不備が存在するため、以下の複数のセキュリティの問題が存在します。\r\n\r\n1．CODEBASE を詐称されることにより特定のフォルダへアクセスされる。\r\n2．ドメイン名を詐称されることにより情報が漏洩する。\r\n3．JDBC API を介して特定のデータを追加/削除される。\r\n4．Standard Security Manager (SSM) の実装の不備により、任意の Java オブジェクトが追加される。\r\n5．User.dir 内の情報を漏洩する。\r\n6．Java オブジェクトに対してインスタンスが適切に作成されないため、Java Applet を実行するブラウザがクラッシュする。\r\n\r\nこれらの問題を利用することにより、Web ページや HTML 形式のメールを介して悪意のある Java アプレットを送りつけることにより、リモートの攻撃者は、最悪の場合標的ホスト上の任意のファイルの追加/削除、Java Applet を実行するブラウザがクラッシュすることなどが可能となります。\r\n尚、Web ブラウザや、HTML 形式をサポートしているメールクライアントにおいて Java を無効としている場合にはこの問題の影響は受けません。",
+  "identifier": "JVNDB-2002-000314",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1260",
+      "source": "CVE",
+      "id": "CVE-2002-1260"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1260",
+      "source": "NVD",
+      "id": "CVE-2002-1260"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6380",
+      "source": "BID",
+      "id": "6380"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6372",
+      "source": "BID",
+      "id": "6372"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6377",
+      "source": "BID",
+      "id": "6377"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6379",
+      "source": "BID",
+      "id": "6379"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6381",
+      "source": "BID",
+      "id": "6381"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6382",
+      "source": "BID",
+      "id": "6382"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows-9x",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 9X"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_nt",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows NT"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

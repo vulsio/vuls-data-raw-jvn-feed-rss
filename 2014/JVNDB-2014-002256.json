@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002256.html",
+  "title": "Festo Modular controllers CECX-X-C1 および CECX-X-M1 における設定を変更される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002256.html",
+  "description": "Festo CECX-X-C1 Modular Master Controller with CoDeSys および CECX-X-M1 Modular Controller with CoDeSys and SoftMotion は、特定の TCP ポートの接続に対する認証を要求しないため、設定を変更される、またはログエントリを削除される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002256",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0769",
+      "source": "CVE",
+      "id": "CVE-2014-0769"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0769",
+      "source": "NVD",
+      "id": "CVE-2014-0769"
+    },
+    {
+      "text": "http://ics-cert.us-cert.gov/advisories/ICSA-14-084-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-14-084-01"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:codesys:codesys_runtime_system",
+      "version": "2.2",
+      "vendor": "CODESYS GmbH",
+      "product": "CODESYS Control Runtime System"
+    },
+    {
+      "text": "cpe:/a:softmotion3d:softmotion",
+      "version": "2.2",
+      "vendor": "SoftMotion3D",
+      "product": "SoftMotion"
+    },
+    {
+      "text": "cpe:/h:festo:cecx-x-c1_modular_master_controller",
+      "version": "2.2",
+      "vendor": "Festo",
+      "product": "CECX-X-C1 Modular Master Controller"
+    },
+    {
+      "text": "cpe:/h:festo:cecx-x-m1_modular_controller",
+      "version": "2.2",
+      "vendor": "Festo",
+      "product": "CECX-X-M1 Modular Controller"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-04-28T15:40+09:00",
+  "issued": "2014-04-28T15:40+09:00",
+  "modified": "2014-04-28T15:40+09:00"
+}

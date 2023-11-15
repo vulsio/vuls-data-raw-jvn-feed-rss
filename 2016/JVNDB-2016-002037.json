@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002037.html",
+  "title": "Microsoft Internet Explorer 11 における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002037.html",
+  "description": "Microsoft Internet Explorer 11 は、DLL のローディングを誤って処理するため、権限を取得される脆弱性が存在します。\r\n\r\nマイクロソフトセキュリティ情報には、この脆弱性は「DLL 読み込みのリモート コード実行の脆弱性」と記載されています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-426: Untrusted Search Path (信頼性のない検索パス) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/426.html",
+  "identifier": "JVNDB-2016-002037",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0160",
+      "source": "CVE",
+      "id": "CVE-2016-0160"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0160",
+      "source": "NVD",
+      "id": "CVE-2016-0160"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20160413-ms.html",
+      "source": "IPA CFA",
+      "id": "Microsoft 製品の脆弱性対策について(2016年4月)"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2016/at160017.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2016-0017"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/topics/?seq=18164",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS16-037,038,039,040,041,042,044,045,046,047,048,049,050)(2016年04月13日)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:internet_explorer",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Internet Explorer"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-04-15T11:54+09:00",
+  "issued": "2016-04-15T11:54+09:00",
+  "modified": "2016-04-15T11:54+09:00"
+}

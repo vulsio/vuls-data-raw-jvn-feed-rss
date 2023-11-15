@@ -1,0 +1,111 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006117.html",
+  "title": "IDEC 製 PLC に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006117.html",
+  "description": "IDEC 株式会社が提供する PLC には、次の複数の脆弱性が存在します。\r\n\r\n　* 保護されていない認証情報の送信（CWE-523）- CVE-2021-37400\r\n　* 認証情報の平文保存（CWE-256）- CVE-2021-374010\r\n　* 保護されていない認証情報の送信（CWE-523）- CVE-2021-20826\r\n　* 認証情報の平文保存（CWE-256） - CVE-2021-20827\r\n\r\nこの脆弱性情報は、次の報告者が製品開発者に直接届出をし、製品開発者から JPCERT/CC に調整依頼があり、JPCERT/CC が報告者、製品開発者、ICS-CERT との調整を行い公表に至りました。\r\n報告者: FM Approvals Khalid Ansari 氏",
+  "identifier": "JVNDB-2021-006117",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU92279973/",
+      "source": "JVN",
+      "id": "JVNVU#92279973"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37400",
+      "source": "CVE",
+      "id": "CVE-2021-37400"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37401",
+      "source": "CVE",
+      "id": "CVE-2021-37401"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20826",
+      "source": "CVE",
+      "id": "CVE-2021-20826"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20827",
+      "source": "CVE",
+      "id": "CVE-2021-20827"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-006-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-006-03"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/256.html",
+      "id": "CWE-256",
+      "title": "認証情報の平文保存(CWE-256)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/523.html",
+      "id": "CWE-523",
+      "title": "認証情報の保護しない転送(CWE-523)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:idec:data_file_manager",
+      "version": "2.2",
+      "vendor": "IDEC株式会社",
+      "product": "データ ファイル マネージャー"
+    },
+    {
+      "text": "cpe:/a:idec:fc6a_microsmart_allinone_cpu_module",
+      "version": "2.2",
+      "vendor": "IDEC株式会社",
+      "product": "FC6A 形 MICROSmart All-in-One CPU モジュール"
+    },
+    {
+      "text": "cpe:/a:idec:fc6a_microsmart_plus_cpu_module",
+      "version": "2.2",
+      "vendor": "IDEC株式会社",
+      "product": "FC6A 形 MICROSmart Plus CPU モジュール"
+    },
+    {
+      "text": "cpe:/a:idec:fc6b_microsmart_allinone_cpu_module",
+      "version": "2.2",
+      "vendor": "IDEC株式会社",
+      "product": "FC6B 形 MICROSmart All-in-One CPU モジュール"
+    },
+    {
+      "text": "cpe:/a:idec:fc6b_microsmart_plus_cpu_module",
+      "version": "2.2",
+      "vendor": "IDEC株式会社",
+      "product": "FC6B 形 MICROSmart Plus CPU モジュール"
+    },
+    {
+      "text": "cpe:/a:idec:ft1a_controller_smartaxis_pro_lite",
+      "version": "2.2",
+      "vendor": "IDEC株式会社",
+      "product": "FT1A 形 コントローラ SmartAXIS Pro/Lite"
+    },
+    {
+      "text": "cpe:/a:idec:windedit_lite",
+      "version": "2.2",
+      "vendor": "IDEC株式会社",
+      "product": "WindEDIT Lite"
+    },
+    {
+      "text": "cpe:/a:idec:WindLDR",
+      "version": "2.2",
+      "vendor": "IDEC株式会社",
+      "product": "WindLDR"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L"
+    }
+  ],
+  "date": "2022-01-11T16:34+09:00",
+  "issued": "2021-12-27T15:33+09:00",
+  "modified": "2022-01-11T16:34+09:00"
+}

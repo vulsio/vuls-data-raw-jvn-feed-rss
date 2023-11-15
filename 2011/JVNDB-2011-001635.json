@@ -1,0 +1,84 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001635.html",
+  "title": "Linux kernel の caiaq Native Instruments USB オーディオ機能におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001635.html",
+  "description": "Linux kernel の caiaq Native Instruments USB オーディオ機能には、以下に関する処理において不備があるため、バッファオーバーフローの脆弱性が存在します。\r\n\r\n(1) sound/usb/caiaq/audio.c 内の snd_usb_caiaq_audio_init 関数\r\n(2) sound/usb/caiaq/midi.c 内の snd_usb_caiaq_midi_init 関数",
+  "identifier": "JVNDB-2011-001635",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0712",
+      "source": "CVE",
+      "id": "CVE-2011-0712"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0712",
+      "source": "NVD",
+      "id": "CVE-2011-0712"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/46419",
+      "source": "BID",
+      "id": "46419"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/65461",
+      "source": "XF",
+      "id": "65461"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:rhel_server_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server EUS"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.2",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-05-26T10:21+09:00",
+  "issued": "2011-05-26T10:21+09:00",
+  "modified": "2011-05-26T10:21+09:00"
+}

@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005001.html",
+  "title": "WordPress 用 Appointment Booking Calendar プラグインにおける SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005001.html",
+  "description": "WordPress 用 Appointment Booking Calendar プラグインの cpabc_appointments_admin_int_calendar_list.inc.php には、ユーザ名のアップデートに関する処理に不備があるため、SQL インジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2015-005001",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7319",
+      "source": "CVE",
+      "id": "CVE-2015-7319"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7319",
+      "source": "NVD",
+      "id": "CVE-2015-7319"
+    },
+    {
+      "text": "http://www.securityfocus.com/archive/1/archive/1/536555/100/0/threaded",
+      "source": "関連文書",
+      "id": "CVE-2015-7319 - SQL Injection in Appointment Booking Calendar 1.1.7 WordPress plugin"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:codepeople:appointment_booking_calendar",
+      "version": "2.2",
+      "vendor": "CodePeople",
+      "product": "Appointment Booking Calendar"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-10-01T16:57+09:00",
+  "issued": "2015-10-01T16:57+09:00",
+  "modified": "2015-10-01T16:57+09:00"
+}

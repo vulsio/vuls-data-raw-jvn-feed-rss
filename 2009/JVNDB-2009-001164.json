@@ -1,0 +1,169 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001164.html",
+  "title": "JDK および JRE の unpack200 における整数オーバフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001164.html",
+  "description": "Java SE Development Kit (JDK) および Java Runtime Environment (JRE) の unpack200 には、JAR ファイルの処理に不備があることにより、整数オーバフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001164",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1095",
+      "source": "CVE",
+      "id": "CVE-2009-1095"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1095",
+      "source": "NVD",
+      "id": "CVE-2009-1095"
+    },
+    {
+      "text": "http://secunia.com/advisories/34451",
+      "source": "SECUNIA",
+      "id": "SA34451"
+    },
+    {
+      "text": "http://secunia.com/advisories/34495",
+      "source": "SECUNIA",
+      "id": "SA34495"
+    },
+    {
+      "text": "http://secunia.com/advisories/34496",
+      "source": "SECUNIA",
+      "id": "SA34496"
+    },
+    {
+      "text": "http://secunia.com/advisories/34632",
+      "source": "SECUNIA",
+      "id": "SA34632"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/34240",
+      "source": "BID",
+      "id": "34240"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1021894",
+      "source": "SECTRACK",
+      "id": "1021894"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/0852",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-0852"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Extras"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_desktop_supplementary",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Supplementary"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_supplementary",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Supplementary"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_supplementary_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Supplementary EUS"
+    },
+    {
+      "text": "cpe:/a:sun:jdk",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "JDK"
+    },
+    {
+      "text": "cpe:/a:sun:jre",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "JRE"
+    },
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/a:vmware:server",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Server"
+    },
+    {
+      "text": "cpe:/a:vmware:vcenter",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware vCenter"
+    },
+    {
+      "text": "cpe:/a:vmware:virtualcenter",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware VirtualCenter"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-11-10T11:23+09:00",
+  "issued": "2009-04-22T10:57+09:00",
+  "modified": "2009-11-10T11:23+09:00"
+}

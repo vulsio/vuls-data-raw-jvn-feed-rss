@@ -1,0 +1,286 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001476.html",
+  "title": "OpenSSL の BN_mod_sqrt() における法が非素数のときに無限ループを引き起こす問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001476.html",
+  "description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20220315.txt\" target=_blank\">OpenSSL Security Advisory [15 March 2022]</a> が公開されました。\r\n深刻度 − 高（Severity: High）\r\nOpenSSL の BN_mod_sqrt() は有限体における平方根を計算します。BN_mod_sqrt() には、法が非素数の場合、無限ループを引き起こす問題があります。\r\nBN_mod_sqrt() は圧縮形式の楕円曲線暗号の公開鍵を含む証明書、もしくは圧縮形式でエンコードされた基準点（Base Point）を持つ楕円曲線パラメータを含む証明書をパースする際に使用されます。また、OpenSSL は証明書の署名を検証する前に証明書をパースするため、外部から受け取った証明書をパースする際、無限ループを引き起こされる可能性があります。同様に、秘密鍵に楕円曲線パラメータを含んでいる場合にも細工された秘密鍵をパースすることで無限ループを引き起こされる可能性があります。\r\nこの問題は次の状況で起こる可能性があります。\r\n\r\n　* TLS クライアントがサーバ証明書を処理する\r\n　* TLS サーバがクライアント証明書を処理する\r\n　* ホスティングサービス事業者が顧客から受け取った証明書や秘密鍵を処理する\r\n　* 認証局が契約者から受け取った CSR (証明書署名要求) データを処理する\r\n　* その他、ASN.1 形式の楕円曲線パラメータを処理する場合\r\n",
+  "identifier": "JVNDB-2022-001476",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU90813125/",
+      "source": "JVN",
+      "id": "JVNVU#90813125"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU99682885/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99682885"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU98905589/index.html",
+      "source": "JVN",
+      "id": "JVNVU#98905589"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU96890975/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96890975"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU91676340/",
+      "source": "JVN",
+      "id": "JVNVU#91676340"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-0778",
+      "source": "CVE",
+      "id": "CVE-2022-0778"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-0778",
+      "source": "NVD",
+      "id": "CVE-2022-0778"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-272-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-272-02"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-059-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-059-01"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-143-02"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:advanced_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "日立アドバンストサーバ HA8000V シリーズ"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_http_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus HTTP Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:highly_reliable_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "日立高信頼サーバ RV3000"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server64",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server(64)"
+    },
+    {
+      "text": "cpe:/a:hitachi:hitachi_application_server_r",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server-R"
+    },
+    {
+      "text": "cpe:/a:hitachi:jp1_automatic_job_management_system_3",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "JP1/Automatic Job Management System 3"
+    },
+    {
+      "text": "cpe:/a:hitachi:jp1_base",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "JP1/Base"
+    },
+    {
+      "text": "cpe:/a:hitachi:jp1_file_transmission_server_ftp",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "JP1/File Transmission Server/FTP"
+    },
+    {
+      "text": "cpe:/a:hitachi:jp1_performance_management",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "JP1/Performance Management"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server_base",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server Base"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server_base64",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server Base(64)"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Architect"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform_64",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform(64)"
+    },
+    {
+      "text": "cpe:/a:nec:actsecure_portal",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "ActSecure ポータル"
+    },
+    {
+      "text": "cpe:/a:nec:connexive_application_platform",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CONNEXIVE Application Platform"
+    },
+    {
+      "text": "cpe:/a:nec:connexive_pf",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "CONNEXIVE PF"
+    },
+    {
+      "text": "cpe:/a:nec:esmpro_serveragent",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "ESMPRO/ServerAgent"
+    },
+    {
+      "text": "cpe:/a:nec:esmpro_serveragentservice",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "ESMPRO/ServerAgentService"
+    },
+    {
+      "text": "cpe:/a:nec:iot_common_base",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IoT 共通基盤"
+    },
+    {
+      "text": "cpe:/a:nec:ismserver",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "iSMサーバ"
+    },
+    {
+      "text": "cpe:/a:nec:istoragemanager",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "iStorageManager"
+    },
+    {
+      "text": "cpe:/a:nec:istoragemanager_express",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "iStorageManager Express"
+    },
+    {
+      "text": "cpe:/a:nec:mission_critical_mail",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "Mission Critical Mail"
+    },
+    {
+      "text": "cpe:/a:nec:nec_enhanced_video_analytics",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NEC Enhanced Video Analytics"
+    },
+    {
+      "text": "cpe:/a:nec:neoface_monitor",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NeoFace Monitor"
+    },
+    {
+      "text": "cpe:/a:nec:simpwright",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SimpWright"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX Application Server"
+    },
+    {
+      "text": "cpe:/a:nec:webotx_sip_application_server",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WebOTX SIP Application Server"
+    },
+    {
+      "text": "cpe:/a:nec:witchymail",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "WitchyMail"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/h:nec:univerge",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "UNIVERGE"
+    },
+    {
+      "text": "cpe:/o:nec:ix_router",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "IX ルータ"
+    },
+    {
+      "text": "cpe:/o:nec:nec_cyber_security_platform",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NEC Cyber Security Platform"
+    },
+    {
+      "text": "cpe:/o:nec:nec_edge_gateway",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "NEC エッジゲートウェイ"
+    }
+  ],
+  "date": "2023-09-05T16:45+09:00",
+  "issued": "2022-03-17T15:12+09:00",
+  "modified": "2023-09-05T16:45+09:00"
+}

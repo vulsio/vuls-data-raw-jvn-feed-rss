@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002566.html",
+  "title": "GnuTLS の gnutls_x509_ext_import_proxy 関数におけるメモリ二重解放の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002566.html",
+  "description": "GnuTLS の gnutls_x509_ext_import_proxy 関数には、メモリ二重解放の脆弱性が存在します。",
+  "identifier": "JVNDB-2017-002566",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5334",
+      "source": "CVE",
+      "id": "CVE-2017-5334"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-5334",
+      "source": "NVD",
+      "id": "CVE-2017-5334"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/415.html",
+      "id": "CWE-415",
+      "title": "二重解放(CWE-415)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gnutls",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GnuTLS"
+    },
+    {
+      "text": "cpe:/o:opensuse_project:leap",
+      "version": "2.2",
+      "vendor": "openSUSE project",
+      "product": "openSUSE Leap"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-04-20T16:42+09:00",
+  "issued": "2017-04-20T16:42+09:00",
+  "modified": "2017-04-20T16:42+09:00"
+}

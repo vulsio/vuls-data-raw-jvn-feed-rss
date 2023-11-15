@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006753.html",
+  "title": "PHP で使用される GD Graphics Library の gd_interpolation.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006753.html",
+  "description": "PHP で使用される GD Graphics Library (別名 libgd) の gd_interpolation.c には、サービス運用妨害 (境界外読み取り) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-125: Out-of-bounds Read (境界外読み取り) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/125.html",
+  "identifier": "JVNDB-2013-006753",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7456",
+      "source": "CVE",
+      "id": "CVE-2013-7456"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7456",
+      "source": "NVD",
+      "id": "CVE-2013-7456"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libgd:libgd",
+      "version": "2.2",
+      "vendor": "LibGD project",
+      "product": "LibGD"
+    },
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H"
+    }
+  ],
+  "date": "2016-08-17T15:55+09:00",
+  "issued": "2016-08-17T15:55+09:00",
+  "modified": "2016-08-17T15:55+09:00"
+}

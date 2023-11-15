@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004494.html",
+  "title": "NUUO NVRmini 2 および NETGEAR ReadyNAS Surveillance の cgi-bin/cgi_main におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004494.html",
+  "description": "NUUO NVRmini 2 および NETGEAR ReadyNAS Surveillance の cgi-bin/cgi_main には、スタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2016-004494",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97220922/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97220922"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5680",
+      "source": "CVE",
+      "id": "CVE-2016-5680"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5680",
+      "source": "NVD",
+      "id": "CVE-2016-5680"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/856152",
+      "source": "CERT-VN",
+      "id": "VU#856152"
+    },
+    {
+      "text": "https://raw.githubusercontent.com/pedrib/PoC/master/advisories/nuuo-nvr-vulns.txt",
+      "source": "関連文書",
+      "id": "Multiple vulnerabilities in NUUO NVRmini2 / NVRsolo / Crystal devices and NETGEAR ReadyNAS Surveillance application"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:netgear:readynas_surveillance",
+      "version": "2.2",
+      "vendor": "ネットギア",
+      "product": "ReadyNAS Surveillance"
+    },
+    {
+      "text": "cpe:/o:nuuo:nvrmini_2",
+      "version": "2.2",
+      "vendor": "NUUO INC.",
+      "product": "NUUO NVRmini 2 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-09-01T16:07+09:00",
+  "issued": "2016-09-01T16:07+09:00",
+  "modified": "2016-09-01T16:07+09:00"
+}

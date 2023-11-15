@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003887.html",
+  "title": "RealPlayer のファイル名の処理にスタックバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003887.html",
+  "description": "RealPlayer のファイル名の処理には、スタックバッファオーバーフローの脆弱性が存在します。\r\n\r\nRealPlayer には、RMP ファイル (.rmp) のファイル名の処理に問題があり、スタックバッファオーバーフロー (CWE-121 (http://cwe.mitre.org/data/definitions/121.html)) の脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003887",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU92153282/",
+      "source": "JVN",
+      "id": "JVNVU#92153282"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4973",
+      "source": "CVE",
+      "id": "CVE-2013-4973"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4973",
+      "source": "NVD",
+      "id": "CVE-2013-4973"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/246524",
+      "source": "CERT-VN",
+      "id": "VU#246524"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:realnetworks:realplayer",
+      "version": "2.2",
+      "vendor": "リアルネットワークス",
+      "product": "RealNetworks RealPlayer"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-08-28T11:47+09:00",
+  "issued": "2013-08-27T18:05+09:00",
+  "modified": "2013-08-28T11:47+09:00"
+}

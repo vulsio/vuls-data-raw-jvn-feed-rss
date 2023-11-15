@@ -1,0 +1,81 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000531.html",
+  "title": "BIND の再帰問い合わせ処理におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000531.html",
+  "description": "BIND には、過度に大量の再帰問い合わせを処理した場合にキューが不適切に空になってしまうため、クエリーに対するレスポンスを受信した際に不整合が生じ、INSIST エラーが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000531",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23697164",
+      "source": "JVN",
+      "id": "JVNVU#697164"
+    },
+    {
+      "text": "http://jvn.jp/niscc/NISCC-172003",
+      "source": "JVN",
+      "id": "NISCC-172003"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4096",
+      "source": "CVE",
+      "id": "CVE-2006-4096"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4096",
+      "source": "NVD",
+      "id": "CVE-2006-4096"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/697164",
+      "source": "CERT-VN",
+      "id": "VU#697164"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/docs/re-20060905-00590.pdf?lang=en",
+      "source": "NISCC",
+      "id": "172003/NISCC/BIND9"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20060905-00590.xml",
+      "source": "CPNI",
+      "id": "00590"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19859",
+      "source": "BID",
+      "id": "19859"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

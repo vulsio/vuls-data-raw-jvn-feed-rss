@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015176.html",
+  "title": "openjpeg の t2 エンコーダにおける境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015176.html",
+  "description": "openjpeg の t2 エンコーダには、境界外読み取りに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-015176",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27842",
+      "source": "CVE",
+      "id": "CVE-2020-27842"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-27842",
+      "source": "NVD",
+      "id": "CVE-2020-27842"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1907513",
+      "source": "関連文書",
+      "id": "Bug 1907513 (CVE-2020-27842) - CVE-2020-27842 openjpeg: null pointer dereference in opj_tgt_reset function in lib/openjp2/tgt.c"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openjpeg:openjpeg",
+      "version": "2.2",
+      "vendor": "OpenJPEG project",
+      "product": "OpenJPEG"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2021-09-13T15:38+09:00",
+  "issued": "2021-09-13T15:38+09:00",
+  "modified": "2021-09-13T15:38+09:00"
+}

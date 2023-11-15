@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000703.html",
+  "title": "Linux Kernel の フローラベルの処理におけるメモリ領域を破壊される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000703.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・64 bit 用 Kernel では、32 bit 互換 の routing_ioctl() 関数において、sockfd_put() 関数で Null ポインタデリファレンスが発生する問題 (CVE-2005-3044)\r\n\r\n・x86-64 用 Kernel では、32 bit 互換の tiocgdev() 関数において、fput() 関数に関連する処理が不適切である問題 (CVE-2005-3044)\r\n\r\n・ip6_flowlabel.c において、IPv6 の基本ヘッダに含まれる識別子のひとつであるフローラベルの処理に不備が存在し、不正なソケットオプションが指定された場合に不適切なメモリ領域が解放され、メモリ領域が破壊される問題 (CVE-2005-3806)\r\n\r\nローカルの攻撃者に悪用された場合、Linux Kernel をクラッシュさせられ、システムがサービス不能状態に陥る可能性があります。",
+  "identifier": "JVNDB-2005-000703",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3806",
+      "source": "CVE",
+      "id": "CVE-2005-3806"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3806",
+      "source": "NVD",
+      "id": "CVE-2005-3806"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14902",
+      "source": "BID",
+      "id": "14902"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15729",
+      "source": "BID",
+      "id": "15729"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

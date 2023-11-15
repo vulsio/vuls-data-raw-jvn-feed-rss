@@ -1,0 +1,106 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001020.html",
+  "title": "sudo にヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001020.html",
+  "description": "sudo にはコマンドの引数に設定された特殊文字のエスケープ処理の実装に起因した、ヒープベースのバッファオーバーフロー (CWE-122) の脆弱性が存在します。\r\n2021年2月5日時点において、macOS、AIX、Solaris においても影響を受ける可能性があるとの報告がされていますが、発見者による確認は実施されていません。\r\n\r\nなお、2021年2月9日に Apple から本件に対応する<a href=\"https://support.apple.com/en-us/HT212177\" target=\"_blank\">セキュリティアップデート</a>が公開されました。",
+  "identifier": "JVNDB-2021-001020",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU96493147",
+      "source": "JVN",
+      "id": "JVNVU#96493147"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU92304019/",
+      "source": "JVN",
+      "id": "JVNVU#92304019"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU98963695/",
+      "source": "JVN",
+      "id": "JVNVU#98963695"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU91343607/",
+      "source": "JVN",
+      "id": "JVNVU#91343607"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU99480250/",
+      "source": "JVN",
+      "id": "JVNVU#99480250"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU90511416/index.html",
+      "source": "JVN",
+      "id": "JVNVU#90511416"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3156",
+      "source": "CVE",
+      "id": "CVE-2021-3156"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3156",
+      "source": "NVD",
+      "id": "CVE-2021-3156"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2021/at210005.html",
+      "source": "JPCERT-AT",
+      "id": "sudoの脆弱性（CVE-2021-3156）に関する注意喚起"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/794544",
+      "source": "CERT-VN",
+      "id": "VU#794544"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-256-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-256-01"
+    },
+    {
+      "text": "https://blog.qualys.com/vulnerabilities-research/2021/01/26/cve-2021-3156-heap-based-buffer-overflow-in-sudo-baron-samedit",
+      "source": "関連文書",
+      "id": "Qualys Security Blog (CVE-2021-3156: Heap-Based Buffer Overflow in Sudo (Baron Samedit))"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/122.html",
+      "id": "CWE-122",
+      "title": "ヒープベースのバッファオーバーフロー(CWE-122)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sudo_project:sudo",
+      "version": "2.2",
+      "vendor": "sudo project",
+      "product": "Sudo"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-09-15T14:47+09:00",
+  "issued": "2021-02-08T17:32+09:00",
+  "modified": "2022-09-15T14:47+09:00"
+}

@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005226.html",
+  "title": "GE Intelligent Platforms 製品で使用される Catapult および GE Intelligent Platforms Proficy の DNP3 I/O ドライバにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005226.html",
+  "description": "GE Intelligent Platforms Proficy HMI/SCADA - CIMPLICITY および Proficy HMI/SCADA - iFIX の DNPDrv.exe (別名 DNP マスタステーションサーバ) で使用される (1) Catapult DNP3 I/O ドライバ、および (2) GE Intelligent Platforms Proficy DNP3 I/O ドライバには、サービス運用妨害 (無限ループ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005226",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2823",
+      "source": "CVE",
+      "id": "CVE-2013-2823"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2823",
+      "source": "NVD",
+      "id": "CVE-2013-2823"
+    },
+    {
+      "text": "http://ics-cert.us-cert.gov/advisories/ICSA-13-297-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-13-297-01"
+    },
+    {
+      "text": "http://ics-cert.us-cert.gov/advisories/ICSA-13-297-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-13-297-02"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:catapultsoftware:catapult_dnp3_i%2Fo_driver",
+      "version": "2.2",
+      "vendor": "Catapult Software",
+      "product": "Catapult DNP3 Driver"
+    },
+    {
+      "text": "cpe:/a:ge:intelligent_platforms_proficy_dnp3_i%2Fo_driver",
+      "version": "2.2",
+      "vendor": "General Electric Company",
+      "product": "Proficy HMI/SCADA DNP3 I/O ドライバ"
+    },
+    {
+      "text": "cpe:/a:ge:intelligent_platforms_proficy_hmi%2Fscada_cimplicity",
+      "version": "2.2",
+      "vendor": "General Electric Company",
+      "product": "Proficy HMI/SCADA - CIMPLICITY"
+    },
+    {
+      "text": "cpe:/a:ge:intelligent_platforms_proficy_hmi%2Fscada_ifix",
+      "version": "2.2",
+      "vendor": "General Electric Company",
+      "product": "Proficy HMI/SCADA - iFIX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2013-11-25T16:42+09:00",
+  "issued": "2013-11-25T16:42+09:00",
+  "modified": "2013-11-25T16:42+09:00"
+}

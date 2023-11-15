@@ -1,0 +1,86 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006474.html",
+  "title": "Ghostscript に -dSAFER オプションによる保護が回避される複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006474.html",
+  "description": "Ghostscript には -dSAFER オプションによる保護が回避される複数の脆弱性が存在し、この脆弱性を利用する遠隔の第三者によって、任意のコマンドを実行される可能性があります。\r\n\r\nArtifex Software 社が提供している Ghostscript には PostScript による危険な動作を防ぐための -dSAFER オプションが存在します。PostScript には -dSAFER による保護機能が回避されてしまう複数の処理が存在し、攻撃者によって任意のコマンドを実行される可能性があります。この脆弱性は ImageMagick などの Ghostscript を活用しているアプリケーションにも影響します。",
+  "identifier": "JVNDB-2018-006474",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU90390242/",
+      "source": "JVN",
+      "id": "JVNVU#90390242"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16509",
+      "source": "CVE",
+      "id": "CVE-2018-16509"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-16509",
+      "source": "NVD",
+      "id": "CVE-2018-16509"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2018/at180035.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2018-0035"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/332928",
+      "source": "CERT-VN",
+      "id": "VU#332928"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/WDON-B3UK3T",
+      "source": "CERT-VN",
+      "id": "Artifex Software, Inc. Information for VU#332928"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2018/08/21/2",
+      "source": "関連文書",
+      "id": "More Ghostscript Issues: Should we disable PS coders in policy.xml by default?"
+    },
+    {
+      "text": "https://www.imagemagick.org/script/security-policy.php",
+      "source": "関連文書",
+      "id": "Security Policy @ ImageMagick"
+    },
+    {
+      "text": "https://www.imagemagick.org/script/resources.php",
+      "source": "関連文書",
+      "id": "Configuration Files"
+    },
+    {
+      "text": "https://bugs.chromium.org/p/project-zero/issues/detail?id=1640",
+      "source": "関連文書",
+      "id": "ghostscript: multiple critical vulnerabilities, including remote command execution"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:artifex:ghostscript",
+      "version": "2.2",
+      "vendor": "Artifex Software",
+      "product": "Ghostscript"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-07-25T15:17+09:00",
+  "issued": "2018-08-23T11:42+09:00",
+  "modified": "2019-07-25T15:17+09:00"
+}

@@ -1,0 +1,106 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001147.html",
+  "title": "Mozilla Thunderbird/SeaMonkey の MIME の External-Body の処理におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001147.html",
+  "description": "Mozilla Thunderbird/SeaMonkey には、e-メールメッセージ中の MIME の External-Body の処理に不備があり、メッセージプレビューの際に、ヒープベースのバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001147",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0304",
+      "source": "CVE",
+      "id": "CVE-2008-0304"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-0304",
+      "source": "NVD",
+      "id": "CVE-2008-0304"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/661651",
+      "source": "CERT-VN",
+      "id": "VU#661651"
+    },
+    {
+      "text": "http://secunia.com/advisories/29133/",
+      "source": "SECUNIA",
+      "id": "SA29133"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/28012",
+      "source": "BID",
+      "id": "28012"
+    },
+    {
+      "text": "http://securitytracker.com/id?1019504",
+      "source": "SECTRACK",
+      "id": "1019504"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:seamonkey",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla SeaMonkey"
+    },
+    {
+      "text": "cpe:/a:mozilla:thunderbird",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Thunderbird"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_optional_productivity_applications",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Optional Productivity Applications"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-07-29T14:51+09:00",
+  "issued": "2008-03-12T13:49+09:00",
+  "modified": "2008-07-29T14:51+09:00"
+}

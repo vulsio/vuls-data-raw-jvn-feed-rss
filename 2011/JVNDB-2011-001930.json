@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001930.html",
+  "title": "Apache Tomcat におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001930.html",
+  "description": "Apache Tomcat は、HTTP APR または HTTP NIO コネクタに対して sendfile が有効である時、リクエスト属性の検証を行わないため、アクセス制限を回避される、またはサービス運用妨害 (無限ループまたは JVM クラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-001930",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2526",
+      "source": "CVE",
+      "id": "CVE-2011-2526"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2526",
+      "source": "NVD",
+      "id": "CVE-2011-2526"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/48667",
+      "source": "BID",
+      "id": "48667"
+    },
+    {
+      "text": "http://www.securitytracker.com/id/1025788",
+      "source": "SECTRACK",
+      "id": "1025788"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/a:hp:xp_9000_performance_advisor_software",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP XP P9000 Performance Advisor ソフトウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-03-05T18:18+09:00",
+  "issued": "2011-07-26T11:33+09:00",
+  "modified": "2015-03-05T18:18+09:00"
+}

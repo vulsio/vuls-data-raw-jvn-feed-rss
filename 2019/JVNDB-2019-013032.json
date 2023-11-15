@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013032.html",
+  "title": "MuleSoft Mule および API Gateway における脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013032.html",
+  "description": "MuleSoft Mule および API Gateway には、不特定の脆弱性が存在します。",
+  "identifier": "JVNDB-2019-013032",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-15631",
+      "source": "CVE",
+      "id": "CVE-2019-15631"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-15631",
+      "source": "NVD",
+      "id": "CVE-2019-15631"
+    },
+    {
+      "text": "https://help.salesforce.com/articleView?id=000351827&language=en_US&type=1&mode=1",
+      "source": "関連文書",
+      "id": "000351827 (Remote Code Execution vulnerability affecting Mule runtimes and API Gateways in certain use cases)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mulesoft:api_gateway",
+      "version": "2.2",
+      "vendor": "MuleSoft Inc.",
+      "product": "Mule API Gateway"
+    },
+    {
+      "text": "cpe:/a:mulesoft:mule_runtime",
+      "version": "2.2",
+      "vendor": "MuleSoft Inc.",
+      "product": "Mule runtime"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-12-18T15:46+09:00",
+  "issued": "2019-12-18T15:46+09:00",
+  "modified": "2019-12-18T15:46+09:00"
+}

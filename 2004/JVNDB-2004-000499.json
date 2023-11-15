@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000499.html",
+  "title": "Squid のエラーメッセージの表示処理における情報漏洩の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000499.html",
+  "description": "Squid には、DNS 名前解決に失敗するなどの特定の条件下において、解放されたメモリを参照してしまうため、無効なリクエストに対するクライアントへのレスポンスとして、他のリクエストにより生成されたデータなどの内部情報をランダムに返してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000499",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2479",
+      "source": "CVE",
+      "id": "CVE-2004-2479"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-2479",
+      "source": "NVD",
+      "id": "CVE-2004-2479"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11865",
+      "source": "BID",
+      "id": "11865"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:squid-cache:squid",
+      "version": "2.2",
+      "vendor": "Squid-cache.org",
+      "product": "Squid"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

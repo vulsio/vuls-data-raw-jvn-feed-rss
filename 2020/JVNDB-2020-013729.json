@@ -1,0 +1,90 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013729.html",
+  "title": "Linux Kernel における競合状態に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013729.html",
+  "description": "Linux Kernel には、競合状態に関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を CID-246c320a8cfe として公開しています。",
+  "identifier": "JVNDB-2020-013729",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-29369",
+      "source": "CVE",
+      "id": "CVE-2020-29369"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-29369",
+      "source": "NVD",
+      "id": "CVE-2020-29369"
+    },
+    {
+      "text": "https://bugs.chromium.org/p/project-zero/issues/detail?id=2056",
+      "source": "関連文書",
+      "id": "Issue 2056: Linux >=4.20: expand_downwards() can race with munmap() page table freeing"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2021/02/10/6",
+      "source": "関連文書",
+      "id": "Re: CVE-2021-20200: Linux kernel: close race between  munmap() and expand_upwards()/downwards() (2021/02/10/6)"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2021/02/19/8",
+      "source": "関連文書",
+      "id": "Re: CVE-2021-20200: Linux kernel: close race between  munmap() and expand_upwards()/downwards() (2021/02/19/8)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:netapp:hci_management_node",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "NetApp HCI Management Node"
+    },
+    {
+      "text": "cpe:/a:netapp:solidfire",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "NetApp SolidFire"
+    },
+    {
+      "text": "cpe:/h:netapp:hci_storage_node",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "NetApp HCI Storage Node"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:netapp:hci_compute_node",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "NetApp HCI Compute Node"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-07-13T11:52+09:00",
+  "issued": "2021-07-13T11:52+09:00",
+  "modified": "2021-07-13T11:52+09:00"
+}

@@ -1,0 +1,39 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001475.html",
+  "title": "Aztek Forum の common/config.php における任意のプログラム変数を上書きする脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001475.html",
+  "description": "Aztek Forum の common/config.php には、変数上書きが発生するため、任意のプログラム変数を上書きされ、index/common_actions.php を使用して任意のファイルをコピーするといった不正な活動実行される脆弱性が存在します。\r\n本脆弱性は、(1) POST、(2) GET、(3) COOKIE、および (4) SERVER スーバーグローバル配列に対する展開操作の処理の不備に関連します。",
+  "identifier": "JVNDB-2007-001475",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0599",
+      "source": "CVE",
+      "id": "CVE-2007-0599"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-0599",
+      "source": "NVD",
+      "id": "CVE-2007-0599"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:aztek_forum:aztek_forum",
+      "version": "2.2",
+      "vendor": "aztek forum",
+      "product": "aztek forum"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-06-26T15:46+09:00",
+  "issued": "2012-06-26T15:46+09:00",
+  "modified": "2012-06-26T15:46+09:00"
+}

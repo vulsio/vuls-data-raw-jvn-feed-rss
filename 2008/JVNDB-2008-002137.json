@@ -1,0 +1,87 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002137.html",
+  "title": "Samba の smbd におけるリクエスト処理に関するサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002137.html",
+  "description": "Samba の smbd には、trans および taran2、nttrans リクエストの処理に不備があるため、任意のメモリを読まれる、およびサービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2008-002137",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4314",
+      "source": "CVE",
+      "id": "CVE-2008-4314"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-4314",
+      "source": "NVD",
+      "id": "CVE-2008-4314"
+    },
+    {
+      "text": "http://secunia.com/advisories/32813",
+      "source": "SECUNIA",
+      "id": "SA32813"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/32494",
+      "source": "BID",
+      "id": "32494"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1021287",
+      "source": "SECTRACK",
+      "id": "1021287"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2008/3277",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2008-3277"
+    },
+    {
+      "text": "http://osvdb.org/50230",
+      "source": "OSVDB",
+      "id": "50230"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hp:hp_internet_express_tru64_unix",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP Internet Express for Tru64"
+    },
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:N/A:P"
+    }
+  ],
+  "date": "2009-09-08T11:04+09:00",
+  "issued": "2008-12-25T12:05+09:00",
+  "modified": "2009-09-08T11:04+09:00"
+}

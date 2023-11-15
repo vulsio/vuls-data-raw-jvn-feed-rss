@@ -1,0 +1,121 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001534.html",
+  "title": "FINS プロトコルにおけるセキュリティ上の問題について",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001534.html",
+  "description": "FINS プロトコルは、オムロン社製 PLC や PC ソフトウェアなど、FA ネットワークや FA 制御システムの制御をコマンド・レスポンス方式にて行う通信プロトコルです。FINS コマンドには、次のような機能があり、それらのコマンドを使って対象機器からの情報の読み書き、各種操作、設定をすることができます。機種により、サポートされている FINS コマンドは異なります。\r\n\r\n　* I/O メモリエリアの読み出し/書き込み\r\n　* パラメータエリアの読み出し/書き込み\r\n　* プログラムエリアの読み出し/書き込み\r\n　* 動作モード変更\r\n　* 機器構成の読み出し\r\n　* CPU ユニットのステータスの読み出し\r\n　* 時間情報のアクセス\r\n　* メッセージの読み出し/解除\r\n　* アクセス権の獲得・開放\r\n　* 異常履歴の読み出しなど\r\n　* ファイル操作\r\n　* 強制セット/リセット\r\n\r\nFINS コマンドのメッセージは「FINS ヘッダ」「FINS コマンドコード」「パラメータ」の３つから構成されています。FINS コマンドメッセージを受信した制御機器/ソフトウェアは、「FINS コマンドコード」に対応する処理を実行し、その処理結果をFINSレスポンスメッセージとして「FINSヘッダ」にある送信元へ返信します。FINS のプロトコル設計では、FAネットワークは工場やライン・装置に閉じたローカルネットワークであることを前提としています。そのため FINS メッセージの暗号化や検証、認証などの機能は定義されていません。FINS プロトコルに対して、次に示すような問題が指摘されています。\r\n\r\n1. 平文通信\r\nFINS プロトコルでは暗号化通信を定義していません。通信経路上の FINS メッセージは平文で送受信されるため、傍受することで容易に内容を読み取ることが可能です。また、FINS メッセージの改ざんを検知する機能も定義されていません。\r\n　* 機微な情報の平文通信（CWE-319）\r\n　* データの信頼性についての不十分な検証（CWE-345）\r\n\r\n2. 認証不要\r\nFINS プロトコルでは認証処理を定義していません。よって、悪意ある通信相手からの攻撃であることを識別することはできません。\r\n\r\n　* なりすましによる認証回避 (CWE-290)\r\n　* Capture-replay 攻撃による認証回避 (CWE-294)\r\n　* 重要な機能に対する認証の欠如 (CWE-306)\r\n　* データの信頼性についての不十分な検証（CWE-345）\r\n　* サービス運用妨害 (DoS) の脆弱性 (CWE-400)\r\n　* 外部からの操作制限不備 (CWE-412)\r\n　* インタラクション頻度の不適切な制限  (CWE-799)\r\n\r\n本文書はオムロンおよびJPCERT/CCが共同で執筆しました。",
+  "identifier": "JVNDB-2023-001534",
+  "references": [
+    {
+      "text": "https://jvn.jp/ta/JVNTA91513661/",
+      "source": "JVN",
+      "id": "JVNTA#91513661"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU91000130/",
+      "source": "JVN",
+      "id": "JVNVU#91000130"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU91952379/",
+      "source": "JVN",
+      "id": "JVNVU#91952379"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU97111518/",
+      "source": "JVN",
+      "id": "JVNVU#97111518"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-27396",
+      "source": "CVE",
+      "id": "CVE-2023-27396"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/290.html",
+      "id": "CWE-290",
+      "title": "スプーフィングによる認証回避(CWE-290)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/294.html",
+      "id": "CWE-294",
+      "title": "Capture-replay による認証回避(CWE-294)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/306.html",
+      "id": "CWE-306",
+      "title": "重要な機能に対する認証の欠如(CWE-306)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/319.html",
+      "id": "CWE-319",
+      "title": "重要な情報の平文での送信(CWE-319)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/345.html",
+      "id": "CWE-345",
+      "title": "データの信頼性についての不十分な検証(CWE-345)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/400.html",
+      "id": "CWE-400",
+      "title": "リソースの枯渇(CWE-400)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/412.html",
+      "id": "CWE-412",
+      "title": "外部からの操作の制限不備(CWE-412)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/799.html",
+      "id": "CWE-799",
+      "title": "インタラクション頻度の不適切な制御(CWE-799)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:omron:sysmac_cj_series_cpu_unit",
+      "version": "2.2",
+      "vendor": "オムロン株式会社",
+      "product": "SYSMAC CJ シリーズ CPU ユニット"
+    },
+    {
+      "text": "cpe:/o:omron:sysmac_cp_series_cpu_unit",
+      "version": "2.2",
+      "vendor": "オムロン株式会社",
+      "product": "SYSMAC CP シリーズ CPU ユニット"
+    },
+    {
+      "text": "cpe:/o:omron:sysmac_cs_series_cpu_unit",
+      "version": "2.2",
+      "vendor": "オムロン株式会社",
+      "product": "SYSMAC CS シリーズ CPU ユニット"
+    },
+    {
+      "text": "cpe:/o:omron:sysmac_nj_series_cpu_unit",
+      "version": "2.2",
+      "vendor": "オムロン株式会社",
+      "product": "SYSMAC NJ シリーズ CPU ユニット"
+    },
+    {
+      "text": "cpe:/o:omron:sysmac_nx102_series_cpu_unit",
+      "version": "2.2",
+      "vendor": "オムロン株式会社",
+      "product": "SYSMAC NX102 シリーズ CPU ユニット"
+    },
+    {
+      "text": "cpe:/o:omron:sysmac_nx1p_series_cpu_unit",
+      "version": "2.2",
+      "vendor": "オムロン株式会社",
+      "product": "SYSMAC NX1P シリーズ CPU ユニット"
+    },
+    {
+      "text": "cpe:/o:omron:sysmac_nx7_database_connection_cpu_unit",
+      "version": "2.2",
+      "vendor": "オムロン株式会社",
+      "product": "SYSMAC NX7 データベース接続 CPU ユニット"
+    }
+  ],
+  "date": "2023-09-20T14:21+09:00",
+  "issued": "2023-04-18T11:17+09:00",
+  "modified": "2023-09-20T14:21+09:00"
+}

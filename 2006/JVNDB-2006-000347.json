@@ -1,0 +1,113 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000347.html",
+  "title": "Sendmail の不適切な MIME 変換処理によるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000347.html",
+  "description": "Sendmail には、メッセージの配送時に深いネスト構造を持つ不正な MIME メッセージを処理した場合、MIME の 8-bit から 7-bit への変換処理においてプロセス毎に利用可能なスタックメモリ領域を使い果たし、そのプロセスが強制終了する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000347",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23146718/index.html",
+      "source": "JVN",
+      "id": "JVNVU#146718"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1173",
+      "source": "CVE",
+      "id": "CVE-2006-1173"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1173",
+      "source": "NVD",
+      "id": "CVE-2006-1173"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2006/at060008.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2006-0008"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/146718",
+      "source": "CERT-VN",
+      "id": "VU#146718"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18433",
+      "source": "BID",
+      "id": "18433"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sendmail:sendmail",
+      "version": "2.2",
+      "vendor": "Sendmail Consortium",
+      "product": "sendmail"
+    },
+    {
+      "text": "cpe:/a:sendmail:sendmail_advanced_message_server",
+      "version": "2.2",
+      "vendor": "センドメール社",
+      "product": "Sendmail Advanced Message Server"
+    },
+    {
+      "text": "cpe:/a:sendmail:sendmail_switch",
+      "version": "2.2",
+      "vendor": "センドメール社",
+      "product": "Sendmail Switch"
+    },
+    {
+      "text": "cpe:/a:sendmail:sendmail_switch_for_windows",
+      "version": "2.2",
+      "vendor": "センドメール社",
+      "product": "Sendmail Switch for Windows"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

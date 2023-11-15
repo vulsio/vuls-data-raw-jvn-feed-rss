@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000545.html",
+  "title": "Ethereal の DICOM プロトコルの解析部におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000545.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal 0.9.0 - 0.10.7 には、以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n・DICOM プロトコルの解析部に不備が存在するため、Ethereal がクラッシュする問題 (0.10.4 - 0.10.7) (CAN-2004-1139) \r\n\r\n・RTP プロトコルのタイムスタンプの取り扱いに不備が存在するため、Ethereal がクラッシュし、また過度に大きなサイズの一時ファイルが生成され利用可能なすべてのディスク容量が消費される問題 (0.9.16 - 0.10.7) (CAN-2004-1140) \r\n\r\n・HTTP プロトコルの解析部に不備が存在するため、解放されたメモリへのアクセスが発生し、Ethereal がクラッシュする問題 (0.10.1 - 0.10.7) (CAN-2004-1141) \r\n\r\n・SMB プロトコルの解析部に不備に存在するため、意図的に作成された SMB パケットによって Ethereal がクラッシュし、大量の CPU 資源が消費される問題 (0.9.0 - 0.10.7) (CAN-2004-1142) \r\n\r\nこれらの問題を利用するリモートの攻撃者は、以下のような手法によって、Ethereal をクラッシュさせ、サービス不能状態に陥らせる、さらには Ethereal の実行権限 (通常 root 権限) で任意のコードを実行する可能性があります。 \r\n\r\n・意図的に作成したパケットを標的システムが監視しているネットワークに送り付ける \r\n・意図的に作成したパケットトレースファイルを読み取らせる",
+  "identifier": "JVNDB-2004-000545",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1139",
+      "source": "CVE",
+      "id": "CVE-2004-1139"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1139",
+      "source": "NVD",
+      "id": "CVE-2004-1139"
+    },
+    {
+      "text": "http://secunia.com/advisories/13468/",
+      "source": "SECUNIA",
+      "id": "SA13468"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11943",
+      "source": "BID",
+      "id": "11943"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

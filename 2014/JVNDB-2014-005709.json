@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005709.html",
+  "title": "WordPress 用 BulletProof Security プラグインにおけるサーバサイドのリクエストフォージェリの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005709.html",
+  "description": "WordPress 用 BulletProof Security プラグインの admin/htaccess/bpsunlock.php には、サーバサイドのリクエストフォージェリの脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-918: Server-Side Request Forgery (SSRF/サーバサイドのリクエストフォージェリ) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/918.html",
+  "identifier": "JVNDB-2014-005709",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8749",
+      "source": "CVE",
+      "id": "CVE-2014-8749"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8749",
+      "source": "NVD",
+      "id": "CVE-2014-8749"
+    },
+    {
+      "text": "http://seclists.org/fulldisclosure/2014/Nov/13",
+      "source": "関連文書",
+      "id": "Wordpress bulletproof-security <=.51 multiple vulnerabilities"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ait-pro:bulletproof-security",
+      "version": "2.2",
+      "vendor": "AITpro",
+      "product": "BulletProof Security"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2014-12-02T16:50+09:00",
+  "issued": "2014-12-02T16:50+09:00",
+  "modified": "2014-12-02T16:50+09:00"
+}

@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001457.html",
+  "title": "Sun Solaris の kernel の ip_set_srcfilter 関数における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001457.html",
+  "description": "Sun Solaris の kernel には uts/common/inet/ip/ip_multi.c の IP マルチキャストフィルタの ip_set_srcfilter 関数において、SIOCSIPMSFILTER IOCTL リクエストの処理に不備があるため、任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001457",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2710",
+      "source": "CVE",
+      "id": "CVE-2008-2710"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-2710",
+      "source": "NVD",
+      "id": "CVE-2008-2710"
+    },
+    {
+      "text": "http://secunia.com/advisories/30693/",
+      "source": "SECUNIA",
+      "id": "SA30693"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/29699",
+      "source": "BID",
+      "id": "29699"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/1832",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-1832"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-07-08T11:54+09:00",
+  "issued": "2008-07-08T11:54+09:00",
+  "modified": "2008-07-08T11:54+09:00"
+}

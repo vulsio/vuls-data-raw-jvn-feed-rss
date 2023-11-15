@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002468.html",
+  "title": "Linux kernel の ATI Rage 128 ドライバにおける権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002468.html",
+  "description": "Linux kernel の ATI Rage 128 (別名 r128) ドライバには、Concurrent Command Engine (CCE) のステートの初期化処理に不備があるため、サービス運用妨害 (DoS) 状態となる、または権限を取得される可能性があります。",
+  "identifier": "JVNDB-2009-002468",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3620",
+      "source": "CVE",
+      "id": "CVE-2009-3620"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3620",
+      "source": "NVD",
+      "id": "CVE-2009-3620"
+    },
+    {
+      "text": "http://secunia.com/advisories/36707",
+      "source": "SECUNIA",
+      "id": "SA36707"
+    },
+    {
+      "text": "http://secunia.com/advisories/37296",
+      "source": "SECUNIA",
+      "id": "SA37296"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/36824",
+      "source": "BID",
+      "id": "36824"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_els",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux ELS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2011-03-18T15:30+09:00",
+  "issued": "2010-02-01T11:51+09:00",
+  "modified": "2011-03-18T15:30+09:00"
+}

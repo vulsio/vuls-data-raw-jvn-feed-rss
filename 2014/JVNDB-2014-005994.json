@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005994.html",
+  "title": "QEMU の arch_init.c 内の host_from_stream_offset 関数における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005994.html",
+  "description": "QEMU の arch_init.c 内の host_from_stream_offset 関数には、マイグレーション中に RAM をロードする際、任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-005994",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7840",
+      "source": "CVE",
+      "id": "CVE-2014-7840"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7840",
+      "source": "NVD",
+      "id": "CVE-2014-7840"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-12-16T15:11+09:00",
+  "issued": "2014-12-16T15:11+09:00",
+  "modified": "2014-12-16T15:11+09:00"
+}

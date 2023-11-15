@@ -1,0 +1,107 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-003478.html",
+  "title": "Expat における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-003478.html",
+  "description": "Expat (別名 libexpat) には、整数オーバーフローの脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2022-003478",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU99030761/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99030761"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU97425465/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97425465"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-25314",
+      "source": "CVE",
+      "id": "CVE-2022-25314"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-25314",
+      "source": "NVD",
+      "id": "CVE-2022-25314"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-167-17",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-167-17"
+    },
+    {
+      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-278-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-23-278-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/190.html",
+      "id": "CWE-190",
+      "title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hitachi:highly_reliable_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "日立高信頼サーバ RV3000"
+    },
+    {
+      "text": "cpe:/a:libexpat_project:libexpat",
+      "version": "2.2",
+      "vendor": "libexpat project",
+      "product": "libexpat"
+    },
+    {
+      "text": "cpe:/a:oracle:http_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle HTTP Server"
+    },
+    {
+      "text": "cpe:/a:oracle:zfs_storage_appliance_kit",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "ZFS Storage Appliance Kit"
+    },
+    {
+      "text": "cpe:/a:siemens:sinema_remote_connect_server",
+      "version": "2.2",
+      "vendor": "シーメンス",
+      "product": "SINEMA Remote Connect Server"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-10-10T15:09+09:00",
+  "issued": "2023-02-21T11:59+09:00",
+  "modified": "2023-10-10T15:09+09:00"
+}

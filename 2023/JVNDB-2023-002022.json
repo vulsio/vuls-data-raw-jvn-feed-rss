@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002022.html",
+  "title": "富士電機製 FRENIC RHC Loader における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002022.html",
+  "description": "富士電機株式会社が提供する FRENIC RHC Loader には、次の複数の脆弱性が存在します。\r\n\r\n　* スタックベースのバッファオーバーフロー（CWE-121）- CVE-2023-29160\r\n　* 境界外読み取り（CWE-125）- CVE-2023-29167\r\n　* XML外部実体参照（XXE）の不適切な制限（CWE-611）- CVE-2023-29498\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: Michael Heinzl 氏\r\n",
+  "identifier": "JVNDB-2023-002022",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU97809354/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97809354"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-29160",
+      "source": "CVE",
+      "id": "CVE-2023-29160"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-29167",
+      "source": "CVE",
+      "id": "CVE-2023-29167"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-29498",
+      "source": "CVE",
+      "id": "CVE-2023-29498"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/121.html",
+      "id": "CWE-121",
+      "title": "スタックベースのバッファオーバーフロー(CWE-121)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/611.html",
+      "id": "CWE-611",
+      "title": "XML 外部エンティティ参照の不適切な制限(CWE-611)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:fujielectric:frenic_rhc_loader",
+      "version": "2.2",
+      "vendor": "富士電機",
+      "product": "FRENIC RHC Loader"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-06-05T14:27+09:00",
+  "issued": "2023-06-05T14:27+09:00",
+  "modified": "2023-06-05T14:27+09:00"
+}

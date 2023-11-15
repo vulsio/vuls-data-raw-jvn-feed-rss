@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003007.html",
+  "title": "Simple Certificate Enrollment Protocol (SCEP) の実装に問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003007.html",
+  "description": "Simple Certificate Enrollment Protocol (SCEP) の実装には、問題が存在します。\r\n\r\n一部のモバイルデバイス管理 (MDM) ツールは、Simple Certificate Enrollment Protocol (SCEP) を使用して、証明書の管理を行っています。そのようなシステムでは、証明書の発行を依頼したユーザやデバイスの認証に問題があり、不適切な証明書が発行される危険性が指摘されています。",
+  "identifier": "JVNDB-2012-003007",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU971035",
+      "source": "JVN",
+      "id": "JVNVU#971035"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/971035",
+      "source": "CERT-VN",
+      "id": "VU#971035"
+    },
+    {
+      "text": "http://www.css-security.com/wp-content/uploads/2012/05/SCEP-and-Untrusted-Devices.pdf",
+      "source": "関連文書",
+      "id": "Certified Security Solutions - The Use of the Simple Certificate Enrollment Protocol (SCEP) and Untrusted Devices"
+    },
+    {
+      "text": "https://tools.ietf.org/html/draft-nourse-scep-23",
+      "source": "関連文書",
+      "id": "IETF draft-nourse-scep-23 - Simple Certificate Enrollment Protocol"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.4",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:A/AC:H/Au:S/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2012-11-01T15:59+09:00",
+  "issued": "2012-07-05T16:06+09:00",
+  "modified": "2012-11-01T15:59+09:00"
+}

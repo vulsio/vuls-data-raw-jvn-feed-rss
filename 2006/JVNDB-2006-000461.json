@@ -1,0 +1,220 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000461.html",
+  "title": "Apache HTTP Server の mod_rewrite におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000461.html",
+  "description": "Apache HTTP Server の Rewrite モジュール (mod_rewrite) には、1) リクエストされた URL の一部を使用して URL の内部書き換えの制御を行っている (例えば、書き換える URL が $1 で始まる場合など)、2) Forbidden (F)、Gone (G)、および NoEscape (NE) のいずれの RewriteRule フラグも使用していない、RewriteRule を設定している場合、バッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000461",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA06-291A",
+      "source": "JVN",
+      "id": "JVNTA06-291A"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23395412/index.html",
+      "source": "JVN",
+      "id": "JVNVU#395412"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA08-079A/index.html",
+      "source": "JVN",
+      "id": "JVNTA08-079A"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA08-150A/",
+      "source": "JVN",
+      "id": "JVNTA08-150A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA06-291A",
+      "source": "JVNTR",
+      "id": "TRTA06-291A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA08-079A/index.html",
+      "source": "JVNTR",
+      "id": "TRTA08-079A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA08-150A/index.html",
+      "source": "JVNTR",
+      "id": "TRTA08-150A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3747",
+      "source": "CVE",
+      "id": "CVE-2006-3747"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3747",
+      "source": "NVD",
+      "id": "CVE-2006-3747"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA08-079A.html",
+      "source": "CERT-SA",
+      "id": "SA08-079A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA08-150A.html",
+      "source": "CERT-SA",
+      "id": "SA08-150A"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/395412",
+      "source": "CERT-VN",
+      "id": "VU#395412"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA06-291A.html",
+      "source": "CERT-TA",
+      "id": "TA06-291A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA08-079A.html",
+      "source": "CERT-TA",
+      "id": "TA08-079A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA08-150A.html",
+      "source": "CERT-TA",
+      "id": "TA08-150A"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/docs/re-20060728-00510.pdf",
+      "source": "NISCC",
+      "id": "821765/NISCC/Apache"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20060728-00510.xml",
+      "source": "CPNI",
+      "id": "00510"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19204",
+      "source": "BID",
+      "id": "19204"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:ibm:http_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM HTTP Server"
+    },
+    {
+      "text": "cpe:/a:ibm:websphere_application_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Application Server"
+    },
+    {
+      "text": "cpe:/a:oracle:application_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Application Server"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_desktop",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_home",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "ターボリナックス ホーム "
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-06-17T13:47+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2008-06-17T13:47+09:00"
+}

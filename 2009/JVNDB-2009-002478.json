@@ -1,0 +1,105 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002478.html",
+  "title": "PHP および GD Graphics Library の _gdGetColors 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002478.html",
+  "description": "PHP および GD Graphics Library の _gdGetColors 関数には、colorsTotal の構成要素の検証に不備があるため、バッファオーバーフローの脆弱性が存在します。\r\n本脆弱性は CVE-2009-3293 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2009-002478",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3546",
+      "source": "CVE",
+      "id": "CVE-2009-3546"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3546",
+      "source": "NVD",
+      "id": "CVE-2009-3546"
+    },
+    {
+      "text": "http://secunia.com/advisories/37069",
+      "source": "SECUNIA",
+      "id": "SA37069"
+    },
+    {
+      "text": "http://secunia.com/advisories/37080",
+      "source": "SECUNIA",
+      "id": "SA37080"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/36712",
+      "source": "BID",
+      "id": "36712"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2929",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2929"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/2930",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-2930"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libgd:libgd",
+      "version": "2.2",
+      "vendor": "LibGD project",
+      "product": "LibGD"
+    },
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-02-03T14:34+09:00",
+  "issued": "2010-02-03T14:34+09:00",
+  "modified": "2010-02-03T14:34+09:00"
+}

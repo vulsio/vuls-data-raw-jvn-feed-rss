@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001716.html",
+  "title": "DTE Insight に情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001716.html",
+  "description": "DTE Insight には、ユーザの情報が他のユーザに漏えいする脆弱性が存在します。\r\n\r\n情報漏えい (CWE-200) - CVE-2016-1562\r\nDTE Energy は、契約しているユーザがエネルギー使用に関する情報を閲覧するためのアプリケーション DTE Insight を提供しています。DTE Insight は、HTTP REST API 経由で情報を取得しています。\r\n\r\nCWE-200: Information Exposure\r\nhttp://cwe.mitre.org/data/definitions/200.html\r\n\r\nこの API にはユーザが改ざん可能な filter パラメータが含まれています。このパラメータによって、サーバから返されるユーザ情報が決定されます。filter パラメータを改ざんすることで、ユーザは他のユーザの情報を取得することが可能です。\r\n\r\n発見者はさらに詳しい情報をブログポストで公開しています。\r\n\r\nブログポスト\r\nhttp://jeffq.com/blog/dteenergy-insight/",
+  "identifier": "JVNDB-2016-001716",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94680092/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94680092"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1562",
+      "source": "CVE",
+      "id": "CVE-2016-1562"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1562",
+      "source": "NVD",
+      "id": "CVE-2016-1562"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/713312",
+      "source": "CERT-VN",
+      "id": "VU#713312"
+    },
+    {
+      "text": "http://jeffq.com/blog/dteenergy-insight/",
+      "source": "関連文書",
+      "id": "CVE-2016-1562: Unauthenticated “filter” parameter leads to customer information leak in the DTE Energy Insight app"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:dteenergy:dte_insight",
+      "version": "2.2",
+      "vendor": "DTE Energy Company",
+      "product": "DTE Insight"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2016-03-15T17:12+09:00",
+  "issued": "2016-03-15T17:12+09:00",
+  "modified": "2016-03-15T17:12+09:00"
+}

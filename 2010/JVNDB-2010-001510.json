@@ -1,0 +1,93 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001510.html",
+  "title": "PostgreSQL の bitsubstr 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001510.html",
+  "description": "PostgreSQL の backend/utils/adt/varbit.c 内にある bitsubstr 関数には、第 3 引数が負の整数となっている際の処理に関して不備があるため、サービス運用妨害 (DoS) 状態となる、または詳細不明な影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001510",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0442",
+      "source": "CVE",
+      "id": "CVE-2010-0442"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0442",
+      "source": "NVD",
+      "id": "CVE-2010-0442"
+    },
+    {
+      "text": "http://secunia.com/advisories/39820",
+      "source": "SECUNIA",
+      "id": "SA39820"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/37973",
+      "source": "BID",
+      "id": "37973"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/55902",
+      "source": "XF",
+      "id": "55902"
+    },
+    {
+      "text": "http://securitytracker.com/id?1023510",
+      "source": "SECTRACK",
+      "id": "1023510"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/1197",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-1197"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:postgresql:postgresql",
+      "version": "2.2",
+      "vendor": "PostgreSQL.org",
+      "product": "PostgreSQL"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-06-09T16:54+09:00",
+  "issued": "2010-06-09T16:54+09:00",
+  "modified": "2010-06-09T16:54+09:00"
+}

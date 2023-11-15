@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000942.html",
+  "title": "Apache Tomcat における不正にディレクトリの一覧を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000942.html",
+  "description": "Apache Tomcat にはファイル名の前に \";\" (セミコロン) が含まれたリクエスト URL を処理する際にセミコロン以降の文字列を適切に認識しないため、そのファイルが存在するディレクトリの一覧を表示してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000942",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3835",
+      "source": "CVE",
+      "id": "CVE-2006-3835"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3835",
+      "source": "NVD",
+      "id": "CVE-2006-3835"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/19106",
+      "source": "BID",
+      "id": "19106"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/27902",
+      "source": "XF",
+      "id": "27902"
+    },
+    {
+      "text": "http://securitytracker.com/id?1016576",
+      "source": "SECTRACK",
+      "id": "1016576"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/1727",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-1727"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2008-07-11T14:28+09:00",
+  "issued": "2007-04-25T17:38+09:00",
+  "modified": "2008-07-11T14:28+09:00"
+}

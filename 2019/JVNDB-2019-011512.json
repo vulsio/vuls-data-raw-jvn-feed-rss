@@ -1,0 +1,85 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-011512.html",
+  "title": "Athena SCS スマートカードにおける競合状態に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-011512.html",
+  "description": "Athena SCS スマートカードには、競合状態に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2019-011512",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-15809",
+      "source": "CVE",
+      "id": "CVE-2019-15809"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-15809",
+      "source": "NVD",
+      "id": "CVE-2019-15809"
+    },
+    {
+      "text": "https://csrc.nist.gov/Projects/Cryptographic-Algorithm-Validation-Program/details?source=ECDSA&number=214",
+      "source": "関連文書",
+      "id": "Cryptographic Algorithm Validation Program"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2019/10/02/2",
+      "source": "関連文書",
+      "id": "Minerva: ECDSA key recovery from bit-length leakage"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microchip:toolbox",
+      "version": "2.2",
+      "vendor": "microchip",
+      "product": "Toolbox"
+    },
+    {
+      "text": "cpe:/o:athena-scs:idprotect",
+      "version": "2.2",
+      "vendor": "Athena SCS Limited.",
+      "product": "IDProtect"
+    },
+    {
+      "text": "cpe:/o:cryptsoft:s%2fa_idflex_v",
+      "version": "2.2",
+      "vendor": "Cryptsoft",
+      "product": "Valid S/A Idflex V"
+    },
+    {
+      "text": "cpe:/o:tecsec:armored_card",
+      "version": "2.2",
+      "vendor": "TecSec",
+      "product": "Armored Card"
+    },
+    {
+      "text": "cpe:/o:thalesgroup:etoken_4300",
+      "version": "2.2",
+      "vendor": "Thales Group",
+      "product": "eToken 4300"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2019-11-12T10:06+09:00",
+  "issued": "2019-11-12T10:06+09:00",
+  "modified": "2019-11-12T10:06+09:00"
+}

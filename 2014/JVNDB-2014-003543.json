@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003543.html",
+  "title": "Resin Pro に Unicode 文字を適切に変換しない問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003543.html",
+  "description": "Caucho Technology が提供する Resin Pro には、Unicode 文字を適切に変換しない問題があります。\r\n\r\nCaucho Technology が提供する Resin Pro には、HTTP レスポンスを ISO-8859-1 で出力する際に Unicode 文字を正しく変換しない問題があります。その結果、クロスサイトスクリプティングやオープンリダイレクト等の攻撃を受ける可能性があります（CWE-20）。\r\n\r\nCWE-20: Improper Input Validation\r\nhttp://cwe.mitre.org/data/definitions/20.html",
+  "identifier": "JVNDB-2014-003543",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU99424174/",
+      "source": "JVN",
+      "id": "JVNVU#99424174"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2966",
+      "source": "CVE",
+      "id": "CVE-2014-2966"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2966",
+      "source": "NVD",
+      "id": "CVE-2014-2966"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/162308",
+      "source": "CERT-VN",
+      "id": "VU#162308"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:caucho:resin",
+      "version": "2.2",
+      "vendor": "Caucho Technology",
+      "product": "Resin"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2014-08-05T09:27+09:00",
+  "issued": "2014-07-24T16:25+09:00",
+  "modified": "2014-08-05T09:27+09:00"
+}

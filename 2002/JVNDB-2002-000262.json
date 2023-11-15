@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000262.html",
+  "title": "Sun Solaris の WBEM におけるサービス運用妨害 (DoS) および root 権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000262.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\t\r\n\r\nSolaris 8 1/01 以降 には、以下の Web-Based Enterprise Management(WBEM) サービスを提供するパッケージが同梱されています。 \r\n\r\nSUNWwbdoc \r\nSUNWwbcou \r\nSUNWwbdev \r\nSUNWmgapp \r\n\r\n　これらのパッケージに含まれるファイルには特定のグループに所属しているユーザに書き込み可能なパーミッションが設定されているファイルや、すべてのユーザに書き込み可能なパーミッションが設定されているファイルが存在します。 \r\n　不適切なパーミッションが設定されているファイルは、/usr/sadm および /usr/demo/wbem ディレクトリ内に格納されていることが判明しています。 \r\n　この問題を利用することでローカルの攻撃者は、標的ホストをサービス不能状態に陥らせる、またはシステムの root 権限を奪取する可能性が存在します。 \r\n　尚、Solaris 8 10/00 以前のデフォルトインストールでは、WBEM パッケージが同梱されていないため、この問題の影響を受けません。",
+  "identifier": "JVNDB-2002-000262",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-2136",
+      "source": "CVE",
+      "id": "CVE-2002-2136"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-2136",
+      "source": "NVD",
+      "id": "CVE-2002-2136"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6061",
+      "source": "BID",
+      "id": "6061"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

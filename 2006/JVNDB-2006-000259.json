@@ -1,0 +1,65 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000259.html",
+  "title": "Quagga の RIPd におけるルーティング情報が漏洩する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000259.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nQuagga、GNU Zebra は TCP/IP ベースのルーティング関連プロトコルをサポートしたデーモン群をまとめたものです。それらのうち RIP、BGP プロトコルを処理するデーモンとして RIPd、bgpd が同梱されています。\r\n\r\nQuagga、GNU Zebra には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) RIPd デーモンには、RIPv2 のみ有効である設定においても、認証の有無に関わらず RIPv1 のリクエストに対してレスポンスしてしまう問題が存在します。(CVE-2006-2223)\r\n\r\nリモートの攻撃者に悪用された場合、SEND UPDATE などの REQUEST パケットを使用することにより、ルーティング情報を不正に取得される可能性があります。\r\n\r\n2) RIPd デーモンには RIPv2 の認証が有効に設定されているにも関わらず、RIPv1 のパケットを認証なしで受け入れてしまう問題が存在します。(CVE-2006-2224)\r\n\r\nリモートの攻撃者に悪用された場合、RIPv1 の RESPONSE パケット使用することにより RIP ルーティングテーブルを不正に修正される可能性があります。\r\n\r\n3) bgpd デーモンの community_str2com() 関数に不備が存在し、Telnet 管理インタフェースより show ip bgp コマンドを実行した場合、無限ループに陥り大量の CPU リソースを消費してしまう問題が存在します。(CVE-2006-2276)\r\n\r\nローカルの攻撃者に悪用された場合、結果として標的システムがサービス不能状態に陥る可能性があります。",
+  "identifier": "JVNDB-2006-000259",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2223",
+      "source": "CVE",
+      "id": "CVE-2006-2223"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-2223",
+      "source": "NVD",
+      "id": "CVE-2006-2223"
+    },
+    {
+      "text": "http://secunia.com/advisories/20116/",
+      "source": "SECUNIA",
+      "id": "SA20116"
+    },
+    {
+      "text": "http://secunia.com/advisories/19910/",
+      "source": "SECUNIA",
+      "id": "SA19910"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17979",
+      "source": "BID",
+      "id": "17979"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17808",
+      "source": "BID",
+      "id": "17808"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

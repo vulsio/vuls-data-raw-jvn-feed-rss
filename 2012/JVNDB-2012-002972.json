@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002972.html",
+  "title": "Linux Kernel の fs/ext4/super.c におけるファイルシステムグループデータの不整合を誘発される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002972.html",
+  "description": "x86 プラットフォームおよびその他の不特定のプラットフォームで稼働する Linux Kernel の fs/ext4/super.c の ext4_fill_flex_info 関数には、ファイルシステムグループデータの不整合を誘発する、およびサービス運用妨害 (DoS) 状態となる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2009-4307 に対する修正が不十分だったことによる脆弱性です。",
+  "identifier": "JVNDB-2012-002972",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2100",
+      "source": "CVE",
+      "id": "CVE-2012-2100"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2100",
+      "source": "NVD",
+      "id": "CVE-2012-2100"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-12-25T17:44+09:00",
+  "issued": "2012-07-04T15:29+09:00",
+  "modified": "2012-12-25T17:44+09:00"
+}

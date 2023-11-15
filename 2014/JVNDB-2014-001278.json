@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001278.html",
+  "title": "Mozilla Thunderbird にメッセージ内の HTML 要素を適切にブロックしない脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001278.html",
+  "description": "Mozilla Thunderbird には、メッセージ内の HTML 要素を適切にブロックしない脆弱性が存在します。\r\n\r\nMozilla Thunderbird の初期設定では、HTML 形式のメッセージ内にスクリプトタグ等が埋め込まれていても、それらの表示や実行はブロックされます。\r\nしかし、Data URI でエンコードされたスクリプトタグ等が含まれているメッセージを転送または返信すると、メッセージ内のスクリプトがデコードされ、実行されます。",
+  "identifier": "JVNDB-2014-001278",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU95235528/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95235528"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6674",
+      "source": "CVE",
+      "id": "CVE-2013-6674"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2013-6674",
+      "source": "NVD",
+      "id": "CVE-2013-6674"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/863369",
+      "source": "CERT-VN",
+      "id": "VU#863369"
+    },
+    {
+      "text": "https://developer.mozilla.org/en-US/docs/data_URIs",
+      "source": "関連文書",
+      "id": "data URIs"
+    },
+    {
+      "text": "http://tools.ietf.org/html/rfc2397",
+      "source": "関連文書",
+      "id": "The \"data\" URL scheme"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:thunderbird",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Thunderbird"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2014-02-20T14:03+09:00",
+  "issued": "2014-01-30T10:57+09:00",
+  "modified": "2014-02-20T14:03+09:00"
+}

@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005661.html",
+  "title": "OpenJPEG の openjp2/pi.c:523 の opj_pi_next_cprl 関数における浮動小数点例外の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005661.html",
+  "description": "OpenJPEG の openjp2/pi.c:523 の opj_pi_next_cprl 関数には、浮動小数点例外 (別名 FPE またはゼロ除算) の脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-369: Divide By Zero (ゼロ除算) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/369.html",
+  "identifier": "JVNDB-2016-005661",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9112",
+      "source": "CVE",
+      "id": "CVE-2016-9112"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9112",
+      "source": "NVD",
+      "id": "CVE-2016-9112"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openjpeg:openjpeg",
+      "version": "2.2",
+      "vendor": "OpenJPEG project",
+      "product": "OpenJPEG"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-11-02T15:26+09:00",
+  "issued": "2016-11-02T15:26+09:00",
+  "modified": "2016-11-02T15:26+09:00"
+}

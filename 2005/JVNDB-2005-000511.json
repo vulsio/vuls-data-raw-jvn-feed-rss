@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000511.html",
+  "title": "Squid の sslConnectTimeout() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000511.html",
+  "description": "Squid には、ssl.c に実装されている sslConnectTimeout() 関数においてリクエストの取り扱いに不備が存在するため、セグメンテーションフォルトが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000511",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2796",
+      "source": "CVE",
+      "id": "CVE-2005-2796"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2796",
+      "source": "NVD",
+      "id": "CVE-2005-2796"
+    },
+    {
+      "text": "http://secunia.com/advisories/16674/",
+      "source": "SECUNIA",
+      "id": "SA16674"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14731",
+      "source": "BID",
+      "id": "14731"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2005/Sep/1014846.html",
+      "source": "SECTRACK",
+      "id": "1014846"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/1622",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-1622"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:squid-cache:squid",
+      "version": "2.2",
+      "vendor": "Squid-cache.org",
+      "product": "Squid"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

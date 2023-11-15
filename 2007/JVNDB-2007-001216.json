@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001216.html",
+  "title": "pyftpdlib の ftp_PORT 関数における FTP バウンス攻撃を誘発する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001216.html",
+  "description": "pyftpdlib の FTPServer.py の ftp_PORT 関数は、宛先 IP アドレスが FTP クライアント接続の送信元 IP アドレスと合致した場合、特権ポートへの TCP 接続を適切に制限しないため、FTP バウンス攻撃を誘発する脆弱性が存在します。\r\n本問題は、CVE-1999-0017 と関連する問題です。",
+  "identifier": "JVNDB-2007-001216",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6741",
+      "source": "CVE",
+      "id": "CVE-2007-6741"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-6741",
+      "source": "NVD",
+      "id": "CVE-2007-6741"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:g.rodola:pyftpdlib",
+      "version": "2.2",
+      "vendor": "g.rodola",
+      "product": "pyftpdlib"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-03-27T18:42+09:00",
+  "issued": "2012-03-27T18:42+09:00",
+  "modified": "2012-03-27T18:42+09:00"
+}

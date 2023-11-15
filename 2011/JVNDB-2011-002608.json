@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002608.html",
+  "title": "MIT Kerberos の krb5_db2_lockout_audit 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002608.html",
+  "description": "MIT Kerberos の Key Distribution Center (KDC) 内にある krb5_db2_lockout_audit 関数には、db2 バックエンドが使用される時、サービス運用妨害 (表明違反および Daemon Exit) 状態となる脆弱性が存在します。\r\n本脆弱性は、CVE-2011-1528 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2011-002608",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU659251",
+      "source": "JVN",
+      "id": "JVNVU#659251"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4151",
+      "source": "CVE",
+      "id": "CVE-2011-4151"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4151",
+      "source": "NVD",
+      "id": "CVE-2011-4151"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/659251",
+      "source": "CERT-VN",
+      "id": "VU#659251"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mit:kerberos",
+      "version": "2.2",
+      "vendor": "MIT Kerberos",
+      "product": "Kerberos"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2013-07-08T18:07+09:00",
+  "issued": "2011-10-31T10:17+09:00",
+  "modified": "2013-07-08T18:07+09:00"
+}

@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004571.html",
+  "title": "CHICKEN stable および development snapshots におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004571.html",
+  "description": "CHICKEN stable および development snapshots の \"extras\" ユニットの \"read-string!\" プロシージャには、バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004571",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4385",
+      "source": "CVE",
+      "id": "CVE-2013-4385"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4385",
+      "source": "NVD",
+      "id": "CVE-2013-4385"
+    },
+    {
+      "text": "http://lists.gnu.org/archive/html/chicken-announce/2013-10/msg00000.html",
+      "source": "関連文書",
+      "id": "[Chicken-announce] Chicken 4.8.0.5 released"
+    },
+    {
+      "text": "http://lists.nongnu.org/archive/html/chicken-announce/2013-09/msg00000.html",
+      "source": "関連文書",
+      "id": "[Chicken-announce] [SECURITY] Buffer overrun in some uses of read-string"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:call-cc:chicken",
+      "version": "2.2",
+      "vendor": "The Chicken Team",
+      "product": "CHICKEN"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-10-11T12:14+09:00",
+  "issued": "2013-10-11T12:14+09:00",
+  "modified": "2013-10-11T12:14+09:00"
+}

@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003344.html",
+  "title": "Red Hat Enterprise Linux for Real Time 7 などの製品の kernel-rt パッケージで使用される Linux Kernel 用の kernel.org の projects/rt パッチにおける SysRq コマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003344.html",
+  "description": "Red Hat Enterprise Linux for Real Time 7 およびその他の製品の kernel-rt パッケージで使用される Linux Kernel 用の kernel.org の projects/rt パッチの net/ipv4/icmp.c 内の icmp_check_sysrq 関数には、SysRq コマンドを実行される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-284: Improper Access Control (不適切なアクセス制御) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/284.html",
+  "identifier": "JVNDB-2016-003344",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3707",
+      "source": "CVE",
+      "id": "CVE-2016-3707"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3707",
+      "source": "NVD",
+      "id": "CVE-2016-3707"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2016/05/17/1",
+      "source": "関連文書",
+      "id": "CVE-2016-3707 : kernel-rt - Sending SysRq command via ICMP echo request"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel-rt",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux kernel-rt"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_for_real_time",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux for Real Time"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_for_real_time_for_nfv",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux for Real Time for NFV"
+    },
+    {
+      "text": "cpe:/o:suse:linux_enterprise",
+      "version": "2.2",
+      "vendor": "SUSE",
+      "product": "SUSE Linux Enterprise"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-08-30T17:24+09:00",
+  "issued": "2016-06-28T16:57+09:00",
+  "modified": "2016-08-30T17:24+09:00"
+}

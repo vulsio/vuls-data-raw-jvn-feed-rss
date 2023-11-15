@@ -1,0 +1,98 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001372.html",
+  "title": "GnuTLS の _gnutls_ciphertext2compressed 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001372.html",
+  "description": "GnuTLS libgnutls の _gnutls_ciphertext2compressed 関数には、不正な Record Length を持つ TLS レコード中の暗号化された Client Hello メッセージの Random フィールド内の特定の整数値の処理に問題があるため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001372",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1950",
+      "source": "CVE",
+      "id": "CVE-2008-1950"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-1950",
+      "source": "NVD",
+      "id": "CVE-2008-1950"
+    },
+    {
+      "text": "http://www.kb.cert.org/CERT_WEB/services/vul-notes.nsf/id/111034",
+      "source": "CERT-VN",
+      "id": "VU#111034"
+    },
+    {
+      "text": "http://www.kb.cert.org/CERT_WEB/services/vul-notes.nsf/id/659209",
+      "source": "CERT-VN",
+      "id": "VU#659209"
+    },
+    {
+      "text": "http://secunia.com/advisories/30287/",
+      "source": "SECUNIA",
+      "id": "SA30287"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/29292",
+      "source": "BID",
+      "id": "29292"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/42533",
+      "source": "XF",
+      "id": "42533"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/1582",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-1582"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gnutls",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GnuTLS"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2008-08-08T11:38+09:00",
+  "issued": "2008-06-10T14:26+09:00",
+  "modified": "2008-08-08T11:38+09:00"
+}

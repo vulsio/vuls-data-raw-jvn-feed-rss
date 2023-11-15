@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002004.html",
+  "title": "Linux kernel の mext_check_arguments 関数におけるファイルを上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002004.html",
+  "description": "Linux kernel の fs/ext4/move_extent.c 内にある mext_check_arguments 関数には、MOVE_EXT ioctl コールの処理に不備があるため、append-only ファイルを上書きされる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002004",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2066",
+      "source": "CVE",
+      "id": "CVE-2010-2066"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2066",
+      "source": "NVD",
+      "id": "CVE-2010-2066"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/41466",
+      "source": "BID",
+      "id": "41466"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2011-03-03T13:26+09:00",
+  "issued": "2010-09-14T16:19+09:00",
+  "modified": "2011-03-03T13:26+09:00"
+}

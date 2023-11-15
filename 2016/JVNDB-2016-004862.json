@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004862.html",
+  "title": "EMC Avamar Server の Avamar Data Store および Avamar Virtual Edition における暗号保護メカニズムを破られる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004862.html",
+  "description": "EMC Avamar Server の Avamar Data Store (ADS) および Avamar Virtual Edition (AVE) は、異なるカスタマのインストールに同一の暗号鍵を使用するため、暗号保護メカニズムを破られ、重要なクライアント-サーバ間のトラフィック情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-004862",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0904",
+      "source": "CVE",
+      "id": "CVE-2016-0904"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0904",
+      "source": "NVD",
+      "id": "CVE-2016-0904"
+    },
+    {
+      "text": "http://seclists.org/bugtraq/2016/Sep/31",
+      "source": "関連文書",
+      "id": "ESA-2016-065: EMC Avamar Data Store and Avamar Virtual Edition Multiple Vulnerabilities"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:emc:avamar_server",
+      "version": "2.2",
+      "vendor": "DELL EMC (旧 EMC Corporation)",
+      "product": "EMC Avamar Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "8.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L"
+    }
+  ],
+  "date": "2016-09-27T15:51+09:00",
+  "issued": "2016-09-27T15:51+09:00",
+  "modified": "2016-09-27T15:51+09:00"
+}

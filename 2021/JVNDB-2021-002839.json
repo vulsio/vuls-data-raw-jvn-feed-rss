@@ -1,0 +1,30 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002839.html",
+  "title": "Salesforce Developer Experience Command Line Interface におけるアクセス制限不備の問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002839.html",
+  "description": "Salesforce Developer Experience Command Line Interface を使用すると、認証されたユーザは自身と同じアクセス権で Salesforce GUI にアクセス可能な URL を生成できます。\r\nこの方法でアクセスした場合、ログに記録されません。\r\nSalesforce のセキュリティ設定がデフォルトの場合、IPアドレスやデバイスなどの検証がされることなく、生成した URL を利用し、Salesforce GUI にアクセスすることが可能です。\r\nその結果任意のユーザが、URL を生成したユーザと同じアクセス権で管理アクションを実行可能な問題が存在します。\r\n",
+  "identifier": "JVNDB-2021-002839",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU97731134/",
+      "source": "JVN",
+      "id": "JVNVU#97731134"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/883754",
+      "source": "CERT-VN",
+      "id": "VU#883754"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:salesforce:salesforce_developer_experience",
+      "version": "2.2",
+      "vendor": "Salesforce.com, inc.",
+      "product": "Salesforce Developer Experience"
+    }
+  ],
+  "date": "2021-10-06T11:54+09:00",
+  "issued": "2021-10-06T11:54+09:00",
+  "modified": "2021-10-06T11:54+09:00"
+}

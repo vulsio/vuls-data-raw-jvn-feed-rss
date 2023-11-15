@@ -1,0 +1,81 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001823.html",
+  "title": "GNU patch の util.c におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001823.html",
+  "description": "GNU patch の util.c には、ディレクトリトラバーサルの脆弱性が存在します。\r\n本問題は、CVE-2010-1679 に関連する可能性があります。",
+  "identifier": "JVNDB-2011-001823",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4651",
+      "source": "CVE",
+      "id": "CVE-2010-4651"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4651",
+      "source": "NVD",
+      "id": "CVE-2010-4651"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2011/01/05/10",
+      "source": "関連文書",
+      "id": "CVE request: patch directory traversal flaw"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2011/01/06/19",
+      "source": "関連文書",
+      "id": "Re: CVE request: patch directory traversal flaw (2011/01/06/19)"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2011/01/06/20",
+      "source": "関連文書",
+      "id": "Re: CVE request: patch directory traversal flaw (2011/01/06/20)"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2011/01/06/21",
+      "source": "関連文書",
+      "id": "Re: CVE request: patch directory traversal flaw (2011/01/06/21)"
+    },
+    {
+      "text": "http://secunia.com/advisories/43677",
+      "source": "SECUNIA",
+      "id": "SA43677"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:gnu_patch",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU patch"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2014-12-03T16:33+09:00",
+  "issued": "2011-07-05T09:00+09:00",
+  "modified": "2014-12-03T16:33+09:00"
+}

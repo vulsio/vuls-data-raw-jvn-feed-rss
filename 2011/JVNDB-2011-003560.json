@@ -1,0 +1,105 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003560.html",
+  "title": "Microsoft .NET Framework におけるサービス運用妨害 (CPU 資源の消費) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003560.html",
+  "description": "Microsoft .NET Framework の ASP.NET サブシステム内にあるハッシュテーブル実装における CaseInsensitiveHashProvider.getHashCode 関数には、ハッシュ衝突を想定した制限を行わずにフォームパラメータのハッシュ値を算出するため、サービス運用妨害 (CPU 資源の消費) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-003560",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU903934",
+      "source": "JVN",
+      "id": "JVNVU#903934"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3414",
+      "source": "CVE",
+      "id": "CVE-2011-3414"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3414",
+      "source": "NVD",
+      "id": "CVE-2011-3414"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2012/at120001.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2012-0001"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/#topics",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS11-100)(2011年12月30日)"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/903934",
+      "source": "CERT-VN",
+      "id": "VU#903934"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20120106-web.html",
+      "source": "IPA",
+      "id": "20120106-web"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:.net_framework",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft .NET Framework"
+    },
+    {
+      "text": "cpe:/a:nec:infocage",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "InfoCage"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_7",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 7"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_vista",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Vista"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-04-18T17:07+09:00",
+  "issued": "2012-01-04T16:36+09:00",
+  "modified": "2012-04-18T17:07+09:00"
+}

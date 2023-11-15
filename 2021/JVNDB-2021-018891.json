@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-018891.html",
+  "title": "Yandex の ClickHouse 他複数ベンダの製品における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-018891.html",
+  "description": "Yandex の ClickHouse 他複数ベンダの製品には、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-018891",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-43304",
+      "source": "CVE",
+      "id": "CVE-2021-43304"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-43304",
+      "source": "NVD",
+      "id": "CVE-2021-43304"
+    },
+    {
+      "text": "https://jfrog.com/blog/7-rce-and-dos-vulnerabilities-found-in-clickhouse-dbms",
+      "source": "関連文書",
+      "id": "jfrog.com (7-rce-and-dos-vulnerabilities-found-in-clickhouse-dbms)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2022/11/msg00002.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00002)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:yandex:clickhouse",
+      "version": "2.2",
+      "vendor": "Yandex",
+      "product": "ClickHouse"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-07-10T17:23+09:00",
+  "issued": "2023-07-10T17:23+09:00",
+  "modified": "2023-07-10T17:23+09:00"
+}

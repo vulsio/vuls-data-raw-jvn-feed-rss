@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000314.html",
+  "title": "Vixie Cron の do_command.c における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000314.html",
+  "description": "Vixie Cron の do_command.c では、ユーザが設定したジョブ (プログラム) を実行する前に setuid() 関数の戻り値を適切に確認しない脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000314",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2607",
+      "source": "CVE",
+      "id": "CVE-2006-2607"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-2607",
+      "source": "NVD",
+      "id": "CVE-2006-2607"
+    },
+    {
+      "text": "http://secunia.com/advisories/20380/",
+      "source": "SECUNIA",
+      "id": "SA20380"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18108",
+      "source": "BID",
+      "id": "18108"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/2075",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-2075"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

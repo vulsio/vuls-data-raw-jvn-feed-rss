@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001516.html",
+  "title": "Pidgin の MSN プロトコルハンドラにおける整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001516.html",
+  "description": "Pidgin の libpurple/protocols/msnp9/slplink.c および libpurple/protocols/msn/slplink.c における MSN プロトコルハンドラの msn_slplink_process_msg 関数には、複数の整数オーバーフローの脆弱性があります。",
+  "identifier": "JVNDB-2008-001516",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2927",
+      "source": "CVE",
+      "id": "CVE-2008-2927"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-2927",
+      "source": "NVD",
+      "id": "CVE-2008-2927"
+    },
+    {
+      "text": "http://secunia.com/advisories/30971/",
+      "source": "SECUNIA",
+      "id": "SA30971"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/2032",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-2032"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pidgin:pidgin",
+      "version": "2.2",
+      "vendor": "Pidgin",
+      "product": "Pidgin"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_optional_productivity_applications",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Optional Productivity Applications"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-07-30T13:40+09:00",
+  "issued": "2008-07-30T13:40+09:00",
+  "modified": "2008-07-30T13:40+09:00"
+}

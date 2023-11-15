@@ -1,0 +1,167 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000987.html",
+  "title": "Samba における WINS Name Registration リクエストに関するバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000987.html",
+  "description": "Samba には WINS サーバを構成している場合、nmbd の nmbd/nmbd_packets.c における reply_netbios_packet() 関数において、WINS Name Registration リクエストの処理に不備があり、スタックベースのバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000987",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA07-352A/index.html",
+      "source": "JVN",
+      "id": "JVNTA07-352A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA07-352A/index.html",
+      "source": "JVNTR",
+      "id": "TRTA07-352A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5398",
+      "source": "CVE",
+      "id": "CVE-2007-5398"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5398",
+      "source": "NVD",
+      "id": "CVE-2007-5398"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA07-352A.html",
+      "source": "CERT-SA",
+      "id": "SA07-352A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA07-352A.html",
+      "source": "CERT-TA",
+      "id": "TA07-352A"
+    },
+    {
+      "text": "http://secunia.com/advisories/27450",
+      "source": "SECUNIA",
+      "id": "SA27450"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26455",
+      "source": "BID",
+      "id": "26455"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/38502",
+      "source": "XF",
+      "id": "38502"
+    },
+    {
+      "text": "http://securitytracker.com/id?1018953",
+      "source": "SECTRACK",
+      "id": "1018953"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/3869",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-3869"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:samba:samba",
+      "version": "2.2",
+      "vendor": "Samba Project",
+      "product": "Samba"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-06-19T10:54+09:00",
+  "issued": "2007-12-07T16:44+09:00",
+  "modified": "2008-06-19T10:54+09:00"
+}

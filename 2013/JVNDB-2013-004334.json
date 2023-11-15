@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004334.html",
+  "title": "Graphite の graphite-web の render/views.py における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004334.html",
+  "description": "Graphite の graphite-web の render/views.py 内の enderLocalView 関数は、危険な方法で pickle Python モジュールを使用するため、任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004334",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5093",
+      "source": "CVE",
+      "id": "CVE-2013-5093"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5093",
+      "source": "NVD",
+      "id": "CVE-2013-5093"
+    },
+    {
+      "text": "http://secunia.com/advisories/54556",
+      "source": "関連文書",
+      "id": "Secunia Advisory SA54556"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:graphite_project:graphite",
+      "version": "2.2",
+      "vendor": "Graphite project",
+      "product": "Graphite"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-09-30T14:49+09:00",
+  "issued": "2013-09-30T14:49+09:00",
+  "modified": "2013-09-30T14:49+09:00"
+}

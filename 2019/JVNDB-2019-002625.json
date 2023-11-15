@@ -1,0 +1,156 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-002625.html",
+  "title": "WPA3 のプロトコルと実装に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-002625.html",
+  "description": "WPA3 プロトコルならびに hostapd と wpa_supplicant の実装には複数の脆弱性が存在し、遠隔の攻撃者によって、弱いパスワード情報や権限の取得、ならびにサービス運用妨害 (DoS) 攻撃が行われる可能性があります。これらの脆弱性は \"Dragonblood\" と呼称されています。\r\n\r\nCERT/CC では引き続き WPA3 プロトコルの検証を行っています。今回発見された WPA3 の実装に関する脆弱性はプロトコルの仕様そのものに起因する可能性があります。\r\n\r\nWPA3 は鍵交換プロトコルとして、 Simultaneous Authentication of Equals (SAE) を採用しています。これは \"Dragonfly Key Exchange\" とも呼ばれるもので、WPA2 における Pre-Shared Key (PSK) プロトコルの代替として機能しています。hostapd は WPA3 の認証処理におけるアクセスポイントおよび認証サーバの daemon です。また、wpa_supplicant は WPA authenticator (アクセスポイント) との鍵交換処理を実装した supplicant (クライアント) であり、WPA3 をサポートしています。hostapd と wpa_supplicant はともに Extensible Authentication Protocol Password (EAP-PWD) と SAE を実装していますが、下記の脆弱性を含んでいます。\r\n\r\n楕円曲線暗号グループ (ECC groups) に対する SAE のキャッシュベースの攻撃 (SAE サイドチャネル攻撃) (CWE-208, CWE-524) - CVE-2019-9494\r\nhostapd と wpa_supplicant における SAE 実装は、観測可能なタイミングの違いならびにキャッシュアクセスのパターンによるサイドチャネル攻撃に対して脆弱です。\r\n\r\n楕円曲線暗号グループ (ECC groups) に対する EAP-PWD キャッシュベースの攻撃 (EAP-PWD サイドチャネル攻撃) (CWE-524) - CVE-2019-9495\r\nhostapd と wpa_supplicant における SAE 実装は、キャッシュアクセスのパターンによるサイドチャネル攻撃に対して脆弱です。EAP-PWD をサポートしている hostapd と wpa_supplicant のバージョン 2.7 およびそれ以前が本脆弱性の影響を受けます。\r\n\r\nSAE confirm 処理においてメッセージの検証が行われない問題 (CWE-642) - CVE-2019-9496\r\nhostapd プロセスが hostapd/AP モードで動作している際の SAE confirm のメッセージ処理における検証に不備があり、不正な認証シーケンスによって hostapd プロセスが終了してしまう可能性があります。SAE をサポートしている hostapd の全てのバージョンが本脆弱性の影響を受けます。\r\n\r\nEAP-PWD リフレクション攻撃 (EAP-pwd-Commit メッセージの検証不備) (CWE-301) - CVE-2019-9497\r\nhostapd (EAP Server) ならびに wpa_supplicant (EAP Peer) における EAP-PWD 実装では、EAP-pwd-Commit メッセージのスカラ値と要素値の検証が行われません。\r\n\r\nEAP-PWD Server における EAP-pwd-Commit メッセージの検証不備 (CWE-346) - CVE-2019-9498\r\nhostapd (EAP Server) における EAP-PWD 実装では、ビルドに用いられた暗号ライブラリが EAP-pwd-Commit メッセージの要素値 (EC point) に対する検証処理を実装していない場合に、EAP-pwd-Commit メッセージのスカラ値と要素値の検証が行われません。\r\n\r\nEAP-PWD Peer における EAP-pwd-Commit メッセージの検証不備 (CWE-346) - CVE-2019-9499\r\nwpa_supplicant (EAP Peer) における EAP-PWD 実装では、ビルドに用いられた暗号ライブラリが EAP-pwd-Commit メッセージの要素値 (EC point) に対する検証処理を実装していない場合に、EAP-pwd-Commit メッセージのスカラ値と要素値の検証が行われません。",
+  "identifier": "JVNDB-2019-002625",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU94228755/",
+      "source": "JVN",
+      "id": "JVNVU#94228755"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9494",
+      "source": "CVE",
+      "id": "CVE-2019-9494"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9495",
+      "source": "CVE",
+      "id": "CVE-2019-9495"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9496",
+      "source": "CVE",
+      "id": "CVE-2019-9496"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9497",
+      "source": "CVE",
+      "id": "CVE-2019-9497"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9498",
+      "source": "CVE",
+      "id": "CVE-2019-9498"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9499",
+      "source": "CVE",
+      "id": "CVE-2019-9499"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9494",
+      "source": "NVD",
+      "id": "CVE-2019-9494"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9495",
+      "source": "NVD",
+      "id": "CVE-2019-9495"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9496",
+      "source": "NVD",
+      "id": "CVE-2019-9496"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9497",
+      "source": "NVD",
+      "id": "CVE-2019-9497"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9498",
+      "source": "NVD",
+      "id": "CVE-2019-9498"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9499",
+      "source": "NVD",
+      "id": "CVE-2019-9499"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/871675/",
+      "source": "CERT-VN",
+      "id": "VU#871675"
+    },
+    {
+      "text": "https://wpa3.mathyvanhoef.com/",
+      "source": "関連文書",
+      "id": "Dragonblood: Analysing WPA3's Dragonfly Handshake"
+    },
+    {
+      "text": "https://papers.mathyvanhoef.com/dragonblood.pdf",
+      "source": "関連文書",
+      "id": "Dragonblood: A Security Analysis of WPA3's SAE Handshake"
+    },
+    {
+      "text": "https://w1.fi/security/",
+      "source": "関連文書",
+      "id": "hostapd and wpa_supplicant security advisories "
+    },
+    {
+      "text": "https://w1.fi/security/2019-1/",
+      "source": "関連文書",
+      "id": "Index of /security/2019-1"
+    },
+    {
+      "text": "https://w1.fi/security/2019-2/",
+      "source": "関連文書",
+      "id": "Index of /security/2019-2"
+    },
+    {
+      "text": "https://w1.fi/security/2019-3/",
+      "source": "関連文書",
+      "id": "Index of /security/2019-3"
+    },
+    {
+      "text": "https://w1.fi/security/2019-4/",
+      "source": "関連文書",
+      "id": "Index of /security/2019-4"
+    },
+    {
+      "text": "https://w1.fi/wpa_supplicant/",
+      "source": "関連文書",
+      "id": "Linux WPA Supplicant (IEEE 802.1X, WPA, WPA2, RSN, IEEE 802.11i)"
+    },
+    {
+      "text": "https://w1.fi/hostapd/",
+      "source": "関連文書",
+      "id": "hostapd: IEEE 802.11 AP, IEEE 802.1X/WPA/WPA2/EAP/RADIUS Authenticator"
+    },
+    {
+      "text": "https://w1.fi/cgit/hostap/log/",
+      "source": "関連文書",
+      "id": "hostap - hostapd/wpa_supplicant "
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:M/Au:S/C:C/I:C/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:A/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:L"
+    }
+  ],
+  "date": "2019-12-27T18:14+09:00",
+  "issued": "2019-04-16T17:07+09:00",
+  "modified": "2019-12-27T18:14+09:00"
+}

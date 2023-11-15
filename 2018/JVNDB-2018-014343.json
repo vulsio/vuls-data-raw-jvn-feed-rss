@@ -1,0 +1,80 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-014343.html",
+  "title": "systemd-journald における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-014343.html",
+  "description": "systemd-journald には、境界外読み取りに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2018-014343",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16866",
+      "source": "CVE",
+      "id": "CVE-2018-16866"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-16866",
+      "source": "NVD",
+      "id": "CVE-2018-16866"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-16866",
+      "source": "関連文書",
+      "id": "Bug 1653867"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:freedesktop:systemd",
+      "version": "2.2",
+      "vendor": "freedesktop.org",
+      "product": "systemd"
+    },
+    {
+      "text": "cpe:/a:netapp:active_iq_performance_analytics_services",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "Active IQ Performance Analytics Services"
+    },
+    {
+      "text": "cpe:/a:netapp:element_software",
+      "version": "2.2",
+      "vendor": "NetApp",
+      "product": "Element Software"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+    }
+  ],
+  "date": "2019-03-18T17:41+09:00",
+  "issued": "2019-03-18T17:41+09:00",
+  "modified": "2019-03-18T17:41+09:00"
+}

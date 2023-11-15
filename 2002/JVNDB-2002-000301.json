@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000301.html",
+  "title": "KDE の rlogin.protocol における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000301.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\n　KDE は X Window System 用に開発された総合デスクトップ環境です。 \r\n　Red Hat Linux に実装されている KDE 2.x、3.x には以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n1. KDE 3.0.2 に同梱されている Web ブラウザ Konqueror の SSL 機能に不備があり、信頼されていないサイトを信頼済みのサイトとして取り扱ってしまう問題があります。 \r\n2. KDE 3.0 から 3.0.2 の Konqueror には Cookie の secure フラグを検知しない不備が存在し、Cookie を漏洩してしまう問題があります。 \r\n3. KDE 3.0.3 以前の Konqueror にはクロスサイトスクリプティング攻撃を受ける問題があります。 \r\n4. KDE 3.0.1 から実装された kpf ファイルにはローカルの攻撃者に任意のファイルを閲覧されてしまう問題があります。 \r\n5. KDE 2.x から 3.0.4 には rlogin プロトコルと telnet プロトコルの実装に不備が存在し、リモート及びローカルの攻撃者に KDE の実行権限で任意のコードを実行される問題があります。 \r\n6. KDE LAN ブラウジング機能を提供する resLISa にはバッファオーバーフローの問題、LISa には権限昇格の問題があります。(LISa サービスはデフォルトでは無効に設定されています)",
+  "identifier": "JVNDB-2002-000301",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1281",
+      "source": "CVE",
+      "id": "CVE-2002-1281"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1281",
+      "source": "NVD",
+      "id": "CVE-2002-1281"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/5691",
+      "source": "BID",
+      "id": "5691"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/5689",
+      "source": "BID",
+      "id": "5689"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/5951",
+      "source": "BID",
+      "id": "5951"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6182",
+      "source": "BID",
+      "id": "6182"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/6157",
+      "source": "BID",
+      "id": "6157"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

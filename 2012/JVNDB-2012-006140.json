@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006140.html",
+  "title": "Standards Based Linux Instrumentation for Manageability Common Information Model Client におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006140.html",
+  "description": "Standards Based Linux Instrumentation for Manageability (SBLIM) Common Information Model (CIM) Client (別名 sblim-cim-client2) の internal/cimxml/sax/NodeFactory.java は、ハッシュ衝突を想定した制限を行わずにハッシュ値を計算するため、サービス運用妨害 (CPU 資源の消費) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-006140",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2328",
+      "source": "CVE",
+      "id": "CVE-2012-2328"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2328",
+      "source": "NVD",
+      "id": "CVE-2012-2328"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:standards_based_linux_instrumentation_project:standards-based_linux_common_information_model_client",
+      "version": "2.2",
+      "vendor": "Standards Based Linux Instrumentation Project",
+      "product": "Standards Based Linux Instrumentation for Manageability Common Information Model Client"
+    },
+    {
+      "text": "cpe:/o:novell:opensuse",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "openSUSE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-02-12T18:21+09:00",
+  "issued": "2014-02-12T18:21+09:00",
+  "modified": "2014-02-12T18:21+09:00"
+}

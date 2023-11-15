@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002110.html",
+  "title": "Joomla! における EZ Store (com_ezstore) コンポーネントにおける SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002110.html",
+  "description": "Joomla! 向け EZ Store (com_ezstore) コンポーネントには、SQL インジェクションの脆弱性が存在します。\r\nリモートの攻撃者により、 index.php に渡す detail アクション に含まれる id パラメータを介し、任意の SQL コマンドを実行される可能性があります。",
+  "identifier": "JVNDB-2008-002110",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3586",
+      "source": "CVE",
+      "id": "CVE-2008-3586"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-3586",
+      "source": "NVD",
+      "id": "CVE-2008-3586"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:joomla:com_ezstore",
+      "version": "2.2",
+      "vendor": "Joomla!",
+      "product": "EZ Store"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-12-24T12:13+09:00",
+  "issued": "2008-12-24T12:13+09:00",
+  "modified": "2008-12-24T12:13+09:00"
+}

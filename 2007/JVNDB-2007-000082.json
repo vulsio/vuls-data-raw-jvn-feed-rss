@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000082.html",
+  "title": "GIMP ToolKit (GTK+) の GdkPixbufLoader() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000082.html",
+  "description": "レッドハット社の gtk2 パッケージに含まれる GIMP ToolKit (GTK+) ライブラリには、GdkPixbufLoader() 関数での処理に不備が存在するため、不正な画像ファイル処理することでサービス運用妨害 (DoS) 状態を引き起こす脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000082",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0010",
+      "source": "CVE",
+      "id": "CVE-2007-0010"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-0010",
+      "source": "NVD",
+      "id": "CVE-2007-0010"
+    },
+    {
+      "text": "http://secunia.com/advisories/23884/",
+      "source": "SECUNIA",
+      "id": "SA23884"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/22209",
+      "source": "BID",
+      "id": "22209"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/0331",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-0331"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gtk:gtk%2B",
+      "version": "2.2",
+      "vendor": "GTK+",
+      "product": "GTK+"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

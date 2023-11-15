@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000382.html",
+  "title": "Microsoft Windows の Telnet クライアントにおける環境変数漏洩の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000382.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nTelnet で使用される NEW-ENVIRON コマンドは、RFC 1572 で規定されており、Telnet サーバとクライアント間で、セッションの開設時に環境変数をやりとりするために使用されるコマンドです\r\n\r\n多くの製品に同梱されている Telnet クライアントには、NEW-ENVIRON コマンドにより Telnet サーバに送信される環境変数の制限が不適切であるため、不正に環境変数の情報が奪取されてしまう問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、IFRAME タグと \"TELNET://\" 形式の URI などを利用し、Web ページあるいは電子メールを介して悪意ある Telnet サーバに接続するよう標的ユーザを誘導することにより、ユーザ名、実行ファイルの検索パス、重要なデータのある位置など、標的システムの重要な情報を奪取する可能性があります。\r\n\r\n尚、Microsoft Windows 2000 に関しては、この問題の影響を受けませんが、Microsoft Windows Services for UNIX を使用している場合は、この問題の影響を受ける可能性があります。\r\n\r\nまた、一部の Linux ディストリビューションに同梱されている Kerberos がこの問題の影響を受けることが報告されています。",
+  "identifier": "JVNDB-2005-000382",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1205",
+      "source": "CVE",
+      "id": "CVE-2005-1205"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1205",
+      "source": "NVD",
+      "id": "CVE-2005-1205"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/800829",
+      "source": "CERT-VN",
+      "id": "VU#800829"
+    },
+    {
+      "text": "http://secunia.com/advisories/15690/",
+      "source": "SECUNIA",
+      "id": "SA15690"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13940",
+      "source": "BID",
+      "id": "13940"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

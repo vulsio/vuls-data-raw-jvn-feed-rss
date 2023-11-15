@@ -1,0 +1,101 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001148.html",
+  "title": "sudo における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001148.html",
+  "description": "sudo には、pseudo-command を有効にしている場合、pseudo-command の名前と任意のディレクトリ内の実行ファイル名のマッチングが許容されるため、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001148",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0426",
+      "source": "CVE",
+      "id": "CVE-2010-0426"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0426",
+      "source": "NVD",
+      "id": "CVE-2010-0426"
+    },
+    {
+      "text": "http://secunia.com/advisories/38659/",
+      "source": "SECUNIA",
+      "id": "SA38659"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/38362",
+      "source": "BID",
+      "id": "38362"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/0450",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-0450"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:todd_miller:sudo",
+      "version": "2.2",
+      "vendor": "Todd C. Miller",
+      "product": "Sudo"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_client",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Client"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2010-05-21T18:23+09:00",
+  "issued": "2010-03-15T16:39+09:00",
+  "modified": "2010-05-21T18:23+09:00"
+}

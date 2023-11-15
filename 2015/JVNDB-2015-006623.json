@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006623.html",
+  "title": "Wireshark の NLM ディセクタの epan/dissectors/packet-nlm.c におけるメモリ二重解放の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006623.html",
+  "description": "Wireshark の NLM ディセクタ (解析機能) の epan/dissectors/packet-nlm.c には、\"Match MSG/RES packets for async NLM\" オプションが有効になっている場合、メモリ二重解放の脆弱性が存在します。",
+  "identifier": "JVNDB-2015-006623",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8718",
+      "source": "CVE",
+      "id": "CVE-2015-8718"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8718",
+      "source": "NVD",
+      "id": "CVE-2015-8718"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wireshark:wireshark",
+      "version": "2.2",
+      "vendor": "Wireshark",
+      "product": "Wireshark"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2016-01-07T16:34+09:00",
+  "issued": "2016-01-07T16:34+09:00",
+  "modified": "2016-01-07T16:34+09:00"
+}

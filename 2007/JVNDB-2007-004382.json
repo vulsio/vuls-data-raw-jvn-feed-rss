@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004382.html",
+  "title": "PHP の MySQL エクステンションにおける open_basedir 制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-004382.html",
+  "description": "PHP の MySQL エクステンションには、safe_mode および open_basedir 制限を回避される脆弱性が存在します。\r\n本脆弱性は、CVE-2007-3997 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2007-004382",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4889",
+      "source": "CVE",
+      "id": "CVE-2007-4889"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-4889",
+      "source": "NVD",
+      "id": "CVE-2007-4889"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:mysql_extension",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "mysql extension"
+    },
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T16:59+09:00",
+  "issued": "2012-09-25T16:59+09:00",
+  "modified": "2012-09-25T16:59+09:00"
+}

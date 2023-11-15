@@ -1,0 +1,81 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005410.html",
+  "title": "Telerik Web UI に暗号強度が不十分な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005410.html",
+  "description": "Telerik Web UI には暗号強度が不十分な脆弱性が存在し、暗号化鍵を取得される可能性があります。\r\n\r\n暗号強度が不十分 (CWE-326) - CVE-2017-9248\r\nTelerik.Web.UI.dll では暗号強度が不十分なため、Telerik.Web.UI.DialogParametersEncryptionKey や MachineKey を取得される可能性があります。また、当該コンポーネントを使用している製品も本脆弱性の影響を受ける可能性があります。",
+  "identifier": "JVNDB-2017-005410",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99345924/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99345924"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU96655623/",
+      "source": "JVN",
+      "id": "JVNVU#96655623"
+    },
+    {
+      "text": "https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2017-9248",
+      "source": "CVE",
+      "id": "CVE-2017-9248"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/838200",
+      "source": "CERT-VN",
+      "id": "VU#838200"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-077-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-077-03"
+    },
+    {
+      "text": "http://www.dnnsoftware.com/community-blog/cid/155436/critical-security-update--june-2017",
+      "source": "関連文書",
+      "id": "Critical Security Update - June 2017"
+    },
+    {
+      "text": "http://www.dnnsoftware.com/community/security/security-center",
+      "source": "関連文書",
+      "id": "Security Center"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/326.html",
+      "id": "CWE-326",
+      "title": "不適切な暗号強度(CWE-326)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:progress:telerik_web_ui",
+      "version": "2.2",
+      "vendor": "Progress Software Corporation",
+      "product": "Telerik Web UI"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-03-29T17:14+09:00",
+  "issued": "2017-07-28T11:15+09:00",
+  "modified": "2021-03-29T17:14+09:00"
+}

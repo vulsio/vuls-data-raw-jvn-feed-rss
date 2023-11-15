@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002987.html",
+  "title": "phpMyAdmin の simplexml_load_string 関数における任意のファイルを読まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002987.html",
+  "description": "phpMyAdmin の XML インポートプラグイン (libraries/import/xml.php) 内にある simplexml_load_string 関数には、任意のファイルを読まれる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-002987",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4107",
+      "source": "CVE",
+      "id": "CVE-2011-4107"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4107",
+      "source": "NVD",
+      "id": "CVE-2011-4107"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:phpmyadmin:phpmyadmin",
+      "version": "2.2",
+      "vendor": "The phpMyAdmin Project",
+      "product": "phpMyAdmin"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2011-11-21T16:08+09:00",
+  "issued": "2011-11-21T16:08+09:00",
+  "modified": "2011-11-21T16:08+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000367.html",
+  "title": "MySQL のインスタンスマネージャにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000367.html",
+  "description": "MySQL のインスタンスマネージャには、Instance_options::complete_initialization() 関数において、意図的な文字列を含むリクエストを送信した場合、ディレクトリ名を変換する際にバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000367",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3486",
+      "source": "CVE",
+      "id": "CVE-2006-3486"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3486",
+      "source": "NVD",
+      "id": "CVE-2006-3486"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/2700",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-2700"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mysql:mysql",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

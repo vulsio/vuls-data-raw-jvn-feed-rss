@@ -1,0 +1,84 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003606.html",
+  "title": "cURL および libcurl の lib/escape.c におけるヒープベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003606.html",
+  "description": "cURL および libcurl の lib/escape.c 内の curl_easy_unescape 関数には、ヒープベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003606",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU95860308/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95860308"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2174",
+      "source": "CVE",
+      "id": "CVE-2013-2174"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2174",
+      "source": "NVD",
+      "id": "CVE-2013-2174"
+    },
+    {
+      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-242-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-22-242-03"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:haxx:curl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "cURL"
+    },
+    {
+      "text": "cpe:/a:haxx:libcurl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "libcurl"
+    },
+    {
+      "text": "cpe:/a:oracle:hyperion",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Hyperion"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:novell:opensuse",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "openSUSE"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2022-09-01T16:05+09:00",
+  "issued": "2013-08-02T15:15+09:00",
+  "modified": "2022-09-01T16:05+09:00"
+}

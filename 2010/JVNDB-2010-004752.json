@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004752.html",
+  "title": "Microsoft Windows 2000 SP4 などの smtpsvc.dll の DNS の実装における DNS 応答を偽装される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004752.html",
+  "description": "Microsoft Windows 2000 SP4、Windows XP SP3、Windows Server 2003 SP2、Windows Server 2008 SP2、Windows Server 2008 R2、Exchange Server 2003 SP3、Exchange Server 2007 SP2、および Exchange Server 2010 の smtpsvc.dll の DNS の実装は、クエリの応答のトランザクション ID を検証しないため、DNS 応答を偽装される脆弱性が存在します。\r\n本脆弱性は、CVE-2010-0024 および CVE-2010-0025 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2010-004752",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1690",
+      "source": "CVE",
+      "id": "CVE-2010-1690"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1690",
+      "source": "NVD",
+      "id": "CVE-2010-1690"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:exchange_server",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Exchange Server"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T17:38+09:00",
+  "issued": "2012-09-25T17:38+09:00",
+  "modified": "2012-09-25T17:38+09:00"
+}

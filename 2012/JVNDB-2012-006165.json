@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006165.html",
+  "title": "Red Hat Conga の Luci における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006165.html",
+  "description": "Red Hat Conga の Luci は、__ac session Cookie の Base64 エンコードされた文字列にユーザのユーザ名とパスワードを格納するため、権限を取得される脆弱性が存在します。\r\n\r\n本問題は、異なる脆弱性のタイプに分割されました。\r\nユーザのタイムアウトの誤った処理については、CVE-2013-7347 を割り当てました。",
+  "identifier": "JVNDB-2012-006165",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3359",
+      "source": "CVE",
+      "id": "CVE-2012-3359"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3359",
+      "source": "NVD",
+      "id": "CVE-2012-3359"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:conga",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Conga"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.7",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-04-02T14:55+09:00",
+  "issued": "2014-04-02T14:55+09:00",
+  "modified": "2014-04-02T14:55+09:00"
+}

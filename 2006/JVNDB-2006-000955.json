@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000955.html",
+  "title": "BusyBox の passwd における弱い暗号で MD5 パスワードハッシュが生成される問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000955.html",
+  "description": "BusyBox の passwd コマンドには、MD5 ハッシュで暗号化されたパスワードを生成する際に、salt を使用しないでパスワードを暗号化してしまう問題が存在します。",
+  "identifier": "JVNDB-2006-000955",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1058",
+      "source": "CVE",
+      "id": "CVE-2006-1058"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1058",
+      "source": "NVD",
+      "id": "CVE-2006-1058"
+    },
+    {
+      "text": "http://secunia.com/advisories/19477/",
+      "source": "SECUNIA",
+      "id": "SA19477"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17330",
+      "source": "BID",
+      "id": "17330"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/25569",
+      "source": "XF",
+      "id": "25569"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:busybox:busybox",
+      "version": "2.2",
+      "vendor": "BusyBox",
+      "product": "BusyBox"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-05-23T17:50+09:00",
+  "issued": "2007-05-23T17:50+09:00",
+  "modified": "2007-05-23T17:50+09:00"
+}

@@ -1,0 +1,107 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001461.html",
+  "title": "Linux kernel の InfiniBand ドライバ 内にある cm_work_handler 関数におけるサービス運用妨害 (パニック) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001461.html",
+  "description": "Linux kernel の InfiniBand ドライバ 内にある cm_work_handler 関数には、競合状態が発生し、サービス運用妨害 (パニック) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-001461",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0695",
+      "source": "CVE",
+      "id": "CVE-2011-0695"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0695",
+      "source": "NVD",
+      "id": "CVE-2011-0695"
+    },
+    {
+      "text": "http://secunia.com/advisories/43693",
+      "source": "SECUNIA",
+      "id": "SA43693"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/46839",
+      "source": "BID",
+      "id": "46839"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/66056",
+      "source": "XF",
+      "id": "66056"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_long_life",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Long Life"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2012-12-19T16:57+09:00",
+  "issued": "2011-04-28T15:53+09:00",
+  "modified": "2012-12-19T16:57+09:00"
+}

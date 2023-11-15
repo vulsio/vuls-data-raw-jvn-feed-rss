@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004565.html",
+  "title": "language-selector の D-Bus バックエンドにおける権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004565.html",
+  "description": "language-selector の D-Bus バックエンドの dbus_backend/lsd.py は、(1) SetSystemDefaultLangEnv および (2) SetSystemDefaultLanguageEnv 関数への引数を検証しないため、権限を取得される脆弱性が存在します。\r\n本脆弱性は、CVE-2011-0729 と異なります。",
+  "identifier": "JVNDB-2011-004565",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1842",
+      "source": "CVE",
+      "id": "CVE-2011-1842"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1842",
+      "source": "NVD",
+      "id": "CVE-2011-1842"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:canonical:language-selector",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "language-selector"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-03-27T18:43+09:00",
+  "issued": "2012-03-27T18:43+09:00",
+  "modified": "2012-03-27T18:43+09:00"
+}

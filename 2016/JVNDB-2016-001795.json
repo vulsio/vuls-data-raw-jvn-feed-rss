@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001795.html",
+  "title": "Android の Conscrypt の TrustManagerImpl.java の TrustManagerImpl クラスにおけるサーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001795.html",
+  "description": "Android の Conscrypt の TrustManagerImpl.java の TrustManagerImpl クラスのキャッシュ機能は、中間 CA と信頼できるルート CA との区別を誤って処理するため、サーバになりすまされる脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug 26232830 として公開しています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-254: Security Features (セキュリティ機能)、および CWE-345: Insufficient Verification of Data Authenticity (データの信頼性についての不十分な検証) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/254.html\r\nhttp://cwe.mitre.org/data/definitions/345.html",
+  "identifier": "JVNDB-2016-001795",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0818",
+      "source": "CVE",
+      "id": "CVE-2016-0818"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0818",
+      "source": "NVD",
+      "id": "CVE-2016-0818"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:google:android",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2016-03-22T15:57+09:00",
+  "issued": "2016-03-22T15:57+09:00",
+  "modified": "2016-03-22T15:57+09:00"
+}

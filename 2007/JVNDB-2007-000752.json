@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000752.html",
+  "title": "KDE Konqueror における setInterval() 関数に関するアドレスバーの URL を偽装可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000752.html",
+  "description": "KDE の Konqueror には、setInterval() 関数に不備があり、短い間隔で、window.location プロパティを変更することで、アドレスバーに表示される URL を偽装可能な脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000752",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4224",
+      "source": "CVE",
+      "id": "CVE-2007-4224"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4224",
+      "source": "NVD",
+      "id": "CVE-2007-4224"
+    },
+    {
+      "text": "http://secunia.com/advisories/26351/",
+      "source": "SECUNIA",
+      "id": "SA26351"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25219",
+      "source": "BID",
+      "id": "25219"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/2807",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-2807"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+      "id": "CWE-59",
+      "title": "リンク解釈の問題(CWE-59)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:kde:kde",
+      "version": "2.2",
+      "vendor": "KDE project",
+      "product": "KDE"
+    },
+    {
+      "text": "cpe:/a:kde:konqueror",
+      "version": "2.2",
+      "vendor": "KDE project",
+      "product": "Konqueror"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-12-21T14:07+09:00",
+  "issued": "2007-10-18T15:45+09:00",
+  "modified": "2007-12-21T14:07+09:00"
+}

@@ -1,0 +1,116 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001148.html",
+  "title": "Apache Tomcat におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001148.html",
+  "description": "Apache Tomcat は、NIO HTTP コネクタを含むリクエストに対し maxHttpHeaderSize 制限を適用しないため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-001148",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0534",
+      "source": "CVE",
+      "id": "CVE-2011-0534"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0534",
+      "source": "NVD",
+      "id": "CVE-2011-0534"
+    },
+    {
+      "text": "http://secunia.com/advisories/43194",
+      "source": "SECUNIA",
+      "id": "SA43194"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/46164",
+      "source": "BID",
+      "id": "46164"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/65162",
+      "source": "XF",
+      "id": "65162"
+    },
+    {
+      "text": "http://securitytracker.com/id?1025027",
+      "source": "SECTRACK",
+      "id": "1025027"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0293",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0293"
+    },
+    {
+      "text": "http://osvdb.org/70809",
+      "source": "OSVDB",
+      "id": "70809"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/a:hp:xp_9000_performance_advisor_software",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP XP P9000 Performance Advisor ソフトウェア"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-03-26T17:07+09:00",
+  "issued": "2011-03-03T16:19+09:00",
+  "modified": "2015-03-26T17:07+09:00"
+}

@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000764.html",
+  "title": "IBM Lotus Domio の NRPC プロトコルに関する情報漏洩の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000764.html",
+  "description": "IBM Lotus Domino には、クライアントが NRPC（Notes Remote Procedure Call）サービスに接続する際、Domino サーバに存在するユーザ名と存在しないユーザ名とでエラーのレスポンス内容が異なるため、ユーザ名を推測可能な問題が存在します。さらに、正規のユーザ名を使用して、そのユーザの User.ID ファイルをダウンロードすることが可能な脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2006-000764",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5835",
+      "source": "CVE",
+      "id": "CVE-2006-5835"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-5835",
+      "source": "NVD",
+      "id": "CVE-2006-5835"
+    },
+    {
+      "text": "http://secunia.com/advisories/22741/",
+      "source": "SECUNIA",
+      "id": "SA22741"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/20960",
+      "source": "BID",
+      "id": "20960"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/4411",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-4411"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:lotus_domino",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Domino (旧 IBM Lotus Domino)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

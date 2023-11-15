@@ -1,0 +1,121 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-018999.html",
+  "title": "Fabrice Bellard の QEMU 他複数ベンダの製品における解放済みメモリの使用に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-018999.html",
+  "description": "Fabrice Bellard の QEMU 他複数ベンダの製品には、解放済みメモリの使用に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2021-018999",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-3748",
+      "source": "CVE",
+      "id": "CVE-2021-3748"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3748",
+      "source": "NVD",
+      "id": "CVE-2021-3748"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1998514",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (1998514)"
+    },
+    {
+      "text": "https://github.com/qemu/qemu/commit/bedd7e93d01961fcb16a97ae45d93acf357e11f6",
+      "source": "関連文書",
+      "id": "github.com (bedd7e93d01961fcb16a97ae45d93acf357e11f6)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2022/04/msg00002.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00002)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2022/09/msg00008.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00008)"
+    },
+    {
+      "text": "https://lists.nongnu.org/archive/html/qemu-devel/2021-09/msg00388.html",
+      "source": "関連文書",
+      "id": "lists.nongnu.org (msg00388)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202208-27",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202208-27)"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20220425-0004/",
+      "source": "関連文書",
+      "id": "security.netapp.com (ntap-20220425-0004)"
+    },
+    {
+      "text": "https://ubuntu.com/security/CVE-2021-3748",
+      "source": "関連文書",
+      "id": "ubuntu.com (CVE-2021-3748)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/416.html",
+      "id": "CWE-416",
+      "title": "解放済みメモリの使用(CWE-416)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_advanced_virtualization_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Advanced Virtualization EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-07-12T17:30+09:00",
+  "issued": "2023-07-12T17:30+09:00",
+  "modified": "2023-07-12T17:30+09:00"
+}

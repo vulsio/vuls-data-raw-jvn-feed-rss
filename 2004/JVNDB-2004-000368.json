@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000368.html",
+  "title": "imlib の BMP イメージハンドラにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000368.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\n多くの Linux ディストリビューションに同梱されている imlib/imlib2 ライブラリは、画像の読み込みと描画を行うプログラムで利用されています。\r\n\r\nImlib 1.9.14 以前、imlib2 1.1.1 以前には、RLE (ランレングスエンコード) でエンコードされた BMP ファイルを表示またはデコードした場合にバッファオーバーフローが発生する問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した BMP ファイルを問題を抱える imlib/imlib2 ライブラリを使用するアプリケーションで開かせることにより、結果としてそのアプリケーションをサービス不能状態に陥らせる、あるいは標的ユーザの権限で任意のコードを実行する可能性があります。\r\n\r\n尚、画像編集ユーティリティである ImageMagick にも同様の問題が存在することが報告されており、本パッケージを同梱している Red Hat および MIRACLE LINUX からは、この問題を修正する RPM パッケージがリリースされています。\r\nしかし、Red Hat より当初リリースされた ImageMagick の修正 RPM パッケージ (アドバイザリ RHSA-2004:480-05) では、この問題の修正が不完全であることが報告されており、2004 年 12 月 8 日にリリースされた、新たな RPM パッケージを適用することが推奨されています。\r\nMIRACLE LINUX V2.0/V2.1/V3.0 用の修正 RPM に関しても同様に修正が不完全であったために RPM が再リリースされています。\r\n\r\nまた、他の Linux ディストリビューションについても imlib/imlib2 と同様に ImageMagick 5.5.7-27 以前および 6.0.5 以前の全バージョンが影響を受ける可能性があります。",
+  "identifier": "JVNDB-2004-000368",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0817",
+      "source": "CVE",
+      "id": "CVE-2004-0817"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0817",
+      "source": "NVD",
+      "id": "CVE-2004-0817"
+    },
+    {
+      "text": "http://secunia.com/advisories/12479/",
+      "source": "SECUNIA",
+      "id": "SA12479"
+    },
+    {
+      "text": "http://secunia.com/advisories/12429/",
+      "source": "SECUNIA",
+      "id": "SA12429"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11084",
+      "source": "BID",
+      "id": "11084"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

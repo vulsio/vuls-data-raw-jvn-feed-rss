@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001399.html",
+  "title": "複数の Microsoft Windows 製品のカーネルモードドライバの win32k.sys における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001399.html",
+  "description": "複数の Microsoft Windows 製品のカーネルモードドライバの win32k.sys には、メモリを二重に解放する不備があるため、権限を取得される脆弱性が存在します。\r\n\r\nマイクロソフトセキュリティ情報には、この脆弱性は「Windows カーソル オブジェクトのダブル フリーの脆弱性」と記載されています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-415: Double Free (二重解放) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/415.html",
+  "identifier": "JVNDB-2015-001399",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0058",
+      "source": "CVE",
+      "id": "CVE-2015-0058"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0058",
+      "source": "NVD",
+      "id": "CVE-2015-0058"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20150212-ms.html",
+      "source": "IPA CFA",
+      "id": "Microsoft 製品の脆弱性対策について(2015年2月)"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2015/at150006.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2015-0006"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/topics/?seq=15341",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS15-009,010,011,012,013,014,015,016,017)(2015年02月11日)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_8.1",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 8.1"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_rt_8.1",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows RT 8.1"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2012",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2012"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-02-13T11:28+09:00",
+  "issued": "2015-02-13T11:28+09:00",
+  "modified": "2015-02-13T11:28+09:00"
+}

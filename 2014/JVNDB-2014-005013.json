@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005013.html",
+  "title": "複数の NAT-PMP デバイスが WAN 側から操作可能な問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005013.html",
+  "description": "NAT Port Mapping Protocol (NAT-PMP) を実装している複数のデバイスには、 外部から情報を取得されたり、ポートマッピング設定を操作されたりする問題があることが報告されています。\r\n\r\nNAT-PMP は、NAT デバイスと LAN 側ホストとの間でアドレス/ポートマッピングリクエストのやりとりを行うためのプロトコルです。RFC 6886 では次のように記載されています。\r\n\r\nRFC 6886 - NAT Port Mapping Protocol (NAT-PMP)\r\nhttps://tools.ietf.org/html/rfc6886\r\n\r\n　　「NAT ゲートウェイは、WAN 側 IP アドレス宛てに送られてきたマッピングリクエストや、ゲートウェイの WAN 側ネットワークインターフェースから受信したマッピングリクエストを受け入れてはならない。」\r\n\r\nまた、作成されるマッピングにおける LAN 側アドレスには、受信したマッピングリクエストパケットのソースアドレスを使わなければ「ならない」とされています。\r\n\r\nNAT-PMP デバイスがこれらの制約を正しく実装していない場合、不正なポートマッピングが作成されたり、デバイスに関する情報が漏えいしたりする可能性があります。\r\n\r\nインターネット上に、(WAN 側からの) リクエストに対して応答するNAT-PMP デバイスが大量に存在することが報告されています。報告者のレポートでは、NAT-PMP の実装 miniupnpd を使った製品における実装上の不具合や使用時の不適切な設定が、原因のひとつとして考えられると記載されています。\r\n\r\nなお、miniupnpd バージョン 1.8.20141022 では、NAT-PMP パケットを WAN 側インターフェースから受信した場合にはこれを破棄するように更新されています。また、設定ファイル miniupnpd.conf には、より適切な設定を促すコメントが追加されています。",
+  "identifier": "JVNDB-2014-005013",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99291862/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99291862"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/184540",
+      "source": "CERT-VN",
+      "id": "VU#184540"
+    },
+    {
+      "text": "https://community.rapid7.com/community/metasploit/blog/2014/10/21/r7-2014-17-nat-pmp-implementation-and-configuration-vulnerabilities",
+      "source": "関連文書",
+      "id": "R7-2014-17: NAT-PMP Implementation and Configuration Vulnerabilities "
+    },
+    {
+      "text": "https://tools.ietf.org/html/rfc6886",
+      "source": "RFC",
+      "id": " RFC 6886 - NAT Port Mapping Protocol (NAT-PMP) "
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-10-27T14:46+09:00",
+  "issued": "2014-10-27T14:46+09:00",
+  "modified": "2014-10-27T14:46+09:00"
+}

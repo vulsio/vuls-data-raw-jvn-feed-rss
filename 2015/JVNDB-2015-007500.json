@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007500.html",
+  "title": "Amazon Fire OS の drivers/staging/havok/havok.c の havok_write 関数におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007500.html",
+  "description": "Amazon Fire OS の drivers/staging/havok/havok.c の havok_write 関数には、スタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2015-007500",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7292",
+      "source": "CVE",
+      "id": "CVE-2015-7292"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-7292",
+      "source": "NVD",
+      "id": "CVE-2015-7292"
+    },
+    {
+      "text": "https://marcograss.github.io/security/android/cve/2016/01/15/cve-2015-7292-amazon-kernel-stack-buffer-overflow.html",
+      "source": "関連文書",
+      "id": "[CVE-2015-7292] Amazon Fire Phone kernel stack based buffer overflow"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:amazon:fire_os",
+      "version": "2.2",
+      "vendor": "Amazon.com, Inc.",
+      "product": "Fire OS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-05-15T17:22+09:00",
+  "issued": "2017-05-15T17:22+09:00",
+  "modified": "2017-05-15T17:22+09:00"
+}

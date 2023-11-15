@@ -1,0 +1,856 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003992.html",
+  "title": "複数の Supermicro デバイス製品の IPMI におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003992.html",
+  "description": "複数の Supermicro デバイス製品の Intelligent Platform Management Interface (IPMI) が実装する Web インターフェースには、スタックベースのバッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003992",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU96655201/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96655201"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3607",
+      "source": "CVE",
+      "id": "CVE-2013-3607"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3607",
+      "source": "NVD",
+      "id": "CVE-2013-3607"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/648646",
+      "source": "CERT-VN",
+      "id": "VU#648646"
+    },
+    {
+      "text": "http://www.us-cert.gov/ncas/alerts/ta13-207a",
+      "source": "CERT-TA",
+      "id": "TA13-207A"
+    },
+    {
+      "text": "https://www.usenix.org/system/files/conference/woot13/woot13-bonkoski_0.pdf",
+      "source": "関連文書",
+      "id": "Illuminating the Security Issues Surrounding Lights-Out Server Management"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:supermicro:h8dcl-6f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DCL-6F"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dcl-if",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DCL-iF"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dct-hibqf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DCT-HIBQF"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dct-hln4f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DCT-HLN4F"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dct-ibqf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DCT-IBQF"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dg6-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DG6-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dgg-qf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DGG-QF"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dgi-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DGi-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dgt-hf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DGT-HF"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dgt-hibqf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DGT-HIBQF"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dgt-hlf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DGT-HLF"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dgt-hlibqf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DGT-HLIBQF"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dgu-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DGU-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8dgu-ln4f%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8DGU-LN4F+"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8scm-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8SCM-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8sgl-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8SGL-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8sme-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8SME-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8sml-7",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8SML-7"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8sml-7f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8SML-7F"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8sml-i",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8SML-i"
+    },
+    {
+      "text": "cpe:/h:supermicro:h8sml-if",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "H8SML-iF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x7spa-hf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X7SPA-HF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x7spa-hf-d525",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X7SPA-HF-D525"
+    },
+    {
+      "text": "cpe:/h:supermicro:x7spe-h-d525",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X7SPE-H-D525"
+    },
+    {
+      "text": "cpe:/h:supermicro:x7spe-hf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X7SPE-HF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x7spe-hf-d525",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X7SPE-HF-D525"
+    },
+    {
+      "text": "cpe:/h:supermicro:x7spt-df-d525",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X7SPT-DF-D525"
+    },
+    {
+      "text": "cpe:/h:supermicro:x7spt-df-d525%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X7SPT-DF-D525+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8dtl-3f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8DTL-3F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8dtl-6f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8DTL-6F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8dtl-if",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8DTL-IF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8dtn%2b-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8DTN+-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8dtn%2b-f-lr",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8DTN+-F-LR"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8dtu-6f%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8DTU-6F+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8dtu-6f%2b-lr",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8DTU-6F+-LR"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8dtu-6tf%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8DTU-6TF+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8dtu-6tf%2b-lr",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8DTU-6TF+-LR"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8dtu-ln4f%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8DTU-LN4F+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8dtu-ln4f%2b-lr",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8DTU-LN4F+-LR"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8si6-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8SI6-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8sia-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8SIA-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8sie-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8SIE-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8sie-ln4f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8SIE-LN4F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8sil-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8SIL-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8sit-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8SIT-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8sit-hf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8SIT-HF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x8siu-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X8SIU-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dax-7f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DAX-7F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dax-7f-hft",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DAX-7F-HFT"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dax-7tf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DAX-7TF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dax-if",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DAX-iF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dax-if-hft",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DAX-iF-HFT"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dax-itf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DAX-iTF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9db3-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DB3-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9db3-tpf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DB3-TPF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dbi-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DBi-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dbi-tpf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DBi-TPF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dbl-3f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DBL-3F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dbl-if",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DBL-iF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dbu-3f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DBU-3F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dbu-if",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DBU-iF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dr3-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DR3-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dr3-ln4f%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DR3-LN4F+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dr7-ln4f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DR7-LN4F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dr7-ln4f-jbod",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DR7-LN4F-JBOD"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dr7-tf%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DR7-TF+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drd-7jln4f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRD-7JLN4F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drd-7ln4f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRD-7LN4F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drd-7ln4f-jbod",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRD-7LN4F-JBOD"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drd-ef",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRD-EF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drd-if",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRD-iF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dre-ln4f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRE-LN4F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dre-tf%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRE-TF+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drff",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRFF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drff-7",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRFF-7"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drff-7%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRFF-7+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drff-7g%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRFF-7G+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drff-7t%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRFF-7T+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drff-7tg%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRFF-7TG+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drff-i%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRFF-i+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drff-ig%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRFF-iG+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drff-it%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRFF-iT+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drff-itg%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRFF-iTG+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drfr",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRFR"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drg-hf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRG-HF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drg-hf%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRG-HF+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drg-htf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRG-HTF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drg-htf%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRG-HTF+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drh-7f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRH-7F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drh-7tf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRH-7TF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drh-if",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRH-iF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drh-itf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRH-iTF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dri-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRi-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9dri-ln4f%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRi-LN4F+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drl-3f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRL-3F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drl-ef",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRL-EF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drl-if",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRL-iF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drt-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRT-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drt-h6f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRT-H6F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drt-h6ibff",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRT-H6IBFF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drt-h6ibqf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRT-H6IBQF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drt-hf%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRT-HF+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drt-ibff",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRT-IBFF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drt-ibqf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRT-IBQF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drw-3ln4f%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRW-3LN4F+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drw-3tf%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRW-3TF+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drw-7tpf%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRW-7TPF+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drw-itpf%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRW-iTPF+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9drx%2b-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9DRX+-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9qr7-tf",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9QR7-TF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9qr7-tf%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9QR7-TF+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9qr7-tf-jbod",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9QR7-TF-JBOD"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9qri-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9QRi-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9qri-f%2b",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9QRi-F+"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9sbaa-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SBAA-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9sca-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SCA-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9scd-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SCD-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9sce-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SCE-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9scff-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SCFF-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9sci-ln4f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SCI-LN4F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9scl%2b-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SCL+-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9scl-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SCL-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9scm-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SCM-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9scm-iif",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SCM-iiF"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9spu-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SPU-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9srd-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SRD-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9sre-3f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SRE-3F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9sre-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SRE-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9srg-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SRG-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9sri-3f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SRi-3F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9sri-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SRi-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9srl-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SRL-F"
+    },
+    {
+      "text": "cpe:/h:supermicro:x9srw-f",
+      "version": "2.2",
+      "vendor": "Super Micro Computer",
+      "product": "X9SRW-F"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-12-26T18:03+09:00",
+  "issued": "2013-09-10T16:07+09:00",
+  "modified": "2013-12-26T18:03+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004277.html",
+  "title": "Cisco Prime Data Center Network Manager の DCNM-SAN サーバにおけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004277.html",
+  "description": "Cisco Prime Data Center Network Manager (DCNM) の DCNM-SAN サーバの processImageSave.jsp には、ディレクトリトラバーサルの脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug ID CSCue77035 および CSCue77036 として公開しています。\r\n\r\nなお、本問題は、JBoss の自動デプロイ機能を使用して任意のコマンドを実行するのに利用される可能性があります。",
+  "identifier": "JVNDB-2013-004277",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5486",
+      "source": "CVE",
+      "id": "CVE-2013-5486"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5486",
+      "source": "NVD",
+      "id": "CVE-2013-5486"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cisco:prime_data_center_network_manager",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Prime Data Center Network Manager"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-02-26T11:02+09:00",
+  "issued": "2013-09-25T11:51+09:00",
+  "modified": "2014-02-26T11:02+09:00"
+}

@@ -1,0 +1,84 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001113.html",
+  "title": "ウェブブラウザ向け Cisco WebEx 拡張機能に任意のコマンドが実行可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001113.html",
+  "description": "Windows 環境における Chrome、Firefox、Internet Explorer 向けの Cisco WebEx 拡張機能には、遠隔の第三者による任意のコマンドが実行可能な脆弱性が存在します。\r\n\r\nCisco WebEx は、オンライン会議システムです。WebEx を使ったオンライン会議では通常、参加者はウェブページのリンクを通じて会議に参加します。リンクを辿ることにより、ウェブブラウザの拡張機能を通じて WebEx ソフトウェアが起動されます。Windows 環境におけるウェブブラウザ向け Cisco WebEx 拡張機能には、遠隔の第三者による任意のコマンドが実行可能な脆弱性 (CWE-78) が存在します。\r\n\r\nなお、Chrome 向け拡張機能に対する攻撃コードが公開されています。",
+  "identifier": "JVNDB-2017-001113",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU90868591/",
+      "source": "JVN",
+      "id": "JVNVU#90868591"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3823",
+      "source": "CVE",
+      "id": "CVE-2017-3823"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-3823",
+      "source": "NVD",
+      "id": "CVE-2017-3823"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/909240",
+      "source": "CERT-VN",
+      "id": "VU#909240"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cisco:activetouch_general_plugin_container",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "ActiveTouch General Plugin Container"
+    },
+    {
+      "text": "cpe:/a:cisco:download_manager",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Download Manager"
+    },
+    {
+      "text": "cpe:/a:cisco:gpccontainer_class_activex_control",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "GpcContainer Class ActiveX コントロール"
+    },
+    {
+      "text": "cpe:/a:cisco:webex",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco WebEx"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-03-16T13:54+09:00",
+  "issued": "2017-01-31T11:00+09:00",
+  "modified": "2017-03-16T13:54+09:00"
+}

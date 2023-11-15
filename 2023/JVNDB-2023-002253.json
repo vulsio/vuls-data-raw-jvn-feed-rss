@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002253.html",
+  "title": "Sudo における権限管理に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002253.html",
+  "description": "Sudo には、権限管理に関する脆弱性が存在します。\r\n\r\n",
+  "identifier": "JVNDB-2023-002253",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-22809",
+      "source": "CVE",
+      "id": "CVE-2023-22809"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-22809",
+      "source": "NVD",
+      "id": "CVE-2023-22809"
+    },
+    {
+      "text": "https://www.synacktiv.com/sites/default/files/2023-01/sudo-CVE-2023-22809.pdf",
+      "source": "関連文書",
+      "id": "Sudoedit bypass in Sudo <= 1.9.12p1"
+    },
+    {
+      "text": "https://packetstormsecurity.com/files/171644/sudo-1.9.12p1-Privilege-Escalation.html",
+      "source": "関連文書",
+      "id": "sudo 1.9.12p1 Privilege Escalation"
+    },
+    {
+      "text": "https://packetstormsecurity.com/files/172509/Sudoedit-Extra-Arguments-Privilege-Escalation.html",
+      "source": "関連文書",
+      "id": "Sudoedit Extra Arguments Privilege Escalation"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/269.html",
+      "id": "CWE-269",
+      "title": "不適切な権限管理(CWE-269)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sudo_project:sudo",
+      "version": "2.2",
+      "vendor": "sudo project",
+      "product": "Sudo"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-06-29T12:22+09:00",
+  "issued": "2023-06-29T12:22+09:00",
+  "modified": "2023-06-29T12:22+09:00"
+}

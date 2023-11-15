@@ -1,0 +1,84 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-005345.html",
+  "title": "複数の ENTTEC 製品におけるハードコードされた認証情報の使用に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-005345.html",
+  "description": "複数の ENTTEC 製品には、ハードコードされた認証情報の使用に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2019-005345",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU92653659/",
+      "source": "JVN",
+      "id": "JVNVU#92653659"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12776",
+      "source": "CVE",
+      "id": "CVE-2019-12776"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-12776",
+      "source": "NVD",
+      "id": "CVE-2019-12776"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-177-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-177-01"
+    },
+    {
+      "text": "https://www.mogozobo.com/?p=3476",
+      "source": "関連文書",
+      "id": "(CVE-2019-12774 -> CVE-2019-12777) ENTTEC Lighting Controllers Vulnerabilities"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/798.html",
+      "id": "CWE-798",
+      "title": "ハードコードされた認証情報の使用(CWE-798)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:enttec:datagate_mk2_firmware",
+      "version": "2.2",
+      "vendor": "ENTTEC Pty Ltd.",
+      "product": "Datagate MK2 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:enttec:e-streamer_mk2_firmware",
+      "version": "2.2",
+      "vendor": "ENTTEC Pty Ltd.",
+      "product": "E-Streamer Mk2 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:enttec:pixelator_firmware",
+      "version": "2.2",
+      "vendor": "ENTTEC Pty Ltd.",
+      "product": "Pixelator ファームウェア"
+    },
+    {
+      "text": "cpe:/o:enttec:storm_24_firmware",
+      "version": "2.2",
+      "vendor": "ENTTEC Pty Ltd.",
+      "product": "Storm 24 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-09-17T15:28+09:00",
+  "issued": "2019-06-19T14:07+09:00",
+  "modified": "2020-09-17T15:28+09:00"
+}

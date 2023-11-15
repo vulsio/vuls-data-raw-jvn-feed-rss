@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006063.html",
+  "title": "Oracle MySQL および MariaDB における総当たりパスワード推測攻撃を実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-006063.html",
+  "description": "Oracle MySQL および MariaDB は、同一コネクション内で change_user コマンドを複数実行している間、ソルト (salt) を変更しないため、総当たりパスワード推測攻撃 (brute force password guessing attack) を実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-006063",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5627",
+      "source": "CVE",
+      "id": "CVE-2012-5627"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-5627",
+      "source": "NVD",
+      "id": "CVE-2012-5627"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mariadb:mariadb",
+      "version": "2.2",
+      "vendor": "MariaDB Corporation Ab.",
+      "product": "MariaDB"
+    },
+    {
+      "text": "cpe:/a:oracle:mysql",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "MySQL"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2013-10-04T18:30+09:00",
+  "issued": "2013-10-04T18:30+09:00",
+  "modified": "2013-10-04T18:30+09:00"
+}

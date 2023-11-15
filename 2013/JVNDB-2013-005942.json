@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005942.html",
+  "title": "Perl 用 Proc::Daemon モジュールにおける脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005942.html",
+  "description": "Perl 用 Proc::Daemon モジュールは、プロセス ID を格納するファイルに対して、誰でも書き込み可能な権限 (world-writable permission) を使用するため、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005942",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7135",
+      "source": "CVE",
+      "id": "CVE-2013-7135"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7135",
+      "source": "NVD",
+      "id": "CVE-2013-7135"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:detlef_pilzecker:proc%3A%3Adaemon-run_perl",
+      "version": "2.2",
+      "vendor": "Detlef Pilzecker",
+      "product": "Proc::Daemon - Run Perl"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-01-29T15:00+09:00",
+  "issued": "2014-01-29T15:00+09:00",
+  "modified": "2014-01-29T15:00+09:00"
+}

@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000237.html",
+  "title": "WU-FTPD の fb_realpath() 関数における一つずれによるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000237.html",
+  "description": "WU-FTPD に実装されている fb_realpath() 関数では、パスを取り扱うためのバッファのサイズが MAXPATHLEN しか割り当てられていないにも関わらず、実際に引き渡されるパスの長さがそれ以上 (MAXPATHLEN+1) である場合に、一つずれ (off-by-one) によるバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2003-000237",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0466",
+      "source": "CVE",
+      "id": "CVE-2003-0466"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0466",
+      "source": "NVD",
+      "id": "CVE-2003-0466"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/743092",
+      "source": "CERT-VN",
+      "id": "VU#743092"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/8315",
+      "source": "BID",
+      "id": "8315"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:university_of_washington:wu-ftpd",
+      "version": "2.2",
+      "vendor": "University of Washington",
+      "product": "WU-FTPD"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

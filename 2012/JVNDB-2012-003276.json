@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003276.html",
+  "title": "AccountsService の /usr/libexec/accounts-daemon における任意のファイルを読まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003276.html",
+  "description": "AccountsService の /usr/libexec/accounts-daemon 内の user_change_icon_file_authorized_cb 関数は、アイコンファイルをシステムキャッシュディレクトリへコピーする際に、UID を適切に確認しないため、任意のファイルを読まれる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-003276",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2737",
+      "source": "CVE",
+      "id": "CVE-2012-2737"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2737",
+      "source": "NVD",
+      "id": "CVE-2012-2737"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ray_stode:accountsservice",
+      "version": "2.2",
+      "vendor": "AccountsService",
+      "product": "AccountsService"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2012-11-13T10:27+09:00",
+  "issued": "2012-07-24T16:50+09:00",
+  "modified": "2012-11-13T10:27+09:00"
+}

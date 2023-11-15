@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-004624.html",
+  "title": "crasm project の crasm におけるゼロ除算に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-004624.html",
+  "description": "crasm project の crasm には、ゼロ除算に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2023-004624",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-23109",
+      "source": "CVE",
+      "id": "CVE-2023-23109"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-23109",
+      "source": "NVD",
+      "id": "CVE-2023-23109"
+    },
+    {
+      "text": "https://github.com/WhatTheFuzz/crasm-fuzz/tree/a020ad6ad99a72ca373f7dd1aab3a61a7c87fd66/bug-floating-point-exception",
+      "source": "関連文書",
+      "id": "github.com (bug-floating-point-exception)"
+    },
+    {
+      "text": "https://github.com/colinbourassa/crasm/pull/7",
+      "source": "関連文書",
+      "id": "github.com (pull/7)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/369.html",
+      "id": "CWE-369",
+      "title": "ゼロ除算(CWE-369)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:crasm_project:crasm",
+      "version": "2.2",
+      "vendor": "crasm project",
+      "product": "crasm"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-10-31T16:22+09:00",
+  "issued": "2023-10-31T16:22+09:00",
+  "modified": "2023-10-31T16:22+09:00"
+}

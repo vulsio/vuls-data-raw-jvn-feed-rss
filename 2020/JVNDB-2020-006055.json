@@ -1,0 +1,63 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-006055.html",
+  "title": "複数の VMware 製品における権限管理に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-006055.html",
+  "description": "VMware Fusion、Remote Console for Mac、Horizon Client for Mac には、権限管理に関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2020-006055",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-3957",
+      "source": "CVE",
+      "id": "CVE-2020-3957"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-3957",
+      "source": "NVD",
+      "id": "CVE-2020-3957"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/269.html",
+      "id": "CWE-269",
+      "title": "不適切な権限管理(CWE-269)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:fusion",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Fusion"
+    },
+    {
+      "text": "cpe:/a:vmware:horizon_client",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Horizon Client"
+    },
+    {
+      "text": "cpe:/a:vmware:remote_console",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "Remote Console"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-06-29T17:05+09:00",
+  "issued": "2020-06-29T17:05+09:00",
+  "modified": "2020-06-29T17:05+09:00"
+}

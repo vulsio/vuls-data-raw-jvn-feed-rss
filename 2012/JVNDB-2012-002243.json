@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002243.html",
+  "title": "複数の VMware 製品におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002243.html",
+  "description": "複数の VMware 製品は、仮想フロッピーデバイスを適切に構成しないため、サービス運用妨害 (out-of-bounds write 操作および VMX プロセスクラッシュ) 状態となる、またはホスト OS 上の任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002243",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2449",
+      "source": "CVE",
+      "id": "CVE-2012-2449"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2449",
+      "source": "NVD",
+      "id": "CVE-2012-2449"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/a:vmware:esxi",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESXi"
+    },
+    {
+      "text": "cpe:/a:vmware:fusion",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Fusion"
+    },
+    {
+      "text": "cpe:/a:vmware:player",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Player"
+    },
+    {
+      "text": "cpe:/a:vmware:workstation",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-05-08T16:36+09:00",
+  "issued": "2012-05-08T16:36+09:00",
+  "modified": "2012-05-08T16:36+09:00"
+}

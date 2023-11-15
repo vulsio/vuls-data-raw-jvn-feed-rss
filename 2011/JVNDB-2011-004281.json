@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004281.html",
+  "title": "SUSE Linux Enterprise Server で使用される pure-ftpd における任意のファイルを上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004281.html",
+  "description": "SUSE Linux Enterprise Server で使用される pure-ftpd は、OES Netware 拡張が稼動している際、全ユーザに書き込み権限のあるディレクトリを作成するため、任意のファイルを上書きされる、および権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2011-004281",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0988",
+      "source": "CVE",
+      "id": "CVE-2011-0988"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0988",
+      "source": "NVD",
+      "id": "CVE-2011-0988"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pureftpd:pure-ftpd",
+      "version": "2.2",
+      "vendor": "pureftpd",
+      "product": "Pure-FTPd"
+    },
+    {
+      "text": "cpe:/o:novell:suse_linux",
+      "version": "2.2",
+      "vendor": "Novell",
+      "product": "SUSE Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-03-27T18:43+09:00",
+  "issued": "2012-03-27T18:43+09:00",
+  "modified": "2012-03-27T18:43+09:00"
+}

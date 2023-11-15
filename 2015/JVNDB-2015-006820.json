@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006820.html",
+  "title": "GNU C Library の elf/rtld.c の process_envvars 関数におけるポインタガード (pointer-guarding) 保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006820.html",
+  "description": "GNU C Library (別名 glibc または libc6) の elf/rtld.c の process_envvars 関数には、ポインタガード (pointer-guarding) 保護メカニズムを回避される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-254: Security Features (セキュリティ機能) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/254.html",
+  "identifier": "JVNDB-2015-006820",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8777",
+      "source": "CVE",
+      "id": "CVE-2015-8777"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8777",
+      "source": "NVD",
+      "id": "CVE-2015-8777"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:glibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU C Library"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2016-03-01T14:31+09:00",
+  "issued": "2016-01-26T11:22+09:00",
+  "modified": "2016-03-01T14:31+09:00"
+}

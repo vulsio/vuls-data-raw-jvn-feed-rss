@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008211.html",
+  "title": "Git の contrib/completion/git-prompt.sh におけるコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008211.html",
+  "description": "Git の contrib/completion/git-prompt.sh は、PS1 変数のブランチ名をサニタイズしないため、コードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-008211",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9938",
+      "source": "CVE",
+      "id": "CVE-2014-9938"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2014-9938",
+      "source": "NVD",
+      "id": "CVE-2014-9938"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/116.html",
+      "id": "CWE-116",
+      "title": "不適切なエンコード、または出力のエスケープ(CWE-116)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:git_project:git",
+      "version": "2.2",
+      "vendor": "Git project",
+      "product": "Git"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-04-13T16:52+09:00",
+  "issued": "2017-04-13T16:52+09:00",
+  "modified": "2017-04-13T16:52+09:00"
+}

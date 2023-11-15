@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-017824.html",
+  "title": "GNOME gdk-pixbuf における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-017824.html",
+  "description": "GNOME gdk-pixbuf には、境界外書き込みに関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2021-017824",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-44648",
+      "source": "CVE",
+      "id": "CVE-2021-44648"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-44648",
+      "source": "NVD",
+      "id": "CVE-2021-44648"
+    },
+    {
+      "text": "https://sahildhar.github.io/blogpost/GdkPixbuf-Heap-Buffer-Overflow-in-lzw_decoder_new/",
+      "source": "関連文書",
+      "id": "GdkPixbuf - Heap Buffer Overflow in lzw_decoder_new"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnome:gdk-pixbuf",
+      "version": "2.2",
+      "vendor": "GNOME Project",
+      "product": "gdk-pixbuf"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-02-14T15:53+09:00",
+  "issued": "2023-02-14T15:53+09:00",
+  "modified": "2023-02-14T15:53+09:00"
+}

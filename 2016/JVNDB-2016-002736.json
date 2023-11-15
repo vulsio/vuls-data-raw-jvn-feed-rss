@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002736.html",
+  "title": "Chef Manage に Cookie のデシリアライズ処理に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002736.html",
+  "description": "Chef Manage アドオン version 1.11.4 およびそれ以前には、Cookie データのデシリアライズ処理に問題があり、遠隔の第三者によって任意のコードを実行される可能性があります。\r\n\r\n信頼できないデータのデシリアライズ (CWE-502) - CVE-2016-4326\r\nChef Manage (旧称：opscode-manage) アドオンを有効にした Chef は、ユーザから渡された Cookie を適切に検証することなくデシリアライズします。認証されていない攻撃者が細工した Cookie を送信し、それがデシリアライズされることで、結果としてウェブサーバの権限で任意のコードが実行される可能性があります。\r\n\r\nCWE-502: Deserialization of Untrusted Data\r\nhttp://cwe.mitre.org/data/definitions/502.html\r\n\r\nChef Manage (旧称：opscode-manage) アドオン\r\nhttps://downloads.chef.io/chef-manage/ubuntu/\r\n\r\nChef\r\nhttps://www.chef.io/chef/",
+  "identifier": "JVNDB-2016-002736",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU90579091/index.html",
+      "source": "JVN",
+      "id": "JVNVU#90579091"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4326",
+      "source": "CVE",
+      "id": "CVE-2016-4326"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4326",
+      "source": "NVD",
+      "id": "CVE-2016-4326"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/586503",
+      "source": "CERT-VN",
+      "id": "VU#586503"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:chef:chef_manage",
+      "version": "2.2",
+      "vendor": "Chef Software, Inc.",
+      "product": "Chef Manage アドオン"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-06-14T16:08+09:00",
+  "issued": "2016-05-19T13:50+09:00",
+  "modified": "2016-06-14T16:08+09:00"
+}

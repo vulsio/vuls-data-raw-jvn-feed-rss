@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009649.html",
+  "title": "複数の VMware 製品に OS コマンドインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009649.html",
+  "description": "VMware が提供する複数の製品には、OS コマンドインジェクション (CWE-78) の脆弱性が存在します。",
+  "identifier": "JVNDB-2020-009649",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU97472624",
+      "source": "JVN",
+      "id": "JVNVU#97472624"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-4006",
+      "source": "CVE",
+      "id": "CVE-2020-4006"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/724367",
+      "source": "CERT-VN",
+      "id": "VU#724367"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:cloud_foundation",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Cloud Foundation"
+    },
+    {
+      "text": "cpe:/a:vmware:identity_manager",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Identity Manager"
+    },
+    {
+      "text": "cpe:/a:vmware:identity_manager_connector",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Identity Manager Connector"
+    },
+    {
+      "text": "cpe:/a:vmware:vrealize_suite_lifecycle_manager",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "vRealize Suite Lifecycle Manager"
+    },
+    {
+      "text": "cpe:/a:vmware:workspace_one_access",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "Workspace One Access"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.1",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-12-07T17:09+09:00",
+  "issued": "2020-11-25T12:28+09:00",
+  "modified": "2020-12-07T17:09+09:00"
+}

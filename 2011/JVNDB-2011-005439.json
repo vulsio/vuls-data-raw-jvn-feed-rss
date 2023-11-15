@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005439.html",
+  "title": "Microsoft Windows 7 のデフォルト設定における外部の IPv4 サーバとの通信上で中間者攻撃を実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005439.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nMicrosoft Windows 7 のデフォルト設定は、IPv6 Router Advertisement (RA) 受信時に使用されている IPv4 および DHCPv4 サービスよりも新しい IPv6 および DHCPv6 サービスを優先し、予期しない RA を無視するというオプションを提供しないため、外部の IPv4 サーバとの通信上で中間者攻撃 (man-in-the-middle attack) を実行される脆弱性が存在します。\r\n\r\n本脆弱性は、別名 \"SLAAC攻撃\" と呼ばれています。\r\n\r\nまた、IPv6 の選択は、RFC 3484 の基準に準拠している、および現時点では、RA の正当性を決定する試行は、推奨されるホスト OS の動作の範囲外であるとの議論もあります。",
+  "identifier": "JVNDB-2011-005439",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1652",
+      "source": "CVE",
+      "id": "CVE-2011-1652"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1652",
+      "source": "NVD",
+      "id": "CVE-2011-1652"
+    },
+    {
+      "text": "http://resources.infosecinstitute.com/slaac-attack/",
+      "source": "関連文書",
+      "id": "SLAAC Attack - 0day Windows Network Interception Configuration Vulnerability"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_7",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 7"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2019-07-29T12:41+09:00",
+  "issued": "2019-07-29T12:41+09:00",
+  "modified": "2019-07-29T12:41+09:00"
+}

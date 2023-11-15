@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-010184.html",
+  "title": "オムロン製 CX-One に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-010184.html",
+  "description": "オムロン株式会社が提供する CX-One には、次の複数の脆弱性が存在します。 \r\n\r\n* バッファオーバーフロー (CWE-121) - CVE-2018-18993\r\n細工されたプロジェクトファイルを処理することで、結果として任意のコードが実行される \r\n\r\n* 解放済みメモリの使用 (Use-after-free) (CWE-416) - CVE-2018-18989\r\n細工されたプロジェクトファイルを処理することで、結果として任意のコードが実行される ",
+  "identifier": "JVNDB-2018-010184",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU90473043/",
+      "source": "JVN",
+      "id": "JVNVU#90473043"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18993",
+      "source": "CVE",
+      "id": "CVE-2018-18993"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18989",
+      "source": "CVE",
+      "id": "CVE-2018-18989"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-18-338-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-18-338-01"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:omron:cx-programmer",
+      "version": "2.2",
+      "vendor": "オムロン株式会社",
+      "product": "CX-Programmer"
+    },
+    {
+      "text": "cpe:/a:omron:cx-server",
+      "version": "2.2",
+      "vendor": "オムロン株式会社",
+      "product": "CX-Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "6.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H"
+    }
+  ],
+  "date": "2018-12-06T17:23+09:00",
+  "issued": "2018-12-06T17:23+09:00",
+  "modified": "2018-12-06T17:23+09:00"
+}

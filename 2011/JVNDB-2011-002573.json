@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002573.html",
+  "title": "QNX Neutrino RTOS の runtime linker におけるファイルを上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002573.html",
+  "description": "QNX Neutrino RTOS の runtime linker は、setuid プログラムからプログラムを生成する場合、LD_DEBUG_OUTPUT および LD_DEBUG 環境変数を適切にクリアしないため、ファイルを上書きされる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-002573",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4060",
+      "source": "CVE",
+      "id": "CVE-2011-4060"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4060",
+      "source": "NVD",
+      "id": "CVE-2011-4060"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+      "id": "CWE-59",
+      "title": "リンク解釈の問題(CWE-59)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:qnx:neutrino_rtos",
+      "version": "2.2",
+      "vendor": "QNX Software Systems",
+      "product": "QNX Neutrino RTOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.3",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2011-10-27T16:22+09:00",
+  "issued": "2011-10-27T16:22+09:00",
+  "modified": "2011-10-27T16:22+09:00"
+}

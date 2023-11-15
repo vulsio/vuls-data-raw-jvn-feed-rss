@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001378.html",
+  "title": "Windows 版 MySQL に権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001378.html",
+  "description": "Windows 版 MySQL には権限昇格の脆弱性 (CVE-2021-2307) が存在します。\r\n当該製品に含まれる OpenSSL コンポーネントは、環境変数 OPENSSLDIR で /build_area/ のサブディレクトリを指定しています。Windows システムにおいて、このパスは C:\\build_area と解釈されます。MySQL には OpenSSL コンポーネントを利用する特権サービスがあり、Windows システム上の一般ユーザはシステムのルートディレクトリからサブディレクトリを作成できるため、細工された openssl.cnf への適切なパスを作成され、SYSTEM 権限で任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2021-001378",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU92599577",
+      "source": "JVN",
+      "id": "JVNVU#92599577"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-2307",
+      "source": "CVE",
+      "id": "CVE-2021-2307"
+    },
+    {
+      "text": "https://kb.cert.org/vuls/id/567764",
+      "source": "CERT-VN",
+      "id": "VU#567764"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:oracle:mysql",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "MySQL"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N"
+    }
+  ],
+  "date": "2021-04-23T16:14+09:00",
+  "issued": "2021-04-23T16:14+09:00",
+  "modified": "2021-04-23T16:14+09:00"
+}

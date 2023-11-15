@@ -1,0 +1,104 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-000058.html",
+  "title": "複数のリコー製プリンタおよび複合機における複数のバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-000058.html",
+  "description": "株式会社リコーが提供する複数のプリンタおよび複合機には、次の複数の脆弱性が存在します。\r\n・HTTP クッキーヘッダ解析処理におけるバッファオーバーフロー (CWE-119) - CVE-2019-14300\r\n・Wifi、mDNS、POP3、SMTP および警告の設定を行う際の HTTP パラメータ解析処理におけるバッファオーバーフロー (CWE-119) - CVE-2019-14305\r\n・SNMP 設定を行う際の HTTP パラメータ解析処理におけるバッファオーバーフロー (CWE-119) - CVE-2019-14307\r\n・LPD パケット解析処理におけるバッファオーバーフロー (CWE-119) - CVE-2019-14308\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が IPA に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2019-000058",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN11708203/index.html",
+      "source": "JVN",
+      "id": "JVN#11708203"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14300",
+      "source": "CVE",
+      "id": "CVE-2019-14300"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14305",
+      "source": "CVE",
+      "id": "CVE-2019-14305"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14307",
+      "source": "CVE",
+      "id": "CVE-2019-14307"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14308",
+      "source": "CVE",
+      "id": "CVE-2019-14308"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-14300",
+      "source": "NVD",
+      "id": "CVE-2019-14300"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-14305",
+      "source": "NVD",
+      "id": "CVE-2019-14305"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-14307",
+      "source": "NVD",
+      "id": "CVE-2019-14307"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-14308",
+      "source": "NVD",
+      "id": "CVE-2019-14308"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:ricoh:sp_c250dn_firmware",
+      "version": "2.2",
+      "vendor": "リコー",
+      "product": "SP C250DN"
+    },
+    {
+      "text": "cpe:/o:ricoh:sp_c250sf_firmware",
+      "version": "2.2",
+      "vendor": "リコー",
+      "product": "SP C250SF"
+    },
+    {
+      "text": "cpe:/o:ricoh:sp_c252dn_firmware",
+      "version": "2.2",
+      "vendor": "リコー",
+      "product": "SP C252DN"
+    },
+    {
+      "text": "cpe:/o:ricoh:sp_c252sf_firmware",
+      "version": "2.2",
+      "vendor": "リコー",
+      "product": "SP C252SF"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2020-02-25T12:19+09:00",
+  "issued": "2019-09-13T12:03+09:00",
+  "modified": "2020-02-25T12:19+09:00"
+}

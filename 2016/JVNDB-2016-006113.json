@@ -1,0 +1,84 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006113.html",
+  "title": "Apache HTTP Web Server の HTTP/2 プロトコルの処理にサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006113.html",
+  "description": "Apache HTTP Web Server の実験的 (experimental) モジュール mod_http2 には、リクエストヘッダを適切に制限しないことに起因するサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nApache HTTP Web Server 2．4.17 では、実験的モジュールとして HTTP/2 プロトコル (RFC7540) を実装した mod_http2 が提供されています。このモジュールは、Apache Software Foundation が提供する配布物ではコンパイルされずに無効なままとされていますが、Apache HTTP Web Server を自社製品に取り込んで提供しているディストリビュータによっては、有効にしている可能性があります。mod_http2 を有効にするには、httpd の設定ファイル内の 'Protocols' 行に 'h2' や 'h2c' を追加する必要があります。\r\n\r\nApache HTTP Web Server 2.4.17 から 2.4.23 では、HTTP/2 プロトコルの処理において、リソース制限が適切に行われていません。\r\n細工された HTTP/2 リクエストにより、サーバ上のメモリを消費させるサービス運用妨害 (DoS) 攻撃が行われる可能性があります。",
+  "identifier": "JVNDB-2016-006113",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97133859/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97133859"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU99304449/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99304449"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8740",
+      "source": "CVE",
+      "id": "CVE-2016-8740"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8740",
+      "source": "NVD",
+      "id": "CVE-2016-8740"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:nec:mailshooter",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "MailShooter"
+    },
+    {
+      "text": "cpe:/a:nec:simpwright",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SimpWright"
+    },
+    {
+      "text": "cpe:/h:nec:spoolserver",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "SpoolServerシリーズ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-02-20T17:39+09:00",
+  "issued": "2016-12-07T15:51+09:00",
+  "modified": "2017-02-20T17:39+09:00"
+}

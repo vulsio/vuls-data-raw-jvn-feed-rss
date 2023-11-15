@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003541.html",
+  "title": "Linux Kernel のブリッジのマルチキャストの実装におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003541.html",
+  "description": "Linux Kernel のブリッジのマルチキャストの実装は、net/bridge/br_mdb.c および net/bridge/br_multicast.c に関する処理に不備があり、タイマーのタイムアウト値を変更する前に、特定のタイマーが作動可能であるかどうかをチェックしないため、サービス運用妨害 (BUG およびシステムクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003541",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4129",
+      "source": "CVE",
+      "id": "CVE-2013-4129"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4129",
+      "source": "NVD",
+      "id": "CVE-2013-4129"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2013-07-30T17:21+09:00",
+  "issued": "2013-07-30T17:21+09:00",
+  "modified": "2013-07-30T17:21+09:00"
+}

@@ -1,0 +1,72 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004892.html",
+  "title": "Securifi Almond および Almond-2015 デバイスのファームウェアにおけるレスポンスを偽装される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004892.html",
+  "description": "Securifi Almond および Almond-2015 デバイスのファームウェアは、任意のデバイスのために実行されたアウトバウンドの DNS クエリに固定のソースポート番号を使用するため、レスポンスを偽装される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2015-7296 とは異なる脆弱性です。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-330: Use of Insufficiently Random Values (不十分なランダム値の使用) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/330.html",
+  "identifier": "JVNDB-2015-004892",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99004652/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99004652"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2914",
+      "source": "CVE",
+      "id": "CVE-2015-2914"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2914",
+      "source": "NVD",
+      "id": "CVE-2015-2914"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/906576",
+      "source": "CERT-VN",
+      "id": "VU#906576"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:securifi:almond",
+      "version": "2.2",
+      "vendor": "Securifi",
+      "product": "Securifi Almond"
+    },
+    {
+      "text": "cpe:/h:securifi:almond-2015",
+      "version": "2.2",
+      "vendor": "Securifi",
+      "product": "Securifi Almond 2015"
+    },
+    {
+      "text": "cpe:/o:securifi:almond-2015_firmware",
+      "version": "2.2",
+      "vendor": "Securifi",
+      "product": "Securifi Almond 2015 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:securifi:almond_firmware",
+      "version": "2.2",
+      "vendor": "Securifi",
+      "product": "Securifi Almond ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2015-09-29T11:50+09:00",
+  "issued": "2015-09-29T11:50+09:00",
+  "modified": "2015-09-29T11:50+09:00"
+}

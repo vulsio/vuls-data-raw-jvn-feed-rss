@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005351.html",
+  "title": "VideoLAN VLC media player におけるスタックベースのバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005351.html",
+  "description": "VideoLAN VLC media player には、下記の関数に不備があるため、スタックベースのバッファオーバーフローの脆弱性が存在します。\r\n\r\n(1) modules/demux/asf/libasf.c の ASF_ObjectDumpDebug 関数\r\n(2) modules/demux/avi/libavi.c の AVI_ChunkDumpDebug_level 関数\r\n(3) modules/demux/mp4/libmp4.c の __MP4_BoxDumpStructure 関数\r\n",
+  "identifier": "JVNDB-2011-005351",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3623",
+      "source": "CVE",
+      "id": "CVE-2011-3623"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3623",
+      "source": "NVD",
+      "id": "CVE-2011-3623"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:videolan:vlc_media_player",
+      "version": "2.2",
+      "vendor": "VideoLAN",
+      "product": "VLC media player"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-01-05T17:33+09:00",
+  "issued": "2015-01-05T17:33+09:00",
+  "modified": "2015-01-05T17:33+09:00"
+}

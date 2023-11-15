@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001904.html",
+  "title": "Red Hat Enterprise Virtualization Manager における重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001904.html",
+  "description": "Red Hat Enterprise Virtualization Manager (RHEV-M) のドメイン管理ツール (rhevm-manage-domains) は、validate アクションが有効である場合、管理パスワードを誰でも読み取り可能な (world-readable) ログファイルに記録するため、重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001904",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6115",
+      "source": "CVE",
+      "id": "CVE-2012-6115"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-6115",
+      "source": "NVD",
+      "id": "CVE-2012-6115"
+    },
+    {
+      "text": "http://gerrit.ovirt.org/gitweb?p=ovirt-engine.git;a=commit;h=e8c72daec4efa8be0fcd8ea55c41e855ddd8eedf",
+      "source": "関連文書",
+      "id": "ovirt-engine.git / commit"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:enterprise_virtualization_manager",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Virtualization Manager"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2013-03-21T16:28+09:00",
+  "issued": "2013-03-21T16:28+09:00",
+  "modified": "2013-03-21T16:28+09:00"
+}

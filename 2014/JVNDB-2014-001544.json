@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001544.html",
+  "title": "Blue Coat ProxySG に脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001544.html",
+  "description": "Blue Coat が提供する ProxySG には、認証情報の変更から反映までに時差がある脆弱性が存在します。\r\n\r\nBlue Coat が提供する ProxySG には、古い認証情報がキャッシュに保存されていることにより、認証情報の変更から反映までに最大15分程度の時差がある脆弱性 (CWE-361) が存在します。\r\nなお、新たなアカウントでのログインや間違ったパスワードによる認証拒否など、他のパスワード関連の処理が行われた場合、この時差は縮まるとのことです。\r\n\r\nCWE-361: Time and State\r\nhttps://cwe.mitre.org/data/definitions/361.html",
+  "identifier": "JVNDB-2014-001544",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU93097036/index.html",
+      "source": "JVN",
+      "id": "JVNVU#93097036"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2033",
+      "source": "CVE",
+      "id": "CVE-2014-2033"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2033",
+      "source": "NVD",
+      "id": "CVE-2014-2033"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/221620",
+      "source": "CERT-VN",
+      "id": "VU#221620"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:bluecoat:proxysgos",
+      "version": "2.2",
+      "vendor": "ブルーコートシステムズ",
+      "product": "ProxySG (SGOS)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.9",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-03-04T16:58+09:00",
+  "issued": "2014-03-04T16:58+09:00",
+  "modified": "2014-03-04T16:58+09:00"
+}

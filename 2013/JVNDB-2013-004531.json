@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004531.html",
+  "title": "GNU C Library および Embedded GLIBC の PTR_MANGLE の実装における実行フローを制御される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004531.html",
+  "description": "GNU C Library (別名 glibc または libc6) および Embedded GLIBC (EGLIBC) の PTR_MANGLE の実装は、ポインタガード (pointer guard) のランダム値を初期化しないため、実行フローを制御される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004531",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4788",
+      "source": "CVE",
+      "id": "CVE-2013-4788"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4788",
+      "source": "NVD",
+      "id": "CVE-2013-4788"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2013/07/15/9",
+      "source": "関連文書",
+      "id": "Re: CVE-2013-4788 - Eglibc PTR MANGLE bug"
+    },
+    {
+      "text": "http://hmarco.org/bugs/CVE-2013-4788.html",
+      "source": "関連文書",
+      "id": "CVE-2013-4788 - Eglibc PTR MANGLE bug"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:eglibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "Embedded GLIBC"
+    },
+    {
+      "text": "cpe:/a:gnu:glibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU C Library"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-12-26T17:42+09:00",
+  "issued": "2013-10-09T12:22+09:00",
+  "modified": "2013-12-26T17:42+09:00"
+}

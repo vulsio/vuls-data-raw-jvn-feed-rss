@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-004340.html",
+  "title": "ImageMagick におけるゼロ除算に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-004340.html",
+  "description": "ImageMagick には、ゼロ除算に関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2021-004340",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20241",
+      "source": "CVE",
+      "id": "CVE-2021-20241"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-20241",
+      "source": "NVD",
+      "id": "CVE-2021-20241"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1928952",
+      "source": "関連文書",
+      "id": "Bug 1928952  (CVE-2021-20241) - CVE-2021-20241 ImageMagick: Division by zero in WriteJP2Image() in coders/jp2.c"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/369.html",
+      "id": "CWE-369",
+      "title": "ゼロ除算(CWE-369)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:imagemagick:imagemagick",
+      "version": "2.2",
+      "vendor": "ImageMagick",
+      "product": "ImageMagick"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2021-11-18T17:50+09:00",
+  "issued": "2021-11-18T17:50+09:00",
+  "modified": "2021-11-18T17:50+09:00"
+}

@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-009072.html",
+  "title": "FluxCD の flux2 および kustomize-controller におけるパストラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-009072.html",
+  "description": "FluxCD の flux2 および kustomize-controller には、パストラバーサルの脆弱性が存在します。",
+  "identifier": "JVNDB-2022-009072",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-24878",
+      "source": "CVE",
+      "id": "CVE-2022-24878"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-24878",
+      "source": "NVD",
+      "id": "CVE-2022-24878"
+    },
+    {
+      "text": "https://github.com/fluxcd/flux2/security/advisories/GHSA-7pwf-jg34-hxwp",
+      "source": "関連文書",
+      "id": "github.com (GHSA-7pwf-jg34-hxwp)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fluxcd:flux2",
+      "version": "2.2",
+      "vendor": "FluxCD",
+      "product": "flux2"
+    },
+    {
+      "text": "cpe:/a:fluxcd:kustomize-controller",
+      "version": "2.2",
+      "vendor": "FluxCD",
+      "product": "kustomize-controller"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-08-02T17:21+09:00",
+  "issued": "2023-08-02T17:21+09:00",
+  "modified": "2023-08-02T17:21+09:00"
+}

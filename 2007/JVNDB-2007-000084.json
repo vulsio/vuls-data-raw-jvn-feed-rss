@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000084.html",
+  "title": "ISC BIND の解放済みメモリ領域のデリファレンスによるサービス運用妨害 (DoS) 脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000084.html",
+  "description": "ISC BIND には、特定のクエリを処理した場合に解放済みのメモリ領域のデリファレンスが発生し、named デーモンが異常終了する脆弱性が存在します。\r\n\r\nなお、レッドハット社より Red Hat Enterprise Linux 2.1/3/4 に含まれる BIND は影響を受けないと報告されています。",
+  "identifier": "JVNDB-2007-000084",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0493",
+      "source": "CVE",
+      "id": "CVE-2007-0493"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-0493",
+      "source": "NVD",
+      "id": "CVE-2007-0493"
+    },
+    {
+      "text": "http://secunia.com/advisories/23904/",
+      "source": "SECUNIA",
+      "id": "SA23904"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/22229",
+      "source": "BID",
+      "id": "22229"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/0349",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-0349"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2007-06-19T14:24+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-06-19T14:24+09:00"
+}

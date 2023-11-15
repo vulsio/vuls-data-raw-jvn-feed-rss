@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004015.html",
+  "title": "bitcoind および Bitcoin-Qt の Bloom Filter の実装におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004015.html",
+  "description": "bitcoind および Bitcoin-Qt の Bloom Filter の実装には、サービス運用妨害 (ゼロ除算エラーおよびデーモンクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004015",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5700",
+      "source": "CVE",
+      "id": "CVE-2013-5700"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5700",
+      "source": "NVD",
+      "id": "CVE-2013-5700"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bitcoin:bitcoin-qt",
+      "version": "2.2",
+      "vendor": "Bitcoin Project",
+      "product": "Bitcoin-Qt"
+    },
+    {
+      "text": "cpe:/a:bitcoin:bitcoind",
+      "version": "2.2",
+      "vendor": "Bitcoin Project",
+      "product": "bitcoind"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-09-30T14:54+09:00",
+  "issued": "2013-09-11T14:47+09:00",
+  "modified": "2013-09-30T14:54+09:00"
+}

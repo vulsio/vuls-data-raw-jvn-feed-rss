@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005612.html",
+  "title": "FineCMS の application/lib/ajax/get_image_data.php におけるサーバサイドのリクエストフォージェリの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005612.html",
+  "description": "FineCMS の application/lib/ajax/get_image_data.php には、変更された HTTP Host ヘッダを伴う非画像ファイルのリクエストに関する処理に不備があるため、サーバサイドのリクエストフォージェリの脆弱性が存在します。",
+  "identifier": "JVNDB-2017-005612",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-10973",
+      "source": "CVE",
+      "id": "CVE-2017-10973"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-10973",
+      "source": "NVD",
+      "id": "CVE-2017-10973"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/918.html",
+      "id": "CWE-918",
+      "title": "サーバサイドのリクエストフォージェリ(CWE-918)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:finecms_project:finecms",
+      "version": "2.2",
+      "vendor": "FineCMS project",
+      "product": "FineCMS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2017-08-02T17:03+09:00",
+  "issued": "2017-08-02T17:03+09:00",
+  "modified": "2017-08-02T17:03+09:00"
+}

@@ -1,0 +1,85 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-014222.html",
+  "title": "Exim Development の Exim 他複数ベンダの製品における境界外書き込みに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-014222.html",
+  "description": "Exim Development の Exim 他複数ベンダの製品には、境界外書き込みに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-014222",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-37452",
+      "source": "CVE",
+      "id": "CVE-2022-37452"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-37452",
+      "source": "NVD",
+      "id": "CVE-2022-37452"
+    },
+    {
+      "text": "https://github.com/Exim/exim/commit/d4bc023436e4cce7c23c5f8bb5199e178b4cc743",
+      "source": "関連文書",
+      "id": "github.com (d4bc023436e4cce7c23c5f8bb5199e178b4cc743)"
+    },
+    {
+      "text": "https://github.com/Exim/exim/compare/exim-4.94...exim-4.95",
+      "source": "関連文書",
+      "id": "github.com (exim-4.94...exim-4.95)"
+    },
+    {
+      "text": "https://github.com/Exim/exim/wiki/EximSecurity",
+      "source": "関連文書",
+      "id": "github.com (EximSecurity)"
+    },
+    {
+      "text": "https://github.com/ivd38/exim_overflow",
+      "source": "関連文書",
+      "id": "github.com (exim_overflow)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2022/08/msg00014.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00014)"
+    },
+    {
+      "text": "https://www.exim.org/static/doc/security/",
+      "source": "関連文書",
+      "id": "www.exim.org (security)"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2022/08/06/8",
+      "source": "関連文書",
+      "id": "www.openwall.com (oss-security/2022/08/06/8)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/787.html",
+      "id": "CWE-787",
+      "title": "境界外書き込み(CWE-787)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:exim:exim",
+      "version": "2.2",
+      "vendor": "Exim Development",
+      "product": "Exim"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-09-15T17:07+09:00",
+  "issued": "2023-09-15T17:07+09:00",
+  "modified": "2023-09-15T17:07+09:00"
+}

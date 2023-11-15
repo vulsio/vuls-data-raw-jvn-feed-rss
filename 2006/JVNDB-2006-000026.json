@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000026.html",
+  "title": "Linux Kernel の dm-crypt における情報漏洩の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000026.html",
+  "description": "Linux Kernel に実装されている dm-crypt ドライバ (dm-crypt.c) には、メモリを解放する前に crypt_config 構造における暗号化情報が適切にクリアされない脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000026",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0095",
+      "source": "CVE",
+      "id": "CVE-2006-0095"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0095",
+      "source": "NVD",
+      "id": "CVE-2006-0095"
+    },
+    {
+      "text": "http://secunia.com/advisories/18487/",
+      "source": "SECUNIA",
+      "id": "SA18487"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/16301",
+      "source": "BID",
+      "id": "16301"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/0235",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-0235"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

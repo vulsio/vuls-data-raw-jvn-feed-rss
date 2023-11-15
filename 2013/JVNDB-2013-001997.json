@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001997.html",
+  "title": "Linux Kernel の kernel/signal.c における ASLR 保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001997.html",
+  "description": "Linux Kernel の kernel/signal.c 内の flush_signal_handlers 関数は、exec 操作全般にわたって sa_restorer フィールドの値を保持するため、ASLR 保護メカニズムを回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001997",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0914",
+      "source": "CVE",
+      "id": "CVE-2013-0914"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0914",
+      "source": "NVD",
+      "id": "CVE-2013-0914"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2014-02-26T16:50+09:00",
+  "issued": "2013-03-26T10:34+09:00",
+  "modified": "2014-02-26T16:50+09:00"
+}

@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-010460.html",
+  "title": "Signalwire の Sofia-SIP 他複数ベンダの製品における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-010460.html",
+  "description": "Signalwire の Sofia-SIP 他複数ベンダの製品には、境界外読み取りに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-010460",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-31002",
+      "source": "CVE",
+      "id": "CVE-2022-31002"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-31002",
+      "source": "NVD",
+      "id": "CVE-2022-31002"
+    },
+    {
+      "text": "https://github.com/freeswitch/sofia-sip/commit/51841eb53679434a386fb2dcbca925dcc48d58ba",
+      "source": "関連文書",
+      "id": "github.com (51841eb53679434a386fb2dcbca925dcc48d58ba)"
+    },
+    {
+      "text": "https://github.com/freeswitch/sofia-sip/security/advisories/GHSA-g3x6-p824-x6hm",
+      "source": "関連文書",
+      "id": "github.com (GHSA-g3x6-p824-x6hm)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2022/09/msg00001.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00001)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202210-18",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202210-18)"
+    },
+    {
+      "text": "https://www.debian.org/security/2023/dsa-5410",
+      "source": "関連文書",
+      "id": "www.debian.org (dsa-5410)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:signalwire:sofia-sip",
+      "version": "2.2",
+      "vendor": "Signalwire",
+      "product": "Sofia-SIP"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-08-15T17:09+09:00",
+  "issued": "2023-08-15T17:09+09:00",
+  "modified": "2023-08-15T17:09+09:00"
+}

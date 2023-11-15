@@ -1,0 +1,154 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002415.html",
+  "title": "Expat の big2_toUtf8 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002415.html",
+  "description": "Perl 用の XML-Twig モジュールで使用される Expat の libexpat の lib/xmltok.c の big2_toUtf8 関数には、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。\r\n本脆弱性は、CVE-2009-2625 および CVE-2009-3720 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2009-002415",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3560",
+      "source": "CVE",
+      "id": "CVE-2009-3560"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3560",
+      "source": "NVD",
+      "id": "CVE-2009-3560"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/37203",
+      "source": "BID",
+      "id": "37203"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/54598",
+      "source": "XF",
+      "id": "54598"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2009/Dec/1023278.html",
+      "source": "SECTRACK",
+      "id": "1023278"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/2749",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-2749"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:hp:hp-ux_web_server_suite",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX Web Server Suite"
+    },
+    {
+      "text": "cpe:/a:ibm:http_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM HTTP Server"
+    },
+    {
+      "text": "cpe:/a:ibm:java_sdk",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM SDK, Java"
+    },
+    {
+      "text": "cpe:/a:ibm:websphere_application_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Application Server"
+    },
+    {
+      "text": "cpe:/a:libexpat:expat",
+      "version": "2.2",
+      "vendor": "Expat",
+      "product": "Expat"
+    },
+    {
+      "text": "cpe:/a:vmware:esxi",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESXi"
+    },
+    {
+      "text": "cpe:/h:hp:apache-based_web_server",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX Apache-based Web Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-12-18T12:01+09:00",
+  "issued": "2010-01-18T12:22+09:00",
+  "modified": "2012-12-18T12:01+09:00"
+}

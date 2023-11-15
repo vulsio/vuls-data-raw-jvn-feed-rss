@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-000061.html",
+  "title": "Sophos Disk Encryption における認証不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-000061.html",
+  "description": "ソフォス株式会社が提供する Sophos Disk Encryption には、認証不備の脆弱性が存在します。\r\n\r\nソフォス株式会社が提供する Sophos Disk Encryption は、ハードディスク上のデータを暗号化するための製品です。Windows の初期設定では、コンピュータがスリープ、休止状態から復帰する際にログオン認証を求められますが、当該製品がインストールされたコンピュータでは、ログオン認証が行われずに操作が可能となります。\r\n\r\nこの脆弱性情報は、次の方が開発者に報告し、開発者が情報セキュリティ早期警戒パートナーシップに基づき JPCERT/CC と調整を行ったものです。\r\n発見者:サイボウズ株式会社 CSIRT（Cy-SIRT）",
+  "identifier": "JVNDB-2014-000061",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN63940326/index.html",
+      "source": "JVN",
+      "id": "JVN#63940326"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2005",
+      "source": "CVE",
+      "id": "CVE-2014-2005"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2005",
+      "source": "NVD",
+      "id": "CVE-2014-2005"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20140624-jvn.html",
+      "source": "IPA CFA",
+      "id": "「Sophos Disk Encryption」における認証不備の脆弱性の対策について(JVN#63940326)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sophos:enterprise_console",
+      "version": "2.2",
+      "vendor": "ソフォス",
+      "product": "Sophos Enterprise Console (SEC)"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:N/A:N"
+    }
+  ],
+  "date": "2014-06-26T18:07+09:00",
+  "issued": "2014-06-24T12:03+09:00",
+  "modified": "2014-06-26T18:07+09:00"
+}

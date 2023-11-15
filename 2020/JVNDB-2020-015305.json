@@ -1,0 +1,86 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015305.html",
+  "title": "複数の Amino Communications 製品における OS コマンドインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015305.html",
+  "description": "複数の Amino Communications 製品には、OS コマンドインジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2020-015305",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10209",
+      "source": "CVE",
+      "id": "CVE-2020-10209"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-10209",
+      "source": "NVD",
+      "id": "CVE-2020-10209"
+    },
+    {
+      "text": "https://andre-oudhof.medium.com/pwning-my-isps-stbs-c5e78544274d#4dbc",
+      "source": "関連文書",
+      "id": "CVE-2020-10209 - Command Injection in the CPE WAN Management Protocol (CWMP) registration"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:amino:ak45x_firmware",
+      "version": "2.2",
+      "vendor": "Amino Communications",
+      "product": "AK45x ファームウェア"
+    },
+    {
+      "text": "cpe:/o:amino:ak5xx_firmware",
+      "version": "2.2",
+      "vendor": "Amino Communications",
+      "product": "AK5xx ファームウェア"
+    },
+    {
+      "text": "cpe:/o:amino:ak65x_firmware",
+      "version": "2.2",
+      "vendor": "Amino Communications",
+      "product": "AK65x ファームウェア"
+    },
+    {
+      "text": "cpe:/o:amino:aria6xx_firmware",
+      "version": "2.2",
+      "vendor": "Amino Communications",
+      "product": "Aria6xx ファームウェア"
+    },
+    {
+      "text": "cpe:/o:amino:aria7xx_firmware",
+      "version": "2.2",
+      "vendor": "Amino Communications",
+      "product": "Aria7xx ファームウェア"
+    },
+    {
+      "text": "cpe:/o:amino:kami7b_firmware",
+      "version": "2.2",
+      "vendor": "Amino Communications",
+      "product": "Kami7B ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-09-16T16:56+09:00",
+  "issued": "2021-09-16T16:56+09:00",
+  "modified": "2021-09-16T16:56+09:00"
+}

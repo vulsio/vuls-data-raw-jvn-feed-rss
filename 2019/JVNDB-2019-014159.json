@@ -1,0 +1,68 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-014159.html",
+  "title": "複数の製品におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-014159.html",
+  "description": "Video Downloader コンポーネント、Avast Secure Browser、AVG Secure Browser には、クロスサイトスクリプティングの脆弱性が存在します。",
+  "identifier": "JVNDB-2019-014159",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-18893",
+      "source": "CVE",
+      "id": "CVE-2019-18893"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-18893",
+      "source": "NVD",
+      "id": "CVE-2019-18893"
+    },
+    {
+      "text": "https://palant.de/2020/01/13/pwning-avast-secure-browser-for-fun-and-profit/",
+      "source": "関連文書",
+      "id": "Pwning Avast Secure Browser for fun and profit"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:avast:secure_browser",
+      "version": "2.2",
+      "vendor": "AVAST Software s.r.o.",
+      "product": "Avast Secure Browser"
+    },
+    {
+      "text": "cpe:/a:avg:secure_browser",
+      "version": "2.2",
+      "vendor": "AVG Technologies",
+      "product": "AVG Secure Browser"
+    },
+    {
+      "text": "cpe:/a:video_downloader_project:video_downloader",
+      "version": "2.2",
+      "vendor": "Video Downloader project",
+      "product": "Video Downloader"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+    }
+  ],
+  "date": "2020-02-05T12:01+09:00",
+  "issued": "2020-02-05T12:01+09:00",
+  "modified": "2020-02-05T12:01+09:00"
+}

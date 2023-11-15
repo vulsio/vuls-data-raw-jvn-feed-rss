@@ -1,0 +1,106 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002487.html",
+  "title": "OpenSSL クライアントの ssl3_get_key_exchange 関数における任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002487.html",
+  "description": "OpenSSL の OpenSSL クライアント (ssl/s3_clnt.c) 内にある ssl3_get_key_exchange 関数は、 ECDH を使用している際、秘密鍵に関する処理に不備があるため、サービス運用妨害 (DoS) 状態となる、または任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002487",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2939",
+      "source": "CVE",
+      "id": "CVE-2010-2939"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2939",
+      "source": "NVD",
+      "id": "CVE-2010-2939"
+    },
+    {
+      "text": "http://secunia.com/advisories/40906",
+      "source": "SECUNIA",
+      "id": "SA40906"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/42306",
+      "source": "BID",
+      "id": "42306"
+    },
+    {
+      "text": "http://securitytracker.com/id?1024296",
+      "source": "SECTRACK",
+      "id": "1024296"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/2038",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-2038"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:vmware:ace",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ACE"
+    },
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/a:vmware:esxi",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESXi"
+    },
+    {
+      "text": "cpe:/a:vmware:fusion",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Fusion"
+    },
+    {
+      "text": "cpe:/a:vmware:player",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Player"
+    },
+    {
+      "text": "cpe:/a:vmware:vcenter",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware vCenter"
+    },
+    {
+      "text": "cpe:/a:vmware:workstation",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-02-28T14:39+09:00",
+  "issued": "2010-12-14T14:12+09:00",
+  "modified": "2011-02-28T14:39+09:00"
+}

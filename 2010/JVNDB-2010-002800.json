@@ -1,0 +1,70 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002800.html",
+  "title": "ClamAV の libclamav の pdf.c における任意のコードを実行される脆弱性性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002800.html",
+  "description": "ClamAV 0.96.5 未満の libclamav の pdf.c には、巧妙に細工された PDF ドキュメントを介して、サービス運用妨害 (アプリケーションクラッシュ) 状態となる、または任意のコードを実行される脆弱性が存在します。\r\n本脆弱性は、CVE-2010-4260 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2010-002800",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU636925/",
+      "source": "JVN",
+      "id": "JVNVU#636925"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4479",
+      "source": "CVE",
+      "id": "CVE-2010-4479"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4479",
+      "source": "NVD",
+      "id": "CVE-2010-4479"
+    },
+    {
+      "text": "http://secunia.com/advisories/42426",
+      "source": "SECUNIA",
+      "id": "SA42426"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/45152",
+      "source": "BID",
+      "id": "45152"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1024818",
+      "source": "SECTRACK",
+      "id": "1024818"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:clamav:clamav",
+      "version": "2.2",
+      "vendor": "ClamAV",
+      "product": "ClamAV"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2011-04-25T10:19+09:00",
+  "issued": "2011-04-25T10:19+09:00",
+  "modified": "2011-04-25T10:19+09:00"
+}

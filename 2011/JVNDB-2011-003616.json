@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003616.html",
+  "title": "MaraDNS の権威サーバにおけるサービス運用妨害 (CPU 資源の消費) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003616.html",
+  "description": "MaraDNS の権威サーバには、ハッシュ衝突を想定した制限を行わずに DNS データのハッシュ値を算出するため、サービス運用妨害 (CPU 資源の消費) 状態となる脆弱性が存在します。\r\n本脆弱性は、CVE-2012-0024 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2011-003616",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-5056",
+      "source": "CVE",
+      "id": "CVE-2011-5056"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-5056",
+      "source": "NVD",
+      "id": "CVE-2011-5056"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:maradns:maradns",
+      "version": "2.2",
+      "vendor": "MaraDNS",
+      "product": "MaraDNS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-01-11T10:59+09:00",
+  "issued": "2012-01-11T10:59+09:00",
+  "modified": "2012-01-11T10:59+09:00"
+}

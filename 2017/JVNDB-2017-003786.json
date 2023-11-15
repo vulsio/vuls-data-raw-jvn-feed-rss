@@ -1,0 +1,87 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003786.html",
+  "title": "Microsoft Forefront 上で稼動する Malware Protection Engine および複数の Windows 製品上で稼動する Windows Defender におけるメモリを破損される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003786.html",
+  "description": "Microsoft Forefront 上で稼動する Malware Protection Engine および複数の Windows 製品上で稼動する Windows Defender は、巧妙に細工されたファイルを適切にスキャンしないため、メモリを破損される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を「Microsoft Malware Protection Engine のリモートでコードが実行される脆弱性」として公開しています。\r\n\r\n本脆弱性は、CVE-2017-8538 および CVE-2017-8541 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2017-003786",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8540",
+      "source": "CVE",
+      "id": "CVE-2017-8540"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-8540",
+      "source": "NVD",
+      "id": "CVE-2017-8540"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:endpoint_protection",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Endpoint Protection"
+    },
+    {
+      "text": "cpe:/a:microsoft:exchange_server",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Exchange Server"
+    },
+    {
+      "text": "cpe:/a:microsoft:forefront_endpoint_protection",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Forefront Endpoint Protection"
+    },
+    {
+      "text": "cpe:/a:microsoft:forefront_endpoint_protection_2010",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Forefront Endpoint Protection 2010"
+    },
+    {
+      "text": "cpe:/a:microsoft:security_essentials",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Security Essentials"
+    },
+    {
+      "text": "cpe:/a:microsoft:windows_defender",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Defender"
+    },
+    {
+      "text": "cpe:/a:microsoft:windows_intune_endpoint_protection",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Intune Endpoint Protection"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-06-07T15:23+09:00",
+  "issued": "2017-06-07T15:23+09:00",
+  "modified": "2017-06-07T15:23+09:00"
+}

@@ -1,0 +1,78 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001009.html",
+  "title": "OpenPegasus CIM マネジメントサーバ (tog-pegasus) におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001009.html",
+  "description": "OpenPegasus CIM マネジメントサーバ (tog-pegasus) には、PEGASUS_USE_PAM_STANDALONE_PROC を定義せずに、PAM を使用してコンパイルする場合、PAMBasicAuthenticator::PAMCallback() 関数でスタックベースのバッファオーバーフローが発生する可能性があります。",
+  "identifier": "JVNDB-2008-001009",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0003",
+      "source": "CVE",
+      "id": "CVE-2008-0003"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-0003",
+      "source": "NVD",
+      "id": "CVE-2008-0003"
+    },
+    {
+      "text": "http://secunia.com/advisories/28338",
+      "source": "SECUNIA",
+      "id": "SA28338"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/39527",
+      "source": "XF",
+      "id": "39527"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openpegasus:openpegasus",
+      "version": "2.2",
+      "vendor": "OpenPegasus.org",
+      "product": "OpenPegasus"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-03-05T12:27+09:00",
+  "issued": "2008-01-23T16:32+09:00",
+  "modified": "2008-03-05T12:27+09:00"
+}

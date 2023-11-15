@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002543.html",
+  "title": "Bomgar Remote Support に信頼していないデータをデシリアライズする脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002543.html",
+  "description": "Bomgar Remote Support は信頼していないデータを適切に検証せずデシリアライズするため、任意の PHP コードを実行される可能性があります。\r\n\r\n信頼していないデータのデシリアライゼーション (CWE-502) - CVE-2015-0935\r\nBomgar Remote Support は、信頼していないデータを十分に検証せずにデシリアライズします。細工されたデータがデシリアライズされると、Bomgar Remote Support の権限で任意の PHP コードを実行される可能性があります。\r\n\r\nCWE-502: Deserialization of Untrusted Data (信頼性のないデータのデシリアライゼーション)\r\nhttp://cwe.mitre.org/data/definitions/502.html",
+  "identifier": "JVNDB-2015-002543",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU98387218",
+      "source": "JVN",
+      "id": "JVNVU#98387218"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0935",
+      "source": "CVE",
+      "id": "CVE-2015-0935"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0935",
+      "source": "NVD",
+      "id": "CVE-2015-0935"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/978652",
+      "source": "CERT-VN",
+      "id": "VU#978652"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bomgar:remote_support",
+      "version": "2.2",
+      "vendor": "Bomgar Corporation",
+      "product": "Bomgar Remote Support"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-05-28T18:09+09:00",
+  "issued": "2015-05-08T14:45+09:00",
+  "modified": "2015-05-28T18:09+09:00"
+}

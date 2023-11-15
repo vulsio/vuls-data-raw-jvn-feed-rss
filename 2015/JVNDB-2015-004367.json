@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004367.html",
+  "title": "net-snmp の snmp_api.c の snmp_pdu_parse 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004367.html",
+  "description": "net-snmp の snmp_api.c の snmp_pdu_parse 関数は、SNMP PDU の構文解析に失敗した場合、netsnmp_variable_list のアイテムの varBind 引数を削除しないため、サービス運用妨害 (クラッシュ) 状態にされる、および任意のコードを実行される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-19: Data Handling (データ処理) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/19.html",
+  "identifier": "JVNDB-2015-004367",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5621",
+      "source": "CVE",
+      "id": "CVE-2015-5621"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5621",
+      "source": "NVD",
+      "id": "CVE-2015-5621"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-042-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-042-02"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:net-snmp:net-snmp",
+      "version": "2.2",
+      "vendor": "Net-SNMP",
+      "product": "Net-SNMP"
+    },
+    {
+      "text": "cpe:/h:hitachi:ha8000v",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "HA8000V シリーズ"
+    },
+    {
+      "text": "cpe:/h:hitachi:rv3000",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "RV3000"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2022-03-09T13:43+09:00",
+  "issued": "2015-08-25T12:30+09:00",
+  "modified": "2022-03-09T13:43+09:00"
+}

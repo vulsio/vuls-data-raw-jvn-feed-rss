@@ -1,0 +1,179 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001536.html",
+  "title": "Cyrus SASL ライブラリにおけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001536.html",
+  "description": "Cyrus SASL ライブラリにはバッファオーバーフローの脆弱性が存在します。\r\n\r\nSASL (Simple Authentication and Security Layer) は、様々なプロトコルに対して、認証機能を提供するための仕組みです。SASL は、一般的にメールサーバとクライアント間での認証を行うために使用されています。\r\n\r\nSASL を実装している、Cyrus SASL ライブラリには、sasl_encode64() の処理に問題があり、バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001536",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU238019/index.html",
+      "source": "JVN",
+      "id": "JVNVU#238019"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA10-103B/",
+      "source": "JVN",
+      "id": "JVNTA10-103B"
+    },
+    {
+      "text": "http://jvn.jp/tr/JVNTR-2010-12/",
+      "source": "JVNTR",
+      "id": "JVNTR-2010-12"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0688",
+      "source": "CVE",
+      "id": "CVE-2009-0688"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0688",
+      "source": "NVD",
+      "id": "CVE-2009-0688"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/238019",
+      "source": "CERT-VN",
+      "id": "VU#238019"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA10-103B.html",
+      "source": "CERT-TA",
+      "id": "TA10-103B"
+    },
+    {
+      "text": "http://secunia.com/advisories/35497",
+      "source": "SECUNIA",
+      "id": "SA35497"
+    },
+    {
+      "text": "http://secunia.com/advisories/35102",
+      "source": "SECUNIA",
+      "id": "SA35102"
+    },
+    {
+      "text": "http://secunia.com/advisories/35094",
+      "source": "SECUNIA",
+      "id": "SA35094"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/34961",
+      "source": "BID",
+      "id": "34961"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/50554",
+      "source": "XF",
+      "id": "50554"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1022231",
+      "source": "SECTRACK",
+      "id": "1022231"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/1313",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-1313"
+    },
+    {
+      "text": "http://osvdb.org/54515",
+      "source": "OSVDB",
+      "id": "54515"
+    },
+    {
+      "text": "http://osvdb.org/54514",
+      "source": "OSVDB",
+      "id": "54514"
+    },
+    {
+      "text": "http://www.ietf.org/rfc/rfc4422.txt",
+      "source": "IETF",
+      "id": "RFC 4422"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cmu:cyrus-sasl",
+      "version": "2.2",
+      "vendor": "Carnegie Mellon University (Project Cyrus)",
+      "product": "Cyrus SASL"
+    },
+    {
+      "text": "cpe:/a:oracle:sun_product_suite",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Sun Product Suite"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-05-14T18:37+09:00",
+  "issued": "2009-06-30T12:03+09:00",
+  "modified": "2010-05-14T18:37+09:00"
+}

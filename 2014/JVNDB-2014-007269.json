@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007269.html",
+  "title": "Linux Kernel の Thread Local Storage の実装の arch/x86/kernel/tls.c における espfix 保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007269.html",
+  "description": "Linux Kernel の Thread Local Storage (TLS) の実装の arch/x86/kernel/tls.c には、espfix 保護メカニズムを回避され、その結果、ASLR 保護メカニズムを回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-007269",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8133",
+      "source": "CVE",
+      "id": "CVE-2014-8133"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8133",
+      "source": "NVD",
+      "id": "CVE-2014-8133"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2014-12-19T14:33+09:00",
+  "issued": "2014-12-19T14:33+09:00",
+  "modified": "2014-12-19T14:33+09:00"
+}

@@ -1,0 +1,35 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001325.html",
+  "title": "Apache Tomcat における保護されていない認証情報の送信の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001325.html",
+  "description": "Apache Tomcat には、保護されていない認証情報の送信の脆弱性が存在します。\r\n\r\nApache Tomcatには、https が設定された X-Forwarded-Proto ヘッダを含むリクエストを HTTP 経由でリバースプロキシから受信し、RemoteIpFilter を使用している場合において、Apache Tomcat が作成するセッション CookieにSecure 属性が含まれない問題（CVE-2023-28708）が存在します。このため、ユーザエージェントが安全でないチャネルでセッション Cookie を送信する可能性があります。",
+  "identifier": "JVNDB-2023-001325",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU90635957/index.html",
+      "source": "JVN",
+      "id": "JVNVU#90635957"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-28708",
+      "source": "CVE",
+      "id": "CVE-2023-28708"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-28708",
+      "source": "NVD",
+      "id": "CVE-2023-28708"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    }
+  ],
+  "date": "2023-10-04T14:51+09:00",
+  "issued": "2023-03-24T13:41+09:00",
+  "modified": "2023-10-04T14:51+09:00"
+}

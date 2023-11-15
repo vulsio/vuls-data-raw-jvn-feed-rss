@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005600.html",
+  "title": "Linux Kernel の drivers/scsi/arcmsr/arcmsr_hba.c の arcmsr_iop_message_xfer 関数における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005600.html",
+  "description": "Linux Kernel の drivers/scsi/arcmsr/arcmsr_hba.c の arcmsr_iop_message_xfer 関数は、特定の length フィールドを制限しないため、権限を取得される、またはサービス運用妨害 (ヒープベースのバッファオーバーフロー) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-005600",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7425",
+      "source": "CVE",
+      "id": "CVE-2016-7425"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-7425",
+      "source": "NVD",
+      "id": "CVE-2016-7425"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-10-25T11:50+09:00",
+  "issued": "2016-10-25T11:50+09:00",
+  "modified": "2016-10-25T11:50+09:00"
+}

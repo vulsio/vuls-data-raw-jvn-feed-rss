@@ -1,0 +1,70 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002844.html",
+  "title": "Apache Shiro および JSecurity におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002844.html",
+  "description": "Apache Shiro および JSecurity は、shiro.ini ファイルへのエントリーを行う際、事前に URI パスが正規化されない状態で、URI パスの比較が行われてしまうため、アクセス制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002844",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3863",
+      "source": "CVE",
+      "id": "CVE-2010-3863"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-3863",
+      "source": "NVD",
+      "id": "CVE-2010-3863"
+    },
+    {
+      "text": "http://secunia.com/advisories/41989",
+      "source": "SECUNIA",
+      "id": "SA41989"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/44616",
+      "source": "BID",
+      "id": "44616"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/62959",
+      "source": "XF",
+      "id": "62959"
+    },
+    {
+      "text": "http://osvdb.org/69067",
+      "source": "OSVDB",
+      "id": "69067"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:shiro",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Shiro"
+    },
+    {
+      "text": "cpe:/a:jsecurity:jsecurity",
+      "version": "2.2",
+      "vendor": "JSecurity",
+      "product": "JSecurity"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2011-06-10T09:52+09:00",
+  "issued": "2011-06-10T09:52+09:00",
+  "modified": "2011-06-10T09:52+09:00"
+}

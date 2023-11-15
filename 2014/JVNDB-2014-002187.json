@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002187.html",
+  "title": "cURL および libcurl におけるサーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002187.html",
+  "description": "cURL および libcurl は、Windows 上で稼動し、かつ SChannel/Winssl TLS バックエンドを使用している場合、数値 IP アドレスを使用する URL にアクセスする際に、サーバのホスト名が X.509 証明書のサブジェクトの Common Name (CN) または SubjectAltName フィールドのドメイン名と一致することを検証しないため、サーバになりすまされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002187",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2522",
+      "source": "CVE",
+      "id": "CVE-2014-2522"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2522",
+      "source": "NVD",
+      "id": "CVE-2014-2522"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:haxx:curl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "cURL"
+    },
+    {
+      "text": "cpe:/a:haxx:libcurl",
+      "version": "2.2",
+      "vendor": "Haxx",
+      "product": "libcurl"
+    },
+    {
+      "text": "cpe:/a:ibm:advanced_settings_utility",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Advanced Settings Utility"
+    },
+    {
+      "text": "cpe:/a:ibm:dynamic_system_analysis",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Dynamic System Analysis"
+    },
+    {
+      "text": "cpe:/a:ibm:toolscenter_suite",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM ToolsCenter Suite"
+    },
+    {
+      "text": "cpe:/a:ibm:updatexpress_system_packs",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM UpdateXpress System Packs"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2014-08-06T11:23+09:00",
+  "issued": "2014-04-23T17:21+09:00",
+  "modified": "2014-08-06T11:23+09:00"
+}

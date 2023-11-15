@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006058.html",
+  "title": "PCRE におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006058.html",
+  "description": "PCRE は、特定の内部の再帰的な後方参照を伴う、/(((a\\2)|(a*)\\g<-1>))*/ パターンおよび関連するパターンを誤って処理するため、サービス運用妨害 (セグメンテーションフォルト) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2015-006058",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2327",
+      "source": "CVE",
+      "id": "CVE-2015-2327"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2327",
+      "source": "NVD",
+      "id": "CVE-2015-2327"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2015/11/29/1",
+      "source": "関連文書",
+      "id": "Re: Heap Overflow in PCRE"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pcre:pcre",
+      "version": "2.2",
+      "vendor": "pcre.org",
+      "product": "PCRE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-12-03T16:34+09:00",
+  "issued": "2015-12-03T16:34+09:00",
+  "modified": "2015-12-03T16:34+09:00"
+}

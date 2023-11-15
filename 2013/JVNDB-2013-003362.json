@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003362.html",
+  "title": "特定の Red Hat パッチを適用した Red Hat Enterprise Linux におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003362.html",
+  "description": "特定の Red Hat パッチを適用した Red Hat Enterprise Linux (RHEL) 上で稼働するカーネルパッケージの fs/namei.c 内の do_filp_open 関数は、書き込み権限の取得の失敗を適切に処理しないため、サービス運用妨害 (システムクラッシュ) の脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003362",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2188",
+      "source": "CVE",
+      "id": "CVE-2013-2188"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2188",
+      "source": "NVD",
+      "id": "CVE-2013-2188"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2013-07-17T20:44+09:00",
+  "issued": "2013-07-17T20:44+09:00",
+  "modified": "2013-07-17T20:44+09:00"
+}

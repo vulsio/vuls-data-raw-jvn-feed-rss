@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000307.html",
+  "title": "Linux Kernel の snmp_trap_decode() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000307.html",
+  "description": "Linux Kernel の snmp_trap_decode() 関数において、メモリの処理の不備のため、NAT 変換された特定の SNMP パケットを処理する場合に、メモリを無作為あるいは二重に解放してしまうことで、メモリ領域が破壊される脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000307",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2444",
+      "source": "CVE",
+      "id": "CVE-2006-2444"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-2444",
+      "source": "NVD",
+      "id": "CVE-2006-2444"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/681569",
+      "source": "CERT-VN",
+      "id": "VU#681569"
+    },
+    {
+      "text": "http://secunia.com/advisories/20225/",
+      "source": "SECUNIA",
+      "id": "SA20225"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18081",
+      "source": "BID",
+      "id": "18081"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2006/May/1016153.html",
+      "source": "SECTRACK",
+      "id": "1016153"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/1916",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-1916"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

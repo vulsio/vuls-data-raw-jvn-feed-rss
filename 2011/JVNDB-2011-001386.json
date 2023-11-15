@@ -1,0 +1,118 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001386.html",
+  "title": "MIT Kerberos 5 KDC に double free の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001386.html",
+  "description": "MIT Kerberos 5 に同梱されている Key Distribution Center (KDC) には、脆弱性が存在します。\r\n\r\nMIT Keberos 5 に同梱されている KDC には、double free の脆弱性が存在します。Public Key Cryptography for Initial Authentication (PKINIT) 機能が有効の場合のみ、本脆弱性の影響を受けます。\r\n\r\nMIT のアドバイザリ (MIT krb5 Security Advisory 2011-003) には、以下のように記載されています。\r\n\r\n\"The MIT Kerberos 5 Key Distribution Center (KDC) daemon is vulnerable to a double-free condition if the Public Key Cryptography for Initial Authentication (PKINIT) capability is enabled, resulting in daemon crash or arbitrary code execution (which is believed to be difficult).\"",
+  "identifier": "JVNDB-2011-001386",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU943220",
+      "source": "JVN",
+      "id": "JVNVU#943220"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0284",
+      "source": "CVE",
+      "id": "CVE-2011-0284"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0284",
+      "source": "NVD",
+      "id": "CVE-2011-0284"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/943220",
+      "source": "CERT-VN",
+      "id": "VU#943220"
+    },
+    {
+      "text": "http://secunia.com/advisories/43783",
+      "source": "SECUNIA",
+      "id": "SA43783"
+    },
+    {
+      "text": "http://secunia.com/advisories/43760",
+      "source": "SECUNIA",
+      "id": "SA43760"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/46881",
+      "source": "BID",
+      "id": "46881"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/66101",
+      "source": "XF",
+      "id": "66101"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1025216",
+      "source": "SECTRACK",
+      "id": "1025216"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0672",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0672"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2011/0680",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2011-0680"
+    },
+    {
+      "text": "http://osvdb.org/71183",
+      "source": "OSVDB",
+      "id": "71183"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mit:kerberos",
+      "version": "2.2",
+      "vendor": "MIT Kerberos",
+      "product": "Kerberos"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux HPC Node"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-11-01T14:59+09:00",
+  "issued": "2011-04-21T12:20+09:00",
+  "modified": "2013-11-01T14:59+09:00"
+}

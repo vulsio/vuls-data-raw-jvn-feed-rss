@@ -1,0 +1,160 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001260.html",
+  "title": "Xpdf および CUPS の JBIG2 デコーダーにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001260.html",
+  "description": "Xpdf および CUPS の JBIG2 デコーダーには、初期化されていないメモリに関する処理に不備があることにより、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2009-001260",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0166",
+      "source": "CVE",
+      "id": "CVE-2009-0166"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0166",
+      "source": "NVD",
+      "id": "CVE-2009-0166"
+    },
+    {
+      "text": "http://secunia.com/advisories/35064",
+      "source": "SECUNIA",
+      "id": "SA35064"
+    },
+    {
+      "text": "http://secunia.com/advisories/34756",
+      "source": "SECUNIA",
+      "id": "SA34756"
+    },
+    {
+      "text": "http://secunia.com/advisories/34755",
+      "source": "SECUNIA",
+      "id": "SA34755"
+    },
+    {
+      "text": "http://secunia.com/advisories/34481",
+      "source": "SECUNIA",
+      "id": "SA34481"
+    },
+    {
+      "text": "http://secunia.com/advisories/34291",
+      "source": "SECUNIA",
+      "id": "SA34291"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/34568",
+      "source": "BID",
+      "id": "34568"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1022073",
+      "source": "SECTRACK",
+      "id": "1022073"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/1077",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-1077"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/1066",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-1066"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2009/1065",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2009-1065"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cups:cups",
+      "version": "2.2",
+      "vendor": "CUPS",
+      "product": "CUPS"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_optional_productivity_applications",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Optional Productivity Applications"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_optional_productivity_applications_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Optional Productivity Applications EUS"
+    },
+    {
+      "text": "cpe:/a:xpdfreader:xpdf",
+      "version": "2.2",
+      "vendor": "Glyph & Cog, LLC",
+      "product": "Xpdf"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_client",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Client"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2010-06-01T12:01+09:00",
+  "issued": "2009-05-27T12:06+09:00",
+  "modified": "2010-06-01T12:01+09:00"
+}

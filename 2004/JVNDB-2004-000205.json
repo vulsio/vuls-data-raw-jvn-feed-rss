@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000205.html",
+  "title": "Cadaver が使用する neon の ne_rfc1036_parse() 関数におけるヒープオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000205.html",
+  "description": "cadaver が使用する neon の日付解釈ルーチンには、ne_rfc1036_parse() 関数において、取り扱う値の妥当性の確認が不適切であるため、意図的に作成された不正な文字列が渡されると sscanf() 関数でヒープオーバーフローを発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000205",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0398",
+      "source": "CVE",
+      "id": "CVE-2004-0398"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0398",
+      "source": "NVD",
+      "id": "CVE-2004-0398"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10385",
+      "source": "BID",
+      "id": "10385"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

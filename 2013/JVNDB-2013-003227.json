@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003227.html",
+  "title": "IBM AIX および VIOS の TFTP クライアントにおけるファイル所有権の制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003227.html",
+  "description": "IBM AIX および VIOS の TFTP クライアントには、RBAC が有効になっている場合、ファイル所有権 (file-ownership) の制限を回避され、任意のファイルを読み取られるまたは上書きされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003227",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3005",
+      "source": "CVE",
+      "id": "CVE-2013-3005"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3005",
+      "source": "NVD",
+      "id": "CVE-2013-3005"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:vios",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM VIOS"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "8.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-07-09T15:11+09:00",
+  "issued": "2013-07-09T15:11+09:00",
+  "modified": "2013-07-09T15:11+09:00"
+}

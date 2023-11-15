@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-006260.html",
+  "title": "QtWeb におけるクロスサイトスクリプティング (XSS) 攻撃を実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-006260.html",
+  "description": "QtWeb は、javascript: および data: HTTP 応答の Refresh および Location ヘッダの URI を適切にブロックしない、および以下に関する処理に不備があるため、クロスサイトスクリプティング (XSS) 攻撃を実行される脆弱性が存在します。\r\n(1) javascript: URI を含む Refresh ヘッダを挿入される\r\n(2) Refresh ヘッダの内容を指定されている際、javascript: URI を入力される\r\n(3) data:text/html URI の JavaScript シーケンスを含む Refresh ヘッダを挿入される\r\n(4) Refresh ヘッダの内容を指定されている際、JavaScript シーケンスを伴う data:text/html URI を入力される\r\n(5) data:text/html URI の JavaScript シーケンスを含む Location ヘッダを挿入される\r\n(6) Location ヘッダの内容を指定している際、JavaScript シーケンスを伴う data:text/html URI を入力される",
+  "identifier": "JVNDB-2009-006260",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3015",
+      "source": "CVE",
+      "id": "CVE-2009-3015"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3015",
+      "source": "NVD",
+      "id": "CVE-2009-3015"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qtweb:qtweb",
+      "version": "2.2",
+      "vendor": "QtWeb.NET",
+      "product": "QtWeb Browser"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2012-12-20T19:28+09:00",
+  "issued": "2012-12-20T19:28+09:00",
+  "modified": "2012-12-20T19:28+09:00"
+}

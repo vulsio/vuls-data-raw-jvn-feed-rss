@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004520.html",
+  "title": "OpenStack keystonemiddleware における中間者攻撃を実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004520.html",
+  "description": "OpenStack keystonemiddleware (旧 python-keystoneclient) は、ペーストの設定ファイル (paste.ini) でその値に関係なく \"insecure\" オプションが設定されている場合、証明書の検証を無効にするため、中間者攻撃 (man-in-the-middle attack) を実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-004520",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7144",
+      "source": "CVE",
+      "id": "CVE-2014-7144"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7144",
+      "source": "NVD",
+      "id": "CVE-2014-7144"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openstack:keystonemiddleware",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "keystonemiddleware"
+    },
+    {
+      "text": "cpe:/a:openstack:python-keystoneclient",
+      "version": "2.2",
+      "vendor": "OpenStack",
+      "product": "python-keystoneclient"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2015-06-02T17:31+09:00",
+  "issued": "2014-10-06T16:49+09:00",
+  "modified": "2015-06-02T17:31+09:00"
+}

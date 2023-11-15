@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-000006.html",
+  "title": "OpenPNE におけるアクセス制限回避の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-000006.html",
+  "description": "OpenPNE には、アクセス制限回避が可能な脆弱性が存在します。\r\n\r\nOpenPNE は、オープンソースの SNS (ソーシャルネットワーキングサービス)構築ソフトウェアです。OpenPNE には、携帯版ログイン画面へのアクセスを携帯電話からのみに制限するため、IP アドレス帯域制限機能があります。\r\nOpenPNE には、IP アドレス帯域制限機能の処理に問題があり、アクセス制限回避が可能な脆弱性が存在します。結果として、携帯電話向けのかんたんログイン機能において、なりすましによるログインをされる可能性があります。\r\n\r\n上記製品において、携帯版を利用可能にしており、かつ IP アドレス帯域制限機能を有効にしている場合、本脆弱性の影響を受けます。\r\n\r\n開発者によると、本脆弱性に類似した別の問題として、OpenPNE 1.6 以降のすべてのバージョンにおいて、IP アドレス帯域制限が実装されていない、もしくは実装されていてもデフォルトで無効となっているという問題が存在するとのことです。この問題について、開発者から対策情報が公開されています。詳しくは開発者が提供する情報をご覧ください。\r\n\r\n注) \"IP アドレス帯域\" は、携帯電話各社が \"IP アドレスの範囲\" の意味で使用している用語です。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 高木 浩光 氏",
+  "identifier": "JVNDB-2010-000006",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN06874657/index.html",
+      "source": "JVN",
+      "id": "JVN#06874657"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1040",
+      "source": "CVE",
+      "id": "CVE-2010-1040"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1040",
+      "source": "NVD",
+      "id": "CVE-2010-1040"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/vuln/alert/201003_openpne.html",
+      "source": "IPA CFA",
+      "id": "「OpenPNE」におけるセキュリティ上の弱点（脆弱性）の注意喚起"
+    },
+    {
+      "text": "http://secunia.com/advisories/38857",
+      "source": "SECUNIA",
+      "id": "SA38857"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:tejimaya:openpne",
+      "version": "2.2",
+      "vendor": "OpenPNEプロジェクト",
+      "product": "OpenPNE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2010-03-11T12:39+09:00",
+  "issued": "2010-03-05T15:01+09:00",
+  "modified": "2010-03-11T12:39+09:00"
+}

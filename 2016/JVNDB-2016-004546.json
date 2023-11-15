@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004546.html",
+  "title": "DEXIS Imaging Suite 10 に認証情報がハードコードされている問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004546.html",
+  "description": "DEXIS が提供する DEXIS Imaging Suite 10 は、歯科向けの X 線画像処理ソフトウェアです。DEXIS Imaging Suite 10 には複数の認証情報がハードコードされているため、管理者または root 権限で患者情報データベースにアクセスされる可能性があります。\r\n\r\n認証情報がハードコードされている問題 (CWE-798) - CVE-2016-6532\r\nDEXIS Imaging Suite 10 にはデータベースの複数の認証情報がハードコードされているため、管理者または root 権限で患者情報データベースにアクセスされる可能性があります。\r\n\r\nCWE-798: Use of Hard-coded Credentials\r\nhttp://cwe.mitre.org/data/definitions/798.html",
+  "identifier": "JVNDB-2016-004546",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU91018225/",
+      "source": "JVN",
+      "id": "JVNVU#91018225"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6532",
+      "source": "CVE",
+      "id": "CVE-2016-6532"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6532",
+      "source": "NVD",
+      "id": "CVE-2016-6532"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/282991",
+      "source": "CERT-VN",
+      "id": "VU#282991"
+    },
+    {
+      "text": "https://identitysafe.norton.com/password-generator",
+      "source": "関連文書",
+      "id": "安全でセキュアなパスワードを作成 - パスワードジェネレータ"
+    },
+    {
+      "text": "http://www.passwordmeter.com/",
+      "source": "関連文書",
+      "id": "The Password Meter"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:dexis:imaging_suite",
+      "version": "2.2",
+      "vendor": "DEXIS",
+      "product": "DEXIS Imaging Suite"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-09-09T11:52+09:00",
+  "issued": "2016-09-09T11:52+09:00",
+  "modified": "2016-09-09T11:52+09:00"
+}

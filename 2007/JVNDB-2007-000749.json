@@ -1,0 +1,83 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000749.html",
+  "title": "KDE JavaScript の ecma/kjs_html.cpp における Null ポインタデリファレンスの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000749.html",
+  "description": "KDE JavaScript (KJS) の ecma/kjs_html.cpp には、src 属性の ftp:// URI がある iframe のコンテンツにアクセスした際、Null ポインタデリファレンスにより、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000749",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1308",
+      "source": "CVE",
+      "id": "CVE-2007-1308"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-1308",
+      "source": "NVD",
+      "id": "CVE-2007-1308"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/22814",
+      "source": "BID",
+      "id": "22814"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/32798",
+      "source": "XF",
+      "id": "32798"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/0886",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-0886"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:kde:kde",
+      "version": "2.2",
+      "vendor": "KDE project",
+      "product": "KDE"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-12-05T14:38+09:00",
+  "issued": "2007-10-18T15:39+09:00",
+  "modified": "2007-12-05T14:38+09:00"
+}

@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006623.html",
+  "title": "Tor におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006623.html",
+  "description": "Tor は、buf_t データに NUL 終端があると想定する内部機能を持っているものの、or/buffers.c の実装は NUL 終端の存在を確認しないため、サービス運用妨害 (クライアント、秘匿サービス、リレー、または権限のクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2016-006623",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8860",
+      "source": "CVE",
+      "id": "CVE-2016-8860"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8860",
+      "source": "NVD",
+      "id": "CVE-2016-8860"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:torproject:tor",
+      "version": "2.2",
+      "vendor": "The Tor Project",
+      "product": "Tor"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-01-17T10:44+09:00",
+  "issued": "2017-01-17T10:44+09:00",
+  "modified": "2017-01-17T10:44+09:00"
+}

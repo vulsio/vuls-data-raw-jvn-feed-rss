@@ -1,0 +1,177 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000204.html",
+  "title": "CVS の pserver におけるヒープオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000204.html",
+  "description": "Concurrent Versions System (CVS) には、CVS pserver として動作させている場合において、管理ファイルが CVS クライアントにより変更されたか否かを示すフラグのためのメモリ領域を適切に確保しない不備があるため、off-by-one エラーによりヒープオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000204",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA04-147A/",
+      "source": "JVN",
+      "id": "JVNTA04-147A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA04-147A",
+      "source": "JVNTR",
+      "id": "TRTA04-147A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0396",
+      "source": "CVE",
+      "id": "CVE-2004-0396"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0396",
+      "source": "NVD",
+      "id": "CVE-2004-0396"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2004/wr042001.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2004-2001"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2004/wr042101.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2004-2101"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/wr/2004/wr042201.txt",
+      "source": "JPCERT-WR",
+      "id": "JPCERT-WR-2004-2201"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/192038",
+      "source": "CERT-VN",
+      "id": "VU#192038"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA04-147A.html",
+      "source": "CERT-TA",
+      "id": "TA04-147A"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20040603-cvs.html",
+      "source": "IPA",
+      "id": "20040603-cvs"
+    },
+    {
+      "text": "http://www.ciac.org/ciac/bulletins/o-147.shtml",
+      "source": "CIAC",
+      "id": "O-147"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10384",
+      "source": "BID",
+      "id": "10384"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/16193",
+      "source": "XF",
+      "id": "16193"
+    },
+    {
+      "text": "http://www.osvdb.org/6305",
+      "source": "OSVDB",
+      "id": "6305"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:freebsd:freebsd",
+      "version": "2.2",
+      "vendor": "FreeBSD",
+      "product": "FreeBSD"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:misc:vine_linux",
+      "version": "2.2",
+      "vendor": "Vine Linux",
+      "product": "Vine Linux"
+    },
+    {
+      "text": "cpe:/o:netbsd:netbsd",
+      "version": "2.2",
+      "vendor": "NetBSD",
+      "product": "NetBSD"
+    },
+    {
+      "text": "cpe:/o:openbsd:openbsd",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenBSD"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_advanced_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Advanced Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_desktop",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_workstation",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

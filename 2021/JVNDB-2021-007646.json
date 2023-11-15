@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007646.html",
+  "title": "OpenEXR における整数アンダーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007646.html",
+  "description": "OpenEXR には、整数アンダーフローの脆弱性、およびリソースの枯渇に関する脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2021-23215 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2021-007646",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-26260",
+      "source": "CVE",
+      "id": "CVE-2021-26260"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-26260",
+      "source": "NVD",
+      "id": "CVE-2021-26260"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1947582",
+      "source": "関連文書",
+      "id": "Bug 1947582 (CVE-2021-26260) - CVE-2021-26260 OpenEXR: Integer-overflow in Imf_2_5::DwaCompressor::initializeBuffers"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/400.html",
+      "id": "CWE-400",
+      "title": "リソースの枯渇(CWE-400)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/191.html",
+      "id": "CWE-191",
+      "title": "整数アンダーフロー(CWE-191)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openexr:openexr",
+      "version": "2.2",
+      "vendor": "OpenEXR",
+      "product": "OpenEXR"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2022-02-18T16:27+09:00",
+  "issued": "2022-02-18T16:27+09:00",
+  "modified": "2022-02-18T16:27+09:00"
+}

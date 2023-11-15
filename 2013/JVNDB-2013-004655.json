@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004655.html",
+  "title": "JavaServer Faces に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004655.html",
+  "description": "Oracle が提供する JavaServer Faces には、複数の脆弱性が存在します。\r\n\r\nOracle が提供する JavaServer Faces は、Oracle Fusion Middleware に含まれる Oracle GlassFish Server コンポーネント、Oracle JDeveloper コンポーネント、Oracle WebLogic Server コンポーネントなどで使用されています。\r\nJavaServer Faces には、Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') (CWE-22) や Incorrect Control Flow Scoping (CWE-705) などの脆弱性が存在します。\r\n\r\nCWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')\r\nhttp://cwe.mitre.org/data/definitions/22.html\r\n\r\nCWE-705: Incorrect Control Flow Scoping\r\nhttp://cwe.mitre.org/data/definitions/705.html",
+  "identifier": "JVNDB-2013-004655",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU95955023/",
+      "source": "JVN",
+      "id": "JVNVU#95955023"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3827",
+      "source": "CVE",
+      "id": "CVE-2013-3827"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3827",
+      "source": "NVD",
+      "id": "CVE-2013-3827"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/526012",
+      "source": "CERT-VN",
+      "id": "VU#526012"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:oracle:fusion_middleware",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Fusion Middleware"
+    },
+    {
+      "text": "cpe:/a:oracle:glassfish_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle GlassFish Server"
+    },
+    {
+      "text": "cpe:/a:oracle:weblogic_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle WebLogic Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2019-07-16T11:21+09:00",
+  "issued": "2013-10-17T16:47+09:00",
+  "modified": "2019-07-16T11:21+09:00"
+}

@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001234.html",
+  "title": "PHP の safe_mode 実装におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001234.html",
+  "description": "PHP の safe_mode 実装には、/ (スラッシュ) 文字で終了していないディレクトリパス名を適切に処理できないため、アクセス制限を回避される脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001234",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1129",
+      "source": "CVE",
+      "id": "CVE-2010-1129"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1129",
+      "source": "NVD",
+      "id": "CVE-2010-1129"
+    },
+    {
+      "text": "http://secunia.com/advisories/38708/",
+      "source": "SECUNIA",
+      "id": "SA38708"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/38431",
+      "source": "BID",
+      "id": "38431"
+    },
+    {
+      "text": "http://securitytracker.com/id?1023661",
+      "source": "SECTRACK",
+      "id": "1023661"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/0479",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-0479"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:php:php",
+      "version": "2.2",
+      "vendor": "The PHP Group",
+      "product": "PHP"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-09-08T15:49+09:00",
+  "issued": "2010-04-12T12:19+09:00",
+  "modified": "2010-09-08T15:49+09:00"
+}

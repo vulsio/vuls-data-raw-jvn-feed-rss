@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000397.html",
+  "title": "Microsoft PowerPoint の powerpnt.exe に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000397.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft PowerPoint の mso.dll ライブラリには、シェイプ解析を行うフィルタに不備が存在するため、不正な形式のシェイプ・コンテナを含むファイルを解析した場合にメモリ領域が破壊される問題が存在します。(CVE-2006-3590)\r\n\r\nリモートの攻撃者に悪用された場合、PowerPoint を実行するユーザの権限で任意のコードが実行される可能性があります。",
+  "identifier": "JVNDB-2006-000397",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3660",
+      "source": "CVE",
+      "id": "CVE-2006-3660"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-3660",
+      "source": "NVD",
+      "id": "CVE-2006-3660"
+    },
+    {
+      "text": "http://secunia.com/advisories/21061/",
+      "source": "SECUNIA",
+      "id": "SA21061"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/18993",
+      "source": "BID",
+      "id": "18993"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/2815",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-2815"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:microsoft:powerpoint",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft PowerPoint"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:H/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

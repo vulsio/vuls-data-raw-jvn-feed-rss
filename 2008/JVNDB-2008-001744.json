@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001744.html",
+  "title": "Linux Kernel の do_change_type 関数における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001744.html",
+  "description": "Linux Kernel の fs/namespace.c における do_change_type 関数には、CAP_SYS_ADMIN ケーパビリティを持つ発信元を確認しないため、権限昇格およびサービス運用妨害状態 (DoS) の脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001744",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2931",
+      "source": "CVE",
+      "id": "CVE-2008-2931"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2931",
+      "source": "NVD",
+      "id": "CVE-2008-2931"
+    },
+    {
+      "text": "http://secunia.com/advisories/32023",
+      "source": "SECUNIA",
+      "id": "SA32023"
+    },
+    {
+      "text": "http://secunia.com/advisories/25955/",
+      "source": "SECUNIA",
+      "id": "SA25955"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/30126",
+      "source": "BID",
+      "id": "30126"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2009-01-22T14:15+09:00",
+  "issued": "2008-10-16T13:39+09:00",
+  "modified": "2009-01-22T14:15+09:00"
+}

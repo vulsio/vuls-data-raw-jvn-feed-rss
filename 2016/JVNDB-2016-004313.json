@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004313.html",
+  "title": "Cisco IOS におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004313.html",
+  "description": "Cisco IOS は、不正な NTP パケットを適切にキューから削除しないため、サービス運用妨害 (インターフェースウェッジ) 状態にされる脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug ID CSCva35619 として公開しています。",
+  "identifier": "JVNDB-2016-004313",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1478",
+      "source": "CVE",
+      "id": "CVE-2016-1478"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1478",
+      "source": "NVD",
+      "id": "CVE-2016-1478"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:cisco:ios",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS"
+    },
+    {
+      "text": "cpe:/o:cisco:ios_xe",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco IOS XE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2016-08-17T11:16+09:00",
+  "issued": "2016-08-17T11:16+09:00",
+  "modified": "2016-08-17T11:16+09:00"
+}

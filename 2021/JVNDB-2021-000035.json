@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000035.html",
+  "title": "EC-CUBE におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000035.html",
+  "description": "株式会社イーシーキューブが提供する EC-CUBE には、クロスサイトスクリプティング (CWE-79) の脆弱性が存在します。\r\nEC-CUBE の管理画面において、特定の操作を実行する際に任意のスクリプトが実行されます。\r\n\r\n2021年5月10日現在、本脆弱性を悪用した攻撃がすでに確認されています。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2021-000035",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN97554111/index.html",
+      "source": "JVN",
+      "id": "JVN#97554111"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20717",
+      "source": "CVE",
+      "id": "CVE-2021-20717"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/ciadr/vul/20210510-jvn.html",
+      "source": "IPA CFA",
+      "id": "「EC-CUBE」におけるクロスサイトスクリプティングの脆弱性について（JVN#97554111）"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2021/at210022.html",
+      "source": "JPCERT-AT",
+      "id": "EC-CUBEのクロスサイトスクリプティングの脆弱性（CVE-2021-20717）に関する注意喚起"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:lockon:ec-cube",
+      "version": "2.2",
+      "vendor": "株式会社イーシーキューブ",
+      "product": "EC-CUBE"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+    }
+  ],
+  "date": "2021-05-10T15:03+09:00",
+  "issued": "2021-05-10T15:03+09:00",
+  "modified": "2021-05-10T15:03+09:00"
+}

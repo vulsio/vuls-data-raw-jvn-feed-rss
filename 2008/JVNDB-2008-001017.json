@@ -1,0 +1,90 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001017.html",
+  "title": "Apple QuickTime RTSP の Response message に含まれる Reason-Phrase 処理にバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001017.html",
+  "description": "Apple QuickTime RTSP の Response message に含まれる Reason-Phrase の処理には、バッファオーバーフローの脆弱性が存在します。\r\n\r\nRTSP (Real Time Streaming Protocol) は、ストリーミングメディアシステムで使用されるプロトコルであり Apple QuickTime Streaming サーバや QuickTime Player でサポートされています。Apple Quicktime RTSP の Response message に含まれる Reason-Phrase を処理する際にバッファオーバーフローの脆弱性が存在します。\r\n\r\nWinodws 版および Mac 版の QuickTime が本脆弱性の影響を受けます。また、iTunes など QuickTime を使用するソフトウェアをインストールしているシステムも本脆弱性の影響を受けます。\r\n\r\nまた、既にこの脆弱性を使用した検証コードが公開されています。 \r\n\r\n2008/01/16 Apple は Quicktime 7.4 を公開しましたが、本件に関する検証コードをもとに確認を行なったところ最新バージョンでも Quicktime 7.3 で発生したアクセス違反と同様の現象が確認されました。本件に関しての正式な対策が公開されるまで引き続き注意が必要です。",
+  "identifier": "JVNDB-2008-001017",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23112179/index.html",
+      "source": "JVN",
+      "id": "JVNVU#112179"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0234",
+      "source": "CVE",
+      "id": "CVE-2008-0234"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-0234",
+      "source": "NVD",
+      "id": "CVE-2008-0234"
+    },
+    {
+      "text": "http://www.cyberpolice.go.jp/important/2008/20080207_164356.html",
+      "source": "AT-POLICE",
+      "id": "QuickTime の脆弱性について"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/112179",
+      "source": "CERT-VN",
+      "id": "VU#112179"
+    },
+    {
+      "text": "http://secunia.com/advisories/28423/",
+      "source": "SECUNIA",
+      "id": "SA28423"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/27225",
+      "source": "BID",
+      "id": "27225"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/39601",
+      "source": "XF",
+      "id": "39601"
+    },
+    {
+      "text": "http://securitytracker.com/id?1019178",
+      "source": "SECTRACK",
+      "id": "1019178"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/0107",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-0107"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:apple_tv",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple TV"
+    },
+    {
+      "text": "cpe:/a:apple:quicktime",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "QuickTime"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-07-28T15:06+09:00",
+  "issued": "2008-01-25T14:08+09:00",
+  "modified": "2008-07-28T15:06+09:00"
+}

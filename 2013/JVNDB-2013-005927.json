@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005927.html",
+  "title": "Spring Framework の Spring MVC の SourceHttpMessageConverter における任意のファイルを読まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005927.html",
+  "description": "Spring Framework の Spring MVC の SourceHttpMessageConverter は、外部エンティティ解決を無効にしないため、任意のファイルを読まれる、サービス運用妨害 (DoS) 状態にされる、およびクロスサイトリクエストフォージェリ攻撃を実行される脆弱性が存在します。\r\n\r\n本件は、XML 外部エンティティ (XXE) の問題に関する脆弱性であり、CVE-2013-4152 および CVE-2013-7315 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2013-005927",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6429",
+      "source": "CVE",
+      "id": "CVE-2013-6429"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6429",
+      "source": "NVD",
+      "id": "CVE-2013-6429"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:springsource:spring_framework",
+      "version": "2.2",
+      "vendor": "SpringSource",
+      "product": "Spring Framework"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-08-03T18:12+09:00",
+  "issued": "2014-01-28T16:33+09:00",
+  "modified": "2015-08-03T18:12+09:00"
+}

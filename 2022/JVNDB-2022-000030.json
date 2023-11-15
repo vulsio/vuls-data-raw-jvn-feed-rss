@@ -1,0 +1,84 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-000030.html",
+  "title": "FUJITSU Network IPCOM の運用管理インタフェースにおける複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-000030.html",
+  "description": "富士通株式会社が提供する FUJITSU Network IPCOM は統合ネットワークアプライアンスです。\r\nFUJITSU Network IPCOM の操作時に使用する運用管理インタフェースには、次の複数の脆弱性が存在します。\r\n<ul><li>Web コンソールにおける OS コマンドインジェクション (CWE-78) - CVE-2022-29516\r\n<li>コマンドラインインタフェースにおけるバッファオーバーフロー (CWE-120) - CVE-2020-10188</ul>この脆弱性情報は、製品利用者への周知を目的に、開発者が IPA に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2022-000030",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN96561229/index.html",
+      "source": "JVN",
+      "id": "JVN#96561229"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2020-10188",
+      "source": "CVE",
+      "id": "CVE-2020-10188"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-29516",
+      "source": "CVE",
+      "id": "CVE-2022-29516"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2022/at220013.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2022-0013"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fujitsu:ipcom_ex",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "IPCOM EXシリーズ"
+    },
+    {
+      "text": "cpe:/a:fujitsu:ipcom_ex2",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "IPCOM EX2シリーズ"
+    },
+    {
+      "text": "cpe:/a:fujitsu:ipcom_va2%2fve1",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "IPCOM VA2/VE1シリーズ"
+    },
+    {
+      "text": "cpe:/a:fujitsu:ipcom_ve2",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "IPCOM VE2シリーズ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2022-06-16T14:03+09:00",
+  "issued": "2022-05-09T14:05+09:00",
+  "modified": "2022-06-16T14:03+09:00"
+}

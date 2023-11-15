@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005272.html",
+  "title": "Red Hat JBoss 製品などで使用される JBoss Web におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005272.html",
+  "description": "Red Hat JBoss Communications Platform、Enterprise Web Platform、Enterprise Application Platform、およびその他の製品で使用される JBoss Web には、巧妙に細工された UTF-8 および \"内部バッファの境界に\" ある \"サロゲートペア文字\" に関する処理に不備があるため、サービス運用妨害 (無限ループ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-005272",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4610",
+      "source": "CVE",
+      "id": "CVE-2011-4610"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4610",
+      "source": "NVD",
+      "id": "CVE-2011-4610"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:jboss_communications_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss Communications Platform"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_application_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss Enterprise Application Platform"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_brms_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat JBoss BRMS"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_web_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss Enterprise Web Platform"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-02-12T18:18+09:00",
+  "issued": "2014-02-12T18:18+09:00",
+  "modified": "2014-02-12T18:18+09:00"
+}

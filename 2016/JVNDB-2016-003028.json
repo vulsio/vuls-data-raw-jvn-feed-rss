@@ -1,0 +1,98 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003028.html",
+  "title": "Google Chrome で使用される libxslt の numbers.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003028.html",
+  "description": "Google Chrome で使用される libxslt の numbers.c は、xsl:number データの i フォーマットのトークンを誤って処理するため、サービス運用妨害 (整数オーバーフローまたはリソース消費) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-190: Integer Overflow or Wraparound (整数オーバーフローまたはラップアラウンド) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/190.html",
+  "identifier": "JVNDB-2016-003028",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU94844193/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94844193"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1684",
+      "source": "CVE",
+      "id": "CVE-2016-1684"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1684",
+      "source": "NVD",
+      "id": "CVE-2016-1684"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apple:icloud",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iCloud"
+    },
+    {
+      "text": "cpe:/a:apple:itunes",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iTunes"
+    },
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    },
+    {
+      "text": "cpe:/a:xmlsoft:libxslt",
+      "version": "2.2",
+      "vendor": "xmlsoft.org",
+      "product": "libxslt"
+    },
+    {
+      "text": "cpe:/o:apple:iphone_os",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "iOS"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:tvos",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "tvOS"
+    },
+    {
+      "text": "cpe:/o:apple:watchos",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "watchOS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-08-31T18:10+09:00",
+  "issued": "2016-06-08T11:59+09:00",
+  "modified": "2016-08-31T18:10+09:00"
+}

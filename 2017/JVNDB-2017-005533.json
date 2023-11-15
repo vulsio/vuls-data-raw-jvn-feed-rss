@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005533.html",
+  "title": "Linux Kernel の mq_notify 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005533.html",
+  "description": "Linux Kernel の mq_notify 関数は、リトライロジックへのエントリの際に sock ポインタを NULL に設定しないため、ユーザ空間の Netlink ソケットのクローズ中に、サービス運用妨害 (解放済みメモリの使用 (use-after-free)) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2017-005533",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11176",
+      "source": "CVE",
+      "id": "CVE-2017-11176"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-11176",
+      "source": "NVD",
+      "id": "CVE-2017-11176"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/416.html",
+      "id": "CWE-416",
+      "title": "解放済みメモリの使用(CWE-416)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-06-11T10:03+09:00",
+  "issued": "2017-07-31T16:42+09:00",
+  "modified": "2019-06-11T10:03+09:00"
+}

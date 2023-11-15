@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005011.html",
+  "title": "EMC VNX2 および VNX1 における標的の VNX Control Station システム上で任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005011.html",
+  "description": "EMC VNX2 および VNX1 は、標的の VNX Control Station システム上で任意のコードを実行される脆弱性が存在します。\r\n\r\n本脆弱性は、別名 \"ファイル検索パスの制御不備 (uncontrolled search path)\" の脆弱性と呼ばれています。",
+  "identifier": "JVNDB-2017-005011",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-4987",
+      "source": "CVE",
+      "id": "CVE-2017-4987"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-4987",
+      "source": "NVD",
+      "id": "CVE-2017-4987"
+    },
+    {
+      "text": "http://www.securityfocus.com/archive/1/540738/30/0/threaded",
+      "source": "関連文書",
+      "id": "ESA-2017-041: EMC VNX1 and VNX2 Family Multiple Vulnerabilities in VNX Control Station"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/427.html",
+      "id": "CWE-427",
+      "title": "制御されていない検索パスの要素(CWE-427)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:emc:vnx1_firmware",
+      "version": "2.2",
+      "vendor": "DELL EMC (旧 EMC Corporation)",
+      "product": "EMC VNX1 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:emc:vnx2_firmware",
+      "version": "2.2",
+      "vendor": "DELL EMC (旧 EMC Corporation)",
+      "product": "EMC VNX2 ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-07-12T18:26+09:00",
+  "issued": "2017-07-12T18:26+09:00",
+  "modified": "2017-07-12T18:26+09:00"
+}

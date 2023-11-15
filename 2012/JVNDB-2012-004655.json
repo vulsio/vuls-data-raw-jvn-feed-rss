@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004655.html",
+  "title": "Condor のファイルシステム認証におけるユーザになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-004655.html",
+  "description": "Condor のファイルシステム認証 (condor_io/condor_auth_fs.cpp) は、認証ディレクトリのパーミッションが脆弱である場合にもこれを使用するため、ユーザになりすまされる脆弱性が存在します。",
+  "identifier": "JVNDB-2012-004655",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3492",
+      "source": "CVE",
+      "id": "CVE-2012-3492"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3492",
+      "source": "NVD",
+      "id": "CVE-2012-3492"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:condor_project:condor",
+      "version": "2.2",
+      "vendor": "Condor Project",
+      "product": "Condor"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2012-10-02T14:20+09:00",
+  "issued": "2012-10-02T14:20+09:00",
+  "modified": "2012-10-02T14:20+09:00"
+}

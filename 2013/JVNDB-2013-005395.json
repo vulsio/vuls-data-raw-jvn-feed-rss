@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005395.html",
+  "title": "Apache Solr の SolrResourceLoader におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005395.html",
+  "description": "Apache Solr の SolrResourceLoader には、response writer (wt パラメータ) が XSLT に設定されている場合、ディレクトリトラバーサルの脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005395",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6397",
+      "source": "CVE",
+      "id": "CVE-2013-6397"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6397",
+      "source": "NVD",
+      "id": "CVE-2013-6397"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:solr",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Solr"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2014-04-07T17:55+09:00",
+  "issued": "2013-12-10T19:00+09:00",
+  "modified": "2014-04-07T17:55+09:00"
+}

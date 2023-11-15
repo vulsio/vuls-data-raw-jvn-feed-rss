@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-000102.html",
+  "title": "Page Scroller におけるクロスサイトスクリプティングの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-000102.html",
+  "description": "Page Scroller の ZIP アーカイブには、既知のクロスサイトスクリプティングの脆弱性を持つ jQuery を同梱している問題が存在します。\r\n\r\ncoliss が提供する Page Scroller は、jQuery の機能を使用するスクリプトです。Page Scroller は、スクリプト単体での配布以外に、jQuery やデモファイルが同梱された ZIP アーカイブでも提供されています。\r\n\r\nZIP アーカイブに同梱されている jQuery には、既知のクロスサイトスクリプティングの脆弱性 （CVE-2011-4969） が存在します。",
+  "identifier": "JVNDB-2013-000102",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN28467717/index.html",
+      "source": "JVN",
+      "id": "JVN#28467717"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5989",
+      "source": "CVE",
+      "id": "CVE-2013-5989"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+      "id": "CWE-79",
+      "title": "クロスサイトスクリプティング(CWE-79)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:coliss_page_scroller",
+      "version": "2.2",
+      "vendor": "coliss",
+      "product": "Page Scroller"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2013-11-07T12:01+09:00",
+  "issued": "2013-11-07T12:01+09:00",
+  "modified": "2013-11-07T12:01+09:00"
+}

@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000071.html",
+  "title": "ncpfs の ncplogin におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000071.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nncpfs は、Linux マシンを NetWare サーバにアクセスする NCP (NetWare Core Protocol) クライアントとして動作させるために必要なユーティリティを含むパッケージです。\r\n\r\nNcpfs 2.2.5 以前には、以下のセキュリティ上の問題が存在します。\r\n\r\n1) ncpfs 2.2.x では、setuid root ビットが付与された特定のユーティリティが使用する関数において、権限の処理に不備が存在し、不適切に高い権限のままファイルにアクセスしてしまう問題 (CAN-2005-0013) が存在します。\r\n\r\nこの問題を利用するローカルの攻撃者は、シンボリックリンク攻撃を試みる、または HOME 環境変数に意図的な設定をすることにより、root 権限で任意のファイルの作成、または上書きができる可能性があります。\r\n\r\n2) ncpfs 2.2.5 では、ncplogin コマンドにおいて取り扱う値の妥当性の確認が不適切であるため、バッファオーバーフローが発生する問題 (CAN-2005-0014) が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、悪意ある NetWare サーバにアクセスするよう誘導することにより、結果として標的ホスト上で任意のコードを実行できる可能性があります。",
+  "identifier": "JVNDB-2005-000071",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0014",
+      "source": "CVE",
+      "id": "CVE-2005-0014"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2005-0014",
+      "source": "NVD",
+      "id": "CVE-2005-0014"
+    },
+    {
+      "text": "http://secunia.com/advisories/14068/",
+      "source": "SECUNIA",
+      "id": "SA14068"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-11-14T12:13+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2008-11-14T12:13+09:00"
+}

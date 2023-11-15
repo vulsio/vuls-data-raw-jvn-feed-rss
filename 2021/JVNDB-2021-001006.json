@@ -1,0 +1,141 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001006.html",
+  "title": "複数の SOOIL Developments 製品に脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001006.html",
+  "description": "Dana Diabecare RS、AnyDana-i、AnyDana-A は、インスリンを制御するための製品、およびモバイルアプリケーションです。\r\nSOOIL Developments 社が提供する複数の製品には、次の脆弱性が存在します。\r\n\r\n　* ハードコードされた認証情報の使用 (CWE-798) - CVE-2020-27256\r\n　* 認証情報の不十分な保護 (CWE-522) - CVE-2020-27258\r\n　* 不十分なランダム値の使用 (CWE-330) - CVE-2020-27264\r\n　* クライアントサイド認証の使用 (CWE-603) - CVE-2020-27266\r\n　* サーバサイドのセキュリティをクライアントサイドで適用 (CWE-602) - CVE-2020-27268\r\n　* Capture-replay による認証回避 (CWE-294) - CVE-2020-27269\r\n　* 認証情報の保護しない転送 (CWE-523) - CVE-2020-27270\r\n　* エンティティ認証を伴わない鍵交換 (CWE-322) - CVE-2020-27272\r\n　* スプーフィングによる認証回避 (CWE-290) - CVE-2020-27276",
+  "identifier": "JVNDB-2021-001006",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU99322606",
+      "source": "JVN",
+      "id": "JVNVU#99322606"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27269",
+      "source": "CVE",
+      "id": "CVE-2020-27269"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27270",
+      "source": "CVE",
+      "id": "CVE-2020-27270"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27272",
+      "source": "CVE",
+      "id": "CVE-2020-27272"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27276",
+      "source": "CVE",
+      "id": "CVE-2020-27276"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27256",
+      "source": "CVE",
+      "id": "CVE-2020-27256"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27258",
+      "source": "CVE",
+      "id": "CVE-2020-27258"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27264",
+      "source": "CVE",
+      "id": "CVE-2020-27264"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27266",
+      "source": "CVE",
+      "id": "CVE-2020-27266"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27268",
+      "source": "CVE",
+      "id": "CVE-2020-27268"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsma-21-012-01",
+      "source": "ICS-CERT ALERT",
+      "id": "ICSMA-21-012-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/290.html",
+      "id": "CWE-290",
+      "title": "スプーフィングによる認証回避(CWE-290)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/294.html",
+      "id": "CWE-294",
+      "title": "Capture-replay による認証回避(CWE-294)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/322.html",
+      "id": "CWE-322",
+      "title": "エンティティ認証のない鍵交換(CWE-322)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/330.html",
+      "id": "CWE-330",
+      "title": "不十分なランダム値の使用(CWE-330)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/522.html",
+      "id": "CWE-522",
+      "title": "認証情報の不十分な保護(CWE-522)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/523.html",
+      "id": "CWE-523",
+      "title": "認証情報の保護しない転送(CWE-523)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/602.html",
+      "id": "CWE-602",
+      "title": "サーバ側のセキュリティのクライアント側での実施(CWE-602)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/603.html",
+      "id": "CWE-603",
+      "title": "クライアント側認証の使用(CWE-603)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/798.html",
+      "id": "CWE-798",
+      "title": "ハードコードされた認証情報の使用(CWE-798)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:sooil_developments:anydana-a",
+      "version": "2.2",
+      "vendor": "SOOIL Developments Co., Ltd",
+      "product": "AnyDana-A"
+    },
+    {
+      "text": "cpe:/a:sooil_developments:anydana-i",
+      "version": "2.2",
+      "vendor": "SOOIL Developments Co., Ltd",
+      "product": "AnyDana-i"
+    },
+    {
+      "text": "cpe:/a:sooil_developments:dana_diabecare_rs",
+      "version": "2.2",
+      "vendor": "SOOIL Developments Co., Ltd",
+      "product": "Dana Diabecare RS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:P/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2021-01-14T16:11+09:00",
+  "issued": "2021-01-14T16:11+09:00",
+  "modified": "2021-01-14T16:11+09:00"
+}

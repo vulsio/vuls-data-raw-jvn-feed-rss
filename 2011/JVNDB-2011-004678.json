@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004678.html",
+  "title": "VI Client で使用される Tom Sawyer GET Extension Factory の特定の ActiveX コントロールにおける任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004678.html",
+  "description": "VMware Infrastructure の VI Client で使用される Tom Sawyer GET Extension Factory の (1) tsgetxu71ex552.dll および (2) tsgetx71ex552.dll 内の特定の ActiveX コントロールは、Internet Explorer 内で初期化を適切に処理しないため、任意のコードを実行される、またはサービス運用妨害 (メモリ破損) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-004678",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2217",
+      "source": "CVE",
+      "id": "CVE-2011-2217"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2217",
+      "source": "NVD",
+      "id": "CVE-2011-2217"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:tomsawyer:get_extension_factory",
+      "version": "2.2",
+      "vendor": "tomsawyer",
+      "product": "get extension factory"
+    },
+    {
+      "text": "cpe:/a:vmware:infrastructure",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "infrastructure"
+    },
+    {
+      "text": "cpe:/a:vmware:virtual_infrastructure_client",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "virtual infrastructure client"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-03-27T18:43+09:00",
+  "issued": "2012-03-27T18:43+09:00",
+  "modified": "2012-03-27T18:43+09:00"
+}

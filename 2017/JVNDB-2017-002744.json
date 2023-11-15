@@ -1,0 +1,90 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002744.html",
+  "title": "Portrait Displays SDK を使用して作成されたアプリケーションに任意のコードが実行可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002744.html",
+  "description": "Portrait Displays SDK を使用して作成されたアプリケーションは、デフォルトの権限設定がセキュアでないため、任意のコードを実行される可能性があります。\r\n\r\n不適切なデフォルトパーミッション (CWE-276) - CVE-2017-3210\r\nPortrait Displays SDK を使用して作成されたアプリケーションでは、コンポーネント pdiservice.exe をサービスとして登録し、NT AUTHORITY/SYSTEM ユーザの権限で実行します。この SDK を使用して作成された複数のアプリケーションにおいて、サービス設定の内容を Authenticated Users の権限で変更可能であることが報告されました。したがって、Authenticated Users に属するユーザアカウントによってサービス設定の内容を変更され、SYSTEM 権限で任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2017-002744",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96080594/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96080594"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3210",
+      "source": "CVE",
+      "id": "CVE-2017-3210"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/219739",
+      "source": "CERT-VN",
+      "id": "VU#219739"
+    },
+    {
+      "text": "https://www.sec-consult.com/fxdata/seccons/prod/temedia/advisories_txt/20170425-0_Portrait_Displays_SDK_Privilege_Escalation_v10.txt",
+      "source": "関連文書",
+      "id": "SEC Consult Vulnerability Lab Security Advisory < 20170425-0 >"
+    },
+    {
+      "text": "http://blog.sec-consult.com/2017/04/what-unites-hp-philips-and-fujitsu-one.html",
+      "source": "関連文書",
+      "id": "SEC Consult blog - What unites HP, Philips and Fujitsu? One service and millions of vulnerable devices."
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/276.html",
+      "id": "CWE-276",
+      "title": "不適切なデフォルトパーミッション(CWE-276)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fujitsu:fujitsu_displayview_click",
+      "version": "2.2",
+      "vendor": "富士通",
+      "product": "Fujitsu DisplayView Click"
+    },
+    {
+      "text": "cpe:/a:hp:hp_display_assistant",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP Display Assistant"
+    },
+    {
+      "text": "cpe:/a:hp:hp_my_display",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP My Display"
+    },
+    {
+      "text": "cpe:/a:misc:portrait_displays_sdk",
+      "version": "2.2",
+      "vendor": "Portrait Displays, Inc.",
+      "product": "Portrait Displays SDK"
+    },
+    {
+      "text": "cpe:/a:philips_electronics:smart_control_premium",
+      "version": "2.2",
+      "vendor": "Koninklijke Philips N.V.",
+      "product": "Smart Control Premium"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:S/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-05-09T12:12+09:00",
+  "issued": "2017-04-27T12:16+09:00",
+  "modified": "2017-05-09T12:12+09:00"
+}

@@ -1,0 +1,84 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001057.html",
+  "title": "Linux kernel における SCSI ホストの属性に任意の変更を加えられる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-001057.html",
+  "description": "Red Hat Enterprise Linux 上で稼動する Linux kernel の qla2xxx ドライバ用の特定のレッドハット設定手順には、N_Port ID Virtualization (NPIV) ハードウェアが使用されている場合、/sys/class/scsi_host/ 配下の vport_create および vport_delete ファイルに対して world-writable のパーミッションを設定するため、SCSI ホストの属性に任意の変更を加えられる脆弱性が存在します。",
+  "identifier": "JVNDB-2010-001057",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3556",
+      "source": "CVE",
+      "id": "CVE-2009-3556"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3556",
+      "source": "NVD",
+      "id": "CVE-2009-3556"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/37876",
+      "source": "BID",
+      "id": "37876"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/55809",
+      "source": "XF",
+      "id": "55809"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:enterprise_virtualization",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Virtualization"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2010-04-02T14:02+09:00",
+  "issued": "2010-02-18T14:28+09:00",
+  "modified": "2010-04-02T14:02+09:00"
+}

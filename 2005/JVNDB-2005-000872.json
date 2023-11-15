@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000872.html",
+  "title": "GNU cpio における大きなサイズのファイル処理によるバッファーオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000872.html",
+  "description": "GNU cpio には、過度に大きなサイズのファイルを処理する際に不備があり、サイズを示す数値が 8 桁以上あるファイルの cpio アーカイブを生成する際に、バッファオーバーフローが発生する脆弱性が存在します。\r\n\r\n本脆弱性は 64 ビット プラットフォーム上で動作する場合のみ影響があります。",
+  "identifier": "JVNDB-2005-000872",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4268",
+      "source": "CVE",
+      "id": "CVE-2005-4268"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4268",
+      "source": "NVD",
+      "id": "CVE-2005-4268"
+    },
+    {
+      "text": "http://secunia.com/advisories/18251",
+      "source": "SECUNIA",
+      "id": "SA18251"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/16057",
+      "source": "BID",
+      "id": "16057"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/23855",
+      "source": "XF",
+      "id": "23855"
+    },
+    {
+      "text": "http://www.osvdb.org/22194",
+      "source": "OSVDB",
+      "id": "22194"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:cpio",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU cpio"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2010-05-07T16:51+09:00",
+  "issued": "2007-05-23T11:16+09:00",
+  "modified": "2010-05-07T16:51+09:00"
+}

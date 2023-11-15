@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004376.html",
+  "title": "libvirt の qemu/qemu_agent.c 内の qemuAgentGetVCPUs 関数におけるメモリ二重解放の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004376.html",
+  "description": "libvirt の qemu/qemu_agent.c 内の qemuAgentGetVCPUs 関数には、メモリを二重に解放する不備があるため、サービス運用妨害 (デーモンクラッシュ) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004376",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4153",
+      "source": "CVE",
+      "id": "CVE-2013-4153"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4153",
+      "source": "NVD",
+      "id": "CVE-2013-4153"
+    },
+    {
+      "text": "http://openwall.com/lists/oss-security/2013/07/19/11",
+      "source": "関連文書",
+      "id": "Re: CVE request -- libvirt: double free of returned  JSON array in qemuAgentGetVCPUs()"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:libvirt",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "libvirt"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-10-02T16:30+09:00",
+  "issued": "2013-10-02T16:30+09:00",
+  "modified": "2013-10-02T16:30+09:00"
+}

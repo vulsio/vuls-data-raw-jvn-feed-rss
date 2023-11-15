@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000068.html",
+  "title": "HP-UX の libc におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000068.html",
+  "description": "HP-UX の OS-Core.CORE-SHLIBS ファイルセットに含まれる libc には、タイムゾーンの設定を行う TZ 環境変数の境界チェックが不適切なため、TZ 環境変数を処理する関数 (localtime_r() 関数等) においてバッファオーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000068",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0436",
+      "source": "CVE",
+      "id": "CVE-2006-0436"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0436",
+      "source": "NVD",
+      "id": "CVE-2006-0436"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/20718",
+      "source": "BID",
+      "id": "20718"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2006/Jan/1015530.html",
+      "source": "SECTRACK",
+      "id": "1015530"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

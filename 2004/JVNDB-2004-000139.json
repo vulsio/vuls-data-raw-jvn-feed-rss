@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000139.html",
+  "title": "BEA WebLogic Server の JDBC 接続プールにおける パスワード情報漏洩の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000139.html",
+  "description": "BEA WebLogic Server には、(1) JDBC 接続プールにユーザ名およびパスワードが設定されているが JDBC 接続プールを利用して接続が確立されていない場合、(2) JDBC 接続プールがサーバとの接続に利用されていない場合に、データベースに接続したユーザのパスワードを平文で設定ファイル config.xml に保存してしまう脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000139",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1758",
+      "source": "CVE",
+      "id": "CVE-2004-1758"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1758",
+      "source": "NVD",
+      "id": "CVE-2004-1758"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/920238",
+      "source": "CERT-VN",
+      "id": "VU#920238"
+    },
+    {
+      "text": "http://secunia.com/advisories/11357/",
+      "source": "SECUNIA",
+      "id": "SA11357"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/10131",
+      "source": "BID",
+      "id": "10131"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Apr/1009764.html",
+      "source": "SECTRACK",
+      "id": "1009764"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bea:weblogic_server",
+      "version": "2.2",
+      "vendor": "BEAシステムズ",
+      "product": "BEA WebLogic Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

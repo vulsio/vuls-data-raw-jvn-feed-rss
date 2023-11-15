@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004942.html",
+  "title": "systemd の journald におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004942.html",
+  "description": "systemd の journald には、ネイティブメッセージの生成元をファイルに設定されている場合、サービス運用妨害 (ロギングサービスの遮断) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004942",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4393",
+      "source": "CVE",
+      "id": "CVE-2013-4393"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4393",
+      "source": "NVD",
+      "id": "CVE-2013-4393"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2013/10/01/9",
+      "source": "関連文書",
+      "id": "Re: [CVE request] systemd"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ubuntu_developers:systemd",
+      "version": "2.2",
+      "vendor": "Ubuntu Developers",
+      "product": "systemd"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-01-09T17:08+09:00",
+  "issued": "2013-10-30T18:56+09:00",
+  "modified": "2014-01-09T17:08+09:00"
+}

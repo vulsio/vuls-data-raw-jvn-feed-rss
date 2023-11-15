@@ -1,0 +1,98 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004661.html",
+  "title": "Oracle Outside In にバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004661.html",
+  "description": "Oracle Outside In には、Microsoft Access 1.x のデータベースファイルの解析処理にスタックバッファオーバーフローの脆弱性が存在します。\r\n\r\nOracle Outside In は、500 以上のファイル形式をデコードするためのライブラリです。Oracle Outside In には、Microsoft Access 1.x のデータベースファイルの解析処理に問題があり、スタックバッファオーバーフロー (CWE-121) の脆弱性が存在します。\r\n\r\n　CWE-121：\r\n　http://cwe.mitre.org/data/definitions/121.html",
+  "identifier": "JVNDB-2013-004661",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU92570654/index.html",
+      "source": "JVN",
+      "id": "JVNVU#92570654"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5791",
+      "source": "CVE",
+      "id": "CVE-2013-5791"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5791",
+      "source": "NVD",
+      "id": "CVE-2013-5791"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2013/at130047.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2013-0047"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/topics/?seq=12747",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS13-096,097,098,099,100,101,102,103,104,105,106)"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/953241",
+      "source": "CERT-VN",
+      "id": "VU#953241"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20131211-ms.html",
+      "source": "IPA",
+      "id": "Microsoft 製品の脆弱性対策について(12月)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:connections",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Connections"
+    },
+    {
+      "text": "cpe:/a:ibm:content_collector",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM Content Collector"
+    },
+    {
+      "text": "cpe:/a:ibm:websphere_portal",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Portal"
+    },
+    {
+      "text": "cpe:/a:microsoft:exchange_server",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Exchange Server"
+    },
+    {
+      "text": "cpe:/a:oracle:fusion_middleware",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Fusion Middleware"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.5",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-06-27T15:38+09:00",
+  "issued": "2013-10-17T16:54+09:00",
+  "modified": "2014-06-27T15:38+09:00"
+}

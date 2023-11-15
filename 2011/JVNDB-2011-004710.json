@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004710.html",
+  "title": "OProfile の utils/opcontrol におけるディレクトリトラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-004710.html",
+  "description": "OProfile の utils/opcontrol には、--session-dir 引数に関する処理に不備があるため、ディレクトリトラバーサルの脆弱性が存在します。\r\n本脆弱性は、CVE-2011-1760 と異なる脆弱性です。",
+  "identifier": "JVNDB-2011-004710",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2472",
+      "source": "CVE",
+      "id": "CVE-2011-2472"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-2472",
+      "source": "NVD",
+      "id": "CVE-2011-2472"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:maynard_johnson:oprofile",
+      "version": "2.2",
+      "vendor": "maynard johnson",
+      "product": "oprofile"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:C/A:C"
+    }
+  ],
+  "date": "2012-03-27T18:43+09:00",
+  "issued": "2012-03-27T18:43+09:00",
+  "modified": "2012-03-27T18:43+09:00"
+}

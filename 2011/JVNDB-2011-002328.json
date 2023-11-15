@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002328.html",
+  "title": "FFmpeg の decode_residual_inter 関数における整数符号エラーの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002328.html",
+  "description": "FFmpeg の libavcodec の cavsdec.c 内にある decode_residual_inter 関数には、整数符号エラーの脆弱性が存在します。\r\n本脆弱性は、CVE-2011-3362 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2011-002328",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3974",
+      "source": "CVE",
+      "id": "CVE-2011-3974"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3974",
+      "source": "NVD",
+      "id": "CVE-2011-3974"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2011-10-07T11:33+09:00",
+  "issued": "2011-10-07T11:33+09:00",
+  "modified": "2011-10-07T11:33+09:00"
+}

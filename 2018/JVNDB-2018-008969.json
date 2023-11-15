@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008969.html",
+  "title": "active-support ruby gem におけるコマンドインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008969.html",
+  "description": "active-support ruby gem には、コマンドインジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2018-008969",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3779",
+      "source": "CVE",
+      "id": "CVE-2018-3779"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-3779",
+      "source": "NVD",
+      "id": "CVE-2018-3779"
+    },
+    {
+      "text": "https://hackerone.com/reports/392311",
+      "source": "関連文書",
+      "id": "Malware in `active-support` gem"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/77.html",
+      "id": "CWE-77",
+      "title": "コマンドインジェクション(CWE-77)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:activesupport_project:activesupport",
+      "version": "2.2",
+      "vendor": "active-support project",
+      "product": "active-support"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-12-07T16:54+09:00",
+  "issued": "2018-11-05T12:08+09:00",
+  "modified": "2018-12-07T16:54+09:00"
+}

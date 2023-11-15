@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001704.html",
+  "title": "FFmpeg の libavcodec におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001704.html",
+  "description": "FFmpeg の libavcodec の utils.c 内の avcodec_decode_audio4 関数は、特定のスキップ操作を行う前にデコードの状態を確認しないため、サービス運用妨害 (配列の領域外へのアクセスまたはアプリケーションクラッシュ) 状態となるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001704",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2276",
+      "source": "CVE",
+      "id": "CVE-2013-2276"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2276",
+      "source": "NVD",
+      "id": "CVE-2013-2276"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ffmpeg:ffmpeg",
+      "version": "2.2",
+      "vendor": "FFmpeg",
+      "product": "FFmpeg"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-02-28T14:42+09:00",
+  "issued": "2013-02-28T14:42+09:00",
+  "modified": "2013-02-28T14:42+09:00"
+}

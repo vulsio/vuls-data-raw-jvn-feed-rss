@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002829.html",
+  "title": "Linux Kernel の net/bridge/netfilter/ebtables.c における重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002829.html",
+  "description": "Linux Kernel の net/bridge/netfilter/ebtables.c 内の do_replace 関数は、特定のネームフィールドが '\\0' の文字で終わることを保証しないため、カーネルスタックメモリから重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002829",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1080",
+      "source": "CVE",
+      "id": "CVE-2011-1080"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1080",
+      "source": "NVD",
+      "id": "CVE-2011-1080"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vmware:esx",
+      "version": "2.2",
+      "vendor": "VMware",
+      "product": "VMware ESX"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2016-06-30T14:33+09:00",
+  "issued": "2012-06-25T14:43+09:00",
+  "modified": "2016-06-30T14:33+09:00"
+}

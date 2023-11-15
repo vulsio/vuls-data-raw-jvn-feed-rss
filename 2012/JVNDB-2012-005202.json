@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005202.html",
+  "title": "FortiGate Unified Threat Management (UTM) の CA 証明書の取扱いに問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005202.html",
+  "description": "FortiGate の UTM アプライアンスには、CA 証明書の取扱いに問題があります。\r\n\r\nFortiGate の UTM アプライアンスでは、デフォルトで共通の CA 証明書を使用しており、その秘密鍵はウェブ上で公開されています。\r\nそのため、この CA 証明書を使用しているすべての機器が本脆弱性の影響を受ける可能性があります。",
+  "identifier": "JVNDB-2012-005202",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU111708",
+      "source": "JVN",
+      "id": "JVNVU#111708"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4948",
+      "source": "CVE",
+      "id": "CVE-2012-4948"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4948",
+      "source": "NVD",
+      "id": "CVE-2012-4948"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/111708",
+      "source": "CERT-VN",
+      "id": "VU#111708"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
+      "id": "CWE-16",
+      "title": "環境設定(CWE-16)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:fortinet:fortigate",
+      "version": "2.2",
+      "vendor": "フォーティネット",
+      "product": "FortiGate"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:H/Au:N/C:C/I:P/A:N"
+    }
+  ],
+  "date": "2012-11-16T18:13+09:00",
+  "issued": "2012-11-06T11:50+09:00",
+  "modified": "2012-11-16T18:13+09:00"
+}

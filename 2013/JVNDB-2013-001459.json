@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001459.html",
+  "title": "OpenSSL におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001459.html",
+  "description": "OpenSSL は、OCSP 応答に対してシグネチャの検証を適切に実行しないため、サービス運用妨害 (NULL ポインタデリファレンスおよびアプリケーションクラッシュ) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001459",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU91284469/",
+      "source": "JVN",
+      "id": "JVNVU#91284469"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0166",
+      "source": "CVE",
+      "id": "CVE-2013-0166"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0166",
+      "source": "NVD",
+      "id": "CVE-2013-0166"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/737740",
+      "source": "CERT-VN",
+      "id": "VU#737740"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x_server",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-06-26T14:05+09:00",
+  "issued": "2013-02-13T11:46+09:00",
+  "modified": "2014-06-26T14:05+09:00"
+}

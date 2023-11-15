@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001063.html",
+  "title": "libimobiledevice libplist の base64.c の base64decode 関数におけるプロセスメモリから重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001063.html",
+  "description": "libimobiledevice libplist の base64.c の base64decode 関数には、プロセスメモリから重要な情報を取得される、またはサービス運用妨害 (バッファオーバーリード) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2017-001063",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5209",
+      "source": "CVE",
+      "id": "CVE-2017-5209"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5209",
+      "source": "NVD",
+      "id": "CVE-2017-5209"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libimobiledevice:libplist",
+      "version": "2.2",
+      "vendor": "libimobiledevice",
+      "product": "libplist"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.1",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+    }
+  ],
+  "date": "2017-01-24T15:58+09:00",
+  "issued": "2017-01-24T15:58+09:00",
+  "modified": "2017-01-24T15:58+09:00"
+}

@@ -1,0 +1,64 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001886.html",
+  "title": "IBM WAS の Web Services Security コンポーネントにおけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001886.html",
+  "description": "IBM WebSphere Application Server (WAS) の Web Services Security コンポーネントには、Certificate Revocation Lists (CRL) を使用するよう Certificate Store Collections を設定している場合に、PKIXBuilderParameters オブジェクト上の setRevocationEnabled メソッドを呼び出さないため、Java セキュリティメソッドが X.509 証明書の廃止ステータスをチェックをしない脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001886",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4679",
+      "source": "CVE",
+      "id": "CVE-2008-4679"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-4679",
+      "source": "NVD",
+      "id": "CVE-2008-4679"
+    },
+    {
+      "text": "http://secunia.com/advisories/32296",
+      "source": "SECUNIA",
+      "id": "SA32296"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/31839",
+      "source": "BID",
+      "id": "31839"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/46002",
+      "source": "XF",
+      "id": "46002"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2008/2871",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2008-2871"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:websphere_application_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Application Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2008-11-21T11:57+09:00",
+  "issued": "2008-11-21T11:57+09:00",
+  "modified": "2008-11-21T11:57+09:00"
+}

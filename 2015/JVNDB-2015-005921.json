@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005921.html",
+  "title": "IBM System Networking Switch Center および Lenovo Switch Center における特権アカウントのアクセス権を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005921.html",
+  "description": "IBM System Networking Switch Center (SNSC) および Lenovo Switch Center の管理パネルの Web サービスには、競合状態により、特権アカウントのアクセス権を取得され、その結果、任意のファイルを読むためのディレクトリトラバーサルシーケンスを含む ZipDownload.jsp 入力を提供される脆弱性が存在します。",
+  "identifier": "JVNDB-2015-005921",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7820",
+      "source": "CVE",
+      "id": "CVE-2015-7820"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7820",
+      "source": "NVD",
+      "id": "CVE-2015-7820"
+    },
+    {
+      "text": "http://www.zerodayinitiative.com/advisories/ZDI-15-554/",
+      "source": "関連文書",
+      "id": "ZDI-15-554"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+      "id": "CWE-362",
+      "title": "競合状態(CWE-362)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:system_networking_switch_center",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM System Networking Switch Center"
+    },
+    {
+      "text": "cpe:/a:lenovo:switch_center",
+      "version": "2.2",
+      "vendor": "Lenovo",
+      "product": "Lenovo Switch Center"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:N/A:N"
+    }
+  ],
+  "date": "2015-11-16T16:58+09:00",
+  "issued": "2015-11-16T16:58+09:00",
+  "modified": "2015-11-16T16:58+09:00"
+}

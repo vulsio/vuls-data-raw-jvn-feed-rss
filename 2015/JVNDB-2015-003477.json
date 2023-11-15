@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003477.html",
+  "title": "Grandstream GXV3611_HD カメラに SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003477.html",
+  "description": "Grandstream GXV3611_HD は監視用のネットワークカメラです。Grandstream GXV3611_HD には、SQL インジェクションの脆弱性があります。\r\n\r\nSQL インジェクション (CWE-89) - CVE-2015-2866\r\nファームウェアバージョン 1.0.3.6 およびそれ以前の Grandstream GXV3611_HD では、telnet によるログインの username フィールドを適切に検証しません。攻撃者はこの脆弱性を使用し、当該機器の設定に対して SQL インジェクション攻撃を行うことが可能です。\r\n\r\nCWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')\r\nhttp://cwe.mitre.org/data/definitions/89.html",
+  "identifier": "JVNDB-2015-003477",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97426101",
+      "source": "JVN",
+      "id": "JVNVU#97426101"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2866",
+      "source": "CVE",
+      "id": "CVE-2015-2866"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2866",
+      "source": "NVD",
+      "id": "CVE-2015-2866"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/253708",
+      "source": "CERT-VN",
+      "id": "VU#253708"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:grandstream:gxv3611_hd",
+      "version": "2.2",
+      "vendor": "Grandstream Networks",
+      "product": "GXV3611_HD"
+    },
+    {
+      "text": "cpe:/o:grandstream:gxv3611_hd_firmware",
+      "version": "2.2",
+      "vendor": "Grandstream Networks",
+      "product": "GXV3611_HD ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-07-10T15:37+09:00",
+  "issued": "2015-07-10T15:37+09:00",
+  "modified": "2015-07-10T15:37+09:00"
+}

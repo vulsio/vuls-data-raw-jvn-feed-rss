@@ -1,0 +1,215 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001251.html",
+  "title": "glibc ライブラリにバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001251.html",
+  "description": "glibc ライブラリにはバッファオーバーフローの脆弱性があります。\r\n\r\nglibc ライブラリにはバッファオーバーフローの脆弱性 (CWE-788) があります。細工したホスト名を gethostbyname などの関数の引数に渡すことにより、バッファオーバーフローが発生します。\r\n\r\nCWE-788: Access of Memory Location After End of Buffer\r\nhttp://cwe.mitre.org/data/definitions/788.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-119 として公開されています。\r\n\r\nCWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer\r\nhttp://cwe.mitre.org/data/definitions/119.html",
+  "identifier": "JVNDB-2015-001251",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99234709/",
+      "source": "JVN",
+      "id": "JVNVU#99234709"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU97220341/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97220341"
+    },
+    {
+      "text": "http://jvn.jp/vu/JVNVU92655282/",
+      "source": "JVN",
+      "id": "JVNVU#92655282"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0235",
+      "source": "CVE",
+      "id": "CVE-2015-0235"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0235",
+      "source": "NVD",
+      "id": "CVE-2015-0235"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/announce/20150129-glibc.html",
+      "source": "IPA CFA",
+      "id": "glibc の脆弱性対策について(CVE-2015-0235)"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/967332",
+      "source": "CERT-VN",
+      "id": "VU#967332"
+    },
+    {
+      "text": "https://www.qualys.com/research/security-advisories/GHOST-CVE-2015-0235.txt",
+      "source": "関連文書",
+      "id": "Qualys Security Advisory CVE-2015-0235"
+    },
+    {
+      "text": "http://www.aratana.jp/security/detail.php?id=12",
+      "source": "関連文書",
+      "id": "株式会社アラタナ の告知ページ (Linux glibcの脆弱性(通称 : Ghost)への弊社対応状況について)"
+    },
+    {
+      "text": "http://www.idirect.net/Partners/~/media/Files/CVE/iDirect-Posted-Common-Vulnerabilities-and-Exposures.pdf",
+      "source": "関連文書",
+      "id": "All iDirect Posted Common Vulnerabilities and Exposures"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:glibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU C Library"
+    },
+    {
+      "text": "cpe:/a:hitachi:ups_management_software",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "UPS管理ソフトウエア"
+    },
+    {
+      "text": "cpe:/a:hp:hp_operations_analytics",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP Operations Analytics"
+    },
+    {
+      "text": "cpe:/a:nec:enterpriseidentitymanager",
+      "version": "2.2",
+      "vendor": "日本電気",
+      "product": "EnterpriseIdentityManager"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_applications",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Applications"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_policy_management",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Policy Management"
+    },
+    {
+      "text": "cpe:/a:oracle:fusion_middleware",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Fusion Middleware"
+    },
+    {
+      "text": "cpe:/a:oracle:sun_products_suite",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Sun Systems Products Suite"
+    },
+    {
+      "text": "cpe:/a:oracle:xcp",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "XCP"
+    },
+    {
+      "text": "cpe:/h:oracle:fs1-2_flash_storage_system",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle FS1-2 Flash Storage System"
+    },
+    {
+      "text": "cpe:/h:oracle:opus_10g_ethernet_switch_family",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Ethernet Switch"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m3000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M3000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m4000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M4000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m5000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M5000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m8000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M8000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sparc_enterprise_m9000_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "SPARC Enterprise M9000 サーバ"
+    },
+    {
+      "text": "cpe:/h:oracle:sun_blade_6000_ethernet_switched_nem24p_10ge",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Sun Blade 6000 Ethernet Switched NEM 24P 10GE"
+    },
+    {
+      "text": "cpe:/h:oracle:sun_network_10gbe_switch_72p",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Sun Network 10GE Switch 72P"
+    },
+    {
+      "text": "cpe:/h:oracle:switch",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Switch"
+    },
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:oracle:integrated_lights_out_manager_firmware",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Integrated Lights Out Manager"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2016-11-22T15:56+09:00",
+  "issued": "2015-01-29T15:15+09:00",
+  "modified": "2016-11-22T15:56+09:00"
+}

@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000001.html",
+  "title": "UNIVERGE SV9500/SV8500 シリーズにおける複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000001.html",
+  "description": "NECプラットフォームズ株式会社が提供する UNIVERGE SV9500 シリーズ主装置および UNIVERGE SV8500 シリーズ主装置の「保守用 Web コンソール」によるリモート保守機能には、次の複数の脆弱性が存在します。\r\n・OS コマンドインジェクション (CWE-78) - CVE-2020-5685\r\n・認証アルゴリズムの不適切な実装 (CWE-303) - CVE-2020-5686\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が IPA に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2021-000001",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN38784555/index.html",
+      "source": "JVN",
+      "id": "JVN#38784555"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5685",
+      "source": "CVE",
+      "id": "CVE-2020-5685"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5686",
+      "source": "CVE",
+      "id": "CVE-2020-5686"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+      "id": "CWE-78",
+      "title": "OSコマンドインジェクション(CWE-78)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:necplatforms:univerge_sv8500",
+      "version": "2.2",
+      "vendor": "NECプラットフォームズ株式会社",
+      "product": "UNIVERGE SV8500 シリーズ"
+    },
+    {
+      "text": "cpe:/a:necplatforms:univerge_sv9500",
+      "version": "2.2",
+      "vendor": "NECプラットフォームズ株式会社",
+      "product": "UNIVERGE SV9500 シリーズ"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.6",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-01-04T12:11+09:00",
+  "issued": "2021-01-04T12:11+09:00",
+  "modified": "2021-01-04T12:11+09:00"
+}

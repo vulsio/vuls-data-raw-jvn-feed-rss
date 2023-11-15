@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005676.html",
+  "title": "System Security Services Daemon の Privilege Attribute Certificate responder プラグインにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005676.html",
+  "description": "System Security Services Daemon (SSSD) の Privilege Attribute Certificate (PAC) responder プラグイン (sssd_pac_plugin.so) には、メモリリークにより、サービス運用妨害 (メモリ消費) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2015-005676",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5292",
+      "source": "CVE",
+      "id": "CVE-2015-5292"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5292",
+      "source": "NVD",
+      "id": "CVE-2015-5292"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fedoraproject:sssd",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "sssd"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2015-11-02T16:31+09:00",
+  "issued": "2015-11-02T16:31+09:00",
+  "modified": "2015-11-02T16:31+09:00"
+}

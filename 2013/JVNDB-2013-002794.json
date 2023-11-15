@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002794.html",
+  "title": "複数の EMC RSA 製品における重要な情報を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002794.html",
+  "description": "EMC RSA Authentication API、RSA Web Agent for Apache Web Server、RSA Web Agent for IIS、RSA PAM Agent、および RSA Agent for Microsoft Windows には、不正な暗号化アルゴリズム、および SecurID Authentication API 用のノードシークレット (node secret) の格納されたデータを管理するための脆弱なキーを使用するため、重要な情報を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002794",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0941",
+      "source": "CVE",
+      "id": "CVE-2013-0941"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0941",
+      "source": "NVD",
+      "id": "CVE-2013-0941"
+    },
+    {
+      "text": "http://archives.neohapsis.com/archives/bugtraq/2013-05/att-0064/ESA-2013-029.txt",
+      "source": "関連文書",
+      "id": "ESA-2013-029"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:rsa:authentication_agent",
+      "version": "2.2",
+      "vendor": "RSAセキュリティ",
+      "product": "RSA SecurID Authentication Agent"
+    },
+    {
+      "text": "cpe:/a:rsa:authentication_api",
+      "version": "2.2",
+      "vendor": "RSAセキュリティ",
+      "product": "RSA Authentication API"
+    },
+    {
+      "text": "cpe:/a:rsa:pluggable_authentication_module_agent",
+      "version": "2.2",
+      "vendor": "RSAセキュリティ",
+      "product": "RSA PAM Agent"
+    },
+    {
+      "text": "cpe:/a:rsa:securid_web_agent",
+      "version": "2.2",
+      "vendor": "RSAセキュリティ",
+      "product": "RSA SecurID Authentication Agent for Web"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2013-05-28T12:29+09:00",
+  "issued": "2013-05-23T21:05+09:00",
+  "modified": "2013-05-28T12:29+09:00"
+}

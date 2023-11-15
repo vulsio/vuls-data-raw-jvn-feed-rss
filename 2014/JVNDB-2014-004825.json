@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004825.html",
+  "title": "Bugzilla の token.cgi の account-creation 機能における未検証の電子メールアドレスを持つアカウントを作成される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004825.html",
+  "description": "Bugzilla の token.cgi の account-creation 機能の confirm_create_account 関数は、realname パラメータにスカラーコンテキストを指定しないため、未検証の電子メールアドレスを持つアカウントを作成される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-004825",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1572",
+      "source": "CVE",
+      "id": "CVE-2014-1572"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1572",
+      "source": "NVD",
+      "id": "CVE-2014-1572"
+    },
+    {
+      "text": "http://blog.gerv.net/2014/10/new-class-of-vulnerability-in-perl-web-applications/",
+      "source": "関連文書",
+      "id": "New Class of Vulnerability in Perl Web Applications"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2014-0412.html",
+      "source": "関連文書",
+      "id": "MGASA-2014-0412"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:bugzilla",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Bugzilla"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2014-11-28T16:53+09:00",
+  "issued": "2014-10-20T16:22+09:00",
+  "modified": "2014-11-28T16:53+09:00"
+}

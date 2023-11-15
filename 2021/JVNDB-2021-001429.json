@@ -1,0 +1,81 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001429.html",
+  "title": "OPC 製品における複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001429.html",
+  "description": "OPC Foundation が提供する OPC UA 製品および Unified Automation が提供する OPC UA クライアント / サーバの SDK バンドルには、次の複数の脆弱性が存在します。\r\n\r\n　* 不適切な再帰制御 (CWE-674) - CVE-2021-27432\r\n　* 情報漏えい (CWE-200) - CVE-2021-27434",
+  "identifier": "JVNDB-2021-001429",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU98588994",
+      "source": "JVN",
+      "id": "JVNVU#98588994"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27432",
+      "source": "CVE",
+      "id": "CVE-2021-27432"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27434",
+      "source": "CVE",
+      "id": "CVE-2021-27434"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-133-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-133-03"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-133-04",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-133-04"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-294-03",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-294-03"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/674.html",
+      "id": "CWE-674",
+      "title": "不適切な再帰制御(CWE-674)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:unified_automation_.net_based_opc_ua_client_server_sdk_bundle",
+      "version": "2.2",
+      "vendor": "Unified Automation GmbH",
+      "product": ".NET ベースの OPC UA クライアント / サーバの SDK バンドル"
+    },
+    {
+      "text": "cpe:/a:opcfoundation:ua-.net-legacy",
+      "version": "2.2",
+      "vendor": "OPC Foundation",
+      "product": "UA .NET Legacy"
+    },
+    {
+      "text": "cpe:/a:opcfoundation:ua-.netstandard",
+      "version": "2.2",
+      "vendor": "OPC Foundation",
+      "product": "UA .NET Standard"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2021-10-25T13:50+09:00",
+  "issued": "2021-05-17T17:33+09:00",
+  "modified": "2021-10-25T13:50+09:00"
+}

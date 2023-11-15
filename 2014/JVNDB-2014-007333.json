@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007333.html",
+  "title": "libvirt の qemu/qemu_driver.c の qemuDomainMigratePerform および qemuDomainMigrateFinish2 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007333.html",
+  "description": "libvirt の storage/storage_driver.c の (1) qemuDomainMigratePerform 関数および (2) qemuDomainMigrateFinish2 関数は、ACL チェックが失敗した場合、ドメインのロック解除を行わないため、サービス運用妨害 (DoS) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-007333",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8136",
+      "source": "CVE",
+      "id": "CVE-2014-8136"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8136",
+      "source": "NVD",
+      "id": "CVE-2014-8136"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2015-0002.html",
+      "source": "関連文書",
+      "id": "MGASA-2015-0002"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:libvirt",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "libvirt"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-06-04T18:00+09:00",
+  "issued": "2014-12-24T11:41+09:00",
+  "modified": "2015-06-04T18:00+09:00"
+}

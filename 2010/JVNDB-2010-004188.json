@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004188.html",
+  "title": "Cisco CSS 11500 および ACE 4710 における意図したヘッダ挿入を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-004188.html",
+  "description": "Cisco Content Services Switch (CSS) 11500 は、GET 行が CRLF で終了している状況で LF ヘッダ終端を適切に処理しないため、HTTP リクエスト・スマグリング攻撃を実行される、および意図したヘッダ挿入を回避される脆弱性が存在します。\r\n本脆弱性は、CVE-2010-1576 の不完全な修正に起因します。",
+  "identifier": "JVNDB-2010-004188",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2629",
+      "source": "CVE",
+      "id": "CVE-2010-2629"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2629",
+      "source": "NVD",
+      "id": "CVE-2010-2629"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:cisco:ace_4710",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco ACE 4710"
+    },
+    {
+      "text": "cpe:/h:cisco:content_services_switch_11500",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Content Services Switch 11500"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-06-26T16:19+09:00",
+  "issued": "2012-06-26T16:19+09:00",
+  "modified": "2012-06-26T16:19+09:00"
+}

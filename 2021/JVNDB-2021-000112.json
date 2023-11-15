@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000112.html",
+  "title": "Yappli で作成された Android アプリケーションにおける Custom URL Scheme の処理にアクセス制限不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000112.html",
+  "description": "Yappli (ヤプリ) は、株式会社ヤプリが提供するスマートフォン用アプリケーション開発運用プラットフォームです。\r\nYappli で作成された Android アプリケーションには、Custom URL Scheme を使用して指定された URL を処理する機能が実装されています。\r\nこの機能には、細工された URL を処理することでアプリケーションの接続先が書き換えられてしまうアクセス制限不備 (CWE-939) の脆弱性が存在します。\r\n\r\nこの脆弱性情報は、次の方が製品開発者に直接報告し、製品開発者との調整を経て、製品利用者への周知を目的に JVN での公表に至りました。\r\n報告者: RyotaK 氏",
+  "identifier": "JVNDB-2021-000112",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN66422035/index.html",
+      "source": "JVN",
+      "id": "JVN#66422035"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-20873",
+      "source": "CVE",
+      "id": "CVE-2021-20873"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:yappli_yappli",
+      "version": "2.2",
+      "vendor": "株式会社ヤプリ",
+      "product": "Yappli"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2021-12-22T12:06+09:00",
+  "issued": "2021-12-22T12:06+09:00",
+  "modified": "2021-12-22T12:06+09:00"
+}

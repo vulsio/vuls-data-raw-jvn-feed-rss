@@ -1,0 +1,71 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000963.html",
+  "title": "Mutt メールクライアントの safe_open() 関数における競合状態の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000963.html",
+  "description": "Mutt メールクライアントの safe_open() 関数には NFS ファイルシステムの O_EXCL フラグの制限処理に不備が存在するために、一時ファイルを作成した際に競合状態が発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000963",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5297",
+      "source": "CVE",
+      "id": "CVE-2006-5297"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-5297",
+      "source": "NVD",
+      "id": "CVE-2006-5297"
+    },
+    {
+      "text": "http://secunia.com/advisories/22613/",
+      "source": "SECUNIA",
+      "id": "SA22613"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/20733",
+      "source": "BID",
+      "id": "20733"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/33397",
+      "source": "XF",
+      "id": "33397"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/4176",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-4176"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mutt:mutt",
+      "version": "2.2",
+      "vendor": "Mutt",
+      "product": "Mutt"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.2",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2007-06-13T14:53+09:00",
+  "issued": "2007-06-13T14:53+09:00",
+  "modified": "2007-06-13T14:53+09:00"
+}

@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005196.html",
+  "title": "複数の製品で使用される t1lib におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005196.html",
+  "description": "teTeX、GNOME evince、およびその他の製品で使用される可能性がある t1lib の backend/dvi/mdvi-lib/afmparse.c 内の (1) token および (2) linetoken 関数には、一つずれエラー (Off-by-One error) により、サービス運用妨害 (クラッシュ) 状態になる、および任意のコードを実行される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2010-2642 および CVE-2011-0433 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2011-005196",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-5244",
+      "source": "CVE",
+      "id": "CVE-2011-5244"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-5244",
+      "source": "NVD",
+      "id": "CVE-2011-5244"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnome:evince",
+      "version": "2.2",
+      "vendor": "GNOME Project",
+      "product": "Evince"
+    },
+    {
+      "text": "cpe:/a:t1lib:t1lib",
+      "version": "2.2",
+      "vendor": "T1lib",
+      "product": "T1lib"
+    },
+    {
+      "text": "cpe:/a:tetex:tetex",
+      "version": "2.2",
+      "vendor": "teTeX",
+      "product": "teTeX"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-11-20T17:49+09:00",
+  "issued": "2012-11-20T17:49+09:00",
+  "modified": "2012-11-20T17:49+09:00"
+}

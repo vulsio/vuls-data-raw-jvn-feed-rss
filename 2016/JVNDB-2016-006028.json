@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006028.html",
+  "title": "Linux Kernel の drivers/vfio/pci/vfio_pci_intrs.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006028.html",
+  "description": "Linux Kernel の drivers/vfio/pci/vfio_pci_intrs.c は、kzalloc 関数を誤って使用するため、サービス運用妨害 (整数オーバーフロー) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-190: Integer Overflow or Wraparound (整数オーバーフローまたはラップアラウンド) と識別されています。\r\nhttps://cwe.mitre.org/data/definitions/190.html",
+  "identifier": "JVNDB-2016-006028",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9084",
+      "source": "CVE",
+      "id": "CVE-2016-9084"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9084",
+      "source": "NVD",
+      "id": "CVE-2016-9084"
+    },
+    {
+      "text": "https://patchwork.kernel.org/patch/9373631/",
+      "source": "関連文書",
+      "id": " Patchwork [v3] vfio/pci: Fix integer overflows, bitmask check"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-11-30T15:49+09:00",
+  "issued": "2016-11-30T15:49+09:00",
+  "modified": "2016-11-30T15:49+09:00"
+}

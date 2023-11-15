@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000708.html",
+  "title": "Sun J2SE の java.util.concurrent.atomic における信頼のないアプレットに不正な権限が適用される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000708.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSun J2SE には以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・3 つの reflection API (UIDefaults/EventHandler/JAXP) における不備のため、信頼のないアプレットに不正な権限が適用される問題 (Sun Alert 102003)\r\n・Java Management Extensions (JMX) において、信頼のないアプレットに不正な権限が適用される問題 (Sun Alert 102017)\r\n・java.util.concurrent.atomic におけるセキュリティチェック機能の不備のために、信頼のないアプレットに不正な権限が適用される問題 (Sun Alert 102050)\r\n\r\n現時点では問題の詳細は公開されていませんが、リモートの攻撃者に悪用された場合、不正な権限が適用された信頼のないアプレットにより、本来許可されていない処理を実行される可能性があります。結果として、アプレットを介してシステム上のファイルを読み書きされる、あるいは標的ユーザの権限でシステム上のアプリケーションを実行されてしまう可能性があります。",
+  "identifier": "JVNDB-2005-000708",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3907",
+      "source": "CVE",
+      "id": "CVE-2005-3907"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3907",
+      "source": "NVD",
+      "id": "CVE-2005-3907"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/355284",
+      "source": "CERT-VN",
+      "id": "VU#355284"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/931684",
+      "source": "CERT-VN",
+      "id": "VU#931684"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/974188",
+      "source": "CERT-VN",
+      "id": "VU#974188"
+    },
+    {
+      "text": "http://secunia.com/advisories/17748/",
+      "source": "SECUNIA",
+      "id": "SA17748"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/15615",
+      "source": "BID",
+      "id": "15615"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/2636",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-2636"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:websphere_application_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Application Server"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

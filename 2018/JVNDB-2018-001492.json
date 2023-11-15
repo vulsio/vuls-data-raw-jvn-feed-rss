@@ -1,0 +1,111 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001492.html",
+  "title": "Quagga bgpd に複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001492.html",
+  "description": "Quagga bgpd には、次の複数の脆弱性が存在します。\r\n\r\n　* バッファオーバフロー (CWE-119) - CVE-2018-5378 (Quagga-2018-0543)\r\n　* メモリ二重解放 (CWE-415) - CVE-2018-5379 (Quagga-2018-1114)\r\n　* 境界外読み取り (CWE-125) - CVE-2018-5380 (Quagga-2018-1550)\r\n　* 不正な構文構造の不適切な処理 (CWE-228) - CVE-2018-5381 (Quagga-2018-1975)\r\n\r\n詳細は<a href=\"https://savannah.nongnu.org/forum/forum.php?forum_id=9095\"target=\"blank\">開発者が提供する情報</a>を参照して下さい。",
+  "identifier": "JVNDB-2018-001492",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU95518305/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95518305"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5378",
+      "source": "CVE",
+      "id": "CVE-2018-5378"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5379",
+      "source": "CVE",
+      "id": "CVE-2018-5379"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5380",
+      "source": "CVE",
+      "id": "CVE-2018-5380"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5381",
+      "source": "CVE",
+      "id": "CVE-2018-5381"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5378",
+      "source": "NVD",
+      "id": "CVE-2018-5378"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5379",
+      "source": "NVD",
+      "id": "CVE-2018-5379"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5380",
+      "source": "NVD",
+      "id": "CVE-2018-5380"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5381",
+      "source": "NVD",
+      "id": "CVE-2018-5381"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/940439",
+      "source": "CERT-VN",
+      "id": "VU#940439"
+    },
+    {
+      "text": "https://www.us-cert.gov/ics/advisories/ICSA-19-099-05",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-19-099-05"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/415.html",
+      "id": "CWE-415",
+      "title": "二重解放(CWE-415)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/228.html",
+      "id": "CWE-228",
+      "title": "不正な構文構造の不適切な処理(CWE-228)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:quagga:quagga",
+      "version": "2.2",
+      "vendor": "Quagga",
+      "product": "Quagga"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-07-08T16:16+09:00",
+  "issued": "2018-02-21T14:45+09:00",
+  "modified": "2019-07-08T16:16+09:00"
+}

@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-008193.html",
+  "title": "mysql node モジュールにおける SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-008193.html",
+  "description": "mysql node モジュールには、SQL インジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2015-008193",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-9244",
+      "source": "CVE",
+      "id": "CVE-2015-9244"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-9244",
+      "source": "NVD",
+      "id": "CVE-2015-9244"
+    },
+    {
+      "text": "https://nodesecurity.io/advisories/66",
+      "source": "関連文書",
+      "id": "SQL Injection due to unescaped object keys"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mysqljs:mysql_node_module",
+      "version": "2.2",
+      "vendor": "mysqljs",
+      "product": "mysql node モジュール"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-07-20T18:18+09:00",
+  "issued": "2018-07-20T18:18+09:00",
+  "modified": "2018-07-20T18:18+09:00"
+}

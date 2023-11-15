@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002818.html",
+  "title": "qemu-kvm の pciej_write 関数におけるサービス運用妨害 (ゲストクラッシュ) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002818.html",
+  "description": "qemu-kvm の PIIX4 Power Management エミュレーションにおける hw/acpi_piix4.c 内の pciej_write 関数は、PCI-ISA ブリッジが取り外される前に、デバイスに対するホットプラグの対応の有無を確認しないため、サービス運用妨害 (ゲストクラッシュ) 状態となる、および任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002818",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1751",
+      "source": "CVE",
+      "id": "CVE-2011-1751"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1751",
+      "source": "NVD",
+      "id": "CVE-2011-1751"
+    },
+    {
+      "text": "https://github.com/nelhage/virtunoid",
+      "source": "関連文書",
+      "id": "Nelson Elhage - My KVM breakout code from my DEFCON/Black Hat 2011 presentation"
+    },
+    {
+      "text": "http://blog.nelhage.com/2011/08/breaking-out-of-kvm/",
+      "source": "関連文書",
+      "id": "Nelson Elhage - BlackHat/DEFCON 2011 talk: Breaking out of KVM"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.4",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:A/AC:M/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-06-22T16:49+09:00",
+  "issued": "2012-06-22T16:49+09:00",
+  "modified": "2012-06-22T16:49+09:00"
+}

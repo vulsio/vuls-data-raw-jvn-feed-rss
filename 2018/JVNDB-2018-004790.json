@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-004790.html",
+  "title": "CSP MySQL User Manager における SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-004790.html",
+  "description": "CSP MySQL User Manager には、SQL インジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2018-004790",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10757",
+      "source": "CVE",
+      "id": "CVE-2018-10757"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-10757",
+      "source": "NVD",
+      "id": "CVE-2018-10757"
+    },
+    {
+      "text": "https://github.com/dukereborn/cmum/commit/c89158ec646c4e8e95587b650f6fd86b502ff8b5",
+      "source": "関連文書",
+      "id": "Check for invalid characters in username and password"
+    },
+    {
+      "text": "https://packetstormsecurity.com/files/147501/cspmysqlum231-sql.txt",
+      "source": "関連文書",
+      "id": "CSP MySQL User Manager 2.3.1 SQL Injection"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:csp_mysql_user_manager_project:csp_mysql_user_manager",
+      "version": "2.2",
+      "vendor": "cspmum",
+      "product": "CSP MySQL User Manager"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-06-27T15:59+09:00",
+  "issued": "2018-06-27T15:59+09:00",
+  "modified": "2018-06-27T15:59+09:00"
+}

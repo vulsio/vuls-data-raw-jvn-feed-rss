@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001384.html",
+  "title": "Quagga の telnet 'vty' CLI における境界のないメモリを割り当てられる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001384.html",
+  "description": "Quagga の telnet 'vty' CLI には、Quagga デーモンが有効な場合、境界のないメモリを割り当てられる脆弱性が存在します。",
+  "identifier": "JVNDB-2017-001384",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5495",
+      "source": "CVE",
+      "id": "CVE-2017-5495"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5495",
+      "source": "NVD",
+      "id": "CVE-2017-5495"
+    },
+    {
+      "text": "https://github.com/freerangerouting/frr/pull/63",
+      "source": "関連文書",
+      "id": "lib: limit size of vty buffer to 4096 bytes #63"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:quagga:quagga",
+      "version": "2.2",
+      "vendor": "Quagga",
+      "product": "Quagga"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-02-09T14:14+09:00",
+  "issued": "2017-02-09T14:14+09:00",
+  "modified": "2017-02-09T14:14+09:00"
+}

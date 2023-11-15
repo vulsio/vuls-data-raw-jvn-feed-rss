@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004696.html",
+  "title": "LuxBum の manager.php における SQL インジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004696.html",
+  "description": "LuxBum の manager.php には、magic_quotes_gpc が無効になっているおよび dotclear 認証が使用されている際、SQL インジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2009-004696",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1913",
+      "source": "CVE",
+      "id": "CVE-2009-1913"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1913",
+      "source": "NVD",
+      "id": "CVE-2009-1913"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+      "id": "CWE-89",
+      "title": "SQLインジェクション(CWE-89)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:luxbum:luxbum",
+      "version": "2.2",
+      "vendor": "luxbum",
+      "product": "luxbum"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2012-09-25T17:27+09:00",
+  "issued": "2012-09-25T17:27+09:00",
+  "modified": "2012-09-25T17:27+09:00"
+}

@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004842.html",
+  "title": "LibTIFF の tiff2rgba ツールの cvt_by_strip および cvt_by_tile 関数における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004842.html",
+  "description": "LibTIFF の tiff2rgba ツールの (1) cvt_by_strip および (2) cvt_by_tile 関数には、-b モードが有効な場合、整数オーバーフローの脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-190: Integer Overflow or Wraparound (整数オーバーフローまたはラップアラウンド) 、および、CWE-787: Out-of-bounds Write (境界外書き込み) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/190.html\r\nhttp://cwe.mitre.org/data/definitions/787.html",
+  "identifier": "JVNDB-2016-004842",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3945",
+      "source": "CVE",
+      "id": "CVE-2016-3945"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-3945",
+      "source": "NVD",
+      "id": "CVE-2016-3945"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:libtiff_project:libtiff",
+      "version": "2.2",
+      "vendor": "LibTIFF",
+      "product": "LibTIFF"
+    },
+    {
+      "text": "cpe:/o:oracle:vm_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle VM サーバー"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-09-27T11:04+09:00",
+  "issued": "2016-09-27T11:04+09:00",
+  "modified": "2016-09-27T11:04+09:00"
+}

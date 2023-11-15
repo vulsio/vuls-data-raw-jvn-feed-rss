@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000401.html",
+  "title": "RealNetworks RealPlayer の .rm ファイルの処理におけるヒープオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000401.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nHelix Player および RealPlayer は、ネットワークを通じて動画や音声、文字、静止画などを組み合わせたマルチメディアコンテンツを配信するシステムである RealSystem の受信・再生をサポートしています。RealText は RealSystem のフォーマットで、テキストをスクロールさせるなど、さまざまな効果を与えることができます。\r\n\r\nHelix Player 1.0.4 以前、RealNetworks RealPlayer (Linux 版) 10.0.4 以前には、RealText を含む RealMedia ファイルの構文解析時の境界チェックが適切に行われないため、ヒープオーバーフローが発生する問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した RealMedia ファイルを Helix Player や RealPlayer で開かせるように標的ユーザを誘導することにより、結果として標的ユーザの権限で任意のコードを実行できる可能性があります。\r\n\r\n尚、Windows 版 RealPlayer 10.5 (6.0.12.1069) 以前には、上記の問題に加えて以下の複数の問題があることが報告されています。\r\n\r\n・MP3 ファイルの処理において不備が存在するため、不正にファイルが上書きされる、あるいは ActiveX コントロールが実行される問題\r\n・AVI ファイルの処理においてバッファオーバーフローが発生するため、任意のコードが実行される問題\r\n・ローカルの HTML ファイルを参照する RealMedia ファイルを再生可能な問題",
+  "identifier": "JVNDB-2005-000401",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1766",
+      "source": "CVE",
+      "id": "CVE-2005-1766"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1766",
+      "source": "NVD",
+      "id": "CVE-2005-1766"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/0866",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-0866"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:realnetworks:realplayer",
+      "version": "2.2",
+      "vendor": "リアルネットワークス",
+      "product": "RealNetworks RealPlayer"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

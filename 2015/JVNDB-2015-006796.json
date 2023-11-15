@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006796.html",
+  "title": "Grassroots DICOM の MediaStorageAndFileFormat/gdcmImageRegionReader.cxx における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006796.html",
+  "description": "Grassroots DICOM (別名 GDCM) の MediaStorageAndFileFormat/gdcmImageRegionReader.cxx 内の ImageRegionReader::ReadIntoBuffer 関数には、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2015-006796",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8396",
+      "source": "CVE",
+      "id": "CVE-2015-8396"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8396",
+      "source": "NVD",
+      "id": "CVE-2015-8396"
+    },
+    {
+      "text": "http://census-labs.com/news/2016/01/11/gdcm-buffer-overflow-imageregionreaderreadintobuffer/",
+      "source": "関連文書",
+      "id": "GDCM buffer overflow in ImageRegionReader :: ReadIntoBuffer"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:grassroots_dicom_project:grassroots_dicom",
+      "version": "2.2",
+      "vendor": "Grassroots DICOM project",
+      "product": "Grassroots DICOM"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2016-01-21T14:33+09:00",
+  "issued": "2016-01-21T14:33+09:00",
+  "modified": "2016-01-21T14:33+09:00"
+}

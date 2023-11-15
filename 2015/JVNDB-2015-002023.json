@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002023.html",
+  "title": "Dulwich の _pack.c 内の apply_delta 関数の C の実装におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002023.html",
+  "description": "Dulwich の _pack.c 内の apply_delta 関数の C の実装には、バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2015-002023",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0838",
+      "source": "CVE",
+      "id": "CVE-2015-0838"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0838",
+      "source": "NVD",
+      "id": "CVE-2015-0838"
+    },
+    {
+      "text": "https://lists.launchpad.net/dulwich-users/msg00829.html",
+      "source": "関連文書",
+      "id": "Dulwich security issue"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:dulwich_project:dulwich",
+      "version": "2.2",
+      "vendor": "Dulwich project",
+      "product": "Dulwich"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-04-03T16:39+09:00",
+  "issued": "2015-04-03T16:39+09:00",
+  "modified": "2015-04-03T16:39+09:00"
+}

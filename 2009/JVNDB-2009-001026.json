@@ -1,0 +1,82 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001026.html",
+  "title": "SquirrelMail に対する Red Hat 修正パッチにおける固定のセッション ID を割り当てる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001026.html",
+  "description": "SquirrelMail に対する特定の Red Hat 修正パッチには、全てのセッションに同じ SQMSESSID 値を使用するため、別のユーザのフォルダリストや設定データにアクセス可能な脆弱性が存在します。\r\n本脆弱性は CVE-2008-3663 に対する修正が不十分だったことによる脆弱性です。",
+  "identifier": "JVNDB-2009-001026",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0030",
+      "source": "CVE",
+      "id": "CVE-2009-0030"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0030",
+      "source": "NVD",
+      "id": "CVE-2009-0030"
+    },
+    {
+      "text": "http://secunia.com/advisories/33611",
+      "source": "SECUNIA",
+      "id": "SA33611"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/33354",
+      "source": "BID",
+      "id": "33354"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/48115",
+      "source": "XF",
+      "id": "48115"
+    },
+    {
+      "text": "http://securitytracker.com/id?1021611",
+      "source": "SECTRACK",
+      "id": "1021611"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:squirrelmail:squirrelmail",
+      "version": "2.2",
+      "vendor": "SquirrelMail Project",
+      "product": "SquirrelMail"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2009-02-24T12:20+09:00",
+  "issued": "2009-02-24T12:20+09:00",
+  "modified": "2009-02-24T12:20+09:00"
+}

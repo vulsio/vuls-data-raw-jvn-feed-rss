@@ -1,0 +1,120 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-007378.html",
+  "title": "複数の MiR 製品における誤った領域へのリソースの漏えいに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-007378.html",
+  "description": "複数の MiR 製品には、誤った領域へのリソースの漏えいに関する脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2020-007378",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU93417317/",
+      "source": "JVN",
+      "id": "JVNVU#93417317"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10271",
+      "source": "CVE",
+      "id": "CVE-2020-10271"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-10271",
+      "source": "NVD",
+      "id": "CVE-2020-10271"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-280-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-21-280-02"
+    },
+    {
+      "text": "https://github.com/aliasrobotics/RVD/issues/2555",
+      "source": "関連文書",
+      "id": "RVD#2555: MiR ROS computational graph is exposed to all network interfaces, including poorly secured wireless networks and open wired ones #2555"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/668.html",
+      "id": "CWE-668",
+      "title": "誤った領域へのリソースの漏えい(CWE-668)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:easyrobotics:er-flex_firmware",
+      "version": "2.2",
+      "vendor": "EasyRobotics",
+      "product": "ER-Flex ファームウェア"
+    },
+    {
+      "text": "cpe:/o:easyrobotics:er-lite_firmware",
+      "version": "2.2",
+      "vendor": "EasyRobotics",
+      "product": "ER-Lite ファームウェア"
+    },
+    {
+      "text": "cpe:/o:easyrobotics:er-one_firmware",
+      "version": "2.2",
+      "vendor": "EasyRobotics",
+      "product": "ER-One ファームウェア"
+    },
+    {
+      "text": "cpe:/o:easyrobotics:er200_firmware",
+      "version": "2.2",
+      "vendor": "EasyRobotics",
+      "product": "ER200 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:mobile-industrial-robots:mir1000_firmware",
+      "version": "2.2",
+      "vendor": "Mobile Industrial Robots A/S",
+      "product": "MiR1000 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:mobile-industrial-robots:mir100_firmware",
+      "version": "2.2",
+      "vendor": "Mobile Industrial Robots A/S",
+      "product": "MiR100 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:mobile-industrial-robots:mir200_firmware",
+      "version": "2.2",
+      "vendor": "Mobile Industrial Robots A/S",
+      "product": "MiR200 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:mobile-industrial-robots:mir250_firmware",
+      "version": "2.2",
+      "vendor": "Mobile Industrial Robots A/S",
+      "product": "MiR250 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:mobile-industrial-robots:mir500_firmware",
+      "version": "2.2",
+      "vendor": "Mobile Industrial Robots A/S",
+      "product": "MiR500 ファームウェア"
+    },
+    {
+      "text": "cpe:/o:uvd-robots:uvd_firmware",
+      "version": "2.2",
+      "vendor": "UVD Robots",
+      "product": "UVD ファームウェア"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2021-10-15T16:17+09:00",
+  "issued": "2020-08-11T16:02+09:00",
+  "modified": "2021-10-15T16:17+09:00"
+}

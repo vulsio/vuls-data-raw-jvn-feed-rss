@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007047.html",
+  "title": "Xen における任意のメモリを変更される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007047.html",
+  "description": "Xen には、64-bit ハイパーバイザ上で稼動する場合、任意のメモリを変更され、その結果、重要な情報を取得される、サービス運用妨害 (ホストクラッシュ) 状態にされる、またはホスト上で任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2016-007047",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9383",
+      "source": "CVE",
+      "id": "CVE-2016-9383"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9383",
+      "source": "NVD",
+      "id": "CVE-2016-9383"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:citrix:xenserver",
+      "version": "2.2",
+      "vendor": "シトリックス・システムズ",
+      "product": "Citrix XenServer"
+    },
+    {
+      "text": "cpe:/o:xen:xen",
+      "version": "2.2",
+      "vendor": "Xen プロジェクト",
+      "product": "Xen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-02-08T16:53+09:00",
+  "issued": "2017-02-08T16:53+09:00",
+  "modified": "2017-02-08T16:53+09:00"
+}

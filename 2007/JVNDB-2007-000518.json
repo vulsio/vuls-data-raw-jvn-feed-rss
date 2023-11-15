@@ -1,0 +1,74 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000518.html",
+  "title": "MySQL における SELECT 命令の権限を適切に検査しない問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000518.html",
+  "description": "MySQL には CREATE TABLE LIKE ステートメントにおける参照元テーブルに対しての、SELECT など権限が必要な命令において、権限を適切に処理しない問題が存在します。",
+  "identifier": "JVNDB-2007-000518",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3781",
+      "source": "CVE",
+      "id": "CVE-2007-3781"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-3781",
+      "source": "NVD",
+      "id": "CVE-2007-3781"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/25017",
+      "source": "BID",
+      "id": "25017"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mysql:mysql_community_server",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL Community Server"
+    },
+    {
+      "text": "cpe:/a:mysql:mysql_enterprise_server",
+      "version": "2.2",
+      "vendor": "MySQL AB",
+      "product": "MySQL Enterprise Server"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2008-08-13T11:20+09:00",
+  "issued": "2007-07-24T18:18+09:00",
+  "modified": "2008-08-13T11:20+09:00"
+}

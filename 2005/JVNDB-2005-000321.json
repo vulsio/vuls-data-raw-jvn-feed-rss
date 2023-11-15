@@ -1,0 +1,55 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000321.html",
+  "title": "Linux Kernel の elf_core_dump() 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000321.html",
+  "description": "Linux Kernel の elf_core_dump() 関数において、 copy_from_user() 関数でコピーを行う長さを指定する変数に、負の値を利用した ELF フォーマットのバイナリをロードすることにより、カーネル権限で任意のコードを実行する脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000321",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1263",
+      "source": "CVE",
+      "id": "CVE-2005-1263"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1263",
+      "source": "NVD",
+      "id": "CVE-2005-1263"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/13589",
+      "source": "BID",
+      "id": "13859"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/0524",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-0524"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

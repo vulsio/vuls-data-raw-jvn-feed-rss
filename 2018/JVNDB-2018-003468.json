@@ -1,0 +1,75 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003468.html",
+  "title": "QOS.CH SLF4J における信頼性のないデータのデシリアライゼーションに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003468.html",
+  "description": "QOS.CH SLF4J には、信頼性のないデータのデシリアライゼーションに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2018-003468",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8088",
+      "source": "CVE",
+      "id": "CVE-2018-8088"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-8088",
+      "source": "NVD",
+      "id": "CVE-2018-8088"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/502.html",
+      "id": "CWE-502",
+      "title": "信頼できないデータのデシリアライゼーション(CWE-502)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qos:slf4j",
+      "version": "2.2",
+      "vendor": "QOS.ch",
+      "product": "SLF4J"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_application_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss Enterprise Application Platform"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_server",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-05-24T15:27+09:00",
+  "issued": "2018-05-24T15:27+09:00",
+  "modified": "2018-05-24T15:27+09:00"
+}

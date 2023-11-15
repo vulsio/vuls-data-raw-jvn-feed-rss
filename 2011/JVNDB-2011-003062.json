@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003062.html",
+  "title": "Dell KACE K2000 System Deployment Appliance に情報漏えいの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003062.html",
+  "description": "Dell の提供する KACE K2000 System Deployment Appliance には、情報漏えいの脆弱性が存在します。\r\n\r\nDell の提供する KACE K2000 System Deployment Appliance のデータベース機能には、ユーザ名とパスワードが固定された、読み取り専用のアカウントがあります。KACE K2000 System Deployment Appliance には、このアカウントの権限に不備があり、情報漏えいの脆弱性が存在します。\r\n\r\nなお、データベース機能にリモートアクセスが可能な設定となっている場合のみ本脆弱性の影響を受けます。\r\nこの設定はデフォルトで無効となっていますが、JVNVU#135606 などの脆弱性を用いることでこの設定を有効にされる可能性があります。",
+  "identifier": "JVNDB-2011-003062",
+  "references": [
+    {
+      "text": "https://jvn.jp/cert/JVNVU135606/",
+      "source": "JVN",
+      "id": "JVNVU#135606"
+    },
+    {
+      "text": "https://jvn.jp/cert/JVNVU702169/",
+      "source": "JVN",
+      "id": "JVNVU#702169"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4048",
+      "source": "CVE",
+      "id": "CVE-2011-4048"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4048",
+      "source": "NVD",
+      "id": "CVE-2011-4048"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/702169",
+      "source": "CERT-VN",
+      "id": "VU#702169"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+      "id": "CWE-255",
+      "title": "証明書・パスワードの管理(CWE-255)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/h:dell:kace_k2000_systems_deployment_appliance",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Dell Kace K2000 Systems Deployment Appliance"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.3",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2011-11-28T14:48+09:00",
+  "issued": "2011-11-28T14:48+09:00",
+  "modified": "2011-11-28T14:48+09:00"
+}

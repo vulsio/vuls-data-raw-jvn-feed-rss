@@ -1,0 +1,167 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001948.html",
+  "title": "複数の Mozilla 製品における window.__proto__.__proto__ オブジェクトの改ざんに関する任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001948.html",
+  "description": "複数の Mozilla 製品の jslock.cpp には、window.__proto__.__proto__ オブジェクトを改ざんされることにより任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2008-001948",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA08-319A/",
+      "source": "JVN",
+      "id": "JVNTA08-319A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5014",
+      "source": "CVE",
+      "id": "CVE-2008-5014"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-5014",
+      "source": "NVD",
+      "id": "CVE-2008-5014"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA08-319A.html",
+      "source": "CERT-SA",
+      "id": "SA08-319A "
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA08-319A.html",
+      "source": "CERT-TA",
+      "id": "TA08-319A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA08-319A/index.html",
+      "source": "CERT-TA",
+      "id": "TRTA08-319A"
+    },
+    {
+      "text": "http://secunia.com/advisories/32693",
+      "source": "SECUNIA",
+      "id": "SA32693"
+    },
+    {
+      "text": "http://secunia.com/advisories/32714",
+      "source": "SECUNIA",
+      "id": "SA32714"
+    },
+    {
+      "text": "http://secunia.com/advisories/32715",
+      "source": "SECUNIA",
+      "id": "SA32715"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/32281",
+      "source": "BID",
+      "id": "32281"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2008/3146",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2008-3146"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mozilla:firefox",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Firefox"
+    },
+    {
+      "text": "cpe:/a:mozilla:seamonkey",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla SeaMonkey"
+    },
+    {
+      "text": "cpe:/a:mozilla:thunderbird",
+      "version": "2.2",
+      "vendor": "Mozilla Foundation",
+      "product": "Mozilla Thunderbird"
+    },
+    {
+      "text": "cpe:/a:redhat:rhel_optional_productivity_applications",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Optional Productivity Applications"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:opensolaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "OpenSolaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_client",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Client"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_wizpy",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "wizpy"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2009-04-30T15:31+09:00",
+  "issued": "2008-12-11T12:31+09:00",
+  "modified": "2009-04-30T15:31+09:00"
+}

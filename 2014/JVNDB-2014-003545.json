@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003545.html",
+  "title": "Red Hat JBoss Enterprise Application Platform で使用される PicketLink における任意のコードを読まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003545.html",
+  "description": "Red Hat JBoss Enterprise Application Platform (JBEAP) で使用される PicketLink の org.picketlink.common.util.DocumentUtil.getDocumentBuilderFactory メソッドは、エンティティ参照を拡張するため、任意のコードを読まれるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n本件は、XML 外部エンティティ (XXE) の問題に関する脆弱性です。",
+  "identifier": "JVNDB-2014-003545",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3530",
+      "source": "CVE",
+      "id": "CVE-2014-3530"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3530",
+      "source": "NVD",
+      "id": "CVE-2014-3530"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+      "id": "CWE-200",
+      "title": "情報漏えい(CWE-200)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_application_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss Enterprise Application Platform"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-06-15T17:45+09:00",
+  "issued": "2014-07-24T17:48+09:00",
+  "modified": "2015-06-15T17:45+09:00"
+}

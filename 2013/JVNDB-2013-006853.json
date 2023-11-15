@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006853.html",
+  "title": "複数の Red Hat JBoss 製品で使用される Apache Tomcat および JBoss Web における任意のファイルに書き込まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006853.html",
+  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nRed Hat JBoss Enterprise Application Platform および JBoss Portal で使用される Apache Tomcat および JBoss Web の DiskFileItem クラスの readObject メソッドには、任意のファイルに書き込まれる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2013-2186 と同様の問題です。\r\n\r\nなお、本問題は、Red Hat は脆弱性と考えていますが、Apache Tomcat チームにより異議を唱えられています。異議は、信頼できないデータをデシリアライズするのを避けるのはアプリケーションの責任であるのか、または DiskFileItem クラスが本質的にこの問題から保護するべきであるのかどうか、の観点のように見えます。",
+  "identifier": "JVNDB-2013-006853",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2185",
+      "source": "CVE",
+      "id": "CVE-2013-2185"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2185",
+      "source": "NVD",
+      "id": "CVE-2013-2185"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:tomcat",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Tomcat"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_enterprise_application_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "JBoss Enterprise Application Platform"
+    },
+    {
+      "text": "cpe:/a:redhat:jboss_portal",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat JBoss Portal"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2019-07-29T12:41+09:00",
+  "issued": "2019-07-29T12:41+09:00",
+  "modified": "2019-07-29T12:41+09:00"
+}

@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003973.html",
+  "title": "FreeBSD などで使用される libc の glob 実装におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003973.html",
+  "description": "FreeBSD、NetBSD、OpenBSD などで使用される libc および Apple Mac OS X の Libsystem には、サービス運用妨害 (CPU およびメモリ破損) 状態となる脆弱性が存在します。\r\n本脆弱性は、CVE-2010-2632 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2011-003973",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4754",
+      "source": "CVE",
+      "id": "CVE-2010-4754"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4754",
+      "source": "NVD",
+      "id": "CVE-2010-4754"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:apple:mac_os_x",
+      "version": "2.2",
+      "vendor": "アップル",
+      "product": "Apple Mac OS X"
+    },
+    {
+      "text": "cpe:/o:freebsd:freebsd",
+      "version": "2.2",
+      "vendor": "FreeBSD",
+      "product": "FreeBSD"
+    },
+    {
+      "text": "cpe:/o:netbsd:netbsd",
+      "version": "2.2",
+      "vendor": "NetBSD",
+      "product": "NetBSD"
+    },
+    {
+      "text": "cpe:/o:openbsd:openbsd",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenBSD"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-03-27T18:42+09:00",
+  "issued": "2012-03-27T18:42+09:00",
+  "modified": "2012-03-27T18:42+09:00"
+}

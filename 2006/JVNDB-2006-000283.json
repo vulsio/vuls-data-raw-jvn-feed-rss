@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000283.html",
+  "title": "BEA WebLogic Server における重要なシステムデータが暗号化されずに送信される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000283.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nBEA WebLogic Server には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) WebLogic Server を管理するためのブラウザベースインタフェースである Administration Console において、ログインページの入力フォームに、ドメイン名が表示されてしまう問題が存在します。(BEA06-128.00)\r\n\r\nリモートの攻撃者に悪用された場合、不正にドメイン名を取得されてしまう可能性があります。\r\n\r\n2) JSP ページのコンパイルエラーが生じる特定の状況下において、コンパイル前の JSP ファイルおよび .jsp ではないファイルのソースコードがブラウザに表示されてしまう問題が存在します。(BEA06-130.00)\r\n\r\nリモートの攻撃者に悪用された場合、表示されたソースコードより重要な情報が取得されてしまう可能性があります。\r\n\r\n3) Java Transaction API (JTA) を使用している場合、トランザクションにおける通信において重要なシステムデータが暗号化されずに送信されてしまう問題が存在します。(BEA06-133.00)\r\n\r\nリモートの攻撃者に悪用された場合、重要なデータを不正に取得されてしまう可能性があります。",
+  "identifier": "JVNDB-2006-000283",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2462",
+      "source": "CVE",
+      "id": "CVE-2006-2462"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-2462",
+      "source": "NVD",
+      "id": "CVE-2006-2462"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/17982",
+      "source": "BID",
+      "id": "17982"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:bea:weblogic_server",
+      "version": "2.2",
+      "vendor": "BEAシステムズ",
+      "product": "BEA WebLogic Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

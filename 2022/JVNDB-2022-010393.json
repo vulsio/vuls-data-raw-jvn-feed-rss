@@ -1,0 +1,77 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-010393.html",
+  "title": "Ruby on Rails project の Active Storage 他複数ベンダの製品におけるコードインジェクションの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-010393.html",
+  "description": "Ruby on Rails project の Active Storage 他複数ベンダの製品には、コードインジェクションの脆弱性が存在します。",
+  "identifier": "JVNDB-2022-010393",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-21831",
+      "source": "CVE",
+      "id": "CVE-2022-21831"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-21831",
+      "source": "NVD",
+      "id": "CVE-2022-21831"
+    },
+    {
+      "text": "https://github.com/advisories/GHSA-w749-p3v6-hccq",
+      "source": "関連文書",
+      "id": "github.com (GHSA-w749-p3v6-hccq)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2022/09/msg00002.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00002)"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20221118-0001/",
+      "source": "関連文書",
+      "id": "security.netapp.com (ntap-20221118-0001)"
+    },
+    {
+      "text": "https://www.debian.org/security/2023/dsa-5372",
+      "source": "関連文書",
+      "id": "www.debian.org (dsa-5372)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+      "id": "CWE-94",
+      "title": "コード・インジェクション(CWE-94)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:rubyonrails:active_storage",
+      "version": "2.2",
+      "vendor": "Ruby on Rails project",
+      "product": "Active Storage"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-08-14T17:27+09:00",
+  "issued": "2023-08-14T17:27+09:00",
+  "modified": "2023-08-14T17:27+09:00"
+}

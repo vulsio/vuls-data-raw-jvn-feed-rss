@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-006671.html",
+  "title": "WordPress 用 WP Rocket プラグインにおけるファイルインクルードの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-006671.html",
+  "description": "WordPress 用 WP Rocket プラグインのローカルファイルインクルード緩和策であるトラバーサル文字 (..) のトリミングは、リモートの攻撃を止めるには不十分であるため、ファイルインクルードの脆弱性が存在します。",
+  "identifier": "JVNDB-2017-006671",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11658",
+      "source": "CVE",
+      "id": "CVE-2017-11658"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-11658",
+      "source": "NVD",
+      "id": "CVE-2017-11658"
+    },
+    {
+      "text": "https://wpvulndb.com/vulnerabilities/8872",
+      "source": "関連文書",
+      "id": "WP Rocket <= 2.10.3 - Local File Inclusion (LFI)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wp-rocket:wp-rocket",
+      "version": "2.2",
+      "vendor": "WP Rocket project",
+      "product": "WP Rocket"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2017-08-31T19:59+09:00",
+  "issued": "2017-08-31T19:59+09:00",
+  "modified": "2017-08-31T19:59+09:00"
+}

@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006467.html",
+  "title": "pyxtrlock における画面のロックを解除することなくキーボードまたはマウスへのアクセス権を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006467.html",
+  "description": "pyxtrlock は、(1) xcb_grab_pointer および (2) xcb_grab_keyboard の XCB ライブラリ関数の戻り値を適切に処理しないため、画面のロックを解除することなく、キーボードまたはマウスへのアクセス権を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-006467",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4427",
+      "source": "CVE",
+      "id": "CVE-2013-4427"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4427",
+      "source": "NVD",
+      "id": "CVE-2013-4427"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2013/09/25/16",
+      "source": "関連文書",
+      "id": "CVE request: pyxtrlock"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2013/10/16/8",
+      "source": "関連文書",
+      "id": "Re: Re: CVE request: pyxtrlock"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:leon_weber:pyxtrlock",
+      "version": "2.2",
+      "vendor": "Leon Weber",
+      "product": "pyxtrlock"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2014-05-20T11:10+09:00",
+  "issued": "2014-05-20T11:10+09:00",
+  "modified": "2014-05-20T11:10+09:00"
+}

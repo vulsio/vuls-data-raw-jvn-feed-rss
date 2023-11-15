@@ -1,0 +1,60 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000463.html",
+  "title": "GD ライブラリの不正な PNG ファイルの処理による整数オーバフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000463.html",
+  "description": "GD ライブラリには、gd_png.c の gdImageCreateFromPngCtx() 関数において PNG ファイルの処理に不備が存在するため、意図的に作成された PNG ファイルを処理した場合に整数オーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000463",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0990",
+      "source": "CVE",
+      "id": "CVE-2004-0990"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0990",
+      "source": "NVD",
+      "id": "CVE-2004-0990"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/11523",
+      "source": "BID",
+      "id": "11523"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/17866",
+      "source": "XF",
+      "id": "17866"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2004/Oct/1011945.html",
+      "source": "SECTRACK",
+      "id": "1011945"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

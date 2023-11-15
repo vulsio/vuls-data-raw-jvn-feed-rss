@@ -1,0 +1,98 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000892.html",
+  "title": "FLAC の libFLAC における複数の整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000892.html",
+  "description": "FLAC (Free Lossless Audio Codec) の libFLAC には、メモリの割り当て処理に不備が存在するために、不正な FLAC ファイルを処理した際に、複数の整数オーバーフローが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000892",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4619",
+      "source": "CVE",
+      "id": "CVE-2007-4619"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4619",
+      "source": "NVD",
+      "id": "CVE-2007-4619"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/544656",
+      "source": "CERT-VN",
+      "id": "VU#544656"
+    },
+    {
+      "text": "http://secunia.com/advisories/27210/",
+      "source": "SECUNIA",
+      "id": "SA27210"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/26042",
+      "source": "BID",
+      "id": "26042"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/37187",
+      "source": "XF",
+      "id": "37187"
+    },
+    {
+      "text": "http://securitytracker.com/id?1018815",
+      "source": "SECTRACK",
+      "id": "1018815"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/3483",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-3483"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:xiph:flac",
+      "version": "2.2",
+      "vendor": "Xiph.Org",
+      "product": "FLAC"
+    },
+    {
+      "text": "cpe:/a:xiph:libflac",
+      "version": "2.2",
+      "vendor": "Xiph.Org",
+      "product": "Libflac"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:rhel_desktop_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "RHEL Desktop Workstation"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-11-05T16:16+09:00",
+  "issued": "2007-11-05T16:16+09:00",
+  "modified": "2007-11-05T16:16+09:00"
+}

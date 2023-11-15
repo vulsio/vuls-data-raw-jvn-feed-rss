@@ -1,0 +1,89 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-012359.html",
+  "title": "ImageMagick の ImageMagick 他複数ベンダの製品における整数オーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-012359.html",
+  "description": "ImageMagick の ImageMagick 他複数ベンダの製品には、整数オーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2022-012359",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-32546",
+      "source": "CVE",
+      "id": "CVE-2022-32546"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-32546",
+      "source": "NVD",
+      "id": "CVE-2022-32546"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=2091812",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (2091812)"
+    },
+    {
+      "text": "https://github.com/ImageMagick/ImageMagick/commit/f221ea0fa3171f0f4fdf74ac9d81b203b9534c23",
+      "source": "関連文書",
+      "id": "github.com (f221ea0fa3171f0f4fdf74ac9d81b203b9534c23)"
+    },
+    {
+      "text": "https://github.com/ImageMagick/ImageMagick6/commit/29c8abce0da56b536542f76a9ddfebdaab5b2943",
+      "source": "関連文書",
+      "id": "github.com (29c8abce0da56b536542f76a9ddfebdaab5b2943)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2023/05/msg00020.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00020)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/190.html",
+      "id": "CWE-190",
+      "title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:fedoraproject:extra_packages_for_enterprise_linux",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Extra Packages For Enterprise Linux"
+    },
+    {
+      "text": "cpe:/a:imagemagick:imagemagick",
+      "version": "2.2",
+      "vendor": "ImageMagick",
+      "product": "ImageMagick"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-08-29T17:03+09:00",
+  "issued": "2023-08-29T17:03+09:00",
+  "modified": "2023-08-29T17:03+09:00"
+}

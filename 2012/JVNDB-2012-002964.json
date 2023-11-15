@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002964.html",
+  "title": "MantisBT の bug_actiongroup.php におけるアクセス制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002964.html",
+  "description": "MantisBT の bug_actiongroup.php は、バグレポートを移動する際、移動先のプロジェクトの report_bug_threshold パーミッションを適切にチェックしないため、アクセス制限を回避され、バグレポートを異なるプロジェクトに移動される脆弱性が存在します。",
+  "identifier": "JVNDB-2012-002964",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1122",
+      "source": "CVE",
+      "id": "CVE-2012-1122"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1122",
+      "source": "NVD",
+      "id": "CVE-2012-1122"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mantisbt:mantisbt",
+      "version": "2.2",
+      "vendor": "MantisBT Group",
+      "product": "MantisBT"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "3.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:S/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2012-07-03T18:50+09:00",
+  "issued": "2012-07-03T18:50+09:00",
+  "modified": "2012-07-03T18:50+09:00"
+}

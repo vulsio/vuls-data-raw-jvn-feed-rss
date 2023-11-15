@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003158.html",
+  "title": "Node.js 用 JS-YAML モジュールにおける任意のコードを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003158.html",
+  "description": "Node.js 用 JS-YAML モジュールは、危険性のある !!js/function タグを適切に考慮せずに入力を解析するため、任意のコードを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003158",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4660",
+      "source": "CVE",
+      "id": "CVE-2013-4660"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4660",
+      "source": "NVD",
+      "id": "CVE-2013-4660"
+    },
+    {
+      "text": "https://nealpoole.com/blog/2013/06/code-execution-via-yaml-in-js-yaml-nodejs-module/",
+      "source": "関連文書",
+      "id": "Code Execution via YAML in JS-YAML Node.js Module"
+    },
+    {
+      "text": "http://portal.nodesecurity.io/advisories/js-yaml",
+      "source": "関連文書",
+      "id": "JS-YAML Deserialization Code Execution"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:js-yaml_project:js-yaml",
+      "version": "2.2",
+      "vendor": "JS-YAML Project",
+      "product": "JS-YAML"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-07-02T16:07+09:00",
+  "issued": "2013-07-02T16:07+09:00",
+  "modified": "2013-07-02T16:07+09:00"
+}

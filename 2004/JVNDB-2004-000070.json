@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000070.html",
+  "title": "Apache HTTP Server の mod_sslモジュールにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000070.html",
+  "description": "Apache HTTP Server に含まれている mod_ssl には SSL による通信を有効にしているポートで通常の SSL 通信を介さない HTTP リクエストを受信した場合、メモリリークが発生する脆弱性が存在します。",
+  "identifier": "JVNDB-2004-000070",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0113",
+      "source": "CVE",
+      "id": "CVE-2004-0113"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0113",
+      "source": "NVD",
+      "id": "CVE-2004-0113"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9826",
+      "source": "BID",
+      "id": "9826"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Mar/1009337.html",
+      "source": "SECTRACK",
+      "id": "1009337"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

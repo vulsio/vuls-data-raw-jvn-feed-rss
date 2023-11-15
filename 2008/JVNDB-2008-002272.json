@@ -1,0 +1,92 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002272.html",
+  "title": "Linux Kernel の hfsplus_find_cat 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002272.html",
+  "description": "Linux Kernel の fs/hfsplus/catalog.c における hfsplus_find_cat 関数には、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2008-002272",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4933",
+      "source": "CVE",
+      "id": "CVE-2008-4933"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-4933",
+      "source": "NVD",
+      "id": "CVE-2008-4933"
+    },
+    {
+      "text": "http://secunia.com/advisories/32510/",
+      "source": "SECUNIA",
+      "id": "SA32510"
+    },
+    {
+      "text": "http://secunia.com/advisories/33556/",
+      "source": "SECUNIA",
+      "id": "SA33556"
+    },
+    {
+      "text": "http://secunia.com/advisories/33858/",
+      "source": "SECUNIA",
+      "id": "SA33858"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/32093",
+      "source": "BID",
+      "id": "32093"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/46405",
+      "source": "XF",
+      "id": "46405"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2008/3005",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2008-3005"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2009-04-14T11:09+09:00",
+  "issued": "2009-02-23T12:23+09:00",
+  "modified": "2009-04-14T11:09+09:00"
+}

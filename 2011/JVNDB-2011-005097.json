@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005097.html",
+  "title": "Moodle の backup/moodle2/restore_stepslib.php における ID 番号を上書きされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005097.html",
+  "description": "Moodle の backup/moodle2/restore_stepslib.php は、ID 番号を処理している間、moodle/course:changeidnumber 権限をチェックしないため、ID 番号を上書きされる脆弱性が存在します。",
+  "identifier": "JVNDB-2011-005097",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4589",
+      "source": "CVE",
+      "id": "CVE-2011-4589"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4589",
+      "source": "NVD",
+      "id": "CVE-2011-4589"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:moodle:moodle",
+      "version": "2.2",
+      "vendor": "Moodle",
+      "product": "Moodle"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P"
+    }
+  ],
+  "date": "2012-07-23T15:26+09:00",
+  "issued": "2012-07-23T15:26+09:00",
+  "modified": "2012-07-23T15:26+09:00"
+}

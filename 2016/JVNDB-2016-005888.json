@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005888.html",
+  "title": "Little Snitch におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005888.html",
+  "description": "Little Snitch には、\"OSMalloc\" および \"copyin\" カーネル API の呼び出しのパラメータのチェックに関する処理に不備があるため、バッファオーバーフローの脆弱性が存在します。",
+  "identifier": "JVNDB-2016-005888",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8661",
+      "source": "CVE",
+      "id": "CVE-2016-8661"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8661",
+      "source": "NVD",
+      "id": "CVE-2016-8661"
+    },
+    {
+      "text": "https://speakerdeck.com/patrickwardle/defcon-2016-i-got-99-problems-but-little-snitch-aint-one",
+      "source": "関連文書",
+      "id": "[DefCon 2016] I got 99 Problems, but Little Snitch ain’t one!"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:objective_development:little_snitch",
+      "version": "2.2",
+      "vendor": "Objective Development Software GmbH",
+      "product": "Little Snitch"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "8.4",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2016-11-16T14:53+09:00",
+  "issued": "2016-11-16T14:53+09:00",
+  "modified": "2016-11-16T14:53+09:00"
+}

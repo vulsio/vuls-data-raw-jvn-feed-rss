@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-008825.html",
+  "title": "Rust 用 slice-deque crate におけるバッファエラーの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-008825.html",
+  "description": "Rust 用 slice-deque crate には、バッファエラーの脆弱性が存在します。",
+  "identifier": "JVNDB-2019-008825",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-15543",
+      "source": "CVE",
+      "id": "CVE-2019-15543"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-15543",
+      "source": "NVD",
+      "id": "CVE-2019-15543"
+    },
+    {
+      "text": "https://rustsec.org/advisories/RUSTSEC-2019-0002.html",
+      "source": "関連文書",
+      "id": "RUSTSEC-2019-0002: slice-deque: Bug in SliceDeque::move_head_unchecked corrupts its memory"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:slice-deque_project:slice-deque",
+      "version": "2.2",
+      "vendor": "slice-deque project",
+      "product": "slice-deque"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "9.8",
+      "type": "Base",
+      "severity": "Critical",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2019-09-06T16:19+09:00",
+  "issued": "2019-09-06T16:19+09:00",
+  "modified": "2019-09-06T16:19+09:00"
+}

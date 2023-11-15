@@ -1,0 +1,39 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005156.html",
+  "title": "drchrono Electronic Health Record (EHR) のウェブアプリケーションに複数の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005156.html",
+  "description": "drchrono Electronic Health Record (EHR) のウェブアプリケーションには、複数の脆弱性が存在します。\r\n\r\ndrchrono 社は、電子医療記録 (Electronic Health Record、以下 EHR) 用ウェブアプリケーションを drchrono.com、onpatient.com 等のドメインで提供しています。このウェブアプリケーションには、クロスサイトスクリプティングの脆弱性 (CWE-80) および クロスサイトリクエストフォージェリの脆弱性 (CWE-352) が存在します。\r\n\r\nこれらの脆弱性には、以下のいずれかが条件になります。\r\n\r\n　１．第三者が認証済みユーザになり（あるいはなりすまし）、細工されたコンテンツ\r\n　　　をアップロードもしくは送信する\r\n　２．第三者がアップロードしたコンテンツ、もしくは用意したウェブページに、認証\r\n　　　済みユーザ（現実的には臨床医）を誘導しアクセスさせる\r\n\r\nCWE-80: Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)\r\nhttp://cwe.mitre.org/data/definitions/80.html\r\n\r\nCWE-352: Cross-Site Request Forgery (CSRF)\r\nhttp://cwe.mitre.org/data/definitions/352.html\r\n",
+  "identifier": "JVNDB-2014-005156",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU97177029/index.html",
+      "source": "JVN",
+      "id": "JVNVU#97177029"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/973460",
+      "source": "CERT-VN",
+      "id": "VU#973460"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:drchrono_electronic_health_record",
+      "version": "2.2",
+      "vendor": "drchrono Inc.",
+      "product": "drchrono Electronic Health Record"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.1",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2014-10-31T15:57+09:00",
+  "issued": "2014-10-31T15:57+09:00",
+  "modified": "2014-10-31T15:57+09:00"
+}

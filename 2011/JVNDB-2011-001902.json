@@ -1,0 +1,108 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001902.html",
+  "title": "Microsoft Windows の win32k.sys における権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001902.html",
+  "description": "Microsoft Windows の kernel-mode ドライバ内にある win32k.sys は、ドライバオブジェクトに関する処理に不備があるため、権限を取得される脆弱性が存在します。\r\n本脆弱性は、MS11-054 のリスト上に掲載されている他の脆弱性とは異なる脆弱性です。",
+  "identifier": "JVNDB-2011-001902",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA11-193A",
+      "source": "JVN",
+      "id": "JVNTA11-193A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1876",
+      "source": "CVE",
+      "id": "CVE-2011-1876"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1876",
+      "source": "NVD",
+      "id": "CVE-2011-1876"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2011/at110020.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2011-0020"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/#topics",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS11-053,054,055,056)(2011年07月13日)"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA11-193A.html",
+      "source": "CERT-SA",
+      "id": "SA11-193A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA11-193A.html",
+      "source": "CERT-TA",
+      "id": "TA11-193A"
+    },
+    {
+      "text": "http://secunia.com/advisories/45186",
+      "source": "SECUNIA",
+      "id": "SA45186"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/48590",
+      "source": "BID",
+      "id": "48590"
+    },
+    {
+      "text": "http://www.securitytracker.com/id/1025761",
+      "source": "SECTRACK",
+      "id": "1025761"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_7",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 7"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_vista",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Vista"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-07-21T10:28+09:00",
+  "issued": "2011-07-21T10:28+09:00",
+  "modified": "2011-07-21T10:28+09:00"
+}

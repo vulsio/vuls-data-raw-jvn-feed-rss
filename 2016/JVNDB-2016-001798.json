@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001798.html",
+  "title": "Android で使用される Linux Kernel の include/linux/poison.h におけるポイズンポインタ保護メカニズムを回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001798.html",
+  "description": "Android で使用される Linux Kernel の include/linux/poison.h の LIST_POISON 関数は、mmap_min_addr 値との関係を適切に考慮しないため、ポイズンポインタ (poison-pointer) 保護メカニズムを回避される脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug 26186802 として公開しています。\r\n\r\n本脆弱性は、CVE-2015-3636 とは異なる脆弱性です。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-254: Security Features (セキュリティ機能) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/254.html",
+  "identifier": "JVNDB-2016-001798",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0821",
+      "source": "CVE",
+      "id": "CVE-2016-0821"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0821",
+      "source": "NVD",
+      "id": "CVE-2016-0821"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:google:android",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Android"
+    },
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2016-03-22T15:57+09:00",
+  "issued": "2016-03-22T15:57+09:00",
+  "modified": "2016-03-22T15:57+09:00"
+}

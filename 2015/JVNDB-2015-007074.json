@@ -1,0 +1,57 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007074.html",
+  "title": "Redmine の app/controllers/application_controller.rb の valid_back_url 関数におけるオープンリダイレクトの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007074.html",
+  "description": "Redmine の app/controllers/application_controller.rb の valid_back_url 関数には、オープンリダイレクトの脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-1985 とは異なる脆弱性です。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-601: URL Redirection to Untrusted Site (オープンリダイレクト) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/601.html",
+  "identifier": "JVNDB-2015-007074",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8474",
+      "source": "CVE",
+      "id": "CVE-2015-8474"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8474",
+      "source": "NVD",
+      "id": "CVE-2015-8474"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:redmine:redmine",
+      "version": "2.2",
+      "vendor": "Redmine",
+      "product": "Redmine"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.4",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N"
+    }
+  ],
+  "date": "2016-04-21T15:47+09:00",
+  "issued": "2016-04-21T15:47+09:00",
+  "modified": "2016-04-21T15:47+09:00"
+}

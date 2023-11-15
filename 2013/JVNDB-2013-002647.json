@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002647.html",
+  "title": "Xen におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002647.html",
+  "description": "Xen は、バスマスタリングが可能な PCI デバイス用の Intel VT-d を使用している場合、MSI 割り込みのためのブリッジデバイスの割り込みリマッピングテーブルエントリ (interrupt remapping table entry) へのアクセス時に、アクセス元を適切にチェックしないため、サービス運用妨害 (割り込みの挿入) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-002647",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1952",
+      "source": "CVE",
+      "id": "CVE-2013-1952"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1952",
+      "source": "NVD",
+      "id": "CVE-2013-1952"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:xen:xen",
+      "version": "2.2",
+      "vendor": "Xen プロジェクト",
+      "product": "Xen"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2013-12-05T15:09+09:00",
+  "issued": "2013-05-15T16:52+09:00",
+  "modified": "2013-12-05T15:09+09:00"
+}

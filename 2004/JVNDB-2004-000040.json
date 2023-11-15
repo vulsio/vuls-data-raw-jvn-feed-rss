@@ -1,0 +1,99 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000040.html",
+  "title": "XFree86 の ReadFontAlias () 関数におけるバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000040.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nXFree86 は、X Window System の実装の一つであり、Red Hat Linux 等で標準のウィンドウシステムとして利用されています。\r\n\r\nXFree86 4.3.0 以前に同梱される libXfont ライブラリに含まれている ReadFontAlias() 関数には、フォントの別名を管理する font.alias ファイルを解釈する際に、フォント名に対し適切なチェックを行わないため、バッファオーバーフローを生じる問題が存在します。(CAN-2004-0083)\r\n\r\nさらに、CopyISOLatin1Lowered() 関数においても font.alias ファイルを解釈する際に、フォント名に対し適切なチェックを行わない同様の問題が報告されています。(CAN-2004-0084)\r\n\r\nこれら問題を利用するローカルの攻撃者は、意図的な font.alias ファイルを用意して対象の X サーバに解釈させる事により、バッファオーバーフローを引き起し、結果として X サーバの権限 (通常は root 権限) で任意のコードを実行することが可能です。 \r\n\r\n尚、この問題を解消する MIRACLE LINUX V2.x/Red Hat Linux/Turbolinux 用の RPM には、XFree86 4.3.0 以前に存在する、フォントファイルを読み込む際にバッファオーバーフローを生じる問題も解消されています。(CAN-2004-0106)\r\n\r\nまた、IBM AIX 4.3.3/5.1/5.2 のファイルセット X11.base.rte の一部として同梱されている X サーバも、font.alias ファイルを解釈する際に影響を受ける可能性があります。\r\n現時点ではベンダより CAN-2004-0083 に対する影響については報告されていますが、CAN-2004-0084/CAN-2004-0106 の影響を受けるかどうかは不明です。",
+  "identifier": "JVNDB-2004-000040",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0084",
+      "source": "CVE",
+      "id": "CVE-2004-0084"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0084",
+      "source": "NVD",
+      "id": "CVE-2004-0084"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/820006",
+      "source": "CERT-VN",
+      "id": "VU#820006"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/667502",
+      "source": "CERT-VN",
+      "id": "VU#667502"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9655",
+      "source": "BID",
+      "id": "9655"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9652",
+      "source": "BID",
+      "id": "9652"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/9636",
+      "source": "BID",
+      "id": "9636"
+    },
+    {
+      "text": "http://www.securitytracker.com/alerts/2004/Feb/1009031.html",
+      "source": "SECTRACK",
+      "id": "1009031"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:ibm:aix",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM AIX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

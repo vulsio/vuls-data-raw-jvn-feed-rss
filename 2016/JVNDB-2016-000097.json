@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000097.html",
+  "title": "Apache Struts 1 における入力値検証機能に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000097.html",
+  "description": "Apache Struts 1 の Validator には、次の ActionForm もしくはそのサブクラスをセッションスコープに置いている場合、入力値検証に関する設定 (検証ルールやエラーメッセージ) を変更される可能性があります。\r\n・ValidatorForm\r\n・ValidatorActionForm",
+  "identifier": "JVNDB-2016-000097",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN65044642/index.html",
+      "source": "JVN",
+      "id": "JVN#65044642"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1182",
+      "source": "CVE",
+      "id": "CVE-2016-1182"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1182",
+      "source": "NVD",
+      "id": "CVE-2016-1182"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsma-20-184-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSMA-20-184-01"
+    },
+    {
+      "text": "https://github.com/kawasima/struts1-forever/commit/eda3a79907ed8fcb0387a0496d0cb14332f250e8",
+      "source": "関連文書",
+      "id": "Fixed CVE-2016-1181 and CVE-2016-1182"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:struts",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Struts"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "4.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L"
+    }
+  ],
+  "date": "2020-09-02T10:45+09:00",
+  "issued": "2016-06-07T14:03+09:00",
+  "modified": "2020-09-02T10:45+09:00"
+}

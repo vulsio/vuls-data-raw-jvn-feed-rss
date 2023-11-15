@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005810.html",
+  "title": "Fedora などの製品で使用される OpenSSH サーバにおけるローカルログインを強制する認証要求を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005810.html",
+  "description": "Fedora および Red Hat Enterprise Linux で使用される OpenSSH サーバには、Kerberos 環境で稼働している場合、リモート認証されたユーザが別ユーザの .k5users ファイルにリストされている場合、別ユーザとしてログインされ、ローカルログインを強制する認証要求を回避される脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-287: Authentication Issues (不適切な認証) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/287.html",
+  "identifier": "JVNDB-2014-005810",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9278",
+      "source": "CVE",
+      "id": "CVE-2014-9278"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9278",
+      "source": "NVD",
+      "id": "CVE-2014-9278"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:openbsd:openssh",
+      "version": "2.2",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2015-05-12T17:21+09:00",
+  "issued": "2014-12-10T14:09+09:00",
+  "modified": "2015-05-12T17:21+09:00"
+}

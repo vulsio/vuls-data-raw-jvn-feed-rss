@@ -1,0 +1,51 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007588.html",
+  "title": "WSO2 Identity Server の XACML フロー機能における XML 外部エンティティの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-007588.html",
+  "description": "WSO2 Identity Server の XACML フロー機能には、XML 外部エンティティ (XXE) の脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2016-4311 と組み合わされることで、資格情報なしで実行される可能性があります。",
+  "identifier": "JVNDB-2016-007588",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4312",
+      "source": "CVE",
+      "id": "CVE-2016-4312"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4312",
+      "source": "NVD",
+      "id": "CVE-2016-4312"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/611.html",
+      "id": "CWE-611",
+      "title": "XML 外部エンティティ参照の不適切な制限(CWE-611)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:wso2:identity_server",
+      "version": "2.2",
+      "vendor": "WSO2",
+      "product": "WSO2 Identity Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2017-03-07T16:17+09:00",
+  "issued": "2017-03-07T16:17+09:00",
+  "modified": "2017-03-07T16:17+09:00"
+}

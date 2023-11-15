@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004514.html",
+  "title": "x86_64 プラットフォーム上で稼動する Linux Kernel の arch/x86/entry/entry_64.S におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004514.html",
+  "description": "x86_64 プラットフォーム上で稼動する Linux Kernel の arch/x86/entry/entry_64.S は、ネストされた NMI の処理時に、適切に終了しないため、サービス運用妨害 (スキップされた NMI) 状態にされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-17: Code (コード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/17.html",
+  "identifier": "JVNDB-2015-004514",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3291",
+      "source": "CVE",
+      "id": "CVE-2015-3291"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3291",
+      "source": "NVD",
+      "id": "CVE-2015-3291"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-09-01T18:00+09:00",
+  "issued": "2015-09-01T18:00+09:00",
+  "modified": "2015-09-01T18:00+09:00"
+}

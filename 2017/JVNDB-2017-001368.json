@@ -1,0 +1,84 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001368.html",
+  "title": "Microsoft Windows の SMB Tree Connect Response パケットの処理にサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001368.html",
+  "description": "Microsoft Windows には、SMB パケットの処理に起因するサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nMicrosoft Windows には、細工された SMB2 TREE_CONNECT レスポンスパケットの処理に問題があります。\r\n悪意ある SMB サーバに接続した場合、mrxsmb20.sys においてシステムクラッシュが発生する可能性があります。\r\n\r\nなお、本脆弱性を使用した攻撃コードが公開されています。\r\n\r\nSMB2 TREE_CONNECT レスポンスパケット\r\nhttps://msdn.microsoft.com/en-us/library/cc246499.aspx",
+  "identifier": "JVNDB-2017-001368",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU95841181/index.html",
+      "source": "JVN",
+      "id": "JVNVU#95841181"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0016",
+      "source": "CVE",
+      "id": "CVE-2017-0016"
+    },
+    {
+      "text": "https://jvn.jp/vu/JVNVU95841181/index.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2017-0011"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/867968",
+      "source": "CERT-VN",
+      "id": "VU#867968"
+    },
+    {
+      "text": "https://www.us-cert.gov/ncas/current-activity/2017/01/16/SMB-Security-Best-Practices",
+      "source": "CERT-CA",
+      "id": "SMB Security Best Practices"
+    },
+    {
+      "text": "https://github.com/lgandx/PoC/tree/master/SMBv3%20Tree%20Connect",
+      "source": "関連文書",
+      "id": "SMBv3 Tree Connect - GitHub"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_10",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 10"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_8.1",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 8.1"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2012",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2012"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2016",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2016"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2017-03-16T14:18+09:00",
+  "issued": "2017-02-07T14:58+09:00",
+  "modified": "2017-03-16T14:18+09:00"
+}

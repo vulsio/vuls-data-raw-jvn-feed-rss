@@ -1,0 +1,113 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002580.html",
+  "title": "Exim の string_format 関数にバッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002580.html",
+  "description": "Exim の string_format 関数には、バッファオーバーフローの脆弱性が存在します。\r\n\r\nExim は、Cambridge 大学で開発された Unix システム向けのメール転送エージェントです。Exim の string_format 関数には、バッファオーバーフローの脆弱性が存在します。攻撃者は、メッセージヘッダを細工することで本脆弱性を使用した攻撃が可能になります。\r\n\r\nなお、本脆弱性を使用した攻撃活動が確認されています。",
+  "identifier": "JVNDB-2010-002580",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU682457",
+      "source": "JVN",
+      "id": "JVNVU#682457"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4344",
+      "source": "CVE",
+      "id": "CVE-2010-4344"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4344",
+      "source": "NVD",
+      "id": "CVE-2010-4344"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/682457",
+      "source": "CERT-VN",
+      "id": "VU#682457"
+    },
+    {
+      "text": "http://secunia.com/advisories/40019",
+      "source": "SECUNIA",
+      "id": "SA40019"
+    },
+    {
+      "text": "http://secunia.com/advisories/42586",
+      "source": "SECUNIA",
+      "id": "SA42586"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/45308",
+      "source": "BID",
+      "id": "45308"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1024858",
+      "source": "SECTRACK",
+      "id": "1024858"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/3171",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-3171"
+    },
+    {
+      "text": "http://www.vupen.com/english/advisories/2010/3181",
+      "source": "VUPEN",
+      "id": "VUPEN/ADV-2010-3181"
+    },
+    {
+      "text": "http://osvdb.org/69685",
+      "source": "OSVDB",
+      "id": "69685"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:exim:exim",
+      "version": "2.2",
+      "vendor": "Exim Development",
+      "product": "Exim"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_eus",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux EUS"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_long_life",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Long Life"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2011-01-06T15:58+09:00",
+  "issued": "2011-01-06T15:58+09:00",
+  "modified": "2011-01-06T15:58+09:00"
+}

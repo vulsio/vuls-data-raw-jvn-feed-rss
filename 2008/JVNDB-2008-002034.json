@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002034.html",
+  "title": "Cisco Unified Communications Manager (CUCM) および CallManager におけるヒープオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-002034.html",
+  "description": "Cisco Unified Communications Manager (CUCM) および CallManager にはヒープオーバーフローの脆弱性が存在します。\r\nCisco Unified Communications Manager (CUCM) および CallManager のCertificate Trust List (CTL) プロバイダー (CTLProvider.exe) には、リモートの攻撃者により、サービス運用妨害に陥る、または長いリクエストを介して任意のコードを実行される可能性があります。",
+  "identifier": "JVNDB-2008-002034",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0027",
+      "source": "CVE",
+      "id": "CVE-2008-0027"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-0027",
+      "source": "NVD",
+      "id": "CVE-2008-0027"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:cisco:unified_callmanager",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Unified CallManager"
+    },
+    {
+      "text": "cpe:/a:cisco:unified_communications_manager",
+      "version": "2.2",
+      "vendor": "シスコシステムズ",
+      "product": "Cisco Unified Communications Manager"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2008-12-19T10:36+09:00",
+  "issued": "2008-12-19T10:36+09:00",
+  "modified": "2008-12-19T10:36+09:00"
+}

@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003065.html",
+  "title": "eEye Retina CS Vulnerability Management Console が任意のプログラムを実行する問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003065.html",
+  "description": "eEye が 提供する Retina CS Vulnerability Management Console には、スキャン対象のシステム上で任意のプログラムが実行可能な問題が存在します。\r\n\r\neEye が 提供する Retina CS Vulnerability Management Console は、対象システムに対し、脆弱性などのセキュリティ上の問題を診断するための製品です。Retina CS Vulnerability Management Console は、各種 OS やアプリケーションの診断を行うために audit script (検査用のスクリプト) を使用します。\r\n\r\nAudit script (audit ID 2499) では、Solaris、HP-UX、または IRIX において /usr/local にインストールされている Gauntlet Firewall のバージョンを確認するために OS 上のファイルを実行します。この audit script は、実行するファイルをファイル名のみで特定しているため、第三者が /usr/local 以下への書き込みが可能なシステムでは、悪意あるプログラムが実行される可能性があります。",
+  "identifier": "JVNDB-2011-003065",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU448051/",
+      "source": "JVN",
+      "id": "JVNVU#448051"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3337",
+      "source": "CVE",
+      "id": "CVE-2011-3337"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3337",
+      "source": "NVD",
+      "id": "CVE-2011-3337"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/448051",
+      "source": "CERT-VN",
+      "id": "VU#448051"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:eeye:retina_cs_vulnerability_management_console",
+      "version": "2.2",
+      "vendor": "eEye Digital Security",
+      "product": "Retina CS Vulnerability Management Console"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2012-01-06T16:08+09:00",
+  "issued": "2011-11-28T14:50+09:00",
+  "modified": "2012-01-06T16:08+09:00"
+}

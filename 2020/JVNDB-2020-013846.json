@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013846.html",
+  "title": "Unbound におけるリソースの枯渇に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013846.html",
+  "description": "Unbound には、リソースの枯渇に関する脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2020-12662 に対する修正が不完全だったことに起因する脆弱性です。",
+  "identifier": "JVNDB-2020-013846",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10772",
+      "source": "CVE",
+      "id": "CVE-2020-10772"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-10772",
+      "source": "NVD",
+      "id": "CVE-2020-10772"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1846026",
+      "source": "関連文書",
+      "id": "Bug 1846026 (CVE-2020-10772) - CVE-2020-10772 unbound: incomplete fix for CVE-2020-12662 in RHEL7"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/400.html",
+      "id": "CWE-400",
+      "title": "リソースの枯渇(CWE-400)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:nlnet_labs:unbound",
+      "version": "2.2",
+      "vendor": "Stichting NLnet Labs",
+      "product": "Unbound"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2021-07-14T13:57+09:00",
+  "issued": "2021-07-14T13:57+09:00",
+  "modified": "2021-07-14T13:57+09:00"
+}

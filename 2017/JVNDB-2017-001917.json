@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001917.html",
+  "title": "PCAUSA Rawether for Windows に権限昇格の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001917.html",
+  "description": "Printing Communications Assoc., Inc. (PCAUSA) の Rawether フレームワークは、Berkeley Packet Filter (BPF) データを適切に検証していないため、細工された BPF プログラムを使用することで、想定されている範囲を超えたメモリ内容を操作することが可能です。\r\nこの脆弱性を悪用することで、Windows システムにおいて権限昇格される可能性があります。\r\n\r\nPrinting Communications Assoc., Inc. (PCAUSA) が作成した Rawether for Windows は、アプリケーションから Network Driver Interface System (NDIS) プロトコルドライバを操作するためのフレームワークです。このフレームワークは多数の機器ベンダで、Wi-Fi 機器やルータを制御するアプリケーションに使用されています。\r\nRawether は Berkeley Packet Filter (BPF) メカニズムによるパケットフィルタリング機能を実装しています。BPF では、フィルタ内容を表現した小さなプログラムが BPF 仮想マシンによって実行されます。\r\n\r\nNetwork Driver Interface System\r\nhttps://msdn.microsoft.com/en-us/windows/hardware/drivers/network/introduction-to-ndis-protocol-drivers\r\n\r\nBerkeley Packet Filter\r\nhttps://www.kernel.org/doc/Documentation/networking/filter.txt\r\n\r\nバッファオーバーフロー (CWE-119) - CVE-2017-3196\r\nRawether は、BPF プログラムを実行する前に適切な検証を行っていません。細工した BPF プログラムによって任意のメモリ内容を読み書きされたり、無限ループを引き起こされたりする可能性があります。スタック領域に置かれたリターンアドレスが上書きされることで、SYSTEM 権限で任意のコードを実行される可能性があります。\r\n\r\nNDIS_PACKET_TYPE_ALL_LOCAL フラグをつけた NDIS の OID_GEN_CURRENT_PACKET_FILTER リクエストにより、細工された BPF プログラムを設定した後、最初に受信したネットワークパケットを読み込む際に当該 BPF プログラムが実行されます。\r\n\r\n研究者は、ASUS の無線 LAN カード PCE-AC56 で使用されているドライバ PcaSp60.sys の 64bit バージョンに対する再現手順を公開しています。\r\n\r\n再現手順\r\nhttp://blog.rewolf.pl/blog/?p=1778\r\n",
+  "identifier": "JVNDB-2017-001917",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU98590454",
+      "source": "JVN",
+      "id": "JVNVU#98590454"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3196",
+      "source": "CVE",
+      "id": "CVE-2017-3196"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3196",
+      "source": "NVD",
+      "id": "CVE-2017-3196"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/600671",
+      "source": "CERT-VN",
+      "id": "VU#600671"
+    },
+    {
+      "text": "https://www.kernel.org/doc/Documentation/networking/filter.txt",
+      "source": "関連文書",
+      "id": "Linux Socket Filtering aka Berkeley Packet Filter (BPF)"
+    },
+    {
+      "text": "http://blog.rewolf.pl/blog/?p=1778",
+      "source": "関連文書",
+      "id": "PCAUSA Rawether for Windows local privilege escalation"
+    },
+    {
+      "text": "http://web.archive.org/web/20151128171809/http://www.rawether.net/",
+      "source": "関連文書",
+      "id": "Rawether for Windows"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:multiple_vendors",
+      "version": "2.2",
+      "vendor": "（複数のベンダ）",
+      "product": "（複数の製品）"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:S/C:C/I:C/A:C"
+    },
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2018-04-11T13:52+09:00",
+  "issued": "2017-03-23T11:19+09:00",
+  "modified": "2018-04-11T13:52+09:00"
+}

@@ -1,0 +1,62 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-005563.html",
+  "title": "Git における境界外読み取りに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-005563.html",
+  "description": "Git には、境界外読み取りに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2018-005563",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-11233",
+      "source": "CVE",
+      "id": "CVE-2018-11233"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-11233",
+      "source": "NVD",
+      "id": "CVE-2018-11233"
+    },
+    {
+      "text": "https://marc.info/?l=git&m=152761328506724&w=2",
+      "source": "関連文書",
+      "id": "[ANNOUNCE] Git v2.17.1, v2.13.7, v2.14.4, v2.15.2 and v2.16.4"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/125.html",
+      "id": "CWE-125",
+      "title": "境界外読み取り(CWE-125)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:git-scm:git",
+      "version": "2.2",
+      "vendor": "Git SCM",
+      "product": "Git"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2018-07-20T17:42+09:00",
+  "issued": "2018-07-20T17:42+09:00",
+  "modified": "2018-07-20T17:42+09:00"
+}

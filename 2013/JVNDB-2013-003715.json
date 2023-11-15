@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003715.html",
+  "title": "複数の Schneider Electric 製品における任意のファイルを読まれる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003715.html",
+  "description": "Schneider Electric Vijeo Citect、CitectSCADA、PowerLogic SCADA には、XML 外部実体 (XXE) 問題に関連して、任意のファイルを読まれる、イントラネットサーバへ HTTP リクエストを送信される、またはサービス運用妨害 (CPU およびメモリ消費) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-003715",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2796",
+      "source": "CVE",
+      "id": "CVE-2013-2796"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2796",
+      "source": "NVD",
+      "id": "CVE-2013-2796"
+    },
+    {
+      "text": "http://ics-cert.us-cert.gov/advisories/ICSA-13-217-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-13-217-02"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:schneider_electric:citectscada",
+      "version": "2.2",
+      "vendor": "Schneider Electric",
+      "product": "CitectSCADA"
+    },
+    {
+      "text": "cpe:/a:schneider_electric:powerlogic_scada",
+      "version": "2.2",
+      "vendor": "Schneider Electric",
+      "product": "PowerLogic SCADA"
+    },
+    {
+      "text": "cpe:/a:schneider_electric:vijeo_citect",
+      "version": "2.2",
+      "vendor": "Schneider Electric",
+      "product": "Vijeo Citect"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.9",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2013-08-13T19:27+09:00",
+  "issued": "2013-08-13T19:27+09:00",
+  "modified": "2013-08-13T19:27+09:00"
+}

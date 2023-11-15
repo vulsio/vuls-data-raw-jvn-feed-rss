@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006053.html",
+  "title": "Dell System Detect (DSD) がルート証明書と秘密鍵 (DSDTestProvider) をインストールする問題",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006053.html",
+  "description": "Dell System Detect (DSD) は、信頼されたルート証明書として DSDTestProvider を Windows にインストールします。この証明書は秘密鍵を含んでいます。攻撃者は信頼された証明書を作成することで、ユーザになりすましたり、中間者 (man-in-the-middle) 攻撃により、通信内容を解読したりすることが可能となります。結果として、機密情報が漏えいする可能性があります。\r\n\r\nDell System Detect (DSD) は、Windows PC や Windows タブレット上で、ユーザ権限で Dell のサポートサイトと連携して動作するアプリケーションです。DSD は、いくつかの Dell 製の機器にプリインストールされています。DSD は、秘密鍵を含む DSDTestProvider を信頼されたルート証明書としてインストールします。",
+  "identifier": "JVNDB-2015-006053",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99824449/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99824449"
+    },
+    {
+      "text": "http://insights.sei.cmu.edu/cert/2015/03/the-risks-of-ssl-inspection.html",
+      "source": "CERT/CC blog",
+      "id": "The Risks of SSL Inspection"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/925497",
+      "source": "CERT-VN",
+      "id": "VU#925497"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:dell:dell_system_detect",
+      "version": "2.2",
+      "vendor": "デル",
+      "product": "Dell System Detect"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.4",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:N"
+    }
+  ],
+  "date": "2015-11-30T17:50+09:00",
+  "issued": "2015-11-30T17:50+09:00",
+  "modified": "2015-11-30T17:50+09:00"
+}

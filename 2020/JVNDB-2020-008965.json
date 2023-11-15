@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-008965.html",
+  "title": "Sensormatic Electronics 製 American Dynamics victor Web Client に不適切な認可処理の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-008965.html",
+  "description": "Sensormatic Electronics 社 (Johnson Controls 子会社) が提供する American Dynamics victor Web Client は、American Dynamics 社のビデオ管理システムである victor にアクセスするためのソフトウェアです。\r\nAmerican Dynamics victor Web Client には、不適切な認可処理の脆弱性 (CWE-285) が存在します。隣接するネットワークからアクセスされた場合、当該製品ではユーザの認可処理が適切に行われず、権限により保護された複数の機能を不正に実行されるおそれがあります。",
+  "identifier": "JVNDB-2020-008965",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU96766957/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96766957"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-9048",
+      "source": "CVE",
+      "id": "CVE-2020-9048"
+    },
+    {
+      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-20-282-01",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-20-282-01"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/285.html",
+      "id": "CWE-285",
+      "title": "不適切な認可(CWE-285)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:johnsoncontrols:american_dynamics_victor_web_client",
+      "version": "2.2",
+      "vendor": "ジョンソンコントロールズ",
+      "product": "American Dynamics victor Web Client"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L"
+    }
+  ],
+  "date": "2020-10-12T14:57+09:00",
+  "issued": "2020-10-12T14:57+09:00",
+  "modified": "2020-10-12T14:57+09:00"
+}

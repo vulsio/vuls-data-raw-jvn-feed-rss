@@ -1,0 +1,54 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002391.html",
+  "title": "Google Chrome の ParamTraits<SkBitmap>::Read 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002391.html",
+  "description": "Google Chrome の common/common_param_traits.cc 内にある ParamTraits<SkBitmap>::Read 関数は、整数オーバーフローを制御するために計算された適正な変数を使用しないため、サービス運用妨害 (DoS) 状態となる、またはその他の詳細不明な影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2010-002391",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0662",
+      "source": "CVE",
+      "id": "CVE-2010-0662"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0662",
+      "source": "NVD",
+      "id": "CVE-2010-0662"
+    },
+    {
+      "text": "http://xforce.iss.net/xforce/xfdb/56627",
+      "source": "XF",
+      "id": "56627"
+    },
+    {
+      "text": "http://securitytracker.com/id?1023506",
+      "source": "SECTRACK",
+      "id": "1023506"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+      "id": "CWE-189",
+      "title": "数値処理の問題(CWE-189)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2010-11-24T15:01+09:00",
+  "issued": "2010-11-24T15:01+09:00",
+  "modified": "2010-11-24T15:01+09:00"
+}

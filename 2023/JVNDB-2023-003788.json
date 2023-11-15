@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-003788.html",
+  "title": "キーエンス製 KV STUDIO および KV REPLAY VIEWER における境界外読み取りの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-003788.html",
+  "description": "株式会社キーエンスが提供する KV STUDIO および KV REPLAY VIEWER には、境界外読み取りの脆弱性 （CWE-125、CVE-2023-42138） が存在します。\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: Michael Heinzl 氏",
+  "identifier": "JVNDB-2023-003788",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU94752076/index.html",
+      "source": "JVN",
+      "id": "JVNVU#94752076"
+    },
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2023-42138",
+      "source": "CVE",
+      "id": "CVE-2023-42138"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/345.html",
+      "id": "CWE-345",
+      "title": "データの信頼性についての不十分な検証(CWE-345)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:misc:keyence_kv_replay_viewer",
+      "version": "2.2",
+      "vendor": "株式会社キーエンス",
+      "product": "KV REPLAY VIEWER"
+    },
+    {
+      "text": "cpe:/a:misc:keyence_kv_studio",
+      "version": "2.2",
+      "vendor": "株式会社キーエンス",
+      "product": "KV STUDIO"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "3.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-10-11T12:22+09:00",
+  "issued": "2023-10-11T12:22+09:00",
+  "modified": "2023-10-11T12:22+09:00"
+}

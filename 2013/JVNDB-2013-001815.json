@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001815.html",
+  "title": "Apache Qpid のデフォルト設定における認証を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001815.html",
+  "description": "Apache Qpid のデフォルト設定は、federation_tag 属性が有効な場合、接続元のユーザ ID を確認せずに AMQP コネクションを受けつけるため、認証を回避されるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2013-001815",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4446",
+      "source": "CVE",
+      "id": "CVE-2012-4446"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4446",
+      "source": "NVD",
+      "id": "CVE-2012-4446"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+      "id": "CWE-287",
+      "title": "不適切な認証(CWE-287)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:qpid",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache Qpid"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2013-03-21T15:42+09:00",
+  "issued": "2013-03-15T15:06+09:00",
+  "modified": "2013-03-21T15:42+09:00"
+}

@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002912.html",
+  "title": "PulseAudio の module-rtp-recv モジュールの modules/rtp/rtp.c 内の pa_rtp_recv 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002912.html",
+  "description": "PulseAudio の module-rtp-recv モジュールの modules/rtp/rtp.c 内の pa_rtp_recv 関数には、サービス運用妨害 (表明違反およびアボート) 状態となる脆弱性が存在します。",
+  "identifier": "JVNDB-2014-002912",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3970",
+      "source": "CVE",
+      "id": "CVE-2014-3970"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3970",
+      "source": "NVD",
+      "id": "CVE-2014-3970"
+    },
+    {
+      "text": "http://seclists.org/oss-sec/2014/q2/429",
+      "source": "関連文書",
+      "id": "CVE request: PulseAudio crash due to empty UDP packet"
+    },
+    {
+      "text": "http://seclists.org/oss-sec/2014/q2/437",
+      "source": "関連文書",
+      "id": "Re: CVE request: PulseAudio crash due to empty UDP packet"
+    },
+    {
+      "text": "http://advisories.mageia.org/MGASA-2014-0440.html",
+      "source": "関連文書",
+      "id": "MGASA-2014-0440"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-noinfo",
+      "title": "情報不足(CWE-noinfo)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:pulseaudio:pulseaudio",
+      "version": "2.2",
+      "vendor": "PulseAudio",
+      "product": "PulseAudio"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.9",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:A/AC:M/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2015-06-22T17:55+09:00",
+  "issued": "2014-06-16T13:39+09:00",
+  "modified": "2015-06-22T17:55+09:00"
+}

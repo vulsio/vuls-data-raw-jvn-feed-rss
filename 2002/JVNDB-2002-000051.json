@@ -1,0 +1,73 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000051.html",
+  "title": "Java 仮想マシン におけるセッションハイジャックの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000051.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft VM は Win32 オペレーションシステム上で動作する Java 仮想マシンです。Windows 95、Windows NT 以降の Windows 系 OS で動作します。Microsoft VM は Windwos 98、Windows ME および Windows 2000 と Internet Explorer 5.5 およびそれ以前のバージョンの Internet Explorer に含まれています。 \r\n\r\nInternet Explorer バージョン 4.x および 5.x に同梱されている Microsoft VM には Java のプロキシリソースへのリクエストと操作の実装に不備が存在します。悪意のある Java アプレットをを用いることで、ターゲットホストのプロキシサーバに接続しているユーザの情報を、任意の送信先にリダイレクトすることにより取得される可能性が存在します。 \r\n\r\nこの問題を利用することにより、リモートの攻撃者はユーザ情報の取得だけでなく、セッション情報を破棄することにより DoS 攻撃に見せかけたり、ユーザの接続先を詐称することが可能です。 \r\n\r\n尚、この問題はプロキシサーバを介して Internet Explorer を使用しているシステムが影響を受ける可能性があります。 \r\n\r\nまた、この問題とは異なる Java 仮想マシンの Bytecode Verifier のセキュリティ上の不備が存在し、サンドボックスによる制限を回避される問題が存在します。 \r\nそのため、この問題を利用するリモートの攻撃者により、結果として悪意ある Java アプレットを介して標的ユーザの権限で任意のコードを実行される可能性も指摘されています。 \r\n\r\nこれら Java 仮想マシンの問題に関しては、Microsoft VM 以外にも発見されており、多くの製品が影響を受ける可能性が示唆されています。",
+  "identifier": "JVNDB-2002-000051",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0058",
+      "source": "CVE",
+      "id": "CVE-2002-0058"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0058",
+      "source": "NVD",
+      "id": "CVE-2002-0058"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4228",
+      "source": "BID",
+      "id": "4228"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/4313",
+      "source": "BID",
+      "id": "4313"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:ibm:websphere_application_server",
+      "version": "2.2",
+      "vendor": "IBM",
+      "product": "IBM WebSphere Application Server"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows-9x",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 9X"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_2000",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows 2000"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_nt",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows NT"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_xp",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows XP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

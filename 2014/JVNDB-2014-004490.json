@@ -1,0 +1,86 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004490.html",
+  "title": "Hibernate Validator の ReflectionHelper における Java Security Manager の制限を回避される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004490.html",
+  "description": "Hibernate Validator の ReflectionHelper (org.hibernate.validator.util.ReflectionHelper) には、Java Security Manager (JSM) の制限を回避され、制限されたリフレクション (reflection) の呼び出しを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2014-004490",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3558",
+      "source": "CVE",
+      "id": "CVE-2014-3558"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3558",
+      "source": "NVD",
+      "id": "CVE-2014-3558"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hibernate:hibernate_validator",
+      "version": "2.2",
+      "vendor": "Hibernate",
+      "product": "Hibernate Validator"
+    },
+    {
+      "text": "cpe:/a:hitachi:cosminexus_component_container",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "Cosminexus Component Container"
+    },
+    {
+      "text": "cpe:/a:hitachi:programming_environment_for_java",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "プログラミング環境 for Java"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_application_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Application Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_developer",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Developer"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Primary Server"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Architect"
+    },
+    {
+      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
+      "version": "2.2",
+      "vendor": "日立",
+      "product": "uCosminexus Service Platform"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+    }
+  ],
+  "date": "2015-06-09T17:50+09:00",
+  "issued": "2014-10-03T10:02+09:00",
+  "modified": "2015-06-09T17:50+09:00"
+}

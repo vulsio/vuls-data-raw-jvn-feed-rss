@@ -1,0 +1,66 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-012506.html",
+  "title": "Linux Foundation の argocd におけるエントロピー不足に関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-012506.html",
+  "description": "Linux Foundation の argocd には、エントロピー不足に関する脆弱性、PRNG におけるシードの不正な使用に関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-012506",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2022-31034",
+      "source": "CVE",
+      "id": "CVE-2022-31034"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-31034",
+      "source": "NVD",
+      "id": "CVE-2022-31034"
+    },
+    {
+      "text": "https://github.com/argoproj/argo-cd/commit/17f7f4f462bdb233e1b9b36f67099f41052d8cb0",
+      "source": "関連文書",
+      "id": "github.com (17f7f4f462bdb233e1b9b36f67099f41052d8cb0)"
+    },
+    {
+      "text": "https://github.com/argoproj/argo-cd/security/advisories/GHSA-2m7h-86qq-fp4v",
+      "source": "関連文書",
+      "id": "github.com (GHSA-2m7h-86qq-fp4v)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/331.html",
+      "id": "CWE-331",
+      "title": "エントロピー不足(CWE-331)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/335.html",
+      "id": "CWE-335",
+      "title": "PRNG におけるシードの不正な使用(CWE-335)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:linuxfoundation:argo-cd",
+      "version": "2.2",
+      "vendor": "Linux Foundation",
+      "product": "argocd"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.1",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
+  "date": "2023-08-30T17:19+09:00",
+  "issued": "2023-08-30T17:19+09:00",
+  "modified": "2023-08-30T17:19+09:00"
+}

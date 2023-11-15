@@ -1,0 +1,90 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-007061.html",
+  "title": "eglibc パッケージにおける古典的バッファオーバーフローの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-007061.html",
+  "description": "eglibc パッケージには、古典的バッファオーバーフローの脆弱性が存在します。\r\n",
+  "identifier": "JVNDB-2013-007061",
+  "references": [
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4357",
+      "source": "CVE",
+      "id": "CVE-2013-4357"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2013-4357",
+      "source": "NVD",
+      "id": "CVE-2013-4357"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2013/09/17/4",
+      "source": "関連文書",
+      "id": "Re: Re: CVE Request: glibc getaddrinfo() stack overflow"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2015/01/28/18",
+      "source": "関連文書",
+      "id": "Re: GHOST gethostbyname() heap overflow in glibc (CVE-2015-0235)(2015/01/25/18)"
+    },
+    {
+      "text": "http://www.openwall.com/lists/oss-security/2015/01/29/21",
+      "source": "関連文書",
+      "id": "Re: GHOST gethostbyname() heap overflow in glibc (CVE-2015-0235)(2015/01/29/21)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/120.html",
+      "id": "CWE-120",
+      "title": "古典的バッファオーバーフロー(CWE-120)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:eglibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "Embedded GLIBC"
+    },
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:suse:linux_enterprise_server",
+      "version": "2.2",
+      "vendor": "SUSE",
+      "product": "SUSE Linux Enterprise Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2020-01-28T14:16+09:00",
+  "issued": "2020-01-28T14:16+09:00",
+  "modified": "2020-01-28T14:16+09:00"
+}

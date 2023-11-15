@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005839.html",
+  "title": "Memcached の memcached.c の process_bin_delete 関数におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005839.html",
+  "description": "Memcached の memcached.c の process_bin_delete 関数には、verbose モードで実行している場合、サービス運用妨害 (セグメンテーション違反) 状態にされる脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005839",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0179",
+      "source": "CVE",
+      "id": "CVE-2013-0179"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0179",
+      "source": "NVD",
+      "id": "CVE-2013-0179"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+      "id": "CWE-119",
+      "title": "バッファエラー(CWE-119)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:memcached:memcached",
+      "version": "2.2",
+      "vendor": "Memcached",
+      "product": "Memcached"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "1.8",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:A/AC:H/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2014-08-11T17:46+09:00",
+  "issued": "2014-01-16T14:45+09:00",
+  "modified": "2014-08-11T17:46+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003474.html",
+  "title": "nginx の http/modules/ngx_http_proxy_module.c におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003474.html",
+  "description": "nginx の http/modules/ngx_http_proxy_module.c には、信頼できない HTTP サーバにおいて proxy_pass が使用される場合、サービス運用妨害 (クラッシュ) 状態にされる、およびワーカプロセスメモリから重要な情報を取得される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2013-2028 と類似した脆弱性です。",
+  "identifier": "JVNDB-2013-003474",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2070",
+      "source": "CVE",
+      "id": "CVE-2013-2070"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2070",
+      "source": "NVD",
+      "id": "CVE-2013-2070"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:igor_sysoev:nginx",
+      "version": "2.2",
+      "vendor": "Igor Sysoev",
+      "product": "nginx"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P"
+    }
+  ],
+  "date": "2013-11-29T13:53+09:00",
+  "issued": "2013-07-23T14:42+09:00",
+  "modified": "2013-11-29T13:53+09:00"
+}

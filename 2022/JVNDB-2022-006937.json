@@ -1,0 +1,128 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-006937.html",
+  "title": "Fabrice Bellard の QEMU 他複数ベンダの製品における無限ループに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-006937.html",
+  "description": "Fabrice Bellard の QEMU 他複数ベンダの製品には、無限ループに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2022-006937",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2021-20257",
+      "source": "CVE",
+      "id": "CVE-2021-20257"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-20257",
+      "source": "NVD",
+      "id": "CVE-2021-20257"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1930087",
+      "source": "関連文書",
+      "id": "bugzilla.redhat.com (1930087)"
+    },
+    {
+      "text": "https://github.com/qemu/qemu/commit/3de46e6fc489c52c9431a8a832ad8170a7569bd8",
+      "source": "関連文書",
+      "id": "github.com (3de46e6fc489c52c9431a8a832ad8170a7569bd8)"
+    },
+    {
+      "text": "https://lists.debian.org/debian-lts-announce/2022/09/msg00008.html",
+      "source": "関連文書",
+      "id": "lists.debian.org (msg00008)"
+    },
+    {
+      "text": "https://lists.gnu.org/archive/html/qemu-devel/2021-02/msg07428.html",
+      "source": "関連文書",
+      "id": "lists.gnu.org (msg07428)"
+    },
+    {
+      "text": "https://security.gentoo.org/glsa/202208-27",
+      "source": "関連文書",
+      "id": "security.gentoo.org (202208-27)"
+    },
+    {
+      "text": "https://security.netapp.com/advisory/ntap-20220425-0003/",
+      "source": "関連文書",
+      "id": "security.netapp.com (ntap-20220425-0003)"
+    },
+    {
+      "text": "https://www.openwall.com/lists/oss-security/2021/02/25/2",
+      "source": "関連文書",
+      "id": "www.openwall.com (oss-security/2021/02/25/2)"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/835.html",
+      "id": "CWE-835",
+      "title": "無限ループ(CWE-835)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:qemu:qemu",
+      "version": "2.2",
+      "vendor": "Fabrice Bellard",
+      "product": "QEMU"
+    },
+    {
+      "text": "cpe:/a:redhat:codeready_linux_builder",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "codeready linux builder"
+    },
+    {
+      "text": "cpe:/a:redhat:openstack_platform",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat OpenStack Platform"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_for_ibm_z_systems",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux for IBM z Systems"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_for_power_little_endian",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux for Power, little endian"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.1",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2023-07-10T17:24+09:00",
+  "issued": "2023-07-10T17:24+09:00",
+  "modified": "2023-07-10T17:24+09:00"
+}

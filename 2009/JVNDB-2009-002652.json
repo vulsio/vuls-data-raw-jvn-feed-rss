@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002652.html",
+  "title": "mutt の mutt_ssl.c における SSH サーバになりすまされる脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002652.html",
+  "description": "mutt の mutt_ssl.c は、OpenSSL が使用された際、X.509 証明書のサブジェクトの Common Name フィールド内にあるドメイン名の \\0 文字を適切に処理しないため、SSH サーバになりすまされる脆弱性が存在します。\r\n本問題は、CVE-2009-2408 と関連する問題です。",
+  "identifier": "JVNDB-2009-002652",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3765",
+      "source": "CVE",
+      "id": "CVE-2009-3765"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3765",
+      "source": "NVD",
+      "id": "CVE-2009-3765"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:mutt:mutt",
+      "version": "2.2",
+      "vendor": "Mutt",
+      "product": "Mutt"
+    },
+    {
+      "text": "cpe:/o:oracle:solaris",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Solaris"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "6.8",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2011-05-10T10:49+09:00",
+  "issued": "2011-05-10T10:49+09:00",
+  "modified": "2011-05-10T10:49+09:00"
+}

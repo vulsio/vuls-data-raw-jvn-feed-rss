@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000231.html",
+  "title": "Fetchmail の \"Multidrop\" モードにおけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000231.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nfetchmail 6.0.0 以前の \"multidrop\" モードには、いくつかの実装の不備が存在します。\r\n\r\n1. 故意的に作成された悪意のある DNS パケットを受け取ったときに fetchmail がクラッシュしてしまいます。この問題は、メールの本文内に含まれる特定のヘッダの解釈を行う際に、文字列のコピーに必要な文字列長のチェックを適切に行っていないために発生します。\r\n2. 悪意のあるメールメッセージを受信した際に、ヒープ領域でオーバーフローが発生し任意のコマンド実行を許してしまう可能性が存在します。この問題は \"Recived:\" ヘッダの取り扱いに問題があるため発生します。\r\n\r\nこの結果、リモートの攻撃者にサービス不能攻撃や fetchmail の権限（通常 root 権限）で任意のコマンド実行を許してしまう可能性があります。",
+  "identifier": "JVNDB-2002-000231",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1175",
+      "source": "CVE",
+      "id": "CVE-2002-1175"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1175",
+      "source": "NVD",
+      "id": "CVE-2002-1175"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/5825",
+      "source": "BID",
+      "id": "5825"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/5827",
+      "source": "BID",
+      "id": "5827"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:redhat:linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

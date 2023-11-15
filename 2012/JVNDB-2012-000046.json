@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-000046.html",
+  "title": "Flash Player における同一生成元ポリシー実装不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-000046.html",
+  "description": "Flash Player には、同一生成元ポリシー実装不備の脆弱性が存在します。\r\n\r\nFlash Player が、Flash コンテンツを設置しているウェブサイトとは別のウェブサイトに設置されているコンテンツを参照する場合、参照されるウェブサイトがクロスドメインポリシーファイルによりアクセスを許可している必要があります。\r\nFlash Player の SoundMixer.computeSpectrum() メソッドには、このクロスドメインポリシーファイルを使用する同一生成元ポリシーの実装に不備が存在します。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社シマンテック 白石 三晃 氏",
+  "identifier": "JVNDB-2012-000046",
+  "references": [
+    {
+      "text": "http://jvn.jp/jp/JVN38163638/index.html",
+      "source": "JVN",
+      "id": "JVN#38163638"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2038",
+      "source": "CVE",
+      "id": "CVE-2012-2038"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2038",
+      "source": "NVD",
+      "id": "CVE-2012-2038"
+    },
+    {
+      "text": "https://www.jpcert.or.jp/at/2012/at120019.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2012-0019"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/#topics",
+      "source": "AT-POLICE",
+      "id": "アドビシステムズ社の Adobe Flash Player のセキュリティ修正プログラムについて(2012年06月09日)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:adobe:flash_player",
+      "version": "2.2",
+      "vendor": "アドビ",
+      "product": "Adobe Flash Player"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+    }
+  ],
+  "date": "2012-06-13T16:32+09:00",
+  "issued": "2012-06-11T14:05+09:00",
+  "modified": "2012-06-13T16:32+09:00"
+}

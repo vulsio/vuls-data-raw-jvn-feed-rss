@@ -1,0 +1,59 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005200.html",
+  "title": "QNAP QTS にパストラバーサルの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005200.html",
+  "description": "QNAP QTS は、Network Attached Storage (NAS) の OS です。QNAP QTS には、AFP プロトコルで OS X からアクセスされる場合にパストラバーサルの脆弱性が存在します。\r\n\r\n相対パストラバーサル (CWE-23) - CVE-2015-6003\r\nApple Filing Protocol (AFP) を有効にしている場合、OS X のユーザ (認証されていないゲストアカウントを含む) が、QNAP QTS 機器上の任意のファイルを閲覧したり書き換えたりする可能性があります。\r\n\r\nCWE-23: Relative Path Traversal\r\nhttps://cwe.mitre.org/data/definitions/23.html\r\n\r\nApple Filing Protocol\r\nhttps://developer.apple.com/library/mac/documentation/Networking/Conceptual/AFP/Introduction/Introduction.html\r\n\r\nAFP を有効にしているユーザのみが本脆弱性の影響を受けます。製品のドキュメントによれば、初期設定では AFP は無効になっています。\r\n\r\n詳しくは、開発者が提供するアドバイザリをご確認ください。\r\n\r\nアドバイザリ\r\nhttps://www.qnap.com/i/en/support/con_show.php?cid=85",
+  "identifier": "JVNDB-2015-005200",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU96884018/index.html",
+      "source": "JVN",
+      "id": "JVNVU#96884018"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6003",
+      "source": "CVE",
+      "id": "CVE-2015-6003"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-6003",
+      "source": "NVD",
+      "id": "CVE-2015-6003"
+    },
+    {
+      "text": "https://www.kb.cert.org/vuls/id/751328",
+      "source": "CERT-VN",
+      "id": "VU#751328"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+      "id": "CWE-22",
+      "title": "パス・トラバーサル(CWE-22)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:qnap:qts",
+      "version": "2.2",
+      "vendor": "QNAP Systems",
+      "product": "QNAP QTS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-10-19T15:54+09:00",
+  "issued": "2015-10-14T17:28+09:00",
+  "modified": "2015-10-19T15:54+09:00"
+}

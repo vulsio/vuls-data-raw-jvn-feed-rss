@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005201.html",
+  "title": "JRuby におけるサービス運用妨害 (CPU 資源の消費) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-005201.html",
+  "description": "JRuby は、ハッシュ衝突を想定した制限を適切に行わずにハッシュ値を算出するため、サービス運用妨害 (CPU 資源の消費) 状態となる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2011-4838 とは異なる脆弱性です。",
+  "identifier": "JVNDB-2011-005201",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5370",
+      "source": "CVE",
+      "id": "CVE-2012-5370"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-5370",
+      "source": "NVD",
+      "id": "CVE-2012-5370"
+    },
+    {
+      "text": "https://www.131002.net/data/talks/appsec12_slides.pdf",
+      "source": "関連文書",
+      "id": "Hash-flooding DoS reloaded: attacks and defenses"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:jruby:jruby",
+      "version": "2.2",
+      "vendor": "JRuby",
+      "product": "JRuby"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    }
+  ],
+  "date": "2012-11-29T16:05+09:00",
+  "issued": "2012-11-29T16:05+09:00",
+  "modified": "2012-11-29T16:05+09:00"
+}

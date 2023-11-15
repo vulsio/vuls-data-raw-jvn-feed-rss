@@ -1,0 +1,115 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000508.html",
+  "title": "Apache HTTP Server に含まれる mod_ssl の ssl_hook_Access() 関数における認証回避の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000508.html",
+  "description": "Apache HTTP Server に含まれる mod_ssl では、ssl_engine_kernel.c に実装されている ssl_hook_Access() 関数に不備が存在するため、バーチャルホストのグローバル設定で SSLVerifyClient optional が設定されている状況下において、Location セクションごとに SSLVerifyClient require が設定されていた場合、クライアント証明書による認証が適切に行われない脆弱性が存在します。",
+  "identifier": "JVNDB-2005-000508",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNVU%23744929",
+      "source": "JVN",
+      "id": "JVNVU#744929"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA06-291A/",
+      "source": "JVN",
+      "id": "JVNTA06-291A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA06-291A",
+      "source": "JVNTR",
+      "id": "TRTA06-291A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2700",
+      "source": "CVE",
+      "id": "CVE-2005-2700"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2700",
+      "source": "NVD",
+      "id": "CVE-2005-2700"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/744929",
+      "source": "CERT-VN",
+      "id": "VU#744929"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA06-291A.html",
+      "source": "CERT-TA",
+      "id": "TA06-291A"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/14721",
+      "source": "BID",
+      "id": "14721"
+    },
+    {
+      "text": "http://securitytracker.com/alerts/2005/Sep/1014833.html",
+      "source": "SECTRACK",
+      "id": "1014833"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2005/1625",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2005-1625"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:apache:http_server",
+      "version": "2.2",
+      "vendor": "Apache Software Foundation",
+      "product": "Apache HTTP Server"
+    },
+    {
+      "text": "cpe:/a:mod_ssl:mod_ssl",
+      "version": "2.2",
+      "vendor": "modssl.org",
+      "product": "mod_ssl"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "10.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

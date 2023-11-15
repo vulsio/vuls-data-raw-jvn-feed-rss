@@ -1,0 +1,49 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001051.html",
+  "title": "ISC DHCP にサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001051.html",
+  "description": "ISC DHCP には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nIPv4 UDP length フィールドに不正な値を持つパケットを処理することで、DHCP サーバ、クライアントおよびリレーが異常終了します。\r\n\r\nなお、ユニキャストのパケットのみを処理する構成では本脆弱性の影響を受けません。\r\nただし、クライアントやリレーでは、通常このような構成では動作しません。\r\nまたこのような構成でサーバを使う場合には、クライアントからの DISCOVER などのブロードキャストリクエストを中継するためのリレーが必要となります。\r\n\r\n構成によっては実際に本脆弱性の影響を受けない可能性がありますが、各構成においてアップデートの要否を特定することは困難であることから、開発者は、構成に依らずすべてを脆弱だとみなすべきだと述べています。",
+  "identifier": "JVNDB-2016-001051",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99390211/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99390211"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8605",
+      "source": "CVE",
+      "id": "CVE-2015-8605"
+    },
+    {
+      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8605",
+      "source": "NVD",
+      "id": "CVE-2015-8605"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:dhcp",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "ISC DHCP"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.7",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:M/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2016-02-02T16:25+09:00",
+  "issued": "2016-01-18T13:59+09:00",
+  "modified": "2016-02-02T16:25+09:00"
+}

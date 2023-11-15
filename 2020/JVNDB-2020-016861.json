@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-016861.html",
+  "title": "KubeVirt main virt-handler における重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-016861.html",
+  "description": "KubeVirt main virt-handler には、重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性が存在します。",
+  "identifier": "JVNDB-2020-016861",
+  "references": [
+    {
+      "text": "https://www.cve.org/CVERecord?id=CVE-2020-1701",
+      "source": "CVE",
+      "id": "CVE-2020-1701"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-1701",
+      "source": "NVD",
+      "id": "CVE-2020-1701"
+    },
+    {
+      "text": "https://bugzilla.redhat.com/show_bug.cgi?id=1792092",
+      "source": "関連文書",
+      "id": "Bug 1792092 (CVE-2020-1701) - CVE-2020-1701 virt-handler: virt-handler daemonset clusterroles allows retrieval of secrets"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/732.html",
+      "id": "CWE-732",
+      "title": "重要なリソースに対する不適切なパーミッションの割り当て(CWE-732)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:kubevirt:kubevirt",
+      "version": "2.2",
+      "vendor": "KubeVirt",
+      "product": "KubeVirt"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+    },
+    {
+      "version": "3.0",
+      "score": "6.5",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  ],
+  "date": "2022-02-17T17:38+09:00",
+  "issued": "2022-02-17T17:38+09:00",
+  "modified": "2022-02-17T17:38+09:00"
+}

@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005553.html",
+  "title": "Linux Kernel の KVM サブシステムの virt/kvm/kvm_main.c における権限を取得される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005553.html",
+  "description": "Linux Kernel の KVM サブシステムの virt/kvm/kvm_main.c 内の kvm_vm_ioctl_create_vcpu 関数には、配列のインデックスエラーにより、権限を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-005553",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4587",
+      "source": "CVE",
+      "id": "CVE-2013-4587"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4587",
+      "source": "NVD",
+      "id": "CVE-2013-4587"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+      "id": "CWE-20",
+      "title": "不適切な入力確認(CWE-20)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:linux:linux_kernel",
+      "version": "2.2",
+      "vendor": "Linux",
+      "product": "Linux Kernel"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.2",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2014-03-10T16:49+09:00",
+  "issued": "2013-12-17T19:07+09:00",
+  "modified": "2014-03-10T16:49+09:00"
+}

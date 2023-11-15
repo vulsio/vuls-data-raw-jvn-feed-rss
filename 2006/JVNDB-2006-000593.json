@@ -1,0 +1,276 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000593.html",
+  "title": "OpenSSL の RSA 公開鍵処理によりシステムメモリを大量に消費する脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000593.html",
+  "description": "OpenSSL の X.509 証明書を検証する過程で、過度に大きな値の暗号化指数 (public exponent) と係数 (public modulus) で生成した RSA 公開鍵を処理した場合に、システムメモリを大量に消費する脆弱性が存在します。",
+  "identifier": "JVNDB-2006-000593",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA06-333A/index.html",
+      "source": "JVN",
+      "id": "JVNTA06-333A"
+    },
+    {
+      "text": "http://jvn.jp/niscc/NISCC-729618/index.html",
+      "source": "JVN",
+      "id": "NISCC-729618"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNTA07-017A/",
+      "source": "JVN",
+      "id": "JVNTA07-017A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA06-333A",
+      "source": "JVNTR",
+      "id": "TRTA06-333A"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA07-017A",
+      "source": "JVNTR",
+      "id": "TRTA07-017A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2940",
+      "source": "CVE",
+      "id": "CVE-2006-2940"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-2940",
+      "source": "NVD",
+      "id": "CVE-2006-2940"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/alerts/SA06-333A.html",
+      "source": "CERT-SA",
+      "id": "SA06-333A"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/423396",
+      "source": "CERT-VN",
+      "id": "VU#423396"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA06-333A.html",
+      "source": "CERT-TA",
+      "id": "TA06-333A"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA07-017A.html",
+      "source": "CERT-TA",
+      "id": "TA07-017A"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/docs/re-20060928-00661.pdf?lang=en",
+      "source": "NISCC",
+      "id": "729618/NISCC/PARASITIC-KEYS"
+    },
+    {
+      "text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20060928-00661.xml",
+      "source": "CPNI",
+      "id": "00661"
+    },
+    {
+      "text": "http://secunia.com/advisories/22130/",
+      "source": "SECUNIA",
+      "id": "SA22130"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/20247",
+      "source": "BID",
+      "id": "20247"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2006/3820",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2006-3820"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:isc:bind",
+      "version": "2.2",
+      "vendor": "ISC, Inc.",
+      "product": "BIND"
+    },
+    {
+      "text": "cpe:/a:openssl:openssl",
+      "version": "2.2",
+      "vendor": "OpenSSL Project",
+      "product": "OpenSSL"
+    },
+    {
+      "text": "cpe:/a:oracle:e-business_suite",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle E-Business Suite"
+    },
+    {
+      "text": "cpe:/a:oracle:http_server",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle HTTP Server"
+    },
+    {
+      "text": "cpe:/a:ricoh:ridoc_document_router",
+      "version": "2.2",
+      "vendor": "リコー",
+      "product": "Ridoc Document Router"
+    },
+    {
+      "text": "cpe:/a:ricoh:ridoc_document_server",
+      "version": "2.2",
+      "vendor": "リコー",
+      "product": "Ridoc Document Server"
+    },
+    {
+      "text": "cpe:/a:ricoh:ridoc_document_system",
+      "version": "2.2",
+      "vendor": "リコー",
+      "product": "Ridoc Document System"
+    },
+    {
+      "text": "cpe:/a:ricoh:ridoc_io_operationserver",
+      "version": "2.2",
+      "vendor": "リコー",
+      "product": "Ridoc IO OperationServer"
+    },
+    {
+      "text": "cpe:/a:ricoh:ridoc_print_linkage",
+      "version": "2.2",
+      "vendor": "リコー",
+      "product": "Ridoc Print Linkage"
+    },
+    {
+      "text": "cpe:/a:ricoh:ridoc_web_navigator",
+      "version": "2.2",
+      "vendor": "リコー",
+      "product": "Ridoc Web Navigator"
+    },
+    {
+      "text": "cpe:/a:trendmicro:interscan_web_security_suite",
+      "version": "2.2",
+      "vendor": "トレンドマイクロ",
+      "product": "TrendMicro InterScan Web Security Suite"
+    },
+    {
+      "text": "cpe:/h:allied_telesis_k.k.:centrecom",
+      "version": "2.2",
+      "vendor": "アライドテレシス",
+      "product": "CentreCOM"
+    },
+    {
+      "text": "cpe:/h:furukawa_electric:fitelnet-f",
+      "version": "2.2",
+      "vendor": "古河電気工業",
+      "product": "FITELnet-Fシリーズ"
+    },
+    {
+      "text": "cpe:/h:furukawa_electric:mucho",
+      "version": "2.2",
+      "vendor": "古河電気工業",
+      "product": "MUCHOシリーズ"
+    },
+    {
+      "text": "cpe:/o:hp:hp-ux",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP-UX"
+    },
+    {
+      "text": "cpe:/o:misc:miraclelinux_asianux_server",
+      "version": "2.2",
+      "vendor": "サイバートラスト株式会社",
+      "product": "Asianux Server"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    },
+    {
+      "text": "cpe:/o:redhat:linux_advanced_workstation",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Linux Advanced Workstation"
+    },
+    {
+      "text": "cpe:/o:sun:solaris",
+      "version": "2.2",
+      "vendor": "サン・マイクロシステムズ",
+      "product": "Sun Solaris"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Appliance Server"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_desktop",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Desktop"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_fuji",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux FUJI"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_home",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "ターボリナックス ホーム "
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Multimedia"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_personal",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Personal"
+    },
+    {
+      "text": "cpe:/o:turbolinux:turbolinux_server",
+      "version": "2.2",
+      "vendor": "ターボリナックス",
+      "product": "Turbolinux Server"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+    }
+  ],
+  "date": "2008-12-09T13:41+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2008-12-09T13:41+09:00"
+}

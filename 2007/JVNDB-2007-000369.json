@@ -1,0 +1,76 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000369.html",
+  "title": "VIM の modelines 機能における任意のコマンドを実行される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000369.html",
+  "description": "VIM の modelines 機能を通して、writefile() 関数、feedkeys() 関数、及び system() 関数を実行するような細工されたファイルを開くことで任意のコマンドを実行される脆弱性が存在します。",
+  "identifier": "JVNDB-2007-000369",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2438",
+      "source": "CVE",
+      "id": "CVE-2007-2438"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2438",
+      "source": "NVD",
+      "id": "CVE-2007-2438"
+    },
+    {
+      "text": "http://secunia.com/advisories/25024",
+      "source": "SECUNIA",
+      "id": "SA25024"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/23725",
+      "source": "BID",
+      "id": "23725"
+    },
+    {
+      "text": "http://www.securitytracker.com/id?1018035",
+      "source": "SECTRACK",
+      "id": "1018035"
+    },
+    {
+      "text": "http://www.frsirt.com/english/advisories/2007/1599",
+      "source": "FRSIRT",
+      "id": "FrSIRT/ADV-2007-1599"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-DesignError",
+      "title": "設計上の問題(CWE-DesignError)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:vim:vim",
+      "version": "2.2",
+      "vendor": "Vim",
+      "product": "Vim"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux"
+    },
+    {
+      "text": "cpe:/o:redhat:enterprise_linux_desktop",
+      "version": "2.2",
+      "vendor": "レッドハット",
+      "product": "Red Hat Enterprise Linux Desktop"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.3",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2007-05-30T11:48+09:00",
+  "issued": "2007-05-30T11:48+09:00",
+  "modified": "2007-05-30T11:48+09:00"
+}

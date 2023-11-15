@@ -1,0 +1,67 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001004.html",
+  "title": "オムロン製 CX-One に任意のコード実行が可能な脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001004.html",
+  "description": "オムロン株式会社が提供する CX-One には、任意のコードが実行可能な脆弱性が存在します。\r\n\r\nオムロン株式会社が提供する CX-One の CX-Protocol には、プロジェクトファイルを処理する際の、型の取り違え (CWE-843) に起因する、任意のコードが実行可能な脆弱性が存在します。\r\n\r\n",
+  "identifier": "JVNDB-2019-001004",
+  "references": [
+    {
+      "text": "https://jvn.jp/vu/JVNVU97716739/",
+      "source": "JVN",
+      "id": "JVNVU#97716739"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19027",
+      "source": "CVE",
+      "id": "CVE-2018-19027"
+    },
+    {
+      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19027",
+      "source": "NVD",
+      "id": "CVE-2018-19027"
+    },
+    {
+      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-19-010-02",
+      "source": "ICS-CERT ADVISORY",
+      "id": "ICSA-19-010-02"
+    },
+    {
+      "text": "https://cwe.mitre.org/data/definitions/843.html",
+      "id": "CWE-843",
+      "title": "型の取り違え(CWE-843)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:omron:cx-one",
+      "version": "2.2",
+      "vendor": "オムロン株式会社",
+      "product": "CX-One"
+    },
+    {
+      "text": "cpe:/a:omron:cx-protocol",
+      "version": "2.2",
+      "vendor": "オムロン株式会社",
+      "product": "CX-Protocol"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.4",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:A/AC:M/Au:N/C:P/I:P/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "6.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H"
+    }
+  ],
+  "date": "2019-08-27T17:43+09:00",
+  "issued": "2019-01-15T17:46+09:00",
+  "modified": "2019-08-27T17:43+09:00"
+}

@@ -1,0 +1,50 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004573.html",
+  "title": "GNU C Library の pt_chown におけるファイルの権限を変更される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004573.html",
+  "description": "GNU C Library (別名 glibc または libc6) の pt_chown は、tty ファイルの権限を適切にチェックしないため、ファイルの権限を変更される、および任意の擬似端末 (pseudo terminals) のアクセス権を取得される脆弱性が存在します。",
+  "identifier": "JVNDB-2013-004573",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2207",
+      "source": "CVE",
+      "id": "CVE-2013-2207"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2207",
+      "source": "NVD",
+      "id": "CVE-2013-2207"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:gnu:glibc",
+      "version": "2.2",
+      "vendor": "GNU Project",
+      "product": "GNU C Library"
+    },
+    {
+      "text": "cpe:/o:fedoraproject:fedora",
+      "version": "2.2",
+      "vendor": "Fedora Project",
+      "product": "Fedora"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "2.6",
+      "type": "Base",
+      "severity": "Low",
+      "vector": "AV:L/AC:H/Au:N/C:P/I:P/A:N"
+    }
+  ],
+  "date": "2013-12-26T17:42+09:00",
+  "issued": "2013-10-11T16:31+09:00",
+  "modified": "2013-12-26T17:42+09:00"
+}

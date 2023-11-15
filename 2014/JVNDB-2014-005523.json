@@ -1,0 +1,103 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005523.html",
+  "title": "Microsoft Windows の Kerberos Key Distribution Center (KDC) に Privilege Attribute Certificate (PAC) 署名検証不備の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005523.html",
+  "description": "Microsoft Windows の Kerberos Key Distribution Center (KDC) には、Privilege Attribute Certificate (PAC) 署名検証不備の脆弱性が存在します。\r\n\r\nMicrosoft Windows の Kerberos Key Distribution Center (KDC) には、Kerberos チケットリクエストに含まれる Privilege Attribute Certificate (PAC) 署名を適切に検証しない問題があります (CWE-347)。PAC に含まれる情報を細工されることで、ドメインの資格情報を持つユーザに、より高い権限を取得される可能性があります。\r\n\r\nCWE-347: Improper Verification of Cryptographic Signature\r\nhttps://cwe.mitre.org/data/definitions/347.html\r\n\r\n開発者によると、本脆弱性を使用した攻撃活動を確認しているとのことです。\r\n\r\n脆弱性に関するより詳しい情報は、Microsoft Security Research and Defense Blog に記載されています。\r\n\r\nMicrosoft Security Research and Defense Blog:\r\nAdditional information about CVE-2014-6324\r\nhttp://blogs.technet.com/b/srd/archive/2014/11/18/additional-information-about-cve-2014-6324.aspx",
+  "identifier": "JVNDB-2014-005523",
+  "references": [
+    {
+      "text": "http://jvn.jp/vu/JVNVU99458129/index.html",
+      "source": "JVN",
+      "id": "JVNVU#99458129"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6324",
+      "source": "CVE",
+      "id": "CVE-2014-6324"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6324",
+      "source": "NVD",
+      "id": "CVE-2014-6324"
+    },
+    {
+      "text": "http://www.ipa.go.jp/security/ciadr/vul/20141119-ms.html",
+      "source": "IPA CFA",
+      "id": "Microsoft Windows Server の脆弱性対策について(CVE-2014-6324)"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2014/at140048.html",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2014-0048"
+    },
+    {
+      "text": "http://www.npa.go.jp/cyberpolice/topics/?seq=14971",
+      "source": "AT-POLICE",
+      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS14-068)(2014年11月19日)"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/213119",
+      "source": "CERT-VN",
+      "id": "VU#213119"
+    },
+    {
+      "text": "https://www.us-cert.gov/ncas/alerts/TA14-323A",
+      "source": "CERT-TA",
+      "id": "TA14-323A"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+      "id": "CWE-264",
+      "title": "認可・権限・アクセス制御(CWE-264)"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:hp:loadrunner",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "HP LoadRunner"
+    },
+    {
+      "text": "cpe:/a:hp:performance_center",
+      "version": "2.2",
+      "vendor": "ヒューレット・パッカード",
+      "product": "Performance Center"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2003",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2003"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2008",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2008"
+    },
+    {
+      "text": "cpe:/o:microsoft:windows_server_2012",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows Server 2012"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "9.0",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C"
+    }
+  ],
+  "date": "2015-05-27T18:06+09:00",
+  "issued": "2014-11-20T12:35+09:00",
+  "modified": "2015-05-27T18:06+09:00"
+}

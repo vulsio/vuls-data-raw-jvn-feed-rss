@@ -1,0 +1,44 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000123.html",
+  "title": "Microsoft Windows の SNMP Parameters レジストリキーにおける情報漏洩および改ざんの脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000123.html",
+  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nWindows NT 4.0 の各バージョンには、以下のような 3 つのレジストリキーの問題が存在しています。\r\n\r\nWindows NT 4.0 のレジストリ中にあるキー:\r\nHKEY_LOCAL_MACHINESYSTEMCurrentControlSetServicesSNMPParameters\r\nは、 SNMP コミュニティ名と SNMP 管理 ステーション識別子が存在する場合、それらの情報を全てのローカルのユーザに対して提供してしまいます。このことを悪意のあるローカルのユーザが利用すれば、 SNMP コミュニティ文字列で、SNMP サービスへの読み込み、または読み書きアクセスが可能になってしまいます。読み書きアクセス文字列が存在しない場合であっても、悪意のあるユーザーは、この脆弱性を利用して、通常使用できる SNMP から情報を読み込むことができます。そして、読み書きアクセス文字列が存在する場合は、悪意のあるユーザーはこの脆弱性を利用して、読み書きアクセスをするのに同じコミュニティ文字列を使用している全てのシステムを変更することができます。ただし、 SNMP は、Windows NT 4.0のデフォルトではインストールされません。\r\n\r\n次に、\r\nRAS 管理レジストリキー:\r\nHKEY_LOCAL_MACHINESOFTWAREMicrosoftRAS\r\nは、サードパーティ製の RAS 製品に、インストールに必要な情報を提供します。これらの RAS 製品は、Windows NT の付属の RAS サービスで動作するものが対象となっています。このレジストリキーには問題があり、悪意のあるローカルのユーザーが、このキーの値の 1 つを変更し、不正なコードをサードパーティ管理ツールとして指定できてしまいます。そしてそのコードを LocalSystem セキュリティコンテキストで実行させることで、悪意のあるユーザは、必要なレジストリをリモートから変更し、該当するホストに対話的にログオンして、さらに新たな特権を行使することが可能になります。悪意のあるユーザのコードは、リモートからレジストリの変更を行うことはできますが、レジストリ自体を作成することはできないため、該当のホストにこのキーが存在している必要があります。ただし、 RAS はWindows NT 4.0 のデフォルトではインストールされません。\r\n\r\n最後に、\r\nMTS パッケージ管理レジストリキー:\r\nHKEY_LOCAL_MACHINESOFTWAREMicrosoftTransaction ServerPackages\r\nには、MTS パッケージをインストール、または、変更するユーザに関する情報が含まれています。このレジストリキーには、悪意のあるローカルのユーザが、自分自身を MTS マネージャーとして追加し、MTS パッケージを追加、削除、変更が可能になってしまう問題があります。そして悪意のあるユーザーは、必要なレジストリをリモートから変更して、該当するマシンに対話的にログオンし、新たな特権を行使することができます。ただし、 MTS は、Windows NT 4.0 のデフォルトではインストールされません。",
+  "identifier": "JVNDB-2000-000123",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-0046",
+      "source": "CVE",
+      "id": "CVE-2001-0046"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2001-0046",
+      "source": "NVD",
+      "id": "CVE-2001-0046"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/2064",
+      "source": "BID",
+      "id": "2064"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:microsoft:windows_nt",
+      "version": "2.2",
+      "vendor": "マイクロソフト",
+      "product": "Microsoft Windows NT"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "4.6",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2007-04-01T00:00+09:00",
+  "issued": "2007-04-01T00:00+09:00",
+  "modified": "2007-04-01T00:00+09:00"
+}

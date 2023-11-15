@@ -1,0 +1,85 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001376.html",
+  "title": "Debian および Ubuntu の OpenSSL パッケージに予測可能な乱数が生成される脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001376.html",
+  "description": "Debian GNU/Linux およびその派生オペレーティングシステムに含まれる OpenSSL パッケージには予測可能な乱数が生成される脆弱性が存在します。\r\n\r\n\r\nこの脆弱性は、不具合のある OpenSSL パッケージで生成された鍵を使用するアプリケーションにおいて影響を受けます。影響を受ける鍵は、SSH 鍵、OpenVPN 鍵、DNSSEC 鍵、X.509 証明書を生成するのに使われる鍵データ、および SSL/TLS コネクションに使うセッション鍵などです。\r\n\r\n\r\n2006年9月17日およびそれ以降に生成された鍵は影響を受ける可能性があります。\r\n\r\n\r\nまた、本脆弱性は、Debian や Ubuntu および他の Debian から派生したオペレーティングシステムの OpenSSL パッケージに固有の問題となります。当該システムによって生成された鍵が他のシステムで使用されている場合、影響を受ける可能性があります。",
+  "identifier": "JVNDB-2008-001376",
+  "references": [
+    {
+      "text": "http://jvn.jp/cert/JVNTA08-137A/",
+      "source": "JVN",
+      "id": "JVNTA08-137A"
+    },
+    {
+      "text": "http://jvn.jp/cert/JVNVU925211/index.html",
+      "source": "JVN",
+      "id": "JVNVU#925211"
+    },
+    {
+      "text": "http://jvn.jp/tr/TRTA08-137A",
+      "source": "JVNTR",
+      "id": "TRTA08-137A"
+    },
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0166",
+      "source": "CVE",
+      "id": "CVE-2008-0166"
+    },
+    {
+      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-0166",
+      "source": "NVD",
+      "id": "CVE-2008-0166"
+    },
+    {
+      "text": "http://www.jpcert.or.jp/at/2008/at080008.txt",
+      "source": "JPCERT-AT",
+      "id": "JPCERT-AT-2008-0008"
+    },
+    {
+      "text": "http://www.kb.cert.org/vuls/id/925211",
+      "source": "CERT-VN",
+      "id": "VU#925211"
+    },
+    {
+      "text": "http://www.us-cert.gov/cas/techalerts/TA08-137A.html",
+      "source": "CERT-TA",
+      "id": "TA08-137A"
+    },
+    {
+      "text": "http://www.securityfocus.com/bid/29179",
+      "source": "BID",
+      "id": "29179"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+      "id": "CWE-310",
+      "title": "暗号の問題(CWE-310)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/o:canonical:ubuntu_linux",
+      "version": "2.2",
+      "vendor": "Canonical",
+      "product": "Ubuntu"
+    },
+    {
+      "text": "cpe:/o:debian:debian_linux",
+      "version": "2.2",
+      "vendor": "Debian",
+      "product": "Debian GNU/Linux"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.8",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:C/I:N/A:N"
+    }
+  ],
+  "date": "2008-06-10T14:28+09:00",
+  "issued": "2008-06-10T14:28+09:00",
+  "modified": "2008-06-10T14:28+09:00"
+}

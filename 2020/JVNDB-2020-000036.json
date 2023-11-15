@@ -1,0 +1,61 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000036.html",
+  "title": "XACK DNS におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000036.html",
+  "description": "XACK DNS は株式会社 XACK が提供する DNS サーバー向けソフトウェアです。XACK DNS には、一般に NXNSAttack と呼称される問題に起因して、サービス運用妨害 (DoS) 攻撃が可能となる脆弱性が存在します。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が IPA に報告し、JPCERT/CC が開発者との調整を行いました。",
+  "identifier": "JVNDB-2020-000036",
+  "references": [
+    {
+      "text": "https://jvn.jp/jp/JVN40208370/index.html",
+      "source": "JVN",
+      "id": "JVN#40208370"
+    },
+    {
+      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5591",
+      "source": "CVE",
+      "id": "CVE-2020-5591"
+    },
+    {
+      "text": "https://jprs.jp/tech/security/2020-05-20-bind9-vuln-processing-referrals.html",
+      "source": "JPRS",
+      "id": "（緊急）BIND 9.xの脆弱性（パフォーマンスの低下・リフレクション攻撃の踏み台化）について（CVE-2020-8616） - バージョンアップを強く推奨 -"
+    },
+    {
+      "text": "http://www.nxnsattack.com/",
+      "source": "関連文書",
+      "id": "NXNSAttack"
+    },
+    {
+      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+      "id": "CWE-Other",
+      "title": "その他(CWE-Other)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:xack:xack_dns",
+      "version": "2.2",
+      "vendor": "株式会社 XACK",
+      "product": "XACK DNS"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "5.0",
+      "type": "Base",
+      "severity": "Medium",
+      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+    },
+    {
+      "version": "3.0",
+      "score": "8.6",
+      "type": "Base",
+      "severity": "High",
+      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H"
+    }
+  ],
+  "date": "2020-06-05T12:07+09:00",
+  "issued": "2020-06-05T12:07+09:00",
+  "modified": "2020-06-05T12:07+09:00"
+}

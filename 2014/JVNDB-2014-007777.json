@@ -1,0 +1,56 @@
+{
+  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007777.html",
+  "title": "Google Chrome で使用される International Components for Unicode の i18n/ucol.cpp の collator の実装におけるサービス運用妨害 (DoS) の脆弱性",
+  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007777.html",
+  "description": "Google Chrome で使用される International Components for Unicode (ICU) の i18n/ucol.cpp の collator の実装は、データ構造のメモリを初期化しないため、サービス運用妨害 (DoS) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+  "identifier": "JVNDB-2014-007777",
+  "references": [
+    {
+      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7940",
+      "source": "CVE",
+      "id": "CVE-2014-7940"
+    },
+    {
+      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7940",
+      "source": "NVD",
+      "id": "CVE-2014-7940"
+    },
+    {
+      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+      "id": "CWE-399",
+      "title": "リソース管理の問題(CWE-399)"
+    }
+  ],
+  "cpe": [
+    {
+      "text": "cpe:/a:google:chrome",
+      "version": "2.2",
+      "vendor": "Google",
+      "product": "Google Chrome"
+    },
+    {
+      "text": "cpe:/a:icu_project:international_components_for_unicode",
+      "version": "2.2",
+      "vendor": "ICU project",
+      "product": "ICU"
+    },
+    {
+      "text": "cpe:/a:oracle:communications_applications",
+      "version": "2.2",
+      "vendor": "オラクル",
+      "product": "Oracle Communications Applications"
+    }
+  ],
+  "cvss": [
+    {
+      "version": "2.0",
+      "score": "7.5",
+      "type": "Base",
+      "severity": "High",
+      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+    }
+  ],
+  "date": "2015-10-23T09:49+09:00",
+  "issued": "2015-01-26T17:52+09:00",
+  "modified": "2015-10-23T09:49+09:00"
+}
