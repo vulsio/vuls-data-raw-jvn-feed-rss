@@ -1,64 +1,64 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000553.html",
-  "title": "Cisco IOS における過度に長い VLAN 名によるヒープオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000553.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nCisco IOS には、VLAN トランクプロトコル (VTP) の実装に以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) VTP パケットに含まれる VTP バージョンフィールドの処理に不備が存在するため、不適切な値が設定されている場合に処理がループ状態に陥り、デバイスがリセットされてしまう問題が存在します。(CVE-2006-4774)\r\n\r\nリモートの攻撃者に悪用された場合、デバイスがサービス不能状態に陥る可能性があります。\r\n\r\n2) 設定リビジョン番号が負の整数として処理されてしまう不備が存在するため、以後の VLAN 設定情報の変更が適切に反映されない問題が存在します。(CVE-2006-4775)\r\n\r\nリモートの攻撃者に悪用された場合、VLAN 設定情報の変更が妨害される可能性があります。\r\n\r\n3) VLAN 名の長さに対するチェックに不備が存在するため、100 文字より長い名前を処理した場合にヒープオーバーフローが発生する問題が存在します。(CVE-2006-4776)\r\n\r\nリモートの攻撃者に悪用された場合、デバイスがサービス不能状態に陥る、あるいは潜在的に任意のコードが実行される可能性があります。",
-  "identifier": "JVNDB-2006-000553",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4776",
-      "source": "CVE",
-      "id": "CVE-2006-4776"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4776",
-      "source": "NVD",
-      "id": "CVE-2006-4776"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/821420",
-      "source": "CERT-VN",
-      "id": "VU#821420"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/542108",
-      "source": "CERT-VN",
-      "id": "VU#542108"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/175148",
-      "source": "CERT-VN",
-      "id": "VU#175148"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/19998",
-      "source": "BID",
-      "id": "19998"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2006/3600",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2006-3600"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:cisco:ios",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IOS"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000553.html",
+	"title": "Cisco IOS における過度に長い VLAN 名によるヒープオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000553.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nCisco IOS には、VLAN トランクプロトコル (VTP) の実装に以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) VTP パケットに含まれる VTP バージョンフィールドの処理に不備が存在するため、不適切な値が設定されている場合に処理がループ状態に陥り、デバイスがリセットされてしまう問題が存在します。(CVE-2006-4774)\r\n\r\nリモートの攻撃者に悪用された場合、デバイスがサービス不能状態に陥る可能性があります。\r\n\r\n2) 設定リビジョン番号が負の整数として処理されてしまう不備が存在するため、以後の VLAN 設定情報の変更が適切に反映されない問題が存在します。(CVE-2006-4775)\r\n\r\nリモートの攻撃者に悪用された場合、VLAN 設定情報の変更が妨害される可能性があります。\r\n\r\n3) VLAN 名の長さに対するチェックに不備が存在するため、100 文字より長い名前を処理した場合にヒープオーバーフローが発生する問題が存在します。(CVE-2006-4776)\r\n\r\nリモートの攻撃者に悪用された場合、デバイスがサービス不能状態に陥る、あるいは潜在的に任意のコードが実行される可能性があります。",
+	"identifier": "JVNDB-2006-000553",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4776",
+			"source": "CVE",
+			"id": "CVE-2006-4776"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4776",
+			"source": "NVD",
+			"id": "CVE-2006-4776"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/821420",
+			"source": "CERT-VN",
+			"id": "VU#821420"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/542108",
+			"source": "CERT-VN",
+			"id": "VU#542108"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/175148",
+			"source": "CERT-VN",
+			"id": "VU#175148"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/19998",
+			"source": "BID",
+			"id": "19998"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2006/3600",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2006-3600"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:cisco:ios",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IOS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

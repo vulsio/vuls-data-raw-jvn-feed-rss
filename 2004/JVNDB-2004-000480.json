@@ -1,59 +1,59 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000480.html",
-  "title": "unarj の -x オプションにおけるディレクトリトラバーサルの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000480.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nunarj は arj 形式の圧縮アーカイブファイルを解凍するためのプログラムです。 \r\n\r\nUnarj 2.65 以前には、以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n・arj アーカイブに含まれるファイル名の妥当性の確認に不備が存在するため、バッファオーバーフローが発生する問題 (CAN-2004-0947) \r\n\r\n・\"-x\" オプション指定時に利用する、arj アーカイブに含まれるパス名の妥当性の確認に不備が存在するため、)ディレクトリトラバーサル攻撃が可能である問題 (CAN-2004-1027) \r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した arj アーカイブファイルを標的ユーザに送りつけ、unarj を使用して解凍するよう誘導することにより、標的ユーザの権限で任意のコードを実行する、もしくは重要なシステムファイルを上書きできる可能性があります。",
-  "identifier": "JVNDB-2004-000480",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1027",
-      "source": "CVE",
-      "id": "CVE-2004-1027"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1027",
-      "source": "NVD",
-      "id": "CVE-2004-1027"
-    },
-    {
-      "text": "http://secunia.com/advisories/13177/",
-      "source": "SECUNIA",
-      "id": "SA13177"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/11436",
-      "source": "BID",
-      "id": "11436"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/11665",
-      "source": "BID",
-      "id": "11665"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2004/Nov/1012194.html",
-      "source": "SECTRACK",
-      "id": "1012194"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000480.html",
+	"title": "unarj の -x オプションにおけるディレクトリトラバーサルの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000480.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nunarj は arj 形式の圧縮アーカイブファイルを解凍するためのプログラムです。 \r\n\r\nUnarj 2.65 以前には、以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n・arj アーカイブに含まれるファイル名の妥当性の確認に不備が存在するため、バッファオーバーフローが発生する問題 (CAN-2004-0947) \r\n\r\n・\"-x\" オプション指定時に利用する、arj アーカイブに含まれるパス名の妥当性の確認に不備が存在するため、)ディレクトリトラバーサル攻撃が可能である問題 (CAN-2004-1027) \r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した arj アーカイブファイルを標的ユーザに送りつけ、unarj を使用して解凍するよう誘導することにより、標的ユーザの権限で任意のコードを実行する、もしくは重要なシステムファイルを上書きできる可能性があります。",
+	"identifier": "JVNDB-2004-000480",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1027",
+			"source": "CVE",
+			"id": "CVE-2004-1027"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1027",
+			"source": "NVD",
+			"id": "CVE-2004-1027"
+		},
+		{
+			"text": "http://secunia.com/advisories/13177/",
+			"source": "SECUNIA",
+			"id": "SA13177"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/11436",
+			"source": "BID",
+			"id": "11436"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/11665",
+			"source": "BID",
+			"id": "11665"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2004/Nov/1012194.html",
+			"source": "SECTRACK",
+			"id": "1012194"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

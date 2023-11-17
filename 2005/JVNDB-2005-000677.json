@@ -1,65 +1,65 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000677.html",
-  "title": "Mailman の Scrubber.py におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000677.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU Mailman は、電子メールのメーリングリストを管理するためのソフトウェアで、WEB インターフェースより各種設定を行うことが可能です。\r\n\r\nGNU Mailman には、以下の例外処理における複数の問題が存在します。\r\n\r\n・Scrubber.py において、ファイル名が UTF8 文字コードのファイルが添付された電子メールを処理した場合に、メーリングリスト機能が停止してしまう問題 (CVE-2005-3573)\r\n\r\n・過度に大きな数値の日付データを含む電子メールを処理する際、Mailman がクラッシュしてしまう問題 (CVE-2005-4153)\r\n\r\nリモートの攻撃者に悪用された場合、Mailman がサービス不能状態に陥る可能性があります。",
-  "identifier": "JVNDB-2005-000677",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3573",
-      "source": "CVE",
-      "id": "CVE-2005-3573"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3573",
-      "source": "NVD",
-      "id": "CVE-2005-3573"
-    },
-    {
-      "text": "http://secunia.com/advisories/18449/",
-      "source": "SECUNIA",
-      "id": "SA18449"
-    },
-    {
-      "text": "http://secunia.com/advisories/17511/",
-      "source": "SECUNIA",
-      "id": "SA17511"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/16248",
-      "source": "BID",
-      "id": "16248"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15408",
-      "source": "BID",
-      "id": "15408"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000677.html",
+	"title": "Mailman の Scrubber.py におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000677.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU Mailman は、電子メールのメーリングリストを管理するためのソフトウェアで、WEB インターフェースより各種設定を行うことが可能です。\r\n\r\nGNU Mailman には、以下の例外処理における複数の問題が存在します。\r\n\r\n・Scrubber.py において、ファイル名が UTF8 文字コードのファイルが添付された電子メールを処理した場合に、メーリングリスト機能が停止してしまう問題 (CVE-2005-3573)\r\n\r\n・過度に大きな数値の日付データを含む電子メールを処理する際、Mailman がクラッシュしてしまう問題 (CVE-2005-4153)\r\n\r\nリモートの攻撃者に悪用された場合、Mailman がサービス不能状態に陥る可能性があります。",
+	"identifier": "JVNDB-2005-000677",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3573",
+			"source": "CVE",
+			"id": "CVE-2005-3573"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3573",
+			"source": "NVD",
+			"id": "CVE-2005-3573"
+		},
+		{
+			"text": "http://secunia.com/advisories/18449/",
+			"source": "SECUNIA",
+			"id": "SA18449"
+		},
+		{
+			"text": "http://secunia.com/advisories/17511/",
+			"source": "SECUNIA",
+			"id": "SA17511"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/16248",
+			"source": "BID",
+			"id": "16248"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15408",
+			"source": "BID",
+			"id": "15408"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

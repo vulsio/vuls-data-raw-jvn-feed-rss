@@ -1,64 +1,64 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003658.html",
-  "title": "HTTPS レスポンスから暗号化されたデータの一部を推測可能な脆弱性 (BREACH)",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003658.html",
-  "description": "圧縮された HTTPS レスポンスの長さを観測することで、攻撃者は HTTPS ストリームの暗号文から、ウェブサイトの認証鍵など (secret) を推測することが可能です。\r\n\r\nSalesforce.com の Angelo Prado 氏は、下記の通り報告しています。\r\n\r\n　Extending the CRIME vulnerability presented at Ekoparty 2012, an attacker can target HTTPS responses to recover data from the response body.\r\n\r\n　While the CRIME attack is currently believed to be mitigated by disabling TLS/SSL/level compression, compressed HTTP responses represent a significant unmitigated vector which is currently exploitable. By injecting plaintext into an HTTPS request, an attacker can learn information about the corresponding HTTPS response by measuring its size.\r\n\r\n　This relies on the attacker being able to observe the size of the cipher text received by the browser while triggering a number of strategically crafted requests to a target site. To recover a particular secret in an HTTPS response body, the attacker guesses character by character, sending a pair of requests for each guess. The correct guess will result in a smaller HTTPS response. For each guess the attacker coerces the victim's browser to issue two requests. The first request includes a payload of the form:\r\n\r\n\"target_secret_name=<already known part of secret>+<guess>+<padding>\"\r\n\r\n...while the second request includes a payload of the form:\r\n\r\n\"target_secret_name=<already known part of secret>+<padding>+<guess>\".\r\n\r\n　If the size of the first response is smaller than the second response, this indicates that the guess has a good chance of being correct. This method of sending two similar requests and comparing them is due to Duong and Rizzo. If multiple candidates are found, the following is a useful recovery mechanism: move forward in parallel with both candidates until it becomes clear which guess is correct.\r\n\r\n　With a token of length 32 and a character space of size 16 (e.g. hex), the attacker needs an average of approximately 1,000 request if no recovery mechanisms are needed. In practice, we have been able to recover CSRF tokens with fewer than 4,000 requests. A browser like Google Chrome or Internet Explorer is able to issue this number of requests in under 30 seconds, including callbacks to the attacker command & control center.\r\n\r\n[In order to conduct the attack, the following conditions must be true]:\r\n\r\n　1. HTTPS-enabled endpoint (ideally with stream ciphers like RC4, although the attack can be made to work with adaptive padding for block ciphers).\r\n\r\n　2. The attacker must be able to measure the size of HTTPS responses.\r\n\r\n　3. Use of HTTP-level compression (e.g. gzip).\r\n\r\n　4. A request parameter that is reflected in the response body.\r\n\r\n　5. A static secret in the body (e.g. CSRF token, sessionId, VIEWSTATE, PII, etc.) that can be bootstrapped (either first/last two characters are predictable and/or the secret is padded with something like KnownSecretVariableName=\"\".\r\n\r\n　6. An otherwise static or relatively static response. Dynamic pages do not defeat the attack, but make it much more expensive.",
-  "identifier": "JVNDB-2013-003658",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU94916481/index.html",
-      "source": "JVN",
-      "id": "JVNVU#94916481"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3587",
-      "source": "CVE",
-      "id": "CVE-2013-3587"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2013-3587",
-      "source": "NVD",
-      "id": "CVE-2013-3587"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/987798",
-      "source": "CERT-VN",
-      "id": "VU#987798"
-    },
-    {
-      "text": "http://breachattack.com/",
-      "source": "関連文書",
-      "id": "BREACH: SSL, GONE IN 30 SECONDS"
-    },
-    {
-      "text": "http://breachattack.com/resources/BREACH%20-%20SSL,%20gone%20in%2030%20seconds.pdf",
-      "source": "関連文書",
-      "id": "BREACH: REVIVING THE CRIME ATTACK"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-      "id": "CWE-200",
-      "title": "情報漏えい(CWE-200)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.6",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
-    }
-  ],
-  "date": "2013-08-08T14:54+09:00",
-  "issued": "2013-08-08T14:54+09:00",
-  "modified": "2013-08-08T14:54+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003658.html",
+	"title": "HTTPS レスポンスから暗号化されたデータの一部を推測可能な脆弱性 (BREACH)",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003658.html",
+	"description": "圧縮された HTTPS レスポンスの長さを観測することで、攻撃者は HTTPS ストリームの暗号文から、ウェブサイトの認証鍵など (secret) を推測することが可能です。\r\n\r\nSalesforce.com の Angelo Prado 氏は、下記の通り報告しています。\r\n\r\n　Extending the CRIME vulnerability presented at Ekoparty 2012, an attacker can target HTTPS responses to recover data from the response body.\r\n\r\n　While the CRIME attack is currently believed to be mitigated by disabling TLS/SSL/level compression, compressed HTTP responses represent a significant unmitigated vector which is currently exploitable. By injecting plaintext into an HTTPS request, an attacker can learn information about the corresponding HTTPS response by measuring its size.\r\n\r\n　This relies on the attacker being able to observe the size of the cipher text received by the browser while triggering a number of strategically crafted requests to a target site. To recover a particular secret in an HTTPS response body, the attacker guesses character by character, sending a pair of requests for each guess. The correct guess will result in a smaller HTTPS response. For each guess the attacker coerces the victim's browser to issue two requests. The first request includes a payload of the form:\r\n\r\n\"target_secret_name=<already known part of secret>+<guess>+<padding>\"\r\n\r\n...while the second request includes a payload of the form:\r\n\r\n\"target_secret_name=<already known part of secret>+<padding>+<guess>\".\r\n\r\n　If the size of the first response is smaller than the second response, this indicates that the guess has a good chance of being correct. This method of sending two similar requests and comparing them is due to Duong and Rizzo. If multiple candidates are found, the following is a useful recovery mechanism: move forward in parallel with both candidates until it becomes clear which guess is correct.\r\n\r\n　With a token of length 32 and a character space of size 16 (e.g. hex), the attacker needs an average of approximately 1,000 request if no recovery mechanisms are needed. In practice, we have been able to recover CSRF tokens with fewer than 4,000 requests. A browser like Google Chrome or Internet Explorer is able to issue this number of requests in under 30 seconds, including callbacks to the attacker command & control center.\r\n\r\n[In order to conduct the attack, the following conditions must be true]:\r\n\r\n　1. HTTPS-enabled endpoint (ideally with stream ciphers like RC4, although the attack can be made to work with adaptive padding for block ciphers).\r\n\r\n　2. The attacker must be able to measure the size of HTTPS responses.\r\n\r\n　3. Use of HTTP-level compression (e.g. gzip).\r\n\r\n　4. A request parameter that is reflected in the response body.\r\n\r\n　5. A static secret in the body (e.g. CSRF token, sessionId, VIEWSTATE, PII, etc.) that can be bootstrapped (either first/last two characters are predictable and/or the secret is padded with something like KnownSecretVariableName=\"\".\r\n\r\n　6. An otherwise static or relatively static response. Dynamic pages do not defeat the attack, but make it much more expensive.",
+	"identifier": "JVNDB-2013-003658",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU94916481/index.html",
+			"source": "JVN",
+			"id": "JVNVU#94916481"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3587",
+			"source": "CVE",
+			"id": "CVE-2013-3587"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2013-3587",
+			"source": "NVD",
+			"id": "CVE-2013-3587"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/987798",
+			"source": "CERT-VN",
+			"id": "VU#987798"
+		},
+		{
+			"text": "http://breachattack.com/",
+			"source": "関連文書",
+			"id": "BREACH: SSL, GONE IN 30 SECONDS"
+		},
+		{
+			"text": "http://breachattack.com/resources/BREACH%20-%20SSL,%20gone%20in%2030%20seconds.pdf",
+			"source": "関連文書",
+			"id": "BREACH: REVIVING THE CRIME ATTACK"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.6",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+		}
+	],
+	"date": "2013-08-08T14:54+09:00",
+	"issued": "2013-08-08T14:54+09:00",
+	"modified": "2013-08-08T14:54+09:00"
 }

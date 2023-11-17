@@ -1,101 +1,101 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001704.html",
-  "title": "複数の SAML ライブラリに認証回避の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001704.html",
-  "description": "複数の SAML ライブラリに、サービスプロバイダへの認証が回避される問題が存在します。この問題は XML DOM トラバーサルおよび正規化を行う API の挙動に起因しており、攻撃者は XML 署名の検証を無効化することなく、SAML データを改ざんすることが可能です。\r\n\r\n不適切な認証 (<a href=\"https://cwe.mitre.org/data/definitions/287.html\"target=\"blank\">CWE-287</a>)\r\nSecurity Assertion Markup Language (SAML) は主に SSO (Single Sign-On サービス) で使用される、認証や認可を行うための XML ベースのマークアップ言語です。\r\nいくつかの SAML ライブラリでは、XML DOM トラバーサルや正規化の処理を行う API における XML データ中のコメントの扱い方に不整合な点があり、XML 署名検証で XML データの改ざんを検出できない可能性があります。\r\n\r\nその結果、遠隔の攻撃者は、改ざんした SAML メッセージを使って SAML サービスプロバイダの認証を回避することが可能となります。",
-  "identifier": "JVNDB-2018-001704",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU98536678/index.html",
-      "source": "JVN",
-      "id": "JVNVU#98536678"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11427",
-      "source": "CVE",
-      "id": "CVE-2017-11427"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11428",
-      "source": "CVE",
-      "id": "CVE-2017-11428"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11429",
-      "source": "CVE",
-      "id": "CVE-2017-11429"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11430",
-      "source": "CVE",
-      "id": "CVE-2017-11430"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0489",
-      "source": "CVE",
-      "id": "CVE-2018-0489"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5387",
-      "source": "CVE",
-      "id": "CVE-2018-5387"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-0489",
-      "source": "NVD",
-      "id": "CVE-2018-0489"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5387",
-      "source": "NVD",
-      "id": "CVE-2018-5387"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/475445",
-      "source": "CERT-VN",
-      "id": "VU#475445"
-    },
-    {
-      "text": "https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-implementations",
-      "source": "関連文書",
-      "id": "Duo Finds SAML Vulnerabilities Affecting Multiple Implementations"
-    },
-    {
-      "text": "https://duo.com/labs/psa/duo-psa-2017-003",
-      "source": "関連文書",
-      "id": "DUO-PSA-2017-003: Duo Product Security Advisory"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
-      "id": "CWE-287",
-      "title": "不適切な認証(CWE-287)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:S/C:C/I:N/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
-    }
-  ],
-  "date": "2018-10-29T14:20+09:00",
-  "issued": "2018-03-02T13:45+09:00",
-  "modified": "2018-10-29T14:20+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001704.html",
+	"title": "複数の SAML ライブラリに認証回避の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001704.html",
+	"description": "複数の SAML ライブラリに、サービスプロバイダへの認証が回避される問題が存在します。この問題は XML DOM トラバーサルおよび正規化を行う API の挙動に起因しており、攻撃者は XML 署名の検証を無効化することなく、SAML データを改ざんすることが可能です。\r\n\r\n不適切な認証 (<a href=\"https://cwe.mitre.org/data/definitions/287.html\"target=\"blank\">CWE-287</a>)\r\nSecurity Assertion Markup Language (SAML) は主に SSO (Single Sign-On サービス) で使用される、認証や認可を行うための XML ベースのマークアップ言語です。\r\nいくつかの SAML ライブラリでは、XML DOM トラバーサルや正規化の処理を行う API における XML データ中のコメントの扱い方に不整合な点があり、XML 署名検証で XML データの改ざんを検出できない可能性があります。\r\n\r\nその結果、遠隔の攻撃者は、改ざんした SAML メッセージを使って SAML サービスプロバイダの認証を回避することが可能となります。",
+	"identifier": "JVNDB-2018-001704",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU98536678/index.html",
+			"source": "JVN",
+			"id": "JVNVU#98536678"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11427",
+			"source": "CVE",
+			"id": "CVE-2017-11427"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11428",
+			"source": "CVE",
+			"id": "CVE-2017-11428"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11429",
+			"source": "CVE",
+			"id": "CVE-2017-11429"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11430",
+			"source": "CVE",
+			"id": "CVE-2017-11430"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0489",
+			"source": "CVE",
+			"id": "CVE-2018-0489"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5387",
+			"source": "CVE",
+			"id": "CVE-2018-5387"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-0489",
+			"source": "NVD",
+			"id": "CVE-2018-0489"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5387",
+			"source": "NVD",
+			"id": "CVE-2018-5387"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/475445",
+			"source": "CERT-VN",
+			"id": "VU#475445"
+		},
+		{
+			"text": "https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-implementations",
+			"source": "関連文書",
+			"id": "Duo Finds SAML Vulnerabilities Affecting Multiple Implementations"
+		},
+		{
+			"text": "https://duo.com/labs/psa/duo-psa-2017-003",
+			"source": "関連文書",
+			"id": "DUO-PSA-2017-003: Duo Product Security Advisory"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+			"id": "CWE-287",
+			"title": "不適切な認証(CWE-287)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:S/C:C/I:N/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+		}
+	],
+	"date": "2018-10-29T14:20+09:00",
+	"issued": "2018-03-02T13:45+09:00",
+	"modified": "2018-10-29T14:20+09:00"
 }

@@ -1,109 +1,109 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000002.html",
-  "title": "Linux Kernel の do_mremap() 関数における権限昇格の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000002.html",
-  "description": "Linux Kernel に含まれている do_mremap() 関数には、境界に対するチェックが不適切であるため、再マッピングのメモリサイズとして 0 を指定されると 0 byte の仮想メモリ領域を作成する脆弱性が存在します。",
-  "identifier": "JVNDB-2004-000002",
-  "references": [
-    {
-      "text": "http://jvn.jp/tr/TRCIAC-O-045/",
-      "source": "JVNTR",
-      "id": "TRCIAC-O-045"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0985",
-      "source": "CVE",
-      "id": "CVE-2003-0985"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0985",
-      "source": "NVD",
-      "id": "CVE-2003-0985"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/490620",
-      "source": "CERT-VN",
-      "id": "VU#490620"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/o-045.shtml",
-      "source": "CIAC",
-      "id": "O-045"
-    },
-    {
-      "text": "http://secunia.com/advisories/10532/",
-      "source": "SECUNIA",
-      "id": "SA10532"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/9356",
-      "source": "BID",
-      "id": "9356"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/14135",
-      "source": "XF",
-      "id": "14135"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2004/Jan/1008593.html",
-      "source": "SECTRACK",
-      "id": "1008593"
-    },
-    {
-      "text": "http://www.osvdb.org/3315",
-      "source": "OSVDB",
-      "id": "3315"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_550",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ550"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:linux_advanced_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux Advanced Workstation"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.2",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000002.html",
+	"title": "Linux Kernel の do_mremap() 関数における権限昇格の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000002.html",
+	"description": "Linux Kernel に含まれている do_mremap() 関数には、境界に対するチェックが不適切であるため、再マッピングのメモリサイズとして 0 を指定されると 0 byte の仮想メモリ領域を作成する脆弱性が存在します。",
+	"identifier": "JVNDB-2004-000002",
+	"references": [
+		{
+			"text": "http://jvn.jp/tr/TRCIAC-O-045/",
+			"source": "JVNTR",
+			"id": "TRCIAC-O-045"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0985",
+			"source": "CVE",
+			"id": "CVE-2003-0985"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0985",
+			"source": "NVD",
+			"id": "CVE-2003-0985"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/490620",
+			"source": "CERT-VN",
+			"id": "VU#490620"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/o-045.shtml",
+			"source": "CIAC",
+			"id": "O-045"
+		},
+		{
+			"text": "http://secunia.com/advisories/10532/",
+			"source": "SECUNIA",
+			"id": "SA10532"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/9356",
+			"source": "BID",
+			"id": "9356"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/14135",
+			"source": "XF",
+			"id": "14135"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2004/Jan/1008593.html",
+			"source": "SECTRACK",
+			"id": "1008593"
+		},
+		{
+			"text": "http://www.osvdb.org/3315",
+			"source": "OSVDB",
+			"id": "3315"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_550",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ550"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:linux_advanced_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux Advanced Workstation"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

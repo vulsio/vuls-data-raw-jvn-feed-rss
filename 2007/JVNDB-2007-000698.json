@@ -1,85 +1,85 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000698.html",
-  "title": "Microsoft MFC FindFile() 関数にヒープバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000698.html",
-  "description": "Microsoft Foundation Class (MFC) ライブラリに含まれる FindFile() 関数には、ヒープバッファオーバーフローの脆弱性が存在します。結果として任意のコードを実行されたり、サービス運用妨害 (DoS) 攻撃をうける可能性があります。\r\n\r\nMicrosoft Foundation Class (MFC) ライブラリは、Visual C++ 用クラスライブラリです。MFC は、Microsoft Visual Studio や Microsoft Windows にも含まれており、他の多くのアプリケーションにも使用されている可能性があります。この MFC ライブラリの中に含まれる FindFile() 関数はファイルシステム全体からファイル検索を行なう機能を提供します。 \r\n\r\nMFC42 ライブラリと MFC70 ライブラリの FindFile() 関数は引数を適切に処理できないためにヒープバッファオーバーフローの脆弱性が含まれており、結果として任意のコードを実行されたり、サービス運用妨害 (DoS) 攻撃をうける可能性があります。\r\n\r\n<JPCERT/CC からの補足情報>\r\nマイクロソフトから MFC 71 ライブラリには影響がなく、MFC 70 ライブラリに影響があることが確認できました。 JVN では、影響を受けるシステムに関して、当初 MFC 71 ライブラリと記載していましたがこれを MFC 70 ライブラリに訂正しました。",
-  "identifier": "JVNDB-2007-000698",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU%23611008/index.html",
-      "source": "JVN",
-      "id": "JVNVU#611008"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4916",
-      "source": "CVE",
-      "id": "CVE-2007-4916"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4916",
-      "source": "NVD",
-      "id": "CVE-2007-4916"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/611008",
-      "source": "CERT-VN",
-      "id": "VU#611008"
-    },
-    {
-      "text": "http://secunia.com/advisories/26800",
-      "source": "SECUNIA",
-      "id": "SA26800"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/25697",
-      "source": "BID",
-      "id": "25697"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/36608",
-      "source": "XF",
-      "id": "36608"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1018698",
-      "source": "SECTRACK",
-      "id": "1018698"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2007/3182",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2007-3182"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:microsoft:mfc42.dll",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "MFC42.dll"
-    },
-    {
-      "text": "cpe:/a:microsoft:mfc70.dll",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "MFC70.dll"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "10.0",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2008-01-23T16:00+09:00",
-  "issued": "2007-09-28T14:22+09:00",
-  "modified": "2008-01-23T16:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000698.html",
+	"title": "Microsoft MFC FindFile() 関数にヒープバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000698.html",
+	"description": "Microsoft Foundation Class (MFC) ライブラリに含まれる FindFile() 関数には、ヒープバッファオーバーフローの脆弱性が存在します。結果として任意のコードを実行されたり、サービス運用妨害 (DoS) 攻撃をうける可能性があります。\r\n\r\nMicrosoft Foundation Class (MFC) ライブラリは、Visual C++ 用クラスライブラリです。MFC は、Microsoft Visual Studio や Microsoft Windows にも含まれており、他の多くのアプリケーションにも使用されている可能性があります。この MFC ライブラリの中に含まれる FindFile() 関数はファイルシステム全体からファイル検索を行なう機能を提供します。 \r\n\r\nMFC42 ライブラリと MFC70 ライブラリの FindFile() 関数は引数を適切に処理できないためにヒープバッファオーバーフローの脆弱性が含まれており、結果として任意のコードを実行されたり、サービス運用妨害 (DoS) 攻撃をうける可能性があります。\r\n\r\n<JPCERT/CC からの補足情報>\r\nマイクロソフトから MFC 71 ライブラリには影響がなく、MFC 70 ライブラリに影響があることが確認できました。 JVN では、影響を受けるシステムに関して、当初 MFC 71 ライブラリと記載していましたがこれを MFC 70 ライブラリに訂正しました。",
+	"identifier": "JVNDB-2007-000698",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU%23611008/index.html",
+			"source": "JVN",
+			"id": "JVNVU#611008"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4916",
+			"source": "CVE",
+			"id": "CVE-2007-4916"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-4916",
+			"source": "NVD",
+			"id": "CVE-2007-4916"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/611008",
+			"source": "CERT-VN",
+			"id": "VU#611008"
+		},
+		{
+			"text": "http://secunia.com/advisories/26800",
+			"source": "SECUNIA",
+			"id": "SA26800"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/25697",
+			"source": "BID",
+			"id": "25697"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/36608",
+			"source": "XF",
+			"id": "36608"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1018698",
+			"source": "SECTRACK",
+			"id": "1018698"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2007/3182",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2007-3182"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:microsoft:mfc42.dll",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "MFC42.dll"
+		},
+		{
+			"text": "cpe:/a:microsoft:mfc70.dll",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "MFC70.dll"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "10.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2008-01-23T16:00+09:00",
+	"issued": "2007-09-28T14:22+09:00",
+	"modified": "2008-01-23T16:00+09:00"
 }

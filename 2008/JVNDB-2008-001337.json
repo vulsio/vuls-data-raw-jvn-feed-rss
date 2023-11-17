@@ -1,278 +1,278 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001337.html",
-  "title": "BGP 実装において細工された BGP UPDATE メッセージを適切に処理できない脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001337.html",
-  "description": "複数のベンダの BGP 実装には、細工された BGP UPDATE メッセージを適切に処理できない脆弱性が存在します。\r\n\r\nBorder Gateway Protocol (BGP) は、AS (Autonomous System) 間で広く使用されているルーティングプロトコルです。ピアルータ間での BGP による経路情報の交換は、インターネットの安定した運用において重要な意味を持ちます。\r\n\r\nいくつかのベンダの BGP 実装には、細工された BGP UPDATE メッセージを適切に処理できない脆弱性が存在します。そのため、BGP の実装によっては、細工された UPDATAE メッセージを処理する際にクラッシュしたり、ルーティングが不安定になる可能性があります。 ",
-  "identifier": "JVNDB-2008-001337",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU929656/index.html",
-      "source": "JVN",
-      "id": "JVNVU#929656"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6372",
-      "source": "CVE",
-      "id": "CVE-2007-6372"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-6372",
-      "source": "NVD",
-      "id": "CVE-2007-6372"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/929656",
-      "source": "CERT-VN",
-      "id": "VU#929656"
-    },
-    {
-      "text": "http://secunia.com/advisories/28100",
-      "source": "SECUNIA",
-      "id": "SA28100"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/28999",
-      "source": "BID",
-      "id": "28999"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2007/Dec/1019100.html",
-      "source": "SECTRACK",
-      "id": "1019100"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2007/4223",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2007-4223"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:nec:ip8800_s_r",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP8800/S,/R"
-    },
-    {
-      "text": "cpe:/h:alaxala:ax2000r",
-      "version": "2.2",
-      "vendor": "アラクサラネットワークス",
-      "product": "AX2000Rシリーズ"
-    },
-    {
-      "text": "cpe:/h:alaxala:ax3600s",
-      "version": "2.2",
-      "vendor": "アラクサラネットワークス",
-      "product": "AX3600Sシリーズ"
-    },
-    {
-      "text": "cpe:/h:alaxala:ax5400s",
-      "version": "2.2",
-      "vendor": "アラクサラネットワークス",
-      "product": "AX5400Sシリーズ"
-    },
-    {
-      "text": "cpe:/h:alaxala:ax6300s",
-      "version": "2.2",
-      "vendor": "アラクサラネットワークス",
-      "product": "AX6300Sシリーズ"
-    },
-    {
-      "text": "cpe:/h:alaxala:ax6700s",
-      "version": "2.2",
-      "vendor": "アラクサラネットワークス",
-      "product": "AX6700Sシリーズ"
-    },
-    {
-      "text": "cpe:/h:alaxala:ax7700r",
-      "version": "2.2",
-      "vendor": "アラクサラネットワークス",
-      "product": "AX7700Rシリーズ"
-    },
-    {
-      "text": "cpe:/h:alaxala:ax7800r",
-      "version": "2.2",
-      "vendor": "アラクサラネットワークス",
-      "product": "AX7800Rシリーズ"
-    },
-    {
-      "text": "cpe:/h:alaxala:ax7800s",
-      "version": "2.2",
-      "vendor": "アラクサラネットワークス",
-      "product": "AX7800Sシリーズ"
-    },
-    {
-      "text": "cpe:/h:allied_telesis_k.k.:centrecom",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "CentreCOM"
-    },
-    {
-      "text": "cpe:/h:allied_telesis_k.k.:switchblade4000",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "SwitchBlade4000"
-    },
-    {
-      "text": "cpe:/h:allied_telesis_k.k.:switchblade_5400s",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "SwitchBlade 5400Sシリーズ"
-    },
-    {
-      "text": "cpe:/h:allied_telesis_k.k.:switchblade_7800r",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "SwitchBlade 7800R シリーズ"
-    },
-    {
-      "text": "cpe:/h:allied_telesis_k.k.:switchblade_7800s",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "SwitchBlade 7800Sシリーズ"
-    },
-    {
-      "text": "cpe:/h:centurysys:xr-440",
-      "version": "2.2",
-      "vendor": "センチュリー・システムズ",
-      "product": "XR-440"
-    },
-    {
-      "text": "cpe:/h:centurysys:xr-540",
-      "version": "2.2",
-      "vendor": "センチュリー・システムズ",
-      "product": "XR-540"
-    },
-    {
-      "text": "cpe:/h:centurysys:xr-730",
-      "version": "2.2",
-      "vendor": "センチュリー・システムズ",
-      "product": "XR-730"
-    },
-    {
-      "text": "cpe:/h:furukawa_electric:fitelnet-f",
-      "version": "2.2",
-      "vendor": "古河電気工業",
-      "product": "FITELnet-Fシリーズ"
-    },
-    {
-      "text": "cpe:/h:hitachi:gr2000",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "GR2000"
-    },
-    {
-      "text": "cpe:/h:hitachi:gr4000",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "GR4000"
-    },
-    {
-      "text": "cpe:/h:hitachi:gs3000",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "GS3000"
-    },
-    {
-      "text": "cpe:/h:hitachi:gs4000",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "GS4000"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X シリーズ"
-    },
-    {
-      "text": "cpe:/h:nec:juniper_t_m_mx-series_router",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "Juniper T/M/MX-series router"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt105",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT105シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt107e",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT107e"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt140",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT140シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt250i",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT250i"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt300i",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT300i"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1000",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1000"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1100",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1100"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1500",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1500"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx2000",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX2000"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx3000",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX3000"
-    },
-    {
-      "text": "cpe:/h:yamaha:srt100",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "SRT100"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2008-11-20T13:45+09:00",
-  "issued": "2008-05-23T13:31+09:00",
-  "modified": "2008-11-20T13:45+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001337.html",
+	"title": "BGP 実装において細工された BGP UPDATE メッセージを適切に処理できない脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001337.html",
+	"description": "複数のベンダの BGP 実装には、細工された BGP UPDATE メッセージを適切に処理できない脆弱性が存在します。\r\n\r\nBorder Gateway Protocol (BGP) は、AS (Autonomous System) 間で広く使用されているルーティングプロトコルです。ピアルータ間での BGP による経路情報の交換は、インターネットの安定した運用において重要な意味を持ちます。\r\n\r\nいくつかのベンダの BGP 実装には、細工された BGP UPDATE メッセージを適切に処理できない脆弱性が存在します。そのため、BGP の実装によっては、細工された UPDATAE メッセージを処理する際にクラッシュしたり、ルーティングが不安定になる可能性があります。 ",
+	"identifier": "JVNDB-2008-001337",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU929656/index.html",
+			"source": "JVN",
+			"id": "JVNVU#929656"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6372",
+			"source": "CVE",
+			"id": "CVE-2007-6372"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-6372",
+			"source": "NVD",
+			"id": "CVE-2007-6372"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/929656",
+			"source": "CERT-VN",
+			"id": "VU#929656"
+		},
+		{
+			"text": "http://secunia.com/advisories/28100",
+			"source": "SECUNIA",
+			"id": "SA28100"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/28999",
+			"source": "BID",
+			"id": "28999"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2007/Dec/1019100.html",
+			"source": "SECTRACK",
+			"id": "1019100"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2007/4223",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2007-4223"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:nec:ip8800_s_r",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP8800/S,/R"
+		},
+		{
+			"text": "cpe:/h:alaxala:ax2000r",
+			"version": "2.2",
+			"vendor": "アラクサラネットワークス",
+			"product": "AX2000Rシリーズ"
+		},
+		{
+			"text": "cpe:/h:alaxala:ax3600s",
+			"version": "2.2",
+			"vendor": "アラクサラネットワークス",
+			"product": "AX3600Sシリーズ"
+		},
+		{
+			"text": "cpe:/h:alaxala:ax5400s",
+			"version": "2.2",
+			"vendor": "アラクサラネットワークス",
+			"product": "AX5400Sシリーズ"
+		},
+		{
+			"text": "cpe:/h:alaxala:ax6300s",
+			"version": "2.2",
+			"vendor": "アラクサラネットワークス",
+			"product": "AX6300Sシリーズ"
+		},
+		{
+			"text": "cpe:/h:alaxala:ax6700s",
+			"version": "2.2",
+			"vendor": "アラクサラネットワークス",
+			"product": "AX6700Sシリーズ"
+		},
+		{
+			"text": "cpe:/h:alaxala:ax7700r",
+			"version": "2.2",
+			"vendor": "アラクサラネットワークス",
+			"product": "AX7700Rシリーズ"
+		},
+		{
+			"text": "cpe:/h:alaxala:ax7800r",
+			"version": "2.2",
+			"vendor": "アラクサラネットワークス",
+			"product": "AX7800Rシリーズ"
+		},
+		{
+			"text": "cpe:/h:alaxala:ax7800s",
+			"version": "2.2",
+			"vendor": "アラクサラネットワークス",
+			"product": "AX7800Sシリーズ"
+		},
+		{
+			"text": "cpe:/h:allied_telesis_k.k.:centrecom",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "CentreCOM"
+		},
+		{
+			"text": "cpe:/h:allied_telesis_k.k.:switchblade4000",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "SwitchBlade4000"
+		},
+		{
+			"text": "cpe:/h:allied_telesis_k.k.:switchblade_5400s",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "SwitchBlade 5400Sシリーズ"
+		},
+		{
+			"text": "cpe:/h:allied_telesis_k.k.:switchblade_7800r",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "SwitchBlade 7800R シリーズ"
+		},
+		{
+			"text": "cpe:/h:allied_telesis_k.k.:switchblade_7800s",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "SwitchBlade 7800Sシリーズ"
+		},
+		{
+			"text": "cpe:/h:centurysys:xr-440",
+			"version": "2.2",
+			"vendor": "センチュリー・システムズ",
+			"product": "XR-440"
+		},
+		{
+			"text": "cpe:/h:centurysys:xr-540",
+			"version": "2.2",
+			"vendor": "センチュリー・システムズ",
+			"product": "XR-540"
+		},
+		{
+			"text": "cpe:/h:centurysys:xr-730",
+			"version": "2.2",
+			"vendor": "センチュリー・システムズ",
+			"product": "XR-730"
+		},
+		{
+			"text": "cpe:/h:furukawa_electric:fitelnet-f",
+			"version": "2.2",
+			"vendor": "古河電気工業",
+			"product": "FITELnet-Fシリーズ"
+		},
+		{
+			"text": "cpe:/h:hitachi:gr2000",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "GR2000"
+		},
+		{
+			"text": "cpe:/h:hitachi:gr4000",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "GR4000"
+		},
+		{
+			"text": "cpe:/h:hitachi:gs3000",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "GS3000"
+		},
+		{
+			"text": "cpe:/h:hitachi:gs4000",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "GS4000"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X シリーズ"
+		},
+		{
+			"text": "cpe:/h:nec:juniper_t_m_mx-series_router",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "Juniper T/M/MX-series router"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt105",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT105シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt107e",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT107e"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt140",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT140シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt250i",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT250i"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt300i",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT300i"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1000",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1000"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1100",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1100"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1500",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1500"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx2000",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX2000"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx3000",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX3000"
+		},
+		{
+			"text": "cpe:/h:yamaha:srt100",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "SRT100"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2008-11-20T13:45+09:00",
+	"issued": "2008-05-23T13:31+09:00",
+	"modified": "2008-11-20T13:45+09:00"
 }

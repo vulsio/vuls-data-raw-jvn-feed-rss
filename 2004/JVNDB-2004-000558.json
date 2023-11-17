@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000558.html",
-  "title": "Linux Kernel の ip_option_get 関数におけるメモリリークの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000558.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel では、VT (仮想端末) コンソールのドライバ (vt.c) において vc_resize() 関数が、TCP/IP プロトコル実装のためのオプション解析モジュール (ip_options.c) において ip_options_get() 関数がそれぞれ使用されています。\r\n\r\nLinux Kernel 2.4.28/2.6.9 以前の vc_resize() および ip_options_get() 関数には、引数に対する妥当性の確認が適切に行われていないため、整数オーバーフローが発生する問題が存在します。(CAN-2004-1333、CAN-2004-1334) \r\n\r\nこれらの問題を利用するローカルの攻撃者は、不正な値を引き渡す悪意あるプログラムを実行することにより、カーネルをクラッシュさせ、結果としてシステムをサービス不能状態に陥らせることが可能です。\r\n\r\n尚、この vc_resize() 関数における整数オーバーフローの問題を利用するためには、攻撃者はコンソール経由で悪意あるプログラムを実行する必要があります。\r\nIp_options_get() 関数における整数オーバーフローの問題に関しては、Linux Kernel 2.6 のみが影響を受けます。\r\n\r\nまた、上記の問題とは別に cmsg_send により ip_options_get() 関数が繰り返し呼び出されることにより生じるメモリリークの問題 (CAN-2004-1335) が報告されています。",
-  "identifier": "JVNDB-2004-000558",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1335",
-      "source": "CVE",
-      "id": "CVE-2004-1335"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1335",
-      "source": "NVD",
-      "id": "CVE-2004-1335"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/11956",
-      "source": "BID",
-      "id": "11956"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2004/Dec/1012547.html",
-      "source": "SECTRACK",
-      "id": "1012547"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.1",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000558.html",
+	"title": "Linux Kernel の ip_option_get 関数におけるメモリリークの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000558.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel では、VT (仮想端末) コンソールのドライバ (vt.c) において vc_resize() 関数が、TCP/IP プロトコル実装のためのオプション解析モジュール (ip_options.c) において ip_options_get() 関数がそれぞれ使用されています。\r\n\r\nLinux Kernel 2.4.28/2.6.9 以前の vc_resize() および ip_options_get() 関数には、引数に対する妥当性の確認が適切に行われていないため、整数オーバーフローが発生する問題が存在します。(CAN-2004-1333、CAN-2004-1334) \r\n\r\nこれらの問題を利用するローカルの攻撃者は、不正な値を引き渡す悪意あるプログラムを実行することにより、カーネルをクラッシュさせ、結果としてシステムをサービス不能状態に陥らせることが可能です。\r\n\r\n尚、この vc_resize() 関数における整数オーバーフローの問題を利用するためには、攻撃者はコンソール経由で悪意あるプログラムを実行する必要があります。\r\nIp_options_get() 関数における整数オーバーフローの問題に関しては、Linux Kernel 2.6 のみが影響を受けます。\r\n\r\nまた、上記の問題とは別に cmsg_send により ip_options_get() 関数が繰り返し呼び出されることにより生じるメモリリークの問題 (CAN-2004-1335) が報告されています。",
+	"identifier": "JVNDB-2004-000558",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1335",
+			"source": "CVE",
+			"id": "CVE-2004-1335"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1335",
+			"source": "NVD",
+			"id": "CVE-2004-1335"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/11956",
+			"source": "BID",
+			"id": "11956"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2004/Dec/1012547.html",
+			"source": "SECTRACK",
+			"id": "1012547"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.1",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

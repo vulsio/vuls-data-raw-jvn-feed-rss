@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000055.html",
-  "title": "XFree86 の GLX 拡張モジュールおよび DRI モジュールにおける整数オーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000055.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nXFree86 は、X Window System の実装の一つであり、Red Hat Linux 等で標準のウィンドウシステムとして利用されています。XFree86 の GLX 拡張は、OpenGL (Open Graphics Library) 命令をネットワーク越しに利用可能とします。この機能は一般的に DRI (Direct Rendering Infrastructure) と併用されます。これらの機能を利用するためには、一般に対応したモジュールとハードウェアの組合せが必要です。\r\n\r\nXFree86 4.3.0 以前の GLX 拡張モジュールと DRI モジュールには、スクリーンを指定する値のチェックが妥当ではないため、バッファオーバーフロー (CAN-2004-0093) や整数オーバーフロー (CAN-2004-0094) を生じる問題が存在します。\r\n\r\nこの問題を利用するローカルの攻撃者は、意図的なスクリーンの値をクライアントを通して対象の X サーバに渡す事により、バッファオーバーフローや整数オーバーフローを引き起し、X サーバをサービス不能状態に陥らせたり、さらには、潜在的に X サーバの権限 (通常は root 権限) で任意のコードを実行できる可能性があります。",
-  "identifier": "JVNDB-2004-000055",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0094",
-      "source": "CVE",
-      "id": "CVE-2004-0094"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0094",
-      "source": "NVD",
-      "id": "CVE-2004-0094"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/9701",
-      "source": "BID",
-      "id": "9701"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2004/Feb/1009147.html",
-      "source": "SECTRACK",
-      "id": "1009147"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000055.html",
+	"title": "XFree86 の GLX 拡張モジュールおよび DRI モジュールにおける整数オーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000055.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nXFree86 は、X Window System の実装の一つであり、Red Hat Linux 等で標準のウィンドウシステムとして利用されています。XFree86 の GLX 拡張は、OpenGL (Open Graphics Library) 命令をネットワーク越しに利用可能とします。この機能は一般的に DRI (Direct Rendering Infrastructure) と併用されます。これらの機能を利用するためには、一般に対応したモジュールとハードウェアの組合せが必要です。\r\n\r\nXFree86 4.3.0 以前の GLX 拡張モジュールと DRI モジュールには、スクリーンを指定する値のチェックが妥当ではないため、バッファオーバーフロー (CAN-2004-0093) や整数オーバーフロー (CAN-2004-0094) を生じる問題が存在します。\r\n\r\nこの問題を利用するローカルの攻撃者は、意図的なスクリーンの値をクライアントを通して対象の X サーバに渡す事により、バッファオーバーフローや整数オーバーフローを引き起し、X サーバをサービス不能状態に陥らせたり、さらには、潜在的に X サーバの権限 (通常は root 権限) で任意のコードを実行できる可能性があります。",
+	"identifier": "JVNDB-2004-000055",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0094",
+			"source": "CVE",
+			"id": "CVE-2004-0094"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0094",
+			"source": "NVD",
+			"id": "CVE-2004-0094"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/9701",
+			"source": "BID",
+			"id": "9701"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2004/Feb/1009147.html",
+			"source": "SECTRACK",
+			"id": "1009147"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

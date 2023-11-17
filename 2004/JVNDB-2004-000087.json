@@ -1,257 +1,257 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000087.html",
-  "title": "OpenSSL における未知の TLS メッセージ形式の扱いによるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000087.html",
-  "description": "OpenSSL には、 TLS の実装に不備があるため、意図的に作成した TLS メッセージを含む SSL/TLS 通信を行うわれた場合、未知の TLS メッセージ形式を扱うことにより、 無限ループが発生する脆弱性が存在します。\r\n\r\nなお、本脆弱性は OpenSSL ライブラリを使用しているアプリケーションならびにシステムも影響を受ける可能性があります。\r\nその他システムに関する詳細情報については NISCC-224012 (JVN)、NISCC Advisory 224012 (CPNI Advisory 00389) を併せてご確認ください。",
-  "identifier": "JVNDB-2004-000087",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNTA04-078A/index.html",
-      "source": "JVN",
-      "id": "JVNTA04-078A"
-    },
-    {
-      "text": "http://jvn.jp/niscc/NISCC-224012",
-      "source": "JVN",
-      "id": "NISCC-224012"
-    },
-    {
-      "text": "http://jvn.jp/tr/TRTA04-078A",
-      "source": "JVNTR",
-      "id": "TRTA04-078A"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0081",
-      "source": "CVE",
-      "id": "CVE-2004-0081"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0081",
-      "source": "NVD",
-      "id": "CVE-2004-0081"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2004/wr041201.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2004-1201"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2004/wr041301.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2004-1301"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2004/wr041701.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2004-1701"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2004/wr041801.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2004-1801"
-    },
-    {
-      "text": "http://www.cyberpolice.go.jp/important/20040318_082932.html",
-      "source": "AT-POLICE",
-      "id": "OpenSSLの脆弱性について(3/18)"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/465542",
-      "source": "CERT-VN",
-      "id": "VU#465542"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA04-078A.html",
-      "source": "CERT-TA",
-      "id": "TA04-078A"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/o-101.shtml",
-      "source": "CIAC",
-      "id": "o-101"
-    },
-    {
-      "text": "http://www.cpni.gov.uk/docs/re-20040317-00389.pdf?lang=en",
-      "source": "NISCC",
-      "id": "224012"
-    },
-    {
-      "text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20040317-00389.xml",
-      "source": "CPNI",
-      "id": "00389"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/9899",
-      "source": "BID",
-      "id": "9899"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/15509",
-      "source": "XF",
-      "id": "15509"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2004/Mar/1009458.html",
-      "source": "SECTRACK",
-      "id": "1009458"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:checkpoint:firewall-1_gx",
-      "version": "2.2",
-      "vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
-      "product": "FireWall-1 GX"
-    },
-    {
-      "text": "cpe:/a:checkpoint:provider-1",
-      "version": "2.2",
-      "vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
-      "product": "Provider-1"
-    },
-    {
-      "text": "cpe:/a:checkpoint:vpn-1_firewall-1",
-      "version": "2.2",
-      "vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
-      "product": "VPN-1/FireWall-1"
-    },
-    {
-      "text": "cpe:/a:juniper:netscreen-idp",
-      "version": "2.2",
-      "vendor": "ジュニパーネットワークス",
-      "product": "NetScreen IDP"
-    },
-    {
-      "text": "cpe:/a:juniper:netscreen-ive",
-      "version": "2.2",
-      "vendor": "ジュニパーネットワークス",
-      "product": "NetScreen IVE"
-    },
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/a:sgi:propack",
-      "version": "2.2",
-      "vendor": "SGI",
-      "product": "SGI ProPack"
-    },
-    {
-      "text": "cpe:/a:trendmicro:interscan_viruswall",
-      "version": "2.2",
-      "vendor": "トレンドマイクロ",
-      "product": "TrendMicro InterScan VirusWall"
-    },
-    {
-      "text": "cpe:/h:fujitsu:ipcom",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "IPCOMシリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:netshelter",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "NetShelterシリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:netwatcher",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "NetWatcher"
-    },
-    {
-      "text": "cpe:/h:fujitsu:primergy_ssl_accelerator",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "PRIMERGY SSLAccelerator"
-    },
-    {
-      "text": "cpe:/h:hp:aaa_server",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX AAA Server"
-    },
-    {
-      "text": "cpe:/h:sun:sun_crypto_accelerator",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Crypto Accelerator"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:misc:vine_linux",
-      "version": "2.2",
-      "vendor": "Vine Linux",
-      "product": "Vine Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_advanced_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Advanced Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Appliance Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_desktop",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Desktop"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_workstation",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000087.html",
+	"title": "OpenSSL における未知の TLS メッセージ形式の扱いによるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000087.html",
+	"description": "OpenSSL には、 TLS の実装に不備があるため、意図的に作成した TLS メッセージを含む SSL/TLS 通信を行うわれた場合、未知の TLS メッセージ形式を扱うことにより、 無限ループが発生する脆弱性が存在します。\r\n\r\nなお、本脆弱性は OpenSSL ライブラリを使用しているアプリケーションならびにシステムも影響を受ける可能性があります。\r\nその他システムに関する詳細情報については NISCC-224012 (JVN)、NISCC Advisory 224012 (CPNI Advisory 00389) を併せてご確認ください。",
+	"identifier": "JVNDB-2004-000087",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNTA04-078A/index.html",
+			"source": "JVN",
+			"id": "JVNTA04-078A"
+		},
+		{
+			"text": "http://jvn.jp/niscc/NISCC-224012",
+			"source": "JVN",
+			"id": "NISCC-224012"
+		},
+		{
+			"text": "http://jvn.jp/tr/TRTA04-078A",
+			"source": "JVNTR",
+			"id": "TRTA04-078A"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0081",
+			"source": "CVE",
+			"id": "CVE-2004-0081"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0081",
+			"source": "NVD",
+			"id": "CVE-2004-0081"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2004/wr041201.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2004-1201"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2004/wr041301.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2004-1301"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2004/wr041701.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2004-1701"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2004/wr041801.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2004-1801"
+		},
+		{
+			"text": "http://www.cyberpolice.go.jp/important/20040318_082932.html",
+			"source": "AT-POLICE",
+			"id": "OpenSSLの脆弱性について(3/18)"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/465542",
+			"source": "CERT-VN",
+			"id": "VU#465542"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA04-078A.html",
+			"source": "CERT-TA",
+			"id": "TA04-078A"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/o-101.shtml",
+			"source": "CIAC",
+			"id": "o-101"
+		},
+		{
+			"text": "http://www.cpni.gov.uk/docs/re-20040317-00389.pdf?lang=en",
+			"source": "NISCC",
+			"id": "224012"
+		},
+		{
+			"text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20040317-00389.xml",
+			"source": "CPNI",
+			"id": "00389"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/9899",
+			"source": "BID",
+			"id": "9899"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/15509",
+			"source": "XF",
+			"id": "15509"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2004/Mar/1009458.html",
+			"source": "SECTRACK",
+			"id": "1009458"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:checkpoint:firewall-1_gx",
+			"version": "2.2",
+			"vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
+			"product": "FireWall-1 GX"
+		},
+		{
+			"text": "cpe:/a:checkpoint:provider-1",
+			"version": "2.2",
+			"vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
+			"product": "Provider-1"
+		},
+		{
+			"text": "cpe:/a:checkpoint:vpn-1_firewall-1",
+			"version": "2.2",
+			"vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
+			"product": "VPN-1/FireWall-1"
+		},
+		{
+			"text": "cpe:/a:juniper:netscreen-idp",
+			"version": "2.2",
+			"vendor": "ジュニパーネットワークス",
+			"product": "NetScreen IDP"
+		},
+		{
+			"text": "cpe:/a:juniper:netscreen-ive",
+			"version": "2.2",
+			"vendor": "ジュニパーネットワークス",
+			"product": "NetScreen IVE"
+		},
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/a:sgi:propack",
+			"version": "2.2",
+			"vendor": "SGI",
+			"product": "SGI ProPack"
+		},
+		{
+			"text": "cpe:/a:trendmicro:interscan_viruswall",
+			"version": "2.2",
+			"vendor": "トレンドマイクロ",
+			"product": "TrendMicro InterScan VirusWall"
+		},
+		{
+			"text": "cpe:/h:fujitsu:ipcom",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "IPCOMシリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:netshelter",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "NetShelterシリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:netwatcher",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "NetWatcher"
+		},
+		{
+			"text": "cpe:/h:fujitsu:primergy_ssl_accelerator",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "PRIMERGY SSLAccelerator"
+		},
+		{
+			"text": "cpe:/h:hp:aaa_server",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX AAA Server"
+		},
+		{
+			"text": "cpe:/h:sun:sun_crypto_accelerator",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Crypto Accelerator"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:misc:vine_linux",
+			"version": "2.2",
+			"vendor": "Vine Linux",
+			"product": "Vine Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_advanced_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Advanced Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Appliance Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_desktop",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Desktop"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_workstation",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

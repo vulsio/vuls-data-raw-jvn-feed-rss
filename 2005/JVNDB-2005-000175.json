@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000175.html",
-  "title": "Ethereal の sFlowプロトコルの解釈部におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000175.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal 0.9.1 - 0.10.9 には、プロトコルの解析部に以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・Etheric プロトコルの解釈部に不備が存在するため、バッファオーバーフローが発生する問題 (0.10.7 - 0.10.9) (CAN-2005-0704)\r\n\r\n・GPRS-LLC プロトコルの解釈部に不備が存在するため、\"ignore cipher bit\" オプションが有効な場合に Ethereal がクラッシュする問題 (0.10.7 - 0.10.9) (CAN-2005-0705)\r\n\r\n・国際的な通信事業者の業界団体 CDG が開発した通信方式の CDMA2000 でサポートされる 3GPP2 A11 プロトコルの RADIUS 認証のサポートを実装する dissect_a11_radius() 関数において不備が存在するため、バッファオーバーフローが発生する問題 (0.10.3 - 0.10.9) (CAN-2005-0699)\r\n\r\n・IAPP プロトコルの解釈部の dissect_pdus() 関数において不備が存在するため、バッファオーバーフローが発生する問題 (0.9.1 - 0.10.9) (CAN-2005-0739)\r\n\r\n・JXTA プロトコルの解釈部に不備が存在するため、Ethereal がクラッシュする問題 (0.10.9) (CAN-2005-0765)\r\n\r\n・sFlow プロトコルの解釈部に不備が存在するため、Ethereal がクラッシュする問題 (0.9.14 - 0.10.9) (CAN-2005-0766)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、以下のような手法によって、Ethereal をクラッシュさせ、サービス不能状態に陥らせる、さらには Ethereal の実行権限 (通常 root 権限) で任意のコードを実行する可能性があります。\r\n\r\n・意図的に作成したパケットを標的システムが監視しているネットワークに送り付ける\r\n・意図的に作成したパケットトレースファイルを読み取らせる",
-  "identifier": "JVNDB-2005-000175",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0766",
-      "source": "CVE",
-      "id": "CVE-2005-0766"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0766",
-      "source": "NVD",
-      "id": "CVE-2005-0766"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12762",
-      "source": "BID",
-      "id": "12762"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12759",
-      "source": "BID",
-      "id": "12759"
-    },
-    {
-      "text": "http://www.k-otik.com/english/advisories/2005/0244",
-      "source": "K-OTIK",
-      "id": "KOTIK/ADV-2005-0244"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000175.html",
+	"title": "Ethereal の sFlowプロトコルの解釈部におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000175.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal 0.9.1 - 0.10.9 には、プロトコルの解析部に以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・Etheric プロトコルの解釈部に不備が存在するため、バッファオーバーフローが発生する問題 (0.10.7 - 0.10.9) (CAN-2005-0704)\r\n\r\n・GPRS-LLC プロトコルの解釈部に不備が存在するため、\"ignore cipher bit\" オプションが有効な場合に Ethereal がクラッシュする問題 (0.10.7 - 0.10.9) (CAN-2005-0705)\r\n\r\n・国際的な通信事業者の業界団体 CDG が開発した通信方式の CDMA2000 でサポートされる 3GPP2 A11 プロトコルの RADIUS 認証のサポートを実装する dissect_a11_radius() 関数において不備が存在するため、バッファオーバーフローが発生する問題 (0.10.3 - 0.10.9) (CAN-2005-0699)\r\n\r\n・IAPP プロトコルの解釈部の dissect_pdus() 関数において不備が存在するため、バッファオーバーフローが発生する問題 (0.9.1 - 0.10.9) (CAN-2005-0739)\r\n\r\n・JXTA プロトコルの解釈部に不備が存在するため、Ethereal がクラッシュする問題 (0.10.9) (CAN-2005-0765)\r\n\r\n・sFlow プロトコルの解釈部に不備が存在するため、Ethereal がクラッシュする問題 (0.9.14 - 0.10.9) (CAN-2005-0766)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、以下のような手法によって、Ethereal をクラッシュさせ、サービス不能状態に陥らせる、さらには Ethereal の実行権限 (通常 root 権限) で任意のコードを実行する可能性があります。\r\n\r\n・意図的に作成したパケットを標的システムが監視しているネットワークに送り付ける\r\n・意図的に作成したパケットトレースファイルを読み取らせる",
+	"identifier": "JVNDB-2005-000175",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0766",
+			"source": "CVE",
+			"id": "CVE-2005-0766"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0766",
+			"source": "NVD",
+			"id": "CVE-2005-0766"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12762",
+			"source": "BID",
+			"id": "12762"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12759",
+			"source": "BID",
+			"id": "12759"
+		},
+		{
+			"text": "http://www.k-otik.com/english/advisories/2005/0244",
+			"source": "K-OTIK",
+			"id": "KOTIK/ADV-2005-0244"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

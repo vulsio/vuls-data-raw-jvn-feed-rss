@@ -1,66 +1,66 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005484.html",
-  "title": "ISC BIND 9 にサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005484.html",
-  "description": "ISC BIND 9 にはサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC BIND には、細工したオプション情報を含むパケットによって assertion failture (表明違反) が引き起こされる脆弱性が存在します。\r\nISC では、2013年5月にリリースされたバージョンでこの脆弱性への対応を行っており (#3548)、現在 ISC が提供しているバージョンの BIND は本脆弱性の影響を受けません。\r\n#3548 の修正適用より前の時点のソースコードを取り込んで独自にメンテナンスされている製品では、本脆弱性の修正が行われていない可能性があります。",
-  "identifier": "JVNDB-2016-005484",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU95603997/index.html",
-      "source": "JVN",
-      "id": "JVNVU#95603997"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2848",
-      "source": "CVE",
-      "id": "CVE-2016-2848"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2848",
-      "source": "NVD",
-      "id": "CVE-2016-2848"
-    },
-    {
-      "text": "https://jprs.jp/tech/security/2016-10-21-bind9-vuln-malformed-options.html",
-      "source": "JPRS",
-      "id": "（緊急）BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2016-2848）"
-    },
-    {
-      "text": "https://www.nic.ad.jp/ja/topics/2016/20161021-01.html",
-      "source": "JPNIC",
-      "id": "BIND 9における不正なパケットによるサーバ停止の脆弱性について(2016年10月)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:isc:bind",
-      "version": "2.2",
-      "vendor": "ISC, Inc.",
-      "product": "BIND"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-    }
-  ],
-  "date": "2016-10-24T18:20+09:00",
-  "issued": "2016-10-21T16:45+09:00",
-  "modified": "2016-10-24T18:20+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005484.html",
+	"title": "ISC BIND 9 にサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005484.html",
+	"description": "ISC BIND 9 にはサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC BIND には、細工したオプション情報を含むパケットによって assertion failture (表明違反) が引き起こされる脆弱性が存在します。\r\nISC では、2013年5月にリリースされたバージョンでこの脆弱性への対応を行っており (#3548)、現在 ISC が提供しているバージョンの BIND は本脆弱性の影響を受けません。\r\n#3548 の修正適用より前の時点のソースコードを取り込んで独自にメンテナンスされている製品では、本脆弱性の修正が行われていない可能性があります。",
+	"identifier": "JVNDB-2016-005484",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU95603997/index.html",
+			"source": "JVN",
+			"id": "JVNVU#95603997"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2848",
+			"source": "CVE",
+			"id": "CVE-2016-2848"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2848",
+			"source": "NVD",
+			"id": "CVE-2016-2848"
+		},
+		{
+			"text": "https://jprs.jp/tech/security/2016-10-21-bind9-vuln-malformed-options.html",
+			"source": "JPRS",
+			"id": "（緊急）BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2016-2848）"
+		},
+		{
+			"text": "https://www.nic.ad.jp/ja/topics/2016/20161021-01.html",
+			"source": "JPNIC",
+			"id": "BIND 9における不正なパケットによるサーバ停止の脆弱性について(2016年10月)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:isc:bind",
+			"version": "2.2",
+			"vendor": "ISC, Inc.",
+			"product": "BIND"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2016-10-24T18:20+09:00",
+	"issued": "2016-10-21T16:45+09:00",
+	"modified": "2016-10-24T18:20+09:00"
 }

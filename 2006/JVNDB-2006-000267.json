@@ -1,66 +1,66 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000267.html",
-  "title": "Microsoft Windows の CRpcIoManagerServer::BuildContext() 関数におけるヒープオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000267.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Distributed Transaction Coordinator (MSDTC) は、複数のサーバ間での分散トランザクションを提供するサービスです。Microsoft SQL Server や Microsoft Internet Information Services などで利用されています。\r\n\r\nMicorosoft Windows の MSDTC サービスには、以下 2 つの問題が存在します。\r\n\r\n・MSDTCPRX.DLL の CRpcIoManagerServer::BuildContext 関数において入力チェックに不備が存在するため、ヒープオーバーフローが発生する問題 (CVE-2006-0034)\r\n\r\n・MSDTCPRX.DLL の MIDL_user_allocate 関数においてメモリ割り当て時の境界チェックに不備が存在するため、MSDTC サービスがクラッシュする問題 (CVE-2006-1184)\r\n\r\nリモートの攻撃者に悪用された場合、MSDTC サービスが異常終了し、結果として MSDTC に依存するサービスがサービス不能状態に陥る可能性があります。",
-  "identifier": "JVNDB-2006-000267",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0034",
-      "source": "CVE",
-      "id": "CVE-2006-0034"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0034",
-      "source": "NVD",
-      "id": "CVE-2006-0034"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/17906",
-      "source": "BID",
-      "id": "17906"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/17905",
-      "source": "BID",
-      "id": "17905"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2006/1742",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2006-1742"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:microsoft:windows_2000",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 2000"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2003",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2003"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_xp",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows XP"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000267.html",
+	"title": "Microsoft Windows の CRpcIoManagerServer::BuildContext() 関数におけるヒープオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000267.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Distributed Transaction Coordinator (MSDTC) は、複数のサーバ間での分散トランザクションを提供するサービスです。Microsoft SQL Server や Microsoft Internet Information Services などで利用されています。\r\n\r\nMicorosoft Windows の MSDTC サービスには、以下 2 つの問題が存在します。\r\n\r\n・MSDTCPRX.DLL の CRpcIoManagerServer::BuildContext 関数において入力チェックに不備が存在するため、ヒープオーバーフローが発生する問題 (CVE-2006-0034)\r\n\r\n・MSDTCPRX.DLL の MIDL_user_allocate 関数においてメモリ割り当て時の境界チェックに不備が存在するため、MSDTC サービスがクラッシュする問題 (CVE-2006-1184)\r\n\r\nリモートの攻撃者に悪用された場合、MSDTC サービスが異常終了し、結果として MSDTC に依存するサービスがサービス不能状態に陥る可能性があります。",
+	"identifier": "JVNDB-2006-000267",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0034",
+			"source": "CVE",
+			"id": "CVE-2006-0034"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0034",
+			"source": "NVD",
+			"id": "CVE-2006-0034"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/17906",
+			"source": "BID",
+			"id": "17906"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/17905",
+			"source": "BID",
+			"id": "17905"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2006/1742",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2006-1742"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:microsoft:windows_2000",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 2000"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2003",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2003"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_xp",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows XP"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

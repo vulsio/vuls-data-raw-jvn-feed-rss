@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006565.html",
-  "title": "Linux Kernel の ALSA サブシステムの sound/core/pcm_lib.c におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006565.html",
-  "description": "Linux Kernel の ALSA サブシステムの sound/core/pcm_lib.c の snd_pcm_period_elapsed 関数には、競合状態により、サービス運用妨害 (解放済みメモリの使用 (use-after-free)) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
-  "identifier": "JVNDB-2016-006565",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9794",
-      "source": "CVE",
-      "id": "CVE-2016-9794"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9794",
-      "source": "NVD",
-      "id": "CVE-2016-9794"
-    },
-    {
-      "text": "https://patchwork.kernel.org/patch/8752621/",
-      "source": "関連文書",
-      "id": "Patchwork Sound: BUG: KASAN: use-after-free in kill_fasync"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
-      "id": "CWE-362",
-      "title": "競合状態(CWE-362)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/416.html",
-      "id": "CWE-416",
-      "title": "解放済みメモリの使用(CWE-416)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.6",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2017-01-11T15:44+09:00",
-  "issued": "2017-01-11T15:44+09:00",
-  "modified": "2017-01-11T15:44+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006565.html",
+	"title": "Linux Kernel の ALSA サブシステムの sound/core/pcm_lib.c におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006565.html",
+	"description": "Linux Kernel の ALSA サブシステムの sound/core/pcm_lib.c の snd_pcm_period_elapsed 関数には、競合状態により、サービス運用妨害 (解放済みメモリの使用 (use-after-free)) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+	"identifier": "JVNDB-2016-006565",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9794",
+			"source": "CVE",
+			"id": "CVE-2016-9794"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9794",
+			"source": "NVD",
+			"id": "CVE-2016-9794"
+		},
+		{
+			"text": "https://patchwork.kernel.org/patch/8752621/",
+			"source": "関連文書",
+			"id": "Patchwork Sound: BUG: KASAN: use-after-free in kill_fasync"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+			"id": "CWE-362",
+			"title": "競合状態(CWE-362)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/416.html",
+			"id": "CWE-416",
+			"title": "解放済みメモリの使用(CWE-416)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.6",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2017-01-11T15:44+09:00",
+	"issued": "2017-01-11T15:44+09:00",
+	"modified": "2017-01-11T15:44+09:00"
 }

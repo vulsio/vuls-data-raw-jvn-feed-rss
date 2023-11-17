@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000352.html",
-  "title": "BEA WebLogic Server の組み込み LDAP サーバへユーザエントリ参照によるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000352.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\n組み込み LDAP サーバは、ユーザ、グループ、グループメンバシップ、セキュリティロール、セキュリティポリシ、および資格マップ情報が格納される既定のセキュリティプロバイダデータベースです。デフォルトで、各属性のデフォルト値が設定された組み込み LDAP サーバが WebLogic Server ドメインごとに存在します。\r\n\r\nBEA WebLogic Server には、セキュリティ上の問題が存在するため、リモートユーザが匿名 (anonymous) で組み込み LDAP サーバにバインドできる問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、結果としてユーザエントリを参照する、あるいは標的の組み込み LDAP サーバに多数の接続を確立させることにより、この LDAP サーバをサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、ユーザエントリを参照するためには、攻撃者はスキーマを推測する必要があります。また、参照に成功した場合であっても属性を表示することはできません。",
-  "identifier": "JVNDB-2005-000352",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1748",
-      "source": "CVE",
-      "id": "CVE-2005-1748"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1748",
-      "source": "NVD",
-      "id": "CVE-2005-1748"
-    },
-    {
-      "text": "http://secunia.com/advisories/15486",
-      "source": "SECUNIA",
-      "id": "SA15486"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13717",
-      "source": "BID",
-      "id": "13717"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/0608",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-0608"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:bea:weblogic_server",
-      "version": "2.2",
-      "vendor": "BEAシステムズ",
-      "product": "BEA WebLogic Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000352.html",
+	"title": "BEA WebLogic Server の組み込み LDAP サーバへユーザエントリ参照によるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000352.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\n組み込み LDAP サーバは、ユーザ、グループ、グループメンバシップ、セキュリティロール、セキュリティポリシ、および資格マップ情報が格納される既定のセキュリティプロバイダデータベースです。デフォルトで、各属性のデフォルト値が設定された組み込み LDAP サーバが WebLogic Server ドメインごとに存在します。\r\n\r\nBEA WebLogic Server には、セキュリティ上の問題が存在するため、リモートユーザが匿名 (anonymous) で組み込み LDAP サーバにバインドできる問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、結果としてユーザエントリを参照する、あるいは標的の組み込み LDAP サーバに多数の接続を確立させることにより、この LDAP サーバをサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、ユーザエントリを参照するためには、攻撃者はスキーマを推測する必要があります。また、参照に成功した場合であっても属性を表示することはできません。",
+	"identifier": "JVNDB-2005-000352",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1748",
+			"source": "CVE",
+			"id": "CVE-2005-1748"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1748",
+			"source": "NVD",
+			"id": "CVE-2005-1748"
+		},
+		{
+			"text": "http://secunia.com/advisories/15486",
+			"source": "SECUNIA",
+			"id": "SA15486"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13717",
+			"source": "BID",
+			"id": "13717"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/0608",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-0608"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:bea:weblogic_server",
+			"version": "2.2",
+			"vendor": "BEAシステムズ",
+			"product": "BEA WebLogic Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

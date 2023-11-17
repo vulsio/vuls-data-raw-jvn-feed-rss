@@ -1,71 +1,71 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001355.html",
-  "title": "複数の DNS ネームサーバの実装に問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001355.html",
-  "description": "複数の DNS ネームサーバにおけるリソースレコードの取り扱いに関する問題が公表されました。\r\n\r\n一定の条件のもとで、DNS キャッシュサーバが保持しているリソースレコードの保持期限を外部から延長させることができる問題が公表されています。\r\n\r\nISC の公開しているセキュリティアドバイザリ (https://www.isc.org/software/bind/advisories/cve-2012-1033) (Document Version: 2.0) では、以下のように記載されています。\r\n\r\n\"To the best of our current knowledge, the extent of the exposure for users of BIND or other affected software is this: every resource record in the Domain Name System hierarchy has a time-to-live (TTL) value associated with it, intended to control how long the information in the resource record can be kept in cache by a non-authoritative server. Dr. Duan's paper discloses a method whereby information can be prolonged in the cache beyond the period supposedly allowed by the TTL value, causing affected resolvers to potentially return incorrect answers. It does not allow arbitrary insertion, removal, or alteration of resource record data.\"",
-  "identifier": "JVNDB-2012-001355",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU542123",
-      "source": "JVN",
-      "id": "JVNVU#542123"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1033",
-      "source": "CVE",
-      "id": "CVE-2012-1033"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1033",
-      "source": "NVD",
-      "id": "CVE-2012-1033"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/542123",
-      "source": "CERT-VN",
-      "id": "VU#542123"
-    },
-    {
-      "text": "http://jprs.jp/tech/notice/2012-02-17-ghost-domain-names.html",
-      "source": "JPRS",
-      "id": "「ghost domain names（幽霊ドメイン名）」脆弱性について"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-DesignError",
-      "title": "設計上の問題(CWE-DesignError)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:isc:bind",
-      "version": "2.2",
-      "vendor": "ISC, Inc.",
-      "product": "BIND"
-    },
-    {
-      "text": "cpe:/a:nec:infocage",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "InfoCage"
-    },
-    {
-      "text": "cpe:/a:vmware:esx",
-      "version": "2.2",
-      "vendor": "VMware",
-      "product": "VMware ESX"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2013-02-08T16:14+09:00",
-  "issued": "2012-02-10T16:29+09:00",
-  "modified": "2013-02-08T16:14+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001355.html",
+	"title": "複数の DNS ネームサーバの実装に問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-001355.html",
+	"description": "複数の DNS ネームサーバにおけるリソースレコードの取り扱いに関する問題が公表されました。\r\n\r\n一定の条件のもとで、DNS キャッシュサーバが保持しているリソースレコードの保持期限を外部から延長させることができる問題が公表されています。\r\n\r\nISC の公開しているセキュリティアドバイザリ (https://www.isc.org/software/bind/advisories/cve-2012-1033) (Document Version: 2.0) では、以下のように記載されています。\r\n\r\n\"To the best of our current knowledge, the extent of the exposure for users of BIND or other affected software is this: every resource record in the Domain Name System hierarchy has a time-to-live (TTL) value associated with it, intended to control how long the information in the resource record can be kept in cache by a non-authoritative server. Dr. Duan's paper discloses a method whereby information can be prolonged in the cache beyond the period supposedly allowed by the TTL value, causing affected resolvers to potentially return incorrect answers. It does not allow arbitrary insertion, removal, or alteration of resource record data.\"",
+	"identifier": "JVNDB-2012-001355",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU542123",
+			"source": "JVN",
+			"id": "JVNVU#542123"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1033",
+			"source": "CVE",
+			"id": "CVE-2012-1033"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1033",
+			"source": "NVD",
+			"id": "CVE-2012-1033"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/542123",
+			"source": "CERT-VN",
+			"id": "VU#542123"
+		},
+		{
+			"text": "http://jprs.jp/tech/notice/2012-02-17-ghost-domain-names.html",
+			"source": "JPRS",
+			"id": "「ghost domain names（幽霊ドメイン名）」脆弱性について"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-DesignError",
+			"title": "設計上の問題(CWE-DesignError)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:isc:bind",
+			"version": "2.2",
+			"vendor": "ISC, Inc.",
+			"product": "BIND"
+		},
+		{
+			"text": "cpe:/a:nec:infocage",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "InfoCage"
+		},
+		{
+			"text": "cpe:/a:vmware:esx",
+			"version": "2.2",
+			"vendor": "VMware",
+			"product": "VMware ESX"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2013-02-08T16:14+09:00",
+	"issued": "2012-02-10T16:29+09:00",
+	"modified": "2013-02-08T16:14+09:00"
 }

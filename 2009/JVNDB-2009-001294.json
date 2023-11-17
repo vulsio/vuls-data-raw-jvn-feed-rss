@@ -1,93 +1,93 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001294.html",
-  "title": "Linux Kernel の exit_notify 関数における任意のシグナルをプロセスに送信可能な脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001294.html",
-  "description": "Linux Kernel の kernel/exit.c にある exit_notify 関数には、CAP_KILL ケーパビリティを持つ exit シグナルを制限しないため、setuid アプリケーションをシステムコールで呼び出す際に、exit_signal フィールドを改ざんしたプログラムを起動することにより、任意のシグナルをプロセスに送信可能な脆弱性が存在します。",
-  "identifier": "JVNDB-2009-001294",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1337",
-      "source": "CVE",
-      "id": "CVE-2009-1337"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1337",
-      "source": "NVD",
-      "id": "CVE-2009-1337"
-    },
-    {
-      "text": "http://secunia.com/advisories/35015",
-      "source": "SECUNIA",
-      "id": "SA35015"
-    },
-    {
-      "text": "http://secunia.com/advisories/35160",
-      "source": "SECUNIA",
-      "id": "SA35160"
-    },
-    {
-      "text": "http://secunia.com/advisories/34917",
-      "source": "SECUNIA",
-      "id": "SA34917"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/34405",
-      "source": "BID",
-      "id": "34405"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1022141",
-      "source": "SECTRACK",
-      "id": "1022141"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux EUS"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2010-01-21T11:23+09:00",
-  "issued": "2009-06-23T11:55+09:00",
-  "modified": "2010-01-21T11:23+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001294.html",
+	"title": "Linux Kernel の exit_notify 関数における任意のシグナルをプロセスに送信可能な脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001294.html",
+	"description": "Linux Kernel の kernel/exit.c にある exit_notify 関数には、CAP_KILL ケーパビリティを持つ exit シグナルを制限しないため、setuid アプリケーションをシステムコールで呼び出す際に、exit_signal フィールドを改ざんしたプログラムを起動することにより、任意のシグナルをプロセスに送信可能な脆弱性が存在します。",
+	"identifier": "JVNDB-2009-001294",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1337",
+			"source": "CVE",
+			"id": "CVE-2009-1337"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1337",
+			"source": "NVD",
+			"id": "CVE-2009-1337"
+		},
+		{
+			"text": "http://secunia.com/advisories/35015",
+			"source": "SECUNIA",
+			"id": "SA35015"
+		},
+		{
+			"text": "http://secunia.com/advisories/35160",
+			"source": "SECUNIA",
+			"id": "SA35160"
+		},
+		{
+			"text": "http://secunia.com/advisories/34917",
+			"source": "SECUNIA",
+			"id": "SA34917"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/34405",
+			"source": "BID",
+			"id": "34405"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1022141",
+			"source": "SECTRACK",
+			"id": "1022141"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux EUS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2010-01-21T11:23+09:00",
+	"issued": "2009-06-23T11:55+09:00",
+	"modified": "2010-01-21T11:23+09:00"
 }

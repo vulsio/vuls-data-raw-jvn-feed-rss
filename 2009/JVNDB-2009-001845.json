@@ -1,187 +1,187 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001845.html",
-  "title": "Apache APR-util の apr_brigade_vprintf 関数における重要な情報を取得される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001845.html",
-  "description": "Apache APR-util の apr_brigade_vprintf 関数には、入力処理に不備があるため、重要な情報を取得される、またはサービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
-  "identifier": "JVNDB-2009-001845",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1956",
-      "source": "CVE",
-      "id": "CVE-2009-1956"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1956",
-      "source": "NVD",
-      "id": "CVE-2009-1956"
-    },
-    {
-      "text": "http://secunia.com/advisories/35843",
-      "source": "SECUNIA",
-      "id": "SA35843"
-    },
-    {
-      "text": "http://secunia.com/advisories/35797",
-      "source": "SECUNIA",
-      "id": "SA35797"
-    },
-    {
-      "text": "http://secunia.com/advisories/35487",
-      "source": "SECUNIA",
-      "id": "SA35487"
-    },
-    {
-      "text": "http://secunia.com/advisories/35284",
-      "source": "SECUNIA",
-      "id": "SA35284"
-    },
-    {
-      "text": "http://secunia.com/advisories/34724",
-      "source": "SECUNIA",
-      "id": "SA34724"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/35251",
-      "source": "BID",
-      "id": "35251"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/50993",
-      "source": "XF",
-      "id": "50993"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
-      "id": "CWE-189",
-      "title": "数値処理の問題(CWE-189)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:apr-util",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "APR-util"
-    },
-    {
-      "text": "cpe:/a:apache:http_server",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache HTTP Server"
-    },
-    {
-      "text": "cpe:/a:ibm:http_server",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM HTTP Server"
-    },
-    {
-      "text": "cpe:/a:ibm:websphere_application_server",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM WebSphere Application Server"
-    },
-    {
-      "text": "cpe:/a:oracle:http_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle HTTP Server"
-    },
-    {
-      "text": "cpe:/h:hp:apache-based_web_server",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX Apache-based Web Server"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:oracle:solaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Solaris"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:rhel_desktop_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Workstation"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Appliance Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_client",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Client"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_fuji",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux FUJI"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
-    }
-  ],
-  "date": "2013-04-19T15:07+09:00",
-  "issued": "2009-08-05T11:31+09:00",
-  "modified": "2013-04-19T15:07+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001845.html",
+	"title": "Apache APR-util の apr_brigade_vprintf 関数における重要な情報を取得される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001845.html",
+	"description": "Apache APR-util の apr_brigade_vprintf 関数には、入力処理に不備があるため、重要な情報を取得される、またはサービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+	"identifier": "JVNDB-2009-001845",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1956",
+			"source": "CVE",
+			"id": "CVE-2009-1956"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1956",
+			"source": "NVD",
+			"id": "CVE-2009-1956"
+		},
+		{
+			"text": "http://secunia.com/advisories/35843",
+			"source": "SECUNIA",
+			"id": "SA35843"
+		},
+		{
+			"text": "http://secunia.com/advisories/35797",
+			"source": "SECUNIA",
+			"id": "SA35797"
+		},
+		{
+			"text": "http://secunia.com/advisories/35487",
+			"source": "SECUNIA",
+			"id": "SA35487"
+		},
+		{
+			"text": "http://secunia.com/advisories/35284",
+			"source": "SECUNIA",
+			"id": "SA35284"
+		},
+		{
+			"text": "http://secunia.com/advisories/34724",
+			"source": "SECUNIA",
+			"id": "SA34724"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/35251",
+			"source": "BID",
+			"id": "35251"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/50993",
+			"source": "XF",
+			"id": "50993"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+			"id": "CWE-189",
+			"title": "数値処理の問題(CWE-189)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:apr-util",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "APR-util"
+		},
+		{
+			"text": "cpe:/a:apache:http_server",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache HTTP Server"
+		},
+		{
+			"text": "cpe:/a:ibm:http_server",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM HTTP Server"
+		},
+		{
+			"text": "cpe:/a:ibm:websphere_application_server",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM WebSphere Application Server"
+		},
+		{
+			"text": "cpe:/a:oracle:http_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle HTTP Server"
+		},
+		{
+			"text": "cpe:/h:hp:apache-based_web_server",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX Apache-based Web Server"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:oracle:solaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Solaris"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:rhel_desktop_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Workstation"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Appliance Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_client",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Client"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_fuji",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux FUJI"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+		}
+	],
+	"date": "2013-04-19T15:07+09:00",
+	"issued": "2009-08-05T11:31+09:00",
+	"modified": "2013-04-19T15:07+09:00"
 }

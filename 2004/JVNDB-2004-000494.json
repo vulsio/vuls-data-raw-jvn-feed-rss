@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000494.html",
-  "title": "Linux Kernel の smb_recv_trans2 におけるメモリ情報が漏洩する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000494.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.4.27 以前 / 2.6.9 以前には、smb ファイルシステムの実装において以下の複数のセキュリティ問題が存在します。 \r\n\r\n・smb_proc_read(X) 関数において、read(X) リクエストに対する応答のデータサイズが適切にチェックされないため、リクエストしたデータ量以上のデータを Samba サーバより受信した場合に、カーネルメモリ内でオーバーフローが発生する問題 (Linux Kernel 2.4.x) (CAN-2004-0883) \r\n\r\n・smb_proc_readX 関数において、readX リクエストに対する応答の、データオフセットの境界チェックが適切に行われないため、不正なオフセット値を含む応答を Samba サーバより受信した場合に、ローカルの攻撃者にカーネルメモリの情報が漏洩する、あるいはカーネルがクラッシュする問題 (Linux Kernel 2.4.x) (CAN-2004-0883) \r\n\r\n・特定の条件下で、TRANS2 のデフラグメントプロセス (smb_recv_trans2) での境界チェックが適切に行われていないため、後述の CAN-2004-0949 の問題と組み合わせることによりカーネルメモリ内でのオーバーフローが発生する問題 (Linux Kernel 2.4.x) (CAN-2004-0883) \r\n\r\n・Samba サーバが提供するデータオフセット値 (ヘッダサイズを減算した後でパケット内のオフセットとして使用される) の下限値に対するチェックが行われていないため、smb_proc_readX_data 関数で割り当てられていないメモリアドレスへのアクセスが発生し、カーネルがクラッシュする問題 (Linux Kernel 2.6.x) (CAN-2004-0883) \r\n\r\n・smb_receive_trans2 関数において、送信したパラメータおよびデータのオフセットを基準にしたパケットに対する境界チェックが適切に行われないため、Samba サーバより不正なパケットを受信するとメモリリークが発生する、あるいは、割り当てられていないメモリへのアクセスにより標的システムがサービス不能状態に陥る問題 (Linux Kernel 2.4.x および 2.6.x) (CAN-2004-0883) \r\n\r\n・TRANS2 smb パケットのデフラグメントプロセス (smb_recv_trans2) において、受信バッファが適切に初期化されないため、受信データカウントが予期される最大数に達するまで、繰り返しパケットの最初のバイトが送信されると、初期化されていない受信バッファの残りが呼び出した関数にリークされる問題 (Linux Kernel 2.4.x および 2.6.x) (CAN-2004-0949) \r\n\r\n・TRANS2 smb パケットのデフラグメントプロセス (smb_recv_trans2) においてデフラグメントの終了条件である最小パラメータカウントと予期される最小データカウントについても、上記の技法により任意の値に増加されてしまう問題 (Linux Kernel 2.4.x および 2.6.x) (CAN-2004-0949) \r\n\r\n標的システムが接続する Samba サーバからの応答を改変可能なリモートの攻撃者は、これらの問題を利用しカーネルをクラッシュさせ、結果として標的システムをサービス不能状態に陥らせることが可能です。 \r\nこれらの問題を利用しての任意のコード実行の可能性については現時点では不明です。 \r\n\r\n尚、Samba サーバからの応答を改変するために攻撃者は、サーバとクライアントとの間に入りやり取りされる情報を不正に改変する攻撃 (Manin the Middle Attacks) を行う、あるいは Samba 3.x で発見されたバッファオーバーフローの問題 (CAN-2004-0882) を利用する可能性があることが発見者より報告されています。",
-  "identifier": "JVNDB-2004-000494",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0949",
-      "source": "CVE",
-      "id": "CVE-2004-0949"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0949",
-      "source": "NVD",
-      "id": "CVE-2004-0949"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/726198",
-      "source": "CERT-VN",
-      "id": "VU#726198"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/11695",
-      "source": "BID",
-      "id": "11695"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000494.html",
+	"title": "Linux Kernel の smb_recv_trans2 におけるメモリ情報が漏洩する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000494.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.4.27 以前 / 2.6.9 以前には、smb ファイルシステムの実装において以下の複数のセキュリティ問題が存在します。 \r\n\r\n・smb_proc_read(X) 関数において、read(X) リクエストに対する応答のデータサイズが適切にチェックされないため、リクエストしたデータ量以上のデータを Samba サーバより受信した場合に、カーネルメモリ内でオーバーフローが発生する問題 (Linux Kernel 2.4.x) (CAN-2004-0883) \r\n\r\n・smb_proc_readX 関数において、readX リクエストに対する応答の、データオフセットの境界チェックが適切に行われないため、不正なオフセット値を含む応答を Samba サーバより受信した場合に、ローカルの攻撃者にカーネルメモリの情報が漏洩する、あるいはカーネルがクラッシュする問題 (Linux Kernel 2.4.x) (CAN-2004-0883) \r\n\r\n・特定の条件下で、TRANS2 のデフラグメントプロセス (smb_recv_trans2) での境界チェックが適切に行われていないため、後述の CAN-2004-0949 の問題と組み合わせることによりカーネルメモリ内でのオーバーフローが発生する問題 (Linux Kernel 2.4.x) (CAN-2004-0883) \r\n\r\n・Samba サーバが提供するデータオフセット値 (ヘッダサイズを減算した後でパケット内のオフセットとして使用される) の下限値に対するチェックが行われていないため、smb_proc_readX_data 関数で割り当てられていないメモリアドレスへのアクセスが発生し、カーネルがクラッシュする問題 (Linux Kernel 2.6.x) (CAN-2004-0883) \r\n\r\n・smb_receive_trans2 関数において、送信したパラメータおよびデータのオフセットを基準にしたパケットに対する境界チェックが適切に行われないため、Samba サーバより不正なパケットを受信するとメモリリークが発生する、あるいは、割り当てられていないメモリへのアクセスにより標的システムがサービス不能状態に陥る問題 (Linux Kernel 2.4.x および 2.6.x) (CAN-2004-0883) \r\n\r\n・TRANS2 smb パケットのデフラグメントプロセス (smb_recv_trans2) において、受信バッファが適切に初期化されないため、受信データカウントが予期される最大数に達するまで、繰り返しパケットの最初のバイトが送信されると、初期化されていない受信バッファの残りが呼び出した関数にリークされる問題 (Linux Kernel 2.4.x および 2.6.x) (CAN-2004-0949) \r\n\r\n・TRANS2 smb パケットのデフラグメントプロセス (smb_recv_trans2) においてデフラグメントの終了条件である最小パラメータカウントと予期される最小データカウントについても、上記の技法により任意の値に増加されてしまう問題 (Linux Kernel 2.4.x および 2.6.x) (CAN-2004-0949) \r\n\r\n標的システムが接続する Samba サーバからの応答を改変可能なリモートの攻撃者は、これらの問題を利用しカーネルをクラッシュさせ、結果として標的システムをサービス不能状態に陥らせることが可能です。 \r\nこれらの問題を利用しての任意のコード実行の可能性については現時点では不明です。 \r\n\r\n尚、Samba サーバからの応答を改変するために攻撃者は、サーバとクライアントとの間に入りやり取りされる情報を不正に改変する攻撃 (Manin the Middle Attacks) を行う、あるいは Samba 3.x で発見されたバッファオーバーフローの問題 (CAN-2004-0882) を利用する可能性があることが発見者より報告されています。",
+	"identifier": "JVNDB-2004-000494",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0949",
+			"source": "CVE",
+			"id": "CVE-2004-0949"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0949",
+			"source": "NVD",
+			"id": "CVE-2004-0949"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/726198",
+			"source": "CERT-VN",
+			"id": "VU#726198"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/11695",
+			"source": "BID",
+			"id": "11695"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

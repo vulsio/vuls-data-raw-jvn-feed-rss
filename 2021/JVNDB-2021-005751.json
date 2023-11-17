@@ -1,35 +1,35 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005751.html",
-  "title": "OpenSSL の libssl における X509_verify_cert() 内部エラーの不正な処理",
-  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005751.html",
-  "description": "OpenSSL の libssl には、内部エラーの発生を示す X509_verify_cert() 関数からの戻り値（負の値）の処理に問題があります。\r\n\r\n深刻度 - 中（Severity: Moderate）\r\nOpenSSL の libssl は、クライアント側でサーバ証明書の検証を行う際に、X509_verify_cert() 関数を呼び出しますが、この関数内でメモリ不足が発生した場合などに、内部エラーを示す負の値が戻されます。\r\nOpenSSL では、このような負の戻り値の処理に問題があり、結果として、OpenSSL を利用するアプリケーション側にアプリケーションが予期していない戻り値（SSL_ERROR_WANT_RETRY_VERIFY）を返すことになり、アプリケーションが正常に動作しない可能性があります。（CVE-2021-4044）\r\n",
-  "identifier": "JVNDB-2021-005751",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU90127554/",
-      "source": "JVN",
-      "id": "JVNVU#90127554"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4044",
-      "source": "CVE",
-      "id": "CVE-2021-4044"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-4044",
-      "source": "NVD",
-      "id": "CVE-2021-4044"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    }
-  ],
-  "date": "2021-12-17T14:27+09:00",
-  "issued": "2021-12-17T14:27+09:00",
-  "modified": "2021-12-17T14:27+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005751.html",
+	"title": "OpenSSL の libssl における X509_verify_cert() 内部エラーの不正な処理",
+	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-005751.html",
+	"description": "OpenSSL の libssl には、内部エラーの発生を示す X509_verify_cert() 関数からの戻り値（負の値）の処理に問題があります。\r\n\r\n深刻度 - 中（Severity: Moderate）\r\nOpenSSL の libssl は、クライアント側でサーバ証明書の検証を行う際に、X509_verify_cert() 関数を呼び出しますが、この関数内でメモリ不足が発生した場合などに、内部エラーを示す負の値が戻されます。\r\nOpenSSL では、このような負の戻り値の処理に問題があり、結果として、OpenSSL を利用するアプリケーション側にアプリケーションが予期していない戻り値（SSL_ERROR_WANT_RETRY_VERIFY）を返すことになり、アプリケーションが正常に動作しない可能性があります。（CVE-2021-4044）\r\n",
+	"identifier": "JVNDB-2021-005751",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU90127554/",
+			"source": "JVN",
+			"id": "JVNVU#90127554"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4044",
+			"source": "CVE",
+			"id": "CVE-2021-4044"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-4044",
+			"source": "NVD",
+			"id": "CVE-2021-4044"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		}
+	],
+	"date": "2021-12-17T14:27+09:00",
+	"issued": "2021-12-17T14:27+09:00",
+	"modified": "2021-12-17T14:27+09:00"
 }

@@ -1,30 +1,30 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-004189.html",
-  "title": "OpenSSL における暗号鍵と初期化ベクトルの長さに関する処理の問題（OpenSSL Security Advisory [24th October 2023]）",
-  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-004189.html",
-  "description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20231024.txt\"target=\"blank\">OpenSSL Security Advisory [24th October 2023]</a> が公開されました。\r\n\r\n深刻度 - 中（Severity: Moderate）\r\nOpenSSL には、鍵と IV （Initialization Vector）の長さに関する処理に問題があり、一部の共通鍵暗号の初期化時に切り捨てやオーバーフローが発生する可能性があります。\r\nOpenSSL の EVP_EncryptInit_ex2() 、 EVP_DecryptInit_ex2() 、または EVP_CipherInit_ex2() を呼び出す場合、鍵と IV が確立された後に、提供された OSSL_PARAM 配列が処理されますが、OSSL_PARAM 配列内で、keylen パラメータや ivlen パラメータによって鍵の長さや IV の長さを変更しても、意図したとおりに反映されません。\r\nRC2、RC4、RC5、CCM、GCM、OCB の暗号および暗号化モードが本脆弱性の影響を受けます。\r\n\r\nなお、OpenSSL Project は、OpenSSL SSL/TLS 実装および、OpenSSL 3.0 と 3.1 の FIPS プロバイダは本脆弱性の影響を受けないとしています。\r\n\r\n",
-  "identifier": "JVNDB-2023-004189",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU99631663/",
-      "source": "JVN",
-      "id": "JVNVU#99631663"
-    },
-    {
-      "text": "https://www.cve.org/CVERecord?id=CVE-2023-5363",
-      "source": "CVE",
-      "id": "CVE-2023-5363"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    }
-  ],
-  "date": "2023-10-26T15:36+09:00",
-  "issued": "2023-10-26T15:36+09:00",
-  "modified": "2023-10-26T15:36+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-004189.html",
+	"title": "OpenSSL における暗号鍵と初期化ベクトルの長さに関する処理の問題（OpenSSL Security Advisory [24th October 2023]）",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-004189.html",
+	"description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20231024.txt\"target=\"blank\">OpenSSL Security Advisory [24th October 2023]</a> が公開されました。\r\n\r\n深刻度 - 中（Severity: Moderate）\r\nOpenSSL には、鍵と IV （Initialization Vector）の長さに関する処理に問題があり、一部の共通鍵暗号の初期化時に切り捨てやオーバーフローが発生する可能性があります。\r\nOpenSSL の EVP_EncryptInit_ex2() 、 EVP_DecryptInit_ex2() 、または EVP_CipherInit_ex2() を呼び出す場合、鍵と IV が確立された後に、提供された OSSL_PARAM 配列が処理されますが、OSSL_PARAM 配列内で、keylen パラメータや ivlen パラメータによって鍵の長さや IV の長さを変更しても、意図したとおりに反映されません。\r\nRC2、RC4、RC5、CCM、GCM、OCB の暗号および暗号化モードが本脆弱性の影響を受けます。\r\n\r\nなお、OpenSSL Project は、OpenSSL SSL/TLS 実装および、OpenSSL 3.0 と 3.1 の FIPS プロバイダは本脆弱性の影響を受けないとしています。\r\n\r\n",
+	"identifier": "JVNDB-2023-004189",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU99631663/",
+			"source": "JVN",
+			"id": "JVNVU#99631663"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-5363",
+			"source": "CVE",
+			"id": "CVE-2023-5363"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		}
+	],
+	"date": "2023-10-26T15:36+09:00",
+	"issued": "2023-10-26T15:36+09:00",
+	"modified": "2023-10-26T15:36+09:00"
 }

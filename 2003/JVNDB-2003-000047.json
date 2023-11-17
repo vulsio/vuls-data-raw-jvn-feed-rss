@@ -1,102 +1,102 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000047.html",
-  "title": "Apache HTTP Server のエラーログ作成時の不備により任意のコードを実行される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000047.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nApache には、アクセスログおよびエラーログを生成する際に、特定のエスケープシーケンスに対して適切なフィルタリングを行わない問題が存在します。\r\n\r\nリモートの攻撃者は、意図的な HTTP リクエストを作成し、問題を抱えるサーバに送信することで、アクセスログ、もしくはエラーログに特定のエスケープシーケンスを注入することが可能です。更に、多くのターミナルエミュレータに存在する、エスケープシーケンスを用いた任意の文字列をタイトルバーに表示可能な問題と併用することで、ターミナルエミュレータを利用するユーザの権限で任意のコードを実行できる可能性があります。\r\n\r\n尚、このターミナルエミュレータの問題の詳細に関しては CAN-2003-0070 を参照してください。\r\n\r\nこの 2 つのログファイル生成時における問題は、Apahe 1.3 では、当初 Apache 1.3.25 以降で解消されると報告されていましたが、エラーログファイルの問題 (CAN-2003-0020) に関しては、Apache 1.3.29 以前においても影響を受けることがベンダより報告され、2004 年 5 月 12 日付けでこの問題を修正した Apache 1.3.31 がリリースされています。 \r\n尚、アクセスログの問題 (CAN-2003-0083) に関しては、Apache 1.3.26 以降で解消されることがベンダより報告されています。\r\n\r\nまた、Apahe 2.0 では、当初 Apache 2.0.46 以降で解消されると報告されていましたが、エラーログファイルの問題 (CAN-2003-0020) に関しては、Apache 2.0.48 以前においても \"-DAP_UNSAFE_ERROR_LOG_UNESCAPED\" オプションをコンパイル時に指定した場合に影響を受けることがベンダより報告され、2004 年 3 月 19 日付けでこの問題を修正した Apache 2.0.49 がリリースされています。\r\n尚、アクセスログの問題 (CAN-2003-0083) に関しては、Apache 2.0.46 以降で解消されています。",
-  "identifier": "JVNDB-2003-000047",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0020",
-      "source": "CVE",
-      "id": "CVE-2003-0020"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0020",
-      "source": "NVD",
-      "id": "CVE-2003-0020"
-    },
-    {
-      "text": "http://secunia.com/advisories/12377/",
-      "source": "SECUNIA",
-      "id": "SA12377"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/9930",
-      "source": "BID",
-      "id": "9930"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/11412",
-      "source": "XF",
-      "id": "11412"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:http_server",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache HTTP Server"
-    },
-    {
-      "text": "cpe:/a:ibm:http_server",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM HTTP Server"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_4",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ4"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_550",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ550"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQXTR"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000047.html",
+	"title": "Apache HTTP Server のエラーログ作成時の不備により任意のコードを実行される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000047.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nApache には、アクセスログおよびエラーログを生成する際に、特定のエスケープシーケンスに対して適切なフィルタリングを行わない問題が存在します。\r\n\r\nリモートの攻撃者は、意図的な HTTP リクエストを作成し、問題を抱えるサーバに送信することで、アクセスログ、もしくはエラーログに特定のエスケープシーケンスを注入することが可能です。更に、多くのターミナルエミュレータに存在する、エスケープシーケンスを用いた任意の文字列をタイトルバーに表示可能な問題と併用することで、ターミナルエミュレータを利用するユーザの権限で任意のコードを実行できる可能性があります。\r\n\r\n尚、このターミナルエミュレータの問題の詳細に関しては CAN-2003-0070 を参照してください。\r\n\r\nこの 2 つのログファイル生成時における問題は、Apahe 1.3 では、当初 Apache 1.3.25 以降で解消されると報告されていましたが、エラーログファイルの問題 (CAN-2003-0020) に関しては、Apache 1.3.29 以前においても影響を受けることがベンダより報告され、2004 年 5 月 12 日付けでこの問題を修正した Apache 1.3.31 がリリースされています。 \r\n尚、アクセスログの問題 (CAN-2003-0083) に関しては、Apache 1.3.26 以降で解消されることがベンダより報告されています。\r\n\r\nまた、Apahe 2.0 では、当初 Apache 2.0.46 以降で解消されると報告されていましたが、エラーログファイルの問題 (CAN-2003-0020) に関しては、Apache 2.0.48 以前においても \"-DAP_UNSAFE_ERROR_LOG_UNESCAPED\" オプションをコンパイル時に指定した場合に影響を受けることがベンダより報告され、2004 年 3 月 19 日付けでこの問題を修正した Apache 2.0.49 がリリースされています。\r\n尚、アクセスログの問題 (CAN-2003-0083) に関しては、Apache 2.0.46 以降で解消されています。",
+	"identifier": "JVNDB-2003-000047",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0020",
+			"source": "CVE",
+			"id": "CVE-2003-0020"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0020",
+			"source": "NVD",
+			"id": "CVE-2003-0020"
+		},
+		{
+			"text": "http://secunia.com/advisories/12377/",
+			"source": "SECUNIA",
+			"id": "SA12377"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/9930",
+			"source": "BID",
+			"id": "9930"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/11412",
+			"source": "XF",
+			"id": "11412"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:http_server",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache HTTP Server"
+		},
+		{
+			"text": "cpe:/a:ibm:http_server",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM HTTP Server"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_4",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ4"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_550",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ550"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQXTR"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

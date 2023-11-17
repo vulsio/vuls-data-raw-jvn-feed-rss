@@ -1,140 +1,140 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003069.html",
-  "title": "ISC BIND にサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003069.html",
-  "description": "ISC BIND には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\nISC BIND には、不正なレコードの取り扱いに問題があり、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC が公開している情報では、以下のように記載されています。\r\n\r\n\"ある種のネットワーク上のイベント(まだ特定されていません)によってBIND 9キャッシュサーバが不正なレコードをキャッシュすることがあり、そのレコードに対する問い合わせによってキャッシュサーバが表明違反(assertion failure)でクラッシュすることがあります。ISCでは現在このような不整合な状態を生じさせるレコードがどのようにしてキャッシュされたのか調査中です。現状の対策として、ISCではこの状態から安全に復帰し、異常終了を防止するパッチを作成しました。\r\nこのパッチは2つの部分からなります。クライアントからの問い合わせを処理する際、クライアントへの応答を作成するプログラムコードはまず問い合わせられた名前がキャッシュされているか調べます。パッチの第一の部分では不整合なデータがキャッシュから取り出されないようにします。パッチの第二の部分では、クライアントへの応答作成中にこの類いの不整合なデータが現れてもnamedがクラッシュしないようにします。\"",
-  "identifier": "JVNDB-2011-003069",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU606539/",
-      "source": "JVN",
-      "id": "JVNVU#606539"
-    },
-    {
-      "text": "http://jvn.jp/cert/JVNVU381963/index.html",
-      "source": "JVN",
-      "id": "JVNVU#381963"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4313",
-      "source": "CVE",
-      "id": "CVE-2011-4313"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4313",
-      "source": "NVD",
-      "id": "CVE-2011-4313"
-    },
-    {
-      "text": "https://www.jpcert.or.jp/at/2011/at110031.html",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2011-0031"
-    },
-    {
-      "text": "https://www.jpcert.or.jp/wr/2011/wr114501.html#1",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2011-4501"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/606539",
-      "source": "CERT-VN",
-      "id": "VU#606539"
-    },
-    {
-      "text": "http://jprs.jp/tech/security/2011-11-17-bind9-vuln-crash-after-logging-an-error.html",
-      "source": "JPRS",
-      "id": "(緊急) BIND 9.xのキャッシュDNSサーバー機能の実装上の問題によるnamedのサービス停止について"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-noinfo",
-      "title": "情報不足(CWE-noinfo)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:isc:bind",
-      "version": "2.2",
-      "vendor": "ISC, Inc.",
-      "product": "BIND"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_server_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server EUS"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    },
-    {
-      "text": "cpe:/o:ibm:aix",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM AIX"
-    },
-    {
-      "text": "cpe:/o:oracle:solaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Solaris"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    },
-    {
-      "text": "cpe:/o:redhat:rhel_desktop_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2012-10-05T18:27+09:00",
-  "issued": "2011-11-28T14:57+09:00",
-  "modified": "2012-10-05T18:27+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003069.html",
+	"title": "ISC BIND にサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-003069.html",
+	"description": "ISC BIND には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\nISC BIND には、不正なレコードの取り扱いに問題があり、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC が公開している情報では、以下のように記載されています。\r\n\r\n\"ある種のネットワーク上のイベント(まだ特定されていません)によってBIND 9キャッシュサーバが不正なレコードをキャッシュすることがあり、そのレコードに対する問い合わせによってキャッシュサーバが表明違反(assertion failure)でクラッシュすることがあります。ISCでは現在このような不整合な状態を生じさせるレコードがどのようにしてキャッシュされたのか調査中です。現状の対策として、ISCではこの状態から安全に復帰し、異常終了を防止するパッチを作成しました。\r\nこのパッチは2つの部分からなります。クライアントからの問い合わせを処理する際、クライアントへの応答を作成するプログラムコードはまず問い合わせられた名前がキャッシュされているか調べます。パッチの第一の部分では不整合なデータがキャッシュから取り出されないようにします。パッチの第二の部分では、クライアントへの応答作成中にこの類いの不整合なデータが現れてもnamedがクラッシュしないようにします。\"",
+	"identifier": "JVNDB-2011-003069",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU606539/",
+			"source": "JVN",
+			"id": "JVNVU#606539"
+		},
+		{
+			"text": "http://jvn.jp/cert/JVNVU381963/index.html",
+			"source": "JVN",
+			"id": "JVNVU#381963"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4313",
+			"source": "CVE",
+			"id": "CVE-2011-4313"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4313",
+			"source": "NVD",
+			"id": "CVE-2011-4313"
+		},
+		{
+			"text": "https://www.jpcert.or.jp/at/2011/at110031.html",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2011-0031"
+		},
+		{
+			"text": "https://www.jpcert.or.jp/wr/2011/wr114501.html#1",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2011-4501"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/606539",
+			"source": "CERT-VN",
+			"id": "VU#606539"
+		},
+		{
+			"text": "http://jprs.jp/tech/security/2011-11-17-bind9-vuln-crash-after-logging-an-error.html",
+			"source": "JPRS",
+			"id": "(緊急) BIND 9.xのキャッシュDNSサーバー機能の実装上の問題によるnamedのサービス停止について"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-noinfo",
+			"title": "情報不足(CWE-noinfo)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:isc:bind",
+			"version": "2.2",
+			"vendor": "ISC, Inc.",
+			"product": "BIND"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_server_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server EUS"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		},
+		{
+			"text": "cpe:/o:ibm:aix",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM AIX"
+		},
+		{
+			"text": "cpe:/o:oracle:solaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Solaris"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		},
+		{
+			"text": "cpe:/o:redhat:rhel_desktop_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2012-10-05T18:27+09:00",
+	"issued": "2011-11-28T14:57+09:00",
+	"modified": "2012-10-05T18:27+09:00"
 }

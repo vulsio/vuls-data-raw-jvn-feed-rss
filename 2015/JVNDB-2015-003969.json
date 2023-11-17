@@ -1,67 +1,67 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003969.html",
-  "title": "Openssh の sshd の auth2-chall.c 内の kbdint_next_device 関数における総当り攻撃を実行される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003969.html",
-  "description": "Openssh の sshd の auth2-chall.c 内の kbdint_next_device 関数は、単一コネクション内のキーボード対話 (keyboard-interactive) デバイスの処理を適切に制限しないため、総当たり (brute-force) 攻撃を実行される、またはサービス運用妨害 (CPU 資源の消費) 状態にされる脆弱性が存在します。",
-  "identifier": "JVNDB-2015-003969",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5600",
-      "source": "CVE",
-      "id": "CVE-2015-5600"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5600",
-      "source": "NVD",
-      "id": "CVE-2015-5600"
-    },
-    {
-      "text": "http://openwall.com/lists/oss-security/2015/07/23/4",
-      "source": "関連文書",
-      "id": "Re: CVE Request for OpenSSH vulnerability - authentication limits bypass"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:openbsd:openssh",
-      "version": "2.2",
-      "vendor": "OpenBSD",
-      "product": "OpenSSH"
-    },
-    {
-      "text": "cpe:/h:hitachi:bigip",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "BIG-IP"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:oracle:integrated_lights_out_manager_firmware",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Integrated Lights Out Manager"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "8.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:C"
-    }
-  ],
-  "date": "2016-07-27T16:30+09:00",
-  "issued": "2015-08-04T16:22+09:00",
-  "modified": "2016-07-27T16:30+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003969.html",
+	"title": "Openssh の sshd の auth2-chall.c 内の kbdint_next_device 関数における総当り攻撃を実行される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003969.html",
+	"description": "Openssh の sshd の auth2-chall.c 内の kbdint_next_device 関数は、単一コネクション内のキーボード対話 (keyboard-interactive) デバイスの処理を適切に制限しないため、総当たり (brute-force) 攻撃を実行される、またはサービス運用妨害 (CPU 資源の消費) 状態にされる脆弱性が存在します。",
+	"identifier": "JVNDB-2015-003969",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5600",
+			"source": "CVE",
+			"id": "CVE-2015-5600"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5600",
+			"source": "NVD",
+			"id": "CVE-2015-5600"
+		},
+		{
+			"text": "http://openwall.com/lists/oss-security/2015/07/23/4",
+			"source": "関連文書",
+			"id": "Re: CVE Request for OpenSSH vulnerability - authentication limits bypass"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openbsd:openssh",
+			"version": "2.2",
+			"vendor": "OpenBSD",
+			"product": "OpenSSH"
+		},
+		{
+			"text": "cpe:/h:hitachi:bigip",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "BIG-IP"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:oracle:integrated_lights_out_manager_firmware",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Integrated Lights Out Manager"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "8.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:C"
+		}
+	],
+	"date": "2016-07-27T16:30+09:00",
+	"issued": "2015-08-04T16:22+09:00",
+	"modified": "2016-07-27T16:30+09:00"
 }

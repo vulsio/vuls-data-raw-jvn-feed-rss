@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-012004.html",
-  "title": "ISC BIND にサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-012004.html",
-  "description": "ISC (Internet Systems Consortium) が提供する BIND には、TCP クライアントの同時接続数の制限を迂回され、システムリソースが過度に消費されてしまう脆弱性が存在します。\r\n\r\nBIND には、named に対して同時に接続可能な TCP クライアントの数を制限する機能があります。2019年 4月に公開された CVE-2018-5743 への対応として、TCP クライアントからの同時接続数を計算する方法が変更されました。\r\n\r\n一方で BIND では、一つの TCP 接続で多数の DNS クエリを並列に処理することができる機能が TCP-pipelining として提供されており、デフォルトで有効に設定されています。\r\nTCP-pipelining が有効な状態においては、一つの TCP クライアントから複数の DNS クエリが発行されると、UDP 接続時や TCP-pipelining が無効な状態における TCP 接続時と同様のシステムリソースが、受け取ったクエリ毎に消費されます。多数のクエリを含む TCP 接続がクローズされた場合、それぞれのクエリに割り当てられたリソースの開放処理が同時に発生し、サーバが一時的あるいは断続的に応答不能な状態に陥る可能性があります。",
-  "identifier": "JVNDB-2019-012004",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU98706074",
-      "source": "JVN",
-      "id": "JVNVU#98706074"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6477",
-      "source": "CVE",
-      "id": "CVE-2019-6477"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-6477",
-      "source": "NVD",
-      "id": "CVE-2019-6477"
-    },
-    {
-      "text": "https://www.jpcert.or.jp/at/2019/at190043.html",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2019-0043"
-    },
-    {
-      "text": "https://jprs.jp/tech/security/2019-11-21-bind9-vuln-tcp-pipelining.html",
-      "source": "JPRS",
-      "id": "（緊急）BIND 9.xの脆弱性（システムリソースの過度な消費）について（CVE-2019-6477）"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:isc:bind",
-      "version": "2.2",
-      "vendor": "ISC, Inc.",
-      "product": "BIND"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-    }
-  ],
-  "date": "2019-11-22T14:03+09:00",
-  "issued": "2019-11-22T14:03+09:00",
-  "modified": "2019-11-22T14:03+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-012004.html",
+	"title": "ISC BIND にサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-012004.html",
+	"description": "ISC (Internet Systems Consortium) が提供する BIND には、TCP クライアントの同時接続数の制限を迂回され、システムリソースが過度に消費されてしまう脆弱性が存在します。\r\n\r\nBIND には、named に対して同時に接続可能な TCP クライアントの数を制限する機能があります。2019年 4月に公開された CVE-2018-5743 への対応として、TCP クライアントからの同時接続数を計算する方法が変更されました。\r\n\r\n一方で BIND では、一つの TCP 接続で多数の DNS クエリを並列に処理することができる機能が TCP-pipelining として提供されており、デフォルトで有効に設定されています。\r\nTCP-pipelining が有効な状態においては、一つの TCP クライアントから複数の DNS クエリが発行されると、UDP 接続時や TCP-pipelining が無効な状態における TCP 接続時と同様のシステムリソースが、受け取ったクエリ毎に消費されます。多数のクエリを含む TCP 接続がクローズされた場合、それぞれのクエリに割り当てられたリソースの開放処理が同時に発生し、サーバが一時的あるいは断続的に応答不能な状態に陥る可能性があります。",
+	"identifier": "JVNDB-2019-012004",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU98706074",
+			"source": "JVN",
+			"id": "JVNVU#98706074"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6477",
+			"source": "CVE",
+			"id": "CVE-2019-6477"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2019-6477",
+			"source": "NVD",
+			"id": "CVE-2019-6477"
+		},
+		{
+			"text": "https://www.jpcert.or.jp/at/2019/at190043.html",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2019-0043"
+		},
+		{
+			"text": "https://jprs.jp/tech/security/2019-11-21-bind9-vuln-tcp-pipelining.html",
+			"source": "JPRS",
+			"id": "（緊急）BIND 9.xの脆弱性（システムリソースの過度な消費）について（CVE-2019-6477）"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:isc:bind",
+			"version": "2.2",
+			"vendor": "ISC, Inc.",
+			"product": "BIND"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2019-11-22T14:03+09:00",
+	"issued": "2019-11-22T14:03+09:00",
+	"modified": "2019-11-22T14:03+09:00"
 }

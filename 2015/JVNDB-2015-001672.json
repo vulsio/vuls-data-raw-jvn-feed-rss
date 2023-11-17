@@ -1,133 +1,133 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001672.html",
-  "title": "SSL/TLS の実装が輸出グレードの RSA 鍵を受け入れる問題 (FREAK 攻撃)",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001672.html",
-  "description": "SSL/TLS の実装の中には、意図して設定しなくても輸出グレード (512 ビット以下) の RSA 鍵を受け入れるものが存在します。このようなソフトウエアに対して中間者攻撃 (man-in-the-middle attack) が行われると、暗号化に使われている鍵を解読され、SSL/TLS トラフィックの内容を復号される可能性があります。これは「FREAK 攻撃」とも呼ばれています。\r\n\r\nアルゴリズムのダウングレード (CWE-757)\r\nCWE-757: Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade')\r\nhttps://cwe.mitre.org/data/definitions/757.html\r\n\r\n不適切な暗号強度 (CWE-326)\r\nCWE-326: Inadequate Encryption Strength\r\nhttps://cwe.mitre.org/data/definitions/326.html\r\n\r\nSSL/TLS の実装の中には、意図して設定しなくても輸出グレード (512 ビット以下) の RSA 鍵を受け入れるものが存在します。このようなソフトウエアに対して中間者攻撃が行われた場合、通信開始時のネゴシエーションにおいて弱い鍵を使うように誘導され、結果として、暗号化された情報を復号される可能性があります。\r\n\r\n発見者は、本件に関する詳細情報を公開しています。\r\nFREAK: Factoring RSA Export Keys\r\nhttps://www.smacktls.com/#freak",
-  "identifier": "JVNDB-2015-001672",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU99125992/index.html",
-      "source": "JVN",
-      "id": "JVNVU#99125992"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/243585",
-      "source": "CERT-VN",
-      "id": "VU#243585"
-    },
-    {
-      "text": "https://www.smacktls.com/#freak",
-      "source": "関連文書",
-      "id": "State Machine AttACKs against TLS (SMACK TLS)"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:nec:capssuite",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CapsSuite"
-    },
-    {
-      "text": "cpe:/a:nec:csview",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CSVIEW"
-    },
-    {
-      "text": "cpe:/a:nec:enterpriseidentitymanager",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "EnterpriseIdentityManager"
-    },
-    {
-      "text": "cpe:/a:nec:enterprise_directoryserver",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "EnterpriseDirectoryServer"
-    },
-    {
-      "text": "cpe:/a:nec:infocage",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "InfoCage"
-    },
-    {
-      "text": "cpe:/a:nec:secureware_pki_application_development_kit",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "SecureWare/PKIアプリケーション開発キット"
-    },
-    {
-      "text": "cpe:/a:nec:webotx",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_enterprise_service_bus",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Enterprise Service Bus"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_portal",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Portal"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_sip_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX SIP Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:websam",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebSAM"
-    },
-    {
-      "text": "cpe:/h:nec:express5800",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "Express5800"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_sr100",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/SR100"
-    },
-    {
-      "text": "cpe:/h:nec:istorage",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "iStorage"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:N/A:N"
-    }
-  ],
-  "date": "2017-03-09T15:33+09:00",
-  "issued": "2015-03-10T14:19+09:00",
-  "modified": "2017-03-09T15:33+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001672.html",
+	"title": "SSL/TLS の実装が輸出グレードの RSA 鍵を受け入れる問題 (FREAK 攻撃)",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001672.html",
+	"description": "SSL/TLS の実装の中には、意図して設定しなくても輸出グレード (512 ビット以下) の RSA 鍵を受け入れるものが存在します。このようなソフトウエアに対して中間者攻撃 (man-in-the-middle attack) が行われると、暗号化に使われている鍵を解読され、SSL/TLS トラフィックの内容を復号される可能性があります。これは「FREAK 攻撃」とも呼ばれています。\r\n\r\nアルゴリズムのダウングレード (CWE-757)\r\nCWE-757: Selection of Less-Secure Algorithm During Negotiation ('Algorithm Downgrade')\r\nhttps://cwe.mitre.org/data/definitions/757.html\r\n\r\n不適切な暗号強度 (CWE-326)\r\nCWE-326: Inadequate Encryption Strength\r\nhttps://cwe.mitre.org/data/definitions/326.html\r\n\r\nSSL/TLS の実装の中には、意図して設定しなくても輸出グレード (512 ビット以下) の RSA 鍵を受け入れるものが存在します。このようなソフトウエアに対して中間者攻撃が行われた場合、通信開始時のネゴシエーションにおいて弱い鍵を使うように誘導され、結果として、暗号化された情報を復号される可能性があります。\r\n\r\n発見者は、本件に関する詳細情報を公開しています。\r\nFREAK: Factoring RSA Export Keys\r\nhttps://www.smacktls.com/#freak",
+	"identifier": "JVNDB-2015-001672",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU99125992/index.html",
+			"source": "JVN",
+			"id": "JVNVU#99125992"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/243585",
+			"source": "CERT-VN",
+			"id": "VU#243585"
+		},
+		{
+			"text": "https://www.smacktls.com/#freak",
+			"source": "関連文書",
+			"id": "State Machine AttACKs against TLS (SMACK TLS)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:nec:capssuite",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CapsSuite"
+		},
+		{
+			"text": "cpe:/a:nec:csview",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CSVIEW"
+		},
+		{
+			"text": "cpe:/a:nec:enterpriseidentitymanager",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "EnterpriseIdentityManager"
+		},
+		{
+			"text": "cpe:/a:nec:enterprise_directoryserver",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "EnterpriseDirectoryServer"
+		},
+		{
+			"text": "cpe:/a:nec:infocage",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "InfoCage"
+		},
+		{
+			"text": "cpe:/a:nec:secureware_pki_application_development_kit",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "SecureWare/PKIアプリケーション開発キット"
+		},
+		{
+			"text": "cpe:/a:nec:webotx",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_enterprise_service_bus",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Enterprise Service Bus"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_portal",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Portal"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_sip_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX SIP Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:websam",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebSAM"
+		},
+		{
+			"text": "cpe:/h:nec:express5800",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "Express5800"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_sr100",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/SR100"
+		},
+		{
+			"text": "cpe:/h:nec:istorage",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "iStorage"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:N/A:N"
+		}
+	],
+	"date": "2017-03-09T15:33+09:00",
+	"issued": "2015-03-10T14:19+09:00",
+	"modified": "2017-03-09T15:33+09:00"
 }

@@ -1,82 +1,82 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005601.html",
-  "title": "D-Link DIR-130 および DIR-330 に複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005601.html",
-  "description": "D-Link が提供する DIR-130 および DIR-330 には、リモートログインページにおける認証回避の脆弱性および管理者アカウントの認証情報管理不備の脆弱性が存在します。\r\n\r\nキャプチャリプレイによる認証回避 (CWE-294) - CVE-2017-3191\r\nリモート管理機能のログインページにアクセス可能な第三者が細工した POST リクエストを送信することで、tools_admin.asp などの本来管理者アカウントでしかアクセスできないページに認証なしでアクセスすることが可能です。\r\n\r\n不十分な認証情報の保護 (CWE-522) - CVE-2017-3192\r\ntools_admin.asp ページには、管理者アカウントのパスワードが Base64 エンコードされた形で含まれています。CVE-2017-3191 などの認証回避の脆弱性を用いることで、遠隔の第三者が当該機器における管理者アカウントの認証情報を取得することが可能です。",
-  "identifier": "JVNDB-2017-005601",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU96964526/index.html",
-      "source": "JVN",
-      "id": "JVNVU#96964526"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3191",
-      "source": "CVE",
-      "id": "CVE-2017-3191"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3192",
-      "source": "CVE",
-      "id": "CVE-2017-3192"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3191",
-      "source": "NVD",
-      "id": "CVE-2017-3191"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3192",
-      "source": "NVD",
-      "id": "CVE-2017-3192"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/553503",
-      "source": "CERT-VN",
-      "id": "VU#553503"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/294.html",
-      "id": "CWE-294",
-      "title": "Capture-replay による認証回避(CWE-294)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/522.html",
-      "id": "CWE-522",
-      "title": "認証情報の不十分な保護(CWE-522)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/h:dlink:dir-130",
-      "version": "2.2",
-      "vendor": "D-Link Systems, Inc.",
-      "product": "DIR-130"
-    },
-    {
-      "text": "cpe:/h:dlink:dir-330",
-      "version": "2.2",
-      "vendor": "D-Link Systems, Inc.",
-      "product": "DIR-330"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "10.0",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "9.8",
-      "type": "Base",
-      "severity": "Critical",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2018-03-14T12:19+09:00",
-  "issued": "2017-08-02T12:05+09:00",
-  "modified": "2018-03-14T12:19+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005601.html",
+	"title": "D-Link DIR-130 および DIR-330 に複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005601.html",
+	"description": "D-Link が提供する DIR-130 および DIR-330 には、リモートログインページにおける認証回避の脆弱性および管理者アカウントの認証情報管理不備の脆弱性が存在します。\r\n\r\nキャプチャリプレイによる認証回避 (CWE-294) - CVE-2017-3191\r\nリモート管理機能のログインページにアクセス可能な第三者が細工した POST リクエストを送信することで、tools_admin.asp などの本来管理者アカウントでしかアクセスできないページに認証なしでアクセスすることが可能です。\r\n\r\n不十分な認証情報の保護 (CWE-522) - CVE-2017-3192\r\ntools_admin.asp ページには、管理者アカウントのパスワードが Base64 エンコードされた形で含まれています。CVE-2017-3191 などの認証回避の脆弱性を用いることで、遠隔の第三者が当該機器における管理者アカウントの認証情報を取得することが可能です。",
+	"identifier": "JVNDB-2017-005601",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU96964526/index.html",
+			"source": "JVN",
+			"id": "JVNVU#96964526"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3191",
+			"source": "CVE",
+			"id": "CVE-2017-3191"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3192",
+			"source": "CVE",
+			"id": "CVE-2017-3192"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3191",
+			"source": "NVD",
+			"id": "CVE-2017-3191"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3192",
+			"source": "NVD",
+			"id": "CVE-2017-3192"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/553503",
+			"source": "CERT-VN",
+			"id": "VU#553503"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/294.html",
+			"id": "CWE-294",
+			"title": "Capture-replay による認証回避(CWE-294)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/522.html",
+			"id": "CWE-522",
+			"title": "認証情報の不十分な保護(CWE-522)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/h:dlink:dir-130",
+			"version": "2.2",
+			"vendor": "D-Link Systems, Inc.",
+			"product": "DIR-130"
+		},
+		{
+			"text": "cpe:/h:dlink:dir-330",
+			"version": "2.2",
+			"vendor": "D-Link Systems, Inc.",
+			"product": "DIR-330"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "10.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2018-03-14T12:19+09:00",
+	"issued": "2017-08-02T12:05+09:00",
+	"modified": "2018-03-14T12:19+09:00"
 }

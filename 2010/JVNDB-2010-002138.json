@@ -1,165 +1,165 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002138.html",
-  "title": "FreeType の FT_Stream_EnterFrame 関数における任意のコードを実行される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002138.html",
-  "description": "FreeType の base/ftstream.c 内にある FT_Stream_EnterFrame 関数は、特定の position 値を適切に検証しないため、サービス運用妨害 (DoS) 状態となる、または任意のコードを実行される脆弱性が存在します。",
-  "identifier": "JVNDB-2010-002138",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU331391",
-      "source": "JVN",
-      "id": "JVNVU#331391"
-    },
-    {
-      "text": "http://jvn.jp/cert/JVNVU935740",
-      "source": "JVN",
-      "id": "JVNVU#935740"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2805",
-      "source": "CVE",
-      "id": "CVE-2010-2805"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2805",
-      "source": "NVD",
-      "id": "CVE-2010-2805"
-    },
-    {
-      "text": "http://secunia.com/advisories/40816",
-      "source": "SECUNIA",
-      "id": "SA40816"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/42285",
-      "source": "BID",
-      "id": "42285"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/2018",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-2018"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apple:apple_tv",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple TV"
-    },
-    {
-      "text": "cpe:/a:freetype:freetype",
-      "version": "2.2",
-      "vendor": "FreeType Project",
-      "product": "FreeType"
-    },
-    {
-      "text": "cpe:/h:apple:ipad",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "iPad"
-    },
-    {
-      "text": "cpe:/h:apple:iphone",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "iPhone"
-    },
-    {
-      "text": "cpe:/h:apple:ipod_touch",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "iPod touch"
-    },
-    {
-      "text": "cpe:/o:apple:iphone_os",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "iOS"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    },
-    {
-      "text": "cpe:/o:oracle:opensolaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "OpenSolaris"
-    },
-    {
-      "text": "cpe:/o:oracle:solaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Solaris"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Appliance Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_client",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Client"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2010-12-01T15:55+09:00",
-  "issued": "2010-10-18T15:23+09:00",
-  "modified": "2010-12-01T15:55+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002138.html",
+	"title": "FreeType の FT_Stream_EnterFrame 関数における任意のコードを実行される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002138.html",
+	"description": "FreeType の base/ftstream.c 内にある FT_Stream_EnterFrame 関数は、特定の position 値を適切に検証しないため、サービス運用妨害 (DoS) 状態となる、または任意のコードを実行される脆弱性が存在します。",
+	"identifier": "JVNDB-2010-002138",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU331391",
+			"source": "JVN",
+			"id": "JVNVU#331391"
+		},
+		{
+			"text": "http://jvn.jp/cert/JVNVU935740",
+			"source": "JVN",
+			"id": "JVNVU#935740"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2805",
+			"source": "CVE",
+			"id": "CVE-2010-2805"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2805",
+			"source": "NVD",
+			"id": "CVE-2010-2805"
+		},
+		{
+			"text": "http://secunia.com/advisories/40816",
+			"source": "SECUNIA",
+			"id": "SA40816"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/42285",
+			"source": "BID",
+			"id": "42285"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/2018",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-2018"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apple:apple_tv",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple TV"
+		},
+		{
+			"text": "cpe:/a:freetype:freetype",
+			"version": "2.2",
+			"vendor": "FreeType Project",
+			"product": "FreeType"
+		},
+		{
+			"text": "cpe:/h:apple:ipad",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "iPad"
+		},
+		{
+			"text": "cpe:/h:apple:iphone",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "iPhone"
+		},
+		{
+			"text": "cpe:/h:apple:ipod_touch",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "iPod touch"
+		},
+		{
+			"text": "cpe:/o:apple:iphone_os",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "iOS"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		},
+		{
+			"text": "cpe:/o:oracle:opensolaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "OpenSolaris"
+		},
+		{
+			"text": "cpe:/o:oracle:solaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Solaris"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Appliance Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_client",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Client"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2010-12-01T15:55+09:00",
+	"issued": "2010-10-18T15:23+09:00",
+	"modified": "2010-12-01T15:55+09:00"
 }

@@ -1,173 +1,173 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001955.html",
-  "title": "Mozilla NSS の正規表現の解析における任意のコードを実行される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001955.html",
-  "description": "Firefox などで使用されている Mozilla Network Security Services (NSS) の正規表現の解析には、サービス運用妨害 (DoS) 状態となる、または任意のコードを実行される脆弱性が存在します。",
-  "identifier": "JVNDB-2009-001955",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNTA10-103B/",
-      "source": "JVN",
-      "id": "JVNTA10-103B"
-    },
-    {
-      "text": "http://jvn.jp/tr/JVNTR-2010-12/",
-      "source": "JVNTR",
-      "id": "JVNTR-2010-12"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2404",
-      "source": "CVE",
-      "id": "CVE-2009-2404"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2404",
-      "source": "NVD",
-      "id": "CVE-2009-2404"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA10-103B.html",
-      "source": "CERT-TA",
-      "id": "TA10-103B "
-    },
-    {
-      "text": "http://secunia.com/advisories/36125",
-      "source": "SECUNIA",
-      "id": "SA36125"
-    },
-    {
-      "text": "http://secunia.com/advisories/36102",
-      "source": "SECUNIA",
-      "id": "SA36102"
-    },
-    {
-      "text": "http://secunia.com/advisories/36088",
-      "source": "SECUNIA",
-      "id": "SA36088"
-    },
-    {
-      "text": "http://secunia.com/advisories/36093",
-      "source": "SECUNIA",
-      "id": "SA36093"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/35891",
-      "source": "BID",
-      "id": "35891"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2009/2085",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2009-2085"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:mozilla:firefox",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla Firefox"
-    },
-    {
-      "text": "cpe:/a:mozilla:network_security_services",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla Network Security Services (NSS)"
-    },
-    {
-      "text": "cpe:/a:mozilla:seamonkey",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla SeaMonkey"
-    },
-    {
-      "text": "cpe:/a:mozilla:thunderbird",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla Thunderbird"
-    },
-    {
-      "text": "cpe:/a:oracle:sun_product_suite",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Sun Product Suite"
-    },
-    {
-      "text": "cpe:/a:sun:java_access_manager",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Java System Access Manager"
-    },
-    {
-      "text": "cpe:/a:sun:java_enterprise_system",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Java Enterprise System"
-    },
-    {
-      "text": "cpe:/a:sun:java_system_web_server",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Java System Web Server"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:rhel_desktop_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Workstation"
-    },
-    {
-      "text": "cpe:/o:sun:opensolaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "OpenSolaris"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "9.3",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2011-05-09T11:11+09:00",
-  "issued": "2009-09-02T14:18+09:00",
-  "modified": "2011-05-09T11:11+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001955.html",
+	"title": "Mozilla NSS の正規表現の解析における任意のコードを実行される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001955.html",
+	"description": "Firefox などで使用されている Mozilla Network Security Services (NSS) の正規表現の解析には、サービス運用妨害 (DoS) 状態となる、または任意のコードを実行される脆弱性が存在します。",
+	"identifier": "JVNDB-2009-001955",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNTA10-103B/",
+			"source": "JVN",
+			"id": "JVNTA10-103B"
+		},
+		{
+			"text": "http://jvn.jp/tr/JVNTR-2010-12/",
+			"source": "JVNTR",
+			"id": "JVNTR-2010-12"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2404",
+			"source": "CVE",
+			"id": "CVE-2009-2404"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2404",
+			"source": "NVD",
+			"id": "CVE-2009-2404"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA10-103B.html",
+			"source": "CERT-TA",
+			"id": "TA10-103B "
+		},
+		{
+			"text": "http://secunia.com/advisories/36125",
+			"source": "SECUNIA",
+			"id": "SA36125"
+		},
+		{
+			"text": "http://secunia.com/advisories/36102",
+			"source": "SECUNIA",
+			"id": "SA36102"
+		},
+		{
+			"text": "http://secunia.com/advisories/36088",
+			"source": "SECUNIA",
+			"id": "SA36088"
+		},
+		{
+			"text": "http://secunia.com/advisories/36093",
+			"source": "SECUNIA",
+			"id": "SA36093"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/35891",
+			"source": "BID",
+			"id": "35891"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2009/2085",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2009-2085"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:mozilla:firefox",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla Firefox"
+		},
+		{
+			"text": "cpe:/a:mozilla:network_security_services",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla Network Security Services (NSS)"
+		},
+		{
+			"text": "cpe:/a:mozilla:seamonkey",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla SeaMonkey"
+		},
+		{
+			"text": "cpe:/a:mozilla:thunderbird",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla Thunderbird"
+		},
+		{
+			"text": "cpe:/a:oracle:sun_product_suite",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Sun Product Suite"
+		},
+		{
+			"text": "cpe:/a:sun:java_access_manager",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Java System Access Manager"
+		},
+		{
+			"text": "cpe:/a:sun:java_enterprise_system",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Java Enterprise System"
+		},
+		{
+			"text": "cpe:/a:sun:java_system_web_server",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Java System Web Server"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:rhel_desktop_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Workstation"
+		},
+		{
+			"text": "cpe:/o:sun:opensolaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "OpenSolaris"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "9.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2011-05-09T11:11+09:00",
+	"issued": "2009-09-02T14:18+09:00",
+	"modified": "2011-05-09T11:11+09:00"
 }

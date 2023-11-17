@@ -1,69 +1,69 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001094.html",
-  "title": "透過型プロキシサーバが HTTP の Host ヘッダに依存して接続を行う問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001094.html",
-  "description": "HTTP の Host ヘッダの値をもとに接続先の中継を行う透過型プロキシサーバは攻撃者によって悪用される可能性があります。\r\n\r\nHTTP の Host ヘッダは RFC 2616 にて規定されており、主にウェブサーバ上にある複数のウェブサイトが一つの IP アドレスの共有を可能にするために使用されます。\r\n\r\n透過型プロキシサーバはブラウザの設定に関わらず、ネットワーク接続の中継を行います。透過型プロキシサーバの中には Host ヘッダの値をもとに接続先を決定するものがあります。Flash や Java などのブラウザプラグインでは、ブラウザ上で実行される動的コンテンツによる通信を、そのコンテンツが置いてあったサイトやドメインへの通信のみに制限しています。攻撃者は動的コンテンツを利用し、HTTP Host ヘッダの値を細工することができます。プロキシサーバが接続先を Host ヘッダの値をもとに決定する場合、攻撃者は Host ヘッダを細工することで任意のサイトへの接続が可能となります。\r\n\r\n攻撃者はユーザを悪意ある動的コンテンツが存在するサイトへ誘導または信頼できると思われるサイトに悪意ある動的コンテンツを埋め込むことで攻撃を行います。本問題は透過型プロキシサーバのみに影響があります。なお、ブラウザの Same Origin Policy により、攻撃者による認証情報 (cookie など) の再利用は不可能と考えられます。",
-  "identifier": "JVNDB-2009-001094",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU435052/",
-      "source": "JVN",
-      "id": "JVNVU#435052"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0801",
-      "source": "CVE",
-      "id": "CVE-2009-0801"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0801",
-      "source": "NVD",
-      "id": "CVE-2009-0801"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/435052",
-      "source": "CERT-VN",
-      "id": "VU#435052"
-    },
-    {
-      "text": "http://secunia.com/advisories/34019/",
-      "source": "SECUNIA",
-      "id": "SA34019"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/33858",
-      "source": "BID",
-      "id": "33858"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2009/0500",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2009-0500"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:squid-cache:squid",
-      "version": "2.2",
-      "vendor": "Squid-cache.org",
-      "product": "Squid"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:H/Au:N/C:C/I:N/A:N"
-    }
-  ],
-  "date": "2011-09-14T10:47+09:00",
-  "issued": "2009-03-25T15:22+09:00",
-  "modified": "2011-09-14T10:47+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001094.html",
+	"title": "透過型プロキシサーバが HTTP の Host ヘッダに依存して接続を行う問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001094.html",
+	"description": "HTTP の Host ヘッダの値をもとに接続先の中継を行う透過型プロキシサーバは攻撃者によって悪用される可能性があります。\r\n\r\nHTTP の Host ヘッダは RFC 2616 にて規定されており、主にウェブサーバ上にある複数のウェブサイトが一つの IP アドレスの共有を可能にするために使用されます。\r\n\r\n透過型プロキシサーバはブラウザの設定に関わらず、ネットワーク接続の中継を行います。透過型プロキシサーバの中には Host ヘッダの値をもとに接続先を決定するものがあります。Flash や Java などのブラウザプラグインでは、ブラウザ上で実行される動的コンテンツによる通信を、そのコンテンツが置いてあったサイトやドメインへの通信のみに制限しています。攻撃者は動的コンテンツを利用し、HTTP Host ヘッダの値を細工することができます。プロキシサーバが接続先を Host ヘッダの値をもとに決定する場合、攻撃者は Host ヘッダを細工することで任意のサイトへの接続が可能となります。\r\n\r\n攻撃者はユーザを悪意ある動的コンテンツが存在するサイトへ誘導または信頼できると思われるサイトに悪意ある動的コンテンツを埋め込むことで攻撃を行います。本問題は透過型プロキシサーバのみに影響があります。なお、ブラウザの Same Origin Policy により、攻撃者による認証情報 (cookie など) の再利用は不可能と考えられます。",
+	"identifier": "JVNDB-2009-001094",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU435052/",
+			"source": "JVN",
+			"id": "JVNVU#435052"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0801",
+			"source": "CVE",
+			"id": "CVE-2009-0801"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0801",
+			"source": "NVD",
+			"id": "CVE-2009-0801"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/435052",
+			"source": "CERT-VN",
+			"id": "VU#435052"
+		},
+		{
+			"text": "http://secunia.com/advisories/34019/",
+			"source": "SECUNIA",
+			"id": "SA34019"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/33858",
+			"source": "BID",
+			"id": "33858"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2009/0500",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2009-0500"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:squid-cache:squid",
+			"version": "2.2",
+			"vendor": "Squid-cache.org",
+			"product": "Squid"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:H/Au:N/C:C/I:N/A:N"
+		}
+	],
+	"date": "2011-09-14T10:47+09:00",
+	"issued": "2009-03-25T15:22+09:00",
+	"modified": "2011-09-14T10:47+09:00"
 }

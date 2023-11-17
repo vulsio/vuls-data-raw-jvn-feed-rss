@@ -1,63 +1,63 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000077.html",
-  "title": "FUJITSU Software Infrastructure Manager (ISM) における重要な情報の平文保存の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000077.html",
-  "description": "富士通株式会社が提供する FUJITSU Software Infrastructure Manager (ISM) には、重要な情報の平文保存の脆弱性 (CWE-312) が存在します。\r\nISM V2.8.0.060 において次の条件を満たす場合、保守資料 (ismsnap) にプロキシのパスワードが平文で記録される可能性があります。\r\n\r\n<ul><li>ISM から外部への接続において、認証が必要なプロキシサーバを利用している</li><li>プロキシサーバの認証で要求されるユーザ ID やパスワードに \"&#92;\" (バックスラッシュ) が入る構成</li><li>ファームウェアダウンロード機能を有効化している (*)</li>\r\n* 本機能は欧州地域向けの提供機能であり、初期状態では無効化されています</ul>\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。",
-  "identifier": "JVNDB-2023-000077",
-  "references": [
-    {
-      "text": "https://jvn.jp/jp/JVN38847224/index.html",
-      "source": "JVN",
-      "id": "JVN#38847224"
-    },
-    {
-      "text": "https://www.cve.org/CVERecord?id=CVE-2023-39379",
-      "source": "CVE",
-      "id": "CVE-2023-39379"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:fujitsu:software_infrastructure_manager_advanced_edition",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FUJITSU Software Infrastructure Manager Advanced Edition"
-    },
-    {
-      "text": "cpe:/a:fujitsu:software_infrastructure_manager_advanced_edition_for_primeflex",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FUJITSU Software Infrastructure Manager Advanced Edition for PRIMEFLEX"
-    },
-    {
-      "text": "cpe:/a:fujitsu:software_infrastructure_manager_essential_edition",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FUJITSU Software Infrastructure Manager Essential Edition"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "1.5",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:M/Au:S/C:P/I:N/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "5.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N"
-    }
-  ],
-  "date": "2023-08-04T14:04+09:00",
-  "issued": "2023-08-04T14:04+09:00",
-  "modified": "2023-08-04T14:04+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000077.html",
+	"title": "FUJITSU Software Infrastructure Manager (ISM) における重要な情報の平文保存の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000077.html",
+	"description": "富士通株式会社が提供する FUJITSU Software Infrastructure Manager (ISM) には、重要な情報の平文保存の脆弱性 (CWE-312) が存在します。\r\nISM V2.8.0.060 において次の条件を満たす場合、保守資料 (ismsnap) にプロキシのパスワードが平文で記録される可能性があります。\r\n\r\n<ul><li>ISM から外部への接続において、認証が必要なプロキシサーバを利用している</li><li>プロキシサーバの認証で要求されるユーザ ID やパスワードに \"&#92;\" (バックスラッシュ) が入る構成</li><li>ファームウェアダウンロード機能を有効化している (*)</li>\r\n* 本機能は欧州地域向けの提供機能であり、初期状態では無効化されています</ul>\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。",
+	"identifier": "JVNDB-2023-000077",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN38847224/index.html",
+			"source": "JVN",
+			"id": "JVN#38847224"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-39379",
+			"source": "CVE",
+			"id": "CVE-2023-39379"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:fujitsu:software_infrastructure_manager_advanced_edition",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FUJITSU Software Infrastructure Manager Advanced Edition"
+		},
+		{
+			"text": "cpe:/a:fujitsu:software_infrastructure_manager_advanced_edition_for_primeflex",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FUJITSU Software Infrastructure Manager Advanced Edition for PRIMEFLEX"
+		},
+		{
+			"text": "cpe:/a:fujitsu:software_infrastructure_manager_essential_edition",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FUJITSU Software Infrastructure Manager Essential Edition"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "1.5",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:M/Au:S/C:P/I:N/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "5.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N"
+		}
+	],
+	"date": "2023-08-04T14:04+09:00",
+	"issued": "2023-08-04T14:04+09:00",
+	"modified": "2023-08-04T14:04+09:00"
 }

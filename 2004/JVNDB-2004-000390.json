@@ -1,86 +1,86 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000390.html",
-  "title": "gdk+ および gdk-pixbuf の xpm_extract_color におけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000390.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGTK+ (GIMP Toolkit) パッケージは GNOME デスクトップ環境用の GUI アプリケーションを作成するためのツールキットで、多くの Linux ディストリビューションに同梱されています。また GTK+ に含まれる gdk-pixbuf は、画像のロード、保存、および処理を行うためのライブラリです。\r\n\r\nGTK+ 2.4.9 以前に同梱される gdk-pixbuf 0.22 以前には、以下のようなファイル解析時に生じる複数のセキュリティ問題が存在します。\r\n\r\n・BMP ファイルの処理部において無限ループが生じる問題 (CAN-2004-0753)\r\n\r\n・XPM ファイルのデコーダでスタックオーバーフローおよびヒープオーバーフローが生じる問題  (CAN-2004-0782/CAN-2004-0783)\r\n\r\n・ICO ファイルのデコーダで整数オーバーフローが生じる問題 (CAN-2004-0788)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した画像ファイルを標的ユーザに送りつけ、GTK+ もしくは gdk-pixbuf を利用するアプリケーションで開くように標的ユーザを誘導することにより、アプリケーションをサービス不能状態に陥らせる、さらには標的ユーザの権限で任意のコードを実行できる可能性があります。",
-  "identifier": "JVNDB-2004-000390",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0783",
-      "source": "CVE",
-      "id": "CVE-2004-0783"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0783",
-      "source": "NVD",
-      "id": "CVE-2004-0783"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/729894",
-      "source": "CERT-VN",
-      "id": "VU#729894"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/577654",
-      "source": "CERT-VN",
-      "id": "VU#577654"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/369358",
-      "source": "CERT-VN",
-      "id": "VU#369358"
-    },
-    {
-      "text": "http://secunia.com/advisories/12542/",
-      "source": "SECUNIA",
-      "id": "SA12542"
-    },
-    {
-      "text": "http://secunia.com/advisories/12548/",
-      "source": "SECUNIA",
-      "id": "SA12548"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/11195",
-      "source": "BID",
-      "id": "11195"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2004/Sep/1011285.html",
-      "source": "SECTRACK",
-      "id": "1011285"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000390.html",
+	"title": "gdk+ および gdk-pixbuf の xpm_extract_color におけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000390.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGTK+ (GIMP Toolkit) パッケージは GNOME デスクトップ環境用の GUI アプリケーションを作成するためのツールキットで、多くの Linux ディストリビューションに同梱されています。また GTK+ に含まれる gdk-pixbuf は、画像のロード、保存、および処理を行うためのライブラリです。\r\n\r\nGTK+ 2.4.9 以前に同梱される gdk-pixbuf 0.22 以前には、以下のようなファイル解析時に生じる複数のセキュリティ問題が存在します。\r\n\r\n・BMP ファイルの処理部において無限ループが生じる問題 (CAN-2004-0753)\r\n\r\n・XPM ファイルのデコーダでスタックオーバーフローおよびヒープオーバーフローが生じる問題  (CAN-2004-0782/CAN-2004-0783)\r\n\r\n・ICO ファイルのデコーダで整数オーバーフローが生じる問題 (CAN-2004-0788)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した画像ファイルを標的ユーザに送りつけ、GTK+ もしくは gdk-pixbuf を利用するアプリケーションで開くように標的ユーザを誘導することにより、アプリケーションをサービス不能状態に陥らせる、さらには標的ユーザの権限で任意のコードを実行できる可能性があります。",
+	"identifier": "JVNDB-2004-000390",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0783",
+			"source": "CVE",
+			"id": "CVE-2004-0783"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0783",
+			"source": "NVD",
+			"id": "CVE-2004-0783"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/729894",
+			"source": "CERT-VN",
+			"id": "VU#729894"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/577654",
+			"source": "CERT-VN",
+			"id": "VU#577654"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/369358",
+			"source": "CERT-VN",
+			"id": "VU#369358"
+		},
+		{
+			"text": "http://secunia.com/advisories/12542/",
+			"source": "SECUNIA",
+			"id": "SA12542"
+		},
+		{
+			"text": "http://secunia.com/advisories/12548/",
+			"source": "SECUNIA",
+			"id": "SA12548"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/11195",
+			"source": "BID",
+			"id": "11195"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2004/Sep/1011285.html",
+			"source": "SECTRACK",
+			"id": "1011285"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

@@ -1,240 +1,240 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001963.html",
-  "title": "SSH 通信において一部データが漏えいする可能性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001963.html",
-  "description": "SSH（Secure Shell）は、ネットワークを介してインターネット上に置かれているサーバにログインしたり、 コマンドを実行したりするためのプログラムおよび通信プロトコルで、データは暗号化された状態で通信が行なわれます。 SSH で使用される通信方式の一部に対する攻撃方法が報告されています。\r\n\r\n報告された攻撃方法では、SSH がデフォルトで使用する通信方式において、ひとつの暗号化ブロックから 32 ビットの平文を取り出すことができるとされています。\r\nこの攻撃が行なわれると、SSH セッションが切れることがあります。RFC 4251 では、通信エラーが発生した際再接続すべきとされているため、自動的に再接続する実装の場合、攻撃による影響が大きくなる可能性があります。",
-  "identifier": "JVNDB-2008-001963",
-  "references": [
-    {
-      "text": "http://jvn.jp/niscc/CPNI-957037/",
-      "source": "JVN",
-      "id": "CPNI-957037"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5161",
-      "source": "CVE",
-      "id": "CVE-2008-5161"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-5161",
-      "source": "NVD",
-      "id": "CVE-2008-5161"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/958563",
-      "source": "CERT-VN",
-      "id": "VU#958563"
-    },
-    {
-      "text": "http://www.cpni.gov.uk/Docs/Vulnerability_Advisory_SSH.txt",
-      "source": "CPNI",
-      "id": "CPNI-957037"
-    },
-    {
-      "text": "http://secunia.com/advisories/32760",
-      "source": "SECUNIA",
-      "id": "SA32760"
-    },
-    {
-      "text": "http://secunia.com/advisories/32740",
-      "source": "SECUNIA",
-      "id": "SA32740"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/46620",
-      "source": "XF",
-      "id": "46620"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1021236",
-      "source": "SECTRACK",
-      "id": "1021236"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1021235",
-      "source": "SECTRACK",
-      "id": "1021235"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2008/3173",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2008-3173"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2008/3172",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2008-3172"
-    },
-    {
-      "text": "http://osvdb.org/49872",
-      "source": "OSVDB",
-      "id": "49872"
-    },
-    {
-      "text": "http://tools.ietf.org/html/rfc4251",
-      "source": "IETF",
-      "id": "RFC 4251"
-    },
-    {
-      "text": "http://tools.ietf.org/html/rfc4253",
-      "source": "IETF",
-      "id": "RFC 4253"
-    },
-    {
-      "text": "http://tools.ietf.org/html/rfc4344",
-      "source": "IETF",
-      "id": "RFC 4344"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-      "id": "CWE-200",
-      "title": "情報漏えい(CWE-200)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:openbsd:openssh",
-      "version": "2.2",
-      "vendor": "OpenBSD",
-      "product": "OpenSSH"
-    },
-    {
-      "text": "cpe:/a:ssh:tectia_client",
-      "version": "2.2",
-      "vendor": "SSH コミュニケーションズ・セキュリティ",
-      "product": "SSH Tectia Client"
-    },
-    {
-      "text": "cpe:/a:ssh:tectia_connector",
-      "version": "2.2",
-      "vendor": "SSH コミュニケーションズ・セキュリティ",
-      "product": "SSH Tectia Connector"
-    },
-    {
-      "text": "cpe:/a:ssh:tectia_connectsecure",
-      "version": "2.2",
-      "vendor": "SSH コミュニケーションズ・セキュリティ",
-      "product": "SSH Tectia ConnectSecure"
-    },
-    {
-      "text": "cpe:/a:ssh:tectia_server",
-      "version": "2.2",
-      "vendor": "SSH コミュニケーションズ・セキュリティ",
-      "product": "SSH Tectia Server"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X シリーズ"
-    },
-    {
-      "text": "cpe:/h:nec:wanbooster",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WanBooster"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt107e",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT107e"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1100",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1100"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1200",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1200"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1500",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1500"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx3000",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX3000"
-    },
-    {
-      "text": "cpe:/h:yamaha:srt100",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "SRT100"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    },
-    {
-      "text": "cpe:/o:ibm:aix",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM AIX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:sun:opensolaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "OpenSolaris"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    },
-    {
-      "text": "cpe:/o:yamaha:rt58i_firmware",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT58i"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.6",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
-    }
-  ],
-  "date": "2012-05-14T15:27+09:00",
-  "issued": "2008-12-16T17:11+09:00",
-  "modified": "2012-05-14T15:27+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001963.html",
+	"title": "SSH 通信において一部データが漏えいする可能性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001963.html",
+	"description": "SSH（Secure Shell）は、ネットワークを介してインターネット上に置かれているサーバにログインしたり、 コマンドを実行したりするためのプログラムおよび通信プロトコルで、データは暗号化された状態で通信が行なわれます。 SSH で使用される通信方式の一部に対する攻撃方法が報告されています。\r\n\r\n報告された攻撃方法では、SSH がデフォルトで使用する通信方式において、ひとつの暗号化ブロックから 32 ビットの平文を取り出すことができるとされています。\r\nこの攻撃が行なわれると、SSH セッションが切れることがあります。RFC 4251 では、通信エラーが発生した際再接続すべきとされているため、自動的に再接続する実装の場合、攻撃による影響が大きくなる可能性があります。",
+	"identifier": "JVNDB-2008-001963",
+	"references": [
+		{
+			"text": "http://jvn.jp/niscc/CPNI-957037/",
+			"source": "JVN",
+			"id": "CPNI-957037"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5161",
+			"source": "CVE",
+			"id": "CVE-2008-5161"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-5161",
+			"source": "NVD",
+			"id": "CVE-2008-5161"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/958563",
+			"source": "CERT-VN",
+			"id": "VU#958563"
+		},
+		{
+			"text": "http://www.cpni.gov.uk/Docs/Vulnerability_Advisory_SSH.txt",
+			"source": "CPNI",
+			"id": "CPNI-957037"
+		},
+		{
+			"text": "http://secunia.com/advisories/32760",
+			"source": "SECUNIA",
+			"id": "SA32760"
+		},
+		{
+			"text": "http://secunia.com/advisories/32740",
+			"source": "SECUNIA",
+			"id": "SA32740"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/46620",
+			"source": "XF",
+			"id": "46620"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1021236",
+			"source": "SECTRACK",
+			"id": "1021236"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1021235",
+			"source": "SECTRACK",
+			"id": "1021235"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2008/3173",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2008-3173"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2008/3172",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2008-3172"
+		},
+		{
+			"text": "http://osvdb.org/49872",
+			"source": "OSVDB",
+			"id": "49872"
+		},
+		{
+			"text": "http://tools.ietf.org/html/rfc4251",
+			"source": "IETF",
+			"id": "RFC 4251"
+		},
+		{
+			"text": "http://tools.ietf.org/html/rfc4253",
+			"source": "IETF",
+			"id": "RFC 4253"
+		},
+		{
+			"text": "http://tools.ietf.org/html/rfc4344",
+			"source": "IETF",
+			"id": "RFC 4344"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openbsd:openssh",
+			"version": "2.2",
+			"vendor": "OpenBSD",
+			"product": "OpenSSH"
+		},
+		{
+			"text": "cpe:/a:ssh:tectia_client",
+			"version": "2.2",
+			"vendor": "SSH コミュニケーションズ・セキュリティ",
+			"product": "SSH Tectia Client"
+		},
+		{
+			"text": "cpe:/a:ssh:tectia_connector",
+			"version": "2.2",
+			"vendor": "SSH コミュニケーションズ・セキュリティ",
+			"product": "SSH Tectia Connector"
+		},
+		{
+			"text": "cpe:/a:ssh:tectia_connectsecure",
+			"version": "2.2",
+			"vendor": "SSH コミュニケーションズ・セキュリティ",
+			"product": "SSH Tectia ConnectSecure"
+		},
+		{
+			"text": "cpe:/a:ssh:tectia_server",
+			"version": "2.2",
+			"vendor": "SSH コミュニケーションズ・セキュリティ",
+			"product": "SSH Tectia Server"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X シリーズ"
+		},
+		{
+			"text": "cpe:/h:nec:wanbooster",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WanBooster"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt107e",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT107e"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1100",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1100"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1200",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1200"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1500",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1500"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx3000",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX3000"
+		},
+		{
+			"text": "cpe:/h:yamaha:srt100",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "SRT100"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		},
+		{
+			"text": "cpe:/o:ibm:aix",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM AIX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:sun:opensolaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "OpenSolaris"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		},
+		{
+			"text": "cpe:/o:yamaha:rt58i_firmware",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT58i"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.6",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+		}
+	],
+	"date": "2012-05-14T15:27+09:00",
+	"issued": "2008-12-16T17:11+09:00",
+	"modified": "2012-05-14T15:27+09:00"
 }

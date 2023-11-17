@@ -1,66 +1,66 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003779.html",
-  "title": "Ruby の lib/openssl/ssl.rb における任意の SSL サーバになりすまされる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003779.html",
-  "description": "Ruby の lib/openssl/ssl.rb の OpenSSL::SSL.verify_certificate_identity 関数は、X.509 証明書の Subject Alternative Name フィールド内のドメイン名に含まれる '\\0' 文字を適切に処理しないため、任意の SSL サーバになりすまされる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2009-2408 と関連する問題です。",
-  "identifier": "JVNDB-2013-003779",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU95174988/",
-      "source": "JVN",
-      "id": "JVNVU#95174988"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU95868425/",
-      "source": "JVN",
-      "id": "JVNVU#95868425"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4073",
-      "source": "CVE",
-      "id": "CVE-2013-4073"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4073",
-      "source": "NVD",
-      "id": "CVE-2013-4073"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
-      "id": "CWE-310",
-      "title": "暗号の問題(CWE-310)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:ruby-lang:ruby",
-      "version": "2.2",
-      "vendor": "Ruby-lang.org",
-      "product": "Ruby"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2015-08-10T17:49+09:00",
-  "issued": "2013-08-20T15:40+09:00",
-  "modified": "2015-08-10T17:49+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003779.html",
+	"title": "Ruby の lib/openssl/ssl.rb における任意の SSL サーバになりすまされる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003779.html",
+	"description": "Ruby の lib/openssl/ssl.rb の OpenSSL::SSL.verify_certificate_identity 関数は、X.509 証明書の Subject Alternative Name フィールド内のドメイン名に含まれる '\\0' 文字を適切に処理しないため、任意の SSL サーバになりすまされる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2009-2408 と関連する問題です。",
+	"identifier": "JVNDB-2013-003779",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU95174988/",
+			"source": "JVN",
+			"id": "JVNVU#95174988"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU95868425/",
+			"source": "JVN",
+			"id": "JVNVU#95868425"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4073",
+			"source": "CVE",
+			"id": "CVE-2013-4073"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4073",
+			"source": "NVD",
+			"id": "CVE-2013-4073"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+			"id": "CWE-310",
+			"title": "暗号の問題(CWE-310)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ruby-lang:ruby",
+			"version": "2.2",
+			"vendor": "Ruby-lang.org",
+			"product": "Ruby"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2015-08-10T17:49+09:00",
+	"issued": "2013-08-20T15:40+09:00",
+	"modified": "2015-08-10T17:49+09:00"
 }

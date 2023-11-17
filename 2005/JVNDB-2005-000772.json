@@ -1,75 +1,75 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000772.html",
-  "title": "メールクライアントソフトにおける mailto URL scheme の不適切な解釈",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000772.html",
-  "description": "mailto URL scheme は、ウェブページにおいてメールアドレスを記載するために使われます。mailto URL scheme を用いて宛先メールアドレスやメール本文に記載する内容を指定することにより、メールのテンプレートを提供することができます。多くのメールクライアントでは、mailto URL scheme により指定されたフィールドをメールヘッダに設定する機能を持っています。\r\nmailto URL scheme については RFC2368 で定義されていますが、この文書の \"Security Considerations\" セクションにおいて、以下のような指摘がなされています。\r\n\r\n- メールクライアントは、mailto URL scheme の記述をもとに作成したメールの全体をユーザに確認させるべきである\r\n- とくにヘッダについては宛先だけでなく、その他のヘッダについても明示的に表示すべきである\r\n- メール配送に関係するヘッダを mailto URL scheme の記述に基づいて設定することは不適切である\r\n\r\n一方、いくつかのメールクライアント実装では、メール配送に関係するヘッダを mailto URL scheme の記述に基づいて設定したり、設定したヘッダを明示的に表示しないことが確認されています。\r\nJVN では製品開発者との調整のうえ、ユーザおよびメールクライアント開発者への周知を目的として、この問題を掲載しています。\r\n\r\n本脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCがベンダおよびCERT/CCとの調整を行いました。\r\n報告者: 株式会社ビジネス・アーキテクツ　太田 良典氏",
-  "identifier": "JVNDB-2005-000772",
-  "references": [
-    {
-      "text": "http://jvn.jp/jp/JVN%23FCAD9BD8/index.html",
-      "source": "JVN",
-      "id": "JVN#FCAD9BD8"
-    },
-    {
-      "text": "http://www.ietf.org/rfc/rfc2368.txt",
-      "source": "IETF",
-      "id": "RFC2368: The mailto URL scheme"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:allied_telesis_k.k.:at-mail_server",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "AT-Mail Server"
-    },
-    {
-      "text": "cpe:/a:hidemaru:hidemaru_mail",
-      "version": "2.2",
-      "vendor": "有限会社サイトー企画",
-      "product": "秀丸メール"
-    },
-    {
-      "text": "cpe:/a:justsystems:shuriken",
-      "version": "2.2",
-      "vendor": "ジャストシステム",
-      "product": "Shuriken"
-    },
-    {
-      "text": "cpe:/a:misc:edcom_edmax",
-      "version": "2.2",
-      "vendor": "Edcom",
-      "product": "EdMax"
-    },
-    {
-      "text": "cpe:/a:misc:edcom_edmax_free",
-      "version": "2.2",
-      "vendor": "Edcom",
-      "product": "EdMaxフリー版"
-    },
-    {
-      "text": "cpe:/a:misc:orange_winbiff",
-      "version": "2.2",
-      "vendor": "オレンジソフト",
-      "product": "Winbiff"
-    },
-    {
-      "text": "cpe:/a:rimarts_inc.:becky_internet_mail",
-      "version": "2.2",
-      "vendor": "リムアーツ",
-      "product": "Becky! Internet Mail"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000772.html",
+	"title": "メールクライアントソフトにおける mailto URL scheme の不適切な解釈",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000772.html",
+	"description": "mailto URL scheme は、ウェブページにおいてメールアドレスを記載するために使われます。mailto URL scheme を用いて宛先メールアドレスやメール本文に記載する内容を指定することにより、メールのテンプレートを提供することができます。多くのメールクライアントでは、mailto URL scheme により指定されたフィールドをメールヘッダに設定する機能を持っています。\r\nmailto URL scheme については RFC2368 で定義されていますが、この文書の \"Security Considerations\" セクションにおいて、以下のような指摘がなされています。\r\n\r\n- メールクライアントは、mailto URL scheme の記述をもとに作成したメールの全体をユーザに確認させるべきである\r\n- とくにヘッダについては宛先だけでなく、その他のヘッダについても明示的に表示すべきである\r\n- メール配送に関係するヘッダを mailto URL scheme の記述に基づいて設定することは不適切である\r\n\r\n一方、いくつかのメールクライアント実装では、メール配送に関係するヘッダを mailto URL scheme の記述に基づいて設定したり、設定したヘッダを明示的に表示しないことが確認されています。\r\nJVN では製品開発者との調整のうえ、ユーザおよびメールクライアント開発者への周知を目的として、この問題を掲載しています。\r\n\r\n本脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCがベンダおよびCERT/CCとの調整を行いました。\r\n報告者: 株式会社ビジネス・アーキテクツ　太田 良典氏",
+	"identifier": "JVNDB-2005-000772",
+	"references": [
+		{
+			"text": "http://jvn.jp/jp/JVN%23FCAD9BD8/index.html",
+			"source": "JVN",
+			"id": "JVN#FCAD9BD8"
+		},
+		{
+			"text": "http://www.ietf.org/rfc/rfc2368.txt",
+			"source": "IETF",
+			"id": "RFC2368: The mailto URL scheme"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:allied_telesis_k.k.:at-mail_server",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "AT-Mail Server"
+		},
+		{
+			"text": "cpe:/a:hidemaru:hidemaru_mail",
+			"version": "2.2",
+			"vendor": "有限会社サイトー企画",
+			"product": "秀丸メール"
+		},
+		{
+			"text": "cpe:/a:justsystems:shuriken",
+			"version": "2.2",
+			"vendor": "ジャストシステム",
+			"product": "Shuriken"
+		},
+		{
+			"text": "cpe:/a:misc:edcom_edmax",
+			"version": "2.2",
+			"vendor": "Edcom",
+			"product": "EdMax"
+		},
+		{
+			"text": "cpe:/a:misc:edcom_edmax_free",
+			"version": "2.2",
+			"vendor": "Edcom",
+			"product": "EdMaxフリー版"
+		},
+		{
+			"text": "cpe:/a:misc:orange_winbiff",
+			"version": "2.2",
+			"vendor": "オレンジソフト",
+			"product": "Winbiff"
+		},
+		{
+			"text": "cpe:/a:rimarts_inc.:becky_internet_mail",
+			"version": "2.2",
+			"vendor": "リムアーツ",
+			"product": "Becky! Internet Mail"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

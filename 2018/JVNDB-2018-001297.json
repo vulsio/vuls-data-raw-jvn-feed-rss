@@ -1,56 +1,56 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001297.html",
-  "title": "Pulse Secure Linux GUI における SSL サーバ証明書の検証不備の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001297.html",
-  "description": "Pulse Secure Linux GUI には、 SSL サーバ証明書の検証に不備があり、攻撃者によって接続設定を変更される問題が存在します。\r\n\r\nPulse Secure は SSL-VPN リモートアクセス製品です。 Pulse Secure Linux の GUI クライアントには WebKit が使用され、GUI による処理は JavaScript 関数のオーバライドにより実装されています。しかし、当該製品の WebKit には SSL サーバ証明書の検証エラーを検知しない不備が存在します。そのため、GUI クライアントが信頼できないネットワークに存在する VPN サーバへ接続する際、攻撃者はこの GUI クライアントの動作に介入することが可能です。例えば、攻撃者は VPN 接続設定を変更したり、新しい設定を作成することが可能となります。また Pulse Secure Linux GUI クライアントが VPN 接続を確立した際に表示されるウェルカムメッセージを改ざんすることも可能となります。",
-  "identifier": "JVNDB-2018-001297",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU91550568/index.html",
-      "source": "JVN",
-      "id": "JVNVU#91550568"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-6374",
-      "source": "CVE",
-      "id": "CVE-2018-6374"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-6374",
-      "source": "NVD",
-      "id": "CVE-2018-6374"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/319904",
-      "source": "CERT-VN",
-      "id": "VU#319904"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:pulsesecure:pulse_secure",
-      "version": "2.2",
-      "vendor": "パルスセキュア",
-      "product": "Pulse Secure"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.1",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "5.6",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
-    }
-  ],
-  "date": "2018-04-11T13:57+09:00",
-  "issued": "2018-02-06T11:52+09:00",
-  "modified": "2018-04-11T13:57+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001297.html",
+	"title": "Pulse Secure Linux GUI における SSL サーバ証明書の検証不備の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001297.html",
+	"description": "Pulse Secure Linux GUI には、 SSL サーバ証明書の検証に不備があり、攻撃者によって接続設定を変更される問題が存在します。\r\n\r\nPulse Secure は SSL-VPN リモートアクセス製品です。 Pulse Secure Linux の GUI クライアントには WebKit が使用され、GUI による処理は JavaScript 関数のオーバライドにより実装されています。しかし、当該製品の WebKit には SSL サーバ証明書の検証エラーを検知しない不備が存在します。そのため、GUI クライアントが信頼できないネットワークに存在する VPN サーバへ接続する際、攻撃者はこの GUI クライアントの動作に介入することが可能です。例えば、攻撃者は VPN 接続設定を変更したり、新しい設定を作成することが可能となります。また Pulse Secure Linux GUI クライアントが VPN 接続を確立した際に表示されるウェルカムメッセージを改ざんすることも可能となります。",
+	"identifier": "JVNDB-2018-001297",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU91550568/index.html",
+			"source": "JVN",
+			"id": "JVNVU#91550568"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-6374",
+			"source": "CVE",
+			"id": "CVE-2018-6374"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-6374",
+			"source": "NVD",
+			"id": "CVE-2018-6374"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/319904",
+			"source": "CERT-VN",
+			"id": "VU#319904"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:pulsesecure:pulse_secure",
+			"version": "2.2",
+			"vendor": "パルスセキュア",
+			"product": "Pulse Secure"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.1",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "5.6",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+		}
+	],
+	"date": "2018-04-11T13:57+09:00",
+	"issued": "2018-02-06T11:52+09:00",
+	"modified": "2018-04-11T13:57+09:00"
 }

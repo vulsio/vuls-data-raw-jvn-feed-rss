@@ -1,60 +1,60 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000353.html",
-  "title": "GNU shtool における不適切な一時ファイルの作成によりシンボリックリンク攻撃を受ける脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000353.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU shtool は libtool などと同様に、シェル上で使用する複数のコマンド群をマシンに依存しないようして一つにまとめたシェルスクリプトで、PHP や mm、nmap などのさまざまな製品に同梱されています。\r\n\r\nGNU shtool 2.0.1 以前には、一時ファイルを取り扱う際に競合状態が発生してセキュリティ上不適切な方法で一時ファイルを作成してしまう不備が存在し、シンボリックリンク攻撃を受ける問題が存在します。(CAN-2005-1751)\r\n\r\nこの問題を利用するローカルの攻撃者は、shtool が使用される際にシンボリックリンク攻撃を試みることにより、shtool のスクリプトを実行するユーザの権限で任意のファイルを作成する、あるいは上書きする可能性があります。\r\n\r\n尚、Gentoo Linux より、上記の問題とは異なる変種の問題が加えて報告されています。 (CAN-2005-1759)",
-  "identifier": "JVNDB-2005-000353",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1751",
-      "source": "CVE",
-      "id": "CVE-2005-1751"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1751",
-      "source": "NVD",
-      "id": "CVE-2005-1751"
-    },
-    {
-      "text": "http://secunia.com/advisories/15496/",
-      "source": "SECUNIA",
-      "id": "SA15496"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13767",
-      "source": "BID",
-      "id": "13767"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2005/May/1014059.html",
-      "source": "SECTRACK",
-      "id": "1014059"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:php:php",
-      "version": "2.2",
-      "vendor": "The PHP Group",
-      "product": "PHP"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "3.7",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000353.html",
+	"title": "GNU shtool における不適切な一時ファイルの作成によりシンボリックリンク攻撃を受ける脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000353.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU shtool は libtool などと同様に、シェル上で使用する複数のコマンド群をマシンに依存しないようして一つにまとめたシェルスクリプトで、PHP や mm、nmap などのさまざまな製品に同梱されています。\r\n\r\nGNU shtool 2.0.1 以前には、一時ファイルを取り扱う際に競合状態が発生してセキュリティ上不適切な方法で一時ファイルを作成してしまう不備が存在し、シンボリックリンク攻撃を受ける問題が存在します。(CAN-2005-1751)\r\n\r\nこの問題を利用するローカルの攻撃者は、shtool が使用される際にシンボリックリンク攻撃を試みることにより、shtool のスクリプトを実行するユーザの権限で任意のファイルを作成する、あるいは上書きする可能性があります。\r\n\r\n尚、Gentoo Linux より、上記の問題とは異なる変種の問題が加えて報告されています。 (CAN-2005-1759)",
+	"identifier": "JVNDB-2005-000353",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1751",
+			"source": "CVE",
+			"id": "CVE-2005-1751"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1751",
+			"source": "NVD",
+			"id": "CVE-2005-1751"
+		},
+		{
+			"text": "http://secunia.com/advisories/15496/",
+			"source": "SECUNIA",
+			"id": "SA15496"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13767",
+			"source": "BID",
+			"id": "13767"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2005/May/1014059.html",
+			"source": "SECTRACK",
+			"id": "1014059"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:php:php",
+			"version": "2.2",
+			"vendor": "The PHP Group",
+			"product": "PHP"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "3.7",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:H/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

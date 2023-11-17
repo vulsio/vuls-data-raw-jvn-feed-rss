@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004695.html",
-  "title": "Linux kernel の tun サブシステムにおける権限を取得される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004695.html",
-  "description": "Linux kernel の tun サブシステムの drivers/net/tun.c の tun_chr_poll 関数は、-fno-delete-null-pointer-checks gcc オプションが省略されている際、NULL ポインタデリファレンスおよび /dev/net/tun の mmap を実行されることにより、権限を取得される脆弱性が存在します。\r\n本脆弱性は、CVE-2009-1894 とは異なる脆弱性です。",
-  "identifier": "JVNDB-2009-004695",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1897",
-      "source": "CVE",
-      "id": "CVE-2009-1897"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1897",
-      "source": "NVD",
-      "id": "CVE-2009-1897"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2012-09-25T17:27+09:00",
-  "issued": "2012-09-25T17:27+09:00",
-  "modified": "2012-09-25T17:27+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004695.html",
+	"title": "Linux kernel の tun サブシステムにおける権限を取得される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004695.html",
+	"description": "Linux kernel の tun サブシステムの drivers/net/tun.c の tun_chr_poll 関数は、-fno-delete-null-pointer-checks gcc オプションが省略されている際、NULL ポインタデリファレンスおよび /dev/net/tun の mmap を実行されることにより、権限を取得される脆弱性が存在します。\r\n本脆弱性は、CVE-2009-1894 とは異なる脆弱性です。",
+	"identifier": "JVNDB-2009-004695",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1897",
+			"source": "CVE",
+			"id": "CVE-2009-1897"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-1897",
+			"source": "NVD",
+			"id": "CVE-2009-1897"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2012-09-25T17:27+09:00",
+	"issued": "2012-09-25T17:27+09:00",
+	"modified": "2012-09-25T17:27+09:00"
 }

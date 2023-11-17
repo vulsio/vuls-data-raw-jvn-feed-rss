@@ -1,40 +1,40 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001806.html",
-  "title": "Apache Tomcat における WebSocket 接続の実装に関する問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001806.html",
-  "description": "Apache Tomcat には、WebSocket 接続の実装に起因する、データが誤った用途に利用される問題が存在します。\r\n\r\nWeb アプリケーションに WebSocket 接続のクローズと同時に WebSocket メッセージを送信した場合、アプリケーションは、ソケットが閉じられた後もソケットを使用し続ける可能性があります（CVE-2022-25762）。\r\nこれにより、後続の WebSocket 接続が同一の WebSocket オブジェクトを同時に使用してしまい、データが誤って返答されたり他のエラーが発生する可能性があります。",
-  "identifier": "JVNDB-2022-001806",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU94243578/",
-      "source": "JVN",
-      "id": "JVNVU#94243578"
-    },
-    {
-      "text": "https://www.cve.org/CVERecord?id=CVE-2022-25762",
-      "source": "CVE",
-      "id": "CVE-2022-25762"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-25762",
-      "source": "NVD",
-      "id": "CVE-2022-25762"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/404.html",
-      "id": "CWE-404",
-      "title": "リソースの不適切なシャットダウンおよびリリース(CWE-404)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:tomcat",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache Tomcat"
-    }
-  ],
-  "date": "2023-08-09T11:57+09:00",
-  "issued": "2022-05-17T15:58+09:00",
-  "modified": "2023-08-09T11:57+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001806.html",
+	"title": "Apache Tomcat における WebSocket 接続の実装に関する問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001806.html",
+	"description": "Apache Tomcat には、WebSocket 接続の実装に起因する、データが誤った用途に利用される問題が存在します。\r\n\r\nWeb アプリケーションに WebSocket 接続のクローズと同時に WebSocket メッセージを送信した場合、アプリケーションは、ソケットが閉じられた後もソケットを使用し続ける可能性があります（CVE-2022-25762）。\r\nこれにより、後続の WebSocket 接続が同一の WebSocket オブジェクトを同時に使用してしまい、データが誤って返答されたり他のエラーが発生する可能性があります。",
+	"identifier": "JVNDB-2022-001806",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU94243578/",
+			"source": "JVN",
+			"id": "JVNVU#94243578"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-25762",
+			"source": "CVE",
+			"id": "CVE-2022-25762"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-25762",
+			"source": "NVD",
+			"id": "CVE-2022-25762"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/404.html",
+			"id": "CWE-404",
+			"title": "リソースの不適切なシャットダウンおよびリリース(CWE-404)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:tomcat",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache Tomcat"
+		}
+	],
+	"date": "2023-08-09T11:57+09:00",
+	"issued": "2022-05-17T15:58+09:00",
+	"modified": "2023-08-09T11:57+09:00"
 }

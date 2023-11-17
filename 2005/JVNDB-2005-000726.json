@@ -1,90 +1,90 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000726.html",
-  "title": "Ethereal の GTP 解析部におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000726.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal にはプロトコル解析部に以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n・IRC 解析部の不備により、無限ループが発生し CPU リソースを過大に消費してしまう問題 (0.10.13) (CVE-2005-3313) \r\n・GTP 解析部の不備により、無限ループが発生し CPU リソースを過大に消費してしまう問題 (0.9.1-0.10.13) (CVE-2005-4585) \r\n・OSPF 解析部の不備により、dissect_ospf_v3_address_prefix() 関数においてスタックオーバーフローが発生する問題 (0.8.20-0.10.13) (CVE-2005-3651) \r\n\r\nリモートの攻撃者に悪用された場合、Ethereal がクラッシュしサービス不能状態に陥る、あるいは Ethereal の実行権限 (通常 root 権限) で任意のコードを実行される可能性があります。",
-  "identifier": "JVNDB-2005-000726",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4585",
-      "source": "CVE",
-      "id": "CVE-2005-4585"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4585",
-      "source": "NVD",
-      "id": "CVE-2005-4585"
-    },
-    {
-      "text": "http://secunia.com/advisories/18229/",
-      "source": "SECUNIA",
-      "id": "SA18229"
-    },
-    {
-      "text": "http://secunia.com/advisories/17370/",
-      "source": "SECUNIA",
-      "id": "SA17370"
-    },
-    {
-      "text": "http://secunia.com/advisories/17973/",
-      "source": "SECUNIA",
-      "id": "SA17973"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/16076",
-      "source": "BID",
-      "id": "16076"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15219",
-      "source": "BID",
-      "id": "15219"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15794",
-      "source": "BID",
-      "id": "15794"
-    },
-    {
-      "text": "http://www.securiteam.com/unixfocus/6P00B0AEUI.html",
-      "source": "SECTEAM",
-      "id": "6P00B0AEUI"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/3095",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-3095"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-noinfo",
-      "title": "情報不足(CWE-noinfo)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000726.html",
+	"title": "Ethereal の GTP 解析部におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000726.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal にはプロトコル解析部に以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n・IRC 解析部の不備により、無限ループが発生し CPU リソースを過大に消費してしまう問題 (0.10.13) (CVE-2005-3313) \r\n・GTP 解析部の不備により、無限ループが発生し CPU リソースを過大に消費してしまう問題 (0.9.1-0.10.13) (CVE-2005-4585) \r\n・OSPF 解析部の不備により、dissect_ospf_v3_address_prefix() 関数においてスタックオーバーフローが発生する問題 (0.8.20-0.10.13) (CVE-2005-3651) \r\n\r\nリモートの攻撃者に悪用された場合、Ethereal がクラッシュしサービス不能状態に陥る、あるいは Ethereal の実行権限 (通常 root 権限) で任意のコードを実行される可能性があります。",
+	"identifier": "JVNDB-2005-000726",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4585",
+			"source": "CVE",
+			"id": "CVE-2005-4585"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4585",
+			"source": "NVD",
+			"id": "CVE-2005-4585"
+		},
+		{
+			"text": "http://secunia.com/advisories/18229/",
+			"source": "SECUNIA",
+			"id": "SA18229"
+		},
+		{
+			"text": "http://secunia.com/advisories/17370/",
+			"source": "SECUNIA",
+			"id": "SA17370"
+		},
+		{
+			"text": "http://secunia.com/advisories/17973/",
+			"source": "SECUNIA",
+			"id": "SA17973"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/16076",
+			"source": "BID",
+			"id": "16076"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15219",
+			"source": "BID",
+			"id": "15219"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15794",
+			"source": "BID",
+			"id": "15794"
+		},
+		{
+			"text": "http://www.securiteam.com/unixfocus/6P00B0AEUI.html",
+			"source": "SECTEAM",
+			"id": "6P00B0AEUI"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/3095",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-3095"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-noinfo",
+			"title": "情報不足(CWE-noinfo)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

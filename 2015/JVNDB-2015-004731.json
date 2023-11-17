@@ -1,95 +1,95 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004731.html",
-  "title": "Mediabridge Medialink Wireless-N Broadband Router に複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004731.html",
-  "description": "Mediabridge が提供する Medialink Wireless-N Broadband Router は、デフォルト設定では全ての機器に共通の認証情報を使用しています。また、認証回避の脆弱性やクロスサイトリクエストフォージェリの脆弱性が存在します。\r\n\r\n証明書やパスワード管理 (CWE-255) - CVE-2015-5994\r\n当該製品は、デフォルト設定で、ウェブインターフェースへのアクセスに admin:admin という認証情報を使用しています。また、無線ネットワークに medialink:password という共通の認証情報を使用しています。これらの認証情報はすべての機器に共通です。当該製品をデフォルト設定で使用している場合、無線ネットワークの範囲内にいる攻撃者によって、ウェブインターフェースを直接操作されたり、クロスサイトリクエストフォージェリなどの攻撃に使用されたりする可能性があります。\r\n\r\nCWE-255: Credentials Management\r\nhttps://cwe.mitre.org/data/definitions/255.html\r\n\r\nセキュリティに関する決定において、検証や整合性確認をせずに Cookie を信頼する (CWE-784) - CVE-2015-5995\r\n当該製品は、クライアントから送られる HTTP Cookie ヘッダの値を確認することで認証を行います。LAN に接続可能な攻撃者によって、HTTP Cookie ヘッダが \"Cookie: language-en; admin:language-en\" に書き換えられることで、認証情報が知られていなくとも、管理者権限でアクセスされる可能性があります。\r\n\r\nCWE-784: Reliance on Cookies without Validation and Integrity Checking in a Security Decision\r\nhttps://cwe.mitre.org/data/definitions/784.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-264 として公開されています。\r\n\r\n\r\nクロスサイトリクエストフォージェリ (CWE-352) - CVE-2015-5996\r\n当該製品にはクロスサイトリクエストフォージェリの脆弱性が存在します。当該製品にログインしているユーザが、遠隔の攻撃者が用意した URL にアクセスすることで、当該製品を操作させられる可能性があります。なお、当該製品のデフォルト設定では、ユーザがログインしていなくても攻撃可能です。\r\n\r\nCWE-352: Cross-Site Request Forgery (CSRF)\r\nhttps://cwe.mitre.org/data/definitions/352.html",
-  "identifier": "JVNDB-2015-004731",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU94201169/index.html",
-      "source": "JVN",
-      "id": "JVNVU#94201169"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5994",
-      "source": "CVE",
-      "id": "CVE-2015-5994"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5995",
-      "source": "CVE",
-      "id": "CVE-2015-5995"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5996",
-      "source": "CVE",
-      "id": "CVE-2015-5996"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5994",
-      "source": "NVD",
-      "id": "CVE-2015-5994"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5995",
-      "source": "NVD",
-      "id": "CVE-2015-5995"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5996",
-      "source": "NVD",
-      "id": "CVE-2015-5996"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/630872",
-      "source": "CERT-VN",
-      "id": "VU#630872"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
-      "id": "CWE-255",
-      "title": "証明書・パスワードの管理(CWE-255)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
-      "id": "CWE-352",
-      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/h:mediabridge:medialink_mwn-wapr300n",
-      "version": "2.2",
-      "vendor": "Mediabridge",
-      "product": "Medialink Wireless-N Broadband Router MWN-WAPR300N"
-    },
-    {
-      "text": "cpe:/o:mediabridge:medialink_mwn-wapr300n_firmware",
-      "version": "2.2",
-      "vendor": "Mediabridge",
-      "product": "Medialink Wireless-N Broadband Router MWN-WAPR300N ファームウェア"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2016-01-07T16:06+09:00",
-  "issued": "2015-09-18T18:19+09:00",
-  "modified": "2016-01-07T16:06+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004731.html",
+	"title": "Mediabridge Medialink Wireless-N Broadband Router に複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004731.html",
+	"description": "Mediabridge が提供する Medialink Wireless-N Broadband Router は、デフォルト設定では全ての機器に共通の認証情報を使用しています。また、認証回避の脆弱性やクロスサイトリクエストフォージェリの脆弱性が存在します。\r\n\r\n証明書やパスワード管理 (CWE-255) - CVE-2015-5994\r\n当該製品は、デフォルト設定で、ウェブインターフェースへのアクセスに admin:admin という認証情報を使用しています。また、無線ネットワークに medialink:password という共通の認証情報を使用しています。これらの認証情報はすべての機器に共通です。当該製品をデフォルト設定で使用している場合、無線ネットワークの範囲内にいる攻撃者によって、ウェブインターフェースを直接操作されたり、クロスサイトリクエストフォージェリなどの攻撃に使用されたりする可能性があります。\r\n\r\nCWE-255: Credentials Management\r\nhttps://cwe.mitre.org/data/definitions/255.html\r\n\r\nセキュリティに関する決定において、検証や整合性確認をせずに Cookie を信頼する (CWE-784) - CVE-2015-5995\r\n当該製品は、クライアントから送られる HTTP Cookie ヘッダの値を確認することで認証を行います。LAN に接続可能な攻撃者によって、HTTP Cookie ヘッダが \"Cookie: language-en; admin:language-en\" に書き換えられることで、認証情報が知られていなくとも、管理者権限でアクセスされる可能性があります。\r\n\r\nCWE-784: Reliance on Cookies without Validation and Integrity Checking in a Security Decision\r\nhttps://cwe.mitre.org/data/definitions/784.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-264 として公開されています。\r\n\r\n\r\nクロスサイトリクエストフォージェリ (CWE-352) - CVE-2015-5996\r\n当該製品にはクロスサイトリクエストフォージェリの脆弱性が存在します。当該製品にログインしているユーザが、遠隔の攻撃者が用意した URL にアクセスすることで、当該製品を操作させられる可能性があります。なお、当該製品のデフォルト設定では、ユーザがログインしていなくても攻撃可能です。\r\n\r\nCWE-352: Cross-Site Request Forgery (CSRF)\r\nhttps://cwe.mitre.org/data/definitions/352.html",
+	"identifier": "JVNDB-2015-004731",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU94201169/index.html",
+			"source": "JVN",
+			"id": "JVNVU#94201169"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5994",
+			"source": "CVE",
+			"id": "CVE-2015-5994"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5995",
+			"source": "CVE",
+			"id": "CVE-2015-5995"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5996",
+			"source": "CVE",
+			"id": "CVE-2015-5996"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5994",
+			"source": "NVD",
+			"id": "CVE-2015-5994"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5995",
+			"source": "NVD",
+			"id": "CVE-2015-5995"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5996",
+			"source": "NVD",
+			"id": "CVE-2015-5996"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/630872",
+			"source": "CERT-VN",
+			"id": "VU#630872"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+			"id": "CWE-255",
+			"title": "証明書・パスワードの管理(CWE-255)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+			"id": "CWE-352",
+			"title": "クロスサイトリクエストフォージェリ(CWE-352)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/h:mediabridge:medialink_mwn-wapr300n",
+			"version": "2.2",
+			"vendor": "Mediabridge",
+			"product": "Medialink Wireless-N Broadband Router MWN-WAPR300N"
+		},
+		{
+			"text": "cpe:/o:mediabridge:medialink_mwn-wapr300n_firmware",
+			"version": "2.2",
+			"vendor": "Mediabridge",
+			"product": "Medialink Wireless-N Broadband Router MWN-WAPR300N ファームウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2016-01-07T16:06+09:00",
+	"issued": "2015-09-18T18:19+09:00",
+	"modified": "2016-01-07T16:06+09:00"
 }

@@ -1,74 +1,74 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000487.html",
-  "title": "Linux Kernel の zlib ライブラリにおけるセグメンテーションフォルトの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000487.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.6.12.4 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・圧縮された ISO ファイルシステムを処理するドライバ (zisofs) において入力値のサニタイズ処理が適切に行なわれない問題 (CAN-2005-2457)\r\n\r\n・Linux Kernel における zlib ライブラリの実装の不備のため、gzip -t コマンドで不正な圧縮ファイルを処理するとセグメンテーションフォルトが発生し、Linux Kernel がクラッシュする問題 (CAN-2005-2458)\r\n\r\n・Linux Kernel における zlib ライブラリの実装の不備のため、gzip -d コマンドで不正な圧縮ファイルを処理すると Null ポインタデリファレンスが発生し、Linux Kernel がクラッシュする問題 (CAN-2005-2459)\r\n\r\n・KEYCTL_JOIN_SESSION_KEYRING の処理において特定のエラーが生じた場合に、セッション管理セマフォが適切に解放されない問題 (CAN-2005-2098)\r\n\r\n・空のペイロード以外を含む keyring を追加し、インスタンスの作成に失敗した際に、keyring を破棄する処理において Linux Kernel がクラッシュする問題 (CAN-2005-2099)\r\n\r\nこれらの問題を利用するリモート/ローカルの攻撃者は、結果として Linux Kernel をクラッシュさせ、標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、リモートから攻撃を行う場合には、不正な圧縮ファイルあるいは圧縮 ISO イメージファイルを処理するよう標的ユーザを誘導する必要があります。",
-  "identifier": "JVNDB-2005-000487",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2458",
-      "source": "CVE",
-      "id": "CVE-2005-2458"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2458",
-      "source": "NVD",
-      "id": "CVE-2005-2458"
-    },
-    {
-      "text": "http://secunia.com/advisories/16355/",
-      "source": "SECUNIA",
-      "id": "SA16355"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/14614",
-      "source": "BID",
-      "id": "14614"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/14517",
-      "source": "BID",
-      "id": "14517"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/14521",
-      "source": "BID",
-      "id": "14521"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/14720",
-      "source": "BID",
-      "id": "14720"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/14719",
-      "source": "BID",
-      "id": "14719"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/1351",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-1351"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000487.html",
+	"title": "Linux Kernel の zlib ライブラリにおけるセグメンテーションフォルトの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000487.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.6.12.4 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・圧縮された ISO ファイルシステムを処理するドライバ (zisofs) において入力値のサニタイズ処理が適切に行なわれない問題 (CAN-2005-2457)\r\n\r\n・Linux Kernel における zlib ライブラリの実装の不備のため、gzip -t コマンドで不正な圧縮ファイルを処理するとセグメンテーションフォルトが発生し、Linux Kernel がクラッシュする問題 (CAN-2005-2458)\r\n\r\n・Linux Kernel における zlib ライブラリの実装の不備のため、gzip -d コマンドで不正な圧縮ファイルを処理すると Null ポインタデリファレンスが発生し、Linux Kernel がクラッシュする問題 (CAN-2005-2459)\r\n\r\n・KEYCTL_JOIN_SESSION_KEYRING の処理において特定のエラーが生じた場合に、セッション管理セマフォが適切に解放されない問題 (CAN-2005-2098)\r\n\r\n・空のペイロード以外を含む keyring を追加し、インスタンスの作成に失敗した際に、keyring を破棄する処理において Linux Kernel がクラッシュする問題 (CAN-2005-2099)\r\n\r\nこれらの問題を利用するリモート/ローカルの攻撃者は、結果として Linux Kernel をクラッシュさせ、標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、リモートから攻撃を行う場合には、不正な圧縮ファイルあるいは圧縮 ISO イメージファイルを処理するよう標的ユーザを誘導する必要があります。",
+	"identifier": "JVNDB-2005-000487",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2458",
+			"source": "CVE",
+			"id": "CVE-2005-2458"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2458",
+			"source": "NVD",
+			"id": "CVE-2005-2458"
+		},
+		{
+			"text": "http://secunia.com/advisories/16355/",
+			"source": "SECUNIA",
+			"id": "SA16355"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/14614",
+			"source": "BID",
+			"id": "14614"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/14517",
+			"source": "BID",
+			"id": "14517"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/14521",
+			"source": "BID",
+			"id": "14521"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/14720",
+			"source": "BID",
+			"id": "14720"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/14719",
+			"source": "BID",
+			"id": "14719"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/1351",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-1351"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000023.html",
-  "title": "Linux kernel の sockfilter における脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000023.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.2.19 以前 には、ローカルの攻撃者に root 権限が奪取されてしまうという問題が存在します。 \r\n\r\nSysctl() はカーネルのパラメータを読み書きするためのシステムコールです。通常は明示的に許可されているプログラムのみが、このシステムコールを使用することができます。しかし、許可されていないプログラムがこのシステムコールを使用し、カーネルのパラメータを読み書きしようとしたとき、このシステムコールは signed value として許可されます。その結果、マイナスのカーネルのパラメータが許可され、カーネルが使用しているアドレス空間の参照が可能になる可能性が存在します。 \r\n\r\n尚、この問題は Linux Kernel 2.2.19 で修正されています。この他のセキュリティ上の複数の問題もさらに修正されています。",
-  "identifier": "JVNDB-2001-000023",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1395",
-      "source": "CVE",
-      "id": "CVE-2001-1395"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2001-1395",
-      "source": "NVD",
-      "id": "CVE-2001-1395"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/2364",
-      "source": "BID",
-      "id": "2364"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "3.6",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000023.html",
+	"title": "Linux kernel の sockfilter における脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2001/JVNDB-2001-000023.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.2.19 以前 には、ローカルの攻撃者に root 権限が奪取されてしまうという問題が存在します。 \r\n\r\nSysctl() はカーネルのパラメータを読み書きするためのシステムコールです。通常は明示的に許可されているプログラムのみが、このシステムコールを使用することができます。しかし、許可されていないプログラムがこのシステムコールを使用し、カーネルのパラメータを読み書きしようとしたとき、このシステムコールは signed value として許可されます。その結果、マイナスのカーネルのパラメータが許可され、カーネルが使用しているアドレス空間の参照が可能になる可能性が存在します。 \r\n\r\n尚、この問題は Linux Kernel 2.2.19 で修正されています。この他のセキュリティ上の複数の問題もさらに修正されています。",
+	"identifier": "JVNDB-2001-000023",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1395",
+			"source": "CVE",
+			"id": "CVE-2001-1395"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2001-1395",
+			"source": "NVD",
+			"id": "CVE-2001-1395"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/2364",
+			"source": "BID",
+			"id": "2364"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "3.6",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

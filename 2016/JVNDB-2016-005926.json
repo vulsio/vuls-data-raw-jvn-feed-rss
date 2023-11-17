@@ -1,51 +1,51 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005926.html",
-  "title": "libtiff の tif_write.c におけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005926.html",
-  "description": "libtiff の tif_write.c は、TIFFFlushData1() のエラーコードパスに問題があり、tif_rawcc および tif_rawcp メンバをリセットしないため、バッファオーバーフローの脆弱性が存在します。\r\n\r\n本脆弱性は、MSVR 35095 として報告されました。\r\n\r\nなお、本脆弱性は \"TIFFFlushData1 heap-buffer-overflow\" と呼ばれています。",
-  "identifier": "JVNDB-2016-005926",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9534",
-      "source": "CVE",
-      "id": "CVE-2016-9534"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9534",
-      "source": "NVD",
-      "id": "CVE-2016-9534"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:libtiff_project:libtiff",
-      "version": "2.2",
-      "vendor": "LibTIFF",
-      "product": "LibTIFF"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "9.8",
-      "type": "Base",
-      "severity": "Critical",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2016-11-25T16:47+09:00",
-  "issued": "2016-11-25T16:47+09:00",
-  "modified": "2016-11-25T16:47+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005926.html",
+	"title": "libtiff の tif_write.c におけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005926.html",
+	"description": "libtiff の tif_write.c は、TIFFFlushData1() のエラーコードパスに問題があり、tif_rawcc および tif_rawcp メンバをリセットしないため、バッファオーバーフローの脆弱性が存在します。\r\n\r\n本脆弱性は、MSVR 35095 として報告されました。\r\n\r\nなお、本脆弱性は \"TIFFFlushData1 heap-buffer-overflow\" と呼ばれています。",
+	"identifier": "JVNDB-2016-005926",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9534",
+			"source": "CVE",
+			"id": "CVE-2016-9534"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9534",
+			"source": "NVD",
+			"id": "CVE-2016-9534"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:libtiff_project:libtiff",
+			"version": "2.2",
+			"vendor": "LibTIFF",
+			"product": "LibTIFF"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2016-11-25T16:47+09:00",
+	"issued": "2016-11-25T16:47+09:00",
+	"modified": "2016-11-25T16:47+09:00"
 }

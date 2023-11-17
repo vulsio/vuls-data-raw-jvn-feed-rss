@@ -1,80 +1,80 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-005195.html",
-  "title": "Bytecode Alliance の cranelift-codegen および wasmtime における境界外読み取りに関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-005195.html",
-  "description": "Bytecode Alliance の cranelift-codegen および wasmtime には、境界外読み取りに関する脆弱性、境界外書き込みに関する脆弱性が存在します。",
-  "identifier": "JVNDB-2023-005195",
-  "references": [
-    {
-      "text": "https://www.cve.org/CVERecord?id=CVE-2023-26489",
-      "source": "CVE",
-      "id": "CVE-2023-26489"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-26489",
-      "source": "NVD",
-      "id": "CVE-2023-26489"
-    },
-    {
-      "text": "https://docs.rs/wasmtime/latest/wasmtime/struct.Config.html#method.static_memory_guard_size",
-      "source": "関連文書",
-      "id": "docs.rs (struct.Config.html#method.static_memory_guard_size)"
-    },
-    {
-      "text": "https://docs.rs/wasmtime/latest/wasmtime/struct.Config.html#method.static_memory_maximum_size",
-      "source": "関連文書",
-      "id": "docs.rs (struct.Config.html#method.static_memory_maximum_size)"
-    },
-    {
-      "text": "https://github.com/bytecodealliance/wasmtime/commit/63fb30e4b4415455d47b3da5a19d79c12f4f2d1f",
-      "source": "関連文書",
-      "id": "github.com (63fb30e4b4415455d47b3da5a19d79c12f4f2d1f)"
-    },
-    {
-      "text": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-ff4p-7xrq-q5r8",
-      "source": "関連文書",
-      "id": "github.com (GHSA-ff4p-7xrq-q5r8)"
-    },
-    {
-      "text": "https://groups.google.com/a/bytecodealliance.org/g/sec-announce/c/Mov-ItrNJsQ",
-      "source": "関連文書",
-      "id": "groups.google.com (Mov-ItrNJsQ)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/125.html",
-      "id": "CWE-125",
-      "title": "境界外読み取り(CWE-125)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/787.html",
-      "id": "CWE-787",
-      "title": "境界外書き込み(CWE-787)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:bytecodealliance:cranelift-codegen",
-      "version": "2.2",
-      "vendor": "Bytecode Alliance",
-      "product": "cranelift-codegen"
-    },
-    {
-      "text": "cpe:/a:bytecodealliance:wasmtime",
-      "version": "2.2",
-      "vendor": "Bytecode Alliance",
-      "product": "wasmtime"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "3.0",
-      "score": "9.9",
-      "type": "Base",
-      "severity": "Critical",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2023-11-07T13:41+09:00",
-  "issued": "2023-11-07T13:41+09:00",
-  "modified": "2023-11-07T13:41+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-005195.html",
+	"title": "Bytecode Alliance の cranelift-codegen および wasmtime における境界外読み取りに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-005195.html",
+	"description": "Bytecode Alliance の cranelift-codegen および wasmtime には、境界外読み取りに関する脆弱性、境界外書き込みに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-005195",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-26489",
+			"source": "CVE",
+			"id": "CVE-2023-26489"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-26489",
+			"source": "NVD",
+			"id": "CVE-2023-26489"
+		},
+		{
+			"text": "https://docs.rs/wasmtime/latest/wasmtime/struct.Config.html#method.static_memory_guard_size",
+			"source": "関連文書",
+			"id": "docs.rs (struct.Config.html#method.static_memory_guard_size)"
+		},
+		{
+			"text": "https://docs.rs/wasmtime/latest/wasmtime/struct.Config.html#method.static_memory_maximum_size",
+			"source": "関連文書",
+			"id": "docs.rs (struct.Config.html#method.static_memory_maximum_size)"
+		},
+		{
+			"text": "https://github.com/bytecodealliance/wasmtime/commit/63fb30e4b4415455d47b3da5a19d79c12f4f2d1f",
+			"source": "関連文書",
+			"id": "github.com (63fb30e4b4415455d47b3da5a19d79c12f4f2d1f)"
+		},
+		{
+			"text": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-ff4p-7xrq-q5r8",
+			"source": "関連文書",
+			"id": "github.com (GHSA-ff4p-7xrq-q5r8)"
+		},
+		{
+			"text": "https://groups.google.com/a/bytecodealliance.org/g/sec-announce/c/Mov-ItrNJsQ",
+			"source": "関連文書",
+			"id": "groups.google.com (Mov-ItrNJsQ)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:bytecodealliance:cranelift-codegen",
+			"version": "2.2",
+			"vendor": "Bytecode Alliance",
+			"product": "cranelift-codegen"
+		},
+		{
+			"text": "cpe:/a:bytecodealliance:wasmtime",
+			"version": "2.2",
+			"vendor": "Bytecode Alliance",
+			"product": "wasmtime"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.9",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-11-07T13:41+09:00",
+	"issued": "2023-11-07T13:41+09:00",
+	"modified": "2023-11-07T13:41+09:00"
 }

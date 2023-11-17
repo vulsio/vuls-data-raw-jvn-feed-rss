@@ -1,244 +1,244 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006907.html",
-  "title": "組込み機器に固有でない X.509 証明書および SSH ホスト鍵を使用している問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006907.html",
-  "description": "多くの組込み機器が、固有でない X.509 証明書と SSH ホスト鍵を使用しているため、なりすましや中間者 (man-in-the-middle) 攻撃、通信内容の解読などの攻撃を受ける可能性があります。\r\n\r\n暗号鍵がハードコードされている問題 (CWE-321)\r\nSEC Consult の Stefan Viehb&#246;ck の調査によると、多くの組込み機器が、固有でない X.509 証明書と SSH ホスト鍵を使用して、インターネットからアクセス可能な状態にあるとのことです。ファームウェアイメージに、ハードコードされた鍵や、インターネットをスキャンして蓄積されたレポジトリである scans.io (特に SSH の結果と、SSL 証明書) のデータとフィンガープリントが一致する証明書を使用している機器は脆弱だと判断できます。影響を受ける機器は家庭用ルータや IP カメラから VoIP 製品にまで多岐に渡ります。\r\n\r\nCWE-321: Use of Hard-coded Cryptographic Key\r\nhttp://cwe.mitre.org/data/definitions/321.html\r\n\r\nscans.io\r\nhttps://scans.io/\r\n\r\nSSH の結果\r\nhttps://scans.io/series/ssh-rsa-full-ipv4\r\n\r\nSSL 証明書\r\nhttps://scans.io/study/sonar.ssl\r\n\r\n多くの脆弱な機器では、証明書や鍵の再利用は特定の開発者による限られた製品ラインに留まっていますが、複数の開発者で同一の証明書や鍵を使用している例もいくつか存在します。これらは、共通の SDK を使用して開発されたファームウェア、または ISP が提供する OEM 機器のファームウェアを使用していることが根本的な原因となっています。\r\n\r\n脆弱な機器はなりすましや中間者 (man-in-the-middle) 攻撃を受けたり、通信内容を解読されたりする可能性があります。おそらく攻撃者は認証情報やその他の機密情報を取得することができ、それらを更なる攻撃に使用することが可能です。調査結果と、証明書や SSH ホスト鍵の問題の影響を受けるシステムのさらに詳しい情報は、SEC Consult のブログ記事を参照してください。\r\n\r\n証明書\r\nhttps://www.sec-consult.com/download/certificates.html\r\n\r\nSSH ホスト鍵\r\nhttps://www.sec-consult.com/download/ssh_host_keys.html\r\n\r\nSEC Consult\r\nhttp://blog.sec-consult.com/2015/11/house-of-keys-industry-wide-https.html",
-  "identifier": "JVNDB-2015-006907",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU96100360/index.html",
-      "source": "JVN",
-      "id": "JVNVU#96100360"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6358",
-      "source": "CVE",
-      "id": "CVE-2015-6358"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7255",
-      "source": "CVE",
-      "id": "CVE-2015-7255"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7256",
-      "source": "CVE",
-      "id": "CVE-2015-7256"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7276",
-      "source": "CVE",
-      "id": "CVE-2015-7276"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8251",
-      "source": "CVE",
-      "id": "CVE-2015-8251"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-7256",
-      "source": "NVD",
-      "id": "CVE-2015-7256"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-6358",
-      "source": "NVD",
-      "id": "CVE-2015-6358"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-7255",
-      "source": "NVD",
-      "id": "CVE-2015-7255"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-7276",
-      "source": "NVD",
-      "id": "CVE-2015-7276"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-8251",
-      "source": "NVD",
-      "id": "CVE-2015-8251"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/566724",
-      "source": "CERT-VN",
-      "id": "VU#566724"
-    },
-    {
-      "text": "http://blog.sec-consult.com/2015/11/house-of-keys-industry-wide-https.html",
-      "source": "関連文書",
-      "id": "SEC Consult Blog"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    },
-    {
-      "text": "cpe:/o:zyxel:c1000z_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "C1000Z ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:fr1000z_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "FR1000Z ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:gs1900-24_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "GS1900-24 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:gs1900-8_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "GS1900-8 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:nwa1100-nh_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "NWA1100-NH ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:nwa1100-n_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "NWA1100-N ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:nwa1121-ni_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "NWA1121-NI ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:nwa1123-ac_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "NWA1123-AC ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:nwa1123-ni_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "NWA1123-NI ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:p-660hn-51_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "P-660HN-51 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:p-663hn-51_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "P-663HN-51 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:p8702n_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "P8702N ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:pmg5318-b20a_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "PMG5318-B20A ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:q1000_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "Q1000 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:sbg3300-n000_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "SBG3300-N000 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:sbg3300-nb00_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "SBG3300-NB00 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:sbg3500-n000_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "SBG3500-N000 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:vmg1312-b10a_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "VMG1312-B10A ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:vmg1312-b30a_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "VMG1312-B30A ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:vmg1312-b30b_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "VMG1312-B30B ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:vmg4380-b10a_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "VMG4380-B10A ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:vmg8324-b10a_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "VMG8324-B10A ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:vmg8924-b10a_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "VMG8924-B10A ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:vmg8924-b30a_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "VMG8924-B30A ファームウェア"
-    },
-    {
-      "text": "cpe:/o:zyxel:vsg1435-b101_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "VSG1435-B101 ファームウェア"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
-    }
-  ],
-  "date": "2018-02-28T13:56+09:00",
-  "issued": "2016-02-29T16:55+09:00",
-  "modified": "2018-02-28T13:56+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006907.html",
+	"title": "組込み機器に固有でない X.509 証明書および SSH ホスト鍵を使用している問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006907.html",
+	"description": "多くの組込み機器が、固有でない X.509 証明書と SSH ホスト鍵を使用しているため、なりすましや中間者 (man-in-the-middle) 攻撃、通信内容の解読などの攻撃を受ける可能性があります。\r\n\r\n暗号鍵がハードコードされている問題 (CWE-321)\r\nSEC Consult の Stefan Viehb&#246;ck の調査によると、多くの組込み機器が、固有でない X.509 証明書と SSH ホスト鍵を使用して、インターネットからアクセス可能な状態にあるとのことです。ファームウェアイメージに、ハードコードされた鍵や、インターネットをスキャンして蓄積されたレポジトリである scans.io (特に SSH の結果と、SSL 証明書) のデータとフィンガープリントが一致する証明書を使用している機器は脆弱だと判断できます。影響を受ける機器は家庭用ルータや IP カメラから VoIP 製品にまで多岐に渡ります。\r\n\r\nCWE-321: Use of Hard-coded Cryptographic Key\r\nhttp://cwe.mitre.org/data/definitions/321.html\r\n\r\nscans.io\r\nhttps://scans.io/\r\n\r\nSSH の結果\r\nhttps://scans.io/series/ssh-rsa-full-ipv4\r\n\r\nSSL 証明書\r\nhttps://scans.io/study/sonar.ssl\r\n\r\n多くの脆弱な機器では、証明書や鍵の再利用は特定の開発者による限られた製品ラインに留まっていますが、複数の開発者で同一の証明書や鍵を使用している例もいくつか存在します。これらは、共通の SDK を使用して開発されたファームウェア、または ISP が提供する OEM 機器のファームウェアを使用していることが根本的な原因となっています。\r\n\r\n脆弱な機器はなりすましや中間者 (man-in-the-middle) 攻撃を受けたり、通信内容を解読されたりする可能性があります。おそらく攻撃者は認証情報やその他の機密情報を取得することができ、それらを更なる攻撃に使用することが可能です。調査結果と、証明書や SSH ホスト鍵の問題の影響を受けるシステムのさらに詳しい情報は、SEC Consult のブログ記事を参照してください。\r\n\r\n証明書\r\nhttps://www.sec-consult.com/download/certificates.html\r\n\r\nSSH ホスト鍵\r\nhttps://www.sec-consult.com/download/ssh_host_keys.html\r\n\r\nSEC Consult\r\nhttp://blog.sec-consult.com/2015/11/house-of-keys-industry-wide-https.html",
+	"identifier": "JVNDB-2015-006907",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU96100360/index.html",
+			"source": "JVN",
+			"id": "JVNVU#96100360"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6358",
+			"source": "CVE",
+			"id": "CVE-2015-6358"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7255",
+			"source": "CVE",
+			"id": "CVE-2015-7255"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7256",
+			"source": "CVE",
+			"id": "CVE-2015-7256"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7276",
+			"source": "CVE",
+			"id": "CVE-2015-7276"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8251",
+			"source": "CVE",
+			"id": "CVE-2015-8251"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2015-7256",
+			"source": "NVD",
+			"id": "CVE-2015-7256"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2015-6358",
+			"source": "NVD",
+			"id": "CVE-2015-6358"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2015-7255",
+			"source": "NVD",
+			"id": "CVE-2015-7255"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2015-7276",
+			"source": "NVD",
+			"id": "CVE-2015-7276"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2015-8251",
+			"source": "NVD",
+			"id": "CVE-2015-8251"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/566724",
+			"source": "CERT-VN",
+			"id": "VU#566724"
+		},
+		{
+			"text": "http://blog.sec-consult.com/2015/11/house-of-keys-industry-wide-https.html",
+			"source": "関連文書",
+			"id": "SEC Consult Blog"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		},
+		{
+			"text": "cpe:/o:zyxel:c1000z_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "C1000Z ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:fr1000z_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "FR1000Z ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:gs1900-24_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "GS1900-24 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:gs1900-8_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "GS1900-8 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:nwa1100-nh_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "NWA1100-NH ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:nwa1100-n_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "NWA1100-N ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:nwa1121-ni_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "NWA1121-NI ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:nwa1123-ac_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "NWA1123-AC ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:nwa1123-ni_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "NWA1123-NI ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:p-660hn-51_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "P-660HN-51 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:p-663hn-51_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "P-663HN-51 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:p8702n_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "P8702N ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:pmg5318-b20a_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "PMG5318-B20A ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:q1000_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "Q1000 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:sbg3300-n000_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "SBG3300-N000 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:sbg3300-nb00_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "SBG3300-NB00 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:sbg3500-n000_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "SBG3500-N000 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:vmg1312-b10a_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "VMG1312-B10A ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:vmg1312-b30a_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "VMG1312-B30A ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:vmg1312-b30b_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "VMG1312-B30B ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:vmg4380-b10a_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "VMG4380-B10A ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:vmg8324-b10a_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "VMG8324-B10A ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:vmg8924-b10a_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "VMG8924-B10A ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:vmg8924-b30a_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "VMG8924-B30A ファームウェア"
+		},
+		{
+			"text": "cpe:/o:zyxel:vsg1435-b101_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "VSG1435-B101 ファームウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+		}
+	],
+	"date": "2018-02-28T13:56+09:00",
+	"issued": "2016-02-29T16:55+09:00",
+	"modified": "2018-02-28T13:56+09:00"
 }

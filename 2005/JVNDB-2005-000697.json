@@ -1,89 +1,89 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000697.html",
-  "title": "Linux Kernel の sysctl.c におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000697.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) sysctl.c において、/proc/sys/net/ipv4/conf/ におけるインタフェースの削除処理に不備が存在するため、proc_handler() 関数を呼び出すことが可能となる問題が存在します。(CVE-2005-2709)\r\n\r\nローカルの攻撃者に悪用された場合、標的システムがサービス不能状態に陥る、あるいは任意のコードが実行される可能性があります。\r\n\r\n2) set_mempolicy システムコールには、引数に 0 ビットマスクが指定されている場合、メモリ処理においてページフォルトが発生した際にカーネルパニックが発生する問題が存在します。(CVE-2005-3358)\r\n\r\nローカルの攻撃者に悪用された場合、標的システムがサービス不能状態に陥る可能性があります。\r\n\r\n3) signal.c において、子プロセスの auto-reap が特定の要求を処理した場合に、ptrace リファレンスが解決しない問題が存在します。(CVE-2005-3784)\r\n\r\nローカルの攻撃者に悪用された場合、標的システムがサービス不能状態に陥る可能性があります。\r\n\r\n4) locks.c の time_out_leases() 関数において、大量の broken leases が発生した場合に、過大にカーネルログスペースを消費してしまう問題が存在します。(CVE-2005-3857)\r\n\r\nローカルの攻撃者に悪用された場合、標的システムがサービス不能状態に陥る可能性があります。\r\n\r\n5) procfs において、符号付き整数に符号なし整数を加える処理に不備が存在するため、カーネルメモリ内のデータが漏洩してしまう問題が存在します。(CVE-2005-4605)\r\n\r\n現時点において詳細は不明ですが、ローカルの攻撃者に悪用された場合、カーネルメモリ内の情報が読み取られる可能性があります。",
-  "identifier": "JVNDB-2005-000697",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2709",
-      "source": "CVE",
-      "id": "CVE-2005-2709"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2709",
-      "source": "NVD",
-      "id": "CVE-2005-2709"
-    },
-    {
-      "text": "http://secunia.com/advisories/17786/",
-      "source": "SECUNIA",
-      "id": "SA17786"
-    },
-    {
-      "text": "http://secunia.com/advisories/18216/",
-      "source": "SECUNIA",
-      "id": "SA18216"
-    },
-    {
-      "text": "http://secunia.com/advisories/17504/",
-      "source": "SECUNIA",
-      "id": "SA17504"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/16284",
-      "source": "BID",
-      "id": "16284"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/16135",
-      "source": "BID",
-      "id": "16135"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15627",
-      "source": "BID",
-      "id": "15627"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15625",
-      "source": "BID",
-      "id": "15625"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15365",
-      "source": "BID",
-      "id": "15365"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/2359",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-2359"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/2649",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-2649"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.6",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000697.html",
+	"title": "Linux Kernel の sysctl.c におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000697.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) sysctl.c において、/proc/sys/net/ipv4/conf/ におけるインタフェースの削除処理に不備が存在するため、proc_handler() 関数を呼び出すことが可能となる問題が存在します。(CVE-2005-2709)\r\n\r\nローカルの攻撃者に悪用された場合、標的システムがサービス不能状態に陥る、あるいは任意のコードが実行される可能性があります。\r\n\r\n2) set_mempolicy システムコールには、引数に 0 ビットマスクが指定されている場合、メモリ処理においてページフォルトが発生した際にカーネルパニックが発生する問題が存在します。(CVE-2005-3358)\r\n\r\nローカルの攻撃者に悪用された場合、標的システムがサービス不能状態に陥る可能性があります。\r\n\r\n3) signal.c において、子プロセスの auto-reap が特定の要求を処理した場合に、ptrace リファレンスが解決しない問題が存在します。(CVE-2005-3784)\r\n\r\nローカルの攻撃者に悪用された場合、標的システムがサービス不能状態に陥る可能性があります。\r\n\r\n4) locks.c の time_out_leases() 関数において、大量の broken leases が発生した場合に、過大にカーネルログスペースを消費してしまう問題が存在します。(CVE-2005-3857)\r\n\r\nローカルの攻撃者に悪用された場合、標的システムがサービス不能状態に陥る可能性があります。\r\n\r\n5) procfs において、符号付き整数に符号なし整数を加える処理に不備が存在するため、カーネルメモリ内のデータが漏洩してしまう問題が存在します。(CVE-2005-4605)\r\n\r\n現時点において詳細は不明ですが、ローカルの攻撃者に悪用された場合、カーネルメモリ内の情報が読み取られる可能性があります。",
+	"identifier": "JVNDB-2005-000697",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2709",
+			"source": "CVE",
+			"id": "CVE-2005-2709"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2709",
+			"source": "NVD",
+			"id": "CVE-2005-2709"
+		},
+		{
+			"text": "http://secunia.com/advisories/17786/",
+			"source": "SECUNIA",
+			"id": "SA17786"
+		},
+		{
+			"text": "http://secunia.com/advisories/18216/",
+			"source": "SECUNIA",
+			"id": "SA18216"
+		},
+		{
+			"text": "http://secunia.com/advisories/17504/",
+			"source": "SECUNIA",
+			"id": "SA17504"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/16284",
+			"source": "BID",
+			"id": "16284"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/16135",
+			"source": "BID",
+			"id": "16135"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15627",
+			"source": "BID",
+			"id": "15627"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15625",
+			"source": "BID",
+			"id": "15625"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15365",
+			"source": "BID",
+			"id": "15365"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/2359",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-2359"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/2649",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-2649"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.6",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

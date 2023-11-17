@@ -1,163 +1,163 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-016376.html",
-  "title": "複数のクアルコム製品における境界外書き込みに関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-016376.html",
-  "description": "AQT1000 ファームウェア、QCA6390 ファームウェア、QCA6391 ファームウェア等複数のクアルコム製品には、境界外書き込みに関する脆弱性が存在します。",
-  "identifier": "JVNDB-2022-016376",
-  "references": [
-    {
-      "text": "https://www.cve.org/CVERecord?id=CVE-2022-22096",
-      "source": "CVE",
-      "id": "CVE-2022-22096"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-22096",
-      "source": "NVD",
-      "id": "CVE-2022-22096"
-    },
-    {
-      "text": "https://www.qualcomm.com/company/product-security/bulletins/july-2022-bulletin",
-      "source": "関連文書",
-      "id": "www.qualcomm.com (july-2022-bulletin)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/787.html",
-      "id": "CWE-787",
-      "title": "境界外書き込み(CWE-787)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:qualcomm:aqt1000_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "AQT1000 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:qca6390_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "QCA6390 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:qca6391_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "QCA6391 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd460_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD460 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd480_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD480 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd662_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD662 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd665_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD665 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd675_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD675 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd678_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD678 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd680_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "sd680 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd690_5g_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD690 5G ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd695_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "sd695 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd720g_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD720G ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd730_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD730 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd765g_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD765G ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd765_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD765 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd768g_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD768G ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd778g_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD778G ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd_675_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "SD 675 ファームウェア"
-    },
-    {
-      "text": "cpe:/o:qualcomm:sd_8_gen1_5g_firmware",
-      "version": "2.2",
-      "vendor": "クアルコム",
-      "product": "sd 8 gen1 5g ファームウェア"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "3.0",
-      "score": "9.8",
-      "type": "Base",
-      "severity": "Critical",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2023-10-03T17:10+09:00",
-  "issued": "2023-10-03T17:10+09:00",
-  "modified": "2023-10-03T17:10+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-016376.html",
+	"title": "複数のクアルコム製品における境界外書き込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-016376.html",
+	"description": "AQT1000 ファームウェア、QCA6390 ファームウェア、QCA6391 ファームウェア等複数のクアルコム製品には、境界外書き込みに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2022-016376",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-22096",
+			"source": "CVE",
+			"id": "CVE-2022-22096"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-22096",
+			"source": "NVD",
+			"id": "CVE-2022-22096"
+		},
+		{
+			"text": "https://www.qualcomm.com/company/product-security/bulletins/july-2022-bulletin",
+			"source": "関連文書",
+			"id": "www.qualcomm.com (july-2022-bulletin)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:qualcomm:aqt1000_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "AQT1000 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:qca6390_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "QCA6390 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:qca6391_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "QCA6391 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd460_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD460 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd480_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD480 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd662_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD662 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd665_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD665 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd675_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD675 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd678_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD678 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd680_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "sd680 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd690_5g_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD690 5G ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd695_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "sd695 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd720g_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD720G ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd730_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD730 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd765g_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD765G ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd765_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD765 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd768g_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD768G ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd778g_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD778G ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd_675_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "SD 675 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:qualcomm:sd_8_gen1_5g_firmware",
+			"version": "2.2",
+			"vendor": "クアルコム",
+			"product": "sd 8 gen1 5g ファームウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-10-03T17:10+09:00",
+	"issued": "2023-10-03T17:10+09:00",
+	"modified": "2023-10-03T17:10+09:00"
 }

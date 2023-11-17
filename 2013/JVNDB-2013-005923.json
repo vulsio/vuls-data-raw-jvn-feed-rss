@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005923.html",
-  "title": "libvirt の libxl ドライバ内の libxlDomainGetNumaParameters 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005923.html",
-  "description": "libvirt の libxl ドライバ (libxl/libxl_driver.c) 内の libxlDomainGetNumaParameters 関数は、ノードマップを適切に初期化しないため、サービス運用妨害 (不正な操作およびクラッシュ) 状態にされる、または任意のコードを実行される脆弱性が存在します。",
-  "identifier": "JVNDB-2013-005923",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6457",
-      "source": "CVE",
-      "id": "CVE-2013-6457"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6457",
-      "source": "NVD",
-      "id": "CVE-2013-6457"
-    },
-    {
-      "text": "https://www.redhat.com/archives/libvir-list/2013-December/msg01176.html",
-      "source": "関連文書",
-      "id": "[libvirt] 20131220 [PATCH] libxl: avoid crashing if calling `virsh numatune' on inactive domain"
-    },
-    {
-      "text": "https://www.redhat.com/archives/libvir-list/2013-December/msg01258.html",
-      "source": "関連文書",
-      "id": "[libvirt] 20131224 CVE-2013-6457 Re: [PATCH] libxl: avoid crashing if calling `virsh numatune' on inactive domain"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:redhat:libvirt",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "libvirt"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.2",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:A/AC:L/Au:S/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2015-08-03T18:07+09:00",
-  "issued": "2014-01-28T10:56+09:00",
-  "modified": "2015-08-03T18:07+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005923.html",
+	"title": "libvirt の libxl ドライバ内の libxlDomainGetNumaParameters 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005923.html",
+	"description": "libvirt の libxl ドライバ (libxl/libxl_driver.c) 内の libxlDomainGetNumaParameters 関数は、ノードマップを適切に初期化しないため、サービス運用妨害 (不正な操作およびクラッシュ) 状態にされる、または任意のコードを実行される脆弱性が存在します。",
+	"identifier": "JVNDB-2013-005923",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6457",
+			"source": "CVE",
+			"id": "CVE-2013-6457"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6457",
+			"source": "NVD",
+			"id": "CVE-2013-6457"
+		},
+		{
+			"text": "https://www.redhat.com/archives/libvir-list/2013-December/msg01176.html",
+			"source": "関連文書",
+			"id": "[libvirt] 20131220 [PATCH] libxl: avoid crashing if calling `virsh numatune' on inactive domain"
+		},
+		{
+			"text": "https://www.redhat.com/archives/libvir-list/2013-December/msg01258.html",
+			"source": "関連文書",
+			"id": "[libvirt] 20131224 CVE-2013-6457 Re: [PATCH] libxl: avoid crashing if calling `virsh numatune' on inactive domain"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:redhat:libvirt",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "libvirt"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.2",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:A/AC:L/Au:S/C:P/I:P/A:P"
+		}
+	],
+	"date": "2015-08-03T18:07+09:00",
+	"issued": "2014-01-28T10:56+09:00",
+	"modified": "2015-08-03T18:07+09:00"
 }

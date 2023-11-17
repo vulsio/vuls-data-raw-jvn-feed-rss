@@ -1,168 +1,168 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000287.html",
-  "title": "OpenSSL における 不正な ASN.1 構造体によるメモリ二重開放の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000287.html",
-  "description": "OpenSSL の ASN.1 (Abstract Syntax Notation number One) 構造体 (ASN1_TYPE) の解釈部において、構造体用に確保したメモリの開放処理の不備があり、スタック内の値を破壊されてしまう脆弱性が存在します。",
-  "identifier": "JVNDB-2003-000287",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNCA-2003-26",
-      "source": "JVN",
-      "id": "JVNCA-2003-26"
-    },
-    {
-      "text": "http://jvn.jp/tr/TRCA-2003-26",
-      "source": "JVNTR",
-      "id": "TRCA-2003-26"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0545",
-      "source": "CVE",
-      "id": "CVE-2003-0545"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0545",
-      "source": "NVD",
-      "id": "CVE-2003-0545"
-    },
-    {
-      "text": "http://www.cyberpolice.go.jp/important/20031001_103420.html",
-      "source": "AT-POLICE",
-      "id": "OpenSSLの脆弱性について(9/30)"
-    },
-    {
-      "text": "http://www.cert.org/advisories/CA-2003-26.html",
-      "source": "CERT-A",
-      "id": "CA-2003-26"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/935264",
-      "source": "CERT-VN",
-      "id": "VU#935264"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/686224",
-      "source": "CERT-VN",
-      "id": "VU#686224"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/732952",
-      "source": "CERT-VN",
-      "id": "VU#732952"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/104280",
-      "source": "CERT-VN",
-      "id": "VU#104280"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/n-159.shtml",
-      "source": "CIAC",
-      "id": "N-159"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/o-065.shtml",
-      "source": "CIAC",
-      "id": "O-065"
-    },
-    {
-      "text": "http://www.cpni.gov.uk/docs/re-20031104-00753.pdf?lang=en",
-      "source": "NISCC",
-      "id": "006489/OpenSSL"
-    },
-    {
-      "text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20031104-00753.xml",
-      "source": "CPNI",
-      "id": "00753"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/8732",
-      "source": "BID",
-      "id": "8732"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/13315",
-      "source": "XF",
-      "id": "13315"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/a:oracle:application_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Application Server"
-    },
-    {
-      "text": "cpe:/a:oracle:database_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Database"
-    },
-    {
-      "text": "cpe:/a:oracle:http_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle HTTP Server"
-    },
-    {
-      "text": "cpe:/h:cisco:pix_firewall",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco PIX Firewall"
-    },
-    {
-      "text": "cpe:/h:hp:apache-based_web_server",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX Apache-based Web Server"
-    },
-    {
-      "text": "cpe:/o:cisco:ios",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IOS"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000287.html",
+	"title": "OpenSSL における 不正な ASN.1 構造体によるメモリ二重開放の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000287.html",
+	"description": "OpenSSL の ASN.1 (Abstract Syntax Notation number One) 構造体 (ASN1_TYPE) の解釈部において、構造体用に確保したメモリの開放処理の不備があり、スタック内の値を破壊されてしまう脆弱性が存在します。",
+	"identifier": "JVNDB-2003-000287",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNCA-2003-26",
+			"source": "JVN",
+			"id": "JVNCA-2003-26"
+		},
+		{
+			"text": "http://jvn.jp/tr/TRCA-2003-26",
+			"source": "JVNTR",
+			"id": "TRCA-2003-26"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0545",
+			"source": "CVE",
+			"id": "CVE-2003-0545"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0545",
+			"source": "NVD",
+			"id": "CVE-2003-0545"
+		},
+		{
+			"text": "http://www.cyberpolice.go.jp/important/20031001_103420.html",
+			"source": "AT-POLICE",
+			"id": "OpenSSLの脆弱性について(9/30)"
+		},
+		{
+			"text": "http://www.cert.org/advisories/CA-2003-26.html",
+			"source": "CERT-A",
+			"id": "CA-2003-26"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/935264",
+			"source": "CERT-VN",
+			"id": "VU#935264"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/686224",
+			"source": "CERT-VN",
+			"id": "VU#686224"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/732952",
+			"source": "CERT-VN",
+			"id": "VU#732952"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/104280",
+			"source": "CERT-VN",
+			"id": "VU#104280"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/n-159.shtml",
+			"source": "CIAC",
+			"id": "N-159"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/o-065.shtml",
+			"source": "CIAC",
+			"id": "O-065"
+		},
+		{
+			"text": "http://www.cpni.gov.uk/docs/re-20031104-00753.pdf?lang=en",
+			"source": "NISCC",
+			"id": "006489/OpenSSL"
+		},
+		{
+			"text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20031104-00753.xml",
+			"source": "CPNI",
+			"id": "00753"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/8732",
+			"source": "BID",
+			"id": "8732"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/13315",
+			"source": "XF",
+			"id": "13315"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/a:oracle:application_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Application Server"
+		},
+		{
+			"text": "cpe:/a:oracle:database_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Database"
+		},
+		{
+			"text": "cpe:/a:oracle:http_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle HTTP Server"
+		},
+		{
+			"text": "cpe:/h:cisco:pix_firewall",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco PIX Firewall"
+		},
+		{
+			"text": "cpe:/h:hp:apache-based_web_server",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX Apache-based Web Server"
+		},
+		{
+			"text": "cpe:/o:cisco:ios",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IOS"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

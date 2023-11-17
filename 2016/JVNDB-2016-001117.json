@@ -1,106 +1,106 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001117.html",
-  "title": "OpenSSH のクライアントの roaming_common.c の roaming_read および roaming_write 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001117.html",
-  "description": "OpenSSH のクライアントの roaming_common.c の (1) roaming_read および (2) roaming_write 関数は、特定のプロキシおよび転送オプションが有効になっている場合、接続ファイル記述子を適切に保持しないため、サービス運用妨害 (ヒープベースのバッファオーバーフロー) 状態にされるになど、不特定の影響を受ける脆弱性が存在します。\r\n\r\nなお、JVNVU#95595627 では、CWE-122 として公開されています。\r\n\r\nCWE-122: Heap-based Buffer Overflow\r\nhttp://cwe.mitre.org/data/definitions/122.html",
-  "identifier": "JVNDB-2016-001117",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU95595627/index.html",
-      "source": "JVN",
-      "id": "JVNVU#95595627"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU97668313",
-      "source": "JVN",
-      "id": "JVNVU#97668313"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0778",
-      "source": "CVE",
-      "id": "CVE-2016-0778"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0778",
-      "source": "NVD",
-      "id": "CVE-2016-0778"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/456088",
-      "source": "CERT-VN",
-      "id": "VU#456088"
-    },
-    {
-      "text": "https://www.qualys.com/2016/01/14/cve-2016-0777-cve-2016-0778/openssh-cve-2016-0777-cve-2016-0778.txt",
-      "source": "関連文書",
-      "id": "Qualys Security Advisory"
-    },
-    {
-      "text": "http://undeadly.org/cgi?action=article&sid=20160114142733",
-      "source": "関連文書",
-      "id": "OpenBSD Journal"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:hp:remote_device_access_virtual_customer_access_system",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード・エンタープライズ",
-      "product": "HPE Remote Device Access: Virtual Customer Access System"
-    },
-    {
-      "text": "cpe:/a:openbsd:openssh",
-      "version": "2.2",
-      "vendor": "OpenBSD",
-      "product": "OpenSSH"
-    },
-    {
-      "text": "cpe:/a:sophos:unified_threat_management_software",
-      "version": "2.2",
-      "vendor": "ソフォス",
-      "product": "Sophos UTM ソフトウェア"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:oracle:linux",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Linux"
-    },
-    {
-      "text": "cpe:/o:oracle:solaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Solaris"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.6",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:H/Au:S/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "8.1",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2016-10-27T18:07+09:00",
-  "issued": "2016-01-22T13:52+09:00",
-  "modified": "2016-10-27T18:07+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001117.html",
+	"title": "OpenSSH のクライアントの roaming_common.c の roaming_read および roaming_write 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001117.html",
+	"description": "OpenSSH のクライアントの roaming_common.c の (1) roaming_read および (2) roaming_write 関数は、特定のプロキシおよび転送オプションが有効になっている場合、接続ファイル記述子を適切に保持しないため、サービス運用妨害 (ヒープベースのバッファオーバーフロー) 状態にされるになど、不特定の影響を受ける脆弱性が存在します。\r\n\r\nなお、JVNVU#95595627 では、CWE-122 として公開されています。\r\n\r\nCWE-122: Heap-based Buffer Overflow\r\nhttp://cwe.mitre.org/data/definitions/122.html",
+	"identifier": "JVNDB-2016-001117",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU95595627/index.html",
+			"source": "JVN",
+			"id": "JVNVU#95595627"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU97668313",
+			"source": "JVN",
+			"id": "JVNVU#97668313"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0778",
+			"source": "CVE",
+			"id": "CVE-2016-0778"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0778",
+			"source": "NVD",
+			"id": "CVE-2016-0778"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/456088",
+			"source": "CERT-VN",
+			"id": "VU#456088"
+		},
+		{
+			"text": "https://www.qualys.com/2016/01/14/cve-2016-0777-cve-2016-0778/openssh-cve-2016-0777-cve-2016-0778.txt",
+			"source": "関連文書",
+			"id": "Qualys Security Advisory"
+		},
+		{
+			"text": "http://undeadly.org/cgi?action=article&sid=20160114142733",
+			"source": "関連文書",
+			"id": "OpenBSD Journal"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hp:remote_device_access_virtual_customer_access_system",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード・エンタープライズ",
+			"product": "HPE Remote Device Access: Virtual Customer Access System"
+		},
+		{
+			"text": "cpe:/a:openbsd:openssh",
+			"version": "2.2",
+			"vendor": "OpenBSD",
+			"product": "OpenSSH"
+		},
+		{
+			"text": "cpe:/a:sophos:unified_threat_management_software",
+			"version": "2.2",
+			"vendor": "ソフォス",
+			"product": "Sophos UTM ソフトウェア"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:oracle:linux",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Linux"
+		},
+		{
+			"text": "cpe:/o:oracle:solaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Solaris"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.6",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:H/Au:S/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "8.1",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2016-10-27T18:07+09:00",
+	"issued": "2016-01-22T13:52+09:00",
+	"modified": "2016-10-27T18:07+09:00"
 }

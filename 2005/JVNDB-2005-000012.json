@@ -1,77 +1,77 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000012.html",
-  "title": "Squid の fakeauth_auth helper におけるメモリリークの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000012.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSquid 2.5 STABLE1 - STABLE7 の NTLM 認証ヘルパの一つ fakeauth_auth helper には、メモリリークおよびセグメンテーションフォルトが発生する問題が存在します。\r\n\r\n・メモリリークの問題 (CAN-2005-0096)\r\nfakeauth_auth.c においてメモリリークの問題が存在し、メモリが消費されてしまうことで高負荷の状態に陥る\r\n\r\n・セグメンテーションフォルトの問題 (CAN-2005-0097)\r\n意図的に作成された NTLM タイプ 3 のメッセージを受信した場合に、セグメンテーションフォルトが発生する\r\n\r\nこれらの問題を利用するリモートの攻撃者は、NTLM 認証ヘルパとして fakeauth が指定されている場合、認証ルーチンをクラッシュさせ、結果として Squid プロキシサーバをサービス不能状態に陥らせる可能性があります。 \r\n\r\n尚、Squid 2.4 以前では NTLM 認証はサポートされていないため、これらの問題の影響を受けません。",
-  "identifier": "JVNDB-2005-000012",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0096",
-      "source": "CVE",
-      "id": "CVE-2005-0096"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0096",
-      "source": "NVD",
-      "id": "CVE-2005-0096"
-    },
-    {
-      "text": "http://secunia.com/advisories/13789/",
-      "source": "SECUNIA",
-      "id": "SA13789"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12324",
-      "source": "BID",
-      "id": "12324"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12220",
-      "source": "BID",
-      "id": "12220"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2005/Jan/1012818.html",
-      "source": "SECTRACK",
-      "id": "1012818"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:squid-cache:squid",
-      "version": "2.2",
-      "vendor": "Squid-cache.org",
-      "product": "Squid"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000012.html",
+	"title": "Squid の fakeauth_auth helper におけるメモリリークの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000012.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSquid 2.5 STABLE1 - STABLE7 の NTLM 認証ヘルパの一つ fakeauth_auth helper には、メモリリークおよびセグメンテーションフォルトが発生する問題が存在します。\r\n\r\n・メモリリークの問題 (CAN-2005-0096)\r\nfakeauth_auth.c においてメモリリークの問題が存在し、メモリが消費されてしまうことで高負荷の状態に陥る\r\n\r\n・セグメンテーションフォルトの問題 (CAN-2005-0097)\r\n意図的に作成された NTLM タイプ 3 のメッセージを受信した場合に、セグメンテーションフォルトが発生する\r\n\r\nこれらの問題を利用するリモートの攻撃者は、NTLM 認証ヘルパとして fakeauth が指定されている場合、認証ルーチンをクラッシュさせ、結果として Squid プロキシサーバをサービス不能状態に陥らせる可能性があります。 \r\n\r\n尚、Squid 2.4 以前では NTLM 認証はサポートされていないため、これらの問題の影響を受けません。",
+	"identifier": "JVNDB-2005-000012",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0096",
+			"source": "CVE",
+			"id": "CVE-2005-0096"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0096",
+			"source": "NVD",
+			"id": "CVE-2005-0096"
+		},
+		{
+			"text": "http://secunia.com/advisories/13789/",
+			"source": "SECUNIA",
+			"id": "SA13789"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12324",
+			"source": "BID",
+			"id": "12324"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12220",
+			"source": "BID",
+			"id": "12220"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2005/Jan/1012818.html",
+			"source": "SECTRACK",
+			"id": "1012818"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:squid-cache:squid",
+			"version": "2.2",
+			"vendor": "Squid-cache.org",
+			"product": "Squid"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

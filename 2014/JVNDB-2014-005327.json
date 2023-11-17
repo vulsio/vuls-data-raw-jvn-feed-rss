@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005327.html",
-  "title": "Linux Kernel の virt/kvm/iommu.c 内の kvm_iommu_map_pages 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005327.html",
-  "description": "Linux Kernel の virt/kvm/iommu.c 内の kvm_iommu_map_pages 関数には、マッピングの失敗を処理している間、ページ数を誤って計算するため、サービス運用妨害 (ホスト OS ページのピンニング解除) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n本脆弱性は CVE-2014-3601 の修正が不完全だったことによる脆弱性です。",
-  "identifier": "JVNDB-2014-005327",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8369",
-      "source": "CVE",
-      "id": "CVE-2014-8369"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8369",
-      "source": "NVD",
-      "id": "CVE-2014-8369"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
-      "id": "CWE-189",
-      "title": "数値処理の問題(CWE-189)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.6",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2015-06-08T17:20+09:00",
-  "issued": "2014-11-11T18:00+09:00",
-  "modified": "2015-06-08T17:20+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005327.html",
+	"title": "Linux Kernel の virt/kvm/iommu.c 内の kvm_iommu_map_pages 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005327.html",
+	"description": "Linux Kernel の virt/kvm/iommu.c 内の kvm_iommu_map_pages 関数には、マッピングの失敗を処理している間、ページ数を誤って計算するため、サービス運用妨害 (ホスト OS ページのピンニング解除) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n本脆弱性は CVE-2014-3601 の修正が不完全だったことによる脆弱性です。",
+	"identifier": "JVNDB-2014-005327",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8369",
+			"source": "CVE",
+			"id": "CVE-2014-8369"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8369",
+			"source": "NVD",
+			"id": "CVE-2014-8369"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+			"id": "CWE-189",
+			"title": "数値処理の問題(CWE-189)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.6",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2015-06-08T17:20+09:00",
+	"issued": "2014-11-11T18:00+09:00",
+	"modified": "2015-06-08T17:20+09:00"
 }

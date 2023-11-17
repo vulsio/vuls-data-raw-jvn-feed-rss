@@ -1,66 +1,66 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003617.html",
-  "title": "libbpg にメモリ境界外への書き込みを行う脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003617.html",
-  "description": "libbpg は、BPG 画像フォーマットを扱うライブラリです。libbpg には、メモリ境界外への書き込みを行う脆弱性が存在します。\r\n\r\nメモリ境界外への書き込み (CWE-787) - CVE-2016-5637\r\nlibbpg で使用される関数 restore_tqb_pixels において transquant_bypass_enable_flag のチェックが不適切なため、細工されたファイルを処理することでメモリ境界外への書き込みを行う脆弱性が存在します。\r\n\r\nCWE-787: Out-of-bounds Write\r\nhttp://cwe.mitre.org/data/definitions/787.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-119 として公開されています。",
-  "identifier": "JVNDB-2016-003617",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU96627087",
-      "source": "JVN",
-      "id": "JVNVU#96627087"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5637",
-      "source": "CVE",
-      "id": "CVE-2016-5637"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5637",
-      "source": "NVD",
-      "id": "CVE-2016-5637"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/123799",
-      "source": "CERT-VN",
-      "id": "VU#123799"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:libbpg:libbpg",
-      "version": "2.2",
-      "vendor": "libbpg",
-      "product": "libbpg"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "8.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2016-08-03T15:06+09:00",
-  "issued": "2016-07-14T17:17+09:00",
-  "modified": "2016-08-03T15:06+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003617.html",
+	"title": "libbpg にメモリ境界外への書き込みを行う脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003617.html",
+	"description": "libbpg は、BPG 画像フォーマットを扱うライブラリです。libbpg には、メモリ境界外への書き込みを行う脆弱性が存在します。\r\n\r\nメモリ境界外への書き込み (CWE-787) - CVE-2016-5637\r\nlibbpg で使用される関数 restore_tqb_pixels において transquant_bypass_enable_flag のチェックが不適切なため、細工されたファイルを処理することでメモリ境界外への書き込みを行う脆弱性が存在します。\r\n\r\nCWE-787: Out-of-bounds Write\r\nhttp://cwe.mitre.org/data/definitions/787.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-119 として公開されています。",
+	"identifier": "JVNDB-2016-003617",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU96627087",
+			"source": "JVN",
+			"id": "JVNVU#96627087"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5637",
+			"source": "CVE",
+			"id": "CVE-2016-5637"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-5637",
+			"source": "NVD",
+			"id": "CVE-2016-5637"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/123799",
+			"source": "CERT-VN",
+			"id": "VU#123799"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:libbpg:libbpg",
+			"version": "2.2",
+			"vendor": "libbpg",
+			"product": "libbpg"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2016-08-03T15:06+09:00",
+	"issued": "2016-07-14T17:17+09:00",
+	"modified": "2016-08-03T15:06+09:00"
 }

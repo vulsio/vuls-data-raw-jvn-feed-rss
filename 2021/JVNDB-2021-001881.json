@@ -1,149 +1,149 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001881.html",
-  "title": "Open Design Alliance 製 Drawings SDK における複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001881.html",
-  "description": "Open Design Alliance が提供する Drawings SDK は、製図用ソフトウェア開発キットです。\r\n当該製品には、次の複数の脆弱性が存在します。\r\n\r\n　* 境界外読み取り (CWE-125) - CVE-2021-32938\r\n　* 境界外書き込み (CWE-787) - CVE-2021-32936\r\n　* 境界外読み取り (CWE-125) - CVE-2021-32940\r\n　* DGN ファイルの異常または例外条件に対する不適切なチェック (CWE-754) - CVE-2021-32946\r\n　* 境界外書き込み (CWE-787) - CVE-2021-32948\r\n　* 境界外読み取り (CWE-125) - CVE-2021-32950\r\n　* 境界外書き込み (CWE-787) - CVE-2021-32952\r\n　* 解放済みメモリの使用 (use-after-free) (CWE-416) - CVE-2021-32944",
-  "identifier": "JVNDB-2021-001881",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU95145431",
-      "source": "JVN",
-      "id": "JVNVU#95145431"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU97514209/index.html",
-      "source": "JVN",
-      "id": "JVNVU#97514209"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32946",
-      "source": "CVE",
-      "id": "CVE-2021-32946"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32952",
-      "source": "CVE",
-      "id": "CVE-2021-32952"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32938",
-      "source": "CVE",
-      "id": "CVE-2021-32938"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32936",
-      "source": "CVE",
-      "id": "CVE-2021-32936"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32940",
-      "source": "CVE",
-      "id": "CVE-2021-32940"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32948",
-      "source": "CVE",
-      "id": "CVE-2021-32948"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32950",
-      "source": "CVE",
-      "id": "CVE-2021-32950"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32944",
-      "source": "CVE",
-      "id": "CVE-2021-32944"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32936",
-      "source": "NVD",
-      "id": "CVE-2021-32936"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32938",
-      "source": "NVD",
-      "id": "CVE-2021-32938"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32940",
-      "source": "NVD",
-      "id": "CVE-2021-32940"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32944",
-      "source": "NVD",
-      "id": "CVE-2021-32944"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32946",
-      "source": "NVD",
-      "id": "CVE-2021-32946"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32948",
-      "source": "NVD",
-      "id": "CVE-2021-32948"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32950",
-      "source": "NVD",
-      "id": "CVE-2021-32950"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32952",
-      "source": "NVD",
-      "id": "CVE-2021-32952"
-    },
-    {
-      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-159-02",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-21-159-02"
-    },
-    {
-      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-23-047-01",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-23-047-01"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/125.html",
-      "id": "CWE-125",
-      "title": "境界外読み取り(CWE-125)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/416.html",
-      "id": "CWE-416",
-      "title": "解放済みメモリの使用(CWE-416)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/754.html",
-      "id": "CWE-754",
-      "title": "例外的な状態における不適切なチェック(CWE-754)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/787.html",
-      "id": "CWE-787",
-      "title": "境界外書き込み(CWE-787)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:opendesign:drawings_sdk",
-      "version": "2.2",
-      "vendor": "Open Design Alliance",
-      "product": "Drawings SDK"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "3.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2023-02-17T14:48+09:00",
-  "issued": "2021-06-11T15:43+09:00",
-  "modified": "2023-02-17T14:48+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001881.html",
+	"title": "Open Design Alliance 製 Drawings SDK における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001881.html",
+	"description": "Open Design Alliance が提供する Drawings SDK は、製図用ソフトウェア開発キットです。\r\n当該製品には、次の複数の脆弱性が存在します。\r\n\r\n　* 境界外読み取り (CWE-125) - CVE-2021-32938\r\n　* 境界外書き込み (CWE-787) - CVE-2021-32936\r\n　* 境界外読み取り (CWE-125) - CVE-2021-32940\r\n　* DGN ファイルの異常または例外条件に対する不適切なチェック (CWE-754) - CVE-2021-32946\r\n　* 境界外書き込み (CWE-787) - CVE-2021-32948\r\n　* 境界外読み取り (CWE-125) - CVE-2021-32950\r\n　* 境界外書き込み (CWE-787) - CVE-2021-32952\r\n　* 解放済みメモリの使用 (use-after-free) (CWE-416) - CVE-2021-32944",
+	"identifier": "JVNDB-2021-001881",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU95145431",
+			"source": "JVN",
+			"id": "JVNVU#95145431"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU97514209/index.html",
+			"source": "JVN",
+			"id": "JVNVU#97514209"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32946",
+			"source": "CVE",
+			"id": "CVE-2021-32946"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32952",
+			"source": "CVE",
+			"id": "CVE-2021-32952"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32938",
+			"source": "CVE",
+			"id": "CVE-2021-32938"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32936",
+			"source": "CVE",
+			"id": "CVE-2021-32936"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32940",
+			"source": "CVE",
+			"id": "CVE-2021-32940"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32948",
+			"source": "CVE",
+			"id": "CVE-2021-32948"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32950",
+			"source": "CVE",
+			"id": "CVE-2021-32950"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32944",
+			"source": "CVE",
+			"id": "CVE-2021-32944"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32936",
+			"source": "NVD",
+			"id": "CVE-2021-32936"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32938",
+			"source": "NVD",
+			"id": "CVE-2021-32938"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32940",
+			"source": "NVD",
+			"id": "CVE-2021-32940"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32944",
+			"source": "NVD",
+			"id": "CVE-2021-32944"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32946",
+			"source": "NVD",
+			"id": "CVE-2021-32946"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32948",
+			"source": "NVD",
+			"id": "CVE-2021-32948"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32950",
+			"source": "NVD",
+			"id": "CVE-2021-32950"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-32952",
+			"source": "NVD",
+			"id": "CVE-2021-32952"
+		},
+		{
+			"text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-159-02",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-21-159-02"
+		},
+		{
+			"text": "https://www.cisa.gov/uscert/ics/advisories/icsa-23-047-01",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-23-047-01"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/416.html",
+			"id": "CWE-416",
+			"title": "解放済みメモリの使用(CWE-416)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/754.html",
+			"id": "CWE-754",
+			"title": "例外的な状態における不適切なチェック(CWE-754)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:opendesign:drawings_sdk",
+			"version": "2.2",
+			"vendor": "Open Design Alliance",
+			"product": "Drawings SDK"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-02-17T14:48+09:00",
+	"issued": "2021-06-11T15:43+09:00",
+	"modified": "2023-02-17T14:48+09:00"
 }

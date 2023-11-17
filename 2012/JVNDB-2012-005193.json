@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005193.html",
-  "title": "Exim の dkim.c におけるヒープベースのバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005193.html",
-  "description": "Exim の dkim.c 内の dkim_exim_query_dns_txt 関数には、DKIM サポートが有効で、かつ acl_smtp_connect および acl_smtp_rcpt が \"warn control = dkim_disable_verify\" に設定されていない場合、ヒープベースのバッファオーバーフローが存在します。",
-  "identifier": "JVNDB-2012-005193",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5671",
-      "source": "CVE",
-      "id": "CVE-2012-5671"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-5671",
-      "source": "NVD",
-      "id": "CVE-2012-5671"
-    },
-    {
-      "text": "http://jprs.jp/tech/security/2012-11-01-exim-vuln-dkim.html",
-      "source": "JPRS",
-      "id": "Exim 4.70〜4.80におけるDomainKeys Identified Mail (DKIM) 処理の脆弱性について"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:exim:exim",
-      "version": "2.2",
-      "vendor": "Exim Development",
-      "product": "Exim"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2012-11-26T17:49+09:00",
-  "issued": "2012-11-02T16:11+09:00",
-  "modified": "2012-11-26T17:49+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005193.html",
+	"title": "Exim の dkim.c におけるヒープベースのバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005193.html",
+	"description": "Exim の dkim.c 内の dkim_exim_query_dns_txt 関数には、DKIM サポートが有効で、かつ acl_smtp_connect および acl_smtp_rcpt が \"warn control = dkim_disable_verify\" に設定されていない場合、ヒープベースのバッファオーバーフローが存在します。",
+	"identifier": "JVNDB-2012-005193",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5671",
+			"source": "CVE",
+			"id": "CVE-2012-5671"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-5671",
+			"source": "NVD",
+			"id": "CVE-2012-5671"
+		},
+		{
+			"text": "http://jprs.jp/tech/security/2012-11-01-exim-vuln-dkim.html",
+			"source": "JPRS",
+			"id": "Exim 4.70〜4.80におけるDomainKeys Identified Mail (DKIM) 処理の脆弱性について"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:exim:exim",
+			"version": "2.2",
+			"vendor": "Exim Development",
+			"product": "Exim"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2012-11-26T17:49+09:00",
+	"issued": "2012-11-02T16:11+09:00",
+	"modified": "2012-11-26T17:49+09:00"
 }

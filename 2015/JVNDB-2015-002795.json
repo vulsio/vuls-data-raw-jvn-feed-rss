@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002795.html",
-  "title": "「提督業も忙しい！」(KanColleViewer) がオープンプロキシとして動作する問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002795.html",
-  "description": "「提督業も忙しい！」(以下 KanColleViewer) にはオープンプロキシとして動作する問題があります。\r\n\r\nオンラインゲーム用ユーティリティツール KanColleViewer は、Fiddler Core と呼ばれる HTTP プロキシライブラリを使い、クライアントとゲームサーバ間で行われる HTTPS 通信の内容をキャプチャしています。\r\n\r\nFiddler Core\r\nhttp://www.telerik.com/fiddler/fiddlercore\r\n\r\nFiddler.FiddlerApplication.Startup() メソッドの呼出しにおいて、localhost 以外のホストからの接続を拒否するフラグの指定を明示的に行っていないため、当該製品が意図せずオープンプロキシとして動作する問題が存在します (CWE-441)。\r\n\r\nなお、当該製品が使用する 37564/TCP に対するスキャン活動が観測されています。",
-  "identifier": "JVNDB-2015-002795",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU98282440/index.html",
-      "source": "JVN",
-      "id": "JVNVU#98282440"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2947",
-      "source": "CVE",
-      "id": "CVE-2015-2947"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-2947",
-      "source": "NVD",
-      "id": "CVE-2015-2947"
-    },
-    {
-      "text": "https://www.npa.go.jp/cyberpolice/topics/?seq=16375",
-      "source": "AT-POLICE",
-      "id": "特定のポートを対象としたプロキシ探索の増加について (2015年05月25日)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/441.html",
-      "id": "CWE-441",
-      "title": "フィルタリング回避(CWE-441)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:grabacr.net:kancolleviewer",
-      "version": "2.2",
-      "vendor": "grabacr.net",
-      "product": "KanColleViewer"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "9.1",
-      "type": "Base",
-      "severity": "Critical",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
-    }
-  ],
-  "date": "2017-05-23T14:25+09:00",
-  "issued": "2015-05-27T16:48+09:00",
-  "modified": "2017-05-23T14:25+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002795.html",
+	"title": "「提督業も忙しい！」(KanColleViewer) がオープンプロキシとして動作する問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002795.html",
+	"description": "「提督業も忙しい！」(以下 KanColleViewer) にはオープンプロキシとして動作する問題があります。\r\n\r\nオンラインゲーム用ユーティリティツール KanColleViewer は、Fiddler Core と呼ばれる HTTP プロキシライブラリを使い、クライアントとゲームサーバ間で行われる HTTPS 通信の内容をキャプチャしています。\r\n\r\nFiddler Core\r\nhttp://www.telerik.com/fiddler/fiddlercore\r\n\r\nFiddler.FiddlerApplication.Startup() メソッドの呼出しにおいて、localhost 以外のホストからの接続を拒否するフラグの指定を明示的に行っていないため、当該製品が意図せずオープンプロキシとして動作する問題が存在します (CWE-441)。\r\n\r\nなお、当該製品が使用する 37564/TCP に対するスキャン活動が観測されています。",
+	"identifier": "JVNDB-2015-002795",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU98282440/index.html",
+			"source": "JVN",
+			"id": "JVNVU#98282440"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2947",
+			"source": "CVE",
+			"id": "CVE-2015-2947"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2015-2947",
+			"source": "NVD",
+			"id": "CVE-2015-2947"
+		},
+		{
+			"text": "https://www.npa.go.jp/cyberpolice/topics/?seq=16375",
+			"source": "AT-POLICE",
+			"id": "特定のポートを対象としたプロキシ探索の増加について (2015年05月25日)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/441.html",
+			"id": "CWE-441",
+			"title": "フィルタリング回避(CWE-441)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:grabacr.net:kancolleviewer",
+			"version": "2.2",
+			"vendor": "grabacr.net",
+			"product": "KanColleViewer"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "9.1",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
+		}
+	],
+	"date": "2017-05-23T14:25+09:00",
+	"issued": "2015-05-27T16:48+09:00",
+	"modified": "2017-05-23T14:25+09:00"
 }

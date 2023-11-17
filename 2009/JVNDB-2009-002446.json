@@ -1,164 +1,164 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002446.html",
-  "title": "NTP におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002446.html",
-  "description": "NTP には、mode 7 パケットの処理に起因する脆弱性が存在します。\r\n\r\nNTP では、\"restrict ... noquery\" や \"restrict ... ignore\" の設定による制限をしていない IP アドレスから、不正な mode 7 リクエストまたは mode 7 エラーレスポンスを受信した場合、mode 7 エラーメッセージを返し、ログに記録します。\r\n\r\nNTP には、送信元アドレスを詐称した mode 7 パケットの処理に起因する脆弱性が存在します。",
-  "identifier": "JVNDB-2009-002446",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU568372/",
-      "source": "JVN",
-      "id": "JVNVU#568372"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3563",
-      "source": "CVE",
-      "id": "CVE-2009-3563"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3563",
-      "source": "NVD",
-      "id": "CVE-2009-3563"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/568372",
-      "source": "CERT-VN",
-      "id": "VU#568372"
-    },
-    {
-      "text": "http://secunia.com/advisories/38764",
-      "source": "SECUNIA",
-      "id": "SA38764"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/37255",
-      "source": "BID",
-      "id": "37255"
-    },
-    {
-      "text": "http://securitytracker.com/id?1023298",
-      "source": "SECTRACK",
-      "id": "1023298"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/0510",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-0510"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-DesignError",
-      "title": "設計上の問題(CWE-DesignError)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:nec:ip8800_s_r",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP8800/S,/R"
-    },
-    {
-      "text": "cpe:/a:ntp:ntp",
-      "version": "2.2",
-      "vendor": "NTP Project",
-      "product": "NTP"
-    },
-    {
-      "text": "cpe:/h:fujitsu:ipcom",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "IPCOMシリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:netshelter",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "NetShelterシリーズ"
-    },
-    {
-      "text": "cpe:/h:nec:securebranch",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "SecureBranch"
-    },
-    {
-      "text": "cpe:/h:oracle:netra_sparc",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Netra SPARC"
-    },
-    {
-      "text": "cpe:/h:oracle:sparc",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "SPARC"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:hp:tru64",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP Tru64 UNIX"
-    },
-    {
-      "text": "cpe:/o:ibm:aix",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM AIX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux EUS"
-    },
-    {
-      "text": "cpe:/o:sun:opensolaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "OpenSolaris"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
-    }
-  ],
-  "date": "2012-03-27T11:37+09:00",
-  "issued": "2010-01-25T11:53+09:00",
-  "modified": "2012-03-27T11:37+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002446.html",
+	"title": "NTP におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002446.html",
+	"description": "NTP には、mode 7 パケットの処理に起因する脆弱性が存在します。\r\n\r\nNTP では、\"restrict ... noquery\" や \"restrict ... ignore\" の設定による制限をしていない IP アドレスから、不正な mode 7 リクエストまたは mode 7 エラーレスポンスを受信した場合、mode 7 エラーメッセージを返し、ログに記録します。\r\n\r\nNTP には、送信元アドレスを詐称した mode 7 パケットの処理に起因する脆弱性が存在します。",
+	"identifier": "JVNDB-2009-002446",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU568372/",
+			"source": "JVN",
+			"id": "JVNVU#568372"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3563",
+			"source": "CVE",
+			"id": "CVE-2009-3563"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3563",
+			"source": "NVD",
+			"id": "CVE-2009-3563"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/568372",
+			"source": "CERT-VN",
+			"id": "VU#568372"
+		},
+		{
+			"text": "http://secunia.com/advisories/38764",
+			"source": "SECUNIA",
+			"id": "SA38764"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/37255",
+			"source": "BID",
+			"id": "37255"
+		},
+		{
+			"text": "http://securitytracker.com/id?1023298",
+			"source": "SECTRACK",
+			"id": "1023298"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/0510",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-0510"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-DesignError",
+			"title": "設計上の問題(CWE-DesignError)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:nec:ip8800_s_r",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP8800/S,/R"
+		},
+		{
+			"text": "cpe:/a:ntp:ntp",
+			"version": "2.2",
+			"vendor": "NTP Project",
+			"product": "NTP"
+		},
+		{
+			"text": "cpe:/h:fujitsu:ipcom",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "IPCOMシリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:netshelter",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "NetShelterシリーズ"
+		},
+		{
+			"text": "cpe:/h:nec:securebranch",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "SecureBranch"
+		},
+		{
+			"text": "cpe:/h:oracle:netra_sparc",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Netra SPARC"
+		},
+		{
+			"text": "cpe:/h:oracle:sparc",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "SPARC"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:hp:tru64",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP Tru64 UNIX"
+		},
+		{
+			"text": "cpe:/o:ibm:aix",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM AIX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux EUS"
+		},
+		{
+			"text": "cpe:/o:sun:opensolaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "OpenSolaris"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+		}
+	],
+	"date": "2012-03-27T11:37+09:00",
+	"issued": "2010-01-25T11:53+09:00",
+	"modified": "2012-03-27T11:37+09:00"
 }

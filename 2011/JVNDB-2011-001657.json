@@ -1,30 +1,30 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001657.html",
-  "title": "OpenSSL における ECDSA 秘密鍵が漏えいしてしまう問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001657.html",
-  "description": "OpenSSL を実装した複数の製品には、ECDSA の秘密鍵が漏えいする問題が存在します。\r\n\r\nOpenSSL を実装した複数の製品には、タイミング攻撃 (timing attack) によって ECDSA の秘密鍵が漏えいする問題が存在します。\r\n\r\n\"Remote Timing Attacks are Still Practical\" には、以下のように記述されています。\r\n\r\n\"For over two decades, timing attacks have been an active area of research within applied cryptography. These attacks exploit cryptosystem or protocol implementations that do not run in constant time. When implementing an elliptic curve cryptosystem that provides side-channel resistance, the scalar multiplication routine is a critical component. In such instances, one attractive method often suggested in the literature is Montgomery’s ladder that performs a fixed sequence of curve and field operations.\r\n\r\nThis paper describes a timing attack vulnerability in OpenSSL's ladder implementation for curves over binary fields. We use this vulnerability to steal the private key of a TLS server where the server authenticates with ECDSA signatures. Using the timing of the exchanged messages, the messages themselves, and the signatures, we mount a lattice attack that recovers the private key.\"",
-  "identifier": "JVNDB-2011-001657",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU536044",
-      "source": "JVN",
-      "id": "JVNVU#536044"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/536044",
-      "source": "CERT-VN",
-      "id": "VU#536044"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    }
-  ],
-  "date": "2011-05-31T11:23+09:00",
-  "issued": "2011-05-31T11:23+09:00",
-  "modified": "2011-05-31T11:23+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001657.html",
+	"title": "OpenSSL における ECDSA 秘密鍵が漏えいしてしまう問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001657.html",
+	"description": "OpenSSL を実装した複数の製品には、ECDSA の秘密鍵が漏えいする問題が存在します。\r\n\r\nOpenSSL を実装した複数の製品には、タイミング攻撃 (timing attack) によって ECDSA の秘密鍵が漏えいする問題が存在します。\r\n\r\n\"Remote Timing Attacks are Still Practical\" には、以下のように記述されています。\r\n\r\n\"For over two decades, timing attacks have been an active area of research within applied cryptography. These attacks exploit cryptosystem or protocol implementations that do not run in constant time. When implementing an elliptic curve cryptosystem that provides side-channel resistance, the scalar multiplication routine is a critical component. In such instances, one attractive method often suggested in the literature is Montgomery’s ladder that performs a fixed sequence of curve and field operations.\r\n\r\nThis paper describes a timing attack vulnerability in OpenSSL's ladder implementation for curves over binary fields. We use this vulnerability to steal the private key of a TLS server where the server authenticates with ECDSA signatures. Using the timing of the exchanged messages, the messages themselves, and the signatures, we mount a lattice attack that recovers the private key.\"",
+	"identifier": "JVNDB-2011-001657",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU536044",
+			"source": "JVN",
+			"id": "JVNVU#536044"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/536044",
+			"source": "CERT-VN",
+			"id": "VU#536044"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		}
+	],
+	"date": "2011-05-31T11:23+09:00",
+	"issued": "2011-05-31T11:23+09:00",
+	"modified": "2011-05-31T11:23+09:00"
 }

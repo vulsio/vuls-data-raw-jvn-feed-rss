@@ -1,56 +1,56 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003787.html",
-  "title": "ISC BIND 9 にサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003787.html",
-  "description": "ISC BIND 9 の lightweight resolver プロトコルの実装には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nBIND のパッケージでは、lightweight resolver プロトコルを使用した名前解決が可能です。この lightweight resolver プロトコルは BIND とともにインストールされる lwresd ユーティリティ や、named.conf の lwres ステートメントを設定することで使用可能です。\r\nBIND の lightweight resolver プロトコルの実装には、許容する文字列長を超える query name を含む名前解決リクエストを受信することで segmentation fault によってサーバが停止する問題が存在します。",
-  "identifier": "JVNDB-2016-003787",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU93856717",
-      "source": "JVN",
-      "id": "JVNVU#93856717"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2775",
-      "source": "CVE",
-      "id": "CVE-2016-2775"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2775",
-      "source": "NVD",
-      "id": "CVE-2016-2775"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:isc:bind",
-      "version": "2.2",
-      "vendor": "ISC, Inc.",
-      "product": "BIND"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "5.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
-    }
-  ],
-  "date": "2016-08-03T17:59+09:00",
-  "issued": "2016-07-21T16:52+09:00",
-  "modified": "2016-08-03T17:59+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003787.html",
+	"title": "ISC BIND 9 にサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003787.html",
+	"description": "ISC BIND 9 の lightweight resolver プロトコルの実装には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nBIND のパッケージでは、lightweight resolver プロトコルを使用した名前解決が可能です。この lightweight resolver プロトコルは BIND とともにインストールされる lwresd ユーティリティ や、named.conf の lwres ステートメントを設定することで使用可能です。\r\nBIND の lightweight resolver プロトコルの実装には、許容する文字列長を超える query name を含む名前解決リクエストを受信することで segmentation fault によってサーバが停止する問題が存在します。",
+	"identifier": "JVNDB-2016-003787",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU93856717",
+			"source": "JVN",
+			"id": "JVNVU#93856717"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2775",
+			"source": "CVE",
+			"id": "CVE-2016-2775"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2775",
+			"source": "NVD",
+			"id": "CVE-2016-2775"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:isc:bind",
+			"version": "2.2",
+			"vendor": "ISC, Inc.",
+			"product": "BIND"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "5.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2016-08-03T17:59+09:00",
+	"issued": "2016-07-21T16:52+09:00",
+	"modified": "2016-08-03T17:59+09:00"
 }

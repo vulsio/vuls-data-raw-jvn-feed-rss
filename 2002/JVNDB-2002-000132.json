@@ -1,153 +1,153 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000132.html",
-  "title": "Apache HTTP Server の get_chunk_size () 関数における任意のコードが実行される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000132.html",
-  "description": "Apache HTTP Server において、get_chunk_size () 関数に、チャンク形式でエンコーディングされた不正な要求を送った場合に、任意のコードを実行される脆弱性が存在します。",
-  "identifier": "JVNDB-2002-000132",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNCA-2002-17",
-      "source": "JVN",
-      "id": "JVNCA-2002-17"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0392",
-      "source": "CVE",
-      "id": "CVE-2002-0392"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0392",
-      "source": "NVD",
-      "id": "CVE-2002-0392"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2002/at020003.txt",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2002-0003"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2002/wr022401.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2002-2401"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2002/wr022701.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2002-2701"
-    },
-    {
-      "text": "http://www.npa.go.jp/cyber/warning/notice/apache.htm",
-      "source": "POLICE",
-      "id": "Webサーバ用プログラム「Apache」のセキュリティホールに関する対策について"
-    },
-    {
-      "text": "http://www.cert.org/advisories/CA-2002-17.html",
-      "source": "CERT-A",
-      "id": "CA-2002-17"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/944335",
-      "source": "CERT-VN",
-      "id": "VU#944335"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/ciadr/20020619apache.html",
-      "source": "IPA",
-      "id": "Apache Web サーバにおける chunk データ処理の脆弱性"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/m-093.shtml",
-      "source": "CIAC",
-      "id": "M-093"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/5033",
-      "source": "BID",
-      "id": "5033"
-    },
-    {
-      "text": "http://www.isskk.co.jp/support/techinfo/general/Vul_ApacheServer_xforce.html",
-      "source": "ISSKK",
-      "id": "Apache Server におけるリモートからのセキュリティ侵害の脆弱性"
-    },
-    {
-      "text": "http://www.isskk.co.jp/support/techinfo/general/Apache_HTTPserver_Exploit_xforce.html",
-      "source": "ISSKK",
-      "id": "Apache HTTP Server の悪用の流通"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache-ssl:apache-ssl",
-      "version": "2.2",
-      "vendor": "apache-ssl.org",
-      "product": "Apache-SSL"
-    },
-    {
-      "text": "cpe:/a:apache:http_server",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache HTTP Server"
-    },
-    {
-      "text": "cpe:/a:ibm:http_server",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM HTTP Server"
-    },
-    {
-      "text": "cpe:/a:oracle:application_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Application Server"
-    },
-    {
-      "text": "cpe:/a:oracle:database_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Database"
-    },
-    {
-      "text": "cpe:/a:trendmicro:interscan_viruswall",
-      "version": "2.2",
-      "vendor": "トレンドマイクロ",
-      "product": "TrendMicro InterScan VirusWall"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_3",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ3"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_4",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ4"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000132.html",
+	"title": "Apache HTTP Server の get_chunk_size () 関数における任意のコードが実行される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000132.html",
+	"description": "Apache HTTP Server において、get_chunk_size () 関数に、チャンク形式でエンコーディングされた不正な要求を送った場合に、任意のコードを実行される脆弱性が存在します。",
+	"identifier": "JVNDB-2002-000132",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNCA-2002-17",
+			"source": "JVN",
+			"id": "JVNCA-2002-17"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0392",
+			"source": "CVE",
+			"id": "CVE-2002-0392"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0392",
+			"source": "NVD",
+			"id": "CVE-2002-0392"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2002/at020003.txt",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2002-0003"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2002/wr022401.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2002-2401"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2002/wr022701.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2002-2701"
+		},
+		{
+			"text": "http://www.npa.go.jp/cyber/warning/notice/apache.htm",
+			"source": "POLICE",
+			"id": "Webサーバ用プログラム「Apache」のセキュリティホールに関する対策について"
+		},
+		{
+			"text": "http://www.cert.org/advisories/CA-2002-17.html",
+			"source": "CERT-A",
+			"id": "CA-2002-17"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/944335",
+			"source": "CERT-VN",
+			"id": "VU#944335"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/ciadr/20020619apache.html",
+			"source": "IPA",
+			"id": "Apache Web サーバにおける chunk データ処理の脆弱性"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/m-093.shtml",
+			"source": "CIAC",
+			"id": "M-093"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/5033",
+			"source": "BID",
+			"id": "5033"
+		},
+		{
+			"text": "http://www.isskk.co.jp/support/techinfo/general/Vul_ApacheServer_xforce.html",
+			"source": "ISSKK",
+			"id": "Apache Server におけるリモートからのセキュリティ侵害の脆弱性"
+		},
+		{
+			"text": "http://www.isskk.co.jp/support/techinfo/general/Apache_HTTPserver_Exploit_xforce.html",
+			"source": "ISSKK",
+			"id": "Apache HTTP Server の悪用の流通"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache-ssl:apache-ssl",
+			"version": "2.2",
+			"vendor": "apache-ssl.org",
+			"product": "Apache-SSL"
+		},
+		{
+			"text": "cpe:/a:apache:http_server",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache HTTP Server"
+		},
+		{
+			"text": "cpe:/a:ibm:http_server",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM HTTP Server"
+		},
+		{
+			"text": "cpe:/a:oracle:application_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Application Server"
+		},
+		{
+			"text": "cpe:/a:oracle:database_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Database"
+		},
+		{
+			"text": "cpe:/a:trendmicro:interscan_viruswall",
+			"version": "2.2",
+			"vendor": "トレンドマイクロ",
+			"product": "TrendMicro InterScan VirusWall"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_3",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ3"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_4",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ4"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

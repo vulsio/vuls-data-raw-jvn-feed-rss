@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002274.html",
-  "title": "Microsoft Windows の印刷スプーラにリモートコード実行の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002274.html",
-  "description": "Microsoft Windows の Print Spooler サービスには、特権的なファイル操作を不適切に実施した場合、リモートコード実行が可能となる脆弱性があります。\r\n\r\nPrint Spooler サービスは、印刷において印刷待ちを実現するためのサービスです。2021年8月10日にリリースされたセキュリティ更新プログラムを適用していない Microsoft Windows において、管理者権限を持たないユーザが要求した場合であっても Print Spooler サービスはプリンタドライバを SYSTEM 権限でインストールします。また、Microsoft Windows は、プリンタドライバをインストールする際にドライバパッケージが信頼できるソースによって署名されていることを検証しますが、Windows のプリンタドライバはデバイスの使用に関する <a href=\"https://docs.microsoft.com/en-us/windows-hardware/drivers/print/installing-queue-specific-files\"target=\"blank\">queue-spesific</a> ファイルを指定でき、このファイルへの署名の検証は要求されません。\r\nそのため、例えばプリンタドライバのインストール時に、これらのファイルを用いることですでにシステムに配置されている署名検証済みのファイルを上書きし、リモートのプリンタ側にファイル内のコードを自動的に実行するように設定することで、結果としてローカルでの権限昇格が可能です。",
-  "identifier": "JVNDB-2021-002274",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU96414899",
-      "source": "JVN",
-      "id": "JVNVU#96414899"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36958",
-      "source": "CVE",
-      "id": "CVE-2021-36958"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/131152",
-      "source": "CERT-VN",
-      "id": "VU#131152"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:microsoft:multiple_product",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "(複数の製品)"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "3.0",
-      "score": "7.3",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2021-08-18T12:30+09:00",
-  "issued": "2021-08-18T12:30+09:00",
-  "modified": "2021-08-18T12:30+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002274.html",
+	"title": "Microsoft Windows の印刷スプーラにリモートコード実行の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002274.html",
+	"description": "Microsoft Windows の Print Spooler サービスには、特権的なファイル操作を不適切に実施した場合、リモートコード実行が可能となる脆弱性があります。\r\n\r\nPrint Spooler サービスは、印刷において印刷待ちを実現するためのサービスです。2021年8月10日にリリースされたセキュリティ更新プログラムを適用していない Microsoft Windows において、管理者権限を持たないユーザが要求した場合であっても Print Spooler サービスはプリンタドライバを SYSTEM 権限でインストールします。また、Microsoft Windows は、プリンタドライバをインストールする際にドライバパッケージが信頼できるソースによって署名されていることを検証しますが、Windows のプリンタドライバはデバイスの使用に関する <a href=\"https://docs.microsoft.com/en-us/windows-hardware/drivers/print/installing-queue-specific-files\"target=\"blank\">queue-spesific</a> ファイルを指定でき、このファイルへの署名の検証は要求されません。\r\nそのため、例えばプリンタドライバのインストール時に、これらのファイルを用いることですでにシステムに配置されている署名検証済みのファイルを上書きし、リモートのプリンタ側にファイル内のコードを自動的に実行するように設定することで、結果としてローカルでの権限昇格が可能です。",
+	"identifier": "JVNDB-2021-002274",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU96414899",
+			"source": "JVN",
+			"id": "JVNVU#96414899"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36958",
+			"source": "CVE",
+			"id": "CVE-2021-36958"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/131152",
+			"source": "CERT-VN",
+			"id": "VU#131152"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:microsoft:multiple_product",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "(複数の製品)"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2021-08-18T12:30+09:00",
+	"issued": "2021-08-18T12:30+09:00",
+	"modified": "2021-08-18T12:30+09:00"
 }

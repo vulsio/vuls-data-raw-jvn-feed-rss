@@ -1,56 +1,56 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002497.html",
-  "title": "Linux Kernel の fs/ext4/namei.c におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002497.html",
-  "description": "Linux Kernel の fs/ext4/namei.c 内の ext4_orphan_del 関数は、ジャーナルが無いファイルシステム (non-journal filesystem) への orphan-list エントリを適切に処理しないため、サービス運用妨害 (システムハング) 状態にされる脆弱性が存在します。",
-  "identifier": "JVNDB-2013-002497",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2015",
-      "source": "CVE",
-      "id": "CVE-2013-2015"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2015",
-      "source": "NVD",
-      "id": "CVE-2013-2015"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-      "id": "CWE-399",
-      "title": "リソース管理の問題(CWE-399)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:redhat:enterprise_mrg",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise MRG"
-    },
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.7",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2013-04-30T18:36+09:00",
-  "issued": "2013-04-30T18:36+09:00",
-  "modified": "2013-04-30T18:36+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002497.html",
+	"title": "Linux Kernel の fs/ext4/namei.c におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002497.html",
+	"description": "Linux Kernel の fs/ext4/namei.c 内の ext4_orphan_del 関数は、ジャーナルが無いファイルシステム (non-journal filesystem) への orphan-list エントリを適切に処理しないため、サービス運用妨害 (システムハング) 状態にされる脆弱性が存在します。",
+	"identifier": "JVNDB-2013-002497",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2015",
+			"source": "CVE",
+			"id": "CVE-2013-2015"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2015",
+			"source": "NVD",
+			"id": "CVE-2013-2015"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+			"id": "CWE-399",
+			"title": "リソース管理の問題(CWE-399)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:redhat:enterprise_mrg",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise MRG"
+		},
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.7",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2013-04-30T18:36+09:00",
+	"issued": "2013-04-30T18:36+09:00",
+	"modified": "2013-04-30T18:36+09:00"
 }

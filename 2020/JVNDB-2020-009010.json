@@ -1,72 +1,72 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009010.html",
-  "title": "Acronis 製の複数のバックアップソフトウェアに DLL 読み込みに関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009010.html",
-  "description": "Acronis 製の複数のバックアップソフトウェアには、DLL 読み込みに関する脆弱性が存在します。\r\n\r\nDLL ファイルの検索パスが適切に制御されていない (CWE-427) - CVE-2020-10138, CVE-2020-10139\r\nAcronis Cyber Backup 12.5、Acronis Cyber Protect 15 および Acronis True Image 2021 は、OpenSSL コンポーネントを配置するためのフォルダを環境変数 OPENSSLDIR により C:\\jenkins_agent の下位フォルダとして指定しています。\r\n当該製品では、DLL を読み込む際の検索パスに問題があり、OpenSSL コンポーネントに偽装された悪意のある DLL ファイルを管理者権限を持たない Windows ユーザによって当該フォルダに配置され、SYSTEM 権限で動作するサービスとして起動してしまう脆弱性が存在します。\r\n\r\nファイルアクセス制限の不備 (CWE-284) - CVE-2020-10140\r\nAcronis True Image 2021 では、C:\\ProgramData\\Acronis フォルダに適切な ACL が設定されておらず、管理者権限を持たない Windows ユーザによって当該フォルダに配置された悪意のある DLL ファイルを読み込み、SYSTEM 権限でコードを実行してしまう脆弱性が存在します。",
-  "identifier": "JVNDB-2020-009010",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU92288299/index.html",
-      "source": "JVN",
-      "id": "JVNVU#92288299"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10138",
-      "source": "CVE",
-      "id": "CVE-2020-10138"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10139",
-      "source": "CVE",
-      "id": "CVE-2020-10139"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10140",
-      "source": "CVE",
-      "id": "CVE-2020-10140"
-    },
-    {
-      "text": "https://kb.cert.org/vuls/id/114757",
-      "source": "CERT-VN",
-      "id": "VU#114757"
-    },
-    {
-      "text": "https://attack.mitre.org/techniques/T1574/001/",
-      "source": "関連文書",
-      "id": "Hijack Execution Flow: DLL Search Order Hijacking"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/284.html",
-      "id": "CWE-284",
-      "title": "不適切なアクセス制御(CWE-284)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/427.html",
-      "id": "CWE-427",
-      "title": "制御されていない検索パスの要素(CWE-427)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:acronis:cyber_backup",
-      "version": "2.2",
-      "vendor": "Acronis International GmbH",
-      "product": "Cyber Backup"
-    },
-    {
-      "text": "cpe:/a:acronis:cyber_protect",
-      "version": "2.2",
-      "vendor": "Acronis International GmbH",
-      "product": "Cyber Protect"
-    },
-    {
-      "text": "cpe:/a:acronis:true_image",
-      "version": "2.2",
-      "vendor": "Acronis International GmbH",
-      "product": "True Image"
-    }
-  ],
-  "date": "2020-10-14T14:04+09:00",
-  "issued": "2020-10-14T14:04+09:00",
-  "modified": "2020-10-14T14:04+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009010.html",
+	"title": "Acronis 製の複数のバックアップソフトウェアに DLL 読み込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009010.html",
+	"description": "Acronis 製の複数のバックアップソフトウェアには、DLL 読み込みに関する脆弱性が存在します。\r\n\r\nDLL ファイルの検索パスが適切に制御されていない (CWE-427) - CVE-2020-10138, CVE-2020-10139\r\nAcronis Cyber Backup 12.5、Acronis Cyber Protect 15 および Acronis True Image 2021 は、OpenSSL コンポーネントを配置するためのフォルダを環境変数 OPENSSLDIR により C:\\jenkins_agent の下位フォルダとして指定しています。\r\n当該製品では、DLL を読み込む際の検索パスに問題があり、OpenSSL コンポーネントに偽装された悪意のある DLL ファイルを管理者権限を持たない Windows ユーザによって当該フォルダに配置され、SYSTEM 権限で動作するサービスとして起動してしまう脆弱性が存在します。\r\n\r\nファイルアクセス制限の不備 (CWE-284) - CVE-2020-10140\r\nAcronis True Image 2021 では、C:\\ProgramData\\Acronis フォルダに適切な ACL が設定されておらず、管理者権限を持たない Windows ユーザによって当該フォルダに配置された悪意のある DLL ファイルを読み込み、SYSTEM 権限でコードを実行してしまう脆弱性が存在します。",
+	"identifier": "JVNDB-2020-009010",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU92288299/index.html",
+			"source": "JVN",
+			"id": "JVNVU#92288299"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10138",
+			"source": "CVE",
+			"id": "CVE-2020-10138"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10139",
+			"source": "CVE",
+			"id": "CVE-2020-10139"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10140",
+			"source": "CVE",
+			"id": "CVE-2020-10140"
+		},
+		{
+			"text": "https://kb.cert.org/vuls/id/114757",
+			"source": "CERT-VN",
+			"id": "VU#114757"
+		},
+		{
+			"text": "https://attack.mitre.org/techniques/T1574/001/",
+			"source": "関連文書",
+			"id": "Hijack Execution Flow: DLL Search Order Hijacking"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/284.html",
+			"id": "CWE-284",
+			"title": "不適切なアクセス制御(CWE-284)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/427.html",
+			"id": "CWE-427",
+			"title": "制御されていない検索パスの要素(CWE-427)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:acronis:cyber_backup",
+			"version": "2.2",
+			"vendor": "Acronis International GmbH",
+			"product": "Cyber Backup"
+		},
+		{
+			"text": "cpe:/a:acronis:cyber_protect",
+			"version": "2.2",
+			"vendor": "Acronis International GmbH",
+			"product": "Cyber Protect"
+		},
+		{
+			"text": "cpe:/a:acronis:true_image",
+			"version": "2.2",
+			"vendor": "Acronis International GmbH",
+			"product": "True Image"
+		}
+	],
+	"date": "2020-10-14T14:04+09:00",
+	"issued": "2020-10-14T14:04+09:00",
+	"modified": "2020-10-14T14:04+09:00"
 }

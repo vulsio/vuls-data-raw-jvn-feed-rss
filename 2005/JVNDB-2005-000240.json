@@ -1,70 +1,70 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000240.html",
-  "title": "IBM Lotus Domino の NRPC Notes プロトコルによるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000240.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nIBM Lotus Notes/Domino 6.0.4 以前、6.5.3 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) Domino サーバにおいて Web ページより更新可能な特定の日付/時刻フィールドの境界チェックが適切に行われないために、バッファオーバーフローが発生し Domino サーバがクラッシュする問題が存在します。\r\n\r\nWeb ページにアクセス可能なローカルの攻撃者により、Domino サーバがサービス不能状態に陥る可能性があります。\r\n\r\n2) Domino サーバにおいて NRPC Notes プロトコルを使用して認証を行う際に入力データのサニティチェックが適切でないために、フォーマット指示子を含む意図的に作成された文字列を処理した場合に、フォーマットストリングエラーが発生し Domino サーバがクラッシュする問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者により、Domino サーバがサービス不能状態に陥る可能性があります。\r\n\r\n3) Lotus Notes クライアントの NOTES.INI の処理で境界チェックが適切に行われないために、バッファオーバーフローが発生し Lotus Notes クライアントがクラッシュする問題が存在します。\r\n\r\n現時点で詳細は不明ですが、NOTES.INI にアクセス可能なローカルの攻撃者により、Lotus Notes クライアントがサービス不能状態に陥る可能性があります。\r\n\r\n4) @SetHTTPHeader 関数には任意のコンテンツをヘッダに挿入できる不備が存在し、HTTP response splitting 攻撃を受けたり、proxy のキャッシュを汚染されたりする可能性がある問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、Web ブラウザや proxy キャッシュを汚染することにより、フィッシング詐欺に悪用できる可能性があります。\r\n\r\n但し、通常 @SetHTTPHeader 関数はアプリケーション開発者のみが利用可能であり、この問題を利用して攻撃を行うためには、意図的に作成されたプログラムを Lotus Domino サーバにインストールする必要があります。\r\n\r\n尚、1)、2)、3) の問題により悪意あるコードを実行できないことが IBM より報告されています。",
-  "identifier": "JVNDB-2005-000240",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1441",
-      "source": "CVE",
-      "id": "CVE-2005-1441"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1441",
-      "source": "NVD",
-      "id": "CVE-2005-1441"
-    },
-    {
-      "text": "http://secunia.com/advisories/14879/",
-      "source": "SECUNIA",
-      "id": "SA14879"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13448",
-      "source": "BID",
-      "id": "13448"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13447",
-      "source": "BID",
-      "id": "13447"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13446",
-      "source": "BID",
-      "id": "13446"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13130",
-      "source": "BID",
-      "id": "13130"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:ibm:lotus_domino",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Domino (旧 IBM Lotus Domino)"
-    },
-    {
-      "text": "cpe:/a:ibm:notes",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Notes"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000240.html",
+	"title": "IBM Lotus Domino の NRPC Notes プロトコルによるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000240.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nIBM Lotus Notes/Domino 6.0.4 以前、6.5.3 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) Domino サーバにおいて Web ページより更新可能な特定の日付/時刻フィールドの境界チェックが適切に行われないために、バッファオーバーフローが発生し Domino サーバがクラッシュする問題が存在します。\r\n\r\nWeb ページにアクセス可能なローカルの攻撃者により、Domino サーバがサービス不能状態に陥る可能性があります。\r\n\r\n2) Domino サーバにおいて NRPC Notes プロトコルを使用して認証を行う際に入力データのサニティチェックが適切でないために、フォーマット指示子を含む意図的に作成された文字列を処理した場合に、フォーマットストリングエラーが発生し Domino サーバがクラッシュする問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者により、Domino サーバがサービス不能状態に陥る可能性があります。\r\n\r\n3) Lotus Notes クライアントの NOTES.INI の処理で境界チェックが適切に行われないために、バッファオーバーフローが発生し Lotus Notes クライアントがクラッシュする問題が存在します。\r\n\r\n現時点で詳細は不明ですが、NOTES.INI にアクセス可能なローカルの攻撃者により、Lotus Notes クライアントがサービス不能状態に陥る可能性があります。\r\n\r\n4) @SetHTTPHeader 関数には任意のコンテンツをヘッダに挿入できる不備が存在し、HTTP response splitting 攻撃を受けたり、proxy のキャッシュを汚染されたりする可能性がある問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、Web ブラウザや proxy キャッシュを汚染することにより、フィッシング詐欺に悪用できる可能性があります。\r\n\r\n但し、通常 @SetHTTPHeader 関数はアプリケーション開発者のみが利用可能であり、この問題を利用して攻撃を行うためには、意図的に作成されたプログラムを Lotus Domino サーバにインストールする必要があります。\r\n\r\n尚、1)、2)、3) の問題により悪意あるコードを実行できないことが IBM より報告されています。",
+	"identifier": "JVNDB-2005-000240",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1441",
+			"source": "CVE",
+			"id": "CVE-2005-1441"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1441",
+			"source": "NVD",
+			"id": "CVE-2005-1441"
+		},
+		{
+			"text": "http://secunia.com/advisories/14879/",
+			"source": "SECUNIA",
+			"id": "SA14879"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13448",
+			"source": "BID",
+			"id": "13448"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13447",
+			"source": "BID",
+			"id": "13447"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13446",
+			"source": "BID",
+			"id": "13446"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13130",
+			"source": "BID",
+			"id": "13130"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ibm:lotus_domino",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Domino (旧 IBM Lotus Domino)"
+		},
+		{
+			"text": "cpe:/a:ibm:notes",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Notes"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

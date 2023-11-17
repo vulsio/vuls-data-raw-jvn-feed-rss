@@ -1,86 +1,86 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005901.html",
-  "title": "Augeas の transform.c の transform_save 関数におけるファイルを変更される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005901.html",
-  "description": "Augeas の transform.c の transform_save 関数は、パーミッション値を適切に計算しないため、umask が \"7\" を含む場合、誰でも書き込み可能な権限 (world-writable permission) を新しいファイルに付与することで、ファイルを変更される脆弱性が存在します。",
-  "identifier": "JVNDB-2013-005901",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6412",
-      "source": "CVE",
-      "id": "CVE-2013-6412"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6412",
-      "source": "NVD",
-      "id": "CVE-2013-6412"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:augeas:augeas",
-      "version": "2.2",
-      "vendor": "Hercules Team",
-      "product": "Augeas"
-    },
-    {
-      "text": "cpe:/a:redhat:enterprise_virtualization",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Virtualization"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server_aus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server AUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.6",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2014-01-27T12:14+09:00",
-  "issued": "2014-01-27T12:14+09:00",
-  "modified": "2014-01-27T12:14+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005901.html",
+	"title": "Augeas の transform.c の transform_save 関数におけるファイルを変更される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005901.html",
+	"description": "Augeas の transform.c の transform_save 関数は、パーミッション値を適切に計算しないため、umask が \"7\" を含む場合、誰でも書き込み可能な権限 (world-writable permission) を新しいファイルに付与することで、ファイルを変更される脆弱性が存在します。",
+	"identifier": "JVNDB-2013-005901",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6412",
+			"source": "CVE",
+			"id": "CVE-2013-6412"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6412",
+			"source": "NVD",
+			"id": "CVE-2013-6412"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:augeas:augeas",
+			"version": "2.2",
+			"vendor": "Hercules Team",
+			"product": "Augeas"
+		},
+		{
+			"text": "cpe:/a:redhat:enterprise_virtualization",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Virtualization"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server_aus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server AUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.6",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2014-01-27T12:14+09:00",
+	"issued": "2014-01-27T12:14+09:00",
+	"modified": "2014-01-27T12:14+09:00"
 }

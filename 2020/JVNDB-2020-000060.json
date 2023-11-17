@@ -1,51 +1,51 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000060.html",
-  "title": "「攻撃遮断くんサーバセキュリティタイプ」におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000060.html",
-  "description": "株式会社サイバーセキュリティクラウドが提供する「攻撃遮断くんサーバセキュリティタイプ」では、内部で使用しているスクリプトが採番する「ルール id」が重複した際に、新たに検知した攻撃元 IP アドレスを遮断対象として追加できない状態が、10分程度発生します (CWE-703)。\r\n「ルール id」の重複が発生する条件は、次の通りです。\r\n\r\n・多数の送信元 IP アドレスから、10マイクロ秒以下の短時間に複数の攻撃リクエストが発生した場合\r\n・二つ以上の送信元 IP アドレスから、分単位までが同じ時刻で、10マイクロ秒単位から 100ミリ秒単位までの時刻も一致した、秒単位のみ異なる時刻の攻撃リクエストが発生した場合\r\n\r\n",
-  "identifier": "JVNDB-2020-000060",
-  "references": [
-    {
-      "text": "https://jvn.jp/jp/JVN42665874/index.html",
-      "source": "JVN",
-      "id": "JVN#42665874"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5622",
-      "source": "CVE",
-      "id": "CVE-2020-5622"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:cyber_security_cloud_shadankun_server_security_type",
-      "version": "2.2",
-      "vendor": "株式会社サイバーセキュリティクラウド",
-      "product": "攻撃遮断くんサーバセキュリティタイプ"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "5.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
-    }
-  ],
-  "date": "2020-08-31T12:07+09:00",
-  "issued": "2020-08-31T12:07+09:00",
-  "modified": "2020-08-31T12:07+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000060.html",
+	"title": "「攻撃遮断くんサーバセキュリティタイプ」におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000060.html",
+	"description": "株式会社サイバーセキュリティクラウドが提供する「攻撃遮断くんサーバセキュリティタイプ」では、内部で使用しているスクリプトが採番する「ルール id」が重複した際に、新たに検知した攻撃元 IP アドレスを遮断対象として追加できない状態が、10分程度発生します (CWE-703)。\r\n「ルール id」の重複が発生する条件は、次の通りです。\r\n\r\n・多数の送信元 IP アドレスから、10マイクロ秒以下の短時間に複数の攻撃リクエストが発生した場合\r\n・二つ以上の送信元 IP アドレスから、分単位までが同じ時刻で、10マイクロ秒単位から 100ミリ秒単位までの時刻も一致した、秒単位のみ異なる時刻の攻撃リクエストが発生した場合\r\n\r\n",
+	"identifier": "JVNDB-2020-000060",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN42665874/index.html",
+			"source": "JVN",
+			"id": "JVN#42665874"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5622",
+			"source": "CVE",
+			"id": "CVE-2020-5622"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:cyber_security_cloud_shadankun_server_security_type",
+			"version": "2.2",
+			"vendor": "株式会社サイバーセキュリティクラウド",
+			"product": "攻撃遮断くんサーバセキュリティタイプ"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+		}
+	],
+	"date": "2020-08-31T12:07+09:00",
+	"issued": "2020-08-31T12:07+09:00",
+	"modified": "2020-08-31T12:07+09:00"
 }

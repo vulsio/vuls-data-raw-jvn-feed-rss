@@ -1,73 +1,73 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004558.html",
-  "title": "複数の DSL ルータ製品がハードコードされたパスワードを使用する問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004558.html",
-  "description": "ASUS、DIGICOM、Observa Telecom、Philippine Long Distance Telephone (PLDT)、ZTE が提供する DSL ルータには、ハードコードされたパスワード \"XXXXaircon\" を使用する問題が存在します。\r\n\r\nASUS DSL-N12E、DIGICOM DG-5524T、Observa Telecom RTA01N、Philippine Long Distance Telephone (PLDT) SpeedSurf 504AN、ZTE ZXV10 W300S 等の DSL ルータには、telnet による機器へのアクセスに使用可能な認証情報がハードコードされている問題があります。ユーザ名は、ASUS、DIGICOM、Observa Telecom、ZTE の機器においては \"admin\" が、PLDT の機器においては \"adminpldt\" が使用され、パスワードは \"XXXXairocon\"（XXXX は機器の MAC アドレスの下四桁）が使用されます。MAC アドレスは SNMP コミュニティ文字列 public を介して取得できる可能性があります。\r\n\r\n認証情報 (パスワード) がハードコードされている問題 (CWE-798)\r\nCWE-798: Use of Hard-coded Credentials\r\nhttps://cwe.mitre.org/data/definitions/798.html\r\n\r\n本脆弱性は、ZTE ZXV10 W300 の問題として 2014年2月に JVNVU#99523838 にて公表され、CVE-2014-0329 が割り当てられています。今回、複数の他のベンダが提供する製品に同一の脆弱性があることが判明しています。Observa Telecom RTA01N の脆弱性については、2015年5月に Full Disclosure で公表されています。\r\n\r\nJVNVU#99523838\r\nhttps://jvn.jp/vu/JVNVU99523838/\r\n\r\nFull Disclosure \r\nhttp://seclists.org/fulldisclosure/2015/May/129",
-  "identifier": "JVNDB-2015-004558",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU90419607/index.html",
-      "source": "JVN",
-      "id": "JVNVU#90419607"
-    },
-    {
-      "text": "https://jvn.jp/vu/JVNVU99523838/",
-      "source": "JVN",
-      "id": "JVNVU#99523838"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/950576",
-      "source": "CERT-VN",
-      "id": "VU#950576"
-    },
-    {
-      "text": "http://seclists.org/fulldisclosure/2015/May/129",
-      "source": "関連文書",
-      "id": "More than 60 undisclosed vulnerabilities affect 22 SOHO routers"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/h:asus:dsl-n12e",
-      "version": "2.2",
-      "vendor": "ASUSTeK Computer Inc.",
-      "product": "DSL-N12E"
-    },
-    {
-      "text": "cpe:/h:digicom:dg-5524t",
-      "version": "2.2",
-      "vendor": "DIGICOM",
-      "product": "DG-5524T"
-    },
-    {
-      "text": "cpe:/h:misc:observa_telecom_rta01n_v2",
-      "version": "2.2",
-      "vendor": "Observa Telecom",
-      "product": "RTA01N v2"
-    },
-    {
-      "text": "cpe:/h:philippine_long_distance_telephone:pldt_speedsurf_504an",
-      "version": "2.2",
-      "vendor": "Philippine Long Distance Telephone Company (PLDT)",
-      "product": "SpeedSurf 504AN"
-    },
-    {
-      "text": "cpe:/h:zte:zxv10_w300s",
-      "version": "2.2",
-      "vendor": "ZTE",
-      "product": "ZXV10 W300S"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "9.3",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2015-09-04T10:48+09:00",
-  "issued": "2015-09-04T10:48+09:00",
-  "modified": "2015-09-04T10:48+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004558.html",
+	"title": "複数の DSL ルータ製品がハードコードされたパスワードを使用する問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004558.html",
+	"description": "ASUS、DIGICOM、Observa Telecom、Philippine Long Distance Telephone (PLDT)、ZTE が提供する DSL ルータには、ハードコードされたパスワード \"XXXXaircon\" を使用する問題が存在します。\r\n\r\nASUS DSL-N12E、DIGICOM DG-5524T、Observa Telecom RTA01N、Philippine Long Distance Telephone (PLDT) SpeedSurf 504AN、ZTE ZXV10 W300S 等の DSL ルータには、telnet による機器へのアクセスに使用可能な認証情報がハードコードされている問題があります。ユーザ名は、ASUS、DIGICOM、Observa Telecom、ZTE の機器においては \"admin\" が、PLDT の機器においては \"adminpldt\" が使用され、パスワードは \"XXXXairocon\"（XXXX は機器の MAC アドレスの下四桁）が使用されます。MAC アドレスは SNMP コミュニティ文字列 public を介して取得できる可能性があります。\r\n\r\n認証情報 (パスワード) がハードコードされている問題 (CWE-798)\r\nCWE-798: Use of Hard-coded Credentials\r\nhttps://cwe.mitre.org/data/definitions/798.html\r\n\r\n本脆弱性は、ZTE ZXV10 W300 の問題として 2014年2月に JVNVU#99523838 にて公表され、CVE-2014-0329 が割り当てられています。今回、複数の他のベンダが提供する製品に同一の脆弱性があることが判明しています。Observa Telecom RTA01N の脆弱性については、2015年5月に Full Disclosure で公表されています。\r\n\r\nJVNVU#99523838\r\nhttps://jvn.jp/vu/JVNVU99523838/\r\n\r\nFull Disclosure \r\nhttp://seclists.org/fulldisclosure/2015/May/129",
+	"identifier": "JVNDB-2015-004558",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU90419607/index.html",
+			"source": "JVN",
+			"id": "JVNVU#90419607"
+		},
+		{
+			"text": "https://jvn.jp/vu/JVNVU99523838/",
+			"source": "JVN",
+			"id": "JVNVU#99523838"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/950576",
+			"source": "CERT-VN",
+			"id": "VU#950576"
+		},
+		{
+			"text": "http://seclists.org/fulldisclosure/2015/May/129",
+			"source": "関連文書",
+			"id": "More than 60 undisclosed vulnerabilities affect 22 SOHO routers"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/h:asus:dsl-n12e",
+			"version": "2.2",
+			"vendor": "ASUSTeK Computer Inc.",
+			"product": "DSL-N12E"
+		},
+		{
+			"text": "cpe:/h:digicom:dg-5524t",
+			"version": "2.2",
+			"vendor": "DIGICOM",
+			"product": "DG-5524T"
+		},
+		{
+			"text": "cpe:/h:misc:observa_telecom_rta01n_v2",
+			"version": "2.2",
+			"vendor": "Observa Telecom",
+			"product": "RTA01N v2"
+		},
+		{
+			"text": "cpe:/h:philippine_long_distance_telephone:pldt_speedsurf_504an",
+			"version": "2.2",
+			"vendor": "Philippine Long Distance Telephone Company (PLDT)",
+			"product": "SpeedSurf 504AN"
+		},
+		{
+			"text": "cpe:/h:zte:zxv10_w300s",
+			"version": "2.2",
+			"vendor": "ZTE",
+			"product": "ZXV10 W300S"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "9.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2015-09-04T10:48+09:00",
+	"issued": "2015-09-04T10:48+09:00",
+	"modified": "2015-09-04T10:48+09:00"
 }

@@ -1,123 +1,123 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001692.html",
-  "title": "OpenSSL の crypto/dh/dh_check.c の DH_check_pub_key 関数におけるプライベート DH 指数を取得される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001692.html",
-  "description": "OpenSSL の crypto/dh/dh_check.c の DH_check_pub_key 関数は、素数がディフィー・ヘルマン (DH) 鍵交換に適切であることを確認しないため、プライベート DH 指数を取得される脆弱性が存在します。\r\n\r\nなお、JVNVU#95668716 では、CWE-325 として公開されています。\r\n\r\nCWE-325: Missing Required Cryptographic Step\r\nhttps://cwe.mitre.org/data/definitions/325.html",
-  "identifier": "JVNDB-2016-001692",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU95668716/",
-      "source": "JVN",
-      "id": "JVNVU#95668716"
-    },
-    {
-      "text": "https://jvn.jp/vu/JVNVU99475301/",
-      "source": "JVN",
-      "id": "JVNVU#99475301"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0701",
-      "source": "CVE",
-      "id": "CVE-2016-0701"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0701",
-      "source": "NVD",
-      "id": "CVE-2016-0701"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/257823",
-      "source": "CERT-VN",
-      "id": "VU#257823"
-    },
-    {
-      "text": "http://intothesymmetry.blogspot.jp/2016/01/openssl-key-recovery-attack-on-dh-small.html",
-      "source": "関連文書",
-      "id": "OpenSSL Key Recovery Attack on DH small subgroups (CVE-2016-0701)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-      "id": "CWE-200",
-      "title": "情報漏えい(CWE-200)"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:hp:universal_cmbd_foundation",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード・エンタープライズ",
-      "product": "HPE Universal CMDB Foundation"
-    },
-    {
-      "text": "cpe:/a:nec:capssuite",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CapsSuite"
-    },
-    {
-      "text": "cpe:/a:nec:esmpro_serveragent",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerAgent"
-    },
-    {
-      "text": "cpe:/a:nec:esmpro_serveragentservice",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerAgentService"
-    },
-    {
-      "text": "cpe:/a:nec:secureware_pki_application_development_kit",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "SecureWare/PKIアプリケーション開発キット"
-    },
-    {
-      "text": "cpe:/a:nec:websam",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebSAM"
-    },
-    {
-      "text": "cpe:/a:nec:websam_mcoperations",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebSAM MCOperations"
-    },
-    {
-      "text": "cpe:/a:nec:websam_systemmanager",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebSAM SystemManager"
-    },
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/h:nec:express5800",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "Express5800"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.6",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
-    }
-  ],
-  "date": "2022-09-15T16:36+09:00",
-  "issued": "2016-03-15T10:15+09:00",
-  "modified": "2022-09-15T16:36+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001692.html",
+	"title": "OpenSSL の crypto/dh/dh_check.c の DH_check_pub_key 関数におけるプライベート DH 指数を取得される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001692.html",
+	"description": "OpenSSL の crypto/dh/dh_check.c の DH_check_pub_key 関数は、素数がディフィー・ヘルマン (DH) 鍵交換に適切であることを確認しないため、プライベート DH 指数を取得される脆弱性が存在します。\r\n\r\nなお、JVNVU#95668716 では、CWE-325 として公開されています。\r\n\r\nCWE-325: Missing Required Cryptographic Step\r\nhttps://cwe.mitre.org/data/definitions/325.html",
+	"identifier": "JVNDB-2016-001692",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU95668716/",
+			"source": "JVN",
+			"id": "JVNVU#95668716"
+		},
+		{
+			"text": "https://jvn.jp/vu/JVNVU99475301/",
+			"source": "JVN",
+			"id": "JVNVU#99475301"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0701",
+			"source": "CVE",
+			"id": "CVE-2016-0701"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0701",
+			"source": "NVD",
+			"id": "CVE-2016-0701"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/257823",
+			"source": "CERT-VN",
+			"id": "VU#257823"
+		},
+		{
+			"text": "http://intothesymmetry.blogspot.jp/2016/01/openssl-key-recovery-attack-on-dh-small.html",
+			"source": "関連文書",
+			"id": "OpenSSL Key Recovery Attack on DH small subgroups (CVE-2016-0701)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hp:universal_cmbd_foundation",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード・エンタープライズ",
+			"product": "HPE Universal CMDB Foundation"
+		},
+		{
+			"text": "cpe:/a:nec:capssuite",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CapsSuite"
+		},
+		{
+			"text": "cpe:/a:nec:esmpro_serveragent",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerAgent"
+		},
+		{
+			"text": "cpe:/a:nec:esmpro_serveragentservice",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerAgentService"
+		},
+		{
+			"text": "cpe:/a:nec:secureware_pki_application_development_kit",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "SecureWare/PKIアプリケーション開発キット"
+		},
+		{
+			"text": "cpe:/a:nec:websam",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebSAM"
+		},
+		{
+			"text": "cpe:/a:nec:websam_mcoperations",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebSAM MCOperations"
+		},
+		{
+			"text": "cpe:/a:nec:websam_systemmanager",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebSAM SystemManager"
+		},
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/h:nec:express5800",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "Express5800"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.6",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+		}
+	],
+	"date": "2022-09-15T16:36+09:00",
+	"issued": "2016-03-15T10:15+09:00",
+	"modified": "2022-09-15T16:36+09:00"
 }

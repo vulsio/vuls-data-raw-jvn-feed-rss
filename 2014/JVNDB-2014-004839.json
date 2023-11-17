@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004839.html",
-  "title": "Linux Kernel の fs/namespace.c 内の do_umount 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004839.html",
-  "description": "Linux Kernel の fs/namespace.c 内の do_umount 関数は、読み取り専用のルートファイルシステムを変更する do_remount_sb の呼び出しに対する CAP_SYS_ADMIN ケーパビリティを要求しないため、サービス運用妨害 (書き込み権限の損失) 状態にされる脆弱性が存在します。",
-  "identifier": "JVNDB-2014-004839",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7975",
-      "source": "CVE",
-      "id": "CVE-2014-7975"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7975",
-      "source": "NVD",
-      "id": "CVE-2014-7975"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2014-11-12T18:04+09:00",
-  "issued": "2014-10-20T18:13+09:00",
-  "modified": "2014-11-12T18:04+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004839.html",
+	"title": "Linux Kernel の fs/namespace.c 内の do_umount 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004839.html",
+	"description": "Linux Kernel の fs/namespace.c 内の do_umount 関数は、読み取り専用のルートファイルシステムを変更する do_remount_sb の呼び出しに対する CAP_SYS_ADMIN ケーパビリティを要求しないため、サービス運用妨害 (書き込み権限の損失) 状態にされる脆弱性が存在します。",
+	"identifier": "JVNDB-2014-004839",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7975",
+			"source": "CVE",
+			"id": "CVE-2014-7975"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7975",
+			"source": "NVD",
+			"id": "CVE-2014-7975"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2014-11-12T18:04+09:00",
+	"issued": "2014-10-20T18:13+09:00",
+	"modified": "2014-11-12T18:04+09:00"
 }

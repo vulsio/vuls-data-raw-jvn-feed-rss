@@ -1,59 +1,59 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005018.html",
-  "title": "Android の libstagefright の MPEG4Extractor.cpp の MPEG4Extractor::parse3GPPMetaData 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005018.html",
-  "description": "Android の libstagefright の MPEG4Extractor.cpp の MPEG4Extractor::parse3GPPMetaData 関数は、Byte Order Mark (BOM) を含む UTF-16 文字列に最小サイズを適用しないため、サービス運用妨害 (整数アンダーフロー、バッファオーバーリード、およびメディアサーバプロセスクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug: 20923261 として公開しています。\r\n\r\n本脆弱性は、CVE-2015-3828 と関連する問題です。",
-  "identifier": "JVNDB-2015-005018",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU92141772/index.html",
-      "source": "JVN",
-      "id": "JVNVU#92141772"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3826",
-      "source": "CVE",
-      "id": "CVE-2015-3826"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3826",
-      "source": "NVD",
-      "id": "CVE-2015-3826"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/924951",
-      "source": "CERT-VN",
-      "id": "VU#924951"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
-      "id": "CWE-189",
-      "title": "数値処理の問題(CWE-189)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:google:android",
-      "version": "2.2",
-      "vendor": "Google",
-      "product": "Android"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2015-10-02T14:58+09:00",
-  "issued": "2015-10-02T14:58+09:00",
-  "modified": "2015-10-02T14:58+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005018.html",
+	"title": "Android の libstagefright の MPEG4Extractor.cpp の MPEG4Extractor::parse3GPPMetaData 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005018.html",
+	"description": "Android の libstagefright の MPEG4Extractor.cpp の MPEG4Extractor::parse3GPPMetaData 関数は、Byte Order Mark (BOM) を含む UTF-16 文字列に最小サイズを適用しないため、サービス運用妨害 (整数アンダーフロー、バッファオーバーリード、およびメディアサーバプロセスクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を Bug: 20923261 として公開しています。\r\n\r\n本脆弱性は、CVE-2015-3828 と関連する問題です。",
+	"identifier": "JVNDB-2015-005018",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU92141772/index.html",
+			"source": "JVN",
+			"id": "JVNVU#92141772"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3826",
+			"source": "CVE",
+			"id": "CVE-2015-3826"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-3826",
+			"source": "NVD",
+			"id": "CVE-2015-3826"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/924951",
+			"source": "CERT-VN",
+			"id": "VU#924951"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+			"id": "CWE-189",
+			"title": "数値処理の問題(CWE-189)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:google:android",
+			"version": "2.2",
+			"vendor": "Google",
+			"product": "Android"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2015-10-02T14:58+09:00",
+	"issued": "2015-10-02T14:58+09:00",
+	"modified": "2015-10-02T14:58+09:00"
 }

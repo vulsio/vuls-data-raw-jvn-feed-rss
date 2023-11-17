@@ -1,76 +1,76 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003942.html",
-  "title": "ISC BIND 9 にサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003942.html",
-  "description": "ISC BIND 9 には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC BIND 9 には、TKEY クエリの処理に起因するサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC のアドバイザリには次のように記載されています。\r\n\r\nISC アドバイザリ\r\nhttps://kb.isc.org/article/AA-01272/\r\n\r\n　\"An error in the handling of TKEY queries can be exploited by an attacker for use as a denial-of-service vector, as a constructed packet can use the defect to trigger a REQUIRE assertion failure, causing BIND to exit.\"\r\n\r\nまた、問題となる処理は、パケット処理のなかで境界チェックが行われる前に実行されているため、ACL や設定によって本脆弱性への攻撃を防ぐことはできません。\r\n\r\nなお、本脆弱性を使用した攻撃コードが公開されており、攻撃も確認されています。\r\n\r\nまた、National Vulnerability Database (NVD) では、CWE-19 として公開されています。\r\n\r\nCWE-19: Data Handling\r\nhttp://cwe.mitre.org/data/definitions/19.html",
-  "identifier": "JVNDB-2015-003942",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU91955066/",
-      "source": "JVN",
-      "id": "JVNVU#91955066"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5477",
-      "source": "CVE",
-      "id": "CVE-2015-5477"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5477",
-      "source": "NVD",
-      "id": "CVE-2015-5477"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/ciadr/vul/20150731-bind.html",
-      "source": "IPA CFA",
-      "id": "DNS サーバ BIND の脆弱性対策について(CVE-2015-5477)"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2015/at150027.html",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2015-0027"
-    },
-    {
-      "text": "http://jprs.jp/tech/security/2015-07-29-bind9-vuln-tkey.html",
-      "source": "JPRS",
-      "id": "（緊急）BIND 9.xの脆弱性（DNSサービスの停止）について（2015年7月29日公開）"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:isc:bind",
-      "version": "2.2",
-      "vendor": "ISC, Inc.",
-      "product": "BIND"
-    },
-    {
-      "text": "cpe:/h:nec:express5800",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "Express5800"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2016-06-23T14:49+09:00",
-  "issued": "2015-07-30T10:47+09:00",
-  "modified": "2016-06-23T14:49+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003942.html",
+	"title": "ISC BIND 9 にサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003942.html",
+	"description": "ISC BIND 9 には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC BIND 9 には、TKEY クエリの処理に起因するサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC のアドバイザリには次のように記載されています。\r\n\r\nISC アドバイザリ\r\nhttps://kb.isc.org/article/AA-01272/\r\n\r\n　\"An error in the handling of TKEY queries can be exploited by an attacker for use as a denial-of-service vector, as a constructed packet can use the defect to trigger a REQUIRE assertion failure, causing BIND to exit.\"\r\n\r\nまた、問題となる処理は、パケット処理のなかで境界チェックが行われる前に実行されているため、ACL や設定によって本脆弱性への攻撃を防ぐことはできません。\r\n\r\nなお、本脆弱性を使用した攻撃コードが公開されており、攻撃も確認されています。\r\n\r\nまた、National Vulnerability Database (NVD) では、CWE-19 として公開されています。\r\n\r\nCWE-19: Data Handling\r\nhttp://cwe.mitre.org/data/definitions/19.html",
+	"identifier": "JVNDB-2015-003942",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU91955066/",
+			"source": "JVN",
+			"id": "JVNVU#91955066"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5477",
+			"source": "CVE",
+			"id": "CVE-2015-5477"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5477",
+			"source": "NVD",
+			"id": "CVE-2015-5477"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/ciadr/vul/20150731-bind.html",
+			"source": "IPA CFA",
+			"id": "DNS サーバ BIND の脆弱性対策について(CVE-2015-5477)"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2015/at150027.html",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2015-0027"
+		},
+		{
+			"text": "http://jprs.jp/tech/security/2015-07-29-bind9-vuln-tkey.html",
+			"source": "JPRS",
+			"id": "（緊急）BIND 9.xの脆弱性（DNSサービスの停止）について（2015年7月29日公開）"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:isc:bind",
+			"version": "2.2",
+			"vendor": "ISC, Inc.",
+			"product": "BIND"
+		},
+		{
+			"text": "cpe:/h:nec:express5800",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "Express5800"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2016-06-23T14:49+09:00",
+	"issued": "2015-07-30T10:47+09:00",
+	"modified": "2016-06-23T14:49+09:00"
 }

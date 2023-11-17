@@ -1,74 +1,74 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007056.html",
-  "title": "Xen の PCI バックエンドドライバにおける BUG 条件にヒットされる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007056.html",
-  "description": "Xen の PCI バックエンドドライバは、x86 システム上で稼動し、かつドライバドメインとして Linux を使用する場合、BUG 条件にヒットされ、サービス運用妨害 (NULL ポインタデリファレンスおよびホスト OS クラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n本脆弱性は、\"Linux pciback missing sanity checks\" と呼ばれています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-476: NULL Pointer Dereference (NULL ポインタデリファレンス) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/476.html",
-  "identifier": "JVNDB-2015-007056",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8551",
-      "source": "CVE",
-      "id": "CVE-2015-8551"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8551",
-      "source": "NVD",
-      "id": "CVE-2015-8551"
-    },
-    {
-      "text": "http://www.securitytracker.com/id/1034480",
-      "source": "関連文書",
-      "id": "Xen MSI Call Processing Bugs Let Local Users on the Guest System Deny Service on the Target Host System"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:canonical:ubuntu",
-      "version": "2.2",
-      "vendor": "Canonical",
-      "product": "Ubuntu"
-    },
-    {
-      "text": "cpe:/o:debian:debian_linux",
-      "version": "2.2",
-      "vendor": "Debian",
-      "product": "Debian GNU/Linux"
-    },
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    },
-    {
-      "text": "cpe:/o:xen:xen",
-      "version": "2.2",
-      "vendor": "Xen プロジェクト",
-      "product": "Xen"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.7",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "5.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:N/A:H"
-    }
-  ],
-  "date": "2016-04-20T11:46+09:00",
-  "issued": "2016-04-20T11:46+09:00",
-  "modified": "2016-04-20T11:46+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007056.html",
+	"title": "Xen の PCI バックエンドドライバにおける BUG 条件にヒットされる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-007056.html",
+	"description": "Xen の PCI バックエンドドライバは、x86 システム上で稼動し、かつドライバドメインとして Linux を使用する場合、BUG 条件にヒットされ、サービス運用妨害 (NULL ポインタデリファレンスおよびホスト OS クラッシュ) 状態にされる脆弱性が存在します。\r\n\r\n本脆弱性は、\"Linux pciback missing sanity checks\" と呼ばれています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-476: NULL Pointer Dereference (NULL ポインタデリファレンス) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/476.html",
+	"identifier": "JVNDB-2015-007056",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8551",
+			"source": "CVE",
+			"id": "CVE-2015-8551"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8551",
+			"source": "NVD",
+			"id": "CVE-2015-8551"
+		},
+		{
+			"text": "http://www.securitytracker.com/id/1034480",
+			"source": "関連文書",
+			"id": "Xen MSI Call Processing Bugs Let Local Users on the Guest System Deny Service on the Target Host System"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:canonical:ubuntu",
+			"version": "2.2",
+			"vendor": "Canonical",
+			"product": "Ubuntu"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		},
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		},
+		{
+			"text": "cpe:/o:xen:xen",
+			"version": "2.2",
+			"vendor": "Xen プロジェクト",
+			"product": "Xen"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.7",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:N/A:H"
+		}
+	],
+	"date": "2016-04-20T11:46+09:00",
+	"issued": "2016-04-20T11:46+09:00",
+	"modified": "2016-04-20T11:46+09:00"
 }

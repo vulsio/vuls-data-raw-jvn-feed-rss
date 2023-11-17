@@ -1,154 +1,154 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002088.html",
-  "title": "Adobe Reader および Acrobat にバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002088.html",
-  "description": "Adobe Reader および Acrobat には、バッファオーバーフローの脆弱性が存在します。\r\n\r\nAdobe Reader および Acrobat には、CoolType.dll のフォント解析コードに起因するバッファオーバーフローの脆弱性が存在します。\r\n\r\nなお、本脆弱性を使用した攻撃活動が確認されています。",
-  "identifier": "JVNDB-2010-002088",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU491991",
-      "source": "JVN",
-      "id": "JVNVU#491991"
-    },
-    {
-      "text": "http://jvn.jp/cert/JVNTA10-279A",
-      "source": "JVN",
-      "id": "JVNTA10-279A"
-    },
-    {
-      "text": "http://jvn.jp/ta/JVNTA99041988/",
-      "source": "JVN",
-      "id": "JVNTA#99041988"
-    },
-    {
-      "text": "http://jvn.jp/tr/JVNTR-2010-24",
-      "source": "JVNTR",
-      "id": "JVNTR-2010-24"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2883",
-      "source": "CVE",
-      "id": "CVE-2010-2883"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2883",
-      "source": "NVD",
-      "id": "CVE-2010-2883"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2010/at100026.txt",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2010-0026"
-    },
-    {
-      "text": "http://www.npa.go.jp/cyberpolice/#topics",
-      "source": "AT-POLICE",
-      "id": "アドビシステムズ社の Adobe Reader および Adobe Acrobat のセキュリティ修正プログラムについて"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/alerts/SA10-279A.html",
-      "source": "CERT-SA",
-      "id": "SA10-279A"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/491991",
-      "source": "CERT-VN",
-      "id": "VU#491991"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA10-279A.html",
-      "source": "CERT-TA",
-      "id": "TA10-279A"
-    },
-    {
-      "text": "https://www.us-cert.gov/ncas/alerts/TA15-119A",
-      "source": "CERT-TA",
-      "id": "TA15-119A"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/ciadr/vul/20101006-adobe.html",
-      "source": "IPA",
-      "id": "20101006-adobe"
-    },
-    {
-      "text": "http://secunia.com/advisories/41340",
-      "source": "SECUNIA",
-      "id": "SA41340"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/43057",
-      "source": "BID",
-      "id": "43057"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/61635",
-      "source": "XF",
-      "id": "61635"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/2331",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-2331"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/2573",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-2573"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:adobe:acrobat",
-      "version": "2.2",
-      "vendor": "アドビ",
-      "product": "Adobe Acrobat"
-    },
-    {
-      "text": "cpe:/a:adobe:acrobat_reader",
-      "version": "2.2",
-      "vendor": "アドビ",
-      "product": "Adobe Reader"
-    },
-    {
-      "text": "cpe:/a:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Extras"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_desktop_supplementary",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Supplementary"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_supplementary",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Supplementary"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_client",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Client"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "9.3",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2015-05-11T16:17+09:00",
-  "issued": "2010-10-05T18:55+09:00",
-  "modified": "2015-05-11T16:17+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002088.html",
+	"title": "Adobe Reader および Acrobat にバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002088.html",
+	"description": "Adobe Reader および Acrobat には、バッファオーバーフローの脆弱性が存在します。\r\n\r\nAdobe Reader および Acrobat には、CoolType.dll のフォント解析コードに起因するバッファオーバーフローの脆弱性が存在します。\r\n\r\nなお、本脆弱性を使用した攻撃活動が確認されています。",
+	"identifier": "JVNDB-2010-002088",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU491991",
+			"source": "JVN",
+			"id": "JVNVU#491991"
+		},
+		{
+			"text": "http://jvn.jp/cert/JVNTA10-279A",
+			"source": "JVN",
+			"id": "JVNTA10-279A"
+		},
+		{
+			"text": "http://jvn.jp/ta/JVNTA99041988/",
+			"source": "JVN",
+			"id": "JVNTA#99041988"
+		},
+		{
+			"text": "http://jvn.jp/tr/JVNTR-2010-24",
+			"source": "JVNTR",
+			"id": "JVNTR-2010-24"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2883",
+			"source": "CVE",
+			"id": "CVE-2010-2883"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2883",
+			"source": "NVD",
+			"id": "CVE-2010-2883"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2010/at100026.txt",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2010-0026"
+		},
+		{
+			"text": "http://www.npa.go.jp/cyberpolice/#topics",
+			"source": "AT-POLICE",
+			"id": "アドビシステムズ社の Adobe Reader および Adobe Acrobat のセキュリティ修正プログラムについて"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/alerts/SA10-279A.html",
+			"source": "CERT-SA",
+			"id": "SA10-279A"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/491991",
+			"source": "CERT-VN",
+			"id": "VU#491991"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA10-279A.html",
+			"source": "CERT-TA",
+			"id": "TA10-279A"
+		},
+		{
+			"text": "https://www.us-cert.gov/ncas/alerts/TA15-119A",
+			"source": "CERT-TA",
+			"id": "TA15-119A"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/ciadr/vul/20101006-adobe.html",
+			"source": "IPA",
+			"id": "20101006-adobe"
+		},
+		{
+			"text": "http://secunia.com/advisories/41340",
+			"source": "SECUNIA",
+			"id": "SA41340"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/43057",
+			"source": "BID",
+			"id": "43057"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/61635",
+			"source": "XF",
+			"id": "61635"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/2331",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-2331"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/2573",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-2573"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:adobe:acrobat",
+			"version": "2.2",
+			"vendor": "アドビ",
+			"product": "Adobe Acrobat"
+		},
+		{
+			"text": "cpe:/a:adobe:acrobat_reader",
+			"version": "2.2",
+			"vendor": "アドビ",
+			"product": "Adobe Reader"
+		},
+		{
+			"text": "cpe:/a:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Extras"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_desktop_supplementary",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Supplementary"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_supplementary",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Supplementary"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_client",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Client"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "9.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2015-05-11T16:17+09:00",
+	"issued": "2010-10-05T18:55+09:00",
+	"modified": "2015-05-11T16:17+09:00"
 }

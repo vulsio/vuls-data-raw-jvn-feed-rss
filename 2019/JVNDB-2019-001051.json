@@ -1,116 +1,116 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001051.html",
-  "title": "オムロン製 CX-Supervisor に複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001051.html",
-  "description": "オムロン株式会社が提供する CX-Supervisor には、次の複数の脆弱性が存在します。\r\n\r\n* コードインジェクション (CWE-94) - CVE-2018-19011\r\n細工されたプロジェクトファイルを処理することで、アプリケーションの権限で任意のコードを実行される。\r\n* コマンドインジェクション (CWE-77) - CVE-2018-19013\r\n細工されたプロジェクトファイルを処理することで、デバイス上のファイルやファイルの中身を削除される。\r\n* コマンドインジェクション (CWE-77) - CVE-2018-19015\r\n細工されたプロジェクトファイルを処理することで、アプリケーションの権限でプログラムを実行され、デバイス上のファイルの作成、書き込み、読み込みなどが行われる。\r\n* Use After Free (解放済みメモリの使用) (CWE-416) - CVE-2018-19017\r\n細工されたプロジェクトファイルを処理することで、アプリケーションの権限で任意のコードを実行される。\r\n* Access of Resource Using Incompatible Type (型の取り違え) (CWE-843) - CVE-2018-19019\r\n細工されたプロジェクトファイルを処理することで、アプリケーションの権限で任意のコードを実行される。\r\n* Access of Uninitialized Pointer (初期化されていないポインタのアクセス) (CWE-824) - CVE-2018-19018\r\n細工されたプロジェクトファイルを処理することで、アプリケーションの権限で任意のコードを実行される。\r\n* Out-of-bounds Read (境界外読み取り) (CWE-125) - CVE-2018-19020\r\n細工されたプロジェクトファイルを処理することで、アプリケーションが配列外の値を読み込む。",
-  "identifier": "JVNDB-2019-001051",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU90014171/",
-      "source": "JVN",
-      "id": "JVNVU#90014171"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19011",
-      "source": "CVE",
-      "id": "CVE-2018-19011"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19013",
-      "source": "CVE",
-      "id": "CVE-2018-19013"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19015",
-      "source": "CVE",
-      "id": "CVE-2018-19015"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19017",
-      "source": "CVE",
-      "id": "CVE-2018-19017"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19019",
-      "source": "CVE",
-      "id": "CVE-2018-19019"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19018",
-      "source": "CVE",
-      "id": "CVE-2018-19018"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19020",
-      "source": "CVE",
-      "id": "CVE-2018-19020"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19011",
-      "source": "NVD",
-      "id": "CVE-2018-19011"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19013",
-      "source": "NVD",
-      "id": "CVE-2018-19013"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19015",
-      "source": "NVD",
-      "id": "CVE-2018-19015"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19017",
-      "source": "NVD",
-      "id": "CVE-2018-19017"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19019",
-      "source": "NVD",
-      "id": "CVE-2018-19019"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19018",
-      "source": "NVD",
-      "id": "CVE-2018-19018"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19020",
-      "source": "NVD",
-      "id": "CVE-2018-19020"
-    },
-    {
-      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-19-017-01",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-19-017-01"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:omron:cx-supervisor",
-      "version": "2.2",
-      "vendor": "オムロン株式会社",
-      "product": "CX-Supervisor"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.6",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:M/Au:S/C:C/I:C/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "7.3",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2019-08-27T16:05+09:00",
-  "issued": "2019-01-21T10:45+09:00",
-  "modified": "2019-08-27T16:05+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001051.html",
+	"title": "オムロン製 CX-Supervisor に複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001051.html",
+	"description": "オムロン株式会社が提供する CX-Supervisor には、次の複数の脆弱性が存在します。\r\n\r\n* コードインジェクション (CWE-94) - CVE-2018-19011\r\n細工されたプロジェクトファイルを処理することで、アプリケーションの権限で任意のコードを実行される。\r\n* コマンドインジェクション (CWE-77) - CVE-2018-19013\r\n細工されたプロジェクトファイルを処理することで、デバイス上のファイルやファイルの中身を削除される。\r\n* コマンドインジェクション (CWE-77) - CVE-2018-19015\r\n細工されたプロジェクトファイルを処理することで、アプリケーションの権限でプログラムを実行され、デバイス上のファイルの作成、書き込み、読み込みなどが行われる。\r\n* Use After Free (解放済みメモリの使用) (CWE-416) - CVE-2018-19017\r\n細工されたプロジェクトファイルを処理することで、アプリケーションの権限で任意のコードを実行される。\r\n* Access of Resource Using Incompatible Type (型の取り違え) (CWE-843) - CVE-2018-19019\r\n細工されたプロジェクトファイルを処理することで、アプリケーションの権限で任意のコードを実行される。\r\n* Access of Uninitialized Pointer (初期化されていないポインタのアクセス) (CWE-824) - CVE-2018-19018\r\n細工されたプロジェクトファイルを処理することで、アプリケーションの権限で任意のコードを実行される。\r\n* Out-of-bounds Read (境界外読み取り) (CWE-125) - CVE-2018-19020\r\n細工されたプロジェクトファイルを処理することで、アプリケーションが配列外の値を読み込む。",
+	"identifier": "JVNDB-2019-001051",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU90014171/",
+			"source": "JVN",
+			"id": "JVNVU#90014171"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19011",
+			"source": "CVE",
+			"id": "CVE-2018-19011"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19013",
+			"source": "CVE",
+			"id": "CVE-2018-19013"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19015",
+			"source": "CVE",
+			"id": "CVE-2018-19015"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19017",
+			"source": "CVE",
+			"id": "CVE-2018-19017"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19019",
+			"source": "CVE",
+			"id": "CVE-2018-19019"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19018",
+			"source": "CVE",
+			"id": "CVE-2018-19018"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19020",
+			"source": "CVE",
+			"id": "CVE-2018-19020"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19011",
+			"source": "NVD",
+			"id": "CVE-2018-19011"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19013",
+			"source": "NVD",
+			"id": "CVE-2018-19013"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19015",
+			"source": "NVD",
+			"id": "CVE-2018-19015"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19017",
+			"source": "NVD",
+			"id": "CVE-2018-19017"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19019",
+			"source": "NVD",
+			"id": "CVE-2018-19019"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19018",
+			"source": "NVD",
+			"id": "CVE-2018-19018"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-19020",
+			"source": "NVD",
+			"id": "CVE-2018-19020"
+		},
+		{
+			"text": "https://ics-cert.us-cert.gov/advisories/ICSA-19-017-01",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-19-017-01"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:omron:cx-supervisor",
+			"version": "2.2",
+			"vendor": "オムロン株式会社",
+			"product": "CX-Supervisor"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.6",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:S/C:C/I:C/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "7.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2019-08-27T16:05+09:00",
+	"issued": "2019-01-21T10:45+09:00",
+	"modified": "2019-08-27T16:05+09:00"
 }

@@ -1,106 +1,106 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000322.html",
-  "title": "SSH プロトコルを実装する複数の製品における不正なデータ長のパケットを適切に処理しない脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000322.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nTCP/IP の上位層で利用される SSH トランスポート層プロトコルは SSH プロトコル全体の基盤となるプロトコルです。鍵の交換や利用する暗号技術、メッセージ認証アルゴリズムなどが取り決められており、暗号化データ転送やサーバの認証などの機能を提供します。\r\n\r\n多くのベンダから提供されている SSH プロトコルを実装した製品において、実装方法の不備が存在します。リモートの攻撃者は、このプロトコルに関連して初期設定時や鍵の交換時、接続段階時に取り扱われる悪意ある様々な不正パケット (パケット長や padding 長が異常なパケットや奇形な文字列や値を挿入したパケット、アルゴリズムが適切に定められていないパケットなど) を送信することで、SSH サーバもしくはクライアントをサービス不能状態に陥らせる、さらには SSH サーバもしくはクライアントの実行権限で任意のコードを実行することが可能です。\r\n\r\nただし、この問題の影響は、各ベンダから提供されている SSH 製品により異なります。現時点では詳細は未詳ですが、SSH Communications Security から提供されている SSH Secure Shell の場合、SSH サーバの子プロセスもしくはクライアントのクラッシュを招く可能性があります。また F-Secure の F-Secure SSH の場合は、SSH サーバの子プロセスのクラッシュを招く可能性があり、結果として双方の製品を利用する場合は、SSH サーバとクライアントとの接続が切断されてしまう可能性があります。ただし、クライアントは再接続を試みることで接続は可能です。\r\n\r\n尚、現時点では SSH Secure Shell および F-Secure SSH の Windows 版の影響においては未詳です。OpenSSH は、この問題の影響を受けません。\r\n\r\nCisco IOS の場合には、デフォルトで SSH サーバは無効に設定されているため、デフォルトの設定のままであればこの問題の影響は受けません。",
-  "identifier": "JVNDB-2002-000322",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNCA-2002-36",
-      "source": "JVN",
-      "id": "JVNCA-2002-36"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1357",
-      "source": "CVE",
-      "id": "CVE-2002-1357"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1357",
-      "source": "NVD",
-      "id": "CVE-2002-1357"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2002/wr025001.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2002-5001"
-    },
-    {
-      "text": "http://www.cert.org/advisories/CA-2002-36.html",
-      "source": "CERT-A",
-      "id": "CA-2002-36"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/389665",
-      "source": "CERT-A",
-      "id": "VU#389665"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/n-028.shtml",
-      "source": "CIAC",
-      "id": "N-028"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/6410",
-      "source": "BID",
-      "id": "6410"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/6407",
-      "source": "BID",
-      "id": "6407"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/6405",
-      "source": "BID",
-      "id": "6405"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/6408",
-      "source": "BID",
-      "id": "6408"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/6397",
-      "source": "BID",
-      "id": "6397"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:f-secure:f-secure_ssh_server",
-      "version": "2.2",
-      "vendor": "エフ・セキュア",
-      "product": "F-Secure SSH"
-    },
-    {
-      "text": "cpe:/h:cisco:pix_firewall",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco PIX Firewall"
-    },
-    {
-      "text": "cpe:/o:cisco:ios",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IOS"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000322.html",
+	"title": "SSH プロトコルを実装する複数の製品における不正なデータ長のパケットを適切に処理しない脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000322.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nTCP/IP の上位層で利用される SSH トランスポート層プロトコルは SSH プロトコル全体の基盤となるプロトコルです。鍵の交換や利用する暗号技術、メッセージ認証アルゴリズムなどが取り決められており、暗号化データ転送やサーバの認証などの機能を提供します。\r\n\r\n多くのベンダから提供されている SSH プロトコルを実装した製品において、実装方法の不備が存在します。リモートの攻撃者は、このプロトコルに関連して初期設定時や鍵の交換時、接続段階時に取り扱われる悪意ある様々な不正パケット (パケット長や padding 長が異常なパケットや奇形な文字列や値を挿入したパケット、アルゴリズムが適切に定められていないパケットなど) を送信することで、SSH サーバもしくはクライアントをサービス不能状態に陥らせる、さらには SSH サーバもしくはクライアントの実行権限で任意のコードを実行することが可能です。\r\n\r\nただし、この問題の影響は、各ベンダから提供されている SSH 製品により異なります。現時点では詳細は未詳ですが、SSH Communications Security から提供されている SSH Secure Shell の場合、SSH サーバの子プロセスもしくはクライアントのクラッシュを招く可能性があります。また F-Secure の F-Secure SSH の場合は、SSH サーバの子プロセスのクラッシュを招く可能性があり、結果として双方の製品を利用する場合は、SSH サーバとクライアントとの接続が切断されてしまう可能性があります。ただし、クライアントは再接続を試みることで接続は可能です。\r\n\r\n尚、現時点では SSH Secure Shell および F-Secure SSH の Windows 版の影響においては未詳です。OpenSSH は、この問題の影響を受けません。\r\n\r\nCisco IOS の場合には、デフォルトで SSH サーバは無効に設定されているため、デフォルトの設定のままであればこの問題の影響は受けません。",
+	"identifier": "JVNDB-2002-000322",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNCA-2002-36",
+			"source": "JVN",
+			"id": "JVNCA-2002-36"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1357",
+			"source": "CVE",
+			"id": "CVE-2002-1357"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1357",
+			"source": "NVD",
+			"id": "CVE-2002-1357"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2002/wr025001.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2002-5001"
+		},
+		{
+			"text": "http://www.cert.org/advisories/CA-2002-36.html",
+			"source": "CERT-A",
+			"id": "CA-2002-36"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/389665",
+			"source": "CERT-A",
+			"id": "VU#389665"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/n-028.shtml",
+			"source": "CIAC",
+			"id": "N-028"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/6410",
+			"source": "BID",
+			"id": "6410"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/6407",
+			"source": "BID",
+			"id": "6407"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/6405",
+			"source": "BID",
+			"id": "6405"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/6408",
+			"source": "BID",
+			"id": "6408"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/6397",
+			"source": "BID",
+			"id": "6397"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:f-secure:f-secure_ssh_server",
+			"version": "2.2",
+			"vendor": "エフ・セキュア",
+			"product": "F-Secure SSH"
+		},
+		{
+			"text": "cpe:/h:cisco:pix_firewall",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco PIX Firewall"
+		},
+		{
+			"text": "cpe:/o:cisco:ios",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IOS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

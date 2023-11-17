@@ -1,64 +1,64 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000299.html",
-  "title": "Linux Kernel の HB-ACK チャンクの処理におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000299.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・SCTP パケットにおいて特定のフォーマットの HB-ACK チャンクを処理した際に、バッファオーバーフローが発生する問題 (CVE-2006-1857)\r\n\r\n・特定の SCTP パケットの処理が不適切であるため、過度に多くの SCTP パケットをレシーバアプリケーションで受信した際に、デッドロックが発生する問題 (CVE-2006-2275)\r\n\r\n・PowerPC アーキテクチャ用のシグナル処理において、access_ok() 関数によるユーザ領域のアドレス範囲のチェックが不適切であるため、権限を持たないプロセスがカーネルメモリ領域にアクセス可能である問題 (CVE-2006-2448)\r\n\r\nリモートあるいはローカルの攻撃者に悪用された場合、システムがサービス不能状態に陥る、あるいは、カーネルメモリ内の情報を取得される可能性があります。",
-  "identifier": "JVNDB-2006-000299",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1857",
-      "source": "CVE",
-      "id": "CVE-2006-1857"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1857",
-      "source": "NVD",
-      "id": "CVE-2006-1857"
-    },
-    {
-      "text": "http://secunia.com/advisories/20185",
-      "source": "SECUNIA",
-      "id": "SA20185"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/18616",
-      "source": "BID",
-      "id": "18616"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/18085",
-      "source": "BID",
-      "id": "18085"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/17955",
-      "source": "BID",
-      "id": "17955"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2006/1893",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2006-1893"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000299.html",
+	"title": "Linux Kernel の HB-ACK チャンクの処理におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000299.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・SCTP パケットにおいて特定のフォーマットの HB-ACK チャンクを処理した際に、バッファオーバーフローが発生する問題 (CVE-2006-1857)\r\n\r\n・特定の SCTP パケットの処理が不適切であるため、過度に多くの SCTP パケットをレシーバアプリケーションで受信した際に、デッドロックが発生する問題 (CVE-2006-2275)\r\n\r\n・PowerPC アーキテクチャ用のシグナル処理において、access_ok() 関数によるユーザ領域のアドレス範囲のチェックが不適切であるため、権限を持たないプロセスがカーネルメモリ領域にアクセス可能である問題 (CVE-2006-2448)\r\n\r\nリモートあるいはローカルの攻撃者に悪用された場合、システムがサービス不能状態に陥る、あるいは、カーネルメモリ内の情報を取得される可能性があります。",
+	"identifier": "JVNDB-2006-000299",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1857",
+			"source": "CVE",
+			"id": "CVE-2006-1857"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1857",
+			"source": "NVD",
+			"id": "CVE-2006-1857"
+		},
+		{
+			"text": "http://secunia.com/advisories/20185",
+			"source": "SECUNIA",
+			"id": "SA20185"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/18616",
+			"source": "BID",
+			"id": "18616"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/18085",
+			"source": "BID",
+			"id": "18085"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/17955",
+			"source": "BID",
+			"id": "17955"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2006/1893",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2006-1893"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

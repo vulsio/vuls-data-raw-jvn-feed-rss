@@ -1,432 +1,432 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001460.html",
-  "title": "TLS プロトコルおよび DTLS プロトコルにおける識別攻撃およびプレーンテキストリカバリ攻撃を誘発される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001460.html",
-  "description": "OpenSSL、OpenJDK、PolarSSL およびその他の製品で使用される TLS プロトコルおよび DTLS プロトコルは、不正な形式の CBC パディングを処理している間、MAC チェック要求に関するタイミングサイドチャネル攻撃について適切に配慮しないため、識別攻撃およびプレーンテキストリカバリ攻撃を誘発される脆弱性が存在します。",
-  "identifier": "JVNDB-2013-001460",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNTA13-051A/",
-      "source": "JVN",
-      "id": "JVNTA13-051A"
-    },
-    {
-      "text": "http://jvn.jp/cert/JVNVU91284469/",
-      "source": "JVN",
-      "id": "JVNVU#91284469"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU94847990/index.html",
-      "source": "JVN",
-      "id": "JVNVU#94847990"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0169",
-      "source": "CVE",
-      "id": "CVE-2013-0169"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0169",
-      "source": "NVD",
-      "id": "CVE-2013-0169"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/ciadr/vul/20130220-jre.html",
-      "source": "IPA CFA",
-      "id": "Oracle Java の脆弱性対策について(CVE-2013-1487等)"
-    },
-    {
-      "text": "https://www.jpcert.or.jp/at/2013/at130011.txt",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2013-0011"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/737740",
-      "source": "CERT-VN",
-      "id": "VU#737740"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA13-051A.html",
-      "source": "CERT-TA",
-      "id": "TA13-051A"
-    },
-    {
-      "text": "https://www.us-cert.gov/ics/advisories/icsa-19-192-04",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-19-192-04"
-    },
-    {
-      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-097-01",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-22-097-01"
-    },
-    {
-      "text": "http://www.isg.rhul.ac.uk/tls/TLStiming.pdf",
-      "source": "関連文書",
-      "id": "Lucky Thirteen: Breaking the TLS and DTLS Record Protocols"
-    },
-    {
-      "text": "http://www.matrixssl.org/index.html",
-      "source": "関連文書",
-      "id": "Open Source Embedded SSL"
-    },
-    {
-      "text": "http://www.matrixssl.org/news.html",
-      "source": "関連文書",
-      "id": "MatrixSSL 3.4.2 Releases"
-    },
-    {
-      "text": "https://wiki.mageia.org/en/Support/Advisories/MGASA-2013-0084",
-      "source": "関連文書",
-      "id": "MGASA-2013-0084"
-    },
-    {
-      "text": "https://cert.vde.com/en/advisories/VDE-2021-027/",
-      "source": "関連文書",
-      "id": "VDE-2021-027 (Pepperl+Fuchs: WirelessHART-Gateway - Vulnerability may allow remote attackers to cause a Denial Of Service)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
-      "id": "CWE-310",
-      "title": "暗号の問題(CWE-310)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_client",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Client"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developers_kit_for_java",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer's Kit for Java(TM)"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Light Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Professional Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Standard Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_http_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus HTTP Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_server_-_standard_edition_version_4",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Server - Standard Edition Version 4"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_server_-_web_edition_version_4",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Server - Web Edition Version 4"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_studio",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Studio"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_web_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Web Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Smart Edition"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_client",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Client"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Light"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_operator",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Operator"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Architect"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform"
-    },
-    {
-      "text": "cpe:/a:nec:csview",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CSVIEW"
-    },
-    {
-      "text": "cpe:/a:nec:enterpriseidentitymanager",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "EnterpriseIdentityManager"
-    },
-    {
-      "text": "cpe:/a:nec:enterprise_directoryserver",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "EnterpriseDirectoryServer"
-    },
-    {
-      "text": "cpe:/a:nec:infocage",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "InfoCage"
-    },
-    {
-      "text": "cpe:/a:nec:secureware_pki_application_development_kit",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "SecureWare/PKIアプリケーション開発キット"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_enterprise_service_bus",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Enterprise Service Bus"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_portal",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Portal"
-    },
-    {
-      "text": "cpe:/a:nec:websam_assetsuite",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebSAM AssetSuite"
-    },
-    {
-      "text": "cpe:/a:nec:websam_mcoperations",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebSAM MCOperations"
-    },
-    {
-      "text": "cpe:/a:nec:websam_systemmanager",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebSAM SystemManager"
-    },
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/a:oracle:database_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Database"
-    },
-    {
-      "text": "cpe:/a:oracle:fusion_middleware",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Fusion Middleware"
-    },
-    {
-      "text": "cpe:/a:oracle:http_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle HTTP Server"
-    },
-    {
-      "text": "cpe:/a:oracle:jdk",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "JDK"
-    },
-    {
-      "text": "cpe:/a:oracle:jre",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "JRE"
-    },
-    {
-      "text": "cpe:/a:oracle:openjdk",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "OpenJDK"
-    },
-    {
-      "text": "cpe:/a:oracle:sdk",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "SDK"
-    },
-    {
-      "text": "cpe:/a:polarssl:polarssl",
-      "version": "2.2",
-      "vendor": "ARM Ltd. (旧 Offspark)",
-      "product": "PolarSSL"
-    },
-    {
-      "text": "cpe:/a:sun:jdk",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "JDK"
-    },
-    {
-      "text": "cpe:/a:sun:jre",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "JRE"
-    },
-    {
-      "text": "cpe:/a:sun:sdk",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "SDK"
-    },
-    {
-      "text": "cpe:/h:nec:istorage",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "iStorage"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.6",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
-    }
-  ],
-  "date": "2019-07-16T11:17+09:00",
-  "issued": "2013-02-13T11:46+09:00",
-  "modified": "2019-07-16T11:17+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001460.html",
+	"title": "TLS プロトコルおよび DTLS プロトコルにおける識別攻撃およびプレーンテキストリカバリ攻撃を誘発される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001460.html",
+	"description": "OpenSSL、OpenJDK、PolarSSL およびその他の製品で使用される TLS プロトコルおよび DTLS プロトコルは、不正な形式の CBC パディングを処理している間、MAC チェック要求に関するタイミングサイドチャネル攻撃について適切に配慮しないため、識別攻撃およびプレーンテキストリカバリ攻撃を誘発される脆弱性が存在します。",
+	"identifier": "JVNDB-2013-001460",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNTA13-051A/",
+			"source": "JVN",
+			"id": "JVNTA13-051A"
+		},
+		{
+			"text": "http://jvn.jp/cert/JVNVU91284469/",
+			"source": "JVN",
+			"id": "JVNVU#91284469"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU94847990/index.html",
+			"source": "JVN",
+			"id": "JVNVU#94847990"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0169",
+			"source": "CVE",
+			"id": "CVE-2013-0169"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0169",
+			"source": "NVD",
+			"id": "CVE-2013-0169"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/ciadr/vul/20130220-jre.html",
+			"source": "IPA CFA",
+			"id": "Oracle Java の脆弱性対策について(CVE-2013-1487等)"
+		},
+		{
+			"text": "https://www.jpcert.or.jp/at/2013/at130011.txt",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2013-0011"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/737740",
+			"source": "CERT-VN",
+			"id": "VU#737740"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA13-051A.html",
+			"source": "CERT-TA",
+			"id": "TA13-051A"
+		},
+		{
+			"text": "https://www.us-cert.gov/ics/advisories/icsa-19-192-04",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-19-192-04"
+		},
+		{
+			"text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-097-01",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-22-097-01"
+		},
+		{
+			"text": "http://www.isg.rhul.ac.uk/tls/TLStiming.pdf",
+			"source": "関連文書",
+			"id": "Lucky Thirteen: Breaking the TLS and DTLS Record Protocols"
+		},
+		{
+			"text": "http://www.matrixssl.org/index.html",
+			"source": "関連文書",
+			"id": "Open Source Embedded SSL"
+		},
+		{
+			"text": "http://www.matrixssl.org/news.html",
+			"source": "関連文書",
+			"id": "MatrixSSL 3.4.2 Releases"
+		},
+		{
+			"text": "https://wiki.mageia.org/en/Support/Advisories/MGASA-2013-0084",
+			"source": "関連文書",
+			"id": "MGASA-2013-0084"
+		},
+		{
+			"text": "https://cert.vde.com/en/advisories/VDE-2021-027/",
+			"source": "関連文書",
+			"id": "VDE-2021-027 (Pepperl+Fuchs: WirelessHART-Gateway - Vulnerability may allow remote attackers to cause a Denial Of Service)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+			"id": "CWE-310",
+			"title": "暗号の問題(CWE-310)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_client",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Client"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developers_kit_for_java",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer's Kit for Java(TM)"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Light Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Professional Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Standard Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_http_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus HTTP Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_server_-_standard_edition_version_4",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Server - Standard Edition Version 4"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_server_-_web_edition_version_4",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Server - Web Edition Version 4"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_studio",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Studio"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_web_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Web Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Smart Edition"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_client",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Client"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_light",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Light"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_operator",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Operator"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_architect",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Architect"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform"
+		},
+		{
+			"text": "cpe:/a:nec:csview",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CSVIEW"
+		},
+		{
+			"text": "cpe:/a:nec:enterpriseidentitymanager",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "EnterpriseIdentityManager"
+		},
+		{
+			"text": "cpe:/a:nec:enterprise_directoryserver",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "EnterpriseDirectoryServer"
+		},
+		{
+			"text": "cpe:/a:nec:infocage",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "InfoCage"
+		},
+		{
+			"text": "cpe:/a:nec:secureware_pki_application_development_kit",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "SecureWare/PKIアプリケーション開発キット"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_enterprise_service_bus",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Enterprise Service Bus"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_portal",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Portal"
+		},
+		{
+			"text": "cpe:/a:nec:websam_assetsuite",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebSAM AssetSuite"
+		},
+		{
+			"text": "cpe:/a:nec:websam_mcoperations",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebSAM MCOperations"
+		},
+		{
+			"text": "cpe:/a:nec:websam_systemmanager",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebSAM SystemManager"
+		},
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/a:oracle:database_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Database"
+		},
+		{
+			"text": "cpe:/a:oracle:fusion_middleware",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Fusion Middleware"
+		},
+		{
+			"text": "cpe:/a:oracle:http_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle HTTP Server"
+		},
+		{
+			"text": "cpe:/a:oracle:jdk",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "JDK"
+		},
+		{
+			"text": "cpe:/a:oracle:jre",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "JRE"
+		},
+		{
+			"text": "cpe:/a:oracle:openjdk",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "OpenJDK"
+		},
+		{
+			"text": "cpe:/a:oracle:sdk",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "SDK"
+		},
+		{
+			"text": "cpe:/a:polarssl:polarssl",
+			"version": "2.2",
+			"vendor": "ARM Ltd. (旧 Offspark)",
+			"product": "PolarSSL"
+		},
+		{
+			"text": "cpe:/a:sun:jdk",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "JDK"
+		},
+		{
+			"text": "cpe:/a:sun:jre",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "JRE"
+		},
+		{
+			"text": "cpe:/a:sun:sdk",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "SDK"
+		},
+		{
+			"text": "cpe:/h:nec:istorage",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "iStorage"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.6",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+		}
+	],
+	"date": "2019-07-16T11:17+09:00",
+	"issued": "2013-02-13T11:46+09:00",
+	"modified": "2019-07-16T11:17+09:00"
 }

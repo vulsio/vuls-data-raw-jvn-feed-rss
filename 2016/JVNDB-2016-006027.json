@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006027.html",
-  "title": "Linux Kernel の drivers/vfio/pci/vfio_pci.c における整数オーバーフローのチェックを回避される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006027.html",
-  "description": "Linux Kernel の drivers/vfio/pci/vfio_pci.c には、整数オーバーフローのチェックを回避され、サービス運用妨害 (メモリ破損) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n本脆弱性は、\"ステートマシンの混乱のバグ\" と呼ばれています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-190: Integer Overflow or Wraparound (整数オーバーフローまたはラップアラウンド) と識別されています。\r\nhttps://cwe.mitre.org/data/definitions/190.html",
-  "identifier": "JVNDB-2016-006027",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9083",
-      "source": "CVE",
-      "id": "CVE-2016-9083"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9083",
-      "source": "NVD",
-      "id": "CVE-2016-9083"
-    },
-    {
-      "text": "https://patchwork.kernel.org/patch/9373631/",
-      "source": "関連文書",
-      "id": " Patchwork [v3] vfio/pci: Fix integer overflows, bitmask check"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.2",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2016-11-30T15:49+09:00",
-  "issued": "2016-11-30T15:49+09:00",
-  "modified": "2016-11-30T15:49+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006027.html",
+	"title": "Linux Kernel の drivers/vfio/pci/vfio_pci.c における整数オーバーフローのチェックを回避される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006027.html",
+	"description": "Linux Kernel の drivers/vfio/pci/vfio_pci.c には、整数オーバーフローのチェックを回避され、サービス運用妨害 (メモリ破損) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n本脆弱性は、\"ステートマシンの混乱のバグ\" と呼ばれています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-190: Integer Overflow or Wraparound (整数オーバーフローまたはラップアラウンド) と識別されています。\r\nhttps://cwe.mitre.org/data/definitions/190.html",
+	"identifier": "JVNDB-2016-006027",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9083",
+			"source": "CVE",
+			"id": "CVE-2016-9083"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-9083",
+			"source": "NVD",
+			"id": "CVE-2016-9083"
+		},
+		{
+			"text": "https://patchwork.kernel.org/patch/9373631/",
+			"source": "関連文書",
+			"id": " Patchwork [v3] vfio/pci: Fix integer overflows, bitmask check"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2016-11-30T15:49+09:00",
+	"issued": "2016-11-30T15:49+09:00",
+	"modified": "2016-11-30T15:49+09:00"
 }

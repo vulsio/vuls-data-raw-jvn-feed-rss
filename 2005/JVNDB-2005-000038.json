@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000038.html",
-  "title": "SquirrelMail の webmail.php におけるクロスサイトスクリプティングの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000038.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSquirrelMail は、PHP 言語で開発された高機能な Web メールパッケージです。\r\n\r\nSquirrelMail 1.4.0-1.4.3a には、以下の複数のセキュリティ上の問題が存在します。\r\n \r\n1) prefs.php において、読み込む php ファイルを指定する変数のチェックが不適切であるため、意図的に作成された URL により標的システム上の任意の php ファイルを読み込ませることが可能な問題 (CAN-2005-0075) (1.4.3 - 1.4.3a)\r\n\r\n2) webmail.php において、URL より指定されたフレーム変数のチェックが適切に行われないため、SquirrelMail ページのフレームに任意の Web ページを挿入することが可能な問題 (CAN-2005-0103) (1.4.0 - 1.4.3a) \r\n\r\n3) webmail.php において変数のエスケープ処理が適切に行われていないため、意図的に作成した URL により任意の HTML もしくはスクリプトを SquirrelMail ページに挿入可能な問題 (CAN-2005-0104) (1.4.3 - 1.4.3a)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した URL に標的ユーザをアクセスするよう誘導し、クロスサイトスクリプティング攻撃や Web サイトの偽装を行うことにより重要な情報を奪取する、あるいは標的システム上の任意の php ファイルを読み込ませることが可能です。\r\n\r\n尚、CAN-2005-0075 および CAN-2005-0104 の問題については、PHP の設定において register_globals が on に設定されている場合にのみ影響します。",
-  "identifier": "JVNDB-2005-000038",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0104",
-      "source": "CVE",
-      "id": "CVE-2005-0104"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0104",
-      "source": "NVD",
-      "id": "CVE-2005-0104"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12337",
-      "source": "BID",
-      "id": "12337"
-    },
-    {
-      "text": "http://www.securiteam.com/unixfocus/5SP060KEUC.html",
-      "source": "SECTEAM",
-      "id": "5SP060KEUC"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000038.html",
+	"title": "SquirrelMail の webmail.php におけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000038.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSquirrelMail は、PHP 言語で開発された高機能な Web メールパッケージです。\r\n\r\nSquirrelMail 1.4.0-1.4.3a には、以下の複数のセキュリティ上の問題が存在します。\r\n \r\n1) prefs.php において、読み込む php ファイルを指定する変数のチェックが不適切であるため、意図的に作成された URL により標的システム上の任意の php ファイルを読み込ませることが可能な問題 (CAN-2005-0075) (1.4.3 - 1.4.3a)\r\n\r\n2) webmail.php において、URL より指定されたフレーム変数のチェックが適切に行われないため、SquirrelMail ページのフレームに任意の Web ページを挿入することが可能な問題 (CAN-2005-0103) (1.4.0 - 1.4.3a) \r\n\r\n3) webmail.php において変数のエスケープ処理が適切に行われていないため、意図的に作成した URL により任意の HTML もしくはスクリプトを SquirrelMail ページに挿入可能な問題 (CAN-2005-0104) (1.4.3 - 1.4.3a)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した URL に標的ユーザをアクセスするよう誘導し、クロスサイトスクリプティング攻撃や Web サイトの偽装を行うことにより重要な情報を奪取する、あるいは標的システム上の任意の php ファイルを読み込ませることが可能です。\r\n\r\n尚、CAN-2005-0075 および CAN-2005-0104 の問題については、PHP の設定において register_globals が on に設定されている場合にのみ影響します。",
+	"identifier": "JVNDB-2005-000038",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0104",
+			"source": "CVE",
+			"id": "CVE-2005-0104"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0104",
+			"source": "NVD",
+			"id": "CVE-2005-0104"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12337",
+			"source": "BID",
+			"id": "12337"
+		},
+		{
+			"text": "http://www.securiteam.com/unixfocus/5SP060KEUC.html",
+			"source": "SECTEAM",
+			"id": "5SP060KEUC"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

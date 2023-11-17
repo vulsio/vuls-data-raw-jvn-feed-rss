@@ -1,101 +1,101 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000081.html",
-  "title": "Samba の競合状態を利用した任意のファイルを上書きされる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000081.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSamba は、SMB/CIFS プロトコルを用いて、クライアント間のファイル共有を提供するためのユーティリティです。\r\n\r\nSamba 2.2.7a 以前には、サーバデーモンである smbd が一旦断片化された SMB/CIFS パケットを再構成する際に、バッファオーバーフローを発生する問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は smbd の実行権限 (通常 root 権限) で任意のコードを実行することが可能です。\r\n\r\nまた、Samba 2.2.7a 以前には、レジストリファイルへ書き込む際に競合状態を発生する不備が存在し、ローカルの攻撃者により、重要なシステムファイルを改変される可能性があります。",
-  "identifier": "JVNDB-2003-000081",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0086",
-      "source": "CVE",
-      "id": "CVE-2003-0086"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0086",
-      "source": "NVD",
-      "id": "CVE-2003-0086"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/298233",
-      "source": "CERT-VN",
-      "id": "VU#298233"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/7106",
-      "source": "BID",
-      "id": "7106"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/7107",
-      "source": "BID",
-      "id": "7107"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2003/Mar/1006290.html",
-      "source": "SECTRACK",
-      "id": "1006290"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:samba:samba",
-      "version": "2.2",
-      "vendor": "Samba Project",
-      "product": "Samba"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_4",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ4"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_550",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ550"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQXTR"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "1.2",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:H/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000081.html",
+	"title": "Samba の競合状態を利用した任意のファイルを上書きされる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000081.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSamba は、SMB/CIFS プロトコルを用いて、クライアント間のファイル共有を提供するためのユーティリティです。\r\n\r\nSamba 2.2.7a 以前には、サーバデーモンである smbd が一旦断片化された SMB/CIFS パケットを再構成する際に、バッファオーバーフローを発生する問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は smbd の実行権限 (通常 root 権限) で任意のコードを実行することが可能です。\r\n\r\nまた、Samba 2.2.7a 以前には、レジストリファイルへ書き込む際に競合状態を発生する不備が存在し、ローカルの攻撃者により、重要なシステムファイルを改変される可能性があります。",
+	"identifier": "JVNDB-2003-000081",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0086",
+			"source": "CVE",
+			"id": "CVE-2003-0086"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0086",
+			"source": "NVD",
+			"id": "CVE-2003-0086"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/298233",
+			"source": "CERT-VN",
+			"id": "VU#298233"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/7106",
+			"source": "BID",
+			"id": "7106"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/7107",
+			"source": "BID",
+			"id": "7107"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2003/Mar/1006290.html",
+			"source": "SECTRACK",
+			"id": "1006290"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:samba:samba",
+			"version": "2.2",
+			"vendor": "Samba Project",
+			"product": "Samba"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_4",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ4"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_550",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ550"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQXTR"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "1.2",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:H/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

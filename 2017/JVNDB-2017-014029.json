@@ -1,40 +1,40 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-014029.html",
-  "title": "LAN における DNS 動的登録・更新および、機器の自動検出機能に複数の問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-014029.html",
-  "description": "ルータの DNS 動的登録・更新機能が有効になっており、クライアント PC で自動検出機能が有効になっているネットワークにおいて、当該ネットワークにアクセスできる攻撃者が \"wpad\" というホスト名を持つ機器をネットワークに追加することで、通信内容が取得されたり改ざんされたりする可能性があります。\r\n\r\n家庭やオフィスで使用されている (Google WiFi や Ubiquiti UniFi 等を含む一般的な) ルータでは、多くの場合 DNS の動的登録・更新機能が使用されています。DNS の動的登録・更新機能では DHCP リクエストでクライアント側から送られてくるホスト名をそのまま使用して A レコードが自動的に登録・更新されます。\r\nネットワークにアクセスできる攻撃者は \"wpad\" や \"isatap\" というホスト名を持つ機器を DNS に登録させることで当該機器へのアクセスを誘引し、攻撃を行う可能性があります。\r\n\r\nまた、発見者はいくつかの環境下で mDNS を使用した検証を行い、ルータを介さなくてもネットワーク中のクライアント PC に \"wpad\" や \"isatap\" といったホスト名を知らせ、自動検出機能と組み合わせてアクセスさせることが可能であることを確認しています。WPAD によるプロキシ自動設定については、いわゆる野良 DHCP サーバや、より高位の DNS サーバにおいては<a href=\"https://googleprojectzero.blogspot.fi/2017/12/apacolypse-now-exploiting-windows-10-in_18.html\"target=\"blank\">問題とされてきました</a>が、LAN/WLAN 内部における自動設定機能については言及されていませんでした。\r\n\r\nこの問題は、Arctic Security 社の Ossi Salmi、Mika Seppanen、Marko Laakso、Kasper Kyllonen により発見・検証され、NCSC-FI が調整を行いました。",
-  "identifier": "JVNDB-2017-014029",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU99302544/",
-      "source": "JVN",
-      "id": "JVNVU#99302544"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/598349",
-      "source": "CERT-VN",
-      "id": "VU#598349"
-    },
-    {
-      "text": "https://googleprojectzero.blogspot.fi/2017/12/apacolypse-now-exploiting-windows-10-in_18.html",
-      "source": "関連文書",
-      "id": "aPAColypse now: Exploiting Windows 10 in a Local Network with WPAD/PAC and JScript"
-    },
-    {
-      "text": "https://www.viestintavirasto.fi/en/cybersecurity/vulnerabilities/2018/haavoittuvuus-2018-019.html",
-      "source": "関連文書",
-      "id": "Vulnerabilities in service autodiscovery"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    }
-  ],
-  "date": "2018-09-11T12:28+09:00",
-  "issued": "2018-09-07T16:35+09:00",
-  "modified": "2018-09-11T12:28+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-014029.html",
+	"title": "LAN における DNS 動的登録・更新および、機器の自動検出機能に複数の問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-014029.html",
+	"description": "ルータの DNS 動的登録・更新機能が有効になっており、クライアント PC で自動検出機能が有効になっているネットワークにおいて、当該ネットワークにアクセスできる攻撃者が \"wpad\" というホスト名を持つ機器をネットワークに追加することで、通信内容が取得されたり改ざんされたりする可能性があります。\r\n\r\n家庭やオフィスで使用されている (Google WiFi や Ubiquiti UniFi 等を含む一般的な) ルータでは、多くの場合 DNS の動的登録・更新機能が使用されています。DNS の動的登録・更新機能では DHCP リクエストでクライアント側から送られてくるホスト名をそのまま使用して A レコードが自動的に登録・更新されます。\r\nネットワークにアクセスできる攻撃者は \"wpad\" や \"isatap\" というホスト名を持つ機器を DNS に登録させることで当該機器へのアクセスを誘引し、攻撃を行う可能性があります。\r\n\r\nまた、発見者はいくつかの環境下で mDNS を使用した検証を行い、ルータを介さなくてもネットワーク中のクライアント PC に \"wpad\" や \"isatap\" といったホスト名を知らせ、自動検出機能と組み合わせてアクセスさせることが可能であることを確認しています。WPAD によるプロキシ自動設定については、いわゆる野良 DHCP サーバや、より高位の DNS サーバにおいては<a href=\"https://googleprojectzero.blogspot.fi/2017/12/apacolypse-now-exploiting-windows-10-in_18.html\"target=\"blank\">問題とされてきました</a>が、LAN/WLAN 内部における自動設定機能については言及されていませんでした。\r\n\r\nこの問題は、Arctic Security 社の Ossi Salmi、Mika Seppanen、Marko Laakso、Kasper Kyllonen により発見・検証され、NCSC-FI が調整を行いました。",
+	"identifier": "JVNDB-2017-014029",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU99302544/",
+			"source": "JVN",
+			"id": "JVNVU#99302544"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/598349",
+			"source": "CERT-VN",
+			"id": "VU#598349"
+		},
+		{
+			"text": "https://googleprojectzero.blogspot.fi/2017/12/apacolypse-now-exploiting-windows-10-in_18.html",
+			"source": "関連文書",
+			"id": "aPAColypse now: Exploiting Windows 10 in a Local Network with WPAD/PAC and JScript"
+		},
+		{
+			"text": "https://www.viestintavirasto.fi/en/cybersecurity/vulnerabilities/2018/haavoittuvuus-2018-019.html",
+			"source": "関連文書",
+			"id": "Vulnerabilities in service autodiscovery"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"date": "2018-09-11T12:28+09:00",
+	"issued": "2018-09-07T16:35+09:00",
+	"modified": "2018-09-11T12:28+09:00"
 }

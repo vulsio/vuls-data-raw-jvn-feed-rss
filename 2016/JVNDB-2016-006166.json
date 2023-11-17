@@ -1,146 +1,146 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006166.html",
-  "title": "複数の NETGEAR 製ルータに脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006166.html",
-  "description": "複数の NETGEAR 製ルータには、複数の脆弱性が存在します。\r\n\r\nコマンドインジェクション (CWE-77) - CVE-2016-6277\r\n重要な機能に対する認証欠如の問題 (CWE-306)\r\nクロスサイトリクエストフォージェリ (CWE-352)\r\n\r\nNETGEAR 製の複数のルータにはコマンドインジェクションの脆弱性が存在します。\r\nLAN 内の攻撃者は http://<router_IP>/cgi-bin/;COMMAND にアクセスすることで、認証を要求されることなく、当該製品の管理者権限で任意のコマンドを実行することが可能です。\r\nまた、当該製品にアクセス可能なユーザが、細工されたページにアクセスすることで、上のような URL へアクセスさせられ、結果として当該製品の管理者権限で任意のコマンドを実行させられる可能性があります。\r\n\r\nCWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')\r\nhttps://cwe.mitre.org/data/definitions/77.html\r\n\r\nCWE-306: Missing Authentication for Critical Function\r\nhttps://cwe.mitre.org/data/definitions/306.html\r\n\r\nCWE-352: Cross-Site Request Forgery (CSRF)\r\nhttps://cwe.mitre.org/data/definitions/352.html",
-  "identifier": "JVNDB-2016-006166",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU94858949",
-      "source": "JVN",
-      "id": "JVNVU#94858949"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6277",
-      "source": "CVE",
-      "id": "CVE-2016-6277"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6277",
-      "source": "NVD",
-      "id": "CVE-2016-6277"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/582384",
-      "source": "CERT-VN",
-      "id": "VU#582384"
-    },
-    {
-      "text": "https://www.exploit-db.com/exploits/40889/",
-      "source": "関連文書",
-      "id": "Netgear R7000 - Command Injection"
-    },
-    {
-      "text": "http://www.sj-vs.net/a-temporary-fix-for-cert-vu582384-cwe-77-on-netgear-r7000-and-r6400-routers/",
-      "source": "関連文書",
-      "id": "A temporary fix for CERT VU#582384 vulnerability for various Netgear routers (including R6400, R7000, R8000 and similar)"
-    },
-    {
-      "text": "https://kalypto.org/research/netgear-vulnerability-expanded/",
-      "source": "関連文書",
-      "id": "NetGear Vulnerability Expanded"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/77.html",
-      "id": "CWE-77",
-      "title": "コマンドインジェクション(CWE-77)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
-      "id": "CWE-352",
-      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/306.html",
-      "id": "CWE-306",
-      "title": "重要な機能に対する認証の欠如(CWE-306)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/h:netgear:d6220",
-      "version": "2.2",
-      "vendor": "ネットギア",
-      "product": "D6220"
-    },
-    {
-      "text": "cpe:/h:netgear:d6400",
-      "version": "2.2",
-      "vendor": "ネットギア",
-      "product": "D6400"
-    },
-    {
-      "text": "cpe:/h:netgear:r6250",
-      "version": "2.2",
-      "vendor": "ネットギア",
-      "product": "R6250"
-    },
-    {
-      "text": "cpe:/h:netgear:r6400",
-      "version": "2.2",
-      "vendor": "ネットギア",
-      "product": "R6400"
-    },
-    {
-      "text": "cpe:/h:netgear:r6700",
-      "version": "2.2",
-      "vendor": "ネットギア",
-      "product": "R6700"
-    },
-    {
-      "text": "cpe:/h:netgear:r6900",
-      "version": "2.2",
-      "vendor": "ネットギア",
-      "product": "R6900"
-    },
-    {
-      "text": "cpe:/h:netgear:r7000",
-      "version": "2.2",
-      "vendor": "ネットギア",
-      "product": "R7000"
-    },
-    {
-      "text": "cpe:/h:netgear:r7100lg",
-      "version": "2.2",
-      "vendor": "ネットギア",
-      "product": "R7100LG"
-    },
-    {
-      "text": "cpe:/h:netgear:r7300dst",
-      "version": "2.2",
-      "vendor": "ネットギア",
-      "product": "R7300DST"
-    },
-    {
-      "text": "cpe:/h:netgear:r7900",
-      "version": "2.2",
-      "vendor": "ネットギア",
-      "product": "R7900"
-    },
-    {
-      "text": "cpe:/h:netgear:r8000",
-      "version": "2.2",
-      "vendor": "ネットギア",
-      "product": "R8000"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "9.3",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "8.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2016-12-27T14:16+09:00",
-  "issued": "2016-12-13T18:06+09:00",
-  "modified": "2016-12-27T14:16+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006166.html",
+	"title": "複数の NETGEAR 製ルータに脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-006166.html",
+	"description": "複数の NETGEAR 製ルータには、複数の脆弱性が存在します。\r\n\r\nコマンドインジェクション (CWE-77) - CVE-2016-6277\r\n重要な機能に対する認証欠如の問題 (CWE-306)\r\nクロスサイトリクエストフォージェリ (CWE-352)\r\n\r\nNETGEAR 製の複数のルータにはコマンドインジェクションの脆弱性が存在します。\r\nLAN 内の攻撃者は http://<router_IP>/cgi-bin/;COMMAND にアクセスすることで、認証を要求されることなく、当該製品の管理者権限で任意のコマンドを実行することが可能です。\r\nまた、当該製品にアクセス可能なユーザが、細工されたページにアクセスすることで、上のような URL へアクセスさせられ、結果として当該製品の管理者権限で任意のコマンドを実行させられる可能性があります。\r\n\r\nCWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')\r\nhttps://cwe.mitre.org/data/definitions/77.html\r\n\r\nCWE-306: Missing Authentication for Critical Function\r\nhttps://cwe.mitre.org/data/definitions/306.html\r\n\r\nCWE-352: Cross-Site Request Forgery (CSRF)\r\nhttps://cwe.mitre.org/data/definitions/352.html",
+	"identifier": "JVNDB-2016-006166",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU94858949",
+			"source": "JVN",
+			"id": "JVNVU#94858949"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6277",
+			"source": "CVE",
+			"id": "CVE-2016-6277"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-6277",
+			"source": "NVD",
+			"id": "CVE-2016-6277"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/582384",
+			"source": "CERT-VN",
+			"id": "VU#582384"
+		},
+		{
+			"text": "https://www.exploit-db.com/exploits/40889/",
+			"source": "関連文書",
+			"id": "Netgear R7000 - Command Injection"
+		},
+		{
+			"text": "http://www.sj-vs.net/a-temporary-fix-for-cert-vu582384-cwe-77-on-netgear-r7000-and-r6400-routers/",
+			"source": "関連文書",
+			"id": "A temporary fix for CERT VU#582384 vulnerability for various Netgear routers (including R6400, R7000, R8000 and similar)"
+		},
+		{
+			"text": "https://kalypto.org/research/netgear-vulnerability-expanded/",
+			"source": "関連文書",
+			"id": "NetGear Vulnerability Expanded"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/77.html",
+			"id": "CWE-77",
+			"title": "コマンドインジェクション(CWE-77)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+			"id": "CWE-352",
+			"title": "クロスサイトリクエストフォージェリ(CWE-352)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/306.html",
+			"id": "CWE-306",
+			"title": "重要な機能に対する認証の欠如(CWE-306)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/h:netgear:d6220",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "D6220"
+		},
+		{
+			"text": "cpe:/h:netgear:d6400",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "D6400"
+		},
+		{
+			"text": "cpe:/h:netgear:r6250",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "R6250"
+		},
+		{
+			"text": "cpe:/h:netgear:r6400",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "R6400"
+		},
+		{
+			"text": "cpe:/h:netgear:r6700",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "R6700"
+		},
+		{
+			"text": "cpe:/h:netgear:r6900",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "R6900"
+		},
+		{
+			"text": "cpe:/h:netgear:r7000",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "R7000"
+		},
+		{
+			"text": "cpe:/h:netgear:r7100lg",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "R7100LG"
+		},
+		{
+			"text": "cpe:/h:netgear:r7300dst",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "R7300DST"
+		},
+		{
+			"text": "cpe:/h:netgear:r7900",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "R7900"
+		},
+		{
+			"text": "cpe:/h:netgear:r8000",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "R8000"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "9.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2016-12-27T14:16+09:00",
+	"issued": "2016-12-13T18:06+09:00",
+	"modified": "2016-12-27T14:16+09:00"
 }

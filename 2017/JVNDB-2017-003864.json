@@ -1,91 +1,91 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003864.html",
-  "title": "dotCMS に複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003864.html",
-  "description": "dotCMS の管理画面には、クロスサイトリクエストフォージェリの脆弱性が存在します。また、dotCMS Enterprise Pro の \"Push Publishing\" 機能にはパストラバーサルならびに任意のファイルアップロードの脆弱性が存在します。\r\n\r\nクロスサイトリクエストフォージェリ (CWE-352) - CVE-2017-3187\r\ndotCMS の管理画面には、クロスサイトリクエストフォージェリの脆弱性が存在します。当該製品にログインした状態のユーザが細工されたページにアクセスすることで、ユーザの権限で意図しない操作が行われる可能性があります。\r\n\r\nディレクトリトラバーサル (CWE-22) - CVE-2017-3188\r\n\"Push Publishing\" 機能によりアップロードされた \"Bundle\" ファイル (tar.gz アーカイブファイル) を展開する際、アーカイブに含まれているファイル名のチェックが適切に行われないため、任意のディレクトリにファイルが書き出される可能性があります。これらのアーカイブファイルのアップロードは当該製品の管理画面から行うことができますが、クロスサイトリクエストフォージェリの脆弱性 (CVE-2017-3187) を使用することで、ログイン状態のユーザがアップロード操作をさせられる可能性があります。\r\n\r\n危険なタイプのファイルの無制限アップロード (CWE-434) - CVE-2017-3189\r\n\"Push Publishing\" 機能によりアップロードされた \"Bundle\" ファイル (tar.gz アーカイブファイル) を展開する際、アーカイブに含まれているファイルの種類のチェックが適切に行われません。ディレクトリトラバーサルの脆弱性 (CVE-2017-3188) と組み合わせることで、dotCMS アプリケーションの実行権限で任意のコマンドを実行される可能性があります。",
-  "identifier": "JVNDB-2017-003864",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU96566737/",
-      "source": "JVN",
-      "id": "JVNVU#96566737"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3187",
-      "source": "CVE",
-      "id": "CVE-2017-3187"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3188",
-      "source": "CVE",
-      "id": "CVE-2017-3188"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3189",
-      "source": "CVE",
-      "id": "CVE-2017-3189"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3187",
-      "source": "NVD",
-      "id": "CVE-2017-3187"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3188",
-      "source": "NVD",
-      "id": "CVE-2017-3188"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3189",
-      "source": "NVD",
-      "id": "CVE-2017-3189"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/168699",
-      "source": "CERT-VN",
-      "id": "VU#168699"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
-      "id": "CWE-22",
-      "title": "パス・トラバーサル(CWE-22)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
-      "id": "CWE-352",
-      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/434.html",
-      "id": "CWE-434",
-      "title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:dotcms:dotcms",
-      "version": "2.2",
-      "vendor": "dotCMS",
-      "product": "dotCMS"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "6.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L"
-    }
-  ],
-  "date": "2019-07-05T18:02+09:00",
-  "issued": "2017-06-08T17:00+09:00",
-  "modified": "2019-07-05T18:02+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003864.html",
+	"title": "dotCMS に複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003864.html",
+	"description": "dotCMS の管理画面には、クロスサイトリクエストフォージェリの脆弱性が存在します。また、dotCMS Enterprise Pro の \"Push Publishing\" 機能にはパストラバーサルならびに任意のファイルアップロードの脆弱性が存在します。\r\n\r\nクロスサイトリクエストフォージェリ (CWE-352) - CVE-2017-3187\r\ndotCMS の管理画面には、クロスサイトリクエストフォージェリの脆弱性が存在します。当該製品にログインした状態のユーザが細工されたページにアクセスすることで、ユーザの権限で意図しない操作が行われる可能性があります。\r\n\r\nディレクトリトラバーサル (CWE-22) - CVE-2017-3188\r\n\"Push Publishing\" 機能によりアップロードされた \"Bundle\" ファイル (tar.gz アーカイブファイル) を展開する際、アーカイブに含まれているファイル名のチェックが適切に行われないため、任意のディレクトリにファイルが書き出される可能性があります。これらのアーカイブファイルのアップロードは当該製品の管理画面から行うことができますが、クロスサイトリクエストフォージェリの脆弱性 (CVE-2017-3187) を使用することで、ログイン状態のユーザがアップロード操作をさせられる可能性があります。\r\n\r\n危険なタイプのファイルの無制限アップロード (CWE-434) - CVE-2017-3189\r\n\"Push Publishing\" 機能によりアップロードされた \"Bundle\" ファイル (tar.gz アーカイブファイル) を展開する際、アーカイブに含まれているファイルの種類のチェックが適切に行われません。ディレクトリトラバーサルの脆弱性 (CVE-2017-3188) と組み合わせることで、dotCMS アプリケーションの実行権限で任意のコマンドを実行される可能性があります。",
+	"identifier": "JVNDB-2017-003864",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU96566737/",
+			"source": "JVN",
+			"id": "JVNVU#96566737"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3187",
+			"source": "CVE",
+			"id": "CVE-2017-3187"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3188",
+			"source": "CVE",
+			"id": "CVE-2017-3188"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3189",
+			"source": "CVE",
+			"id": "CVE-2017-3189"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3187",
+			"source": "NVD",
+			"id": "CVE-2017-3187"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3188",
+			"source": "NVD",
+			"id": "CVE-2017-3188"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3189",
+			"source": "NVD",
+			"id": "CVE-2017-3189"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/168699",
+			"source": "CERT-VN",
+			"id": "VU#168699"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+			"id": "CWE-352",
+			"title": "クロスサイトリクエストフォージェリ(CWE-352)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/434.html",
+			"id": "CWE-434",
+			"title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:dotcms:dotcms",
+			"version": "2.2",
+			"vendor": "dotCMS",
+			"product": "dotCMS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "6.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L"
+		}
+	],
+	"date": "2019-07-05T18:02+09:00",
+	"issued": "2017-06-08T17:00+09:00",
+	"modified": "2019-07-05T18:02+09:00"
 }

@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000122.html",
-  "title": "Sun Solaris の MIB 処理機能におけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000122.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSolaris には SNMP コンポーネントである snmpdx (Sun Solstice Enterprise Master Agent)がデフォルトで実装され、デーモンプロセスとして稼動し、UDP (User Datagram Protocol)161 番ポートで SNMP リクエストを待ちうけます。 \r\nこの snmpdx デーモンは、別のポートを開いてエージェントからの SNMP トラップを受信し、設定ファイルで指定されているマネージャに通知します。 \r\n\r\n更に、snmpdx デーモンは /etc/snmp/conf/mibiisa.rsrc ファイルを読み込み、mibiisa プロセスを起動し、関連のある SNMP リクエストを SNMP エージェントである mibiisa デーモンに転送します。 \r\n\r\nSnmpdx デーモンと mibiisa デーモンは、通常、/etc/rc3.d/S76snmpdxスクリプトにおいて root 権限で起動します。この snmpdx にフォーマットストリングの脆弱性が存在し、mibiisa にはバッファオーバフローの問題が存在します。 \r\n\r\nこの問題を利用することにより、リモートの攻撃者もしくはローカルの攻撃者により、root 権限で任意のコードを実行されてしまう可能性が存在します。 \r\n\r\n尚、snmpdx と mibiisa を稼動していないシステムには影響がありません。",
-  "identifier": "JVNDB-2002-000122",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0797",
-      "source": "CVE",
-      "id": "CVE-2002-0797"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0797",
-      "source": "NVD",
-      "id": "CVE-2002-0797"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/4932",
-      "source": "BID",
-      "id": "4932"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/4933",
-      "source": "BID",
-      "id": "4933"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "10.0",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000122.html",
+	"title": "Sun Solaris の MIB 処理機能におけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000122.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSolaris には SNMP コンポーネントである snmpdx (Sun Solstice Enterprise Master Agent)がデフォルトで実装され、デーモンプロセスとして稼動し、UDP (User Datagram Protocol)161 番ポートで SNMP リクエストを待ちうけます。 \r\nこの snmpdx デーモンは、別のポートを開いてエージェントからの SNMP トラップを受信し、設定ファイルで指定されているマネージャに通知します。 \r\n\r\n更に、snmpdx デーモンは /etc/snmp/conf/mibiisa.rsrc ファイルを読み込み、mibiisa プロセスを起動し、関連のある SNMP リクエストを SNMP エージェントである mibiisa デーモンに転送します。 \r\n\r\nSnmpdx デーモンと mibiisa デーモンは、通常、/etc/rc3.d/S76snmpdxスクリプトにおいて root 権限で起動します。この snmpdx にフォーマットストリングの脆弱性が存在し、mibiisa にはバッファオーバフローの問題が存在します。 \r\n\r\nこの問題を利用することにより、リモートの攻撃者もしくはローカルの攻撃者により、root 権限で任意のコードを実行されてしまう可能性が存在します。 \r\n\r\n尚、snmpdx と mibiisa を稼動していないシステムには影響がありません。",
+	"identifier": "JVNDB-2002-000122",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0797",
+			"source": "CVE",
+			"id": "CVE-2002-0797"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0797",
+			"source": "NVD",
+			"id": "CVE-2002-0797"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/4932",
+			"source": "BID",
+			"id": "4932"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/4933",
+			"source": "BID",
+			"id": "4933"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "10.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

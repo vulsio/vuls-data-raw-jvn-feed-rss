@@ -1,745 +1,745 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002319.html",
-  "title": "SSL および TLS プロトコルに脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002319.html",
-  "description": "Secure Sockets Layer (SSL) および Transport Layer Security (TLS) プロトコルには、renegotiation 機能に脆弱性が存在します。\r\n\r\nSecure Sockets Layer (SSL) および Transport Layer Security (TLS) は、通信の暗号化および認証などの機能を提供するプロトコルです。 SSL および TLS プロトコルには、renegotiation 機能に起因する脆弱性が存在します。",
-  "identifier": "JVNDB-2009-002319",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU120541",
-      "source": "JVN",
-      "id": "JVNVU#120541"
-    },
-    {
-      "text": "http://jvn.jp/cert/JVNVU490671",
-      "source": "JVN",
-      "id": "JVNVU#490671"
-    },
-    {
-      "text": "http://jvn.jp/tr/JVNTR-2010-22",
-      "source": "JVNTR",
-      "id": "JVNTR-2010-22"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3555",
-      "source": "CVE",
-      "id": "CVE-2009-3555"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3555",
-      "source": "NVD",
-      "id": "CVE-2009-3555"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/alerts/SA10-222A.html",
-      "source": "CERT-SA",
-      "id": "SA10-222A"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/120541",
-      "source": "CERT-VN",
-      "id": "VU#120541"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA10-222A.html",
-      "source": "CERT-TA",
-      "id": "TA10-222A"
-    },
-    {
-      "text": "http://secunia.com/advisories/37453",
-      "source": "SECUNIA",
-      "id": "SA37453"
-    },
-    {
-      "text": "http://secunia.com/advisories/37566",
-      "source": "SECUNIA",
-      "id": "SA37566"
-    },
-    {
-      "text": "http://secunia.com/advisories/38020",
-      "source": "SECUNIA",
-      "id": "SA38020"
-    },
-    {
-      "text": "http://secunia.com/advisories/38338",
-      "source": "SECUNIA",
-      "id": "SA38338"
-    },
-    {
-      "text": "http://secunia.com/advisories/38728",
-      "source": "SECUNIA",
-      "id": "SA38728"
-    },
-    {
-      "text": "http://secunia.com/advisories/38608",
-      "source": "SECUNIA",
-      "id": "SA38608"
-    },
-    {
-      "text": "http://secunia.com/advisories/39136",
-      "source": "SECUNIA",
-      "id": "SA39136"
-    },
-    {
-      "text": "http://secunia.com/advisories/39243",
-      "source": "SECUNIA",
-      "id": "SA39243"
-    },
-    {
-      "text": "http://secunia.com/advisories/39242",
-      "source": "SECUNIA",
-      "id": "SA39242"
-    },
-    {
-      "text": "http://secunia.com/advisories/39500",
-      "source": "SECUNIA",
-      "id": "SA39500"
-    },
-    {
-      "text": "http://secunia.com/advisories/40747",
-      "source": "SECUNIA",
-      "id": "SA40747"
-    },
-    {
-      "text": "http://secunia.com/advisories/40879",
-      "source": "SECUNIA",
-      "id": "SA40879"
-    },
-    {
-      "text": "http://secunia.com/advisories/44292",
-      "source": "SECUNIA",
-      "id": "SA44292"
-    },
-    {
-      "text": "http://secunia.com/advisories/44293",
-      "source": "SECUNIA",
-      "id": "SA44293"
-    },
-    {
-      "text": "http://secunia.com/advisories/44260",
-      "source": "SECUNIA",
-      "id": "SA44260"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/36935",
-      "source": "BID",
-      "id": "36935"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2009/3313",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2009-3313"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2009/3310",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2009-3310"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2009/3393",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2009-3393"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/0086",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-0086"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/0125",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-0125"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/0212",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-0212"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/0457",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-0457"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/0982",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-0982"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/1280",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-1280"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/1942",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-1942 "
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/2046",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-2046"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/2660",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-2660"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2011/1039",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2011-1039"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/3126",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-3126"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/3086",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-3086"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
-      "id": "CWE-310",
-      "title": "暗号の問題(CWE-310)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:http_server",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache HTTP Server"
-    },
-    {
-      "text": "cpe:/a:bluecoat:proxyclient",
-      "version": "2.2",
-      "vendor": "ブルーコートシステムズ",
-      "product": "Blue Coat ProxyClient"
-    },
-    {
-      "text": "cpe:/a:bluecoat:reporter",
-      "version": "2.2",
-      "vendor": "ブルーコートシステムズ",
-      "product": "Blue Coat Reporter"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_client",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Client"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developers_kit_for_java",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer's Kit for Java(TM)"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_studio",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Studio"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_developers_kit_for_java",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Developer's Kit for Java"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_web_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Web Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:processing_kit_for_xml",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Processing Kit for XML"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_client",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Client"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_operator",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Operator"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_portal_framework",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Portal Framework"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service"
-    },
-    {
-      "text": "cpe:/a:hp:matrix_operating_environment",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード・エンタープライズ",
-      "product": "HPE Matrix Operating Environment"
-    },
-    {
-      "text": "cpe:/a:hp:systems_insight_manager",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP Systems Insight Manager"
-    },
-    {
-      "text": "cpe:/a:hp:systems_insight_manager",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード・エンタープライズ",
-      "product": "HPE Systems Insight Manager"
-    },
-    {
-      "text": "cpe:/a:hp:virtual_connect",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP Virtual Connect"
-    },
-    {
-      "text": "cpe:/a:ibm:db2",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM DB2"
-    },
-    {
-      "text": "cpe:/a:ibm:http_server",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM HTTP Server"
-    },
-    {
-      "text": "cpe:/a:ibm:java_sdk",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM SDK, Java"
-    },
-    {
-      "text": "cpe:/a:ibm:websphere_application_server",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM WebSphere Application Server"
-    },
-    {
-      "text": "cpe:/a:mozilla:firefox",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla Firefox"
-    },
-    {
-      "text": "cpe:/a:mozilla:seamonkey",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla SeaMonkey"
-    },
-    {
-      "text": "cpe:/a:mozilla:thunderbird",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla Thunderbird"
-    },
-    {
-      "text": "cpe:/a:nec:csview",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CSVIEW"
-    },
-    {
-      "text": "cpe:/a:nec:websam_assetsuite",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebSAM AssetSuite"
-    },
-    {
-      "text": "cpe:/a:openoffice:openoffice.org",
-      "version": "2.2",
-      "vendor": "OpenOffice.org Project",
-      "product": "OpenOffice.org"
-    },
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/a:oracle:database_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Database"
-    },
-    {
-      "text": "cpe:/a:oracle:fusion_middleware",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Fusion Middleware"
-    },
-    {
-      "text": "cpe:/a:proftpd:proftpd",
-      "version": "2.2",
-      "vendor": "ProFTPD Project",
-      "product": "ProFTPD"
-    },
-    {
-      "text": "cpe:/a:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Extras"
-    },
-    {
-      "text": "cpe:/a:redhat:enterprise_linux_hpc_node_supplementary",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node Supplementary"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_desktop_supplementary",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Supplementary"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_server_supplementary",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server Supplementary"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_supplementary",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Supplementary"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_supplementary_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Supplementary EUS"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_workstation_supplementary",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation Supplementary"
-    },
-    {
-      "text": "cpe:/a:sun:glassfish_enterprise_server",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun GlassFish Enterprise Server"
-    },
-    {
-      "text": "cpe:/a:sun:java_enterprise_system",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Java Enterprise System"
-    },
-    {
-      "text": "cpe:/a:sun:java_system_application_server",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Java System Application Server"
-    },
-    {
-      "text": "cpe:/a:sun:java_system_web_proxy_server",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Java System Web Proxy Server"
-    },
-    {
-      "text": "cpe:/a:sun:java_system_web_server",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Java System Web Server"
-    },
-    {
-      "text": "cpe:/a:sun:jdk",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "JDK"
-    },
-    {
-      "text": "cpe:/a:sun:jre",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "JRE"
-    },
-    {
-      "text": "cpe:/a:sun:sdk",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "SDK"
-    },
-    {
-      "text": "cpe:/a:sybase:adaptive_server_enterprise",
-      "version": "2.2",
-      "vendor": "サイベース",
-      "product": "SAP Sybase Adaptive Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:vmware:esx",
-      "version": "2.2",
-      "vendor": "VMware",
-      "product": "VMware ESX"
-    },
-    {
-      "text": "cpe:/a:vmware:update_manager",
-      "version": "2.2",
-      "vendor": "VMware",
-      "product": "VMware vSphere Update Manager"
-    },
-    {
-      "text": "cpe:/a:vmware:vcenter",
-      "version": "2.2",
-      "vendor": "VMware",
-      "product": "VMware vCenter"
-    },
-    {
-      "text": "cpe:/a:vmware:virtualcenter",
-      "version": "2.2",
-      "vendor": "VMware",
-      "product": "VMware VirtualCenter"
-    },
-    {
-      "text": "cpe:/h:bluecoat:director",
-      "version": "2.2",
-      "vendor": "ブルーコートシステムズ",
-      "product": "Blue Coat Director"
-    },
-    {
-      "text": "cpe:/h:bluecoat:intelligencecenter",
-      "version": "2.2",
-      "vendor": "ブルーコートシステムズ",
-      "product": "Blue Coat IntelligenceCenter"
-    },
-    {
-      "text": "cpe:/h:bluecoat:packetshaper",
-      "version": "2.2",
-      "vendor": "ブルーコートシステムズ",
-      "product": "Blue Coat PacketShaper"
-    },
-    {
-      "text": "cpe:/h:bluecoat:proxyav",
-      "version": "2.2",
-      "vendor": "ブルーコートシステムズ",
-      "product": "Blue Coat ProxyAV"
-    },
-    {
-      "text": "cpe:/h:bluecoat:proxysg",
-      "version": "2.2",
-      "vendor": "ブルーコートシステムズ",
-      "product": "ProxySG"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    },
-    {
-      "text": "cpe:/o:bluecoat:sgos",
-      "version": "2.2",
-      "vendor": "ブルーコートシステムズ",
-      "product": "SGOS"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_2000",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 2000"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_7",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 7"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2003",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2003"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2008",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2008"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_vista",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Vista"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_xp",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows XP"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:oracle:opensolaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "OpenSolaris"
-    },
-    {
-      "text": "cpe:/o:oracle:solaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Solaris"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    },
-    {
-      "text": "cpe:/o:redhat:rhel_desktop_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Workstation"
-    },
-    {
-      "text": "cpe:/o:sun:opensolaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "OpenSolaris"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Appliance Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_client",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Client"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_fuji",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux FUJI"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
-    }
-  ],
-  "date": "2016-09-08T17:10+09:00",
-  "issued": "2009-12-14T12:32+09:00",
-  "modified": "2016-09-08T17:10+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002319.html",
+	"title": "SSL および TLS プロトコルに脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002319.html",
+	"description": "Secure Sockets Layer (SSL) および Transport Layer Security (TLS) プロトコルには、renegotiation 機能に脆弱性が存在します。\r\n\r\nSecure Sockets Layer (SSL) および Transport Layer Security (TLS) は、通信の暗号化および認証などの機能を提供するプロトコルです。 SSL および TLS プロトコルには、renegotiation 機能に起因する脆弱性が存在します。",
+	"identifier": "JVNDB-2009-002319",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU120541",
+			"source": "JVN",
+			"id": "JVNVU#120541"
+		},
+		{
+			"text": "http://jvn.jp/cert/JVNVU490671",
+			"source": "JVN",
+			"id": "JVNVU#490671"
+		},
+		{
+			"text": "http://jvn.jp/tr/JVNTR-2010-22",
+			"source": "JVNTR",
+			"id": "JVNTR-2010-22"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3555",
+			"source": "CVE",
+			"id": "CVE-2009-3555"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3555",
+			"source": "NVD",
+			"id": "CVE-2009-3555"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/alerts/SA10-222A.html",
+			"source": "CERT-SA",
+			"id": "SA10-222A"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/120541",
+			"source": "CERT-VN",
+			"id": "VU#120541"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA10-222A.html",
+			"source": "CERT-TA",
+			"id": "TA10-222A"
+		},
+		{
+			"text": "http://secunia.com/advisories/37453",
+			"source": "SECUNIA",
+			"id": "SA37453"
+		},
+		{
+			"text": "http://secunia.com/advisories/37566",
+			"source": "SECUNIA",
+			"id": "SA37566"
+		},
+		{
+			"text": "http://secunia.com/advisories/38020",
+			"source": "SECUNIA",
+			"id": "SA38020"
+		},
+		{
+			"text": "http://secunia.com/advisories/38338",
+			"source": "SECUNIA",
+			"id": "SA38338"
+		},
+		{
+			"text": "http://secunia.com/advisories/38728",
+			"source": "SECUNIA",
+			"id": "SA38728"
+		},
+		{
+			"text": "http://secunia.com/advisories/38608",
+			"source": "SECUNIA",
+			"id": "SA38608"
+		},
+		{
+			"text": "http://secunia.com/advisories/39136",
+			"source": "SECUNIA",
+			"id": "SA39136"
+		},
+		{
+			"text": "http://secunia.com/advisories/39243",
+			"source": "SECUNIA",
+			"id": "SA39243"
+		},
+		{
+			"text": "http://secunia.com/advisories/39242",
+			"source": "SECUNIA",
+			"id": "SA39242"
+		},
+		{
+			"text": "http://secunia.com/advisories/39500",
+			"source": "SECUNIA",
+			"id": "SA39500"
+		},
+		{
+			"text": "http://secunia.com/advisories/40747",
+			"source": "SECUNIA",
+			"id": "SA40747"
+		},
+		{
+			"text": "http://secunia.com/advisories/40879",
+			"source": "SECUNIA",
+			"id": "SA40879"
+		},
+		{
+			"text": "http://secunia.com/advisories/44292",
+			"source": "SECUNIA",
+			"id": "SA44292"
+		},
+		{
+			"text": "http://secunia.com/advisories/44293",
+			"source": "SECUNIA",
+			"id": "SA44293"
+		},
+		{
+			"text": "http://secunia.com/advisories/44260",
+			"source": "SECUNIA",
+			"id": "SA44260"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/36935",
+			"source": "BID",
+			"id": "36935"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2009/3313",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2009-3313"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2009/3310",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2009-3310"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2009/3393",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2009-3393"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/0086",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-0086"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/0125",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-0125"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/0212",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-0212"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/0457",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-0457"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/0982",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-0982"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/1280",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-1280"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/1942",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-1942 "
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/2046",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-2046"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/2660",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-2660"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2011/1039",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2011-1039"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/3126",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-3126"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/3086",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-3086"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+			"id": "CWE-310",
+			"title": "暗号の問題(CWE-310)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:http_server",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache HTTP Server"
+		},
+		{
+			"text": "cpe:/a:bluecoat:proxyclient",
+			"version": "2.2",
+			"vendor": "ブルーコートシステムズ",
+			"product": "Blue Coat ProxyClient"
+		},
+		{
+			"text": "cpe:/a:bluecoat:reporter",
+			"version": "2.2",
+			"vendor": "ブルーコートシステムズ",
+			"product": "Blue Coat Reporter"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_client",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Client"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developers_kit_for_java",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer's Kit for Java(TM)"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_studio",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Studio"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_developers_kit_for_java",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Developer's Kit for Java"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_web_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Web Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:processing_kit_for_xml",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Processing Kit for XML"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_client",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Client"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_operator",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Operator"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_portal_framework",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Portal Framework"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service"
+		},
+		{
+			"text": "cpe:/a:hp:matrix_operating_environment",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード・エンタープライズ",
+			"product": "HPE Matrix Operating Environment"
+		},
+		{
+			"text": "cpe:/a:hp:systems_insight_manager",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP Systems Insight Manager"
+		},
+		{
+			"text": "cpe:/a:hp:systems_insight_manager",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード・エンタープライズ",
+			"product": "HPE Systems Insight Manager"
+		},
+		{
+			"text": "cpe:/a:hp:virtual_connect",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP Virtual Connect"
+		},
+		{
+			"text": "cpe:/a:ibm:db2",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM DB2"
+		},
+		{
+			"text": "cpe:/a:ibm:http_server",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM HTTP Server"
+		},
+		{
+			"text": "cpe:/a:ibm:java_sdk",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM SDK, Java"
+		},
+		{
+			"text": "cpe:/a:ibm:websphere_application_server",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM WebSphere Application Server"
+		},
+		{
+			"text": "cpe:/a:mozilla:firefox",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla Firefox"
+		},
+		{
+			"text": "cpe:/a:mozilla:seamonkey",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla SeaMonkey"
+		},
+		{
+			"text": "cpe:/a:mozilla:thunderbird",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla Thunderbird"
+		},
+		{
+			"text": "cpe:/a:nec:csview",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CSVIEW"
+		},
+		{
+			"text": "cpe:/a:nec:websam_assetsuite",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebSAM AssetSuite"
+		},
+		{
+			"text": "cpe:/a:openoffice:openoffice.org",
+			"version": "2.2",
+			"vendor": "OpenOffice.org Project",
+			"product": "OpenOffice.org"
+		},
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/a:oracle:database_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Database"
+		},
+		{
+			"text": "cpe:/a:oracle:fusion_middleware",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Fusion Middleware"
+		},
+		{
+			"text": "cpe:/a:proftpd:proftpd",
+			"version": "2.2",
+			"vendor": "ProFTPD Project",
+			"product": "ProFTPD"
+		},
+		{
+			"text": "cpe:/a:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Extras"
+		},
+		{
+			"text": "cpe:/a:redhat:enterprise_linux_hpc_node_supplementary",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node Supplementary"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_desktop_supplementary",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Supplementary"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_server_supplementary",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server Supplementary"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_supplementary",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Supplementary"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_supplementary_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Supplementary EUS"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_workstation_supplementary",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation Supplementary"
+		},
+		{
+			"text": "cpe:/a:sun:glassfish_enterprise_server",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun GlassFish Enterprise Server"
+		},
+		{
+			"text": "cpe:/a:sun:java_enterprise_system",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Java Enterprise System"
+		},
+		{
+			"text": "cpe:/a:sun:java_system_application_server",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Java System Application Server"
+		},
+		{
+			"text": "cpe:/a:sun:java_system_web_proxy_server",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Java System Web Proxy Server"
+		},
+		{
+			"text": "cpe:/a:sun:java_system_web_server",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Java System Web Server"
+		},
+		{
+			"text": "cpe:/a:sun:jdk",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "JDK"
+		},
+		{
+			"text": "cpe:/a:sun:jre",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "JRE"
+		},
+		{
+			"text": "cpe:/a:sun:sdk",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "SDK"
+		},
+		{
+			"text": "cpe:/a:sybase:adaptive_server_enterprise",
+			"version": "2.2",
+			"vendor": "サイベース",
+			"product": "SAP Sybase Adaptive Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:vmware:esx",
+			"version": "2.2",
+			"vendor": "VMware",
+			"product": "VMware ESX"
+		},
+		{
+			"text": "cpe:/a:vmware:update_manager",
+			"version": "2.2",
+			"vendor": "VMware",
+			"product": "VMware vSphere Update Manager"
+		},
+		{
+			"text": "cpe:/a:vmware:vcenter",
+			"version": "2.2",
+			"vendor": "VMware",
+			"product": "VMware vCenter"
+		},
+		{
+			"text": "cpe:/a:vmware:virtualcenter",
+			"version": "2.2",
+			"vendor": "VMware",
+			"product": "VMware VirtualCenter"
+		},
+		{
+			"text": "cpe:/h:bluecoat:director",
+			"version": "2.2",
+			"vendor": "ブルーコートシステムズ",
+			"product": "Blue Coat Director"
+		},
+		{
+			"text": "cpe:/h:bluecoat:intelligencecenter",
+			"version": "2.2",
+			"vendor": "ブルーコートシステムズ",
+			"product": "Blue Coat IntelligenceCenter"
+		},
+		{
+			"text": "cpe:/h:bluecoat:packetshaper",
+			"version": "2.2",
+			"vendor": "ブルーコートシステムズ",
+			"product": "Blue Coat PacketShaper"
+		},
+		{
+			"text": "cpe:/h:bluecoat:proxyav",
+			"version": "2.2",
+			"vendor": "ブルーコートシステムズ",
+			"product": "Blue Coat ProxyAV"
+		},
+		{
+			"text": "cpe:/h:bluecoat:proxysg",
+			"version": "2.2",
+			"vendor": "ブルーコートシステムズ",
+			"product": "ProxySG"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		},
+		{
+			"text": "cpe:/o:bluecoat:sgos",
+			"version": "2.2",
+			"vendor": "ブルーコートシステムズ",
+			"product": "SGOS"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_2000",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 2000"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_7",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 7"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2003",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2003"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2008",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2008"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_vista",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Vista"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_xp",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows XP"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:oracle:opensolaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "OpenSolaris"
+		},
+		{
+			"text": "cpe:/o:oracle:solaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Solaris"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		},
+		{
+			"text": "cpe:/o:redhat:rhel_desktop_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Workstation"
+		},
+		{
+			"text": "cpe:/o:sun:opensolaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "OpenSolaris"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Appliance Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_client",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Client"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_fuji",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux FUJI"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+		}
+	],
+	"date": "2016-09-08T17:10+09:00",
+	"issued": "2009-12-14T12:32+09:00",
+	"modified": "2016-09-08T17:10+09:00"
 }

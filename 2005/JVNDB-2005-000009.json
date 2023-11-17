@@ -1,64 +1,64 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000009.html",
-  "title": "Exim の host_aton()/dns_build_reverse() 関数におけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000009.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nExim は、より拡張性に富んだ機能を有し、特定のホスト/ネットワーク/送信者からの迷惑メールをブロックする機能などをもつ、メール転送エージェント (MTA) です。また、Exim では SPA (Secure Password Authentication) 認証がサポートされています。\r\n\r\nExim 4.43 以前には、以下のバッファオーバフローを生じる複数の問題が存在します。\r\n\r\n1) host_aton() 関数および dns_build_reverse() 関数において、取り扱う文字列長に対する妥当性の確認が不適切であるため、バッファオーバーフローが生じる問題 (CAN-2005-0021) が存在します。\r\n\r\nこの問題を利用するローカルの攻撃者は、意図的に作成した過度に長いコマンドラインオプションを Exim に引き渡すことにより、結果として Exim の実行権限で任意のコードを実行することが可能です。\r\n\r\n2) SPA (Secure Password Authentication) 認証メカニズムの一部であり、Base64 エンコードされた文字列のデコード処理を行う spa_base64_to_bits() 関数において、取り扱う値の妥当性の確認が不適切であるため、SPA 認証が有効に設定されている場合にバッファオーバーフローが発生する問題 (CAN-2005-0022) が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した SPA 認証情報を送信することにより、Exim の実行権限で任意のコードを実行することが可能です。\r\n\r\n尚、Exim には setuid root ビットが付与されていますが、これらの問題が存在する処理は権限が落とされた状態で動作するため、root 権限でのコード実行とはならないことが発見者より報告されています。\r\n\r\nまた、Red Hat Enterprise Linux 4 に同梱される Exim のデフォルト設定では SPA 認証は無効に設定されているため、明示的に有効にしている場合にのみ CAN-2005-0022 の問題の影響を受けます。",
-  "identifier": "JVNDB-2005-000009",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0021",
-      "source": "CVE",
-      "id": "CVE-2005-0021"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0021",
-      "source": "NVD",
-      "id": "CVE-2005-0021"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/132992",
-      "source": "CERT-VN",
-      "id": "VU#132992"
-    },
-    {
-      "text": "http://secunia.com/advisories/13713/",
-      "source": "SECUNIA",
-      "id": "SA13713"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12268",
-      "source": "BID",
-      "id": "12268"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12188",
-      "source": "BID",
-      "id": "12188"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12185",
-      "source": "BID",
-      "id": "12185"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.2",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000009.html",
+	"title": "Exim の host_aton()/dns_build_reverse() 関数におけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000009.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nExim は、より拡張性に富んだ機能を有し、特定のホスト/ネットワーク/送信者からの迷惑メールをブロックする機能などをもつ、メール転送エージェント (MTA) です。また、Exim では SPA (Secure Password Authentication) 認証がサポートされています。\r\n\r\nExim 4.43 以前には、以下のバッファオーバフローを生じる複数の問題が存在します。\r\n\r\n1) host_aton() 関数および dns_build_reverse() 関数において、取り扱う文字列長に対する妥当性の確認が不適切であるため、バッファオーバーフローが生じる問題 (CAN-2005-0021) が存在します。\r\n\r\nこの問題を利用するローカルの攻撃者は、意図的に作成した過度に長いコマンドラインオプションを Exim に引き渡すことにより、結果として Exim の実行権限で任意のコードを実行することが可能です。\r\n\r\n2) SPA (Secure Password Authentication) 認証メカニズムの一部であり、Base64 エンコードされた文字列のデコード処理を行う spa_base64_to_bits() 関数において、取り扱う値の妥当性の確認が不適切であるため、SPA 認証が有効に設定されている場合にバッファオーバーフローが発生する問題 (CAN-2005-0022) が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した SPA 認証情報を送信することにより、Exim の実行権限で任意のコードを実行することが可能です。\r\n\r\n尚、Exim には setuid root ビットが付与されていますが、これらの問題が存在する処理は権限が落とされた状態で動作するため、root 権限でのコード実行とはならないことが発見者より報告されています。\r\n\r\nまた、Red Hat Enterprise Linux 4 に同梱される Exim のデフォルト設定では SPA 認証は無効に設定されているため、明示的に有効にしている場合にのみ CAN-2005-0022 の問題の影響を受けます。",
+	"identifier": "JVNDB-2005-000009",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0021",
+			"source": "CVE",
+			"id": "CVE-2005-0021"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0021",
+			"source": "NVD",
+			"id": "CVE-2005-0021"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/132992",
+			"source": "CERT-VN",
+			"id": "VU#132992"
+		},
+		{
+			"text": "http://secunia.com/advisories/13713/",
+			"source": "SECUNIA",
+			"id": "SA13713"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12268",
+			"source": "BID",
+			"id": "12268"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12188",
+			"source": "BID",
+			"id": "12188"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12185",
+			"source": "BID",
+			"id": "12185"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

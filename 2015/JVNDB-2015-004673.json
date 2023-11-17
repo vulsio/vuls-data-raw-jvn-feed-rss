@@ -1,133 +1,133 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004673.html",
-  "title": "UPnP を実装した複数のルータ製品にセキュリティ機能の実装が不十分な問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004673.html",
-  "description": "UPnP を実装した複数の家庭用ルータ製品において、UPnP Control URL で使われる UUID のランダム化や他のセキュリティ対策が十分に実施されていない問題があります。\r\n\r\nUPnP は、ネットワーク上の機器の自動検出や機器間の通信を規定したプロトコルです。設計当初 UPnP は、WAN 側からのアクセスがなく信頼できるユーザのみが使用しているプライベートネットワーク内での使用を想定していたため、デフォルトでは認証機能を規定していません。その後 UPnP のセキュリティ機能が規定されましたが、UPnP Forum のドキュメント Device Protection Service では、使用時の手間が増えること、PKI (公開鍵基盤) のような高度な機能の実装が進まないことから、「この機能の普及は非常に限定的であった」と記載されています。\r\n\r\nUPnP\r\nhttp://upnp.org/index.php/sdcps-and-certification/standards/device-architecture-documents/\r\n\r\nWAN 側からのアクセスがない (UPnP Forum FAQ)\r\nhttp://upnp.org/sdcps-and-certification/documents/technical_faq/#9.0\r\n\r\nDevice Protection Service\r\nhttp://upnp.org/specs/gw/UPnP-gw-DeviceProtection-v1-Service.pdf\r\n\r\n\r\n本件の報告者によれば、セキュリティ機能の実装が進まない状況では、市場の多くの製品の UPnP Control URL を容易に推測できる可能性があります。UPnP Control URL が推測できれば、UPnP 機能を使用して例えば家庭用ルータの設定を変更し、ポートを開放したり、機能を有効化したりすることが可能になります。異なる開発者の製品で同じような UPnP Control URL が使われていることが多いため、推測は容易になると考えられます。\r\n\r\n一部の開発者からは、UUID をランダム化して UPnP Control URL の推測を困難にするような実装を行っているとの報告を受けていますが、多くの開発者はこのような対策を実施していません。詳しくは本アドバイザリの【ベンダ情報】のセクションや、CERT/CC Vulnerability Note VU#361684 の Vendor Information に掲載されている情報を参照してください。UPnP のセキュリティ機能がどの程度普及しているのか、現時点では不明です。\r\n\r\nVendor Information\r\nhttps://www.kb.cert.org/vuls/id/361684#vendors\r\n\r\n\r\n外部からプライベートネットワークへのアクセスを得る攻撃手法の一つとして、「DNS リバインディング」が知られています。過去には、Flash を使用して UPnP の制御を奪取する手法が報告されています。\r\n\r\nDNS リバインディング\r\nhttps://crypto.stanford.edu/dns/\r\n\r\nUPnP の制御を奪取する手法\r\nhttp://www.gnucitizen.org/blog/hacking-the-interwebs\r\n\r\n\r\n本件の報告者は、詳しい情報を http://www.filet-o-firewall.com で公開しています。",
-  "identifier": "JVNDB-2015-004673",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU99671861/index.html",
-      "source": "JVN",
-      "id": "JVNVU#99671861"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/361684",
-      "source": "CERT-VN",
-      "id": "VU#361684"
-    },
-    {
-      "text": "http://upnp.org/index.php/sdcps-and-certification/standards/device-architecture-documents/",
-      "source": "関連文書",
-      "id": "UPnP Forum - Device Architecture Documents"
-    },
-    {
-      "text": "http://www.filet-o-firewall.com/",
-      "source": "関連文書",
-      "id": "Awesome Inc. - Filet-o-Firewall"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_1000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/1000"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_107e",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/107e"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_1100",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/1100"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_1200",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/1200"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_1210",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/1210"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_1500",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/1500"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_55i",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/55i"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_57i",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/57i"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_58i",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/58i"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_810",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/810"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_fw120",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/FW120"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_n500",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/N500"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_sr100",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/SR100"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_v700",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/V700"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2015-10-28T11:40+09:00",
-  "issued": "2015-09-11T16:36+09:00",
-  "modified": "2015-10-28T11:40+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004673.html",
+	"title": "UPnP を実装した複数のルータ製品にセキュリティ機能の実装が不十分な問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004673.html",
+	"description": "UPnP を実装した複数の家庭用ルータ製品において、UPnP Control URL で使われる UUID のランダム化や他のセキュリティ対策が十分に実施されていない問題があります。\r\n\r\nUPnP は、ネットワーク上の機器の自動検出や機器間の通信を規定したプロトコルです。設計当初 UPnP は、WAN 側からのアクセスがなく信頼できるユーザのみが使用しているプライベートネットワーク内での使用を想定していたため、デフォルトでは認証機能を規定していません。その後 UPnP のセキュリティ機能が規定されましたが、UPnP Forum のドキュメント Device Protection Service では、使用時の手間が増えること、PKI (公開鍵基盤) のような高度な機能の実装が進まないことから、「この機能の普及は非常に限定的であった」と記載されています。\r\n\r\nUPnP\r\nhttp://upnp.org/index.php/sdcps-and-certification/standards/device-architecture-documents/\r\n\r\nWAN 側からのアクセスがない (UPnP Forum FAQ)\r\nhttp://upnp.org/sdcps-and-certification/documents/technical_faq/#9.0\r\n\r\nDevice Protection Service\r\nhttp://upnp.org/specs/gw/UPnP-gw-DeviceProtection-v1-Service.pdf\r\n\r\n\r\n本件の報告者によれば、セキュリティ機能の実装が進まない状況では、市場の多くの製品の UPnP Control URL を容易に推測できる可能性があります。UPnP Control URL が推測できれば、UPnP 機能を使用して例えば家庭用ルータの設定を変更し、ポートを開放したり、機能を有効化したりすることが可能になります。異なる開発者の製品で同じような UPnP Control URL が使われていることが多いため、推測は容易になると考えられます。\r\n\r\n一部の開発者からは、UUID をランダム化して UPnP Control URL の推測を困難にするような実装を行っているとの報告を受けていますが、多くの開発者はこのような対策を実施していません。詳しくは本アドバイザリの【ベンダ情報】のセクションや、CERT/CC Vulnerability Note VU#361684 の Vendor Information に掲載されている情報を参照してください。UPnP のセキュリティ機能がどの程度普及しているのか、現時点では不明です。\r\n\r\nVendor Information\r\nhttps://www.kb.cert.org/vuls/id/361684#vendors\r\n\r\n\r\n外部からプライベートネットワークへのアクセスを得る攻撃手法の一つとして、「DNS リバインディング」が知られています。過去には、Flash を使用して UPnP の制御を奪取する手法が報告されています。\r\n\r\nDNS リバインディング\r\nhttps://crypto.stanford.edu/dns/\r\n\r\nUPnP の制御を奪取する手法\r\nhttp://www.gnucitizen.org/blog/hacking-the-interwebs\r\n\r\n\r\n本件の報告者は、詳しい情報を http://www.filet-o-firewall.com で公開しています。",
+	"identifier": "JVNDB-2015-004673",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU99671861/index.html",
+			"source": "JVN",
+			"id": "JVNVU#99671861"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/361684",
+			"source": "CERT-VN",
+			"id": "VU#361684"
+		},
+		{
+			"text": "http://upnp.org/index.php/sdcps-and-certification/standards/device-architecture-documents/",
+			"source": "関連文書",
+			"id": "UPnP Forum - Device Architecture Documents"
+		},
+		{
+			"text": "http://www.filet-o-firewall.com/",
+			"source": "関連文書",
+			"id": "Awesome Inc. - Filet-o-Firewall"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_1000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/1000"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_107e",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/107e"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_1100",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/1100"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_1200",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/1200"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_1210",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/1210"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_1500",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/1500"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_55i",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/55i"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_57i",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/57i"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_58i",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/58i"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_810",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/810"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_fw120",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/FW120"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_n500",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/N500"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_sr100",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/SR100"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_v700",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/V700"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2015-10-28T11:40+09:00",
+	"issued": "2015-09-11T16:36+09:00",
+	"modified": "2015-10-28T11:40+09:00"
 }

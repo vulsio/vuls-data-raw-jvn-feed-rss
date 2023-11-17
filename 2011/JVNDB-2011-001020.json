@@ -1,79 +1,79 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001020.html",
-  "title": "Linux kernel の blk_rq_map_user_iov 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001020.html",
-  "description": "Linux kernel の block/blk-map.c 内にある blk_rq_map_user_iov 関数には、zero-length I/O リクエストに関する処理に不備があるため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
-  "identifier": "JVNDB-2011-001020",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4163",
-      "source": "CVE",
-      "id": "CVE-2010-4163"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4163",
-      "source": "NVD",
-      "id": "CVE-2010-4163"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/44793",
-      "source": "BID",
-      "id": "44793"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-      "id": "CWE-399",
-      "title": "リソース管理の問題(CWE-399)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.7",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2011-03-29T14:24+09:00",
-  "issued": "2011-02-01T13:56+09:00",
-  "modified": "2011-03-29T14:24+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001020.html",
+	"title": "Linux kernel の blk_rq_map_user_iov 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001020.html",
+	"description": "Linux kernel の block/blk-map.c 内にある blk_rq_map_user_iov 関数には、zero-length I/O リクエストに関する処理に不備があるため、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+	"identifier": "JVNDB-2011-001020",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4163",
+			"source": "CVE",
+			"id": "CVE-2010-4163"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4163",
+			"source": "NVD",
+			"id": "CVE-2010-4163"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/44793",
+			"source": "BID",
+			"id": "44793"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+			"id": "CWE-399",
+			"title": "リソース管理の問題(CWE-399)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.7",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2011-03-29T14:24+09:00",
+	"issued": "2011-02-01T13:56+09:00",
+	"modified": "2011-03-29T14:24+09:00"
 }

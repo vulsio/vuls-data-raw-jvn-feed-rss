@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003932.html",
-  "title": "CalAmp LMU-3030 デバイスの SMS インターフェースに認証設定が行われていない脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003932.html",
-  "description": "CalAmp LMU-3030 デバイスを含む構成で販売されているシステムに、SMS インターフェースにパスワードを設定していない例が複数発見されました。発見された事例についてはすでに、パスワードの設定や SMS インターフェースの無効化といった対応が行われています。\r\n\r\nCalAmp LMU-3030 デバイスを使用する場合には、SMS インターフェースにパスワードを設定するか、SMS インターフェースを無効にしておく必要があります。\r\n\r\n重要な機能に対する認証の欠如 (CWE-306) - CVE-2017-3217\r\nCalAmp LMU 3030 シリーズは、車両管理のためのテレマティクス情報を提供する OBD-II デバイスの一つです。このデバイスには CDMA バージョン、GSM バージョンどちらにも SMS (テキストメッセージ) インターフェースが設けられており、管理用のコマンドを送信することによって IP アドレス、ファイアーウォールのルール、パスワードなどを設定可能です。\r\nSMS インターフェースにパスワードを設定していない場合、IMSI Catcher などによりデバイスの電話番号を取得した遠隔の第三者から攻撃される可能性があります。",
-  "identifier": "JVNDB-2017-003932",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU91545522/index.html",
-      "source": "JVN",
-      "id": "JVNVU#91545522"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3217",
-      "source": "CVE",
-      "id": "CVE-2017-3217"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3217",
-      "source": "NVD",
-      "id": "CVE-2017-3217"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/251927",
-      "source": "CERT-VN",
-      "id": "VU#251927"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/306.html",
-      "id": "CWE-306",
-      "title": "重要な機能に対する認証の欠如(CWE-306)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:calamp_lmu-3030_series",
-      "version": "2.2",
-      "vendor": "CalAmp",
-      "product": "LMU-3030 シリーズ"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "10.0",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "9.8",
-      "type": "Base",
-      "severity": "Critical",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2019-07-24T16:22+09:00",
-  "issued": "2017-06-12T14:11+09:00",
-  "modified": "2019-07-24T16:22+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003932.html",
+	"title": "CalAmp LMU-3030 デバイスの SMS インターフェースに認証設定が行われていない脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003932.html",
+	"description": "CalAmp LMU-3030 デバイスを含む構成で販売されているシステムに、SMS インターフェースにパスワードを設定していない例が複数発見されました。発見された事例についてはすでに、パスワードの設定や SMS インターフェースの無効化といった対応が行われています。\r\n\r\nCalAmp LMU-3030 デバイスを使用する場合には、SMS インターフェースにパスワードを設定するか、SMS インターフェースを無効にしておく必要があります。\r\n\r\n重要な機能に対する認証の欠如 (CWE-306) - CVE-2017-3217\r\nCalAmp LMU 3030 シリーズは、車両管理のためのテレマティクス情報を提供する OBD-II デバイスの一つです。このデバイスには CDMA バージョン、GSM バージョンどちらにも SMS (テキストメッセージ) インターフェースが設けられており、管理用のコマンドを送信することによって IP アドレス、ファイアーウォールのルール、パスワードなどを設定可能です。\r\nSMS インターフェースにパスワードを設定していない場合、IMSI Catcher などによりデバイスの電話番号を取得した遠隔の第三者から攻撃される可能性があります。",
+	"identifier": "JVNDB-2017-003932",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU91545522/index.html",
+			"source": "JVN",
+			"id": "JVNVU#91545522"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3217",
+			"source": "CVE",
+			"id": "CVE-2017-3217"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3217",
+			"source": "NVD",
+			"id": "CVE-2017-3217"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/251927",
+			"source": "CERT-VN",
+			"id": "VU#251927"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/306.html",
+			"id": "CWE-306",
+			"title": "重要な機能に対する認証の欠如(CWE-306)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:calamp_lmu-3030_series",
+			"version": "2.2",
+			"vendor": "CalAmp",
+			"product": "LMU-3030 シリーズ"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "10.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2019-07-24T16:22+09:00",
+	"issued": "2017-06-12T14:11+09:00",
+	"modified": "2019-07-24T16:22+09:00"
 }

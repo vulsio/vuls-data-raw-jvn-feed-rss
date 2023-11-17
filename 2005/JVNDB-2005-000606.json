@@ -1,64 +1,64 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000606.html",
-  "title": "Linux Kernel の fs/namei.c におけるメモリリークが発生する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000606.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n1) mm/mempolicy.c の sys_set_mempolicy() 関数では、第一引数に指定される policy フィールドにおいて負数に対するチェックが不適切であるため、カーネルパニックを生じる問題が存在します。(CVE-2005-3053) \r\n\r\nローカルの攻撃者に悪用された場合、システムがサービス不能状態に陥る可能性があります。 \r\n\r\n2) x86_64 システムにおける mm/ioremap.c には、ioremap でマップしたメモリ領域を解放する iounmap において存在しないアドレスが指定された場合の処理が不適切である問題が存在します。(CVE-2005-3108) \r\n\r\nローカルの攻撃者に悪用された場合、システムがサービス不能状態に陥る、あるいは不正にメモリ中の情報を取得される可能性があります。 \r\n\r\n3) security/keys/request_key_auth.c の request_key_auth_destroy() 関数において、適切にメモリの解放が行われていないため、メモリリークが発生する問題が存在します。(CVE-2005-3119) \r\n\r\nローカルの攻撃者に意図的に多数の認証トークンキーが取り扱われた場合、システムがサービス不能状態に陥る可能性があります。 \r\n\r\n4) fs/namei.c には、メモリの解放を行う際に、本来 __putname() 関数を使用するべき箇所で putname() 関数を使用しているため、CONFIG_AUDITSYSCALL オプションを有効にしている場合にメモリリークが発生する問題が存在します。(CVE-2005-3181) \r\n\r\nローカルの攻撃者に悪用された場合、システムがサービス不能状態に陥る可能性があります。",
-  "identifier": "JVNDB-2005-000606",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3181",
-      "source": "CVE",
-      "id": "CVE-2005-3181"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3181",
-      "source": "NVD",
-      "id": "CVE-2005-3181"
-    },
-    {
-      "text": "http://secunia.com/advisories/17114/",
-      "source": "SECUNIA",
-      "id": "SA17114"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15076",
-      "source": "BID",
-      "id": "15076"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15049",
-      "source": "BID",
-      "id": "15049"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/2039",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-2039"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-      "id": "CWE-399",
-      "title": "リソース管理の問題(CWE-399)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.1",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000606.html",
+	"title": "Linux Kernel の fs/namei.c におけるメモリリークが発生する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000606.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n1) mm/mempolicy.c の sys_set_mempolicy() 関数では、第一引数に指定される policy フィールドにおいて負数に対するチェックが不適切であるため、カーネルパニックを生じる問題が存在します。(CVE-2005-3053) \r\n\r\nローカルの攻撃者に悪用された場合、システムがサービス不能状態に陥る可能性があります。 \r\n\r\n2) x86_64 システムにおける mm/ioremap.c には、ioremap でマップしたメモリ領域を解放する iounmap において存在しないアドレスが指定された場合の処理が不適切である問題が存在します。(CVE-2005-3108) \r\n\r\nローカルの攻撃者に悪用された場合、システムがサービス不能状態に陥る、あるいは不正にメモリ中の情報を取得される可能性があります。 \r\n\r\n3) security/keys/request_key_auth.c の request_key_auth_destroy() 関数において、適切にメモリの解放が行われていないため、メモリリークが発生する問題が存在します。(CVE-2005-3119) \r\n\r\nローカルの攻撃者に意図的に多数の認証トークンキーが取り扱われた場合、システムがサービス不能状態に陥る可能性があります。 \r\n\r\n4) fs/namei.c には、メモリの解放を行う際に、本来 __putname() 関数を使用するべき箇所で putname() 関数を使用しているため、CONFIG_AUDITSYSCALL オプションを有効にしている場合にメモリリークが発生する問題が存在します。(CVE-2005-3181) \r\n\r\nローカルの攻撃者に悪用された場合、システムがサービス不能状態に陥る可能性があります。",
+	"identifier": "JVNDB-2005-000606",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3181",
+			"source": "CVE",
+			"id": "CVE-2005-3181"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3181",
+			"source": "NVD",
+			"id": "CVE-2005-3181"
+		},
+		{
+			"text": "http://secunia.com/advisories/17114/",
+			"source": "SECUNIA",
+			"id": "SA17114"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15076",
+			"source": "BID",
+			"id": "15076"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15049",
+			"source": "BID",
+			"id": "15049"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/2039",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-2039"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+			"id": "CWE-399",
+			"title": "リソース管理の問題(CWE-399)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.1",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

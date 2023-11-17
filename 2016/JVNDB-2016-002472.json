@@ -1,396 +1,396 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002472.html",
-  "title": "OpenSSL の crypto/evp/encode.c の EVP_EncodeUpdate 関数における整数オーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002472.html",
-  "description": "OpenSSL の crypto/evp/encode.c の EVP_EncodeUpdate 関数には、整数オーバーフローの脆弱性が存在します。",
-  "identifier": "JVNDB-2016-002472",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU93163809/",
-      "source": "JVN",
-      "id": "JVNVU#93163809"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU94844193/index.html",
-      "source": "JVN",
-      "id": "JVNVU#94844193"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2105",
-      "source": "CVE",
-      "id": "CVE-2016-2105"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2105",
-      "source": "NVD",
-      "id": "CVE-2016-2105"
-    },
-    {
-      "text": "http://www.aratana.jp/security/detail.php?id=16",
-      "source": "関連文書",
-      "id": "株式会社アラタナ の告知ページ (OpenSSL脆弱性への弊社対応状況について)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
-      "id": "CWE-189",
-      "title": "数値処理の問題(CWE-189)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Light Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Professional Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Standard Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_web_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Web Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Smart Edition"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Light"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Architect"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform"
-    },
-    {
-      "text": "cpe:/a:nec:capssuite",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CapsSuite"
-    },
-    {
-      "text": "cpe:/a:nec:enterpriseidentitymanager",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "EnterpriseIdentityManager"
-    },
-    {
-      "text": "cpe:/a:nec:enterprise_directoryserver",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "EnterpriseDirectoryServer"
-    },
-    {
-      "text": "cpe:/a:nec:esmpro_serveragent",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerAgent"
-    },
-    {
-      "text": "cpe:/a:nec:esmpro_serveragentservice",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerAgentService"
-    },
-    {
-      "text": "cpe:/a:nec:secureware_pki_application_development_kit",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "SecureWare/PKIアプリケーション開発キット"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_enterprise_service_bus",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Enterprise Service Bus"
-    },
-    {
-      "text": "cpe:/a:nec:websam",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebSAM"
-    },
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/a:oracle:exalogic_infrastructure",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Exalogic Infrastructure"
-    },
-    {
-      "text": "cpe:/a:oracle:fusion_middleware",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Fusion Middleware"
-    },
-    {
-      "text": "cpe:/a:oracle:mysql",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "MySQL"
-    },
-    {
-      "text": "cpe:/a:oracle:peoplesoft_enterprise_peopletools",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "PeopleSoft Enterprise PeopleTools"
-    },
-    {
-      "text": "cpe:/a:oracle:secure_global_desktop",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Secure Global Desktop"
-    },
-    {
-      "text": "cpe:/a:oracle:vm_virtualbox",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle VM VirtualBox"
-    },
-    {
-      "text": "cpe:/h:nec:express5800",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "Express5800"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_1200",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/1200"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_1210",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/1210"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_3000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/3000"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_3500",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/3500"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_5000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/5000"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_810",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/810"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_fw120",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/FW120"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_n500",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/N500"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_sr100",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/SR100"
-    },
-    {
-      "text": "cpe:/h:nec:univerge",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "UNIVERGE"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:opensuse_project:leap",
-      "version": "2.2",
-      "vendor": "openSUSE project",
-      "product": "openSUSE Leap"
-    },
-    {
-      "text": "cpe:/o:opensuse_project:opensuse",
-      "version": "2.2",
-      "vendor": "openSUSE project",
-      "product": "openSUSE"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server_aus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server AUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-    }
-  ],
-  "date": "2017-10-03T13:37+09:00",
-  "issued": "2016-05-10T18:16+09:00",
-  "modified": "2017-10-03T13:37+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002472.html",
+	"title": "OpenSSL の crypto/evp/encode.c の EVP_EncodeUpdate 関数における整数オーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002472.html",
+	"description": "OpenSSL の crypto/evp/encode.c の EVP_EncodeUpdate 関数には、整数オーバーフローの脆弱性が存在します。",
+	"identifier": "JVNDB-2016-002472",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU93163809/",
+			"source": "JVN",
+			"id": "JVNVU#93163809"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU94844193/index.html",
+			"source": "JVN",
+			"id": "JVNVU#94844193"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2105",
+			"source": "CVE",
+			"id": "CVE-2016-2105"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2105",
+			"source": "NVD",
+			"id": "CVE-2016-2105"
+		},
+		{
+			"text": "http://www.aratana.jp/security/detail.php?id=16",
+			"source": "関連文書",
+			"id": "株式会社アラタナ の告知ページ (OpenSSL脆弱性への弊社対応状況について)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+			"id": "CWE-189",
+			"title": "数値処理の問題(CWE-189)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Light Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Professional Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Standard Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_web_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Web Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Smart Edition"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_light",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Light"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_architect",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Architect"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform"
+		},
+		{
+			"text": "cpe:/a:nec:capssuite",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CapsSuite"
+		},
+		{
+			"text": "cpe:/a:nec:enterpriseidentitymanager",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "EnterpriseIdentityManager"
+		},
+		{
+			"text": "cpe:/a:nec:enterprise_directoryserver",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "EnterpriseDirectoryServer"
+		},
+		{
+			"text": "cpe:/a:nec:esmpro_serveragent",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerAgent"
+		},
+		{
+			"text": "cpe:/a:nec:esmpro_serveragentservice",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerAgentService"
+		},
+		{
+			"text": "cpe:/a:nec:secureware_pki_application_development_kit",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "SecureWare/PKIアプリケーション開発キット"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_enterprise_service_bus",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Enterprise Service Bus"
+		},
+		{
+			"text": "cpe:/a:nec:websam",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebSAM"
+		},
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/a:oracle:exalogic_infrastructure",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Exalogic Infrastructure"
+		},
+		{
+			"text": "cpe:/a:oracle:fusion_middleware",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Fusion Middleware"
+		},
+		{
+			"text": "cpe:/a:oracle:mysql",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "MySQL"
+		},
+		{
+			"text": "cpe:/a:oracle:peoplesoft_enterprise_peopletools",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "PeopleSoft Enterprise PeopleTools"
+		},
+		{
+			"text": "cpe:/a:oracle:secure_global_desktop",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Secure Global Desktop"
+		},
+		{
+			"text": "cpe:/a:oracle:vm_virtualbox",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle VM VirtualBox"
+		},
+		{
+			"text": "cpe:/h:nec:express5800",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "Express5800"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_1200",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/1200"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_1210",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/1210"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_3000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/3000"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_3500",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/3500"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_5000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/5000"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_810",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/810"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_fw120",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/FW120"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_n500",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/N500"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_sr100",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/SR100"
+		},
+		{
+			"text": "cpe:/h:nec:univerge",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "UNIVERGE"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:opensuse_project:leap",
+			"version": "2.2",
+			"vendor": "openSUSE project",
+			"product": "openSUSE Leap"
+		},
+		{
+			"text": "cpe:/o:opensuse_project:opensuse",
+			"version": "2.2",
+			"vendor": "openSUSE project",
+			"product": "openSUSE"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server_aus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server AUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2017-10-03T13:37+09:00",
+	"issued": "2016-05-10T18:16+09:00",
+	"modified": "2017-10-03T13:37+09:00"
 }

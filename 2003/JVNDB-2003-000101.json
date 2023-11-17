@@ -1,192 +1,192 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000101.html",
-  "title": "sendmail の prescan() 関数におけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000101.html",
-  "description": "sendmail の prescan() 関数において不備が存在し、電子メールアドレスの文字列長のチェックを適切に行わないために、バッファオーバーフローが発生する脆弱性が存在します。",
-  "identifier": "JVNDB-2003-000101",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNCA-2003-12",
-      "source": "JVN",
-      "id": "JVNCA-2003-12"
-    },
-    {
-      "text": "http://jvn.jp/cert/JVNCA-2003-07/index.html",
-      "source": "JVN",
-      "id": "JVNCA-2003-07"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0161",
-      "source": "CVE",
-      "id": "CVE-2003-0161"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0161",
-      "source": "NVD",
-      "id": "CVE-2003-0161"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2003/at030004.txt",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2003-0004"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2003/wr031301.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2003-1301"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2003/wr031401.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2003-1401"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2003/wr031501.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2003-1501"
-    },
-    {
-      "text": "http://www.cyberpolice.go.jp/important/20030330_153031.html",
-      "source": "AT-POLICE",
-      "id": "メールサーバソフト（sendmail）の脆弱性(CA-2003-12)について"
-    },
-    {
-      "text": "http://www.cyberpolice.go.jp/important/20030506_122656.html",
-      "source": "AT-POLICE",
-      "id": "メールサーバソフト（sendmail）の脆弱性(CA-2003-12)の調査結果について "
-    },
-    {
-      "text": "http://www.cert.org/advisories/CA-2003-12.html",
-      "source": "CERT-A",
-      "id": "CA-2003-12"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/897604",
-      "source": "CERT-VN",
-      "id": "VU#897604"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/ciadr/20030331sendmail.html",
-      "source": "IPA",
-      "id": "Sendmail における新たなセキュリティ脆弱性について"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/n-067.shtml",
-      "source": "CIAC",
-      "id": "N-067"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/7230",
-      "source": "BID",
-      "id": "7230"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/11653",
-      "source": "ISS",
-      "id": "11653"
-    },
-    {
-      "text": "http://www.isskk.co.jp/support/techinfo/general/sendmail033103_xforce.html",
-      "source": "ISSKK",
-      "id": "Sendmail のEmail 処理における脆弱点について"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:sendmail:sendmail",
-      "version": "2.2",
-      "vendor": "Sendmail Consortium",
-      "product": "sendmail"
-    },
-    {
-      "text": "cpe:/a:sendmail:sendmail_advanced_message_server",
-      "version": "2.2",
-      "vendor": "センドメール社",
-      "product": "Sendmail Advanced Message Server"
-    },
-    {
-      "text": "cpe:/a:sendmail:sendmail_switch",
-      "version": "2.2",
-      "vendor": "センドメール社",
-      "product": "Sendmail Switch"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_4",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ4"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_550",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ550"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQXTR"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:hp:vvos",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX (VVOS)"
-    },
-    {
-      "text": "cpe:/o:ibm:aix",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM AIX"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_advanced_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Advanced Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_workstation",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "10.0",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000101.html",
+	"title": "sendmail の prescan() 関数におけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000101.html",
+	"description": "sendmail の prescan() 関数において不備が存在し、電子メールアドレスの文字列長のチェックを適切に行わないために、バッファオーバーフローが発生する脆弱性が存在します。",
+	"identifier": "JVNDB-2003-000101",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNCA-2003-12",
+			"source": "JVN",
+			"id": "JVNCA-2003-12"
+		},
+		{
+			"text": "http://jvn.jp/cert/JVNCA-2003-07/index.html",
+			"source": "JVN",
+			"id": "JVNCA-2003-07"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0161",
+			"source": "CVE",
+			"id": "CVE-2003-0161"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0161",
+			"source": "NVD",
+			"id": "CVE-2003-0161"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2003/at030004.txt",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2003-0004"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2003/wr031301.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2003-1301"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2003/wr031401.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2003-1401"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2003/wr031501.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2003-1501"
+		},
+		{
+			"text": "http://www.cyberpolice.go.jp/important/20030330_153031.html",
+			"source": "AT-POLICE",
+			"id": "メールサーバソフト（sendmail）の脆弱性(CA-2003-12)について"
+		},
+		{
+			"text": "http://www.cyberpolice.go.jp/important/20030506_122656.html",
+			"source": "AT-POLICE",
+			"id": "メールサーバソフト（sendmail）の脆弱性(CA-2003-12)の調査結果について "
+		},
+		{
+			"text": "http://www.cert.org/advisories/CA-2003-12.html",
+			"source": "CERT-A",
+			"id": "CA-2003-12"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/897604",
+			"source": "CERT-VN",
+			"id": "VU#897604"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/ciadr/20030331sendmail.html",
+			"source": "IPA",
+			"id": "Sendmail における新たなセキュリティ脆弱性について"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/n-067.shtml",
+			"source": "CIAC",
+			"id": "N-067"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/7230",
+			"source": "BID",
+			"id": "7230"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/11653",
+			"source": "ISS",
+			"id": "11653"
+		},
+		{
+			"text": "http://www.isskk.co.jp/support/techinfo/general/sendmail033103_xforce.html",
+			"source": "ISSKK",
+			"id": "Sendmail のEmail 処理における脆弱点について"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:sendmail:sendmail",
+			"version": "2.2",
+			"vendor": "Sendmail Consortium",
+			"product": "sendmail"
+		},
+		{
+			"text": "cpe:/a:sendmail:sendmail_advanced_message_server",
+			"version": "2.2",
+			"vendor": "センドメール社",
+			"product": "Sendmail Advanced Message Server"
+		},
+		{
+			"text": "cpe:/a:sendmail:sendmail_switch",
+			"version": "2.2",
+			"vendor": "センドメール社",
+			"product": "Sendmail Switch"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_4",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ4"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_550",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ550"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQXTR"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:hp:vvos",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX (VVOS)"
+		},
+		{
+			"text": "cpe:/o:ibm:aix",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM AIX"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_advanced_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Advanced Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_workstation",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "10.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

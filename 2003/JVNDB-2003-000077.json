@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000077.html",
-  "title": "tcpdump における不明な RADIUS 属性に対して処理を適切に行わない脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000077.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nTCPDUMP 3.6 - 3.7.1 には、UDP を使用する特定の RADIUS パケットの解釈に不備が存在します。 \r\nこのため、TCPDUMP は、RADIUS パケットのヘッダ長を示すペイロードの 2 バイト目に \"0\" が付与されているパケットを解析する場合、プロセスが中断されるまで \"#0#0#0#0#0\" を出力し続けてしまい、TCPDUMP がサービス不能状態に陥る問題が存在します。 \r\n\r\nこの問題を利用するリモートの攻撃者は、悪意のあるパケットを TCPDUMP に送り、解析させることにより、TCPDUMP をサービス不能状態に陥らせることが可能です。 \r\n更に、ファイルに解析結果を出力している場合、ハードディスク容量を使い果たし、システムがクラッシュしてしまう可能性が存在します。 \r\n\r\nまた、上記の問題とは異なる RADIUS に関する問題が TCPDUMP 3.7.2 で解消されています。 \r\n不明な RADIUS 属性を適切に取り扱ってしまうために無限ループに陥ってしまい、結果として TCPDUMP はサービス不能状態に陥る可能性があります。",
-  "identifier": "JVNDB-2003-000077",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0145",
-      "source": "CVE",
-      "id": "CVE-2003-0145"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0145",
-      "source": "NVD",
-      "id": "CVE-2003-0145"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/7090",
-      "source": "BID",
-      "id": "7090"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2003/Mar/1006284.html",
-      "source": "SECTRACK",
-      "id": "1006284"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000077.html",
+	"title": "tcpdump における不明な RADIUS 属性に対して処理を適切に行わない脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000077.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nTCPDUMP 3.6 - 3.7.1 には、UDP を使用する特定の RADIUS パケットの解釈に不備が存在します。 \r\nこのため、TCPDUMP は、RADIUS パケットのヘッダ長を示すペイロードの 2 バイト目に \"0\" が付与されているパケットを解析する場合、プロセスが中断されるまで \"#0#0#0#0#0\" を出力し続けてしまい、TCPDUMP がサービス不能状態に陥る問題が存在します。 \r\n\r\nこの問題を利用するリモートの攻撃者は、悪意のあるパケットを TCPDUMP に送り、解析させることにより、TCPDUMP をサービス不能状態に陥らせることが可能です。 \r\n更に、ファイルに解析結果を出力している場合、ハードディスク容量を使い果たし、システムがクラッシュしてしまう可能性が存在します。 \r\n\r\nまた、上記の問題とは異なる RADIUS に関する問題が TCPDUMP 3.7.2 で解消されています。 \r\n不明な RADIUS 属性を適切に取り扱ってしまうために無限ループに陥ってしまい、結果として TCPDUMP はサービス不能状態に陥る可能性があります。",
+	"identifier": "JVNDB-2003-000077",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0145",
+			"source": "CVE",
+			"id": "CVE-2003-0145"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0145",
+			"source": "NVD",
+			"id": "CVE-2003-0145"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/7090",
+			"source": "BID",
+			"id": "7090"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2003/Mar/1006284.html",
+			"source": "SECTRACK",
+			"id": "1006284"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

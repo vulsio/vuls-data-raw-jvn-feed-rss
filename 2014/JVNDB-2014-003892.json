@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003892.html",
-  "title": "Apache HttpComponents HttpClient および HttpAsyncClient の org.apache.http.conn.ssl.AbstractVerifier における SSL サーバになりすまされる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003892.html",
-  "description": "Apache HttpComponents HttpClient および HttpAsyncClient の org.apache.http.conn.ssl.AbstractVerifier は、サーバのホスト名が X.509 証明書のサブジェクトの Common Name (CN) または subjectAltName フィールドのドメイン名と一致することを適切に検証しないため、SSL サーバになりすまされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-297: Improper Validation of Certificate with Host Mismatch (ホストの不一致による証明書の不適切な検証) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/297.html",
-  "identifier": "JVNDB-2014-003892",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3577",
-      "source": "CVE",
-      "id": "CVE-2014-3577"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3577",
-      "source": "NVD",
-      "id": "CVE-2014-3577"
-    },
-    {
-      "text": "http://packetstormsecurity.com/files/127913/Apache-HttpComponents-Man-In-The-Middle.html",
-      "source": "関連文書",
-      "id": "Apache HttpComponents Man-In-The-Middle"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:httpasyncclient",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "HttpAsyncClient"
-    },
-    {
-      "text": "cpe:/a:apache:httpclient",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "HttpClient"
-    },
-    {
-      "text": "cpe:/a:hp:network_node_manager_i",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード・エンタープライズ",
-      "product": "HPE Network Node Manager i"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
-    }
-  ],
-  "date": "2016-09-30T09:57+09:00",
-  "issued": "2014-08-22T16:42+09:00",
-  "modified": "2016-09-30T09:57+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003892.html",
+	"title": "Apache HttpComponents HttpClient および HttpAsyncClient の org.apache.http.conn.ssl.AbstractVerifier における SSL サーバになりすまされる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003892.html",
+	"description": "Apache HttpComponents HttpClient および HttpAsyncClient の org.apache.http.conn.ssl.AbstractVerifier は、サーバのホスト名が X.509 証明書のサブジェクトの Common Name (CN) または subjectAltName フィールドのドメイン名と一致することを適切に検証しないため、SSL サーバになりすまされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-297: Improper Validation of Certificate with Host Mismatch (ホストの不一致による証明書の不適切な検証) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/297.html",
+	"identifier": "JVNDB-2014-003892",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3577",
+			"source": "CVE",
+			"id": "CVE-2014-3577"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3577",
+			"source": "NVD",
+			"id": "CVE-2014-3577"
+		},
+		{
+			"text": "http://packetstormsecurity.com/files/127913/Apache-HttpComponents-Man-In-The-Middle.html",
+			"source": "関連文書",
+			"id": "Apache HttpComponents Man-In-The-Middle"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:httpasyncclient",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "HttpAsyncClient"
+		},
+		{
+			"text": "cpe:/a:apache:httpclient",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "HttpClient"
+		},
+		{
+			"text": "cpe:/a:hp:network_node_manager_i",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード・エンタープライズ",
+			"product": "HPE Network Node Manager i"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+		}
+	],
+	"date": "2016-09-30T09:57+09:00",
+	"issued": "2014-08-22T16:42+09:00",
+	"modified": "2016-09-30T09:57+09:00"
 }

@@ -1,181 +1,181 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000567.html",
-  "title": "gzip の huft_build() における NULL ポインタ参照の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000567.html",
-  "description": "gzip (GNU zip) は圧縮・解凍する機能を提供するプログラムです。この gzip には、null ポインタ参照の脆弱性が存在します。",
-  "identifier": "JVNDB-2006-000567",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU%23933712/index.html",
-      "source": "JVN",
-      "id": "JVNVU#933712"
-    },
-    {
-      "text": "http://jvn.jp/cert/JVNTA06-333A/index.html",
-      "source": "JVN",
-      "id": "JVNTA06-333A"
-    },
-    {
-      "text": "http://jvn.jp/tr/TRTA06-333A",
-      "source": "JVNTR",
-      "id": "TRTA06-333A"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4334",
-      "source": "CVE",
-      "id": "CVE-2006-4334"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4334",
-      "source": "NVD",
-      "id": "CVE-2006-4334"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/alerts/SA06-333A.html",
-      "source": "CERT-SA",
-      "id": "SA06-333A"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/933712",
-      "source": "CERT-VN",
-      "id": "VU#933712"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA06-333A.html",
-      "source": "CERT-TA",
-      "id": "TA06-333A"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/20101",
-      "source": "BID",
-      "id": "20101"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/29038",
-      "source": "XF",
-      "id": "29038"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:gnu:gzip",
-      "version": "2.2",
-      "vendor": "GNU Project",
-      "product": "GNU gzip"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    },
-    {
-      "text": "cpe:/o:canonical:ubuntu_linux",
-      "version": "2.2",
-      "vendor": "Canonical",
-      "product": "Ubuntu"
-    },
-    {
-      "text": "cpe:/o:freebsd:freebsd",
-      "version": "2.2",
-      "vendor": "FreeBSD",
-      "product": "FreeBSD"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:linux_advanced_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux Advanced Workstation"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Appliance Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_desktop",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Desktop"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_fuji",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux FUJI"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_home",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "ターボリナックス ホーム "
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Multimedia"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_personal",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Personal"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-06-26T13:47+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-06-26T13:47+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000567.html",
+	"title": "gzip の huft_build() における NULL ポインタ参照の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000567.html",
+	"description": "gzip (GNU zip) は圧縮・解凍する機能を提供するプログラムです。この gzip には、null ポインタ参照の脆弱性が存在します。",
+	"identifier": "JVNDB-2006-000567",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU%23933712/index.html",
+			"source": "JVN",
+			"id": "JVNVU#933712"
+		},
+		{
+			"text": "http://jvn.jp/cert/JVNTA06-333A/index.html",
+			"source": "JVN",
+			"id": "JVNTA06-333A"
+		},
+		{
+			"text": "http://jvn.jp/tr/TRTA06-333A",
+			"source": "JVNTR",
+			"id": "TRTA06-333A"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4334",
+			"source": "CVE",
+			"id": "CVE-2006-4334"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4334",
+			"source": "NVD",
+			"id": "CVE-2006-4334"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/alerts/SA06-333A.html",
+			"source": "CERT-SA",
+			"id": "SA06-333A"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/933712",
+			"source": "CERT-VN",
+			"id": "VU#933712"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA06-333A.html",
+			"source": "CERT-TA",
+			"id": "TA06-333A"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/20101",
+			"source": "BID",
+			"id": "20101"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/29038",
+			"source": "XF",
+			"id": "29038"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:gnu:gzip",
+			"version": "2.2",
+			"vendor": "GNU Project",
+			"product": "GNU gzip"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		},
+		{
+			"text": "cpe:/o:canonical:ubuntu_linux",
+			"version": "2.2",
+			"vendor": "Canonical",
+			"product": "Ubuntu"
+		},
+		{
+			"text": "cpe:/o:freebsd:freebsd",
+			"version": "2.2",
+			"vendor": "FreeBSD",
+			"product": "FreeBSD"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:linux_advanced_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux Advanced Workstation"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Appliance Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_desktop",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Desktop"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_fuji",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux FUJI"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_home",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "ターボリナックス ホーム "
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_multimedia",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Multimedia"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_personal",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Personal"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-06-26T13:47+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-06-26T13:47+09:00"
 }

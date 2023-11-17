@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000312.html",
-  "title": "GDM におけるコマンドによるリクエスト数を制限しないことによるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000312.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNOME Display Manager for X (GDM) は GNOME デスクトップ環境用のディスプレイマネージャです。\r\n\r\nGDM 2.4.1.6/2.4.4.3 以前には、以下のように 2 つのセキュリティ上の問題が存在します。\r\n\r\n1.コマンドによるリクエストに対して、そのリクエスト数を制限せず、またリクエストに対するタイムアウトが設定されていない問題\r\n\r\n2.受け取ったリクエスト中の特定の文字列のバッファサイズの制限が適切に設定されていないため、過度に長い文字列を含むリクエストを受け取ることにより、利用可能なメモリを消費してしまう問題\r\n\r\nこれらの問題を利用するローカルの攻撃者は、gdm をクラッシュさせる、あるいはハングアップさせ、結果として gdm をサービス不能状態に陥らせることが可能です。\r\n\r\n尚、既にログイン中の X セッションはこの問題の影響を受けません。ローカルの攻撃者は、gdm をサービス不能状態に陥らせることで、それ以降のログインを妨げることが可能です。",
-  "identifier": "JVNDB-2003-000312",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0794",
-      "source": "CVE",
-      "id": "CVE-2003-0794"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0794",
-      "source": "NVD",
-      "id": "CVE-2003-0794"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/8846",
-      "source": "BID",
-      "id": "8846"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2003/Oct/1007942.html",
-      "source": "SECTRACK",
-      "id": "1007942"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.1",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000312.html",
+	"title": "GDM におけるコマンドによるリクエスト数を制限しないことによるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000312.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNOME Display Manager for X (GDM) は GNOME デスクトップ環境用のディスプレイマネージャです。\r\n\r\nGDM 2.4.1.6/2.4.4.3 以前には、以下のように 2 つのセキュリティ上の問題が存在します。\r\n\r\n1.コマンドによるリクエストに対して、そのリクエスト数を制限せず、またリクエストに対するタイムアウトが設定されていない問題\r\n\r\n2.受け取ったリクエスト中の特定の文字列のバッファサイズの制限が適切に設定されていないため、過度に長い文字列を含むリクエストを受け取ることにより、利用可能なメモリを消費してしまう問題\r\n\r\nこれらの問題を利用するローカルの攻撃者は、gdm をクラッシュさせる、あるいはハングアップさせ、結果として gdm をサービス不能状態に陥らせることが可能です。\r\n\r\n尚、既にログイン中の X セッションはこの問題の影響を受けません。ローカルの攻撃者は、gdm をサービス不能状態に陥らせることで、それ以降のログインを妨げることが可能です。",
+	"identifier": "JVNDB-2003-000312",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0794",
+			"source": "CVE",
+			"id": "CVE-2003-0794"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0794",
+			"source": "NVD",
+			"id": "CVE-2003-0794"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/8846",
+			"source": "BID",
+			"id": "8846"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2003/Oct/1007942.html",
+			"source": "SECTRACK",
+			"id": "1007942"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.1",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

@@ -1,270 +1,270 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002392.html",
-  "title": "Oracle Java SE の Java Runtime Environment における 2D の処理に関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002392.html",
-  "description": "Oracle Java SE の Java Runtime Environment (JRE) および OpenJDK には、2D に関する処理に不備があるため、機密性、完全性、可用性に影響のある脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2013-1569、CVE-2013-2383、および CVE-2013-2420 とは異なる脆弱性です。\r\n\r\n本情報は、April 2013 Critical Patch Update (CPU) に基づく脆弱性情報です。\r\n他のベンダが、本脆弱性は International Components for Unicode (ICU) Layout Engine 51.2 未満における「フォントレイアウト」に関連する問題であると主張していますが、オラクル社はコメントしていません。",
-  "identifier": "JVNDB-2013-002392",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNTA13-107A/index.html",
-      "source": "JVN",
-      "id": "JVNTA13-107A"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2384",
-      "source": "CVE",
-      "id": "CVE-2013-2384"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2384",
-      "source": "NVD",
-      "id": "CVE-2013-2384"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/ciadr/vul/20130417-jre.html",
-      "source": "IPA CFA",
-      "id": "Oracle Java の脆弱性対策について(CVE-2013-2383等)"
-    },
-    {
-      "text": "https://www.jpcert.or.jp/at/2013/at130021.txt",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2013-0021"
-    },
-    {
-      "text": "https://www.us-cert.gov/ncas/alerts/TA13-107A",
-      "source": "CERT-TA",
-      "id": "TA13-107A"
-    },
-    {
-      "text": "http://blog.fuseyism.com/index.php/2013/04/25/security-icedtea-1-11-11-1-12-5-for-openjdk-6-released/",
-      "source": "関連文書",
-      "id": "GNU/Andrew's Blog: [SECURITY] IcedTea 1.11.11 & 1.12.5 for OpenJDK 6 Released!"
-    },
-    {
-      "text": "http://blog.fuseyism.com/index.php/2013/04/22/security-icedtea-2-3-9-for-openjdk-7-released/",
-      "source": "関連文書",
-      "id": "GNU/Andrew's Blog: [SECURITY] IcedTea 2.3.9 for OpenJDK 7 Released!"
-    },
-    {
-      "text": "https://wiki.mageia.org/en/Support/Advisories/MGASA-2013-0124",
-      "source": "関連文書",
-      "id": "MGASA-2013-0124"
-    },
-    {
-      "text": "https://wiki.mageia.org/en/Support/Advisories/MGASA-2013-0130",
-      "source": "関連文書",
-      "id": "MGASA-2013-0130"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-noinfo",
-      "title": "情報不足(CWE-noinfo)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_client",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Client"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developers_kit_for_java",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer's Kit for Java(TM)"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Light Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Professional Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Standard Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_server_-_standard_edition_version_4",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Server - Standard Edition Version 4"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_server_-_web_edition_version_4",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Server - Web Edition Version 4"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_studio",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Studio"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Smart Edition"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_client",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Client"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Light"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_operator",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Operator"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Architect"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform"
-    },
-    {
-      "text": "cpe:/a:oracle:jdk",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "JDK"
-    },
-    {
-      "text": "cpe:/a:oracle:jre",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "JRE"
-    },
-    {
-      "text": "cpe:/a:sun:jdk",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "JDK"
-    },
-    {
-      "text": "cpe:/a:sun:jre",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "JRE"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "10.0",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2015-10-30T16:40+09:00",
-  "issued": "2013-04-22T10:39+09:00",
-  "modified": "2015-10-30T16:40+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002392.html",
+	"title": "Oracle Java SE の Java Runtime Environment における 2D の処理に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002392.html",
+	"description": "Oracle Java SE の Java Runtime Environment (JRE) および OpenJDK には、2D に関する処理に不備があるため、機密性、完全性、可用性に影響のある脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2013-1569、CVE-2013-2383、および CVE-2013-2420 とは異なる脆弱性です。\r\n\r\n本情報は、April 2013 Critical Patch Update (CPU) に基づく脆弱性情報です。\r\n他のベンダが、本脆弱性は International Components for Unicode (ICU) Layout Engine 51.2 未満における「フォントレイアウト」に関連する問題であると主張していますが、オラクル社はコメントしていません。",
+	"identifier": "JVNDB-2013-002392",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNTA13-107A/index.html",
+			"source": "JVN",
+			"id": "JVNTA13-107A"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2384",
+			"source": "CVE",
+			"id": "CVE-2013-2384"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2384",
+			"source": "NVD",
+			"id": "CVE-2013-2384"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/ciadr/vul/20130417-jre.html",
+			"source": "IPA CFA",
+			"id": "Oracle Java の脆弱性対策について(CVE-2013-2383等)"
+		},
+		{
+			"text": "https://www.jpcert.or.jp/at/2013/at130021.txt",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2013-0021"
+		},
+		{
+			"text": "https://www.us-cert.gov/ncas/alerts/TA13-107A",
+			"source": "CERT-TA",
+			"id": "TA13-107A"
+		},
+		{
+			"text": "http://blog.fuseyism.com/index.php/2013/04/25/security-icedtea-1-11-11-1-12-5-for-openjdk-6-released/",
+			"source": "関連文書",
+			"id": "GNU/Andrew's Blog: [SECURITY] IcedTea 1.11.11 & 1.12.5 for OpenJDK 6 Released!"
+		},
+		{
+			"text": "http://blog.fuseyism.com/index.php/2013/04/22/security-icedtea-2-3-9-for-openjdk-7-released/",
+			"source": "関連文書",
+			"id": "GNU/Andrew's Blog: [SECURITY] IcedTea 2.3.9 for OpenJDK 7 Released!"
+		},
+		{
+			"text": "https://wiki.mageia.org/en/Support/Advisories/MGASA-2013-0124",
+			"source": "関連文書",
+			"id": "MGASA-2013-0124"
+		},
+		{
+			"text": "https://wiki.mageia.org/en/Support/Advisories/MGASA-2013-0130",
+			"source": "関連文書",
+			"id": "MGASA-2013-0130"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-noinfo",
+			"title": "情報不足(CWE-noinfo)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_client",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Client"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developers_kit_for_java",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer's Kit for Java(TM)"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Light Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Professional Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Standard Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_server_-_standard_edition_version_4",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Server - Standard Edition Version 4"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_server_-_web_edition_version_4",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Server - Web Edition Version 4"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_studio",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Studio"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Smart Edition"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_client",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Client"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_light",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Light"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_operator",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Operator"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_architect",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Architect"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform"
+		},
+		{
+			"text": "cpe:/a:oracle:jdk",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "JDK"
+		},
+		{
+			"text": "cpe:/a:oracle:jre",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "JRE"
+		},
+		{
+			"text": "cpe:/a:sun:jdk",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "JDK"
+		},
+		{
+			"text": "cpe:/a:sun:jre",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "JRE"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "10.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2015-10-30T16:40+09:00",
+	"issued": "2013-04-22T10:39+09:00",
+	"modified": "2015-10-30T16:40+09:00"
 }

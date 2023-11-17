@@ -1,79 +1,79 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001664.html",
-  "title": "Linux kernel の fs/eventpoll.c におけるサービス運用妨害 (DoS）の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001664.html",
-  "description": "Linux kernel の fs/eventpoll.c は、epoll データ構造体のファイルディスクリプタの取り扱いにおいて、(1) closed loops、または (2) deep chains を適切にチェックしないため、 サービス運用妨害 (デッドロック、またはスタックメモリ消費）状態となる脆弱性が存在します。",
-  "identifier": "JVNDB-2011-001664",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1082",
-      "source": "CVE",
-      "id": "CVE-2011-1082"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1082",
-      "source": "NVD",
-      "id": "CVE-2011-1082"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/46630",
-      "source": "BID",
-      "id": "46630"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-      "id": "CWE-399",
-      "title": "リソース管理の問題(CWE-399)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:redhat:rhel_server_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server EUS"
-    },
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2011-06-28T10:03+09:00",
-  "issued": "2011-06-01T11:09+09:00",
-  "modified": "2011-06-28T10:03+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001664.html",
+	"title": "Linux kernel の fs/eventpoll.c におけるサービス運用妨害 (DoS）の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001664.html",
+	"description": "Linux kernel の fs/eventpoll.c は、epoll データ構造体のファイルディスクリプタの取り扱いにおいて、(1) closed loops、または (2) deep chains を適切にチェックしないため、 サービス運用妨害 (デッドロック、またはスタックメモリ消費）状態となる脆弱性が存在します。",
+	"identifier": "JVNDB-2011-001664",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1082",
+			"source": "CVE",
+			"id": "CVE-2011-1082"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1082",
+			"source": "NVD",
+			"id": "CVE-2011-1082"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/46630",
+			"source": "BID",
+			"id": "46630"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+			"id": "CWE-399",
+			"title": "リソース管理の問題(CWE-399)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:redhat:rhel_server_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server EUS"
+		},
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2011-06-28T10:03+09:00",
+	"issued": "2011-06-01T11:09+09:00",
+	"modified": "2011-06-28T10:03+09:00"
 }

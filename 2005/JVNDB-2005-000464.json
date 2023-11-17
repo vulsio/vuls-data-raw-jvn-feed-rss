@@ -1,64 +1,64 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000464.html",
-  "title": "Linux Kernel の ip6_input_finish() 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000464.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) process.c に実装されている sys_get_thread_area() 関数において、戻り値がユーザスペースにコピーされる前に適切にクリアされない問題が存在します。(CVE-2005-3276)\r\n\r\nローカルの攻撃者に悪用された場合、カーネルメモリ内の重要なデータを取得される可能性があります。\r\n\r\n2) icmp_push_reply() 関数において、特定の UDP パケットを処理する際に ICMP の不到達メッセージを大量に生成してしまいメモリリークが発生する問題が存在します。(CVE-2005-3848)\r\n\r\nリモートの攻撃者に悪用された場合、メモリ資源を過大に消費させられ標的システムがサービス不能状態に陥る可能性があります。\r\n\r\n3) ip6_input.c に実装される ip6_input_finish() 関数において、IPv6 パケットの特定のパラメータを処理する際メモリリークが発生する問題が存在します。(CVE-2005-3858)\r\n\r\nリモートの攻撃者に悪用された場合、メモリ資源を過大に消費させられ標的システムがサービス不能状態に陥る可能性があります。\r\n\r\n4) CSI procfs interface (sg.c) において、next() イテレータメソッドにより返されたポインタを開放してしまうため、メモリリークが発生する問題が存在します。(CVE-2005-2800)\r\n\r\nローカルの攻撃者に悪用された場合、メモリ資源を過大に消費させられ標的システムがサービス不能状態に陥る可能性があります。",
-  "identifier": "JVNDB-2005-000464",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3858",
-      "source": "CVE",
-      "id": "CVE-2005-3858"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3858",
-      "source": "NVD",
-      "id": "CVE-2005-3858"
-    },
-    {
-      "text": "http://secunia.com/advisories/16494/",
-      "source": "SECUNIA",
-      "id": "SA16494"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/14790",
-      "source": "BID",
-      "id": "14790"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/16043",
-      "source": "BID",
-      "id": "16043"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/16044",
-      "source": "BID",
-      "id": "16044"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15527",
-      "source": "BID",
-      "id": "15527"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000464.html",
+	"title": "Linux Kernel の ip6_input_finish() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000464.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) process.c に実装されている sys_get_thread_area() 関数において、戻り値がユーザスペースにコピーされる前に適切にクリアされない問題が存在します。(CVE-2005-3276)\r\n\r\nローカルの攻撃者に悪用された場合、カーネルメモリ内の重要なデータを取得される可能性があります。\r\n\r\n2) icmp_push_reply() 関数において、特定の UDP パケットを処理する際に ICMP の不到達メッセージを大量に生成してしまいメモリリークが発生する問題が存在します。(CVE-2005-3848)\r\n\r\nリモートの攻撃者に悪用された場合、メモリ資源を過大に消費させられ標的システムがサービス不能状態に陥る可能性があります。\r\n\r\n3) ip6_input.c に実装される ip6_input_finish() 関数において、IPv6 パケットの特定のパラメータを処理する際メモリリークが発生する問題が存在します。(CVE-2005-3858)\r\n\r\nリモートの攻撃者に悪用された場合、メモリ資源を過大に消費させられ標的システムがサービス不能状態に陥る可能性があります。\r\n\r\n4) CSI procfs interface (sg.c) において、next() イテレータメソッドにより返されたポインタを開放してしまうため、メモリリークが発生する問題が存在します。(CVE-2005-2800)\r\n\r\nローカルの攻撃者に悪用された場合、メモリ資源を過大に消費させられ標的システムがサービス不能状態に陥る可能性があります。",
+	"identifier": "JVNDB-2005-000464",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3858",
+			"source": "CVE",
+			"id": "CVE-2005-3858"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-3858",
+			"source": "NVD",
+			"id": "CVE-2005-3858"
+		},
+		{
+			"text": "http://secunia.com/advisories/16494/",
+			"source": "SECUNIA",
+			"id": "SA16494"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/14790",
+			"source": "BID",
+			"id": "14790"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/16043",
+			"source": "BID",
+			"id": "16043"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/16044",
+			"source": "BID",
+			"id": "16044"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15527",
+			"source": "BID",
+			"id": "15527"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

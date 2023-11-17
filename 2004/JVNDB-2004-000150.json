@@ -1,835 +1,835 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000150.html",
-  "title": "TCP 実装におけるシーケンス番号の推測が容易になる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000150.html",
-  "description": "TCP には、シーケンス番号が TCP ウィンドウの範囲内であれば正当であると判断してしまう問題があります。そのため、ウィンドウサイズが大きくなるような長時間に渡る接続を確立した場合、外部のシーケンス番号の推測が容易になる脆弱性が存在します。\r\n\r\nなお、本脆弱性の影響を受ける製品は TCP 実装を持つ多くの製品に及びます。詳細については、NISCC-236929 (JVN)、NISCC Advisory 236929 (CPNI Advisory 00391) を併せてご確認ください。",
-  "identifier": "JVNDB-2004-000150",
-  "references": [
-    {
-      "text": "http://jvn.jp/niscc/NISCC-236929/index.html",
-      "source": "JVN",
-      "id": "NISCC-236929"
-    },
-    {
-      "text": "http://jvn.jp/cert/JVNTA04-111A/index.html",
-      "source": "JVN",
-      "id": "JVNTA04-111A"
-    },
-    {
-      "text": "http://jvn.jp/tr/TRTA04-111A",
-      "source": "JVNTR",
-      "id": "TRTA04-111A"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0230",
-      "source": "CVE",
-      "id": "CVE-2004-0230"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0230",
-      "source": "NVD",
-      "id": "CVE-2004-0230"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2004/at040003.txt",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2004-0003"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2004/wr041702.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2004-1702"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/415294",
-      "source": "CERT-VN",
-      "id": "VU#415294"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA04-111A.html",
-      "source": "CERT-TA",
-      "id": "TA04-111A"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/o-124.shtml",
-      "source": "CIAC",
-      "id": "O-124"
-    },
-    {
-      "text": "http://www.cpni.gov.uk/docs/re-20040420-00391.pdf?lang=en",
-      "source": "NISCC",
-      "id": "236929"
-    },
-    {
-      "text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20040420-00391.xml",
-      "source": "CPNI",
-      "id": "00391"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/10183",
-      "source": "BID",
-      "id": "10183"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/15886",
-      "source": "ISS",
-      "id": "15886"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/alerts/id/170",
-      "source": "ISS",
-      "id": "170"
-    },
-    {
-      "text": "http://www.isskk.co.jp/support/techinfo/general/TCP_170.html",
-      "source": "ISSKK",
-      "id": "複数ベンダにおける TCP でのサービス不能の脆弱点"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:checkpoint:provider-1",
-      "version": "2.2",
-      "vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
-      "product": "Provider-1"
-    },
-    {
-      "text": "cpe:/a:checkpoint:vpn-1_firewall-1",
-      "version": "2.2",
-      "vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
-      "product": "VPN-1/FireWall-1"
-    },
-    {
-      "text": "cpe:/a:cisco:access_registrar",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Access Registrar (CAR)"
-    },
-    {
-      "text": "cpe:/a:cisco:application_and_content_networking_system_software",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Application and Content Networking System (ACNS)"
-    },
-    {
-      "text": "cpe:/a:cisco:ciscoworks_device_fault_manager",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "CiscoWorks Device Fault Manager (DFM)"
-    },
-    {
-      "text": "cpe:/a:cisco:ciscoworks_voice_manager",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "CiscoWorks Voice Manager"
-    },
-    {
-      "text": "cpe:/a:cisco:ciscoworks_windows",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "CiscoWorks for Windows"
-    },
-    {
-      "text": "cpe:/a:cisco:content_distribution_manager",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Content Distribution Manager"
-    },
-    {
-      "text": "cpe:/a:cisco:element_management_framework",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Element Management Framework"
-    },
-    {
-      "text": "cpe:/a:cisco:info_center",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Info Center"
-    },
-    {
-      "text": "cpe:/a:cisco:intelligent_contact_manager",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Intelligent Contact Management (ICM)"
-    },
-    {
-      "text": "cpe:/a:cisco:internet_cdn_solution",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Internet CDN Solution"
-    },
-    {
-      "text": "cpe:/a:cisco:secure_access_control_server",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Secure Access Control Server ソフトウェア"
-    },
-    {
-      "text": "cpe:/a:cisco:secure_user_registration_tool",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Secure User Registration Tool"
-    },
-    {
-      "text": "cpe:/a:cisco:wan_manager",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco WAN Manager (CWM)"
-    },
-    {
-      "text": "cpe:/a:cisco:wireless_lan_solution_engine",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "CiscoWorks Wireless LAN Solution Engine (CWWLSE)"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_application_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Application Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_security_director",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Security Director"
-    },
-    {
-      "text": "cpe:/a:fujitsu:safegate",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Safegate"
-    },
-    {
-      "text": "cpe:/a:symantec:enterprise_firewall",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec Enterprise Firewall"
-    },
-    {
-      "text": "cpe:/a:symantec:firewall_vpn_appliance",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec Firewall/VPN Appliance"
-    },
-    {
-      "text": "cpe:/a:symantec:gateway_security_300",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec Gateway Security 300 Series"
-    },
-    {
-      "text": "cpe:/a:symantec:gateway_security_400",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec Gateway Security 400 Series"
-    },
-    {
-      "text": "cpe:/a:symantec:gateway_security_5300",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec Gateway Security 5300 Series"
-    },
-    {
-      "text": "cpe:/a:symantec:gateway_security_5400",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec Gateway Security 5400 Series"
-    },
-    {
-      "text": "cpe:/a:symantec:symantec_velociraptor",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec VelociRaptor"
-    },
-    {
-      "text": "cpe:/h:allied_telesis_k.k.:router",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "ルーター"
-    },
-    {
-      "text": "cpe:/h:cisco:8110_router",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco 8110 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:aironet",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Aironet 350 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:aironet_ap340",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Aironet AP340 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:ata-180",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco ATA 180 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:bpx_switch_8600",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco BPX 8600 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:cache_engine",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Cache Engine"
-    },
-    {
-      "text": "cpe:/h:cisco:call_manager",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Call Manager (CCM)"
-    },
-    {
-      "text": "cpe:/h:cisco:catalyst_1200",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Catalyst 1200 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:catalyst_1900",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Catalyst 1900 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:catalyst_2800",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Catalyst 2800 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:catalyst_2820",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Catalyst 2820 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:catalyst_2900",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Catalyst 2900 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:catalyst_3000",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Catalyst 3000 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:catalyst_3900",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Catalyst 3900 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:catalyst_4000",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Catalyst 4000 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:catalyst_5000",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Catalyst 5000 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:catalyst_6000",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Catalyst 6000 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:channel_interface_processor",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Channel Interface Processor (CIP)"
-    },
-    {
-      "text": "cpe:/h:cisco:channel_port_adapter",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Channel Port Adapter (CPA)"
-    },
-    {
-      "text": "cpe:/h:cisco:content_delivery_manager",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Content Delivery Manager"
-    },
-    {
-      "text": "cpe:/h:cisco:content_engine",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Content Engine"
-    },
-    {
-      "text": "cpe:/h:cisco:content_router",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Content ルータ"
-    },
-    {
-      "text": "cpe:/h:cisco:content_switching_module",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Content Switching Module (CSM)"
-    },
-    {
-      "text": "cpe:/h:cisco:css_11000",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco CSS 11000 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:css_11500",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco CSS 11500 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:escon_channel_port_adapter",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Systems ESCON Channel Port Adapter (ECPA)"
-    },
-    {
-      "text": "cpe:/h:cisco:fasthub_300",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco FastHub 300 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:fasthub_400",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco FastHub 400 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:firewall_services_module",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Firewall Services Module (FWSM)"
-    },
-    {
-      "text": "cpe:/h:cisco:gss_global_site_selector",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Global Site Selector (GSS)"
-    },
-    {
-      "text": "cpe:/h:cisco:hosting_solution_engine",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "CiscoWorks Host Solution Engine (HSE)"
-    },
-    {
-      "text": "cpe:/h:cisco:igx_8400",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IGX 8400 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:ip_tv",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IP/TV"
-    },
-    {
-      "text": "cpe:/h:cisco:lightstream",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco LightStream"
-    },
-    {
-      "text": "cpe:/h:cisco:localdirector",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco LocalDirector"
-    },
-    {
-      "text": "cpe:/h:cisco:mds_9000",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco MDS 9000 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:me_1100",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco ME1100 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:mgx_8220",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco MGX 8220 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:mgx_8230",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco MGX 8230 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:mgx_8250",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco MGX 8250 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:mgx_8850",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco MGX 8850 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:mgx_8950",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco MGX 8950 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:microhub",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco MicroHub"
-    },
-    {
-      "text": "cpe:/h:cisco:microswitch",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco MicroSwitch"
-    },
-    {
-      "text": "cpe:/h:cisco:ons_15100",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco ONS 15100 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:ons_15300",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco ONS 15300 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:ons_15400",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco ONS 15400 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:ons_15500",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco ONS 15500 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:ons_15800_dwdm",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco ONS 15800 シリーズ DWDM Platforms"
-    },
-    {
-      "text": "cpe:/h:cisco:ons_15830",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco ONS 15830"
-    },
-    {
-      "text": "cpe:/h:cisco:ons_15831",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco ONS 15831"
-    },
-    {
-      "text": "cpe:/h:cisco:ons_15832",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco ONS 15832"
-    },
-    {
-      "text": "cpe:/h:cisco:parallel_channel_port_adapter",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Systems Parallel Channel Port Adapter (PCPA)"
-    },
-    {
-      "text": "cpe:/h:cisco:pix_firewall",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco PIX Firewall"
-    },
-    {
-      "text": "cpe:/h:cisco:rtm",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco RTM"
-    },
-    {
-      "text": "cpe:/h:cisco:secure_ids",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Secure IDS"
-    },
-    {
-      "text": "cpe:/h:cisco:sn_5400",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco SN 5400 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:switchprobe",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco SwitchProbe"
-    },
-    {
-      "text": "cpe:/h:cisco:traffic_director",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Traffic Director"
-    },
-    {
-      "text": "cpe:/h:cisco:unity",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Unity"
-    },
-    {
-      "text": "cpe:/h:cisco:vg248",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco VG248"
-    },
-    {
-      "text": "cpe:/h:cisco:vg248_analog_phone_gateway",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco VG248 Analog Phone Gateway"
-    },
-    {
-      "text": "cpe:/h:cisco:vpn_3000",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco VPN 3000 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:ws-x6608-e1",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "WS-X6608-E1"
-    },
-    {
-      "text": "cpe:/h:cisco:ws-x6608-t1",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "WS-X6608-T1"
-    },
-    {
-      "text": "cpe:/h:cisco:ws-x6624-fxs",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "WS-X6624-FXS"
-    },
-    {
-      "text": "cpe:/h:hitachi:gr2000",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "GR2000"
-    },
-    {
-      "text": "cpe:/h:hitachi:gr4000",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "GR4000"
-    },
-    {
-      "text": "cpe:/h:hitachi:gs3000",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "GS3000"
-    },
-    {
-      "text": "cpe:/h:hitachi:gs4000",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "GS4000"
-    },
-    {
-      "text": "cpe:/h:hitachi:sanrise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "SANRISE"
-    },
-    {
-      "text": "cpe:/h:hp:advancestack_switch",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP AdvanceStack スイッチ"
-    },
-    {
-      "text": "cpe:/h:hp:ethertwist_switch",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP EtherTwist スイッチ"
-    },
-    {
-      "text": "cpe:/h:hp:procurve_routing_switch",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP ProCurve ルーティング スイッチ"
-    },
-    {
-      "text": "cpe:/h:hp:procurve_switch",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP ProCurve Switch"
-    },
-    {
-      "text": "cpe:/h:nec:cx3200",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CX3200"
-    },
-    {
-      "text": "cpe:/h:nec:ix1000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IX1000シリーズ"
-    },
-    {
-      "text": "cpe:/h:nec:ix2000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IX2000シリーズ"
-    },
-    {
-      "text": "cpe:/h:nec:ix3000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IX3000シリーズ"
-    },
-    {
-      "text": "cpe:/h:nec:ix5000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IX5000シリーズ"
-    },
-    {
-      "text": "cpe:/h:nec:ix5500",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IX5500シリーズ"
-    },
-    {
-      "text": "cpe:/h:nec:qx",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "QXシリーズ"
-    },
-    {
-      "text": "cpe:/h:nec:univerge_ip8800_s_r",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "UNIVERGE IP8800/S,/Rシリーズ"
-    },
-    {
-      "text": "cpe:/h:symantec:nexland_isb_soho_firewall_appliance",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Nexland ISB SOHO Firewall Appliance"
-    },
-    {
-      "text": "cpe:/h:symantec:nexland_pro_firewall_appliance",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Nexland Pro Series Firewall Appliance"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT シリーズ"
-    },
-    {
-      "text": "cpe:/o:cisco:ios",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IOS"
-    },
-    {
-      "text": "cpe:/o:ibm:aix",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM AIX"
-    },
-    {
-      "text": "cpe:/o:juniper:screenos",
-      "version": "2.2",
-      "vendor": "ジュニパーネットワークス",
-      "product": "ScreenOS"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows-9x",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 9X"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_2000",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 2000"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2003",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2003"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_xp",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows XP"
-    },
-    {
-      "text": "cpe:/o:netbsd:netbsd",
-      "version": "2.2",
-      "vendor": "NetBSD",
-      "product": "NetBSD"
-    },
-    {
-      "text": "cpe:/o:oracle:solaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Solaris"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2015-01-22T14:56+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2015-01-22T14:56+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000150.html",
+	"title": "TCP 実装におけるシーケンス番号の推測が容易になる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000150.html",
+	"description": "TCP には、シーケンス番号が TCP ウィンドウの範囲内であれば正当であると判断してしまう問題があります。そのため、ウィンドウサイズが大きくなるような長時間に渡る接続を確立した場合、外部のシーケンス番号の推測が容易になる脆弱性が存在します。\r\n\r\nなお、本脆弱性の影響を受ける製品は TCP 実装を持つ多くの製品に及びます。詳細については、NISCC-236929 (JVN)、NISCC Advisory 236929 (CPNI Advisory 00391) を併せてご確認ください。",
+	"identifier": "JVNDB-2004-000150",
+	"references": [
+		{
+			"text": "http://jvn.jp/niscc/NISCC-236929/index.html",
+			"source": "JVN",
+			"id": "NISCC-236929"
+		},
+		{
+			"text": "http://jvn.jp/cert/JVNTA04-111A/index.html",
+			"source": "JVN",
+			"id": "JVNTA04-111A"
+		},
+		{
+			"text": "http://jvn.jp/tr/TRTA04-111A",
+			"source": "JVNTR",
+			"id": "TRTA04-111A"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0230",
+			"source": "CVE",
+			"id": "CVE-2004-0230"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0230",
+			"source": "NVD",
+			"id": "CVE-2004-0230"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2004/at040003.txt",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2004-0003"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2004/wr041702.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2004-1702"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/415294",
+			"source": "CERT-VN",
+			"id": "VU#415294"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA04-111A.html",
+			"source": "CERT-TA",
+			"id": "TA04-111A"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/o-124.shtml",
+			"source": "CIAC",
+			"id": "O-124"
+		},
+		{
+			"text": "http://www.cpni.gov.uk/docs/re-20040420-00391.pdf?lang=en",
+			"source": "NISCC",
+			"id": "236929"
+		},
+		{
+			"text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20040420-00391.xml",
+			"source": "CPNI",
+			"id": "00391"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/10183",
+			"source": "BID",
+			"id": "10183"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/15886",
+			"source": "ISS",
+			"id": "15886"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/alerts/id/170",
+			"source": "ISS",
+			"id": "170"
+		},
+		{
+			"text": "http://www.isskk.co.jp/support/techinfo/general/TCP_170.html",
+			"source": "ISSKK",
+			"id": "複数ベンダにおける TCP でのサービス不能の脆弱点"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:checkpoint:provider-1",
+			"version": "2.2",
+			"vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
+			"product": "Provider-1"
+		},
+		{
+			"text": "cpe:/a:checkpoint:vpn-1_firewall-1",
+			"version": "2.2",
+			"vendor": "チェック・ポイント・ソフトウェア・テクノロジーズ",
+			"product": "VPN-1/FireWall-1"
+		},
+		{
+			"text": "cpe:/a:cisco:access_registrar",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Access Registrar (CAR)"
+		},
+		{
+			"text": "cpe:/a:cisco:application_and_content_networking_system_software",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Application and Content Networking System (ACNS)"
+		},
+		{
+			"text": "cpe:/a:cisco:ciscoworks_device_fault_manager",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "CiscoWorks Device Fault Manager (DFM)"
+		},
+		{
+			"text": "cpe:/a:cisco:ciscoworks_voice_manager",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "CiscoWorks Voice Manager"
+		},
+		{
+			"text": "cpe:/a:cisco:ciscoworks_windows",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "CiscoWorks for Windows"
+		},
+		{
+			"text": "cpe:/a:cisco:content_distribution_manager",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Content Distribution Manager"
+		},
+		{
+			"text": "cpe:/a:cisco:element_management_framework",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Element Management Framework"
+		},
+		{
+			"text": "cpe:/a:cisco:info_center",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Info Center"
+		},
+		{
+			"text": "cpe:/a:cisco:intelligent_contact_manager",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Intelligent Contact Management (ICM)"
+		},
+		{
+			"text": "cpe:/a:cisco:internet_cdn_solution",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Internet CDN Solution"
+		},
+		{
+			"text": "cpe:/a:cisco:secure_access_control_server",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Secure Access Control Server ソフトウェア"
+		},
+		{
+			"text": "cpe:/a:cisco:secure_user_registration_tool",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Secure User Registration Tool"
+		},
+		{
+			"text": "cpe:/a:cisco:wan_manager",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco WAN Manager (CWM)"
+		},
+		{
+			"text": "cpe:/a:cisco:wireless_lan_solution_engine",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "CiscoWorks Wireless LAN Solution Engine (CWWLSE)"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_application_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Application Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_security_director",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Security Director"
+		},
+		{
+			"text": "cpe:/a:fujitsu:safegate",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Safegate"
+		},
+		{
+			"text": "cpe:/a:symantec:enterprise_firewall",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec Enterprise Firewall"
+		},
+		{
+			"text": "cpe:/a:symantec:firewall_vpn_appliance",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec Firewall/VPN Appliance"
+		},
+		{
+			"text": "cpe:/a:symantec:gateway_security_300",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec Gateway Security 300 Series"
+		},
+		{
+			"text": "cpe:/a:symantec:gateway_security_400",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec Gateway Security 400 Series"
+		},
+		{
+			"text": "cpe:/a:symantec:gateway_security_5300",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec Gateway Security 5300 Series"
+		},
+		{
+			"text": "cpe:/a:symantec:gateway_security_5400",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec Gateway Security 5400 Series"
+		},
+		{
+			"text": "cpe:/a:symantec:symantec_velociraptor",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec VelociRaptor"
+		},
+		{
+			"text": "cpe:/h:allied_telesis_k.k.:router",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "ルーター"
+		},
+		{
+			"text": "cpe:/h:cisco:8110_router",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco 8110 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:aironet",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Aironet 350 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:aironet_ap340",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Aironet AP340 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:ata-180",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco ATA 180 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:bpx_switch_8600",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco BPX 8600 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:cache_engine",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Cache Engine"
+		},
+		{
+			"text": "cpe:/h:cisco:call_manager",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Call Manager (CCM)"
+		},
+		{
+			"text": "cpe:/h:cisco:catalyst_1200",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Catalyst 1200 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:catalyst_1900",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Catalyst 1900 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:catalyst_2800",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Catalyst 2800 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:catalyst_2820",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Catalyst 2820 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:catalyst_2900",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Catalyst 2900 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:catalyst_3000",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Catalyst 3000 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:catalyst_3900",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Catalyst 3900 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:catalyst_4000",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Catalyst 4000 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:catalyst_5000",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Catalyst 5000 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:catalyst_6000",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Catalyst 6000 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:channel_interface_processor",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Channel Interface Processor (CIP)"
+		},
+		{
+			"text": "cpe:/h:cisco:channel_port_adapter",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Channel Port Adapter (CPA)"
+		},
+		{
+			"text": "cpe:/h:cisco:content_delivery_manager",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Content Delivery Manager"
+		},
+		{
+			"text": "cpe:/h:cisco:content_engine",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Content Engine"
+		},
+		{
+			"text": "cpe:/h:cisco:content_router",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Content ルータ"
+		},
+		{
+			"text": "cpe:/h:cisco:content_switching_module",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Content Switching Module (CSM)"
+		},
+		{
+			"text": "cpe:/h:cisco:css_11000",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco CSS 11000 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:css_11500",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco CSS 11500 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:escon_channel_port_adapter",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Systems ESCON Channel Port Adapter (ECPA)"
+		},
+		{
+			"text": "cpe:/h:cisco:fasthub_300",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco FastHub 300 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:fasthub_400",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco FastHub 400 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:firewall_services_module",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Firewall Services Module (FWSM)"
+		},
+		{
+			"text": "cpe:/h:cisco:gss_global_site_selector",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Global Site Selector (GSS)"
+		},
+		{
+			"text": "cpe:/h:cisco:hosting_solution_engine",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "CiscoWorks Host Solution Engine (HSE)"
+		},
+		{
+			"text": "cpe:/h:cisco:igx_8400",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IGX 8400 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:ip_tv",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IP/TV"
+		},
+		{
+			"text": "cpe:/h:cisco:lightstream",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco LightStream"
+		},
+		{
+			"text": "cpe:/h:cisco:localdirector",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco LocalDirector"
+		},
+		{
+			"text": "cpe:/h:cisco:mds_9000",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco MDS 9000 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:me_1100",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco ME1100 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:mgx_8220",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco MGX 8220 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:mgx_8230",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco MGX 8230 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:mgx_8250",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco MGX 8250 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:mgx_8850",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco MGX 8850 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:mgx_8950",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco MGX 8950 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:microhub",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco MicroHub"
+		},
+		{
+			"text": "cpe:/h:cisco:microswitch",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco MicroSwitch"
+		},
+		{
+			"text": "cpe:/h:cisco:ons_15100",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco ONS 15100 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:ons_15300",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco ONS 15300 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:ons_15400",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco ONS 15400 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:ons_15500",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco ONS 15500 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:ons_15800_dwdm",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco ONS 15800 シリーズ DWDM Platforms"
+		},
+		{
+			"text": "cpe:/h:cisco:ons_15830",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco ONS 15830"
+		},
+		{
+			"text": "cpe:/h:cisco:ons_15831",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco ONS 15831"
+		},
+		{
+			"text": "cpe:/h:cisco:ons_15832",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco ONS 15832"
+		},
+		{
+			"text": "cpe:/h:cisco:parallel_channel_port_adapter",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Systems Parallel Channel Port Adapter (PCPA)"
+		},
+		{
+			"text": "cpe:/h:cisco:pix_firewall",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco PIX Firewall"
+		},
+		{
+			"text": "cpe:/h:cisco:rtm",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco RTM"
+		},
+		{
+			"text": "cpe:/h:cisco:secure_ids",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Secure IDS"
+		},
+		{
+			"text": "cpe:/h:cisco:sn_5400",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco SN 5400 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:switchprobe",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco SwitchProbe"
+		},
+		{
+			"text": "cpe:/h:cisco:traffic_director",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Traffic Director"
+		},
+		{
+			"text": "cpe:/h:cisco:unity",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Unity"
+		},
+		{
+			"text": "cpe:/h:cisco:vg248",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco VG248"
+		},
+		{
+			"text": "cpe:/h:cisco:vg248_analog_phone_gateway",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco VG248 Analog Phone Gateway"
+		},
+		{
+			"text": "cpe:/h:cisco:vpn_3000",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco VPN 3000 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:ws-x6608-e1",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "WS-X6608-E1"
+		},
+		{
+			"text": "cpe:/h:cisco:ws-x6608-t1",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "WS-X6608-T1"
+		},
+		{
+			"text": "cpe:/h:cisco:ws-x6624-fxs",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "WS-X6624-FXS"
+		},
+		{
+			"text": "cpe:/h:hitachi:gr2000",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "GR2000"
+		},
+		{
+			"text": "cpe:/h:hitachi:gr4000",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "GR4000"
+		},
+		{
+			"text": "cpe:/h:hitachi:gs3000",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "GS3000"
+		},
+		{
+			"text": "cpe:/h:hitachi:gs4000",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "GS4000"
+		},
+		{
+			"text": "cpe:/h:hitachi:sanrise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "SANRISE"
+		},
+		{
+			"text": "cpe:/h:hp:advancestack_switch",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP AdvanceStack スイッチ"
+		},
+		{
+			"text": "cpe:/h:hp:ethertwist_switch",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP EtherTwist スイッチ"
+		},
+		{
+			"text": "cpe:/h:hp:procurve_routing_switch",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP ProCurve ルーティング スイッチ"
+		},
+		{
+			"text": "cpe:/h:hp:procurve_switch",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP ProCurve Switch"
+		},
+		{
+			"text": "cpe:/h:nec:cx3200",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CX3200"
+		},
+		{
+			"text": "cpe:/h:nec:ix1000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IX1000シリーズ"
+		},
+		{
+			"text": "cpe:/h:nec:ix2000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IX2000シリーズ"
+		},
+		{
+			"text": "cpe:/h:nec:ix3000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IX3000シリーズ"
+		},
+		{
+			"text": "cpe:/h:nec:ix5000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IX5000シリーズ"
+		},
+		{
+			"text": "cpe:/h:nec:ix5500",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IX5500シリーズ"
+		},
+		{
+			"text": "cpe:/h:nec:qx",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "QXシリーズ"
+		},
+		{
+			"text": "cpe:/h:nec:univerge_ip8800_s_r",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "UNIVERGE IP8800/S,/Rシリーズ"
+		},
+		{
+			"text": "cpe:/h:symantec:nexland_isb_soho_firewall_appliance",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Nexland ISB SOHO Firewall Appliance"
+		},
+		{
+			"text": "cpe:/h:symantec:nexland_pro_firewall_appliance",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Nexland Pro Series Firewall Appliance"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT シリーズ"
+		},
+		{
+			"text": "cpe:/o:cisco:ios",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IOS"
+		},
+		{
+			"text": "cpe:/o:ibm:aix",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM AIX"
+		},
+		{
+			"text": "cpe:/o:juniper:screenos",
+			"version": "2.2",
+			"vendor": "ジュニパーネットワークス",
+			"product": "ScreenOS"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows-9x",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 9X"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_2000",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 2000"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2003",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2003"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_xp",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows XP"
+		},
+		{
+			"text": "cpe:/o:netbsd:netbsd",
+			"version": "2.2",
+			"vendor": "NetBSD",
+			"product": "NetBSD"
+		},
+		{
+			"text": "cpe:/o:oracle:solaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Solaris"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2015-01-22T14:56+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2015-01-22T14:56+09:00"
 }

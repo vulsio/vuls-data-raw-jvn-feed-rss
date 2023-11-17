@@ -1,82 +1,82 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001183.html",
-  "title": "Linux kernel の skfp_ioctl 関数におけるドライバの統計情報をリセットされる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001183.html",
-  "description": "Linux kernel の drivers/net/skfp/skfddi.c に内にある skfp_ioctl 関数には、CAP_NET_ADMIN ケーパビリティがない場合に SKFP_CLR_STATS リクエストを許可するため、ドライバの統計情報をリセットされる脆弱性が存在します。",
-  "identifier": "JVNDB-2009-001183",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0675",
-      "source": "CVE",
-      "id": "CVE-2009-0675"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0675",
-      "source": "NVD",
-      "id": "CVE-2009-0675"
-    },
-    {
-      "text": "http://secunia.com/advisories/33758",
-      "source": "SECUNIA",
-      "id": "SA33758"
-    },
-    {
-      "text": "http://secunia.com/advisories/34502",
-      "source": "SECUNIA",
-      "id": "SA34502"
-    },
-    {
-      "text": "http://secunia.com/advisories/33938",
-      "source": "SECUNIA",
-      "id": "SA33938"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-DesignError",
-      "title": "設計上の問題(CWE-DesignError)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.1",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2009-06-24T10:48+09:00",
-  "issued": "2009-04-28T10:49+09:00",
-  "modified": "2009-06-24T10:48+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001183.html",
+	"title": "Linux kernel の skfp_ioctl 関数におけるドライバの統計情報をリセットされる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001183.html",
+	"description": "Linux kernel の drivers/net/skfp/skfddi.c に内にある skfp_ioctl 関数には、CAP_NET_ADMIN ケーパビリティがない場合に SKFP_CLR_STATS リクエストを許可するため、ドライバの統計情報をリセットされる脆弱性が存在します。",
+	"identifier": "JVNDB-2009-001183",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0675",
+			"source": "CVE",
+			"id": "CVE-2009-0675"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0675",
+			"source": "NVD",
+			"id": "CVE-2009-0675"
+		},
+		{
+			"text": "http://secunia.com/advisories/33758",
+			"source": "SECUNIA",
+			"id": "SA33758"
+		},
+		{
+			"text": "http://secunia.com/advisories/34502",
+			"source": "SECUNIA",
+			"id": "SA34502"
+		},
+		{
+			"text": "http://secunia.com/advisories/33938",
+			"source": "SECUNIA",
+			"id": "SA33938"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-DesignError",
+			"title": "設計上の問題(CWE-DesignError)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.1",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2009-06-24T10:48+09:00",
+	"issued": "2009-04-28T10:49+09:00",
+	"modified": "2009-06-24T10:48+09:00"
 }

@@ -1,45 +1,45 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-007740.html",
-  "title": "NCR SelfServ ATM BNA における複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-007740.html",
-  "description": "NCR が提供する SelfServ ATM BNAには、次の複数の脆弱性が存在します。\r\n\r\n　* 暗号化および認証の欠如 - CVE-2020-10124\r\nBNA とホストコンピュータ間の通信が暗号化されておらず、また認証機構も欠如しているため、攻撃者により通信内容の窃取や改ざんが行われる可能性があります。\r\n　\r\n　* 不適切な暗号強度 - CVE-2020-10125\r\nBNA のソフトウェア更新ファイルの証明書には強度の低い 512 ビット長の RSA 鍵が用いられており、攻撃者により容易に解析されてしまいます。そのため BNA のソフトウェア更新時に攻撃者により不正なファイルを読み込ませられ、結果として任意のコードを実行させられる可能性があります。\r\n　\r\n　* 認証回避 - CVE-2020-10126\r\nBNA のソフトウェア更新処理において、更新ファイルの検証が行われる前にリムーバブルメディアから任意のファイルを読み込み実行してしまう状況が発生することがあります。その結果、攻撃者によりシステムの認証を回避され、SYSTEM 権限で任意のコードが実行される可能性があります。",
-  "identifier": "JVNDB-2020-007740",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU99081767/",
-      "source": "JVN",
-      "id": "JVNVU#99081767"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10124",
-      "source": "CVE",
-      "id": "CVE-2020-10124"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10126",
-      "source": "CVE",
-      "id": "CVE-2020-10126"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10125",
-      "source": "CVE",
-      "id": "CVE-2020-10125"
-    },
-    {
-      "text": "https://kb.cert.org/vuls/id/815655",
-      "source": "CERT-VN",
-      "id": "VU#815655"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:ncr:aptra_xfs",
-      "version": "2.2",
-      "vendor": "NCR",
-      "product": "APTRA XFS"
-    }
-  ],
-  "date": "2020-08-25T14:29+09:00",
-  "issued": "2020-08-25T14:29+09:00",
-  "modified": "2020-08-25T14:29+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-007740.html",
+	"title": "NCR SelfServ ATM BNA における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-007740.html",
+	"description": "NCR が提供する SelfServ ATM BNAには、次の複数の脆弱性が存在します。\r\n\r\n　* 暗号化および認証の欠如 - CVE-2020-10124\r\nBNA とホストコンピュータ間の通信が暗号化されておらず、また認証機構も欠如しているため、攻撃者により通信内容の窃取や改ざんが行われる可能性があります。\r\n　\r\n　* 不適切な暗号強度 - CVE-2020-10125\r\nBNA のソフトウェア更新ファイルの証明書には強度の低い 512 ビット長の RSA 鍵が用いられており、攻撃者により容易に解析されてしまいます。そのため BNA のソフトウェア更新時に攻撃者により不正なファイルを読み込ませられ、結果として任意のコードを実行させられる可能性があります。\r\n　\r\n　* 認証回避 - CVE-2020-10126\r\nBNA のソフトウェア更新処理において、更新ファイルの検証が行われる前にリムーバブルメディアから任意のファイルを読み込み実行してしまう状況が発生することがあります。その結果、攻撃者によりシステムの認証を回避され、SYSTEM 権限で任意のコードが実行される可能性があります。",
+	"identifier": "JVNDB-2020-007740",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU99081767/",
+			"source": "JVN",
+			"id": "JVNVU#99081767"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10124",
+			"source": "CVE",
+			"id": "CVE-2020-10124"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10126",
+			"source": "CVE",
+			"id": "CVE-2020-10126"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10125",
+			"source": "CVE",
+			"id": "CVE-2020-10125"
+		},
+		{
+			"text": "https://kb.cert.org/vuls/id/815655",
+			"source": "CERT-VN",
+			"id": "VU#815655"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:ncr:aptra_xfs",
+			"version": "2.2",
+			"vendor": "NCR",
+			"product": "APTRA XFS"
+		}
+	],
+	"date": "2020-08-25T14:29+09:00",
+	"issued": "2020-08-25T14:29+09:00",
+	"modified": "2020-08-25T14:29+09:00"
 }

@@ -1,78 +1,78 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000799.html",
-  "title": "GnuPG の ask_outfile_name() 関数におけるヒープオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000799.html",
-  "description": "GnuPG の openfile.c 内の ask_outfile_name() 関数には、make_printable_string() 関数において変換前の文字列長である NAMELEN よりも長い文字列が返された場合にヒープオーバーフローが発生する脆弱性が存在します。",
-  "identifier": "JVNDB-2006-000799",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6169",
-      "source": "CVE",
-      "id": "CVE-2006-6169"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-6169",
-      "source": "NVD",
-      "id": "CVE-2006-6169"
-    },
-    {
-      "text": "http://secunia.com/advisories/23094/",
-      "source": "SECUNIA",
-      "id": "SA23094"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/21306",
-      "source": "BID",
-      "id": "21306"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2006/4736",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2006-4736"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:gnu:gnupg",
-      "version": "2.2",
-      "vendor": "GNU Project",
-      "product": "GnuPG"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:linux_advanced_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux Advanced Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000799.html",
+	"title": "GnuPG の ask_outfile_name() 関数におけるヒープオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000799.html",
+	"description": "GnuPG の openfile.c 内の ask_outfile_name() 関数には、make_printable_string() 関数において変換前の文字列長である NAMELEN よりも長い文字列が返された場合にヒープオーバーフローが発生する脆弱性が存在します。",
+	"identifier": "JVNDB-2006-000799",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6169",
+			"source": "CVE",
+			"id": "CVE-2006-6169"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-6169",
+			"source": "NVD",
+			"id": "CVE-2006-6169"
+		},
+		{
+			"text": "http://secunia.com/advisories/23094/",
+			"source": "SECUNIA",
+			"id": "SA23094"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/21306",
+			"source": "BID",
+			"id": "21306"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2006/4736",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2006-4736"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:gnu:gnupg",
+			"version": "2.2",
+			"vendor": "GNU Project",
+			"product": "GnuPG"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:linux_advanced_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux Advanced Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

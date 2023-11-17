@@ -1,647 +1,647 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002172.html",
-  "title": "Apache HTTPD サーバにサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002172.html",
-  "description": "Apache HTTPD サーバには、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nApache HTTPD サーバには、Range ヘッダおよび Request-Range ヘッダの処理に問題があり、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\n本脆弱性を使用した攻撃が観測されています。\r\nまた、\"Apache Killer\" と呼ばれる攻撃ツールが公開されています。\r\n\r\nApache のアドバイザリには、以下のように記載されています。\r\n\r\n\"Background and the 2007 report\r\n\r\nThere are two aspects to this vulnerability. One is new, is Apache specific; and resolved with this server side fix. The other issue is fundamentally a protocol design issue dating back to 2007:\r\n\r\nhttp://seclists.org/bugtraq/2007/Jan/83\r\n\r\nThe contemporary interpretation of the HTTP protocol (currently) requires a server to return multiple (overlapping) ranges; in the order requested. This means that one can request a very large range (e.g. from byte 0- to the end) 100's of times in a single request.\r\n\r\nBeing able to do so is an issue for (probably all) webservers and currently subject of an IETF discussion to change the protocol:\r\n\r\nhttp://trac.tools.ietf.org/wg/httpbis/trac/ticket/311\r\n\r\nThis advisory details a problem with how Apache httpd and its so called internal 'bucket brigades' deal with serving such \"valid\" request. The problem is that currently such requests internally explode into 100's of large fetches, all of which are kept in memory in an inefficient way. This is being addressed in two ways. By making things more efficient. And by weeding out or simplifying requests deemed too unwieldy.\"",
-  "identifier": "JVNDB-2011-002172",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU405811",
-      "source": "JVN",
-      "id": "JVNVU#405811"
-    },
-    {
-      "text": "http://jvn.jp/tr/JVNTR-2011-05",
-      "source": "JVNTR",
-      "id": "JVNTR-2011-05"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192",
-      "source": "CVE",
-      "id": "CVE-2011-3192"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3192",
-      "source": "NVD",
-      "id": "CVE-2011-3192"
-    },
-    {
-      "text": "https://www.jpcert.or.jp/at/2011/at110023.html",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2011-0023"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/405811",
-      "source": "CERT-VN",
-      "id": "VU#405811"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/ciadr/vul/20110831-apache.html",
-      "source": "IPA",
-      "id": "20110831-apache"
-    },
-    {
-      "text": "http://secunia.com/advisories/45606",
-      "source": "SECUNIA",
-      "id": "SA45606"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/49303",
-      "source": "BID",
-      "id": "49303"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1025960",
-      "source": "SECTRACK",
-      "id": "1025960"
-    },
-    {
-      "text": "http://osvdb.org/74721",
-      "source": "OSVDB",
-      "id": "74721"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-      "id": "CWE-399",
-      "title": "リソース管理の問題(CWE-399)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:http_server",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache HTTP Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:cloud_infrastructure_management_software",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "クラウド インフラ マネージメント ソフトウェア"
-    },
-    {
-      "text": "cpe:/a:fujitsu:internet_navigware_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Internet Navigware Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_application_development_cycle_manager",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Application Development Cycle Manager"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_application_framework_suite",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Application Framework Suite"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_application_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Application Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_apworks",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Apworks"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_business_application_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Business Application Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_form_coordinator_workflow",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Form Coordinator Workflow"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_job_workload_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Job Workload Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_list_manager",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage List Manager"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_list_works",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage List Works"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_service_integrator",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Service Integrator"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_studio",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Studio"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_web_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Web Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_xml_business_activity_recorder",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage XML Business Activity Recorder"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_availability_view",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Availability View"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_centric_manager",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Centric Manager"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_desktop_inspection",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Desktop Inspection"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_it_change_manager",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker IT Change Manager"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_it_process_master",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker IT Process Master"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_resource_coordinator",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Resource Coordinator"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_runbook_automation",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Runbook Automation"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_service_catalog_manager",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Service Catalog Manager"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_service_quality_coordinator",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Service Quality Coordinator"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_software_configuration_manager",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Software Configuration Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:device_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Device Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:electronic_form_workflow",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "電子フォームワークフロー"
-    },
-    {
-      "text": "cpe:/a:hitachi:global_link_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Global Link Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:groupmax_collaboration",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Groupmax Collaboration"
-    },
-    {
-      "text": "cpe:/a:hitachi:hirdb_realtime_monitor",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "HiRDB RealTime Monitor"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_web_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Web Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:it_operations_analyzer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi IT Operations Analyzer"
-    },
-    {
-      "text": "cpe:/a:hitachi:it_operations_director",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi IT Operations Director"
-    },
-    {
-      "text": "cpe:/a:hitachi:job_management_partner_1_automatic_job_management_system_3",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Job Management Partner 1/Automatic Job Management System 3"
-    },
-    {
-      "text": "cpe:/a:hitachi:job_management_partner_1_performance_management_web_console",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Job Management Partner 1/Performance Management - Web Console"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1-hicommand_device_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/HiCommand Device Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1-hicommand_provisioning_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/HiCommand Provisioning Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1-hicommand_replication_monitor",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/HiCommand Replication Monitor"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1-hicommand_tiered_storage_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/HiCommand Tiered Storage Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1-hicommand_tuning_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/HiCommand Tuning Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_automatic_job_management_system_2",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/Automatic Job Management System 2"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_automatic_job_management_system_3",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/Automatic Job Management System 3"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_cm2_snmp_system_observer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/Cm2/SNMP System Observer"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_integrated_management",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/Integrated Management"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_it_resource_management",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/IT Resource Management"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_it_service_level_management",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/IT Service Level Management"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_performance_management",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/Performance Management"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_serverconductor_control_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/ServerConductor/Control Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:provisioning_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Provisioning Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:replication_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Replication Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:tiered_storage_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Tiered Storage Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:tuning_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Tuning Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_collaboration",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Collaboration"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_navigation",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Navigation"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_stream_data_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Stream Data Platform"
-    },
-    {
-      "text": "cpe:/a:hp:hp-ux_web_server_suite",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX Web Server Suite"
-    },
-    {
-      "text": "cpe:/a:hp:secure_web_server_for_open_vms",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP Secure Web Server for OpenVMS"
-    },
-    {
-      "text": "cpe:/a:ibm:http_server",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM HTTP Server"
-    },
-    {
-      "text": "cpe:/a:nec:csview",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CSVIEW"
-    },
-    {
-      "text": "cpe:/a:nec:pasolink_nms",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "PASOLINK NMS"
-    },
-    {
-      "text": "cpe:/a:nec:webotx",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_enterprise_service_bus",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Enterprise Service Bus"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_portal",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Portal"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_sip_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX SIP Application Server"
-    },
-    {
-      "text": "cpe:/a:oracle:application_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Application Server"
-    },
-    {
-      "text": "cpe:/a:oracle:fusion_middleware",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Fusion Middleware"
-    },
-    {
-      "text": "cpe:/a:oracle:secure_backup",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Secure Backup"
-    },
-    {
-      "text": "cpe:/a:oracle:supply_chain_products_suite",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Supply Chain Products Suite"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_server_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server EUS"
-    },
-    {
-      "text": "cpe:/a:ricoh:ridoc_document_router",
-      "version": "2.2",
-      "vendor": "リコー",
-      "product": "Ridoc Document Router"
-    },
-    {
-      "text": "cpe:/a:ricoh:ridoc_document_server",
-      "version": "2.2",
-      "vendor": "リコー",
-      "product": "Ridoc Document Server"
-    },
-    {
-      "text": "cpe:/a:ricoh:ridoc_document_system",
-      "version": "2.2",
-      "vendor": "リコー",
-      "product": "Ridoc Document System"
-    },
-    {
-      "text": "cpe:/a:ricoh:ridoc_io_operationserver",
-      "version": "2.2",
-      "vendor": "リコー",
-      "product": "Ridoc IO OperationServer"
-    },
-    {
-      "text": "cpe:/a:ricoh:ridoc_web_navigator",
-      "version": "2.2",
-      "vendor": "リコー",
-      "product": "Ridoc Web Navigator"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:oracle:solaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Solaris"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_els",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux ELS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_long_life",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Long Life"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    },
-    {
-      "text": "cpe:/o:redhat:rhel_desktop_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2017-07-25T13:51+09:00",
-  "issued": "2011-09-01T11:25+09:00",
-  "modified": "2017-07-25T13:51+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002172.html",
+	"title": "Apache HTTPD サーバにサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-002172.html",
+	"description": "Apache HTTPD サーバには、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nApache HTTPD サーバには、Range ヘッダおよび Request-Range ヘッダの処理に問題があり、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\n本脆弱性を使用した攻撃が観測されています。\r\nまた、\"Apache Killer\" と呼ばれる攻撃ツールが公開されています。\r\n\r\nApache のアドバイザリには、以下のように記載されています。\r\n\r\n\"Background and the 2007 report\r\n\r\nThere are two aspects to this vulnerability. One is new, is Apache specific; and resolved with this server side fix. The other issue is fundamentally a protocol design issue dating back to 2007:\r\n\r\nhttp://seclists.org/bugtraq/2007/Jan/83\r\n\r\nThe contemporary interpretation of the HTTP protocol (currently) requires a server to return multiple (overlapping) ranges; in the order requested. This means that one can request a very large range (e.g. from byte 0- to the end) 100's of times in a single request.\r\n\r\nBeing able to do so is an issue for (probably all) webservers and currently subject of an IETF discussion to change the protocol:\r\n\r\nhttp://trac.tools.ietf.org/wg/httpbis/trac/ticket/311\r\n\r\nThis advisory details a problem with how Apache httpd and its so called internal 'bucket brigades' deal with serving such \"valid\" request. The problem is that currently such requests internally explode into 100's of large fetches, all of which are kept in memory in an inefficient way. This is being addressed in two ways. By making things more efficient. And by weeding out or simplifying requests deemed too unwieldy.\"",
+	"identifier": "JVNDB-2011-002172",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU405811",
+			"source": "JVN",
+			"id": "JVNVU#405811"
+		},
+		{
+			"text": "http://jvn.jp/tr/JVNTR-2011-05",
+			"source": "JVNTR",
+			"id": "JVNTR-2011-05"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192",
+			"source": "CVE",
+			"id": "CVE-2011-3192"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-3192",
+			"source": "NVD",
+			"id": "CVE-2011-3192"
+		},
+		{
+			"text": "https://www.jpcert.or.jp/at/2011/at110023.html",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2011-0023"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/405811",
+			"source": "CERT-VN",
+			"id": "VU#405811"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/ciadr/vul/20110831-apache.html",
+			"source": "IPA",
+			"id": "20110831-apache"
+		},
+		{
+			"text": "http://secunia.com/advisories/45606",
+			"source": "SECUNIA",
+			"id": "SA45606"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/49303",
+			"source": "BID",
+			"id": "49303"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1025960",
+			"source": "SECTRACK",
+			"id": "1025960"
+		},
+		{
+			"text": "http://osvdb.org/74721",
+			"source": "OSVDB",
+			"id": "74721"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+			"id": "CWE-399",
+			"title": "リソース管理の問題(CWE-399)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:http_server",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache HTTP Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:cloud_infrastructure_management_software",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "クラウド インフラ マネージメント ソフトウェア"
+		},
+		{
+			"text": "cpe:/a:fujitsu:internet_navigware_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Internet Navigware Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_application_development_cycle_manager",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Application Development Cycle Manager"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_application_framework_suite",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Application Framework Suite"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_application_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Application Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_apworks",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Apworks"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_business_application_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Business Application Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_form_coordinator_workflow",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Form Coordinator Workflow"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_job_workload_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Job Workload Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_list_manager",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage List Manager"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_list_works",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage List Works"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_service_integrator",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Service Integrator"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_studio",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Studio"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_web_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Web Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_xml_business_activity_recorder",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage XML Business Activity Recorder"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_availability_view",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Availability View"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_centric_manager",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Centric Manager"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_desktop_inspection",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Desktop Inspection"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_it_change_manager",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker IT Change Manager"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_it_process_master",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker IT Process Master"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_resource_coordinator",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Resource Coordinator"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_runbook_automation",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Runbook Automation"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_service_catalog_manager",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Service Catalog Manager"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_service_quality_coordinator",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Service Quality Coordinator"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_software_configuration_manager",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Software Configuration Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:device_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Device Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:electronic_form_workflow",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "電子フォームワークフロー"
+		},
+		{
+			"text": "cpe:/a:hitachi:global_link_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Global Link Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:groupmax_collaboration",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Groupmax Collaboration"
+		},
+		{
+			"text": "cpe:/a:hitachi:hirdb_realtime_monitor",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "HiRDB RealTime Monitor"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_web_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Web Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:it_operations_analyzer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi IT Operations Analyzer"
+		},
+		{
+			"text": "cpe:/a:hitachi:it_operations_director",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi IT Operations Director"
+		},
+		{
+			"text": "cpe:/a:hitachi:job_management_partner_1_automatic_job_management_system_3",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Job Management Partner 1/Automatic Job Management System 3"
+		},
+		{
+			"text": "cpe:/a:hitachi:job_management_partner_1_performance_management_web_console",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Job Management Partner 1/Performance Management - Web Console"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1-hicommand_device_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/HiCommand Device Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1-hicommand_provisioning_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/HiCommand Provisioning Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1-hicommand_replication_monitor",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/HiCommand Replication Monitor"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1-hicommand_tiered_storage_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/HiCommand Tiered Storage Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1-hicommand_tuning_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/HiCommand Tuning Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_automatic_job_management_system_2",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/Automatic Job Management System 2"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_automatic_job_management_system_3",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/Automatic Job Management System 3"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_cm2_snmp_system_observer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/Cm2/SNMP System Observer"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_integrated_management",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/Integrated Management"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_it_resource_management",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/IT Resource Management"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_it_service_level_management",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/IT Service Level Management"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_performance_management",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/Performance Management"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_serverconductor_control_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/ServerConductor/Control Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:provisioning_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Provisioning Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:replication_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Replication Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:tiered_storage_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Tiered Storage Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:tuning_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Tuning Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_collaboration",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Collaboration"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_navigation",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Navigation"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_stream_data_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Stream Data Platform"
+		},
+		{
+			"text": "cpe:/a:hp:hp-ux_web_server_suite",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX Web Server Suite"
+		},
+		{
+			"text": "cpe:/a:hp:secure_web_server_for_open_vms",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP Secure Web Server for OpenVMS"
+		},
+		{
+			"text": "cpe:/a:ibm:http_server",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM HTTP Server"
+		},
+		{
+			"text": "cpe:/a:nec:csview",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CSVIEW"
+		},
+		{
+			"text": "cpe:/a:nec:pasolink_nms",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "PASOLINK NMS"
+		},
+		{
+			"text": "cpe:/a:nec:webotx",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_enterprise_service_bus",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Enterprise Service Bus"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_portal",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Portal"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_sip_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX SIP Application Server"
+		},
+		{
+			"text": "cpe:/a:oracle:application_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Application Server"
+		},
+		{
+			"text": "cpe:/a:oracle:fusion_middleware",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Fusion Middleware"
+		},
+		{
+			"text": "cpe:/a:oracle:secure_backup",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Secure Backup"
+		},
+		{
+			"text": "cpe:/a:oracle:supply_chain_products_suite",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Supply Chain Products Suite"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_server_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server EUS"
+		},
+		{
+			"text": "cpe:/a:ricoh:ridoc_document_router",
+			"version": "2.2",
+			"vendor": "リコー",
+			"product": "Ridoc Document Router"
+		},
+		{
+			"text": "cpe:/a:ricoh:ridoc_document_server",
+			"version": "2.2",
+			"vendor": "リコー",
+			"product": "Ridoc Document Server"
+		},
+		{
+			"text": "cpe:/a:ricoh:ridoc_document_system",
+			"version": "2.2",
+			"vendor": "リコー",
+			"product": "Ridoc Document System"
+		},
+		{
+			"text": "cpe:/a:ricoh:ridoc_io_operationserver",
+			"version": "2.2",
+			"vendor": "リコー",
+			"product": "Ridoc IO OperationServer"
+		},
+		{
+			"text": "cpe:/a:ricoh:ridoc_web_navigator",
+			"version": "2.2",
+			"vendor": "リコー",
+			"product": "Ridoc Web Navigator"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:oracle:solaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Solaris"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_els",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux ELS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_long_life",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Long Life"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		},
+		{
+			"text": "cpe:/o:redhat:rhel_desktop_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2017-07-25T13:51+09:00",
+	"issued": "2011-09-01T11:25+09:00",
+	"modified": "2017-07-25T13:51+09:00"
 }

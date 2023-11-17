@@ -1,99 +1,99 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004729.html",
-  "title": "Belkin N600 DB Wireless Dual-Band N+ Router に複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004729.html",
-  "description": "Belkin が提供する N600 DB Wireless Dual-Band N+ Router には、複数の脆弱性が存在します。\r\n\r\n\r\n* 不十分なランダム値の使用 (CWE-330) - CVE-2015-5987\r\n当該製品では、ファームウェアアップデートや NTP サーバの名前解決のために DNS クエリを生成しますが、これらのクエリは 0x0002 から始まって増加していく予測可能な TXID を使用しています。DNS レスポンスのなりすましが可能な攻撃者によって、攻撃者の支配下にあるホストに誘導される可能性があります。\r\n\r\nCWE-330: Use of Insufficiently Random Values\r\nhttps://cwe.mitre.org/data/definitions/330.html\r\n\r\n\r\n* 機密情報の平文通信 (CWE-319) \r\n当該製品は、デフォルト設定で、ファームウェアアップデート情報の確認と通信を HTTP 通信で行っています。中間者 (man-in-the-middle) 攻撃により通信内容が改ざんされた場合、アップデートをブロックされたり、任意のファイルを挿入されたりする可能性があります。\r\n\r\nCWE-319: Cleartext Transmission of Sensitive Information\r\nhttps://cwe.mitre.org/data/definitions/319.html\r\n\r\n\r\n* 証明書やパスワードの管理 (CWE-255) - CVE-2015-5988\r\n当該製品は、デフォルト設定で、ウェブインターフェースへのアクセスにパスワードを設定していません。クロスサイトリクエストフォージェリなどの攻撃に利用されたり、LAN に接続できる攻撃者によりウェブインターフェースを直接操作されたりする可能性があります。\r\n\r\nCWE-255: Credentials Management\r\nhttps://cwe.mitre.org/data/definitions/255.html\r\n\r\n\r\n* クライアントサイド認証の使用 (CWE-603) - CVE-2015-5989\r\n当該製品のウェブインターフェースにパスワードを設定した場合、認証はブラウザ側で行われます。攻撃者は当該製品から送られてきたパケットから文字列 \"LockStatus\": \"1\" および \"Login_Success\": \"0\" を探し出し、値を \"2\" および \"1\" に変更することで、認証を回避してウェブインターフェースの制限されたページにアクセス可能です。\r\n\r\nCWE-603: Use of Client-Side Authentication\r\nhttps://cwe.mitre.org/data/definitions/603.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-264 として公開されています。\r\n\r\n\r\n* クロスサイトリクエストフォージェリ (CWE-352) - CVE-2015-5990\r\n当該製品にはクロスサイトリクエストフォージェリの脆弱性が存在します。当該製品にログインしているユーザが、遠隔の攻撃者が用意した URL にアクセスすることで、当該製品を操作させられる可能性があります。デフォルトの設定ではウェブインターフェースにパスワードが設定されていないため、ユーザがログインしていなくても攻撃が可能です。\r\n\r\nCWE-352: Cross-Site Request Forgery (CSRF)\r\nhttps://cwe.mitre.org/data/definitions/352.html",
-  "identifier": "JVNDB-2015-004729",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU94788413/index.html",
-      "source": "JVN",
-      "id": "JVNVU#94788413"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5987",
-      "source": "CVE",
-      "id": "CVE-2015-5987"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5988",
-      "source": "CVE",
-      "id": "CVE-2015-5988"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5989",
-      "source": "CVE",
-      "id": "CVE-2015-5989"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5990",
-      "source": "CVE",
-      "id": "CVE-2015-5990"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5987",
-      "source": "NVD",
-      "id": "CVE-2015-5987"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5988",
-      "source": "NVD",
-      "id": "CVE-2015-5988"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5989",
-      "source": "NVD",
-      "id": "CVE-2015-5989"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5990",
-      "source": "NVD",
-      "id": "CVE-2015-5990"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/201168",
-      "source": "CERT-VN",
-      "id": "VU#201168"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
-      "id": "CWE-255",
-      "title": "証明書・パスワードの管理(CWE-255)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
-      "id": "CWE-352",
-      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:belkin:f9k1102v2_firmware",
-      "version": "2.2",
-      "vendor": "Belkin International",
-      "product": "N600 DB Wireless Dual-Band N+ Router F9K1102 v2 ファームウェア"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2016-01-07T16:32+09:00",
-  "issued": "2015-09-18T18:19+09:00",
-  "modified": "2016-01-07T16:32+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004729.html",
+	"title": "Belkin N600 DB Wireless Dual-Band N+ Router に複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004729.html",
+	"description": "Belkin が提供する N600 DB Wireless Dual-Band N+ Router には、複数の脆弱性が存在します。\r\n\r\n\r\n* 不十分なランダム値の使用 (CWE-330) - CVE-2015-5987\r\n当該製品では、ファームウェアアップデートや NTP サーバの名前解決のために DNS クエリを生成しますが、これらのクエリは 0x0002 から始まって増加していく予測可能な TXID を使用しています。DNS レスポンスのなりすましが可能な攻撃者によって、攻撃者の支配下にあるホストに誘導される可能性があります。\r\n\r\nCWE-330: Use of Insufficiently Random Values\r\nhttps://cwe.mitre.org/data/definitions/330.html\r\n\r\n\r\n* 機密情報の平文通信 (CWE-319) \r\n当該製品は、デフォルト設定で、ファームウェアアップデート情報の確認と通信を HTTP 通信で行っています。中間者 (man-in-the-middle) 攻撃により通信内容が改ざんされた場合、アップデートをブロックされたり、任意のファイルを挿入されたりする可能性があります。\r\n\r\nCWE-319: Cleartext Transmission of Sensitive Information\r\nhttps://cwe.mitre.org/data/definitions/319.html\r\n\r\n\r\n* 証明書やパスワードの管理 (CWE-255) - CVE-2015-5988\r\n当該製品は、デフォルト設定で、ウェブインターフェースへのアクセスにパスワードを設定していません。クロスサイトリクエストフォージェリなどの攻撃に利用されたり、LAN に接続できる攻撃者によりウェブインターフェースを直接操作されたりする可能性があります。\r\n\r\nCWE-255: Credentials Management\r\nhttps://cwe.mitre.org/data/definitions/255.html\r\n\r\n\r\n* クライアントサイド認証の使用 (CWE-603) - CVE-2015-5989\r\n当該製品のウェブインターフェースにパスワードを設定した場合、認証はブラウザ側で行われます。攻撃者は当該製品から送られてきたパケットから文字列 \"LockStatus\": \"1\" および \"Login_Success\": \"0\" を探し出し、値を \"2\" および \"1\" に変更することで、認証を回避してウェブインターフェースの制限されたページにアクセス可能です。\r\n\r\nCWE-603: Use of Client-Side Authentication\r\nhttps://cwe.mitre.org/data/definitions/603.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-264 として公開されています。\r\n\r\n\r\n* クロスサイトリクエストフォージェリ (CWE-352) - CVE-2015-5990\r\n当該製品にはクロスサイトリクエストフォージェリの脆弱性が存在します。当該製品にログインしているユーザが、遠隔の攻撃者が用意した URL にアクセスすることで、当該製品を操作させられる可能性があります。デフォルトの設定ではウェブインターフェースにパスワードが設定されていないため、ユーザがログインしていなくても攻撃が可能です。\r\n\r\nCWE-352: Cross-Site Request Forgery (CSRF)\r\nhttps://cwe.mitre.org/data/definitions/352.html",
+	"identifier": "JVNDB-2015-004729",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU94788413/index.html",
+			"source": "JVN",
+			"id": "JVNVU#94788413"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5987",
+			"source": "CVE",
+			"id": "CVE-2015-5987"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5988",
+			"source": "CVE",
+			"id": "CVE-2015-5988"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5989",
+			"source": "CVE",
+			"id": "CVE-2015-5989"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5990",
+			"source": "CVE",
+			"id": "CVE-2015-5990"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5987",
+			"source": "NVD",
+			"id": "CVE-2015-5987"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5988",
+			"source": "NVD",
+			"id": "CVE-2015-5988"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5989",
+			"source": "NVD",
+			"id": "CVE-2015-5989"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5990",
+			"source": "NVD",
+			"id": "CVE-2015-5990"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/201168",
+			"source": "CERT-VN",
+			"id": "VU#201168"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
+			"id": "CWE-255",
+			"title": "証明書・パスワードの管理(CWE-255)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+			"id": "CWE-352",
+			"title": "クロスサイトリクエストフォージェリ(CWE-352)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:belkin:f9k1102v2_firmware",
+			"version": "2.2",
+			"vendor": "Belkin International",
+			"product": "N600 DB Wireless Dual-Band N+ Router F9K1102 v2 ファームウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2016-01-07T16:32+09:00",
+	"issued": "2015-09-18T18:19+09:00",
+	"modified": "2016-01-07T16:32+09:00"
 }

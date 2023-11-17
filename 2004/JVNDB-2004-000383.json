@@ -1,64 +1,64 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000383.html",
-  "title": "FreeRADIUS の Ascend-Send-Secret 属性のデコードにおけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000383.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nFreeRADIUS は、RADIUS プロトコルを実装したオープンソースのインターネット認証サーバであり、一部の Linux ディストリビューションに同梱されています。 \r\n\r\nFreeRADIUS 1.0.0 以前には、RADIUS パケットに含まれる RADIUS 属性をデコードする特定の関数において、以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n・Ascend-Send-Secret および Ascend-Recv-Secret 属性をデコードする前に、特定の前提条件が適切にチェックされないために、これらの属性を含む Access-Request または Accounting-Request パケットをサーバが受信すると、NULL ポインタがデリファレンスされ、サーバプロセスがクラッシュする問題 (CAN-2004-0938) \r\n\r\n・意図的に作成された USR VSA (ベンダ固有の RADIUS 属性) が適切にチェックされないため、USR VSA を含むパケットをサーバが受信すると、memcpy() に \"-1\" が引き渡され、サーバプロセスがクラッシュする問題 (CAN-2004-0960) \r\n\r\n・Ascend-Send-Secret、Ascend-Recv-Secret、または Tunnel-Password 属性を含む Access-Request パケットを受信すると、データ構造体がメモリ開放されず、メモリリークが発生し、サーバプロセスが停止する問題 (CAN-2004-0961) \r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した RADIUS パケットを標的のサーバに送りつけることにより、結果として RADIUS サーバをサービス不能状態に陥らせることが可能です。",
-  "identifier": "JVNDB-2004-000383",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU%23541574",
-      "source": "JVN",
-      "id": "JVNVU#541574"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0938",
-      "source": "CVE",
-      "id": "CVE-2004-0938"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0938",
-      "source": "NVD",
-      "id": "CVE-2004-0938"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/541574",
-      "source": "CERT-VN",
-      "id": "VU#541574"
-    },
-    {
-      "text": "http://secunia.com/advisories/12570/",
-      "source": "SECUNIA",
-      "id": "SA12570"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/11222",
-      "source": "BID",
-      "id": "11222"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/17440",
-      "source": "XF",
-      "id": "17440"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000383.html",
+	"title": "FreeRADIUS の Ascend-Send-Secret 属性のデコードにおけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000383.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nFreeRADIUS は、RADIUS プロトコルを実装したオープンソースのインターネット認証サーバであり、一部の Linux ディストリビューションに同梱されています。 \r\n\r\nFreeRADIUS 1.0.0 以前には、RADIUS パケットに含まれる RADIUS 属性をデコードする特定の関数において、以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n・Ascend-Send-Secret および Ascend-Recv-Secret 属性をデコードする前に、特定の前提条件が適切にチェックされないために、これらの属性を含む Access-Request または Accounting-Request パケットをサーバが受信すると、NULL ポインタがデリファレンスされ、サーバプロセスがクラッシュする問題 (CAN-2004-0938) \r\n\r\n・意図的に作成された USR VSA (ベンダ固有の RADIUS 属性) が適切にチェックされないため、USR VSA を含むパケットをサーバが受信すると、memcpy() に \"-1\" が引き渡され、サーバプロセスがクラッシュする問題 (CAN-2004-0960) \r\n\r\n・Ascend-Send-Secret、Ascend-Recv-Secret、または Tunnel-Password 属性を含む Access-Request パケットを受信すると、データ構造体がメモリ開放されず、メモリリークが発生し、サーバプロセスが停止する問題 (CAN-2004-0961) \r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した RADIUS パケットを標的のサーバに送りつけることにより、結果として RADIUS サーバをサービス不能状態に陥らせることが可能です。",
+	"identifier": "JVNDB-2004-000383",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU%23541574",
+			"source": "JVN",
+			"id": "JVNVU#541574"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0938",
+			"source": "CVE",
+			"id": "CVE-2004-0938"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0938",
+			"source": "NVD",
+			"id": "CVE-2004-0938"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/541574",
+			"source": "CERT-VN",
+			"id": "VU#541574"
+		},
+		{
+			"text": "http://secunia.com/advisories/12570/",
+			"source": "SECUNIA",
+			"id": "SA12570"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/11222",
+			"source": "BID",
+			"id": "11222"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/17440",
+			"source": "XF",
+			"id": "17440"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

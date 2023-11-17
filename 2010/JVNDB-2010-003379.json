@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003379.html",
-  "title": "FreeBSD の pfs_getextattr 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003379.html",
-  "description": "FreeBSD の pfs_getextattr 関数は、以前よりロックされてないミューテックスをアンロックされるため、サービス運用妨害 (カーネルパニック) 状態にされ、任意のメモリ場所を上書きおよび任意のコードを実行される脆弱性が存在します。\r\n本脆弱性は、pseudofs を使用するファイルシステムでファイルを開くことに関連します。",
-  "identifier": "JVNDB-2010-003379",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4210",
-      "source": "CVE",
-      "id": "CVE-2010-4210"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4210",
-      "source": "NVD",
-      "id": "CVE-2010-4210"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:freebsd:freebsd",
-      "version": "2.2",
-      "vendor": "FreeBSD",
-      "product": "FreeBSD"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.2",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2012-03-27T18:42+09:00",
-  "issued": "2012-03-27T18:42+09:00",
-  "modified": "2012-03-27T18:42+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003379.html",
+	"title": "FreeBSD の pfs_getextattr 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003379.html",
+	"description": "FreeBSD の pfs_getextattr 関数は、以前よりロックされてないミューテックスをアンロックされるため、サービス運用妨害 (カーネルパニック) 状態にされ、任意のメモリ場所を上書きおよび任意のコードを実行される脆弱性が存在します。\r\n本脆弱性は、pseudofs を使用するファイルシステムでファイルを開くことに関連します。",
+	"identifier": "JVNDB-2010-003379",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4210",
+			"source": "CVE",
+			"id": "CVE-2010-4210"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4210",
+			"source": "NVD",
+			"id": "CVE-2010-4210"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:freebsd:freebsd",
+			"version": "2.2",
+			"vendor": "FreeBSD",
+			"product": "FreeBSD"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2012-03-27T18:42+09:00",
+	"issued": "2012-03-27T18:42+09:00",
+	"modified": "2012-03-27T18:42+09:00"
 }

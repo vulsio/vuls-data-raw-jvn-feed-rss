@@ -1,85 +1,85 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000260.html",
-  "title": "Oracle 製品の SDO_CODE_SIZE プロシージャにおけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000260.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nOracle Application Server 10g Release 2 v10.1.2 以前、Oracle Database 10g Release 1 v10.1.0.4 以前には、以下のような複数のセキュリティ問題が存在します。\r\n\r\n・Oracle Database Server の問題\r\n  - Change Data Capture の問題 (DB01、DB02)\r\n  - Data Pump の問題 (DB03)\r\n  - Intermedia の問題 (DB04)\r\n  - Authentication の問題 (DB05)\r\n  - Database SSL Library の問題 (DB06)\r\n  - Internet Directory の問題 (DB07)\r\n  - Spatial の問題 (DB08)\r\n  - XML Database の問題 (DB09)\r\n  - XDK の問題 (DB10)\r\n  - HTML DB の問題 (DB11)\r\n  - Oracle HTTP Server の問題 (DB12、DB13、DB14、DB15、DB16、DB17)\r\n  - Oracle HTTP Server (SSL) の問題 \r\n　　(DB18、DB19、DB20、DB21、DB22、DB23、DB24)\r\n\r\n・Oracle Application Server の問題\r\n  - Forms の問題 (AS01)\r\n  - mod_jserv の問題 (AS02)\r\n  - Oracle HTTP Server の問題 (AS03、AS04、AS05、AS06、AS07、AS08、AS09)\r\n  - Oracle Help の問題 (AS10)\r\n  - Oracle HTTP Server (SSL) の問題\r\n　　(AS11、AS12、AS13、AS14、AS15、AS16、AS17)\r\n  - Wireless の問題 (AS18)\r\n\r\nOracle より問題が公表された 2005 年 4 月 13 日現在、これらの問題の多くは詳細不明ですが、リモート/ローカルの攻撃者は、セキュリティ脅威を引き起こす可能性があります。\r\n\r\nただし、Forms の問題 (AS01) に関しては、発見元である Red Database Security より詳細情報が公開されています。\r\n開発ツール Oracle Forms における SQL インジェクションの問題を利用することにより、DBA 権限を有する悪意あるローカルユーザは、Oracle Forms を使用して任意のデータベース内のデータ操作を実行できる可能性があります。\r\n\r\n尚、Oracle 社では、上記 Oracle Application Server および Oracle Database Server のセキュリティ問題の他に、以下の製品の問題を併せて報告しています。\r\n\r\n・Oracle Collaboration Suite\r\n・Oracle E-Business and Applications\r\n・Oracle Enterprise Manager Grid Control\r\n・Oracle PeopleSoft Applications",
-  "identifier": "JVNDB-2005-000260",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1774",
-      "source": "CVE",
-      "id": "CVE-2004-1774"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1774",
-      "source": "NVD",
-      "id": "CVE-2004-1774"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/982109",
-      "source": "CERT-VN",
-      "id": "VU#982109"
-    },
-    {
-      "text": "http://secunia.com/advisories/14935/",
-      "source": "SECUNIA",
-      "id": "SA14935"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13236",
-      "source": "BID",
-      "id": "13236"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13239",
-      "source": "BID",
-      "id": "13239"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13145",
-      "source": "BID",
-      "id": "13145"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13144",
-      "source": "BID",
-      "id": "13144"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13139",
-      "source": "BID",
-      "id": "13139"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13134",
-      "source": "BID",
-      "id": "13134"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:oracle:application_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Application Server"
-    },
-    {
-      "text": "cpe:/a:oracle:database_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Database"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.2",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000260.html",
+	"title": "Oracle 製品の SDO_CODE_SIZE プロシージャにおけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000260.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nOracle Application Server 10g Release 2 v10.1.2 以前、Oracle Database 10g Release 1 v10.1.0.4 以前には、以下のような複数のセキュリティ問題が存在します。\r\n\r\n・Oracle Database Server の問題\r\n  - Change Data Capture の問題 (DB01、DB02)\r\n  - Data Pump の問題 (DB03)\r\n  - Intermedia の問題 (DB04)\r\n  - Authentication の問題 (DB05)\r\n  - Database SSL Library の問題 (DB06)\r\n  - Internet Directory の問題 (DB07)\r\n  - Spatial の問題 (DB08)\r\n  - XML Database の問題 (DB09)\r\n  - XDK の問題 (DB10)\r\n  - HTML DB の問題 (DB11)\r\n  - Oracle HTTP Server の問題 (DB12、DB13、DB14、DB15、DB16、DB17)\r\n  - Oracle HTTP Server (SSL) の問題 \r\n　　(DB18、DB19、DB20、DB21、DB22、DB23、DB24)\r\n\r\n・Oracle Application Server の問題\r\n  - Forms の問題 (AS01)\r\n  - mod_jserv の問題 (AS02)\r\n  - Oracle HTTP Server の問題 (AS03、AS04、AS05、AS06、AS07、AS08、AS09)\r\n  - Oracle Help の問題 (AS10)\r\n  - Oracle HTTP Server (SSL) の問題\r\n　　(AS11、AS12、AS13、AS14、AS15、AS16、AS17)\r\n  - Wireless の問題 (AS18)\r\n\r\nOracle より問題が公表された 2005 年 4 月 13 日現在、これらの問題の多くは詳細不明ですが、リモート/ローカルの攻撃者は、セキュリティ脅威を引き起こす可能性があります。\r\n\r\nただし、Forms の問題 (AS01) に関しては、発見元である Red Database Security より詳細情報が公開されています。\r\n開発ツール Oracle Forms における SQL インジェクションの問題を利用することにより、DBA 権限を有する悪意あるローカルユーザは、Oracle Forms を使用して任意のデータベース内のデータ操作を実行できる可能性があります。\r\n\r\n尚、Oracle 社では、上記 Oracle Application Server および Oracle Database Server のセキュリティ問題の他に、以下の製品の問題を併せて報告しています。\r\n\r\n・Oracle Collaboration Suite\r\n・Oracle E-Business and Applications\r\n・Oracle Enterprise Manager Grid Control\r\n・Oracle PeopleSoft Applications",
+	"identifier": "JVNDB-2005-000260",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1774",
+			"source": "CVE",
+			"id": "CVE-2004-1774"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1774",
+			"source": "NVD",
+			"id": "CVE-2004-1774"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/982109",
+			"source": "CERT-VN",
+			"id": "VU#982109"
+		},
+		{
+			"text": "http://secunia.com/advisories/14935/",
+			"source": "SECUNIA",
+			"id": "SA14935"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13236",
+			"source": "BID",
+			"id": "13236"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13239",
+			"source": "BID",
+			"id": "13239"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13145",
+			"source": "BID",
+			"id": "13145"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13144",
+			"source": "BID",
+			"id": "13144"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13139",
+			"source": "BID",
+			"id": "13139"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13134",
+			"source": "BID",
+			"id": "13134"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:oracle:application_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Application Server"
+		},
+		{
+			"text": "cpe:/a:oracle:database_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Database"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

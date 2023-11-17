@@ -1,371 +1,371 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002474.html",
-  "title": "OpenSSL の AES-NI の実装における重要な平文情報を取得される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002474.html",
-  "description": "OpenSSL の AES-NI の実装は、特定のパディングチェックの際、メモリ割り当てを考慮しないため、重要な平文情報を取得される脆弱性が存在します。\r\n\r\n本脆弱性は CVE-2013-0169 の修正が不完全だったことによる脆弱性です。",
-  "identifier": "JVNDB-2016-002474",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU93163809/",
-      "source": "JVN",
-      "id": "JVNVU#93163809"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU94844193/",
-      "source": "JVN",
-      "id": "JVNVU#94844193"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2107",
-      "source": "CVE",
-      "id": "CVE-2016-2107"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2107",
-      "source": "NVD",
-      "id": "CVE-2016-2107"
-    },
-    {
-      "text": "http://www.aratana.jp/security/detail.php?id=16",
-      "source": "関連文書",
-      "id": "株式会社アラタナ の告知ページ (OpenSSL脆弱性への弊社対応状況について)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-      "id": "CWE-200",
-      "title": "情報漏えい(CWE-200)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
-      "id": "CWE-310",
-      "title": "暗号の問題(CWE-310)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:hitachi:device_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Device Manager"
-    },
-    {
-      "text": "cpe:/a:hp:helion_openstack",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード・エンタープライズ",
-      "product": "HPE Helion OpenStack"
-    },
-    {
-      "text": "cpe:/a:nec:capssuite",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CapsSuite"
-    },
-    {
-      "text": "cpe:/a:nec:enterpriseidentitymanager",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "EnterpriseIdentityManager"
-    },
-    {
-      "text": "cpe:/a:nec:enterprise_directoryserver",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "EnterpriseDirectoryServer"
-    },
-    {
-      "text": "cpe:/a:nec:esmpro_serveragent",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerAgent"
-    },
-    {
-      "text": "cpe:/a:nec:esmpro_serveragentservice",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerAgentService"
-    },
-    {
-      "text": "cpe:/a:nec:secureware_pki_application_development_kit",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "SecureWare/PKIアプリケーション開発キット"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_enterprise_service_bus",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Enterprise Service Bus"
-    },
-    {
-      "text": "cpe:/a:nec:websam",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebSAM"
-    },
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/a:oracle:access_manager",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Access Manager"
-    },
-    {
-      "text": "cpe:/a:oracle:agile_engineering_data_management",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Agile Engineering Data Management"
-    },
-    {
-      "text": "cpe:/a:oracle:business_intelligence",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Business Intelligence"
-    },
-    {
-      "text": "cpe:/a:oracle:commerce_guided_search_and_experience_manager",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Commerce Guided Search / Oracle Commerce Experience Manager"
-    },
-    {
-      "text": "cpe:/a:oracle:communications_applications",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Communications Applications"
-    },
-    {
-      "text": "cpe:/a:oracle:communications_unified_session_manager",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Communications Unified Session Manager"
-    },
-    {
-      "text": "cpe:/a:oracle:enterprise_manager",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Enterprise Manager"
-    },
-    {
-      "text": "cpe:/a:oracle:enterprise_manager_base_platform",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Enterprise Manager Base Platform"
-    },
-    {
-      "text": "cpe:/a:oracle:exalogic_infrastructure",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Exalogic Infrastructure"
-    },
-    {
-      "text": "cpe:/a:oracle:http_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle HTTP Server"
-    },
-    {
-      "text": "cpe:/a:oracle:life_sciences_data_hub",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Life Sciences Data Hub"
-    },
-    {
-      "text": "cpe:/a:oracle:peoplesoft_enterprise_peopletools",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "PeopleSoft Enterprise PeopleTools"
-    },
-    {
-      "text": "cpe:/a:oracle:primavera_products_suite",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Primavera Products Suite"
-    },
-    {
-      "text": "cpe:/a:oracle:secure_global_desktop",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Secure Global Desktop"
-    },
-    {
-      "text": "cpe:/a:oracle:transportation_management",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Transportation Management"
-    },
-    {
-      "text": "cpe:/a:oracle:virtualization_secure_global_desktop",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Virtualization"
-    },
-    {
-      "text": "cpe:/a:oracle:vm_virtualbox",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle VM VirtualBox"
-    },
-    {
-      "text": "cpe:/h:nec:express5800",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "Express5800"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_1200",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/1200"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_1210",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/1210"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_3000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/3000"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_3500",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/3500"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_5000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/5000"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_810",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/810"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_fw120",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/FW120"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_n500",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/N500"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_sr100",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/SR100"
-    },
-    {
-      "text": "cpe:/h:nec:univerge",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "UNIVERGE"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:google:android",
-      "version": "2.2",
-      "vendor": "Google",
-      "product": "Android"
-    },
-    {
-      "text": "cpe:/o:opensuse_project:leap",
-      "version": "2.2",
-      "vendor": "openSUSE project",
-      "product": "openSUSE Leap"
-    },
-    {
-      "text": "cpe:/o:opensuse_project:opensuse",
-      "version": "2.2",
-      "vendor": "openSUSE project",
-      "product": "openSUSE"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server_aus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server AUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.6",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "5.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
-    }
-  ],
-  "date": "2017-10-03T13:37+09:00",
-  "issued": "2016-05-10T18:16+09:00",
-  "modified": "2017-10-03T13:37+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002474.html",
+	"title": "OpenSSL の AES-NI の実装における重要な平文情報を取得される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002474.html",
+	"description": "OpenSSL の AES-NI の実装は、特定のパディングチェックの際、メモリ割り当てを考慮しないため、重要な平文情報を取得される脆弱性が存在します。\r\n\r\n本脆弱性は CVE-2013-0169 の修正が不完全だったことによる脆弱性です。",
+	"identifier": "JVNDB-2016-002474",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU93163809/",
+			"source": "JVN",
+			"id": "JVNVU#93163809"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU94844193/",
+			"source": "JVN",
+			"id": "JVNVU#94844193"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2107",
+			"source": "CVE",
+			"id": "CVE-2016-2107"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2107",
+			"source": "NVD",
+			"id": "CVE-2016-2107"
+		},
+		{
+			"text": "http://www.aratana.jp/security/detail.php?id=16",
+			"source": "関連文書",
+			"id": "株式会社アラタナ の告知ページ (OpenSSL脆弱性への弊社対応状況について)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+			"id": "CWE-310",
+			"title": "暗号の問題(CWE-310)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hitachi:device_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Device Manager"
+		},
+		{
+			"text": "cpe:/a:hp:helion_openstack",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード・エンタープライズ",
+			"product": "HPE Helion OpenStack"
+		},
+		{
+			"text": "cpe:/a:nec:capssuite",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CapsSuite"
+		},
+		{
+			"text": "cpe:/a:nec:enterpriseidentitymanager",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "EnterpriseIdentityManager"
+		},
+		{
+			"text": "cpe:/a:nec:enterprise_directoryserver",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "EnterpriseDirectoryServer"
+		},
+		{
+			"text": "cpe:/a:nec:esmpro_serveragent",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerAgent"
+		},
+		{
+			"text": "cpe:/a:nec:esmpro_serveragentservice",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerAgentService"
+		},
+		{
+			"text": "cpe:/a:nec:secureware_pki_application_development_kit",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "SecureWare/PKIアプリケーション開発キット"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_enterprise_service_bus",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Enterprise Service Bus"
+		},
+		{
+			"text": "cpe:/a:nec:websam",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebSAM"
+		},
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/a:oracle:access_manager",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Access Manager"
+		},
+		{
+			"text": "cpe:/a:oracle:agile_engineering_data_management",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Agile Engineering Data Management"
+		},
+		{
+			"text": "cpe:/a:oracle:business_intelligence",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Business Intelligence"
+		},
+		{
+			"text": "cpe:/a:oracle:commerce_guided_search_and_experience_manager",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Commerce Guided Search / Oracle Commerce Experience Manager"
+		},
+		{
+			"text": "cpe:/a:oracle:communications_applications",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Communications Applications"
+		},
+		{
+			"text": "cpe:/a:oracle:communications_unified_session_manager",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Communications Unified Session Manager"
+		},
+		{
+			"text": "cpe:/a:oracle:enterprise_manager",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Enterprise Manager"
+		},
+		{
+			"text": "cpe:/a:oracle:enterprise_manager_base_platform",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Enterprise Manager Base Platform"
+		},
+		{
+			"text": "cpe:/a:oracle:exalogic_infrastructure",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Exalogic Infrastructure"
+		},
+		{
+			"text": "cpe:/a:oracle:http_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle HTTP Server"
+		},
+		{
+			"text": "cpe:/a:oracle:life_sciences_data_hub",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Life Sciences Data Hub"
+		},
+		{
+			"text": "cpe:/a:oracle:peoplesoft_enterprise_peopletools",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "PeopleSoft Enterprise PeopleTools"
+		},
+		{
+			"text": "cpe:/a:oracle:primavera_products_suite",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Primavera Products Suite"
+		},
+		{
+			"text": "cpe:/a:oracle:secure_global_desktop",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Secure Global Desktop"
+		},
+		{
+			"text": "cpe:/a:oracle:transportation_management",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Transportation Management"
+		},
+		{
+			"text": "cpe:/a:oracle:virtualization_secure_global_desktop",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Virtualization"
+		},
+		{
+			"text": "cpe:/a:oracle:vm_virtualbox",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle VM VirtualBox"
+		},
+		{
+			"text": "cpe:/h:nec:express5800",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "Express5800"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_1200",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/1200"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_1210",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/1210"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_3000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/3000"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_3500",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/3500"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_5000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/5000"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_810",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/810"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_fw120",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/FW120"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_n500",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/N500"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_sr100",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/SR100"
+		},
+		{
+			"text": "cpe:/h:nec:univerge",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "UNIVERGE"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:google:android",
+			"version": "2.2",
+			"vendor": "Google",
+			"product": "Android"
+		},
+		{
+			"text": "cpe:/o:opensuse_project:leap",
+			"version": "2.2",
+			"vendor": "openSUSE project",
+			"product": "openSUSE Leap"
+		},
+		{
+			"text": "cpe:/o:opensuse_project:opensuse",
+			"version": "2.2",
+			"vendor": "openSUSE project",
+			"product": "openSUSE"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server_aus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server AUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.6",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "5.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2017-10-03T13:37+09:00",
+	"issued": "2016-05-10T18:16+09:00",
+	"modified": "2017-10-03T13:37+09:00"
 }

@@ -1,74 +1,74 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000080.html",
-  "title": "Microsoft IIS のヘルプファイルの検索結果ページにおけるクロスサイトスクリプティングの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000080.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft IIS 4.0/5.0/5.1 にはクロスサイトスクリプティングにつながりうる問題を発生させてしまう可能性が存在します。以下の 3 つの問題が存在します。\r\n\r\n* IIS のヘルプファイルの検索結果ページは、クライアントから送信されたリクエスト内に含まれるメタキャラクタの変換を適切に行いません。\r\n* \"404 not found\" エラー用ページの一部として、クライアントからのリクエストに含まれるメタキャラクタを変換することなく、クライアントへ送信してしまいます。\r\n* Internet Explorer 以外のブラウザを使用している場合に、\"302 Object Moved\" エラー用のページの一部として、クライアントからのリクエストに含まれるメタキャラクタを変換することなく、クライアントに送信してしまいます。\r\n\r\nこの問題を利用することにより、リモートの攻撃者は IIS が稼動している第 3 者のウェブサーバを中継することで、ユーザのシステム上で悪意のあるスクリプトの実行が可能になります。",
-  "identifier": "JVNDB-2002-000080",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNCA-2002-09",
-      "source": "JVN",
-      "id": "JVNCA-2002-09"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0074",
-      "source": "CVE",
-      "id": "CVE-2002-0074"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0074",
-      "source": "NVD",
-      "id": "CVE-2002-0074"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2002/wr021401.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2002-1401"
-    },
-    {
-      "text": "http://www.cert.org/advisories/CA-2002-09.html",
-      "source": "CERT-A",
-      "id": "CA-2002-09"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/883091",
-      "source": "CERT-VN",
-      "id": "VU#883091"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/4483",
-      "source": "BID",
-      "id": "4483"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/4486",
-      "source": "BID",
-      "id": "4486"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/4487",
-      "source": "BID",
-      "id": "4487"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:microsoft:iis",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft IIS"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000080.html",
+	"title": "Microsoft IIS のヘルプファイルの検索結果ページにおけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000080.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft IIS 4.0/5.0/5.1 にはクロスサイトスクリプティングにつながりうる問題を発生させてしまう可能性が存在します。以下の 3 つの問題が存在します。\r\n\r\n* IIS のヘルプファイルの検索結果ページは、クライアントから送信されたリクエスト内に含まれるメタキャラクタの変換を適切に行いません。\r\n* \"404 not found\" エラー用ページの一部として、クライアントからのリクエストに含まれるメタキャラクタを変換することなく、クライアントへ送信してしまいます。\r\n* Internet Explorer 以外のブラウザを使用している場合に、\"302 Object Moved\" エラー用のページの一部として、クライアントからのリクエストに含まれるメタキャラクタを変換することなく、クライアントに送信してしまいます。\r\n\r\nこの問題を利用することにより、リモートの攻撃者は IIS が稼動している第 3 者のウェブサーバを中継することで、ユーザのシステム上で悪意のあるスクリプトの実行が可能になります。",
+	"identifier": "JVNDB-2002-000080",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNCA-2002-09",
+			"source": "JVN",
+			"id": "JVNCA-2002-09"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0074",
+			"source": "CVE",
+			"id": "CVE-2002-0074"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0074",
+			"source": "NVD",
+			"id": "CVE-2002-0074"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2002/wr021401.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2002-1401"
+		},
+		{
+			"text": "http://www.cert.org/advisories/CA-2002-09.html",
+			"source": "CERT-A",
+			"id": "CA-2002-09"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/883091",
+			"source": "CERT-VN",
+			"id": "VU#883091"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/4483",
+			"source": "BID",
+			"id": "4483"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/4486",
+			"source": "BID",
+			"id": "4486"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/4487",
+			"source": "BID",
+			"id": "4487"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:microsoft:iis",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft IIS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

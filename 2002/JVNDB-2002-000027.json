@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000027.html",
-  "title": "Microsoft IIS におけるシステム情報が漏洩する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000027.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nWindows XP にデフォルトで同梱されている Microsoft IIS 5.1 には、詳細なシステム情報を公開してしまう問題が存在します。IIS 5.1 のデフォルトインストールで作成される _vti_pvt フォルダは FrontPage を利用する場合に必要となります。ここには Server Extensions やページ更新等の情報など、様々な有用な情報が存在します。 \r\nこの _vti_pvt フォルダ内の以下の .cnf ファイルをリモートの攻撃者に GET リクエストを送りつけることにより、Web サイトの構成や所有権、各ファイルに対した絶対パスなどを公開してしまい、ホスト上の事前調査を行っている攻撃者にとっては有用な情報を奪取されてしまう可能性があります。 \r\n\r\n＜GET リクエストによりシステム情報を公開してしまうファイル＞ \r\n　・access.cnf　　　・botinfs.cnf \r\n　・bots.cnf　　　　・linkinfo.cnf \r\n\r\nまた、以下のように　/iishelp/common/colegal.htm について GET リクエストを送りつけることで、リモートの攻撃者はその他のファイルにもアクセスできる可能性があります。 \r\n\r\nGET /iishelp/common/colegal.htm:../../../../../_vti_bin/_vti_adm/admin.dll \r\n\r\n尚、更なる報告によると、この問題が成立するためには、_vti_pvt フォルダに対して読み取り権限が許可された設定である必要があります。そのため、リモートの攻撃者はこのような設定ミスの状況下において有用な情報を奪取することが可能となります。",
-  "identifier": "JVNDB-2002-000027",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1717",
-      "source": "CVE",
-      "id": "CVE-2002-1717"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1717",
-      "source": "NVD",
-      "id": "CVE-2002-1717"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/4078",
-      "source": "BID",
-      "id": "4078"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:microsoft:iis",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft IIS"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000027.html",
+	"title": "Microsoft IIS におけるシステム情報が漏洩する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000027.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nWindows XP にデフォルトで同梱されている Microsoft IIS 5.1 には、詳細なシステム情報を公開してしまう問題が存在します。IIS 5.1 のデフォルトインストールで作成される _vti_pvt フォルダは FrontPage を利用する場合に必要となります。ここには Server Extensions やページ更新等の情報など、様々な有用な情報が存在します。 \r\nこの _vti_pvt フォルダ内の以下の .cnf ファイルをリモートの攻撃者に GET リクエストを送りつけることにより、Web サイトの構成や所有権、各ファイルに対した絶対パスなどを公開してしまい、ホスト上の事前調査を行っている攻撃者にとっては有用な情報を奪取されてしまう可能性があります。 \r\n\r\n＜GET リクエストによりシステム情報を公開してしまうファイル＞ \r\n　・access.cnf　　　・botinfs.cnf \r\n　・bots.cnf　　　　・linkinfo.cnf \r\n\r\nまた、以下のように　/iishelp/common/colegal.htm について GET リクエストを送りつけることで、リモートの攻撃者はその他のファイルにもアクセスできる可能性があります。 \r\n\r\nGET /iishelp/common/colegal.htm:../../../../../_vti_bin/_vti_adm/admin.dll \r\n\r\n尚、更なる報告によると、この問題が成立するためには、_vti_pvt フォルダに対して読み取り権限が許可された設定である必要があります。そのため、リモートの攻撃者はこのような設定ミスの状況下において有用な情報を奪取することが可能となります。",
+	"identifier": "JVNDB-2002-000027",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1717",
+			"source": "CVE",
+			"id": "CVE-2002-1717"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1717",
+			"source": "NVD",
+			"id": "CVE-2002-1717"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/4078",
+			"source": "BID",
+			"id": "4078"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:microsoft:iis",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft IIS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

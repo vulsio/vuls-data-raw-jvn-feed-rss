@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005042.html",
-  "title": "Datalex のエアライン予約ソフトウェアに認証回避の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005042.html",
-  "description": "Datalex 社は、航空業界向けに、フライト情報閲覧、予約、支払い、分析等を支援するソフトウェアを提供しています。Datalex のエアライン予約ソフトウェアには、エラー処理の不備に起因する認証回避の脆弱性が存在します。\r\n\r\nユーザ制御のキーによる認証回避 (CWE-639) - CVE-2015-2858\r\n\r\nCWE-639: Authorization Bypass Through User-Controlled Key\r\nhttps://cwe.mitre.org/data/definitions/639.html\r\n\r\n攻撃者は、データベースに問い合わせを行う際の HTTP POST リクエストのパラメータを変更することで、空の応答を返すよう仕向けます。空の応答に対するエラー処理の内容に問題があり、これを利用して任意のアカウントを乗っ取ることが可能です。ValidateFormAction.do や ProfileConfirmEditAddressAction.do に対する POST リクエストの profileId パラメータを細工する方法が報告されています。",
-  "identifier": "JVNDB-2015-005042",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU96725367/index.html",
-      "source": "JVN",
-      "id": "JVNVU#96725367"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2858",
-      "source": "CVE",
-      "id": "CVE-2015-2858"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2858",
-      "source": "NVD",
-      "id": "CVE-2015-2858"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/693036",
-      "source": "CERT-VN",
-      "id": "VU#693036"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:datalex:airline_booking_software",
-      "version": "2.2",
-      "vendor": "Datalex",
-      "product": "Datalex のエアライン予約ソフトウェア"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2015-10-05T10:58+09:00",
-  "issued": "2015-10-05T10:58+09:00",
-  "modified": "2015-10-05T10:58+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005042.html",
+	"title": "Datalex のエアライン予約ソフトウェアに認証回避の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005042.html",
+	"description": "Datalex 社は、航空業界向けに、フライト情報閲覧、予約、支払い、分析等を支援するソフトウェアを提供しています。Datalex のエアライン予約ソフトウェアには、エラー処理の不備に起因する認証回避の脆弱性が存在します。\r\n\r\nユーザ制御のキーによる認証回避 (CWE-639) - CVE-2015-2858\r\n\r\nCWE-639: Authorization Bypass Through User-Controlled Key\r\nhttps://cwe.mitre.org/data/definitions/639.html\r\n\r\n攻撃者は、データベースに問い合わせを行う際の HTTP POST リクエストのパラメータを変更することで、空の応答を返すよう仕向けます。空の応答に対するエラー処理の内容に問題があり、これを利用して任意のアカウントを乗っ取ることが可能です。ValidateFormAction.do や ProfileConfirmEditAddressAction.do に対する POST リクエストの profileId パラメータを細工する方法が報告されています。",
+	"identifier": "JVNDB-2015-005042",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU96725367/index.html",
+			"source": "JVN",
+			"id": "JVNVU#96725367"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2858",
+			"source": "CVE",
+			"id": "CVE-2015-2858"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-2858",
+			"source": "NVD",
+			"id": "CVE-2015-2858"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/693036",
+			"source": "CERT-VN",
+			"id": "VU#693036"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:datalex:airline_booking_software",
+			"version": "2.2",
+			"vendor": "Datalex",
+			"product": "Datalex のエアライン予約ソフトウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2015-10-05T10:58+09:00",
+	"issued": "2015-10-05T10:58+09:00",
+	"modified": "2015-10-05T10:58+09:00"
 }

@@ -1,210 +1,210 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001329.html",
-  "title": "NTP の ntpq における任意のコードを実行される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001329.html",
-  "description": "NTP の ntpq にある ntpq/ntpq.c 内の cookedprint 関数には、レスポンスの処理に不備があるため、任意のコードを実行される脆弱性が存在します。",
-  "identifier": "JVNDB-2009-001329",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNTA09-133A/",
-      "source": "JVN",
-      "id": "JVNTA09-133A"
-    },
-    {
-      "text": "http://jvn.jp/tr/JVNTR-2009-12",
-      "source": "JVNTR",
-      "id": "JVNTR-2009-12"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0159",
-      "source": "CVE",
-      "id": "CVE-2009-0159"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0159",
-      "source": "NVD",
-      "id": "CVE-2009-0159"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/alerts/SA09-133A.html",
-      "source": "CERT-SA",
-      "id": "SA09-133A"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA09-133A.html",
-      "source": "CERT-TA",
-      "id": "TA09-133A"
-    },
-    {
-      "text": "http://secunia.com/advisories/35074",
-      "source": "SECUNIA",
-      "id": "SA35074"
-    },
-    {
-      "text": "http://secunia.com/advisories/35166",
-      "source": "SECUNIA",
-      "id": "SA35166"
-    },
-    {
-      "text": "http://secunia.com/advisories/35138",
-      "source": "SECUNIA",
-      "id": "SA35138"
-    },
-    {
-      "text": "http://secunia.com/advisories/34608",
-      "source": "SECUNIA",
-      "id": "SA34608"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/34481",
-      "source": "BID",
-      "id": "34481"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/49838",
-      "source": "XF",
-      "id": "49838"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1022033",
-      "source": "SECTRACK",
-      "id": "1022033"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2009/1297",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2009-1297"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2009/0999",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2009-0999"
-    },
-    {
-      "text": "http://osvdb.org/53593",
-      "source": "OSVDB",
-      "id": "53593"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:ntp:ntp",
-      "version": "2.2",
-      "vendor": "NTP Project",
-      "product": "NTP"
-    },
-    {
-      "text": "cpe:/a:vmware:esx",
-      "version": "2.2",
-      "vendor": "VMware",
-      "product": "VMware ESX"
-    },
-    {
-      "text": "cpe:/a:vmware:esxi",
-      "version": "2.2",
-      "vendor": "VMware",
-      "product": "VMware ESXi"
-    },
-    {
-      "text": "cpe:/a:vmware:vma",
-      "version": "2.2",
-      "vendor": "VMware",
-      "product": "VMware vMA"
-    },
-    {
-      "text": "cpe:/h:oracle:netra_sparc",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Netra SPARC"
-    },
-    {
-      "text": "cpe:/h:oracle:sparc",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "SPARC"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux EUS"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Appliance Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_client",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Client"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_fuji",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux FUJI"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2012-03-27T11:35+09:00",
-  "issued": "2009-06-26T14:07+09:00",
-  "modified": "2012-03-27T11:35+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001329.html",
+	"title": "NTP の ntpq における任意のコードを実行される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001329.html",
+	"description": "NTP の ntpq にある ntpq/ntpq.c 内の cookedprint 関数には、レスポンスの処理に不備があるため、任意のコードを実行される脆弱性が存在します。",
+	"identifier": "JVNDB-2009-001329",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNTA09-133A/",
+			"source": "JVN",
+			"id": "JVNTA09-133A"
+		},
+		{
+			"text": "http://jvn.jp/tr/JVNTR-2009-12",
+			"source": "JVNTR",
+			"id": "JVNTR-2009-12"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0159",
+			"source": "CVE",
+			"id": "CVE-2009-0159"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0159",
+			"source": "NVD",
+			"id": "CVE-2009-0159"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/alerts/SA09-133A.html",
+			"source": "CERT-SA",
+			"id": "SA09-133A"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA09-133A.html",
+			"source": "CERT-TA",
+			"id": "TA09-133A"
+		},
+		{
+			"text": "http://secunia.com/advisories/35074",
+			"source": "SECUNIA",
+			"id": "SA35074"
+		},
+		{
+			"text": "http://secunia.com/advisories/35166",
+			"source": "SECUNIA",
+			"id": "SA35166"
+		},
+		{
+			"text": "http://secunia.com/advisories/35138",
+			"source": "SECUNIA",
+			"id": "SA35138"
+		},
+		{
+			"text": "http://secunia.com/advisories/34608",
+			"source": "SECUNIA",
+			"id": "SA34608"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/34481",
+			"source": "BID",
+			"id": "34481"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/49838",
+			"source": "XF",
+			"id": "49838"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1022033",
+			"source": "SECTRACK",
+			"id": "1022033"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2009/1297",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2009-1297"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2009/0999",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2009-0999"
+		},
+		{
+			"text": "http://osvdb.org/53593",
+			"source": "OSVDB",
+			"id": "53593"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ntp:ntp",
+			"version": "2.2",
+			"vendor": "NTP Project",
+			"product": "NTP"
+		},
+		{
+			"text": "cpe:/a:vmware:esx",
+			"version": "2.2",
+			"vendor": "VMware",
+			"product": "VMware ESX"
+		},
+		{
+			"text": "cpe:/a:vmware:esxi",
+			"version": "2.2",
+			"vendor": "VMware",
+			"product": "VMware ESXi"
+		},
+		{
+			"text": "cpe:/a:vmware:vma",
+			"version": "2.2",
+			"vendor": "VMware",
+			"product": "VMware vMA"
+		},
+		{
+			"text": "cpe:/h:oracle:netra_sparc",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Netra SPARC"
+		},
+		{
+			"text": "cpe:/h:oracle:sparc",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "SPARC"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux EUS"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Appliance Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_client",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Client"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_fuji",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux FUJI"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2012-03-27T11:35+09:00",
+	"issued": "2009-06-26T14:07+09:00",
+	"modified": "2012-03-27T11:35+09:00"
 }

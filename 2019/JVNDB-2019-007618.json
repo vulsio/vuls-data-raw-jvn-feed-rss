@@ -1,40 +1,40 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-007618.html",
-  "title": "Bluetooth BR/EDR での暗号鍵エントロピーのネゴシエーションにおける問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-007618.html",
-  "description": "Bluetooth BR/EDR 接続での暗号化で用いられる暗号鍵のエントロピーのネゴシエーションには、仕様上、中間者による攻撃に脆弱な問題があります。\r\n第三者が、Bluetooth BR/EDR で接続するデバイスに対し、通信で用いられる暗号鍵のエントロピーを 1バイトに強制する (Key Negotiation Of Bluetooth (KNOB) attack) ことで、以降の通信を総当たり攻撃 (Brute force attack) により復号して内容を傍受できる可能性があります。\r\n\r\nBluetooth は、Bluetooth Basic Rate / Enhanced Data Rate (Bluetooth BR/EDR) コア構成を含む6種の異なるコア仕様に基づいた近距離の無線技術で、低出力の近距離通信に使用されます。\r\nBluetooth の暗号化通信を確立するには、2つの Bluetooth デバイスがペアリングし、リンク層での暗号化に用いる暗号鍵の生成に使用するリンクキーを確立する必要があります。暗号鍵のエントロピーは、1バイトから 16バイトの長さで Bluetooth コントローラ間で設定されます。\r\n攻撃者がコントローラ間の暗号鍵エントロピー設定要求に割り込み、各コントローラが低いエントロピー設定を受け入れた場合に、低いエントロピーによる暗号化通信が強制され、結果として総当たり攻撃 (Brute force attack) により、デバイス間の通信を容易に復号される可能性があります。",
-  "identifier": "JVNDB-2019-007618",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU90240762/",
-      "source": "JVN",
-      "id": "JVNVU#90240762"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9506",
-      "source": "CVE",
-      "id": "CVE-2019-9506"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/918987/",
-      "source": "CERT-VN",
-      "id": "VU#918987"
-    },
-    {
-      "text": "https://www.usenix.org/conference/usenixsecurity19/presentation/antonioli",
-      "source": "関連文書",
-      "id": "The KNOB is Broken: Exploiting Low Entropy in the Encryption Key Negotiation Of Bluetooth BR/EDR"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:bluetooth:bluetooth_br_edr_core",
-      "version": "2.2",
-      "vendor": "Bluetooth SIG, Inc.",
-      "product": "Bluetooth BR/EDR Core"
-    }
-  ],
-  "date": "2019-08-16T10:39+09:00",
-  "issued": "2019-08-16T10:39+09:00",
-  "modified": "2019-08-16T10:39+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-007618.html",
+	"title": "Bluetooth BR/EDR での暗号鍵エントロピーのネゴシエーションにおける問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-007618.html",
+	"description": "Bluetooth BR/EDR 接続での暗号化で用いられる暗号鍵のエントロピーのネゴシエーションには、仕様上、中間者による攻撃に脆弱な問題があります。\r\n第三者が、Bluetooth BR/EDR で接続するデバイスに対し、通信で用いられる暗号鍵のエントロピーを 1バイトに強制する (Key Negotiation Of Bluetooth (KNOB) attack) ことで、以降の通信を総当たり攻撃 (Brute force attack) により復号して内容を傍受できる可能性があります。\r\n\r\nBluetooth は、Bluetooth Basic Rate / Enhanced Data Rate (Bluetooth BR/EDR) コア構成を含む6種の異なるコア仕様に基づいた近距離の無線技術で、低出力の近距離通信に使用されます。\r\nBluetooth の暗号化通信を確立するには、2つの Bluetooth デバイスがペアリングし、リンク層での暗号化に用いる暗号鍵の生成に使用するリンクキーを確立する必要があります。暗号鍵のエントロピーは、1バイトから 16バイトの長さで Bluetooth コントローラ間で設定されます。\r\n攻撃者がコントローラ間の暗号鍵エントロピー設定要求に割り込み、各コントローラが低いエントロピー設定を受け入れた場合に、低いエントロピーによる暗号化通信が強制され、結果として総当たり攻撃 (Brute force attack) により、デバイス間の通信を容易に復号される可能性があります。",
+	"identifier": "JVNDB-2019-007618",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU90240762/",
+			"source": "JVN",
+			"id": "JVNVU#90240762"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9506",
+			"source": "CVE",
+			"id": "CVE-2019-9506"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/918987/",
+			"source": "CERT-VN",
+			"id": "VU#918987"
+		},
+		{
+			"text": "https://www.usenix.org/conference/usenixsecurity19/presentation/antonioli",
+			"source": "関連文書",
+			"id": "The KNOB is Broken: Exploiting Low Entropy in the Encryption Key Negotiation Of Bluetooth BR/EDR"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:bluetooth:bluetooth_br_edr_core",
+			"version": "2.2",
+			"vendor": "Bluetooth SIG, Inc.",
+			"product": "Bluetooth BR/EDR Core"
+		}
+	],
+	"date": "2019-08-16T10:39+09:00",
+	"issued": "2019-08-16T10:39+09:00",
+	"modified": "2019-08-16T10:39+09:00"
 }

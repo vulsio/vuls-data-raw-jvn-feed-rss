@@ -1,262 +1,262 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001387.html",
-  "title": "複数の RTOS やライブラリなどにメモリ割り当て処理における脆弱性 (\"BadAlloc\")",
-  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001387.html",
-  "description": "複数の RTOS (Real Time Operating System) 製品やライブラリなどに、メモリ割り当て処理における脆弱性が報告されています。\r\n\r\nメモリ割り当て処理においては、リクエストされたメモリサイズに対してシステムによるメモリ管理領域やアラインメント調整で必要とされるサイズを加算して、実際に確保するメモリサイズを計算します。この計算結果がシステム内で正しく表現できる範囲の値より大きくなってしまう場合には桁あふれを起こすため、その計算結果を使って以後の処理を継続すると異常動作につながります。したがってメモリ割り当て処理においては、リクエストされるメモリサイズが一定の範囲に収まっていることや計算処理が正しく行われることを検証する必要があります。\r\n報告者らは、RTOS やライブラリ製品の実装状況を調査し、メモリ割り当て処理のなかで必要な検証を行っていない実装が複数存在することを発見しました。\r\n報告者らは、彼らが発見し開発者と調整した脆弱性を総称して \"BadAlloc\" と呼んでいます。",
-  "identifier": "JVNDB-2021-001387",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU90467655",
-      "source": "JVN",
-      "id": "JVNVU#90467655"
-    },
-    {
-      "text": "https://us-cert.cisa.gov/ncas/alerts/aa21-229a",
-      "source": "US-CERT National Cyber Awareness System Alerts",
-      "id": "AA21-229A"
-    },
-    {
-      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-119-04",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-21-119-04"
-    },
-    {
-      "text": "https://msrc-blog.microsoft.com/2021/04/29/badalloc-memory-allocation-vulnerabilities-could-affect-wide-range-of-iot-and-ot-devices-in-industrial-medical-and-enterprise-networks/",
-      "source": "関連文書",
-      "id": "“BadAlloc” - Memory allocation vulnerabilities could affect wide range of IoT and OT devices in industrial, medical, and enterprise networks"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:amazon:freertos",
-      "version": "2.2",
-      "vendor": "Amazon.com, Inc.",
-      "product": "Amazon FreeRTOS"
-    },
-    {
-      "text": "cpe:/a:apache:nuttx",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache NuttX"
-    },
-    {
-      "text": "cpe:/a:newlib_project:newlib",
-      "version": "2.2",
-      "vendor": "newlib project",
-      "product": "newlib"
-    },
-    {
-      "text": "cpe:/a:nxp:mcuxpresso_software_development_kit",
-      "version": "2.2",
-      "vendor": "NXP Semiconductors",
-      "product": "MCUXpresso SDK"
-    },
-    {
-      "text": "cpe:/a:uclibc-ng_project:uclibc-ng",
-      "version": "2.2",
-      "vendor": "uClibc-ng project",
-      "product": "uClibc-ng"
-    },
-    {
-      "text": "cpe:/o:arm:cmsis-rtos2",
-      "version": "2.2",
-      "vendor": "ARM Ltd.",
-      "product": "CMSIS-RTOS2"
-    },
-    {
-      "text": "cpe:/o:arm:mbed",
-      "version": "2.2",
-      "vendor": "ARM Ltd.",
-      "product": "Mbed OS"
-    },
-    {
-      "text": "cpe:/o:arm:mbed-uallaoc",
-      "version": "2.2",
-      "vendor": "ARM Ltd.",
-      "product": "mbed-uallaoc"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_car_development_platform",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX CAR Development Platform"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_cross_development_kit",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX Cross Development Kit"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_development_kit",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX Development Kit"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_momentics",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX Momentics"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_momentics_development_suite",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX Momentics Development Suite"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_neutrino_rtos_certified_plus",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX Neutrino RTOS Certified Plus"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_neutrino_rtos_for_medical_devices",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX Neutrino RTOS for Medical Devices"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_neutrino_rtos_safe_kernel",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX Neutrino RTOS Safe Kernel"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_neutrino_secure_kernel",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX Neutrino Secure Kernel"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_os_for_automotive_safety",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX OS for Automotive Safety"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_os_for_safety",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX OS for Safety"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_realtime_platform",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX Realtime Platform"
-    },
-    {
-      "text": "cpe:/o:blackberry:qnx_sdp",
-      "version": "2.2",
-      "vendor": "BlackBerry",
-      "product": "QNX SDP"
-    },
-    {
-      "text": "cpe:/o:cesanta:mongoose_os",
-      "version": "2.2",
-      "vendor": "Cesanta",
-      "product": "Mongoose OS"
-    },
-    {
-      "text": "cpe:/o:google:cloud_iot_device_sdk",
-      "version": "2.2",
-      "vendor": "Google",
-      "product": "Cloud IoT Device SDK"
-    },
-    {
-      "text": "cpe:/o:misc:ecoscentric_ecospro_rtos",
-      "version": "2.2",
-      "vendor": "eCosCentric",
-      "product": "eCosPro RTOS"
-    },
-    {
-      "text": "cpe:/o:misc:media_tek_linkit_sdk",
-      "version": "2.2",
-      "vendor": "Media Tek",
-      "product": "LinkIt SDK"
-    },
-    {
-      "text": "cpe:/o:nxp:mqx",
-      "version": "2.2",
-      "vendor": "NXP Semiconductors",
-      "product": "MQX"
-    },
-    {
-      "text": "cpe:/o:qqplayer:tencentos-tiny",
-      "version": "2.2",
-      "vendor": "Tencent",
-      "product": "TencentOS-tiny"
-    },
-    {
-      "text": "cpe:/o:riot_project:riot-os",
-      "version": "2.2",
-      "vendor": "RIOT project",
-      "product": "RIOT OS"
-    },
-    {
-      "text": "cpe:/o:samsung:tizen_rt_rtos",
-      "version": "2.2",
-      "vendor": "サムスン",
-      "product": "Tizen RT RTOS"
-    },
-    {
-      "text": "cpe:/o:silabs:micrium_os",
-      "version": "2.2",
-      "vendor": "Silicon Labs, Inc.",
-      "product": "Micrium OS"
-    },
-    {
-      "text": "cpe:/o:silabs:micrium_uc_lib",
-      "version": "2.2",
-      "vendor": "Silicon Labs, Inc.",
-      "product": "Micrium uC/LIB"
-    },
-    {
-      "text": "cpe:/o:ti:cc32xx",
-      "version": "2.2",
-      "vendor": "Texas Instruments Incorporated (TI)",
-      "product": "CC32XX"
-    },
-    {
-      "text": "cpe:/o:ti:simplelink-cc13xx",
-      "version": "2.2",
-      "vendor": "Texas Instruments Incorporated (TI)",
-      "product": "SimpleLink-CC13XX"
-    },
-    {
-      "text": "cpe:/o:ti:simplelink-cc26xx",
-      "version": "2.2",
-      "vendor": "Texas Instruments Incorporated (TI)",
-      "product": "SimpleLink-CC26XX"
-    },
-    {
-      "text": "cpe:/o:ti:simplelink-cc32xx",
-      "version": "2.2",
-      "vendor": "Texas Instruments Incorporated (TI)",
-      "product": "SimpleLink-CC32XX"
-    },
-    {
-      "text": "cpe:/o:ti:simplelink_msp432e4xx",
-      "version": "2.2",
-      "vendor": "Texas Instruments Incorporated (TI)",
-      "product": "SimpleLink MSP432E4XX"
-    },
-    {
-      "text": "cpe:/o:windriver:vxworks",
-      "version": "2.2",
-      "vendor": "ウインドリバー株式会社",
-      "product": "VxWorks"
-    },
-    {
-      "text": "cpe:/o:zephyrproject:zephyr_rtos",
-      "version": "2.2",
-      "vendor": "Zephyr Project",
-      "product": "RTOS"
-    }
-  ],
-  "date": "2021-09-03T14:37+09:00",
-  "issued": "2021-05-10T16:33+09:00",
-  "modified": "2021-09-03T14:37+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001387.html",
+	"title": "複数の RTOS やライブラリなどにメモリ割り当て処理における脆弱性 (\"BadAlloc\")",
+	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001387.html",
+	"description": "複数の RTOS (Real Time Operating System) 製品やライブラリなどに、メモリ割り当て処理における脆弱性が報告されています。\r\n\r\nメモリ割り当て処理においては、リクエストされたメモリサイズに対してシステムによるメモリ管理領域やアラインメント調整で必要とされるサイズを加算して、実際に確保するメモリサイズを計算します。この計算結果がシステム内で正しく表現できる範囲の値より大きくなってしまう場合には桁あふれを起こすため、その計算結果を使って以後の処理を継続すると異常動作につながります。したがってメモリ割り当て処理においては、リクエストされるメモリサイズが一定の範囲に収まっていることや計算処理が正しく行われることを検証する必要があります。\r\n報告者らは、RTOS やライブラリ製品の実装状況を調査し、メモリ割り当て処理のなかで必要な検証を行っていない実装が複数存在することを発見しました。\r\n報告者らは、彼らが発見し開発者と調整した脆弱性を総称して \"BadAlloc\" と呼んでいます。",
+	"identifier": "JVNDB-2021-001387",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU90467655",
+			"source": "JVN",
+			"id": "JVNVU#90467655"
+		},
+		{
+			"text": "https://us-cert.cisa.gov/ncas/alerts/aa21-229a",
+			"source": "US-CERT National Cyber Awareness System Alerts",
+			"id": "AA21-229A"
+		},
+		{
+			"text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-119-04",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-21-119-04"
+		},
+		{
+			"text": "https://msrc-blog.microsoft.com/2021/04/29/badalloc-memory-allocation-vulnerabilities-could-affect-wide-range-of-iot-and-ot-devices-in-industrial-medical-and-enterprise-networks/",
+			"source": "関連文書",
+			"id": "“BadAlloc” - Memory allocation vulnerabilities could affect wide range of IoT and OT devices in industrial, medical, and enterprise networks"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:amazon:freertos",
+			"version": "2.2",
+			"vendor": "Amazon.com, Inc.",
+			"product": "Amazon FreeRTOS"
+		},
+		{
+			"text": "cpe:/a:apache:nuttx",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache NuttX"
+		},
+		{
+			"text": "cpe:/a:newlib_project:newlib",
+			"version": "2.2",
+			"vendor": "newlib project",
+			"product": "newlib"
+		},
+		{
+			"text": "cpe:/a:nxp:mcuxpresso_software_development_kit",
+			"version": "2.2",
+			"vendor": "NXP Semiconductors",
+			"product": "MCUXpresso SDK"
+		},
+		{
+			"text": "cpe:/a:uclibc-ng_project:uclibc-ng",
+			"version": "2.2",
+			"vendor": "uClibc-ng project",
+			"product": "uClibc-ng"
+		},
+		{
+			"text": "cpe:/o:arm:cmsis-rtos2",
+			"version": "2.2",
+			"vendor": "ARM Ltd.",
+			"product": "CMSIS-RTOS2"
+		},
+		{
+			"text": "cpe:/o:arm:mbed",
+			"version": "2.2",
+			"vendor": "ARM Ltd.",
+			"product": "Mbed OS"
+		},
+		{
+			"text": "cpe:/o:arm:mbed-uallaoc",
+			"version": "2.2",
+			"vendor": "ARM Ltd.",
+			"product": "mbed-uallaoc"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_car_development_platform",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX CAR Development Platform"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_cross_development_kit",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX Cross Development Kit"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_development_kit",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX Development Kit"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_momentics",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX Momentics"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_momentics_development_suite",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX Momentics Development Suite"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_neutrino_rtos_certified_plus",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX Neutrino RTOS Certified Plus"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_neutrino_rtos_for_medical_devices",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX Neutrino RTOS for Medical Devices"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_neutrino_rtos_safe_kernel",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX Neutrino RTOS Safe Kernel"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_neutrino_secure_kernel",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX Neutrino Secure Kernel"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_os_for_automotive_safety",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX OS for Automotive Safety"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_os_for_safety",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX OS for Safety"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_realtime_platform",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX Realtime Platform"
+		},
+		{
+			"text": "cpe:/o:blackberry:qnx_sdp",
+			"version": "2.2",
+			"vendor": "BlackBerry",
+			"product": "QNX SDP"
+		},
+		{
+			"text": "cpe:/o:cesanta:mongoose_os",
+			"version": "2.2",
+			"vendor": "Cesanta",
+			"product": "Mongoose OS"
+		},
+		{
+			"text": "cpe:/o:google:cloud_iot_device_sdk",
+			"version": "2.2",
+			"vendor": "Google",
+			"product": "Cloud IoT Device SDK"
+		},
+		{
+			"text": "cpe:/o:misc:ecoscentric_ecospro_rtos",
+			"version": "2.2",
+			"vendor": "eCosCentric",
+			"product": "eCosPro RTOS"
+		},
+		{
+			"text": "cpe:/o:misc:media_tek_linkit_sdk",
+			"version": "2.2",
+			"vendor": "Media Tek",
+			"product": "LinkIt SDK"
+		},
+		{
+			"text": "cpe:/o:nxp:mqx",
+			"version": "2.2",
+			"vendor": "NXP Semiconductors",
+			"product": "MQX"
+		},
+		{
+			"text": "cpe:/o:qqplayer:tencentos-tiny",
+			"version": "2.2",
+			"vendor": "Tencent",
+			"product": "TencentOS-tiny"
+		},
+		{
+			"text": "cpe:/o:riot_project:riot-os",
+			"version": "2.2",
+			"vendor": "RIOT project",
+			"product": "RIOT OS"
+		},
+		{
+			"text": "cpe:/o:samsung:tizen_rt_rtos",
+			"version": "2.2",
+			"vendor": "サムスン",
+			"product": "Tizen RT RTOS"
+		},
+		{
+			"text": "cpe:/o:silabs:micrium_os",
+			"version": "2.2",
+			"vendor": "Silicon Labs, Inc.",
+			"product": "Micrium OS"
+		},
+		{
+			"text": "cpe:/o:silabs:micrium_uc_lib",
+			"version": "2.2",
+			"vendor": "Silicon Labs, Inc.",
+			"product": "Micrium uC/LIB"
+		},
+		{
+			"text": "cpe:/o:ti:cc32xx",
+			"version": "2.2",
+			"vendor": "Texas Instruments Incorporated (TI)",
+			"product": "CC32XX"
+		},
+		{
+			"text": "cpe:/o:ti:simplelink-cc13xx",
+			"version": "2.2",
+			"vendor": "Texas Instruments Incorporated (TI)",
+			"product": "SimpleLink-CC13XX"
+		},
+		{
+			"text": "cpe:/o:ti:simplelink-cc26xx",
+			"version": "2.2",
+			"vendor": "Texas Instruments Incorporated (TI)",
+			"product": "SimpleLink-CC26XX"
+		},
+		{
+			"text": "cpe:/o:ti:simplelink-cc32xx",
+			"version": "2.2",
+			"vendor": "Texas Instruments Incorporated (TI)",
+			"product": "SimpleLink-CC32XX"
+		},
+		{
+			"text": "cpe:/o:ti:simplelink_msp432e4xx",
+			"version": "2.2",
+			"vendor": "Texas Instruments Incorporated (TI)",
+			"product": "SimpleLink MSP432E4XX"
+		},
+		{
+			"text": "cpe:/o:windriver:vxworks",
+			"version": "2.2",
+			"vendor": "ウインドリバー株式会社",
+			"product": "VxWorks"
+		},
+		{
+			"text": "cpe:/o:zephyrproject:zephyr_rtos",
+			"version": "2.2",
+			"vendor": "Zephyr Project",
+			"product": "RTOS"
+		}
+	],
+	"date": "2021-09-03T14:37+09:00",
+	"issued": "2021-05-10T16:33+09:00",
+	"modified": "2021-09-03T14:37+09:00"
 }

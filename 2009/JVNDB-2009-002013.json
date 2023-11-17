@@ -1,104 +1,104 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002013.html",
-  "title": "MySQL の dispatch_command 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002013.html",
-  "description": "MySQL の mysqld にある dispatch_command 関数には、COM_CREATE_DB または COM_DROP_DB リクエスト内のデータベース名に含まれる書式文字列の処理に不備があるため、サービス運用妨害 (DoS) 状態となる、またはその他の詳細不明な影響を受ける脆弱性が存在します。",
-  "identifier": "JVNDB-2009-002013",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2446",
-      "source": "CVE",
-      "id": "CVE-2009-2446"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2446",
-      "source": "NVD",
-      "id": "CVE-2009-2446"
-    },
-    {
-      "text": "http://secunia.com/advisories/35767",
-      "source": "SECUNIA",
-      "id": "SA35767"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/35609",
-      "source": "BID",
-      "id": "35609"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/51614",
-      "source": "XF",
-      "id": "51614"
-    },
-    {
-      "text": "http://securitytracker.com/id?1022533",
-      "source": "SECTRACK",
-      "id": "1022533"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2009/1857",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2009-1857"
-    },
-    {
-      "text": "http://osvdb.org/55734",
-      "source": "OSVDB",
-      "id": "55734"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-134.html",
-      "id": "CWE-134",
-      "title": "書式文字列の問題(CWE-134)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:mysql:mysql",
-      "version": "2.2",
-      "vendor": "MySQL AB",
-      "product": "MySQL"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:rhel_desktop_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "8.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:M/Au:S/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2011-02-01T16:19+09:00",
-  "issued": "2009-09-17T12:03+09:00",
-  "modified": "2011-02-01T16:19+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002013.html",
+	"title": "MySQL の dispatch_command 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002013.html",
+	"description": "MySQL の mysqld にある dispatch_command 関数には、COM_CREATE_DB または COM_DROP_DB リクエスト内のデータベース名に含まれる書式文字列の処理に不備があるため、サービス運用妨害 (DoS) 状態となる、またはその他の詳細不明な影響を受ける脆弱性が存在します。",
+	"identifier": "JVNDB-2009-002013",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2446",
+			"source": "CVE",
+			"id": "CVE-2009-2446"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-2446",
+			"source": "NVD",
+			"id": "CVE-2009-2446"
+		},
+		{
+			"text": "http://secunia.com/advisories/35767",
+			"source": "SECUNIA",
+			"id": "SA35767"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/35609",
+			"source": "BID",
+			"id": "35609"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/51614",
+			"source": "XF",
+			"id": "51614"
+		},
+		{
+			"text": "http://securitytracker.com/id?1022533",
+			"source": "SECTRACK",
+			"id": "1022533"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2009/1857",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2009-1857"
+		},
+		{
+			"text": "http://osvdb.org/55734",
+			"source": "OSVDB",
+			"id": "55734"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-134.html",
+			"id": "CWE-134",
+			"title": "書式文字列の問題(CWE-134)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:mysql:mysql",
+			"version": "2.2",
+			"vendor": "MySQL AB",
+			"product": "MySQL"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:rhel_desktop_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "8.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:M/Au:S/C:C/I:C/A:C"
+		}
+	],
+	"date": "2011-02-01T16:19+09:00",
+	"issued": "2009-09-17T12:03+09:00",
+	"modified": "2011-02-01T16:19+09:00"
 }

@@ -1,69 +1,69 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000312.html",
-  "title": "qmail の stralloc_readyplus 関数における整数オーバフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000312.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nqmail は、簡単な設定で利用可能なメール転送エージェント (MTA) で、SMTP を使用して他のシステム上の MTA とのメッセージ交換を行ないます 。\r\n\r\nQmail 1.03 以前には、以下複数のセキュリティ問題により、qmail-smtpd がクラッシュする問題が存在します。\r\n\r\n・他の SMTP サービスから過度に大きなデータを受信した場合に、stralloc_readyplus() 関数において、整数オーバーフローが発生する問題 (BID 13528)\r\n\r\n・過度に大きなデータをパラメータとして HELO コマンドに渡した場合に、commands() 関数において、符号付き整数エラーが発生する問題 (BID 13535)\r\n\r\n・過度に大きなデータをパラメータとして RCPT TO コマンドに渡した場合に、substdio_put() 関数において、符号付き整数エラーが発生する問題 (BID 13536)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、SMTP サービスに接続して意図的なデータを送りつけることにより、qmail-smtpd のクラッシュを引き起こし、結果として SMTP サービスをサービス不能状態に陥らせる可能性があります。また、これらの問題を利用して任意のコードを実行する可能性もありますが、現時点では詳細は不明です。\r\n\r\n尚、これらの問題は仮想メモリが 8 GB を超える 64 ビットアーキテクチャのシステム上で、4 GB 以上の仮想メモリを使用可能である場合に限り、再現することが発見者より報告されています。",
-  "identifier": "JVNDB-2005-000312",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1513",
-      "source": "CVE",
-      "id": "CVE-2005-1513"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1513",
-      "source": "NVD",
-      "id": "CVE-2005-1513"
-    },
-    {
-      "text": "http://secunia.com/advisories/15533/",
-      "source": "SECUNIA",
-      "id": "SA15533"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13536",
-      "source": "BID",
-      "id": "13536"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13535",
-      "source": "BID",
-      "id": "13535"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13528",
-      "source": "BID",
-      "id": "13528"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2005/May/1013911.html",
-      "source": "SECTRACK",
-      "id": "1013911"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/0490",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-0490"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:dan_bernstein:qmail",
-      "version": "2.2",
-      "vendor": "Dan Bernstein",
-      "product": "qmail"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000312.html",
+	"title": "qmail の stralloc_readyplus 関数における整数オーバフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000312.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nqmail は、簡単な設定で利用可能なメール転送エージェント (MTA) で、SMTP を使用して他のシステム上の MTA とのメッセージ交換を行ないます 。\r\n\r\nQmail 1.03 以前には、以下複数のセキュリティ問題により、qmail-smtpd がクラッシュする問題が存在します。\r\n\r\n・他の SMTP サービスから過度に大きなデータを受信した場合に、stralloc_readyplus() 関数において、整数オーバーフローが発生する問題 (BID 13528)\r\n\r\n・過度に大きなデータをパラメータとして HELO コマンドに渡した場合に、commands() 関数において、符号付き整数エラーが発生する問題 (BID 13535)\r\n\r\n・過度に大きなデータをパラメータとして RCPT TO コマンドに渡した場合に、substdio_put() 関数において、符号付き整数エラーが発生する問題 (BID 13536)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、SMTP サービスに接続して意図的なデータを送りつけることにより、qmail-smtpd のクラッシュを引き起こし、結果として SMTP サービスをサービス不能状態に陥らせる可能性があります。また、これらの問題を利用して任意のコードを実行する可能性もありますが、現時点では詳細は不明です。\r\n\r\n尚、これらの問題は仮想メモリが 8 GB を超える 64 ビットアーキテクチャのシステム上で、4 GB 以上の仮想メモリを使用可能である場合に限り、再現することが発見者より報告されています。",
+	"identifier": "JVNDB-2005-000312",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1513",
+			"source": "CVE",
+			"id": "CVE-2005-1513"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1513",
+			"source": "NVD",
+			"id": "CVE-2005-1513"
+		},
+		{
+			"text": "http://secunia.com/advisories/15533/",
+			"source": "SECUNIA",
+			"id": "SA15533"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13536",
+			"source": "BID",
+			"id": "13536"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13535",
+			"source": "BID",
+			"id": "13535"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13528",
+			"source": "BID",
+			"id": "13528"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2005/May/1013911.html",
+			"source": "SECTRACK",
+			"id": "1013911"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/0490",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-0490"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:dan_bernstein:qmail",
+			"version": "2.2",
+			"vendor": "Dan Bernstein",
+			"product": "qmail"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

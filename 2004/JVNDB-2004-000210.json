@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000210.html",
-  "title": "Linux Kernel におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000210.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux カーネルでは、スレッド間の演算処理の切り替えにコンテキストスイッチコードを使用します。\r\nまた、ia64 アーキテクチャにおいては、FPH (浮動小数点レジスタの上位レジスタ) 変更情報をユーザマスク (UM) レジスタ内の MFH レジスタに格納します。この FPH レジスタが変更された場合には、MFH レジスタにビットが立てられます。\r\n\r\nLinux Kernel 2.4.x のコンテキストスイッチコードには、スレッド処理の切り替え時に MFH ビットのみをチェックし FPH を所有するプロセスをチェックしないセキュリティ上の問題 (CAN-2004-0565) が存在します。\r\nこの問題を利用するローカルの攻撃者は、MFH ビットを設定するプログラムを作成することにより、他のプロセスのレジスタ値を読み取ることが可能です。\r\n\r\nまた、ia64 アーキテクチャにおける Linux Kernel 2.4.x には、特定の状況下において、ローカルの攻撃者がカーネルパニックを引き起こし、結果としてシステムがサービス不能状態に陥る問題 (CAN-2004-0447) も存在することが報告されていますが、現状では未詳です。 \r\n\r\n尚、ia64 以外のアーキテクチャはこれらの問題の影響を受けません。",
-  "identifier": "JVNDB-2004-000210",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0447",
-      "source": "CVE",
-      "id": "CVE-2004-0447"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0447",
-      "source": "NVD",
-      "id": "CVE-2004-0447"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/10783",
-      "source": "BID",
-      "id": "10783"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/10687",
-      "source": "BID",
-      "id": "10687"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/16644",
-      "source": "XF",
-      "id": "16644"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.2",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000210.html",
+	"title": "Linux Kernel におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000210.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux カーネルでは、スレッド間の演算処理の切り替えにコンテキストスイッチコードを使用します。\r\nまた、ia64 アーキテクチャにおいては、FPH (浮動小数点レジスタの上位レジスタ) 変更情報をユーザマスク (UM) レジスタ内の MFH レジスタに格納します。この FPH レジスタが変更された場合には、MFH レジスタにビットが立てられます。\r\n\r\nLinux Kernel 2.4.x のコンテキストスイッチコードには、スレッド処理の切り替え時に MFH ビットのみをチェックし FPH を所有するプロセスをチェックしないセキュリティ上の問題 (CAN-2004-0565) が存在します。\r\nこの問題を利用するローカルの攻撃者は、MFH ビットを設定するプログラムを作成することにより、他のプロセスのレジスタ値を読み取ることが可能です。\r\n\r\nまた、ia64 アーキテクチャにおける Linux Kernel 2.4.x には、特定の状況下において、ローカルの攻撃者がカーネルパニックを引き起こし、結果としてシステムがサービス不能状態に陥る問題 (CAN-2004-0447) も存在することが報告されていますが、現状では未詳です。 \r\n\r\n尚、ia64 以外のアーキテクチャはこれらの問題の影響を受けません。",
+	"identifier": "JVNDB-2004-000210",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0447",
+			"source": "CVE",
+			"id": "CVE-2004-0447"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0447",
+			"source": "NVD",
+			"id": "CVE-2004-0447"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/10783",
+			"source": "BID",
+			"id": "10783"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/10687",
+			"source": "BID",
+			"id": "10687"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/16644",
+			"source": "XF",
+			"id": "16644"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

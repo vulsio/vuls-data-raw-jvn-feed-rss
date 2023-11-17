@@ -1,68 +1,68 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009865.html",
-  "title": "OpenSSL における NULL ポインタ参照の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009865.html",
-  "description": "OpenSSL には、NULL ポインタ参照の脆弱性が存在します。\r\n\r\nOpenSSL Project より、OpenSSL Security Advisory [08 December 2020] が公開されました。\r\n深刻度 - 高 (Severity: High)\r\n\r\nEDIPARTYNAME NULL ポインタ参照 - CVE-2020-1971\r\n\r\nOpenSSL の GENERAL_NAME_cmp() 関数は X.509 証明書に含まれるホスト名などのデータの比較を行う関数です。\r\nGENERAL_NAME_cmp() 関数で比較する引数双方が EDIPartyName 型だった場合、GENERAL_NAME_cmp() 関数内で NULL ポインタ参照 (CWE-476) が発生して、当該関数を呼び出しているサーバやクライアントアプリケーションがクラッシュする可能性があります。",
-  "identifier": "JVNDB-2020-009865",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU91053554",
-      "source": "JVN",
-      "id": "JVNVU#91053554"
-    },
-    {
-      "text": "https://jvn.jp/vu/JVNVU90348129/",
-      "source": "JVN",
-      "id": "JVNVU#90348129"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1971",
-      "source": "CVE",
-      "id": "CVE-2020-1971"
-    },
-    {
-      "text": "https://www.jpcert.or.jp/at/2020/at200048.html",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2020-0048"
-    },
-    {
-      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-336-06",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-21-336-06"
-    },
-    {
-      "text": "http://cwe.mitre.org/data/definitions/476.html",
-      "id": "CWE-476",
-      "title": "NULL ポインタデリファレンス(CWE-476)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:hitachi:hitachi_ops_center_analyzer_viewpoint",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Ops Center Analyzer viewpoint"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_automatic_job_management_system_3",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/Automatic Job Management System 3"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_base",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/Base"
-    },
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    }
-  ],
-  "date": "2023-07-20T15:10+09:00",
-  "issued": "2020-12-10T17:27+09:00",
-  "modified": "2023-07-20T15:10+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009865.html",
+	"title": "OpenSSL における NULL ポインタ参照の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009865.html",
+	"description": "OpenSSL には、NULL ポインタ参照の脆弱性が存在します。\r\n\r\nOpenSSL Project より、OpenSSL Security Advisory [08 December 2020] が公開されました。\r\n深刻度 - 高 (Severity: High)\r\n\r\nEDIPARTYNAME NULL ポインタ参照 - CVE-2020-1971\r\n\r\nOpenSSL の GENERAL_NAME_cmp() 関数は X.509 証明書に含まれるホスト名などのデータの比較を行う関数です。\r\nGENERAL_NAME_cmp() 関数で比較する引数双方が EDIPartyName 型だった場合、GENERAL_NAME_cmp() 関数内で NULL ポインタ参照 (CWE-476) が発生して、当該関数を呼び出しているサーバやクライアントアプリケーションがクラッシュする可能性があります。",
+	"identifier": "JVNDB-2020-009865",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU91053554",
+			"source": "JVN",
+			"id": "JVNVU#91053554"
+		},
+		{
+			"text": "https://jvn.jp/vu/JVNVU90348129/",
+			"source": "JVN",
+			"id": "JVNVU#90348129"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1971",
+			"source": "CVE",
+			"id": "CVE-2020-1971"
+		},
+		{
+			"text": "https://www.jpcert.or.jp/at/2020/at200048.html",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2020-0048"
+		},
+		{
+			"text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-336-06",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-21-336-06"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hitachi:hitachi_ops_center_analyzer_viewpoint",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Ops Center Analyzer viewpoint"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_automatic_job_management_system_3",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/Automatic Job Management System 3"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_base",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/Base"
+		},
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		}
+	],
+	"date": "2023-07-20T15:10+09:00",
+	"issued": "2020-12-10T17:27+09:00",
+	"modified": "2023-07-20T15:10+09:00"
 }

@@ -1,88 +1,88 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001011.html",
-  "title": "M&M Software 製 fdtCONTAINER に信頼できないデータのデシリアライズの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001011.html",
-  "description": "M&M Software 社 (WAGO Kontakttechnik 社子会社) が提供し、RTIS および PACTware を含む他の製品にも使われている fdtCONTAINER コンポーネントには、信頼できないデータのデシリアライズ (CWE-502) の脆弱性が存在します。",
-  "identifier": "JVNDB-2021-001011",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU94008268",
-      "source": "JVN",
-      "id": "JVNVU#94008268"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12525",
-      "source": "CVE",
-      "id": "CVE-2020-12525"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-12525",
-      "source": "NVD",
-      "id": "CVE-2020-12525"
-    },
-    {
-      "text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-021-05",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-21-021-05"
-    },
-    {
-      "text": "https://cert.vde.com/en-us/advisories/vde-2020-048",
-      "source": "関連文書",
-      "id": "VDE-2020-048 (WAGO/M&M Software: Deserialization of untrusted data in fdtContainer)"
-    },
-    {
-      "text": "https://cert.vde.com/en-us/advisories/vde-2021-001",
-      "source": "関連文書",
-      "id": "VDE-2021-001 (PEPPERL+FUCHS: Vulnerability allowing code-excution in PACTware <= 5.0.5.31)"
-    },
-    {
-      "text": "https://cert.vde.com/de-de/advisories/vde-2021-002",
-      "source": "関連文書",
-      "id": "VDE-2021-002 (WEIDMUELLER: WI Manager affected by fdtContainer vulnerability)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/502.html",
-      "id": "CWE-502",
-      "title": "信頼できないデータのデシリアライゼーション(CWE-502)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:m%26m_software_dtminspector_based_on_fdt_1.2x",
-      "version": "2.2",
-      "vendor": "M&M Software GmbH",
-      "product": "FDT 1.2.x をベースにした dtmINSPECTOR"
-    },
-    {
-      "text": "cpe:/a:misc:m%26m_software_fdtcontainer_application",
-      "version": "2.2",
-      "vendor": "M&M Software GmbH",
-      "product": "fdtCONTAINER application"
-    },
-    {
-      "text": "cpe:/a:misc:m%26m_software_fdtcontainer_component",
-      "version": "2.2",
-      "vendor": "M&M Software GmbH",
-      "product": "fdtCONTAINER component"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2021-06-21T17:28+09:00",
-  "issued": "2021-01-25T15:56+09:00",
-  "modified": "2021-06-21T17:28+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001011.html",
+	"title": "M&M Software 製 fdtCONTAINER に信頼できないデータのデシリアライズの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001011.html",
+	"description": "M&M Software 社 (WAGO Kontakttechnik 社子会社) が提供し、RTIS および PACTware を含む他の製品にも使われている fdtCONTAINER コンポーネントには、信頼できないデータのデシリアライズ (CWE-502) の脆弱性が存在します。",
+	"identifier": "JVNDB-2021-001011",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU94008268",
+			"source": "JVN",
+			"id": "JVNVU#94008268"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12525",
+			"source": "CVE",
+			"id": "CVE-2020-12525"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2020-12525",
+			"source": "NVD",
+			"id": "CVE-2020-12525"
+		},
+		{
+			"text": "https://us-cert.cisa.gov/ics/advisories/icsa-21-021-05",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-21-021-05"
+		},
+		{
+			"text": "https://cert.vde.com/en-us/advisories/vde-2020-048",
+			"source": "関連文書",
+			"id": "VDE-2020-048 (WAGO/M&M Software: Deserialization of untrusted data in fdtContainer)"
+		},
+		{
+			"text": "https://cert.vde.com/en-us/advisories/vde-2021-001",
+			"source": "関連文書",
+			"id": "VDE-2021-001 (PEPPERL+FUCHS: Vulnerability allowing code-excution in PACTware <= 5.0.5.31)"
+		},
+		{
+			"text": "https://cert.vde.com/de-de/advisories/vde-2021-002",
+			"source": "関連文書",
+			"id": "VDE-2021-002 (WEIDMUELLER: WI Manager affected by fdtContainer vulnerability)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/502.html",
+			"id": "CWE-502",
+			"title": "信頼できないデータのデシリアライゼーション(CWE-502)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:m%26m_software_dtminspector_based_on_fdt_1.2x",
+			"version": "2.2",
+			"vendor": "M&M Software GmbH",
+			"product": "FDT 1.2.x をベースにした dtmINSPECTOR"
+		},
+		{
+			"text": "cpe:/a:misc:m%26m_software_fdtcontainer_application",
+			"version": "2.2",
+			"vendor": "M&M Software GmbH",
+			"product": "fdtCONTAINER application"
+		},
+		{
+			"text": "cpe:/a:misc:m%26m_software_fdtcontainer_component",
+			"version": "2.2",
+			"vendor": "M&M Software GmbH",
+			"product": "fdtCONTAINER component"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2021-06-21T17:28+09:00",
+	"issued": "2021-01-25T15:56+09:00",
+	"modified": "2021-06-21T17:28+09:00"
 }

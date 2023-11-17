@@ -1,51 +1,51 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000129.html",
-  "title": "Android OS が CRIME 攻撃による影響を受けてしまう問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000129.html",
-  "description": "Android OS での TLS プロトコルの実装には、平文の HTTP ヘッダを取得されてしまう脆弱性が存在します。\r\n\r\nTLS プロトコルでは、サーバおよびクライアントにて通信する際にデータを圧縮する機能があります。この機能がサーバとクライアントで有効になっている場合、暗号化された元データの長さを適切に保護していない状態で圧縮したデータを暗号化をしてしまうため、平文の HTTP ヘッダを取得されてしまう脆弱性が存在します。Android OS の TLS プロトコル実装は、本脆弱性の影響を受けます。\r\nなお、この脆弱性を悪用し、平文の HTTP ヘッダを取得する攻撃は、通称 CRIME 攻撃と呼ばれています。",
-  "identifier": "JVNDB-2016-000129",
-  "references": [
-    {
-      "text": "https://jvn.jp/jp/JVN65273415/index.html",
-      "source": "JVN",
-      "id": "JVN#65273415"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4929",
-      "source": "CVE",
-      "id": "CVE-2012-4929"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
-      "id": "CWE-310",
-      "title": "暗号の問題(CWE-310)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:google:android",
-      "version": "2.2",
-      "vendor": "Google",
-      "product": "Android"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.6",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "3.7",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
-    }
-  ],
-  "date": "2016-07-22T14:10+09:00",
-  "issued": "2016-07-22T14:10+09:00",
-  "modified": "2016-07-22T14:10+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000129.html",
+	"title": "Android OS が CRIME 攻撃による影響を受けてしまう問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-000129.html",
+	"description": "Android OS での TLS プロトコルの実装には、平文の HTTP ヘッダを取得されてしまう脆弱性が存在します。\r\n\r\nTLS プロトコルでは、サーバおよびクライアントにて通信する際にデータを圧縮する機能があります。この機能がサーバとクライアントで有効になっている場合、暗号化された元データの長さを適切に保護していない状態で圧縮したデータを暗号化をしてしまうため、平文の HTTP ヘッダを取得されてしまう脆弱性が存在します。Android OS の TLS プロトコル実装は、本脆弱性の影響を受けます。\r\nなお、この脆弱性を悪用し、平文の HTTP ヘッダを取得する攻撃は、通称 CRIME 攻撃と呼ばれています。",
+	"identifier": "JVNDB-2016-000129",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN65273415/index.html",
+			"source": "JVN",
+			"id": "JVN#65273415"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4929",
+			"source": "CVE",
+			"id": "CVE-2012-4929"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+			"id": "CWE-310",
+			"title": "暗号の問題(CWE-310)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:google:android",
+			"version": "2.2",
+			"vendor": "Google",
+			"product": "Android"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.6",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "3.7",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+		}
+	],
+	"date": "2016-07-22T14:10+09:00",
+	"issued": "2016-07-22T14:10+09:00",
+	"modified": "2016-07-22T14:10+09:00"
 }

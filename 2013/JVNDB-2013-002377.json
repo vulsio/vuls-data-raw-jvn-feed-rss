@@ -1,80 +1,80 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002377.html",
-  "title": "Oracle Java SE の Java Runtime Environment における HotSpot の処理に関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002377.html",
-  "description": "Oracle Java SE の Java Runtime Environment (JRE) および OpenJDK には、HotSpot に関する処理に不備があるため、完全性に影響のある脆弱性が存在します。\r\n\r\n本情報は、April 2013 Critical Patch Update (CPU) に基づく脆弱性情報です。\r\n当初、研究者が、整数フィールドと double 型実数フィールドを使用してセキュリティマネージャを無効化するデモンストレーションによって、MethodHandles メソッドによってパーミッションの確認を回避される、およびリフレクションと type confusion を使用して任意の public final フィールドを変更される可能性があると主張していますが、オラクル社はコメントしていません。",
-  "identifier": "JVNDB-2013-002377",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNTA13-107A/index.html",
-      "source": "JVN",
-      "id": "JVNTA13-107A"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2423",
-      "source": "CVE",
-      "id": "CVE-2013-2423"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2423",
-      "source": "NVD",
-      "id": "CVE-2013-2423"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/ciadr/vul/20130417-jre.html",
-      "source": "IPA CFA",
-      "id": "Oracle Java の脆弱性対策について(CVE-2013-2383等)"
-    },
-    {
-      "text": "https://www.jpcert.or.jp/at/2013/at130021.txt",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2013-0021"
-    },
-    {
-      "text": "https://www.us-cert.gov/ncas/alerts/TA13-107A",
-      "source": "CERT-TA",
-      "id": "TA13-107A"
-    },
-    {
-      "text": "http://blog.fuseyism.com/index.php/2013/04/22/security-icedtea-2-3-9-for-openjdk-7-released/",
-      "source": "関連文書",
-      "id": "GNU/Andrew's Blog: [SECURITY] IcedTea 2.3.9 for OpenJDK 7 Released!"
-    },
-    {
-      "text": "https://wiki.mageia.org/en/Support/Advisories/MGASA-2013-0130",
-      "source": "関連文書",
-      "id": "MGASA-2013-0130"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-noinfo",
-      "title": "情報不足(CWE-noinfo)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:oracle:jdk",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "JDK"
-    },
-    {
-      "text": "cpe:/a:oracle:jre",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "JRE"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2014-03-28T18:29+09:00",
-  "issued": "2013-04-22T10:39+09:00",
-  "modified": "2014-03-28T18:29+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002377.html",
+	"title": "Oracle Java SE の Java Runtime Environment における HotSpot の処理に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-002377.html",
+	"description": "Oracle Java SE の Java Runtime Environment (JRE) および OpenJDK には、HotSpot に関する処理に不備があるため、完全性に影響のある脆弱性が存在します。\r\n\r\n本情報は、April 2013 Critical Patch Update (CPU) に基づく脆弱性情報です。\r\n当初、研究者が、整数フィールドと double 型実数フィールドを使用してセキュリティマネージャを無効化するデモンストレーションによって、MethodHandles メソッドによってパーミッションの確認を回避される、およびリフレクションと type confusion を使用して任意の public final フィールドを変更される可能性があると主張していますが、オラクル社はコメントしていません。",
+	"identifier": "JVNDB-2013-002377",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNTA13-107A/index.html",
+			"source": "JVN",
+			"id": "JVNTA13-107A"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2423",
+			"source": "CVE",
+			"id": "CVE-2013-2423"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2423",
+			"source": "NVD",
+			"id": "CVE-2013-2423"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/ciadr/vul/20130417-jre.html",
+			"source": "IPA CFA",
+			"id": "Oracle Java の脆弱性対策について(CVE-2013-2383等)"
+		},
+		{
+			"text": "https://www.jpcert.or.jp/at/2013/at130021.txt",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2013-0021"
+		},
+		{
+			"text": "https://www.us-cert.gov/ncas/alerts/TA13-107A",
+			"source": "CERT-TA",
+			"id": "TA13-107A"
+		},
+		{
+			"text": "http://blog.fuseyism.com/index.php/2013/04/22/security-icedtea-2-3-9-for-openjdk-7-released/",
+			"source": "関連文書",
+			"id": "GNU/Andrew's Blog: [SECURITY] IcedTea 2.3.9 for OpenJDK 7 Released!"
+		},
+		{
+			"text": "https://wiki.mageia.org/en/Support/Advisories/MGASA-2013-0130",
+			"source": "関連文書",
+			"id": "MGASA-2013-0130"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-noinfo",
+			"title": "情報不足(CWE-noinfo)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:oracle:jdk",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "JDK"
+		},
+		{
+			"text": "cpe:/a:oracle:jre",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "JRE"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2014-03-28T18:29+09:00",
+	"issued": "2013-04-22T10:39+09:00",
+	"modified": "2014-03-28T18:29+09:00"
 }

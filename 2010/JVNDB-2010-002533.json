@@ -1,89 +1,89 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002533.html",
-  "title": "Microsoft Windows の RtlQueryRegistryValues() 関数におけるレジストリデータ検証不備の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002533.html",
-  "description": "Microsoft Windows の RtlQueryRegistryValues() 関数には、読み込んだレジストリデータを正しく検証しない脆弱性が存在します。\r\n\r\nなお、本脆弱性を使用した攻撃コードが公開されています。\r\n\r\nMicrosoft Windows は、ユーザ定義の Unicode 文字 (外字) を使用するための end-user defined characters (EUDC) をサポートしています。Windows カーネル (win32k.sys) の graphics device interface (GDI) は、 EUDC レジストリキーに含まれるフォント情報を読み込みます。具体的には、GreEnableEudc() が RtlQueryRegistryValues() を使用して、レジストリキー HKCU\\EUDC\\(codepage)\\SystemDefaultEUDCFont の値を読み込みます。RtlQueryRegistryValues() は、REG_SZ (ストリング) の値を想定しており、レジストリキー SystemDefaultEUDCFont が指定するバッファに書き込みます。\r\n\r\nデフォルト設定において、権限のないユーザが EUDC レジストリキーを変更することが可能です。また、RtlQueryRegistryValues() は SystemDefaultEUDCFont から読み込まれたデータの検証を行いません。\r\n\r\nSystemDefaultEUDCFont のデータを変更することで、攻撃者はカーネルメモリを上書きすることが可能です。",
-  "identifier": "JVNDB-2010-002533",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU529673",
-      "source": "JVN",
-      "id": "JVNVU#529673"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4398",
-      "source": "CVE",
-      "id": "CVE-2010-4398"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4398",
-      "source": "NVD",
-      "id": "CVE-2010-4398"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/529673",
-      "source": "CERT-VN",
-      "id": "VU#529673"
-    },
-    {
-      "text": "http://secunia.com/advisories/42356",
-      "source": "SECUNIA",
-      "id": "SA42356"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/45045",
-      "source": "BID",
-      "id": "45045"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1025046",
-      "source": "SECTRACK",
-      "id": "1025046"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/3058",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-3058"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2011/0324",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2011-0324"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:microsoft:windows_7",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 7"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2003",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2003"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2008",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2008"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_vista",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Vista"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_xp",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows XP"
-    }
-  ],
-  "date": "2011-03-17T17:48+09:00",
-  "issued": "2010-12-21T15:28+09:00",
-  "modified": "2011-03-17T17:48+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002533.html",
+	"title": "Microsoft Windows の RtlQueryRegistryValues() 関数におけるレジストリデータ検証不備の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002533.html",
+	"description": "Microsoft Windows の RtlQueryRegistryValues() 関数には、読み込んだレジストリデータを正しく検証しない脆弱性が存在します。\r\n\r\nなお、本脆弱性を使用した攻撃コードが公開されています。\r\n\r\nMicrosoft Windows は、ユーザ定義の Unicode 文字 (外字) を使用するための end-user defined characters (EUDC) をサポートしています。Windows カーネル (win32k.sys) の graphics device interface (GDI) は、 EUDC レジストリキーに含まれるフォント情報を読み込みます。具体的には、GreEnableEudc() が RtlQueryRegistryValues() を使用して、レジストリキー HKCU\\EUDC\\(codepage)\\SystemDefaultEUDCFont の値を読み込みます。RtlQueryRegistryValues() は、REG_SZ (ストリング) の値を想定しており、レジストリキー SystemDefaultEUDCFont が指定するバッファに書き込みます。\r\n\r\nデフォルト設定において、権限のないユーザが EUDC レジストリキーを変更することが可能です。また、RtlQueryRegistryValues() は SystemDefaultEUDCFont から読み込まれたデータの検証を行いません。\r\n\r\nSystemDefaultEUDCFont のデータを変更することで、攻撃者はカーネルメモリを上書きすることが可能です。",
+	"identifier": "JVNDB-2010-002533",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU529673",
+			"source": "JVN",
+			"id": "JVNVU#529673"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4398",
+			"source": "CVE",
+			"id": "CVE-2010-4398"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4398",
+			"source": "NVD",
+			"id": "CVE-2010-4398"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/529673",
+			"source": "CERT-VN",
+			"id": "VU#529673"
+		},
+		{
+			"text": "http://secunia.com/advisories/42356",
+			"source": "SECUNIA",
+			"id": "SA42356"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/45045",
+			"source": "BID",
+			"id": "45045"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1025046",
+			"source": "SECTRACK",
+			"id": "1025046"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/3058",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-3058"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2011/0324",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2011-0324"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:microsoft:windows_7",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 7"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2003",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2003"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2008",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2008"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_vista",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Vista"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_xp",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows XP"
+		}
+	],
+	"date": "2011-03-17T17:48+09:00",
+	"issued": "2010-12-21T15:28+09:00",
+	"modified": "2011-03-17T17:48+09:00"
 }

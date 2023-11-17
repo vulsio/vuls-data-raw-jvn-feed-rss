@@ -1,70 +1,70 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001534.html",
-  "title": "ISC BIND 9 にサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001534.html",
-  "description": "ISC BIND 9 には、トラストアンカーの管理において、特定の条件下で named が終了する、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC のアドバイザリには次のように記載されています。\r\n\r\nCVE-2015-1349: A Problem with Trust Anchor Management Can Cause named to Crash\r\nhttps://kb.isc.org/article/AA-01235/\r\n\r\n\"BIND servers which are configured to perform DNSSEC validation and which are using managed-keys (which occurs implicitly when using \"dnssec-validation auto;\" or \"dnssec-lookaside auto;\") may terminate with an assertion failure when encountering all of the following conditions in a managed trust anchor:\r\n\r\n  *a key which was previously trusted is now flagged as revoked;\r\n  *there are no other trusted keys available;\r\n  *there is a standby key, but it is not trusted yet\r\n\r\nThis situation results in termination of the named process and denial of service to clients, and can occur in two circumstances:\r\n\r\n  *during an improperly-managed key rollover for one of the managed trust anchors (e.g., during a botched root key rollover), or\r\n\r\n  *when deliberately triggered by an attacker, under specific and limited circumstances. ISC has demonstrated a proof-of-concept of this attack; however, the complexity of the attack is very high unless the attacker has a specific network relationship to the BIND server which is targeted\"",
-  "identifier": "JVNDB-2015-001534",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU93982119/",
-      "source": "JVN",
-      "id": "JVNVU#93982119"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU99970459/index.html",
-      "source": "JVN",
-      "id": "JVNVU#99970459"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1349",
-      "source": "CVE",
-      "id": "CVE-2015-1349"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1349",
-      "source": "NVD",
-      "id": "CVE-2015-1349"
-    },
-    {
-      "text": "http://jprs.jp/tech/security/2015-02-19-bind9-vuln-managed-trust-anchors.html",
-      "source": "JPRS",
-      "id": "BIND 9.xの脆弱性（DNSサービスの停止）について（2015年2月19日公開）"
-    },
-    {
-      "text": "http://advisories.mageia.org/MGASA-2015-0082.html",
-      "source": "関連文書",
-      "id": "MGASA-2015-0082"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-      "id": "CWE-399",
-      "title": "リソース管理の問題(CWE-399)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:isc:bind",
-      "version": "2.2",
-      "vendor": "ISC, Inc.",
-      "product": "BIND"
-    },
-    {
-      "text": "cpe:/o:apple:os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "macOS Server (旧 OS X Server)"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:H/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2015-10-05T16:14+09:00",
-  "issued": "2015-02-20T11:19+09:00",
-  "modified": "2015-10-05T16:14+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001534.html",
+	"title": "ISC BIND 9 にサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001534.html",
+	"description": "ISC BIND 9 には、トラストアンカーの管理において、特定の条件下で named が終了する、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC のアドバイザリには次のように記載されています。\r\n\r\nCVE-2015-1349: A Problem with Trust Anchor Management Can Cause named to Crash\r\nhttps://kb.isc.org/article/AA-01235/\r\n\r\n\"BIND servers which are configured to perform DNSSEC validation and which are using managed-keys (which occurs implicitly when using \"dnssec-validation auto;\" or \"dnssec-lookaside auto;\") may terminate with an assertion failure when encountering all of the following conditions in a managed trust anchor:\r\n\r\n  *a key which was previously trusted is now flagged as revoked;\r\n  *there are no other trusted keys available;\r\n  *there is a standby key, but it is not trusted yet\r\n\r\nThis situation results in termination of the named process and denial of service to clients, and can occur in two circumstances:\r\n\r\n  *during an improperly-managed key rollover for one of the managed trust anchors (e.g., during a botched root key rollover), or\r\n\r\n  *when deliberately triggered by an attacker, under specific and limited circumstances. ISC has demonstrated a proof-of-concept of this attack; however, the complexity of the attack is very high unless the attacker has a specific network relationship to the BIND server which is targeted\"",
+	"identifier": "JVNDB-2015-001534",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU93982119/",
+			"source": "JVN",
+			"id": "JVNVU#93982119"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU99970459/index.html",
+			"source": "JVN",
+			"id": "JVNVU#99970459"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1349",
+			"source": "CVE",
+			"id": "CVE-2015-1349"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-1349",
+			"source": "NVD",
+			"id": "CVE-2015-1349"
+		},
+		{
+			"text": "http://jprs.jp/tech/security/2015-02-19-bind9-vuln-managed-trust-anchors.html",
+			"source": "JPRS",
+			"id": "BIND 9.xの脆弱性（DNSサービスの停止）について（2015年2月19日公開）"
+		},
+		{
+			"text": "http://advisories.mageia.org/MGASA-2015-0082.html",
+			"source": "関連文書",
+			"id": "MGASA-2015-0082"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+			"id": "CWE-399",
+			"title": "リソース管理の問題(CWE-399)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:isc:bind",
+			"version": "2.2",
+			"vendor": "ISC, Inc.",
+			"product": "BIND"
+		},
+		{
+			"text": "cpe:/o:apple:os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "macOS Server (旧 OS X Server)"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:H/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2015-10-05T16:14+09:00",
+	"issued": "2015-02-20T11:19+09:00",
+	"modified": "2015-10-05T16:14+09:00"
 }

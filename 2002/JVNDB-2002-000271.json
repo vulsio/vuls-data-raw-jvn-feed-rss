@@ -1,73 +1,73 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000271.html",
-  "title": "PHP の mail() 関数 における safe_mode オプションによる制限を回避される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000271.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPHP には safe_mode オプションが備わっています。このオプションにより、いくつかの関数で PHP スクリプトとスクリプトの実行対象のファイルやディレクトリが同一ではない場合に処理を続行させないようにすることが可能です。\r\n\r\nPHP 4.0.5 から 4.1.0 に実装されている、メールの送信に利用できる mail() 関数には、第 5 引数として渡される入力値を適切にフィルタリングしない問題が存在し、safe_mode オプションによる制限を回避されてしまう可能性があります。\r\n\r\nこの問題を利用する攻撃者は、mail() 関数の第 5 引数にメタキャラクタを含むデータを渡すことにより、この問題を抱えるホスト上で HTTP プロセスの権限 (通常は nobody 権限) で任意のコマンドを実行できる可能性があります。(CVE-2001-1246)\r\n\r\nさらに、PHP 4.x から 4.2.2 においては、PHP を介してメール送信が行われている場合、MTA に任意のコマンドを渡すことができる問題が存在します。Safe_mode が有効化されている状況下では、本来であれば mail() 関数の第 5 引数の使用が無効化されるものが、使用できてしまいます。そのため、リモートの攻撃者は safe_mode オプションによる制限を回避して MTA に任意のコマンドを引き渡すことが可能となり、結果として MTA が動作するホスト上で任意のコマンドが実行できる可能性があります。(CVE-2002-0985)",
-  "identifier": "JVNDB-2002-000271",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0985",
-      "source": "CVE",
-      "id": "CVE-2002-0985"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0985",
-      "source": "NVD",
-      "id": "CVE-2002-0985"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/5562",
-      "source": "BID",
-      "id": "5562"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/2954",
-      "source": "BID",
-      "id": "2954"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:php:php",
-      "version": "2.2",
-      "vendor": "The PHP Group",
-      "product": "PHP"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_4",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ4"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_550",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ550"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQXTR"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000271.html",
+	"title": "PHP の mail() 関数 における safe_mode オプションによる制限を回避される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000271.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPHP には safe_mode オプションが備わっています。このオプションにより、いくつかの関数で PHP スクリプトとスクリプトの実行対象のファイルやディレクトリが同一ではない場合に処理を続行させないようにすることが可能です。\r\n\r\nPHP 4.0.5 から 4.1.0 に実装されている、メールの送信に利用できる mail() 関数には、第 5 引数として渡される入力値を適切にフィルタリングしない問題が存在し、safe_mode オプションによる制限を回避されてしまう可能性があります。\r\n\r\nこの問題を利用する攻撃者は、mail() 関数の第 5 引数にメタキャラクタを含むデータを渡すことにより、この問題を抱えるホスト上で HTTP プロセスの権限 (通常は nobody 権限) で任意のコマンドを実行できる可能性があります。(CVE-2001-1246)\r\n\r\nさらに、PHP 4.x から 4.2.2 においては、PHP を介してメール送信が行われている場合、MTA に任意のコマンドを渡すことができる問題が存在します。Safe_mode が有効化されている状況下では、本来であれば mail() 関数の第 5 引数の使用が無効化されるものが、使用できてしまいます。そのため、リモートの攻撃者は safe_mode オプションによる制限を回避して MTA に任意のコマンドを引き渡すことが可能となり、結果として MTA が動作するホスト上で任意のコマンドが実行できる可能性があります。(CVE-2002-0985)",
+	"identifier": "JVNDB-2002-000271",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0985",
+			"source": "CVE",
+			"id": "CVE-2002-0985"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-0985",
+			"source": "NVD",
+			"id": "CVE-2002-0985"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/5562",
+			"source": "BID",
+			"id": "5562"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/2954",
+			"source": "BID",
+			"id": "2954"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:php:php",
+			"version": "2.2",
+			"vendor": "The PHP Group",
+			"product": "PHP"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_4",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ4"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_550",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ550"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQXTR"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

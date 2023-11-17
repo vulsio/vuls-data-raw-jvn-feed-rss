@@ -1,127 +1,127 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008084.html",
-  "title": "OpenSSL の ssl/d1_lib.c の dtls1_clear_queues 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008084.html",
-  "description": "OpenSSL の ssl/d1_lib.c の dtls1_clear_queues 関数は、ChangeCipherSpec メッセージと Finished メッセージとの間で到着可能なアプリケーションのデータを考慮することなしに、データ構造を解放するため、サービス運用妨害 (メモリ破損およびアプリケーションクラッシュ) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
-  "identifier": "JVNDB-2014-008084",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU91445763/index.html",
-      "source": "JVN",
-      "id": "JVNVU#91445763"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8176",
-      "source": "CVE",
-      "id": "CVE-2014-8176"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8176",
-      "source": "NVD",
-      "id": "CVE-2014-8176"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:nec:capssuite",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CapsSuite"
-    },
-    {
-      "text": "cpe:/a:nec:secureware_pki_application_development_kit",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "SecureWare/PKIアプリケーション開発キット"
-    },
-    {
-      "text": "cpe:/a:nec:webotx",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_enterprise_service_bus",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Enterprise Service Bus"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_portal",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Portal"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_sip_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX SIP Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:websam",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebSAM"
-    },
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/h:nec:express5800",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "Express5800"
-    },
-    {
-      "text": "cpe:/h:nec:istorage",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "iStorage"
-    },
-    {
-      "text": "cpe:/h:nec:ix2000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IX2000シリーズ"
-    },
-    {
-      "text": "cpe:/h:nec:ix3000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IX3000シリーズ"
-    },
-    {
-      "text": "cpe:/h:nec:univerge",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "UNIVERGE"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2017-03-09T15:31+09:00",
-  "issued": "2015-06-16T16:47+09:00",
-  "modified": "2017-03-09T15:31+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008084.html",
+	"title": "OpenSSL の ssl/d1_lib.c の dtls1_clear_queues 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008084.html",
+	"description": "OpenSSL の ssl/d1_lib.c の dtls1_clear_queues 関数は、ChangeCipherSpec メッセージと Finished メッセージとの間で到着可能なアプリケーションのデータを考慮することなしに、データ構造を解放するため、サービス運用妨害 (メモリ破損およびアプリケーションクラッシュ) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+	"identifier": "JVNDB-2014-008084",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU91445763/index.html",
+			"source": "JVN",
+			"id": "JVNVU#91445763"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8176",
+			"source": "CVE",
+			"id": "CVE-2014-8176"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-8176",
+			"source": "NVD",
+			"id": "CVE-2014-8176"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:nec:capssuite",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CapsSuite"
+		},
+		{
+			"text": "cpe:/a:nec:secureware_pki_application_development_kit",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "SecureWare/PKIアプリケーション開発キット"
+		},
+		{
+			"text": "cpe:/a:nec:webotx",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_enterprise_service_bus",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Enterprise Service Bus"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_portal",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Portal"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_sip_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX SIP Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:websam",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebSAM"
+		},
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/h:nec:express5800",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "Express5800"
+		},
+		{
+			"text": "cpe:/h:nec:istorage",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "iStorage"
+		},
+		{
+			"text": "cpe:/h:nec:ix2000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IX2000シリーズ"
+		},
+		{
+			"text": "cpe:/h:nec:ix3000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IX3000シリーズ"
+		},
+		{
+			"text": "cpe:/h:nec:univerge",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "UNIVERGE"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2017-03-09T15:31+09:00",
+	"issued": "2015-06-16T16:47+09:00",
+	"modified": "2017-03-09T15:31+09:00"
 }

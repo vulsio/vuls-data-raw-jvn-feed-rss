@@ -1,66 +1,66 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000461.html",
-  "title": "Xpdf および Xpdf コードを使用する製品における整数オーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000461.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nXpdf は、X ウィンドウ上で動作する PDF ビューアです。\r\n\r\nXpdf 3.00 以前には、PDF ファイルを解析する際に、複数の箇所において整数オーバーフローが発生する問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した PDF ファイルを閲覧させることにより、Xpdf をクラッシュさせる、あるいは標的ユーザの権限で任意のコードを実行する可能性があります。\r\n\r\n尚、Xpdf 3.00 に関しては、この整数オーバーフローに類似する問題 (CAN-2004-0889) が併せて報告されていますが、現時点では詳細は不明です。\r\n\r\nCUPS 1.1.21 以前、teTeX 2.0.2 以前では、Xpdf をベースとしたコードが使用されているため Xpdf と同様に問題の影響を受けます。\r\nまた、KDE 3.2.3 以前、3.3.1 以前の kdegraphics に同梱されている PDF ビューア kpdf は、Xpdf のコードをベースに作成されており、これらの問題と同様の影響を受けることが kde.org より報告されています。ただし、KDE 3.2 リリース未満には kpdf は 同梱されていないため、これらの問題の影響を受けません。",
-  "identifier": "JVNDB-2004-000461",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0889",
-      "source": "CVE",
-      "id": "CVE-2004-0889"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0889",
-      "source": "NVD",
-      "id": "CVE-2004-0889"
-    },
-    {
-      "text": "http://secunia.com/advisories/12917/",
-      "source": "SECUNIA",
-      "id": "SA12917"
-    },
-    {
-      "text": "http://secunia.com/advisories/12921/",
-      "source": "SECUNIA",
-      "id": "SA12921"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/11501",
-      "source": "BID",
-      "id": "11501"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "10.0",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000461.html",
+	"title": "Xpdf および Xpdf コードを使用する製品における整数オーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000461.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nXpdf は、X ウィンドウ上で動作する PDF ビューアです。\r\n\r\nXpdf 3.00 以前には、PDF ファイルを解析する際に、複数の箇所において整数オーバーフローが発生する問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した PDF ファイルを閲覧させることにより、Xpdf をクラッシュさせる、あるいは標的ユーザの権限で任意のコードを実行する可能性があります。\r\n\r\n尚、Xpdf 3.00 に関しては、この整数オーバーフローに類似する問題 (CAN-2004-0889) が併せて報告されていますが、現時点では詳細は不明です。\r\n\r\nCUPS 1.1.21 以前、teTeX 2.0.2 以前では、Xpdf をベースとしたコードが使用されているため Xpdf と同様に問題の影響を受けます。\r\nまた、KDE 3.2.3 以前、3.3.1 以前の kdegraphics に同梱されている PDF ビューア kpdf は、Xpdf のコードをベースに作成されており、これらの問題と同様の影響を受けることが kde.org より報告されています。ただし、KDE 3.2 リリース未満には kpdf は 同梱されていないため、これらの問題の影響を受けません。",
+	"identifier": "JVNDB-2004-000461",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0889",
+			"source": "CVE",
+			"id": "CVE-2004-0889"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0889",
+			"source": "NVD",
+			"id": "CVE-2004-0889"
+		},
+		{
+			"text": "http://secunia.com/advisories/12917/",
+			"source": "SECUNIA",
+			"id": "SA12917"
+		},
+		{
+			"text": "http://secunia.com/advisories/12921/",
+			"source": "SECUNIA",
+			"id": "SA12921"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/11501",
+			"source": "BID",
+			"id": "11501"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "10.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

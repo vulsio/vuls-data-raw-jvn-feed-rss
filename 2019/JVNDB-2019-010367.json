@@ -1,105 +1,105 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-010367.html",
-  "title": "衛星通信端末 Cobham EXPLORER 710 における複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-010367.html",
-  "description": "Cobham EXPLORER 710 は衛星通信やインターネットアクセスに用いられる携帯用の衛星通信端末です。Cobham EXPLORER 710 には、次の複数の脆弱性が存在します。\r\n\r\nCVE-2019-9529\r\n当該製品の Web インターフェースはデフォルト状態において認証を必要としません。そのため、ローカルネットワーク内の攻撃者によって端末の Web ポータルにアクセスされ、設定を変更される可能性があります。\r\n\r\nCVE-2019-9530\r\n当該製品のドキュメントルートディレクトリにはアクセス制限がかかっていません。そのため、ローカルネットワーク内の攻撃者により任意のファイルにアクセスされる可能性があります。\r\n\r\nCVE-2019-9531\r\n当該製品の 5454/tcp ポートに対して認証なしで telnet 接続が可能であり、また telnet 接続の後、86 種類の Attention (AT) コマンドを実行することが可能です。そのため、遠隔の攻撃者により端末にアクセスされ、これらのコマンドを実行される可能性があります。\r\n\r\nCVE-2019-9532\r\n当該製品の Web インターフェースでは、ログインのためのパスワードが平文で送信されます。そのため、ローカルネットワーク内の攻撃者によりパスワード情報が窃取される可能性があります。\r\n\r\nCVE-2019-9533\r\n当該製品のファームウェア v1.08 およびそれ以前の全てのバージョンにおいて、同一の root パスワードが用いられています。攻撃者は該当する任意のバージョンのファームウェアを解析することにより、root パスワードを窃取することが可能です。\r\n\r\nCVE-2019-9534\r\n当該製品では、ファームウェアイメージの検証が行われません。また、ファームウェア中に残された開発用スクリプトにより、ファームウェアのカスタムイメージをアップロードし実行することが可能です。そのため、ローカルネットワーク内の攻撃者により、改ざんされたファームウェアをインストールされ、通信内容の改変や窃取、バックドアの設置やサービス運用妨害 (DoS) 攻撃等が行われる可能性があります。\r\n\r\nなお CERT/CC によると、当該製品についてはこれらの脆弱性の他に、製品のシリアルナンバーがデフォルトの WiFi パスワードがとして設定されているため容易に総当り攻撃が可能であること、またセキュリティに関する重要な HTTP ヘッダがなく、クロスサイトスクリプティングやクリックジャッキング攻撃に対しても脆弱であるとのことです。\r\n\r\nこれらの脆弱性は 2014年に実施された IOActive’s findings に関する一連の調査として CERT/CC の研究者によって新たに発見されました。",
-  "identifier": "JVNDB-2019-010367",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU98031944/",
-      "source": "JVN",
-      "id": "JVNVU#98031944"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9529",
-      "source": "CVE",
-      "id": "CVE-2019-9529"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9530",
-      "source": "CVE",
-      "id": "CVE-2019-9530"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9531",
-      "source": "CVE",
-      "id": "CVE-2019-9531"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9532",
-      "source": "CVE",
-      "id": "CVE-2019-9532"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9533",
-      "source": "CVE",
-      "id": "CVE-2019-9533"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9534",
-      "source": "CVE",
-      "id": "CVE-2019-9534"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9529",
-      "source": "NVD",
-      "id": "CVE-2019-9529"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9530",
-      "source": "NVD",
-      "id": "CVE-2019-9530"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9531",
-      "source": "NVD",
-      "id": "CVE-2019-9531"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9532",
-      "source": "NVD",
-      "id": "CVE-2019-9532"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9533",
-      "source": "NVD",
-      "id": "CVE-2019-9533"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9534",
-      "source": "NVD",
-      "id": "CVE-2019-9534"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/719689/",
-      "source": "CERT-VN",
-      "id": "VU#719689"
-    },
-    {
-      "text": "https://ioactive.com/pdfs/IOActive_SATCOM_Security_WhitePaper.pdf",
-      "source": "関連文書",
-      "id": "A Wake-up Call for SATCOM Security"
-    },
-    {
-      "text": "https://www.owasp.org/index.php/Clickjacking",
-      "source": "関連文書",
-      "id": "Clickjacking"
-    },
-    {
-      "text": "https://www.owasp.org/index.php/Content_Security_Policy",
-      "source": "関連文書",
-      "id": "Content Security Policy"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:cobham:explorer_710_firmware",
-      "version": "2.2",
-      "vendor": "Cobham plc",
-      "product": "Cobham EXPLORER 710 ファームウェア"
-    }
-  ],
-  "date": "2019-12-02T15:32+09:00",
-  "issued": "2019-10-11T16:14+09:00",
-  "modified": "2019-12-02T15:32+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-010367.html",
+	"title": "衛星通信端末 Cobham EXPLORER 710 における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-010367.html",
+	"description": "Cobham EXPLORER 710 は衛星通信やインターネットアクセスに用いられる携帯用の衛星通信端末です。Cobham EXPLORER 710 には、次の複数の脆弱性が存在します。\r\n\r\nCVE-2019-9529\r\n当該製品の Web インターフェースはデフォルト状態において認証を必要としません。そのため、ローカルネットワーク内の攻撃者によって端末の Web ポータルにアクセスされ、設定を変更される可能性があります。\r\n\r\nCVE-2019-9530\r\n当該製品のドキュメントルートディレクトリにはアクセス制限がかかっていません。そのため、ローカルネットワーク内の攻撃者により任意のファイルにアクセスされる可能性があります。\r\n\r\nCVE-2019-9531\r\n当該製品の 5454/tcp ポートに対して認証なしで telnet 接続が可能であり、また telnet 接続の後、86 種類の Attention (AT) コマンドを実行することが可能です。そのため、遠隔の攻撃者により端末にアクセスされ、これらのコマンドを実行される可能性があります。\r\n\r\nCVE-2019-9532\r\n当該製品の Web インターフェースでは、ログインのためのパスワードが平文で送信されます。そのため、ローカルネットワーク内の攻撃者によりパスワード情報が窃取される可能性があります。\r\n\r\nCVE-2019-9533\r\n当該製品のファームウェア v1.08 およびそれ以前の全てのバージョンにおいて、同一の root パスワードが用いられています。攻撃者は該当する任意のバージョンのファームウェアを解析することにより、root パスワードを窃取することが可能です。\r\n\r\nCVE-2019-9534\r\n当該製品では、ファームウェアイメージの検証が行われません。また、ファームウェア中に残された開発用スクリプトにより、ファームウェアのカスタムイメージをアップロードし実行することが可能です。そのため、ローカルネットワーク内の攻撃者により、改ざんされたファームウェアをインストールされ、通信内容の改変や窃取、バックドアの設置やサービス運用妨害 (DoS) 攻撃等が行われる可能性があります。\r\n\r\nなお CERT/CC によると、当該製品についてはこれらの脆弱性の他に、製品のシリアルナンバーがデフォルトの WiFi パスワードがとして設定されているため容易に総当り攻撃が可能であること、またセキュリティに関する重要な HTTP ヘッダがなく、クロスサイトスクリプティングやクリックジャッキング攻撃に対しても脆弱であるとのことです。\r\n\r\nこれらの脆弱性は 2014年に実施された IOActive’s findings に関する一連の調査として CERT/CC の研究者によって新たに発見されました。",
+	"identifier": "JVNDB-2019-010367",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU98031944/",
+			"source": "JVN",
+			"id": "JVNVU#98031944"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9529",
+			"source": "CVE",
+			"id": "CVE-2019-9529"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9530",
+			"source": "CVE",
+			"id": "CVE-2019-9530"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9531",
+			"source": "CVE",
+			"id": "CVE-2019-9531"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9532",
+			"source": "CVE",
+			"id": "CVE-2019-9532"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9533",
+			"source": "CVE",
+			"id": "CVE-2019-9533"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9534",
+			"source": "CVE",
+			"id": "CVE-2019-9534"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9529",
+			"source": "NVD",
+			"id": "CVE-2019-9529"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9530",
+			"source": "NVD",
+			"id": "CVE-2019-9530"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9531",
+			"source": "NVD",
+			"id": "CVE-2019-9531"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9532",
+			"source": "NVD",
+			"id": "CVE-2019-9532"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9533",
+			"source": "NVD",
+			"id": "CVE-2019-9533"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9534",
+			"source": "NVD",
+			"id": "CVE-2019-9534"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/719689/",
+			"source": "CERT-VN",
+			"id": "VU#719689"
+		},
+		{
+			"text": "https://ioactive.com/pdfs/IOActive_SATCOM_Security_WhitePaper.pdf",
+			"source": "関連文書",
+			"id": "A Wake-up Call for SATCOM Security"
+		},
+		{
+			"text": "https://www.owasp.org/index.php/Clickjacking",
+			"source": "関連文書",
+			"id": "Clickjacking"
+		},
+		{
+			"text": "https://www.owasp.org/index.php/Content_Security_Policy",
+			"source": "関連文書",
+			"id": "Content Security Policy"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:cobham:explorer_710_firmware",
+			"version": "2.2",
+			"vendor": "Cobham plc",
+			"product": "Cobham EXPLORER 710 ファームウェア"
+		}
+	],
+	"date": "2019-12-02T15:32+09:00",
+	"issued": "2019-10-11T16:14+09:00",
+	"modified": "2019-12-02T15:32+09:00"
 }

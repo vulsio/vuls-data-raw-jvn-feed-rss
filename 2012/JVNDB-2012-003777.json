@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003777.html",
-  "title": "libotr におけるサービス運用妨害 (アプリケーションクラッシュ) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003777.html",
-  "description": "libotr の下記の関数は、base64 の文字列をデコードする際、長さゼロのバッファを割り当てるため、サービス運用妨害 (アプリケーションクラッシュ) 状態となる脆弱性が存在します。\r\n\r\n(1) src/b64.c 内の otrl_base64_otr_decode 関数\r\n(2) src/proto.c 内の otrl_proto_data_read_flags 関数\r\n(3) src/proto.c 内の otrl_proto_accept_data 関数\r\n(4) toolkit/parse.c 内の decode 関数",
-  "identifier": "JVNDB-2012-003777",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3461",
-      "source": "CVE",
-      "id": "CVE-2012-3461"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3461",
-      "source": "NVD",
-      "id": "CVE-2012-3461"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:cypherpunks:libotr",
-      "version": "2.2",
-      "vendor": "The OTR Development Team",
-      "product": "libotr"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2012-10-23T14:55+09:00",
-  "issued": "2012-08-22T16:40+09:00",
-  "modified": "2012-10-23T14:55+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003777.html",
+	"title": "libotr におけるサービス運用妨害 (アプリケーションクラッシュ) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-003777.html",
+	"description": "libotr の下記の関数は、base64 の文字列をデコードする際、長さゼロのバッファを割り当てるため、サービス運用妨害 (アプリケーションクラッシュ) 状態となる脆弱性が存在します。\r\n\r\n(1) src/b64.c 内の otrl_base64_otr_decode 関数\r\n(2) src/proto.c 内の otrl_proto_data_read_flags 関数\r\n(3) src/proto.c 内の otrl_proto_accept_data 関数\r\n(4) toolkit/parse.c 内の decode 関数",
+	"identifier": "JVNDB-2012-003777",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3461",
+			"source": "CVE",
+			"id": "CVE-2012-3461"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3461",
+			"source": "NVD",
+			"id": "CVE-2012-3461"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:cypherpunks:libotr",
+			"version": "2.2",
+			"vendor": "The OTR Development Team",
+			"product": "libotr"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2012-10-23T14:55+09:00",
+	"issued": "2012-08-22T16:40+09:00",
+	"modified": "2012-10-23T14:55+09:00"
 }

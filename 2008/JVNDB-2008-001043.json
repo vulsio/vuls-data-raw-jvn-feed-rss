@@ -1,272 +1,272 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001043.html",
-  "title": "X.Org Foundation 製 X サーバにおけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001043.html",
-  "description": "X.Org Foundation が提供する X サーバにはバッファオーバーフローの脆弱性が存在します。\r\n\r\nX.Org Foundation は、X Window System のオープンソース実装を提供しています。この実装の X サーバには、Portable Compiled Font (PCF) 形式のフォントの処理に問題があり、バッファオーバーフローを起こす脆弱性が存在します。\r\n\r\n本件に関して、2008年1月17日に X.Org Foundation が security advisory を、2008年3月19日に CERT/CC が VU#203220 を公開しています。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC がベンダとの調整を行いました。\r\n報告者: CODE blog (codeblog.org) 塩崎 拓也 氏",
-  "identifier": "JVNDB-2008-001043",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNTA08-079A/index.html",
-      "source": "JVN",
-      "id": "JVNTA08-079A"
-    },
-    {
-      "text": "http://jvn.jp/jp/JVN88935101/index.html",
-      "source": "JVN",
-      "id": "JVN#88935101"
-    },
-    {
-      "text": "http://jvn.jp/tr/TRTA08-079A/index.html",
-      "source": "JVNTR",
-      "id": "TRTA08-079A"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0006",
-      "source": "CVE",
-      "id": "CVE-2008-0006"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-0006",
-      "source": "NVD",
-      "id": "CVE-2008-0006"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/vuln/documents/2008/200806_XOrg.html",
-      "source": "IPA CFA",
-      "id": "200806_XOrg"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/alerts/SA08-079A.html",
-      "source": "CERT-SA",
-      "id": "SA08-079A"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/203220",
-      "source": "CERT-VN",
-      "id": "VU#203220"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA08-079A.html",
-      "source": "CERT-TA",
-      "id": "TA08-079A"
-    },
-    {
-      "text": "http://secunia.com/advisories/28532/",
-      "source": "SECUNIA",
-      "id": "SA28532"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/27352",
-      "source": "BID",
-      "id": "27352"
-    },
-    {
-      "text": "http://securitytracker.com/id?1019232",
-      "source": "SECTRACK",
-      "id": "1019232"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2008/0179",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2008-0179"
-    },
-    {
-      "text": "http://jvndb.jvn.jp/en/contents/2008/JVNDB-2008-001043.html",
-      "source": "JVNDB_En",
-      "id": "JVNDB-2008-001043"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:fujitsu:pc-x",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FUJITSU PC-X"
-    },
-    {
-      "text": "cpe:/a:suse:suse_open_enterprise_server",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "Open Enterprise Server"
-    },
-    {
-      "text": "cpe:/a:suse:suse_sles",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "SUSE SLES"
-    },
-    {
-      "text": "cpe:/a:x.org:x.org_x11",
-      "version": "2.2",
-      "vendor": "X.Org Foundation",
-      "product": "X.Org X11"
-    },
-    {
-      "text": "cpe:/a:xfree86_project:xfree86",
-      "version": "2.2",
-      "vendor": "XFree86 Project",
-      "product": "XFree86"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    },
-    {
-      "text": "cpe:/o:canonical:ubuntu_linux",
-      "version": "2.2",
-      "vendor": "Canonical",
-      "product": "Ubuntu"
-    },
-    {
-      "text": "cpe:/o:fedoraproject:fedora",
-      "version": "2.2",
-      "vendor": "Fedora Project",
-      "product": "Fedora"
-    },
-    {
-      "text": "cpe:/o:gentoo:linux_x11",
-      "version": "2.2",
-      "vendor": "Gentoo Linux",
-      "product": "Gentoo Linux x11-base/xorg-server"
-    },
-    {
-      "text": "cpe:/o:gentoo:linux_x11-libs",
-      "version": "2.2",
-      "vendor": "Gentoo Linux",
-      "product": "Gentoo Linux x11-libs/libXfont"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:ibm:aix",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM AIX"
-    },
-    {
-      "text": "cpe:/o:mandriva:linux-xfree86",
-      "version": "2.2",
-      "vendor": "Mandriva, Inc.",
-      "product": "Mandriva Linux XFree86"
-    },
-    {
-      "text": "cpe:/o:mandriva:linux-xorg",
-      "version": "2.2",
-      "vendor": "Mandriva, Inc.",
-      "product": "Mandriva Linux xorg-x11"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:openbsd:openbsd",
-      "version": "2.2",
-      "vendor": "OpenBSD",
-      "product": "OpenBSD"
-    },
-    {
-      "text": "cpe:/o:opensuse_project:opensuse",
-      "version": "2.2",
-      "vendor": "openSUSE project",
-      "product": "openSUSE"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:linux_advanced_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux Advanced Workstation"
-    },
-    {
-      "text": "cpe:/o:redhat:rhel_desktop_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Workstation"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    },
-    {
-      "text": "cpe:/o:suse:linux_desktop",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "Novell Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:suse:linux_enterprise_desktop",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "SUSE Linux Enterprise Desktop"
-    },
-    {
-      "text": "cpe:/o:suse:linux_enterprise_server",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "SUSE Linux Enterprise Server"
-    },
-    {
-      "text": "cpe:/o:suse:linux_pos",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "Novell Linux POS"
-    },
-    {
-      "text": "cpe:/o:suse:suse_linux",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "SUSE LINUX"
-    },
-    {
-      "text": "cpe:/o:suse:suse_sle_sdk",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "SLE SDK"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.4",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:A/AC:M/Au:S/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2008-11-21T11:52+09:00",
-  "issued": "2008-01-31T15:14+09:00",
-  "modified": "2008-11-21T11:52+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001043.html",
+	"title": "X.Org Foundation 製 X サーバにおけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001043.html",
+	"description": "X.Org Foundation が提供する X サーバにはバッファオーバーフローの脆弱性が存在します。\r\n\r\nX.Org Foundation は、X Window System のオープンソース実装を提供しています。この実装の X サーバには、Portable Compiled Font (PCF) 形式のフォントの処理に問題があり、バッファオーバーフローを起こす脆弱性が存在します。\r\n\r\n本件に関して、2008年1月17日に X.Org Foundation が security advisory を、2008年3月19日に CERT/CC が VU#203220 を公開しています。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC がベンダとの調整を行いました。\r\n報告者: CODE blog (codeblog.org) 塩崎 拓也 氏",
+	"identifier": "JVNDB-2008-001043",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNTA08-079A/index.html",
+			"source": "JVN",
+			"id": "JVNTA08-079A"
+		},
+		{
+			"text": "http://jvn.jp/jp/JVN88935101/index.html",
+			"source": "JVN",
+			"id": "JVN#88935101"
+		},
+		{
+			"text": "http://jvn.jp/tr/TRTA08-079A/index.html",
+			"source": "JVNTR",
+			"id": "TRTA08-079A"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0006",
+			"source": "CVE",
+			"id": "CVE-2008-0006"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-0006",
+			"source": "NVD",
+			"id": "CVE-2008-0006"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/vuln/documents/2008/200806_XOrg.html",
+			"source": "IPA CFA",
+			"id": "200806_XOrg"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/alerts/SA08-079A.html",
+			"source": "CERT-SA",
+			"id": "SA08-079A"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/203220",
+			"source": "CERT-VN",
+			"id": "VU#203220"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA08-079A.html",
+			"source": "CERT-TA",
+			"id": "TA08-079A"
+		},
+		{
+			"text": "http://secunia.com/advisories/28532/",
+			"source": "SECUNIA",
+			"id": "SA28532"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/27352",
+			"source": "BID",
+			"id": "27352"
+		},
+		{
+			"text": "http://securitytracker.com/id?1019232",
+			"source": "SECTRACK",
+			"id": "1019232"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2008/0179",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2008-0179"
+		},
+		{
+			"text": "http://jvndb.jvn.jp/en/contents/2008/JVNDB-2008-001043.html",
+			"source": "JVNDB_En",
+			"id": "JVNDB-2008-001043"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:fujitsu:pc-x",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FUJITSU PC-X"
+		},
+		{
+			"text": "cpe:/a:suse:suse_open_enterprise_server",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "Open Enterprise Server"
+		},
+		{
+			"text": "cpe:/a:suse:suse_sles",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "SUSE SLES"
+		},
+		{
+			"text": "cpe:/a:x.org:x.org_x11",
+			"version": "2.2",
+			"vendor": "X.Org Foundation",
+			"product": "X.Org X11"
+		},
+		{
+			"text": "cpe:/a:xfree86_project:xfree86",
+			"version": "2.2",
+			"vendor": "XFree86 Project",
+			"product": "XFree86"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		},
+		{
+			"text": "cpe:/o:canonical:ubuntu_linux",
+			"version": "2.2",
+			"vendor": "Canonical",
+			"product": "Ubuntu"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		},
+		{
+			"text": "cpe:/o:gentoo:linux_x11",
+			"version": "2.2",
+			"vendor": "Gentoo Linux",
+			"product": "Gentoo Linux x11-base/xorg-server"
+		},
+		{
+			"text": "cpe:/o:gentoo:linux_x11-libs",
+			"version": "2.2",
+			"vendor": "Gentoo Linux",
+			"product": "Gentoo Linux x11-libs/libXfont"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:ibm:aix",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM AIX"
+		},
+		{
+			"text": "cpe:/o:mandriva:linux-xfree86",
+			"version": "2.2",
+			"vendor": "Mandriva, Inc.",
+			"product": "Mandriva Linux XFree86"
+		},
+		{
+			"text": "cpe:/o:mandriva:linux-xorg",
+			"version": "2.2",
+			"vendor": "Mandriva, Inc.",
+			"product": "Mandriva Linux xorg-x11"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:openbsd:openbsd",
+			"version": "2.2",
+			"vendor": "OpenBSD",
+			"product": "OpenBSD"
+		},
+		{
+			"text": "cpe:/o:opensuse_project:opensuse",
+			"version": "2.2",
+			"vendor": "openSUSE project",
+			"product": "openSUSE"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:linux_advanced_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux Advanced Workstation"
+		},
+		{
+			"text": "cpe:/o:redhat:rhel_desktop_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Workstation"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		},
+		{
+			"text": "cpe:/o:suse:linux_desktop",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "Novell Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:suse:linux_enterprise_desktop",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "SUSE Linux Enterprise Desktop"
+		},
+		{
+			"text": "cpe:/o:suse:linux_enterprise_server",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "SUSE Linux Enterprise Server"
+		},
+		{
+			"text": "cpe:/o:suse:linux_pos",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "Novell Linux POS"
+		},
+		{
+			"text": "cpe:/o:suse:suse_linux",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "SUSE LINUX"
+		},
+		{
+			"text": "cpe:/o:suse:suse_sle_sdk",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "SLE SDK"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.4",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:A/AC:M/Au:S/C:C/I:C/A:C"
+		}
+	],
+	"date": "2008-11-21T11:52+09:00",
+	"issued": "2008-01-31T15:14+09:00",
+	"modified": "2008-11-21T11:52+09:00"
 }

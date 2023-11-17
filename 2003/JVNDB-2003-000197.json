@@ -1,56 +1,56 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000197.html",
-  "title": "Linux Kernel の execve システムコールにおける競合状態が発生する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000197.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux カーネル 2.4.x に実装されている execve システムコールには、ファイルディスクリプタの取り扱いにおいて競合状態を発生する問題が存在します。\r\r\n\r\r\nそのため、本来読み取ることのできない setuid ビットが付与されている実行ファイルを、所有者を変更して新しい実行ファイルとして作成することが可能です。\r\r\n\r\r\n結果としてこの問題を利用するローカルの攻撃者は、本来読み取ることのできない setuid ビットが付与されている実行ファイルを読み取ることが可能です。\r\r\n\r\r\nまた現時点においてはこの問題を利用することで、任意のコードを権限昇格のうえ、実行できる潜在的な可能性も報告されています。",
-  "identifier": "JVNDB-2003-000197",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0462",
-      "source": "CVE",
-      "id": "CVE-2003-0462"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0462",
-      "source": "NVD",
-      "id": "CVE-2003-0462"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/8042",
-      "source": "BID",
-      "id": "8042"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_550",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ550"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "1.2",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:H/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000197.html",
+	"title": "Linux Kernel の execve システムコールにおける競合状態が発生する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000197.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux カーネル 2.4.x に実装されている execve システムコールには、ファイルディスクリプタの取り扱いにおいて競合状態を発生する問題が存在します。\r\r\n\r\r\nそのため、本来読み取ることのできない setuid ビットが付与されている実行ファイルを、所有者を変更して新しい実行ファイルとして作成することが可能です。\r\r\n\r\r\n結果としてこの問題を利用するローカルの攻撃者は、本来読み取ることのできない setuid ビットが付与されている実行ファイルを読み取ることが可能です。\r\r\n\r\r\nまた現時点においてはこの問題を利用することで、任意のコードを権限昇格のうえ、実行できる潜在的な可能性も報告されています。",
+	"identifier": "JVNDB-2003-000197",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0462",
+			"source": "CVE",
+			"id": "CVE-2003-0462"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0462",
+			"source": "NVD",
+			"id": "CVE-2003-0462"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/8042",
+			"source": "BID",
+			"id": "8042"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_550",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ550"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "1.2",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:H/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

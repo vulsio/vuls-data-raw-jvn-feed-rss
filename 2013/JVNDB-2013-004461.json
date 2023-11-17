@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004461.html",
-  "title": "ngIRCd の conn.c の Conn_StartLogin および cb_Read_Resolver_Result 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004461.html",
-  "description": "ngIRCd の conn.c の (1) Conn_StartLogin および (2) cb_Read_Resolver_Result 関数は、NoticeAuth オプション設定が有効になっている場合、Handle_Write 関数用のリターンコードを適切に処理しないため、サービス運用妨害 (表明違反およびサーバクラッシュ) 状態にされる脆弱性が存在します。",
-  "identifier": "JVNDB-2013-004461",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5580",
-      "source": "CVE",
-      "id": "CVE-2013-5580"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5580",
-      "source": "NVD",
-      "id": "CVE-2013-5580"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:barton:ngircd",
-      "version": "2.2",
-      "vendor": "Alexander Barton",
-      "product": "ngIRCd"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2015-08-11T16:58+09:00",
-  "issued": "2013-10-04T19:29+09:00",
-  "modified": "2015-08-11T16:58+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004461.html",
+	"title": "ngIRCd の conn.c の Conn_StartLogin および cb_Read_Resolver_Result 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004461.html",
+	"description": "ngIRCd の conn.c の (1) Conn_StartLogin および (2) cb_Read_Resolver_Result 関数は、NoticeAuth オプション設定が有効になっている場合、Handle_Write 関数用のリターンコードを適切に処理しないため、サービス運用妨害 (表明違反およびサーバクラッシュ) 状態にされる脆弱性が存在します。",
+	"identifier": "JVNDB-2013-004461",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5580",
+			"source": "CVE",
+			"id": "CVE-2013-5580"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5580",
+			"source": "NVD",
+			"id": "CVE-2013-5580"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:barton:ngircd",
+			"version": "2.2",
+			"vendor": "Alexander Barton",
+			"product": "ngIRCd"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2015-08-11T16:58+09:00",
+	"issued": "2013-10-04T19:29+09:00",
+	"modified": "2015-08-11T16:58+09:00"
 }

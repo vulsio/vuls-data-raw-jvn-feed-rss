@@ -1,68 +1,68 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015601.html",
-  "title": "複数の Kubernetes Secrets Store CSI Driver 用プラグインにおけるパストラバーサルの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015601.html",
-  "description": "Kubernetes Secrets Store CSI Driver Vault プラグイン、Azure プラグイン、GCP プラグインには、パストラバーサルの脆弱性が存在します。",
-  "identifier": "JVNDB-2020-015601",
-  "references": [
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8567",
-      "source": "CVE",
-      "id": "CVE-2020-8567"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-8567",
-      "source": "NVD",
-      "id": "CVE-2020-8567"
-    },
-    {
-      "text": "https://github.com/kubernetes-sigs/secrets-store-csi-driver/issues/384",
-      "source": "関連文書",
-      "id": "CVE-2020-8567: Plugin directory traversals #384"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
-      "id": "CWE-22",
-      "title": "パス・トラバーサル(CWE-22)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:google:secret_manager_provider_for_secret_store_csi_driver",
-      "version": "2.2",
-      "vendor": "Google",
-      "product": "Google Secret Manager Provider for Secret Store CSI Driver"
-    },
-    {
-      "text": "cpe:/a:hashicorp:vault_provider_for_secrets_store_csi_driver",
-      "version": "2.2",
-      "vendor": "HashiCorp",
-      "product": "HashiCorp Vault Provider for Secrets Store CSI Driver"
-    },
-    {
-      "text": "cpe:/a:microsoft:azure_key_vault_provider_for_secrets_store_csi_driver",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Azure Key Vault Provider for Secrets Store CSI Driver"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "6.5",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
-    }
-  ],
-  "date": "2021-10-06T16:57+09:00",
-  "issued": "2021-10-06T16:57+09:00",
-  "modified": "2021-10-06T16:57+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015601.html",
+	"title": "複数の Kubernetes Secrets Store CSI Driver 用プラグインにおけるパストラバーサルの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-015601.html",
+	"description": "Kubernetes Secrets Store CSI Driver Vault プラグイン、Azure プラグイン、GCP プラグインには、パストラバーサルの脆弱性が存在します。",
+	"identifier": "JVNDB-2020-015601",
+	"references": [
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8567",
+			"source": "CVE",
+			"id": "CVE-2020-8567"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2020-8567",
+			"source": "NVD",
+			"id": "CVE-2020-8567"
+		},
+		{
+			"text": "https://github.com/kubernetes-sigs/secrets-store-csi-driver/issues/384",
+			"source": "関連文書",
+			"id": "CVE-2020-8567: Plugin directory traversals #384"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:google:secret_manager_provider_for_secret_store_csi_driver",
+			"version": "2.2",
+			"vendor": "Google",
+			"product": "Google Secret Manager Provider for Secret Store CSI Driver"
+		},
+		{
+			"text": "cpe:/a:hashicorp:vault_provider_for_secrets_store_csi_driver",
+			"version": "2.2",
+			"vendor": "HashiCorp",
+			"product": "HashiCorp Vault Provider for Secrets Store CSI Driver"
+		},
+		{
+			"text": "cpe:/a:microsoft:azure_key_vault_provider_for_secrets_store_csi_driver",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Azure Key Vault Provider for Secrets Store CSI Driver"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+		}
+	],
+	"date": "2021-10-06T16:57+09:00",
+	"issued": "2021-10-06T16:57+09:00",
+	"modified": "2021-10-06T16:57+09:00"
 }

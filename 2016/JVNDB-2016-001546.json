@@ -1,73 +1,73 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001546.html",
-  "title": "Apache Tomcat における SecurityManager の制限を回避される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001546.html",
-  "description": "Apache Tomcat は、org.apache.catalina.manager.StatusManagerServlet を org/apache/catalina/core/RestrictedServlets.properties リスト上に配置しないため、SecurityManager の制限を回避され、任意の HTTP リクエストを読まれ、その結果、セッション ID の値を取得される脆弱性が存在します。",
-  "identifier": "JVNDB-2016-001546",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU94679988/",
-      "source": "JVN",
-      "id": "JVNVU#94679988"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0706",
-      "source": "CVE",
-      "id": "CVE-2016-0706"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0706",
-      "source": "NVD",
-      "id": "CVE-2016-0706"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-      "id": "CWE-200",
-      "title": "情報漏えい(CWE-200)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:tomcat",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache Tomcat"
-    },
-    {
-      "text": "cpe:/a:hp:tomcat-based_servlet_engine",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード・エンタープライズ",
-      "product": "HP-UX Tomcat-based Servlet Engine"
-    },
-    {
-      "text": "cpe:/o:canonical:ubuntu",
-      "version": "2.2",
-      "vendor": "Canonical",
-      "product": "Ubuntu"
-    },
-    {
-      "text": "cpe:/o:debian:debian_linux",
-      "version": "2.2",
-      "vendor": "Debian",
-      "product": "Debian GNU/Linux"
-    },
-    {
-      "text": "cpe:/o:hp:openvms",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード・エンタープライズ",
-      "product": "OpenVMS"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
-    }
-  ],
-  "date": "2016-11-21T15:32+09:00",
-  "issued": "2016-03-02T15:58+09:00",
-  "modified": "2016-11-21T15:32+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001546.html",
+	"title": "Apache Tomcat における SecurityManager の制限を回避される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001546.html",
+	"description": "Apache Tomcat は、org.apache.catalina.manager.StatusManagerServlet を org/apache/catalina/core/RestrictedServlets.properties リスト上に配置しないため、SecurityManager の制限を回避され、任意の HTTP リクエストを読まれ、その結果、セッション ID の値を取得される脆弱性が存在します。",
+	"identifier": "JVNDB-2016-001546",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU94679988/",
+			"source": "JVN",
+			"id": "JVNVU#94679988"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0706",
+			"source": "CVE",
+			"id": "CVE-2016-0706"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0706",
+			"source": "NVD",
+			"id": "CVE-2016-0706"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:tomcat",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache Tomcat"
+		},
+		{
+			"text": "cpe:/a:hp:tomcat-based_servlet_engine",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード・エンタープライズ",
+			"product": "HP-UX Tomcat-based Servlet Engine"
+		},
+		{
+			"text": "cpe:/o:canonical:ubuntu",
+			"version": "2.2",
+			"vendor": "Canonical",
+			"product": "Ubuntu"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		},
+		{
+			"text": "cpe:/o:hp:openvms",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード・エンタープライズ",
+			"product": "OpenVMS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+		}
+	],
+	"date": "2016-11-21T15:32+09:00",
+	"issued": "2016-03-02T15:58+09:00",
+	"modified": "2016-11-21T15:32+09:00"
 }

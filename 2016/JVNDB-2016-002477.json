@@ -1,216 +1,216 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002477.html",
-  "title": "OpenSSL の crypto/x509/x509_obj.c の X509_NAME_oneline 関数におけるプロセススタックメモリから重要な情報を取得される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002477.html",
-  "description": "OpenSSL の crypto/x509/x509_obj.c の X509_NAME_oneline 関数には、プロセススタックメモリから重要な情報を取得される、またはサービス運用妨害 (バッファオーバーリード) 状態にされる脆弱性が存在します。",
-  "identifier": "JVNDB-2016-002477",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU93163809/",
-      "source": "JVN",
-      "id": "JVNVU#93163809"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU94844193/",
-      "source": "JVN",
-      "id": "JVNVU#94844193"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2176",
-      "source": "CVE",
-      "id": "CVE-2016-2176"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2176",
-      "source": "NVD",
-      "id": "CVE-2016-2176"
-    },
-    {
-      "text": "http://www.aratana.jp/security/detail.php?id=16",
-      "source": "関連文書",
-      "id": "株式会社アラタナ の告知ページ (OpenSSL脆弱性への弊社対応状況について)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:nec:capssuite",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CapsSuite"
-    },
-    {
-      "text": "cpe:/a:nec:enterpriseidentitymanager",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "EnterpriseIdentityManager"
-    },
-    {
-      "text": "cpe:/a:nec:enterprise_directoryserver",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "EnterpriseDirectoryServer"
-    },
-    {
-      "text": "cpe:/a:nec:esmpro_serveragent",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerAgent"
-    },
-    {
-      "text": "cpe:/a:nec:esmpro_serveragentservice",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerAgentService"
-    },
-    {
-      "text": "cpe:/a:nec:secureware_pki_application_development_kit",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "SecureWare/PKIアプリケーション開発キット"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_enterprise_service_bus",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Enterprise Service Bus"
-    },
-    {
-      "text": "cpe:/a:nec:websam",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebSAM"
-    },
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/a:oracle:commerce_guided_search_and_experience_manager",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Commerce Guided Search / Oracle Commerce Experience Manager"
-    },
-    {
-      "text": "cpe:/a:oracle:e-business_suite",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle E-Business Suite"
-    },
-    {
-      "text": "cpe:/a:oracle:primavera_p6_professional_project_management",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Primavera P6 Professional Project Management"
-    },
-    {
-      "text": "cpe:/a:oracle:transportation_management",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Transportation Management"
-    },
-    {
-      "text": "cpe:/h:nec:express5800",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "Express5800"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_1200",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/1200"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_1210",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/1210"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_3000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/3000"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_3500",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/3500"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_5000",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/5000"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_810",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/810"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_fw120",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/FW120"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_n500",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/N500"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x_sr100",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X/SR100"
-    },
-    {
-      "text": "cpe:/h:nec:univerge",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "UNIVERGE"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "8.2",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
-    }
-  ],
-  "date": "2017-10-03T13:37+09:00",
-  "issued": "2016-05-10T18:16+09:00",
-  "modified": "2017-10-03T13:37+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002477.html",
+	"title": "OpenSSL の crypto/x509/x509_obj.c の X509_NAME_oneline 関数におけるプロセススタックメモリから重要な情報を取得される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002477.html",
+	"description": "OpenSSL の crypto/x509/x509_obj.c の X509_NAME_oneline 関数には、プロセススタックメモリから重要な情報を取得される、またはサービス運用妨害 (バッファオーバーリード) 状態にされる脆弱性が存在します。",
+	"identifier": "JVNDB-2016-002477",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU93163809/",
+			"source": "JVN",
+			"id": "JVNVU#93163809"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU94844193/",
+			"source": "JVN",
+			"id": "JVNVU#94844193"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2176",
+			"source": "CVE",
+			"id": "CVE-2016-2176"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2176",
+			"source": "NVD",
+			"id": "CVE-2016-2176"
+		},
+		{
+			"text": "http://www.aratana.jp/security/detail.php?id=16",
+			"source": "関連文書",
+			"id": "株式会社アラタナ の告知ページ (OpenSSL脆弱性への弊社対応状況について)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:nec:capssuite",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CapsSuite"
+		},
+		{
+			"text": "cpe:/a:nec:enterpriseidentitymanager",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "EnterpriseIdentityManager"
+		},
+		{
+			"text": "cpe:/a:nec:enterprise_directoryserver",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "EnterpriseDirectoryServer"
+		},
+		{
+			"text": "cpe:/a:nec:esmpro_serveragent",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerAgent"
+		},
+		{
+			"text": "cpe:/a:nec:esmpro_serveragentservice",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerAgentService"
+		},
+		{
+			"text": "cpe:/a:nec:secureware_pki_application_development_kit",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "SecureWare/PKIアプリケーション開発キット"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_enterprise_service_bus",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Enterprise Service Bus"
+		},
+		{
+			"text": "cpe:/a:nec:websam",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebSAM"
+		},
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/a:oracle:commerce_guided_search_and_experience_manager",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Commerce Guided Search / Oracle Commerce Experience Manager"
+		},
+		{
+			"text": "cpe:/a:oracle:e-business_suite",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle E-Business Suite"
+		},
+		{
+			"text": "cpe:/a:oracle:primavera_p6_professional_project_management",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Primavera P6 Professional Project Management"
+		},
+		{
+			"text": "cpe:/a:oracle:transportation_management",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Transportation Management"
+		},
+		{
+			"text": "cpe:/h:nec:express5800",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "Express5800"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_1200",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/1200"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_1210",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/1210"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_3000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/3000"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_3500",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/3500"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_5000",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/5000"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_810",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/810"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_fw120",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/FW120"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_n500",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/N500"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x_sr100",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X/SR100"
+		},
+		{
+			"text": "cpe:/h:nec:univerge",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "UNIVERGE"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "8.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+		}
+	],
+	"date": "2017-10-03T13:37+09:00",
+	"issued": "2016-05-10T18:16+09:00",
+	"modified": "2017-10-03T13:37+09:00"
 }

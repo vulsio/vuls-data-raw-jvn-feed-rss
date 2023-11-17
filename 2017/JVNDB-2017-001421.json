@@ -1,51 +1,51 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001421.html",
-  "title": "Linux Kernel の VideoCore DRM ドライバの drivers/gpu/drm/vc4/vc4_gem.c におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001421.html",
-  "description": "Linux Kernel の VideoCore DRM ドライバの drivers/gpu/drm/vc4/vc4_gem.c の vc4_get_bcl 関数は、特定のオーバーフローの検出に errno 値を設定しないため、サービス運用妨害 (不正なポインタデリファレンスおよび OOPS) 状態にされる脆弱性が存在します。",
-  "identifier": "JVNDB-2017-001421",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5577",
-      "source": "CVE",
-      "id": "CVE-2017-5577"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5577",
-      "source": "NVD",
-      "id": "CVE-2017-5577"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/388.html",
-      "id": "CWE-388",
-      "title": "エラー処理(CWE-388)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "5.5",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
-    }
-  ],
-  "date": "2017-02-17T11:45+09:00",
-  "issued": "2017-02-17T11:45+09:00",
-  "modified": "2017-02-17T11:45+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001421.html",
+	"title": "Linux Kernel の VideoCore DRM ドライバの drivers/gpu/drm/vc4/vc4_gem.c におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001421.html",
+	"description": "Linux Kernel の VideoCore DRM ドライバの drivers/gpu/drm/vc4/vc4_gem.c の vc4_get_bcl 関数は、特定のオーバーフローの検出に errno 値を設定しないため、サービス運用妨害 (不正なポインタデリファレンスおよび OOPS) 状態にされる脆弱性が存在します。",
+	"identifier": "JVNDB-2017-001421",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5577",
+			"source": "CVE",
+			"id": "CVE-2017-5577"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5577",
+			"source": "NVD",
+			"id": "CVE-2017-5577"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/388.html",
+			"id": "CWE-388",
+			"title": "エラー処理(CWE-388)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "5.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2017-02-17T11:45+09:00",
+	"issued": "2017-02-17T11:45+09:00",
+	"modified": "2017-02-17T11:45+09:00"
 }

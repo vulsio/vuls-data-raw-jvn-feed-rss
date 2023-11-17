@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000748.html",
-  "title": "Cisco IOS の EIGRP におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000748.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nCisco IOS には、ルーティング・プロトコルとして Cisco 独自の拡張ディスタンスベクタープロトコル EIGRP (Enhanced Interior Gateway Routing Protocol) を実装されています。 \r\n\r\nCisco IOS に実装される EIGRP では、以下の複数の問題が存在します。 \r\n\r\n1) EIGRP ルーティング・プロセスが終了する際に隣接関係にあるデバイスに通知される Goodbye Message の取扱いが不適切である問題が存在します。 \r\n\r\nリモートの攻撃者により、意図的に作成された Goodbye Message が送信された場合、デバイスとの隣接関係が失われてしまう可能性があります。 \r\n\r\n2) 認証された EIGRP パケットの検証方法に不備が存在するため、MD5 ハッシュ値を含む EIGRP パケットを盗聴し、そのハッシュ値を再利用可能となる問題が存在します。 \r\n\r\nリモートの攻撃者により、不正な EIGRP HELLO パケットが標的デバイスに送信された場合、標的デバイスからの応答により EIGRP ドメインに関する情報を取得されてしまう可能性があります。 \r\nまた、BID 6443 の問題と同様に、ネットワーク帯域を ARP リクエストで使い果たさせ、結果的にネットワークが利用不能となる可能性があります。",
-  "identifier": "JVNDB-2005-000748",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4437",
-      "source": "CVE",
-      "id": "CVE-2005-4436"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4436",
-      "source": "NVD",
-      "id": "CVE-2005-4436"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15978",
-      "source": "BID",
-      "id": "15978"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15970",
-      "source": "BID",
-      "id": "15970"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/3008",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-3008"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:cisco:ios",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IOS"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000748.html",
+	"title": "Cisco IOS の EIGRP におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000748.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nCisco IOS には、ルーティング・プロトコルとして Cisco 独自の拡張ディスタンスベクタープロトコル EIGRP (Enhanced Interior Gateway Routing Protocol) を実装されています。 \r\n\r\nCisco IOS に実装される EIGRP では、以下の複数の問題が存在します。 \r\n\r\n1) EIGRP ルーティング・プロセスが終了する際に隣接関係にあるデバイスに通知される Goodbye Message の取扱いが不適切である問題が存在します。 \r\n\r\nリモートの攻撃者により、意図的に作成された Goodbye Message が送信された場合、デバイスとの隣接関係が失われてしまう可能性があります。 \r\n\r\n2) 認証された EIGRP パケットの検証方法に不備が存在するため、MD5 ハッシュ値を含む EIGRP パケットを盗聴し、そのハッシュ値を再利用可能となる問題が存在します。 \r\n\r\nリモートの攻撃者により、不正な EIGRP HELLO パケットが標的デバイスに送信された場合、標的デバイスからの応答により EIGRP ドメインに関する情報を取得されてしまう可能性があります。 \r\nまた、BID 6443 の問題と同様に、ネットワーク帯域を ARP リクエストで使い果たさせ、結果的にネットワークが利用不能となる可能性があります。",
+	"identifier": "JVNDB-2005-000748",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4437",
+			"source": "CVE",
+			"id": "CVE-2005-4436"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-4436",
+			"source": "NVD",
+			"id": "CVE-2005-4436"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15978",
+			"source": "BID",
+			"id": "15978"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15970",
+			"source": "BID",
+			"id": "15970"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/3008",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-3008"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:cisco:ios",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IOS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

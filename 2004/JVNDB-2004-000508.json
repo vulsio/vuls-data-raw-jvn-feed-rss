@@ -1,75 +1,75 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000508.html",
-  "title": "Konqueror における任意の FTP コマンドを実行される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000508.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nFTP KIOSlave は、KDE に同梱されている Web ブラウザ Konqueror のような FTP をサポートする KDE アプリケーションにおいて、データの入出力を行うために使用されています。\r\n\r\nKDE に同梱される FTP KIOSlave および Microsoft Internet Explorer (IE) には、FTP URL に対するチェックに不備が存在するため、次の例のように URL エンコードされた改行コードと FTP コマンドを含む URL を処理した場合に、この FTP コマンドが意図せず実行されてしまう問題が存在します。\r\n\r\n例) ftp://ftpuser:ftppass@server/directory%0a[任意のコマンド]%0a\r\n\r\nリモートの攻撃者により悪用された場合、標的ユーザの意図しない任意の FTP コマンドが強制的に実行されてしまう可能性があります。",
-  "identifier": "JVNDB-2004-000508",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1165",
-      "source": "CVE",
-      "id": "CVE-2004-1165"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1165",
-      "source": "NVD",
-      "id": "CVE-2004-1165"
-    },
-    {
-      "text": "http://secunia.com/advisories/13696/",
-      "source": "SECUNIA",
-      "id": "SA13696"
-    },
-    {
-      "text": "http://secunia.com/advisories/13398/",
-      "source": "SECUNIA",
-      "id": "SA13398"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/11826",
-      "source": "BID",
-      "id": "11826"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/11827",
-      "source": "BID",
-      "id": "11827"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2004/Dec/1012443.html",
-      "source": "SECTRACK",
-      "id": "1012443"
-    },
-    {
-      "text": "http://www.securiteam.com/unixfocus/6A00O0KC1O.html",
-      "source": "SECTEAM",
-      "id": "6A00O0KC1O"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:microsoft:internet_explorer",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Internet Explorer"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000508.html",
+	"title": "Konqueror における任意の FTP コマンドを実行される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000508.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nFTP KIOSlave は、KDE に同梱されている Web ブラウザ Konqueror のような FTP をサポートする KDE アプリケーションにおいて、データの入出力を行うために使用されています。\r\n\r\nKDE に同梱される FTP KIOSlave および Microsoft Internet Explorer (IE) には、FTP URL に対するチェックに不備が存在するため、次の例のように URL エンコードされた改行コードと FTP コマンドを含む URL を処理した場合に、この FTP コマンドが意図せず実行されてしまう問題が存在します。\r\n\r\n例) ftp://ftpuser:ftppass@server/directory%0a[任意のコマンド]%0a\r\n\r\nリモートの攻撃者により悪用された場合、標的ユーザの意図しない任意の FTP コマンドが強制的に実行されてしまう可能性があります。",
+	"identifier": "JVNDB-2004-000508",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1165",
+			"source": "CVE",
+			"id": "CVE-2004-1165"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1165",
+			"source": "NVD",
+			"id": "CVE-2004-1165"
+		},
+		{
+			"text": "http://secunia.com/advisories/13696/",
+			"source": "SECUNIA",
+			"id": "SA13696"
+		},
+		{
+			"text": "http://secunia.com/advisories/13398/",
+			"source": "SECUNIA",
+			"id": "SA13398"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/11826",
+			"source": "BID",
+			"id": "11826"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/11827",
+			"source": "BID",
+			"id": "11827"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2004/Dec/1012443.html",
+			"source": "SECTRACK",
+			"id": "1012443"
+		},
+		{
+			"text": "http://www.securiteam.com/unixfocus/6A00O0KC1O.html",
+			"source": "SECTEAM",
+			"id": "6A00O0KC1O"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:microsoft:internet_explorer",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Internet Explorer"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

@@ -1,88 +1,88 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000247.html",
-  "title": "Opera における適切にフレーム内のコンテンツをチェックしない脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000247.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Internet Explorer 6.0 SP1 以前には、フレーム内のコンテンツに対するクロスドメインセキュリティチェック機能に不備が存在するため、新しいウィンドウで開いた Web ページのフレーム内で、異なるドメインからのコンテンツの表示を許してしまう問題が存在します。(CAN-2004-0719)\r\n\r\nこの問題を利用するリモートの攻撃者は、信頼のある Web サイトのフレームを利用し、ユーザアカウントやカード情報の入力を指示するようなコンテンツを、フレーム内に表示するように偽装した Web サイトに誘導することで、結果として標的ユーザの重要な情報を奪取できる可能性があります。\r\n\r\n尚、Microsoft Windows Server 2003 のデフォルトの設定では、Internet Explorer のセキュリティ強化の構成 (Enhanced Security Configuration) が有効であるため、この問題の影響を受けません。\r\n\r\nまた、この問題が IE 3.x/4.x 用にパッチがリリースされた過去の問題 (MS98-020) と同様のものであることが発見者より報告されています。\r\n\r\nさらに、この問題は以下の Web ブラウザにも存在します。\r\n\r\n・Opera 7.51 以前 (CAN-2004-0717)\r\n・Microsoft Internet Explorer for Mac 5.2.3 (CAN-2004-0719)\r\n・Mozilla 1.6 以前 (CAN-2004-0718)\r\n・Mozilla Firebird 0.7 for Linux (CAN-2004-0718)\r\n・Mozilla Firefox 0.x (CAN-2004-0718)\r\n・Netscape 7.x (CAN-2004-0718)\r\n・Safari 1.x (CAN-2004-0720)\r\n・KDE Konqueror 3.2.3 以前 (CAN-2004-0721)\r\n\r\n尚、上記 Web ブラウザの各バージョン以外にもこの問題が存在することが示唆されています。",
-  "identifier": "JVNDB-2004-000247",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0717",
-      "source": "CVE",
-      "id": "CVE-2004-0717"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0717",
-      "source": "NVD",
-      "id": "CVE-2004-0717"
-    },
-    {
-      "text": "http://secunia.com/advisories/11978/",
-      "source": "SECUNIA",
-      "id": "SA11978"
-    },
-    {
-      "text": "http://secunia.com/advisories/11966/",
-      "source": "SECUNIA",
-      "id": "SA11966"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/10921",
-      "source": "BID",
-      "id": "10921"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/10877",
-      "source": "BID",
-      "id": "10877"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/10627",
-      "source": "BID",
-      "id": "10627"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:microsoft:internet_explorer",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Internet Explorer"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2003",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2003"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000247.html",
+	"title": "Opera における適切にフレーム内のコンテンツをチェックしない脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000247.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Internet Explorer 6.0 SP1 以前には、フレーム内のコンテンツに対するクロスドメインセキュリティチェック機能に不備が存在するため、新しいウィンドウで開いた Web ページのフレーム内で、異なるドメインからのコンテンツの表示を許してしまう問題が存在します。(CAN-2004-0719)\r\n\r\nこの問題を利用するリモートの攻撃者は、信頼のある Web サイトのフレームを利用し、ユーザアカウントやカード情報の入力を指示するようなコンテンツを、フレーム内に表示するように偽装した Web サイトに誘導することで、結果として標的ユーザの重要な情報を奪取できる可能性があります。\r\n\r\n尚、Microsoft Windows Server 2003 のデフォルトの設定では、Internet Explorer のセキュリティ強化の構成 (Enhanced Security Configuration) が有効であるため、この問題の影響を受けません。\r\n\r\nまた、この問題が IE 3.x/4.x 用にパッチがリリースされた過去の問題 (MS98-020) と同様のものであることが発見者より報告されています。\r\n\r\nさらに、この問題は以下の Web ブラウザにも存在します。\r\n\r\n・Opera 7.51 以前 (CAN-2004-0717)\r\n・Microsoft Internet Explorer for Mac 5.2.3 (CAN-2004-0719)\r\n・Mozilla 1.6 以前 (CAN-2004-0718)\r\n・Mozilla Firebird 0.7 for Linux (CAN-2004-0718)\r\n・Mozilla Firefox 0.x (CAN-2004-0718)\r\n・Netscape 7.x (CAN-2004-0718)\r\n・Safari 1.x (CAN-2004-0720)\r\n・KDE Konqueror 3.2.3 以前 (CAN-2004-0721)\r\n\r\n尚、上記 Web ブラウザの各バージョン以外にもこの問題が存在することが示唆されています。",
+	"identifier": "JVNDB-2004-000247",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0717",
+			"source": "CVE",
+			"id": "CVE-2004-0717"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0717",
+			"source": "NVD",
+			"id": "CVE-2004-0717"
+		},
+		{
+			"text": "http://secunia.com/advisories/11978/",
+			"source": "SECUNIA",
+			"id": "SA11978"
+		},
+		{
+			"text": "http://secunia.com/advisories/11966/",
+			"source": "SECUNIA",
+			"id": "SA11966"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/10921",
+			"source": "BID",
+			"id": "10921"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/10877",
+			"source": "BID",
+			"id": "10877"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/10627",
+			"source": "BID",
+			"id": "10627"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:microsoft:internet_explorer",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Internet Explorer"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2003",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2003"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

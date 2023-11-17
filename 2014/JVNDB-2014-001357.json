@@ -1,251 +1,251 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001357.html",
-  "title": "OpenJDK および Oracle Java JDK の unpack200 における任意のファイルを上書きされる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001357.html",
-  "description": "OpenJDK および Oracle Java JDK の unpack200 の unpack.cpp 内の unpacker::redirect_stdio 関数は、ログファイルを開くことができない場合、一時ファイルを安全に作成しないため、任意のファイルを上書きされる脆弱性が存在します。",
-  "identifier": "JVNDB-2014-001357",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1876",
-      "source": "CVE",
-      "id": "CVE-2014-1876"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1876",
-      "source": "NVD",
-      "id": "CVE-2014-1876"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/ciadr/vul/20140416-jre.html",
-      "source": "IPA CFA",
-      "id": "Oracle Java の脆弱性対策について(CVE-2014-0429等)"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2014/at140017.html",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2014-0017"
-    },
-    {
-      "text": "http://osvdb.org/102808",
-      "source": "関連文書",
-      "id": "Oracle Java unpack200 unpack.cpp unpacker::redirect_stdio Function Insecure Temporary Log File Creation Symlink Local File Overwrite"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
-      "id": "CWE-59",
-      "title": "リンク解釈の問題(CWE-59)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_client",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Client"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developers_kit_for_java",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer's Kit for Java(TM)"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Light Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Professional Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Standard Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_studio",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Studio"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Smart Edition"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_client",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Client"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Light"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_operator",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Operator"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Architect"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform"
-    },
-    {
-      "text": "cpe:/a:ibm:infosphere_streams",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM InfoSphere Streams"
-    },
-    {
-      "text": "cpe:/a:ibm:lotus_domino",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Domino (旧 IBM Lotus Domino)"
-    },
-    {
-      "text": "cpe:/a:ibm:lotus_expeditor",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Lotus Expeditor"
-    },
-    {
-      "text": "cpe:/a:ibm:notes",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Notes"
-    },
-    {
-      "text": "cpe:/a:oracle:java_se",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Java SE"
-    },
-    {
-      "text": "cpe:/a:oracle:jdk",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "JDK"
-    },
-    {
-      "text": "cpe:/a:oracle:jre",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "JRE"
-    },
-    {
-      "text": "cpe:/a:oracle:jrockit",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle JRockit"
-    },
-    {
-      "text": "cpe:/a:oracle:openjdk",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "OpenJDK"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2015-03-16T18:02+09:00",
-  "issued": "2014-02-12T18:47+09:00",
-  "modified": "2015-03-16T18:02+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001357.html",
+	"title": "OpenJDK および Oracle Java JDK の unpack200 における任意のファイルを上書きされる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001357.html",
+	"description": "OpenJDK および Oracle Java JDK の unpack200 の unpack.cpp 内の unpacker::redirect_stdio 関数は、ログファイルを開くことができない場合、一時ファイルを安全に作成しないため、任意のファイルを上書きされる脆弱性が存在します。",
+	"identifier": "JVNDB-2014-001357",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1876",
+			"source": "CVE",
+			"id": "CVE-2014-1876"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-1876",
+			"source": "NVD",
+			"id": "CVE-2014-1876"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/ciadr/vul/20140416-jre.html",
+			"source": "IPA CFA",
+			"id": "Oracle Java の脆弱性対策について(CVE-2014-0429等)"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2014/at140017.html",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2014-0017"
+		},
+		{
+			"text": "http://osvdb.org/102808",
+			"source": "関連文書",
+			"id": "Oracle Java unpack200 unpack.cpp unpacker::redirect_stdio Function Insecure Temporary Log File Creation Symlink Local File Overwrite"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+			"id": "CWE-59",
+			"title": "リンク解釈の問題(CWE-59)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_client",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Client"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developers_kit_for_java",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer's Kit for Java(TM)"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Light Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Professional Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Standard Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_studio",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Studio"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Smart Edition"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_client",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Client"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_light",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Light"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_operator",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Operator"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_architect",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Architect"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform"
+		},
+		{
+			"text": "cpe:/a:ibm:infosphere_streams",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM InfoSphere Streams"
+		},
+		{
+			"text": "cpe:/a:ibm:lotus_domino",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Domino (旧 IBM Lotus Domino)"
+		},
+		{
+			"text": "cpe:/a:ibm:lotus_expeditor",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Lotus Expeditor"
+		},
+		{
+			"text": "cpe:/a:ibm:notes",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Notes"
+		},
+		{
+			"text": "cpe:/a:oracle:java_se",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Java SE"
+		},
+		{
+			"text": "cpe:/a:oracle:jdk",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "JDK"
+		},
+		{
+			"text": "cpe:/a:oracle:jre",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "JRE"
+		},
+		{
+			"text": "cpe:/a:oracle:jrockit",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle JRockit"
+		},
+		{
+			"text": "cpe:/a:oracle:openjdk",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "OpenJDK"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2015-03-16T18:02+09:00",
+	"issued": "2014-02-12T18:47+09:00",
+	"modified": "2015-03-16T18:02+09:00"
 }

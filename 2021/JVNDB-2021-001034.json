@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001034.html",
-  "title": "Atlassian 製 Bitbucket にインストールディレクトリの ACL 設定不備による権限昇格の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001034.html",
-  "description": "Atlassian 製 Bitbucket  には、デフォルトのインストールディレクトリにおいて ACL が適切に設定されないことに起因する権限昇格の脆弱性が存在します。\r\n\r\nBitbucket は、Atlassian が提供するソースコードおよびプロジェクト管理ツールです。\r\n該当製品のインストーラは、C:\\Atlassian\\Bitbucket\\ のようなデフォルトのインストールディレクトリに対して ACL を適切に設定できません。そのため、管理者権限を持たない Windows ユーザによって当該フォルダに悪意のある DLL ファイルを配置され、SYSTEM 権限で任意のコードを実行してしまう可能性があります。",
-  "identifier": "JVNDB-2021-001034",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU92838794",
-      "source": "JVN",
-      "id": "JVNVU#92838794"
-    },
-    {
-      "text": "https://jvn.jp/ta/JVNTA91240916/",
-      "source": "JVN",
-      "id": "JVNTA#91240916"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36233",
-      "source": "CVE",
-      "id": "CVE-2020-36233"
-    },
-    {
-      "text": "https://kb.cert.org/vuls/id/240785",
-      "source": "CERT-VN",
-      "id": "VU#240785"
-    },
-    {
-      "text": "https://attack.mitre.org/techniques/T1574/001/",
-      "source": "関連文書",
-      "id": "MITRE ATT&CK T1574.001 (Hijack Execution Flow: DLL Search Order Hijacking)\\"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:atlassian:bitbucket",
-      "version": "2.2",
-      "vendor": "Atlassian",
-      "product": "Bitbucket"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "3.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2021-02-22T16:15+09:00",
-  "issued": "2021-02-22T16:15+09:00",
-  "modified": "2021-02-22T16:15+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001034.html",
+	"title": "Atlassian 製 Bitbucket にインストールディレクトリの ACL 設定不備による権限昇格の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001034.html",
+	"description": "Atlassian 製 Bitbucket  には、デフォルトのインストールディレクトリにおいて ACL が適切に設定されないことに起因する権限昇格の脆弱性が存在します。\r\n\r\nBitbucket は、Atlassian が提供するソースコードおよびプロジェクト管理ツールです。\r\n該当製品のインストーラは、C:\\Atlassian\\Bitbucket\\ のようなデフォルトのインストールディレクトリに対して ACL を適切に設定できません。そのため、管理者権限を持たない Windows ユーザによって当該フォルダに悪意のある DLL ファイルを配置され、SYSTEM 権限で任意のコードを実行してしまう可能性があります。",
+	"identifier": "JVNDB-2021-001034",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU92838794",
+			"source": "JVN",
+			"id": "JVNVU#92838794"
+		},
+		{
+			"text": "https://jvn.jp/ta/JVNTA91240916/",
+			"source": "JVN",
+			"id": "JVNTA#91240916"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36233",
+			"source": "CVE",
+			"id": "CVE-2020-36233"
+		},
+		{
+			"text": "https://kb.cert.org/vuls/id/240785",
+			"source": "CERT-VN",
+			"id": "VU#240785"
+		},
+		{
+			"text": "https://attack.mitre.org/techniques/T1574/001/",
+			"source": "関連文書",
+			"id": "MITRE ATT&CK T1574.001 (Hijack Execution Flow: DLL Search Order Hijacking)\\"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:atlassian:bitbucket",
+			"version": "2.2",
+			"vendor": "Atlassian",
+			"product": "Bitbucket"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2021-02-22T16:15+09:00",
+	"issued": "2021-02-22T16:15+09:00",
+	"modified": "2021-02-22T16:15+09:00"
 }

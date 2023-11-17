@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001608.html",
-  "title": "Linux Kernel の net/sctp/sm_statefuns.c 内の sctp_sf_do_5_1D_ce 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001608.html",
-  "description": "Linux Kernel の net/sctp/sm_statefuns.c 内の sctp_sf_do_5_1D_ce 関数は、sctp_sf_authenticate を呼び出す前に、特定の auth_enable および auth_capable フィールドを検証しないため、サービス運用妨害 (NULL ポインタデリファレンスおよびシステムクラッシュ) 状態にされる脆弱性が存在します。",
-  "identifier": "JVNDB-2014-001608",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0101",
-      "source": "CVE",
-      "id": "CVE-2014-0101"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0101",
-      "source": "NVD",
-      "id": "CVE-2014-0101"
-    },
-    {
-      "text": "http://www.openwall.com/lists/oss-security/2014/03/04/6",
-      "source": "関連文書",
-      "id": "CVE-2014-0101 -- Linux kernel: net: sctp: null pointer dereference when processing authenticated cookie_echo chunk"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.1",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2014-04-08T15:53+09:00",
-  "issued": "2014-03-12T15:35+09:00",
-  "modified": "2014-04-08T15:53+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001608.html",
+	"title": "Linux Kernel の net/sctp/sm_statefuns.c 内の sctp_sf_do_5_1D_ce 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001608.html",
+	"description": "Linux Kernel の net/sctp/sm_statefuns.c 内の sctp_sf_do_5_1D_ce 関数は、sctp_sf_authenticate を呼び出す前に、特定の auth_enable および auth_capable フィールドを検証しないため、サービス運用妨害 (NULL ポインタデリファレンスおよびシステムクラッシュ) 状態にされる脆弱性が存在します。",
+	"identifier": "JVNDB-2014-001608",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0101",
+			"source": "CVE",
+			"id": "CVE-2014-0101"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0101",
+			"source": "NVD",
+			"id": "CVE-2014-0101"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2014/03/04/6",
+			"source": "関連文書",
+			"id": "CVE-2014-0101 -- Linux kernel: net: sctp: null pointer dereference when processing authenticated cookie_echo chunk"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.1",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2014-04-08T15:53+09:00",
+	"issued": "2014-03-12T15:35+09:00",
+	"modified": "2014-04-08T15:53+09:00"
 }

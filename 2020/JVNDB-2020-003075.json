@@ -1,145 +1,145 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003075.html",
-  "title": "HiOS および HiSecOS におけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003075.html",
-  "description": "Hirschmann (Belden 社傘下) が提供する HiOS および HiSecOS を搭載した製品の Web サーバには、バッファオーバーフローの脆弱性 (CWE-120) が存在します。この脆弱性は、URL パラメータの不適切な処理に起因しており、認証されていない遠隔の攻撃者が、細工した HTTP リクエストを送信することで、バッファオーバーフローを発生させることが可能です。",
-  "identifier": "JVNDB-2020-003075",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU99486919/",
-      "source": "JVN",
-      "id": "JVNVU#99486919"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU90193571/index.html",
-      "source": "JVN",
-      "id": "JVNVU#90193571"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU90707671/index.html",
-      "source": "JVN",
-      "id": "JVNVU#90707671"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6994",
-      "source": "CVE",
-      "id": "CVE-2020-6994"
-    },
-    {
-      "text": "https://www.us-cert.gov/ics/tips/ICS-TIP-12-146-01B",
-      "source": "ICS-CERT",
-      "id": "ICS-TIP-12-146-01B -- Targeted Cyber Intrusion Detection and Mitigation Strategies"
-    },
-    {
-      "text": "https://www.us-cert.gov/ics/Recommended-Practices",
-      "source": "ICS-CERT",
-      "id": "Control systems security recommended practices"
-    },
-    {
-      "text": "https://www.us-cert.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf",
-      "source": "ICS-CERT",
-      "id": "Recommended Practice: Improving Industrial Control System Cybersecurity with Defense-in-Depth Strategies"
-    },
-    {
-      "text": "https://www.us-cert.gov/ics/advisories/icsa-20-091-01",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-20-091-01"
-    },
-    {
-      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-263-02",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-22-263-02"
-    },
-    {
-      "text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-270-01",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-22-270-01"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/h:belden:hirschmann_eagle20",
-      "version": "2.2",
-      "vendor": "Belden Inc.",
-      "product": "Hirschmann EAGLE20"
-    },
-    {
-      "text": "cpe:/h:belden:hirschmann_eagle30",
-      "version": "2.2",
-      "vendor": "Belden Inc.",
-      "product": "Hirschmann EAGLE30"
-    },
-    {
-      "text": "cpe:/h:belden:hirschmann_ees",
-      "version": "2.2",
-      "vendor": "Belden Inc.",
-      "product": "Hirschmann EES"
-    },
-    {
-      "text": "cpe:/h:belden:hirschmann_eesx",
-      "version": "2.2",
-      "vendor": "Belden Inc.",
-      "product": "Hirschmann EESX"
-    },
-    {
-      "text": "cpe:/h:belden:hirschmann_grs",
-      "version": "2.2",
-      "vendor": "Belden Inc.",
-      "product": "Hirschmann GRS"
-    },
-    {
-      "text": "cpe:/h:belden:hirschmann_msp",
-      "version": "2.2",
-      "vendor": "Belden Inc.",
-      "product": "Hirschmann MSP"
-    },
-    {
-      "text": "cpe:/h:belden:hirschmann_OS",
-      "version": "2.2",
-      "vendor": "Belden Inc.",
-      "product": "Hirschmann OS"
-    },
-    {
-      "text": "cpe:/h:belden:hirschmann_red",
-      "version": "2.2",
-      "vendor": "Belden Inc.",
-      "product": "Hirschmann RED"
-    },
-    {
-      "text": "cpe:/h:belden:hirschmann_rsp",
-      "version": "2.2",
-      "vendor": "Belden Inc.",
-      "product": "Hirschmann RSP"
-    },
-    {
-      "text": "cpe:/h:belden:hirschmann_rspe",
-      "version": "2.2",
-      "vendor": "Belden Inc.",
-      "product": "Hirschmann RSPE"
-    },
-    {
-      "text": "cpe:/h:belden:hirschmann_rspl",
-      "version": "2.2",
-      "vendor": "Belden Inc.",
-      "product": "Hirschmann RSPL"
-    },
-    {
-      "text": "cpe:/h:belden:hirschmann_rsps",
-      "version": "2.2",
-      "vendor": "Belden Inc.",
-      "product": "Hirschmann RSPS"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "3.0",
-      "score": "9.8",
-      "type": "Base",
-      "severity": "Critical",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2022-09-29T16:17+09:00",
-  "issued": "2020-04-03T14:08+09:00",
-  "modified": "2022-09-29T16:17+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003075.html",
+	"title": "HiOS および HiSecOS におけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003075.html",
+	"description": "Hirschmann (Belden 社傘下) が提供する HiOS および HiSecOS を搭載した製品の Web サーバには、バッファオーバーフローの脆弱性 (CWE-120) が存在します。この脆弱性は、URL パラメータの不適切な処理に起因しており、認証されていない遠隔の攻撃者が、細工した HTTP リクエストを送信することで、バッファオーバーフローを発生させることが可能です。",
+	"identifier": "JVNDB-2020-003075",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU99486919/",
+			"source": "JVN",
+			"id": "JVNVU#99486919"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU90193571/index.html",
+			"source": "JVN",
+			"id": "JVNVU#90193571"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU90707671/index.html",
+			"source": "JVN",
+			"id": "JVNVU#90707671"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6994",
+			"source": "CVE",
+			"id": "CVE-2020-6994"
+		},
+		{
+			"text": "https://www.us-cert.gov/ics/tips/ICS-TIP-12-146-01B",
+			"source": "ICS-CERT",
+			"id": "ICS-TIP-12-146-01B -- Targeted Cyber Intrusion Detection and Mitigation Strategies"
+		},
+		{
+			"text": "https://www.us-cert.gov/ics/Recommended-Practices",
+			"source": "ICS-CERT",
+			"id": "Control systems security recommended practices"
+		},
+		{
+			"text": "https://www.us-cert.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf",
+			"source": "ICS-CERT",
+			"id": "Recommended Practice: Improving Industrial Control System Cybersecurity with Defense-in-Depth Strategies"
+		},
+		{
+			"text": "https://www.us-cert.gov/ics/advisories/icsa-20-091-01",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-20-091-01"
+		},
+		{
+			"text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-263-02",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-22-263-02"
+		},
+		{
+			"text": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-270-01",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-22-270-01"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/h:belden:hirschmann_eagle20",
+			"version": "2.2",
+			"vendor": "Belden Inc.",
+			"product": "Hirschmann EAGLE20"
+		},
+		{
+			"text": "cpe:/h:belden:hirschmann_eagle30",
+			"version": "2.2",
+			"vendor": "Belden Inc.",
+			"product": "Hirschmann EAGLE30"
+		},
+		{
+			"text": "cpe:/h:belden:hirschmann_ees",
+			"version": "2.2",
+			"vendor": "Belden Inc.",
+			"product": "Hirschmann EES"
+		},
+		{
+			"text": "cpe:/h:belden:hirschmann_eesx",
+			"version": "2.2",
+			"vendor": "Belden Inc.",
+			"product": "Hirschmann EESX"
+		},
+		{
+			"text": "cpe:/h:belden:hirschmann_grs",
+			"version": "2.2",
+			"vendor": "Belden Inc.",
+			"product": "Hirschmann GRS"
+		},
+		{
+			"text": "cpe:/h:belden:hirschmann_msp",
+			"version": "2.2",
+			"vendor": "Belden Inc.",
+			"product": "Hirschmann MSP"
+		},
+		{
+			"text": "cpe:/h:belden:hirschmann_OS",
+			"version": "2.2",
+			"vendor": "Belden Inc.",
+			"product": "Hirschmann OS"
+		},
+		{
+			"text": "cpe:/h:belden:hirschmann_red",
+			"version": "2.2",
+			"vendor": "Belden Inc.",
+			"product": "Hirschmann RED"
+		},
+		{
+			"text": "cpe:/h:belden:hirschmann_rsp",
+			"version": "2.2",
+			"vendor": "Belden Inc.",
+			"product": "Hirschmann RSP"
+		},
+		{
+			"text": "cpe:/h:belden:hirschmann_rspe",
+			"version": "2.2",
+			"vendor": "Belden Inc.",
+			"product": "Hirschmann RSPE"
+		},
+		{
+			"text": "cpe:/h:belden:hirschmann_rspl",
+			"version": "2.2",
+			"vendor": "Belden Inc.",
+			"product": "Hirschmann RSPL"
+		},
+		{
+			"text": "cpe:/h:belden:hirschmann_rsps",
+			"version": "2.2",
+			"vendor": "Belden Inc.",
+			"product": "Hirschmann RSPS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2022-09-29T16:17+09:00",
+	"issued": "2020-04-03T14:08+09:00",
+	"modified": "2022-09-29T16:17+09:00"
 }

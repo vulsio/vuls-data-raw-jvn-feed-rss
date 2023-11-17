@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-004482.html",
-  "title": "Samsung Qmage codec for Android Skia library にメモリ破壊の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-004482.html",
-  "description": "Samsung が提供する Qmage codec for Android Skia library には、画像ファイルの不適切な検証によるメモリ破壊の脆弱性が存在します。\r\n\r\nSamsung Qmage codec for Android Skia library は Samsung が Android Skia library に独自に追加している Qmage ファイル用コーデックです。Samsung Qmage codec for Android Skia library には、Qmage フォーマットの画像ファイルを処理する際にメモリ破壊が発生し、結果として任意のコードが実行される脆弱性が存在します。\r\n\r\nGoogle Project Zero によるファジングテストでは、メモリ破壊が発生するケースが 5218 件発見され、そのうち少なくとも 1 件については細工された MMS メッセージを対象端末に対して送信することにより発生することが報告されています。",
-  "identifier": "JVNDB-2020-004482",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU95200006/index.html",
-      "source": "JVN",
-      "id": "JVNVU#95200006"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8899",
-      "source": "CVE",
-      "id": "CVE-2020-8899"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-8899",
-      "source": "NVD",
-      "id": "CVE-2020-8899"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/366027",
-      "source": "CERT-VN",
-      "id": "VU#366027"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/787.html",
-      "id": "CWE-787",
-      "title": "境界外書き込み(CWE-787)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:google:android",
-      "version": "2.2",
-      "vendor": "Google",
-      "product": "Android"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "10.0",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "9.8",
-      "type": "Base",
-      "severity": "Critical",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2020-05-18T16:46+09:00",
-  "issued": "2020-05-18T16:46+09:00",
-  "modified": "2020-05-18T16:46+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-004482.html",
+	"title": "Samsung Qmage codec for Android Skia library にメモリ破壊の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-004482.html",
+	"description": "Samsung が提供する Qmage codec for Android Skia library には、画像ファイルの不適切な検証によるメモリ破壊の脆弱性が存在します。\r\n\r\nSamsung Qmage codec for Android Skia library は Samsung が Android Skia library に独自に追加している Qmage ファイル用コーデックです。Samsung Qmage codec for Android Skia library には、Qmage フォーマットの画像ファイルを処理する際にメモリ破壊が発生し、結果として任意のコードが実行される脆弱性が存在します。\r\n\r\nGoogle Project Zero によるファジングテストでは、メモリ破壊が発生するケースが 5218 件発見され、そのうち少なくとも 1 件については細工された MMS メッセージを対象端末に対して送信することにより発生することが報告されています。",
+	"identifier": "JVNDB-2020-004482",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU95200006/index.html",
+			"source": "JVN",
+			"id": "JVNVU#95200006"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8899",
+			"source": "CVE",
+			"id": "CVE-2020-8899"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2020-8899",
+			"source": "NVD",
+			"id": "CVE-2020-8899"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/366027",
+			"source": "CERT-VN",
+			"id": "VU#366027"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:google:android",
+			"version": "2.2",
+			"vendor": "Google",
+			"product": "Android"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "10.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2020-05-18T16:46+09:00",
+	"issued": "2020-05-18T16:46+09:00",
+	"modified": "2020-05-18T16:46+09:00"
 }

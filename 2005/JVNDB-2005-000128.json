@@ -1,74 +1,74 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000128.html",
-  "title": "Gaim における不正な SNAC パケットによるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000128.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGaim は、AOL Instant Messenger (AIM) や ICQ など各種メッセンジャーと互換性を持ち、IRC クライアントとしても動作する IM (Instant  Messenger) クライアントです。AOL や ICQ におけるクライアントとサーバ間の通信では、基本的な通信単位である SNAC パケットが利用されています。\r\n\r\nGaim 1.1.2 以前には、特定のパケットおよび HTML コードを受け取ることで Gaim がサービス不能状態に陥る以下複数の問題が存在します。\r\n\r\n・AIM や ICQ ユーザから送信された特定の無効な SNAC パケットを解釈すると Gaim が無限ループに陥りフリーズする問題 (CAN-2005-0472)\r\n\r\n・HTML コードを解釈する関数において不正なメモリアクセスが発生し、Gaim がクラッシュする問題 (CAN-2005-0473)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した SNAC パケットや HTML コードを送りつけて Gaim に解釈させることにより、結果として Gaim をサービス不能状態に陥らせることが可能です。\r\n\r\n尚、Red Hat Enterprise Linux 2.1 同梱の Gaim については CAN-2005-0472 の問題のみ影響を受けることが Red Hat より報告されています。",
-  "identifier": "JVNDB-2005-000128",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0472",
-      "source": "CVE",
-      "id": "CVE-2005-0472"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0472",
-      "source": "NVD",
-      "id": "CVE-2005-0472"
-    },
-    {
-      "text": "http://secunia.com/advisories/14322/",
-      "source": "SECUNIA",
-      "id": "SA14322"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12589",
-      "source": "BID",
-      "id": "12589"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/19381",
-      "source": "XF",
-      "id": "19381"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/19380",
-      "source": "XF",
-      "id": "19380"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2005/Feb/1013235.html",
-      "source": "SECTRACK",
-      "id": "1013235"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2005/Feb/1013234.html",
-      "source": "SECTRACK",
-      "id": "1013234"
-    },
-    {
-      "text": "http://www.k-otik.com/english/advisories/2005/0181",
-      "source": "K-OTIK",
-      "id": "KOTIK/ADV-2005-0181"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000128.html",
+	"title": "Gaim における不正な SNAC パケットによるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000128.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGaim は、AOL Instant Messenger (AIM) や ICQ など各種メッセンジャーと互換性を持ち、IRC クライアントとしても動作する IM (Instant  Messenger) クライアントです。AOL や ICQ におけるクライアントとサーバ間の通信では、基本的な通信単位である SNAC パケットが利用されています。\r\n\r\nGaim 1.1.2 以前には、特定のパケットおよび HTML コードを受け取ることで Gaim がサービス不能状態に陥る以下複数の問題が存在します。\r\n\r\n・AIM や ICQ ユーザから送信された特定の無効な SNAC パケットを解釈すると Gaim が無限ループに陥りフリーズする問題 (CAN-2005-0472)\r\n\r\n・HTML コードを解釈する関数において不正なメモリアクセスが発生し、Gaim がクラッシュする問題 (CAN-2005-0473)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した SNAC パケットや HTML コードを送りつけて Gaim に解釈させることにより、結果として Gaim をサービス不能状態に陥らせることが可能です。\r\n\r\n尚、Red Hat Enterprise Linux 2.1 同梱の Gaim については CAN-2005-0472 の問題のみ影響を受けることが Red Hat より報告されています。",
+	"identifier": "JVNDB-2005-000128",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0472",
+			"source": "CVE",
+			"id": "CVE-2005-0472"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0472",
+			"source": "NVD",
+			"id": "CVE-2005-0472"
+		},
+		{
+			"text": "http://secunia.com/advisories/14322/",
+			"source": "SECUNIA",
+			"id": "SA14322"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12589",
+			"source": "BID",
+			"id": "12589"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/19381",
+			"source": "XF",
+			"id": "19381"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/19380",
+			"source": "XF",
+			"id": "19380"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2005/Feb/1013235.html",
+			"source": "SECTRACK",
+			"id": "1013235"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2005/Feb/1013234.html",
+			"source": "SECTRACK",
+			"id": "1013234"
+		},
+		{
+			"text": "http://www.k-otik.com/english/advisories/2005/0181",
+			"source": "K-OTIK",
+			"id": "KOTIK/ADV-2005-0181"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

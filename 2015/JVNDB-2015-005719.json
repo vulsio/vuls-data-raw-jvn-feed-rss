@@ -1,64 +1,64 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005719.html",
-  "title": "MobaXterm にコマンドインジェクションの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005719.html",
-  "description": "MobaXterm 8.3 より前のバージョンには、X11 サーバをデフォルト設定で使用している場合に ポート 6000/TCP からコマンドインジェクション攻撃を受ける可能性があります。\r\n\r\n重要な機能に対する認証の欠如の問題 (CWE-306) - CVE-2015-7244\r\nMobaXterm の X11 サーバ機能は全てのインターフェースで待ち受け状態になっており、さらに認証なしにポート 6000/TCP への X11 接続が可能です。遠隔の攻撃者はユーザに気づかれることなく当該製品に接続し、当該製品を実行しているユーザの権限で X11 のコマンドを実行するなどの操作を行うことができます。\r\n\r\nCWE-306: Missing Authentication for Critical Function\r\nhttp://cwe.mitre.org/data/definitions/306.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-284 として公開されています。\r\n\r\nCWE-284: Improper Access Control\r\nhttp://cwe.mitre.org/data/definitions/284.html",
-  "identifier": "JVNDB-2015-005719",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU95822377",
-      "source": "JVN",
-      "id": "JVNVU#95822377"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7244",
-      "source": "CVE",
-      "id": "CVE-2015-7244"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7244",
-      "source": "NVD",
-      "id": "CVE-2015-7244"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/316888",
-      "source": "CERT-VN",
-      "id": "VU#316888"
-    },
-    {
-      "text": "http://www.securifera.com/advisories/cve-2015-7244/",
-      "source": "関連文書",
-      "id": "CVE-2015-7244: MobaXTerm 8.2 Unauthenticated X11"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:mobatek:mobaxterm",
-      "version": "2.2",
-      "vendor": "Mobatek",
-      "product": "MobaXterm"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2015-11-05T10:01+09:00",
-  "issued": "2015-11-05T10:01+09:00",
-  "modified": "2015-11-05T10:01+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005719.html",
+	"title": "MobaXterm にコマンドインジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005719.html",
+	"description": "MobaXterm 8.3 より前のバージョンには、X11 サーバをデフォルト設定で使用している場合に ポート 6000/TCP からコマンドインジェクション攻撃を受ける可能性があります。\r\n\r\n重要な機能に対する認証の欠如の問題 (CWE-306) - CVE-2015-7244\r\nMobaXterm の X11 サーバ機能は全てのインターフェースで待ち受け状態になっており、さらに認証なしにポート 6000/TCP への X11 接続が可能です。遠隔の攻撃者はユーザに気づかれることなく当該製品に接続し、当該製品を実行しているユーザの権限で X11 のコマンドを実行するなどの操作を行うことができます。\r\n\r\nCWE-306: Missing Authentication for Critical Function\r\nhttp://cwe.mitre.org/data/definitions/306.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-284 として公開されています。\r\n\r\nCWE-284: Improper Access Control\r\nhttp://cwe.mitre.org/data/definitions/284.html",
+	"identifier": "JVNDB-2015-005719",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU95822377",
+			"source": "JVN",
+			"id": "JVNVU#95822377"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7244",
+			"source": "CVE",
+			"id": "CVE-2015-7244"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7244",
+			"source": "NVD",
+			"id": "CVE-2015-7244"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/316888",
+			"source": "CERT-VN",
+			"id": "VU#316888"
+		},
+		{
+			"text": "http://www.securifera.com/advisories/cve-2015-7244/",
+			"source": "関連文書",
+			"id": "CVE-2015-7244: MobaXTerm 8.2 Unauthenticated X11"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:mobatek:mobaxterm",
+			"version": "2.2",
+			"vendor": "Mobatek",
+			"product": "MobaXterm"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2015-11-05T10:01+09:00",
+	"issued": "2015-11-05T10:01+09:00",
+	"modified": "2015-11-05T10:01+09:00"
 }

@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006851.html",
-  "title": "Microsoft Windows Server 2008 のカーネルモードドライバの win32k.sys の IsHandleEntrySecure 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006851.html",
-  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nMicrosoft Windows Server 2008 のカーネルモードドライバの win32k.sys の IsHandleEntrySecure 関数は、tagPROCESSINFO pW32Job フィールドを適切に検証しないため、サービス運用妨害 (NULL ポインタデリファレンスおよびシステムクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\nなお、ベンダは、本レポートの深刻性に対して以下のように述べ、異議を唱えています。\r\n\r\n「本件はローカルの DOS であると思われ、セキュリティ上の脆弱性と考えていない。」\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-476: NULL Pointer Dereference (NULL ポインタデリファレンス) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/476.html",
-  "identifier": "JVNDB-2013-006851",
-  "references": [
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6999",
-      "source": "CVE",
-      "id": "CVE-2013-6999"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6999",
-      "source": "NVD",
-      "id": "CVE-2013-6999"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/64057",
-      "source": "関連文書",
-      "id": "Microsoft Windows Kernel 'IsHandleEntrySecure()' Function Local Denial of Service Vulnerability"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:microsoft:windows_server_2008",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2008"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:H/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2019-07-29T12:41+09:00",
-  "issued": "2019-07-29T12:41+09:00",
-  "modified": "2019-07-29T12:41+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006851.html",
+	"title": "Microsoft Windows Server 2008 のカーネルモードドライバの win32k.sys の IsHandleEntrySecure 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006851.html",
+	"description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nMicrosoft Windows Server 2008 のカーネルモードドライバの win32k.sys の IsHandleEntrySecure 関数は、tagPROCESSINFO pW32Job フィールドを適切に検証しないため、サービス運用妨害 (NULL ポインタデリファレンスおよびシステムクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\nなお、ベンダは、本レポートの深刻性に対して以下のように述べ、異議を唱えています。\r\n\r\n「本件はローカルの DOS であると思われ、セキュリティ上の脆弱性と考えていない。」\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-476: NULL Pointer Dereference (NULL ポインタデリファレンス) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/476.html",
+	"identifier": "JVNDB-2013-006851",
+	"references": [
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6999",
+			"source": "CVE",
+			"id": "CVE-2013-6999"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6999",
+			"source": "NVD",
+			"id": "CVE-2013-6999"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/64057",
+			"source": "関連文書",
+			"id": "Microsoft Windows Kernel 'IsHandleEntrySecure()' Function Local Denial of Service Vulnerability"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:microsoft:windows_server_2008",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2008"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:H/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2019-07-29T12:41+09:00",
+	"issued": "2019-07-29T12:41+09:00",
+	"modified": "2019-07-29T12:41+09:00"
 }

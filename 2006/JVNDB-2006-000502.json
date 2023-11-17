@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000502.html",
-  "title": "PHP の imap_open() 関数における safe_mode および open_basedir による制限を回避される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000502.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPHP には以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・file_exists()、imap_open()、imap_reopen() 関数において、safe_mode および open_basedir による制限を回避可能な問題 (PHP 4.4.3/5.1.4 以前、CVE-2006-1017, CVE-2006-4481)\r\n\r\n・64 bit システムにおいて、str_repeat() および wordwrap() 関数でバッファオーバーフローが発生する問題 (PHP 4.4.3/5.1.4 以前、CVE-2006-4482)\r\n\r\n・GD 拡張機能において、不正な GIF 画像を処理した場合にバッファオーバーフローが発生する問題 (PHP 4.4.3/5.1.4 以前、CVE-2006-4484)\r\n\r\n・stripos() 関数において、メモリアクセス違反が発生する問題 (PHP 5.1.4 以前、CVE-2006-4485)\r\n\r\n・64 bit システムにおいて、memory_limit による制限が回避される問題 (PHP 4.4.3/5.1.5 以前、CVE-2006-4486)\r\n\r\n問題の詳細は公開されていませんが、ローカルの攻撃者に悪用された場合、本来 PHP スクリプトによるアクセスが制限されるファイルにアクセスされたり、PHP アプリケーションがクラッシュしたりする可能性があります。さらには、Web サーバの実行権限で任意のコードが実行される可能性があります。",
-  "identifier": "JVNDB-2006-000502",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1017",
-      "source": "CVE",
-      "id": "CVE-2006-1017"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1017",
-      "source": "NVD",
-      "id": "CVE-2006-1017"
-    },
-    {
-      "text": "http://secunia.com/advisories/21546/",
-      "source": "SECUNIA",
-      "id": "SA21546"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/19582",
-      "source": "BID",
-      "id": "19582"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:php:php",
-      "version": "2.2",
-      "vendor": "The PHP Group",
-      "product": "PHP"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000502.html",
+	"title": "PHP の imap_open() 関数における safe_mode および open_basedir による制限を回避される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000502.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPHP には以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・file_exists()、imap_open()、imap_reopen() 関数において、safe_mode および open_basedir による制限を回避可能な問題 (PHP 4.4.3/5.1.4 以前、CVE-2006-1017, CVE-2006-4481)\r\n\r\n・64 bit システムにおいて、str_repeat() および wordwrap() 関数でバッファオーバーフローが発生する問題 (PHP 4.4.3/5.1.4 以前、CVE-2006-4482)\r\n\r\n・GD 拡張機能において、不正な GIF 画像を処理した場合にバッファオーバーフローが発生する問題 (PHP 4.4.3/5.1.4 以前、CVE-2006-4484)\r\n\r\n・stripos() 関数において、メモリアクセス違反が発生する問題 (PHP 5.1.4 以前、CVE-2006-4485)\r\n\r\n・64 bit システムにおいて、memory_limit による制限が回避される問題 (PHP 4.4.3/5.1.5 以前、CVE-2006-4486)\r\n\r\n問題の詳細は公開されていませんが、ローカルの攻撃者に悪用された場合、本来 PHP スクリプトによるアクセスが制限されるファイルにアクセスされたり、PHP アプリケーションがクラッシュしたりする可能性があります。さらには、Web サーバの実行権限で任意のコードが実行される可能性があります。",
+	"identifier": "JVNDB-2006-000502",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1017",
+			"source": "CVE",
+			"id": "CVE-2006-1017"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1017",
+			"source": "NVD",
+			"id": "CVE-2006-1017"
+		},
+		{
+			"text": "http://secunia.com/advisories/21546/",
+			"source": "SECUNIA",
+			"id": "SA21546"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/19582",
+			"source": "BID",
+			"id": "19582"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:php:php",
+			"version": "2.2",
+			"vendor": "The PHP Group",
+			"product": "PHP"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

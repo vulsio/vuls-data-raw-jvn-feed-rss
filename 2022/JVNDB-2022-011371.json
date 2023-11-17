@@ -1,112 +1,112 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-011371.html",
-  "title": "go-restful project の go-restful 他複数ベンダの製品におけるユーザ制御の鍵による認証回避に関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-011371.html",
-  "description": "go-restful project の go-restful 他複数ベンダの製品には、ユーザ制御の鍵による認証回避に関する脆弱性が存在します。",
-  "identifier": "JVNDB-2022-011371",
-  "references": [
-    {
-      "text": "https://www.cve.org/CVERecord?id=CVE-2022-1996",
-      "source": "CVE",
-      "id": "CVE-2022-1996"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-1996",
-      "source": "NVD",
-      "id": "CVE-2022-1996"
-    },
-    {
-      "text": "https://github.com/emicklei/go-restful/commit/fd3c327a379ce08c68ef18765bdc925f5d9bad10",
-      "source": "関連文書",
-      "id": "github.com (fd3c327a379ce08c68ef18765bdc925f5d9bad10)"
-    },
-    {
-      "text": "https://huntr.dev/bounties/be837427-415c-4d8c-808b-62ce20aa84f1",
-      "source": "関連文書",
-      "id": "huntr.dev (be837427-415c-4d8c-808b-62ce20aa84f1)"
-    },
-    {
-      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/575BLJ3Y2EQBRNTFR2OSQQ6L2W6UCST3/",
-      "source": "関連文書",
-      "id": "lists.fedoraproject.org (575BLJ3Y2EQBRNTFR2OSQQ6L2W6UCST3)"
-    },
-    {
-      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OBDD3Q23RCGAGHIXUCWBU6N3S4RNAKXB/",
-      "source": "関連文書",
-      "id": "lists.fedoraproject.org (OBDD3Q23RCGAGHIXUCWBU6N3S4RNAKXB)"
-    },
-    {
-      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RQXU752ALW53OJAF5MG3WMR5CCZVLWW6/",
-      "source": "関連文書",
-      "id": "lists.fedoraproject.org (RQXU752ALW53OJAF5MG3WMR5CCZVLWW6)"
-    },
-    {
-      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SO5QC2JFW2PXBWAE27OYYYL5SPFUBHTY/",
-      "source": "関連文書",
-      "id": "lists.fedoraproject.org (SO5QC2JFW2PXBWAE27OYYYL5SPFUBHTY)"
-    },
-    {
-      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/W56PP46JVZEKCANBKXFKRVSBBRRMCY6V/",
-      "source": "関連文書",
-      "id": "lists.fedoraproject.org (W56PP46JVZEKCANBKXFKRVSBBRRMCY6V)"
-    },
-    {
-      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z55VUVGO7E5PJFXIOVAY373NZRHBNCI5/",
-      "source": "関連文書",
-      "id": "lists.fedoraproject.org (Z55VUVGO7E5PJFXIOVAY373NZRHBNCI5)"
-    },
-    {
-      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZGQKWD6SE75PFBPFVSZYAKAVXKBZXKWS/",
-      "source": "関連文書",
-      "id": "lists.fedoraproject.org (ZGQKWD6SE75PFBPFVSZYAKAVXKBZXKWS)"
-    },
-    {
-      "text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZY2SLWOQR4ZURQ7UBRZ7JIX6H6F5JHJR/",
-      "source": "関連文書",
-      "id": "lists.fedoraproject.org (ZY2SLWOQR4ZURQ7UBRZ7JIX6H6F5JHJR)"
-    },
-    {
-      "text": "https://security.netapp.com/advisory/ntap-20220923-0005/",
-      "source": "関連文書",
-      "id": "security.netapp.com (ntap-20220923-0005)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/639.html",
-      "id": "CWE-639",
-      "title": "ユーザ制御の鍵による認証回避(CWE-639)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:go-restful_project:go-restful",
-      "version": "2.2",
-      "vendor": "go-restful project",
-      "product": "go-restful"
-    },
-    {
-      "text": "cpe:/o:fedoraproject:fedora",
-      "version": "2.2",
-      "vendor": "Fedora Project",
-      "product": "Fedora"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "9.1",
-      "type": "Base",
-      "severity": "Critical",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
-    }
-  ],
-  "date": "2023-08-21T17:21+09:00",
-  "issued": "2023-08-21T17:21+09:00",
-  "modified": "2023-08-21T17:21+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-011371.html",
+	"title": "go-restful project の go-restful 他複数ベンダの製品におけるユーザ制御の鍵による認証回避に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-011371.html",
+	"description": "go-restful project の go-restful 他複数ベンダの製品には、ユーザ制御の鍵による認証回避に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2022-011371",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-1996",
+			"source": "CVE",
+			"id": "CVE-2022-1996"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-1996",
+			"source": "NVD",
+			"id": "CVE-2022-1996"
+		},
+		{
+			"text": "https://github.com/emicklei/go-restful/commit/fd3c327a379ce08c68ef18765bdc925f5d9bad10",
+			"source": "関連文書",
+			"id": "github.com (fd3c327a379ce08c68ef18765bdc925f5d9bad10)"
+		},
+		{
+			"text": "https://huntr.dev/bounties/be837427-415c-4d8c-808b-62ce20aa84f1",
+			"source": "関連文書",
+			"id": "huntr.dev (be837427-415c-4d8c-808b-62ce20aa84f1)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/575BLJ3Y2EQBRNTFR2OSQQ6L2W6UCST3/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (575BLJ3Y2EQBRNTFR2OSQQ6L2W6UCST3)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OBDD3Q23RCGAGHIXUCWBU6N3S4RNAKXB/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (OBDD3Q23RCGAGHIXUCWBU6N3S4RNAKXB)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RQXU752ALW53OJAF5MG3WMR5CCZVLWW6/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (RQXU752ALW53OJAF5MG3WMR5CCZVLWW6)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SO5QC2JFW2PXBWAE27OYYYL5SPFUBHTY/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (SO5QC2JFW2PXBWAE27OYYYL5SPFUBHTY)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/W56PP46JVZEKCANBKXFKRVSBBRRMCY6V/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (W56PP46JVZEKCANBKXFKRVSBBRRMCY6V)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z55VUVGO7E5PJFXIOVAY373NZRHBNCI5/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (Z55VUVGO7E5PJFXIOVAY373NZRHBNCI5)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZGQKWD6SE75PFBPFVSZYAKAVXKBZXKWS/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (ZGQKWD6SE75PFBPFVSZYAKAVXKBZXKWS)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZY2SLWOQR4ZURQ7UBRZ7JIX6H6F5JHJR/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (ZY2SLWOQR4ZURQ7UBRZ7JIX6H6F5JHJR)"
+		},
+		{
+			"text": "https://security.netapp.com/advisory/ntap-20220923-0005/",
+			"source": "関連文書",
+			"id": "security.netapp.com (ntap-20220923-0005)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/639.html",
+			"id": "CWE-639",
+			"title": "ユーザ制御の鍵による認証回避(CWE-639)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:go-restful_project:go-restful",
+			"version": "2.2",
+			"vendor": "go-restful project",
+			"product": "go-restful"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "9.1",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+		}
+	],
+	"date": "2023-08-21T17:21+09:00",
+	"issued": "2023-08-21T17:21+09:00",
+	"modified": "2023-08-21T17:21+09:00"
 }

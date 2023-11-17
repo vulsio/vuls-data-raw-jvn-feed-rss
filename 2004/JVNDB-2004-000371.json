@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000371.html",
-  "title": "glibc の catchsegv スクリプトにおけるシンボリックリンク攻撃を受ける脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000371.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU libc (glibc) に同梱されている glibcbug は、バグレポートを作成するとき、catchsegv はプログラムがセグメテーション違反で終了したときにスタック追跡を作成するときに、それぞれ使用するスクリプトです。 \r\n\r\nglibc 2.3.3 以前に同梱されている catchsegv、glibcbug スクリプトには、セキュリティ上不適切な方法で一時ファイルを作成してしまう不備が存在するため、シンボリックリンク攻撃を受ける問題が存在します。(CAN-2004-0968、CAN-2004-1382) \r\n\r\nこの問題を利用するローカルの攻撃者は、シンボリックリンク攻撃を試みることにより、スクリプトを実行するユーザの権限で任意のファイルを作成する、または上書きすることが可能です。",
-  "identifier": "JVNDB-2004-000371",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0968",
-      "source": "CVE",
-      "id": "CVE-2004-0968"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0968",
-      "source": "NVD",
-      "id": "CVE-2004-0968"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/11286",
-      "source": "BID",
-      "id": "11286"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/17583",
-      "source": "XF",
-      "id": "17583"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.1",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000371.html",
+	"title": "glibc の catchsegv スクリプトにおけるシンボリックリンク攻撃を受ける脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000371.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU libc (glibc) に同梱されている glibcbug は、バグレポートを作成するとき、catchsegv はプログラムがセグメテーション違反で終了したときにスタック追跡を作成するときに、それぞれ使用するスクリプトです。 \r\n\r\nglibc 2.3.3 以前に同梱されている catchsegv、glibcbug スクリプトには、セキュリティ上不適切な方法で一時ファイルを作成してしまう不備が存在するため、シンボリックリンク攻撃を受ける問題が存在します。(CAN-2004-0968、CAN-2004-1382) \r\n\r\nこの問題を利用するローカルの攻撃者は、シンボリックリンク攻撃を試みることにより、スクリプトを実行するユーザの権限で任意のファイルを作成する、または上書きすることが可能です。",
+	"identifier": "JVNDB-2004-000371",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0968",
+			"source": "CVE",
+			"id": "CVE-2004-0968"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0968",
+			"source": "NVD",
+			"id": "CVE-2004-0968"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/11286",
+			"source": "BID",
+			"id": "11286"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/17583",
+			"source": "XF",
+			"id": "17583"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.1",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

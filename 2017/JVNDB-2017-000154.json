@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-000154.html",
-  "title": "定期報告書作成支援ツールにおける DLL 読み込みに関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-000154.html",
-  "description": "経済産業省資源エネルギー庁が提供する定期報告書作成支援ツールには、DLL を読み込む際の検索パスに問題があり、同一ディレクトリに存在する特定の DLL を読み込んでしまう脆弱性 (CWE-427) が存在します。\r\n当該製品は ZIP 形式で配布されており、ユーザはホームディレクトリ上で ZIP ファイルを展開し、当該製品をそのまま実行することが想定されます。展開場所に、細工された DLL が一緒に置いてある状態で当該製品を実行すると、細工された DLL が読み込まれ、DLL に含まれているコードが実行されてしまいます。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 三井物産セキュアディレクション株式会社 吉川 孝志 氏",
-  "identifier": "JVNDB-2017-000154",
-  "references": [
-    {
-      "text": "https://jvn.jp/jp/JVN53292345/index.html",
-      "source": "JVN",
-      "id": "JVN#53292345"
-    },
-    {
-      "text": "https://jvn.jp/ta/JVNTA91240916/",
-      "source": "JVN",
-      "id": "JVNTA#91240916"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2228",
-      "source": "CVE",
-      "id": "CVE-2017-2228"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-2228",
-      "source": "NVD",
-      "id": "CVE-2017-2228"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:enecho.meti:teikihoukokusho_sakuseishien_tool",
-      "version": "2.2",
-      "vendor": "経済産業省資源エネルギー庁",
-      "product": "定期報告書作成支援ツール"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2018-02-14T12:10+09:00",
-  "issued": "2017-08-17T14:02+09:00",
-  "modified": "2018-02-14T12:10+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-000154.html",
+	"title": "定期報告書作成支援ツールにおける DLL 読み込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-000154.html",
+	"description": "経済産業省資源エネルギー庁が提供する定期報告書作成支援ツールには、DLL を読み込む際の検索パスに問題があり、同一ディレクトリに存在する特定の DLL を読み込んでしまう脆弱性 (CWE-427) が存在します。\r\n当該製品は ZIP 形式で配布されており、ユーザはホームディレクトリ上で ZIP ファイルを展開し、当該製品をそのまま実行することが想定されます。展開場所に、細工された DLL が一緒に置いてある状態で当該製品を実行すると、細工された DLL が読み込まれ、DLL に含まれているコードが実行されてしまいます。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 三井物産セキュアディレクション株式会社 吉川 孝志 氏",
+	"identifier": "JVNDB-2017-000154",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN53292345/index.html",
+			"source": "JVN",
+			"id": "JVN#53292345"
+		},
+		{
+			"text": "https://jvn.jp/ta/JVNTA91240916/",
+			"source": "JVN",
+			"id": "JVNTA#91240916"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2228",
+			"source": "CVE",
+			"id": "CVE-2017-2228"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-2228",
+			"source": "NVD",
+			"id": "CVE-2017-2228"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:enecho.meti:teikihoukokusho_sakuseishien_tool",
+			"version": "2.2",
+			"vendor": "経済産業省資源エネルギー庁",
+			"product": "定期報告書作成支援ツール"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2018-02-14T12:10+09:00",
+	"issued": "2017-08-17T14:02+09:00",
+	"modified": "2018-02-14T12:10+09:00"
 }

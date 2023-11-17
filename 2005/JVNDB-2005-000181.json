@@ -1,93 +1,93 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000181.html",
-  "title": "MySQL の CREATE TEMPORARY TABLE ステートメントにおけるシンボリックリンク攻撃を受ける脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000181.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMySQL 4.0.23 以前、4.1.10 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・ユーザ定義関数の取り扱いに不備が存在し、mysql データベースに対して INSERT および DELETE の実行権限を持つユーザは、CREATE FUNCTION ステートメントより libc 関数 (strcat、on_exit、exit など) を使用することで、メモリアドレスを任意の値で上書き可能な問題 (CAN-2005-0709)\r\n\r\n・mysql.func システムテーブルよりユーザ定義関数をロードする際に、参照するオブジェクトファイルのパスの検証が不適切であるため、mysql データベースに対して INSERT および DELETE の実行権限を持つユーザが任意のディレクトリにあるオブジェクトファイルを参照する関数を作成可能な問題 (CAN-2005-0710)\r\n\r\n・CREATE TEMPORARY TABLE ステートメントにおいて、セキュリティ上不適切な方法で一時ファイルを作成してしまう不備が存在するため、シンボリックリンク攻撃を受ける問題 (CAN-2005-0711)\r\n\r\nこれらの問題を利用するローカルの攻撃者は、結果として、シンボリックリンク攻撃を行う、あるいは mysqld プロセスの権限で任意のコードを実行できる可能性があります。",
-  "identifier": "JVNDB-2005-000181",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0711",
-      "source": "CVE",
-      "id": "CVE-2005-0711"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0711",
-      "source": "NVD",
-      "id": "CVE-2005-0711"
-    },
-    {
-      "text": "http://secunia.com/advisories/14547/",
-      "source": "SECUNIA",
-      "id": "SA14547"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12781",
-      "source": "BID",
-      "id": "12781"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2005/Mar/1013415.html",
-      "source": "SECTRACK",
-      "id": "1013415"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2005/Mar/1013414.html",
-      "source": "SECTRACK",
-      "id": "1013414"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2005/Mar/1013413.html",
-      "source": "SECTRACK",
-      "id": "1013413"
-    },
-    {
-      "text": "http://www.k-otik.com/english/advisories/2005/0252",
-      "source": "K-OTIK",
-      "id": "KOTIK/ADV-2005-0252"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:mysql:mysql",
-      "version": "2.2",
-      "vendor": "MySQL AB",
-      "product": "MySQL"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.1",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000181.html",
+	"title": "MySQL の CREATE TEMPORARY TABLE ステートメントにおけるシンボリックリンク攻撃を受ける脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000181.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMySQL 4.0.23 以前、4.1.10 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・ユーザ定義関数の取り扱いに不備が存在し、mysql データベースに対して INSERT および DELETE の実行権限を持つユーザは、CREATE FUNCTION ステートメントより libc 関数 (strcat、on_exit、exit など) を使用することで、メモリアドレスを任意の値で上書き可能な問題 (CAN-2005-0709)\r\n\r\n・mysql.func システムテーブルよりユーザ定義関数をロードする際に、参照するオブジェクトファイルのパスの検証が不適切であるため、mysql データベースに対して INSERT および DELETE の実行権限を持つユーザが任意のディレクトリにあるオブジェクトファイルを参照する関数を作成可能な問題 (CAN-2005-0710)\r\n\r\n・CREATE TEMPORARY TABLE ステートメントにおいて、セキュリティ上不適切な方法で一時ファイルを作成してしまう不備が存在するため、シンボリックリンク攻撃を受ける問題 (CAN-2005-0711)\r\n\r\nこれらの問題を利用するローカルの攻撃者は、結果として、シンボリックリンク攻撃を行う、あるいは mysqld プロセスの権限で任意のコードを実行できる可能性があります。",
+	"identifier": "JVNDB-2005-000181",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0711",
+			"source": "CVE",
+			"id": "CVE-2005-0711"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0711",
+			"source": "NVD",
+			"id": "CVE-2005-0711"
+		},
+		{
+			"text": "http://secunia.com/advisories/14547/",
+			"source": "SECUNIA",
+			"id": "SA14547"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12781",
+			"source": "BID",
+			"id": "12781"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2005/Mar/1013415.html",
+			"source": "SECTRACK",
+			"id": "1013415"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2005/Mar/1013414.html",
+			"source": "SECTRACK",
+			"id": "1013414"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2005/Mar/1013413.html",
+			"source": "SECTRACK",
+			"id": "1013413"
+		},
+		{
+			"text": "http://www.k-otik.com/english/advisories/2005/0252",
+			"source": "K-OTIK",
+			"id": "KOTIK/ADV-2005-0252"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:mysql:mysql",
+			"version": "2.2",
+			"vendor": "MySQL AB",
+			"product": "MySQL"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.1",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

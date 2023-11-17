@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001895.html",
-  "title": "複数の BIOS 実装において SMRAM の領域外を参照する SMM 関数呼び出しが可能な問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001895.html",
-  "description": "複数の BIOS 実装には、SMRAM 領域外のメモリを参照する、安全でないシステム管理モード (SMM) での関数呼び出しが可能な問題が存在します。\r\n\r\nLegbaCore の Corey Kallenberg 氏は次のように述べています。\r\n\r\n　　System Management Mode (SMM) is the most privileged execution mode on the x86 processor. Non-SMM code can neither read nor write SMRAM (SMM RAM). Hence, even a ring 0 level attacker should be unable to gain access to SMM.\r\n\r\n　　However, on modern systems, some SMM code calls or interprets function pointers located outside of SMRAM in an unsafe way. This provides opportunity for a ring 0 level attacker to break into SMM.\r\n\r\nこの脆弱性を使用するために、攻撃者は物理メモリにアクセスする必要があります。攻撃者はまず、SMM が使用する関数ポインタあるいは SMM で呼び出される関数を操作し、次に SMI (システム管理割り込み) コマンドポート 0xb2 にデータを書き込み、SMM へ遷移させることで、SMM のコンテキストでコードを実行することが可能です。",
-  "identifier": "JVNDB-2015-001895",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU94580091/index.html",
-      "source": "JVN",
-      "id": "JVNVU#94580091"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0949",
-      "source": "CVE",
-      "id": "CVE-2015-0949"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2015-0949",
-      "source": "NVD",
-      "id": "CVE-2015-0949"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/631788",
-      "source": "CERT-VN",
-      "id": "VU#631788"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:H/Au:S/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2015-03-24T12:13+09:00",
-  "issued": "2015-03-24T12:13+09:00",
-  "modified": "2015-03-24T12:13+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001895.html",
+	"title": "複数の BIOS 実装において SMRAM の領域外を参照する SMM 関数呼び出しが可能な問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001895.html",
+	"description": "複数の BIOS 実装には、SMRAM 領域外のメモリを参照する、安全でないシステム管理モード (SMM) での関数呼び出しが可能な問題が存在します。\r\n\r\nLegbaCore の Corey Kallenberg 氏は次のように述べています。\r\n\r\n　　System Management Mode (SMM) is the most privileged execution mode on the x86 processor. Non-SMM code can neither read nor write SMRAM (SMM RAM). Hence, even a ring 0 level attacker should be unable to gain access to SMM.\r\n\r\n　　However, on modern systems, some SMM code calls or interprets function pointers located outside of SMRAM in an unsafe way. This provides opportunity for a ring 0 level attacker to break into SMM.\r\n\r\nこの脆弱性を使用するために、攻撃者は物理メモリにアクセスする必要があります。攻撃者はまず、SMM が使用する関数ポインタあるいは SMM で呼び出される関数を操作し、次に SMI (システム管理割り込み) コマンドポート 0xb2 にデータを書き込み、SMM へ遷移させることで、SMM のコンテキストでコードを実行することが可能です。",
+	"identifier": "JVNDB-2015-001895",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU94580091/index.html",
+			"source": "JVN",
+			"id": "JVNVU#94580091"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0949",
+			"source": "CVE",
+			"id": "CVE-2015-0949"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2015-0949",
+			"source": "NVD",
+			"id": "CVE-2015-0949"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/631788",
+			"source": "CERT-VN",
+			"id": "VU#631788"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:H/Au:S/C:C/I:C/A:C"
+		}
+	],
+	"date": "2015-03-24T12:13+09:00",
+	"issued": "2015-03-24T12:13+09:00",
+	"modified": "2015-03-24T12:13+09:00"
 }

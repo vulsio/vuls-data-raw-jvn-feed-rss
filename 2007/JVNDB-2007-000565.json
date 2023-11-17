@@ -1,103 +1,103 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000565.html",
-  "title": "Atheros 社のワイヤレスネットワークドライバにおけるマネージメントフレームの取り扱いに関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000565.html",
-  "description": "Atheros 社が提供しているワイヤレスネットワークドライバには、 802.11 マネージメントフレームの処理に問題があり、サービス運用妨害（DoS）攻撃を受ける脆弱性が存在します。\r\n\r\nAtheros 社が提供している Microsoft Windows 向けのワイヤレスネットワークドライバは、フレームの取り扱い部分に脆弱性があります。\r\n\r\n細工された802.11 マネージメントフレームを送信されることによりバッファオーバーフローが発生し、結果としてサービス運用妨害（DoS）攻撃を受ける可能性があります。 802.11b, 802.11g, 802.11n におけるマネージメントフレームは暗号化されておらず、またその送付に認証は必要ありません。さらに、WEP や WPA といった無線通信の暗号化を行っても本脆弱性の影響を受けることが判明しています。Linux や UNIX で使われている NDISWrapper や同様の技術で脆弱性のあるドライバーを使用している場合も、影響を受ける可能性があります。\r\nなお、Atheros 社によると、Windows Vista 用ドライバは本脆弱性の影響を受けないとのことです。",
-  "identifier": "JVNDB-2007-000565",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU%23730169/index.html",
-      "source": "JVN",
-      "id": "JVNVU#730169"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2927",
-      "source": "CVE",
-      "id": "CVE-2007-2927"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2927",
-      "source": "NVD",
-      "id": "CVE-2007-2927"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/730169",
-      "source": "CERT-VN",
-      "id": "VU#730169"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/h:atheros:wireless_adapter_drivers",
-      "version": "2.2",
-      "vendor": "Atheros",
-      "product": "Atheros driver"
-    },
-    {
-      "text": "cpe:/h:fujitsu:celsius_workstation",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "CELSIUSワークステーション"
-    },
-    {
-      "text": "cpe:/h:fujitsu:fmv-biblo",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FMV-BIBLO"
-    },
-    {
-      "text": "cpe:/h:fujitsu:fmv-biblo_loox",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FMV-BIBLO LOOX"
-    },
-    {
-      "text": "cpe:/h:fujitsu:fmv-deskpower",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FMV-DESKPOWER"
-    },
-    {
-      "text": "cpe:/h:fujitsu:fmv-esprimo",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FMV-ESPRIMO"
-    },
-    {
-      "text": "cpe:/h:fujitsu:fmv-lifebook",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FMV-LIFEBOOK"
-    },
-    {
-      "text": "cpe:/h:fujitsu:fmv-stylistic",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FMV-STYLISTIC"
-    },
-    {
-      "text": "cpe:/h:fujitsu:fmv_desktop",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FMV DESKTOP"
-    },
-    {
-      "text": "cpe:/h:fujitsu:fmv_thin_client",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FMV シンクライアント"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-11-29T13:40+09:00",
-  "issued": "2007-08-09T16:52+09:00",
-  "modified": "2007-11-29T13:40+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000565.html",
+	"title": "Atheros 社のワイヤレスネットワークドライバにおけるマネージメントフレームの取り扱いに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000565.html",
+	"description": "Atheros 社が提供しているワイヤレスネットワークドライバには、 802.11 マネージメントフレームの処理に問題があり、サービス運用妨害（DoS）攻撃を受ける脆弱性が存在します。\r\n\r\nAtheros 社が提供している Microsoft Windows 向けのワイヤレスネットワークドライバは、フレームの取り扱い部分に脆弱性があります。\r\n\r\n細工された802.11 マネージメントフレームを送信されることによりバッファオーバーフローが発生し、結果としてサービス運用妨害（DoS）攻撃を受ける可能性があります。 802.11b, 802.11g, 802.11n におけるマネージメントフレームは暗号化されておらず、またその送付に認証は必要ありません。さらに、WEP や WPA といった無線通信の暗号化を行っても本脆弱性の影響を受けることが判明しています。Linux や UNIX で使われている NDISWrapper や同様の技術で脆弱性のあるドライバーを使用している場合も、影響を受ける可能性があります。\r\nなお、Atheros 社によると、Windows Vista 用ドライバは本脆弱性の影響を受けないとのことです。",
+	"identifier": "JVNDB-2007-000565",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU%23730169/index.html",
+			"source": "JVN",
+			"id": "JVNVU#730169"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2927",
+			"source": "CVE",
+			"id": "CVE-2007-2927"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2927",
+			"source": "NVD",
+			"id": "CVE-2007-2927"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/730169",
+			"source": "CERT-VN",
+			"id": "VU#730169"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/h:atheros:wireless_adapter_drivers",
+			"version": "2.2",
+			"vendor": "Atheros",
+			"product": "Atheros driver"
+		},
+		{
+			"text": "cpe:/h:fujitsu:celsius_workstation",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "CELSIUSワークステーション"
+		},
+		{
+			"text": "cpe:/h:fujitsu:fmv-biblo",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FMV-BIBLO"
+		},
+		{
+			"text": "cpe:/h:fujitsu:fmv-biblo_loox",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FMV-BIBLO LOOX"
+		},
+		{
+			"text": "cpe:/h:fujitsu:fmv-deskpower",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FMV-DESKPOWER"
+		},
+		{
+			"text": "cpe:/h:fujitsu:fmv-esprimo",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FMV-ESPRIMO"
+		},
+		{
+			"text": "cpe:/h:fujitsu:fmv-lifebook",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FMV-LIFEBOOK"
+		},
+		{
+			"text": "cpe:/h:fujitsu:fmv-stylistic",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FMV-STYLISTIC"
+		},
+		{
+			"text": "cpe:/h:fujitsu:fmv_desktop",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FMV DESKTOP"
+		},
+		{
+			"text": "cpe:/h:fujitsu:fmv_thin_client",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FMV シンクライアント"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-11-29T13:40+09:00",
+	"issued": "2007-08-09T16:52+09:00",
+	"modified": "2007-11-29T13:40+09:00"
 }

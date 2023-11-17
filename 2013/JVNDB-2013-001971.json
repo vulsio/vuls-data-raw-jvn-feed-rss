@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001971.html",
-  "title": "FFmpeg の libavformat におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001971.html",
-  "description": "FFmpeg の libavformat の iff.c 内の iff_read_header 関数は、CMAP チャンク、またはビデオコーデックに関わる操作中に、Interchange File Format (IFF) データのデータサイズを適切に処理しないため、サービス運用妨害 (整数オーバーフロー、配列の領域外へのアクセス、およびアプリケーションクラッシュ) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
-  "identifier": "JVNDB-2013-001971",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2495",
-      "source": "CVE",
-      "id": "CVE-2013-2495"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2495",
-      "source": "NVD",
-      "id": "CVE-2013-2495"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
-      "id": "CWE-189",
-      "title": "数値処理の問題(CWE-189)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:ffmpeg:ffmpeg",
-      "version": "2.2",
-      "vendor": "FFmpeg",
-      "product": "FFmpeg"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2013-04-24T12:00+09:00",
-  "issued": "2013-03-25T15:18+09:00",
-  "modified": "2013-04-24T12:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001971.html",
+	"title": "FFmpeg の libavformat におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-001971.html",
+	"description": "FFmpeg の libavformat の iff.c 内の iff_read_header 関数は、CMAP チャンク、またはビデオコーデックに関わる操作中に、Interchange File Format (IFF) データのデータサイズを適切に処理しないため、サービス運用妨害 (整数オーバーフロー、配列の領域外へのアクセス、およびアプリケーションクラッシュ) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+	"identifier": "JVNDB-2013-001971",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2495",
+			"source": "CVE",
+			"id": "CVE-2013-2495"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2495",
+			"source": "NVD",
+			"id": "CVE-2013-2495"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+			"id": "CWE-189",
+			"title": "数値処理の問題(CWE-189)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ffmpeg:ffmpeg",
+			"version": "2.2",
+			"vendor": "FFmpeg",
+			"product": "FFmpeg"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2013-04-24T12:00+09:00",
+	"issued": "2013-03-25T15:18+09:00",
+	"modified": "2013-04-24T12:00+09:00"
 }

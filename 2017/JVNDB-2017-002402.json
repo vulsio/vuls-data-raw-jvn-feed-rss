@@ -1,115 +1,115 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002402.html",
-  "title": "Microsoft OLE URL Moniker における遠隔の HTA データに対する不適切な処理",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002402.html",
-  "description": "Microsoft OLE は、不適切な方法で URL Moniker を使用して遠隔のデータを処理します。遠隔データは提示された MIME type に関連付けられたアプリケーションを使って処理されますが、MIME type のなかには任意コード実行につながる危険なものが含まれています。たとえば、MIME type application/hta には mshta.exe が関連付けられており、細工された HTA コンテンツを処理することで任意のコードが実行される可能性があります。\r\n\r\nMicrosoft URL Moniker\r\nhttps://msdn.microsoft.com/en-us/library/ms775149.aspx\r\n\r\nすでに次のような手法での攻撃活動が報告されています。\r\n\r\n　* Microsoft Word の DOC 形式に偽装された RTF (リッチテキスト) 形式の文書ファイルによって攻撃が開始される\r\n　* この文書ファイルを開くと、リモートサーバに接続して HTA ファイルを取得し、HTA ファイルに含まれる VBScript がクライアント上で実行される\r\n\r\n本脆弱性を使用した攻撃は、Microsoft Word 以外の Windows コンポーネントを標的として行われる可能性があります。なお、Microsoft Office の保護ビューが、ユーザ操作なしで攻撃が実行されることを防ぐのに役立つことも報告されています。\r\n\r\nMicrosoft Office の保護ビュー\r\nhttps://support.office.com/ja-jp/article/%E4%BF%9D%E8%AD%B7%E3%83%93%E3%83%A5%E3%83%BC%E3%81%A8%E3%81%AF-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653",
-  "identifier": "JVNDB-2017-002402",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU98665451/index.html",
-      "source": "JVN",
-      "id": "JVNVU#98665451"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0199",
-      "source": "CVE",
-      "id": "CVE-2017-0199"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-0199",
-      "source": "NVD",
-      "id": "CVE-2017-0199"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/ciadr/vul/20170412-ms.html",
-      "source": "IPA CFA",
-      "id": "Microsoft 製品の脆弱性対策について(2017年4月)"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2017/at170015.html",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2017-0015"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/921560",
-      "source": "CERT-VN",
-      "id": "VU#921560"
-    },
-    {
-      "text": "https://www.us-cert.gov/ics/advisories/ICSMA-18-058-02",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSMA-18-058-02"
-    },
-    {
-      "text": "https://www.fireeye.com/blog/threat-research/2017/04/acknowledgement_ofa.html",
-      "source": "関連文書",
-      "id": "Acknowledgement of Attacks Leveraging Microsoft Zero-Day"
-    },
-    {
-      "text": "https://blog.nviso.be/2017/04/12/analysis-of-a-cve-2017-0199-malicious-rtf-document/",
-      "source": "関連文書",
-      "id": "Analysis of a CVE-2017-0199 Malicious RTF Document Analysis of a CVE-2017-0199 Malicious RTF Document"
-    },
-    {
-      "text": "https://www.mdsec.co.uk/2017/04/exploiting-cve-2017-0199-hta-handler-vulnerability/",
-      "source": "関連文書",
-      "id": "Exploiting CVE-2017-0199: HTA Handler Vulnerability"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/284.html",
-      "id": "CWE-284",
-      "title": "不適切なアクセス制御(CWE-284)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:microsoft:office",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Office"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_7",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 7"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2008",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2008"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2012",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2012"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_vista",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Vista"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "9.3",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2019-07-10T15:48+09:00",
-  "issued": "2017-04-13T11:55+09:00",
-  "modified": "2019-07-10T15:48+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002402.html",
+	"title": "Microsoft OLE URL Moniker における遠隔の HTA データに対する不適切な処理",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002402.html",
+	"description": "Microsoft OLE は、不適切な方法で URL Moniker を使用して遠隔のデータを処理します。遠隔データは提示された MIME type に関連付けられたアプリケーションを使って処理されますが、MIME type のなかには任意コード実行につながる危険なものが含まれています。たとえば、MIME type application/hta には mshta.exe が関連付けられており、細工された HTA コンテンツを処理することで任意のコードが実行される可能性があります。\r\n\r\nMicrosoft URL Moniker\r\nhttps://msdn.microsoft.com/en-us/library/ms775149.aspx\r\n\r\nすでに次のような手法での攻撃活動が報告されています。\r\n\r\n　* Microsoft Word の DOC 形式に偽装された RTF (リッチテキスト) 形式の文書ファイルによって攻撃が開始される\r\n　* この文書ファイルを開くと、リモートサーバに接続して HTA ファイルを取得し、HTA ファイルに含まれる VBScript がクライアント上で実行される\r\n\r\n本脆弱性を使用した攻撃は、Microsoft Word 以外の Windows コンポーネントを標的として行われる可能性があります。なお、Microsoft Office の保護ビューが、ユーザ操作なしで攻撃が実行されることを防ぐのに役立つことも報告されています。\r\n\r\nMicrosoft Office の保護ビュー\r\nhttps://support.office.com/ja-jp/article/%E4%BF%9D%E8%AD%B7%E3%83%93%E3%83%A5%E3%83%BC%E3%81%A8%E3%81%AF-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653",
+	"identifier": "JVNDB-2017-002402",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU98665451/index.html",
+			"source": "JVN",
+			"id": "JVNVU#98665451"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0199",
+			"source": "CVE",
+			"id": "CVE-2017-0199"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-0199",
+			"source": "NVD",
+			"id": "CVE-2017-0199"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/ciadr/vul/20170412-ms.html",
+			"source": "IPA CFA",
+			"id": "Microsoft 製品の脆弱性対策について(2017年4月)"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2017/at170015.html",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2017-0015"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/921560",
+			"source": "CERT-VN",
+			"id": "VU#921560"
+		},
+		{
+			"text": "https://www.us-cert.gov/ics/advisories/ICSMA-18-058-02",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSMA-18-058-02"
+		},
+		{
+			"text": "https://www.fireeye.com/blog/threat-research/2017/04/acknowledgement_ofa.html",
+			"source": "関連文書",
+			"id": "Acknowledgement of Attacks Leveraging Microsoft Zero-Day"
+		},
+		{
+			"text": "https://blog.nviso.be/2017/04/12/analysis-of-a-cve-2017-0199-malicious-rtf-document/",
+			"source": "関連文書",
+			"id": "Analysis of a CVE-2017-0199 Malicious RTF Document Analysis of a CVE-2017-0199 Malicious RTF Document"
+		},
+		{
+			"text": "https://www.mdsec.co.uk/2017/04/exploiting-cve-2017-0199-hta-handler-vulnerability/",
+			"source": "関連文書",
+			"id": "Exploiting CVE-2017-0199: HTA Handler Vulnerability"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/284.html",
+			"id": "CWE-284",
+			"title": "不適切なアクセス制御(CWE-284)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:microsoft:office",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Office"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_7",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 7"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2008",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2008"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2012",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2012"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_vista",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Vista"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "9.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2019-07-10T15:48+09:00",
+	"issued": "2017-04-13T11:55+09:00",
+	"modified": "2019-07-10T15:48+09:00"
 }

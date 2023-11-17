@@ -1,236 +1,236 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001285.html",
-  "title": "ネットワーク機器において UPnP が有効になっている場合の問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001285.html",
-  "description": "UPnP (Universal Plug and Play) に対応し、初期状態から UPnP 機能が有効になっている機器が複数のベンダから提供されています。\r\n\r\n遠隔の第三者が、細工した URL をユーザにアクセスさせることにより、ユーザのLAN内に接続されている UPnP 対応機器を操作したり設定を変更したりする可能性があります。\r\n\r\nUniversal Plug and Play (UPnP) は UPnP Forum により規定されている、ネットワーク機器を簡単に接続・利用するためのプロトコル群です。 PC で使われるソフトウェアのなかには、LAN内の UPnP 対応ファイアウォールやルータに対して、自動的にポート転送などの設定を行なうものもあります。\r\n\r\nUPnP に対応したネットワーク機器は複数のベンダから提供されており、UPnP 機能が初期状態で有効になっている場合もあります。\r\n\r\n細工したコンテンツをユーザにアクセスさせることにより、LAN 上のネットワーク機器に対して UPnP メッセージを送信させる手法が知られています。例えば、Adobe Flash コンテンツを使った攻撃手法が公開されています。 ",
-  "identifier": "JVNDB-2008-001285",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNTA08-100A/index.html",
-      "source": "JVN",
-      "id": "JVNTA08-100A"
-    },
-    {
-      "text": "http://jvn.jp/cert/JVNVU%23347812/index.html",
-      "source": "JVN",
-      "id": "JVNVU#347812"
-    },
-    {
-      "text": "http://jvn.jp/cert/JVNTA08-150A/",
-      "source": "JVN",
-      "id": "JVNTA08-150A"
-    },
-    {
-      "text": "http://jvn.jp/tr/TRTA08-100A",
-      "source": "JVNTR",
-      "id": "TRTA08-100A"
-    },
-    {
-      "text": "http://jvn.jp/tr/TRTA08-150A/index.html",
-      "source": "JVNTR",
-      "id": "TRTA08-150A"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1654",
-      "source": "CVE",
-      "id": "CVE-2008-1654"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-1654",
-      "source": "NVD",
-      "id": "CVE-2008-1654"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2008/wr080301.html#3",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2008-0301"
-    },
-    {
-      "text": "http://www.cyberpolice.go.jp/important/2008/20080409_111257.html",
-      "source": "AT-POLICE",
-      "id": "Flash Player の脆弱性について"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/alerts/SA08-100A.html",
-      "source": "CERT-SA",
-      "id": "SA08-100A"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/alerts/SA08-150A.html",
-      "source": "CERT-SA",
-      "id": "SA08-150A"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/347812",
-      "source": "CERT-VN",
-      "id": "VU#347812"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/159523",
-      "source": "CERT-VN",
-      "id": "VU#159523"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA08-100A.html",
-      "source": "CERT-TA",
-      "id": "TA08-100A"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA08-150A.html",
-      "source": "CERT-TA",
-      "id": "TA08-150A"
-    },
-    {
-      "text": "http://secunia.com/advisories/29763",
-      "source": "SECUNIA",
-      "id": "SA29763"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/28696",
-      "source": "BID",
-      "id": "28696"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/41718",
-      "source": "XF",
-      "id": "41718"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1019807",
-      "source": "SECTRACK",
-      "id": "1019807"
-    },
-    {
-      "text": "http://www.osvdb.org/44283",
-      "source": "OSVDB",
-      "id": "44283"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
-      "id": "CWE-352",
-      "title": "クロスサイトリクエストフォージェリ(CWE-352)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:adobe:flash_player",
-      "version": "2.2",
-      "vendor": "アドビ",
-      "product": "Adobe Flash Player"
-    },
-    {
-      "text": "cpe:/a:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Extras"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_desktop_supplementary",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Supplementary"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_supplementary",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Supplementary"
-    },
-    {
-      "text": "cpe:/h:allied_telesis_k.k.:centrecom",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "CentreCOM"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rta",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTA シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtv",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTV シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtw",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTW シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:srt",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "SRT シリーズ"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_xp",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows XP"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_fuji",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux FUJI"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_wizpy",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "wizpy"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2008-10-27T14:35+09:00",
-  "issued": "2008-04-30T16:15+09:00",
-  "modified": "2008-10-27T14:35+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001285.html",
+	"title": "ネットワーク機器において UPnP が有効になっている場合の問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001285.html",
+	"description": "UPnP (Universal Plug and Play) に対応し、初期状態から UPnP 機能が有効になっている機器が複数のベンダから提供されています。\r\n\r\n遠隔の第三者が、細工した URL をユーザにアクセスさせることにより、ユーザのLAN内に接続されている UPnP 対応機器を操作したり設定を変更したりする可能性があります。\r\n\r\nUniversal Plug and Play (UPnP) は UPnP Forum により規定されている、ネットワーク機器を簡単に接続・利用するためのプロトコル群です。 PC で使われるソフトウェアのなかには、LAN内の UPnP 対応ファイアウォールやルータに対して、自動的にポート転送などの設定を行なうものもあります。\r\n\r\nUPnP に対応したネットワーク機器は複数のベンダから提供されており、UPnP 機能が初期状態で有効になっている場合もあります。\r\n\r\n細工したコンテンツをユーザにアクセスさせることにより、LAN 上のネットワーク機器に対して UPnP メッセージを送信させる手法が知られています。例えば、Adobe Flash コンテンツを使った攻撃手法が公開されています。 ",
+	"identifier": "JVNDB-2008-001285",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNTA08-100A/index.html",
+			"source": "JVN",
+			"id": "JVNTA08-100A"
+		},
+		{
+			"text": "http://jvn.jp/cert/JVNVU%23347812/index.html",
+			"source": "JVN",
+			"id": "JVNVU#347812"
+		},
+		{
+			"text": "http://jvn.jp/cert/JVNTA08-150A/",
+			"source": "JVN",
+			"id": "JVNTA08-150A"
+		},
+		{
+			"text": "http://jvn.jp/tr/TRTA08-100A",
+			"source": "JVNTR",
+			"id": "TRTA08-100A"
+		},
+		{
+			"text": "http://jvn.jp/tr/TRTA08-150A/index.html",
+			"source": "JVNTR",
+			"id": "TRTA08-150A"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1654",
+			"source": "CVE",
+			"id": "CVE-2008-1654"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-1654",
+			"source": "NVD",
+			"id": "CVE-2008-1654"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2008/wr080301.html#3",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2008-0301"
+		},
+		{
+			"text": "http://www.cyberpolice.go.jp/important/2008/20080409_111257.html",
+			"source": "AT-POLICE",
+			"id": "Flash Player の脆弱性について"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/alerts/SA08-100A.html",
+			"source": "CERT-SA",
+			"id": "SA08-100A"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/alerts/SA08-150A.html",
+			"source": "CERT-SA",
+			"id": "SA08-150A"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/347812",
+			"source": "CERT-VN",
+			"id": "VU#347812"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/159523",
+			"source": "CERT-VN",
+			"id": "VU#159523"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA08-100A.html",
+			"source": "CERT-TA",
+			"id": "TA08-100A"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA08-150A.html",
+			"source": "CERT-TA",
+			"id": "TA08-150A"
+		},
+		{
+			"text": "http://secunia.com/advisories/29763",
+			"source": "SECUNIA",
+			"id": "SA29763"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/28696",
+			"source": "BID",
+			"id": "28696"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/41718",
+			"source": "XF",
+			"id": "41718"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1019807",
+			"source": "SECTRACK",
+			"id": "1019807"
+		},
+		{
+			"text": "http://www.osvdb.org/44283",
+			"source": "OSVDB",
+			"id": "44283"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+			"id": "CWE-352",
+			"title": "クロスサイトリクエストフォージェリ(CWE-352)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:adobe:flash_player",
+			"version": "2.2",
+			"vendor": "アドビ",
+			"product": "Adobe Flash Player"
+		},
+		{
+			"text": "cpe:/a:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Extras"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_desktop_supplementary",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Supplementary"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_supplementary",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Supplementary"
+		},
+		{
+			"text": "cpe:/h:allied_telesis_k.k.:centrecom",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "CentreCOM"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rta",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTA シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtv",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTV シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtw",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTW シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:srt",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "SRT シリーズ"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_xp",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows XP"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_fuji",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux FUJI"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_wizpy",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "wizpy"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2008-10-27T14:35+09:00",
+	"issued": "2008-04-30T16:15+09:00",
+	"modified": "2008-10-27T14:35+09:00"
 }

@@ -1,104 +1,104 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001895.html",
-  "title": "MIT Kerberos 5 の GSS-API FTP デーモンにおけるグループのアクセス制限を回避される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001895.html",
-  "description": "MIT Kerberos 5 の GSS-API FTP デーモン内の ftpd.c は、krb5_setegid の戻り値をチェックしないため、グループのアクセス制限を回避されることで、ファイルを作成、上書き、削除、または読み込まれる脆弱性が存在します。",
-  "identifier": "JVNDB-2011-001895",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1526",
-      "source": "CVE",
-      "id": "CVE-2011-1526"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1526",
-      "source": "NVD",
-      "id": "CVE-2011-1526"
-    },
-    {
-      "text": "http://secunia.com/advisories/45157",
-      "source": "SECUNIA",
-      "id": "SA45157"
-    },
-    {
-      "text": "http://secunia.com/advisories/45145",
-      "source": "SECUNIA",
-      "id": "SA45145"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/48571",
-      "source": "BID",
-      "id": "48571"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/68398",
-      "source": "XF",
-      "id": "68398"
-    },
-    {
-      "text": "http://www.securitytracker.com/id/1025744",
-      "source": "SECTRACK",
-      "id": "1025744"
-    },
-    {
-      "text": "http://osvdb.org/73617",
-      "source": "OSVDB",
-      "id": "73617"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:mit:kerberos",
-      "version": "2.2",
-      "vendor": "MIT Kerberos",
-      "product": "Kerberos"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_server_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.5",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2011-07-20T11:17+09:00",
-  "issued": "2011-07-20T11:17+09:00",
-  "modified": "2011-07-20T11:17+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001895.html",
+	"title": "MIT Kerberos 5 の GSS-API FTP デーモンにおけるグループのアクセス制限を回避される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001895.html",
+	"description": "MIT Kerberos 5 の GSS-API FTP デーモン内の ftpd.c は、krb5_setegid の戻り値をチェックしないため、グループのアクセス制限を回避されることで、ファイルを作成、上書き、削除、または読み込まれる脆弱性が存在します。",
+	"identifier": "JVNDB-2011-001895",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1526",
+			"source": "CVE",
+			"id": "CVE-2011-1526"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1526",
+			"source": "NVD",
+			"id": "CVE-2011-1526"
+		},
+		{
+			"text": "http://secunia.com/advisories/45157",
+			"source": "SECUNIA",
+			"id": "SA45157"
+		},
+		{
+			"text": "http://secunia.com/advisories/45145",
+			"source": "SECUNIA",
+			"id": "SA45145"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/48571",
+			"source": "BID",
+			"id": "48571"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/68398",
+			"source": "XF",
+			"id": "68398"
+		},
+		{
+			"text": "http://www.securitytracker.com/id/1025744",
+			"source": "SECTRACK",
+			"id": "1025744"
+		},
+		{
+			"text": "http://osvdb.org/73617",
+			"source": "OSVDB",
+			"id": "73617"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:mit:kerberos",
+			"version": "2.2",
+			"vendor": "MIT Kerberos",
+			"product": "Kerberos"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_server_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+		}
+	],
+	"date": "2011-07-20T11:17+09:00",
+	"issued": "2011-07-20T11:17+09:00",
+	"modified": "2011-07-20T11:17+09:00"
 }

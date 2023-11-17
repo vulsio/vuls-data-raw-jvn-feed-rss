@@ -1,255 +1,255 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001001.html",
-  "title": "MD5 アルゴリズムへの攻撃を用いた X.509 証明書の偽造",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001001.html",
-  "description": "MD5 アルゴリズムの衝突耐性の不備を利用した攻撃法により、X.509 証明書の偽造に成功したことが報告されました。\r\n\r\n一方向性ハッシュ関数である MD5 は入力値から固定長のメッセージダイジェストと呼ばれる値を出力します。安全なハッシュ関数は特定のメッセージダイジェストに対応する入力値を見つけることが極めて困難である必要があります。異なる入力から同一のメッセージダイジェストが出力される事を \"衝突\" と呼びます。\r\n\r\n1996 年から MD5 アルゴリズムの衝突耐性の不備を利用した攻撃法が報告されています。その後、この攻撃手法が X.509証明書の偽造に使えることが示され、2008年に CA によって署名された証明書をもとに中間 CA 証明書の偽造に成功したことが報告されました。\r\n\r\nMD5 アルゴリズムを使用している製品が影響を受けます。",
-  "identifier": "JVNDB-2009-001001",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU836068/index.html",
-      "source": "JVN",
-      "id": "JVNVU#836068"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2761",
-      "source": "CVE",
-      "id": "CVE-2004-2761"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2004-2761",
-      "source": "NVD",
-      "id": "CVE-2004-2761"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2009/wr090101.html#5",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2009-0101"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/836068",
-      "source": "CERT-VN",
-      "id": "VU#836068"
-    },
-    {
-      "text": "https://www.us-cert.gov/ics/advisories/ICSMA-18-058-02",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSMA-18-058-02"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/33065",
-      "source": "BID",
-      "id": "33065"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
-      "id": "CWE-310",
-      "title": "暗号の問題(CWE-310)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:hitachi:cosminexus_http_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus HTTP Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_application_server_for_developers",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Application Server for Developers"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_web_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Web Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:infrastructure_analytics_advisor",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Infrastructure Analytics Advisor"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Smart Edition"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Light"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Architect"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt105",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT105シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt107e",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT107e"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt140",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT140シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt250i",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT250i"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt300i",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT300i"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtv01",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTV01"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtv700",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTV700"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1000",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1000"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1100",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1100"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1200",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1200"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1500",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1500"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx2000",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX2000"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx3000",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX3000"
-    },
-    {
-      "text": "cpe:/h:yamaha:srt100",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "SRT100"
-    },
-    {
-      "text": "cpe:/o:yamaha:rt57i_firmware",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT57i"
-    },
-    {
-      "text": "cpe:/o:yamaha:rt58i_firmware",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT58i"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2019-07-10T16:46+09:00",
-  "issued": "2009-02-10T11:41+09:00",
-  "modified": "2019-07-10T16:46+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001001.html",
+	"title": "MD5 アルゴリズムへの攻撃を用いた X.509 証明書の偽造",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-001001.html",
+	"description": "MD5 アルゴリズムの衝突耐性の不備を利用した攻撃法により、X.509 証明書の偽造に成功したことが報告されました。\r\n\r\n一方向性ハッシュ関数である MD5 は入力値から固定長のメッセージダイジェストと呼ばれる値を出力します。安全なハッシュ関数は特定のメッセージダイジェストに対応する入力値を見つけることが極めて困難である必要があります。異なる入力から同一のメッセージダイジェストが出力される事を \"衝突\" と呼びます。\r\n\r\n1996 年から MD5 アルゴリズムの衝突耐性の不備を利用した攻撃法が報告されています。その後、この攻撃手法が X.509証明書の偽造に使えることが示され、2008年に CA によって署名された証明書をもとに中間 CA 証明書の偽造に成功したことが報告されました。\r\n\r\nMD5 アルゴリズムを使用している製品が影響を受けます。",
+	"identifier": "JVNDB-2009-001001",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU836068/index.html",
+			"source": "JVN",
+			"id": "JVNVU#836068"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2761",
+			"source": "CVE",
+			"id": "CVE-2004-2761"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2004-2761",
+			"source": "NVD",
+			"id": "CVE-2004-2761"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2009/wr090101.html#5",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2009-0101"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/836068",
+			"source": "CERT-VN",
+			"id": "VU#836068"
+		},
+		{
+			"text": "https://www.us-cert.gov/ics/advisories/ICSMA-18-058-02",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSMA-18-058-02"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/33065",
+			"source": "BID",
+			"id": "33065"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+			"id": "CWE-310",
+			"title": "暗号の問題(CWE-310)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hitachi:cosminexus_http_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus HTTP Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_application_server_for_developers",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Application Server for Developers"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_web_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Web Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:infrastructure_analytics_advisor",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Infrastructure Analytics Advisor"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Smart Edition"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_light",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Light"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_architect",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Architect"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt105",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT105シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt107e",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT107e"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt140",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT140シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt250i",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT250i"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt300i",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT300i"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtv01",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTV01"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtv700",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTV700"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1000",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1000"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1100",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1100"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1200",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1200"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1500",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1500"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx2000",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX2000"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx3000",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX3000"
+		},
+		{
+			"text": "cpe:/h:yamaha:srt100",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "SRT100"
+		},
+		{
+			"text": "cpe:/o:yamaha:rt57i_firmware",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT57i"
+		},
+		{
+			"text": "cpe:/o:yamaha:rt58i_firmware",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT58i"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2019-07-10T16:46+09:00",
+	"issued": "2009-02-10T11:41+09:00",
+	"modified": "2019-07-10T16:46+09:00"
 }

@@ -1,244 +1,244 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001638.html",
-  "title": "Apache Portable Runtime ライブラリなどの製品で使用される apr_fnmatch.c および fnmatch.c におけるサービス運用妨害 (CPU とメモリ消費) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001638.html",
-  "description": "Apache Portable Runtime (APR) ライブラリおよび Apache HTTP Server の apr_fnmatch.c 内にある fnmatch 実装や、NetBSD、OpenBSD、FreeBSD、Apple Mac OS X、Oracle Solaris 10 および Android などの製品で使用される libc の fnmatch.c には、サービス運用妨害 (CPU および メモリ消費) となる脆弱性が存在します。",
-  "identifier": "JVNDB-2011-001638",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0419",
-      "source": "CVE",
-      "id": "CVE-2011-0419"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0419",
-      "source": "NVD",
-      "id": "CVE-2011-0419"
-    },
-    {
-      "text": "http://secunia.com/advisories/44490",
-      "source": "SECUNIA",
-      "id": "SA44490"
-    },
-    {
-      "text": "http://secunia.com/advisories/44564",
-      "source": "SECUNIA",
-      "id": "SA44564"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/47820",
-      "source": "BID",
-      "id": "47820"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1025527",
-      "source": "SECTRACK",
-      "id": "1025527"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-      "id": "CWE-399",
-      "title": "リソース管理の問題(CWE-399)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:http_server",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache HTTP Server"
-    },
-    {
-      "text": "cpe:/a:apache:portable_runtime",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache Portable Runtime"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_application_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Application Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_studio",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Studio"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_web_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Web Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_http_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus HTTP Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_web_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Web Server"
-    },
-    {
-      "text": "cpe:/a:hp:hp-ux_web_server_suite",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX Web Server Suite"
-    },
-    {
-      "text": "cpe:/a:hp:secure_web_server_for_open_vms",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP Secure Web Server for OpenVMS"
-    },
-    {
-      "text": "cpe:/a:ibm:http_server",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM HTTP Server"
-    },
-    {
-      "text": "cpe:/a:oracle:http_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle HTTP Server"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_server_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server EUS"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:freebsd:freebsd",
-      "version": "2.2",
-      "vendor": "FreeBSD",
-      "product": "FreeBSD"
-    },
-    {
-      "text": "cpe:/o:google:android",
-      "version": "2.2",
-      "vendor": "Google",
-      "product": "Android"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:netbsd:netbsd",
-      "version": "2.2",
-      "vendor": "NetBSD",
-      "product": "NetBSD"
-    },
-    {
-      "text": "cpe:/o:oracle:solaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Solaris"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_long_life",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Long Life"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    },
-    {
-      "text": "cpe:/o:redhat:rhel_desktop_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Workstation"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Appliance Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_client",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Client"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_fuji",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux FUJI"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2015-04-22T16:23+09:00",
-  "issued": "2011-05-27T10:47+09:00",
-  "modified": "2015-04-22T16:23+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001638.html",
+	"title": "Apache Portable Runtime ライブラリなどの製品で使用される apr_fnmatch.c および fnmatch.c におけるサービス運用妨害 (CPU とメモリ消費) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001638.html",
+	"description": "Apache Portable Runtime (APR) ライブラリおよび Apache HTTP Server の apr_fnmatch.c 内にある fnmatch 実装や、NetBSD、OpenBSD、FreeBSD、Apple Mac OS X、Oracle Solaris 10 および Android などの製品で使用される libc の fnmatch.c には、サービス運用妨害 (CPU および メモリ消費) となる脆弱性が存在します。",
+	"identifier": "JVNDB-2011-001638",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0419",
+			"source": "CVE",
+			"id": "CVE-2011-0419"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0419",
+			"source": "NVD",
+			"id": "CVE-2011-0419"
+		},
+		{
+			"text": "http://secunia.com/advisories/44490",
+			"source": "SECUNIA",
+			"id": "SA44490"
+		},
+		{
+			"text": "http://secunia.com/advisories/44564",
+			"source": "SECUNIA",
+			"id": "SA44564"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/47820",
+			"source": "BID",
+			"id": "47820"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1025527",
+			"source": "SECTRACK",
+			"id": "1025527"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+			"id": "CWE-399",
+			"title": "リソース管理の問題(CWE-399)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:http_server",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache HTTP Server"
+		},
+		{
+			"text": "cpe:/a:apache:portable_runtime",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache Portable Runtime"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_application_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Application Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_studio",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Studio"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_web_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Web Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_http_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus HTTP Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_web_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Web Server"
+		},
+		{
+			"text": "cpe:/a:hp:hp-ux_web_server_suite",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX Web Server Suite"
+		},
+		{
+			"text": "cpe:/a:hp:secure_web_server_for_open_vms",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP Secure Web Server for OpenVMS"
+		},
+		{
+			"text": "cpe:/a:ibm:http_server",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM HTTP Server"
+		},
+		{
+			"text": "cpe:/a:oracle:http_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle HTTP Server"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_server_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server EUS"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:freebsd:freebsd",
+			"version": "2.2",
+			"vendor": "FreeBSD",
+			"product": "FreeBSD"
+		},
+		{
+			"text": "cpe:/o:google:android",
+			"version": "2.2",
+			"vendor": "Google",
+			"product": "Android"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:netbsd:netbsd",
+			"version": "2.2",
+			"vendor": "NetBSD",
+			"product": "NetBSD"
+		},
+		{
+			"text": "cpe:/o:oracle:solaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Solaris"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_long_life",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Long Life"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		},
+		{
+			"text": "cpe:/o:redhat:rhel_desktop_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Workstation"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Appliance Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_client",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Client"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_fuji",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux FUJI"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2015-04-22T16:23+09:00",
+	"issued": "2011-05-27T10:47+09:00",
+	"modified": "2015-04-22T16:23+09:00"
 }

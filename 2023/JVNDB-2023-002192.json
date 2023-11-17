@@ -1,30 +1,30 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002192.html",
-  "title": "Apache Tomcat における情報漏えいの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002192.html",
-  "description": "Apache Tomcat には、情報漏えいの脆弱性が存在します。\r\n\r\nApache Tomcat の <a href=\"https://bz.apache.org/bugzilla/show_bug.cgi?id=66512\"target=\"blank\">バグ66512</a> の修正により発生したリグレッションが、<a href=\"https://bz.apache.org/bugzilla/show_bug.cgi?id=66591\"target=\"blank\">バグ66591</a> として報告され修正されました。\r\nこのリグレッションには、レスポンスに HTTP ヘッダが設定されていない場合、AJP SEND_HEADERS メッセージが送信されない問題があります。これにより少なくともひとつの AJP ベースのプロキシ（mod_proxy_ajp）で、該当するリクエストに対し以前のリクエストのレスポンスヘッダが使用されるという問題（CVE-2023-34981）があります。",
-  "identifier": "JVNDB-2023-002192",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU92908681/index.html",
-      "source": "JVN",
-      "id": "JVNVU#92908681"
-    },
-    {
-      "text": "https://www.cve.org/CVERecord?id=CVE-2023-34981",
-      "source": "CVE",
-      "id": "CVE-2023-34981"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:tomcat",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache Tomcat"
-    }
-  ],
-  "date": "2023-06-23T10:43+09:00",
-  "issued": "2023-06-23T10:43+09:00",
-  "modified": "2023-06-23T10:43+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002192.html",
+	"title": "Apache Tomcat における情報漏えいの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002192.html",
+	"description": "Apache Tomcat には、情報漏えいの脆弱性が存在します。\r\n\r\nApache Tomcat の <a href=\"https://bz.apache.org/bugzilla/show_bug.cgi?id=66512\"target=\"blank\">バグ66512</a> の修正により発生したリグレッションが、<a href=\"https://bz.apache.org/bugzilla/show_bug.cgi?id=66591\"target=\"blank\">バグ66591</a> として報告され修正されました。\r\nこのリグレッションには、レスポンスに HTTP ヘッダが設定されていない場合、AJP SEND_HEADERS メッセージが送信されない問題があります。これにより少なくともひとつの AJP ベースのプロキシ（mod_proxy_ajp）で、該当するリクエストに対し以前のリクエストのレスポンスヘッダが使用されるという問題（CVE-2023-34981）があります。",
+	"identifier": "JVNDB-2023-002192",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU92908681/index.html",
+			"source": "JVN",
+			"id": "JVNVU#92908681"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-34981",
+			"source": "CVE",
+			"id": "CVE-2023-34981"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:tomcat",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache Tomcat"
+		}
+	],
+	"date": "2023-06-23T10:43+09:00",
+	"issued": "2023-06-23T10:43+09:00",
+	"modified": "2023-06-23T10:43+09:00"
 }

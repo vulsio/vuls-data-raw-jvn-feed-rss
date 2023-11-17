@@ -1,60 +1,60 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000083.html",
-  "title": "Kerberos 4 における選択平文攻撃により特定の principal になりすまされる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000083.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nKerberos 4 プロトコルの実装には、いくつかの暗号化方法における不備が存在します。この問題を利用することで、悪意ある特定の realm 内のユーザは、cross-realm 認証が行われている任意のリモートの realm 内の principal に成りすますことが可能です。\r\n\r\n特定の principal に成りすました攻撃者は、結果として、ローカルの realm 内で管理されている任意のリモートの realm へのアクセス権限を奪取できる可能性があります。\r\n\r\nさらに、Kerberos 4 プロトコルには、Triple DES 暗号化方式の実装上においての不備が存在します。Triple DES Kerberos 4 のサポートが有効化されている場合には、任意のユーザへの成りすましや、標的ユーザの Kerberos チケットを含む、ネットワークトラフィックを解析されてしまう可能性があります。\r\n\r\n尚、これらの問題は Kerberos 4 プロトコルに存在するため、Kerberos 4 プロトコルをサポートした状態で MIT Kerberos 5 を実装している場合や、Kerberos 4 プロトコルで Kerberos 認証を使用しているアプリケーションにおいて影響を受ける可能性があります。",
-  "identifier": "JVNDB-2003-000083",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0138",
-      "source": "CVE",
-      "id": "CVE-2003-0138"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0138",
-      "source": "NVD",
-      "id": "CVE-2003-0138"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/623217",
-      "source": "CERT-VN",
-      "id": "VU#623217"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/442569",
-      "source": "CERT-VN",
-      "id": "VU#442569"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/7113",
-      "source": "BID",
-      "id": "7113"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000083.html",
+	"title": "Kerberos 4 における選択平文攻撃により特定の principal になりすまされる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000083.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nKerberos 4 プロトコルの実装には、いくつかの暗号化方法における不備が存在します。この問題を利用することで、悪意ある特定の realm 内のユーザは、cross-realm 認証が行われている任意のリモートの realm 内の principal に成りすますことが可能です。\r\n\r\n特定の principal に成りすました攻撃者は、結果として、ローカルの realm 内で管理されている任意のリモートの realm へのアクセス権限を奪取できる可能性があります。\r\n\r\nさらに、Kerberos 4 プロトコルには、Triple DES 暗号化方式の実装上においての不備が存在します。Triple DES Kerberos 4 のサポートが有効化されている場合には、任意のユーザへの成りすましや、標的ユーザの Kerberos チケットを含む、ネットワークトラフィックを解析されてしまう可能性があります。\r\n\r\n尚、これらの問題は Kerberos 4 プロトコルに存在するため、Kerberos 4 プロトコルをサポートした状態で MIT Kerberos 5 を実装している場合や、Kerberos 4 プロトコルで Kerberos 認証を使用しているアプリケーションにおいて影響を受ける可能性があります。",
+	"identifier": "JVNDB-2003-000083",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0138",
+			"source": "CVE",
+			"id": "CVE-2003-0138"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0138",
+			"source": "NVD",
+			"id": "CVE-2003-0138"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/623217",
+			"source": "CERT-VN",
+			"id": "VU#623217"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/442569",
+			"source": "CERT-VN",
+			"id": "VU#442569"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/7113",
+			"source": "BID",
+			"id": "7113"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

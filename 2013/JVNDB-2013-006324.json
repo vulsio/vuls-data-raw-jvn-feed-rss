@@ -1,50 +1,50 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006324.html",
-  "title": "libvirt の LXC ドライバにおける任意のホストデバイスを削除される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006324.html",
-  "description": "libvirt の LXC ドライバ (lxc/lxc_driver.c) には、\"/proc/$PID/root 配下のパス\" および virInitctlSetRunLevel 関数に関する処理に不備があるため、任意のホストデバイスを削除される、任意のノード (mknod) を作成される、およびサービス運用妨害 (シャットダウンまたはホスト OS のリブート) 状態にされる脆弱性が存在します。",
-  "identifier": "JVNDB-2013-006324",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6456",
-      "source": "CVE",
-      "id": "CVE-2013-6456"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6456",
-      "source": "NVD",
-      "id": "CVE-2013-6456"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
-      "id": "CWE-59",
-      "title": "リンク解釈の問題(CWE-59)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:redhat:libvirt",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "libvirt"
-    },
-    {
-      "text": "cpe:/o:fedoraproject:fedora",
-      "version": "2.2",
-      "vendor": "Fedora Project",
-      "product": "Fedora"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:A/AC:M/Au:S/C:N/I:P/A:C"
-    }
-  ],
-  "date": "2014-04-21T13:52+09:00",
-  "issued": "2014-04-21T13:52+09:00",
-  "modified": "2014-04-21T13:52+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006324.html",
+	"title": "libvirt の LXC ドライバにおける任意のホストデバイスを削除される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006324.html",
+	"description": "libvirt の LXC ドライバ (lxc/lxc_driver.c) には、\"/proc/$PID/root 配下のパス\" および virInitctlSetRunLevel 関数に関する処理に不備があるため、任意のホストデバイスを削除される、任意のノード (mknod) を作成される、およびサービス運用妨害 (シャットダウンまたはホスト OS のリブート) 状態にされる脆弱性が存在します。",
+	"identifier": "JVNDB-2013-006324",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6456",
+			"source": "CVE",
+			"id": "CVE-2013-6456"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6456",
+			"source": "NVD",
+			"id": "CVE-2013-6456"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+			"id": "CWE-59",
+			"title": "リンク解釈の問題(CWE-59)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:redhat:libvirt",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "libvirt"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:A/AC:M/Au:S/C:N/I:P/A:C"
+		}
+	],
+	"date": "2014-04-21T13:52+09:00",
+	"issued": "2014-04-21T13:52+09:00",
+	"modified": "2014-04-21T13:52+09:00"
 }

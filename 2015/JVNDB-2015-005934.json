@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005934.html",
-  "title": "Linux Kernel 用 Advanced Union Filesystem の aufs3-mmap.patch および aufs4-mmap.patch パッチにおけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005934.html",
-  "description": "Linux Kernel 用 Advanced Union Filesystem (aufs) の aufs3-mmap.patch および aufs4-mmap.patch パッチには、mm/madvise.c および mm/msync.c に関する処理に不備があるため、競合状態により、サービス運用妨害 (解放済みメモリの使用 (Use-after-free) およびバグ) 状態にされる、または権限を取得される脆弱性が存在します。",
-  "identifier": "JVNDB-2015-005934",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7312",
-      "source": "CVE",
-      "id": "CVE-2015-7312"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7312",
-      "source": "NVD",
-      "id": "CVE-2015-7312"
-    },
-    {
-      "text": "http://sourceforge.net/p/aufs/mailman/message/34449209/",
-      "source": "関連文書",
-      "id": "Re: concurrent msync triggers NULL pointer dereference"
-    },
-    {
-      "text": "http://www.openwall.com/lists/oss-security/2015/09/22/10",
-      "source": "関連文書",
-      "id": "Re: CVE request: Use-after-free in Linux kernel with aufs mmap patch"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
-      "id": "CWE-362",
-      "title": "競合状態(CWE-362)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2015-11-17T16:17+09:00",
-  "issued": "2015-11-17T16:17+09:00",
-  "modified": "2015-11-17T16:17+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005934.html",
+	"title": "Linux Kernel 用 Advanced Union Filesystem の aufs3-mmap.patch および aufs4-mmap.patch パッチにおけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-005934.html",
+	"description": "Linux Kernel 用 Advanced Union Filesystem (aufs) の aufs3-mmap.patch および aufs4-mmap.patch パッチには、mm/madvise.c および mm/msync.c に関する処理に不備があるため、競合状態により、サービス運用妨害 (解放済みメモリの使用 (Use-after-free) およびバグ) 状態にされる、または権限を取得される脆弱性が存在します。",
+	"identifier": "JVNDB-2015-005934",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7312",
+			"source": "CVE",
+			"id": "CVE-2015-7312"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-7312",
+			"source": "NVD",
+			"id": "CVE-2015-7312"
+		},
+		{
+			"text": "http://sourceforge.net/p/aufs/mailman/message/34449209/",
+			"source": "関連文書",
+			"id": "Re: concurrent msync triggers NULL pointer dereference"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2015/09/22/10",
+			"source": "関連文書",
+			"id": "Re: CVE request: Use-after-free in Linux kernel with aufs mmap patch"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+			"id": "CWE-362",
+			"title": "競合状態(CWE-362)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2015-11-17T16:17+09:00",
+	"issued": "2015-11-17T16:17+09:00",
+	"modified": "2015-11-17T16:17+09:00"
 }

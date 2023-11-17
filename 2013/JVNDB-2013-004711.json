@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004711.html",
-  "title": "HR Systems Strategies の info:HR に認証情報の管理に関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004711.html",
-  "description": "HR Systems Strategies が提供する info:HR には、認証情報の管理に関する脆弱性が存在します。\r\n\r\nHR Systems Strategies が提供する人事管理システムである info:HR は、Microsoft Windows プラットフォームで動作するアプリケーションです。info:HR は、Microsoft SQL Server を使用しており、データベースの認証情報をレジストリに保存しています。\r\nこの認証情報は Windows の全てのユーザがアクセス可能な設定となっており、不完全な暗号化をおこなっているため、容易に復号することが可能です。\r\n\r\n本脆弱性には、次のような問題が含まれています。\r\n\r\n　* CWE-314: Cleartext Storage in the Registry\r\n　　http://cwe.mitre.org/data/definitions/314.html\r\n\r\n　* CWE-327: Use of a Broken or Risky Cryptographic Algorithm\r\n　　http://cwe.mitre.org/data/definitions/327.html",
-  "identifier": "JVNDB-2013-004711",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU93045890/index.html",
-      "source": "JVN",
-      "id": "JVNVU#93045890"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5208",
-      "source": "CVE",
-      "id": "CVE-2013-5208"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5208",
-      "source": "NVD",
-      "id": "CVE-2013-5208"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/829574",
-      "source": "CERT-VN",
-      "id": "VU#829574"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
-      "id": "CWE-310",
-      "title": "暗号の問題(CWE-310)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:infohr:hr_human_resource_information_system",
-      "version": "2.2",
-      "vendor": "HR Systems Strategies Inc.",
-      "product": "info:HR"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.1",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:M/Au:S/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2013-10-18T10:23+09:00",
-  "issued": "2013-10-18T10:23+09:00",
-  "modified": "2013-10-18T10:23+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004711.html",
+	"title": "HR Systems Strategies の info:HR に認証情報の管理に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-004711.html",
+	"description": "HR Systems Strategies が提供する info:HR には、認証情報の管理に関する脆弱性が存在します。\r\n\r\nHR Systems Strategies が提供する人事管理システムである info:HR は、Microsoft Windows プラットフォームで動作するアプリケーションです。info:HR は、Microsoft SQL Server を使用しており、データベースの認証情報をレジストリに保存しています。\r\nこの認証情報は Windows の全てのユーザがアクセス可能な設定となっており、不完全な暗号化をおこなっているため、容易に復号することが可能です。\r\n\r\n本脆弱性には、次のような問題が含まれています。\r\n\r\n　* CWE-314: Cleartext Storage in the Registry\r\n　　http://cwe.mitre.org/data/definitions/314.html\r\n\r\n　* CWE-327: Use of a Broken or Risky Cryptographic Algorithm\r\n　　http://cwe.mitre.org/data/definitions/327.html",
+	"identifier": "JVNDB-2013-004711",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU93045890/index.html",
+			"source": "JVN",
+			"id": "JVNVU#93045890"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5208",
+			"source": "CVE",
+			"id": "CVE-2013-5208"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5208",
+			"source": "NVD",
+			"id": "CVE-2013-5208"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/829574",
+			"source": "CERT-VN",
+			"id": "VU#829574"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+			"id": "CWE-310",
+			"title": "暗号の問題(CWE-310)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:infohr:hr_human_resource_information_system",
+			"version": "2.2",
+			"vendor": "HR Systems Strategies Inc.",
+			"product": "info:HR"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.1",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:S/C:P/I:P/A:P"
+		}
+	],
+	"date": "2013-10-18T10:23+09:00",
+	"issued": "2013-10-18T10:23+09:00",
+	"modified": "2013-10-18T10:23+09:00"
 }

@@ -1,75 +1,75 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000204.html",
-  "title": "Linux Kernel の load_elf_library におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000204.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.4.29 以前、2.6.11.5 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・ext2 ファイルシステムにおいてディレクトリを新規に作成する際の初期化処理に不備が存在し、カーネルメモリリークが発生するため、システム情報が漏洩する問題 (CAN-2005-0400)\r\n\r\n・ELF ライブラリをロードする load_elf_library 関数 (fs/binfmt_elf.c) にセキュリティ上の不備が存在するため、Linux Kernel がサービス不能状態に陥る問題 (CAN-2005-0749)\r\n\r\n・bluetooth ソケット作成の処理において protocol パラメータの負の値に対するチェックに不備が存在し、不正なメモリアドレスを参照させることにより root 権限が奪取される問題 (CAN-2005-0750) \r\n\r\nこれらの問題を利用するローカルの攻撃者により、標的システムがサービス不能状態に陥る、あるいは root 権限が奪取される可能性があります。\r\n\r\n尚、CAN-2005-0400 の問題については root 権限でのみ情報が漏洩するため、この問題の影響度は低いことが Red Hat より報告されています。",
-  "identifier": "JVNDB-2005-000204",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0749",
-      "source": "CVE",
-      "id": "CVE-2005-0749"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0749",
-      "source": "NVD",
-      "id": "CVE-2005-0749"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/685461",
-      "source": "CERT-VN",
-      "id": "VU#685461"
-    },
-    {
-      "text": "http://secunia.com/advisories/14713/",
-      "source": "SECUNIA",
-      "id": "SA14713"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12935",
-      "source": "BID",
-      "id": "12935"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12932",
-      "source": "BID",
-      "id": "12932"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12911",
-      "source": "BID",
-      "id": "12911"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2005/Mar/1013567.html",
-      "source": "SECTRACK",
-      "id": "1013567"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.2",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000204.html",
+	"title": "Linux Kernel の load_elf_library におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000204.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.4.29 以前、2.6.11.5 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・ext2 ファイルシステムにおいてディレクトリを新規に作成する際の初期化処理に不備が存在し、カーネルメモリリークが発生するため、システム情報が漏洩する問題 (CAN-2005-0400)\r\n\r\n・ELF ライブラリをロードする load_elf_library 関数 (fs/binfmt_elf.c) にセキュリティ上の不備が存在するため、Linux Kernel がサービス不能状態に陥る問題 (CAN-2005-0749)\r\n\r\n・bluetooth ソケット作成の処理において protocol パラメータの負の値に対するチェックに不備が存在し、不正なメモリアドレスを参照させることにより root 権限が奪取される問題 (CAN-2005-0750) \r\n\r\nこれらの問題を利用するローカルの攻撃者により、標的システムがサービス不能状態に陥る、あるいは root 権限が奪取される可能性があります。\r\n\r\n尚、CAN-2005-0400 の問題については root 権限でのみ情報が漏洩するため、この問題の影響度は低いことが Red Hat より報告されています。",
+	"identifier": "JVNDB-2005-000204",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0749",
+			"source": "CVE",
+			"id": "CVE-2005-0749"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0749",
+			"source": "NVD",
+			"id": "CVE-2005-0749"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/685461",
+			"source": "CERT-VN",
+			"id": "VU#685461"
+		},
+		{
+			"text": "http://secunia.com/advisories/14713/",
+			"source": "SECUNIA",
+			"id": "SA14713"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12935",
+			"source": "BID",
+			"id": "12935"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12932",
+			"source": "BID",
+			"id": "12932"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12911",
+			"source": "BID",
+			"id": "12911"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2005/Mar/1013567.html",
+			"source": "SECTRACK",
+			"id": "1013567"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

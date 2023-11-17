@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001587.html",
-  "title": "Adtrustmedia PrivDog に SSL サーバ証明書の検証不備の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001587.html",
-  "description": "Adtrustmedia が提供する PrivDog には SSL サーバ証明書の検証不備の脆弱性が存在します。\r\n\r\nAdtrustmedia が提供する PrivDog は、Man-in-the-Middle (MITM) プロキシをインストールすると同時に、ルート CA 証明書を新規インストールします。MITM プロキシ機能は NetFilter SDK を使って実装されています。ルート CA 証明書はプログラムのインストールの際に生成されるため、インストール毎に異なる証明書が発行されますが、PrivDog は NetFilter SDK の SSL サーバ証明書の検証機能を使用していません。そのため、スプーフィングされた、または MITM プロキシ経由の HTTPS アクセスであっても、ウェブブラウザは警告を表示しません。\r\n\r\nNetFilter SDK\r\nhttp://netfiltersdk.com/",
-  "identifier": "JVNDB-2015-001587",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU91326102/index.html",
-      "source": "JVN",
-      "id": "JVNVU#91326102"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/366544",
-      "source": "CERT-VN",
-      "id": "VU#366544"
-    },
-    {
-      "text": "https://blog.hboeck.de/archives/865-Adware-Privdog-worse-than-Superfish.html",
-      "source": "関連文書",
-      "id": "Hanno's blog : Adware Privdog worse than Superfish"
-    },
-    {
-      "text": "http://netfiltersdk.com/help/ProtocolFilters/FT_SSL.htm",
-      "source": "関連文書",
-      "id": "FT_SSL : SSL decoder/encoder."
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:adtrustmedia_privdog",
-      "version": "2.2",
-      "vendor": "Adtrustmedia, LLC.",
-      "product": "PrivDog"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "8.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:P/A:N"
-    }
-  ],
-  "date": "2015-02-25T15:53+09:00",
-  "issued": "2015-02-25T15:53+09:00",
-  "modified": "2015-02-25T15:53+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001587.html",
+	"title": "Adtrustmedia PrivDog に SSL サーバ証明書の検証不備の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001587.html",
+	"description": "Adtrustmedia が提供する PrivDog には SSL サーバ証明書の検証不備の脆弱性が存在します。\r\n\r\nAdtrustmedia が提供する PrivDog は、Man-in-the-Middle (MITM) プロキシをインストールすると同時に、ルート CA 証明書を新規インストールします。MITM プロキシ機能は NetFilter SDK を使って実装されています。ルート CA 証明書はプログラムのインストールの際に生成されるため、インストール毎に異なる証明書が発行されますが、PrivDog は NetFilter SDK の SSL サーバ証明書の検証機能を使用していません。そのため、スプーフィングされた、または MITM プロキシ経由の HTTPS アクセスであっても、ウェブブラウザは警告を表示しません。\r\n\r\nNetFilter SDK\r\nhttp://netfiltersdk.com/",
+	"identifier": "JVNDB-2015-001587",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU91326102/index.html",
+			"source": "JVN",
+			"id": "JVNVU#91326102"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/366544",
+			"source": "CERT-VN",
+			"id": "VU#366544"
+		},
+		{
+			"text": "https://blog.hboeck.de/archives/865-Adware-Privdog-worse-than-Superfish.html",
+			"source": "関連文書",
+			"id": "Hanno's blog : Adware Privdog worse than Superfish"
+		},
+		{
+			"text": "http://netfiltersdk.com/help/ProtocolFilters/FT_SSL.htm",
+			"source": "関連文書",
+			"id": "FT_SSL : SSL decoder/encoder."
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:adtrustmedia_privdog",
+			"version": "2.2",
+			"vendor": "Adtrustmedia, LLC.",
+			"product": "PrivDog"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "8.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:P/A:N"
+		}
+	],
+	"date": "2015-02-25T15:53+09:00",
+	"issued": "2015-02-25T15:53+09:00",
+	"modified": "2015-02-25T15:53+09:00"
 }

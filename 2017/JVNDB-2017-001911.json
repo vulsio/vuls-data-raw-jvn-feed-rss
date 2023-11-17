@@ -1,66 +1,66 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001911.html",
-  "title": "GNU C ライブラリの iconv プログラムにおけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001911.html",
-  "description": "GNU C ライブラリ (別名 glibc または libc6) の iconv プログラムは、-c オプションとともに呼び出される場合、不正なマルチバイト入力シーケンスの処理の際に無限ループを入力するため、サービス運用妨害 (DoS) 状態にされる脆弱性が存在します。",
-  "identifier": "JVNDB-2017-001911",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU99464755/index.html",
-      "source": "JVN",
-      "id": "JVNVU#99464755"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10228",
-      "source": "CVE",
-      "id": "CVE-2016-10228"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-10228",
-      "source": "NVD",
-      "id": "CVE-2016-10228"
-    },
-    {
-      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-166-10",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-23-166-10"
-    },
-    {
-      "text": "http://openwall.com/lists/oss-security/2017/03/01/10",
-      "source": "関連文書",
-      "id": "CVE-2016-10228: glibc iconv program can hang when invoked with the -c option"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:gnu:glibc",
-      "version": "2.2",
-      "vendor": "GNU Project",
-      "product": "GNU C Library"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "5.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
-    }
-  ],
-  "date": "2023-06-16T14:30+09:00",
-  "issued": "2017-03-22T17:41+09:00",
-  "modified": "2023-06-16T14:30+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001911.html",
+	"title": "GNU C ライブラリの iconv プログラムにおけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001911.html",
+	"description": "GNU C ライブラリ (別名 glibc または libc6) の iconv プログラムは、-c オプションとともに呼び出される場合、不正なマルチバイト入力シーケンスの処理の際に無限ループを入力するため、サービス運用妨害 (DoS) 状態にされる脆弱性が存在します。",
+	"identifier": "JVNDB-2017-001911",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU99464755/index.html",
+			"source": "JVN",
+			"id": "JVNVU#99464755"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10228",
+			"source": "CVE",
+			"id": "CVE-2016-10228"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-10228",
+			"source": "NVD",
+			"id": "CVE-2016-10228"
+		},
+		{
+			"text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-166-10",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-23-166-10"
+		},
+		{
+			"text": "http://openwall.com/lists/oss-security/2017/03/01/10",
+			"source": "関連文書",
+			"id": "CVE-2016-10228: glibc iconv program can hang when invoked with the -c option"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:gnu:glibc",
+			"version": "2.2",
+			"vendor": "GNU Project",
+			"product": "GNU C Library"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "5.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-06-16T14:30+09:00",
+	"issued": "2017-03-22T17:41+09:00",
+	"modified": "2023-06-16T14:30+09:00"
 }

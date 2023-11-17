@@ -1,298 +1,298 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002300.html",
-  "title": "Apache Portable Utility ライブラリの apr_brigade_split_line 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002300.html",
-  "description": "Apache HTTP Server およびその他のソフトウェアの mod_reqtimeout モジュールにて使用される Apache Portable Utility ライブラリ (APR-util) の buckets/apr_brigade.c 内にある apr_brigade_split_line 関数には、APR bucket の 破損に関する処理に不備があるため、メモリリークが発生し、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
-  "identifier": "JVNDB-2010-002300",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1623",
-      "source": "CVE",
-      "id": "CVE-2010-1623"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1623",
-      "source": "NVD",
-      "id": "CVE-2010-1623"
-    },
-    {
-      "text": "http://secunia.com/advisories/41701",
-      "source": "SECUNIA",
-      "id": "SA41701"
-    },
-    {
-      "text": "http://secunia.com/advisories/41811",
-      "source": "SECUNIA",
-      "id": "SA41811"
-    },
-    {
-      "text": "http://secunia.com/advisories/42403",
-      "source": "SECUNIA",
-      "id": "SA42403"
-    },
-    {
-      "text": "http://secunia.com/advisories/42537",
-      "source": "SECUNIA",
-      "id": "SA42537"
-    },
-    {
-      "text": "http://secunia.com/advisories/43211",
-      "source": "SECUNIA",
-      "id": "SA43211"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/43673",
-      "source": "BID",
-      "id": "43673"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/62235",
-      "source": "XF",
-      "id": "62235"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/2556",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-2556"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/2557",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-2557"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2010/2749",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2010-2749"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:apr-util",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "APR-util"
-    },
-    {
-      "text": "cpe:/a:apache:http_server",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache HTTP Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_application_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Application Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_studio",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Studio"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_web_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Web Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_http_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus HTTP Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_web_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Web Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Smart Edition"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Light"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Architect"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform"
-    },
-    {
-      "text": "cpe:/a:hp:hp-ux_web_server_suite",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX Web Server Suite"
-    },
-    {
-      "text": "cpe:/a:ibm:http_server",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM HTTP Server"
-    },
-    {
-      "text": "cpe:/a:ibm:websphere_application_server",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM WebSphere Application Server"
-    },
-    {
-      "text": "cpe:/h:hp:apache-based_web_server",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX Apache-based Web Server"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:oracle:opensolaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "OpenSolaris"
-    },
-    {
-      "text": "cpe:/o:oracle:solaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Solaris"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    },
-    {
-      "text": "cpe:/o:redhat:rhel_desktop_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Workstation"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Appliance Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_client",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Client"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_fuji",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux FUJI"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2012-12-28T18:39+09:00",
-  "issued": "2010-11-15T15:39+09:00",
-  "modified": "2012-12-28T18:39+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002300.html",
+	"title": "Apache Portable Utility ライブラリの apr_brigade_split_line 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002300.html",
+	"description": "Apache HTTP Server およびその他のソフトウェアの mod_reqtimeout モジュールにて使用される Apache Portable Utility ライブラリ (APR-util) の buckets/apr_brigade.c 内にある apr_brigade_split_line 関数には、APR bucket の 破損に関する処理に不備があるため、メモリリークが発生し、サービス運用妨害 (DoS) 状態となる脆弱性が存在します。",
+	"identifier": "JVNDB-2010-002300",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1623",
+			"source": "CVE",
+			"id": "CVE-2010-1623"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1623",
+			"source": "NVD",
+			"id": "CVE-2010-1623"
+		},
+		{
+			"text": "http://secunia.com/advisories/41701",
+			"source": "SECUNIA",
+			"id": "SA41701"
+		},
+		{
+			"text": "http://secunia.com/advisories/41811",
+			"source": "SECUNIA",
+			"id": "SA41811"
+		},
+		{
+			"text": "http://secunia.com/advisories/42403",
+			"source": "SECUNIA",
+			"id": "SA42403"
+		},
+		{
+			"text": "http://secunia.com/advisories/42537",
+			"source": "SECUNIA",
+			"id": "SA42537"
+		},
+		{
+			"text": "http://secunia.com/advisories/43211",
+			"source": "SECUNIA",
+			"id": "SA43211"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/43673",
+			"source": "BID",
+			"id": "43673"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/62235",
+			"source": "XF",
+			"id": "62235"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/2556",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-2556"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/2557",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-2557"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2010/2749",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2010-2749"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:apr-util",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "APR-util"
+		},
+		{
+			"text": "cpe:/a:apache:http_server",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache HTTP Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_application_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Application Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_studio",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Studio"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_web_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Web Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_http_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus HTTP Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_web_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Web Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Smart Edition"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_light",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Light"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_architect",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Architect"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform"
+		},
+		{
+			"text": "cpe:/a:hp:hp-ux_web_server_suite",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX Web Server Suite"
+		},
+		{
+			"text": "cpe:/a:ibm:http_server",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM HTTP Server"
+		},
+		{
+			"text": "cpe:/a:ibm:websphere_application_server",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM WebSphere Application Server"
+		},
+		{
+			"text": "cpe:/h:hp:apache-based_web_server",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX Apache-based Web Server"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:oracle:opensolaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "OpenSolaris"
+		},
+		{
+			"text": "cpe:/o:oracle:solaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Solaris"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		},
+		{
+			"text": "cpe:/o:redhat:rhel_desktop_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Workstation"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Appliance Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_client",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Client"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_fuji",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux FUJI"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2012-12-28T18:39+09:00",
+	"issued": "2010-11-15T15:39+09:00",
+	"modified": "2012-12-28T18:39+09:00"
 }

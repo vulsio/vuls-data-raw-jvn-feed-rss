@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000226.html",
-  "title": "Microsoft Internet Explorer の OBJECT タグに関連したセキュリティチェック回避の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000226.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\n　Internet Explorer (IE) 6.0 SP1 以前には、クロスドメインセキュリティチェックの実装に不備が存在します。\r\n　通常、IE が JavaScript を利用してアクセスできる DOM (Document Object Model) は同一ドメイン内のページに限られます。FRAME や IFRAME を利用して異なるドメインのページを呼び出しているときも、クロスドメインセキュリティチェックにより異なるドメインの DOM へのアクセスは制限されています。\r\n　しかし、オブジェクトの最初の一文字を大文字で記述することにより、クロスドメインセキュリティチェックを回避し異なるドメインの DOM にアクセスできるという問題が存在します。\r\n　また OBJECT タグに関連したセキュリティチェックを回避する問題が存在し、 IE が一時的に利用するファイルの格納用フォルダへのパスが漏洩する可能性があります。\r\n　尚、このフォルダは Windows 2000 および Windows XP では典型的に以下の場所に存在しています。\r\n\r\n%USERPROFILE%/Local Settings/Temporary Internet Files/Content.IE5\r\n\r\n　さらに FRAME の取り扱いに不備があり、クロスサイトスクリプティング攻撃を実行されてしまう問題が存在します。\r\n　これらの問題により、リモートの攻撃者はクッキーの取得やローカルファイルの閲覧、またマイコンピュータゾーンで任意のスクリプトの実行が可能です。",
-  "identifier": "JVNDB-2002-000226",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1188",
-      "source": "CVE",
-      "id": "CVE-2002-1188"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1188",
-      "source": "NVD",
-      "id": "CVE-2002-1188"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/5672",
-      "source": "BID",
-      "id": "5672"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/6217",
-      "source": "BID",
-      "id": "6217"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/5963",
-      "source": "BID",
-      "id": "5963"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:microsoft:internet_explorer",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Internet Explorer"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000226.html",
+	"title": "Microsoft Internet Explorer の OBJECT タグに関連したセキュリティチェック回避の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000226.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\n　Internet Explorer (IE) 6.0 SP1 以前には、クロスドメインセキュリティチェックの実装に不備が存在します。\r\n　通常、IE が JavaScript を利用してアクセスできる DOM (Document Object Model) は同一ドメイン内のページに限られます。FRAME や IFRAME を利用して異なるドメインのページを呼び出しているときも、クロスドメインセキュリティチェックにより異なるドメインの DOM へのアクセスは制限されています。\r\n　しかし、オブジェクトの最初の一文字を大文字で記述することにより、クロスドメインセキュリティチェックを回避し異なるドメインの DOM にアクセスできるという問題が存在します。\r\n　また OBJECT タグに関連したセキュリティチェックを回避する問題が存在し、 IE が一時的に利用するファイルの格納用フォルダへのパスが漏洩する可能性があります。\r\n　尚、このフォルダは Windows 2000 および Windows XP では典型的に以下の場所に存在しています。\r\n\r\n%USERPROFILE%/Local Settings/Temporary Internet Files/Content.IE5\r\n\r\n　さらに FRAME の取り扱いに不備があり、クロスサイトスクリプティング攻撃を実行されてしまう問題が存在します。\r\n　これらの問題により、リモートの攻撃者はクッキーの取得やローカルファイルの閲覧、またマイコンピュータゾーンで任意のスクリプトの実行が可能です。",
+	"identifier": "JVNDB-2002-000226",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1188",
+			"source": "CVE",
+			"id": "CVE-2002-1188"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1188",
+			"source": "NVD",
+			"id": "CVE-2002-1188"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/5672",
+			"source": "BID",
+			"id": "5672"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/6217",
+			"source": "BID",
+			"id": "6217"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/5963",
+			"source": "BID",
+			"id": "5963"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:microsoft:internet_explorer",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Internet Explorer"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

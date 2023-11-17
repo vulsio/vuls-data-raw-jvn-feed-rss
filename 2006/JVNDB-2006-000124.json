@@ -1,75 +1,75 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000124.html",
-  "title": "RealNetworks 製品の  swfformat.dll におけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000124.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nRealNetworks RealPlayer には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) Windows 環境において CreateProcess() 関数の呼び出しによる不適切なパスの解釈により、C:program.exe が存在する場合にプログラムを実行してしまう問題が存在します。(CVE-2005-2936)\r\n\r\nその他の問題を利用して悪意あるプログラムを置かれた場合、結果として RealPlayer を実行するユーザの権限でプログラムを実行してしまう可能性があります。\r\n\r\n2) .swf 形式のファイルを処理する際にバッファオーバーフローが発生する問題が存在します。(CVE-2006-0323)\r\n\r\nリモートの攻撃者に悪用された場合、結果として、RealPlayer を実行するユーザの権限で任意のコードが実行される可能性があります。\r\n\r\n3) 特定のコードを含む Web ページを処理する際に、Embedded Player においてヒープオーバーフローが発生する問題が存在します。(CVE-2005-2922)\r\n\r\nリモートの攻撃者に悪用された場合、結果として、RealPlayer を実行するユーザの権限で任意のコードが実行される可能性があります。\r\n\r\n4) .mbc 形式のファイルを処理する際にバッファオーバーフローが発生する問題が存在します。(CVE-2006-1370)\r\n\r\nリモートの攻撃者に悪用された場合、結果として、RealPlayer を実行するユーザの権限で任意のコードが実行される可能性があります。",
-  "identifier": "JVNDB-2006-000124",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0323",
-      "source": "CVE",
-      "id": "CVE-2006-0323"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0323",
-      "source": "NVD",
-      "id": "CVE-2006-0323"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/172489",
-      "source": "CERT-VN",
-      "id": "VU#172489"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/451556",
-      "source": "CERT-VN",
-      "id": "VU#451556"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/231028",
-      "source": "CERT-VN",
-      "id": "VU#231028"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/17202",
-      "source": "BID",
-      "id": "17202"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/alerts/id/218",
-      "source": "ISS",
-      "id": "218"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:realnetworks:realplayer",
-      "version": "2.2",
-      "vendor": "リアルネットワークス",
-      "product": "RealNetworks RealPlayer"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000124.html",
+	"title": "RealNetworks 製品の  swfformat.dll におけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000124.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nRealNetworks RealPlayer には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) Windows 環境において CreateProcess() 関数の呼び出しによる不適切なパスの解釈により、C:program.exe が存在する場合にプログラムを実行してしまう問題が存在します。(CVE-2005-2936)\r\n\r\nその他の問題を利用して悪意あるプログラムを置かれた場合、結果として RealPlayer を実行するユーザの権限でプログラムを実行してしまう可能性があります。\r\n\r\n2) .swf 形式のファイルを処理する際にバッファオーバーフローが発生する問題が存在します。(CVE-2006-0323)\r\n\r\nリモートの攻撃者に悪用された場合、結果として、RealPlayer を実行するユーザの権限で任意のコードが実行される可能性があります。\r\n\r\n3) 特定のコードを含む Web ページを処理する際に、Embedded Player においてヒープオーバーフローが発生する問題が存在します。(CVE-2005-2922)\r\n\r\nリモートの攻撃者に悪用された場合、結果として、RealPlayer を実行するユーザの権限で任意のコードが実行される可能性があります。\r\n\r\n4) .mbc 形式のファイルを処理する際にバッファオーバーフローが発生する問題が存在します。(CVE-2006-1370)\r\n\r\nリモートの攻撃者に悪用された場合、結果として、RealPlayer を実行するユーザの権限で任意のコードが実行される可能性があります。",
+	"identifier": "JVNDB-2006-000124",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0323",
+			"source": "CVE",
+			"id": "CVE-2006-0323"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-0323",
+			"source": "NVD",
+			"id": "CVE-2006-0323"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/172489",
+			"source": "CERT-VN",
+			"id": "VU#172489"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/451556",
+			"source": "CERT-VN",
+			"id": "VU#451556"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/231028",
+			"source": "CERT-VN",
+			"id": "VU#231028"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/17202",
+			"source": "BID",
+			"id": "17202"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/alerts/id/218",
+			"source": "ISS",
+			"id": "218"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:realnetworks:realplayer",
+			"version": "2.2",
+			"vendor": "リアルネットワークス",
+			"product": "RealNetworks RealPlayer"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

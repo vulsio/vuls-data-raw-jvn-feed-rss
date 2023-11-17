@@ -1,163 +1,163 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003959.html",
-  "title": "Apache Axis の getCN 関数における SSL サーバになりすまされる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003959.html",
-  "description": "Apache Axis の getCN 関数は、サーバのホスト名が X.509 証明書のサブジェクトの Common Name (CN) または subjectAltName フィールドのドメイン名と一致することを適切に検証しないため、SSL サーバになりすまされる脆弱性が存在します。\r\n\r\n本問題は CVE-2012-5784 の修正が不完全だったことによる問題です。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-297: Improper Validation of Certificate with Host Mismatch (ホストの不一致による証明書の不適切な検証) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/297.html",
-  "identifier": "JVNDB-2014-003959",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3596",
-      "source": "CVE",
-      "id": "CVE-2014-3596"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3596",
-      "source": "NVD",
-      "id": "CVE-2014-3596"
-    },
-    {
-      "text": "http://www.openwall.com/lists/oss-security/2014/08/20/2",
-      "source": "関連文書",
-      "id": "CVE-2014-3596 - Apache Axis 1 vulnerable to MITM attack"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:axis",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache Axis"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_component_container",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Component Container"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_studio",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Studio"
-    },
-    {
-      "text": "cpe:/a:hitachi:programming_environment_for_java",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "プログラミング環境 for Java"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Smart Edition"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_client",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Client"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Light"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Architect"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
-    }
-  ],
-  "date": "2015-04-22T15:11+09:00",
-  "issued": "2014-08-28T16:24+09:00",
-  "modified": "2015-04-22T15:11+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003959.html",
+	"title": "Apache Axis の getCN 関数における SSL サーバになりすまされる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003959.html",
+	"description": "Apache Axis の getCN 関数は、サーバのホスト名が X.509 証明書のサブジェクトの Common Name (CN) または subjectAltName フィールドのドメイン名と一致することを適切に検証しないため、SSL サーバになりすまされる脆弱性が存在します。\r\n\r\n本問題は CVE-2012-5784 の修正が不完全だったことによる問題です。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-297: Improper Validation of Certificate with Host Mismatch (ホストの不一致による証明書の不適切な検証) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/297.html",
+	"identifier": "JVNDB-2014-003959",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3596",
+			"source": "CVE",
+			"id": "CVE-2014-3596"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3596",
+			"source": "NVD",
+			"id": "CVE-2014-3596"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2014/08/20/2",
+			"source": "関連文書",
+			"id": "CVE-2014-3596 - Apache Axis 1 vulnerable to MITM attack"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:axis",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache Axis"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_component_container",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Component Container"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_studio",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Studio"
+		},
+		{
+			"text": "cpe:/a:hitachi:programming_environment_for_java",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "プログラミング環境 for Java"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Smart Edition"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_client",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Client"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_light",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Light"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_architect",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Architect"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+		}
+	],
+	"date": "2015-04-22T15:11+09:00",
+	"issued": "2014-08-28T16:24+09:00",
+	"modified": "2015-04-22T15:11+09:00"
 }

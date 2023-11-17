@@ -1,62 +1,62 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000325.html",
-  "title": "Mozilla Firefox の javascript 形式の URL におけるクロスサイトスクリプティングの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000325.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMozilla 1.7.7 以前、Firefox 1.0.3 以前 には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・擬似プロトコル「view-source:」および「jar:」において「javascript:」形式の URL が指定された場合に入力データの検証が不適切であるため、過去に修正された mfsa2005-37 の問題と同様の手法によりクロスサイトスクリプティング攻撃が可能となる問題 (CAN-2005-1531、mfsa2005-43)\r\n\r\nまた、コードをネストさせることにより、スクリプトセキュリティマネージャによるチェックが回避され、不正にスクリプトを実行される可能性があります。\r\n\r\n・JavaScript の eval() 関数およびスクリプトオブジェクトの呼び出しにおいて権限の管理が不適切であるため、これらがより高い権限で実行されてしまう問題 (CAN-2005-1532、mfsa2005-44)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した Web サイトに標的ユーザを誘導することにより、結果的に重要な情報を奪取する、あるいは任意のコードを実行する可能性があります。\r\n\r\n尚、Thunderbird 1.0.2 以前が CAN-2005-1532 の問題の影響を受けることが Mozilla Foundation より報告されています。",
-  "identifier": "JVNDB-2005-000325",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1531",
-      "source": "CVE",
-      "id": "CVE-2005-1531"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1531",
-      "source": "NVD",
-      "id": "CVE-2005-1531"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/0530",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-0530"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:mozilla:firefox",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla Firefox"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000325.html",
+	"title": "Mozilla Firefox の javascript 形式の URL におけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000325.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMozilla 1.7.7 以前、Firefox 1.0.3 以前 には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・擬似プロトコル「view-source:」および「jar:」において「javascript:」形式の URL が指定された場合に入力データの検証が不適切であるため、過去に修正された mfsa2005-37 の問題と同様の手法によりクロスサイトスクリプティング攻撃が可能となる問題 (CAN-2005-1531、mfsa2005-43)\r\n\r\nまた、コードをネストさせることにより、スクリプトセキュリティマネージャによるチェックが回避され、不正にスクリプトを実行される可能性があります。\r\n\r\n・JavaScript の eval() 関数およびスクリプトオブジェクトの呼び出しにおいて権限の管理が不適切であるため、これらがより高い権限で実行されてしまう問題 (CAN-2005-1532、mfsa2005-44)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した Web サイトに標的ユーザを誘導することにより、結果的に重要な情報を奪取する、あるいは任意のコードを実行する可能性があります。\r\n\r\n尚、Thunderbird 1.0.2 以前が CAN-2005-1532 の問題の影響を受けることが Mozilla Foundation より報告されています。",
+	"identifier": "JVNDB-2005-000325",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1531",
+			"source": "CVE",
+			"id": "CVE-2005-1531"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1531",
+			"source": "NVD",
+			"id": "CVE-2005-1531"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/0530",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-0530"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:mozilla:firefox",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla Firefox"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

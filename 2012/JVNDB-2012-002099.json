@@ -1,73 +1,73 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002099.html",
-  "title": "OpenSSL の asn1_d2i_read_bio 関数におけるバッファオーバーフロー攻撃を誘発される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002099.html",
-  "description": "OpenSSL の crypto/asn1/a_d2i_fp.c 内の asn1_d2i_read_bio 関数は、整数データを適切に解釈しないため、バッファオーバーフロー攻撃を誘発される、およびサービス運用妨害 (メモリ破損) 状態となる、またはその他の詳細不明な影響を受ける脆弱性が存在します。",
-  "identifier": "JVNDB-2012-002099",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU92046435/index.html",
-      "source": "JVN",
-      "id": "JVNVU#92046435"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2110",
-      "source": "CVE",
-      "id": "CVE-2012-2110"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2110",
-      "source": "NVD",
-      "id": "CVE-2012-2110"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/a:vmware:esx",
-      "version": "2.2",
-      "vendor": "VMware",
-      "product": "VMware ESX"
-    },
-    {
-      "text": "cpe:/a:vmware:esxi",
-      "version": "2.2",
-      "vendor": "VMware",
-      "product": "VMware ESXi"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2013-06-07T11:33+09:00",
-  "issued": "2012-04-23T14:21+09:00",
-  "modified": "2013-06-07T11:33+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002099.html",
+	"title": "OpenSSL の asn1_d2i_read_bio 関数におけるバッファオーバーフロー攻撃を誘発される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-002099.html",
+	"description": "OpenSSL の crypto/asn1/a_d2i_fp.c 内の asn1_d2i_read_bio 関数は、整数データを適切に解釈しないため、バッファオーバーフロー攻撃を誘発される、およびサービス運用妨害 (メモリ破損) 状態となる、またはその他の詳細不明な影響を受ける脆弱性が存在します。",
+	"identifier": "JVNDB-2012-002099",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU92046435/index.html",
+			"source": "JVN",
+			"id": "JVNVU#92046435"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2110",
+			"source": "CVE",
+			"id": "CVE-2012-2110"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-2110",
+			"source": "NVD",
+			"id": "CVE-2012-2110"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/a:vmware:esx",
+			"version": "2.2",
+			"vendor": "VMware",
+			"product": "VMware ESX"
+		},
+		{
+			"text": "cpe:/a:vmware:esxi",
+			"version": "2.2",
+			"vendor": "VMware",
+			"product": "VMware ESXi"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2013-06-07T11:33+09:00",
+	"issued": "2012-04-23T14:21+09:00",
+	"modified": "2013-06-07T11:33+09:00"
 }

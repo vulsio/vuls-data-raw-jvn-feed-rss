@@ -1,55 +1,55 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000005.html",
-  "title": "Linux Kernel の mlockall() 関数における RLIM_MEMLOCK の制限を回避される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000005.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.6.x には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・プロセスを物理メモリにロックする mlockall() 関数に不備が存在するため、RLIM_MEMLOCK の制限を回避可能な問題 (CAN-2005-0179) (Linux Kernel 2.6.10 以前)\r\n\r\n・sg_scsi_ioctl() 関数には、整数の正負解釈に不備が複数存在するため、負の整数を引数として処理した場合に整数オーバーフローが発生する問題 (CAN-2005-0180) (Linux Kernel 2.6.10 以前)\r\n\r\n・AMD64 または Intel EM64T アーキテクチャ上で動作する場合に、OUTS 命令に不備が存在するため、不正に IO ポートに書き込むことが可能な問題 (CAN-2005-0204)\r\n\r\nこれらの問題を利用するローカルの攻撃者は、結果としてカーネルをクラッシュさせる、あるいはカーネルメモリ内の情報を奪取できる可能性があります。\r\n\r\n尚、CAN-2005-0179 および CAN-2005-0204 の問題に関しては、Red Hat Enterprise Linux 3、MIRACLE LINUX V3.0/V3.0 for x86-64 に同梱されている Linux Kernel (2.4.x ベース) が影響を受けることが報告されています。",
-  "identifier": "JVNDB-2005-000005",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0179",
-      "source": "CVE",
-      "id": "CVE-2005-0179"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0179",
-      "source": "NVD",
-      "id": "CVE-2005-0179"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12198",
-      "source": "BID",
-      "id": "12198"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12598",
-      "source": "BID",
-      "id": "12598"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.1",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000005.html",
+	"title": "Linux Kernel の mlockall() 関数における RLIM_MEMLOCK の制限を回避される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000005.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.6.x には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・プロセスを物理メモリにロックする mlockall() 関数に不備が存在するため、RLIM_MEMLOCK の制限を回避可能な問題 (CAN-2005-0179) (Linux Kernel 2.6.10 以前)\r\n\r\n・sg_scsi_ioctl() 関数には、整数の正負解釈に不備が複数存在するため、負の整数を引数として処理した場合に整数オーバーフローが発生する問題 (CAN-2005-0180) (Linux Kernel 2.6.10 以前)\r\n\r\n・AMD64 または Intel EM64T アーキテクチャ上で動作する場合に、OUTS 命令に不備が存在するため、不正に IO ポートに書き込むことが可能な問題 (CAN-2005-0204)\r\n\r\nこれらの問題を利用するローカルの攻撃者は、結果としてカーネルをクラッシュさせる、あるいはカーネルメモリ内の情報を奪取できる可能性があります。\r\n\r\n尚、CAN-2005-0179 および CAN-2005-0204 の問題に関しては、Red Hat Enterprise Linux 3、MIRACLE LINUX V3.0/V3.0 for x86-64 に同梱されている Linux Kernel (2.4.x ベース) が影響を受けることが報告されています。",
+	"identifier": "JVNDB-2005-000005",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0179",
+			"source": "CVE",
+			"id": "CVE-2005-0179"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0179",
+			"source": "NVD",
+			"id": "CVE-2005-0179"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12198",
+			"source": "BID",
+			"id": "12198"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12598",
+			"source": "BID",
+			"id": "12598"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.1",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

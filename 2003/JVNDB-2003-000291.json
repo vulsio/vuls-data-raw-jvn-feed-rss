@@ -1,55 +1,55 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000291.html",
-  "title": "Microsoft Internet Explorer における適切にオブジェクトタグを処理しないことによる任意のコードを実行される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000291.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Internet Explorer (IE) には、以下のような状況において、OBJECT タグが埋め込まれた HTML ファイルを処理する際に Web サーバから返されるオブジェクトの種類を適切に判断しない問題が存在します。\r\n\r\n・IE が XML データベース接続を行っている間\r\n・ポップアップウインドウに OBJECT タグが含まれる場合\r\n\r\nそのため、解釈した OBJECT タグには対応しないファイル形式のオブジェクト (スクリプトを含む) であっても IE はそのファイルを読み込んでしまい、処理を実行してしまいます。\r\n\r\nこの問題を利用するリモートの攻撃者は、Object タグを利用してスクリプトが呼び出されるような悪意ある HTML を作成し、標的ユーザを攻撃者の Web サイトに誘導する、もしくは HTML 形式の電子メールを送りつけることにより、標的ユーザの実行権限で任意のコードを実行できる可能性が存在します。\r\n\r\n2004 年 3 月 17 日の時点において、本問題を利用した Bagle の亜種のワームが複数発見されています。本問題の影響を受ける可能性があるホストは、可及的速やかにパッチを適用することを推奨します。",
-  "identifier": "JVNDB-2003-000291",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0809",
-      "source": "CVE",
-      "id": "CVE-2003-0809"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0809",
-      "source": "NVD",
-      "id": "CVE-2003-0809"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/8565",
-      "source": "BID",
-      "id": "8565"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/8556",
-      "source": "BID",
-      "id": "8556"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:microsoft:internet_explorer",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Internet Explorer"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2003",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2003"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000291.html",
+	"title": "Microsoft Internet Explorer における適切にオブジェクトタグを処理しないことによる任意のコードを実行される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000291.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Internet Explorer (IE) には、以下のような状況において、OBJECT タグが埋め込まれた HTML ファイルを処理する際に Web サーバから返されるオブジェクトの種類を適切に判断しない問題が存在します。\r\n\r\n・IE が XML データベース接続を行っている間\r\n・ポップアップウインドウに OBJECT タグが含まれる場合\r\n\r\nそのため、解釈した OBJECT タグには対応しないファイル形式のオブジェクト (スクリプトを含む) であっても IE はそのファイルを読み込んでしまい、処理を実行してしまいます。\r\n\r\nこの問題を利用するリモートの攻撃者は、Object タグを利用してスクリプトが呼び出されるような悪意ある HTML を作成し、標的ユーザを攻撃者の Web サイトに誘導する、もしくは HTML 形式の電子メールを送りつけることにより、標的ユーザの実行権限で任意のコードを実行できる可能性が存在します。\r\n\r\n2004 年 3 月 17 日の時点において、本問題を利用した Bagle の亜種のワームが複数発見されています。本問題の影響を受ける可能性があるホストは、可及的速やかにパッチを適用することを推奨します。",
+	"identifier": "JVNDB-2003-000291",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0809",
+			"source": "CVE",
+			"id": "CVE-2003-0809"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0809",
+			"source": "NVD",
+			"id": "CVE-2003-0809"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/8565",
+			"source": "BID",
+			"id": "8565"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/8556",
+			"source": "BID",
+			"id": "8556"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:microsoft:internet_explorer",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Internet Explorer"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2003",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2003"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

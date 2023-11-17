@@ -1,66 +1,66 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002528.html",
-  "title": "IBM Lotus Domino の IMAP サーバにスタックベースのバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002528.html",
-  "description": "IBM Lotus Domino がサポートする IMAP サーバには、メールボックス名の処理に起因するスタックベースのバッファオーバーフローの脆弱性が存在します。ユーザが指定した長大なメールボックス名を処理することで、スタックベースのバッファオーバーフローが発生します。IMAP コマンドを受け付けるのはユーザ認証完了後であるため、本脆弱性を使用した攻撃が可能なのは、当該製品にログインしたユーザのみであると考えられます。この攻撃手法は、\"EMPHASISMINE\" と呼ばれています。公開されている攻撃コードでは EXAMINE コマンドが使用されていますが、メールボックス名を指定するその他の IMAP コマンドも本脆弱性の影響を受ける可能性があります。\r\n\r\nEXAMINE コマンド\r\nhttps://tools.ietf.org/html/rfc3501#section-6.3.2\r\n\r\nWindows 版 Domino が使用する少なくとも一つのライブラリは ASLR に対応しておらず、最新の Windows 環境においても容易にバッファオーバーフローの脆弱性を使用した攻撃が可能です。また、Linux など他のプラットフォームで動作する Domino に対しても、この脆弱性を使用した攻撃が可能です。",
-  "identifier": "JVNDB-2017-002528",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU91685026/",
-      "source": "JVN",
-      "id": "JVNVU#91685026"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1274",
-      "source": "CVE",
-      "id": "CVE-2017-1274"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-1274",
-      "source": "NVD",
-      "id": "CVE-2017-1274"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/676632",
-      "source": "CERT-VN",
-      "id": "VU#676632"
-    },
-    {
-      "text": "https://tools.ietf.org/html/rfc3501#section-6.3.2",
-      "source": "IETF",
-      "id": "6.3.2.  EXAMINE Command"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:ibm:lotus_domino",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Domino (旧 IBM Lotus Domino)"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.5",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "8.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2017-06-01T15:12+09:00",
-  "issued": "2017-04-19T15:54+09:00",
-  "modified": "2017-06-01T15:12+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002528.html",
+	"title": "IBM Lotus Domino の IMAP サーバにスタックベースのバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002528.html",
+	"description": "IBM Lotus Domino がサポートする IMAP サーバには、メールボックス名の処理に起因するスタックベースのバッファオーバーフローの脆弱性が存在します。ユーザが指定した長大なメールボックス名を処理することで、スタックベースのバッファオーバーフローが発生します。IMAP コマンドを受け付けるのはユーザ認証完了後であるため、本脆弱性を使用した攻撃が可能なのは、当該製品にログインしたユーザのみであると考えられます。この攻撃手法は、\"EMPHASISMINE\" と呼ばれています。公開されている攻撃コードでは EXAMINE コマンドが使用されていますが、メールボックス名を指定するその他の IMAP コマンドも本脆弱性の影響を受ける可能性があります。\r\n\r\nEXAMINE コマンド\r\nhttps://tools.ietf.org/html/rfc3501#section-6.3.2\r\n\r\nWindows 版 Domino が使用する少なくとも一つのライブラリは ASLR に対応しておらず、最新の Windows 環境においても容易にバッファオーバーフローの脆弱性を使用した攻撃が可能です。また、Linux など他のプラットフォームで動作する Domino に対しても、この脆弱性を使用した攻撃が可能です。",
+	"identifier": "JVNDB-2017-002528",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU91685026/",
+			"source": "JVN",
+			"id": "JVNVU#91685026"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1274",
+			"source": "CVE",
+			"id": "CVE-2017-1274"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-1274",
+			"source": "NVD",
+			"id": "CVE-2017-1274"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/676632",
+			"source": "CERT-VN",
+			"id": "VU#676632"
+		},
+		{
+			"text": "https://tools.ietf.org/html/rfc3501#section-6.3.2",
+			"source": "IETF",
+			"id": "6.3.2.  EXAMINE Command"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ibm:lotus_domino",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Domino (旧 IBM Lotus Domino)"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2017-06-01T15:12+09:00",
+	"issued": "2017-04-19T15:54+09:00",
+	"modified": "2017-06-01T15:12+09:00"
 }

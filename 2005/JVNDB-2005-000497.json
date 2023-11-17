@@ -1,65 +1,65 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000497.html",
-  "title": "Linux Kernel の raw_sendmsg() 関数におけるカーネルメモリにアクセスされる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000497.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.4.x、2.6.13 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) 64 bit システム用の Linux Kernel には、sendmsg() 関数において msg_control の内容をカーネルメモリにコピーする際の境界チェックに不備があるため、バッファオーバーフローが発生する問題が存在します。(CAN-2005-2490)\r\n\r\nこの問題を利用するローカルの攻撃者は、メモリ領域を破壊し、結果として root 権限を奪取する、さらにはカーネル権限で任意のコードを実行する可能性があります。\r\n\r\n2) raw_sendmsg() 関数において、__get_user() 関数のチェックに不備が存在するため、任意のカーネルメモリにアクセスすることが可能となる問題が存在します。(CAN-2005-2492)\r\n\r\nこの問題を利用するローカルの攻撃者は、特定の IO ポートにアクセスすることにより、任意のカーネルメモリの内容を読み取り、重要な情報を奪取する可能性があります。さらに、x86 を含む特定のアーキテクチャにおいては、ハードウェア状態を読み取ることでシステムをサービス不能状態に陥らせる可能性があります。",
-  "identifier": "JVNDB-2005-000497",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2492",
-      "source": "CVE",
-      "id": "CVE-2005-2492"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2492",
-      "source": "NVD",
-      "id": "CVE-2005-2492"
-    },
-    {
-      "text": "http://secunia.com/advisories/16747/",
-      "source": "SECUNIA",
-      "id": "SA16747"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/14787",
-      "source": "BID",
-      "id": "14787"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/14785",
-      "source": "BID",
-      "id": "14785"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/1701",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-1701"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "3.6",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:P/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000497.html",
+	"title": "Linux Kernel の raw_sendmsg() 関数におけるカーネルメモリにアクセスされる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000497.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.4.x、2.6.13 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) 64 bit システム用の Linux Kernel には、sendmsg() 関数において msg_control の内容をカーネルメモリにコピーする際の境界チェックに不備があるため、バッファオーバーフローが発生する問題が存在します。(CAN-2005-2490)\r\n\r\nこの問題を利用するローカルの攻撃者は、メモリ領域を破壊し、結果として root 権限を奪取する、さらにはカーネル権限で任意のコードを実行する可能性があります。\r\n\r\n2) raw_sendmsg() 関数において、__get_user() 関数のチェックに不備が存在するため、任意のカーネルメモリにアクセスすることが可能となる問題が存在します。(CAN-2005-2492)\r\n\r\nこの問題を利用するローカルの攻撃者は、特定の IO ポートにアクセスすることにより、任意のカーネルメモリの内容を読み取り、重要な情報を奪取する可能性があります。さらに、x86 を含む特定のアーキテクチャにおいては、ハードウェア状態を読み取ることでシステムをサービス不能状態に陥らせる可能性があります。",
+	"identifier": "JVNDB-2005-000497",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2492",
+			"source": "CVE",
+			"id": "CVE-2005-2492"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2492",
+			"source": "NVD",
+			"id": "CVE-2005-2492"
+		},
+		{
+			"text": "http://secunia.com/advisories/16747/",
+			"source": "SECUNIA",
+			"id": "SA16747"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/14787",
+			"source": "BID",
+			"id": "14787"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/14785",
+			"source": "BID",
+			"id": "14785"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/1701",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-1701"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "3.6",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:P/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

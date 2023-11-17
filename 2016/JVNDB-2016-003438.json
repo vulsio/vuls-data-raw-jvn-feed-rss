@@ -1,68 +1,68 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003438.html",
-  "title": "Apache HTTPD の HTTP/2 通信における X.509 クライアント証明書の認証処理の問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003438.html",
-  "description": "Apache HTTPD では、HTTP/2 に対応するモジュール mod_http2 が、バージョン 2.4.17 から提供されています。mod_http2 は実験的なものであり、デフォルトではコンパイルされず、また、設定ファイルの初期設定では HTTP/1.1 のみが有効になっています。\r\n\r\nApache HTTPD は、HTTP/2 経由でリソースへのアクセスを提供する際に、クライアント証明書の検証結果を考慮していません。\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-284 として公開されています。\r\n\r\nCWE-284: Improper Access Control\r\nhttp://cwe.mitre.org/data/definitions/284.html",
-  "identifier": "JVNDB-2016-003438",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU97485903",
-      "source": "JVN",
-      "id": "JVNVU#97485903"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4979",
-      "source": "CVE",
-      "id": "CVE-2016-4979"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4979",
-      "source": "NVD",
-      "id": "CVE-2016-4979"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:http_server",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache HTTP Server"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Application Server"
-    },
-    {
-      "text": "cpe:/a:oracle:enterprise_manager",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Enterprise Manager"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
-    }
-  ],
-  "date": "2016-11-22T15:46+09:00",
-  "issued": "2016-07-07T16:16+09:00",
-  "modified": "2016-11-22T15:46+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003438.html",
+	"title": "Apache HTTPD の HTTP/2 通信における X.509 クライアント証明書の認証処理の問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-003438.html",
+	"description": "Apache HTTPD では、HTTP/2 に対応するモジュール mod_http2 が、バージョン 2.4.17 から提供されています。mod_http2 は実験的なものであり、デフォルトではコンパイルされず、また、設定ファイルの初期設定では HTTP/1.1 のみが有効になっています。\r\n\r\nApache HTTPD は、HTTP/2 経由でリソースへのアクセスを提供する際に、クライアント証明書の検証結果を考慮していません。\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-284 として公開されています。\r\n\r\nCWE-284: Improper Access Control\r\nhttp://cwe.mitre.org/data/definitions/284.html",
+	"identifier": "JVNDB-2016-003438",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU97485903",
+			"source": "JVN",
+			"id": "JVNVU#97485903"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4979",
+			"source": "CVE",
+			"id": "CVE-2016-4979"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-4979",
+			"source": "NVD",
+			"id": "CVE-2016-4979"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:http_server",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache HTTP Server"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Application Server"
+		},
+		{
+			"text": "cpe:/a:oracle:enterprise_manager",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Enterprise Manager"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+		}
+	],
+	"date": "2016-11-22T15:46+09:00",
+	"issued": "2016-07-07T16:16+09:00",
+	"modified": "2016-11-22T15:46+09:00"
 }

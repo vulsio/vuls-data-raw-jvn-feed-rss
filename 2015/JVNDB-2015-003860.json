@@ -1,59 +1,59 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003860.html",
-  "title": "SolarWinds N-able N-central にドメイン管理パスワードを復号するためのパラメータがハードコードされている問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003860.html",
-  "description": "SolarWinds N-able が提供する N-central は、エージェントベースの企業向け管理ソリューションです。N-central のウェブインターフェースには暗号化に用いられる複数のパラメータがハードコードされているため、これらのパラメータを組み合わせることで、パスワードの解読が可能です。\r\n\r\nハードコードされたセキュリティコンスタントを使用する問題 (CWE-547)\r\nN-central の RSM サービスは、N-able ドメイン管理者アカウントのパスワードを AES128 で暗号化し保持します。認証済みのローカルもしくは遠隔のユーザは、RSM ウェブページのソースから暗号化されたパスワードにアクセスすることができます。この認証情報は、プログラムファイルの閲覧権限を持つローカルユーザであれば、ローカルの RSM 設定ファイルから取得することも可能です。解読に必要な暗号鍵とパラメータはハードコードされているため、ローカルユーザシステムに保存された N-central の RSM から抜き出される可能性があります。攻撃者はこの情報を用いて、N-central のドメイン管理者パスワードを復号し、取得することが可能です。\r\n\r\nCWE-547: Use of Hard-coded, Security-relevant Constants\r\nhttp://cwe.mitre.org/data/definitions/547.html",
-  "identifier": "JVNDB-2015-003860",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU91026764/index.html",
-      "source": "JVN",
-      "id": "JVNVU#91026764"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5610",
-      "source": "CVE",
-      "id": "CVE-2015-5610"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5610",
-      "source": "NVD",
-      "id": "CVE-2015-5610"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/912036",
-      "source": "CERT-VN",
-      "id": "VU#912036"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-      "id": "CWE-200",
-      "title": "情報漏えい(CWE-200)"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:solarwinds:n-able_n-central",
-      "version": "2.2",
-      "vendor": "SolarWinds",
-      "product": "N-Able N-Central"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
-    }
-  ],
-  "date": "2015-07-23T11:33+09:00",
-  "issued": "2015-07-23T11:33+09:00",
-  "modified": "2015-07-23T11:33+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003860.html",
+	"title": "SolarWinds N-able N-central にドメイン管理パスワードを復号するためのパラメータがハードコードされている問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-003860.html",
+	"description": "SolarWinds N-able が提供する N-central は、エージェントベースの企業向け管理ソリューションです。N-central のウェブインターフェースには暗号化に用いられる複数のパラメータがハードコードされているため、これらのパラメータを組み合わせることで、パスワードの解読が可能です。\r\n\r\nハードコードされたセキュリティコンスタントを使用する問題 (CWE-547)\r\nN-central の RSM サービスは、N-able ドメイン管理者アカウントのパスワードを AES128 で暗号化し保持します。認証済みのローカルもしくは遠隔のユーザは、RSM ウェブページのソースから暗号化されたパスワードにアクセスすることができます。この認証情報は、プログラムファイルの閲覧権限を持つローカルユーザであれば、ローカルの RSM 設定ファイルから取得することも可能です。解読に必要な暗号鍵とパラメータはハードコードされているため、ローカルユーザシステムに保存された N-central の RSM から抜き出される可能性があります。攻撃者はこの情報を用いて、N-central のドメイン管理者パスワードを復号し、取得することが可能です。\r\n\r\nCWE-547: Use of Hard-coded, Security-relevant Constants\r\nhttp://cwe.mitre.org/data/definitions/547.html",
+	"identifier": "JVNDB-2015-003860",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU91026764/index.html",
+			"source": "JVN",
+			"id": "JVNVU#91026764"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5610",
+			"source": "CVE",
+			"id": "CVE-2015-5610"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5610",
+			"source": "NVD",
+			"id": "CVE-2015-5610"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/912036",
+			"source": "CERT-VN",
+			"id": "VU#912036"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:solarwinds:n-able_n-central",
+			"version": "2.2",
+			"vendor": "SolarWinds",
+			"product": "N-Able N-Central"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+		}
+	],
+	"date": "2015-07-23T11:33+09:00",
+	"issued": "2015-07-23T11:33+09:00",
+	"modified": "2015-07-23T11:33+09:00"
 }

@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000064.html",
-  "title": "SquirrelMail の read_body.php におけるスクリプトや HTML を注入される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000064.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSquirrelmail は、PHP4 言語で開発 された Web メールパッケージです。\r\n\r\nSquirrelmail 1.2.10 以前の read_body.php には、ユーザからの mailbox および passwd_id パラメータに対する入力値へのフィルタリングが適切に行われない問題が存在します。\r\nそのため、この問題を利用することで、リモートの攻撃者はクロスサイトスクリプティング攻撃を行うことが可能です。\r\n\r\n結果として、リモートの攻撃者は、問題を抱える Web サイトを介して標的ユーザに任意のスクリプトを実行させることが可能です。\r\n\r\nこの問題を修正する RPM が Red Hat Linux より提供されています。この RPM を適用することで、Squirrelmail 1.2.8 で不完全に修正されていた global.php 内の strip_tags() 関数に由来するクロスサイトスクリプティングの問題も解消することが可能です。",
-  "identifier": "JVNDB-2003-000064",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1341",
-      "source": "CVE",
-      "id": "CVE-2002-1341"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1341",
-      "source": "NVD",
-      "id": "CVE-2002-1341"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/6302",
-      "source": "BID",
-      "id": "6302"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/7019",
-      "source": "BID",
-      "id": "7019"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000064.html",
+	"title": "SquirrelMail の read_body.php におけるスクリプトや HTML を注入される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000064.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSquirrelmail は、PHP4 言語で開発 された Web メールパッケージです。\r\n\r\nSquirrelmail 1.2.10 以前の read_body.php には、ユーザからの mailbox および passwd_id パラメータに対する入力値へのフィルタリングが適切に行われない問題が存在します。\r\nそのため、この問題を利用することで、リモートの攻撃者はクロスサイトスクリプティング攻撃を行うことが可能です。\r\n\r\n結果として、リモートの攻撃者は、問題を抱える Web サイトを介して標的ユーザに任意のスクリプトを実行させることが可能です。\r\n\r\nこの問題を修正する RPM が Red Hat Linux より提供されています。この RPM を適用することで、Squirrelmail 1.2.8 で不完全に修正されていた global.php 内の strip_tags() 関数に由来するクロスサイトスクリプティングの問題も解消することが可能です。",
+	"identifier": "JVNDB-2003-000064",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1341",
+			"source": "CVE",
+			"id": "CVE-2002-1341"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1341",
+			"source": "NVD",
+			"id": "CVE-2002-1341"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/6302",
+			"source": "BID",
+			"id": "6302"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/7019",
+			"source": "BID",
+			"id": "7019"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

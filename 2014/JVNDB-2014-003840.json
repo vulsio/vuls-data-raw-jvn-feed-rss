@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003840.html",
-  "title": "Linux Kernel の fs/namespace.c における権限を取得される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003840.html",
-  "description": "Linux Kernel の fs/namespace.c は、バインドマウントの再マウント中に MNT_NODEV、MNT_NOSUID、MNT_NOEXEC の消去、および MNT_ATIME_MASK の変更を適切に制限しないため、権限を取得される、atime が有効なシステム上でバックアップや監査を妨害される、または atime が無効なシステム上でサービス運用妨害 (過剰なファイルシステムの更新) 状態にされる脆弱性が存在します。",
-  "identifier": "JVNDB-2014-003840",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5207",
-      "source": "CVE",
-      "id": "CVE-2014-5207"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5207",
-      "source": "NVD",
-      "id": "CVE-2014-5207"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:H/Au:S/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2014-09-02T14:59+09:00",
-  "issued": "2014-08-19T15:07+09:00",
-  "modified": "2014-09-02T14:59+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003840.html",
+	"title": "Linux Kernel の fs/namespace.c における権限を取得される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-003840.html",
+	"description": "Linux Kernel の fs/namespace.c は、バインドマウントの再マウント中に MNT_NODEV、MNT_NOSUID、MNT_NOEXEC の消去、および MNT_ATIME_MASK の変更を適切に制限しないため、権限を取得される、atime が有効なシステム上でバックアップや監査を妨害される、または atime が無効なシステム上でサービス運用妨害 (過剰なファイルシステムの更新) 状態にされる脆弱性が存在します。",
+	"identifier": "JVNDB-2014-003840",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5207",
+			"source": "CVE",
+			"id": "CVE-2014-5207"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-5207",
+			"source": "NVD",
+			"id": "CVE-2014-5207"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:H/Au:S/C:C/I:C/A:C"
+		}
+	],
+	"date": "2014-09-02T14:59+09:00",
+	"issued": "2014-08-19T15:07+09:00",
+	"modified": "2014-09-02T14:59+09:00"
 }

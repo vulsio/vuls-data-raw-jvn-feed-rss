@@ -1,74 +1,74 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000285.html",
-  "title": "Oracle Application Server の Web Cache にファイルを改ざんされる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000285.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nOracle 9i Application Server には、静的および動的なリクエストデータをキャッシュして、応答速度を向上させるための Web Cache モジュールが同梱されており、ポート 4000 番が Web Cache の管理用 Web インタフェースとして使用されています。\r\n\r\nOracle 9i Application Server に同梱されている Web Cache モジュールには、管理用 Web インタフェースにおいて cache_dump_file および PartialPageErrorPage パラメータのサニタイズ処理が適切に行われない問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、Web ページや電子メールを使用して意図的に作成した URL を、管理インタフェースにアクセス可能なユーザに送りつけ、クリックするよう誘導することにより、結果として、クロスサイトスクリプティング攻撃に利用する、あるいは標的システムの任意のファイルに不正な文字列を追加して改ざんする可能性があります。",
-  "identifier": "JVNDB-2005-000285",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1382",
-      "source": "CVE",
-      "id": "CVE-2005-1382"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1382",
-      "source": "NVD",
-      "id": "CVE-2005-1382"
-    },
-    {
-      "text": "http://secunia.com/advisories/15143/",
-      "source": "SECUNIA",
-      "id": "SA15143"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13422",
-      "source": "BID",
-      "id": "13422"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13421",
-      "source": "BID",
-      "id": "13421"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13420",
-      "source": "BID",
-      "id": "13420"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/20310",
-      "source": "XF",
-      "id": "20310"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/20309",
-      "source": "XF",
-      "id": "20309"
-    },
-    {
-      "text": "http://osvdb.org/displayvuln.php?osvdb_id=15910",
-      "source": "OSVDB",
-      "id": "15910"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:oracle:application_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Application Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000285.html",
+	"title": "Oracle Application Server の Web Cache にファイルを改ざんされる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000285.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nOracle 9i Application Server には、静的および動的なリクエストデータをキャッシュして、応答速度を向上させるための Web Cache モジュールが同梱されており、ポート 4000 番が Web Cache の管理用 Web インタフェースとして使用されています。\r\n\r\nOracle 9i Application Server に同梱されている Web Cache モジュールには、管理用 Web インタフェースにおいて cache_dump_file および PartialPageErrorPage パラメータのサニタイズ処理が適切に行われない問題が存在します。\r\n\r\nこの問題を利用するリモートの攻撃者は、Web ページや電子メールを使用して意図的に作成した URL を、管理インタフェースにアクセス可能なユーザに送りつけ、クリックするよう誘導することにより、結果として、クロスサイトスクリプティング攻撃に利用する、あるいは標的システムの任意のファイルに不正な文字列を追加して改ざんする可能性があります。",
+	"identifier": "JVNDB-2005-000285",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1382",
+			"source": "CVE",
+			"id": "CVE-2005-1382"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1382",
+			"source": "NVD",
+			"id": "CVE-2005-1382"
+		},
+		{
+			"text": "http://secunia.com/advisories/15143/",
+			"source": "SECUNIA",
+			"id": "SA15143"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13422",
+			"source": "BID",
+			"id": "13422"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13421",
+			"source": "BID",
+			"id": "13421"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13420",
+			"source": "BID",
+			"id": "13420"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/20310",
+			"source": "XF",
+			"id": "20310"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/20309",
+			"source": "XF",
+			"id": "20309"
+		},
+		{
+			"text": "http://osvdb.org/displayvuln.php?osvdb_id=15910",
+			"source": "OSVDB",
+			"id": "15910"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:oracle:application_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Application Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

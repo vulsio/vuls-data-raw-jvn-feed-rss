@@ -1,60 +1,60 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-012995.html",
-  "title": "OpenPGP および S/MIME メールクライアントにメッセージの取り扱いに関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-012995.html",
-  "description": "複数のメールクライアントにおいて、OpenPGP および S/MIME メッセージを復号する際に平文メッセージが漏えいする可能性があります。\r\n\r\nOpenPGP および S/MIME をサポートする電子メールクライアントには、攻撃者が細工したコンテンツを挿入した暗号化メールをユーザのメールクライアントで復号させることにより、平文を送信するためのチャネルを確立することが可能です。発見者はこの脆弱性を用いた攻撃を \"CBC/CFB gadget attack\" と呼んでいます。例えば HTML image タグを挿入させることにより、復号されたメッセージが HTTP リクエストの一部として送信されてしまう可能性があります。\r\n\r\n　　*CVE-2017-17688: OpenPGP CFB Attacks\r\n　　*CVE-2017-17689: S/MIME CBC Attacks\r\n\r\nまた、一部のメールクライアントでは、マルチパートの MIME メッセージを正しく分離して処理しないため、攻撃者は暗号化されたメールを平文の MIME パートに含めることが可能になります。この場合、CBC/CFB gadget attack を実行することなく平文メッセージが送信されてしまう可能性があります。\r\n\r\n詳細は、<a href=\"https://efail.de/efail-attack-paper.pdf\" target=\"blank\">発見者が提供する論文</a>を参照して下さい。\r\n",
-  "identifier": "JVNDB-2017-012995",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU95575473/",
-      "source": "JVN",
-      "id": "JVNVU#95575473"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-17688",
-      "source": "CVE",
-      "id": "CVE-2017-17688"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-17689",
-      "source": "CVE",
-      "id": "CVE-2017-17689"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-17689",
-      "source": "NVD",
-      "id": "CVE-2017-17689"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-17688",
-      "source": "NVD",
-      "id": "CVE-2017-17688"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/122919",
-      "source": "CERT-VN",
-      "id": "VU#122919"
-    },
-    {
-      "text": "https://efail.de/",
-      "source": "関連文書",
-      "id": "EFAIL"
-    },
-    {
-      "text": "https://efail.de/efail-attack-paper.pdf",
-      "source": "関連文書",
-      "id": "Efail: Breaking S/MIME and OpenPGP Email Encryption using Exfiltration Channels (draft 0.9.0)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    }
-  ],
-  "date": "2018-08-30T15:07+09:00",
-  "issued": "2018-05-16T15:32+09:00",
-  "modified": "2018-08-30T15:07+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-012995.html",
+	"title": "OpenPGP および S/MIME メールクライアントにメッセージの取り扱いに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-012995.html",
+	"description": "複数のメールクライアントにおいて、OpenPGP および S/MIME メッセージを復号する際に平文メッセージが漏えいする可能性があります。\r\n\r\nOpenPGP および S/MIME をサポートする電子メールクライアントには、攻撃者が細工したコンテンツを挿入した暗号化メールをユーザのメールクライアントで復号させることにより、平文を送信するためのチャネルを確立することが可能です。発見者はこの脆弱性を用いた攻撃を \"CBC/CFB gadget attack\" と呼んでいます。例えば HTML image タグを挿入させることにより、復号されたメッセージが HTTP リクエストの一部として送信されてしまう可能性があります。\r\n\r\n　　*CVE-2017-17688: OpenPGP CFB Attacks\r\n　　*CVE-2017-17689: S/MIME CBC Attacks\r\n\r\nまた、一部のメールクライアントでは、マルチパートの MIME メッセージを正しく分離して処理しないため、攻撃者は暗号化されたメールを平文の MIME パートに含めることが可能になります。この場合、CBC/CFB gadget attack を実行することなく平文メッセージが送信されてしまう可能性があります。\r\n\r\n詳細は、<a href=\"https://efail.de/efail-attack-paper.pdf\" target=\"blank\">発見者が提供する論文</a>を参照して下さい。\r\n",
+	"identifier": "JVNDB-2017-012995",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU95575473/",
+			"source": "JVN",
+			"id": "JVNVU#95575473"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-17688",
+			"source": "CVE",
+			"id": "CVE-2017-17688"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-17689",
+			"source": "CVE",
+			"id": "CVE-2017-17689"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-17689",
+			"source": "NVD",
+			"id": "CVE-2017-17689"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-17688",
+			"source": "NVD",
+			"id": "CVE-2017-17688"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/122919",
+			"source": "CERT-VN",
+			"id": "VU#122919"
+		},
+		{
+			"text": "https://efail.de/",
+			"source": "関連文書",
+			"id": "EFAIL"
+		},
+		{
+			"text": "https://efail.de/efail-attack-paper.pdf",
+			"source": "関連文書",
+			"id": "Efail: Breaking S/MIME and OpenPGP Email Encryption using Exfiltration Channels (draft 0.9.0)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"date": "2018-08-30T15:07+09:00",
+	"issued": "2018-05-16T15:32+09:00",
+	"modified": "2018-08-30T15:07+09:00"
 }

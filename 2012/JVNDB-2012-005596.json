@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005596.html",
-  "title": "libssh の複数の関数におけるメモリ二重解放の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005596.html",
-  "description": "libssh の下記の関数には、メモリを二重に解放する不備があるため、サービス運用妨害 (クラッシュ) 状態になる、および任意のコードを実行される脆弱性が存在します。\r\n\r\n(1) agent.c 内の agent_sign_data 関数\r\n(2) channels.c 内の channel_request 関数\r\n(3) auth.c 内の ssh_userauth_pubkey 関数\r\n(4) sftp.c 内の sftp_parse_attr_3 関数\r\n(5) keyfiles.c 内の try_publickey_from_file 関数",
-  "identifier": "JVNDB-2012-005596",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4559",
-      "source": "CVE",
-      "id": "CVE-2012-4559"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4559",
-      "source": "NVD",
-      "id": "CVE-2012-4559"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-      "id": "CWE-399",
-      "title": "リソース管理の問題(CWE-399)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:libssh:libssh",
-      "version": "2.2",
-      "vendor": "libssh",
-      "product": "libssh"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2012-12-21T15:18+09:00",
-  "issued": "2012-12-04T14:26+09:00",
-  "modified": "2012-12-21T15:18+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005596.html",
+	"title": "libssh の複数の関数におけるメモリ二重解放の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2012/JVNDB-2012-005596.html",
+	"description": "libssh の下記の関数には、メモリを二重に解放する不備があるため、サービス運用妨害 (クラッシュ) 状態になる、および任意のコードを実行される脆弱性が存在します。\r\n\r\n(1) agent.c 内の agent_sign_data 関数\r\n(2) channels.c 内の channel_request 関数\r\n(3) auth.c 内の ssh_userauth_pubkey 関数\r\n(4) sftp.c 内の sftp_parse_attr_3 関数\r\n(5) keyfiles.c 内の try_publickey_from_file 関数",
+	"identifier": "JVNDB-2012-005596",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4559",
+			"source": "CVE",
+			"id": "CVE-2012-4559"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-4559",
+			"source": "NVD",
+			"id": "CVE-2012-4559"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+			"id": "CWE-399",
+			"title": "リソース管理の問題(CWE-399)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:libssh:libssh",
+			"version": "2.2",
+			"vendor": "libssh",
+			"product": "libssh"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2012-12-21T15:18+09:00",
+	"issued": "2012-12-04T14:26+09:00",
+	"modified": "2012-12-21T15:18+09:00"
 }

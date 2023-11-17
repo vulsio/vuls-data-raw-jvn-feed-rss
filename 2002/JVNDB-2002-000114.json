@@ -1,78 +1,78 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000114.html",
-  "title": "Unzip ユーティリティのアーカイブ抽出処理における (.. dotdot) ディレクトリトラバーサルの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000114.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nRed Hat Linux および Sun Cobalt RaQ には、アーカイブを展開するためのユーティリティである GNU tar と unzip が同梱されています。この 2 つのユーティリティには、\"..\" 文字を含むファイル名のアーカイブや \"/\" 文字で始まるファイル名を含むアーカイブを展開する処理に問題が存在します。 \r\n\r\nこの問題を利用する攻撃者は、特定の環境下で標的ユーザに意図的に作成したアーカイブを展開させることで、ホスト上の任意のファイルを上書きさせることが可能です。 \r\n\r\n尚、攻撃者は、アーカイブの伸長先のディレクトリから上書き対象のファイルまでの相対パス表記を必要とします。",
-  "identifier": "JVNDB-2002-000114",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1268",
-      "source": "CVE",
-      "id": "CVE-2001-1268"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2001-1268",
-      "source": "NVD",
-      "id": "CVE-2001-1268"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/5834",
-      "source": "BID",
-      "id": "5834"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/5835",
-      "source": "BID",
-      "id": "5835"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/3024",
-      "source": "BID",
-      "id": "3024"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_3",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ3"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_4",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ4"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_550",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ550"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQXTR"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.1",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000114.html",
+	"title": "Unzip ユーティリティのアーカイブ抽出処理における (.. dotdot) ディレクトリトラバーサルの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000114.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nRed Hat Linux および Sun Cobalt RaQ には、アーカイブを展開するためのユーティリティである GNU tar と unzip が同梱されています。この 2 つのユーティリティには、\"..\" 文字を含むファイル名のアーカイブや \"/\" 文字で始まるファイル名を含むアーカイブを展開する処理に問題が存在します。 \r\n\r\nこの問題を利用する攻撃者は、特定の環境下で標的ユーザに意図的に作成したアーカイブを展開させることで、ホスト上の任意のファイルを上書きさせることが可能です。 \r\n\r\n尚、攻撃者は、アーカイブの伸長先のディレクトリから上書き対象のファイルまでの相対パス表記を必要とします。",
+	"identifier": "JVNDB-2002-000114",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1268",
+			"source": "CVE",
+			"id": "CVE-2001-1268"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2001-1268",
+			"source": "NVD",
+			"id": "CVE-2001-1268"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/5834",
+			"source": "BID",
+			"id": "5834"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/5835",
+			"source": "BID",
+			"id": "5835"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/3024",
+			"source": "BID",
+			"id": "3024"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_3",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ3"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_4",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ4"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_550",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ550"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQXTR"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.1",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

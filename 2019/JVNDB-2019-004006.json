@@ -1,68 +1,68 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-004006.html",
-  "title": "Microsoft Windows タスクスケジューラにおける権限昇格の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-004006.html",
-  "description": "Microsoft Windows には、タスクスケジューラの SetJobFileSecurityByName() 関数に起因する権限昇格の脆弱性が存在します。\r\n\r\nタスクスケジューラは、決められた時間にタスクを実行するための、Microsoft Windows が持つコンポーネントです。schtasks.exe がタスクスケジューラのフロントエンドを担い、SYSTEM 権限で動作する Windows サービスがバックエンドとして機能します。タスクスケジューラが用いる schedsvc.dll というライブラリの中に tsched::SetJobFileSecurityByName() と呼ばれる関数がありますが、この関数により各 .job ファイルのアクセス権限が設定されます。\r\n\r\nタスクスケジューラは <a href=\"https://docs.microsoft.com/en-us/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo\">SetSecurityInfo()</a>&nbsp;関数が呼ばれた時点で NT Authority\\SYSTEM トークンを持ちます。そのため、タスクスケジューラは本来であれば SYSTEM あるいは他の高い権限を持つアカウントでなければコントロールできないはずのファイルに、フルアクセス権限を付与することができます。\r\n\r\nWindows Vista より古い Windows では、%Windir%\\tasks ディレクトリの .job ファイルが使用されます。このような古いバージョンの Windows に由来する schtasks.exe を新しいバージョンの Windows で動作させた場合、これらの .job ファイルは %Windir%\\system32\\tasks ディレクトリに移動されますが、その際に NT Authority\\SYSTEM トークンを持つタスクスケジューラにより、すべてのアカウントに対するフルアクセス権限を持つハードリンクが作成されることになります。本脆弱性の発見者により公開された実証コードはこのようなタスクスケジューラの挙動を利用したものです。\r\n\r\n本脆弱性について CERT/CC では公開された実証コードが、32 ビットおよび 64 ビットの Windows 10、Windows 2016 および Windows 2019 で動作することを確認しています。Windows 8 では、本実証コードは一般ユーザが書き込み権限をもつファイルに対してのみ有効であり、攻撃の有効性はごくわずかであると考えられます。Windows 7 においては本実証コードは有効ではありません。",
-  "identifier": "JVNDB-2019-004006",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU93881163",
-      "source": "JVN",
-      "id": "JVNVU#93881163"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-1069",
-      "source": "CVE",
-      "id": "CVE-2019-1069"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-1069",
-      "source": "NVD",
-      "id": "CVE-2019-1069"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/119704",
-      "source": "CERT-VN",
-      "id": "VU#119704"
-    },
-    {
-      "text": "https://github.com/SandboxEscaper/polarbearrepo",
-      "source": "関連文書",
-      "id": "polarbearrepo"
-    },
-    {
-      "text": "https://www.thezdi.com/blog/2019/6/11/exploiting-the-windows-task-scheduler-through-cve-2019-1069",
-      "source": "関連文書",
-      "id": "Exploiting the Windows Task Scheduler Through CVE-2019-1069"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:microsoft:windows_10",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 10"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_8",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 8"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2016",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2016"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2019",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2019"
-    }
-  ],
-  "date": "2019-10-01T10:44+09:00",
-  "issued": "2019-05-27T11:14+09:00",
-  "modified": "2019-10-01T10:44+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-004006.html",
+	"title": "Microsoft Windows タスクスケジューラにおける権限昇格の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-004006.html",
+	"description": "Microsoft Windows には、タスクスケジューラの SetJobFileSecurityByName() 関数に起因する権限昇格の脆弱性が存在します。\r\n\r\nタスクスケジューラは、決められた時間にタスクを実行するための、Microsoft Windows が持つコンポーネントです。schtasks.exe がタスクスケジューラのフロントエンドを担い、SYSTEM 権限で動作する Windows サービスがバックエンドとして機能します。タスクスケジューラが用いる schedsvc.dll というライブラリの中に tsched::SetJobFileSecurityByName() と呼ばれる関数がありますが、この関数により各 .job ファイルのアクセス権限が設定されます。\r\n\r\nタスクスケジューラは <a href=\"https://docs.microsoft.com/en-us/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo\">SetSecurityInfo()</a>&nbsp;関数が呼ばれた時点で NT Authority\\SYSTEM トークンを持ちます。そのため、タスクスケジューラは本来であれば SYSTEM あるいは他の高い権限を持つアカウントでなければコントロールできないはずのファイルに、フルアクセス権限を付与することができます。\r\n\r\nWindows Vista より古い Windows では、%Windir%\\tasks ディレクトリの .job ファイルが使用されます。このような古いバージョンの Windows に由来する schtasks.exe を新しいバージョンの Windows で動作させた場合、これらの .job ファイルは %Windir%\\system32\\tasks ディレクトリに移動されますが、その際に NT Authority\\SYSTEM トークンを持つタスクスケジューラにより、すべてのアカウントに対するフルアクセス権限を持つハードリンクが作成されることになります。本脆弱性の発見者により公開された実証コードはこのようなタスクスケジューラの挙動を利用したものです。\r\n\r\n本脆弱性について CERT/CC では公開された実証コードが、32 ビットおよび 64 ビットの Windows 10、Windows 2016 および Windows 2019 で動作することを確認しています。Windows 8 では、本実証コードは一般ユーザが書き込み権限をもつファイルに対してのみ有効であり、攻撃の有効性はごくわずかであると考えられます。Windows 7 においては本実証コードは有効ではありません。",
+	"identifier": "JVNDB-2019-004006",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU93881163",
+			"source": "JVN",
+			"id": "JVNVU#93881163"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-1069",
+			"source": "CVE",
+			"id": "CVE-2019-1069"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2019-1069",
+			"source": "NVD",
+			"id": "CVE-2019-1069"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/119704",
+			"source": "CERT-VN",
+			"id": "VU#119704"
+		},
+		{
+			"text": "https://github.com/SandboxEscaper/polarbearrepo",
+			"source": "関連文書",
+			"id": "polarbearrepo"
+		},
+		{
+			"text": "https://www.thezdi.com/blog/2019/6/11/exploiting-the-windows-task-scheduler-through-cve-2019-1069",
+			"source": "関連文書",
+			"id": "Exploiting the Windows Task Scheduler Through CVE-2019-1069"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:microsoft:windows_10",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 10"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_8",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 8"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2016",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2016"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2019",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2019"
+		}
+	],
+	"date": "2019-10-01T10:44+09:00",
+	"issued": "2019-05-27T11:14+09:00",
+	"modified": "2019-10-01T10:44+09:00"
 }

@@ -1,100 +1,100 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002805.html",
-  "title": "GNU C Library の encode_name マクロにおける権限を取得される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002805.html",
-  "description": "GNU C Library (glibc or libc6) の misc/mntent_r.c 内にある encode_name マクロは、マウントポイント名に含まれる改行文字を適切に処理しないため、サービス運用妨害 (mtab の破損) 状態となる、またはマウントのオプションを改ざんされ、権限を取得される脆弱性が存在します。",
-  "identifier": "JVNDB-2010-002805",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0296",
-      "source": "CVE",
-      "id": "CVE-2010-0296"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0296",
-      "source": "NVD",
-      "id": "CVE-2010-0296"
-    },
-    {
-      "text": "http://secunia.com/advisories/43830",
-      "source": "SECUNIA",
-      "id": "SA43830"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/59240",
-      "source": "XF",
-      "id": "59240"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1024043",
-      "source": "SECTRACK",
-      "id": "1024043"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2011/0863",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2011-0863"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:gnu:glibc",
-      "version": "2.2",
-      "vendor": "GNU Project",
-      "product": "GNU C Library"
-    },
-    {
-      "text": "cpe:/a:vmware:esx",
-      "version": "2.2",
-      "vendor": "VMware",
-      "product": "VMware ESX"
-    },
-    {
-      "text": "cpe:/a:vmware:esxi",
-      "version": "2.2",
-      "vendor": "VMware",
-      "product": "VMware ESXi"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_long_life",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Long Life"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.2",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2012-12-18T17:04+09:00",
-  "issued": "2011-04-28T15:05+09:00",
-  "modified": "2012-12-18T17:04+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002805.html",
+	"title": "GNU C Library の encode_name マクロにおける権限を取得される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-002805.html",
+	"description": "GNU C Library (glibc or libc6) の misc/mntent_r.c 内にある encode_name マクロは、マウントポイント名に含まれる改行文字を適切に処理しないため、サービス運用妨害 (mtab の破損) 状態となる、またはマウントのオプションを改ざんされ、権限を取得される脆弱性が存在します。",
+	"identifier": "JVNDB-2010-002805",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0296",
+			"source": "CVE",
+			"id": "CVE-2010-0296"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0296",
+			"source": "NVD",
+			"id": "CVE-2010-0296"
+		},
+		{
+			"text": "http://secunia.com/advisories/43830",
+			"source": "SECUNIA",
+			"id": "SA43830"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/59240",
+			"source": "XF",
+			"id": "59240"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1024043",
+			"source": "SECTRACK",
+			"id": "1024043"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2011/0863",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2011-0863"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:gnu:glibc",
+			"version": "2.2",
+			"vendor": "GNU Project",
+			"product": "GNU C Library"
+		},
+		{
+			"text": "cpe:/a:vmware:esx",
+			"version": "2.2",
+			"vendor": "VMware",
+			"product": "VMware ESX"
+		},
+		{
+			"text": "cpe:/a:vmware:esxi",
+			"version": "2.2",
+			"vendor": "VMware",
+			"product": "VMware ESXi"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_long_life",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Long Life"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2012-12-18T17:04+09:00",
+	"issued": "2011-04-28T15:05+09:00",
+	"modified": "2012-12-18T17:04+09:00"
 }

@@ -1,181 +1,181 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001649.html",
-  "title": "Postfix における権限昇格の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001649.html",
-  "description": "Postfix には権限昇格の脆弱性が存在します。結果として、ローカルユーザが任意のファイルを書き換える可能性があります。\r\n\r\nPostfix は Unix 系 OS 向けの mail transport agent (MTA) です。シンボリックリンクへのハードリンクを作成する場合、一部の OS ではシンボリックリンク自体へのハードリンクが作成されます。Postfix では root が owner となっているシンボリックリンクを mailbox として扱うことを許しているため、結果的に一般ユーザが任意のファイルの内容を操作することが可能です。",
-  "identifier": "JVNDB-2008-001649",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU938323/index.html",
-      "source": "JVN",
-      "id": "JVNVU#938323"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2936",
-      "source": "CVE",
-      "id": "CVE-2008-2936"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2936",
-      "source": "NVD",
-      "id": "CVE-2008-2936"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/938323",
-      "source": "CERT-VN",
-      "id": "VU#938323"
-    },
-    {
-      "text": "http://secunia.com/advisories/31485",
-      "source": "SECUNIA",
-      "id": "SA31485"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/30691",
-      "source": "BID",
-      "id": "30691"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/44460",
-      "source": "XF",
-      "id": "44460"
-    },
-    {
-      "text": "http://securitytracker.com/id?1020700",
-      "source": "SECTRACK",
-      "id": "1020700"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2008/2385",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2008-2385"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:postfix:postfix",
-      "version": "2.2",
-      "vendor": "Postfix Project",
-      "product": "postfix"
-    },
-    {
-      "text": "cpe:/a:suse:suse_open_enterprise_server",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "Open Enterprise Server"
-    },
-    {
-      "text": "cpe:/a:suse:suse_sles",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "SUSE SLES"
-    },
-    {
-      "text": "cpe:/o:canonical:ubuntu_linux",
-      "version": "2.2",
-      "vendor": "Canonical",
-      "product": "Ubuntu"
-    },
-    {
-      "text": "cpe:/o:debian:debian_linux",
-      "version": "2.2",
-      "vendor": "Debian",
-      "product": "Debian GNU/Linux"
-    },
-    {
-      "text": "cpe:/o:gentoo:linux",
-      "version": "2.2",
-      "vendor": "Gentoo Linux",
-      "product": "Gentoo Linux"
-    },
-    {
-      "text": "cpe:/o:mandriva:corporate",
-      "version": "2.2",
-      "vendor": "Mandriva, Inc.",
-      "product": "Corporate"
-    },
-    {
-      "text": "cpe:/o:mandriva:linux",
-      "version": "2.2",
-      "vendor": "Mandriva, Inc.",
-      "product": "Mandriva Linux"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:opensuse_project:opensuse",
-      "version": "2.2",
-      "vendor": "openSUSE project",
-      "product": "openSUSE"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:suse:linux_desktop",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "Novell Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:suse:linux_enterprise_desktop",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "SUSE Linux Enterprise Desktop"
-    },
-    {
-      "text": "cpe:/o:suse:linux_enterprise_server",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "SUSE Linux Enterprise Server"
-    },
-    {
-      "text": "cpe:/o:suse:linux_pos",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "Novell Linux POS"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Appliance Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.2",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2008-10-27T14:34+09:00",
-  "issued": "2008-09-10T15:10+09:00",
-  "modified": "2008-10-27T14:34+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001649.html",
+	"title": "Postfix における権限昇格の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001649.html",
+	"description": "Postfix には権限昇格の脆弱性が存在します。結果として、ローカルユーザが任意のファイルを書き換える可能性があります。\r\n\r\nPostfix は Unix 系 OS 向けの mail transport agent (MTA) です。シンボリックリンクへのハードリンクを作成する場合、一部の OS ではシンボリックリンク自体へのハードリンクが作成されます。Postfix では root が owner となっているシンボリックリンクを mailbox として扱うことを許しているため、結果的に一般ユーザが任意のファイルの内容を操作することが可能です。",
+	"identifier": "JVNDB-2008-001649",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU938323/index.html",
+			"source": "JVN",
+			"id": "JVNVU#938323"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2936",
+			"source": "CVE",
+			"id": "CVE-2008-2936"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2008-2936",
+			"source": "NVD",
+			"id": "CVE-2008-2936"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/938323",
+			"source": "CERT-VN",
+			"id": "VU#938323"
+		},
+		{
+			"text": "http://secunia.com/advisories/31485",
+			"source": "SECUNIA",
+			"id": "SA31485"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/30691",
+			"source": "BID",
+			"id": "30691"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/44460",
+			"source": "XF",
+			"id": "44460"
+		},
+		{
+			"text": "http://securitytracker.com/id?1020700",
+			"source": "SECTRACK",
+			"id": "1020700"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2008/2385",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2008-2385"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:postfix:postfix",
+			"version": "2.2",
+			"vendor": "Postfix Project",
+			"product": "postfix"
+		},
+		{
+			"text": "cpe:/a:suse:suse_open_enterprise_server",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "Open Enterprise Server"
+		},
+		{
+			"text": "cpe:/a:suse:suse_sles",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "SUSE SLES"
+		},
+		{
+			"text": "cpe:/o:canonical:ubuntu_linux",
+			"version": "2.2",
+			"vendor": "Canonical",
+			"product": "Ubuntu"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		},
+		{
+			"text": "cpe:/o:gentoo:linux",
+			"version": "2.2",
+			"vendor": "Gentoo Linux",
+			"product": "Gentoo Linux"
+		},
+		{
+			"text": "cpe:/o:mandriva:corporate",
+			"version": "2.2",
+			"vendor": "Mandriva, Inc.",
+			"product": "Corporate"
+		},
+		{
+			"text": "cpe:/o:mandriva:linux",
+			"version": "2.2",
+			"vendor": "Mandriva, Inc.",
+			"product": "Mandriva Linux"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:opensuse_project:opensuse",
+			"version": "2.2",
+			"vendor": "openSUSE project",
+			"product": "openSUSE"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:suse:linux_desktop",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "Novell Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:suse:linux_enterprise_desktop",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "SUSE Linux Enterprise Desktop"
+		},
+		{
+			"text": "cpe:/o:suse:linux_enterprise_server",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "SUSE Linux Enterprise Server"
+		},
+		{
+			"text": "cpe:/o:suse:linux_pos",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "Novell Linux POS"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Appliance Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.2",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:H/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2008-10-27T14:34+09:00",
+	"issued": "2008-09-10T15:10+09:00",
+	"modified": "2008-10-27T14:34+09:00"
 }

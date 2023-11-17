@@ -1,71 +1,71 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000450.html",
-  "title": "Mozilla における MARQUEE タグを用いた不正なメモリアクセスを受ける脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000450.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMozilla 1.7.3 以前には、特定の HTML タグの取り扱いにおいて以下の複数のセキュリティ上の不備が存在します。\r\n\r\n・NULL 文字や特定の終了文字の後に追加された TEXTAREA、INPUT、FRAMESET、および IMG タグを解釈する際に、nsCSSStyleSheet.cpp において NULL ポインタがデリファレンスされる、あるいは、無限ループが発生する問題 (CAN-2004-1613)\r\n\r\n・MARQUEE タグなどの視覚効果のあるタグ要素に過度に大きな値を指定し、それを複数組み合わせることにより、不正なメモリアクセスが発生する問題 (CAN-2004-1614)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した Web ページを Mozilla で開くよう標的ユーザを誘導することで、Mozilla をクラッシュさせ、結果としてサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、Mozilla と同様のコードを使用する Firefox、Thunderbird および Netscape についても、これらの問題の影響を受ける可能性があります。",
-  "identifier": "JVNDB-2004-000450",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1614",
-      "source": "CVE",
-      "id": "CVE-2004-1614"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1614",
-      "source": "NVD",
-      "id": "CVE-2004-1614"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/11440",
-      "source": "BID",
-      "id": "11440"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/11439",
-      "source": "BID",
-      "id": "11439"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/17805",
-      "source": "XF",
-      "id": "17805"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2004/Oct/1011810.html",
-      "source": "SECTRACK",
-      "id": "1011810"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000450.html",
+	"title": "Mozilla における MARQUEE タグを用いた不正なメモリアクセスを受ける脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000450.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMozilla 1.7.3 以前には、特定の HTML タグの取り扱いにおいて以下の複数のセキュリティ上の不備が存在します。\r\n\r\n・NULL 文字や特定の終了文字の後に追加された TEXTAREA、INPUT、FRAMESET、および IMG タグを解釈する際に、nsCSSStyleSheet.cpp において NULL ポインタがデリファレンスされる、あるいは、無限ループが発生する問題 (CAN-2004-1613)\r\n\r\n・MARQUEE タグなどの視覚効果のあるタグ要素に過度に大きな値を指定し、それを複数組み合わせることにより、不正なメモリアクセスが発生する問題 (CAN-2004-1614)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した Web ページを Mozilla で開くよう標的ユーザを誘導することで、Mozilla をクラッシュさせ、結果としてサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、Mozilla と同様のコードを使用する Firefox、Thunderbird および Netscape についても、これらの問題の影響を受ける可能性があります。",
+	"identifier": "JVNDB-2004-000450",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1614",
+			"source": "CVE",
+			"id": "CVE-2004-1614"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1614",
+			"source": "NVD",
+			"id": "CVE-2004-1614"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/11440",
+			"source": "BID",
+			"id": "11440"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/11439",
+			"source": "BID",
+			"id": "11439"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/17805",
+			"source": "XF",
+			"id": "17805"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2004/Oct/1011810.html",
+			"source": "SECTRACK",
+			"id": "1011810"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

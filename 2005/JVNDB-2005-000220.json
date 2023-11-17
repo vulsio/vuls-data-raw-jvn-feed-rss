@@ -1,143 +1,143 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000220.html",
-  "title": "Mozilla 製品の InstallTrigger における JavaScript インタプリタがメモリ内の誤った場所にジャンプしてしまう脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000220.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMozilla Suite 1.7.6 以前、Firefox 1.0.2 以前 には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) プラグイン検索サービス (PFS) で使用される PLUGINSPAGE 属性には、URL の妥当性のチェックに不備が存在するため、javascript: 形式の URL を指定することで、任意の JavaScript が実行される問題が存在します。(CAN-2005-0752、mfsa2005-34)\r\n\r\n尚、Mozilla Suite に同梱される PFS はこの問題の影響を受けないことが Mozilla Foundation より報告されています。\r\n\r\n2) ブロックされた javascript: 形式のポップアップを、ステータスバーのアイコンや情報バーで [javascript: …を表示する] を選択して表示した場合、より高い権限で JavaScript が実行されてしまう問題が存在します。(CAN-2005-1153、mfsa2005-35)\r\n\r\n3) ページ間で存続可能な方法でウィンドウのグローバルスコープを汚染することでクロスサイトスクリプティング攻撃が可能であるため、Cookie やページの内容が奪取される、また場合によっては商品の購入やメールの削除などのユーザアクションが実行される問題が存在します。(CAN-2005-1154、mfsa2005-36)\r\n\r\n4) favicon (ブックマークアイコン) 機能で使用される link タグの href 属性に javascript: 形式の URL を指定することにより、より高い権限で任意の JavaScript が実行される問題が存在します。(CAN-2005-1155、mfsa2005-37)\r\n\r\n5) 既存の検索プラグインと同じファイル名を用いた悪質なプラグインが、既存のものを上書きするため、悪質な検索プラグインにより検索を実行するたびに、表示されたページの権限で任意の JavaScript が実行される問題が存在します。(CAN-2005-1156、CAN-2005-1157、mfsa2005-38)\r\n\r\n6) Firefox のサイドバーでリンクを開くために _search ターゲットを使用する場合のセキュリティチェックに不備が存在するため、about:config などの権限付きページを不正に開き、javascript: 形式の URL を使用してスクリプトを挿入可能な問題が存在します。(CAN-2005-1158、mfsa2005-39)\r\n\r\n尚、Mozilla Suite はこの問題の影響を受けないことが Mozilla Foundation より報告されています。\r\n\r\n7) InstallTrigger などの XPInstall 関連の JavaScript オブジェクトの実装において、呼び出すインスタンスの形式が適切に検証されていないため、他のオブジェクトを渡された場合に、JavaScript インタプリタがメモリ内の誤った場所にジャンプしてしまう問題が存在します。(CAN-2005-1159、mfsa2005-40)\r\n\r\n8) 特権付き UI コードにおいて、コンテンツウィンドウの DOM ノードの検証が不適切であるため、DOM ノードのプロパティやメソッドを上書きし、ネイティブの値を隠蔽することによって権限昇格が可能な問題が存在します。(CAN-2005-1160、mfsa2005-41)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した Web サイトに標的ユーザを誘導することにより、結果的に重要な情報を奪取する、権限を昇格する、または任意のコードを実行する可能性があります。また、潜在的に商品の購入やメールの削除などのユーザアクションが実行される可能性があります。\r\n\r\n尚、Thunderbird 1.0.2 以前が CAN-2005-1159、CAN-2005-1160 の問題の影響を受けることが Mozilla Foundation より報告されています。",
-  "identifier": "JVNDB-2005-000220",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1159",
-      "source": "CVE",
-      "id": "CVE-2005-1159"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1159",
-      "source": "NVD",
-      "id": "CVE-2005-1159"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/519317",
-      "source": "CERT-VN",
-      "id": "VU#519317"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/973309",
-      "source": "CERT-VN",
-      "id": "VU#973309"
-    },
-    {
-      "text": "http://secunia.com/advisories/14992/",
-      "source": "SECUNIA",
-      "id": "SA14992"
-    },
-    {
-      "text": "http://secunia.com/advisories/14821",
-      "source": "SECUNIA",
-      "id": "SA14821"
-    },
-    {
-      "text": "http://secunia.com/advisories/14820",
-      "source": "SECUNIA",
-      "id": "SA14820"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13233",
-      "source": "BID",
-      "id": "13233"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13232",
-      "source": "BID",
-      "id": "13232"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13231",
-      "source": "BID",
-      "id": "13231"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13230",
-      "source": "BID",
-      "id": "13230"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13229",
-      "source": "BID",
-      "id": "13229"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13228",
-      "source": "BID",
-      "id": "13228"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13216",
-      "source": "BID",
-      "id": "13216"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13211",
-      "source": "BID",
-      "id": "13211"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13208",
-      "source": "BID",
-      "id": "13208"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2005/Apr/1013635.html",
-      "source": "SECTRACK",
-      "id": "1013635"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/0361",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-0361"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:mozilla:firefox",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla Firefox"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000220.html",
+	"title": "Mozilla 製品の InstallTrigger における JavaScript インタプリタがメモリ内の誤った場所にジャンプしてしまう脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000220.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMozilla Suite 1.7.6 以前、Firefox 1.0.2 以前 には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) プラグイン検索サービス (PFS) で使用される PLUGINSPAGE 属性には、URL の妥当性のチェックに不備が存在するため、javascript: 形式の URL を指定することで、任意の JavaScript が実行される問題が存在します。(CAN-2005-0752、mfsa2005-34)\r\n\r\n尚、Mozilla Suite に同梱される PFS はこの問題の影響を受けないことが Mozilla Foundation より報告されています。\r\n\r\n2) ブロックされた javascript: 形式のポップアップを、ステータスバーのアイコンや情報バーで [javascript: …を表示する] を選択して表示した場合、より高い権限で JavaScript が実行されてしまう問題が存在します。(CAN-2005-1153、mfsa2005-35)\r\n\r\n3) ページ間で存続可能な方法でウィンドウのグローバルスコープを汚染することでクロスサイトスクリプティング攻撃が可能であるため、Cookie やページの内容が奪取される、また場合によっては商品の購入やメールの削除などのユーザアクションが実行される問題が存在します。(CAN-2005-1154、mfsa2005-36)\r\n\r\n4) favicon (ブックマークアイコン) 機能で使用される link タグの href 属性に javascript: 形式の URL を指定することにより、より高い権限で任意の JavaScript が実行される問題が存在します。(CAN-2005-1155、mfsa2005-37)\r\n\r\n5) 既存の検索プラグインと同じファイル名を用いた悪質なプラグインが、既存のものを上書きするため、悪質な検索プラグインにより検索を実行するたびに、表示されたページの権限で任意の JavaScript が実行される問題が存在します。(CAN-2005-1156、CAN-2005-1157、mfsa2005-38)\r\n\r\n6) Firefox のサイドバーでリンクを開くために _search ターゲットを使用する場合のセキュリティチェックに不備が存在するため、about:config などの権限付きページを不正に開き、javascript: 形式の URL を使用してスクリプトを挿入可能な問題が存在します。(CAN-2005-1158、mfsa2005-39)\r\n\r\n尚、Mozilla Suite はこの問題の影響を受けないことが Mozilla Foundation より報告されています。\r\n\r\n7) InstallTrigger などの XPInstall 関連の JavaScript オブジェクトの実装において、呼び出すインスタンスの形式が適切に検証されていないため、他のオブジェクトを渡された場合に、JavaScript インタプリタがメモリ内の誤った場所にジャンプしてしまう問題が存在します。(CAN-2005-1159、mfsa2005-40)\r\n\r\n8) 特権付き UI コードにおいて、コンテンツウィンドウの DOM ノードの検証が不適切であるため、DOM ノードのプロパティやメソッドを上書きし、ネイティブの値を隠蔽することによって権限昇格が可能な問題が存在します。(CAN-2005-1160、mfsa2005-41)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した Web サイトに標的ユーザを誘導することにより、結果的に重要な情報を奪取する、権限を昇格する、または任意のコードを実行する可能性があります。また、潜在的に商品の購入やメールの削除などのユーザアクションが実行される可能性があります。\r\n\r\n尚、Thunderbird 1.0.2 以前が CAN-2005-1159、CAN-2005-1160 の問題の影響を受けることが Mozilla Foundation より報告されています。",
+	"identifier": "JVNDB-2005-000220",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1159",
+			"source": "CVE",
+			"id": "CVE-2005-1159"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1159",
+			"source": "NVD",
+			"id": "CVE-2005-1159"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/519317",
+			"source": "CERT-VN",
+			"id": "VU#519317"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/973309",
+			"source": "CERT-VN",
+			"id": "VU#973309"
+		},
+		{
+			"text": "http://secunia.com/advisories/14992/",
+			"source": "SECUNIA",
+			"id": "SA14992"
+		},
+		{
+			"text": "http://secunia.com/advisories/14821",
+			"source": "SECUNIA",
+			"id": "SA14821"
+		},
+		{
+			"text": "http://secunia.com/advisories/14820",
+			"source": "SECUNIA",
+			"id": "SA14820"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13233",
+			"source": "BID",
+			"id": "13233"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13232",
+			"source": "BID",
+			"id": "13232"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13231",
+			"source": "BID",
+			"id": "13231"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13230",
+			"source": "BID",
+			"id": "13230"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13229",
+			"source": "BID",
+			"id": "13229"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13228",
+			"source": "BID",
+			"id": "13228"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13216",
+			"source": "BID",
+			"id": "13216"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13211",
+			"source": "BID",
+			"id": "13211"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13208",
+			"source": "BID",
+			"id": "13208"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2005/Apr/1013635.html",
+			"source": "SECTRACK",
+			"id": "1013635"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/0361",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-0361"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:mozilla:firefox",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla Firefox"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

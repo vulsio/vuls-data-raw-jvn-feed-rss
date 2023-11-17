@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001918.html",
-  "title": "Node.js のパッケージマネージャ npm が不正なパッケージの動作を制限しない問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001918.html",
-  "description": "npm には、ワームプログラムの感染拡大を許す問題が存在します。\r\n\r\nnpm は、サーバサイドのウェブアプリケーションを開発するための実行環境である Node.js のパッケージマネージャです。npm には、ワームプログラムの感染拡大を許す問題が存在します：\r\n\r\nNode.js\r\nhttps://nodejs.org/\r\n\r\n　1. npm はセマンティックバージョニング (semver) の使用を推奨しています。セマンティックバージョニングでは、依存関係にあるパッケージのバージョンは固定されておらず、依存パッケージの作者は、自由にアップデートバージョンをプッシュできるようになっています。\r\n　\r\nセマンティックバージョニング (semver)\r\nhttps://docs.npmjs.com/getting-started/semantic-versioning\r\n\r\n　2. npm は、npm サーバへのログイン状態を維持しています。ログインすると、手動で操作しない限りログアウトすることはありません。ログイン済みユーザが npm install コマンドを実行することで、新たなバージョンのパッケージを publish させられる可能性があります。\r\n\r\n　3.npm は、Node.js 環境で広く使われている集中型のレジストリをそのまま使用しています。npm publish コマンドを実行することで、レジストリサーバにコードを公開することができ、他のユーザがインストールできるようになります。\r\n\r\nこれら 3つの要素が揃うことで、自己複製型のワームプログラムが動作可能となります。Sam Saccone のレポートでは、ワームが動作するワークフローの概要を次のように例示しています：\r\n\r\nSam Saccone のレポート\r\nhttp://www.kb.cert.org/CERT_WEB/services/vul-notes.nsf/6eacfaeab94596f5852569290066a50b/018dbb99def6980185257f820013f175/$FILE/npmwormdisclosure.pdf\r\n\r\n　1. ユーザを誘導し、細工したモジュールをユーザ自身の環境にインストールさせる\r\n\r\n　2. ワームプログラムは、新しい npm モジュールを生成する\r\n\r\n　3. ワームプログラムは、インストール時にワームプログラムが実行されるようにこのモジュールを設定する\r\n\r\n　4. ワームプログラムは、このモジュールをユーザのアカウントで公開する\r\n\r\n　5. ワームプログラムは、ユーザが publish 権限を持っている全てのモジュールに対して、新たに作成したモジュールに依存するよう改ざんする\r\n\r\n　6. ワームプログラムは、これら改ざんしたモジュールを、semver の \"バグフィックス\" レベルを示すアップデートバージョンとして、publish する。これによって、依存するモジュールのバージョンを記号 ^ または ~ で指定している大多数のモジュールが、次回のインストール時に自己複製型のモジュールを埋め込まれる\r\n\r\nsemver の \"バグフィックス\" レベル\r\nhttps://docs.npmjs.com/misc/semver#tilde-ranges-123-12-1\r\n\r\nSam Saccone のレポートに記載されているタイムラインは次の通りです。\r\n\r\n　　2016/01/01 悪用可能であることを発見\r\n　　2016/01/04 再現手順と情報を npm に通知\r\n　　2016/01/05 Facebook に通知\r\n　　2016/01/07 npm から応答\r\n　　2016/01/08 npm から、その時点で修正する予定はないとの意思表示\r\n　　2016/02/05 レポートの公開",
-  "identifier": "JVNDB-2016-001918",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU96681018",
-      "source": "JVN",
-      "id": "JVNVU#96681018"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/319816",
-      "source": "CERT-VN",
-      "id": "VU#319816"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/BLUU-A73334",
-      "source": "CERT-VN",
-      "id": "npm Information for VU#319816"
-    },
-    {
-      "text": "http://www.kb.cert.org/CERT_WEB/services/vul-notes.nsf/6eacfaeab94596f5852569290066a50b/018dbb99def6980185257f820013f175/$FILE/npmwormdisclosure.pdf",
-      "source": "CERT-VN",
-      "id": "npm hydra worm disclosure"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:nodejs:node.js",
-      "version": "2.2",
-      "vendor": "Node.js Foundation",
-      "product": "Node.js"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2016-03-30T11:55+09:00",
-  "issued": "2016-03-30T11:55+09:00",
-  "modified": "2016-03-30T11:55+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001918.html",
+	"title": "Node.js のパッケージマネージャ npm が不正なパッケージの動作を制限しない問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001918.html",
+	"description": "npm には、ワームプログラムの感染拡大を許す問題が存在します。\r\n\r\nnpm は、サーバサイドのウェブアプリケーションを開発するための実行環境である Node.js のパッケージマネージャです。npm には、ワームプログラムの感染拡大を許す問題が存在します：\r\n\r\nNode.js\r\nhttps://nodejs.org/\r\n\r\n　1. npm はセマンティックバージョニング (semver) の使用を推奨しています。セマンティックバージョニングでは、依存関係にあるパッケージのバージョンは固定されておらず、依存パッケージの作者は、自由にアップデートバージョンをプッシュできるようになっています。\r\n　\r\nセマンティックバージョニング (semver)\r\nhttps://docs.npmjs.com/getting-started/semantic-versioning\r\n\r\n　2. npm は、npm サーバへのログイン状態を維持しています。ログインすると、手動で操作しない限りログアウトすることはありません。ログイン済みユーザが npm install コマンドを実行することで、新たなバージョンのパッケージを publish させられる可能性があります。\r\n\r\n　3.npm は、Node.js 環境で広く使われている集中型のレジストリをそのまま使用しています。npm publish コマンドを実行することで、レジストリサーバにコードを公開することができ、他のユーザがインストールできるようになります。\r\n\r\nこれら 3つの要素が揃うことで、自己複製型のワームプログラムが動作可能となります。Sam Saccone のレポートでは、ワームが動作するワークフローの概要を次のように例示しています：\r\n\r\nSam Saccone のレポート\r\nhttp://www.kb.cert.org/CERT_WEB/services/vul-notes.nsf/6eacfaeab94596f5852569290066a50b/018dbb99def6980185257f820013f175/$FILE/npmwormdisclosure.pdf\r\n\r\n　1. ユーザを誘導し、細工したモジュールをユーザ自身の環境にインストールさせる\r\n\r\n　2. ワームプログラムは、新しい npm モジュールを生成する\r\n\r\n　3. ワームプログラムは、インストール時にワームプログラムが実行されるようにこのモジュールを設定する\r\n\r\n　4. ワームプログラムは、このモジュールをユーザのアカウントで公開する\r\n\r\n　5. ワームプログラムは、ユーザが publish 権限を持っている全てのモジュールに対して、新たに作成したモジュールに依存するよう改ざんする\r\n\r\n　6. ワームプログラムは、これら改ざんしたモジュールを、semver の \"バグフィックス\" レベルを示すアップデートバージョンとして、publish する。これによって、依存するモジュールのバージョンを記号 ^ または ~ で指定している大多数のモジュールが、次回のインストール時に自己複製型のモジュールを埋め込まれる\r\n\r\nsemver の \"バグフィックス\" レベル\r\nhttps://docs.npmjs.com/misc/semver#tilde-ranges-123-12-1\r\n\r\nSam Saccone のレポートに記載されているタイムラインは次の通りです。\r\n\r\n　　2016/01/01 悪用可能であることを発見\r\n　　2016/01/04 再現手順と情報を npm に通知\r\n　　2016/01/05 Facebook に通知\r\n　　2016/01/07 npm から応答\r\n　　2016/01/08 npm から、その時点で修正する予定はないとの意思表示\r\n　　2016/02/05 レポートの公開",
+	"identifier": "JVNDB-2016-001918",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU96681018",
+			"source": "JVN",
+			"id": "JVNVU#96681018"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/319816",
+			"source": "CERT-VN",
+			"id": "VU#319816"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/BLUU-A73334",
+			"source": "CERT-VN",
+			"id": "npm Information for VU#319816"
+		},
+		{
+			"text": "http://www.kb.cert.org/CERT_WEB/services/vul-notes.nsf/6eacfaeab94596f5852569290066a50b/018dbb99def6980185257f820013f175/$FILE/npmwormdisclosure.pdf",
+			"source": "CERT-VN",
+			"id": "npm hydra worm disclosure"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:nodejs:node.js",
+			"version": "2.2",
+			"vendor": "Node.js Foundation",
+			"product": "Node.js"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+		}
+	],
+	"date": "2016-03-30T11:55+09:00",
+	"issued": "2016-03-30T11:55+09:00",
+	"modified": "2016-03-30T11:55+09:00"
 }

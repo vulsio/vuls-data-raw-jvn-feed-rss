@@ -1,56 +1,56 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000011.html",
-  "title": "HtmlUnit において任意のコードが実行可能な脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000011.html",
-  "description": "HtmlUnit は、Java アプリケーションに web ブラウザ機能を提供するライブラリです。内部に組み込まれている Mozilla Rhino エンジンにより、JavaScript コードの実行にも対応しています。また、Mozilla Rhino エンジンは、JavaScript コードから Java オブジェクトへのアクセスを可能とする機能を提供しています。\r\nHtmlUnit による Rhino エンジンの初期化には不適切な部分が存在し、細工された JavaScript コードによって任意の Java コードを実行させられる可能性があります(CWE-284)。\r\nまた、HtmlUnit を Android アプリケーションに組み込んで使う場合も、HtmlUnit による Rhino エンジンの Android 向け初期化に不適切な部分があるため、細工された JavaScript コードによって任意の Java コードを実行させられる可能性があります。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 合同会社DMM.com 市原良平 氏",
-  "identifier": "JVNDB-2020-000011",
-  "references": [
-    {
-      "text": "https://jvn.jp/jp/JVN34535327/index.html",
-      "source": "JVN",
-      "id": "JVN#34535327"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5529",
-      "source": "CVE",
-      "id": "CVE-2020-5529"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-5529",
-      "source": "NVD",
-      "id": "CVE-2020-5529"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:htmlunit_project:htmlunit",
-      "version": "2.2",
-      "vendor": "HtmlUnit",
-      "product": "HtmlUnit"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.1",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "5.6",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
-    }
-  ],
-  "date": "2020-02-10T12:04+09:00",
-  "issued": "2020-02-10T12:04+09:00",
-  "modified": "2020-02-10T12:04+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000011.html",
+	"title": "HtmlUnit において任意のコードが実行可能な脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-000011.html",
+	"description": "HtmlUnit は、Java アプリケーションに web ブラウザ機能を提供するライブラリです。内部に組み込まれている Mozilla Rhino エンジンにより、JavaScript コードの実行にも対応しています。また、Mozilla Rhino エンジンは、JavaScript コードから Java オブジェクトへのアクセスを可能とする機能を提供しています。\r\nHtmlUnit による Rhino エンジンの初期化には不適切な部分が存在し、細工された JavaScript コードによって任意の Java コードを実行させられる可能性があります(CWE-284)。\r\nまた、HtmlUnit を Android アプリケーションに組み込んで使う場合も、HtmlUnit による Rhino エンジンの Android 向け初期化に不適切な部分があるため、細工された JavaScript コードによって任意の Java コードを実行させられる可能性があります。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 合同会社DMM.com 市原良平 氏",
+	"identifier": "JVNDB-2020-000011",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN34535327/index.html",
+			"source": "JVN",
+			"id": "JVN#34535327"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5529",
+			"source": "CVE",
+			"id": "CVE-2020-5529"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2020-5529",
+			"source": "NVD",
+			"id": "CVE-2020-5529"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:htmlunit_project:htmlunit",
+			"version": "2.2",
+			"vendor": "HtmlUnit",
+			"product": "HtmlUnit"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.1",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "5.6",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+		}
+	],
+	"date": "2020-02-10T12:04+09:00",
+	"issued": "2020-02-10T12:04+09:00",
+	"modified": "2020-02-10T12:04+09:00"
 }

@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004921.html",
-  "title": "HTTP リクエスト経由で設定された Cookie によって HTTPS 接続がバイパスされたり情報漏えいが発生する問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004921.html",
-  "description": "RFC 6265 (旧 RFC 2965) は、いわゆる Cookie による HTTP セッションの状態管理の仕組みを規定しています。RFC 6265 を実装しているほとんどのウェブブラウザでは、HTTP リクエストを通じて設定される Cookie によって、HTTPS 接続がバイパスされたり、セッション情報が取得されたりする問題が存在します。\r\n\r\nRFC 6265\r\nhttps://tools.ietf.org/html/rfc6265\r\n\r\nCookie を用いて HTTP セッションの状態管理を行う場合、様々なセキュリティ上の問題が発生する可能性があることが知られています。\r\n例えば、RFC 6265 の Section 8.6 には次のように記載されています。\r\n\r\nRFC 6265 の Section 8.6\r\nhttps://tools.ietf.org/html/rfc6265#section-8.6\r\n\r\n　\"Cookies do not provide integrity guarantees for sibling domains (and their subdomains). For example, consider foo.example.com and bar.example.com. The foo.example.com server can set a cookie with a Domain attribute of \"example.com\" (possibly overwriting an existing \"example.com\" cookie set by bar.example.com), and the user agent will include that cookie in HTTP requests to bar.example.com. In the worst case, bar.example.com will be unable to distinguish this cookie from a cookie it set itself. The foo.example.com server might be able to leverage this ability to mount an attack against bar.example.com.\"\r\n(Cookie の設定では、隣接するドメインやサブドメインとの整合性は確保されない。例えば、foo.example.com と bar.example.com を考えてみよう。foo.example.com のサーバは Domain 属性 \"example.com\" の Cookie を設定することができる(bar.example.com のサーバが \"example.com\" の Cookie を設定していた場合には上書きされる)。この状態で bar.example.com にアクセスすると、foo.example.com によって上書きされた Cookie がサーバに送られることになる。bar.example.com のサーバは、この Cookie は自分が設定したものと誤認する可能性もある。ウェブブラウザのこのような挙動を使えば、foo.example.com のサーバから bar.example.com に対して何らかの攻撃が可能になるかもしれない。)\r\n\r\nまた、RFC 6265 の Section 8.5 には次のように記載されています。\r\n\r\nRFC 6265 の Section 8.5\r\nhttps://tools.ietf.org/html/rfc6265#section-8.5\r\n\r\n　\"Cookies do not provide isolation by port. If a cookie is readable by a service running on one port, the cookie is also readable by a service running on another port of the same server. If a cookie is writable by a service on one port, the cookie is also writable by a service running on another port of the same server. ... Cookies do not provide isolation by scheme. Although most commonly used with the http and https schemes, the cookies for a given host might also be available to other schemes, such as ftp and gopher.\"\r\n(Cookie はポート番号では区別されない。あるポート番号で稼働しているサービスに Cookie が送信される場合、同一サーバの異なるポート番号のサービスにも当該 Cookie は送信される。あるポート番号で稼働しているサービスが Cookie を設定できる場合、同一サーバの異なるポート番号のサービスが当該 Cookie を上書きできる。 ...... Cookie はプロトコルスキームでは区別されない。プロトコルスキームとして最も頻繁に使われるのは http および https だが、同一サーバの異なるプロトコルスキーム、例えば ftp や gopher など、に対しても当該 Cookie は共有される。)\r\n\r\n本脆弱性の報告者は、次のように述べています。\r\n\r\n　\"A cookie can contain a “secure” flag, indicating that it should be only sent over an HTTPS connection. Yet there is no corresponding flag to indicate how a cookie was set: attackers who act as a man-in-the-midddle even temporarily on an HTTP session can inject cookies which will be attached to subsequent HTTPS connections.\"\r\n(Cookie には \"secure\" フラグをつけることができる。\"secure\" フラグは、当該 Cookie が HTTPS 接続でのみ送信されるべきであることを示す。一方、Cookie が設定された際の状況を示すフラグは存在しない。ブラウザとサーバの間の通信に HTTPS でなく HTTP セッションが存在する場合、中間者攻撃によって ブラウザに Cookie を設定し、その後の HTTPS 通信に使わせる、という攻撃が可能である。)\r\n\r\nRFC 6265 では、様々なサイトへのアクセスによってウェブブラウザに設定される Cookie の独立性と整合性を保証するための仕組みを規定しておらず、ウェブブラウザで Cookie が設定される際にドメインの確認が行われるとは限りません。攻撃者はこの性質を利用し、HTTPS で接続するサイトに使われる Cookie を上書きする可能性があります。例えば、あらかじめ \"example.com\" の Cookie を設定しておくことで、\"www.example.com\" に HTTPS 接続する際に使われる Cookie を上書きすることが可能です。サーバに存在する他の弱点と組み合わせることで、HTTPS セッションで保護されるべき情報が漏えいする可能性があります。同一生成元ポリシー (RFC 6454) は Cookie には適用されないため、このような攻撃を防ぐことはできません。\r\n\r\n同一生成元ポリシー (RFC 6454)\r\nhttps://tools.ietf.org/html/rfc6454\r\n\r\n上記のような HTTPS セッションに対する攻撃の詳細については、USENIX Security 2015 で発表された論文を参照してください。\r\n\r\n論文\r\nhttps://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/zheng\r\n\r\nいくつかのウェブブラウザベンダによれば、より安全な Cookie 管理の仕組みを実装する試みは行われていたが広く実装される標準となるには至らなかった、とのことです。\r\n\r\nRFC 6265 を作成した IETF HTTP State Management Mechanism (httpstate) Working Group は、2011年4月に活動を終了しています。\r\n\r\nIETF HTTP State Management Mechanism (httpstate) Working Group\r\nhttps://datatracker.ietf.org/wg/httpstate/charter/\r\n",
-  "identifier": "JVNDB-2015-004921",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU92999848/index.html",
-      "source": "JVN",
-      "id": "JVNVU#92999848"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/804060",
-      "source": "CERT-VN",
-      "id": "VU#804060"
-    },
-    {
-      "text": "https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/zheng",
-      "source": "関連文書",
-      "id": "Cookies Lack Integrity: Real-World Implications"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2015-09-29T16:02+09:00",
-  "issued": "2015-09-29T16:02+09:00",
-  "modified": "2015-09-29T16:02+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004921.html",
+	"title": "HTTP リクエスト経由で設定された Cookie によって HTTPS 接続がバイパスされたり情報漏えいが発生する問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-004921.html",
+	"description": "RFC 6265 (旧 RFC 2965) は、いわゆる Cookie による HTTP セッションの状態管理の仕組みを規定しています。RFC 6265 を実装しているほとんどのウェブブラウザでは、HTTP リクエストを通じて設定される Cookie によって、HTTPS 接続がバイパスされたり、セッション情報が取得されたりする問題が存在します。\r\n\r\nRFC 6265\r\nhttps://tools.ietf.org/html/rfc6265\r\n\r\nCookie を用いて HTTP セッションの状態管理を行う場合、様々なセキュリティ上の問題が発生する可能性があることが知られています。\r\n例えば、RFC 6265 の Section 8.6 には次のように記載されています。\r\n\r\nRFC 6265 の Section 8.6\r\nhttps://tools.ietf.org/html/rfc6265#section-8.6\r\n\r\n　\"Cookies do not provide integrity guarantees for sibling domains (and their subdomains). For example, consider foo.example.com and bar.example.com. The foo.example.com server can set a cookie with a Domain attribute of \"example.com\" (possibly overwriting an existing \"example.com\" cookie set by bar.example.com), and the user agent will include that cookie in HTTP requests to bar.example.com. In the worst case, bar.example.com will be unable to distinguish this cookie from a cookie it set itself. The foo.example.com server might be able to leverage this ability to mount an attack against bar.example.com.\"\r\n(Cookie の設定では、隣接するドメインやサブドメインとの整合性は確保されない。例えば、foo.example.com と bar.example.com を考えてみよう。foo.example.com のサーバは Domain 属性 \"example.com\" の Cookie を設定することができる(bar.example.com のサーバが \"example.com\" の Cookie を設定していた場合には上書きされる)。この状態で bar.example.com にアクセスすると、foo.example.com によって上書きされた Cookie がサーバに送られることになる。bar.example.com のサーバは、この Cookie は自分が設定したものと誤認する可能性もある。ウェブブラウザのこのような挙動を使えば、foo.example.com のサーバから bar.example.com に対して何らかの攻撃が可能になるかもしれない。)\r\n\r\nまた、RFC 6265 の Section 8.5 には次のように記載されています。\r\n\r\nRFC 6265 の Section 8.5\r\nhttps://tools.ietf.org/html/rfc6265#section-8.5\r\n\r\n　\"Cookies do not provide isolation by port. If a cookie is readable by a service running on one port, the cookie is also readable by a service running on another port of the same server. If a cookie is writable by a service on one port, the cookie is also writable by a service running on another port of the same server. ... Cookies do not provide isolation by scheme. Although most commonly used with the http and https schemes, the cookies for a given host might also be available to other schemes, such as ftp and gopher.\"\r\n(Cookie はポート番号では区別されない。あるポート番号で稼働しているサービスに Cookie が送信される場合、同一サーバの異なるポート番号のサービスにも当該 Cookie は送信される。あるポート番号で稼働しているサービスが Cookie を設定できる場合、同一サーバの異なるポート番号のサービスが当該 Cookie を上書きできる。 ...... Cookie はプロトコルスキームでは区別されない。プロトコルスキームとして最も頻繁に使われるのは http および https だが、同一サーバの異なるプロトコルスキーム、例えば ftp や gopher など、に対しても当該 Cookie は共有される。)\r\n\r\n本脆弱性の報告者は、次のように述べています。\r\n\r\n　\"A cookie can contain a “secure” flag, indicating that it should be only sent over an HTTPS connection. Yet there is no corresponding flag to indicate how a cookie was set: attackers who act as a man-in-the-midddle even temporarily on an HTTP session can inject cookies which will be attached to subsequent HTTPS connections.\"\r\n(Cookie には \"secure\" フラグをつけることができる。\"secure\" フラグは、当該 Cookie が HTTPS 接続でのみ送信されるべきであることを示す。一方、Cookie が設定された際の状況を示すフラグは存在しない。ブラウザとサーバの間の通信に HTTPS でなく HTTP セッションが存在する場合、中間者攻撃によって ブラウザに Cookie を設定し、その後の HTTPS 通信に使わせる、という攻撃が可能である。)\r\n\r\nRFC 6265 では、様々なサイトへのアクセスによってウェブブラウザに設定される Cookie の独立性と整合性を保証するための仕組みを規定しておらず、ウェブブラウザで Cookie が設定される際にドメインの確認が行われるとは限りません。攻撃者はこの性質を利用し、HTTPS で接続するサイトに使われる Cookie を上書きする可能性があります。例えば、あらかじめ \"example.com\" の Cookie を設定しておくことで、\"www.example.com\" に HTTPS 接続する際に使われる Cookie を上書きすることが可能です。サーバに存在する他の弱点と組み合わせることで、HTTPS セッションで保護されるべき情報が漏えいする可能性があります。同一生成元ポリシー (RFC 6454) は Cookie には適用されないため、このような攻撃を防ぐことはできません。\r\n\r\n同一生成元ポリシー (RFC 6454)\r\nhttps://tools.ietf.org/html/rfc6454\r\n\r\n上記のような HTTPS セッションに対する攻撃の詳細については、USENIX Security 2015 で発表された論文を参照してください。\r\n\r\n論文\r\nhttps://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/zheng\r\n\r\nいくつかのウェブブラウザベンダによれば、より安全な Cookie 管理の仕組みを実装する試みは行われていたが広く実装される標準となるには至らなかった、とのことです。\r\n\r\nRFC 6265 を作成した IETF HTTP State Management Mechanism (httpstate) Working Group は、2011年4月に活動を終了しています。\r\n\r\nIETF HTTP State Management Mechanism (httpstate) Working Group\r\nhttps://datatracker.ietf.org/wg/httpstate/charter/\r\n",
+	"identifier": "JVNDB-2015-004921",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU92999848/index.html",
+			"source": "JVN",
+			"id": "JVNVU#92999848"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/804060",
+			"source": "CERT-VN",
+			"id": "VU#804060"
+		},
+		{
+			"text": "https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/zheng",
+			"source": "関連文書",
+			"id": "Cookies Lack Integrity: Real-World Implications"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2015-09-29T16:02+09:00",
+	"issued": "2015-09-29T16:02+09:00",
+	"modified": "2015-09-29T16:02+09:00"
 }

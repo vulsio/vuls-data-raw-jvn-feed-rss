@@ -1,296 +1,296 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005175.html",
-  "title": "Google Chrome および Ghostscript などで使用される libjpeg 6b および libjpeg-turbo における重要な情報を取得される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005175.html",
-  "description": "Google Chrome、Ghostscript およびその他の製品で使用される (1) libjpeg 6b および (2) libjpeg-turbo の jdmarker.c 内の get_sos 関数は、Start Of Scan (SOS) JPEG マーカーに従うセグメントの読み取り中にコンポーネントデータの特定の重複をチェックしないため、初期化されていないメモリ領域から重要な情報を取得される脆弱性が存在します。",
-  "identifier": "JVNDB-2013-005175",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU95868425/",
-      "source": "JVN",
-      "id": "JVNVU#95868425"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU94229445/",
-      "source": "JVN",
-      "id": "JVNVU#94229445"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU90170014/",
-      "source": "JVN",
-      "id": "JVNVU#90170014"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6629",
-      "source": "CVE",
-      "id": "CVE-2013-6629"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6629",
-      "source": "NVD",
-      "id": "CVE-2013-6629"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/ciadr/vul/20140416-jre.html",
-      "source": "IPA CFA",
-      "id": "Oracle Java の脆弱性対策について(CVE-2014-0429等)"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2014/at140017.html",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2014-0017"
-    },
-    {
-      "text": "http://advisories.mageia.org/MGASA-2013-0333.html",
-      "source": "関連文書",
-      "id": "MGASA-2013-0333"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-      "id": "CWE-200",
-      "title": "情報漏えい(CWE-200)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apple:apple_tv",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple TV"
-    },
-    {
-      "text": "cpe:/a:artifex:gpl_ghostscript",
-      "version": "2.2",
-      "vendor": "Artifex Software",
-      "product": "GPL Ghostscript"
-    },
-    {
-      "text": "cpe:/a:google:chrome",
-      "version": "2.2",
-      "vendor": "Google",
-      "product": "Google Chrome"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_client",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Client"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developers_kit_for_java",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer's Kit for Java(TM)"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Light Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Professional Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Standard Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_studio",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Studio"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Smart Edition"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_client",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Client"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Light"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_operator",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Operator"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Architect"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform"
-    },
-    {
-      "text": "cpe:/a:ibm:forms_viewer",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Forms Viewer"
-    },
-    {
-      "text": "cpe:/a:ibm:infosphere_streams",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM InfoSphere Streams"
-    },
-    {
-      "text": "cpe:/a:ibm:lotus_domino",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Domino (旧 IBM Lotus Domino)"
-    },
-    {
-      "text": "cpe:/a:ibm:lotus_expeditor",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Lotus Expeditor"
-    },
-    {
-      "text": "cpe:/a:ibm:notes",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Notes"
-    },
-    {
-      "text": "cpe:/a:oracle:java_se",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Java SE"
-    },
-    {
-      "text": "cpe:/a:oracle:jdk",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "JDK"
-    },
-    {
-      "text": "cpe:/a:oracle:jre",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "JRE"
-    },
-    {
-      "text": "cpe:/o:apple:iphone_os",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "iOS"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
-    }
-  ],
-  "date": "2015-03-16T18:01+09:00",
-  "issued": "2013-11-20T17:00+09:00",
-  "modified": "2015-03-16T18:01+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005175.html",
+	"title": "Google Chrome および Ghostscript などで使用される libjpeg 6b および libjpeg-turbo における重要な情報を取得される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-005175.html",
+	"description": "Google Chrome、Ghostscript およびその他の製品で使用される (1) libjpeg 6b および (2) libjpeg-turbo の jdmarker.c 内の get_sos 関数は、Start Of Scan (SOS) JPEG マーカーに従うセグメントの読み取り中にコンポーネントデータの特定の重複をチェックしないため、初期化されていないメモリ領域から重要な情報を取得される脆弱性が存在します。",
+	"identifier": "JVNDB-2013-005175",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU95868425/",
+			"source": "JVN",
+			"id": "JVNVU#95868425"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU94229445/",
+			"source": "JVN",
+			"id": "JVNVU#94229445"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU90170014/",
+			"source": "JVN",
+			"id": "JVNVU#90170014"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6629",
+			"source": "CVE",
+			"id": "CVE-2013-6629"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6629",
+			"source": "NVD",
+			"id": "CVE-2013-6629"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/ciadr/vul/20140416-jre.html",
+			"source": "IPA CFA",
+			"id": "Oracle Java の脆弱性対策について(CVE-2014-0429等)"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2014/at140017.html",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2014-0017"
+		},
+		{
+			"text": "http://advisories.mageia.org/MGASA-2013-0333.html",
+			"source": "関連文書",
+			"id": "MGASA-2013-0333"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apple:apple_tv",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple TV"
+		},
+		{
+			"text": "cpe:/a:artifex:gpl_ghostscript",
+			"version": "2.2",
+			"vendor": "Artifex Software",
+			"product": "GPL Ghostscript"
+		},
+		{
+			"text": "cpe:/a:google:chrome",
+			"version": "2.2",
+			"vendor": "Google",
+			"product": "Google Chrome"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_client",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Client"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developers_kit_for_java",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer's Kit for Java(TM)"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Light Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Professional Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Standard Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_studio",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Studio"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Smart Edition"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_client",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Client"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_light",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Light"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_operator",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Operator"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_architect",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Architect"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform"
+		},
+		{
+			"text": "cpe:/a:ibm:forms_viewer",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Forms Viewer"
+		},
+		{
+			"text": "cpe:/a:ibm:infosphere_streams",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM InfoSphere Streams"
+		},
+		{
+			"text": "cpe:/a:ibm:lotus_domino",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Domino (旧 IBM Lotus Domino)"
+		},
+		{
+			"text": "cpe:/a:ibm:lotus_expeditor",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Lotus Expeditor"
+		},
+		{
+			"text": "cpe:/a:ibm:notes",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Notes"
+		},
+		{
+			"text": "cpe:/a:oracle:java_se",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Java SE"
+		},
+		{
+			"text": "cpe:/a:oracle:jdk",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "JDK"
+		},
+		{
+			"text": "cpe:/a:oracle:jre",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "JRE"
+		},
+		{
+			"text": "cpe:/o:apple:iphone_os",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "iOS"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+		}
+	],
+	"date": "2015-03-16T18:01+09:00",
+	"issued": "2013-11-20T17:00+09:00",
+	"modified": "2015-03-16T18:01+09:00"
 }

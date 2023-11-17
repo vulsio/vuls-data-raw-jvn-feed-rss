@@ -1,191 +1,191 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000304.html",
-  "title": "libpng における不正な PNG ファイルによるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000304.html",
-  "description": "libpng には、png_handle_iCCP() 関数においてメモリ割り当ての際に NULL ポインタがデリファレンスされる問題が存在し、アプリケーションがクラッシュしてサービス運用妨害 (DoS) 状態となる脆弱性が存在します。\r\n\r\n本脆弱性は、脆弱な libpng ライブラリを使用しているプログラムの実装にも影響を与えます。",
-  "identifier": "JVNDB-2004-000304",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNTA04-217A/",
-      "source": "JVN",
-      "id": "JVNTA04-217A"
-    },
-    {
-      "text": "http://jvn.jp/tr/TRTA04-217A/",
-      "source": "JVNTR",
-      "id": "TRTA04-217A"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0598",
-      "source": "CVE",
-      "id": "CVE-2004-0598"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0598",
-      "source": "NVD",
-      "id": "CVE-2004-0598"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2004/at040010.txt",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2004-0010"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2004/wr043101.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2004-3101"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/236656",
-      "source": "CERT-VN",
-      "id": "VU#236656"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA04-217A.html",
-      "source": "CERT-TA",
-      "id": "TA04-217A"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/o-192.shtml",
-      "source": "CIAC",
-      "id": "O-192"
-    },
-    {
-      "text": "http://secunia.com/advisories/12236/",
-      "source": "SECUNIA",
-      "id": "SA12236"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/10857",
-      "source": "BID",
-      "id": "10857"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/16895",
-      "source": "XF",
-      "id": "16895"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:libpng:libpng",
-      "version": "2.2",
-      "vendor": "PNG Development Group",
-      "product": "libpng"
-    },
-    {
-      "text": "cpe:/a:mozilla:firefox",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla Firefox"
-    },
-    {
-      "text": "cpe:/a:mozilla:mozilla_suite",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla Suite"
-    },
-    {
-      "text": "cpe:/a:mozilla:thunderbird",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla Thunderbird"
-    },
-    {
-      "text": "cpe:/a:sun:java_desktop_system",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Java Desktop System"
-    },
-    {
-      "text": "cpe:/o:debian:debian_linux",
-      "version": "2.2",
-      "vendor": "Debian",
-      "product": "Debian GNU/Linux"
-    },
-    {
-      "text": "cpe:/o:gentoo:linux",
-      "version": "2.2",
-      "vendor": "Gentoo Linux",
-      "product": "Gentoo Linux"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:misc:vine_linux",
-      "version": "2.2",
-      "vendor": "Vine Linux",
-      "product": "Vine Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:linux_advanced_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux Advanced Workstation"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Appliance Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_desktop",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Desktop"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_workstation",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000304.html",
+	"title": "libpng における不正な PNG ファイルによるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000304.html",
+	"description": "libpng には、png_handle_iCCP() 関数においてメモリ割り当ての際に NULL ポインタがデリファレンスされる問題が存在し、アプリケーションがクラッシュしてサービス運用妨害 (DoS) 状態となる脆弱性が存在します。\r\n\r\n本脆弱性は、脆弱な libpng ライブラリを使用しているプログラムの実装にも影響を与えます。",
+	"identifier": "JVNDB-2004-000304",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNTA04-217A/",
+			"source": "JVN",
+			"id": "JVNTA04-217A"
+		},
+		{
+			"text": "http://jvn.jp/tr/TRTA04-217A/",
+			"source": "JVNTR",
+			"id": "TRTA04-217A"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0598",
+			"source": "CVE",
+			"id": "CVE-2004-0598"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0598",
+			"source": "NVD",
+			"id": "CVE-2004-0598"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2004/at040010.txt",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2004-0010"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2004/wr043101.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2004-3101"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/236656",
+			"source": "CERT-VN",
+			"id": "VU#236656"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA04-217A.html",
+			"source": "CERT-TA",
+			"id": "TA04-217A"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/o-192.shtml",
+			"source": "CIAC",
+			"id": "O-192"
+		},
+		{
+			"text": "http://secunia.com/advisories/12236/",
+			"source": "SECUNIA",
+			"id": "SA12236"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/10857",
+			"source": "BID",
+			"id": "10857"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/16895",
+			"source": "XF",
+			"id": "16895"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:libpng:libpng",
+			"version": "2.2",
+			"vendor": "PNG Development Group",
+			"product": "libpng"
+		},
+		{
+			"text": "cpe:/a:mozilla:firefox",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla Firefox"
+		},
+		{
+			"text": "cpe:/a:mozilla:mozilla_suite",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla Suite"
+		},
+		{
+			"text": "cpe:/a:mozilla:thunderbird",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla Thunderbird"
+		},
+		{
+			"text": "cpe:/a:sun:java_desktop_system",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Java Desktop System"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		},
+		{
+			"text": "cpe:/o:gentoo:linux",
+			"version": "2.2",
+			"vendor": "Gentoo Linux",
+			"product": "Gentoo Linux"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:misc:vine_linux",
+			"version": "2.2",
+			"vendor": "Vine Linux",
+			"product": "Vine Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:linux_advanced_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux Advanced Workstation"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Appliance Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_desktop",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Desktop"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_workstation",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

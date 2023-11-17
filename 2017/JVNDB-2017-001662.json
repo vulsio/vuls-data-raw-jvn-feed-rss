@@ -1,66 +1,66 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001662.html",
-  "title": "D-Link DIR-850L にバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001662.html",
-  "description": "D-Link DIR-850L のウェブ管理インターフェースにおける HNAP プロトコルデータの処理には、スタックベースのバッファオーバーフローの脆弱性が存在します。\r\n\r\nスタックベースのバッファオーバーフロー (CWE-121) - CVE-2017-3193\r\n当該製品にアクセス可能な第三者は HNAP_AUTH ならびに SOAPAction ヘッダを細工した POST リクエストを http://[ルータの IP アドレス]/HNAP1/ に送信することでバッファオーバーフローを引き起こし、root 権限で任意のコードを実行することが可能です。初期設定ではリモートでの管理操作は無効となっており、攻撃は LAN 側インタフェース経由に限られます。",
-  "identifier": "JVNDB-2017-001662",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU98628696/index.html",
-      "source": "JVN",
-      "id": "JVNVU#98628696"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU99822187/",
-      "source": "JVN",
-      "id": "JVNVU#99822187"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3193",
-      "source": "CVE",
-      "id": "CVE-2017-3193"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3193",
-      "source": "NVD",
-      "id": "CVE-2017-3193"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/305448",
-      "source": "CERT-VN",
-      "id": "VU#305448"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/121.html",
-      "id": "CWE-121",
-      "title": "スタックベースのバッファオーバーフロー(CWE-121)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:dlink:dir-850l_firmware",
-      "version": "2.2",
-      "vendor": "D-Link Systems, Inc.",
-      "product": "DIR-850L ファームウェア"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "8.3",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:A/AC:L/Au:N/C:C/I:C/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "8.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2018-03-14T12:27+09:00",
-  "issued": "2017-03-13T14:01+09:00",
-  "modified": "2018-03-14T12:27+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001662.html",
+	"title": "D-Link DIR-850L にバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-001662.html",
+	"description": "D-Link DIR-850L のウェブ管理インターフェースにおける HNAP プロトコルデータの処理には、スタックベースのバッファオーバーフローの脆弱性が存在します。\r\n\r\nスタックベースのバッファオーバーフロー (CWE-121) - CVE-2017-3193\r\n当該製品にアクセス可能な第三者は HNAP_AUTH ならびに SOAPAction ヘッダを細工した POST リクエストを http://[ルータの IP アドレス]/HNAP1/ に送信することでバッファオーバーフローを引き起こし、root 権限で任意のコードを実行することが可能です。初期設定ではリモートでの管理操作は無効となっており、攻撃は LAN 側インタフェース経由に限られます。",
+	"identifier": "JVNDB-2017-001662",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU98628696/index.html",
+			"source": "JVN",
+			"id": "JVNVU#98628696"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU99822187/",
+			"source": "JVN",
+			"id": "JVNVU#99822187"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3193",
+			"source": "CVE",
+			"id": "CVE-2017-3193"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3193",
+			"source": "NVD",
+			"id": "CVE-2017-3193"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/305448",
+			"source": "CERT-VN",
+			"id": "VU#305448"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/121.html",
+			"id": "CWE-121",
+			"title": "スタックベースのバッファオーバーフロー(CWE-121)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:dlink:dir-850l_firmware",
+			"version": "2.2",
+			"vendor": "D-Link Systems, Inc.",
+			"product": "DIR-850L ファームウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "8.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:A/AC:L/Au:N/C:C/I:C/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2018-03-14T12:27+09:00",
+	"issued": "2017-03-13T14:01+09:00",
+	"modified": "2018-03-14T12:27+09:00"
 }

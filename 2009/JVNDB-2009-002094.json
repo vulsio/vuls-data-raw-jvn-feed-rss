@@ -1,150 +1,150 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002094.html",
-  "title": "Windows SMB version 2 に脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002094.html",
-  "description": "Microsoft Windows Vista および Server 2008 には、Server Message Block version 2 (SMBv2) メッセージの解析に起因する脆弱性が存在します。\r\n\r\nWindows Vista および Server 2008 には、SMBv2 メッセージの Negotiate Protocol Request のヘッダ解析に起因する脆弱性が存在します。",
-  "identifier": "JVNDB-2009-002094",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNTA09-251A/",
-      "source": "JVN",
-      "id": "JVNTA09-251A"
-    },
-    {
-      "text": "http://jvn.jp/cert/JVNVU135940",
-      "source": "JVN",
-      "id": "JVNVU#135940"
-    },
-    {
-      "text": "http://jvn.jp/cert/JVNTA09-286A/index.html",
-      "source": "JVN",
-      "id": "JVNTA09-286A"
-    },
-    {
-      "text": "http://jvn.jp/tr/JVNTR-2009-22",
-      "source": "JVNTR",
-      "id": "JVNTR-2009-22"
-    },
-    {
-      "text": "http://jvn.jp/tr/JVNTR-2009-23",
-      "source": "JVNTR",
-      "id": "JVNTR-2009-23"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103",
-      "source": "CVE",
-      "id": "CVE-2009-3103"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3103",
-      "source": "NVD",
-      "id": "CVE-2009-3103"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2009/at090018.txt",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2009-0018"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2009/at090020.txt",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2009-0020"
-    },
-    {
-      "text": "http://www.cyberpolice.go.jp/#topics",
-      "source": "AT-POLICE",
-      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS09-045,046,047,048,049)"
-    },
-    {
-      "text": "http://www.cyberpolice.go.jp/index.html#topics",
-      "source": "AT-POLICE",
-      "id": "マイクロソフト社のセキュリティ修正プログラムについて(MS09-050,051,052,053,054,055,056,057,058,059,060,061,062)"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/alerts/SA09-251A.html",
-      "source": "CERT-SA",
-      "id": "SA09-251A"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/alerts/SA09-286A.html",
-      "source": "CERT-SA",
-      "id": "SA09-286A"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/135940",
-      "source": "CERT-VN",
-      "id": "VU#135940"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA09-251A.html",
-      "source": "CERT-TA",
-      "id": "TA09-251A"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA09-286A.html",
-      "source": "CERT-TA",
-      "id": "TA09-286A"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/ciadr/vul/20091014-ms09-050.html",
-      "source": "IPA",
-      "id": "Microsoft Windows における SMBv2 の脆弱性(MS09-050)について"
-    },
-    {
-      "text": "http://secunia.com/advisories/36623",
-      "source": "SECUNIA",
-      "id": "SA36623"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/36299",
-      "source": "BID",
-      "id": "36299"
-    },
-    {
-      "text": "http://www.vupen.com/english/advisories/2009/2886",
-      "source": "VUPEN",
-      "id": "VUPEN/ADV-2009-2886"
-    },
-    {
-      "text": "http://isc.sans.org/diary.html?storyid=7093",
-      "source": "SANS",
-      "id": "7093"
-    },
-    {
-      "text": "http://isc.sans.org/diary.html?storyid=7141",
-      "source": "SANS",
-      "id": "7141"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-      "id": "CWE-399",
-      "title": "リソース管理の問題(CWE-399)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:microsoft:windows_server_2008",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2008"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_vista",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Vista"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2009-10-14T14:48+09:00",
-  "issued": "2009-10-14T14:48+09:00",
-  "modified": "2009-10-14T14:48+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002094.html",
+	"title": "Windows SMB version 2 に脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-002094.html",
+	"description": "Microsoft Windows Vista および Server 2008 には、Server Message Block version 2 (SMBv2) メッセージの解析に起因する脆弱性が存在します。\r\n\r\nWindows Vista および Server 2008 には、SMBv2 メッセージの Negotiate Protocol Request のヘッダ解析に起因する脆弱性が存在します。",
+	"identifier": "JVNDB-2009-002094",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNTA09-251A/",
+			"source": "JVN",
+			"id": "JVNTA09-251A"
+		},
+		{
+			"text": "http://jvn.jp/cert/JVNVU135940",
+			"source": "JVN",
+			"id": "JVNVU#135940"
+		},
+		{
+			"text": "http://jvn.jp/cert/JVNTA09-286A/index.html",
+			"source": "JVN",
+			"id": "JVNTA09-286A"
+		},
+		{
+			"text": "http://jvn.jp/tr/JVNTR-2009-22",
+			"source": "JVNTR",
+			"id": "JVNTR-2009-22"
+		},
+		{
+			"text": "http://jvn.jp/tr/JVNTR-2009-23",
+			"source": "JVNTR",
+			"id": "JVNTR-2009-23"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103",
+			"source": "CVE",
+			"id": "CVE-2009-3103"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3103",
+			"source": "NVD",
+			"id": "CVE-2009-3103"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2009/at090018.txt",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2009-0018"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2009/at090020.txt",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2009-0020"
+		},
+		{
+			"text": "http://www.cyberpolice.go.jp/#topics",
+			"source": "AT-POLICE",
+			"id": "マイクロソフト社のセキュリティ修正プログラムについて(MS09-045,046,047,048,049)"
+		},
+		{
+			"text": "http://www.cyberpolice.go.jp/index.html#topics",
+			"source": "AT-POLICE",
+			"id": "マイクロソフト社のセキュリティ修正プログラムについて(MS09-050,051,052,053,054,055,056,057,058,059,060,061,062)"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/alerts/SA09-251A.html",
+			"source": "CERT-SA",
+			"id": "SA09-251A"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/alerts/SA09-286A.html",
+			"source": "CERT-SA",
+			"id": "SA09-286A"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/135940",
+			"source": "CERT-VN",
+			"id": "VU#135940"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA09-251A.html",
+			"source": "CERT-TA",
+			"id": "TA09-251A"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA09-286A.html",
+			"source": "CERT-TA",
+			"id": "TA09-286A"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/ciadr/vul/20091014-ms09-050.html",
+			"source": "IPA",
+			"id": "Microsoft Windows における SMBv2 の脆弱性(MS09-050)について"
+		},
+		{
+			"text": "http://secunia.com/advisories/36623",
+			"source": "SECUNIA",
+			"id": "SA36623"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/36299",
+			"source": "BID",
+			"id": "36299"
+		},
+		{
+			"text": "http://www.vupen.com/english/advisories/2009/2886",
+			"source": "VUPEN",
+			"id": "VUPEN/ADV-2009-2886"
+		},
+		{
+			"text": "http://isc.sans.org/diary.html?storyid=7093",
+			"source": "SANS",
+			"id": "7093"
+		},
+		{
+			"text": "http://isc.sans.org/diary.html?storyid=7141",
+			"source": "SANS",
+			"id": "7141"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+			"id": "CWE-399",
+			"title": "リソース管理の問題(CWE-399)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:microsoft:windows_server_2008",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2008"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_vista",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Vista"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2009-10-14T14:48+09:00",
+	"issued": "2009-10-14T14:48+09:00",
+	"modified": "2009-10-14T14:48+09:00"
 }

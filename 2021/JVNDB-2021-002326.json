@@ -1,217 +1,217 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002326.html",
-  "title": "OpenSSL に複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002326.html",
-  "description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20210824.txt\"target=\"blank\">OpenSSL Security Advisory [24 August 2021]</a> が公開されました。\r\nOpenSSL には、次の脆弱性が存在します。\r\n\r\n深刻度 - 高（Severity: High）\r\n　* SM2 暗号データの復号処理におけるバッファオーバーフロー （CWE-120）- CVE-2021-3711\r\n　　* SM2 暗号データの復号処理を行うアプリケーションは、EVP_PKEY_decrypt() 関数を通常 2 回呼び出すが、1 回目の呼び出しで計算されるバッファサイズが 2 回目の呼び出しで必要なサイズより小さくなるような SM2 データがアプリケーションに渡された場合、バッファオーバーフローが発生する可能性がある\r\n　　\r\n深刻度 - 中（Severity: Moderate）\r\n　* ASN.1 文字列処理におけるバッファエラー （CWE-119）- CVE-2021-3712\r\n　　* OpenSSL において、ASN.1 形式の文字列は ASN1_STRING 構造で表され、その構造では NULL 終端が必須とはされていない。しかし、OpenSSL 内には NULL 終端を前提として処理を行う関数が複数存在するため、アプリケーション内で直接生成されるなどした NULL 終端を持たない ASN1_STRING 構造文字列を処理させられた場合、バッファエラーが発生する可能性がある",
-  "identifier": "JVNDB-2021-002326",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU99612123/index.html",
-      "source": "JVN",
-      "id": "JVNVU#99612123"
-    },
-    {
-      "text": "https://jvn.jp/vu/JVNVU98748974/",
-      "source": "JVN",
-      "id": "JVNVU#98748974"
-    },
-    {
-      "text": "https://jvn.jp/vu/JVNVU99843134/index.html",
-      "source": "JVN",
-      "id": "JVNVU#99843134"
-    },
-    {
-      "text": "https://jvn.jp/vu/JVNVU91676340/",
-      "source": "JVN",
-      "id": "JVNVU#91676340"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3711",
-      "source": "CVE",
-      "id": "CVE-2021-3711"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3712",
-      "source": "CVE",
-      "id": "CVE-2021-3712"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3711",
-      "source": "NVD",
-      "id": "CVE-2021-3711"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3712",
-      "source": "NVD",
-      "id": "CVE-2021-3712"
-    },
-    {
-      "text": "https://www.jpcert.or.jp/at/2021/at210036.html",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2021-0036"
-    },
-    {
-      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-22-342-02",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-22-342-02"
-    },
-    {
-      "text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-02",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-23-143-02"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/120.html",
-      "id": "CWE-120",
-      "title": "古典的バッファオーバーフロー(CWE-120)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:hitachi:advanced_server_ha8000_series",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "日立アドバンストサーバ HA8000 シリーズ"
-    },
-    {
-      "text": "cpe:/a:nec:addpoint",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "AddPoint"
-    },
-    {
-      "text": "cpe:/a:nec:ai_accelerator",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "NEC AI Accelerator"
-    },
-    {
-      "text": "cpe:/a:nec:connexive_pf",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CONNEXIVE PF"
-    },
-    {
-      "text": "cpe:/a:nec:elastic_matcher",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "Elastic Matcher"
-    },
-    {
-      "text": "cpe:/a:nec:enterpriseidentitymanager",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "EnterpriseIdentityManager"
-    },
-    {
-      "text": "cpe:/a:nec:enterprise_directoryserver",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "EnterpriseDirectoryServer"
-    },
-    {
-      "text": "cpe:/a:nec:esmpro_serveragent",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerAgent"
-    },
-    {
-      "text": "cpe:/a:nec:factory_valueadded_solution",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "工場付加価値時間計測ソリューション"
-    },
-    {
-      "text": "cpe:/a:nec:ismserver",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "iSMサーバ"
-    },
-    {
-      "text": "cpe:/a:nec:istoragemanager",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "iStorageManager"
-    },
-    {
-      "text": "cpe:/a:nec:istoragemanager_express",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "iStorageManager Express"
-    },
-    {
-      "text": "cpe:/a:nec:mission_critical_mail",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "Mission Critical Mail"
-    },
-    {
-      "text": "cpe:/a:nec:systemdirector_enterprise",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "SystemDirector Enterprise"
-    },
-    {
-      "text": "cpe:/a:nec:tokusengai_gcb",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "得選街・GCB"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_sip_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX SIP Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:witchymail",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WitchyMail"
-    },
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/h:nec:univerge",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "UNIVERGE"
-    },
-    {
-      "text": "cpe:/o:nec:nec_cyber_security_platform",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "NEC Cyber Security Platform"
-    },
-    {
-      "text": "cpe:/o:nec:nec_edge_gateway",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "NEC エッジゲートウェイ"
-    },
-    {
-      "text": "cpe:/o:nec:univerge_integration_platform",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "UNIVERGE Integration Platform"
-    }
-  ],
-  "date": "2023-07-20T15:10+09:00",
-  "issued": "2021-08-26T16:51+09:00",
-  "modified": "2023-07-20T15:10+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002326.html",
+	"title": "OpenSSL に複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-002326.html",
+	"description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20210824.txt\"target=\"blank\">OpenSSL Security Advisory [24 August 2021]</a> が公開されました。\r\nOpenSSL には、次の脆弱性が存在します。\r\n\r\n深刻度 - 高（Severity: High）\r\n　* SM2 暗号データの復号処理におけるバッファオーバーフロー （CWE-120）- CVE-2021-3711\r\n　　* SM2 暗号データの復号処理を行うアプリケーションは、EVP_PKEY_decrypt() 関数を通常 2 回呼び出すが、1 回目の呼び出しで計算されるバッファサイズが 2 回目の呼び出しで必要なサイズより小さくなるような SM2 データがアプリケーションに渡された場合、バッファオーバーフローが発生する可能性がある\r\n　　\r\n深刻度 - 中（Severity: Moderate）\r\n　* ASN.1 文字列処理におけるバッファエラー （CWE-119）- CVE-2021-3712\r\n　　* OpenSSL において、ASN.1 形式の文字列は ASN1_STRING 構造で表され、その構造では NULL 終端が必須とはされていない。しかし、OpenSSL 内には NULL 終端を前提として処理を行う関数が複数存在するため、アプリケーション内で直接生成されるなどした NULL 終端を持たない ASN1_STRING 構造文字列を処理させられた場合、バッファエラーが発生する可能性がある",
+	"identifier": "JVNDB-2021-002326",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU99612123/index.html",
+			"source": "JVN",
+			"id": "JVNVU#99612123"
+		},
+		{
+			"text": "https://jvn.jp/vu/JVNVU98748974/",
+			"source": "JVN",
+			"id": "JVNVU#98748974"
+		},
+		{
+			"text": "https://jvn.jp/vu/JVNVU99843134/index.html",
+			"source": "JVN",
+			"id": "JVNVU#99843134"
+		},
+		{
+			"text": "https://jvn.jp/vu/JVNVU91676340/",
+			"source": "JVN",
+			"id": "JVNVU#91676340"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3711",
+			"source": "CVE",
+			"id": "CVE-2021-3711"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3712",
+			"source": "CVE",
+			"id": "CVE-2021-3712"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3711",
+			"source": "NVD",
+			"id": "CVE-2021-3711"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-3712",
+			"source": "NVD",
+			"id": "CVE-2021-3712"
+		},
+		{
+			"text": "https://www.jpcert.or.jp/at/2021/at210036.html",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2021-0036"
+		},
+		{
+			"text": "https://www.cisa.gov/news-events/ics-advisories/icsa-22-342-02",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-22-342-02"
+		},
+		{
+			"text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-02",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-23-143-02"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/120.html",
+			"id": "CWE-120",
+			"title": "古典的バッファオーバーフロー(CWE-120)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hitachi:advanced_server_ha8000_series",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "日立アドバンストサーバ HA8000 シリーズ"
+		},
+		{
+			"text": "cpe:/a:nec:addpoint",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "AddPoint"
+		},
+		{
+			"text": "cpe:/a:nec:ai_accelerator",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "NEC AI Accelerator"
+		},
+		{
+			"text": "cpe:/a:nec:connexive_pf",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CONNEXIVE PF"
+		},
+		{
+			"text": "cpe:/a:nec:elastic_matcher",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "Elastic Matcher"
+		},
+		{
+			"text": "cpe:/a:nec:enterpriseidentitymanager",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "EnterpriseIdentityManager"
+		},
+		{
+			"text": "cpe:/a:nec:enterprise_directoryserver",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "EnterpriseDirectoryServer"
+		},
+		{
+			"text": "cpe:/a:nec:esmpro_serveragent",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerAgent"
+		},
+		{
+			"text": "cpe:/a:nec:factory_valueadded_solution",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "工場付加価値時間計測ソリューション"
+		},
+		{
+			"text": "cpe:/a:nec:ismserver",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "iSMサーバ"
+		},
+		{
+			"text": "cpe:/a:nec:istoragemanager",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "iStorageManager"
+		},
+		{
+			"text": "cpe:/a:nec:istoragemanager_express",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "iStorageManager Express"
+		},
+		{
+			"text": "cpe:/a:nec:mission_critical_mail",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "Mission Critical Mail"
+		},
+		{
+			"text": "cpe:/a:nec:systemdirector_enterprise",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "SystemDirector Enterprise"
+		},
+		{
+			"text": "cpe:/a:nec:tokusengai_gcb",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "得選街・GCB"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_sip_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX SIP Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:witchymail",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WitchyMail"
+		},
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/h:nec:univerge",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "UNIVERGE"
+		},
+		{
+			"text": "cpe:/o:nec:nec_cyber_security_platform",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "NEC Cyber Security Platform"
+		},
+		{
+			"text": "cpe:/o:nec:nec_edge_gateway",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "NEC エッジゲートウェイ"
+		},
+		{
+			"text": "cpe:/o:nec:univerge_integration_platform",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "UNIVERGE Integration Platform"
+		}
+	],
+	"date": "2023-07-20T15:10+09:00",
+	"issued": "2021-08-26T16:51+09:00",
+	"modified": "2023-07-20T15:10+09:00"
 }

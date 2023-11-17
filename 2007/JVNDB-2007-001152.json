@@ -1,101 +1,101 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001152.html",
-  "title": "GNU Emacs の hack-local-variables() 関数におけるプログラムの変数を変更される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001152.html",
-  "description": "Emacs の hack-local-variables() 関数には、enable-local-variables で :safe に設定している場合、安全ではない変数のリストを検索しないため、ファイルに含まれるローカル変数の宣言により、制限を回避され、プログラムの変数を変更される脆弱性が存在します。",
-  "identifier": "JVNDB-2007-001152",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNTA08-079A/index.html",
-      "source": "JVN",
-      "id": "JVNTA08-079A"
-    },
-    {
-      "text": "http://jvn.jp/tr/TRTA08-079A/index.html",
-      "source": "JVNTR",
-      "id": "TRTA08-079A"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5795",
-      "source": "CVE",
-      "id": "CVE-2007-5795"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5795",
-      "source": "NVD",
-      "id": "CVE-2007-5795"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/alerts/SA08-079A.html",
-      "source": "CERT-SA",
-      "id": "SA08-079A"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA08-079A.html",
-      "source": "CERT-TA",
-      "id": "TA08-079A"
-    },
-    {
-      "text": "http://secunia.com/advisories/27508",
-      "source": "SECUNIA",
-      "id": "SA27508"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/26327",
-      "source": "BID",
-      "id": "26327"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/38263",
-      "source": "XF",
-      "id": "38263"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2008/0924",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2008-0924"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2007/3715",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2007-3715"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-DesignError",
-      "title": "設計上の問題(CWE-DesignError)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:gnu:emacs",
-      "version": "2.2",
-      "vendor": "GNU Project",
-      "product": "GNU Emacs"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:M/Au:N/C:N/I:C/A:C"
-    }
-  ],
-  "date": "2008-04-11T17:36+09:00",
-  "issued": "2008-04-11T17:36+09:00",
-  "modified": "2008-04-11T17:36+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001152.html",
+	"title": "GNU Emacs の hack-local-variables() 関数におけるプログラムの変数を変更される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-001152.html",
+	"description": "Emacs の hack-local-variables() 関数には、enable-local-variables で :safe に設定している場合、安全ではない変数のリストを検索しないため、ファイルに含まれるローカル変数の宣言により、制限を回避され、プログラムの変数を変更される脆弱性が存在します。",
+	"identifier": "JVNDB-2007-001152",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNTA08-079A/index.html",
+			"source": "JVN",
+			"id": "JVNTA08-079A"
+		},
+		{
+			"text": "http://jvn.jp/tr/TRTA08-079A/index.html",
+			"source": "JVNTR",
+			"id": "TRTA08-079A"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5795",
+			"source": "CVE",
+			"id": "CVE-2007-5795"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-5795",
+			"source": "NVD",
+			"id": "CVE-2007-5795"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/alerts/SA08-079A.html",
+			"source": "CERT-SA",
+			"id": "SA08-079A"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA08-079A.html",
+			"source": "CERT-TA",
+			"id": "TA08-079A"
+		},
+		{
+			"text": "http://secunia.com/advisories/27508",
+			"source": "SECUNIA",
+			"id": "SA27508"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/26327",
+			"source": "BID",
+			"id": "26327"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/38263",
+			"source": "XF",
+			"id": "38263"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2008/0924",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2008-0924"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2007/3715",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2007-3715"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-DesignError",
+			"title": "設計上の問題(CWE-DesignError)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:gnu:emacs",
+			"version": "2.2",
+			"vendor": "GNU Project",
+			"product": "GNU Emacs"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:N/C:N/I:C/A:C"
+		}
+	],
+	"date": "2008-04-11T17:36+09:00",
+	"issued": "2008-04-11T17:36+09:00",
+	"modified": "2008-04-11T17:36+09:00"
 }

@@ -1,156 +1,156 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001951.html",
-  "title": "オムロン製 CX-Supervisor における複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001951.html",
-  "description": "オムロン株式会社が提供する CX-Supervisor には、次の複数の脆弱性が存在します。\r\n\r\n　* スタックベースのバッファオーバーフロー (CWE-121) - CVE-2018-7513\r\n　　細工されたプロジェクトファイルの処理に起因して、スタックベースのバッファオーバーフローが発生する可能性があります。\r\n\r\n　* 初期化されていないポインタのアクセス (CWE-824) - CVE-2018-7515\r\n　　細工されたパケットの処理に起因して、初期化されていないポインタにアクセスする可能性があります。\r\n\r\n　* メモリ境界外への書き込み (CWE-787) - CVE-2018-7517\r\n　　細工されたプロジェクトファイルの処理に起因して、メモリ境界外への書き込みを行う可能性があります。\r\n\r\n　* ヒープベースのバッファオーバーフロー (CWE-122) - CVE-2018-7519\r\n　　細工されたプロジェクトファイルの処理に起因して、ヒープベースのバッファオーバーフローが発生する可能性があります。\r\n\r\n　* 解放済みメモリ使用 (CWE-416) - CVE-2018-7521\r\n　　細工されたプロジェクトファイルの処理に起因する、解放済みメモリ使用の脆弱性です。\r\n\r\n　* メモリ二重解放 (CWE-415) - CVE-2018-7523\r\n　　細工されたプロジェクトファイルの処理に起因する、メモリ二重解放の脆弱性です。\r\n\r\n　* 信頼できないポインタの参照 (CWE-822) - CVE-2018-7525\r\n　　細工されたパケットの処理に起因して、信頼できないポインタを参照する可能性があります。",
-  "identifier": "JVNDB-2018-001951",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU95051832/index.html",
-      "source": "JVN",
-      "id": "JVNVU#95051832"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7513",
-      "source": "CVE",
-      "id": "CVE-2018-7513"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7515",
-      "source": "CVE",
-      "id": "CVE-2018-7515"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7517",
-      "source": "CVE",
-      "id": "CVE-2018-7517"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7519",
-      "source": "CVE",
-      "id": "CVE-2018-7519"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7521",
-      "source": "CVE",
-      "id": "CVE-2018-7521"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7523",
-      "source": "CVE",
-      "id": "CVE-2018-7523"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7525",
-      "source": "CVE",
-      "id": "CVE-2018-7525"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7513",
-      "source": "NVD",
-      "id": "CVE-2018-7513"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7515",
-      "source": "NVD",
-      "id": "CVE-2018-7515"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7517",
-      "source": "NVD",
-      "id": "CVE-2018-7517"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7519",
-      "source": "NVD",
-      "id": "CVE-2018-7519"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7521",
-      "source": "NVD",
-      "id": "CVE-2018-7521"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7523",
-      "source": "NVD",
-      "id": "CVE-2018-7523"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7525",
-      "source": "NVD",
-      "id": "CVE-2018-7525"
-    },
-    {
-      "text": "https://ics-cert.us-cert.gov/Recommended-Practices",
-      "source": "ICS-CERT",
-      "id": "Recommended Practices"
-    },
-    {
-      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-18-072-01",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-18-072-01"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/121.html",
-      "id": "CWE-121",
-      "title": "スタックベースのバッファオーバーフロー(CWE-121)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/122.html",
-      "id": "CWE-122",
-      "title": "ヒープベースのバッファオーバーフロー(CWE-122)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/415.html",
-      "id": "CWE-415",
-      "title": "二重解放(CWE-415)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/416.html",
-      "id": "CWE-416",
-      "title": "解放済みメモリの使用(CWE-416)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/787.html",
-      "id": "CWE-787",
-      "title": "境界外書き込み(CWE-787)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/824.html",
-      "id": "CWE-824",
-      "title": "初期化されていないポインタのアクセス(CWE-824)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/822.html",
-      "id": "CWE-822",
-      "title": "信頼できないポインタデリファレンス(CWE-822)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:omron:cx-supervisor",
-      "version": "2.2",
-      "vendor": "オムロン株式会社",
-      "product": "CX-Supervisor"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "5.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L"
-    }
-  ],
-  "date": "2018-08-22T14:42+09:00",
-  "issued": "2018-03-16T13:38+09:00",
-  "modified": "2018-08-22T14:42+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001951.html",
+	"title": "オムロン製 CX-Supervisor における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-001951.html",
+	"description": "オムロン株式会社が提供する CX-Supervisor には、次の複数の脆弱性が存在します。\r\n\r\n　* スタックベースのバッファオーバーフロー (CWE-121) - CVE-2018-7513\r\n　　細工されたプロジェクトファイルの処理に起因して、スタックベースのバッファオーバーフローが発生する可能性があります。\r\n\r\n　* 初期化されていないポインタのアクセス (CWE-824) - CVE-2018-7515\r\n　　細工されたパケットの処理に起因して、初期化されていないポインタにアクセスする可能性があります。\r\n\r\n　* メモリ境界外への書き込み (CWE-787) - CVE-2018-7517\r\n　　細工されたプロジェクトファイルの処理に起因して、メモリ境界外への書き込みを行う可能性があります。\r\n\r\n　* ヒープベースのバッファオーバーフロー (CWE-122) - CVE-2018-7519\r\n　　細工されたプロジェクトファイルの処理に起因して、ヒープベースのバッファオーバーフローが発生する可能性があります。\r\n\r\n　* 解放済みメモリ使用 (CWE-416) - CVE-2018-7521\r\n　　細工されたプロジェクトファイルの処理に起因する、解放済みメモリ使用の脆弱性です。\r\n\r\n　* メモリ二重解放 (CWE-415) - CVE-2018-7523\r\n　　細工されたプロジェクトファイルの処理に起因する、メモリ二重解放の脆弱性です。\r\n\r\n　* 信頼できないポインタの参照 (CWE-822) - CVE-2018-7525\r\n　　細工されたパケットの処理に起因して、信頼できないポインタを参照する可能性があります。",
+	"identifier": "JVNDB-2018-001951",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU95051832/index.html",
+			"source": "JVN",
+			"id": "JVNVU#95051832"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7513",
+			"source": "CVE",
+			"id": "CVE-2018-7513"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7515",
+			"source": "CVE",
+			"id": "CVE-2018-7515"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7517",
+			"source": "CVE",
+			"id": "CVE-2018-7517"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7519",
+			"source": "CVE",
+			"id": "CVE-2018-7519"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7521",
+			"source": "CVE",
+			"id": "CVE-2018-7521"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7523",
+			"source": "CVE",
+			"id": "CVE-2018-7523"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7525",
+			"source": "CVE",
+			"id": "CVE-2018-7525"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7513",
+			"source": "NVD",
+			"id": "CVE-2018-7513"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7515",
+			"source": "NVD",
+			"id": "CVE-2018-7515"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7517",
+			"source": "NVD",
+			"id": "CVE-2018-7517"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7519",
+			"source": "NVD",
+			"id": "CVE-2018-7519"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7521",
+			"source": "NVD",
+			"id": "CVE-2018-7521"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7523",
+			"source": "NVD",
+			"id": "CVE-2018-7523"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-7525",
+			"source": "NVD",
+			"id": "CVE-2018-7525"
+		},
+		{
+			"text": "https://ics-cert.us-cert.gov/Recommended-Practices",
+			"source": "ICS-CERT",
+			"id": "Recommended Practices"
+		},
+		{
+			"text": "https://ics-cert.us-cert.gov/advisories/ICSA-18-072-01",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-18-072-01"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/121.html",
+			"id": "CWE-121",
+			"title": "スタックベースのバッファオーバーフロー(CWE-121)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/122.html",
+			"id": "CWE-122",
+			"title": "ヒープベースのバッファオーバーフロー(CWE-122)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/415.html",
+			"id": "CWE-415",
+			"title": "二重解放(CWE-415)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/416.html",
+			"id": "CWE-416",
+			"title": "解放済みメモリの使用(CWE-416)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/824.html",
+			"id": "CWE-824",
+			"title": "初期化されていないポインタのアクセス(CWE-824)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/822.html",
+			"id": "CWE-822",
+			"title": "信頼できないポインタデリファレンス(CWE-822)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:omron:cx-supervisor",
+			"version": "2.2",
+			"vendor": "オムロン株式会社",
+			"product": "CX-Supervisor"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L"
+		}
+	],
+	"date": "2018-08-22T14:42+09:00",
+	"issued": "2018-03-16T13:38+09:00",
+	"modified": "2018-08-22T14:42+09:00"
 }

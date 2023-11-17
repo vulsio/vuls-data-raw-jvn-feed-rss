@@ -1,60 +1,60 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000320.html",
-  "title": "Adobe Acrobat Reader のファイル名の長さの取り扱いにおけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000320.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nAdobe Acrobat Reader では、バイナリ (8 ビット) データを電子メール転送に最適な 6 ビット形式に変換するアルゴリズムである Uuencoding 形式でエンコードされたファイルをサポートしています。\r\n\r\nUnix および Linux プラットフォーム用の Adobe Acrobat Reader 5.0.8 以前では、Uuencoding 形式でエンコードされたファイルをデコードする Uudecoding 処理において以下のような複数のセキュリティ上の問題が存在します。\r\n\r\n・ファイル名に含まれるバッククォート (`) 文字の取り扱いが不適切であるため、任意のコマンドが実行されてしまう問題 (CAN-2004-0630)\r\n\r\n・ファイル名の長さの取り扱いが不適切であるため、バッファオーバーフローが発生する問題 (CAN-2004-0631)\r\n\r\nこれらの問題を利用するリモート/ローカルの攻撃者は、意図的な名前を持つファイルを送りつけ、Acrobat Reader で開くよう誘導することにより、標的ユーザの実行権限で任意のコマンドや任意のコードを実行することが可能です。",
-  "identifier": "JVNDB-2004-000320",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0631",
-      "source": "CVE",
-      "id": "CVE-2004-0631"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0631",
-      "source": "NVD",
-      "id": "CVE-2004-0631"
-    },
-    {
-      "text": "http://secunia.com/advisories/12285/",
-      "source": "SECUNIA",
-      "id": "SA12285"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/10932",
-      "source": "BID",
-      "id": "10932"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/10931",
-      "source": "BID",
-      "id": "10931"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:adobe:acrobat_reader",
-      "version": "2.2",
-      "vendor": "アドビ",
-      "product": "Adobe Reader"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "10.0",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000320.html",
+	"title": "Adobe Acrobat Reader のファイル名の長さの取り扱いにおけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000320.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nAdobe Acrobat Reader では、バイナリ (8 ビット) データを電子メール転送に最適な 6 ビット形式に変換するアルゴリズムである Uuencoding 形式でエンコードされたファイルをサポートしています。\r\n\r\nUnix および Linux プラットフォーム用の Adobe Acrobat Reader 5.0.8 以前では、Uuencoding 形式でエンコードされたファイルをデコードする Uudecoding 処理において以下のような複数のセキュリティ上の問題が存在します。\r\n\r\n・ファイル名に含まれるバッククォート (`) 文字の取り扱いが不適切であるため、任意のコマンドが実行されてしまう問題 (CAN-2004-0630)\r\n\r\n・ファイル名の長さの取り扱いが不適切であるため、バッファオーバーフローが発生する問題 (CAN-2004-0631)\r\n\r\nこれらの問題を利用するリモート/ローカルの攻撃者は、意図的な名前を持つファイルを送りつけ、Acrobat Reader で開くよう誘導することにより、標的ユーザの実行権限で任意のコマンドや任意のコードを実行することが可能です。",
+	"identifier": "JVNDB-2004-000320",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0631",
+			"source": "CVE",
+			"id": "CVE-2004-0631"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0631",
+			"source": "NVD",
+			"id": "CVE-2004-0631"
+		},
+		{
+			"text": "http://secunia.com/advisories/12285/",
+			"source": "SECUNIA",
+			"id": "SA12285"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/10932",
+			"source": "BID",
+			"id": "10932"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/10931",
+			"source": "BID",
+			"id": "10931"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:adobe:acrobat_reader",
+			"version": "2.2",
+			"vendor": "アドビ",
+			"product": "Adobe Reader"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "10.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

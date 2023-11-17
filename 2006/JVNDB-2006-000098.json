@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000098.html",
-  "title": "IBM Lotus Notes/Domino の kvarcve.dll におけるディレクトリトラバーサルの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000098.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nIBM Lotus Notes/Domino には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) Notes attachment viewer の kvarcve.dll において、過度に長いファイル名を含む ZIP 圧縮ファイルを展開する前に、圧縮ファイルのパスの存在を確認するためのフルパス名を構成する過程で、境界チェックが適切に行われないためスタックオーバーフローが発生する問題が存在します。(CVE-2005-2618)\r\n\r\nリモートの攻撃者に悪用された場合、Lotus Notes を実行する標的ユーザの権限で任意のコードを実行される可能性があります。\r\n\r\n2) Notes attachment viewer の uudrdr.dll において、エンコードされた過度に長いファイル名のファイルを含む UUE ファイルを取り扱う際、境界チェックが適切に行われないため、スタックオーバーフローが発生する問題が存在します。(CVE-2005-2618)\r\n\r\nリモートの攻撃者に悪用された場合、標的ユーザの権限で任意のコードを実行される可能性があります。\r\n\r\n3) Notes attachment viewer の kvarcve.dll において、特定の ZIP、UUE、TAR 圧縮ファイルのプレビューを生成する際、ディレクトリトラバーサル攻撃を受ける問題が存在します。(CVE-2005-2619)\r\n\r\nリモートの攻撃者に悪用された場合、標的ユーザのアクセス可能な任意のファイルを削除されてしまう可能性があります。\r\n\r\n4) TAR reader の tarrdr.dll において、過度に長いファイル名を含む TAR 圧縮ファイルを展開する際、境界チェックが適切に行われないため、スタックオーバーフローが発生する問題が存在します。(CVE-2005-2618)\r\n\r\nリモートの攻撃者に悪用された場合、標的ユーザの権限で任意のコードを実行される可能性があります。\r\n\r\n5) 電子メールに添付された HTML を表示する HTML speed reader の htmsr.dll において、\"http\"、\"ftp\"、もしくは \"//\" から始まる過度に長い (約 800 文字) リンクを含む HTML ファイルをプレビュー表示する際、境界チェックが適切に行われないためスタックオーバーフローが発生する問題が存在します。(CVE-2005-2618)\r\n\r\nリモートの攻撃者に悪用された場合、標的ユーザの権限で任意のコードを実行される可能性があります。\r\n\r\n6) HTML speed reader において、ローカルファイルを参照する過度に長いリンクを含む HTML ファイルをプレビュー表示する際、境界チェックが適切に行われてないため、スタックオーバーフローが発生する問題が存在します。(CVE-2005-2618)\r\n\r\nリモートの攻撃者に悪用された場合、標的ユーザの権限で任意のコードを実行される可能性があります。",
-  "identifier": "JVNDB-2006-000098",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2619",
-      "source": "CVE",
-      "id": "CVE-2005-2619"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2619",
-      "source": "NVD",
-      "id": "CVE-2005-2619"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/884076",
-      "source": "CERT-VN",
-      "id": "VU#884076"
-    },
-    {
-      "text": "http://secunia.com/advisories/16280/",
-      "source": "SECUNIA",
-      "id": "SA16280"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
-      "id": "CWE-22",
-      "title": "パス・トラバーサル(CWE-22)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:ibm:notes",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Notes"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000098.html",
+	"title": "IBM Lotus Notes/Domino の kvarcve.dll におけるディレクトリトラバーサルの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000098.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nIBM Lotus Notes/Domino には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) Notes attachment viewer の kvarcve.dll において、過度に長いファイル名を含む ZIP 圧縮ファイルを展開する前に、圧縮ファイルのパスの存在を確認するためのフルパス名を構成する過程で、境界チェックが適切に行われないためスタックオーバーフローが発生する問題が存在します。(CVE-2005-2618)\r\n\r\nリモートの攻撃者に悪用された場合、Lotus Notes を実行する標的ユーザの権限で任意のコードを実行される可能性があります。\r\n\r\n2) Notes attachment viewer の uudrdr.dll において、エンコードされた過度に長いファイル名のファイルを含む UUE ファイルを取り扱う際、境界チェックが適切に行われないため、スタックオーバーフローが発生する問題が存在します。(CVE-2005-2618)\r\n\r\nリモートの攻撃者に悪用された場合、標的ユーザの権限で任意のコードを実行される可能性があります。\r\n\r\n3) Notes attachment viewer の kvarcve.dll において、特定の ZIP、UUE、TAR 圧縮ファイルのプレビューを生成する際、ディレクトリトラバーサル攻撃を受ける問題が存在します。(CVE-2005-2619)\r\n\r\nリモートの攻撃者に悪用された場合、標的ユーザのアクセス可能な任意のファイルを削除されてしまう可能性があります。\r\n\r\n4) TAR reader の tarrdr.dll において、過度に長いファイル名を含む TAR 圧縮ファイルを展開する際、境界チェックが適切に行われないため、スタックオーバーフローが発生する問題が存在します。(CVE-2005-2618)\r\n\r\nリモートの攻撃者に悪用された場合、標的ユーザの権限で任意のコードを実行される可能性があります。\r\n\r\n5) 電子メールに添付された HTML を表示する HTML speed reader の htmsr.dll において、\"http\"、\"ftp\"、もしくは \"//\" から始まる過度に長い (約 800 文字) リンクを含む HTML ファイルをプレビュー表示する際、境界チェックが適切に行われないためスタックオーバーフローが発生する問題が存在します。(CVE-2005-2618)\r\n\r\nリモートの攻撃者に悪用された場合、標的ユーザの権限で任意のコードを実行される可能性があります。\r\n\r\n6) HTML speed reader において、ローカルファイルを参照する過度に長いリンクを含む HTML ファイルをプレビュー表示する際、境界チェックが適切に行われてないため、スタックオーバーフローが発生する問題が存在します。(CVE-2005-2618)\r\n\r\nリモートの攻撃者に悪用された場合、標的ユーザの権限で任意のコードを実行される可能性があります。",
+	"identifier": "JVNDB-2006-000098",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2619",
+			"source": "CVE",
+			"id": "CVE-2005-2619"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2619",
+			"source": "NVD",
+			"id": "CVE-2005-2619"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/884076",
+			"source": "CERT-VN",
+			"id": "VU#884076"
+		},
+		{
+			"text": "http://secunia.com/advisories/16280/",
+			"source": "SECUNIA",
+			"id": "SA16280"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ibm:notes",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Notes"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

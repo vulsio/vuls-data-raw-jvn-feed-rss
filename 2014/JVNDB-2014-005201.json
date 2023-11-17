@@ -1,70 +1,70 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005201.html",
-  "title": "uIP と lwIP の DNS リゾルバにキャッシュポイズニングの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005201.html",
-  "description": "uIP と lwIP に実装されている DNS リゾルバには、キャッシュポイズニング攻撃が容易になる脆弱性が存在します。\r\n\r\nuIP と lwIP に実装されている DNS リゾルバでは、トランザクション ID およびソースポートのランダム化が行われていません (CWE-330)。\r\n\r\nCWE-330: Use of Insufficiently Random Values\r\nhttp://cwe.mitre.org/data/definitions/330.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-345 として公開されています。\r\n\r\nCWE-345: Insufficient Verification of Data Authenticity (データの信頼性についての不十分な検証)\r\nhttp://cwe.mitre.org/data/definitions/345.html",
-  "identifier": "JVNDB-2014-005201",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU98989920/index.html",
-      "source": "JVN",
-      "id": "JVNVU#98989920"
-    },
-    {
-      "text": "http://jvn.jp/vu/JVNVU800113/",
-      "source": "JVN",
-      "id": "JVNVU#800113"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4883",
-      "source": "CVE",
-      "id": "CVE-2014-4883"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4883",
-      "source": "NVD",
-      "id": "CVE-2014-4883"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/210620",
-      "source": "CERT-VN",
-      "id": "VU#210620"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:iwip_project:iwip",
-      "version": "2.2",
-      "vendor": "lwIP プロジェクト",
-      "product": "lwIP"
-    },
-    {
-      "text": "cpe:/a:uip_project:uip",
-      "version": "2.2",
-      "vendor": "Contiki プロジェクト",
-      "product": "uIP"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2014-12-01T18:06+09:00",
-  "issued": "2014-11-05T15:26+09:00",
-  "modified": "2014-12-01T18:06+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005201.html",
+	"title": "uIP と lwIP の DNS リゾルバにキャッシュポイズニングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-005201.html",
+	"description": "uIP と lwIP に実装されている DNS リゾルバには、キャッシュポイズニング攻撃が容易になる脆弱性が存在します。\r\n\r\nuIP と lwIP に実装されている DNS リゾルバでは、トランザクション ID およびソースポートのランダム化が行われていません (CWE-330)。\r\n\r\nCWE-330: Use of Insufficiently Random Values\r\nhttp://cwe.mitre.org/data/definitions/330.html\r\n\r\nなお、National Vulnerability Database (NVD) では、CWE-345 として公開されています。\r\n\r\nCWE-345: Insufficient Verification of Data Authenticity (データの信頼性についての不十分な検証)\r\nhttp://cwe.mitre.org/data/definitions/345.html",
+	"identifier": "JVNDB-2014-005201",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU98989920/index.html",
+			"source": "JVN",
+			"id": "JVNVU#98989920"
+		},
+		{
+			"text": "http://jvn.jp/vu/JVNVU800113/",
+			"source": "JVN",
+			"id": "JVNVU#800113"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4883",
+			"source": "CVE",
+			"id": "CVE-2014-4883"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4883",
+			"source": "NVD",
+			"id": "CVE-2014-4883"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/210620",
+			"source": "CERT-VN",
+			"id": "VU#210620"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:iwip_project:iwip",
+			"version": "2.2",
+			"vendor": "lwIP プロジェクト",
+			"product": "lwIP"
+		},
+		{
+			"text": "cpe:/a:uip_project:uip",
+			"version": "2.2",
+			"vendor": "Contiki プロジェクト",
+			"product": "uIP"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2014-12-01T18:06+09:00",
+	"issued": "2014-11-05T15:26+09:00",
+	"modified": "2014-12-01T18:06+09:00"
 }

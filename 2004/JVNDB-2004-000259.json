@@ -1,72 +1,72 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000259.html",
-  "title": "Mozilla 製品における NTLM や SPNEGO の証明書情報が漏洩する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000259.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMozilla 1.7.3 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・ウィンドウ内で複数のタブを開いた際に、最前面のタブで開く信頼できるサイトの確認ダイアログが偽装される、あるいは、最前面のタブのサイトに入力しようとした情報が奪取される問題 (CAN-2004-1380、CAN-2004-1381、mfsa2005-05)\r\n\r\n・意図的に作成されたリンクを新しいタブを開くように誘導することにより、ローカルファイルや chrome: URL へのリンクの制限を回避できてしまう問題 (CAN-2005-0141、mfsa2005-01)\r\n\r\n・不適切な一時ファイルが作成されるため、ローカルの攻撃者に内容が奪取されてしまう問題 (CAN-2005-0142、mfsa2005-02)\r\n\r\n・バイナリファイルのダウンロードにより、信頼できるサイトの鍵アイコンが偽装される問題 (CAN-2005-0143、mfsa2005-03)\r\n\r\n・view-source: URL により、信頼できるサイトの鍵アイコンが偽装される問題 (CAN-2005-0144、mfsa2005-04)\r\n\r\n・JavaScript を使用して中クリックイベントを発生させることにより、クリップボードの情報が奪取される問題 (CAN-2005-0146、mfsa2005-08)\r\n\r\n・ブラウザにプロキシが設定されている場合、SSL 接続を使用したあらゆるサーバからの 407 プロキシ認証要求に応じてしまい、NTLM や SPNEGO の証明書情報が漏洩する問題 (CAN-2005-0147、mfsa2005-09)\r\n\r\n・Mozilla のメールクライアントが、network.cookie.disableCookieForMailNews の設定を無視して Cookie の要求に応じてしまう問題 (CAN-2005-0149、mfsa2005-11)\r\n\r\nこれらの問題を利用するリモート/ローカルの攻撃者は、意図的に作成した電子メールや Web サイトを介して、結果的に重要な情報の奪取することが可能です。\r\n\r\n尚、Mozilla Project より提供されている Firefox/Thunderbird についても一部の問題の影響を受けることが報告されています。",
-  "identifier": "JVNDB-2004-000259",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0147",
-      "source": "CVE",
-      "id": "CVE-2005-0147"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0147",
-      "source": "NVD",
-      "id": "CVE-2005-0147"
-    },
-    {
-      "text": "http://secunia.com/advisories/12712/",
-      "source": "SECUNIA",
-      "id": "SA12712"
-    },
-    {
-      "text": "http://secunia.com/advisories/14017/",
-      "source": "SECUNIA",
-      "id": "SA14017"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12407",
-      "source": "BID",
-      "id": "12407"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000259.html",
+	"title": "Mozilla 製品における NTLM や SPNEGO の証明書情報が漏洩する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000259.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMozilla 1.7.3 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・ウィンドウ内で複数のタブを開いた際に、最前面のタブで開く信頼できるサイトの確認ダイアログが偽装される、あるいは、最前面のタブのサイトに入力しようとした情報が奪取される問題 (CAN-2004-1380、CAN-2004-1381、mfsa2005-05)\r\n\r\n・意図的に作成されたリンクを新しいタブを開くように誘導することにより、ローカルファイルや chrome: URL へのリンクの制限を回避できてしまう問題 (CAN-2005-0141、mfsa2005-01)\r\n\r\n・不適切な一時ファイルが作成されるため、ローカルの攻撃者に内容が奪取されてしまう問題 (CAN-2005-0142、mfsa2005-02)\r\n\r\n・バイナリファイルのダウンロードにより、信頼できるサイトの鍵アイコンが偽装される問題 (CAN-2005-0143、mfsa2005-03)\r\n\r\n・view-source: URL により、信頼できるサイトの鍵アイコンが偽装される問題 (CAN-2005-0144、mfsa2005-04)\r\n\r\n・JavaScript を使用して中クリックイベントを発生させることにより、クリップボードの情報が奪取される問題 (CAN-2005-0146、mfsa2005-08)\r\n\r\n・ブラウザにプロキシが設定されている場合、SSL 接続を使用したあらゆるサーバからの 407 プロキシ認証要求に応じてしまい、NTLM や SPNEGO の証明書情報が漏洩する問題 (CAN-2005-0147、mfsa2005-09)\r\n\r\n・Mozilla のメールクライアントが、network.cookie.disableCookieForMailNews の設定を無視して Cookie の要求に応じてしまう問題 (CAN-2005-0149、mfsa2005-11)\r\n\r\nこれらの問題を利用するリモート/ローカルの攻撃者は、意図的に作成した電子メールや Web サイトを介して、結果的に重要な情報の奪取することが可能です。\r\n\r\n尚、Mozilla Project より提供されている Firefox/Thunderbird についても一部の問題の影響を受けることが報告されています。",
+	"identifier": "JVNDB-2004-000259",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0147",
+			"source": "CVE",
+			"id": "CVE-2005-0147"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0147",
+			"source": "NVD",
+			"id": "CVE-2005-0147"
+		},
+		{
+			"text": "http://secunia.com/advisories/12712/",
+			"source": "SECUNIA",
+			"id": "SA12712"
+		},
+		{
+			"text": "http://secunia.com/advisories/14017/",
+			"source": "SECUNIA",
+			"id": "SA14017"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12407",
+			"source": "BID",
+			"id": "12407"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

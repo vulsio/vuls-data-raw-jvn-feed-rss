@@ -1,194 +1,194 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002411.html",
-  "title": "Apache Struts の CookieInterceptor における ClassLoader を操作される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002411.html",
-  "description": "Apache Struts の CookieInterceptor は、ワイルドカードの cookiesName が使用されている場合、getClass メソッドへのアクセスを適切に制限しないため、ClassLoader を \"操作\" され、セッション状態を変更される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-0113 に対する修正が不十分だったことによる脆弱性です。",
-  "identifier": "JVNDB-2014-002411",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0116",
-      "source": "CVE",
-      "id": "CVE-2014-0116"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0116",
-      "source": "NVD",
-      "id": "CVE-2014-0116"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:struts",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache Struts"
-    },
-    {
-      "text": "cpe:/a:fujitsu:cloud_infrastructure_management_software",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "クラウド インフラ マネージメント ソフトウェア"
-    },
-    {
-      "text": "cpe:/a:fujitsu:integrated_system_ha_database_ready",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FUJITSU Integrated System HA Database Ready"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_application_development_cycle_manager",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Application Development Cycle Manager"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_application_framework_suite",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Application Framework Suite"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_application_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Application Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_apworks",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Apworks"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_business_application_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Business Application Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_job_workload_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Job Workload Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_service_integrator",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Service Integrator"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_studio",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Studio"
-    },
-    {
-      "text": "cpe:/a:fujitsu:serverview",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "ServerView"
-    },
-    {
-      "text": "cpe:/a:fujitsu:symfoware",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Symfoware"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_service_catalog_manager",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Service Catalog Manager"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_service_quality_coordinator",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Service Quality Coordinator"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_software_configuration_manager",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Software Configuration Manager"
-    },
-    {
-      "text": "cpe:/a:fujitsu:triole",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "TRIOLE"
-    },
-    {
-      "text": "cpe:/a:ibm:connections",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Connections"
-    },
-    {
-      "text": "cpe:/a:nec:esmpro_servermanager",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerManager"
-    },
-    {
-      "text": "cpe:/a:nec:infocage",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "InfoCage"
-    },
-    {
-      "text": "cpe:/a:nec:webotx",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_developer",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Developer"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_portal",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Portal"
-    },
-    {
-      "text": "cpe:/a:oracle:mysql",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "MySQL"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
-    }
-  ],
-  "date": "2016-08-02T17:34+09:00",
-  "issued": "2014-05-09T12:22+09:00",
-  "modified": "2016-08-02T17:34+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002411.html",
+	"title": "Apache Struts の CookieInterceptor における ClassLoader を操作される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002411.html",
+	"description": "Apache Struts の CookieInterceptor は、ワイルドカードの cookiesName が使用されている場合、getClass メソッドへのアクセスを適切に制限しないため、ClassLoader を \"操作\" され、セッション状態を変更される脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2014-0113 に対する修正が不十分だったことによる脆弱性です。",
+	"identifier": "JVNDB-2014-002411",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0116",
+			"source": "CVE",
+			"id": "CVE-2014-0116"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0116",
+			"source": "NVD",
+			"id": "CVE-2014-0116"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:struts",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache Struts"
+		},
+		{
+			"text": "cpe:/a:fujitsu:cloud_infrastructure_management_software",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "クラウド インフラ マネージメント ソフトウェア"
+		},
+		{
+			"text": "cpe:/a:fujitsu:integrated_system_ha_database_ready",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FUJITSU Integrated System HA Database Ready"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_application_development_cycle_manager",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Application Development Cycle Manager"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_application_framework_suite",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Application Framework Suite"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_application_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Application Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_apworks",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Apworks"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_business_application_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Business Application Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_job_workload_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Job Workload Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_service_integrator",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Service Integrator"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_studio",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Studio"
+		},
+		{
+			"text": "cpe:/a:fujitsu:serverview",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "ServerView"
+		},
+		{
+			"text": "cpe:/a:fujitsu:symfoware",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Symfoware"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_service_catalog_manager",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Service Catalog Manager"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_service_quality_coordinator",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Service Quality Coordinator"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_software_configuration_manager",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Software Configuration Manager"
+		},
+		{
+			"text": "cpe:/a:fujitsu:triole",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "TRIOLE"
+		},
+		{
+			"text": "cpe:/a:ibm:connections",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Connections"
+		},
+		{
+			"text": "cpe:/a:nec:esmpro_servermanager",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerManager"
+		},
+		{
+			"text": "cpe:/a:nec:infocage",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "InfoCage"
+		},
+		{
+			"text": "cpe:/a:nec:webotx",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_developer",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Developer"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_portal",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Portal"
+		},
+		{
+			"text": "cpe:/a:oracle:mysql",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "MySQL"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+		}
+	],
+	"date": "2016-08-02T17:34+09:00",
+	"issued": "2014-05-09T12:22+09:00",
+	"modified": "2016-08-02T17:34+09:00"
 }

@@ -1,84 +1,84 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000318.html",
-  "title": "fileutils および coreutils の ls コマンドにおけるシステムメモリを大量に消費する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000318.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU fileutils は、多くの Linux 製品で使用されている、一般的なファイル管理を行うユーティリティです。\r\nGNU coreutils は fileutils、shellutils、textutils を統合した、標準ユーティリティです。\r\nこれらのユーティリティは、例えば以下のようなコマンドが同梱されています。\r\n\r\n- ls\r\n- dir\r\n- vdir\r\n- chown\r\n- chmod\r\n\r\nGNU coreutils/fileutils に同梱される ls コマンドは、-w オプションに引数を指定することにより、表示結果の横方向の文字数を指定可能です。\r\n\r\nCoreutils 5.0/fileutils 4.1 以前に同梱される ls コマンドの init_column_info() 関数において、この -w オプションの引数に対し、妥当性の確認が適切に行われていない問題が存在します。\r\n\r\nこの問題を利用するローカルの攻撃者は、-w オプションに過度に大きな値を指定して ls コマンドを実行することにより、標的システムのメモリ資源を大量に消費させる、さらには整数桁あふれによるオーバフローを生じさせることで、標的システムを一時的にサービス不能状態に陥らせることが可能です。\r\n\r\nまた wu-ftpd は FTP の LIST コマンドを、GNU ls コマンドを呼び出すことで実装しているため、wu-ftpd へ anonymous ユーザでログインし、-w オプションに過度に大きな値を指定することで、リモートから同様の攻撃を行うことも可能です。\r\n\r\n尚、攻撃を受けた後にカーネルが ls のプロセスを kill するため、システムは自動的に復旧します。\r\n\r\nまた、同様の問題が dir コマンドの -w オプションにも存在することが、報告されています。",
-  "identifier": "JVNDB-2003-000318",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0854",
-      "source": "CVE",
-      "id": "CVE-2003-0854"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0854",
-      "source": "NVD",
-      "id": "CVE-2003-0854"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/8875",
-      "source": "BID",
-      "id": "8875"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/9793",
-      "source": "BID",
-      "id": "9793"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2003/Oct/1007981.html",
-      "source": "SECTRACK",
-      "id": "1007981"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_4",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ4"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_550",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ550"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQXTR"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.1",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000318.html",
+	"title": "fileutils および coreutils の ls コマンドにおけるシステムメモリを大量に消費する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000318.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGNU fileutils は、多くの Linux 製品で使用されている、一般的なファイル管理を行うユーティリティです。\r\nGNU coreutils は fileutils、shellutils、textutils を統合した、標準ユーティリティです。\r\nこれらのユーティリティは、例えば以下のようなコマンドが同梱されています。\r\n\r\n- ls\r\n- dir\r\n- vdir\r\n- chown\r\n- chmod\r\n\r\nGNU coreutils/fileutils に同梱される ls コマンドは、-w オプションに引数を指定することにより、表示結果の横方向の文字数を指定可能です。\r\n\r\nCoreutils 5.0/fileutils 4.1 以前に同梱される ls コマンドの init_column_info() 関数において、この -w オプションの引数に対し、妥当性の確認が適切に行われていない問題が存在します。\r\n\r\nこの問題を利用するローカルの攻撃者は、-w オプションに過度に大きな値を指定して ls コマンドを実行することにより、標的システムのメモリ資源を大量に消費させる、さらには整数桁あふれによるオーバフローを生じさせることで、標的システムを一時的にサービス不能状態に陥らせることが可能です。\r\n\r\nまた wu-ftpd は FTP の LIST コマンドを、GNU ls コマンドを呼び出すことで実装しているため、wu-ftpd へ anonymous ユーザでログインし、-w オプションに過度に大きな値を指定することで、リモートから同様の攻撃を行うことも可能です。\r\n\r\n尚、攻撃を受けた後にカーネルが ls のプロセスを kill するため、システムは自動的に復旧します。\r\n\r\nまた、同様の問題が dir コマンドの -w オプションにも存在することが、報告されています。",
+	"identifier": "JVNDB-2003-000318",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0854",
+			"source": "CVE",
+			"id": "CVE-2003-0854"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0854",
+			"source": "NVD",
+			"id": "CVE-2003-0854"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/8875",
+			"source": "BID",
+			"id": "8875"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/9793",
+			"source": "BID",
+			"id": "9793"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2003/Oct/1007981.html",
+			"source": "SECTRACK",
+			"id": "1007981"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_4",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ4"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_550",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ550"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQXTR"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.1",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001991.html",
-  "title": "複数の認証局においてメールアドレスのみに基づいて証明書を発行している問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001991.html",
-  "description": "複数の認証局において、証明書発行時の確認が「特定のメールアドレスでのやりとりが可能であること」のみで行われています。これにより、関連するドメインの管理とは無関係な第三者によって SSL 証明書が取得され、クライアントのソフトウェア上で警告が発せられることなく HTTPS スプーフィングが行われる可能性があります。\r\n\r\nウェブブラウザなどのクライアントが HTTPS で表現される URL にアクセスする際、クライアントは通常、サーバから提示された証明書が、信頼するルート認証局によって発行されていることを確認します。この仕組みでは、ルート認証局が証明書を発行する際、証明書の発行依頼はドメイン管理者の了承に基づくものであるという厳密な確認のもとに行われていることを前提としています。\r\n\r\n多くのルート認証局は、「ドメイン認証型 (\"domain-authenticated\")」、またはそれに類似する名前を持つ証明書の発行サービスを提供しています。ドメイン認証型証明書は、証明書発行依頼者がドメイン管理者であることの最小限の確認のみで発行されている場合があります。例えば、証明書を発行するドメイン名のメールアドレスを使って連絡可能であることを確認するだけで証明書を発行するサービスもあります。RFC2142 では「DNS 関連のサービスに使用するメールアドレスは hostmaster であるべき」としています。また、Mozilla CA Certificate Inclusion Policy や CA/Browser Forum の Baseline Requirements Documents では、ドメインの正当な管理者であることの確認のために、admin、administrator、webmaster、hostmaster および postmaster が使用可能であるとしています。 しかし、それ以外のメールアドレスをドメイン管理者の正当性の確認に使用しているルート認証局もあります。例えば、ssladministrator@example.com というメールアドレスでやりとりを行うことができれば example.com の証明書を取得できる可能性があります。\r\n\r\nRFC2142\r\nhttps://www.ietf.org/rfc/rfc2142.txt\r\n \r\nEV 証明書以外では、ウェブブラウザの表示においてドメイン認証型証明書とさらに追加の確認をした上で発行された証明書は区別されません。例えば GeoCerts は、domain-authentication 型証明書と full-authentication 型証明書の両方を提供していますが、ウェブブラウザなどのクライアントの表示では、この2種類の証明書を区別していません。\r\n\r\nメールサービスを提供するウェブサイトのドメインには、より高いリスクがあります。あるルート認証局がドメイン認証型証明書の発行確認に使用しているメールアドレスを取得することができれば、そのドメインの証明書を発行させることができます。ドメイン認証型証明書の発行確認で使われているメールアドレスリストの一例として、Comodo のポリシーがあります。また、BuyHTTP などのように、証明書購入時のメール認証でさらに追加のメールアドレスを使用可能な例もあります。",
-  "identifier": "JVNDB-2015-001991",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU92002857/",
-      "source": "JVN",
-      "id": "JVNVU#92002857"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/591120",
-      "source": "CERT-VN",
-      "id": "VU#591120"
-    },
-    {
-      "text": "https://www.ietf.org/rfc/rfc2142.txt",
-      "source": "関連文書",
-      "id": "RFC2142"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:A/AC:M/Au:N/C:C/I:P/A:N"
-    }
-  ],
-  "date": "2015-04-01T10:57+09:00",
-  "issued": "2015-04-01T10:57+09:00",
-  "modified": "2015-04-01T10:57+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001991.html",
+	"title": "複数の認証局においてメールアドレスのみに基づいて証明書を発行している問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001991.html",
+	"description": "複数の認証局において、証明書発行時の確認が「特定のメールアドレスでのやりとりが可能であること」のみで行われています。これにより、関連するドメインの管理とは無関係な第三者によって SSL 証明書が取得され、クライアントのソフトウェア上で警告が発せられることなく HTTPS スプーフィングが行われる可能性があります。\r\n\r\nウェブブラウザなどのクライアントが HTTPS で表現される URL にアクセスする際、クライアントは通常、サーバから提示された証明書が、信頼するルート認証局によって発行されていることを確認します。この仕組みでは、ルート認証局が証明書を発行する際、証明書の発行依頼はドメイン管理者の了承に基づくものであるという厳密な確認のもとに行われていることを前提としています。\r\n\r\n多くのルート認証局は、「ドメイン認証型 (\"domain-authenticated\")」、またはそれに類似する名前を持つ証明書の発行サービスを提供しています。ドメイン認証型証明書は、証明書発行依頼者がドメイン管理者であることの最小限の確認のみで発行されている場合があります。例えば、証明書を発行するドメイン名のメールアドレスを使って連絡可能であることを確認するだけで証明書を発行するサービスもあります。RFC2142 では「DNS 関連のサービスに使用するメールアドレスは hostmaster であるべき」としています。また、Mozilla CA Certificate Inclusion Policy や CA/Browser Forum の Baseline Requirements Documents では、ドメインの正当な管理者であることの確認のために、admin、administrator、webmaster、hostmaster および postmaster が使用可能であるとしています。 しかし、それ以外のメールアドレスをドメイン管理者の正当性の確認に使用しているルート認証局もあります。例えば、ssladministrator@example.com というメールアドレスでやりとりを行うことができれば example.com の証明書を取得できる可能性があります。\r\n\r\nRFC2142\r\nhttps://www.ietf.org/rfc/rfc2142.txt\r\n \r\nEV 証明書以外では、ウェブブラウザの表示においてドメイン認証型証明書とさらに追加の確認をした上で発行された証明書は区別されません。例えば GeoCerts は、domain-authentication 型証明書と full-authentication 型証明書の両方を提供していますが、ウェブブラウザなどのクライアントの表示では、この2種類の証明書を区別していません。\r\n\r\nメールサービスを提供するウェブサイトのドメインには、より高いリスクがあります。あるルート認証局がドメイン認証型証明書の発行確認に使用しているメールアドレスを取得することができれば、そのドメインの証明書を発行させることができます。ドメイン認証型証明書の発行確認で使われているメールアドレスリストの一例として、Comodo のポリシーがあります。また、BuyHTTP などのように、証明書購入時のメール認証でさらに追加のメールアドレスを使用可能な例もあります。",
+	"identifier": "JVNDB-2015-001991",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU92002857/",
+			"source": "JVN",
+			"id": "JVNVU#92002857"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/591120",
+			"source": "CERT-VN",
+			"id": "VU#591120"
+		},
+		{
+			"text": "https://www.ietf.org/rfc/rfc2142.txt",
+			"source": "関連文書",
+			"id": "RFC2142"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:A/AC:M/Au:N/C:C/I:P/A:N"
+		}
+	],
+	"date": "2015-04-01T10:57+09:00",
+	"issued": "2015-04-01T10:57+09:00",
+	"modified": "2015-04-01T10:57+09:00"
 }

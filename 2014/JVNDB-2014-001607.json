@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001607.html",
-  "title": "Linux Kernel の net/ipv4/inet_fragment.c 内の inet_frag_intern 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001607.html",
-  "description": "Linux Kernel の net/ipv4/inet_fragment.c 内の inet_frag_intern 関数には、競合状態により、サービス運用妨害 (解放済みメモリ使用のエラー) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
-  "identifier": "JVNDB-2014-001607",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0100",
-      "source": "CVE",
-      "id": "CVE-2014-0100"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0100",
-      "source": "NVD",
-      "id": "CVE-2014-0100"
-    },
-    {
-      "text": "http://patchwork.ozlabs.org/patch/325844/",
-      "source": "関連文書",
-      "id": "Patchwork net: fix for a race condition in the inet frag code"
-    },
-    {
-      "text": "http://www.openwall.com/lists/oss-security/2014/03/04/4",
-      "source": "関連文書",
-      "id": "CVE-2014-0100 -- Linux kernel: net: inet frag code race condition leading to user-after-free"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
-      "id": "CWE-362",
-      "title": "競合状態(CWE-362)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "9.3",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2014-03-12T15:35+09:00",
-  "issued": "2014-03-12T15:35+09:00",
-  "modified": "2014-03-12T15:35+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001607.html",
+	"title": "Linux Kernel の net/ipv4/inet_fragment.c 内の inet_frag_intern 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001607.html",
+	"description": "Linux Kernel の net/ipv4/inet_fragment.c 内の inet_frag_intern 関数には、競合状態により、サービス運用妨害 (解放済みメモリ使用のエラー) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。",
+	"identifier": "JVNDB-2014-001607",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0100",
+			"source": "CVE",
+			"id": "CVE-2014-0100"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0100",
+			"source": "NVD",
+			"id": "CVE-2014-0100"
+		},
+		{
+			"text": "http://patchwork.ozlabs.org/patch/325844/",
+			"source": "関連文書",
+			"id": "Patchwork net: fix for a race condition in the inet frag code"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2014/03/04/4",
+			"source": "関連文書",
+			"id": "CVE-2014-0100 -- Linux kernel: net: inet frag code race condition leading to user-after-free"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+			"id": "CWE-362",
+			"title": "競合状態(CWE-362)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "9.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2014-03-12T15:35+09:00",
+	"issued": "2014-03-12T15:35+09:00",
+	"modified": "2014-03-12T15:35+09:00"
 }

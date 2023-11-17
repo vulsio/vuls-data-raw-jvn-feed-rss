@@ -1,40 +1,40 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003031.html",
-  "title": "Intel ハードウェアアーキテクチャのデバッグ例外を適切に処理していない問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003031.html",
-  "description": "いくつかのオペレーティングシステムやハイパーバイザーでは、Intel ハードウェアアーキテクチャにおけるデバッグ例外の発生を想定していない、あるいは適切な処理を行っていない問題が存在します。\r\n\r\n例外的な状況に対する不適切なチェックまたは処理 (CWE-703) - CVE-2018-8897\r\nIntel Software Developer Manual (SDM) Vol. 3A section 6.8.3 によれば、MOV SS 命令および POP SS 命令は、次の命令の命令境界まで、NMIs を含む割り込み、データブレークポイント、およびシングルステップトラップ例外を禁止します (MOV SS 命令や POP SS 命令自体によりアクセスされるメモリ上のデータブレークポイントが禁止されます)。\r\nSDM Vol 3A section 2.3 によれば、デバッグ例外は EFLAGS レジスタの IF フラグ (Interrupt Enable Flag) では禁止されません。\r\n\r\nMOV SS 命令および POP SS 命令の後に置かれている命令が、SYSCALL、SYSENTER、INT 3 などのように、3より高い特権レベル (CPL, Current Privilege Level) の OS 処理に制御を移すものだった場合、デバッグ例外が配送されるのは、3 より高い特権レベルに制御が移った後になります。\r\n\r\nそのため特定の状況では、特定の Intel x86-64 アーキテクチャ向け命令を使用した後に、リングレベル 3 で実行されている OS コンポーネントから 、より高位のリングレベル (多くの OS ではリングレベル0) のデータを指すデバッグ例外が使用可能になります。\r\n\r\nこれにより、攻撃者はオペレーティングシステムの API を使用して、機微なメモリ情報にアクセスしたり、高い特権レベルのオペレーティングシステム機能を操作する可能性があります。",
-  "identifier": "JVNDB-2018-003031",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU98401336/index.html",
-      "source": "JVN",
-      "id": "JVNVU#98401336"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8897",
-      "source": "CVE",
-      "id": "CVE-2018-8897"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-8897",
-      "source": "NVD",
-      "id": "CVE-2018-8897"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/631579",
-      "source": "CERT-VN",
-      "id": "VU#631579"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    }
-  ],
-  "date": "2018-07-31T12:32+09:00",
-  "issued": "2018-05-10T15:13+09:00",
-  "modified": "2018-07-31T12:32+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003031.html",
+	"title": "Intel ハードウェアアーキテクチャのデバッグ例外を適切に処理していない問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003031.html",
+	"description": "いくつかのオペレーティングシステムやハイパーバイザーでは、Intel ハードウェアアーキテクチャにおけるデバッグ例外の発生を想定していない、あるいは適切な処理を行っていない問題が存在します。\r\n\r\n例外的な状況に対する不適切なチェックまたは処理 (CWE-703) - CVE-2018-8897\r\nIntel Software Developer Manual (SDM) Vol. 3A section 6.8.3 によれば、MOV SS 命令および POP SS 命令は、次の命令の命令境界まで、NMIs を含む割り込み、データブレークポイント、およびシングルステップトラップ例外を禁止します (MOV SS 命令や POP SS 命令自体によりアクセスされるメモリ上のデータブレークポイントが禁止されます)。\r\nSDM Vol 3A section 2.3 によれば、デバッグ例外は EFLAGS レジスタの IF フラグ (Interrupt Enable Flag) では禁止されません。\r\n\r\nMOV SS 命令および POP SS 命令の後に置かれている命令が、SYSCALL、SYSENTER、INT 3 などのように、3より高い特権レベル (CPL, Current Privilege Level) の OS 処理に制御を移すものだった場合、デバッグ例外が配送されるのは、3 より高い特権レベルに制御が移った後になります。\r\n\r\nそのため特定の状況では、特定の Intel x86-64 アーキテクチャ向け命令を使用した後に、リングレベル 3 で実行されている OS コンポーネントから 、より高位のリングレベル (多くの OS ではリングレベル0) のデータを指すデバッグ例外が使用可能になります。\r\n\r\nこれにより、攻撃者はオペレーティングシステムの API を使用して、機微なメモリ情報にアクセスしたり、高い特権レベルのオペレーティングシステム機能を操作する可能性があります。",
+	"identifier": "JVNDB-2018-003031",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU98401336/index.html",
+			"source": "JVN",
+			"id": "JVNVU#98401336"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8897",
+			"source": "CVE",
+			"id": "CVE-2018-8897"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-8897",
+			"source": "NVD",
+			"id": "CVE-2018-8897"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/631579",
+			"source": "CERT-VN",
+			"id": "VU#631579"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"date": "2018-07-31T12:32+09:00",
+	"issued": "2018-05-10T15:13+09:00",
+	"modified": "2018-07-31T12:32+09:00"
 }

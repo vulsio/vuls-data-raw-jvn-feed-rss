@@ -1,69 +1,69 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000222.html",
-  "title": "Gaim の gaim_markup_strip_html 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000222.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGaim は、多くのメッセンジャーと互換性を持ち、IRC クライアントとしても動作する IM (Instant Messenger) クライアントで、XML をベースとしたオープンソースの IM プロトコルである Jabber をサポートしています。\r\n\r\nGaim 1.2.0 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・gaim_markup_strip_html() 関数において特定の HTML コードを含む文字列を取り扱う際に、バッファの処理においてオーバーリードが発生する問題 (CAN-2005-0965)\r\n\r\n・IRC プロトコルプラグインにおける複数の関数で、ユーザメッセージやサーバメッセージに含まれるマークアップのエスケープ処理が適切に行われないため、不正なマークアップが挿入可能となる問題 (CAN-2005-0966)\r\n\r\n・Jabber ユーザが特定のファイル転送要求を送ることにより、Gaim がクラッシュする問題 (CAN-2005-0967)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、結果として Gaim をクラッシュさせサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、Red Hat Enterprise Linux 2.1 に同梱される Gaim はこれらの問題の影響を受けないことが Red Hat より報告されています。",
-  "identifier": "JVNDB-2005-000222",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0965",
-      "source": "CVE",
-      "id": "CVE-2005-0965"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0965",
-      "source": "NVD",
-      "id": "CVE-2005-0965"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12964",
-      "source": "BID",
-      "id": "12964"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13004",
-      "source": "BID",
-      "id": "13004"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13003",
-      "source": "BID",
-      "id": "13003"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12999",
-      "source": "BID",
-      "id": "12999"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/19939",
-      "source": "XF",
-      "id": "19939"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/19937",
-      "source": "XF",
-      "id": "19937"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000222.html",
+	"title": "Gaim の gaim_markup_strip_html 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000222.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGaim は、多くのメッセンジャーと互換性を持ち、IRC クライアントとしても動作する IM (Instant Messenger) クライアントで、XML をベースとしたオープンソースの IM プロトコルである Jabber をサポートしています。\r\n\r\nGaim 1.2.0 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・gaim_markup_strip_html() 関数において特定の HTML コードを含む文字列を取り扱う際に、バッファの処理においてオーバーリードが発生する問題 (CAN-2005-0965)\r\n\r\n・IRC プロトコルプラグインにおける複数の関数で、ユーザメッセージやサーバメッセージに含まれるマークアップのエスケープ処理が適切に行われないため、不正なマークアップが挿入可能となる問題 (CAN-2005-0966)\r\n\r\n・Jabber ユーザが特定のファイル転送要求を送ることにより、Gaim がクラッシュする問題 (CAN-2005-0967)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、結果として Gaim をクラッシュさせサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、Red Hat Enterprise Linux 2.1 に同梱される Gaim はこれらの問題の影響を受けないことが Red Hat より報告されています。",
+	"identifier": "JVNDB-2005-000222",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0965",
+			"source": "CVE",
+			"id": "CVE-2005-0965"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0965",
+			"source": "NVD",
+			"id": "CVE-2005-0965"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12964",
+			"source": "BID",
+			"id": "12964"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13004",
+			"source": "BID",
+			"id": "13004"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13003",
+			"source": "BID",
+			"id": "13003"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12999",
+			"source": "BID",
+			"id": "12999"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/19939",
+			"source": "XF",
+			"id": "19939"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/19937",
+			"source": "XF",
+			"id": "19937"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

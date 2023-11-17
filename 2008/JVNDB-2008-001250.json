@@ -1,171 +1,171 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001250.html",
-  "title": "Apache-SSL の ExpandCert() 関数における認証回避の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001250.html",
-  "description": "Apache-SSL の ExpandCert() 関数には、クライアント証明書の識別名 (Distinguished Name) における ‘/’ および ‘=’ 文字の処理に不備があり、環境変数を上書きされ、認証を回避される脆弱性が存在します。",
-  "identifier": "JVNDB-2008-001250",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0555",
-      "source": "CVE",
-      "id": "CVE-2008-0555"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-0555",
-      "source": "NVD",
-      "id": "CVE-2008-0555"
-    },
-    {
-      "text": "http://secunia.com/advisories/29644",
-      "source": "SECUNIA",
-      "id": "SA29644"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/28576",
-      "source": "BID",
-      "id": "28576"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1019784",
-      "source": "SECTRACK",
-      "id": "1019784"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2008/1079",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2008-1079"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
-      "id": "CWE-287",
-      "title": "不適切な認証(CWE-287)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache-ssl:apache-ssl",
-      "version": "2.2",
-      "vendor": "apache-ssl.org",
-      "product": "Apache-SSL"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Light Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Professional Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Standard Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_server_-_standard_edition_version_4",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Server - Standard Edition Version 4"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_server_-_web_edition_version_4",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Server - Web Edition Version 4"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_web_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Web Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Light"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Architect"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2014-05-21T18:13+09:00",
-  "issued": "2008-04-21T16:16+09:00",
-  "modified": "2014-05-21T18:13+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001250.html",
+	"title": "Apache-SSL の ExpandCert() 関数における認証回避の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001250.html",
+	"description": "Apache-SSL の ExpandCert() 関数には、クライアント証明書の識別名 (Distinguished Name) における ‘/’ および ‘=’ 文字の処理に不備があり、環境変数を上書きされ、認証を回避される脆弱性が存在します。",
+	"identifier": "JVNDB-2008-001250",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0555",
+			"source": "CVE",
+			"id": "CVE-2008-0555"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-0555",
+			"source": "NVD",
+			"id": "CVE-2008-0555"
+		},
+		{
+			"text": "http://secunia.com/advisories/29644",
+			"source": "SECUNIA",
+			"id": "SA29644"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/28576",
+			"source": "BID",
+			"id": "28576"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1019784",
+			"source": "SECTRACK",
+			"id": "1019784"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2008/1079",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2008-1079"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+			"id": "CWE-287",
+			"title": "不適切な認証(CWE-287)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache-ssl:apache-ssl",
+			"version": "2.2",
+			"vendor": "apache-ssl.org",
+			"product": "Apache-SSL"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Light Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Professional Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Standard Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_server_-_standard_edition_version_4",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Server - Standard Edition Version 4"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_server_-_web_edition_version_4",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Server - Web Edition Version 4"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_web_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Web Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_light",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Light"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_architect",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Architect"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2014-05-21T18:13+09:00",
+	"issued": "2008-04-21T16:16+09:00",
+	"modified": "2014-05-21T18:13+09:00"
 }

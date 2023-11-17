@@ -1,96 +1,96 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001007.html",
-  "title": "複数の CDN サービスプロバイダに HTTP キャッシュポイズニングの影響を受ける問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001007.html",
-  "description": "コンテンツデリバリネットワーク (CDN) は、バックエンドに置かれた Web サーバのコンテンツを配信するためのプロキシサーバのネットワークであり、効率的な配信のために、コンテンツを一時的なローカルストレージにキャッシュします。\r\nプロキシサーバやバックエンドの Web サーバによる HTTP ヘッダの処理を悪用し、遠隔から細工した HTTP ヘッダを使用して任意のコンテンツを CDN のキャッシュに注入する攻撃を HTTP キャッシュポイズニングと呼びます。\r\nCDN のキャッシュに悪意あるコンテンツが注入されると、対象の Web サイトへのアクセスに対して悪意あるスクリプトが配信され、閲覧者の環境で実行される可能性があります。\r\n\r\nCDN は高可用性、高パフォーマンスのサービスを提供するために、HTTP キャッシングソフトウェアが動作する複数のプロキシサーバからなるネットワークを構成しており、バックエンドに置かれた Web サーバのコンテンツを Web サイト閲覧者(Web クライアント)からネットワーク的に近いプロキシサーバ経由で配信します。この配信処理においては、HTTP リクエストに含まれる HTTP ヘッダを解釈して、プロキシサーバのローカルキャッシュまたはバックエンドの Web サーバから適切なコンテンツを選択し、配信します。\r\n\r\nバックエンドにある Web サーバの処理と HTTP キャッシングソフトウェアの処理の組み合わせによっては、細工された HTTP ヘッダを含む HTTP リクエストを送信された場合に、悪意あるコンテンツがレスポンスに混入する可能性があります。\r\nこれによって、閲覧者の環境で意図しないスクリプトを実行させる等の攻撃が可能となります。\r\n\r\nHost ヘッダや X-Forwarded-Host ヘッダ等を使用した攻撃手法がすでに知られていますが、近年、X-Forwarded-Proto や Referer、Upgrade-Insecure-Request、X-DNS-Prefetch-Control 等新しい HTTP ヘッダが使用されるようになったことに加え、クラウド CDN サービスが拡大したことにより、よりスケールが大きく、長期的な影響を及ぼす攻撃が可能になっています。\r\n\r\n攻撃に用いられる可能性のあるヘッダの例としては以下のようなものがあります:\r\n\r\n* Content-Security-Policy-Report-Only\r\n* Forwarded\r\n* Server-Timing\r\n* Set-Cookie\r\n* Strict-Transport-Security\r\n* X-Forwarded-Proto\r\n* Location\r\n* Accept-Language\r\n* Cookie\r\n* X-Forwarded-For\r\n* X-Forwarded-Host\r\n* Referer\r\n* Max-Forwards\r\n\r\n\r\nこのような攻撃が可能となる状況として、少なくとも以下の2つが挙げられます。\r\n\r\n  1. 一部の HTTP ヘッダは、リバースプロキシや CDN によって生成もしくは変更されるものと想定して、バックエンドの Web サーバがその値を信頼してそのまま受け入れてしまう\r\n  2. 一部の HTTP ヘッダは、CDN による無害化が行われずに Web サーバに送信される",
-  "identifier": "JVNDB-2020-001007",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU98141012/",
-      "source": "JVN",
-      "id": "JVNVU#98141012"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/335217/",
-      "source": "CERT-VN",
-      "id": "VU#335217"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/vendor/VU%23335217/#CHEU-BGMKM9",
-      "source": "CERT-VN",
-      "id": "Vendor Information of Amazon for VU#335217"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/vendor/VU%23335217/#CHEU-BGYK4X",
-      "source": "CERT-VN",
-      "id": "Vendor Information of Cloudflare for VU#335217"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/vendor/VU%23335217/#CHEU-BGMKMB",
-      "source": "CERT-VN",
-      "id": "Vendor Information of Akamai for VU#335217"
-    },
-    {
-      "text": "http://carlos.bueno.org/2008/06/host-header-injection.html",
-      "source": "関連文書",
-      "id": "HTTP Cache Poisoning via Host Header Injection"
-    },
-    {
-      "text": "https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html",
-      "source": "関連文書",
-      "id": "Practical HTTP Host header attacks"
-    },
-    {
-      "text": "https://portswigger.net/research/practical-web-cache-poisoning",
-      "source": "関連文書",
-      "id": "Practical Web Cache Poisoning"
-    },
-    {
-      "text": "https://hostoftroubles.com/",
-      "source": "関連文書",
-      "id": "Host of Troubles Vulnerabilities"
-    },
-    {
-      "text": "https://www.owasp.org/index.php/OWASP_Periodic_Table_of_Vulnerabilities_-_HTTP_Request/Response_Smuggling",
-      "source": "関連文書",
-      "id": "HTTP Request/Response Smuggling"
-    },
-    {
-      "text": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
-      "source": "関連文書",
-      "id": "Cache Poisoning"
-    },
-    {
-      "text": "https://dl.acm.org/doi/10.1145/2976749.2978394",
-      "source": "関連文書",
-      "id": "Host of Troubles: Multiple Host Ambiguities in HTTP Implementations"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:cloudflare_multiple_product",
-      "version": "2.2",
-      "vendor": "Cloudflare, Inc",
-      "product": "(複数の製品)"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "7.2",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N"
-    }
-  ],
-  "date": "2020-06-01T14:09+09:00",
-  "issued": "2020-01-16T12:20+09:00",
-  "modified": "2020-06-01T14:09+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001007.html",
+	"title": "複数の CDN サービスプロバイダに HTTP キャッシュポイズニングの影響を受ける問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001007.html",
+	"description": "コンテンツデリバリネットワーク (CDN) は、バックエンドに置かれた Web サーバのコンテンツを配信するためのプロキシサーバのネットワークであり、効率的な配信のために、コンテンツを一時的なローカルストレージにキャッシュします。\r\nプロキシサーバやバックエンドの Web サーバによる HTTP ヘッダの処理を悪用し、遠隔から細工した HTTP ヘッダを使用して任意のコンテンツを CDN のキャッシュに注入する攻撃を HTTP キャッシュポイズニングと呼びます。\r\nCDN のキャッシュに悪意あるコンテンツが注入されると、対象の Web サイトへのアクセスに対して悪意あるスクリプトが配信され、閲覧者の環境で実行される可能性があります。\r\n\r\nCDN は高可用性、高パフォーマンスのサービスを提供するために、HTTP キャッシングソフトウェアが動作する複数のプロキシサーバからなるネットワークを構成しており、バックエンドに置かれた Web サーバのコンテンツを Web サイト閲覧者(Web クライアント)からネットワーク的に近いプロキシサーバ経由で配信します。この配信処理においては、HTTP リクエストに含まれる HTTP ヘッダを解釈して、プロキシサーバのローカルキャッシュまたはバックエンドの Web サーバから適切なコンテンツを選択し、配信します。\r\n\r\nバックエンドにある Web サーバの処理と HTTP キャッシングソフトウェアの処理の組み合わせによっては、細工された HTTP ヘッダを含む HTTP リクエストを送信された場合に、悪意あるコンテンツがレスポンスに混入する可能性があります。\r\nこれによって、閲覧者の環境で意図しないスクリプトを実行させる等の攻撃が可能となります。\r\n\r\nHost ヘッダや X-Forwarded-Host ヘッダ等を使用した攻撃手法がすでに知られていますが、近年、X-Forwarded-Proto や Referer、Upgrade-Insecure-Request、X-DNS-Prefetch-Control 等新しい HTTP ヘッダが使用されるようになったことに加え、クラウド CDN サービスが拡大したことにより、よりスケールが大きく、長期的な影響を及ぼす攻撃が可能になっています。\r\n\r\n攻撃に用いられる可能性のあるヘッダの例としては以下のようなものがあります:\r\n\r\n* Content-Security-Policy-Report-Only\r\n* Forwarded\r\n* Server-Timing\r\n* Set-Cookie\r\n* Strict-Transport-Security\r\n* X-Forwarded-Proto\r\n* Location\r\n* Accept-Language\r\n* Cookie\r\n* X-Forwarded-For\r\n* X-Forwarded-Host\r\n* Referer\r\n* Max-Forwards\r\n\r\n\r\nこのような攻撃が可能となる状況として、少なくとも以下の2つが挙げられます。\r\n\r\n  1. 一部の HTTP ヘッダは、リバースプロキシや CDN によって生成もしくは変更されるものと想定して、バックエンドの Web サーバがその値を信頼してそのまま受け入れてしまう\r\n  2. 一部の HTTP ヘッダは、CDN による無害化が行われずに Web サーバに送信される",
+	"identifier": "JVNDB-2020-001007",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU98141012/",
+			"source": "JVN",
+			"id": "JVNVU#98141012"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/335217/",
+			"source": "CERT-VN",
+			"id": "VU#335217"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/vendor/VU%23335217/#CHEU-BGMKM9",
+			"source": "CERT-VN",
+			"id": "Vendor Information of Amazon for VU#335217"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/vendor/VU%23335217/#CHEU-BGYK4X",
+			"source": "CERT-VN",
+			"id": "Vendor Information of Cloudflare for VU#335217"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/vendor/VU%23335217/#CHEU-BGMKMB",
+			"source": "CERT-VN",
+			"id": "Vendor Information of Akamai for VU#335217"
+		},
+		{
+			"text": "http://carlos.bueno.org/2008/06/host-header-injection.html",
+			"source": "関連文書",
+			"id": "HTTP Cache Poisoning via Host Header Injection"
+		},
+		{
+			"text": "https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html",
+			"source": "関連文書",
+			"id": "Practical HTTP Host header attacks"
+		},
+		{
+			"text": "https://portswigger.net/research/practical-web-cache-poisoning",
+			"source": "関連文書",
+			"id": "Practical Web Cache Poisoning"
+		},
+		{
+			"text": "https://hostoftroubles.com/",
+			"source": "関連文書",
+			"id": "Host of Troubles Vulnerabilities"
+		},
+		{
+			"text": "https://www.owasp.org/index.php/OWASP_Periodic_Table_of_Vulnerabilities_-_HTTP_Request/Response_Smuggling",
+			"source": "関連文書",
+			"id": "HTTP Request/Response Smuggling"
+		},
+		{
+			"text": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+			"source": "関連文書",
+			"id": "Cache Poisoning"
+		},
+		{
+			"text": "https://dl.acm.org/doi/10.1145/2976749.2978394",
+			"source": "関連文書",
+			"id": "Host of Troubles: Multiple Host Ambiguities in HTTP Implementations"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:cloudflare_multiple_product",
+			"version": "2.2",
+			"vendor": "Cloudflare, Inc",
+			"product": "(複数の製品)"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "7.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N"
+		}
+	],
+	"date": "2020-06-01T14:09+09:00",
+	"issued": "2020-01-16T12:20+09:00",
+	"modified": "2020-06-01T14:09+09:00"
 }

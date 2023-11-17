@@ -1,50 +1,50 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009258.html",
-  "title": "Chocolatey Boxstarter に DLL 読み込みに関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009258.html",
-  "description": "Chocolatey が提供する Boxstarter には、DLL 読み込みに関する脆弱性が存在します。\r\n\r\nDLL ファイルの検索パスが適切に制御されていない (CWE-427)\r\nBoxstarter は Chocolatey を利用した Windows システムの設定管理ツールです。Boxstarter はインストール時に C:\\ProgramData\\Boxstarter フォルダに適切な ACL が設定されません。そのため、管理者権限を持たない Windows ユーザによって当該フォルダに悪意のある DLL ファイルを配置され、また、当該フォルダはシステム環境変数 PATHに追加されるため配置された悪意のあるファイルを読み込み、SYSTEM 権限で任意のコードを実行してしまう可能性があります。",
-  "identifier": "JVNDB-2020-009258",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU90267651/",
-      "source": "JVN",
-      "id": "JVNVU#90267651"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15264",
-      "source": "CVE",
-      "id": "CVE-2020-15264"
-    },
-    {
-      "text": "https://kb.cert.org/vuls/id/208577",
-      "source": "CERT-VN",
-      "id": "VU#208577"
-    },
-    {
-      "text": "https://attack.mitre.org/techniques/T1574/001/",
-      "source": "関連文書",
-      "id": "Hijack Execution Flow: DLL Search Order Hijacking"
-    },
-    {
-      "text": "https://jvn.jp/ta/JVNTA91240916/",
-      "source": "関連文書",
-      "id": "JVNTA#91240916"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/427.html",
-      "id": "CWE-427",
-      "title": "制御されていない検索パスの要素(CWE-427)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:chocolatey:boxstarter",
-      "version": "2.2",
-      "vendor": "Chocolatey Software Inc",
-      "product": "Boxstarter"
-    }
-  ],
-  "date": "2020-10-27T10:28+09:00",
-  "issued": "2020-10-27T10:28+09:00",
-  "modified": "2020-10-27T10:28+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009258.html",
+	"title": "Chocolatey Boxstarter に DLL 読み込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-009258.html",
+	"description": "Chocolatey が提供する Boxstarter には、DLL 読み込みに関する脆弱性が存在します。\r\n\r\nDLL ファイルの検索パスが適切に制御されていない (CWE-427)\r\nBoxstarter は Chocolatey を利用した Windows システムの設定管理ツールです。Boxstarter はインストール時に C:\\ProgramData\\Boxstarter フォルダに適切な ACL が設定されません。そのため、管理者権限を持たない Windows ユーザによって当該フォルダに悪意のある DLL ファイルを配置され、また、当該フォルダはシステム環境変数 PATHに追加されるため配置された悪意のあるファイルを読み込み、SYSTEM 権限で任意のコードを実行してしまう可能性があります。",
+	"identifier": "JVNDB-2020-009258",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU90267651/",
+			"source": "JVN",
+			"id": "JVNVU#90267651"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15264",
+			"source": "CVE",
+			"id": "CVE-2020-15264"
+		},
+		{
+			"text": "https://kb.cert.org/vuls/id/208577",
+			"source": "CERT-VN",
+			"id": "VU#208577"
+		},
+		{
+			"text": "https://attack.mitre.org/techniques/T1574/001/",
+			"source": "関連文書",
+			"id": "Hijack Execution Flow: DLL Search Order Hijacking"
+		},
+		{
+			"text": "https://jvn.jp/ta/JVNTA91240916/",
+			"source": "関連文書",
+			"id": "JVNTA#91240916"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/427.html",
+			"id": "CWE-427",
+			"title": "制御されていない検索パスの要素(CWE-427)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:chocolatey:boxstarter",
+			"version": "2.2",
+			"vendor": "Chocolatey Software Inc",
+			"product": "Boxstarter"
+		}
+	],
+	"date": "2020-10-27T10:28+09:00",
+	"issued": "2020-10-27T10:28+09:00",
+	"modified": "2020-10-27T10:28+09:00"
 }

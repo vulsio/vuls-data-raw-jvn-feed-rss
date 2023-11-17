@@ -1,117 +1,117 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-014030.html",
-  "title": "FasterXML Jackson Databind における XML 外部エンティティの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-014030.html",
-  "description": "FasterXML Jackson Databind には、XML 外部エンティティの脆弱性が存在します。",
-  "identifier": "JVNDB-2020-014030",
-  "references": [
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25649",
-      "source": "CVE",
-      "id": "CVE-2020-25649"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2020-25649",
-      "source": "NVD",
-      "id": "CVE-2020-25649"
-    },
-    {
-      "text": "https://lists.apache.org/thread.html/r8937a7160717fe8b2221767163c4de4f65bc5466405cb1c5310f9080@%3Cdev.kafka.apache.org%3E",
-      "source": "関連文書",
-      "id": "Re: [kafka-clients] Re: [VOTE] 2.6.1 RC3 (dev.kafka.apache.org)"
-    },
-    {
-      "text": "https://lists.apache.org/thread.html/r8937a7160717fe8b2221767163c4de4f65bc5466405cb1c5310f9080@%3Cusers.kafka.apache.org%3E",
-      "source": "関連文書",
-      "id": "Re: [kafka-clients] Re: [VOTE] 2.6.1 RC3 (users.kafka.apache.org)"
-    },
-    {
-      "text": "https://lists.apache.org/thread.html/rdf9a34726482222c90d50ae1b9847881de67dde8cfde4999633d2cdc@%3Ccommits.zookeeper.apache.org%3E",
-      "source": "関連文書",
-      "id": "[zookeeper] branch branch-3.5 updated: ZOOKEEPER-4045: CVE-2020-25649 - Upgrade jackson databind to 2.10.5.1 (Viewing email #rdf9a34726482222c90d50ae1b9847881de67dde... )"
-    },
-    {
-      "text": "https://lists.apache.org/thread.html/rc88f2fa2b7bd6443921727aeee7704a1fb02433e722e2abf677e0d3d@%3Ccommits.zookeeper.apache.org%3E",
-      "source": "関連文書",
-      "id": "[zookeeper] branch branch-3.5.9 updated: ZOOKEEPER-4045: CVE-2020-25649 - Upgrade jackson databind to 2.10.5.1 (Viewing email #rc88f2fa2b7bd6443921727aeee7704a1fb02433...)"
-    },
-    {
-      "text": "https://lists.apache.org/thread.html/r94c7e86e546120f157264ba5ba61fd29b3a8d530ed325a9b4fa334d7@%3Ccommits.zookeeper.apache.org%3E",
-      "source": "関連文書",
-      "id": "[zookeeper] branch branch-3.6 updated: ZOOKEEPER-4045: CVE-2020-25649 - Upgrade jackson databind to 2.10.5.1 (Viewing email #r94c7e86e546120f157264ba5ba61fd29b3a8d53...)"
-    },
-    {
-      "text": "https://lists.apache.org/thread.html/r86c78bf7656fdb2dab69cbf17f3d7492300f771025f1a3a65d5e5ce5@%3Ccommits.zookeeper.apache.org%3E",
-      "source": "関連文書",
-      "id": "[zookeeper] branch master updated: ZOOKEEPER-4045: CVE-2020-25649 - Upgrade jackson databind to 2.10.5. (Viewing email #r86c78bf7656fdb2dab69cbf17f3d7492300f771...)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/611.html",
-      "id": "CWE-611",
-      "title": "XML 外部エンティティ参照の不適切な制限(CWE-611)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:fasterxml:jackson-databind",
-      "version": "2.2",
-      "vendor": "FasterXML, LLC",
-      "product": "Jackson-databind"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_ops_center_analyzer_viewpoint",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Ops Center Analyzer viewpoint"
-    },
-    {
-      "text": "cpe:/a:netapp:oncommand_api",
-      "version": "2.2",
-      "vendor": "NetApp",
-      "product": "OnCommand API Services"
-    },
-    {
-      "text": "cpe:/a:netapp:oncommand_workflow_automation",
-      "version": "2.2",
-      "vendor": "NetApp",
-      "product": "OnCommand Workflow Automation"
-    },
-    {
-      "text": "cpe:/a:netapp:service_level_manager",
-      "version": "2.2",
-      "vendor": "NetApp",
-      "product": "NetApp Service Level Manager"
-    },
-    {
-      "text": "cpe:/a:quarkus:quarkus",
-      "version": "2.2",
-      "vendor": "Quarkus",
-      "product": "Quarkus"
-    },
-    {
-      "text": "cpe:/o:fedoraproject:fedora",
-      "version": "2.2",
-      "vendor": "Fedora Project",
-      "product": "Fedora"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
-    }
-  ],
-  "date": "2021-07-20T13:50+09:00",
-  "issued": "2021-07-20T13:50+09:00",
-  "modified": "2021-07-20T13:50+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-014030.html",
+	"title": "FasterXML Jackson Databind における XML 外部エンティティの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-014030.html",
+	"description": "FasterXML Jackson Databind には、XML 外部エンティティの脆弱性が存在します。",
+	"identifier": "JVNDB-2020-014030",
+	"references": [
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25649",
+			"source": "CVE",
+			"id": "CVE-2020-25649"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2020-25649",
+			"source": "NVD",
+			"id": "CVE-2020-25649"
+		},
+		{
+			"text": "https://lists.apache.org/thread.html/r8937a7160717fe8b2221767163c4de4f65bc5466405cb1c5310f9080@%3Cdev.kafka.apache.org%3E",
+			"source": "関連文書",
+			"id": "Re: [kafka-clients] Re: [VOTE] 2.6.1 RC3 (dev.kafka.apache.org)"
+		},
+		{
+			"text": "https://lists.apache.org/thread.html/r8937a7160717fe8b2221767163c4de4f65bc5466405cb1c5310f9080@%3Cusers.kafka.apache.org%3E",
+			"source": "関連文書",
+			"id": "Re: [kafka-clients] Re: [VOTE] 2.6.1 RC3 (users.kafka.apache.org)"
+		},
+		{
+			"text": "https://lists.apache.org/thread.html/rdf9a34726482222c90d50ae1b9847881de67dde8cfde4999633d2cdc@%3Ccommits.zookeeper.apache.org%3E",
+			"source": "関連文書",
+			"id": "[zookeeper] branch branch-3.5 updated: ZOOKEEPER-4045: CVE-2020-25649 - Upgrade jackson databind to 2.10.5.1 (Viewing email #rdf9a34726482222c90d50ae1b9847881de67dde... )"
+		},
+		{
+			"text": "https://lists.apache.org/thread.html/rc88f2fa2b7bd6443921727aeee7704a1fb02433e722e2abf677e0d3d@%3Ccommits.zookeeper.apache.org%3E",
+			"source": "関連文書",
+			"id": "[zookeeper] branch branch-3.5.9 updated: ZOOKEEPER-4045: CVE-2020-25649 - Upgrade jackson databind to 2.10.5.1 (Viewing email #rc88f2fa2b7bd6443921727aeee7704a1fb02433...)"
+		},
+		{
+			"text": "https://lists.apache.org/thread.html/r94c7e86e546120f157264ba5ba61fd29b3a8d530ed325a9b4fa334d7@%3Ccommits.zookeeper.apache.org%3E",
+			"source": "関連文書",
+			"id": "[zookeeper] branch branch-3.6 updated: ZOOKEEPER-4045: CVE-2020-25649 - Upgrade jackson databind to 2.10.5.1 (Viewing email #r94c7e86e546120f157264ba5ba61fd29b3a8d53...)"
+		},
+		{
+			"text": "https://lists.apache.org/thread.html/r86c78bf7656fdb2dab69cbf17f3d7492300f771025f1a3a65d5e5ce5@%3Ccommits.zookeeper.apache.org%3E",
+			"source": "関連文書",
+			"id": "[zookeeper] branch master updated: ZOOKEEPER-4045: CVE-2020-25649 - Upgrade jackson databind to 2.10.5. (Viewing email #r86c78bf7656fdb2dab69cbf17f3d7492300f771...)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/611.html",
+			"id": "CWE-611",
+			"title": "XML 外部エンティティ参照の不適切な制限(CWE-611)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:fasterxml:jackson-databind",
+			"version": "2.2",
+			"vendor": "FasterXML, LLC",
+			"product": "Jackson-databind"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_ops_center_analyzer_viewpoint",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Ops Center Analyzer viewpoint"
+		},
+		{
+			"text": "cpe:/a:netapp:oncommand_api",
+			"version": "2.2",
+			"vendor": "NetApp",
+			"product": "OnCommand API Services"
+		},
+		{
+			"text": "cpe:/a:netapp:oncommand_workflow_automation",
+			"version": "2.2",
+			"vendor": "NetApp",
+			"product": "OnCommand Workflow Automation"
+		},
+		{
+			"text": "cpe:/a:netapp:service_level_manager",
+			"version": "2.2",
+			"vendor": "NetApp",
+			"product": "NetApp Service Level Manager"
+		},
+		{
+			"text": "cpe:/a:quarkus:quarkus",
+			"version": "2.2",
+			"vendor": "Quarkus",
+			"product": "Quarkus"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+		}
+	],
+	"date": "2021-07-20T13:50+09:00",
+	"issued": "2021-07-20T13:50+09:00",
+	"modified": "2021-07-20T13:50+09:00"
 }

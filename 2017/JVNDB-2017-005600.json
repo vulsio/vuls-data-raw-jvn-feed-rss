@@ -1,76 +1,76 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005600.html",
-  "title": "PHP FormMail Generator で作成した PHP コードに複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005600.html",
-  "description": "PHP FormMail Generator は、PHP アプリケーションや WordPress を使って作成されているウェブサイト上に簡易なウェブフォームを埋め込むための PHP コードを生成するウェブサービスです。PHP FormMail Generator によって作成された PHP コードには、複数の脆弱性が存在します。\r\n\r\n危険なタイプのファイルの無制限アップロード (CWE-434) - CVE-2016-9492\r\n生成されたファイル form.lib.php では、ハードコードされた危険なファイル拡張子リストにもとづいて、アップロードされるファイルのチェックを行っています。また、アップロードファイルの末尾に短いランダムな文字列を追加するような処理を行っています。ファイル拡張子リストは PHP ファイルを示すファイル拡張子をすべて含んでいるわけではないので、アップロードされるファイル名を推測された場合、PHP コードを実行される可能性があります。\r\n\r\nクロスサイトスクリプティング (CWE-80) - CVE-2016-9493\r\n生成された PHP フォームには name および message フィールドの入力を適切に検証しない問題があります。任意のスクリプトを含む投稿内容がアプリケーションに格納され、管理者が管理画面にアクセスした際に、管理者のウェブブラウザ上で当該スクリプトが実行される可能性があります。",
-  "identifier": "JVNDB-2017-005600",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU96141589/index.html",
-      "source": "JVN",
-      "id": "JVNVU#96141589"
-    },
-    {
-      "text": "https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-9492",
-      "source": "CVE",
-      "id": "CVE-2016-9492"
-    },
-    {
-      "text": "https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-9493",
-      "source": "CVE",
-      "id": "CVE-2016-9493"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-9492",
-      "source": "NVD",
-      "id": "CVE-2016-9492"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2016-9493",
-      "source": "NVD",
-      "id": "CVE-2016-9493"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/608591",
-      "source": "CERT-VN",
-      "id": "VU#608591"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/434.html",
-      "id": "CWE-434",
-      "title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/80.html",
-      "id": "CWE-80",
-      "title": "クロスサイトスクリプティング (Basic XSS)(CWE-80)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:jqueryform:php_formmail_generator",
-      "version": "2.2",
-      "vendor": "PHP Form Mail Maker",
-      "product": "PHP FormMail Generator"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "9.3",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "9.8",
-      "type": "Base",
-      "severity": "Critical",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2019-07-05T16:58+09:00",
-  "issued": "2017-08-02T10:58+09:00",
-  "modified": "2019-07-05T16:58+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005600.html",
+	"title": "PHP FormMail Generator で作成した PHP コードに複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005600.html",
+	"description": "PHP FormMail Generator は、PHP アプリケーションや WordPress を使って作成されているウェブサイト上に簡易なウェブフォームを埋め込むための PHP コードを生成するウェブサービスです。PHP FormMail Generator によって作成された PHP コードには、複数の脆弱性が存在します。\r\n\r\n危険なタイプのファイルの無制限アップロード (CWE-434) - CVE-2016-9492\r\n生成されたファイル form.lib.php では、ハードコードされた危険なファイル拡張子リストにもとづいて、アップロードされるファイルのチェックを行っています。また、アップロードファイルの末尾に短いランダムな文字列を追加するような処理を行っています。ファイル拡張子リストは PHP ファイルを示すファイル拡張子をすべて含んでいるわけではないので、アップロードされるファイル名を推測された場合、PHP コードを実行される可能性があります。\r\n\r\nクロスサイトスクリプティング (CWE-80) - CVE-2016-9493\r\n生成された PHP フォームには name および message フィールドの入力を適切に検証しない問題があります。任意のスクリプトを含む投稿内容がアプリケーションに格納され、管理者が管理画面にアクセスした際に、管理者のウェブブラウザ上で当該スクリプトが実行される可能性があります。",
+	"identifier": "JVNDB-2017-005600",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU96141589/index.html",
+			"source": "JVN",
+			"id": "JVNVU#96141589"
+		},
+		{
+			"text": "https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-9492",
+			"source": "CVE",
+			"id": "CVE-2016-9492"
+		},
+		{
+			"text": "https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-9493",
+			"source": "CVE",
+			"id": "CVE-2016-9493"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2016-9492",
+			"source": "NVD",
+			"id": "CVE-2016-9492"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2016-9493",
+			"source": "NVD",
+			"id": "CVE-2016-9493"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/608591",
+			"source": "CERT-VN",
+			"id": "VU#608591"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/434.html",
+			"id": "CWE-434",
+			"title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/80.html",
+			"id": "CWE-80",
+			"title": "クロスサイトスクリプティング (Basic XSS)(CWE-80)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:jqueryform:php_formmail_generator",
+			"version": "2.2",
+			"vendor": "PHP Form Mail Maker",
+			"product": "PHP FormMail Generator"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "9.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2019-07-05T16:58+09:00",
+	"issued": "2017-08-02T10:58+09:00",
+	"modified": "2019-07-05T16:58+09:00"
 }

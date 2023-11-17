@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002455.html",
-  "title": "Linux Kernel の net/core/filter.c の sk_run_filter 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002455.html",
-  "description": "Linux Kernel の net/core/filter.c 内の sk_run_filter 関数の (1) BPF_S_ANC_NLATTR および (2) BPF_S_ANC_NLATTR_NEST 拡張機能の実装は、特定の length 値が十分に大きいかをチェックしないため、サービス運用妨害 (整数アンダーフローおよびシステムクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\nなお、影響を受けるコードは、本脆弱性が公表される前に __skb_get_nlattr および __skb_get_nlattr_nest 関数へ移動されました。",
-  "identifier": "JVNDB-2014-002455",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3144",
-      "source": "CVE",
-      "id": "CVE-2014-3144"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3144",
-      "source": "NVD",
-      "id": "CVE-2014-3144"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
-      "id": "CWE-189",
-      "title": "数値処理の問題(CWE-189)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2014-05-13T15:25+09:00",
-  "issued": "2014-05-13T15:25+09:00",
-  "modified": "2014-05-13T15:25+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002455.html",
+	"title": "Linux Kernel の net/core/filter.c の sk_run_filter 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002455.html",
+	"description": "Linux Kernel の net/core/filter.c 内の sk_run_filter 関数の (1) BPF_S_ANC_NLATTR および (2) BPF_S_ANC_NLATTR_NEST 拡張機能の実装は、特定の length 値が十分に大きいかをチェックしないため、サービス運用妨害 (整数アンダーフローおよびシステムクラッシュ) 状態にされる脆弱性が存在します。\r\n\r\nなお、影響を受けるコードは、本脆弱性が公表される前に __skb_get_nlattr および __skb_get_nlattr_nest 関数へ移動されました。",
+	"identifier": "JVNDB-2014-002455",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3144",
+			"source": "CVE",
+			"id": "CVE-2014-3144"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3144",
+			"source": "NVD",
+			"id": "CVE-2014-3144"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+			"id": "CWE-189",
+			"title": "数値処理の問題(CWE-189)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2014-05-13T15:25+09:00",
+	"issued": "2014-05-13T15:25+09:00",
+	"modified": "2014-05-13T15:25+09:00"
 }

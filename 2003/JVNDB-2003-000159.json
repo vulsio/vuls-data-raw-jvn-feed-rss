@@ -1,55 +1,55 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000159.html",
-  "title": "Microsoft Windows の nsiislog.dll におけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000159.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Windows 2000 Server ファミリーに同梱されている nsiislog.dll は、IIS で利用される ISAPI エクステンションです。この nsiislog.dll は、Microsoft Media Services におけるストリーミング配信のためのロギング機能を提供します。Nsiislog.dll はプログラムの追加/削除を利用してインストールすることが可能です。デフォルトではシステム上には存在しません。\r\n\r\nこの Windows Media Services の実装で利用される nsiislog.dll では、リクエストに対する境界チェックが適切に行われていないため、バッファオーバーフローが生じる問題が存在します。 \r\nリモートの攻撃者は、意図的に作成されたリクエストを IIS が稼動する標的ホストに送りつけ、nsiislog.dll に引渡すことにより、バッファオーバーフローを発生させ、結果として、IIS をサービス不能状態に陥らせることが可能です。 \r\nさらに、攻撃者は IWAM アカウント (IWAM_< machinename >) で任意のコードを実行することが可能です。\r\n\r\n尚、Windows Media Services は Windows 2000 Server、Advanced Server や Datacenter Server、もしくは Windows NT 4.0 Server などの Windows Server オペレーティングシステム上に限り、利用することが可能です。\r\nこの中の Windows 2000 Server ファミリーでは、IIS はデフォルトで動作しています。Windows NT 4.0 Server では、NTOP (Windows NT 4.0 Option Pack) がインストールされている場合に IIS はデフォルトで動作しています。\r\n\r\nWindows 2000 Server に関して、この問題を解消するためにリリースされた MS03-019 のパッチ (817772) を適用後も同様の問題の影響を受けることが報告されています。MS03-022 のパッチ (822343) を適用することでこの問題を解消することが可能です。\r\n\r\nまた、修正プログラムの適用前に、Windows Media Services がアンインストールされていた場合に正しく修正プログラムが適用されない問題がベンダより新たに報告されており、修正プログラムが 2004/03/09 付けで再度リリースされています。",
-  "identifier": "JVNDB-2003-000159",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0349",
-      "source": "CVE",
-      "id": "CVE-2003-0349"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0349",
-      "source": "NVD",
-      "id": "CVE-2003-0349"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/8035",
-      "source": "BID",
-      "id": "8035"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/7727",
-      "source": "BID",
-      "id": "7727"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:microsoft:windows_2000",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 2000"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_nt",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows NT"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000159.html",
+	"title": "Microsoft Windows の nsiislog.dll におけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000159.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft Windows 2000 Server ファミリーに同梱されている nsiislog.dll は、IIS で利用される ISAPI エクステンションです。この nsiislog.dll は、Microsoft Media Services におけるストリーミング配信のためのロギング機能を提供します。Nsiislog.dll はプログラムの追加/削除を利用してインストールすることが可能です。デフォルトではシステム上には存在しません。\r\n\r\nこの Windows Media Services の実装で利用される nsiislog.dll では、リクエストに対する境界チェックが適切に行われていないため、バッファオーバーフローが生じる問題が存在します。 \r\nリモートの攻撃者は、意図的に作成されたリクエストを IIS が稼動する標的ホストに送りつけ、nsiislog.dll に引渡すことにより、バッファオーバーフローを発生させ、結果として、IIS をサービス不能状態に陥らせることが可能です。 \r\nさらに、攻撃者は IWAM アカウント (IWAM_< machinename >) で任意のコードを実行することが可能です。\r\n\r\n尚、Windows Media Services は Windows 2000 Server、Advanced Server や Datacenter Server、もしくは Windows NT 4.0 Server などの Windows Server オペレーティングシステム上に限り、利用することが可能です。\r\nこの中の Windows 2000 Server ファミリーでは、IIS はデフォルトで動作しています。Windows NT 4.0 Server では、NTOP (Windows NT 4.0 Option Pack) がインストールされている場合に IIS はデフォルトで動作しています。\r\n\r\nWindows 2000 Server に関して、この問題を解消するためにリリースされた MS03-019 のパッチ (817772) を適用後も同様の問題の影響を受けることが報告されています。MS03-022 のパッチ (822343) を適用することでこの問題を解消することが可能です。\r\n\r\nまた、修正プログラムの適用前に、Windows Media Services がアンインストールされていた場合に正しく修正プログラムが適用されない問題がベンダより新たに報告されており、修正プログラムが 2004/03/09 付けで再度リリースされています。",
+	"identifier": "JVNDB-2003-000159",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0349",
+			"source": "CVE",
+			"id": "CVE-2003-0349"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0349",
+			"source": "NVD",
+			"id": "CVE-2003-0349"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/8035",
+			"source": "BID",
+			"id": "8035"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/7727",
+			"source": "BID",
+			"id": "7727"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:microsoft:windows_2000",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 2000"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_nt",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows NT"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

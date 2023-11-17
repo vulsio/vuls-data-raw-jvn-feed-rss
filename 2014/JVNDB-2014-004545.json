@@ -1,59 +1,59 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004545.html",
-  "title": "Rejetto HFS (HTTP File Server) に null バイトの取扱いに関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004545.html",
-  "description": "Rejetto が提供する HFS (HTTP File Server) には、null バイトの取扱いに関する脆弱性が存在します。\r\n\r\nRejetto が提供する HFS (HTTP File Server) には、parserLib.pas の正規表現に null バイトを処理しない問題 (CWE-158) が存在します。検索文字列に null バイトが含まれている場合、その null バイトの後にくる文字列がコマンドの場合、そのコマンドが実行されてしまいます。\r\n\r\nCWE-158:Improper Neutralization of Null Byte or NUL Character\r\nhttp://cwe.mitre.org/data/definitions/158.html\r\n\r\nなお、本脆弱性を使用した攻撃コードが公開されており、攻撃活動が観測されているとのことです。",
-  "identifier": "JVNDB-2014-004545",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU95507011/index.html",
-      "source": "JVN",
-      "id": "JVNVU#95507011"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6287",
-      "source": "CVE",
-      "id": "CVE-2014-6287"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6287",
-      "source": "NVD",
-      "id": "CVE-2014-6287"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/251276",
-      "source": "CERT-VN",
-      "id": "VU#251276"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
-      "id": "CWE-94",
-      "title": "コード・インジェクション(CWE-94)"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:rejetto:http_file_server",
-      "version": "2.2",
-      "vendor": "Rejetto",
-      "product": "Http File Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2014-10-08T13:44+09:00",
-  "issued": "2014-10-08T13:44+09:00",
-  "modified": "2014-10-08T13:44+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004545.html",
+	"title": "Rejetto HFS (HTTP File Server) に null バイトの取扱いに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004545.html",
+	"description": "Rejetto が提供する HFS (HTTP File Server) には、null バイトの取扱いに関する脆弱性が存在します。\r\n\r\nRejetto が提供する HFS (HTTP File Server) には、parserLib.pas の正規表現に null バイトを処理しない問題 (CWE-158) が存在します。検索文字列に null バイトが含まれている場合、その null バイトの後にくる文字列がコマンドの場合、そのコマンドが実行されてしまいます。\r\n\r\nCWE-158:Improper Neutralization of Null Byte or NUL Character\r\nhttp://cwe.mitre.org/data/definitions/158.html\r\n\r\nなお、本脆弱性を使用した攻撃コードが公開されており、攻撃活動が観測されているとのことです。",
+	"identifier": "JVNDB-2014-004545",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU95507011/index.html",
+			"source": "JVN",
+			"id": "JVNVU#95507011"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6287",
+			"source": "CVE",
+			"id": "CVE-2014-6287"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6287",
+			"source": "NVD",
+			"id": "CVE-2014-6287"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/251276",
+			"source": "CERT-VN",
+			"id": "VU#251276"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+			"id": "CWE-94",
+			"title": "コード・インジェクション(CWE-94)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:rejetto:http_file_server",
+			"version": "2.2",
+			"vendor": "Rejetto",
+			"product": "Http File Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2014-10-08T13:44+09:00",
+	"issued": "2014-10-08T13:44+09:00",
+	"modified": "2014-10-08T13:44+09:00"
 }

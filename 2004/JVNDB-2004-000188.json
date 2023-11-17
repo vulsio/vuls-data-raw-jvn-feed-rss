@@ -1,55 +1,55 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000188.html",
-  "title": "Ethereal の SIP プロトコルの取り扱いにおけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000188.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal 0.9.8 - 0.10.3 では、プロトコルの解釈部に以下ような複数のセキュリティ上の問題が存在します。\r\n\r\n・特定の条件下で SIP (Session Initiation Protocol) パケットを解釈すると Ethereal がクラッシュする問題 (0.10.3)\r\n\r\n・AIM (AOL Instant Messenger) プロトコルの解釈部において、アサーションによる中断が発生する可能性があり、Ethereal が異常終了する問題 (0.10.3)\r\n\r\n・SPNEGO (Secure Protocol Negotiation) の解釈部において、NULL ポインタがデリファレンスされ、Ethereal がクラッシュする問題 (0.9.8 - 0.10.3)\r\n\r\n・MMSE (MMS Message Encapsulation) プロトコルの解釈部において、バッファオーバーフローが発生する問題 (0.10.1 - 0.10.3)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、以下のような手法によって、Ethereal をクラッシュさせる、さらには Ethereal の実行権限 (通常 root 権限) で任意のコードを実行できる可能性が存在します。\r\n\r\n・意図的に作成したパケットを標的システムが監視しているネットワークに送り付ける\r\n・意図的に作成したパケットトレースファイルを読み取らせる\r\n・意図的に作成したカラーフィルタファイルを利用させる (0.9.15 以降)",
-  "identifier": "JVNDB-2004-000188",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0504",
-      "source": "CVE",
-      "id": "CVE-2004-0504"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0504",
-      "source": "NVD",
-      "id": "CVE-2004-0504"
-    },
-    {
-      "text": "http://secunia.com/advisories/11608/",
-      "source": "SECUNIA",
-      "id": "SA11608"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/10347",
-      "source": "BID",
-      "id": "10347"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000188.html",
+	"title": "Ethereal の SIP プロトコルの取り扱いにおけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000188.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal 0.9.8 - 0.10.3 では、プロトコルの解釈部に以下ような複数のセキュリティ上の問題が存在します。\r\n\r\n・特定の条件下で SIP (Session Initiation Protocol) パケットを解釈すると Ethereal がクラッシュする問題 (0.10.3)\r\n\r\n・AIM (AOL Instant Messenger) プロトコルの解釈部において、アサーションによる中断が発生する可能性があり、Ethereal が異常終了する問題 (0.10.3)\r\n\r\n・SPNEGO (Secure Protocol Negotiation) の解釈部において、NULL ポインタがデリファレンスされ、Ethereal がクラッシュする問題 (0.9.8 - 0.10.3)\r\n\r\n・MMSE (MMS Message Encapsulation) プロトコルの解釈部において、バッファオーバーフローが発生する問題 (0.10.1 - 0.10.3)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、以下のような手法によって、Ethereal をクラッシュさせる、さらには Ethereal の実行権限 (通常 root 権限) で任意のコードを実行できる可能性が存在します。\r\n\r\n・意図的に作成したパケットを標的システムが監視しているネットワークに送り付ける\r\n・意図的に作成したパケットトレースファイルを読み取らせる\r\n・意図的に作成したカラーフィルタファイルを利用させる (0.9.15 以降)",
+	"identifier": "JVNDB-2004-000188",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0504",
+			"source": "CVE",
+			"id": "CVE-2004-0504"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0504",
+			"source": "NVD",
+			"id": "CVE-2004-0504"
+		},
+		{
+			"text": "http://secunia.com/advisories/11608/",
+			"source": "SECUNIA",
+			"id": "SA11608"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/10347",
+			"source": "BID",
+			"id": "10347"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

@@ -1,75 +1,75 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-007167.html",
-  "title": "Cylance のアンチウイルス製品にマルウエア検知を回避される問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-007167.html",
-  "description": "2019年7月21日より前の状態の Cylance の AI ベースのアンチウイルス製品には、悪性コンテンツを良性なものであると誤認識してしまう問題が存在します。\r\n\r\nCylance PROTECT には、実行ファイルが悪性か良性かを判断するための、機械学習アルゴリズム (ニューラルネットワーク) を使用したアンチウイルス機能が搭載されています。\r\nこの機械学習アルゴリズムの調査を行った研究グループから、マルウエアファイルに改変を加えることで、良性であると Cylance 製品が判断するようなファイルを作成することが可能であることが報告されました。Dridex、Gh0stRAT、Zeus など複数のよく知られたマルウエアファイルに手を加えて検知を回避することが可能であったとのことです。\r\n調査に使用されたマルウエアのおよそ 85％ ほどが検知回避に成功したと報告されています。一方、Cylance が内部で行った調査では 50% 程度の成功率であったとのことです。どちらの数字にしても、検知を回避できるようにする改変がそれほど難しくはないことを示していると考えられます。実際の改変作業は、文字列を末尾に追加するだけであるとのことです。",
-  "identifier": "JVNDB-2019-007167",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU98738756",
-      "source": "JVN",
-      "id": "JVNVU#98738756"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/489481/",
-      "source": "CERT-VN",
-      "id": "VU#489481"
-    },
-    {
-      "text": "https://skylightcyber.com/2019/07/18/cylance-i-kill-you/",
-      "source": "関連文書",
-      "id": "Cylance, I Kill You!"
-    },
-    {
-      "text": "https://ieeexplore.ieee.org/document/8406613",
-      "source": "関連文書",
-      "id": "SoK: Security and Privacy in Machine Learning"
-    },
-    {
-      "text": "https://www.cs.cmu.edu/~sbhagava/papers/face-rec-ccs16.pdf",
-      "source": "関連文書",
-      "id": "Accessorize to a Crime: Real and Stealthy Attacks onState-of-the-Art Face Recognition"
-    },
-    {
-      "text": "https://arxiv.org/abs/1707.08945",
-      "source": "関連文書",
-      "id": "Robust Physical-World Attacks on Deep Learning Models"
-    },
-    {
-      "text": "https://keenlab.tencent.com/en/whitepapers/Experimental_Security_Research_of_Tesla_Autopilot.pdf",
-      "source": "関連文書",
-      "id": "Experimental Security Research of Tesla Autopilot"
-    },
-    {
-      "text": "https://etda.libraries.psu.edu/catalog/15337rms5643",
-      "source": "関連文書",
-      "id": "Adversarial Examples in Constrained Domains"
-    },
-    {
-      "text": "https://github.com/tensorflow/cleverhans",
-      "source": "関連文書",
-      "id": "GitHub - tensorflow/cleverhans"
-    },
-    {
-      "text": "https://github.com/bethgelab/foolbox",
-      "source": "関連文書",
-      "id": "GitHub - bethgelab/foolbox"
-    },
-    {
-      "text": "https://github.com/IBM/adversarial-robustness-toolbox",
-      "source": "関連文書",
-      "id": "GitHub - IBM/adversarial-robustness-toolbox"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:cylance:cylance",
-      "version": "2.2",
-      "vendor": "Cylance",
-      "product": "Cylance"
-    }
-  ],
-  "date": "2019-08-05T11:41+09:00",
-  "issued": "2019-08-05T11:41+09:00",
-  "modified": "2019-08-05T11:41+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-007167.html",
+	"title": "Cylance のアンチウイルス製品にマルウエア検知を回避される問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-007167.html",
+	"description": "2019年7月21日より前の状態の Cylance の AI ベースのアンチウイルス製品には、悪性コンテンツを良性なものであると誤認識してしまう問題が存在します。\r\n\r\nCylance PROTECT には、実行ファイルが悪性か良性かを判断するための、機械学習アルゴリズム (ニューラルネットワーク) を使用したアンチウイルス機能が搭載されています。\r\nこの機械学習アルゴリズムの調査を行った研究グループから、マルウエアファイルに改変を加えることで、良性であると Cylance 製品が判断するようなファイルを作成することが可能であることが報告されました。Dridex、Gh0stRAT、Zeus など複数のよく知られたマルウエアファイルに手を加えて検知を回避することが可能であったとのことです。\r\n調査に使用されたマルウエアのおよそ 85％ ほどが検知回避に成功したと報告されています。一方、Cylance が内部で行った調査では 50% 程度の成功率であったとのことです。どちらの数字にしても、検知を回避できるようにする改変がそれほど難しくはないことを示していると考えられます。実際の改変作業は、文字列を末尾に追加するだけであるとのことです。",
+	"identifier": "JVNDB-2019-007167",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU98738756",
+			"source": "JVN",
+			"id": "JVNVU#98738756"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/489481/",
+			"source": "CERT-VN",
+			"id": "VU#489481"
+		},
+		{
+			"text": "https://skylightcyber.com/2019/07/18/cylance-i-kill-you/",
+			"source": "関連文書",
+			"id": "Cylance, I Kill You!"
+		},
+		{
+			"text": "https://ieeexplore.ieee.org/document/8406613",
+			"source": "関連文書",
+			"id": "SoK: Security and Privacy in Machine Learning"
+		},
+		{
+			"text": "https://www.cs.cmu.edu/~sbhagava/papers/face-rec-ccs16.pdf",
+			"source": "関連文書",
+			"id": "Accessorize to a Crime: Real and Stealthy Attacks onState-of-the-Art Face Recognition"
+		},
+		{
+			"text": "https://arxiv.org/abs/1707.08945",
+			"source": "関連文書",
+			"id": "Robust Physical-World Attacks on Deep Learning Models"
+		},
+		{
+			"text": "https://keenlab.tencent.com/en/whitepapers/Experimental_Security_Research_of_Tesla_Autopilot.pdf",
+			"source": "関連文書",
+			"id": "Experimental Security Research of Tesla Autopilot"
+		},
+		{
+			"text": "https://etda.libraries.psu.edu/catalog/15337rms5643",
+			"source": "関連文書",
+			"id": "Adversarial Examples in Constrained Domains"
+		},
+		{
+			"text": "https://github.com/tensorflow/cleverhans",
+			"source": "関連文書",
+			"id": "GitHub - tensorflow/cleverhans"
+		},
+		{
+			"text": "https://github.com/bethgelab/foolbox",
+			"source": "関連文書",
+			"id": "GitHub - bethgelab/foolbox"
+		},
+		{
+			"text": "https://github.com/IBM/adversarial-robustness-toolbox",
+			"source": "関連文書",
+			"id": "GitHub - IBM/adversarial-robustness-toolbox"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:cylance:cylance",
+			"version": "2.2",
+			"vendor": "Cylance",
+			"product": "Cylance"
+		}
+	],
+	"date": "2019-08-05T11:41+09:00",
+	"issued": "2019-08-05T11:41+09:00",
+	"modified": "2019-08-05T11:41+09:00"
 }

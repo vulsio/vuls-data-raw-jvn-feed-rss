@@ -1,98 +1,98 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000321.html",
-  "title": "PostgreSQL における SECURITY DEFINER に関する権限昇格の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000321.html",
-  "description": "PostgreSQL には、スキーマ検索パス search_path 設定の処理に不備が存在するため、SECURITY DEFINER を指定した関数との組み合わせで悪用可能な権限昇格の脆弱性が存在します。\r\n\r\n既定で SECURITY DEFINER が指定されている関数は存在せず、ユーザ定義関数で SECURITY DEFINER が利用されている場合に、問題となる可能性があります。",
-  "identifier": "JVNDB-2007-000321",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2138",
-      "source": "CVE",
-      "id": "CVE-2007-2138"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2138",
-      "source": "NVD",
-      "id": "CVE-2007-2138"
-    },
-    {
-      "text": "http://secunia.com/advisories/25019",
-      "source": "SECUNIA",
-      "id": "SA25019"
-    },
-    {
-      "text": "http://secunia.com/advisories/25037",
-      "source": "SECUNIA",
-      "id": "SA25037"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/23618",
-      "source": "BID",
-      "id": "23618"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/33842",
-      "source": "XF",
-      "id": "33842"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1017974",
-      "source": "SECTRACK",
-      "id": "1017974"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2007/1549",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2007-1549"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2007/1497",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2007-1497"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:postgresql:postgresql",
-      "version": "2.2",
-      "vendor": "PostgreSQL.org",
-      "product": "PostgreSQL"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:rhel_desktop_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Workstation"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-05-21T11:58+09:00",
-  "issued": "2007-05-21T11:58+09:00",
-  "modified": "2007-05-21T11:58+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000321.html",
+	"title": "PostgreSQL における SECURITY DEFINER に関する権限昇格の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2007/JVNDB-2007-000321.html",
+	"description": "PostgreSQL には、スキーマ検索パス search_path 設定の処理に不備が存在するため、SECURITY DEFINER を指定した関数との組み合わせで悪用可能な権限昇格の脆弱性が存在します。\r\n\r\n既定で SECURITY DEFINER が指定されている関数は存在せず、ユーザ定義関数で SECURITY DEFINER が利用されている場合に、問題となる可能性があります。",
+	"identifier": "JVNDB-2007-000321",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2138",
+			"source": "CVE",
+			"id": "CVE-2007-2138"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2138",
+			"source": "NVD",
+			"id": "CVE-2007-2138"
+		},
+		{
+			"text": "http://secunia.com/advisories/25019",
+			"source": "SECUNIA",
+			"id": "SA25019"
+		},
+		{
+			"text": "http://secunia.com/advisories/25037",
+			"source": "SECUNIA",
+			"id": "SA25037"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/23618",
+			"source": "BID",
+			"id": "23618"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/33842",
+			"source": "XF",
+			"id": "33842"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1017974",
+			"source": "SECTRACK",
+			"id": "1017974"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2007/1549",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2007-1549"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2007/1497",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2007-1497"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:postgresql:postgresql",
+			"version": "2.2",
+			"vendor": "PostgreSQL.org",
+			"product": "PostgreSQL"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:rhel_desktop_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Workstation"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-05-21T11:58+09:00",
+	"issued": "2007-05-21T11:58+09:00",
+	"modified": "2007-05-21T11:58+09:00"
 }

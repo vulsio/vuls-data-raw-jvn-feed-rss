@@ -1,61 +1,61 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003781.html",
-  "title": "PHP の OpenSSL モジュール内の openssl.c における任意の SSL サーバになりすまされる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003781.html",
-  "description": "PHP の OpenSSL モジュール内の openssl.c の openssl_x509_parse 関数は、X.509 証明書の Subject Alternative Name フィールド内のドメイン名に含まれる '\\0' 文字を適切に処理しないため、任意の SSL サーバになりすまされる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2009-2408 と関連する問題です。",
-  "identifier": "JVNDB-2013-003781",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU95868425/",
-      "source": "JVN",
-      "id": "JVNVU#95868425"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4248",
-      "source": "CVE",
-      "id": "CVE-2013-4248"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4248",
-      "source": "NVD",
-      "id": "CVE-2013-4248"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:php:php",
-      "version": "2.2",
-      "vendor": "The PHP Group",
-      "product": "PHP"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2014-12-08T17:00+09:00",
-  "issued": "2013-08-20T15:43+09:00",
-  "modified": "2014-12-08T17:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003781.html",
+	"title": "PHP の OpenSSL モジュール内の openssl.c における任意の SSL サーバになりすまされる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-003781.html",
+	"description": "PHP の OpenSSL モジュール内の openssl.c の openssl_x509_parse 関数は、X.509 証明書の Subject Alternative Name フィールド内のドメイン名に含まれる '\\0' 文字を適切に処理しないため、任意の SSL サーバになりすまされる脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2009-2408 と関連する問題です。",
+	"identifier": "JVNDB-2013-003781",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU95868425/",
+			"source": "JVN",
+			"id": "JVNVU#95868425"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4248",
+			"source": "CVE",
+			"id": "CVE-2013-4248"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4248",
+			"source": "NVD",
+			"id": "CVE-2013-4248"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:php:php",
+			"version": "2.2",
+			"vendor": "The PHP Group",
+			"product": "PHP"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2014-12-08T17:00+09:00",
+	"issued": "2013-08-20T15:43+09:00",
+	"modified": "2014-12-08T17:00+09:00"
 }

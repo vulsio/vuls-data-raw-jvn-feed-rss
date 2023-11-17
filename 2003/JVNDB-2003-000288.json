@@ -1,248 +1,248 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000288.html",
-  "title": "OpenSSL の不正な ASN.1 タグの値の処理によるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000288.html",
-  "description": "OpenSSL は X.509 証明書等で ASN.1 オブジェクトを利用して認証用情報のやり取りを行っています。\r\n\r\nOpenSSL 0.9.6j/0.9.7b 以前には 特定の状況下において、タグフィールドの値の文字数を適切にチェックしないために、バッファの終端を越えて参照を実行してしまう問題があります。\r\n\r\nなお、SSL/TLS プロトコルの実装する OpenSSL 以外の多くの製品にも、本脆弱性を含む ASN.1 処理に関連する脆弱性の存在が確認されています。",
-  "identifier": "JVNDB-2003-000288",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNCA-2003-26",
-      "source": "JVN",
-      "id": "JVNCA-2003-26"
-    },
-    {
-      "text": "http://jvn.jp/tr/TRCA-2003-26",
-      "source": "JVNTR",
-      "id": "TRCA-2003-26"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0544",
-      "source": "CVE",
-      "id": "CVE-2003-0544"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0544",
-      "source": "NVD",
-      "id": "CVE-2003-0544"
-    },
-    {
-      "text": "http://www.cyberpolice.go.jp/important/20031001_103420.html",
-      "source": "AT-POLICE",
-      "id": "OpenSSLの脆弱性について(9/30)"
-    },
-    {
-      "text": "http://www.cert.org/advisories/CA-2003-26.html",
-      "source": "CERT-A",
-      "id": "CA-2003-26"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/686224",
-      "source": "CERT-VN",
-      "id": "VU#686224"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/732952",
-      "source": "CERT-VN",
-      "id": "VU#732952"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/380864",
-      "source": "CERT-VN",
-      "id": "VU#380864"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/104280",
-      "source": "CERT-VN",
-      "id": "VU#104280"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/n-159.shtml",
-      "source": "CIAC",
-      "id": "N-159"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/o-065.shtml",
-      "source": "CIAC",
-      "id": "O-065"
-    },
-    {
-      "text": "http://www.cpni.gov.uk/docs/re-20031104-00748.pdf",
-      "source": "NISCC",
-      "id": "006489/TLS"
-    },
-    {
-      "text": "http://www.cpni.gov.uk/Products/advisories/default.aspx?id=br-20031104-00633.xml",
-      "source": "CPNI",
-      "id": "00633"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/13316",
-      "source": "XF",
-      "id": "13316"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/a:oracle:application_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Application Server"
-    },
-    {
-      "text": "cpe:/a:oracle:database_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Database"
-    },
-    {
-      "text": "cpe:/a:oracle:http_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle HTTP Server"
-    },
-    {
-      "text": "cpe:/a:sun:java_system_application_server",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Java System Application Server"
-    },
-    {
-      "text": "cpe:/a:sun:java_system_directory_server",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Java System Directory Server"
-    },
-    {
-      "text": "cpe:/a:sun:java_system_web_server",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Java System Web Server"
-    },
-    {
-      "text": "cpe:/a:sun:linux",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Linux 5.0"
-    },
-    {
-      "text": "cpe:/h:cisco:pix_firewall",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco PIX Firewall"
-    },
-    {
-      "text": "cpe:/h:hp:apache-based_web_server",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX Apache-based Web Server"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_qube_3",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt Qube3"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_4",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ4"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_550",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQ550"
-    },
-    {
-      "text": "cpe:/h:sun:sun_cobalt_raq_xtr",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Cobalt RaQXTR"
-    },
-    {
-      "text": "cpe:/o:cisco:ios",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IOS"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:linux_advanced_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux Advanced Workstation"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_advanced_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Advanced Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_desktop",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Desktop"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_workstation",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000288.html",
+	"title": "OpenSSL の不正な ASN.1 タグの値の処理によるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000288.html",
+	"description": "OpenSSL は X.509 証明書等で ASN.1 オブジェクトを利用して認証用情報のやり取りを行っています。\r\n\r\nOpenSSL 0.9.6j/0.9.7b 以前には 特定の状況下において、タグフィールドの値の文字数を適切にチェックしないために、バッファの終端を越えて参照を実行してしまう問題があります。\r\n\r\nなお、SSL/TLS プロトコルの実装する OpenSSL 以外の多くの製品にも、本脆弱性を含む ASN.1 処理に関連する脆弱性の存在が確認されています。",
+	"identifier": "JVNDB-2003-000288",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNCA-2003-26",
+			"source": "JVN",
+			"id": "JVNCA-2003-26"
+		},
+		{
+			"text": "http://jvn.jp/tr/TRCA-2003-26",
+			"source": "JVNTR",
+			"id": "TRCA-2003-26"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0544",
+			"source": "CVE",
+			"id": "CVE-2003-0544"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0544",
+			"source": "NVD",
+			"id": "CVE-2003-0544"
+		},
+		{
+			"text": "http://www.cyberpolice.go.jp/important/20031001_103420.html",
+			"source": "AT-POLICE",
+			"id": "OpenSSLの脆弱性について(9/30)"
+		},
+		{
+			"text": "http://www.cert.org/advisories/CA-2003-26.html",
+			"source": "CERT-A",
+			"id": "CA-2003-26"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/686224",
+			"source": "CERT-VN",
+			"id": "VU#686224"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/732952",
+			"source": "CERT-VN",
+			"id": "VU#732952"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/380864",
+			"source": "CERT-VN",
+			"id": "VU#380864"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/104280",
+			"source": "CERT-VN",
+			"id": "VU#104280"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/n-159.shtml",
+			"source": "CIAC",
+			"id": "N-159"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/o-065.shtml",
+			"source": "CIAC",
+			"id": "O-065"
+		},
+		{
+			"text": "http://www.cpni.gov.uk/docs/re-20031104-00748.pdf",
+			"source": "NISCC",
+			"id": "006489/TLS"
+		},
+		{
+			"text": "http://www.cpni.gov.uk/Products/advisories/default.aspx?id=br-20031104-00633.xml",
+			"source": "CPNI",
+			"id": "00633"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/13316",
+			"source": "XF",
+			"id": "13316"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/a:oracle:application_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Application Server"
+		},
+		{
+			"text": "cpe:/a:oracle:database_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Database"
+		},
+		{
+			"text": "cpe:/a:oracle:http_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle HTTP Server"
+		},
+		{
+			"text": "cpe:/a:sun:java_system_application_server",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Java System Application Server"
+		},
+		{
+			"text": "cpe:/a:sun:java_system_directory_server",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Java System Directory Server"
+		},
+		{
+			"text": "cpe:/a:sun:java_system_web_server",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Java System Web Server"
+		},
+		{
+			"text": "cpe:/a:sun:linux",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Linux 5.0"
+		},
+		{
+			"text": "cpe:/h:cisco:pix_firewall",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco PIX Firewall"
+		},
+		{
+			"text": "cpe:/h:hp:apache-based_web_server",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX Apache-based Web Server"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_qube_3",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt Qube3"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_4",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ4"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_550",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQ550"
+		},
+		{
+			"text": "cpe:/h:sun:sun_cobalt_raq_xtr",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Cobalt RaQXTR"
+		},
+		{
+			"text": "cpe:/o:cisco:ios",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IOS"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:linux_advanced_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux Advanced Workstation"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_advanced_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Advanced Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_desktop",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Desktop"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_workstation",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000092.html",
-  "title": "Microsoft SQL Server の xp_displayparamstmt() 関数におけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000092.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft SQL Server 及び Data Engine の拡張ストアドプロシージャ (XP: Extended Stored Procedures) によって実装されている API のうちの Srv_paraminfo() には、バッファオーバーフローの問題があります。\r\nXP とは、 SQL Server に高いレベルの機能を提供する DLL ファイルのことです。SQL Server では XP の入力パラメータを解析するのに Srv_paraminfo() API が提供されています。しかし、この Srv_paraminfo() は、 XP の入力文字列の長さのチェックを行っていません。したがって、悪意ある攻撃者が XP の xp_updatecolvbm へ非常に長い文字列を渡すことができた場合、バッファオーバーフローを発生させることが可能となります。もし、この長い文字列を巧妙に操作することができれば、攻撃者は SQL Server の実行権限である Local System 権限で任意のコードを実行することが可能となります。ただし、この問題を利用するためには SQL Server へのログオンが必要となるでしょう。",
-  "identifier": "JVNDB-2000-000092",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-1081",
-      "source": "CVE",
-      "id": "CVE-2000-1081"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2000-1081",
-      "source": "NVD",
-      "id": "CVE-2000-1081"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/2043",
-      "source": "BID",
-      "id": "2043"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:microsoft:sql_server",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft SQL Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.6",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000092.html",
+	"title": "Microsoft SQL Server の xp_displayparamstmt() 関数におけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2000/JVNDB-2000-000092.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nMicrosoft SQL Server 及び Data Engine の拡張ストアドプロシージャ (XP: Extended Stored Procedures) によって実装されている API のうちの Srv_paraminfo() には、バッファオーバーフローの問題があります。\r\nXP とは、 SQL Server に高いレベルの機能を提供する DLL ファイルのことです。SQL Server では XP の入力パラメータを解析するのに Srv_paraminfo() API が提供されています。しかし、この Srv_paraminfo() は、 XP の入力文字列の長さのチェックを行っていません。したがって、悪意ある攻撃者が XP の xp_updatecolvbm へ非常に長い文字列を渡すことができた場合、バッファオーバーフローを発生させることが可能となります。もし、この長い文字列を巧妙に操作することができれば、攻撃者は SQL Server の実行権限である Local System 権限で任意のコードを実行することが可能となります。ただし、この問題を利用するためには SQL Server へのログオンが必要となるでしょう。",
+	"identifier": "JVNDB-2000-000092",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-1081",
+			"source": "CVE",
+			"id": "CVE-2000-1081"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2000-1081",
+			"source": "NVD",
+			"id": "CVE-2000-1081"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/2043",
+			"source": "BID",
+			"id": "2043"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:microsoft:sql_server",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft SQL Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.6",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

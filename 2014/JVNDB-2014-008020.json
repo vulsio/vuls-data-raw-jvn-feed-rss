@@ -1,51 +1,51 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008020.html",
-  "title": "Windows NTLM が file:// URL へのリダイレクト時に SMB 接続を行いユーザ認証情報を送信する問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008020.html",
-  "description": "HTTP 通信を行う Windows ソフトウェアには、HTTP リクエストを file:// プロトコル に転送された場合に、SMB を使って攻撃者が用意した SMB サーバに認証情報を送信する問題が存在します。\r\n攻撃者の SMB サーバには、ユーザの認証情報が暗号化された形で記録されます。本脆弱性は別名 \"Redirect to SMB\" (SMB へのリダイレクト) として知られています。\r\n\r\nデータ送信による情報漏えい (CWE-201)\r\nソフトウェアの多くは、ソフトウェアアップデートの確認等さまざまな機能に HTTP リクエストを使用しています。攻撃者は、中間者攻撃を行うことで HTTP リクエストを傍受し、HTTP リダイレクトを使って攻撃者が用意した SMB サーバへリダイレクトします。リダイレクト先が file:// ではじまる URL であり、かつ被害者の PC が Windows である場合、Windows は自動的に攻撃者の SMB サーバに接続しようとしてユーザの認証情報を送信します。送信された認証情報は、SMB サーバのログに記録されます。認証情報は暗号化されているものの、総当たり攻撃 (brute force attack) によって解読される可能性があります。\r\n\r\nCWE-201: Information Exposure Through Sent Data\r\nhttp://cwe.mitre.org/data/definitions/201.html\r\n\r\nHTTP リダイレクトによる攻撃手法は新規に発見されたものですが、SMB を使った同種の問題は以前から知られており、たとえば 1997年には Aaron Spangler のレポート が、2009年には Microsoft Security Advisory 974926 が公開されています。その他の参考情報は、本アドバイザリ末尾の【参考情報】を参照してください。\r\n\r\nAaron Spangler のレポート\r\nhttp://insecure.org/sploits/winnt.automatic.authentication.html\r\n\r\nMicrosoft Security Advisory 974926\r\nhttps://technet.microsoft.com/en-us/library/security/974926.aspx",
-  "identifier": "JVNDB-2014-008020",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU99430390",
-      "source": "JVN",
-      "id": "JVNVU#99430390"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/672268",
-      "source": "CERT-VN",
-      "id": "VU#672268"
-    },
-    {
-      "text": "http://blog.cylance.com/redirect-to-smb",
-      "source": "関連文書",
-      "id": "SPEAR - Redirect to SMB"
-    },
-    {
-      "text": "http://insecure.org/sploits/winnt.automatic.authentication.html",
-      "source": "関連文書",
-      "id": "WinNT/Win95 Automatic Authentication Vulnerability (IE Bug #4) - 14 March 1997"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    },
-    {
-      "text": "cpe:/a:nec:capssuite",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CapsSuite"
-    }
-  ],
-  "date": "2015-10-28T11:40+09:00",
-  "issued": "2015-04-15T17:46+09:00",
-  "modified": "2015-10-28T11:40+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008020.html",
+	"title": "Windows NTLM が file:// URL へのリダイレクト時に SMB 接続を行いユーザ認証情報を送信する問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-008020.html",
+	"description": "HTTP 通信を行う Windows ソフトウェアには、HTTP リクエストを file:// プロトコル に転送された場合に、SMB を使って攻撃者が用意した SMB サーバに認証情報を送信する問題が存在します。\r\n攻撃者の SMB サーバには、ユーザの認証情報が暗号化された形で記録されます。本脆弱性は別名 \"Redirect to SMB\" (SMB へのリダイレクト) として知られています。\r\n\r\nデータ送信による情報漏えい (CWE-201)\r\nソフトウェアの多くは、ソフトウェアアップデートの確認等さまざまな機能に HTTP リクエストを使用しています。攻撃者は、中間者攻撃を行うことで HTTP リクエストを傍受し、HTTP リダイレクトを使って攻撃者が用意した SMB サーバへリダイレクトします。リダイレクト先が file:// ではじまる URL であり、かつ被害者の PC が Windows である場合、Windows は自動的に攻撃者の SMB サーバに接続しようとしてユーザの認証情報を送信します。送信された認証情報は、SMB サーバのログに記録されます。認証情報は暗号化されているものの、総当たり攻撃 (brute force attack) によって解読される可能性があります。\r\n\r\nCWE-201: Information Exposure Through Sent Data\r\nhttp://cwe.mitre.org/data/definitions/201.html\r\n\r\nHTTP リダイレクトによる攻撃手法は新規に発見されたものですが、SMB を使った同種の問題は以前から知られており、たとえば 1997年には Aaron Spangler のレポート が、2009年には Microsoft Security Advisory 974926 が公開されています。その他の参考情報は、本アドバイザリ末尾の【参考情報】を参照してください。\r\n\r\nAaron Spangler のレポート\r\nhttp://insecure.org/sploits/winnt.automatic.authentication.html\r\n\r\nMicrosoft Security Advisory 974926\r\nhttps://technet.microsoft.com/en-us/library/security/974926.aspx",
+	"identifier": "JVNDB-2014-008020",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU99430390",
+			"source": "JVN",
+			"id": "JVNVU#99430390"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/672268",
+			"source": "CERT-VN",
+			"id": "VU#672268"
+		},
+		{
+			"text": "http://blog.cylance.com/redirect-to-smb",
+			"source": "関連文書",
+			"id": "SPEAR - Redirect to SMB"
+		},
+		{
+			"text": "http://insecure.org/sploits/winnt.automatic.authentication.html",
+			"source": "関連文書",
+			"id": "WinNT/Win95 Automatic Authentication Vulnerability (IE Bug #4) - 14 March 1997"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		},
+		{
+			"text": "cpe:/a:nec:capssuite",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CapsSuite"
+		}
+	],
+	"date": "2015-10-28T11:40+09:00",
+	"issued": "2015-04-15T17:46+09:00",
+	"modified": "2015-10-28T11:40+09:00"
 }

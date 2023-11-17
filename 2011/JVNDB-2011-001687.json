@@ -1,103 +1,103 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001687.html",
-  "title": "ISC BIND にサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001687.html",
-  "description": "ISC BIND には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC BIND には、RRSIG リソースレコードセットの処理に起因する、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC から、以下の脆弱性情報が公開されています。\r\n\r\n\"DNS systems use negative caching to improve DNS response time. This will keep a DNS resolver from repeatedly looking up domains that do not exist. Any NXDOMAIN or NODATA/NOERROR response will be put into the negative cache.\r\n\r\nThe authority data will be cached along with the negative cache information. These authoritative “Start of Authority” (SOA) and NSEC/NSEC3 records prove the nonexistence of the requested name/type. In DNSSEC, all of these records are signed; this adds one additional RRSIG record, per DNSSEC key, for each record returned in the authority section of the response.\r\n\r\nIn this vulnerability, very large RRSIG RRsets included in a negative response can trigger an assertion failure that will crash named (BIND 9 DNS) due to an off-by-one error in a buffer size check.\r\n\r\nThe nature of this vulnerability would allow remote exploit. An attacker can set up a DNSSEC signed authoritative DNS server with large RRSIG RRsets to act as the trigger. The attacker would then find ways to query an organization’s caching resolvers for non-existent names in the domain served by the bad server, getting a response that would “trigger” the vulnerability. The attacker would require access to an organization’s caching resolvers; access to the resolvers can be direct (open resolvers), through malware (using a BOTNET to query negative caches), or through driving DNS resolution (a SPAM run that has a domain in the E-mail that will cause the client to perform a lookup).\"",
-  "identifier": "JVNDB-2011-001687",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU795694",
-      "source": "JVN",
-      "id": "JVNVU#795694"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1910",
-      "source": "CVE",
-      "id": "CVE-2011-1910"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1910",
-      "source": "NVD",
-      "id": "CVE-2011-1910"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2011/at110014.txt",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2011-0014"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/795694",
-      "source": "CERT-VN",
-      "id": "VU#795694"
-    },
-    {
-      "text": "http://jprs.jp/tech/security/2011-05-27-bind9-vuln-large-rrsig-and-ncache.html",
-      "source": "JPRS",
-      "id": "(緊急) BIND 9.xのネガティブキャッシュ機能の実装上のバグによるnamedのサービス停止について"
-    },
-    {
-      "text": "http://secunia.com/advisories/44719",
-      "source": "SECUNIA",
-      "id": "SA44719"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/48007",
-      "source": "BID",
-      "id": "48007"
-    },
-    {
-      "text": "http://www.securitytracker.com/id/1025572",
-      "source": "SECTRACK",
-      "id": "1025572"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
-      "id": "CWE-189",
-      "title": "数値処理の問題(CWE-189)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:isc:bind",
-      "version": "2.2",
-      "vendor": "ISC, Inc.",
-      "product": "BIND"
-    },
-    {
-      "text": "cpe:/o:oracle:solaris",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Solaris"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Appliance Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_client",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Client"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2011-07-27T09:43+09:00",
-  "issued": "2011-06-08T11:57+09:00",
-  "modified": "2011-07-27T09:43+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001687.html",
+	"title": "ISC BIND にサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001687.html",
+	"description": "ISC BIND には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC BIND には、RRSIG リソースレコードセットの処理に起因する、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nISC から、以下の脆弱性情報が公開されています。\r\n\r\n\"DNS systems use negative caching to improve DNS response time. This will keep a DNS resolver from repeatedly looking up domains that do not exist. Any NXDOMAIN or NODATA/NOERROR response will be put into the negative cache.\r\n\r\nThe authority data will be cached along with the negative cache information. These authoritative “Start of Authority” (SOA) and NSEC/NSEC3 records prove the nonexistence of the requested name/type. In DNSSEC, all of these records are signed; this adds one additional RRSIG record, per DNSSEC key, for each record returned in the authority section of the response.\r\n\r\nIn this vulnerability, very large RRSIG RRsets included in a negative response can trigger an assertion failure that will crash named (BIND 9 DNS) due to an off-by-one error in a buffer size check.\r\n\r\nThe nature of this vulnerability would allow remote exploit. An attacker can set up a DNSSEC signed authoritative DNS server with large RRSIG RRsets to act as the trigger. The attacker would then find ways to query an organization’s caching resolvers for non-existent names in the domain served by the bad server, getting a response that would “trigger” the vulnerability. The attacker would require access to an organization’s caching resolvers; access to the resolvers can be direct (open resolvers), through malware (using a BOTNET to query negative caches), or through driving DNS resolution (a SPAM run that has a domain in the E-mail that will cause the client to perform a lookup).\"",
+	"identifier": "JVNDB-2011-001687",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU795694",
+			"source": "JVN",
+			"id": "JVNVU#795694"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1910",
+			"source": "CVE",
+			"id": "CVE-2011-1910"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1910",
+			"source": "NVD",
+			"id": "CVE-2011-1910"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2011/at110014.txt",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2011-0014"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/795694",
+			"source": "CERT-VN",
+			"id": "VU#795694"
+		},
+		{
+			"text": "http://jprs.jp/tech/security/2011-05-27-bind9-vuln-large-rrsig-and-ncache.html",
+			"source": "JPRS",
+			"id": "(緊急) BIND 9.xのネガティブキャッシュ機能の実装上のバグによるnamedのサービス停止について"
+		},
+		{
+			"text": "http://secunia.com/advisories/44719",
+			"source": "SECUNIA",
+			"id": "SA44719"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/48007",
+			"source": "BID",
+			"id": "48007"
+		},
+		{
+			"text": "http://www.securitytracker.com/id/1025572",
+			"source": "SECTRACK",
+			"id": "1025572"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+			"id": "CWE-189",
+			"title": "数値処理の問題(CWE-189)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:isc:bind",
+			"version": "2.2",
+			"vendor": "ISC, Inc.",
+			"product": "BIND"
+		},
+		{
+			"text": "cpe:/o:oracle:solaris",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Solaris"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Appliance Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_client",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Client"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2011-07-27T09:43+09:00",
+	"issued": "2011-06-08T11:57+09:00",
+	"modified": "2011-07-27T09:43+09:00"
 }

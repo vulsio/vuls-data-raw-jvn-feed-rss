@@ -1,131 +1,131 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010585.html",
-  "title": "IEEE P1735 に脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010585.html",
-  "description": "IEEE P1735 は、電子回路設計データの暗号化やアクセス管理に関する規格です。IEEE P1735 に対して、複数の攻撃手法が報告されており、電子回路設計データが解読されたり、設計者が意図していない回路を混入される可能性があります。\r\n\r\n暗号の問題 (CWE-310)\r\n\r\nIEEE P1735 規格では、電子回路設計データの暗号化やアクセス管理手法について規定しています。\r\nIEEE P1735 に対して、パディングオラクル攻撃のようによく知られている手法を応用した攻撃や EDA ツール特有の挙動を使った攻撃など、複数の攻撃手法が報告されています。EDA ツール特有の挙動を使った攻撃手法としては、複数の電子回路設計データを組み合わせてひとつのチップを合成する際に、処理内容に応じて HDL Syntax エラーが発生することを利用し、EDA ツールをオラクルとして電子回路設計データの解読を行うことが可能であると報告されています。\r\nさらに、暗号化された電子回路設計データを細工し、設計者が意図していない回路を追加することも可能であると報告されています。\r\n\r\n大規模な回路設計では、異なる所有者が提供する複数の電子回路設計データが使用されます。IEEE P1735 は、暗号化やアクセス制御の仕組みにより各データの内容を保護する手段を規定するものですが、暗号化強度が弱い、セキュリティ上重要となる実装上の選択について何も言及しておらず実装まかせにしている、などの問題があります。\r\n\r\nIEEE P1735 に対して報告された脆弱性に対応して、以下の CVE 番号が採番されています。IEEE P1735 に対応している EDA ツールなどの製品がこれらの影響を受ける可能性があります。\r\n\r\n　* CVE-2017-13091: improperly specified padding in CBC mode allows use of an EDA tool as a decryption oracle.\r\n　* CVE-2017-13092: improperly specified HDL syntax allows use of an EDA tool as a decryption oracle\r\n　* CVE-2017-13093: modification of encrypted IP cyphertext to insert hardware trojans.\r\n　* CVE-2017-13094: modification of the encryption key and insertion of hardware trojans in any IP.\r\n　* CVE-2017-13095: modification of a license-deny response to a license grant.\r\n　* CVE-2017-13096: modification of Rights Block to get rid of or relax access control.\r\n　* CVE-2017-13097: modification of Rights Block to get rid of or relax license requirement.\r\n\r\n本件の詳細については報告者の論文をご参照ください。\r\n\r\n報告者の論文\r\nhttps://eprint.iacr.org/2017/828.pdf",
-  "identifier": "JVNDB-2017-010585",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU93593263",
-      "source": "JVN",
-      "id": "JVNVU#93593263"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13091",
-      "source": "CVE",
-      "id": "CVE-2017-13091"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13092",
-      "source": "CVE",
-      "id": "CVE-2017-13092"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13093",
-      "source": "CVE",
-      "id": "CVE-2017-13093"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13094",
-      "source": "CVE",
-      "id": "CVE-2017-13094"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13095",
-      "source": "CVE",
-      "id": "CVE-2017-13095"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13096",
-      "source": "CVE",
-      "id": "CVE-2017-13096"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13097",
-      "source": "CVE",
-      "id": "CVE-2017-13097"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13091",
-      "source": "NVD",
-      "id": "CVE-2017-13091"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13092",
-      "source": "NVD",
-      "id": "CVE-2017-13092"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13093",
-      "source": "NVD",
-      "id": "CVE-2017-13093"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13094",
-      "source": "NVD",
-      "id": "CVE-2017-13094"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13095",
-      "source": "NVD",
-      "id": "CVE-2017-13095"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13096",
-      "source": "NVD",
-      "id": "CVE-2017-13096"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13097",
-      "source": "NVD",
-      "id": "CVE-2017-13097"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/739007",
-      "source": "CERT-VN",
-      "id": "VU#739007"
-    },
-    {
-      "text": "https://eprint.iacr.org/2017/828.pdf",
-      "source": "関連文書",
-      "id": "Standardizing Bad Cryptographic Practice"
-    },
-    {
-      "text": "http://ieeexplore.ieee.org/document/7274481/?reload=true",
-      "source": "関連文書",
-      "id": "IEEE"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
-      "id": "CWE-310",
-      "title": "暗号の問題(CWE-310)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "6.7",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
-    }
-  ],
-  "date": "2019-07-05T17:09+09:00",
-  "issued": "2017-12-20T11:18+09:00",
-  "modified": "2019-07-05T17:09+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010585.html",
+	"title": "IEEE P1735 に脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010585.html",
+	"description": "IEEE P1735 は、電子回路設計データの暗号化やアクセス管理に関する規格です。IEEE P1735 に対して、複数の攻撃手法が報告されており、電子回路設計データが解読されたり、設計者が意図していない回路を混入される可能性があります。\r\n\r\n暗号の問題 (CWE-310)\r\n\r\nIEEE P1735 規格では、電子回路設計データの暗号化やアクセス管理手法について規定しています。\r\nIEEE P1735 に対して、パディングオラクル攻撃のようによく知られている手法を応用した攻撃や EDA ツール特有の挙動を使った攻撃など、複数の攻撃手法が報告されています。EDA ツール特有の挙動を使った攻撃手法としては、複数の電子回路設計データを組み合わせてひとつのチップを合成する際に、処理内容に応じて HDL Syntax エラーが発生することを利用し、EDA ツールをオラクルとして電子回路設計データの解読を行うことが可能であると報告されています。\r\nさらに、暗号化された電子回路設計データを細工し、設計者が意図していない回路を追加することも可能であると報告されています。\r\n\r\n大規模な回路設計では、異なる所有者が提供する複数の電子回路設計データが使用されます。IEEE P1735 は、暗号化やアクセス制御の仕組みにより各データの内容を保護する手段を規定するものですが、暗号化強度が弱い、セキュリティ上重要となる実装上の選択について何も言及しておらず実装まかせにしている、などの問題があります。\r\n\r\nIEEE P1735 に対して報告された脆弱性に対応して、以下の CVE 番号が採番されています。IEEE P1735 に対応している EDA ツールなどの製品がこれらの影響を受ける可能性があります。\r\n\r\n　* CVE-2017-13091: improperly specified padding in CBC mode allows use of an EDA tool as a decryption oracle.\r\n　* CVE-2017-13092: improperly specified HDL syntax allows use of an EDA tool as a decryption oracle\r\n　* CVE-2017-13093: modification of encrypted IP cyphertext to insert hardware trojans.\r\n　* CVE-2017-13094: modification of the encryption key and insertion of hardware trojans in any IP.\r\n　* CVE-2017-13095: modification of a license-deny response to a license grant.\r\n　* CVE-2017-13096: modification of Rights Block to get rid of or relax access control.\r\n　* CVE-2017-13097: modification of Rights Block to get rid of or relax license requirement.\r\n\r\n本件の詳細については報告者の論文をご参照ください。\r\n\r\n報告者の論文\r\nhttps://eprint.iacr.org/2017/828.pdf",
+	"identifier": "JVNDB-2017-010585",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU93593263",
+			"source": "JVN",
+			"id": "JVNVU#93593263"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13091",
+			"source": "CVE",
+			"id": "CVE-2017-13091"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13092",
+			"source": "CVE",
+			"id": "CVE-2017-13092"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13093",
+			"source": "CVE",
+			"id": "CVE-2017-13093"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13094",
+			"source": "CVE",
+			"id": "CVE-2017-13094"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13095",
+			"source": "CVE",
+			"id": "CVE-2017-13095"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13096",
+			"source": "CVE",
+			"id": "CVE-2017-13096"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13097",
+			"source": "CVE",
+			"id": "CVE-2017-13097"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13091",
+			"source": "NVD",
+			"id": "CVE-2017-13091"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13092",
+			"source": "NVD",
+			"id": "CVE-2017-13092"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13093",
+			"source": "NVD",
+			"id": "CVE-2017-13093"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13094",
+			"source": "NVD",
+			"id": "CVE-2017-13094"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13095",
+			"source": "NVD",
+			"id": "CVE-2017-13095"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13096",
+			"source": "NVD",
+			"id": "CVE-2017-13096"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-13097",
+			"source": "NVD",
+			"id": "CVE-2017-13097"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/739007",
+			"source": "CERT-VN",
+			"id": "VU#739007"
+		},
+		{
+			"text": "https://eprint.iacr.org/2017/828.pdf",
+			"source": "関連文書",
+			"id": "Standardizing Bad Cryptographic Practice"
+		},
+		{
+			"text": "http://ieeexplore.ieee.org/document/7274481/?reload=true",
+			"source": "関連文書",
+			"id": "IEEE"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+			"id": "CWE-310",
+			"title": "暗号の問題(CWE-310)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:N/C:C/I:C/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "6.7",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+		}
+	],
+	"date": "2019-07-05T17:09+09:00",
+	"issued": "2017-12-20T11:18+09:00",
+	"modified": "2019-07-05T17:09+09:00"
 }

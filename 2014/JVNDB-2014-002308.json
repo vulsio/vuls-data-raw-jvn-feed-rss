@@ -1,336 +1,336 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002308.html",
-  "title": "Apache Struts およびその他の製品で配布される Apache Commons BeanUtils における ClassLoader を操作される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002308.html",
-  "description": "Apache Struts の lib/commons-beanutils-1.8.0.jar および commons-beanutils を必要とするその他の製品で配布される Apache Commons BeanUtils は、class 属性を抑制しないため、ClassLoader を \"操作 (manipulate)\" され、任意のコードを実行される脆弱性が存在します。",
-  "identifier": "JVNDB-2014-002308",
-  "references": [
-    {
-      "text": "http://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-000056.html",
-      "source": "JVN iPedia",
-      "id": "JVNDB-2014-000056"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0114",
-      "source": "CVE",
-      "id": "CVE-2014-0114"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0114",
-      "source": "NVD",
-      "id": "CVE-2014-0114"
-    },
-    {
-      "text": "https://us-cert.cisa.gov/ics/advisories/icsma-20-184-01",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSMA-20-184-01"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:struts",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache Struts"
-    },
-    {
-      "text": "cpe:/a:fujitsu:cloud_infrastructure_management_software",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "クラウド インフラ マネージメント ソフトウェア"
-    },
-    {
-      "text": "cpe:/a:fujitsu:integrated_system_ha_database_ready",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "FUJITSU Integrated System HA Database Ready"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_application_development_cycle_manager",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Application Development Cycle Manager"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_application_framework_suite",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Application Framework Suite"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_application_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Application Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_apworks",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Apworks"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_business_application_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Business Application Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_job_workload_server",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Job Workload Server"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_service_integrator",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Service Integrator"
-    },
-    {
-      "text": "cpe:/a:fujitsu:interstage_studio",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Interstage Studio"
-    },
-    {
-      "text": "cpe:/a:fujitsu:serverview",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "ServerView"
-    },
-    {
-      "text": "cpe:/a:fujitsu:symfoware",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Symfoware"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_service_catalog_manager",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Service Catalog Manager"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_service_quality_coordinator",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Service Quality Coordinator"
-    },
-    {
-      "text": "cpe:/a:fujitsu:systemwalker_software_configuration_manager",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "Systemwalker Software Configuration Manager"
-    },
-    {
-      "text": "cpe:/a:fujitsu:triole",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "TRIOLE"
-    },
-    {
-      "text": "cpe:/a:hitachi:device_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Device Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:global_link_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Global Link Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:job_management_partner_1_performance_management_web_console",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Job Management Partner 1/Performance Management - Web Console"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_performance_management",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/Performance Management"
-    },
-    {
-      "text": "cpe:/a:hitachi:replication_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Replication Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:tiered_storage_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Tiered Storage Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:tuning_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Tuning Manager"
-    },
-    {
-      "text": "cpe:/a:hp:device_manager",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP Device Manager"
-    },
-    {
-      "text": "cpe:/a:hp:xp7",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP XP7"
-    },
-    {
-      "text": "cpe:/a:hp:xp_p9000",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP XP P9000"
-    },
-    {
-      "text": "cpe:/a:ibm:connections",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Connections"
-    },
-    {
-      "text": "cpe:/a:ibm:content_collector",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Content Collector"
-    },
-    {
-      "text": "cpe:/a:ibm:lotus_expeditor",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Lotus Expeditor"
-    },
-    {
-      "text": "cpe:/a:ibm:lotus_mashups",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "Lotus Mashups"
-    },
-    {
-      "text": "cpe:/a:ibm:lotus_quickr",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Lotus Quickr"
-    },
-    {
-      "text": "cpe:/a:ibm:rational_change",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Rational Change"
-    },
-    {
-      "text": "cpe:/a:ibm:websphere_portal",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM WebSphere Portal"
-    },
-    {
-      "text": "cpe:/a:nec:esmpro_servermanager",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerManager"
-    },
-    {
-      "text": "cpe:/a:nec:infocage",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "InfoCage"
-    },
-    {
-      "text": "cpe:/a:nec:webotx",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_developer",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Developer"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_portal",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Portal"
-    },
-    {
-      "text": "cpe:/a:nttdata:terasoluna_server_framework_for_java_web",
-      "version": "2.2",
-      "vendor": "株式会社エヌ・ティ・ティ・データ",
-      "product": "TERASOLUNA Server Framework for Java(Web)"
-    },
-    {
-      "text": "cpe:/a:oracle:communications_applications",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Communications Applications"
-    },
-    {
-      "text": "cpe:/a:oracle:fusion_middleware",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Fusion Middleware"
-    },
-    {
-      "text": "cpe:/a:oracle:identity_manager",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Identity Manager"
-    },
-    {
-      "text": "cpe:/a:oracle:primavera_products_suite",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Primavera Products Suite"
-    },
-    {
-      "text": "cpe:/a:oracle:retail_applications",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Retail Applications"
-    },
-    {
-      "text": "cpe:/a:oracle:weblogic_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle WebLogic Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2020-09-02T10:39+09:00",
-  "issued": "2014-05-01T18:19+09:00",
-  "modified": "2020-09-02T10:39+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002308.html",
+	"title": "Apache Struts およびその他の製品で配布される Apache Commons BeanUtils における ClassLoader を操作される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002308.html",
+	"description": "Apache Struts の lib/commons-beanutils-1.8.0.jar および commons-beanutils を必要とするその他の製品で配布される Apache Commons BeanUtils は、class 属性を抑制しないため、ClassLoader を \"操作 (manipulate)\" され、任意のコードを実行される脆弱性が存在します。",
+	"identifier": "JVNDB-2014-002308",
+	"references": [
+		{
+			"text": "http://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-000056.html",
+			"source": "JVN iPedia",
+			"id": "JVNDB-2014-000056"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0114",
+			"source": "CVE",
+			"id": "CVE-2014-0114"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0114",
+			"source": "NVD",
+			"id": "CVE-2014-0114"
+		},
+		{
+			"text": "https://us-cert.cisa.gov/ics/advisories/icsma-20-184-01",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSMA-20-184-01"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:struts",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache Struts"
+		},
+		{
+			"text": "cpe:/a:fujitsu:cloud_infrastructure_management_software",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "クラウド インフラ マネージメント ソフトウェア"
+		},
+		{
+			"text": "cpe:/a:fujitsu:integrated_system_ha_database_ready",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "FUJITSU Integrated System HA Database Ready"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_application_development_cycle_manager",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Application Development Cycle Manager"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_application_framework_suite",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Application Framework Suite"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_application_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Application Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_apworks",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Apworks"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_business_application_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Business Application Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_job_workload_server",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Job Workload Server"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_service_integrator",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Service Integrator"
+		},
+		{
+			"text": "cpe:/a:fujitsu:interstage_studio",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Interstage Studio"
+		},
+		{
+			"text": "cpe:/a:fujitsu:serverview",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "ServerView"
+		},
+		{
+			"text": "cpe:/a:fujitsu:symfoware",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Symfoware"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_service_catalog_manager",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Service Catalog Manager"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_service_quality_coordinator",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Service Quality Coordinator"
+		},
+		{
+			"text": "cpe:/a:fujitsu:systemwalker_software_configuration_manager",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "Systemwalker Software Configuration Manager"
+		},
+		{
+			"text": "cpe:/a:fujitsu:triole",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "TRIOLE"
+		},
+		{
+			"text": "cpe:/a:hitachi:device_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Device Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:global_link_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Global Link Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:job_management_partner_1_performance_management_web_console",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Job Management Partner 1/Performance Management - Web Console"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_performance_management",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/Performance Management"
+		},
+		{
+			"text": "cpe:/a:hitachi:replication_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Replication Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:tiered_storage_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Tiered Storage Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:tuning_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Tuning Manager"
+		},
+		{
+			"text": "cpe:/a:hp:device_manager",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP Device Manager"
+		},
+		{
+			"text": "cpe:/a:hp:xp7",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP XP7"
+		},
+		{
+			"text": "cpe:/a:hp:xp_p9000",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP XP P9000"
+		},
+		{
+			"text": "cpe:/a:ibm:connections",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Connections"
+		},
+		{
+			"text": "cpe:/a:ibm:content_collector",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Content Collector"
+		},
+		{
+			"text": "cpe:/a:ibm:lotus_expeditor",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Lotus Expeditor"
+		},
+		{
+			"text": "cpe:/a:ibm:lotus_mashups",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "Lotus Mashups"
+		},
+		{
+			"text": "cpe:/a:ibm:lotus_quickr",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Lotus Quickr"
+		},
+		{
+			"text": "cpe:/a:ibm:rational_change",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Rational Change"
+		},
+		{
+			"text": "cpe:/a:ibm:websphere_portal",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM WebSphere Portal"
+		},
+		{
+			"text": "cpe:/a:nec:esmpro_servermanager",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerManager"
+		},
+		{
+			"text": "cpe:/a:nec:infocage",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "InfoCage"
+		},
+		{
+			"text": "cpe:/a:nec:webotx",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_developer",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Developer"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_portal",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Portal"
+		},
+		{
+			"text": "cpe:/a:nttdata:terasoluna_server_framework_for_java_web",
+			"version": "2.2",
+			"vendor": "株式会社エヌ・ティ・ティ・データ",
+			"product": "TERASOLUNA Server Framework for Java(Web)"
+		},
+		{
+			"text": "cpe:/a:oracle:communications_applications",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Communications Applications"
+		},
+		{
+			"text": "cpe:/a:oracle:fusion_middleware",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Fusion Middleware"
+		},
+		{
+			"text": "cpe:/a:oracle:identity_manager",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Identity Manager"
+		},
+		{
+			"text": "cpe:/a:oracle:primavera_products_suite",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Primavera Products Suite"
+		},
+		{
+			"text": "cpe:/a:oracle:retail_applications",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Retail Applications"
+		},
+		{
+			"text": "cpe:/a:oracle:weblogic_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle WebLogic Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2020-09-02T10:39+09:00",
+	"issued": "2014-05-01T18:19+09:00",
+	"modified": "2020-09-02T10:39+09:00"
 }

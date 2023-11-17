@@ -1,149 +1,149 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003883.html",
-  "title": "libmtk 向けの httpd プラグインを使用する複数の WiMAX ルータに認証回避の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003883.html",
-  "description": "libmtk 向けの httpd プラグインを使用する複数の WiMAX ルータには認証回避の脆弱性が存在します。遠隔の第三者により認証を回避され、デバイスの管理者パスワードを変更される可能性があります。\r\n\r\n重要な機能に対する認証欠如の問題 (CWE-306) - CVE-2017-3216\r\nMediaTek SDK のライブラリ libmtk 向けの httpd プラグインを使用する複数の WiMAX ルータには認証回避の脆弱性があり、遠隔の第三者によりデバイスの管理者パスワードを変更される可能性があります。具体的には commit2.cgi に対して ADMIN_PASSWD パラメタを設定した POST リクエストを送ることにより、管理者パスワードの変更が可能です。\r\n報告者によると、調査した製品のなかには初期状態でリモート管理機能が有効になっている製品もあるとのことです。この場合、インターネット側からの攻撃を受ける可能性があります。\r\n\r\nMediaTek 社によれば、本脆弱性のあるファイルは MediaTek SDK 自体には含まれておらず、SDK を使用してファームウェアを開発した開発者によって提供されたと推測しているとのことです。\r\n\r\n詳しくは報告者の blog 記事を参照してください。\r\n\r\nblog 記事\r\nhttp://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html",
-  "identifier": "JVNDB-2017-003883",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU92606107/index.html",
-      "source": "JVN",
-      "id": "JVNVU#92606107"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3216",
-      "source": "CVE",
-      "id": "CVE-2017-3216"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3216",
-      "source": "NVD",
-      "id": "CVE-2017-3216"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/350135",
-      "source": "CERT-VN",
-      "id": "VU#350135"
-    },
-    {
-      "text": "http://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html",
-      "source": "関連文書",
-      "id": "Ghosts from the past: Authentication bypass and OEM backdoors in WiMAX routers"
-    },
-    {
-      "text": "https://sec-consult.com/fxdata/seccons/prod/temedia/advisories_txt/20170607-0_Various_WiMAX_CPEs_Authentication_Bypass_v10.txt",
-      "source": "関連文書",
-      "id": "Various WiMAX CPEs Authentication Bypass "
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/306.html",
-      "id": "CWE-306",
-      "title": "重要な機能に対する認証の欠如(CWE-306)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:greenpacket:ox-350_firmware",
-      "version": "2.2",
-      "vendor": "Green Packet",
-      "product": "OX-350"
-    },
-    {
-      "text": "cpe:/o:greenpacket:ox350_firmware",
-      "version": "2.2",
-      "vendor": "Green Packet",
-      "product": "OX350"
-    },
-    {
-      "text": "cpe:/o:huawei:bm2022_firmware",
-      "version": "2.2",
-      "vendor": "Huawei",
-      "product": "BM2022"
-    },
-    {
-      "text": "cpe:/o:huawei:hes-309m_firmware",
-      "version": "2.2",
-      "vendor": "Huawei",
-      "product": "HES-309M"
-    },
-    {
-      "text": "cpe:/o:huawei:hes-319m_firmware",
-      "version": "2.2",
-      "vendor": "Huawei",
-      "product": "HES-319M"
-    },
-    {
-      "text": "cpe:/o:huawei:hes-339m_firmware",
-      "version": "2.2",
-      "vendor": "Huawei",
-      "product": "HES-339M"
-    },
-    {
-      "text": "cpe:/o:mada:soho_wireless_router_firmware",
-      "version": "2.2",
-      "vendor": "Mada",
-      "product": "SOHO Wireless Router"
-    },
-    {
-      "text": "cpe:/o:zte:ox-330p_firmware",
-      "version": "2.2",
-      "vendor": "ZTE",
-      "product": "OX-330P"
-    },
-    {
-      "text": "cpe:/o:zyxel:max218m1w_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "MAX218M1W"
-    },
-    {
-      "text": "cpe:/o:zyxel:max218mw_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "MAX218MW"
-    },
-    {
-      "text": "cpe:/o:zyxel:max218m_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "MAX218M"
-    },
-    {
-      "text": "cpe:/o:zyxel:max308m_fimware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "MAX308M"
-    },
-    {
-      "text": "cpe:/o:zyxel:max318m_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "MAX318M"
-    },
-    {
-      "text": "cpe:/o:zyxel:max338m_firmware",
-      "version": "2.2",
-      "vendor": "ZyXEL",
-      "product": "MAX338M"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "10.0",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "9.8",
-      "type": "Base",
-      "severity": "Critical",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2018-02-07T13:44+09:00",
-  "issued": "2017-06-09T14:21+09:00",
-  "modified": "2018-02-07T13:44+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003883.html",
+	"title": "libmtk 向けの httpd プラグインを使用する複数の WiMAX ルータに認証回避の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-003883.html",
+	"description": "libmtk 向けの httpd プラグインを使用する複数の WiMAX ルータには認証回避の脆弱性が存在します。遠隔の第三者により認証を回避され、デバイスの管理者パスワードを変更される可能性があります。\r\n\r\n重要な機能に対する認証欠如の問題 (CWE-306) - CVE-2017-3216\r\nMediaTek SDK のライブラリ libmtk 向けの httpd プラグインを使用する複数の WiMAX ルータには認証回避の脆弱性があり、遠隔の第三者によりデバイスの管理者パスワードを変更される可能性があります。具体的には commit2.cgi に対して ADMIN_PASSWD パラメタを設定した POST リクエストを送ることにより、管理者パスワードの変更が可能です。\r\n報告者によると、調査した製品のなかには初期状態でリモート管理機能が有効になっている製品もあるとのことです。この場合、インターネット側からの攻撃を受ける可能性があります。\r\n\r\nMediaTek 社によれば、本脆弱性のあるファイルは MediaTek SDK 自体には含まれておらず、SDK を使用してファームウェアを開発した開発者によって提供されたと推測しているとのことです。\r\n\r\n詳しくは報告者の blog 記事を参照してください。\r\n\r\nblog 記事\r\nhttp://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html",
+	"identifier": "JVNDB-2017-003883",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU92606107/index.html",
+			"source": "JVN",
+			"id": "JVNVU#92606107"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3216",
+			"source": "CVE",
+			"id": "CVE-2017-3216"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-3216",
+			"source": "NVD",
+			"id": "CVE-2017-3216"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/350135",
+			"source": "CERT-VN",
+			"id": "VU#350135"
+		},
+		{
+			"text": "http://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html",
+			"source": "関連文書",
+			"id": "Ghosts from the past: Authentication bypass and OEM backdoors in WiMAX routers"
+		},
+		{
+			"text": "https://sec-consult.com/fxdata/seccons/prod/temedia/advisories_txt/20170607-0_Various_WiMAX_CPEs_Authentication_Bypass_v10.txt",
+			"source": "関連文書",
+			"id": "Various WiMAX CPEs Authentication Bypass "
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/306.html",
+			"id": "CWE-306",
+			"title": "重要な機能に対する認証の欠如(CWE-306)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:greenpacket:ox-350_firmware",
+			"version": "2.2",
+			"vendor": "Green Packet",
+			"product": "OX-350"
+		},
+		{
+			"text": "cpe:/o:greenpacket:ox350_firmware",
+			"version": "2.2",
+			"vendor": "Green Packet",
+			"product": "OX350"
+		},
+		{
+			"text": "cpe:/o:huawei:bm2022_firmware",
+			"version": "2.2",
+			"vendor": "Huawei",
+			"product": "BM2022"
+		},
+		{
+			"text": "cpe:/o:huawei:hes-309m_firmware",
+			"version": "2.2",
+			"vendor": "Huawei",
+			"product": "HES-309M"
+		},
+		{
+			"text": "cpe:/o:huawei:hes-319m_firmware",
+			"version": "2.2",
+			"vendor": "Huawei",
+			"product": "HES-319M"
+		},
+		{
+			"text": "cpe:/o:huawei:hes-339m_firmware",
+			"version": "2.2",
+			"vendor": "Huawei",
+			"product": "HES-339M"
+		},
+		{
+			"text": "cpe:/o:mada:soho_wireless_router_firmware",
+			"version": "2.2",
+			"vendor": "Mada",
+			"product": "SOHO Wireless Router"
+		},
+		{
+			"text": "cpe:/o:zte:ox-330p_firmware",
+			"version": "2.2",
+			"vendor": "ZTE",
+			"product": "OX-330P"
+		},
+		{
+			"text": "cpe:/o:zyxel:max218m1w_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "MAX218M1W"
+		},
+		{
+			"text": "cpe:/o:zyxel:max218mw_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "MAX218MW"
+		},
+		{
+			"text": "cpe:/o:zyxel:max218m_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "MAX218M"
+		},
+		{
+			"text": "cpe:/o:zyxel:max308m_fimware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "MAX308M"
+		},
+		{
+			"text": "cpe:/o:zyxel:max318m_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "MAX318M"
+		},
+		{
+			"text": "cpe:/o:zyxel:max338m_firmware",
+			"version": "2.2",
+			"vendor": "ZyXEL",
+			"product": "MAX338M"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "10.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2018-02-07T13:44+09:00",
+	"issued": "2017-06-09T14:21+09:00",
+	"modified": "2018-02-07T13:44+09:00"
 }

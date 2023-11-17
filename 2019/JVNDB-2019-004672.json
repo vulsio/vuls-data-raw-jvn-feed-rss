@@ -1,62 +1,62 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-004672.html",
-  "title": "Microsoft Windows リモートデスクトップのネットワークレベル認証に Windows ロックスクリーンをバイパスされる問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-004672.html",
-  "description": "Microsoft Windows リモートデスクトップのネットワークレベル認証には、Windows ロックスクリーンをバイパスされる問題が存在します。\r\n\r\nMicrosoft のリモートデスクトップでは、接続時の認証を RDP レイヤではなくネットワークレイヤで行う、ネットワークレベル認証 (NLA, Network Level Authentication) という機能をサポートしています。\r\nまた、Windows ではユーザセッションがロックされると、認証情報の入力を要求するロックスクリーンが表示され、適切な認証情報を入力しないとセッションを継続できない仕組みになっています。RDP 経由のセッションにおいてもセッションロックの仕組みは ローカルセッションと同様です。\r\n\r\n<a href=\"https://cwe.mitre.org/data/definitions/288.html\">CWE-288</a>: Authentication Bypass Using an Alternate Path or Channel (CVE-2019-9510)\r\n\r\n2018年4月にリリースされた Windows 10 1803 および Windows Server 2019 では、NLA を使用した RDP セッションの扱い方に変更があり、セッションロックの際に意図しない動作が発生するようになりました。ネットワークの異常により RDP 接続が一時的に切断され、自動的に再接続が行われると、リモートシステムがどの様な状態であったかに関わらず、RDP セッションはロックが解除された状態で復元されてしまいます。\r\n例えば、次のような状況を考えます:\r\n\r\n1. ユーザが Windows 10 1803 もしくは Windows Server 2019 およびそれ以降のシステムにリモートデスクトップ接続する\r\n2. ユーザがリモートデスクトップのセッションをロックする\r\n3. リモートデスクトップ接続に使用しているクライアントをそのまま放置する\r\n\r\nこの状況において、攻撃者は RDP クライアントのネットワーク接続を一時的に切断します。RDP クライアントは、ネットワーク接続が復旧すると自動的にリモートシステムへの再接続を行い、復元された RDP セッションは、ログインスクリーンではなくログイン済みのデスクトップ画面になります。ログイン時のバナー表示もバイパスされます。\r\nこれはすなわち、手動で認証情報を入力しなくてもロックを解除できるということを意味します。 Duo Security MFA のような、Windows ログインスクリーンと統合された 2 要素認証システムも、この挙動を使用することでバイパス可能です。CERT/CC では、Windows ログインスクリーンを使用する、他の多要素認証ソリューションも本脆弱性の影響を受ける可能性があると考えています。\r\nなお、本件の原因は RDP 使用時の Windows ロックスクリーンの動作にあり、多要素認証ソリューションがインストールされているかどうかには無関係です。",
-  "identifier": "JVNDB-2019-004672",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU94741708",
-      "source": "JVN",
-      "id": "JVNVU#94741708"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9510",
-      "source": "CVE",
-      "id": "CVE-2019-9510"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9510",
-      "source": "NVD",
-      "id": "CVE-2019-9510"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/576688",
-      "source": "CERT-VN",
-      "id": "VU#576688"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:microsoft:windows_10",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 10"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.6",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
-    }
-  ],
-  "date": "2019-06-06T10:35+09:00",
-  "issued": "2019-06-06T10:35+09:00",
-  "modified": "2019-06-06T10:35+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-004672.html",
+	"title": "Microsoft Windows リモートデスクトップのネットワークレベル認証に Windows ロックスクリーンをバイパスされる問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-004672.html",
+	"description": "Microsoft Windows リモートデスクトップのネットワークレベル認証には、Windows ロックスクリーンをバイパスされる問題が存在します。\r\n\r\nMicrosoft のリモートデスクトップでは、接続時の認証を RDP レイヤではなくネットワークレイヤで行う、ネットワークレベル認証 (NLA, Network Level Authentication) という機能をサポートしています。\r\nまた、Windows ではユーザセッションがロックされると、認証情報の入力を要求するロックスクリーンが表示され、適切な認証情報を入力しないとセッションを継続できない仕組みになっています。RDP 経由のセッションにおいてもセッションロックの仕組みは ローカルセッションと同様です。\r\n\r\n<a href=\"https://cwe.mitre.org/data/definitions/288.html\">CWE-288</a>: Authentication Bypass Using an Alternate Path or Channel (CVE-2019-9510)\r\n\r\n2018年4月にリリースされた Windows 10 1803 および Windows Server 2019 では、NLA を使用した RDP セッションの扱い方に変更があり、セッションロックの際に意図しない動作が発生するようになりました。ネットワークの異常により RDP 接続が一時的に切断され、自動的に再接続が行われると、リモートシステムがどの様な状態であったかに関わらず、RDP セッションはロックが解除された状態で復元されてしまいます。\r\n例えば、次のような状況を考えます:\r\n\r\n1. ユーザが Windows 10 1803 もしくは Windows Server 2019 およびそれ以降のシステムにリモートデスクトップ接続する\r\n2. ユーザがリモートデスクトップのセッションをロックする\r\n3. リモートデスクトップ接続に使用しているクライアントをそのまま放置する\r\n\r\nこの状況において、攻撃者は RDP クライアントのネットワーク接続を一時的に切断します。RDP クライアントは、ネットワーク接続が復旧すると自動的にリモートシステムへの再接続を行い、復元された RDP セッションは、ログインスクリーンではなくログイン済みのデスクトップ画面になります。ログイン時のバナー表示もバイパスされます。\r\nこれはすなわち、手動で認証情報を入力しなくてもロックを解除できるということを意味します。 Duo Security MFA のような、Windows ログインスクリーンと統合された 2 要素認証システムも、この挙動を使用することでバイパス可能です。CERT/CC では、Windows ログインスクリーンを使用する、他の多要素認証ソリューションも本脆弱性の影響を受ける可能性があると考えています。\r\nなお、本件の原因は RDP 使用時の Windows ロックスクリーンの動作にあり、多要素認証ソリューションがインストールされているかどうかには無関係です。",
+	"identifier": "JVNDB-2019-004672",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU94741708",
+			"source": "JVN",
+			"id": "JVNVU#94741708"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9510",
+			"source": "CVE",
+			"id": "CVE-2019-9510"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2019-9510",
+			"source": "NVD",
+			"id": "CVE-2019-9510"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/576688",
+			"source": "CERT-VN",
+			"id": "VU#576688"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:microsoft:windows_10",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 10"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.6",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+		}
+	],
+	"date": "2019-06-06T10:35+09:00",
+	"issued": "2019-06-06T10:35+09:00",
+	"modified": "2019-06-06T10:35+09:00"
 }

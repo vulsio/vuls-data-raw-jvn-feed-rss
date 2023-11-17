@@ -1,355 +1,355 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001479.html",
-  "title": "Apache HTTP Server における HTTP リクエストスマグリングに関する脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001479.html",
-  "description": "Apache HTTP Server には、エラーが発生した際、インバウンド接続を閉じることができないため、HTTP リクエストスマグリングに関する脆弱性が存在します。",
-  "identifier": "JVNDB-2022-001479",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU99602154/",
-      "source": "JVN",
-      "id": "JVNVU#99602154"
-    },
-    {
-      "text": "https://www.cve.org/CVERecord?id=CVE-2022-22720",
-      "source": "CVE",
-      "id": "CVE-2022-22720"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2022-22720",
-      "source": "NVD",
-      "id": "CVE-2022-22720"
-    },
-    {
-      "text": "https://www.openwall.com/lists/oss-security/2022/03/14/3",
-      "source": "関連文書",
-      "id": "CVE-2022-22720: HTTP request smuggling vulnerability in Apache HTTP Server 2.4.52 and earlier"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/444.html",
-      "id": "CWE-444",
-      "title": "HTTP リクエストスマグリング(CWE-444)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:http_server",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache HTTP Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:automation_director",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Automation Director"
-    },
-    {
-      "text": "cpe:/a:hitachi:compute_systems_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Compute Systems Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:configuration_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Configuration Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_http_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus HTTP Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:device_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Device Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:global_link_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Global Link Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_application_server64",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server(64)"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_application_server_express",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Express"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_application_server_for_developers",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Application Server for Developers"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_application_server_r",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server-R"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_navigation_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Navigation Platform"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_navigation_platform_for_developers",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Navigation Platform for Developers"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_ops_center_analyzer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Ops Center Analyzer"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_ops_center_api_configuration_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Ops Center API Configuration Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_ops_center_automator",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Ops Center Automator"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_ops_center_viewpoint",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Ops Center Viewpoint"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_web_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Web Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_web_server-custom_edition",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Web Server - Custom Edition"
-    },
-    {
-      "text": "cpe:/a:hitachi:infrastructure_analytics_advisor",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Infrastructure Analytics Advisor"
-    },
-    {
-      "text": "cpe:/a:hitachi:it_operations_director",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi IT Operations Director"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_navigation_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/Navigation Platform"
-    },
-    {
-      "text": "cpe:/a:hitachi:jp1_service_level_management",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "JP1/Service Level Management"
-    },
-    {
-      "text": "cpe:/a:hitachi:replication_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Replication Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:tiered_storage_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Tiered Storage Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:tuning_manager",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Tuning Manager"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Smart Edition"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard-r",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Standard-R"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_01",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer 01"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_professional",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Professional"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_professional_for_plug-in",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Professional for Plug-in"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_primary_server_base",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Primary Server Base"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_primary_server_base64",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Primary Server Base(64)"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Architect"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform-messaging",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform - Messaging"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform_64",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform(64)"
-    },
-    {
-      "text": "cpe:/a:nec:actsecure_portal",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ActSecure ポータル"
-    },
-    {
-      "text": "cpe:/a:nec:connexive_application_platform",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CONNEXIVE Application Platform"
-    },
-    {
-      "text": "cpe:/a:nec:connexive_pf",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "CONNEXIVE PF"
-    },
-    {
-      "text": "cpe:/a:nec:iot_common_base",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IoT 共通基盤"
-    },
-    {
-      "text": "cpe:/a:nec:spoolserver_reportfiling",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "SpoolServer/ReportFiling"
-    },
-    {
-      "text": "cpe:/a:nec:webotx_application_server",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WebOTX Application Server"
-    },
-    {
-      "text": "cpe:/a:nec:witchymail",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "WitchyMail"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "9.8",
-      "type": "Base",
-      "severity": "Critical",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2023-06-29T14:41+09:00",
-  "issued": "2022-03-23T17:09+09:00",
-  "modified": "2023-06-29T14:41+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001479.html",
+	"title": "Apache HTTP Server における HTTP リクエストスマグリングに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001479.html",
+	"description": "Apache HTTP Server には、エラーが発生した際、インバウンド接続を閉じることができないため、HTTP リクエストスマグリングに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2022-001479",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU99602154/",
+			"source": "JVN",
+			"id": "JVNVU#99602154"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-22720",
+			"source": "CVE",
+			"id": "CVE-2022-22720"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-22720",
+			"source": "NVD",
+			"id": "CVE-2022-22720"
+		},
+		{
+			"text": "https://www.openwall.com/lists/oss-security/2022/03/14/3",
+			"source": "関連文書",
+			"id": "CVE-2022-22720: HTTP request smuggling vulnerability in Apache HTTP Server 2.4.52 and earlier"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/444.html",
+			"id": "CWE-444",
+			"title": "HTTP リクエストスマグリング(CWE-444)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:http_server",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache HTTP Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:automation_director",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Automation Director"
+		},
+		{
+			"text": "cpe:/a:hitachi:compute_systems_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Compute Systems Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:configuration_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Configuration Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_http_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus HTTP Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:device_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Device Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:global_link_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Global Link Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_application_server64",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server(64)"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_application_server_express",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Express"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_application_server_for_developers",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Application Server for Developers"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_application_server_r",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server-R"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_navigation_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Navigation Platform"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_navigation_platform_for_developers",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Navigation Platform for Developers"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_ops_center_analyzer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Ops Center Analyzer"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_ops_center_api_configuration_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Ops Center API Configuration Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_ops_center_automator",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Ops Center Automator"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_ops_center_viewpoint",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Ops Center Viewpoint"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_web_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Web Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_web_server-custom_edition",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Web Server - Custom Edition"
+		},
+		{
+			"text": "cpe:/a:hitachi:infrastructure_analytics_advisor",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Infrastructure Analytics Advisor"
+		},
+		{
+			"text": "cpe:/a:hitachi:it_operations_director",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi IT Operations Director"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_navigation_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/Navigation Platform"
+		},
+		{
+			"text": "cpe:/a:hitachi:jp1_service_level_management",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "JP1/Service Level Management"
+		},
+		{
+			"text": "cpe:/a:hitachi:replication_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Replication Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:tiered_storage_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Tiered Storage Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:tuning_manager",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Tuning Manager"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Smart Edition"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_standard-r",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Standard-R"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_01",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer 01"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_professional",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Professional"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_professional_for_plug-in",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Professional for Plug-in"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_primary_server_base",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Primary Server Base"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_primary_server_base64",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Primary Server Base(64)"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_architect",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Architect"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform-messaging",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform - Messaging"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform_64",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform(64)"
+		},
+		{
+			"text": "cpe:/a:nec:actsecure_portal",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ActSecure ポータル"
+		},
+		{
+			"text": "cpe:/a:nec:connexive_application_platform",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CONNEXIVE Application Platform"
+		},
+		{
+			"text": "cpe:/a:nec:connexive_pf",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CONNEXIVE PF"
+		},
+		{
+			"text": "cpe:/a:nec:iot_common_base",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IoT 共通基盤"
+		},
+		{
+			"text": "cpe:/a:nec:spoolserver_reportfiling",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "SpoolServer/ReportFiling"
+		},
+		{
+			"text": "cpe:/a:nec:webotx_application_server",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WebOTX Application Server"
+		},
+		{
+			"text": "cpe:/a:nec:witchymail",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "WitchyMail"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-06-29T14:41+09:00",
+	"issued": "2022-03-23T17:09+09:00",
+	"modified": "2023-06-29T14:41+09:00"
 }

@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000292.html",
-  "title": "Red Hat Linux が実装する Canna の リクエスト処理におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000292.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nCanna 3.6 以前には irw_through 関数に不備が存在し、バッファオーバーフローを引き起こす可能性があります。このヒープ領域のバッファオーバーフローを発生させることにより、リモートの攻撃者は Canna の実行権限 (通常 bin) で任意のコードを実行することが可能です。 \r\n\r\nまた、Canna 3.6 以前にはユーザから与えられたリクエストの妥当性の確認に不備が存在します。リモートの攻撃者は、標的ホストに意図的に作成したリクエストを送信することで上記のバッファオーバーフロー攻撃に利用可能な情報を奪取する、あるいは Canna をサービス不能状態に陥らせることが可能です。\r\n\r\n尚、Red Hat Linux 7.x (除く 7.0) および 8.0 においてインストール時に日本語環境をサポートするよう選択した場合、この問題の影響を受ける Canna 3.5b2 が同梱されます。",
-  "identifier": "JVNDB-2002-000292",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1159",
-      "source": "CVE",
-      "id": "CVE-2002-1159"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1159",
-      "source": "NVD",
-      "id": "CVE-2002-1159"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/6351",
-      "source": "BID",
-      "id": "6351"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/6354",
-      "source": "BID",
-      "id": "6354"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000292.html",
+	"title": "Red Hat Linux が実装する Canna の リクエスト処理におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000292.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nCanna 3.6 以前には irw_through 関数に不備が存在し、バッファオーバーフローを引き起こす可能性があります。このヒープ領域のバッファオーバーフローを発生させることにより、リモートの攻撃者は Canna の実行権限 (通常 bin) で任意のコードを実行することが可能です。 \r\n\r\nまた、Canna 3.6 以前にはユーザから与えられたリクエストの妥当性の確認に不備が存在します。リモートの攻撃者は、標的ホストに意図的に作成したリクエストを送信することで上記のバッファオーバーフロー攻撃に利用可能な情報を奪取する、あるいは Canna をサービス不能状態に陥らせることが可能です。\r\n\r\n尚、Red Hat Linux 7.x (除く 7.0) および 8.0 においてインストール時に日本語環境をサポートするよう選択した場合、この問題の影響を受ける Canna 3.5b2 が同梱されます。",
+	"identifier": "JVNDB-2002-000292",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1159",
+			"source": "CVE",
+			"id": "CVE-2002-1159"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-1159",
+			"source": "NVD",
+			"id": "CVE-2002-1159"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/6351",
+			"source": "BID",
+			"id": "6351"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/6354",
+			"source": "BID",
+			"id": "6354"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

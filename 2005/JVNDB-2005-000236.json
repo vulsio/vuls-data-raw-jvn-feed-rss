@@ -1,64 +1,64 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000236.html",
-  "title": "Cisco IOS における不正なパケットにより認証を回避される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000236.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nCisco IOS には、リモートユーザが IPSec を使用して、CISCO IOS VPN ゲートウェイとの通信をセキュアに実行できるようにするソフトウェアである Easy VPN Server が実装されています。また、IKE (Internet Key Exchange) を拡張した XAUTH (eXtended authentication) が VPN クライアントとの認証に利用されています。\r\n\r\nCisco IOS 12.2/12.3-based Releases に実装される Easy VPN Server には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) 特定の Internet Key Exchange (IKE) XAUTH メッセージが UDP ポート 500 に送信されると、不適切なクライアントに対して XAUTH 認証を許可してしまう問題が存在します。(BID 13031) \r\n\r\n但し、この問題を利用するためには、攻撃者は IKE フェーズ 1 ネゴシエーションを完了するための共有グループキーを把握している必要があります。\r\n\r\n2) 特定の ISAKMP プロファイルの属性が設定されているにも関わらず適切に処理されなかった場合に、VPN のサーバ−クライアント間の通信において、デッドロック状態が発生する問題が存在します。(BID 13033)\r\n\r\n通常、デッドロック状態は時間が経つと解消されますが、この間にフェーズ 2 ネゴシエーションが悪意あるクライアントにより開始されると、IPSec SA (Security Association) が確立されてしまう可能性があります。\r\n\r\n尚、ISAKMP プロファイルにおいて証明書マップによるマッチングを設定している場合にのみ、この問題の影響を受けます。\r\n\r\nこれらの問題を利用するリモートの攻撃者は、不正に認証を通過し、ネットワークリソースにアクセスできる可能性があります。",
-  "identifier": "JVNDB-2005-000236",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1057",
-      "source": "CVE",
-      "id": "CVE-2005-1057"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1057",
-      "source": "NVD",
-      "id": "CVE-2005-1057"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/236748",
-      "source": "CERT-VN",
-      "id": "VU#236748"
-    },
-    {
-      "text": "http://secunia.com/advisories/14853",
-      "source": "SECUNIA",
-      "id": "SA14853"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13033",
-      "source": "BID",
-      "id": "13033"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13031",
-      "source": "BID",
-      "id": "13031"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/0321",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-0321"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:cisco:ios",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IOS"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000236.html",
+	"title": "Cisco IOS における不正なパケットにより認証を回避される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000236.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nCisco IOS には、リモートユーザが IPSec を使用して、CISCO IOS VPN ゲートウェイとの通信をセキュアに実行できるようにするソフトウェアである Easy VPN Server が実装されています。また、IKE (Internet Key Exchange) を拡張した XAUTH (eXtended authentication) が VPN クライアントとの認証に利用されています。\r\n\r\nCisco IOS 12.2/12.3-based Releases に実装される Easy VPN Server には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) 特定の Internet Key Exchange (IKE) XAUTH メッセージが UDP ポート 500 に送信されると、不適切なクライアントに対して XAUTH 認証を許可してしまう問題が存在します。(BID 13031) \r\n\r\n但し、この問題を利用するためには、攻撃者は IKE フェーズ 1 ネゴシエーションを完了するための共有グループキーを把握している必要があります。\r\n\r\n2) 特定の ISAKMP プロファイルの属性が設定されているにも関わらず適切に処理されなかった場合に、VPN のサーバ−クライアント間の通信において、デッドロック状態が発生する問題が存在します。(BID 13033)\r\n\r\n通常、デッドロック状態は時間が経つと解消されますが、この間にフェーズ 2 ネゴシエーションが悪意あるクライアントにより開始されると、IPSec SA (Security Association) が確立されてしまう可能性があります。\r\n\r\n尚、ISAKMP プロファイルにおいて証明書マップによるマッチングを設定している場合にのみ、この問題の影響を受けます。\r\n\r\nこれらの問題を利用するリモートの攻撃者は、不正に認証を通過し、ネットワークリソースにアクセスできる可能性があります。",
+	"identifier": "JVNDB-2005-000236",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1057",
+			"source": "CVE",
+			"id": "CVE-2005-1057"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-1057",
+			"source": "NVD",
+			"id": "CVE-2005-1057"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/236748",
+			"source": "CERT-VN",
+			"id": "VU#236748"
+		},
+		{
+			"text": "http://secunia.com/advisories/14853",
+			"source": "SECUNIA",
+			"id": "SA14853"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13033",
+			"source": "BID",
+			"id": "13033"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13031",
+			"source": "BID",
+			"id": "13031"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/0321",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-0321"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:cisco:ios",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IOS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

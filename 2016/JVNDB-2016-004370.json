@@ -1,74 +1,74 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004370.html",
-  "title": "プロキシサーバを使った通信を行うアプリケーションに中間者攻撃 (MITM) が可能な脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004370.html",
-  "description": "HTTP CONNECT リクエスト と HTTP 407 Proxy Authentication Required レスポンスは平文で通信されるため、中間者攻撃 (man-in-the-middle attack) を受ける可能性があります。さらに、WebKit を使って作成されたアプリケーションは、HTTPS リクエスト送信先ドメインのコンテキストで、任意のスクリプトを実行される可能性があります。\r\n\r\nウェブブラウザやオペレーティングシステムからプロキシサーバを経由して HTTPS リクエストを送信する場合、最初にプロキシサーバに対して HTTP CONNECT リクエストを送信します。HTTP CONNECT リクエストやプロキシサーバからの応答メッセージは平文でやりとりされるため、中間者攻撃 (man-in-the-middle attack) を受ける可能性があります。\r\n中間者攻撃において、プロキシサーバからの応答メッセージを改ざんして 407 Proxy Authentication Required メッセージを返すことにより、認証情報を取得される可能性があります。\r\n\r\nさらに、WebKit を使って作成されたアプリケーションのクライアントは、プロキシサーバからの応答メッセージを HTTPS リクエスト送信先ドメインのコンテキストで処理するため、中間者攻撃によって、ウェブブラウザ上で任意のスクリプトを実行される可能性があります。\r\n\r\n詳しくは、 FalseCONNECT のウェブサイトをご参照ください。\r\n\r\nFalseCONNECT のウェブサイト\r\nhttp://falseconnect.com/",
-  "identifier": "JVNDB-2016-004370",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU90754453",
-      "source": "JVN",
-      "id": "JVNVU#90754453"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/905344",
-      "source": "CERT-VN",
-      "id": "VU#905344"
-    },
-    {
-      "text": "https://tools.ietf.org/html/rfc7235#section-3.2",
-      "source": "関連文書",
-      "id": "3.2. 407 Proxy Authentication Required"
-    },
-    {
-      "text": "http://falseconnect.com/",
-      "source": "関連文書",
-      "id": "FalseCONNECT"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:nec:esmpro_serveragent",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerAgent"
-    },
-    {
-      "text": "cpe:/a:nec:esmpro_serveragentservice",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "ESMPRO/ServerAgentService"
-    },
-    {
-      "text": "cpe:/a:nec:systemdirector_enterprise",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "SystemDirector Enterprise"
-    },
-    {
-      "text": "cpe:/h:nec:express5800",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "Express5800"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "5.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
-    }
-  ],
-  "date": "2018-02-07T17:14+09:00",
-  "issued": "2016-08-17T18:04+09:00",
-  "modified": "2018-02-07T17:14+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004370.html",
+	"title": "プロキシサーバを使った通信を行うアプリケーションに中間者攻撃 (MITM) が可能な脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-004370.html",
+	"description": "HTTP CONNECT リクエスト と HTTP 407 Proxy Authentication Required レスポンスは平文で通信されるため、中間者攻撃 (man-in-the-middle attack) を受ける可能性があります。さらに、WebKit を使って作成されたアプリケーションは、HTTPS リクエスト送信先ドメインのコンテキストで、任意のスクリプトを実行される可能性があります。\r\n\r\nウェブブラウザやオペレーティングシステムからプロキシサーバを経由して HTTPS リクエストを送信する場合、最初にプロキシサーバに対して HTTP CONNECT リクエストを送信します。HTTP CONNECT リクエストやプロキシサーバからの応答メッセージは平文でやりとりされるため、中間者攻撃 (man-in-the-middle attack) を受ける可能性があります。\r\n中間者攻撃において、プロキシサーバからの応答メッセージを改ざんして 407 Proxy Authentication Required メッセージを返すことにより、認証情報を取得される可能性があります。\r\n\r\nさらに、WebKit を使って作成されたアプリケーションのクライアントは、プロキシサーバからの応答メッセージを HTTPS リクエスト送信先ドメインのコンテキストで処理するため、中間者攻撃によって、ウェブブラウザ上で任意のスクリプトを実行される可能性があります。\r\n\r\n詳しくは、 FalseCONNECT のウェブサイトをご参照ください。\r\n\r\nFalseCONNECT のウェブサイト\r\nhttp://falseconnect.com/",
+	"identifier": "JVNDB-2016-004370",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU90754453",
+			"source": "JVN",
+			"id": "JVNVU#90754453"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/905344",
+			"source": "CERT-VN",
+			"id": "VU#905344"
+		},
+		{
+			"text": "https://tools.ietf.org/html/rfc7235#section-3.2",
+			"source": "関連文書",
+			"id": "3.2. 407 Proxy Authentication Required"
+		},
+		{
+			"text": "http://falseconnect.com/",
+			"source": "関連文書",
+			"id": "FalseCONNECT"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:nec:esmpro_serveragent",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerAgent"
+		},
+		{
+			"text": "cpe:/a:nec:esmpro_serveragentservice",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ESMPRO/ServerAgentService"
+		},
+		{
+			"text": "cpe:/a:nec:systemdirector_enterprise",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "SystemDirector Enterprise"
+		},
+		{
+			"text": "cpe:/h:nec:express5800",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "Express5800"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:A/AC:M/Au:N/C:P/I:P/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "5.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+		}
+	],
+	"date": "2018-02-07T17:14+09:00",
+	"issued": "2016-08-17T18:04+09:00",
+	"modified": "2018-02-07T17:14+09:00"
 }

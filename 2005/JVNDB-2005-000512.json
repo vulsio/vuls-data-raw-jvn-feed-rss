@@ -1,88 +1,88 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000512.html",
-  "title": "OpenSSH の動的ポート転送処理において不正アクセスを受ける脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000512.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nOpenSSH 4.1p1 以前には以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) SSH クライアントにおいて -D オプションにより動的ポート転送を実行する際に、ListenAddress が明示的に指定されていない場合、ポート中継の許可を指定する GatewayPorts が不適切に有効になってしまう問題が存在します。(CAN-2005-2797)\r\n\r\nこの問題を利用するリモートの攻撃者は、結果として SSH クライアントを実行する標的ホストの転送ポートに不正にアクセスする可能性があります。\r\n\r\n尚、この問題は OpenSSH 4.0/4.1 のみが影響を受けることが報告されています。\r\n\r\n2) SSH クライアントにおいて \"GSSAPIDelegateCredentials\" を有効に設定している場合、証明書転送処理の不備のため、GSSAPI 認証以外の方法でログインした場合にも SSH サーバに対して GSSAPI 証明書を転送してしまう問題が存在します。(CAN-2005-2798)\r\n\r\nSSH クライアントが信頼のないホストに接続を行った場合、この問題を利用するリモートの攻撃者に GSSAPI 証明書が漏洩してしまう可能性があります。",
-  "identifier": "JVNDB-2005-000512",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2797",
-      "source": "CVE",
-      "id": "CVE-2005-2797"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2797",
-      "source": "NVD",
-      "id": "CVE-2005-2797"
-    },
-    {
-      "text": "http://secunia.com/advisories/16686/",
-      "source": "SECUNIA",
-      "id": "SA16686"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/14729",
-      "source": "BID",
-      "id": "14729"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/14727",
-      "source": "BID",
-      "id": "14727"
-    },
-    {
-      "text": "http://securitytracker.com/alerts/2005/Sep/1014845.html",
-      "source": "SECTRACK",
-      "id": "1014845"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/1624",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-1624"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:openbsd:openssh",
-      "version": "2.2",
-      "vendor": "OpenBSD",
-      "product": "OpenSSH"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000512.html",
+	"title": "OpenSSH の動的ポート転送処理において不正アクセスを受ける脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000512.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nOpenSSH 4.1p1 以前には以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) SSH クライアントにおいて -D オプションにより動的ポート転送を実行する際に、ListenAddress が明示的に指定されていない場合、ポート中継の許可を指定する GatewayPorts が不適切に有効になってしまう問題が存在します。(CAN-2005-2797)\r\n\r\nこの問題を利用するリモートの攻撃者は、結果として SSH クライアントを実行する標的ホストの転送ポートに不正にアクセスする可能性があります。\r\n\r\n尚、この問題は OpenSSH 4.0/4.1 のみが影響を受けることが報告されています。\r\n\r\n2) SSH クライアントにおいて \"GSSAPIDelegateCredentials\" を有効に設定している場合、証明書転送処理の不備のため、GSSAPI 認証以外の方法でログインした場合にも SSH サーバに対して GSSAPI 証明書を転送してしまう問題が存在します。(CAN-2005-2798)\r\n\r\nSSH クライアントが信頼のないホストに接続を行った場合、この問題を利用するリモートの攻撃者に GSSAPI 証明書が漏洩してしまう可能性があります。",
+	"identifier": "JVNDB-2005-000512",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2797",
+			"source": "CVE",
+			"id": "CVE-2005-2797"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-2797",
+			"source": "NVD",
+			"id": "CVE-2005-2797"
+		},
+		{
+			"text": "http://secunia.com/advisories/16686/",
+			"source": "SECUNIA",
+			"id": "SA16686"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/14729",
+			"source": "BID",
+			"id": "14729"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/14727",
+			"source": "BID",
+			"id": "14727"
+		},
+		{
+			"text": "http://securitytracker.com/alerts/2005/Sep/1014845.html",
+			"source": "SECTRACK",
+			"id": "1014845"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/1624",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-1624"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openbsd:openssh",
+			"version": "2.2",
+			"vendor": "OpenBSD",
+			"product": "OpenSSH"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

@@ -1,172 +1,172 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001320.html",
-  "title": "コンテック製 CONPROSYS IoT ゲートウェイ製品における複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001320.html",
-  "description": "株式会社コンテックが提供する CONPROSYS IoT ゲートウェイ製品には、次の複数の脆弱性が存在します。\r\n\r\n　* OS コマンドインジェクション (CWE-78) - CVE-2023-27917\r\n　ネットワーク確認画面において、入力した値が適切に検証されないことにより、OS コマンドを実行可能\r\n　* 不十分な暗号強度 (CWE-326) - CVE-2023-27389\r\n　ファームウェア更新ファイルの暗号強度が不十分なため、ファームウェア構造を解析可能\r\n　* アクセス制限不備 (CWE-284) - CVE-2023-23575\r\n　本来管理者権限でのみアクセス可能なネットワーク確認画面に、通常権限でアクセス可能\r\n\r\nCVE-2023-27917、CVE-2023-27389\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: peishilong 氏\r\n\r\nCVE-2023-23575\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n\r\n",
-  "identifier": "JVNDB-2023-001320",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU96198617/index.html",
-      "source": "JVN",
-      "id": "JVNVU#96198617"
-    },
-    {
-      "text": "https://www.cve.org/CVERecord?id=CVE-2023-27917",
-      "source": "CVE",
-      "id": "CVE-2023-27917"
-    },
-    {
-      "text": "https://www.cve.org/CVERecord?id=CVE-2023-27389",
-      "source": "CVE",
-      "id": "CVE-2023-27389"
-    },
-    {
-      "text": "https://www.cve.org/CVERecord?id=CVE-2023-23575",
-      "source": "CVE",
-      "id": "CVE-2023-23575"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/284.html",
-      "id": "CWE-284",
-      "title": "不適切なアクセス制御(CWE-284)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/326.html",
-      "id": "CWE-326",
-      "title": "不適切な暗号強度(CWE-326)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
-      "id": "CWE-78",
-      "title": "OSコマンドインジェクション(CWE-78)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:contec:cps-mc341-a1-111",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MC341-A1-111"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mc341-adsc1-111",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MC341-ADSC1-111"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mc341-adsc1-931",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MC341-ADSC1-931"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mc341-adsc2-111",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MC341-ADSC2-111"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mc341-ds1-111",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MC341-DS1-111"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mc341-ds11-111",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MC341-DS11-111"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mc341-ds2-911",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MC341-DS2-911"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mc341g-adsc1-110",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MC341G-ADSC1-110"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mc341q-adsc1-111",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MC341Q-ADSC1-111"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mcs341-ds1-111",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MCS341-DS1-111"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mcs341-ds1-131",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MCS341-DS1-131"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mcs341g-ds1-130",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MCS341G-DS1-130"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mcs341g5-ds1-130",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MCS341G5-DS1-130"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mcs341q-ds1-131",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MCS341Q-DS1-131"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mg341-adsc1-111",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MG341-ADSC1-111"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mg341-adsc1-931",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MG341-ADSC1-931"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mg341g-adsc1-111",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MG341G-ADSC1-111"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mg341g-adsc1-930",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MG341G-ADSC1-930"
-    },
-    {
-      "text": "cpe:/o:contec:cps-mg341g5-adsc1-931",
-      "version": "2.2",
-      "vendor": "株式会社コンテック",
-      "product": "CPS-MG341G5-ADSC1-931"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "3.0",
-      "score": "8.8",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2023-03-22T10:36+09:00",
-  "issued": "2023-03-22T10:36+09:00",
-  "modified": "2023-03-22T10:36+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001320.html",
+	"title": "コンテック製 CONPROSYS IoT ゲートウェイ製品における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-001320.html",
+	"description": "株式会社コンテックが提供する CONPROSYS IoT ゲートウェイ製品には、次の複数の脆弱性が存在します。\r\n\r\n　* OS コマンドインジェクション (CWE-78) - CVE-2023-27917\r\n　ネットワーク確認画面において、入力した値が適切に検証されないことにより、OS コマンドを実行可能\r\n　* 不十分な暗号強度 (CWE-326) - CVE-2023-27389\r\n　ファームウェア更新ファイルの暗号強度が不十分なため、ファームウェア構造を解析可能\r\n　* アクセス制限不備 (CWE-284) - CVE-2023-23575\r\n　本来管理者権限でのみアクセス可能なネットワーク確認画面に、通常権限でアクセス可能\r\n\r\nCVE-2023-27917、CVE-2023-27389\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: peishilong 氏\r\n\r\nCVE-2023-23575\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n\r\n",
+	"identifier": "JVNDB-2023-001320",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU96198617/index.html",
+			"source": "JVN",
+			"id": "JVNVU#96198617"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-27917",
+			"source": "CVE",
+			"id": "CVE-2023-27917"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-27389",
+			"source": "CVE",
+			"id": "CVE-2023-27389"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-23575",
+			"source": "CVE",
+			"id": "CVE-2023-23575"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/284.html",
+			"id": "CWE-284",
+			"title": "不適切なアクセス制御(CWE-284)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/326.html",
+			"id": "CWE-326",
+			"title": "不適切な暗号強度(CWE-326)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+			"id": "CWE-78",
+			"title": "OSコマンドインジェクション(CWE-78)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:contec:cps-mc341-a1-111",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MC341-A1-111"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mc341-adsc1-111",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MC341-ADSC1-111"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mc341-adsc1-931",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MC341-ADSC1-931"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mc341-adsc2-111",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MC341-ADSC2-111"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mc341-ds1-111",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MC341-DS1-111"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mc341-ds11-111",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MC341-DS11-111"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mc341-ds2-911",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MC341-DS2-911"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mc341g-adsc1-110",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MC341G-ADSC1-110"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mc341q-adsc1-111",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MC341Q-ADSC1-111"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mcs341-ds1-111",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MCS341-DS1-111"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mcs341-ds1-131",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MCS341-DS1-131"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mcs341g-ds1-130",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MCS341G-DS1-130"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mcs341g5-ds1-130",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MCS341G5-DS1-130"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mcs341q-ds1-131",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MCS341Q-DS1-131"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mg341-adsc1-111",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MG341-ADSC1-111"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mg341-adsc1-931",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MG341-ADSC1-931"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mg341g-adsc1-111",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MG341G-ADSC1-111"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mg341g-adsc1-930",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MG341G-ADSC1-930"
+		},
+		{
+			"text": "cpe:/o:contec:cps-mg341g5-adsc1-931",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "CPS-MG341G5-ADSC1-931"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-03-22T10:36+09:00",
+	"issued": "2023-03-22T10:36+09:00",
+	"modified": "2023-03-22T10:36+09:00"
 }

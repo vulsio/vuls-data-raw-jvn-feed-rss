@@ -1,59 +1,59 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002600.html",
-  "title": "Subrion CMS に SQL インジェクションの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002600.html",
-  "description": "Subrion CMS は、ウェブベースのコンテンツ管理システム (CMS) です。Subrion CMS には、Cookie の処理に起因する SQL インジェクションの脆弱性が存在します。\r\n\r\n* 信頼していないデータのデシリアライゼーション (CWE-502)\r\nhttp://cwe.mitre.org/data/definitions/502.html\r\n\r\n* SQL インジェクション (CWE-89)\r\nhttp://cwe.mitre.org/data/definitions/89.html\r\n\r\nユーザがログインした際、Subrion CMS は salt という名称の Cookie の値をデシリアライズし、SQL UPDATE 文に使用します。この Cookie の値を細工して Subrion CMS に渡すことで、SQL 文を改ざんすることが可能です。",
-  "identifier": "JVNDB-2015-002600",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU94699739/index.html",
-      "source": "JVN",
-      "id": "JVNVU#94699739"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4129",
-      "source": "CVE",
-      "id": "CVE-2015-4129"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4129",
-      "source": "NVD",
-      "id": "CVE-2015-4129"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/110532",
-      "source": "CERT-VN",
-      "id": "VU#110532"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
-      "id": "CWE-89",
-      "title": "SQLインジェクション(CWE-89)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:intelliants:subrion_cms",
-      "version": "2.2",
-      "vendor": "Intelliants",
-      "product": "Subrion CMS"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.5",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2015-07-14T17:39+09:00",
-  "issued": "2015-05-14T17:11+09:00",
-  "modified": "2015-07-14T17:39+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002600.html",
+	"title": "Subrion CMS に SQL インジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-002600.html",
+	"description": "Subrion CMS は、ウェブベースのコンテンツ管理システム (CMS) です。Subrion CMS には、Cookie の処理に起因する SQL インジェクションの脆弱性が存在します。\r\n\r\n* 信頼していないデータのデシリアライゼーション (CWE-502)\r\nhttp://cwe.mitre.org/data/definitions/502.html\r\n\r\n* SQL インジェクション (CWE-89)\r\nhttp://cwe.mitre.org/data/definitions/89.html\r\n\r\nユーザがログインした際、Subrion CMS は salt という名称の Cookie の値をデシリアライズし、SQL UPDATE 文に使用します。この Cookie の値を細工して Subrion CMS に渡すことで、SQL 文を改ざんすることが可能です。",
+	"identifier": "JVNDB-2015-002600",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU94699739/index.html",
+			"source": "JVN",
+			"id": "JVNVU#94699739"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4129",
+			"source": "CVE",
+			"id": "CVE-2015-4129"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-4129",
+			"source": "NVD",
+			"id": "CVE-2015-4129"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/110532",
+			"source": "CERT-VN",
+			"id": "VU#110532"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:intelliants:subrion_cms",
+			"version": "2.2",
+			"vendor": "Intelliants",
+			"product": "Subrion CMS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+		}
+	],
+	"date": "2015-07-14T17:39+09:00",
+	"issued": "2015-05-14T17:11+09:00",
+	"modified": "2015-07-14T17:39+09:00"
 }

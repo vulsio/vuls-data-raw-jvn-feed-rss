@@ -1,73 +1,73 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000648.html",
-  "title": "libungif ライブラリにおける不正な GIF ファイルによる Null ポインタデリファレンスの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000648.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nlibungif は、GIF 形式のイメージファイルの読み込みや保存をするために使用される共有ライブラリを同梱しています。 \r\n\r\nLibungif には、GIF イメージファイルのデコード処理において、以下の複数の問題が存在します。 \r\n\r\n・Null ポインタデリファレンスが発生する問題 (CVE-2005-2974) \r\n・境界外のメモリアクセス (out-of-bounds) が発生する問題 (CVE-2005-3350) \r\n\r\nリモートの攻撃者に利用された場合、libungif を使用しているアプリケーションをクラッシュさせられ、サービス不能状態に陥る、もしくは libungif を使用しているアプリケーションの権限で任意のコードを実行される可能性があります。",
-  "identifier": "JVNDB-2005-000648",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2974",
-      "source": "CVE",
-      "id": "CVE-2005-2974"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2005-2974",
-      "source": "NVD",
-      "id": "CVE-2005-2974"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15304",
-      "source": "BID",
-      "id": "15304"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15299",
-      "source": "BID",
-      "id": "15299"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:rhel_desktop_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.6",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:N/AC:H/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2009-05-27T11:26+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2009-05-27T11:26+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000648.html",
+	"title": "libungif ライブラリにおける不正な GIF ファイルによる Null ポインタデリファレンスの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000648.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nlibungif は、GIF 形式のイメージファイルの読み込みや保存をするために使用される共有ライブラリを同梱しています。 \r\n\r\nLibungif には、GIF イメージファイルのデコード処理において、以下の複数の問題が存在します。 \r\n\r\n・Null ポインタデリファレンスが発生する問題 (CVE-2005-2974) \r\n・境界外のメモリアクセス (out-of-bounds) が発生する問題 (CVE-2005-3350) \r\n\r\nリモートの攻撃者に利用された場合、libungif を使用しているアプリケーションをクラッシュさせられ、サービス不能状態に陥る、もしくは libungif を使用しているアプリケーションの権限で任意のコードを実行される可能性があります。",
+	"identifier": "JVNDB-2005-000648",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2974",
+			"source": "CVE",
+			"id": "CVE-2005-2974"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2005-2974",
+			"source": "NVD",
+			"id": "CVE-2005-2974"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15304",
+			"source": "BID",
+			"id": "15304"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15299",
+			"source": "BID",
+			"id": "15299"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:rhel_desktop_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.6",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:N/AC:H/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2009-05-27T11:26+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2009-05-27T11:26+09:00"
 }

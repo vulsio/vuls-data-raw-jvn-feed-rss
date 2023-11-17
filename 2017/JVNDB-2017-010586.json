@@ -1,70 +1,70 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010586.html",
-  "title": "NXP Semiconductors 製 MQX RTOS における複数の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010586.html",
-  "description": "NXP Semiconductors が提供する MQX RTOS には、複数の脆弱性が存在します。\r\n\r\nバッファオーバーフロー (CWE-120) - CVE-2017-12718\r\nMQX version 5.0 の RTCS DHCP クライアントでは、DHCP オプション 66 および 67 に該当するデータ長チェックが正しく行われません。遠隔の第三者は、これらのデータ項目を細工した DHCP パケットを送信することによりバッファオーバーフローを発生させ、任意のコードを実行させることが可能です。\r\n\r\n境界外読み取り (CWE-125) - CVE-2017-12722\r\nMQX version 4.1 およびそれ以前の DNS クライアントでは、不正な DNS パケットのサイズを適切に処理できず、領域外メモリ参照が発生します。遠隔の第三者は、細工した DNS パケットを送信することにより領域外メモリ参照を発生させ、サービス運用妨害（DoS）を引き起こすことが可能です。",
-  "identifier": "JVNDB-2017-010586",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU96796469/index.html",
-      "source": "JVN",
-      "id": "JVNVU#96796469"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12718",
-      "source": "CVE",
-      "id": "CVE-2017-12718"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12722",
-      "source": "CVE",
-      "id": "CVE-2017-12722"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-12722",
-      "source": "NVD",
-      "id": "CVE-2017-12722"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2017-12718",
-      "source": "NVD",
-      "id": "CVE-2017-12718"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/590639",
-      "source": "CERT-VN",
-      "id": "VU#590639"
-    },
-    {
-      "text": "https://ics-cert.us-cert.gov/advisories/ICSMA-17-250-02A",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSMA-17-250-02"
-    },
-    {
-      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-17-285-04A",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-17-285-04"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/120.html",
-      "id": "CWE-120",
-      "title": "古典的バッファオーバーフロー(CWE-120)"
-    },
-    {
-      "text": "https://cwe.mitre.org/data/definitions/125.html",
-      "id": "CWE-125",
-      "title": "境界外読み取り(CWE-125)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:nxp:mqx_rtos",
-      "version": "2.2",
-      "vendor": "NXP Semiconductors",
-      "product": "MQX Real-Time Operating System"
-    }
-  ],
-  "date": "2018-04-11T14:01+09:00",
-  "issued": "2017-12-20T11:45+09:00",
-  "modified": "2018-04-11T14:01+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010586.html",
+	"title": "NXP Semiconductors 製 MQX RTOS における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-010586.html",
+	"description": "NXP Semiconductors が提供する MQX RTOS には、複数の脆弱性が存在します。\r\n\r\nバッファオーバーフロー (CWE-120) - CVE-2017-12718\r\nMQX version 5.0 の RTCS DHCP クライアントでは、DHCP オプション 66 および 67 に該当するデータ長チェックが正しく行われません。遠隔の第三者は、これらのデータ項目を細工した DHCP パケットを送信することによりバッファオーバーフローを発生させ、任意のコードを実行させることが可能です。\r\n\r\n境界外読み取り (CWE-125) - CVE-2017-12722\r\nMQX version 4.1 およびそれ以前の DNS クライアントでは、不正な DNS パケットのサイズを適切に処理できず、領域外メモリ参照が発生します。遠隔の第三者は、細工した DNS パケットを送信することにより領域外メモリ参照を発生させ、サービス運用妨害（DoS）を引き起こすことが可能です。",
+	"identifier": "JVNDB-2017-010586",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU96796469/index.html",
+			"source": "JVN",
+			"id": "JVNVU#96796469"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12718",
+			"source": "CVE",
+			"id": "CVE-2017-12718"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12722",
+			"source": "CVE",
+			"id": "CVE-2017-12722"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-12722",
+			"source": "NVD",
+			"id": "CVE-2017-12722"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2017-12718",
+			"source": "NVD",
+			"id": "CVE-2017-12718"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/590639",
+			"source": "CERT-VN",
+			"id": "VU#590639"
+		},
+		{
+			"text": "https://ics-cert.us-cert.gov/advisories/ICSMA-17-250-02A",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSMA-17-250-02"
+		},
+		{
+			"text": "https://ics-cert.us-cert.gov/advisories/ICSA-17-285-04A",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-17-285-04"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/120.html",
+			"id": "CWE-120",
+			"title": "古典的バッファオーバーフロー(CWE-120)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:nxp:mqx_rtos",
+			"version": "2.2",
+			"vendor": "NXP Semiconductors",
+			"product": "MQX Real-Time Operating System"
+		}
+	],
+	"date": "2018-04-11T14:01+09:00",
+	"issued": "2017-12-20T11:45+09:00",
+	"modified": "2018-04-11T14:01+09:00"
 }

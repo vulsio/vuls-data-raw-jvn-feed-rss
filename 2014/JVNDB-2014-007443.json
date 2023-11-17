@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007443.html",
-  "title": "PHP の Fileinfo コンポーネントの libmagic/apprentice.c の apprentice_load 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007443.html",
-  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nPHP の Fileinfo コンポーネントの libmagic/apprentice.c の apprentice_load 関数は、スタックベースの文字配列を解放しようとするため、サービス運用妨害 (メモリ破損またはアプリケーションクラッシュ) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-17: Code (コード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/17.html\r\n\r\nなお、ベンダは、標準の erealloc (内部メモリ確保) の動作では、解放操作が実行不可能なため、この問題が脆弱性であることに異議を唱えています。",
-  "identifier": "JVNDB-2014-007443",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9426",
-      "source": "CVE",
-      "id": "CVE-2014-9426"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9426",
-      "source": "NVD",
-      "id": "CVE-2014-9426"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:php:php",
-      "version": "2.2",
-      "vendor": "The PHP Group",
-      "product": "PHP"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2015-04-30T18:17+09:00",
-  "issued": "2015-01-06T18:17+09:00",
-  "modified": "2015-04-30T18:17+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007443.html",
+	"title": "PHP の Fileinfo コンポーネントの libmagic/apprentice.c の apprentice_load 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-007443.html",
+	"description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nPHP の Fileinfo コンポーネントの libmagic/apprentice.c の apprentice_load 関数は、スタックベースの文字配列を解放しようとするため、サービス運用妨害 (メモリ破損またはアプリケーションクラッシュ) 状態にされるなど、不特定の影響を受ける脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-17: Code (コード) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/17.html\r\n\r\nなお、ベンダは、標準の erealloc (内部メモリ確保) の動作では、解放操作が実行不可能なため、この問題が脆弱性であることに異議を唱えています。",
+	"identifier": "JVNDB-2014-007443",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9426",
+			"source": "CVE",
+			"id": "CVE-2014-9426"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-9426",
+			"source": "NVD",
+			"id": "CVE-2014-9426"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:php:php",
+			"version": "2.2",
+			"vendor": "The PHP Group",
+			"product": "PHP"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2015-04-30T18:17+09:00",
+	"issued": "2015-01-06T18:17+09:00",
+	"modified": "2015-04-30T18:17+09:00"
 }

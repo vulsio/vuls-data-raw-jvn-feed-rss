@@ -1,74 +1,74 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001748.html",
-  "title": "Mozilla Firefox の dom/security/nsCSPContext.cpp におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001748.html",
-  "description": "Mozilla Firefox の dom/security/nsCSPContext.cpp の nsCSPContext::SendReports 関数は、Content Security Policy (CSP) 違反レポートに対する非 HTTP のレポート URI の使用を適切に制限しないため、サービス運用妨害 (データの上書き) 状態にされる、または権限を取得される脆弱性が存在します。",
-  "identifier": "JVNDB-2016-001748",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1954",
-      "source": "CVE",
-      "id": "CVE-2016-1954"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1954",
-      "source": "NVD",
-      "id": "CVE-2016-1954"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:mozilla:firefox",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla Firefox"
-    },
-    {
-      "text": "cpe:/a:mozilla:firefox_esr",
-      "version": "2.2",
-      "vendor": "Mozilla Foundation",
-      "product": "Mozilla Firefox ESR"
-    },
-    {
-      "text": "cpe:/a:suse:suse_package_hub",
-      "version": "2.2",
-      "vendor": "SUSE",
-      "product": "SUSE Package Hub"
-    },
-    {
-      "text": "cpe:/o:opensuse_project:leap",
-      "version": "2.2",
-      "vendor": "openSUSE project",
-      "product": "openSUSE Leap"
-    },
-    {
-      "text": "cpe:/o:opensuse_project:opensuse",
-      "version": "2.2",
-      "vendor": "openSUSE project",
-      "product": "openSUSE"
-    },
-    {
-      "text": "cpe:/o:oracle:linux",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2016-12-05T17:47+09:00",
-  "issued": "2016-03-18T14:11+09:00",
-  "modified": "2016-12-05T17:47+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001748.html",
+	"title": "Mozilla Firefox の dom/security/nsCSPContext.cpp におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001748.html",
+	"description": "Mozilla Firefox の dom/security/nsCSPContext.cpp の nsCSPContext::SendReports 関数は、Content Security Policy (CSP) 違反レポートに対する非 HTTP のレポート URI の使用を適切に制限しないため、サービス運用妨害 (データの上書き) 状態にされる、または権限を取得される脆弱性が存在します。",
+	"identifier": "JVNDB-2016-001748",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1954",
+			"source": "CVE",
+			"id": "CVE-2016-1954"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-1954",
+			"source": "NVD",
+			"id": "CVE-2016-1954"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:mozilla:firefox",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla Firefox"
+		},
+		{
+			"text": "cpe:/a:mozilla:firefox_esr",
+			"version": "2.2",
+			"vendor": "Mozilla Foundation",
+			"product": "Mozilla Firefox ESR"
+		},
+		{
+			"text": "cpe:/a:suse:suse_package_hub",
+			"version": "2.2",
+			"vendor": "SUSE",
+			"product": "SUSE Package Hub"
+		},
+		{
+			"text": "cpe:/o:opensuse_project:leap",
+			"version": "2.2",
+			"vendor": "openSUSE project",
+			"product": "openSUSE Leap"
+		},
+		{
+			"text": "cpe:/o:opensuse_project:opensuse",
+			"version": "2.2",
+			"vendor": "openSUSE project",
+			"product": "openSUSE"
+		},
+		{
+			"text": "cpe:/o:oracle:linux",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2016-12-05T17:47+09:00",
+	"issued": "2016-03-18T14:11+09:00",
+	"modified": "2016-12-05T17:47+09:00"
 }

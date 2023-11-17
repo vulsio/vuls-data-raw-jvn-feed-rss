@@ -1,132 +1,132 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001977.html",
-  "title": "エレコム製ルータにおける認証不備および OS コマンドインジェクションの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001977.html",
-  "description": "エレコム株式会社が提供する複数のルータ製品には、認証不備および OS コマンドインジェクションの脆弱性が存在します。\r\n\r\nエレコム株式会社が提供する複数のルータ製品には、次の複数の脆弱性が存在します。\r\n\r\nWRC-1167FS-W、WRC-1167FS-B、WRC-1167FSA\r\n\r\n　* 情報漏えい (CWE-200) - CVE-2021-20738\r\n\r\nWRC-300FEBK、WRC-F300NF、WRC-733FEBK、WRH-300RD、WRH-300BK、WRH-300SV、WRH-300WH、WRH-H300WH、WRH-H300BK、WRH-300BK-S、WRH-300WH-S\r\n\r\n　* OS コマンドインジェクション (CWE-78) - CVE-2021-20739\r\n\r\nこの脆弱性情報は、株式会社ゼロゼロワン 佐藤勝彦（ｇｏｒｏｈ＿ｋｕｎ）氏、早川 宙也 氏 が製品開発者に直接報告し、製品開発者との調整を経て、製品利用者への周知を目的に JVN での公表に至りました。",
-  "identifier": "JVNDB-2021-001977",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU94260088",
-      "source": "JVN",
-      "id": "JVNVU#94260088"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20738",
-      "source": "CVE",
-      "id": "CVE-2021-20738"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20739",
-      "source": "CVE",
-      "id": "CVE-2021-20739"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-      "id": "CWE-200",
-      "title": "情報漏えい(CWE-200)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
-      "id": "CWE-78",
-      "title": "OSコマンドインジェクション(CWE-78)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:elecom:wrc-300febk",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRC-300FEBK"
-    },
-    {
-      "text": "cpe:/a:elecom:wrc-f300nf",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRC-F300NF"
-    },
-    {
-      "text": "cpe:/o:elecom:wrc-1167fs-b",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRC-1167FS-B"
-    },
-    {
-      "text": "cpe:/o:elecom:wrc-1167fs-w",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRC-1167FS-W"
-    },
-    {
-      "text": "cpe:/o:elecom:wrc-1167fsa",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRC-1167FSA"
-    },
-    {
-      "text": "cpe:/o:elecom:wrc-733febk",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRC-733FEBK"
-    },
-    {
-      "text": "cpe:/o:elecom:wrh-300bk",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRH-300BK"
-    },
-    {
-      "text": "cpe:/o:elecom:wrh-300bk-s",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRH-300BK-S"
-    },
-    {
-      "text": "cpe:/o:elecom:wrh-300rd",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRH-300RD"
-    },
-    {
-      "text": "cpe:/o:elecom:wrh-300sv",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRH-300SV"
-    },
-    {
-      "text": "cpe:/o:elecom:wrh-300wh",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRH-300WH"
-    },
-    {
-      "text": "cpe:/o:elecom:wrh-300wh-s",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRH-300WH-S"
-    },
-    {
-      "text": "cpe:/o:elecom:wrh-h300bk",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRH-H300BK"
-    },
-    {
-      "text": "cpe:/o:elecom:wrh-h300wh",
-      "version": "2.2",
-      "vendor": "エレコム株式会社",
-      "product": "WRH-H300WH"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "3.0",
-      "score": "6.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
-    }
-  ],
-  "date": "2021-07-12T16:03+09:00",
-  "issued": "2021-07-07T11:59+09:00",
-  "modified": "2021-07-12T16:03+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001977.html",
+	"title": "エレコム製ルータにおける認証不備および OS コマンドインジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-001977.html",
+	"description": "エレコム株式会社が提供する複数のルータ製品には、認証不備および OS コマンドインジェクションの脆弱性が存在します。\r\n\r\nエレコム株式会社が提供する複数のルータ製品には、次の複数の脆弱性が存在します。\r\n\r\nWRC-1167FS-W、WRC-1167FS-B、WRC-1167FSA\r\n\r\n　* 情報漏えい (CWE-200) - CVE-2021-20738\r\n\r\nWRC-300FEBK、WRC-F300NF、WRC-733FEBK、WRH-300RD、WRH-300BK、WRH-300SV、WRH-300WH、WRH-H300WH、WRH-H300BK、WRH-300BK-S、WRH-300WH-S\r\n\r\n　* OS コマンドインジェクション (CWE-78) - CVE-2021-20739\r\n\r\nこの脆弱性情報は、株式会社ゼロゼロワン 佐藤勝彦（ｇｏｒｏｈ＿ｋｕｎ）氏、早川 宙也 氏 が製品開発者に直接報告し、製品開発者との調整を経て、製品利用者への周知を目的に JVN での公表に至りました。",
+	"identifier": "JVNDB-2021-001977",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU94260088",
+			"source": "JVN",
+			"id": "JVNVU#94260088"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20738",
+			"source": "CVE",
+			"id": "CVE-2021-20738"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20739",
+			"source": "CVE",
+			"id": "CVE-2021-20739"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+			"id": "CWE-78",
+			"title": "OSコマンドインジェクション(CWE-78)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:elecom:wrc-300febk",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRC-300FEBK"
+		},
+		{
+			"text": "cpe:/a:elecom:wrc-f300nf",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRC-F300NF"
+		},
+		{
+			"text": "cpe:/o:elecom:wrc-1167fs-b",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRC-1167FS-B"
+		},
+		{
+			"text": "cpe:/o:elecom:wrc-1167fs-w",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRC-1167FS-W"
+		},
+		{
+			"text": "cpe:/o:elecom:wrc-1167fsa",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRC-1167FSA"
+		},
+		{
+			"text": "cpe:/o:elecom:wrc-733febk",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRC-733FEBK"
+		},
+		{
+			"text": "cpe:/o:elecom:wrh-300bk",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRH-300BK"
+		},
+		{
+			"text": "cpe:/o:elecom:wrh-300bk-s",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRH-300BK-S"
+		},
+		{
+			"text": "cpe:/o:elecom:wrh-300rd",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRH-300RD"
+		},
+		{
+			"text": "cpe:/o:elecom:wrh-300sv",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRH-300SV"
+		},
+		{
+			"text": "cpe:/o:elecom:wrh-300wh",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRH-300WH"
+		},
+		{
+			"text": "cpe:/o:elecom:wrh-300wh-s",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRH-300WH-S"
+		},
+		{
+			"text": "cpe:/o:elecom:wrh-h300bk",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRH-H300BK"
+		},
+		{
+			"text": "cpe:/o:elecom:wrh-h300wh",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRH-H300WH"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+		}
+	],
+	"date": "2021-07-12T16:03+09:00",
+	"issued": "2021-07-07T11:59+09:00",
+	"modified": "2021-07-12T16:03+09:00"
 }

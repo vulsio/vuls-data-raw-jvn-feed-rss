@@ -1,137 +1,137 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000266.html",
-  "title": "Microsoft Windows の RPCSS サービスにおける不正な RPC リクエストによるヒープオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000266.html",
-  "description": "Microsoft Windows の RPCSS サービスには、Distributed Component Object Model (DCOM) オブジェクトのアクティブ化のための RPC リクエストに対するチェックを適切に\r\n行っていないめ、過度に長いファイル名をパラメータに持つ不正な RPC リクエストの処理により、バッファーオーバーフローが発生する脆弱性が存在します。\r\n\r\n尚、本脆弱性は CVE-2003-0352 (Blaster/Nachi) および CVE-2003-0715 とは異なる問題です。 ",
-  "identifier": "JVNDB-2003-000266",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNCA-2003-23",
-      "source": "JVN",
-      "id": "JVNCA-2003-23"
-    },
-    {
-      "text": "http://jvn.jp/tr/TRCA-2003-23",
-      "source": "JVNTR",
-      "id": "TRCA-2003-23"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0528",
-      "source": "CVE",
-      "id": "CVE-2003-0528"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0528",
-      "source": "NVD",
-      "id": "CVE-2003-0528"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/wr/2003/wr033701.txt",
-      "source": "JPCERT-WR",
-      "id": "JPCERT-WR-2003-3701"
-    },
-    {
-      "text": "http://www.cyberpolice.go.jp/important/20030911_142134.htmlq",
-      "source": "AT-POLICE",
-      "id": "Windowsの脆弱性について(MS03-039)"
-    },
-    {
-      "text": "http://www.cyberpolice.go.jp/important/20030918_111201.html",
-      "source": "AT-POLICE",
-      "id": "Windowsの脆弱性(MS03-039)を攻撃するプログラムについて(9/18)"
-    },
-    {
-      "text": "http://www.npa.go.jp/cyber/warning/ms03_039/150918.htm",
-      "source": "POLICE",
-      "id": "MS03-039の脆弱性を攻撃するプログラムへの緊急の対応について"
-    },
-    {
-      "text": "http://www.cert.org/advisories/CA-2003-23.html",
-      "source": "CERT-A",
-      "id": "CA-2003-23"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/254236",
-      "source": "CERT-VN",
-      "id": "VU#254236"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/ciadr/vul/20030918-win_rpcss.html",
-      "source": "IPA",
-      "id": "Windows RPCSS サービスの脆弱性について"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/n-117.shtml",
-      "source": "CIAC",
-      "id": "N-117"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/8459",
-      "source": "BID",
-      "id": "8459"
-    },
-    {
-      "text": "http://www.isskk.co.jp/support/techinfo/general/MSwindowsRPC152.html",
-      "source": "ISSKK",
-      "id": "MSwindowsRPC152"
-    },
-    {
-      "text": "http://www.isskk.co.jp/support/techinfo/general/winRPC102803.html",
-      "source": "ISSKK",
-      "id": "winRPC102803"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/13129",
-      "source": "XF",
-      "id": "13129"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/12856",
-      "source": "XF",
-      "id": "12856"
-    },
-    {
-      "text": "http://www.symantec.com/region/jp/sarcj/security/content/2003.09.10.html",
-      "source": "SYMANTEC-J",
-      "id": "マイクロソフトのRPC DCOMサブシステムに多数の脆弱性"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:microsoft:windows_2000",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 2000"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_nt",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows NT"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2003",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2003"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_xp",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows XP"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "10.0",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000266.html",
+	"title": "Microsoft Windows の RPCSS サービスにおける不正な RPC リクエストによるヒープオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2003/JVNDB-2003-000266.html",
+	"description": "Microsoft Windows の RPCSS サービスには、Distributed Component Object Model (DCOM) オブジェクトのアクティブ化のための RPC リクエストに対するチェックを適切に\r\n行っていないめ、過度に長いファイル名をパラメータに持つ不正な RPC リクエストの処理により、バッファーオーバーフローが発生する脆弱性が存在します。\r\n\r\n尚、本脆弱性は CVE-2003-0352 (Blaster/Nachi) および CVE-2003-0715 とは異なる問題です。 ",
+	"identifier": "JVNDB-2003-000266",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNCA-2003-23",
+			"source": "JVN",
+			"id": "JVNCA-2003-23"
+		},
+		{
+			"text": "http://jvn.jp/tr/TRCA-2003-23",
+			"source": "JVNTR",
+			"id": "TRCA-2003-23"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0528",
+			"source": "CVE",
+			"id": "CVE-2003-0528"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2003-0528",
+			"source": "NVD",
+			"id": "CVE-2003-0528"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/wr/2003/wr033701.txt",
+			"source": "JPCERT-WR",
+			"id": "JPCERT-WR-2003-3701"
+		},
+		{
+			"text": "http://www.cyberpolice.go.jp/important/20030911_142134.htmlq",
+			"source": "AT-POLICE",
+			"id": "Windowsの脆弱性について(MS03-039)"
+		},
+		{
+			"text": "http://www.cyberpolice.go.jp/important/20030918_111201.html",
+			"source": "AT-POLICE",
+			"id": "Windowsの脆弱性(MS03-039)を攻撃するプログラムについて(9/18)"
+		},
+		{
+			"text": "http://www.npa.go.jp/cyber/warning/ms03_039/150918.htm",
+			"source": "POLICE",
+			"id": "MS03-039の脆弱性を攻撃するプログラムへの緊急の対応について"
+		},
+		{
+			"text": "http://www.cert.org/advisories/CA-2003-23.html",
+			"source": "CERT-A",
+			"id": "CA-2003-23"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/254236",
+			"source": "CERT-VN",
+			"id": "VU#254236"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/ciadr/vul/20030918-win_rpcss.html",
+			"source": "IPA",
+			"id": "Windows RPCSS サービスの脆弱性について"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/n-117.shtml",
+			"source": "CIAC",
+			"id": "N-117"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/8459",
+			"source": "BID",
+			"id": "8459"
+		},
+		{
+			"text": "http://www.isskk.co.jp/support/techinfo/general/MSwindowsRPC152.html",
+			"source": "ISSKK",
+			"id": "MSwindowsRPC152"
+		},
+		{
+			"text": "http://www.isskk.co.jp/support/techinfo/general/winRPC102803.html",
+			"source": "ISSKK",
+			"id": "winRPC102803"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/13129",
+			"source": "XF",
+			"id": "13129"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/12856",
+			"source": "XF",
+			"id": "12856"
+		},
+		{
+			"text": "http://www.symantec.com/region/jp/sarcj/security/content/2003.09.10.html",
+			"source": "SYMANTEC-J",
+			"id": "マイクロソフトのRPC DCOMサブシステムに多数の脆弱性"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:microsoft:windows_2000",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 2000"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_nt",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows NT"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2003",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2003"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_xp",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows XP"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "10.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

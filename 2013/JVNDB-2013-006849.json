@@ -1,49 +1,49 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006849.html",
-  "title": "VideoLAN VLC Media Player の plugins/demux/libmkv_plugin.dll におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006849.html",
-  "description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nVideoLAN VLC Media Player の plugins/demux/libmkv_plugin.dll には、サービス運用妨害 (クラッシュ) 状態にされる、および任意のコードを実行される脆弱性が存在します。\r\n\r\nなお、ベンダは、本問題の深刻性および主張された脆弱性タイプに対して以下のように述べ、異議を唱えています。\r\n\r\n「この PoC は VLC をクラッシュさせるが、それ以上は何も行わない。整数オーバーフローエラーではなく、キャッチされていない例外であり、悪用可能であるとは考えにくい。このキャッチされていない例外は、私の Linux 64 ビットマシン上で、VLC を中断させるが、ランダムコードは実行されない。」\r\n\r\nまた、最初の研究者により投稿された PoC は、攻撃者に制御された境界外の読み取りの兆候を示していますが、影響を受けた命令は、制御フローに直接の影響を与えるデータを含みません。",
-  "identifier": "JVNDB-2013-006849",
-  "references": [
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3245",
-      "source": "CVE",
-      "id": "CVE-2013-3245"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3245",
-      "source": "NVD",
-      "id": "CVE-2013-3245"
-    },
-    {
-      "text": "https://www.securityfocus.com/bid/61032",
-      "source": "関連文書",
-      "id": "VLC Media Player CVE-2013-3245 Remote Integer Overflow Vulnerability"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:videolan:vlc_media_player",
-      "version": "2.2",
-      "vendor": "VideoLAN",
-      "product": "VLC media player"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2019-07-29T12:41+09:00",
-  "issued": "2019-07-29T12:41+09:00",
-  "modified": "2019-07-29T12:41+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006849.html",
+	"title": "VideoLAN VLC Media Player の plugins/demux/libmkv_plugin.dll におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2013/JVNDB-2013-006849.html",
+	"description": "** 未確定 ** 本件は、脆弱性として確定していません。\r\n\r\nVideoLAN VLC Media Player の plugins/demux/libmkv_plugin.dll には、サービス運用妨害 (クラッシュ) 状態にされる、および任意のコードを実行される脆弱性が存在します。\r\n\r\nなお、ベンダは、本問題の深刻性および主張された脆弱性タイプに対して以下のように述べ、異議を唱えています。\r\n\r\n「この PoC は VLC をクラッシュさせるが、それ以上は何も行わない。整数オーバーフローエラーではなく、キャッチされていない例外であり、悪用可能であるとは考えにくい。このキャッチされていない例外は、私の Linux 64 ビットマシン上で、VLC を中断させるが、ランダムコードは実行されない。」\r\n\r\nまた、最初の研究者により投稿された PoC は、攻撃者に制御された境界外の読み取りの兆候を示していますが、影響を受けた命令は、制御フローに直接の影響を与えるデータを含みません。",
+	"identifier": "JVNDB-2013-006849",
+	"references": [
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3245",
+			"source": "CVE",
+			"id": "CVE-2013-3245"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-3245",
+			"source": "NVD",
+			"id": "CVE-2013-3245"
+		},
+		{
+			"text": "https://www.securityfocus.com/bid/61032",
+			"source": "関連文書",
+			"id": "VLC Media Player CVE-2013-3245 Remote Integer Overflow Vulnerability"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:videolan:vlc_media_player",
+			"version": "2.2",
+			"vendor": "VideoLAN",
+			"product": "VLC media player"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2019-07-29T12:41+09:00",
+	"issued": "2019-07-29T12:41+09:00",
+	"modified": "2019-07-29T12:41+09:00"
 }

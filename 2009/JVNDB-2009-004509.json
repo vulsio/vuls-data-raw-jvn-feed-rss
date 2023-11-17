@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004509.html",
-  "title": "Linux kernel の seccomp サブシステムにおけるアクセス制限を回避される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004509.html",
-  "description": "x86_64 上で稼動する Linux kernel の seccomp サブシステムの kernel/seccomp.c の __secure_computing 関数は、CONFIG_SECCOMP が有効になっている際、(1) 64 ビットの syscall 生成する 32 ビットプロセス、または (2) 32 ビットの syscall 生成する 64 ビットプロセスを適切に処理しないため、アクセス制限を回避される脆弱性が存在します。\r\n本問題は、CVE-2009-0342 および CVE-2009-0343 に関連する可能性があります。",
-  "identifier": "JVNDB-2009-004509",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0835",
-      "source": "CVE",
-      "id": "CVE-2009-0835"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0835",
-      "source": "NVD",
-      "id": "CVE-2009-0835"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "3.6",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N"
-    }
-  ],
-  "date": "2012-09-25T17:27+09:00",
-  "issued": "2012-09-25T17:27+09:00",
-  "modified": "2012-09-25T17:27+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004509.html",
+	"title": "Linux kernel の seccomp サブシステムにおけるアクセス制限を回避される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-004509.html",
+	"description": "x86_64 上で稼動する Linux kernel の seccomp サブシステムの kernel/seccomp.c の __secure_computing 関数は、CONFIG_SECCOMP が有効になっている際、(1) 64 ビットの syscall 生成する 32 ビットプロセス、または (2) 32 ビットの syscall 生成する 64 ビットプロセスを適切に処理しないため、アクセス制限を回避される脆弱性が存在します。\r\n本問題は、CVE-2009-0342 および CVE-2009-0343 に関連する可能性があります。",
+	"identifier": "JVNDB-2009-004509",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0835",
+			"source": "CVE",
+			"id": "CVE-2009-0835"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-0835",
+			"source": "NVD",
+			"id": "CVE-2009-0835"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "3.6",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N"
+		}
+	],
+	"date": "2012-09-25T17:27+09:00",
+	"issued": "2012-09-25T17:27+09:00",
+	"modified": "2012-09-25T17:27+09:00"
 }

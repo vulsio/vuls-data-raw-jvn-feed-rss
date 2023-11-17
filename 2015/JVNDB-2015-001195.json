@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001195.html",
-  "title": "Windows 向け iPass Open Mobile クライアントに任意のコード実行の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001195.html",
-  "description": "Windows 向け iPass Open Mobile クライアントには、任意のコードが実行可能な脆弱性が存在します。\r\n\r\nコードインジェクション (CWE-94)\r\nWindows 向け iPass Open Mobile クライアント (バージョン2.4.4 およびそれ以前) は、名前付きパイプを使ってプロセス間通信を行っています。また、クライアントが作成するサブプロセスの1つは SYSTEM 権限で動作します。認証されたユーザは、細工された Unicode 文字列を送ることで、任意の DLL ファイル (UNC パス上のものを含む) を登録することが可能です。その場合、指定された DLL ファイル中の　DllMain　関数が SYSTEM 権限で実行されます。\r\n\r\nCWE-94: Improper Control of Generation of Code ('Code Injection')\r\nhttp://cwe.mitre.org/data/definitions/94.html",
-  "identifier": "JVNDB-2015-001195",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU92114748/index.html",
-      "source": "JVN",
-      "id": "JVNVU#92114748"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0925",
-      "source": "CVE",
-      "id": "CVE-2015-0925"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0925",
-      "source": "NVD",
-      "id": "CVE-2015-0925"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/110652",
-      "source": "CERT-VN",
-      "id": "VU#110652"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
-      "id": "CWE-94",
-      "title": "コード・インジェクション(CWE-94)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:ipass:ipass_open_mobile",
-      "version": "2.2",
-      "vendor": "iPass Inc.",
-      "product": "iPass Open Mobile"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "8.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:M/Au:S/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2015-01-27T09:44+09:00",
-  "issued": "2015-01-23T13:51+09:00",
-  "modified": "2015-01-27T09:44+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001195.html",
+	"title": "Windows 向け iPass Open Mobile クライアントに任意のコード実行の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-001195.html",
+	"description": "Windows 向け iPass Open Mobile クライアントには、任意のコードが実行可能な脆弱性が存在します。\r\n\r\nコードインジェクション (CWE-94)\r\nWindows 向け iPass Open Mobile クライアント (バージョン2.4.4 およびそれ以前) は、名前付きパイプを使ってプロセス間通信を行っています。また、クライアントが作成するサブプロセスの1つは SYSTEM 権限で動作します。認証されたユーザは、細工された Unicode 文字列を送ることで、任意の DLL ファイル (UNC パス上のものを含む) を登録することが可能です。その場合、指定された DLL ファイル中の　DllMain　関数が SYSTEM 権限で実行されます。\r\n\r\nCWE-94: Improper Control of Generation of Code ('Code Injection')\r\nhttp://cwe.mitre.org/data/definitions/94.html",
+	"identifier": "JVNDB-2015-001195",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU92114748/index.html",
+			"source": "JVN",
+			"id": "JVNVU#92114748"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0925",
+			"source": "CVE",
+			"id": "CVE-2015-0925"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0925",
+			"source": "NVD",
+			"id": "CVE-2015-0925"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/110652",
+			"source": "CERT-VN",
+			"id": "VU#110652"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+			"id": "CWE-94",
+			"title": "コード・インジェクション(CWE-94)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ipass:ipass_open_mobile",
+			"version": "2.2",
+			"vendor": "iPass Inc.",
+			"product": "iPass Open Mobile"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "8.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:M/Au:S/C:C/I:C/A:C"
+		}
+	],
+	"date": "2015-01-27T09:44+09:00",
+	"issued": "2015-01-23T13:51+09:00",
+	"modified": "2015-01-27T09:44+09:00"
 }

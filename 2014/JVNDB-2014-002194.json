@@ -1,65 +1,65 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002194.html",
-  "title": "IBM Notes および IBM Domino に問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002194.html",
-  "description": "32bit 版 Linux で動作する IBM Notes および IBM Domino は、実行不可属性によるメモリ領域の保護が行われていません。\r\n\r\n32bit 版 Linux で動作する IBM Notes および IBM Domino は、gcc のオプションに -z execstack を指定してコンパイルされています。そのため、これらの製品では実行不可属性による stack、heap、data セクションなどのメモリ領域の保護が行われていません。この設定は添付ファイルのプレビューを生成したり、全文検索用のインデックスを生成したりする子プロセスにも引き継がれます。",
-  "identifier": "JVNDB-2014-002194",
-  "references": [
-    {
-      "text": "https://jvn.jp/vu/JVNVU98935174/",
-      "source": "JVN",
-      "id": "JVNVU#98935174"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0892",
-      "source": "CVE",
-      "id": "CVE-2014-0892"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0892",
-      "source": "NVD",
-      "id": "CVE-2014-0892"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/350089",
-      "source": "CERT-VN",
-      "id": "VU#350089"
-    },
-    {
-      "text": "https://www.cert.org/blogs/certcc/post.cfm?EntryID=190",
-      "source": "関連文書",
-      "id": "Feeling Insecure? Blame Your Parent!"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-      "id": "CWE-200",
-      "title": "情報漏えい(CWE-200)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:ibm:lotus_domino",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Domino (旧 IBM Lotus Domino)"
-    },
-    {
-      "text": "cpe:/a:ibm:notes",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM Notes"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
-    }
-  ],
-  "date": "2014-06-26T17:34+09:00",
-  "issued": "2014-04-23T18:59+09:00",
-  "modified": "2014-06-26T17:34+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002194.html",
+	"title": "IBM Notes および IBM Domino に問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-002194.html",
+	"description": "32bit 版 Linux で動作する IBM Notes および IBM Domino は、実行不可属性によるメモリ領域の保護が行われていません。\r\n\r\n32bit 版 Linux で動作する IBM Notes および IBM Domino は、gcc のオプションに -z execstack を指定してコンパイルされています。そのため、これらの製品では実行不可属性による stack、heap、data セクションなどのメモリ領域の保護が行われていません。この設定は添付ファイルのプレビューを生成したり、全文検索用のインデックスを生成したりする子プロセスにも引き継がれます。",
+	"identifier": "JVNDB-2014-002194",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU98935174/",
+			"source": "JVN",
+			"id": "JVNVU#98935174"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0892",
+			"source": "CVE",
+			"id": "CVE-2014-0892"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0892",
+			"source": "NVD",
+			"id": "CVE-2014-0892"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/350089",
+			"source": "CERT-VN",
+			"id": "VU#350089"
+		},
+		{
+			"text": "https://www.cert.org/blogs/certcc/post.cfm?EntryID=190",
+			"source": "関連文書",
+			"id": "Feeling Insecure? Blame Your Parent!"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ibm:lotus_domino",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Domino (旧 IBM Lotus Domino)"
+		},
+		{
+			"text": "cpe:/a:ibm:notes",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM Notes"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+		}
+	],
+	"date": "2014-06-26T17:34+09:00",
+	"issued": "2014-04-23T18:59+09:00",
+	"modified": "2014-06-26T17:34+09:00"
 }

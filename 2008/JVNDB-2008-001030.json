@@ -1,169 +1,169 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001030.html",
-  "title": "Apache の mod_proxy_ftp における UTF-7 エンコードに関するクロスサイトスクリプティングの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001030.html",
-  "description": "Apache の mod_proxy_ftp には、charset が定義されていないため、UTF-7 エンコードを用いたクロスサイトスクリプティングの脆弱性が存在します。",
-  "identifier": "JVNDB-2008-001030",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNTA08-079A/index.html",
-      "source": "JVN",
-      "id": "JVNTA08-079A"
-    },
-    {
-      "text": "http://jvn.jp/tr/TRTA08-079A/index.html",
-      "source": "JVNTR",
-      "id": "TRTA08-079A"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0005",
-      "source": "CVE",
-      "id": "CVE-2008-0005"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-0005",
-      "source": "NVD",
-      "id": "CVE-2008-0005"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/alerts/SA08-079A.html",
-      "source": "CERT-SA",
-      "id": "SA08-079A"
-    },
-    {
-      "text": "http://www.us-cert.gov/cas/techalerts/TA08-079A.html",
-      "source": "CERT-TA",
-      "id": "TA08-079A"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/27234",
-      "source": "BID",
-      "id": "27234"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/39615",
-      "source": "XF",
-      "id": "39615"
-    },
-    {
-      "text": "http://www.securitytracker.com/id?1019185",
-      "source": "SECTRACK",
-      "id": "1019185"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
-      "id": "CWE-79",
-      "title": "クロスサイトスクリプティング(CWE-79)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:apache:http_server",
-      "version": "2.2",
-      "vendor": "Apache Software Foundation",
-      "product": "Apache HTTP Server"
-    },
-    {
-      "text": "cpe:/a:ibm:http_server",
-      "version": "2.2",
-      "vendor": "IBM",
-      "product": "IBM HTTP Server"
-    },
-    {
-      "text": "cpe:/a:redhat:rhel_application_stack",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Application Stack"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X"
-    },
-    {
-      "text": "cpe:/o:apple:mac_os_x_server",
-      "version": "2.2",
-      "vendor": "アップル",
-      "product": "Apple Mac OS X Server"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:linux_advanced_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux Advanced Workstation"
-    },
-    {
-      "text": "cpe:/o:redhat:rhel_desktop_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "RHEL Desktop Workstation"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_appliance_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Appliance Server"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_fuji",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux FUJI"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_multimedia",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Multimedia"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_personal",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Personal"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
-    }
-  ],
-  "date": "2010-04-28T15:18+09:00",
-  "issued": "2008-01-30T16:08+09:00",
-  "modified": "2010-04-28T15:18+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001030.html",
+	"title": "Apache の mod_proxy_ftp における UTF-7 エンコードに関するクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2008/JVNDB-2008-001030.html",
+	"description": "Apache の mod_proxy_ftp には、charset が定義されていないため、UTF-7 エンコードを用いたクロスサイトスクリプティングの脆弱性が存在します。",
+	"identifier": "JVNDB-2008-001030",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNTA08-079A/index.html",
+			"source": "JVN",
+			"id": "JVNTA08-079A"
+		},
+		{
+			"text": "http://jvn.jp/tr/TRTA08-079A/index.html",
+			"source": "JVNTR",
+			"id": "TRTA08-079A"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0005",
+			"source": "CVE",
+			"id": "CVE-2008-0005"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2008-0005",
+			"source": "NVD",
+			"id": "CVE-2008-0005"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/alerts/SA08-079A.html",
+			"source": "CERT-SA",
+			"id": "SA08-079A"
+		},
+		{
+			"text": "http://www.us-cert.gov/cas/techalerts/TA08-079A.html",
+			"source": "CERT-TA",
+			"id": "TA08-079A"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/27234",
+			"source": "BID",
+			"id": "27234"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/39615",
+			"source": "XF",
+			"id": "39615"
+		},
+		{
+			"text": "http://www.securitytracker.com/id?1019185",
+			"source": "SECTRACK",
+			"id": "1019185"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:http_server",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache HTTP Server"
+		},
+		{
+			"text": "cpe:/a:ibm:http_server",
+			"version": "2.2",
+			"vendor": "IBM",
+			"product": "IBM HTTP Server"
+		},
+		{
+			"text": "cpe:/a:redhat:rhel_application_stack",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Application Stack"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X"
+		},
+		{
+			"text": "cpe:/o:apple:mac_os_x_server",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "Apple Mac OS X Server"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:linux_advanced_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux Advanced Workstation"
+		},
+		{
+			"text": "cpe:/o:redhat:rhel_desktop_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "RHEL Desktop Workstation"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_appliance_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Appliance Server"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_fuji",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux FUJI"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_multimedia",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Multimedia"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_personal",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Personal"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+		}
+	],
+	"date": "2010-04-28T15:18+09:00",
+	"issued": "2008-01-30T16:08+09:00",
+	"modified": "2010-04-28T15:18+09:00"
 }

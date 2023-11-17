@@ -1,56 +1,56 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000239.html",
-  "title": "PHP の substr_compare() 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000239.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPHP には以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n1) wordwrap() 関数には、渡された文字列をメモリ領域に割り当てる際のバッファサイズの計算処理が不適切であるため、過度に長い文字列が関数に渡された場合にヒープオーバーフローを生じる問題が存在します。(CVE-2006-1990)\r\n\r\nリモートの攻撃者に悪用された場合、Web サーバの実行権限で任意のコードが実行される可能性があります。\r\n\r\n2) substr_compare() 関数には、入力値チェックに不備が存在するため、不正な length パラメータが指定された場合にメモリアクセス違反を生じる問題が存在します。(CVE-2006-1991)\r\n\r\nリモートの攻撃者に利用された場合、PHP アプリケーションがサービス不能状態に陥る可能性があります。",
-  "identifier": "JVNDB-2006-000239",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1991",
-      "source": "CVE",
-      "id": "CVE-2006-1991"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1991",
-      "source": "NVD",
-      "id": "CVE-2006-1991"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2006/1500",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2006-1500"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:php:php",
-      "version": "2.2",
-      "vendor": "The PHP Group",
-      "product": "PHP"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000239.html",
+	"title": "PHP の substr_compare() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000239.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPHP には以下の複数のセキュリティ上の問題が存在します。 \r\n\r\n1) wordwrap() 関数には、渡された文字列をメモリ領域に割り当てる際のバッファサイズの計算処理が不適切であるため、過度に長い文字列が関数に渡された場合にヒープオーバーフローを生じる問題が存在します。(CVE-2006-1990)\r\n\r\nリモートの攻撃者に悪用された場合、Web サーバの実行権限で任意のコードが実行される可能性があります。\r\n\r\n2) substr_compare() 関数には、入力値チェックに不備が存在するため、不正な length パラメータが指定された場合にメモリアクセス違反を生じる問題が存在します。(CVE-2006-1991)\r\n\r\nリモートの攻撃者に利用された場合、PHP アプリケーションがサービス不能状態に陥る可能性があります。",
+	"identifier": "JVNDB-2006-000239",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1991",
+			"source": "CVE",
+			"id": "CVE-2006-1991"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-1991",
+			"source": "NVD",
+			"id": "CVE-2006-1991"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2006/1500",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2006-1500"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:php:php",
+			"version": "2.2",
+			"vendor": "The PHP Group",
+			"product": "PHP"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

@@ -1,66 +1,66 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-005730.html",
-  "title": "Bluetooth 実装の楕円曲線ディフィー・ヘルマン鍵共有において公開鍵を適切に検証していない問題",
-  "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-005730.html",
-  "description": "Bluetooth デバイスのファームウエアや OS のドライバが、ディフィー・ヘルマン鍵共有において公開鍵を適切に検証していない場合、遠隔の第三者により、通信内容を取得される可能性が存在します。\r\n\r\n暗号化処理の不備 (CWE-325) - CVE-2018-5383\r\nBluetooth では、楕円曲線ディフィー・ヘルマン鍵共有 (ECDH) 技術を基盤とした、機器のペアリングメカニズムを規定しています。\r\nこの方式では、ペアリングする両者がそれぞれ秘密鍵と公開鍵からなる鍵対を用意します。ペアリングを開始する際に互いの公開鍵を交換し、自分の秘密鍵と相手の公開鍵を使って、その後の通信に使う共有鍵をそれぞれが生成します。使用する楕円曲線暗号のパラメータについてはあらかじめ合意している必要があります。\r\nBluetooth の仕様では、相手から受け取った公開鍵が適切なものであるか検証することが推奨されていますが、必須とはされていませんでした。\r\n\r\n\"Invalid Curve Attack\" あるいは \"Invalid Point Attack\" と呼ばれる攻撃手法の研究では、通信相手から受け取った公開鍵が適切なものであることを確認せずに共有鍵を生成している場合、秘密鍵の探索が格段に容易になることが指摘されています。\r\nいくつかの実装では、相手から受け取った公開鍵を検証しないまま処理を行っているため、Bluetooth の通信距離範囲内に存在する第三者によって細工された公開鍵が注入されると、高い確率で秘密鍵を取得される可能性があります。その結果、通信内容を取得されたり改ざんされたりする可能性があります。Secure Connections Pairing モードおよび Simple Secure Paring モードの両方が影響を受けます。\r\n\r\nBluetooth SIG では、受けとった公開鍵の検証を必須とするよう Bluetooth の仕様を更新するとともに、Bluetooth Qualification Program において本件に関する試験項目を追加しています。Bluetooth SIG のアナウンスを参照してください。\r\n\r\nBluetooth SIG のアナウンス\r\nhttps://www.bluetooth.com/news/unknown/2018/07/bluetooth-sig-security-update",
-  "identifier": "JVNDB-2018-005730",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU92767028/index.html",
-      "source": "JVN",
-      "id": "JVNVU#92767028"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5383",
-      "source": "CVE",
-      "id": "CVE-2018-5383"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5383",
-      "source": "NVD",
-      "id": "CVE-2018-5383"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/304725",
-      "source": "CERT-VN",
-      "id": "VU#304725"
-    },
-    {
-      "text": "https://www.bluetooth.com/news/unknown/2018/07/bluetooth-sig-security-update",
-      "source": "関連文書",
-      "id": "Bluetooth SIG Security Update"
-    },
-    {
-      "text": "https://www.cs.technion.ac.il/~biham/BT/",
-      "source": "関連文書",
-      "id": "Breaking the Bluetooth Pairing : Fixed Coordinate Invalid Curve Attack"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:multiple_vendors",
-      "version": "2.2",
-      "vendor": "（複数のベンダ）",
-      "product": "（複数の製品）"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.3",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:A/AC:M/Au:N/C:C/I:C/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
-    }
-  ],
-  "date": "2019-07-25T13:59+09:00",
-  "issued": "2018-07-27T13:47+09:00",
-  "modified": "2019-07-25T13:59+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-005730.html",
+	"title": "Bluetooth 実装の楕円曲線ディフィー・ヘルマン鍵共有において公開鍵を適切に検証していない問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-005730.html",
+	"description": "Bluetooth デバイスのファームウエアや OS のドライバが、ディフィー・ヘルマン鍵共有において公開鍵を適切に検証していない場合、遠隔の第三者により、通信内容を取得される可能性が存在します。\r\n\r\n暗号化処理の不備 (CWE-325) - CVE-2018-5383\r\nBluetooth では、楕円曲線ディフィー・ヘルマン鍵共有 (ECDH) 技術を基盤とした、機器のペアリングメカニズムを規定しています。\r\nこの方式では、ペアリングする両者がそれぞれ秘密鍵と公開鍵からなる鍵対を用意します。ペアリングを開始する際に互いの公開鍵を交換し、自分の秘密鍵と相手の公開鍵を使って、その後の通信に使う共有鍵をそれぞれが生成します。使用する楕円曲線暗号のパラメータについてはあらかじめ合意している必要があります。\r\nBluetooth の仕様では、相手から受け取った公開鍵が適切なものであるか検証することが推奨されていますが、必須とはされていませんでした。\r\n\r\n\"Invalid Curve Attack\" あるいは \"Invalid Point Attack\" と呼ばれる攻撃手法の研究では、通信相手から受け取った公開鍵が適切なものであることを確認せずに共有鍵を生成している場合、秘密鍵の探索が格段に容易になることが指摘されています。\r\nいくつかの実装では、相手から受け取った公開鍵を検証しないまま処理を行っているため、Bluetooth の通信距離範囲内に存在する第三者によって細工された公開鍵が注入されると、高い確率で秘密鍵を取得される可能性があります。その結果、通信内容を取得されたり改ざんされたりする可能性があります。Secure Connections Pairing モードおよび Simple Secure Paring モードの両方が影響を受けます。\r\n\r\nBluetooth SIG では、受けとった公開鍵の検証を必須とするよう Bluetooth の仕様を更新するとともに、Bluetooth Qualification Program において本件に関する試験項目を追加しています。Bluetooth SIG のアナウンスを参照してください。\r\n\r\nBluetooth SIG のアナウンス\r\nhttps://www.bluetooth.com/news/unknown/2018/07/bluetooth-sig-security-update",
+	"identifier": "JVNDB-2018-005730",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU92767028/index.html",
+			"source": "JVN",
+			"id": "JVNVU#92767028"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5383",
+			"source": "CVE",
+			"id": "CVE-2018-5383"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2018-5383",
+			"source": "NVD",
+			"id": "CVE-2018-5383"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/304725",
+			"source": "CERT-VN",
+			"id": "VU#304725"
+		},
+		{
+			"text": "https://www.bluetooth.com/news/unknown/2018/07/bluetooth-sig-security-update",
+			"source": "関連文書",
+			"id": "Bluetooth SIG Security Update"
+		},
+		{
+			"text": "https://www.cs.technion.ac.il/~biham/BT/",
+			"source": "関連文書",
+			"id": "Breaking the Bluetooth Pairing : Fixed Coordinate Invalid Curve Attack"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:A/AC:M/Au:N/C:C/I:C/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+		}
+	],
+	"date": "2019-07-25T13:59+09:00",
+	"issued": "2018-07-27T13:47+09:00",
+	"modified": "2019-07-25T13:59+09:00"
 }

@@ -1,89 +1,89 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000024.html",
-  "title": "Gaim および Ultramagnetic における整数オーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000024.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGaim は、Yahoo! Messenger や AOL Instant Messenger 等様々なプロトコルが利用可能な、IM (Instant Messenger) クライアントです。\r\n\r\nGaim 0.75 以前には、複数の個所に適切な引数の妥当性の確認を行わない問題が存在します。そのため、以下のような通信を行った場合結果としてバッファオーバーフローを引き起こす可能性があります。\r\n\r\n・Yahoo! Messenger サービスのログイン時に過剰に長い通信を受信する\r\n・Yahoo! Messenger 経由で過剰に長い Cookie を受信する\r\n・Yahoo! Messenger 経由で過剰に長い項目を含むパケットを受信する\r\n・プロキシサーバ経由で過剰に長いヘッダ行を受信する\r\n・過剰に長い URL を受信する\r\n  (CAN-2004-0006/Gaim 0.75 以前)\r\n\r\n・MSN Messenger/Yahoo! Messenger 経由で、get_user_info() 関数を用いた際過剰に長い応答を受信する\r\n  (CAN-2004-0007/Gaim 0.74 以前)\r\n\r\nまた、AOL Instant Messenger (Oscar) 経由で directIM 機能を利用してクライアント同士の通信を行った場合、妥当な引数の確認を行っていないために整数オーバーフローを引き起す可能性があります。\r\n(CAN-2004-0008/Gaim 0.74 以前)\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した通信を標的ユーザに送りつけることによりオーバーフローを引き起こし、結果として Gaim を実行しているユーザの権限で任意のコードを実行可能です。\r\n\r\n尚、いくつかの問題においては、攻撃者はサーバと Gaim の間のセッションを乗っ取る、もしくはサーバを装う必要があります。",
-  "identifier": "JVNDB-2004-000024",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0008",
-      "source": "CVE",
-      "id": "CVE-2004-0008"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0008",
-      "source": "NVD",
-      "id": "CVE-2004-0008"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/197142",
-      "source": "CERT-VN",
-      "id": "VU#197142"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/779614",
-      "source": "CERT-VN",
-      "id": "VU#779614"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/871838",
-      "source": "CERT-VN",
-      "id": "VU#871838"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/444158",
-      "source": "CERT-VN",
-      "id": "VU#444158"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/503030",
-      "source": "CERT-VN",
-      "id": "VU#503030"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/371382",
-      "source": "CERT-VN",
-      "id": "VU#371382"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/297198",
-      "source": "CERT-VN",
-      "id": "VU#297198"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/527142",
-      "source": "CERT-VN",
-      "id": "VU#527142"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/9489",
-      "source": "BID",
-      "id": "9489"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2004/Jan/1008850.htm",
-      "source": "SECTRACK",
-      "id": "1008850"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000024.html",
+	"title": "Gaim および Ultramagnetic における整数オーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000024.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nGaim は、Yahoo! Messenger や AOL Instant Messenger 等様々なプロトコルが利用可能な、IM (Instant Messenger) クライアントです。\r\n\r\nGaim 0.75 以前には、複数の個所に適切な引数の妥当性の確認を行わない問題が存在します。そのため、以下のような通信を行った場合結果としてバッファオーバーフローを引き起こす可能性があります。\r\n\r\n・Yahoo! Messenger サービスのログイン時に過剰に長い通信を受信する\r\n・Yahoo! Messenger 経由で過剰に長い Cookie を受信する\r\n・Yahoo! Messenger 経由で過剰に長い項目を含むパケットを受信する\r\n・プロキシサーバ経由で過剰に長いヘッダ行を受信する\r\n・過剰に長い URL を受信する\r\n  (CAN-2004-0006/Gaim 0.75 以前)\r\n\r\n・MSN Messenger/Yahoo! Messenger 経由で、get_user_info() 関数を用いた際過剰に長い応答を受信する\r\n  (CAN-2004-0007/Gaim 0.74 以前)\r\n\r\nまた、AOL Instant Messenger (Oscar) 経由で directIM 機能を利用してクライアント同士の通信を行った場合、妥当な引数の確認を行っていないために整数オーバーフローを引き起す可能性があります。\r\n(CAN-2004-0008/Gaim 0.74 以前)\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成した通信を標的ユーザに送りつけることによりオーバーフローを引き起こし、結果として Gaim を実行しているユーザの権限で任意のコードを実行可能です。\r\n\r\n尚、いくつかの問題においては、攻撃者はサーバと Gaim の間のセッションを乗っ取る、もしくはサーバを装う必要があります。",
+	"identifier": "JVNDB-2004-000024",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0008",
+			"source": "CVE",
+			"id": "CVE-2004-0008"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0008",
+			"source": "NVD",
+			"id": "CVE-2004-0008"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/197142",
+			"source": "CERT-VN",
+			"id": "VU#197142"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/779614",
+			"source": "CERT-VN",
+			"id": "VU#779614"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/871838",
+			"source": "CERT-VN",
+			"id": "VU#871838"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/444158",
+			"source": "CERT-VN",
+			"id": "VU#444158"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/503030",
+			"source": "CERT-VN",
+			"id": "VU#503030"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/371382",
+			"source": "CERT-VN",
+			"id": "VU#371382"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/297198",
+			"source": "CERT-VN",
+			"id": "VU#297198"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/527142",
+			"source": "CERT-VN",
+			"id": "VU#527142"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/9489",
+			"source": "BID",
+			"id": "9489"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2004/Jan/1008850.htm",
+			"source": "SECTRACK",
+			"id": "1008850"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

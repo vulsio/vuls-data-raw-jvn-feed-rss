@@ -1,59 +1,59 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006483.html",
-  "title": "Dovestones Software AD Self Password Reset に脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006483.html",
-  "description": "Dovestones Software が提供する AD Self Password Reset は、パスワードのリセットをリクエストしたユーザを正しく検証しないため、攻撃者によって任意のアカウントのパスワードをリセットされる可能性があります。\r\n\r\n不適切なアクセス制御 (CWE-284) - CVE-2015-8267\r\nDovestones Software が提供する AD Self Password Reset の、PasswordReset.dll に含まれるメソッドPasswordReset.Controllers.ResetController.ChangePasswordIndex() には、パスワードのリセットをリクエストしたユーザを正しく検証しない脆弱性が存在します。攻撃者は、この脆弱なメソッドを呼び出すリクエストを操作することで、任意のアカウントのパスワードをリセットすることが可能です。\r\n\r\nCWE-284: Improper Access Control\r\nhttp://cwe.mitre.org/data/definitions/284.html",
-  "identifier": "JVNDB-2015-006483",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU94174467/index.html",
-      "source": "JVN",
-      "id": "JVNVU#94174467"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8267",
-      "source": "CVE",
-      "id": "CVE-2015-8267"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8267",
-      "source": "NVD",
-      "id": "CVE-2015-8267"
-    },
-    {
-      "text": "https://www.kb.cert.org/vuls/id/757840",
-      "source": "CERT-VN",
-      "id": "VU#757840"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-      "id": "CWE-264",
-      "title": "認可・権限・アクセス制御(CWE-264)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:dovestones:ad_self_password_reset",
-      "version": "2.2",
-      "vendor": "Dovestones Software Ltd",
-      "product": "AD Self Password Reset"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2015-12-25T15:32+09:00",
-  "issued": "2015-12-21T18:01+09:00",
-  "modified": "2015-12-25T15:32+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006483.html",
+	"title": "Dovestones Software AD Self Password Reset に脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-006483.html",
+	"description": "Dovestones Software が提供する AD Self Password Reset は、パスワードのリセットをリクエストしたユーザを正しく検証しないため、攻撃者によって任意のアカウントのパスワードをリセットされる可能性があります。\r\n\r\n不適切なアクセス制御 (CWE-284) - CVE-2015-8267\r\nDovestones Software が提供する AD Self Password Reset の、PasswordReset.dll に含まれるメソッドPasswordReset.Controllers.ResetController.ChangePasswordIndex() には、パスワードのリセットをリクエストしたユーザを正しく検証しない脆弱性が存在します。攻撃者は、この脆弱なメソッドを呼び出すリクエストを操作することで、任意のアカウントのパスワードをリセットすることが可能です。\r\n\r\nCWE-284: Improper Access Control\r\nhttp://cwe.mitre.org/data/definitions/284.html",
+	"identifier": "JVNDB-2015-006483",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU94174467/index.html",
+			"source": "JVN",
+			"id": "JVNVU#94174467"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8267",
+			"source": "CVE",
+			"id": "CVE-2015-8267"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-8267",
+			"source": "NVD",
+			"id": "CVE-2015-8267"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/757840",
+			"source": "CERT-VN",
+			"id": "VU#757840"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
+			"id": "CWE-264",
+			"title": "認可・権限・アクセス制御(CWE-264)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:dovestones:ad_self_password_reset",
+			"version": "2.2",
+			"vendor": "Dovestones Software Ltd",
+			"product": "AD Self Password Reset"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2015-12-25T15:32+09:00",
+	"issued": "2015-12-21T18:01+09:00",
+	"modified": "2015-12-25T15:32+09:00"
 }

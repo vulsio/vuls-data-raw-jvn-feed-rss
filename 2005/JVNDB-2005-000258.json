@@ -1,449 +1,449 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000258.html",
-  "title": "TCP 実装における ICMP エラーメッセージ処理による TCP コネクション切断の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000258.html",
-  "description": "複数のベンダ製品における TCP の実装には、ICMP エラーメッセージに含まれる IP アドレスと TCP ポートの妥当性だけが検証され、シーケンス番号が適切な範囲内にあるかチェックしない不備が存在します。これにより、不正な ICMP hard error メッセージの処理により、TCP コネクションがリセットされる脆弱性が存在します。\r\n\r\nなお、本脆弱性は ICMP メッセージ処理に起因する脆弱性 (CVE-2004-0790, CVE-2004-0791, CVE-2004-1060) のうち、CVE-2004-0790 として公開されている脆弱性です。\r\nTCP 実装に影響がある脆弱性であるため、これら脆弱性を影響を受ける製品は広範囲に及びます。詳細については、NISCC-532967 (JVN)、NISCC Advisory 532967/NISCC/ICMP (CPNI Advisory 00303) を併せてご確認ください。",
-  "identifier": "JVNDB-2005-000258",
-  "references": [
-    {
-      "text": "http://jvn.jp/niscc/NISCC-532967/index.html",
-      "source": "JVN",
-      "id": "NISCC-532967"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0790",
-      "source": "CVE",
-      "id": "CVE-2004-0790"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0790",
-      "source": "NVD",
-      "id": "CVE-2004-0790"
-    },
-    {
-      "text": "http://www.cyberpolice.go.jp/important/2005/20050414_195834.html",
-      "source": "AT-POLICE",
-      "id": "TCP実装におけるICMPパケットの処理に関する脆弱性"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/222750",
-      "source": "CERT-VN",
-      "id": "VU#222750"
-    },
-    {
-      "text": "http://www.ipa.go.jp/security/ciadr/vul/20050413-ms05-019.html",
-      "source": "IPA-VUL",
-      "id": "20050413-ms05-019"
-    },
-    {
-      "text": "http://www.ciac.org/ciac/bulletins/p-177.shtml",
-      "source": "CIAC",
-      "id": "p-177"
-    },
-    {
-      "text": "http://www.cpni.gov.uk/docs/re-20050412-00303.pdf?lang=en",
-      "source": "NISCC",
-      "id": "532967/NISCC/ICMP"
-    },
-    {
-      "text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20050412-00303.xml",
-      "source": "CPNI",
-      "id": "00303"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13124",
-      "source": "BID",
-      "id": "13124"
-    },
-    {
-      "text": "http://www.frsirt.com/english/advisories/2005/0344",
-      "source": "FRSIRT",
-      "id": "FrSIRT/ADV-2005-0344"
-    },
-    {
-      "text": "http://tools.ietf.org/html/draft-gont-tcpm-icmp-attacks-03",
-      "source": "IETF",
-      "id": "draft-gont-tcpm-icmp-attacks-03"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:cisco:ip_contact_center_express",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IP Contact Center (IPCC) Express"
-    },
-    {
-      "text": "cpe:/a:cisco:ip_interactive_voice_response",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IP Interactive Voice Response (IP IVR)"
-    },
-    {
-      "text": "cpe:/a:cisco:personal_assistant",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Personal Assistant"
-    },
-    {
-      "text": "cpe:/a:symantec:enterprise_firewall",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec Enterprise Firewall"
-    },
-    {
-      "text": "cpe:/a:symantec:firewall_vpn_appliance",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec Firewall/VPN Appliance"
-    },
-    {
-      "text": "cpe:/a:symantec:gateway_security_300",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec Gateway Security 300 Series"
-    },
-    {
-      "text": "cpe:/a:symantec:gateway_security_400",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec Gateway Security 400 Series"
-    },
-    {
-      "text": "cpe:/a:symantec:gateway_security_5300",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec Gateway Security 5300 Series"
-    },
-    {
-      "text": "cpe:/a:symantec:gateway_security_5400",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Symantec Gateway Security 5400 Series"
-    },
-    {
-      "text": "cpe:/h:alaxala:ax5400s",
-      "version": "2.2",
-      "vendor": "アラクサラネットワークス",
-      "product": "AX5400Sシリーズ"
-    },
-    {
-      "text": "cpe:/h:alaxala:ax7800r",
-      "version": "2.2",
-      "vendor": "アラクサラネットワークス",
-      "product": "AX7800Rシリーズ"
-    },
-    {
-      "text": "cpe:/h:alaxala:ax7800s",
-      "version": "2.2",
-      "vendor": "アラクサラネットワークス",
-      "product": "AX7800Sシリーズ"
-    },
-    {
-      "text": "cpe:/h:allied_telesis_k.k.:router",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "ルーター"
-    },
-    {
-      "text": "cpe:/h:allied_telesis_k.k.:switch",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "スイッチ"
-    },
-    {
-      "text": "cpe:/h:allied_telesis_k.k.:switchblade4000",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "SwitchBlade4000"
-    },
-    {
-      "text": "cpe:/h:allied_telesis_k.k.:switchblade_5400s",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "SwitchBlade 5400Sシリーズ"
-    },
-    {
-      "text": "cpe:/h:allied_telesis_k.k.:switchblade_7800s",
-      "version": "2.2",
-      "vendor": "アライドテレシス",
-      "product": "SwitchBlade 7800Sシリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:call_manager",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Call Manager (CCM)"
-    },
-    {
-      "text": "cpe:/h:cisco:catalyst_6500",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Catalyst 6500 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:conference_connection",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Conference Connection (CCC)"
-    },
-    {
-      "text": "cpe:/h:cisco:crs-1",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco CRS-1"
-    },
-    {
-      "text": "cpe:/h:cisco:emergency_responder",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Emergency Responder"
-    },
-    {
-      "text": "cpe:/h:cisco:internet_service_node",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco Internet Service Node (ISN)"
-    },
-    {
-      "text": "cpe:/h:cisco:ip_phone_7900",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IP Phone 7900 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:ip_queue_manager",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IP Queue Manager (IP QM)"
-    },
-    {
-      "text": "cpe:/h:cisco:mgx_8250",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco MGX 8250 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:mgx_8850",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco MGX 8850 シリーズ"
-    },
-    {
-      "text": "cpe:/h:cisco:ws-x6608-e1",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "WS-X6608-E1"
-    },
-    {
-      "text": "cpe:/h:cisco:ws-x6608-t1",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "WS-X6608-T1"
-    },
-    {
-      "text": "cpe:/h:cisco:ws-x6624-fxs",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "WS-X6624-FXS"
-    },
-    {
-      "text": "cpe:/h:fujitsu:geostreamsi-v",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "VoIPゲートウェイ GeoStreamSi-Vシリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:geostream_si-r",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "ルータ GeoStream Si-Rシリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:ip-pbx_ip_mediaserve",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "IP-PBX IP MEDIASERVE"
-    },
-    {
-      "text": "cpe:/h:fujitsu:ip_pathfinder",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "IP-PBX IP Pathfinderシリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:ip_telephony",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "IP テレフォニー 電話機"
-    },
-    {
-      "text": "cpe:/h:fujitsu:netvehicle",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "ルータ NetVehicleシリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:pbx_e-200",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "PBX E-200シリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:pbx_e-3000",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "PBX E-3000シリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:pbx_es200",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "PBX ES200 シリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:pbx_es3000",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "PBX ES3000シリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:pstn_gateway",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "IP テレフォニー PSTN ゲートウェイ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:switch_sb",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "スイッチ SBシリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:switch_sh",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "スイッチ SHシリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:switch_si-r",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "スイッチ Si-Rシリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:switch_sr",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "スイッチ SRシリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:switch_sr-s",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "スイッチ SR-Sシリーズ"
-    },
-    {
-      "text": "cpe:/h:fujitsu:voip_gateway_ew30ip",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "VoIPゲートウェイ EW30IP"
-    },
-    {
-      "text": "cpe:/h:fujitsu:voip_router_lr-v",
-      "version": "2.2",
-      "vendor": "富士通",
-      "product": "VoIPルータ LR-Vシリーズ"
-    },
-    {
-      "text": "cpe:/h:hitachi:gr2000",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "GR2000"
-    },
-    {
-      "text": "cpe:/h:hitachi:gr4000",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "GR4000"
-    },
-    {
-      "text": "cpe:/h:hitachi:gs3000",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "GS3000"
-    },
-    {
-      "text": "cpe:/h:hitachi:gs4000",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "GS4000"
-    },
-    {
-      "text": "cpe:/h:symantec:nexland_isb_soho_firewall_appliance",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Nexland ISB SOHO Firewall Appliance"
-    },
-    {
-      "text": "cpe:/h:symantec:nexland_pro_firewall_appliance",
-      "version": "2.2",
-      "vendor": "シマンテック",
-      "product": "Nexland Pro Series Firewall Appliance"
-    },
-    {
-      "text": "cpe:/o:cisco:ios_xr",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco IOS XR"
-    },
-    {
-      "text": "cpe:/o:hp:hp-ux",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード",
-      "product": "HP-UX"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows-9x",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 9X"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_2000",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows 2000"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_server_2003",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows Server 2003"
-    },
-    {
-      "text": "cpe:/o:microsoft:windows_xp",
-      "version": "2.2",
-      "vendor": "マイクロソフト",
-      "product": "Microsoft Windows XP"
-    },
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000258.html",
+	"title": "TCP 実装における ICMP エラーメッセージ処理による TCP コネクション切断の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000258.html",
+	"description": "複数のベンダ製品における TCP の実装には、ICMP エラーメッセージに含まれる IP アドレスと TCP ポートの妥当性だけが検証され、シーケンス番号が適切な範囲内にあるかチェックしない不備が存在します。これにより、不正な ICMP hard error メッセージの処理により、TCP コネクションがリセットされる脆弱性が存在します。\r\n\r\nなお、本脆弱性は ICMP メッセージ処理に起因する脆弱性 (CVE-2004-0790, CVE-2004-0791, CVE-2004-1060) のうち、CVE-2004-0790 として公開されている脆弱性です。\r\nTCP 実装に影響がある脆弱性であるため、これら脆弱性を影響を受ける製品は広範囲に及びます。詳細については、NISCC-532967 (JVN)、NISCC Advisory 532967/NISCC/ICMP (CPNI Advisory 00303) を併せてご確認ください。",
+	"identifier": "JVNDB-2005-000258",
+	"references": [
+		{
+			"text": "http://jvn.jp/niscc/NISCC-532967/index.html",
+			"source": "JVN",
+			"id": "NISCC-532967"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0790",
+			"source": "CVE",
+			"id": "CVE-2004-0790"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0790",
+			"source": "NVD",
+			"id": "CVE-2004-0790"
+		},
+		{
+			"text": "http://www.cyberpolice.go.jp/important/2005/20050414_195834.html",
+			"source": "AT-POLICE",
+			"id": "TCP実装におけるICMPパケットの処理に関する脆弱性"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/222750",
+			"source": "CERT-VN",
+			"id": "VU#222750"
+		},
+		{
+			"text": "http://www.ipa.go.jp/security/ciadr/vul/20050413-ms05-019.html",
+			"source": "IPA-VUL",
+			"id": "20050413-ms05-019"
+		},
+		{
+			"text": "http://www.ciac.org/ciac/bulletins/p-177.shtml",
+			"source": "CIAC",
+			"id": "p-177"
+		},
+		{
+			"text": "http://www.cpni.gov.uk/docs/re-20050412-00303.pdf?lang=en",
+			"source": "NISCC",
+			"id": "532967/NISCC/ICMP"
+		},
+		{
+			"text": "http://www.cpni.gov.uk/Products/vulnerabilitydisclosures/default.aspx?id=va-20050412-00303.xml",
+			"source": "CPNI",
+			"id": "00303"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13124",
+			"source": "BID",
+			"id": "13124"
+		},
+		{
+			"text": "http://www.frsirt.com/english/advisories/2005/0344",
+			"source": "FRSIRT",
+			"id": "FrSIRT/ADV-2005-0344"
+		},
+		{
+			"text": "http://tools.ietf.org/html/draft-gont-tcpm-icmp-attacks-03",
+			"source": "IETF",
+			"id": "draft-gont-tcpm-icmp-attacks-03"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:cisco:ip_contact_center_express",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IP Contact Center (IPCC) Express"
+		},
+		{
+			"text": "cpe:/a:cisco:ip_interactive_voice_response",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IP Interactive Voice Response (IP IVR)"
+		},
+		{
+			"text": "cpe:/a:cisco:personal_assistant",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Personal Assistant"
+		},
+		{
+			"text": "cpe:/a:symantec:enterprise_firewall",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec Enterprise Firewall"
+		},
+		{
+			"text": "cpe:/a:symantec:firewall_vpn_appliance",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec Firewall/VPN Appliance"
+		},
+		{
+			"text": "cpe:/a:symantec:gateway_security_300",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec Gateway Security 300 Series"
+		},
+		{
+			"text": "cpe:/a:symantec:gateway_security_400",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec Gateway Security 400 Series"
+		},
+		{
+			"text": "cpe:/a:symantec:gateway_security_5300",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec Gateway Security 5300 Series"
+		},
+		{
+			"text": "cpe:/a:symantec:gateway_security_5400",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Symantec Gateway Security 5400 Series"
+		},
+		{
+			"text": "cpe:/h:alaxala:ax5400s",
+			"version": "2.2",
+			"vendor": "アラクサラネットワークス",
+			"product": "AX5400Sシリーズ"
+		},
+		{
+			"text": "cpe:/h:alaxala:ax7800r",
+			"version": "2.2",
+			"vendor": "アラクサラネットワークス",
+			"product": "AX7800Rシリーズ"
+		},
+		{
+			"text": "cpe:/h:alaxala:ax7800s",
+			"version": "2.2",
+			"vendor": "アラクサラネットワークス",
+			"product": "AX7800Sシリーズ"
+		},
+		{
+			"text": "cpe:/h:allied_telesis_k.k.:router",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "ルーター"
+		},
+		{
+			"text": "cpe:/h:allied_telesis_k.k.:switch",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "スイッチ"
+		},
+		{
+			"text": "cpe:/h:allied_telesis_k.k.:switchblade4000",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "SwitchBlade4000"
+		},
+		{
+			"text": "cpe:/h:allied_telesis_k.k.:switchblade_5400s",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "SwitchBlade 5400Sシリーズ"
+		},
+		{
+			"text": "cpe:/h:allied_telesis_k.k.:switchblade_7800s",
+			"version": "2.2",
+			"vendor": "アライドテレシス",
+			"product": "SwitchBlade 7800Sシリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:call_manager",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Call Manager (CCM)"
+		},
+		{
+			"text": "cpe:/h:cisco:catalyst_6500",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Catalyst 6500 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:conference_connection",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Conference Connection (CCC)"
+		},
+		{
+			"text": "cpe:/h:cisco:crs-1",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco CRS-1"
+		},
+		{
+			"text": "cpe:/h:cisco:emergency_responder",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Emergency Responder"
+		},
+		{
+			"text": "cpe:/h:cisco:internet_service_node",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco Internet Service Node (ISN)"
+		},
+		{
+			"text": "cpe:/h:cisco:ip_phone_7900",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IP Phone 7900 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:ip_queue_manager",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IP Queue Manager (IP QM)"
+		},
+		{
+			"text": "cpe:/h:cisco:mgx_8250",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco MGX 8250 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:mgx_8850",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco MGX 8850 シリーズ"
+		},
+		{
+			"text": "cpe:/h:cisco:ws-x6608-e1",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "WS-X6608-E1"
+		},
+		{
+			"text": "cpe:/h:cisco:ws-x6608-t1",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "WS-X6608-T1"
+		},
+		{
+			"text": "cpe:/h:cisco:ws-x6624-fxs",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "WS-X6624-FXS"
+		},
+		{
+			"text": "cpe:/h:fujitsu:geostreamsi-v",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "VoIPゲートウェイ GeoStreamSi-Vシリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:geostream_si-r",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "ルータ GeoStream Si-Rシリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:ip-pbx_ip_mediaserve",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "IP-PBX IP MEDIASERVE"
+		},
+		{
+			"text": "cpe:/h:fujitsu:ip_pathfinder",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "IP-PBX IP Pathfinderシリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:ip_telephony",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "IP テレフォニー 電話機"
+		},
+		{
+			"text": "cpe:/h:fujitsu:netvehicle",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "ルータ NetVehicleシリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:pbx_e-200",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "PBX E-200シリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:pbx_e-3000",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "PBX E-3000シリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:pbx_es200",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "PBX ES200 シリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:pbx_es3000",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "PBX ES3000シリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:pstn_gateway",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "IP テレフォニー PSTN ゲートウェイ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:switch_sb",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "スイッチ SBシリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:switch_sh",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "スイッチ SHシリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:switch_si-r",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "スイッチ Si-Rシリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:switch_sr",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "スイッチ SRシリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:switch_sr-s",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "スイッチ SR-Sシリーズ"
+		},
+		{
+			"text": "cpe:/h:fujitsu:voip_gateway_ew30ip",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "VoIPゲートウェイ EW30IP"
+		},
+		{
+			"text": "cpe:/h:fujitsu:voip_router_lr-v",
+			"version": "2.2",
+			"vendor": "富士通",
+			"product": "VoIPルータ LR-Vシリーズ"
+		},
+		{
+			"text": "cpe:/h:hitachi:gr2000",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "GR2000"
+		},
+		{
+			"text": "cpe:/h:hitachi:gr4000",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "GR4000"
+		},
+		{
+			"text": "cpe:/h:hitachi:gs3000",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "GS3000"
+		},
+		{
+			"text": "cpe:/h:hitachi:gs4000",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "GS4000"
+		},
+		{
+			"text": "cpe:/h:symantec:nexland_isb_soho_firewall_appliance",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Nexland ISB SOHO Firewall Appliance"
+		},
+		{
+			"text": "cpe:/h:symantec:nexland_pro_firewall_appliance",
+			"version": "2.2",
+			"vendor": "シマンテック",
+			"product": "Nexland Pro Series Firewall Appliance"
+		},
+		{
+			"text": "cpe:/o:cisco:ios_xr",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco IOS XR"
+		},
+		{
+			"text": "cpe:/o:hp:hp-ux",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード",
+			"product": "HP-UX"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows-9x",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 9X"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_2000",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 2000"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_server_2003",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows Server 2003"
+		},
+		{
+			"text": "cpe:/o:microsoft:windows_xp",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows XP"
+		},
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

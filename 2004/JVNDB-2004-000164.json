@@ -1,64 +1,64 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000164.html",
-  "title": "SquirrelMail におけるクロスサイトスクリプティングの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000164.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSquirrelMail は、PHP 言語で開発された高機能な Web メールパッケージです。\r\n\r\nSquirrelMail 1.4.2 以前には、フォルダ名として渡されたパラメータの妥当性の確認を適切に行わないため、以下のように URL でフォルダ名を指定する mailbox パラメータにスクリプトを含ませた場合、そのまま実行してしまう問題 (CAN-2004-0519) が存在します。このため、クロスサイトスクリプティング攻撃を受ける可能性が存在します。\r\n\r\nHttp://www.example.com/mail/src/compose.php?mailbox=\"><script>malacious script</script>\r\n\r\nまた、abook_database.php において入力値の取り扱いに不備が存在し、ユーザのアドレス帳情報をデータベースに格納している場合、SQL インジェクションが可能である問題 (CAN-2004-0521) が存在します。\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した URL を標的ユーザがクリックするように誘導することで任意のスクリプトを実行し、Cookie などの重要な情報を奪取できる可能性があります。また、同様に意図的に作成した URL を用いて、アドレス帳情報を格納したデータベースにおいて任意の \r\nSQL クエリを実行できる可能性があります。\r\n\r\n尚、これらの問題は、squirrelmail-1.4.3-RC1 以降で修正されています。",
-  "identifier": "JVNDB-2004-000164",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0519",
-      "source": "CVE",
-      "id": "CVE-2004-0519"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0519",
-      "source": "NVD",
-      "id": "CVE-2004-0519"
-    },
-    {
-      "text": "http://secunia.com/advisories/11531/",
-      "source": "SECUNIA",
-      "id": "SA11531"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/10397",
-      "source": "BID",
-      "id": "10397"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/10246",
-      "source": "BID",
-      "id": "10246"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2004/Apr/1010007.html",
-      "source": "SECTRACK",
-      "id": "1010007"
-    },
-    {
-      "text": "http://www.osvdb.org/displayvuln.php?osvdb_id=6841",
-      "source": "OSVDB",
-      "id": "6841"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.8",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000164.html",
+	"title": "SquirrelMail におけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000164.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSquirrelMail は、PHP 言語で開発された高機能な Web メールパッケージです。\r\n\r\nSquirrelMail 1.4.2 以前には、フォルダ名として渡されたパラメータの妥当性の確認を適切に行わないため、以下のように URL でフォルダ名を指定する mailbox パラメータにスクリプトを含ませた場合、そのまま実行してしまう問題 (CAN-2004-0519) が存在します。このため、クロスサイトスクリプティング攻撃を受ける可能性が存在します。\r\n\r\nHttp://www.example.com/mail/src/compose.php?mailbox=\"><script>malacious script</script>\r\n\r\nまた、abook_database.php において入力値の取り扱いに不備が存在し、ユーザのアドレス帳情報をデータベースに格納している場合、SQL インジェクションが可能である問題 (CAN-2004-0521) が存在します。\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した URL を標的ユーザがクリックするように誘導することで任意のスクリプトを実行し、Cookie などの重要な情報を奪取できる可能性があります。また、同様に意図的に作成した URL を用いて、アドレス帳情報を格納したデータベースにおいて任意の \r\nSQL クエリを実行できる可能性があります。\r\n\r\n尚、これらの問題は、squirrelmail-1.4.3-RC1 以降で修正されています。",
+	"identifier": "JVNDB-2004-000164",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0519",
+			"source": "CVE",
+			"id": "CVE-2004-0519"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0519",
+			"source": "NVD",
+			"id": "CVE-2004-0519"
+		},
+		{
+			"text": "http://secunia.com/advisories/11531/",
+			"source": "SECUNIA",
+			"id": "SA11531"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/10397",
+			"source": "BID",
+			"id": "10397"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/10246",
+			"source": "BID",
+			"id": "10246"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2004/Apr/1010007.html",
+			"source": "SECTRACK",
+			"id": "1010007"
+		},
+		{
+			"text": "http://www.osvdb.org/displayvuln.php?osvdb_id=6841",
+			"source": "OSVDB",
+			"id": "6841"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

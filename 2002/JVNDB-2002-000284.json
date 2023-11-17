@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000284.html",
-  "title": "Cisco PIX Firewall の ISAKMP SA の取り扱いの不備によるセッションハイジャックの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000284.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nCisco PIX Firewall は、VPN 経由での接続時の認証するために Internet Security Authentication Key Management Protocol Security Associations (ISAKMP Sas) を実装しています。\r\n Cisco PIX Firewall 6.0.3 以前、及び 6.1.3 以前においてこの ISAKMP SA の取り扱いに不備が存在するため、同じ IP アドレスからの重複したリクエストを許可してしまう問題が存在します。この問題を利用することにより、リモートの攻撃者は正規ユーザの IP アドレスを取得し、PIX　Firewall の認証を回避することが可能です。\r\n 尚、本攻撃が成功させるためには、攻撃者は認証時に必要な事前共有鍵 (group pre-shared key) もしくはグループパスワードを入手する必要があります。",
-  "identifier": "JVNDB-2002-000284",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-2139",
-      "source": "CVE",
-      "id": "CVE-2002-2139"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-2139",
-      "source": "NVD",
-      "id": "CVE-2002-2139"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/6211",
-      "source": "BID",
-      "id": "6211"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/h:cisco:pix_firewall",
-      "version": "2.2",
-      "vendor": "シスコシステムズ",
-      "product": "Cisco PIX Firewall"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.4",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000284.html",
+	"title": "Cisco PIX Firewall の ISAKMP SA の取り扱いの不備によるセッションハイジャックの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2002/JVNDB-2002-000284.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nCisco PIX Firewall は、VPN 経由での接続時の認証するために Internet Security Authentication Key Management Protocol Security Associations (ISAKMP Sas) を実装しています。\r\n Cisco PIX Firewall 6.0.3 以前、及び 6.1.3 以前においてこの ISAKMP SA の取り扱いに不備が存在するため、同じ IP アドレスからの重複したリクエストを許可してしまう問題が存在します。この問題を利用することにより、リモートの攻撃者は正規ユーザの IP アドレスを取得し、PIX　Firewall の認証を回避することが可能です。\r\n 尚、本攻撃が成功させるためには、攻撃者は認証時に必要な事前共有鍵 (group pre-shared key) もしくはグループパスワードを入手する必要があります。",
+	"identifier": "JVNDB-2002-000284",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-2139",
+			"source": "CVE",
+			"id": "CVE-2002-2139"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2002-2139",
+			"source": "NVD",
+			"id": "CVE-2002-2139"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/6211",
+			"source": "BID",
+			"id": "6211"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/h:cisco:pix_firewall",
+			"version": "2.2",
+			"vendor": "シスコシステムズ",
+			"product": "Cisco PIX Firewall"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

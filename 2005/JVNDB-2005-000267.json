@@ -1,90 +1,90 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000267.html",
-  "title": "Linux Kernel の unw_unwind_to_user 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000267.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.4.29 以前、2.6.11.4 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) Linux Kernel に実装されている unw_unwind_to_user() 関数には、引数の妥当性が適切に検証されずシステムクラッシュが発生する問題が存在します。(CAN-2005-0135) (Linux Kernel 2.4.29 以前/2.6.10 以前)\r\n\r\nこの問題を利用するローカルの攻撃者は、システムクラッシュを発生させ、結果として標的システムをサービス不能状態に陥らせることが可能です。\r\n\r\nUnw_unwind_to_user() 関数は Itanium (ia64) アーキテクチャでのみ使用されるため、この問題は、Itanium アーキテクチャだけが影響を受けます。\r\n\r\n2) NFS クライアントにおいて O_DIRECT エラー時の処理に問題が存在します。(CAN-2005-0207) (Linux Kernel 2.6.10 以前)\r\n\r\nこの問題を利用するローカルの攻撃者は、NFS ファイルシステムに対して直接 I/O アクセスを行い意図的なエラー状態を作り出すことにより、カーネルパニックを発生させ、結果として NFS ファイルシステムをマウントするシステムをサービス不能状態に陥らせることが可能です。\r\n\r\n3) Linux Kernel に実装されている Netfilter カーネルサブシステムの IP パケットハンドラには、セキュリティ上の問題が存在します。(CAN-2005-0209、CAN-2005-0210) (Linux Kernel 2.6.10 以前)\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的な IP パケットフラグメントを送りつけることにより、標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、Acenic および SunGEM のネットワークインタフェースアダプタだけが影響を受けることが報告されています。\r\n\r\n4) Linux Kernel に実装されている SYSFS_Write_File() 関数には、整数符号の管理が適切に行われていないため整数オーバーフローが発生する問題が存在します。 (CAN-2005-0867) (Linux Kernel 2.6.10 以前)\r\n\r\nこの問題を利用するローカルの攻撃者は、整数オーバーフローを発生させカーネルメモリを上書きすることにより、標的システムをサービス不能状態に陥らせる、あるいは root 権限で任意のコードを実行する可能性があります。\r\n\r\n5) Linux Kernel に実装されている tmpfs ドライバには、shm_nopage() 関数のアドレス引数のサニタイズが適切に行われない問題が存在します。(CAN-2005-0977) (Linux Kernel 2.6.10 以前)\r\n\r\nこの問題を利用するローカルの攻撃者は、意図的なアドレスを shm_nopage() 関数に処理させることによりカーネルクラッシュを発生させ、結果として標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\n6) Linux Kernel の fib_hash.c に実装されている fib_seq_start() 関数には、セキュリティ上の問題が存在します。(CAN-2005-1041) (Linux Kernel 2.6.11.4 以前)\r\n\r\nこの問題を利用するローカルの攻撃者は、/proc/net/route を使用して意図的な操作を行うことで、結果として標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\n7) Itanium アーキテクチャにおいて、kernel/entry.S に定義される syscall_table エントリ数が不適切である問題が存在します。(CAN-2005-0137) (Linux Kernel 2.4.29 以前)\r\n\r\nこの問題を利用するローカルの攻撃者は、意図的なシステムコールを呼び出すことにより、結果として標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、CAN-2005-0135、CAN-2005-0137 の問題を除き、現時点において Linux Kernel 2.4.x への影響は不明ですが、MIRACLE LINUX V3.0、Red Hat Enterprise Linux 3 に同梱される Linux Kernel (2.4.x ベース) が CAN-2005-0210 の問題の影響を受けることが報告されています。",
-  "identifier": "JVNDB-2005-000267",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0135",
-      "source": "CVE",
-      "id": "CVE-2005-0135"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0135",
-      "source": "NVD",
-      "id": "CVE-2005-0135"
-    },
-    {
-      "text": "http://secunia.com/advisories/14713/",
-      "source": "SECUNIA",
-      "id": "SA14713"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12816",
-      "source": "BID",
-      "id": "12816"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13438",
-      "source": "BID",
-      "id": "13438"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13267",
-      "source": "BID",
-      "id": "13267"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12970",
-      "source": "BID",
-      "id": "12970"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13091",
-      "source": "BID",
-      "id": "13091"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12330",
-      "source": "BID",
-      "id": "12330"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/13266",
-      "source": "BID",
-      "id": "13266"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12598",
-      "source": "BID",
-      "id": "12598"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "2.1",
-      "type": "Base",
-      "severity": "Low",
-      "vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000267.html",
+	"title": "Linux Kernel の unw_unwind_to_user 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000267.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel 2.4.29 以前、2.6.11.4 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) Linux Kernel に実装されている unw_unwind_to_user() 関数には、引数の妥当性が適切に検証されずシステムクラッシュが発生する問題が存在します。(CAN-2005-0135) (Linux Kernel 2.4.29 以前/2.6.10 以前)\r\n\r\nこの問題を利用するローカルの攻撃者は、システムクラッシュを発生させ、結果として標的システムをサービス不能状態に陥らせることが可能です。\r\n\r\nUnw_unwind_to_user() 関数は Itanium (ia64) アーキテクチャでのみ使用されるため、この問題は、Itanium アーキテクチャだけが影響を受けます。\r\n\r\n2) NFS クライアントにおいて O_DIRECT エラー時の処理に問題が存在します。(CAN-2005-0207) (Linux Kernel 2.6.10 以前)\r\n\r\nこの問題を利用するローカルの攻撃者は、NFS ファイルシステムに対して直接 I/O アクセスを行い意図的なエラー状態を作り出すことにより、カーネルパニックを発生させ、結果として NFS ファイルシステムをマウントするシステムをサービス不能状態に陥らせることが可能です。\r\n\r\n3) Linux Kernel に実装されている Netfilter カーネルサブシステムの IP パケットハンドラには、セキュリティ上の問題が存在します。(CAN-2005-0209、CAN-2005-0210) (Linux Kernel 2.6.10 以前)\r\n\r\nこの問題を利用するリモートの攻撃者は、意図的な IP パケットフラグメントを送りつけることにより、標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、Acenic および SunGEM のネットワークインタフェースアダプタだけが影響を受けることが報告されています。\r\n\r\n4) Linux Kernel に実装されている SYSFS_Write_File() 関数には、整数符号の管理が適切に行われていないため整数オーバーフローが発生する問題が存在します。 (CAN-2005-0867) (Linux Kernel 2.6.10 以前)\r\n\r\nこの問題を利用するローカルの攻撃者は、整数オーバーフローを発生させカーネルメモリを上書きすることにより、標的システムをサービス不能状態に陥らせる、あるいは root 権限で任意のコードを実行する可能性があります。\r\n\r\n5) Linux Kernel に実装されている tmpfs ドライバには、shm_nopage() 関数のアドレス引数のサニタイズが適切に行われない問題が存在します。(CAN-2005-0977) (Linux Kernel 2.6.10 以前)\r\n\r\nこの問題を利用するローカルの攻撃者は、意図的なアドレスを shm_nopage() 関数に処理させることによりカーネルクラッシュを発生させ、結果として標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\n6) Linux Kernel の fib_hash.c に実装されている fib_seq_start() 関数には、セキュリティ上の問題が存在します。(CAN-2005-1041) (Linux Kernel 2.6.11.4 以前)\r\n\r\nこの問題を利用するローカルの攻撃者は、/proc/net/route を使用して意図的な操作を行うことで、結果として標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\n7) Itanium アーキテクチャにおいて、kernel/entry.S に定義される syscall_table エントリ数が不適切である問題が存在します。(CAN-2005-0137) (Linux Kernel 2.4.29 以前)\r\n\r\nこの問題を利用するローカルの攻撃者は、意図的なシステムコールを呼び出すことにより、結果として標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、CAN-2005-0135、CAN-2005-0137 の問題を除き、現時点において Linux Kernel 2.4.x への影響は不明ですが、MIRACLE LINUX V3.0、Red Hat Enterprise Linux 3 に同梱される Linux Kernel (2.4.x ベース) が CAN-2005-0210 の問題の影響を受けることが報告されています。",
+	"identifier": "JVNDB-2005-000267",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0135",
+			"source": "CVE",
+			"id": "CVE-2005-0135"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0135",
+			"source": "NVD",
+			"id": "CVE-2005-0135"
+		},
+		{
+			"text": "http://secunia.com/advisories/14713/",
+			"source": "SECUNIA",
+			"id": "SA14713"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12816",
+			"source": "BID",
+			"id": "12816"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13438",
+			"source": "BID",
+			"id": "13438"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13267",
+			"source": "BID",
+			"id": "13267"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12970",
+			"source": "BID",
+			"id": "12970"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13091",
+			"source": "BID",
+			"id": "13091"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12330",
+			"source": "BID",
+			"id": "12330"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/13266",
+			"source": "BID",
+			"id": "13266"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12598",
+			"source": "BID",
+			"id": "12598"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.1",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

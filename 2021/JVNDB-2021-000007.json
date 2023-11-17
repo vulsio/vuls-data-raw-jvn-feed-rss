@@ -1,57 +1,57 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000007.html",
-  "title": "インフォサイエンス製の複数のログ管理ツールにおける OS コマンドインジェクションの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000007.html",
-  "description": "インフォサイエンス株式会社が提供する複数のログ管理ツールでは、様々なログ収集方法の一つとして当該製品への FTP によるアップロード機能を提供しており、管理者が FTP アップロードを受け付けるように設定することが可能です。\r\n当該製品の FTP アップロード機能を有効にしている状況において、管理者が設定するログ処理機能に入力値の取り扱いに関する不備がある場合、細工されたログを FTP でアップロードされることで、当該製品が稼働しているサーバ上で任意の OS コマンドを実行される可能性 (CWE-78) があります。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 三井物産セキュアディレクション株式会社 塚本 泰三 氏",
-  "identifier": "JVNDB-2021-000007",
-  "references": [
-    {
-      "text": "https://jvn.jp/jp/JVN41853173/index.html",
-      "source": "JVN",
-      "id": "JVN#41853173"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5626",
-      "source": "CVE",
-      "id": "CVE-2020-5626"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
-      "id": "CWE-78",
-      "title": "OSコマンドインジェクション(CWE-78)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:misc:infoscience_elc_analytics",
-      "version": "2.2",
-      "vendor": "インフォサイエンス株式会社",
-      "product": "ELC Analytics"
-    },
-    {
-      "text": "cpe:/a:misc:infoscience_logstorage",
-      "version": "2.2",
-      "vendor": "インフォサイエンス株式会社",
-      "product": "Logstorage"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.1",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:N/AC:H/Au:S/C:C/I:C/A:C"
-    },
-    {
-      "version": "3.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
-    }
-  ],
-  "date": "2022-07-26T11:12+09:00",
-  "issued": "2021-01-27T14:12+09:00",
-  "modified": "2022-07-26T11:12+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000007.html",
+	"title": "インフォサイエンス製の複数のログ管理ツールにおける OS コマンドインジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-000007.html",
+	"description": "インフォサイエンス株式会社が提供する複数のログ管理ツールでは、様々なログ収集方法の一つとして当該製品への FTP によるアップロード機能を提供しており、管理者が FTP アップロードを受け付けるように設定することが可能です。\r\n当該製品の FTP アップロード機能を有効にしている状況において、管理者が設定するログ処理機能に入力値の取り扱いに関する不備がある場合、細工されたログを FTP でアップロードされることで、当該製品が稼働しているサーバ上で任意の OS コマンドを実行される可能性 (CWE-78) があります。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 三井物産セキュアディレクション株式会社 塚本 泰三 氏",
+	"identifier": "JVNDB-2021-000007",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN41853173/index.html",
+			"source": "JVN",
+			"id": "JVN#41853173"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5626",
+			"source": "CVE",
+			"id": "CVE-2020-5626"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+			"id": "CWE-78",
+			"title": "OSコマンドインジェクション(CWE-78)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:infoscience_elc_analytics",
+			"version": "2.2",
+			"vendor": "インフォサイエンス株式会社",
+			"product": "ELC Analytics"
+		},
+		{
+			"text": "cpe:/a:misc:infoscience_logstorage",
+			"version": "2.2",
+			"vendor": "インフォサイエンス株式会社",
+			"product": "Logstorage"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.1",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:H/Au:S/C:C/I:C/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2022-07-26T11:12+09:00",
+	"issued": "2021-01-27T14:12+09:00",
+	"modified": "2022-07-26T11:12+09:00"
 }

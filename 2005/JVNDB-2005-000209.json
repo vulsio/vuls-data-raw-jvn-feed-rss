@@ -1,72 +1,72 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000209.html",
-  "title": "PHP の php_handle_iff 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000209.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPHP で定義される getimagesize() 関数は様々な形式の画像サイズを取得するための関数で、一般的に画像ファイルを処理する Web アプリケーションで実装されています。Getimagesize() 関数では、画像ファイルの処理において php_handle_iff() 関数および php_handle_jpeg() 関数を呼び出しています。\r\n\r\nPHP 4.3.10 以前/5.0.3 以前には、これらの関数に以下の複数のセキュリティ問題が存在します。\r\n\r\n・php_handle_iff() 関数において \"size\" にマイナスの値がセットされている場合のチェックが適切に行われないため、無限ループに陥り、CPU 資源が大量に消費される問題 (CAN-2005-0524)\r\n\r\n・php_handle_jpeg() 関数において JPEG ファイルのファイル長フィールドにマイナスの値がセットされている場合のチェックが適切に行われないため、無限ループに陥り、CPU 資源が大量に消費される問題 (CAN-2005-0525)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した画像ファイルを取り扱わせることにより、 CPU 資源を大量に消費させ、結果として標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、PHP 4.3.11/5.0.4 では上記の問題以外に、複数のセキュリティ問題、及びバグが修正されており、PHP 4.3.11/5.0.4 にアップデートすることが PHP Group より強く推奨されています。",
-  "identifier": "JVNDB-2005-000209",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0524",
-      "source": "CVE",
-      "id": "CVE-2005-0524"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0524",
-      "source": "NVD",
-      "id": "CVE-2005-0524"
-    },
-    {
-      "text": "http://secunia.com/advisories/14792/",
-      "source": "SECUNIA",
-      "id": "SA14792"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12962",
-      "source": "BID",
-      "id": "12962"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12963",
-      "source": "BID",
-      "id": "12963"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:oracle:application_server",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Application Server"
-    },
-    {
-      "text": "cpe:/a:php:php",
-      "version": "2.2",
-      "vendor": "The PHP Group",
-      "product": "PHP"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:turbolinux:turbolinux_server",
-      "version": "2.2",
-      "vendor": "ターボリナックス",
-      "product": "Turbolinux Server"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000209.html",
+	"title": "PHP の php_handle_iff 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000209.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nPHP で定義される getimagesize() 関数は様々な形式の画像サイズを取得するための関数で、一般的に画像ファイルを処理する Web アプリケーションで実装されています。Getimagesize() 関数では、画像ファイルの処理において php_handle_iff() 関数および php_handle_jpeg() 関数を呼び出しています。\r\n\r\nPHP 4.3.10 以前/5.0.3 以前には、これらの関数に以下の複数のセキュリティ問題が存在します。\r\n\r\n・php_handle_iff() 関数において \"size\" にマイナスの値がセットされている場合のチェックが適切に行われないため、無限ループに陥り、CPU 資源が大量に消費される問題 (CAN-2005-0524)\r\n\r\n・php_handle_jpeg() 関数において JPEG ファイルのファイル長フィールドにマイナスの値がセットされている場合のチェックが適切に行われないため、無限ループに陥り、CPU 資源が大量に消費される問題 (CAN-2005-0525)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成した画像ファイルを取り扱わせることにより、 CPU 資源を大量に消費させ、結果として標的システムをサービス不能状態に陥らせる可能性があります。\r\n\r\n尚、PHP 4.3.11/5.0.4 では上記の問題以外に、複数のセキュリティ問題、及びバグが修正されており、PHP 4.3.11/5.0.4 にアップデートすることが PHP Group より強く推奨されています。",
+	"identifier": "JVNDB-2005-000209",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0524",
+			"source": "CVE",
+			"id": "CVE-2005-0524"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0524",
+			"source": "NVD",
+			"id": "CVE-2005-0524"
+		},
+		{
+			"text": "http://secunia.com/advisories/14792/",
+			"source": "SECUNIA",
+			"id": "SA14792"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12962",
+			"source": "BID",
+			"id": "12962"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12963",
+			"source": "BID",
+			"id": "12963"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:oracle:application_server",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Application Server"
+		},
+		{
+			"text": "cpe:/a:php:php",
+			"version": "2.2",
+			"vendor": "The PHP Group",
+			"product": "PHP"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:turbolinux:turbolinux_server",
+			"version": "2.2",
+			"vendor": "ターボリナックス",
+			"product": "Turbolinux Server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

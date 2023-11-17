@@ -1,120 +1,120 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000093.html",
-  "title": "Ethereal の 複数のプロトコル解析部におけるバッファオーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000093.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal 0.8.13 - 0.10.2 では、以下の複数のプロトコルの解釈部で境界チェックが適切に行われないために、バッファオーバーフローを生じる問題が存在します。\r\n\r\n  BGP (Border Gateway Protocol)   \r\n  EIGRP (Enhanced Interior Gateway Routing Protocol)  \r\n  IGAP (Internet Group membership Authentication Protocol)  \r\n  IrDA (Infrared Data Association)  \r\n  ISUP (ISDN User Part)  \r\n  NetFlow v9\r\n  PGM (Pragmatic General Multicast)  \r\n  TCAP (Transaction Capabilities Application Part) \r\n  UCP (Universal Computer Protocol)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成したパケットを標的システムが監視しているネットワークに送り付けることにより、Ethereal をクラッシュさせる、さらには Ethereal の実行権限 (通常 root 権限) で任意のコードを実行できる可能性が存在します。\r\n\r\nまた、Ethereal 0.8.13 - 0.10.2 には、上記の問題のほか、Ethereal がクラッシュする以下のような問題が報告されています。\r\n\r\n・長さゼロの Presentation protocol selector によって、Ethereal がクラッシュする問題\r\n\r\n・意図的に作成された RADIUS パケットを解析することで、Ethereal がクラッシュする問題\r\n\r\n・意図的に作成されたカラーフィルタファイルによって、セグメンテーションフォルトが生じる問題",
-  "identifier": "JVNDB-2004-000093",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0176",
-      "source": "CVE",
-      "id": "CVE-2004-0176"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0176",
-      "source": "NVD",
-      "id": "CVE-2004-0176"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/740188",
-      "source": "CERT-VN",
-      "id": "VU#740188"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/931588",
-      "source": "CERT-VN",
-      "id": "VU#931588"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/659140",
-      "source": "CERT-VN",
-      "id": "VU#659140"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/591820",
-      "source": "CERT-VN",
-      "id": "VU#591820"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/125156",
-      "source": "CERT-VN",
-      "id": "VU#125156"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/433596",
-      "source": "CERT-VN",
-      "id": "VU#433596"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/695486",
-      "source": "CERT-VN",
-      "id": "VU#695486"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/124454",
-      "source": "CERT-VN",
-      "id": "VU#124454"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/644886",
-      "source": "CERT-VN",
-      "id": "VU#644886"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/864884",
-      "source": "CERT-VN",
-      "id": "VU#864884"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/792286",
-      "source": "CERT-VN",
-      "id": "VU#792286"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/119876",
-      "source": "CERT-VN",
-      "id": "VU#119876"
-    },
-    {
-      "text": "http://secunia.com/advisories/11185/",
-      "source": "SECUNIA",
-      "id": "SA11185"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/9952",
-      "source": "BID",
-      "id": "9952"
-    },
-    {
-      "text": "http://www.securitytracker.com/alerts/2004/Mar/1009535.html",
-      "source": "SECTRACK",
-      "id": "1009535"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000093.html",
+	"title": "Ethereal の 複数のプロトコル解析部におけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2004/JVNDB-2004-000093.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nEthereal 0.8.13 - 0.10.2 では、以下の複数のプロトコルの解釈部で境界チェックが適切に行われないために、バッファオーバーフローを生じる問題が存在します。\r\n\r\n  BGP (Border Gateway Protocol)   \r\n  EIGRP (Enhanced Interior Gateway Routing Protocol)  \r\n  IGAP (Internet Group membership Authentication Protocol)  \r\n  IrDA (Infrared Data Association)  \r\n  ISUP (ISDN User Part)  \r\n  NetFlow v9\r\n  PGM (Pragmatic General Multicast)  \r\n  TCAP (Transaction Capabilities Application Part) \r\n  UCP (Universal Computer Protocol)\r\n\r\nこれらの問題を利用するリモートの攻撃者は、意図的に作成したパケットを標的システムが監視しているネットワークに送り付けることにより、Ethereal をクラッシュさせる、さらには Ethereal の実行権限 (通常 root 権限) で任意のコードを実行できる可能性が存在します。\r\n\r\nまた、Ethereal 0.8.13 - 0.10.2 には、上記の問題のほか、Ethereal がクラッシュする以下のような問題が報告されています。\r\n\r\n・長さゼロの Presentation protocol selector によって、Ethereal がクラッシュする問題\r\n\r\n・意図的に作成された RADIUS パケットを解析することで、Ethereal がクラッシュする問題\r\n\r\n・意図的に作成されたカラーフィルタファイルによって、セグメンテーションフォルトが生じる問題",
+	"identifier": "JVNDB-2004-000093",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0176",
+			"source": "CVE",
+			"id": "CVE-2004-0176"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-0176",
+			"source": "NVD",
+			"id": "CVE-2004-0176"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/740188",
+			"source": "CERT-VN",
+			"id": "VU#740188"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/931588",
+			"source": "CERT-VN",
+			"id": "VU#931588"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/659140",
+			"source": "CERT-VN",
+			"id": "VU#659140"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/591820",
+			"source": "CERT-VN",
+			"id": "VU#591820"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/125156",
+			"source": "CERT-VN",
+			"id": "VU#125156"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/433596",
+			"source": "CERT-VN",
+			"id": "VU#433596"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/695486",
+			"source": "CERT-VN",
+			"id": "VU#695486"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/124454",
+			"source": "CERT-VN",
+			"id": "VU#124454"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/644886",
+			"source": "CERT-VN",
+			"id": "VU#644886"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/864884",
+			"source": "CERT-VN",
+			"id": "VU#864884"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/792286",
+			"source": "CERT-VN",
+			"id": "VU#792286"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/119876",
+			"source": "CERT-VN",
+			"id": "VU#119876"
+		},
+		{
+			"text": "http://secunia.com/advisories/11185/",
+			"source": "SECUNIA",
+			"id": "SA11185"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/9952",
+			"source": "BID",
+			"id": "9952"
+		},
+		{
+			"text": "http://www.securitytracker.com/alerts/2004/Mar/1009535.html",
+			"source": "SECTRACK",
+			"id": "1009535"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

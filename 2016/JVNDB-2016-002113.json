@@ -1,75 +1,75 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002113.html",
-  "title": "libssh における SSH セッションを復号される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002113.html",
-  "description": "libssh は、(1) ディフィー・ヘルマン グループ 1 および (2) ディフィー・ヘルマン グループ 14 鍵交換メソッド用に生成された短期（ephemeral）秘密鍵を 128 ビットに不適切に切り詰めるため、SSH セッションを復号または傍受される脆弱性が存在します。\r\n\r\n本脆弱性は、\"bits/bytes confusion bug\" と呼ばれています。",
-  "identifier": "JVNDB-2016-002113",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0739",
-      "source": "CVE",
-      "id": "CVE-2016-0739"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0739",
-      "source": "NVD",
-      "id": "CVE-2016-0739"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-      "id": "CWE-200",
-      "title": "情報漏えい(CWE-200)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:libssh:libssh",
-      "version": "2.2",
-      "vendor": "libssh",
-      "product": "libssh"
-    },
-    {
-      "text": "cpe:/o:canonical:ubuntu",
-      "version": "2.2",
-      "vendor": "Canonical",
-      "product": "Ubuntu"
-    },
-    {
-      "text": "cpe:/o:debian:debian_linux",
-      "version": "2.2",
-      "vendor": "Debian",
-      "product": "Debian GNU/Linux"
-    },
-    {
-      "text": "cpe:/o:fedoraproject:fedora",
-      "version": "2.2",
-      "vendor": "Fedora Project",
-      "product": "Fedora"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "5.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
-    }
-  ],
-  "date": "2016-04-20T14:42+09:00",
-  "issued": "2016-04-20T14:42+09:00",
-  "modified": "2016-04-20T14:42+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002113.html",
+	"title": "libssh における SSH セッションを復号される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-002113.html",
+	"description": "libssh は、(1) ディフィー・ヘルマン グループ 1 および (2) ディフィー・ヘルマン グループ 14 鍵交換メソッド用に生成された短期（ephemeral）秘密鍵を 128 ビットに不適切に切り詰めるため、SSH セッションを復号または傍受される脆弱性が存在します。\r\n\r\n本脆弱性は、\"bits/bytes confusion bug\" と呼ばれています。",
+	"identifier": "JVNDB-2016-002113",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0739",
+			"source": "CVE",
+			"id": "CVE-2016-0739"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0739",
+			"source": "NVD",
+			"id": "CVE-2016-0739"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:libssh:libssh",
+			"version": "2.2",
+			"vendor": "libssh",
+			"product": "libssh"
+		},
+		{
+			"text": "cpe:/o:canonical:ubuntu",
+			"version": "2.2",
+			"vendor": "Canonical",
+			"product": "Ubuntu"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "5.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2016-04-20T14:42+09:00",
+	"issued": "2016-04-20T14:42+09:00",
+	"modified": "2016-04-20T14:42+09:00"
 }

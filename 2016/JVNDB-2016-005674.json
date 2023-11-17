@@ -1,76 +1,76 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005674.html",
-  "title": "ISC BIND の DNAME レコードを含む応答パケットの処理に脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005674.html",
-  "description": "ISC BIND には、DNAME レコードを含む応答パケットの処理に問題があり、db.c もしくは resolver.c で assertion failture (表明違反) が発生し、その結果 named が異常終了する可能性があります。\r\n(resolver.c で assertion failure が発生した場合には \"INSIST((valoptions & 0x0002U) != 0) failed\"、db.c で assertion failure が発生した場合には \"REQUIRE(targetp != ((void *)0) && *targetp == ((void *)0)) failed\" というエラーメッセージが出力されます。)\r\n\r\n開発者によると、2016年11月2日時点で攻撃は観測されていませんが、クラッシュを引き起こすクエリについては公開のメーリングリスト上で言及されています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-19: Data Handling (データ処理) と識別されています。\r\nhttps://cwe.mitre.org/data/definitions/19.html",
-  "identifier": "JVNDB-2016-005674",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU92683474/index.html",
-      "source": "JVN",
-      "id": "JVNVU#92683474"
-    },
-    {
-      "text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8864",
-      "source": "CVE",
-      "id": "CVE-2016-8864"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8864",
-      "source": "NVD",
-      "id": "CVE-2016-8864"
-    },
-    {
-      "text": "https://www.jpcert.or.jp/at/2016/at160044.html",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2016-0044"
-    },
-    {
-      "text": "https://jprs.jp/tech/security/2016-11-02-bind9-vuln-dname.html",
-      "source": "JPRS",
-      "id": "（緊急）BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2016-8864）"
-    },
-    {
-      "text": "https://www.nic.ad.jp/ja/topics/2016/20161102-01.html",
-      "source": "JPNIC",
-      "id": "DNAMEを含む応答の処理に関わる BIND 9の脆弱性について(2016年11月) "
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:isc:bind",
-      "version": "2.2",
-      "vendor": "ISC, Inc.",
-      "product": "BIND"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    },
-    {
-      "version": "3.0",
-      "score": "7.5",
-      "type": "Base",
-      "severity": "High",
-      "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-    }
-  ],
-  "date": "2016-11-10T16:07+09:00",
-  "issued": "2016-11-02T16:54+09:00",
-  "modified": "2016-11-10T16:07+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005674.html",
+	"title": "ISC BIND の DNAME レコードを含む応答パケットの処理に脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-005674.html",
+	"description": "ISC BIND には、DNAME レコードを含む応答パケットの処理に問題があり、db.c もしくは resolver.c で assertion failture (表明違反) が発生し、その結果 named が異常終了する可能性があります。\r\n(resolver.c で assertion failure が発生した場合には \"INSIST((valoptions & 0x0002U) != 0) failed\"、db.c で assertion failure が発生した場合には \"REQUIRE(targetp != ((void *)0) && *targetp == ((void *)0)) failed\" というエラーメッセージが出力されます。)\r\n\r\n開発者によると、2016年11月2日時点で攻撃は観測されていませんが、クラッシュを引き起こすクエリについては公開のメーリングリスト上で言及されています。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-19: Data Handling (データ処理) と識別されています。\r\nhttps://cwe.mitre.org/data/definitions/19.html",
+	"identifier": "JVNDB-2016-005674",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU92683474/index.html",
+			"source": "JVN",
+			"id": "JVNVU#92683474"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8864",
+			"source": "CVE",
+			"id": "CVE-2016-8864"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-8864",
+			"source": "NVD",
+			"id": "CVE-2016-8864"
+		},
+		{
+			"text": "https://www.jpcert.or.jp/at/2016/at160044.html",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2016-0044"
+		},
+		{
+			"text": "https://jprs.jp/tech/security/2016-11-02-bind9-vuln-dname.html",
+			"source": "JPRS",
+			"id": "（緊急）BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2016-8864）"
+		},
+		{
+			"text": "https://www.nic.ad.jp/ja/topics/2016/20161102-01.html",
+			"source": "JPNIC",
+			"id": "DNAMEを含む応答の処理に関わる BIND 9の脆弱性について(2016年11月) "
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:isc:bind",
+			"version": "2.2",
+			"vendor": "ISC, Inc.",
+			"product": "BIND"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2016-11-10T16:07+09:00",
+	"issued": "2016-11-02T16:54+09:00",
+	"modified": "2016-11-10T16:07+09:00"
 }

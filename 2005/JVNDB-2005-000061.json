@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000061.html",
-  "title": "Novell Evolution における不正なメッセージによるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000061.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nNovell Evolution は、電子メール、カレンダ、タスク、および連絡先管理ツールが統合されたアプリケーションで、ロックファイルを標準のメールディレクトリに作成するためのヘルパプログラムである Camel-Lock-Helper が実装されています。\r\n\r\nNovell Evolution 2.0.4 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) 電子メールに添付されているファイル名の文字セットが適切に処理されない問題が存在します。(CAN-2005-0806) (Novell Evolution 2.0.4 以前) \r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成したファイルを電子メールに添付して送りつけることにより、Evolution をクラッシュさせ、結果としてサービス不能状態に陥らせる可能性があります。\r\n\r\n2) camel-lock-helper.c の main() 関数において、-1 の値を受け取った場合にゼロバイトのメモリが割り当てられるため、整数オーバーフローが発生する問題が存在します。(CAN-2005-0102) (Novell Evolution 2.0.3 以前) \r\n\r\nこの問題を利用するローカルの攻撃者、あるいは悪意ある POP3 サーバに標的ユーザを誘導することが可能であるリモートの攻撃者は、意図的な値を Camel-Lock-Helper プログラムに渡すことで整数オーバーフローを発生させ、結果として Camel-Lock-Helper プログラムの動作権限で任意のコードを実行する可能性があります。\r\n\r\nまた、Camel-Lock-Helper プログラムに setuid root ビットが付与されている場合には、root 権限が奪取される可能性があります。\r\n\r\n尚、Red Hat Enterprise Linux では、Camel-Lock-Helper プログラムにはデフォルトで setuid root ビットは付与されていません。ただし、ソース RPM から root ユーザとして Novell Evolution を再度ビルドしている場合には、setuid root ビットが付与されている可能性があります。",
-  "identifier": "JVNDB-2005-000061",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0806",
-      "source": "CVE",
-      "id": "CVE-2005-0806"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0806",
-      "source": "NVD",
-      "id": "CVE-2005-0806"
-    },
-    {
-      "text": "http://secunia.com/advisories/13830/",
-      "source": "SECUNIA",
-      "id": "SA13830"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/12354",
-      "source": "BID",
-      "id": "12354"
-    },
-    {
-      "text": "http://xforce.iss.net/xforce/xfdb/19031",
-      "source": "XF",
-      "id": "19031"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.0",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000061.html",
+	"title": "Novell Evolution における不正なメッセージによるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2005/JVNDB-2005-000061.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nNovell Evolution は、電子メール、カレンダ、タスク、および連絡先管理ツールが統合されたアプリケーションで、ロックファイルを標準のメールディレクトリに作成するためのヘルパプログラムである Camel-Lock-Helper が実装されています。\r\n\r\nNovell Evolution 2.0.4 以前には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n1) 電子メールに添付されているファイル名の文字セットが適切に処理されない問題が存在します。(CAN-2005-0806) (Novell Evolution 2.0.4 以前) \r\n\r\nこの問題を利用するリモートの攻撃者は、意図的に作成したファイルを電子メールに添付して送りつけることにより、Evolution をクラッシュさせ、結果としてサービス不能状態に陥らせる可能性があります。\r\n\r\n2) camel-lock-helper.c の main() 関数において、-1 の値を受け取った場合にゼロバイトのメモリが割り当てられるため、整数オーバーフローが発生する問題が存在します。(CAN-2005-0102) (Novell Evolution 2.0.3 以前) \r\n\r\nこの問題を利用するローカルの攻撃者、あるいは悪意ある POP3 サーバに標的ユーザを誘導することが可能であるリモートの攻撃者は、意図的な値を Camel-Lock-Helper プログラムに渡すことで整数オーバーフローを発生させ、結果として Camel-Lock-Helper プログラムの動作権限で任意のコードを実行する可能性があります。\r\n\r\nまた、Camel-Lock-Helper プログラムに setuid root ビットが付与されている場合には、root 権限が奪取される可能性があります。\r\n\r\n尚、Red Hat Enterprise Linux では、Camel-Lock-Helper プログラムにはデフォルトで setuid root ビットは付与されていません。ただし、ソース RPM から root ユーザとして Novell Evolution を再度ビルドしている場合には、setuid root ビットが付与されている可能性があります。",
+	"identifier": "JVNDB-2005-000061",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0806",
+			"source": "CVE",
+			"id": "CVE-2005-0806"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2005-0806",
+			"source": "NVD",
+			"id": "CVE-2005-0806"
+		},
+		{
+			"text": "http://secunia.com/advisories/13830/",
+			"source": "SECUNIA",
+			"id": "SA13830"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/12354",
+			"source": "BID",
+			"id": "12354"
+		},
+		{
+			"text": "http://xforce.iss.net/xforce/xfdb/19031",
+			"source": "XF",
+			"id": "19031"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

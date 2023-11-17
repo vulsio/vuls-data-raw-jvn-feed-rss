@@ -1,64 +1,64 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001686.html",
-  "title": "Unbound DNS リゾルバにサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001686.html",
-  "description": "Unbound DNS リゾルバには、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nUnbound DNS リゾルバには、細工された DNS クエリを受信した際に空の UDP パケットで応答することに起因する、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nなお、開発者から以下の脆弱性情報が公開されています。\r\n\r\n\"Certain types of DNS queries may cause Unbound to respond with a DNS error message. The code generating this error message contains an error whereby Unbound constructs an empty UDP message. That empty UDP message triggers an assertion failsafe in the part of Unbound that is invoked when the interface-automatic option is set. In the case that the interface-automatic option was not set or assertion failsafe is not configured the empty packets would be sent, which is not harmful. The error can only be triggered when Unbound is configured with assertions (--enable-checking or --enable-debug) and has the option interface-automatic turned on.\r\n\r\nVersions in which this error occurs: Unbound 1.0 up to and including Unbound 1.4.9\r\n\r\n　　* FreeBSD ports for Unbound are not susceptible by default, as it does not enable assertions.\r\n　　* RHEL/Fedora systems do compile Unbound with --enable-checking but do not set automatic-interface:yes per default.\r\n　　* Debian/Ubuntu Unbound packages do not compile with assertions by default.\"",
-  "identifier": "JVNDB-2011-001686",
-  "references": [
-    {
-      "text": "http://jvn.jp/cert/JVNVU531342",
-      "source": "JVN",
-      "id": "JVNVU#531342"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1922",
-      "source": "CVE",
-      "id": "CVE-2011-1922"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1922",
-      "source": "NVD",
-      "id": "CVE-2011-1922"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/531342",
-      "source": "CERT-VN",
-      "id": "VU#531342"
-    },
-    {
-      "text": "http://jprs.jp/tech/security/2011-05-27-unbound-vuln-error-packet-handling.html",
-      "source": "JPRS",
-      "id": "Unbound 1.xのDNSエラーメッセージ送信処理の不具合を利用したDoS攻撃について"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/47986",
-      "source": "BID",
-      "id": "47986"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-      "id": "CWE-399",
-      "title": "リソース管理の問題(CWE-399)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:nlnet_labs:unbound",
-      "version": "2.2",
-      "vendor": "Stichting NLnet Labs",
-      "product": "Unbound"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
-    }
-  ],
-  "date": "2011-06-08T11:55+09:00",
-  "issued": "2011-06-08T11:55+09:00",
-  "modified": "2011-06-08T11:55+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001686.html",
+	"title": "Unbound DNS リゾルバにサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2011/JVNDB-2011-001686.html",
+	"description": "Unbound DNS リゾルバには、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nUnbound DNS リゾルバには、細工された DNS クエリを受信した際に空の UDP パケットで応答することに起因する、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nなお、開発者から以下の脆弱性情報が公開されています。\r\n\r\n\"Certain types of DNS queries may cause Unbound to respond with a DNS error message. The code generating this error message contains an error whereby Unbound constructs an empty UDP message. That empty UDP message triggers an assertion failsafe in the part of Unbound that is invoked when the interface-automatic option is set. In the case that the interface-automatic option was not set or assertion failsafe is not configured the empty packets would be sent, which is not harmful. The error can only be triggered when Unbound is configured with assertions (--enable-checking or --enable-debug) and has the option interface-automatic turned on.\r\n\r\nVersions in which this error occurs: Unbound 1.0 up to and including Unbound 1.4.9\r\n\r\n　　* FreeBSD ports for Unbound are not susceptible by default, as it does not enable assertions.\r\n　　* RHEL/Fedora systems do compile Unbound with --enable-checking but do not set automatic-interface:yes per default.\r\n　　* Debian/Ubuntu Unbound packages do not compile with assertions by default.\"",
+	"identifier": "JVNDB-2011-001686",
+	"references": [
+		{
+			"text": "http://jvn.jp/cert/JVNVU531342",
+			"source": "JVN",
+			"id": "JVNVU#531342"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1922",
+			"source": "CVE",
+			"id": "CVE-2011-1922"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-1922",
+			"source": "NVD",
+			"id": "CVE-2011-1922"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/531342",
+			"source": "CERT-VN",
+			"id": "VU#531342"
+		},
+		{
+			"text": "http://jprs.jp/tech/security/2011-05-27-unbound-vuln-error-packet-handling.html",
+			"source": "JPRS",
+			"id": "Unbound 1.xのDNSエラーメッセージ送信処理の不具合を利用したDoS攻撃について"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/47986",
+			"source": "BID",
+			"id": "47986"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
+			"id": "CWE-399",
+			"title": "リソース管理の問題(CWE-399)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:nlnet_labs:unbound",
+			"version": "2.2",
+			"vendor": "Stichting NLnet Labs",
+			"product": "Unbound"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+		}
+	],
+	"date": "2011-06-08T11:55+09:00",
+	"issued": "2011-06-08T11:55+09:00",
+	"modified": "2011-06-08T11:55+09:00"
 }

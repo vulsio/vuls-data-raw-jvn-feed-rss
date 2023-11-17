@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001851.html",
-  "title": "PostgreSQL の contrib/hstore/hstore_io.c における整数オーバーフローの脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001851.html",
-  "description": "PostgreSQL の contrib/hstore/hstore_io.c には、以下の関数に関する処理に不備があり、バッファオーバーフローを誘発されるため、整数オーバーフローの脆弱性が存在します。\r\n\r\n(1) contrib/hstore/hstore_io.c の hstore_recv 関数\r\n(2) contrib/hstore/hstore_io.c の hstore_from_arrays 関数\r\n(3) contrib/hstore/hstore_io.c の hstore_from_array 関数\r\n(4) contrib/hstore/hstore_op.c の hstoreArrayToPairs 関数\r\n\r\n本脆弱性は、影響を受けるバージョンが異なるため、CVE-2014-0064 から分割されました。",
-  "identifier": "JVNDB-2014-001851",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2669",
-      "source": "CVE",
-      "id": "CVE-2014-2669"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2669",
-      "source": "NVD",
-      "id": "CVE-2014-2669"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
-      "id": "CWE-189",
-      "title": "数値処理の問題(CWE-189)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:postgresql:postgresql",
-      "version": "2.2",
-      "vendor": "PostgreSQL.org",
-      "product": "PostgreSQL"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.5",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
-    }
-  ],
-  "date": "2014-05-26T18:17+09:00",
-  "issued": "2014-04-01T18:14+09:00",
-  "modified": "2014-05-26T18:17+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001851.html",
+	"title": "PostgreSQL の contrib/hstore/hstore_io.c における整数オーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-001851.html",
+	"description": "PostgreSQL の contrib/hstore/hstore_io.c には、以下の関数に関する処理に不備があり、バッファオーバーフローを誘発されるため、整数オーバーフローの脆弱性が存在します。\r\n\r\n(1) contrib/hstore/hstore_io.c の hstore_recv 関数\r\n(2) contrib/hstore/hstore_io.c の hstore_from_arrays 関数\r\n(3) contrib/hstore/hstore_io.c の hstore_from_array 関数\r\n(4) contrib/hstore/hstore_op.c の hstoreArrayToPairs 関数\r\n\r\n本脆弱性は、影響を受けるバージョンが異なるため、CVE-2014-0064 から分割されました。",
+	"identifier": "JVNDB-2014-001851",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2669",
+			"source": "CVE",
+			"id": "CVE-2014-2669"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-2669",
+			"source": "NVD",
+			"id": "CVE-2014-2669"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-189.html",
+			"id": "CWE-189",
+			"title": "数値処理の問題(CWE-189)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:postgresql:postgresql",
+			"version": "2.2",
+			"vendor": "PostgreSQL.org",
+			"product": "PostgreSQL"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+		}
+	],
+	"date": "2014-05-26T18:17+09:00",
+	"issued": "2014-04-01T18:14+09:00",
+	"modified": "2014-05-26T18:17+09:00"
 }

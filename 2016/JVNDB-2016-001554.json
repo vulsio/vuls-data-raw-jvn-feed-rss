@@ -1,247 +1,247 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001554.html",
-  "title": "SSLv2 の暗号通信を解読可能な脆弱性 (DROWN 攻撃)",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001554.html",
-  "description": "SSLv2 は、十分な回数のハンドシェイクの情報を収集できる場合、暗号通信を解読される可能性があります。これは \"DROWN 攻撃\" という名称で報じられています。\r\n\r\n研究者によれば、DROWN 攻撃は、Bleichenbacher のパディングオラクル攻撃の新たな手法です。攻撃者は SSLv2 をサポートしている脆弱なサーバから暗号化された通信内容を解読することが可能です。TLS 通信であっても、SSLv2 のサーバから取得されたものと同一の秘密鍵を使用していた場合、攻撃者は通信内容を解読することが可能です。\r\n\r\n本脆弱性の影響を直接受けるのは SSLv2 のみですが、研究者のウェブサイトによると、多くのサーバが SSLv2 と TLS で共通のサーバ証明書を使用しているとのことです。なお、この攻撃では、1,000回程度の SSL ハンドシェイクの情報を取得しておく必要があります。\r\n\r\n研究者のウェブサイト\r\nhttps://drownattack.com/\r\n\r\n研究者は DROWN 攻撃の確認ツールと、更なる詳細を掲載した FAQ を公開しています。\r\n\r\n確認ツール\r\nhttps://drownattack.com/#check\r\n\r\nFAQ\r\nhttps://drownattack.com/#question-answer\r\n",
-  "identifier": "JVNDB-2016-001554",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU90617353/index.html",
-      "source": "JVN",
-      "id": "JVNVU#90617353"
-    },
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0800",
-      "source": "CVE",
-      "id": "CVE-2016-0800"
-    },
-    {
-      "text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0800",
-      "source": "NVD",
-      "id": "CVE-2016-0800"
-    },
-    {
-      "text": "http://www.jpcert.or.jp/at/2016/at160010.html",
-      "source": "JPCERT-AT",
-      "id": "JPCERT-AT-2016-0010"
-    },
-    {
-      "text": "http://www.kb.cert.org/vuls/id/583776",
-      "source": "CERT-VN",
-      "id": "VU#583776"
-    },
-    {
-      "text": "https://ics-cert.us-cert.gov/advisories/ICSA-16-103-03",
-      "source": "ICS-CERT ADVISORY",
-      "id": "ICSA-16-103-03"
-    },
-    {
-      "text": "https://drownattack.com/",
-      "source": "関連文書",
-      "id": "The DROWN Attack"
-    },
-    {
-      "text": "http://tools.ietf.org/html/rfc6176",
-      "source": "関連文書",
-      "id": "RFC 6176 - Prohibiting Secure Sockets Layer (SSL) Version 2.0"
-    },
-    {
-      "text": "http://undeadly.org/cgi?action=article&sid=20160301141941",
-      "source": "関連文書",
-      "id": "LibreSSL not affected by DROWN attack"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-      "id": "CWE-200",
-      "title": "情報漏えい(CWE-200)"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
-      "id": "CWE-310",
-      "title": "暗号の問題(CWE-310)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Application Server Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Light Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Professional Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Standard Version 6"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_developer_version_5",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Developer Version 5"
-    },
-    {
-      "text": "cpe:/a:hitachi:cosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Cosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:hitachi_web_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "Hitachi Web Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Enterprise"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Smart Edition"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Application Server Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_light",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Light"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_developer_standard",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Developer Standard"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_primary_server",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Primary Server"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_architect",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Architect"
-    },
-    {
-      "text": "cpe:/a:hitachi:ucosminexus_service_platform",
-      "version": "2.2",
-      "vendor": "日立",
-      "product": "uCosminexus Service Platform"
-    },
-    {
-      "text": "cpe:/a:hp:insight_control_server_deployment",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード・エンタープライズ",
-      "product": "HPE Insight Controlサーバー配備"
-    },
-    {
-      "text": "cpe:/a:hp:oneview",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード・エンタープライズ",
-      "product": "HPE Oneview"
-    },
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    },
-    {
-      "text": "cpe:/a:oracle:communications_session_border_controller",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Communications Session Border Controller"
-    },
-    {
-      "text": "cpe:/a:oracle:mysql",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "MySQL"
-    },
-    {
-      "text": "cpe:/a:oracle:xcp",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "XCP"
-    },
-    {
-      "text": "cpe:/h:hp:virtual_connect",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード・エンタープライズ",
-      "product": "HPE Virtual Connect"
-    },
-    {
-      "text": "cpe:/o:hp:bladesystem",
-      "version": "2.2",
-      "vendor": "ヒューレット・パッカード・エンタープライズ",
-      "product": "HPE BladeSystem"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "5.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
-    }
-  ],
-  "date": "2016-11-14T17:56+09:00",
-  "issued": "2016-03-03T14:19+09:00",
-  "modified": "2016-11-14T17:56+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001554.html",
+	"title": "SSLv2 の暗号通信を解読可能な脆弱性 (DROWN 攻撃)",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001554.html",
+	"description": "SSLv2 は、十分な回数のハンドシェイクの情報を収集できる場合、暗号通信を解読される可能性があります。これは \"DROWN 攻撃\" という名称で報じられています。\r\n\r\n研究者によれば、DROWN 攻撃は、Bleichenbacher のパディングオラクル攻撃の新たな手法です。攻撃者は SSLv2 をサポートしている脆弱なサーバから暗号化された通信内容を解読することが可能です。TLS 通信であっても、SSLv2 のサーバから取得されたものと同一の秘密鍵を使用していた場合、攻撃者は通信内容を解読することが可能です。\r\n\r\n本脆弱性の影響を直接受けるのは SSLv2 のみですが、研究者のウェブサイトによると、多くのサーバが SSLv2 と TLS で共通のサーバ証明書を使用しているとのことです。なお、この攻撃では、1,000回程度の SSL ハンドシェイクの情報を取得しておく必要があります。\r\n\r\n研究者のウェブサイト\r\nhttps://drownattack.com/\r\n\r\n研究者は DROWN 攻撃の確認ツールと、更なる詳細を掲載した FAQ を公開しています。\r\n\r\n確認ツール\r\nhttps://drownattack.com/#check\r\n\r\nFAQ\r\nhttps://drownattack.com/#question-answer\r\n",
+	"identifier": "JVNDB-2016-001554",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU90617353/index.html",
+			"source": "JVN",
+			"id": "JVNVU#90617353"
+		},
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0800",
+			"source": "CVE",
+			"id": "CVE-2016-0800"
+		},
+		{
+			"text": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-0800",
+			"source": "NVD",
+			"id": "CVE-2016-0800"
+		},
+		{
+			"text": "http://www.jpcert.or.jp/at/2016/at160010.html",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2016-0010"
+		},
+		{
+			"text": "http://www.kb.cert.org/vuls/id/583776",
+			"source": "CERT-VN",
+			"id": "VU#583776"
+		},
+		{
+			"text": "https://ics-cert.us-cert.gov/advisories/ICSA-16-103-03",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-16-103-03"
+		},
+		{
+			"text": "https://drownattack.com/",
+			"source": "関連文書",
+			"id": "The DROWN Attack"
+		},
+		{
+			"text": "http://tools.ietf.org/html/rfc6176",
+			"source": "関連文書",
+			"id": "RFC 6176 - Prohibiting Secure Sockets Layer (SSL) Version 2.0"
+		},
+		{
+			"text": "http://undeadly.org/cgi?action=article&sid=20160301141941",
+			"source": "関連文書",
+			"id": "LibreSSL not affected by DROWN attack"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
+			"id": "CWE-310",
+			"title": "暗号の問題(CWE-310)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_application_server_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Application Server Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_light_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Light Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_professional_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Professional Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_standard_version_6",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Standard Version 6"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_developer_version_5",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Developer Version 5"
+		},
+		{
+			"text": "cpe:/a:hitachi:cosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Cosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:hitachi_web_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "Hitachi Web Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_enterprise",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Enterprise"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_smart_edition",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Smart Edition"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_application_server_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Application Server Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_light",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Light"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_developer_standard",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Developer Standard"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_primary_server",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Primary Server"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_architect",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Architect"
+		},
+		{
+			"text": "cpe:/a:hitachi:ucosminexus_service_platform",
+			"version": "2.2",
+			"vendor": "日立",
+			"product": "uCosminexus Service Platform"
+		},
+		{
+			"text": "cpe:/a:hp:insight_control_server_deployment",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード・エンタープライズ",
+			"product": "HPE Insight Controlサーバー配備"
+		},
+		{
+			"text": "cpe:/a:hp:oneview",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード・エンタープライズ",
+			"product": "HPE Oneview"
+		},
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		},
+		{
+			"text": "cpe:/a:oracle:communications_session_border_controller",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Communications Session Border Controller"
+		},
+		{
+			"text": "cpe:/a:oracle:mysql",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "MySQL"
+		},
+		{
+			"text": "cpe:/a:oracle:xcp",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "XCP"
+		},
+		{
+			"text": "cpe:/h:hp:virtual_connect",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード・エンタープライズ",
+			"product": "HPE Virtual Connect"
+		},
+		{
+			"text": "cpe:/o:hp:bladesystem",
+			"version": "2.2",
+			"vendor": "ヒューレット・パッカード・エンタープライズ",
+			"product": "HPE BladeSystem"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "5.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2016-11-14T17:56+09:00",
+	"issued": "2016-03-03T14:19+09:00",
+	"modified": "2016-11-14T17:56+09:00"
 }

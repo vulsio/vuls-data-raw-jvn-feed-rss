@@ -1,122 +1,122 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001348.html",
-  "title": "MariaDB などの製品の sql-common/client.c の ssl_verify_server_cert 関数における SSL サーバになりすまされる脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001348.html",
-  "description": "MariaDB、Oracle MySQL、および Percona Server の sql-common/client.c の ssl_verify_server_cert 関数は、サーバのホスト名が X.509 証明書のサブジェクトの Common Name (CN) または subjectAltName フィールドのドメイン名と一致することを適切に検証しないため、SSL サーバになりすまされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-254: Security Features (セキュリティ機能) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/254.html",
-  "identifier": "JVNDB-2016-001348",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2047",
-      "source": "CVE",
-      "id": "CVE-2016-2047"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2047",
-      "source": "NVD",
-      "id": "CVE-2016-2047"
-    },
-    {
-      "text": "http://www.openwall.com/lists/oss-security/2016/01/26/3",
-      "source": "関連文書",
-      "id": "Flaw in mariadb clients SSL certificate validation"
-    },
-    {
-      "text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-      "id": "CWE-Other",
-      "title": "その他(CWE-Other)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:mariadb:mariadb",
-      "version": "2.2",
-      "vendor": "MariaDB Corporation Ab.",
-      "product": "MariaDB"
-    },
-    {
-      "text": "cpe:/a:oracle:mysql",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "MySQL"
-    },
-    {
-      "text": "cpe:/a:redhat:software_collections",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Software Collections"
-    },
-    {
-      "text": "cpe:/o:opensuse_project:leap",
-      "version": "2.2",
-      "vendor": "openSUSE project",
-      "product": "openSUSE Leap"
-    },
-    {
-      "text": "cpe:/o:oracle:linux",
-      "version": "2.2",
-      "vendor": "オラクル",
-      "product": "Oracle Linux"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_desktop",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Desktop"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_hpc_node_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux HPC Node EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server_aus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server AUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_server_eus",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Server EUS"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux_workstation",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux Workstation"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "4.3",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
-    },
-    {
-      "version": "3.0",
-      "score": "5.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
-    }
-  ],
-  "date": "2016-12-09T16:05+09:00",
-  "issued": "2016-02-10T12:32+09:00",
-  "modified": "2016-12-09T16:05+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001348.html",
+	"title": "MariaDB などの製品の sql-common/client.c の ssl_verify_server_cert 関数における SSL サーバになりすまされる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-001348.html",
+	"description": "MariaDB、Oracle MySQL、および Percona Server の sql-common/client.c の ssl_verify_server_cert 関数は、サーバのホスト名が X.509 証明書のサブジェクトの Common Name (CN) または subjectAltName フィールドのドメイン名と一致することを適切に検証しないため、SSL サーバになりすまされる脆弱性が存在します。\r\n\r\n補足情報 : CWE による脆弱性タイプは、CWE-254: Security Features (セキュリティ機能) と識別されています。\r\nhttp://cwe.mitre.org/data/definitions/254.html",
+	"identifier": "JVNDB-2016-001348",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2047",
+			"source": "CVE",
+			"id": "CVE-2016-2047"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2047",
+			"source": "NVD",
+			"id": "CVE-2016-2047"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2016/01/26/3",
+			"source": "関連文書",
+			"id": "Flaw in mariadb clients SSL certificate validation"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:mariadb:mariadb",
+			"version": "2.2",
+			"vendor": "MariaDB Corporation Ab.",
+			"product": "MariaDB"
+		},
+		{
+			"text": "cpe:/a:oracle:mysql",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "MySQL"
+		},
+		{
+			"text": "cpe:/a:redhat:software_collections",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Software Collections"
+		},
+		{
+			"text": "cpe:/o:opensuse_project:leap",
+			"version": "2.2",
+			"vendor": "openSUSE project",
+			"product": "openSUSE Leap"
+		},
+		{
+			"text": "cpe:/o:oracle:linux",
+			"version": "2.2",
+			"vendor": "オラクル",
+			"product": "Oracle Linux"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_desktop",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Desktop"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_hpc_node_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux HPC Node EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server_aus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server AUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_server_eus",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Server EUS"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux_workstation",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux Workstation"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "5.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+		}
+	],
+	"date": "2016-12-09T16:05+09:00",
+	"issued": "2016-02-10T12:32+09:00",
+	"modified": "2016-12-09T16:05+09:00"
 }

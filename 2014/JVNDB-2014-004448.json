@@ -1,44 +1,44 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004448.html",
-  "title": "Linux Kernel の kernel/futex.c 内の futex_wait 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004448.html",
-  "description": "Linux Kernel の kernel/futex.c 内の futex_wait 関数は、再キューイング処理中に特定の参照カウントを適切に保持しないため、サービス運用妨害 (解放済みメモリの使用およびシステムクラッシュ) 状態にされる、または権限を取得される脆弱性が存在します。",
-  "identifier": "JVNDB-2014-004448",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0205",
-      "source": "CVE",
-      "id": "CVE-2014-0205"
-    },
-    {
-      "text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0205",
-      "source": "NVD",
-      "id": "CVE-2014-0205"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-      "id": "CWE-119",
-      "title": "バッファエラー(CWE-119)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:linux:linux_kernel",
-      "version": "2.2",
-      "vendor": "Linux",
-      "product": "Linux Kernel"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "6.9",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2014-11-27T18:11+09:00",
-  "issued": "2014-09-30T16:22+09:00",
-  "modified": "2014-11-27T18:11+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004448.html",
+	"title": "Linux Kernel の kernel/futex.c 内の futex_wait 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-004448.html",
+	"description": "Linux Kernel の kernel/futex.c 内の futex_wait 関数は、再キューイング処理中に特定の参照カウントを適切に保持しないため、サービス運用妨害 (解放済みメモリの使用およびシステムクラッシュ) 状態にされる、または権限を取得される脆弱性が存在します。",
+	"identifier": "JVNDB-2014-004448",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0205",
+			"source": "CVE",
+			"id": "CVE-2014-0205"
+		},
+		{
+			"text": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0205",
+			"source": "NVD",
+			"id": "CVE-2014-0205"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:linux:linux_kernel",
+			"version": "2.2",
+			"vendor": "Linux",
+			"product": "Linux Kernel"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2014-11-27T18:11+09:00",
+	"issued": "2014-09-30T16:22+09:00",
+	"modified": "2014-11-27T18:11+09:00"
 }

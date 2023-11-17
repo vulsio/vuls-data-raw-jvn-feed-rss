@@ -1,55 +1,55 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000057.html",
-  "title": "Linux Kernel の remap_page_range() 関数におけるサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000057.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・remap_page_range() 関数において、VM_IO Flag が適切にセットされない不備のため、O_DIRECT Flag が指定されたファイルオープンにおける書き込み処理の際に不適切なメモリ領域が参照され、カーネルパニックに陥る問題 (CVE-2004-1057)\r\n\r\n・64 bit x86 アーキテクチャのシステムにおいて、特定のバイナリファイルをロードした際に search_binary_handler() 関数がコールする load_elf_binary() の返り値として不適切なアドレスが返され、カーネルパニックに陥る問題 (CVE-2005-2708)\r\n\r\n・IPv6 を構成しているシステムにおいて、udp.c の udp_v6_get_port() 関数の不備により、IPv6 UDP ポートにバインドする処理において無限ループが発生し、クラッシュする問題 (CVE-2005-2973)\r\n\r\nローカルの攻撃者に悪用された場合、システムがサービス不能状態に陥る可能性があります。",
-  "identifier": "JVNDB-2006-000057",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1057",
-      "source": "CVE",
-      "id": "CVE-2004-1057"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1057",
-      "source": "NVD",
-      "id": "CVE-2004-1057"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/15156",
-      "source": "BID",
-      "id": "15156"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/16320",
-      "source": "BID",
-      "id": "16320"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:misc:miraclelinux_asianux_server",
-      "version": "2.2",
-      "vendor": "サイバートラスト株式会社",
-      "product": "Asianux Server"
-    },
-    {
-      "text": "cpe:/o:redhat:enterprise_linux",
-      "version": "2.2",
-      "vendor": "レッドハット",
-      "product": "Red Hat Enterprise Linux"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.2",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000057.html",
+	"title": "Linux Kernel の remap_page_range() 関数におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000057.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nLinux Kernel には、以下の複数のセキュリティ上の問題が存在します。\r\n\r\n・remap_page_range() 関数において、VM_IO Flag が適切にセットされない不備のため、O_DIRECT Flag が指定されたファイルオープンにおける書き込み処理の際に不適切なメモリ領域が参照され、カーネルパニックに陥る問題 (CVE-2004-1057)\r\n\r\n・64 bit x86 アーキテクチャのシステムにおいて、特定のバイナリファイルをロードした際に search_binary_handler() 関数がコールする load_elf_binary() の返り値として不適切なアドレスが返され、カーネルパニックに陥る問題 (CVE-2005-2708)\r\n\r\n・IPv6 を構成しているシステムにおいて、udp.c の udp_v6_get_port() 関数の不備により、IPv6 UDP ポートにバインドする処理において無限ループが発生し、クラッシュする問題 (CVE-2005-2973)\r\n\r\nローカルの攻撃者に悪用された場合、システムがサービス不能状態に陥る可能性があります。",
+	"identifier": "JVNDB-2006-000057",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-1057",
+			"source": "CVE",
+			"id": "CVE-2004-1057"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2004-1057",
+			"source": "NVD",
+			"id": "CVE-2004-1057"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/15156",
+			"source": "BID",
+			"id": "15156"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/16320",
+			"source": "BID",
+			"id": "16320"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:miraclelinux_asianux_server",
+			"version": "2.2",
+			"vendor": "サイバートラスト株式会社",
+			"product": "Asianux Server"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

@@ -1,54 +1,54 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000509.html",
-  "title": "Sun Solaris に含まれる RBAC の初期設定における任意のコマンドを実行される脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000509.html",
-  "description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSun Solaris の役割によるアクセス制御 (RBAC：Role-Based Access Control) は、通常は root 権限に限定されているタスクに対するユーザーアクセスを制御するセキュリティ機能です。\r\n\r\nSun Solaris に同梱される format(1M) コマンドにおけるシェルエスケープの処理には、バッファオーバーフローが発生する問題、および特定の RBAC で発生する詳細不明の問題が存在します。\r\n\r\nRoot 権限で format(1M) コマンドの実行を許可する RBAC プロファイル (デフォルトでは File System Management プロファイルが該当) に属するユーザに悪用された場合、root 権限で任意のコマンドあるいは任意のコードが実行される可能性があります。",
-  "identifier": "JVNDB-2006-000509",
-  "references": [
-    {
-      "text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4306",
-      "source": "CVE",
-      "id": "CVE-2006-4306"
-    },
-    {
-      "text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4306",
-      "source": "NVD",
-      "id": "CVE-2006-4306"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/19657",
-      "source": "BID",
-      "id": "19657"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/19647",
-      "source": "BID",
-      "id": "19647"
-    },
-    {
-      "text": "http://www.securityfocus.com/bid/19643",
-      "source": "BID",
-      "id": "19643"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/o:sun:solaris",
-      "version": "2.2",
-      "vendor": "サン・マイクロシステムズ",
-      "product": "Sun Solaris"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "7.2",
-      "type": "Base",
-      "severity": "High",
-      "vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-    }
-  ],
-  "date": "2007-04-01T00:00+09:00",
-  "issued": "2007-04-01T00:00+09:00",
-  "modified": "2007-04-01T00:00+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000509.html",
+	"title": "Sun Solaris に含まれる RBAC の初期設定における任意のコマンドを実行される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2006/JVNDB-2006-000509.html",
+	"description": "------------\r\n本脆弱性情報は、同時期に公開された複数の脆弱性について、まとめて解説したものです。タイトル以外の他の脆弱性情報の内容が含まれていますので予めご了承ください。\r\n------------\r\n\r\nSun Solaris の役割によるアクセス制御 (RBAC：Role-Based Access Control) は、通常は root 権限に限定されているタスクに対するユーザーアクセスを制御するセキュリティ機能です。\r\n\r\nSun Solaris に同梱される format(1M) コマンドにおけるシェルエスケープの処理には、バッファオーバーフローが発生する問題、および特定の RBAC で発生する詳細不明の問題が存在します。\r\n\r\nRoot 権限で format(1M) コマンドの実行を許可する RBAC プロファイル (デフォルトでは File System Management プロファイルが該当) に属するユーザに悪用された場合、root 権限で任意のコマンドあるいは任意のコードが実行される可能性があります。",
+	"identifier": "JVNDB-2006-000509",
+	"references": [
+		{
+			"text": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4306",
+			"source": "CVE",
+			"id": "CVE-2006-4306"
+		},
+		{
+			"text": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-4306",
+			"source": "NVD",
+			"id": "CVE-2006-4306"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/19657",
+			"source": "BID",
+			"id": "19657"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/19647",
+			"source": "BID",
+			"id": "19647"
+		},
+		{
+			"text": "http://www.securityfocus.com/bid/19643",
+			"source": "BID",
+			"id": "19643"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:sun:solaris",
+			"version": "2.2",
+			"vendor": "サン・マイクロシステムズ",
+			"product": "Sun Solaris"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+		}
+	],
+	"date": "2007-04-01T00:00+09:00",
+	"issued": "2007-04-01T00:00+09:00",
+	"modified": "2007-04-01T00:00+09:00"
 }

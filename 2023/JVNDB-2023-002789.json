@@ -1,35 +1,35 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002789.html",
-  "title": "OpenSSL の DH_check() 関数における DH キーとパラメータのチェックに過剰な時間がかかる問題 (Security Advisory [31st July 2023])",
-  "link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002789.html",
-  "description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20230731.txt\"target=\"blank\">OpenSSL Security Advisory [31st July 2023]</a> (Excessive time spent checking DH q parameter value (CVE-2023-3817)) が公開されました。\r\n\r\n深刻度 - 低 (Severity: Low)\r\nOpenSSL の DH_check() 関数は、DH パラメータに対してさまざまなチェックを実行します。これらのチェックの一部では、q パラメータの値が大きい場合処理速度が遅くなります。\r\nDH_check() 関数で利用される q パラメータは p パラメータより小さいと定義されているため、q パラメータの値の方が大きい場合には不要な追加チェックが実行されていました。\r\nDH_check() 関数は、DH_check_ex() 関数と EVP_PKEY_param_check() 関数から呼び出されるため、DH_check() 関数だけでなくこれらの関数を呼び出すアプリケーションも影響を受ける可能性があります。また、「-check」オプションを使用する OpenSSL dhparam および pkeyparam コマンドラインアプリケーションも本脆弱性の影響を受けます。\r\n\r\nなお、OpenSSL Project は、OpenSSL SSL/TLS 実装および、OpenSSL 3.0 と 3.1 の FIPS プロバイダは本脆弱性の影響を受けないとしています。\r\n",
-  "identifier": "JVNDB-2023-002789",
-  "references": [
-    {
-      "text": "http://jvn.jp/vu/JVNVU98291788/index.html",
-      "source": "JVN",
-      "id": "JVNVU#98291788"
-    },
-    {
-      "text": "https://www.cve.org/CVERecord?id=CVE-2023-3817",
-      "source": "CVE",
-      "id": "CVE-2023-3817"
-    },
-    {
-      "text": "https://nvd.nist.gov/vuln/detail/CVE-2023-3817",
-      "source": "NVD",
-      "id": "CVE-2023-3817"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/a:openssl:openssl",
-      "version": "2.2",
-      "vendor": "OpenSSL Project",
-      "product": "OpenSSL"
-    }
-  ],
-  "date": "2023-08-03T17:12+09:00",
-  "issued": "2023-08-03T17:12+09:00",
-  "modified": "2023-08-03T17:12+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002789.html",
+	"title": "OpenSSL の DH_check() 関数における DH キーとパラメータのチェックに過剰な時間がかかる問題 (Security Advisory [31st July 2023])",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-002789.html",
+	"description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20230731.txt\"target=\"blank\">OpenSSL Security Advisory [31st July 2023]</a> (Excessive time spent checking DH q parameter value (CVE-2023-3817)) が公開されました。\r\n\r\n深刻度 - 低 (Severity: Low)\r\nOpenSSL の DH_check() 関数は、DH パラメータに対してさまざまなチェックを実行します。これらのチェックの一部では、q パラメータの値が大きい場合処理速度が遅くなります。\r\nDH_check() 関数で利用される q パラメータは p パラメータより小さいと定義されているため、q パラメータの値の方が大きい場合には不要な追加チェックが実行されていました。\r\nDH_check() 関数は、DH_check_ex() 関数と EVP_PKEY_param_check() 関数から呼び出されるため、DH_check() 関数だけでなくこれらの関数を呼び出すアプリケーションも影響を受ける可能性があります。また、「-check」オプションを使用する OpenSSL dhparam および pkeyparam コマンドラインアプリケーションも本脆弱性の影響を受けます。\r\n\r\nなお、OpenSSL Project は、OpenSSL SSL/TLS 実装および、OpenSSL 3.0 と 3.1 の FIPS プロバイダは本脆弱性の影響を受けないとしています。\r\n",
+	"identifier": "JVNDB-2023-002789",
+	"references": [
+		{
+			"text": "http://jvn.jp/vu/JVNVU98291788/index.html",
+			"source": "JVN",
+			"id": "JVNVU#98291788"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-3817",
+			"source": "CVE",
+			"id": "CVE-2023-3817"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-3817",
+			"source": "NVD",
+			"id": "CVE-2023-3817"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		}
+	],
+	"date": "2023-08-03T17:12+09:00",
+	"issued": "2023-08-03T17:12+09:00",
+	"modified": "2023-08-03T17:12+09:00"
 }

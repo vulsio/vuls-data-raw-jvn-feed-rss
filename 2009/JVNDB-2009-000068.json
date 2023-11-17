@@ -1,200 +1,200 @@
 {
-  "about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-000068.html",
-  "title": "IPv6 を実装した複数の製品にサービス運用妨害 (DoS) の脆弱性",
-  "link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-000068.html",
-  "description": "Internet Protocol version 6 (IPv6) を実装した複数の製品には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nIPv6 を実装した複数の製品には、Neighbor Discovery Protocol (RFC4861) に関連したパケットの処理に問題があります。細工されたパケットの処理に起因するサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nIPv6 を実装している製品が本脆弱性の影響を受ける可能性があります。\r\n詳しくは各ベンダが提供する情報をご確認ください。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者：インターネットマルチフィード株式会社 金井 瑛氏、慶應義塾大学 村井研究室 白畑 真氏、Rodney Van Meter氏、Internet Systems Consortium, Inc. 神明達哉氏\r\n\r\n報告者により、下記のコメントをいただいております：\r\n本脆弱性の分析にあたりましては、KAME Project の鈴木伸介氏、USAGI Project の吉藤英明氏、杉本信太氏のご協力をいただきました。",
-  "identifier": "JVNDB-2009-000068",
-  "references": [
-    {
-      "text": "http://jvn.jp/jp/JVN75368899/index.html",
-      "source": "JVN",
-      "id": "JVN#75368899"
-    },
-    {
-      "text": "http://www.ietf.org/rfc/rfc4942.txt",
-      "source": "IETF",
-      "id": "RFC4942"
-    },
-    {
-      "text": "http://www.ietf.org/rfc/rfc3971.txt",
-      "source": "IETF",
-      "id": "RFC3971"
-    },
-    {
-      "text": "http://www.ietf.org/rfc/rfc3972.txt",
-      "source": "IETF",
-      "id": "RFC3972"
-    },
-    {
-      "text": "http://www.ietf.org/rfc/rfc4861.txt",
-      "source": "IETF",
-      "id": "RFC4861"
-    },
-    {
-      "text": "http://www.ietf.org/rfc/rfc4862.txt",
-      "source": "IETF",
-      "id": "RFC4862"
-    },
-    {
-      "text": "http://www.ietf.org/rfc/rfc3756.txt",
-      "source": "IETF",
-      "id": "RFC3756"
-    },
-    {
-      "text": "http://www.ietf.org/rfc/rfc4890.txt",
-      "source": "IETF",
-      "id": "RFC4890"
-    },
-    {
-      "text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-      "id": "CWE-20",
-      "title": "不適切な入力確認(CWE-20)"
-    }
-  ],
-  "cpe": [
-    {
-      "text": "cpe:/h:furukawa_electric:fitelnet-f",
-      "version": "2.2",
-      "vendor": "古河電気工業",
-      "product": "FITELnet-Fシリーズ"
-    },
-    {
-      "text": "cpe:/h:nec:ip38x",
-      "version": "2.2",
-      "vendor": "日本電気",
-      "product": "IP38X シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt105",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT105シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt107e",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT107e"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt140",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT140シリーズ"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt250i",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT250i"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt300i",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT300i"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt56v",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT56v"
-    },
-    {
-      "text": "cpe:/h:yamaha:rt60w",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT60w"
-    },
-    {
-      "text": "cpe:/h:yamaha:rta54i",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTA54i"
-    },
-    {
-      "text": "cpe:/h:yamaha:rta55i",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTA55i"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtv700",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTV700"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtw65b",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTW65b"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtw65i",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTW65i"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1000",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1000"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1100",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1100"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx1500",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX1500"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx2000",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX2000"
-    },
-    {
-      "text": "cpe:/h:yamaha:rtx3000",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RTX3000"
-    },
-    {
-      "text": "cpe:/h:yamaha:srt100",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "SRT100"
-    },
-    {
-      "text": "cpe:/o:yamaha:rt57i_firmware",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT57i"
-    },
-    {
-      "text": "cpe:/o:yamaha:rt58i_firmware",
-      "version": "2.2",
-      "vendor": "ヤマハ",
-      "product": "RT58i"
-    }
-  ],
-  "cvss": [
-    {
-      "version": "2.0",
-      "score": "5.7",
-      "type": "Base",
-      "severity": "Medium",
-      "vector": "AV:A/AC:M/Au:N/C:N/I:N/A:C"
-    }
-  ],
-  "date": "2010-01-25T11:47+09:00",
-  "issued": "2009-10-26T15:01+09:00",
-  "modified": "2010-01-25T11:47+09:00"
+	"about": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-000068.html",
+	"title": "IPv6 を実装した複数の製品にサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2009/JVNDB-2009-000068.html",
+	"description": "Internet Protocol version 6 (IPv6) を実装した複数の製品には、サービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nIPv6 を実装した複数の製品には、Neighbor Discovery Protocol (RFC4861) に関連したパケットの処理に問題があります。細工されたパケットの処理に起因するサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nIPv6 を実装している製品が本脆弱性の影響を受ける可能性があります。\r\n詳しくは各ベンダが提供する情報をご確認ください。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者：インターネットマルチフィード株式会社 金井 瑛氏、慶應義塾大学 村井研究室 白畑 真氏、Rodney Van Meter氏、Internet Systems Consortium, Inc. 神明達哉氏\r\n\r\n報告者により、下記のコメントをいただいております：\r\n本脆弱性の分析にあたりましては、KAME Project の鈴木伸介氏、USAGI Project の吉藤英明氏、杉本信太氏のご協力をいただきました。",
+	"identifier": "JVNDB-2009-000068",
+	"references": [
+		{
+			"text": "http://jvn.jp/jp/JVN75368899/index.html",
+			"source": "JVN",
+			"id": "JVN#75368899"
+		},
+		{
+			"text": "http://www.ietf.org/rfc/rfc4942.txt",
+			"source": "IETF",
+			"id": "RFC4942"
+		},
+		{
+			"text": "http://www.ietf.org/rfc/rfc3971.txt",
+			"source": "IETF",
+			"id": "RFC3971"
+		},
+		{
+			"text": "http://www.ietf.org/rfc/rfc3972.txt",
+			"source": "IETF",
+			"id": "RFC3972"
+		},
+		{
+			"text": "http://www.ietf.org/rfc/rfc4861.txt",
+			"source": "IETF",
+			"id": "RFC4861"
+		},
+		{
+			"text": "http://www.ietf.org/rfc/rfc4862.txt",
+			"source": "IETF",
+			"id": "RFC4862"
+		},
+		{
+			"text": "http://www.ietf.org/rfc/rfc3756.txt",
+			"source": "IETF",
+			"id": "RFC3756"
+		},
+		{
+			"text": "http://www.ietf.org/rfc/rfc4890.txt",
+			"source": "IETF",
+			"id": "RFC4890"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
+			"id": "CWE-20",
+			"title": "不適切な入力確認(CWE-20)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/h:furukawa_electric:fitelnet-f",
+			"version": "2.2",
+			"vendor": "古河電気工業",
+			"product": "FITELnet-Fシリーズ"
+		},
+		{
+			"text": "cpe:/h:nec:ip38x",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "IP38X シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt105",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT105シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt107e",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT107e"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt140",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT140シリーズ"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt250i",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT250i"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt300i",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT300i"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt56v",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT56v"
+		},
+		{
+			"text": "cpe:/h:yamaha:rt60w",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT60w"
+		},
+		{
+			"text": "cpe:/h:yamaha:rta54i",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTA54i"
+		},
+		{
+			"text": "cpe:/h:yamaha:rta55i",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTA55i"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtv700",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTV700"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtw65b",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTW65b"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtw65i",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTW65i"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1000",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1000"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1100",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1100"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx1500",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX1500"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx2000",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX2000"
+		},
+		{
+			"text": "cpe:/h:yamaha:rtx3000",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RTX3000"
+		},
+		{
+			"text": "cpe:/h:yamaha:srt100",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "SRT100"
+		},
+		{
+			"text": "cpe:/o:yamaha:rt57i_firmware",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT57i"
+		},
+		{
+			"text": "cpe:/o:yamaha:rt58i_firmware",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "RT58i"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.7",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:A/AC:M/Au:N/C:N/I:N/A:C"
+		}
+	],
+	"date": "2010-01-25T11:47+09:00",
+	"issued": "2009-10-26T15:01+09:00",
+	"modified": "2010-01-25T11:47+09:00"
 }
