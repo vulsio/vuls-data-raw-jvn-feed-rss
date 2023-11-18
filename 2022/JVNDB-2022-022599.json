@@ -1,0 +1,60 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-022599.html",
+	"title": "neutrinolabs の xrdp 他複数ベンダの製品における境界外読み取りに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-022599.html",
+	"description": "neutrinolabs の xrdp 他複数ベンダの製品には、境界外読み取りに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2022-022599",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-23483",
+			"source": "CVE",
+			"id": "CVE-2022-23483"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-23483",
+			"source": "NVD",
+			"id": "CVE-2022-23483"
+		},
+		{
+			"text": "https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-38rw-9ch2-fcxq",
+			"source": "関連文書",
+			"id": "github.com (GHSA-38rw-9ch2-fcxq)"
+		},
+		{
+			"text": "https://www.debian.org/security/2023/dsa-5502",
+			"source": "関連文書",
+			"id": "www.debian.org (dsa-5502)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:neutrinolabs:xrdp",
+			"version": "2.2",
+			"vendor": "neutrinolabs",
+			"product": "xrdp"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.1",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+		}
+	],
+	"date": "2023-11-17T17:22+09:00",
+	"issued": "2023-11-17T17:22+09:00",
+	"modified": "2023-11-17T17:22+09:00"
+}
