@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-006092.html",
+	"title": "Monospace Inc の Node.js 用 Directus におけるアクセス制御に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-006092.html",
+	"description": "Monospace Inc の Node.js 用 Directus には、アクセス制御に関する脆弱性、ログファイルからの情報漏えいに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-006092",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-28443",
+			"source": "CVE",
+			"id": "CVE-2023-28443"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-28443",
+			"source": "NVD",
+			"id": "CVE-2023-28443"
+		},
+		{
+			"text": "https://github.com/directus/directus/blob/7c479c5161639aac466c763b6b958a9524201d74/api/src/logger.ts#L13",
+			"source": "関連文書",
+			"id": "github.com (logger.ts#L13)"
+		},
+		{
+			"text": "https://github.com/directus/directus/commit/349536303983ccba68ecb3e4fb35315424011afc",
+			"source": "関連文書",
+			"id": "github.com (349536303983ccba68ecb3e4fb35315424011afc)"
+		},
+		{
+			"text": "https://github.com/directus/directus/security/advisories/GHSA-8vg2-wf3q-mwv7",
+			"source": "関連文書",
+			"id": "github.com (GHSA-8vg2-wf3q-mwv7)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/284.html",
+			"id": "CWE-284",
+			"title": "不適切なアクセス制御(CWE-284)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/532.html",
+			"id": "CWE-532",
+			"title": "ログファイルからの情報漏えい(CWE-532)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:monospace:directus",
+			"version": "2.2",
+			"vendor": "Monospace Inc",
+			"product": "Directus"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2023-11-13T12:08+09:00",
+	"issued": "2023-11-13T12:08+09:00",
+	"modified": "2023-11-13T12:08+09:00"
+}

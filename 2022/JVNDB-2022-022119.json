@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-022119.html",
+	"title": "OP-TEE の optee_os における配列インデックスの検証に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-022119.html",
+	"description": "OP-TEE の optee_os には、配列インデックスの検証に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2022-022119",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-46152",
+			"source": "CVE",
+			"id": "CVE-2022-46152"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-46152",
+			"source": "NVD",
+			"id": "CVE-2022-46152"
+		},
+		{
+			"text": "https://github.com/OP-TEE/optee_os/blob/c2d449482de098f1c894b94f338440e5a327813d/core/tee/entry_std.c#L257",
+			"source": "関連文書",
+			"id": "github.com (entry_std.c#L257)"
+		},
+		{
+			"text": "https://github.com/OP-TEE/optee_os/commit/728616b28df659cf0bdde6e58a471f6ef25d023c",
+			"source": "関連文書",
+			"id": "github.com (728616b28df659cf0bdde6e58a471f6ef25d023c)"
+		},
+		{
+			"text": "https://github.com/OP-TEE/optee_os/security/advisories/GHSA-65w8-6mrg-52g7",
+			"source": "関連文書",
+			"id": "github.com (GHSA-65w8-6mrg-52g7)"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:U/RL:X/RC:X/CR:M/IR:M/AR:M/MAV:L/MAC:L/MPR:H/MUI:N/MS:C/MC:H/MI:H/MA:H&version=3.1",
+			"source": "関連文書",
+			"id": "nvd.nist.gov (MA:H&version=3.1)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/129.html",
+			"id": "CWE-129",
+			"title": "配列インデックスの不適切な検証(CWE-129)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:op-tee:op-tee_os",
+			"version": "2.2",
+			"vendor": "OP-TEE",
+			"product": "optee_os"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-11-15T17:21+09:00",
+	"issued": "2023-11-15T17:21+09:00",
+	"modified": "2023-11-15T17:21+09:00"
+}

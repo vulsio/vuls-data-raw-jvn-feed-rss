@@ -1,0 +1,75 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-021923.html",
+	"title": "Fabrice Bellard の QEMU 他複数ベンダの製品における古典的バッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-021923.html",
+	"description": "Fabrice Bellard の QEMU 他複数ベンダの製品には、古典的バッファオーバーフローの脆弱性が存在します。",
+	"identifier": "JVNDB-2022-021923",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-4172",
+			"source": "CVE",
+			"id": "CVE-2022-4172"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-4172",
+			"source": "NVD",
+			"id": "CVE-2022-4172"
+		},
+		{
+			"text": "https://gitlab.com/qemu-project/qemu/-/commit/defb7098",
+			"source": "関連文書",
+			"id": "gitlab.com (defb7098)"
+		},
+		{
+			"text": "https://gitlab.com/qemu-project/qemu/-/issues/1268",
+			"source": "関連文書",
+			"id": "gitlab.com (issues/1268)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/I7J5IRXJYLELW7D43A75LOWRUE5EU54O/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (I7J5IRXJYLELW7D43A75LOWRUE5EU54O)"
+		},
+		{
+			"text": "https://lore.kernel.org/qemu-devel/20221024154233.1043347-1-lk%40c--e.de/",
+			"source": "関連文書",
+			"id": "lore.kernel.org (20221024154233.1043347-1-lk@c--e.de)"
+		},
+		{
+			"text": "https://security.netapp.com/advisory/ntap-20230127-0013/",
+			"source": "関連文書",
+			"id": "security.netapp.com (ntap-20230127-0013)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/120.html",
+			"id": "CWE-120",
+			"title": "古典的バッファオーバーフロー(CWE-120)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:qemu:qemu",
+			"version": "2.2",
+			"vendor": "Fabrice Bellard",
+			"product": "QEMU"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-11-14T17:13+09:00",
+	"issued": "2023-11-14T17:13+09:00",
+	"modified": "2023-11-14T17:13+09:00"
+}

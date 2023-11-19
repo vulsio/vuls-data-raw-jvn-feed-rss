@@ -1,0 +1,66 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-021686.html",
+	"title": "複数の NVIDIA 製品における NULL ポインタデリファレンスに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-021686.html",
+	"description": "gpu display driver、Virtual GPU、NVIDIA Cloud Gaming Virtual Guest 等複数の NVIDIA 製品には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2022-021686",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-34665",
+			"source": "CVE",
+			"id": "CVE-2022-34665"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-34665",
+			"source": "NVD",
+			"id": "CVE-2022-34665"
+		},
+		{
+			"text": "https://nvidia.custhelp.com/app/answers/detail/a_id/5383",
+			"source": "関連文書",
+			"id": "nvidia.custhelp.com (a_id/5383)"
+		},
+		{
+			"text": "https://security.gentoo.org/glsa/202310-02",
+			"source": "関連文書",
+			"id": "security.gentoo.org (202310-02)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:nvidia:cloud_gaming_guest",
+			"version": "2.2",
+			"vendor": "NVIDIA",
+			"product": "NVIDIA Cloud Gaming Virtual Guest"
+		},
+		{
+			"text": "cpe:/a:nvidia:gpu_display_driver",
+			"version": "2.2",
+			"vendor": "NVIDIA",
+			"product": "gpu display driver"
+		},
+		{
+			"text": "cpe:/a:nvidia:virtual_gpu",
+			"version": "2.2",
+			"vendor": "NVIDIA",
+			"product": "Virtual GPU"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-11-13T17:20+09:00",
+	"issued": "2023-11-13T17:20+09:00",
+	"modified": "2023-11-13T17:20+09:00"
+}

@@ -1,0 +1,80 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-021647.html",
+	"title": "Vim の Vim 他複数ベンダの製品におけるヒープベースのバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-021647.html",
+	"description": "Vim の Vim 他複数ベンダの製品には、ヒープベースのバッファオーバーフローの脆弱性が存在します。",
+	"identifier": "JVNDB-2022-021647",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-4141",
+			"source": "CVE",
+			"id": "CVE-2022-4141"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-4141",
+			"source": "NVD",
+			"id": "CVE-2022-4141"
+		},
+		{
+			"text": "https://github.com/vim/vim/commit/cc762a48d42b579fb7bdec2c614636b830342dd5",
+			"source": "関連文書",
+			"id": "github.com (cc762a48d42b579fb7bdec2c614636b830342dd5)"
+		},
+		{
+			"text": "https://huntr.dev/bounties/20ece512-c600-45ac-8a84-d0931e05541f",
+			"source": "関連文書",
+			"id": "huntr.dev (20ece512-c600-45ac-8a84-d0931e05541f)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/06/msg00015.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00015)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/AZ3JMSUCR6Y7626RDWQ2HNSUFIQOJ33G/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (AZ3JMSUCR6Y7626RDWQ2HNSUFIQOJ33G)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/V6ZNKVN4GICORTVFKVCM4MSOXCYWNHUC/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (V6ZNKVN4GICORTVFKVCM4MSOXCYWNHUC)"
+		},
+		{
+			"text": "https://security.gentoo.org/glsa/202305-16",
+			"source": "関連文書",
+			"id": "security.gentoo.org (202305-16)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/122.html",
+			"id": "CWE-122",
+			"title": "ヒープベースのバッファオーバーフロー(CWE-122)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:vim:vim",
+			"version": "2.2",
+			"vendor": "Vim",
+			"product": "Vim"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-11-13T17:19+09:00",
+	"issued": "2023-11-13T17:19+09:00",
+	"modified": "2023-11-13T17:19+09:00"
+}

@@ -1,0 +1,89 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-022120.html",
+	"title": "Prometheus の exporter toolkit における認証に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-022120.html",
+	"description": "Prometheus の exporter toolkit には、認証に関する脆弱性、認証アルゴリズムの不適切な実装に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2022-022120",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-46146",
+			"source": "CVE",
+			"id": "CVE-2022-46146"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-46146",
+			"source": "NVD",
+			"id": "CVE-2022-46146"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2022/11/29/1",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2022/11/29/1)"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2022/11/29/2",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2022/11/29/2)"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2022/11/29/4",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2022/11/29/4)"
+		},
+		{
+			"text": "https://github.com/prometheus/exporter-toolkit/commit/5b1eab34484ddd353986bce736cd119d863e4ff5",
+			"source": "関連文書",
+			"id": "github.com (5b1eab34484ddd353986bce736cd119d863e4ff5)"
+		},
+		{
+			"text": "https://github.com/prometheus/exporter-toolkit/security/advisories/GHSA-7rg2-cxvp-9p7p",
+			"source": "関連文書",
+			"id": "github.com (GHSA-7rg2-cxvp-9p7p)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/JRSHISR64L6QGSMDFZDNPHHIXSCAKK26/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (JRSHISR64L6QGSMDFZDNPHHIXSCAKK26)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UH24VXIB25OGHF4VGY4PLZMTGTI3BHCA/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (UH24VXIB25OGHF4VGY4PLZMTGTI3BHCA)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ULVDTAI76VATRAHTKCE2SUJ4NC3PQZ6Y/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (ULVDTAI76VATRAHTKCE2SUJ4NC3PQZ6Y)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+			"id": "CWE-287",
+			"title": "不適切な認証(CWE-287)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/303.html",
+			"id": "CWE-303",
+			"title": "認証アルゴリズムの不適切な実装(CWE-303)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:prometheus:exporter_toolkit",
+			"version": "2.2",
+			"vendor": "Prometheus",
+			"product": "exporter toolkit"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-11-15T17:21+09:00",
+	"issued": "2023-11-15T17:21+09:00",
+	"modified": "2023-11-15T17:21+09:00"
+}

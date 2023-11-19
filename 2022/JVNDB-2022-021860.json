@@ -1,0 +1,75 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-021860.html",
+	"title": "Blake Mizerany の Sinatra 他複数ベンダの製品におけるダウンロードしたコードの完全性検証不備に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-021860.html",
+	"description": "Blake Mizerany の Sinatra 他複数ベンダの製品には、ダウンロードしたコードの完全性検証不備に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2022-021860",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-45442",
+			"source": "CVE",
+			"id": "CVE-2022-45442"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-45442",
+			"source": "NVD",
+			"id": "CVE-2022-45442"
+		},
+		{
+			"text": "https://github.com/advisories/GHSA-8x94-hmjh-97hq",
+			"source": "関連文書",
+			"id": "github.com (GHSA-8x94-hmjh-97hq)"
+		},
+		{
+			"text": "https://github.com/sinatra/sinatra/commit/ea8fc9495a350f7551b39e3025bfcd06f49f363b",
+			"source": "関連文書",
+			"id": "github.com (ea8fc9495a350f7551b39e3025bfcd06f49f363b)"
+		},
+		{
+			"text": "https://github.com/sinatra/sinatra/security/advisories/GHSA-2x8x-jmrp-phxw",
+			"source": "関連文書",
+			"id": "github.com (GHSA-2x8x-jmrp-phxw)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/01/msg00005.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00005)"
+		},
+		{
+			"text": "https://www.blackhat.com/docs/eu-14/materials/eu-14-Hafif-Reflected-File-Download-A-New-Web-Attack-Vector.pdf",
+			"source": "関連文書",
+			"id": "www.blackhat.com (eu-14-Hafif-Reflected-File-Download-A-New-Web-Attack-Vector)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/494.html",
+			"id": "CWE-494",
+			"title": "ダウンロードしたコードの完全性検証不備(CWE-494)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:sinatrarb:sinatra",
+			"version": "2.2",
+			"vendor": "Blake Mizerany",
+			"product": "Sinatra"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-11-14T17:11+09:00",
+	"issued": "2023-11-14T17:11+09:00",
+	"modified": "2023-11-14T17:11+09:00"
+}

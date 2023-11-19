@@ -1,0 +1,91 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-022246.html",
+	"title": "複数の snyk 製品における OS コマンドインジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-022246.html",
+	"description": "snyk の snyk cli、snyk language server、snyk security には、OS コマンドインジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2022-022246",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-24441",
+			"source": "CVE",
+			"id": "CVE-2022-24441"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-24441",
+			"source": "NVD",
+			"id": "CVE-2022-24441"
+		},
+		{
+			"text": "https://github.com/snyk/snyk-eclipse-plugin/commit/b5a8bce25a359ced75f83a729fc6b2393fc9a495",
+			"source": "関連文書",
+			"id": "github.com (b5a8bce25a359ced75f83a729fc6b2393fc9a495)"
+		},
+		{
+			"text": "https://github.com/snyk/snyk-intellij-plugin/commit/56682f4ba6081ce1d95cb980cbfacd3809a826f4",
+			"source": "関連文書",
+			"id": "github.com (56682f4ba6081ce1d95cb980cbfacd3809a826f4)"
+		},
+		{
+			"text": "https://github.com/snyk/snyk-ls/commit/b3229f0142f782871aa72d1a7dcf417546d568ed",
+			"source": "関連文書",
+			"id": "github.com (b3229f0142f782871aa72d1a7dcf417546d568ed)"
+		},
+		{
+			"text": "https://github.com/snyk/snyk-visual-studio-plugin/commit/0b53dbbd4a3153c3ef9aaf797af3b5caad0f731a",
+			"source": "関連文書",
+			"id": "github.com (0b53dbbd4a3153c3ef9aaf797af3b5caad0f731a)"
+		},
+		{
+			"text": "https://github.com/snyk/vscode-extension/commit/0db3b4240be0db6a0a5c6d02c0d4231a2c4ba708",
+			"source": "関連文書",
+			"id": "github.com (0db3b4240be0db6a0a5c6d02c0d4231a2c4ba708)"
+		},
+		{
+			"text": "https://security.snyk.io/vuln/SNYK-JS-SNYK-3111871",
+			"source": "関連文書",
+			"id": "security.snyk.io (SNYK-JS-SNYK-3111871)"
+		},
+		{
+			"text": "https://www.imperva.com/blog/how-scanning-your-projects-for-security-issues-can-lead-to-remote-code-execution/",
+			"source": "関連文書",
+			"id": "www.imperva.com (how-scanning-your-projects-for-security-issues-can-lead-to-remote-code-execution)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+			"id": "CWE-78",
+			"title": "OSコマンドインジェクション(CWE-78)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:snyk:snyk_cli",
+			"version": "2.2",
+			"vendor": "snyk",
+			"product": "snyk cli"
+		},
+		{
+			"text": "cpe:/a:snyk:snyk_language_server",
+			"version": "2.2",
+			"vendor": "snyk",
+			"product": "snyk language server"
+		},
+		{
+			"text": "cpe:/a:snyk:snyk_security",
+			"version": "2.2",
+			"vendor": "snyk",
+			"product": "snyk security"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-11-15T17:25+09:00",
+	"issued": "2023-11-15T17:25+09:00",
+	"modified": "2023-11-15T17:25+09:00"
+}
