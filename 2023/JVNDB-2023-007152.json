@@ -1,0 +1,90 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-007152.html",
+	"title": "CLUSTERPRO X における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-007152.html",
+	"description": "日本電気株式会社が提供する CLUSTERPRO X の WebManager/Cluster WebUI には、次の複数の脆弱性が存在します。\r\n\r\n　* 権限チェックの欠如 (CWE-862) - CVE-2023-39544\r\n　* 外部からアクセス可能なファイルに関する脆弱性 (CWE-552) - CVE-2023-39545\r\n　* パスワードの代わりにパスワードハッシュを使用する認証 (CWE-836) - CVE-2023-39546\r\n　* Capture-replay による認証回避 (CWE-294) - CVE-2023-39547\r\n　* アップロードファイルの検証不備 (CWE-434) - CVE-2023-39548\r\n\r\nこれらの脆弱性情報は、次の方が開発者に報告し、製品利用者への周知を目的に、開発者がJPCERT/CCに報告し、JPCERT/CCが開発者との調整を行いました。\r\n発見者: Videotron David Levard 氏",
+	"identifier": "JVNDB-2023-007152",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU98954968/index.html",
+			"source": "JVN",
+			"id": "JVNVU#98954968"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-39544",
+			"source": "CVE",
+			"id": "CVE-2023-39544"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-39545",
+			"source": "CVE",
+			"id": "CVE-2023-39545"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-39546",
+			"source": "CVE",
+			"id": "CVE-2023-39546"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-39547",
+			"source": "CVE",
+			"id": "CVE-2023-39547"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-39548",
+			"source": "CVE",
+			"id": "CVE-2023-39548"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/294.html",
+			"id": "CWE-294",
+			"title": "Capture-replay による認証回避(CWE-294)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/434.html",
+			"id": "CWE-434",
+			"title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/552.html",
+			"id": "CWE-552",
+			"title": "外部からアクセス可能なファイルまたはディレクトリ(CWE-552)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/836.html",
+			"id": "CWE-836",
+			"title": "パスワードの代わりにパスワードハッシュを使用する認証(CWE-836)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/862.html",
+			"id": "CWE-862",
+			"title": "認証の欠如(CWE-862)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:nec:expresscluster_x",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CLUSTERPRO X"
+		},
+		{
+			"text": "cpe:/a:nec:expresscluster_x_singleserversafe",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "CLUSTERPRO X SingleServerSafe"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-11-20T12:32+09:00",
+	"issued": "2023-11-20T12:32+09:00",
+	"modified": "2023-11-20T12:32+09:00"
+}
