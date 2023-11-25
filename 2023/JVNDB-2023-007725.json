@@ -1,0 +1,87 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-007725.html",
+	"title": "libssh の libssh 他複数ベンダの製品における NULL ポインタデリファレンスに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-007725.html",
+	"description": "libssh の libssh 他複数ベンダの製品には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-007725",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-1667",
+			"source": "CVE",
+			"id": "CVE-2023-1667"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-1667",
+			"source": "NVD",
+			"id": "CVE-2023-1667"
+		},
+		{
+			"text": "http://www.libssh.org/security/advisories/CVE-2023-1667.txt",
+			"source": "関連文書",
+			"id": "www.libssh.org (CVE-2023-1667.txt)"
+		},
+		{
+			"text": "https://access.redhat.com/security/cve/CVE-2023-1667",
+			"source": "関連文書",
+			"id": "access.redhat.com (CVE-2023-1667)"
+		},
+		{
+			"text": "https://bugzilla.redhat.com/show_bug.cgi?id=2182199",
+			"source": "関連文書",
+			"id": "bugzilla.redhat.com (2182199)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/05/msg00029.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00029)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/27PD44ALQTZXX7K6JAM3BXBUHYA6DFFN/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (27PD44ALQTZXX7K6JAM3BXBUHYA6DFFN)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:libssh:libssh",
+			"version": "2.2",
+			"vendor": "libssh",
+			"product": "libssh"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-11-24T17:13+09:00",
+	"issued": "2023-11-24T17:13+09:00",
+	"modified": "2023-11-24T17:13+09:00"
+}
