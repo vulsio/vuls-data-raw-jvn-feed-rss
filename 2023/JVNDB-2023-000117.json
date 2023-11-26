@@ -1,0 +1,67 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000117.html",
+	"title": "LuxCal Web Calendar における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-000117.html",
+	"description": "LuxSoft が提供する LuxCal Web Calendar には、次の複数の脆弱性が存在します。\r\n<ul><li>SQL インジェクション (CWE-89) - CVE-2023-46700</li><li>クロスサイトスクリプティング (CWE-79) - CVE-2023-47175</li></ul>\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 三井物産セキュアディレクション株式会社 東内 裕二 氏",
+	"identifier": "JVNDB-2023-000117",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN15005948/index.html",
+			"source": "JVN",
+			"id": "JVN#15005948"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-46700",
+			"source": "CVE",
+			"id": "CVE-2023-46700"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-47175",
+			"source": "CVE",
+			"id": "CVE-2023-47175"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:luxsoft:luxcal_web_calendar_mysql_version",
+			"version": "2.2",
+			"vendor": "luxsoft",
+			"product": "LuxCal Web Calendar (MySQL version)"
+		},
+		{
+			"text": "cpe:/a:luxsoft:luxcal_web_calendar_sqlite_version",
+			"version": "2.2",
+			"vendor": "luxsoft",
+			"product": "LuxCal Web Calendar (SQLite version)"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "7.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+		}
+	],
+	"date": "2023-11-20T12:10+09:00",
+	"issued": "2023-11-20T12:10+09:00",
+	"modified": "2023-11-20T12:10+09:00"
+}

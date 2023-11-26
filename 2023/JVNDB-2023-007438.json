@@ -1,0 +1,84 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-007438.html",
+	"title": "riot-os の riot における NULL ポインタデリファレンスに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-007438.html",
+	"description": "riot-os の riot には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-007438",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-33973",
+			"source": "CVE",
+			"id": "CVE-2023-33973"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-33973",
+			"source": "NVD",
+			"id": "CVE-2023-33973"
+		},
+		{
+			"text": "https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/iphc/gnrc_sixlowpan_iphc.c#L1067",
+			"source": "関連文書",
+			"id": "github.com (gnrc_sixlowpan_iphc.c#L1067)"
+		},
+		{
+			"text": "https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/iphc/gnrc_sixlowpan_iphc.c#L1495",
+			"source": "関連文書",
+			"id": "github.com (gnrc_sixlowpan_iphc.c#L1495)"
+		},
+		{
+			"text": "https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/iphc/gnrc_sixlowpan_iphc.c#L1511",
+			"source": "関連文書",
+			"id": "github.com (gnrc_sixlowpan_iphc.c#L1511)"
+		},
+		{
+			"text": "https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/iphc/gnrc_sixlowpan_iphc.c#L1644",
+			"source": "関連文書",
+			"id": "github.com (gnrc_sixlowpan_iphc.c#L1644)"
+		},
+		{
+			"text": "https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/iphc/gnrc_sixlowpan_iphc.c#L1655",
+			"source": "関連文書",
+			"id": "github.com (gnrc_sixlowpan_iphc.c#L1655)"
+		},
+		{
+			"text": "https://github.com/RIOT-OS/RIOT/commit/c9d7863e5664a169035038628029bb07e090c5ff",
+			"source": "関連文書",
+			"id": "github.com (c9d7863e5664a169035038628029bb07e090c5ff)"
+		},
+		{
+			"text": "https://github.com/RIOT-OS/RIOT/pull/19678",
+			"source": "関連文書",
+			"id": "github.com (pull/19678)"
+		},
+		{
+			"text": "https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-r2pv-3jqc-vh7w",
+			"source": "関連文書",
+			"id": "github.com (GHSA-r2pv-3jqc-vh7w)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:riot-os:riot",
+			"version": "2.2",
+			"vendor": "riot-os",
+			"product": "riot"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-11-22T17:07+09:00",
+	"issued": "2023-11-22T17:07+09:00",
+	"modified": "2023-11-22T17:07+09:00"
+}
