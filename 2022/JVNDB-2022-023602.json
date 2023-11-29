@@ -1,0 +1,65 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-023602.html",
+	"title": "jettison project の jettison 等複数ベンダの製品における境界外書き込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-023602.html",
+	"description": "jettison project の jettison 等複数ベンダの製品には、境界外書き込みに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2022-023602",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-45685",
+			"source": "CVE",
+			"id": "CVE-2022-45685"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-45685",
+			"source": "NVD",
+			"id": "CVE-2022-45685"
+		},
+		{
+			"text": "https://github.com/jettison-json/jettison/issues/54",
+			"source": "関連文書",
+			"id": "github.com (issues/54)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2022/12/msg00045.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00045)"
+		},
+		{
+			"text": "https://www.debian.org/security/2023/dsa-5312",
+			"source": "関連文書",
+			"id": "www.debian.org (dsa-5312)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:jettison_project:jettison",
+			"version": "2.2",
+			"vendor": "jettison project",
+			"product": "jettison"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-11-29T12:25+09:00",
+	"issued": "2023-11-29T12:25+09:00",
+	"modified": "2023-11-29T12:25+09:00"
+}
