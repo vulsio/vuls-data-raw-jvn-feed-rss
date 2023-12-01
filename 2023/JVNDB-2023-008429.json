@@ -1,0 +1,61 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-008429.html",
+	"title": "複数の ARM Ltd. 製品における境界外読み取りに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-008429.html",
+	"description": "ARM Ltd. の avalon android gralloc module、bifrost android gralloc module、valhall android gralloc module には、境界外読み取りに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-008429",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-22808",
+			"source": "CVE",
+			"id": "CVE-2023-22808"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-22808",
+			"source": "NVD",
+			"id": "CVE-2023-22808"
+		},
+		{
+			"text": "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities",
+			"source": "関連文書",
+			"id": "developer.arm.com (Mali GPU Driver Vulnerabilities)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:arm:avalon_android_gralloc_module",
+			"version": "2.2",
+			"vendor": "ARM Ltd.",
+			"product": "avalon android gralloc module"
+		},
+		{
+			"text": "cpe:/a:arm:bifrost_android_gralloc_module",
+			"version": "2.2",
+			"vendor": "ARM Ltd.",
+			"product": "bifrost android gralloc module"
+		},
+		{
+			"text": "cpe:/a:arm:valhall_android_gralloc_module",
+			"version": "2.2",
+			"vendor": "ARM Ltd.",
+			"product": "valhall android gralloc module"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "3.3",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+		}
+	],
+	"date": "2023-12-01T12:25+09:00",
+	"issued": "2023-12-01T12:25+09:00",
+	"modified": "2023-12-01T12:25+09:00"
+}

@@ -1,0 +1,70 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-008474.html",
+	"title": "OpenBSD の LibreSSL および OpenBSD における証明書検証に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-008474.html",
+	"description": "OpenBSD の LibreSSL および OpenBSD には、証明書検証に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-008474",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2021-46880",
+			"source": "CVE",
+			"id": "CVE-2021-46880"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-46880",
+			"source": "NVD",
+			"id": "CVE-2021-46880"
+		},
+		{
+			"text": "https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.4.2-relnotes.txt",
+			"source": "関連文書",
+			"id": "ftp.openbsd.org (libressl-3.4.2-relnotes.txt)"
+		},
+		{
+			"text": "https://ftp.openbsd.org/pub/OpenBSD/patches/7.0/common/006_x509.patch.sig",
+			"source": "関連文書",
+			"id": "ftp.openbsd.org (006_x509.patch.sig)"
+		},
+		{
+			"text": "https://github.com/openbsd/src/commit/3f851282810fa0ab4b90b3b1ecec2e8717ef16f8",
+			"source": "関連文書",
+			"id": "github.com (3f851282810fa0ab4b90b3b1ecec2e8717ef16f8)"
+		},
+		{
+			"text": "https://security.netapp.com/advisory/ntap-20230517-0006/",
+			"source": "関連文書",
+			"id": "security.netapp.com (ntap-20230517-0006)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/295.html",
+			"id": "CWE-295",
+			"title": "不正な証明書検証(CWE-295)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openbsd:libressl",
+			"version": "2.2",
+			"vendor": "OpenBSD",
+			"product": "LibreSSL"
+		},
+		{
+			"text": "cpe:/o:openbsd:openbsd",
+			"version": "2.2",
+			"vendor": "OpenBSD",
+			"product": "OpenBSD"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-12-01T13:52+09:00",
+	"issued": "2023-12-01T13:52+09:00",
+	"modified": "2023-12-01T13:52+09:00"
+}

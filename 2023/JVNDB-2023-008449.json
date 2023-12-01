@@ -1,0 +1,86 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-008449.html",
+	"title": "ImageMagick の ImageMagick 等複数ベンダの製品における境界外書き込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-008449.html",
+	"description": "ImageMagick の ImageMagick 等複数ベンダの製品には、境界外書き込みに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-008449",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-1906",
+			"source": "CVE",
+			"id": "CVE-2023-1906"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-1906",
+			"source": "NVD",
+			"id": "CVE-2023-1906"
+		},
+		{
+			"text": "https://access.redhat.com/security/cve/CVE-2023-1906",
+			"source": "関連文書",
+			"id": "access.redhat.com (CVE-2023-1906)"
+		},
+		{
+			"text": "https://bugzilla.redhat.com/show_bug.cgi?id=2185714",
+			"source": "関連文書",
+			"id": "bugzilla.redhat.com (2185714)"
+		},
+		{
+			"text": "https://github.com/ImageMagick/ImageMagick/commit/d7a8bdd7bb33cf8e58bc01b4a4f2ea5466f8c6b3",
+			"source": "関連文書",
+			"id": "github.com (d7a8bdd7bb33cf8e58bc01b4a4f2ea5466f8c6b3)"
+		},
+		{
+			"text": "https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-35q2-86c7-9247",
+			"source": "関連文書",
+			"id": "github.com (GHSA-35q2-86c7-9247)"
+		},
+		{
+			"text": "https://github.com/ImageMagick/ImageMagick6/commit/e30c693b37c3b41723f1469d1226a2c814ca443d",
+			"source": "関連文書",
+			"id": "github.com (e30c693b37c3b41723f1469d1226a2c814ca443d)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/6655G3GPS42WQM32DJHUCZALI2URQSCO/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (6655G3GPS42WQM32DJHUCZALI2URQSCO)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:fedoraproject:extra_packages_for_enterprise_linux",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Extra Packages For Enterprise Linux"
+		},
+		{
+			"text": "cpe:/a:imagemagick:imagemagick",
+			"version": "2.2",
+			"vendor": "ImageMagick",
+			"product": "ImageMagick"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-01T12:29+09:00",
+	"issued": "2023-12-01T12:29+09:00",
+	"modified": "2023-12-01T12:29+09:00"
+}
