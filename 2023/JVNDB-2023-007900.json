@@ -1,0 +1,91 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-007900.html",
+	"title": "yajl project の yajl 他複数ベンダの製品における有効期限後のメモリの解放の欠如に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-007900.html",
+	"description": "yajl project の yajl 他複数ベンダの製品には、有効期限後のメモリの解放の欠如に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-007900",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-33460",
+			"source": "CVE",
+			"id": "CVE-2023-33460"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-33460",
+			"source": "NVD",
+			"id": "CVE-2023-33460"
+		},
+		{
+			"text": "https://github.com/lloyd/yajl/issues/250",
+			"source": "関連文書",
+			"id": "github.com (issues/250)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/07/msg00000.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00000)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/07/msg00013.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00013)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/08/msg00003.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00003)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IBUUHG27RM4ROEYKMVRROR27AX6R63MB/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (IBUUHG27RM4ROEYKMVRROR27AX6R63MB)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/KLE3C4CECEJ4EUYI56KXI6OWACWXX7WN/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (KLE3C4CECEJ4EUYI56KXI6OWACWXX7WN)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YO32YDJ74DADC7CMJNLSLBVWN5EXGF5J/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (YO32YDJ74DADC7CMJNLSLBVWN5EXGF5J)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/401.html",
+			"id": "CWE-401",
+			"title": "有効期限後のメモリの解放の欠如(CWE-401)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:yajl_project:yajl",
+			"version": "2.2",
+			"vendor": "yajl project",
+			"product": "yajl"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-11-28T17:11+09:00",
+	"issued": "2023-11-28T17:11+09:00",
+	"modified": "2023-11-28T17:11+09:00"
+}

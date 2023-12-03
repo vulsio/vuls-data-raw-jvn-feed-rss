@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-008119.html",
+	"title": "protobuf project の Go 用 protobuf における境界外読み取りに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-008119.html",
+	"description": "protobuf project の Go 用 protobuf には、境界外読み取りに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-008119",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-24535",
+			"source": "CVE",
+			"id": "CVE-2023-24535"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-24535",
+			"source": "NVD",
+			"id": "CVE-2023-24535"
+		},
+		{
+			"text": "https://github.com/golang/protobuf/issues/1530",
+			"source": "関連文書",
+			"id": "github.com (issues/1530)"
+		},
+		{
+			"text": "https://go.dev/cl/475995",
+			"source": "関連文書",
+			"id": "go.dev (cl/475995)"
+		},
+		{
+			"text": "https://pkg.go.dev/vuln/GO-2023-1631",
+			"source": "関連文書",
+			"id": "pkg.go.dev (GO-2023-1631)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:protobuf_project:protobuf",
+			"version": "2.2",
+			"vendor": "protobuf project",
+			"product": "protobuf"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-11-29T17:13+09:00",
+	"issued": "2023-11-29T17:13+09:00",
+	"modified": "2023-11-29T17:13+09:00"
+}

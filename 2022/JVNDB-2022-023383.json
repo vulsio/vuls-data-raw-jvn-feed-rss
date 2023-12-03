@@ -1,0 +1,65 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-023383.html",
+	"title": "openidc の mod auth openidc 等複数ベンダの製品におけるオープンリダイレクトの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-023383.html",
+	"description": "openidc の mod auth openidc 等複数ベンダの製品には、オープンリダイレクトの脆弱性が存在します。",
+	"identifier": "JVNDB-2022-023383",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-23527",
+			"source": "CVE",
+			"id": "CVE-2022-23527"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-23527",
+			"source": "NVD",
+			"id": "CVE-2022-23527"
+		},
+		{
+			"text": "https://github.com/zmartzone/mod_auth_openidc/blob/v2.4.12.1/auth_openidc.conf#L975-L984",
+			"source": "関連文書",
+			"id": "github.com (auth_openidc.conf#L975-L984)"
+		},
+		{
+			"text": "https://github.com/zmartzone/mod_auth_openidc/security/advisories/GHSA-q6f2-285m-gr53",
+			"source": "関連文書",
+			"id": "github.com (GHSA-q6f2-285m-gr53)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/07/msg00020.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00020)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/601.html",
+			"id": "CWE-601",
+			"title": "オープンリダイレクト(CWE-601)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openidc:mod_auth_openidc",
+			"version": "2.2",
+			"vendor": "openidc",
+			"product": "mod auth openidc"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.1",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+		}
+	],
+	"date": "2023-11-29T09:46+09:00",
+	"issued": "2023-11-29T09:46+09:00",
+	"modified": "2023-11-29T09:46+09:00"
+}
