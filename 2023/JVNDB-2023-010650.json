@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010650.html",
+	"title": "xerial の snappy-java における整数オーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010650.html",
+	"description": "xerial の snappy-java には、整数オーバーフローの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-010650",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-34453",
+			"source": "CVE",
+			"id": "CVE-2023-34453"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-34453",
+			"source": "NVD",
+			"id": "CVE-2023-34453"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/blob/05c39b2ca9b5b7b39611529cc302d3d796329611/src/main/java/org/xerial/snappy/BitShuffle.java#L107",
+			"source": "関連文書",
+			"id": "github.com (BitShuffle.java#L107)"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/blob/master/src/main/java/org/xerial/snappy/BitShuffle.java",
+			"source": "関連文書",
+			"id": "github.com (BitShuffle.java)"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/commit/820e2e074c58748b41dbd547f4edba9e108ad905",
+			"source": "関連文書",
+			"id": "github.com (820e2e074c58748b41dbd547f4edba9e108ad905)"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/security/advisories/GHSA-pqr6-cmr2-h8hf",
+			"source": "関連文書",
+			"id": "github.com (GHSA-pqr6-cmr2-h8hf)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/190.html",
+			"id": "CWE-190",
+			"title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:xerial:snappy-java",
+			"version": "2.2",
+			"vendor": "xerial",
+			"product": "snappy-java"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-08T18:21+09:00",
+	"issued": "2023-12-08T18:21+09:00",
+	"modified": "2023-12-08T18:21+09:00"
+}

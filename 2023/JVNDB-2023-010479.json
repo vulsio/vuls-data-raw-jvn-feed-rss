@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010479.html",
+	"title": "libp2p の Go 用 boxo における制限またはスロットリング無しのリソースの割り当てに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010479.html",
+	"description": "libp2p の Go 用 boxo には、制限またはスロットリング無しのリソースの割り当てに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-010479",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-25568",
+			"source": "CVE",
+			"id": "CVE-2023-25568"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-25568",
+			"source": "NVD",
+			"id": "CVE-2023-25568"
+		},
+		{
+			"text": "https://github.com/ipfs/boxo/commit/62cbac40b96f49e39cd7fedc77ee6b56adce4916",
+			"source": "関連文書",
+			"id": "github.com (62cbac40b96f49e39cd7fedc77ee6b56adce4916)"
+		},
+		{
+			"text": "https://github.com/ipfs/boxo/commit/9cb5cb54d40b57084d1221ba83b9e6bb3fcc3197",
+			"source": "関連文書",
+			"id": "github.com (9cb5cb54d40b57084d1221ba83b9e6bb3fcc3197)"
+		},
+		{
+			"text": "https://github.com/ipfs/boxo/commit/baa748b682fabb21a4c1f7628a8af348d4645974",
+			"source": "関連文書",
+			"id": "github.com (baa748b682fabb21a4c1f7628a8af348d4645974)"
+		},
+		{
+			"text": "https://github.com/ipfs/go-libipfs/security/advisories/GHSA-m974-xj4j-7qv5",
+			"source": "関連文書",
+			"id": "github.com (GHSA-m974-xj4j-7qv5)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/770.html",
+			"id": "CWE-770",
+			"title": "制限またはスロットリング無しのリソースの割り当て(CWE-770)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:protocol:boxo",
+			"version": "2.2",
+			"vendor": "Protocol Labs",
+			"product": "boxo"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-08T17:31+09:00",
+	"issued": "2023-12-08T17:31+09:00",
+	"modified": "2023-12-08T17:31+09:00"
+}

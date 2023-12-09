@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010649.html",
+	"title": "xerial の snappy-java における整数オーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010649.html",
+	"description": "xerial の snappy-java には、整数オーバーフローの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-010649",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-34454",
+			"source": "CVE",
+			"id": "CVE-2023-34454"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-34454",
+			"source": "NVD",
+			"id": "CVE-2023-34454"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/blob/05c39b2ca9b5b7b39611529cc302d3d796329611/src/main/java/org/xerial/snappy/Snappy.java#L169",
+			"source": "関連文書",
+			"id": "github.com (Snappy.java#L169)"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/blob/05c39b2ca9b5b7b39611529cc302d3d796329611/src/main/java/org/xerial/snappy/Snappy.java#L422",
+			"source": "関連文書",
+			"id": "github.com (Snappy.java#L422)"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/blob/master/src/main/java/org/xerial/snappy/Snappy.java",
+			"source": "関連文書",
+			"id": "github.com (Snappy.java)"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/commit/d0042551e4a3509a725038eb9b2ad1f683674d94",
+			"source": "関連文書",
+			"id": "github.com (d0042551e4a3509a725038eb9b2ad1f683674d94)"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/security/advisories/GHSA-fjpj-2g6w-x25r",
+			"source": "関連文書",
+			"id": "github.com (GHSA-fjpj-2g6w-x25r)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/190.html",
+			"id": "CWE-190",
+			"title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:xerial:snappy-java",
+			"version": "2.2",
+			"vendor": "xerial",
+			"product": "snappy-java"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-08T18:21+09:00",
+	"issued": "2023-12-08T18:21+09:00",
+	"modified": "2023-12-08T18:21+09:00"
+}

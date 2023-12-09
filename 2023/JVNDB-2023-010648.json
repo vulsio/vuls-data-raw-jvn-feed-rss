@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010648.html",
+	"title": "xerial の snappy-java における制限またはスロットリング無しのリソースの割り当てに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010648.html",
+	"description": "xerial の snappy-java には、制限またはスロットリング無しのリソースの割り当てに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-010648",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-34455",
+			"source": "CVE",
+			"id": "CVE-2023-34455"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-34455",
+			"source": "NVD",
+			"id": "CVE-2023-34455"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/blob/05c39b2ca9b5b7b39611529cc302d3d796329611/src/main/java/org/xerial/snappy/SnappyInputStream.java#L388",
+			"source": "関連文書",
+			"id": "github.com (SnappyInputStream.java#L388)"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/blob/master/src/main/java/org/xerial/snappy/SnappyInputStream.java",
+			"source": "関連文書",
+			"id": "github.com (SnappyInputStream.java)"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/commit/3bf67857fcf70d9eea56eed4af7c925671e8eaea",
+			"source": "関連文書",
+			"id": "github.com (3bf67857fcf70d9eea56eed4af7c925671e8eaea)"
+		},
+		{
+			"text": "https://github.com/xerial/snappy-java/security/advisories/GHSA-qcwq-55hx-v3vh",
+			"source": "関連文書",
+			"id": "github.com (GHSA-qcwq-55hx-v3vh)"
+		},
+		{
+			"text": "https://security.netapp.com/advisory/ntap-20230818-0009/",
+			"source": "関連文書",
+			"id": "security.netapp.com (ntap-20230818-0009)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/770.html",
+			"id": "CWE-770",
+			"title": "制限またはスロットリング無しのリソースの割り当て(CWE-770)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:xerial:snappy-java",
+			"version": "2.2",
+			"vendor": "xerial",
+			"product": "snappy-java"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-08T18:21+09:00",
+	"issued": "2023-12-08T18:21+09:00",
+	"modified": "2023-12-08T18:21+09:00"
+}

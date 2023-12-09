@@ -1,0 +1,91 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010641.html",
+	"title": "ImageMagick の ImageMagick 等複数ベンダの製品における境界外書き込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010641.html",
+	"description": "ImageMagick の ImageMagick 等複数ベンダの製品には、境界外書き込みに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-010641",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-3195",
+			"source": "CVE",
+			"id": "CVE-2023-3195"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-3195",
+			"source": "NVD",
+			"id": "CVE-2023-3195"
+		},
+		{
+			"text": "https://access.redhat.com/security/cve/CVE-2023-3195",
+			"source": "関連文書",
+			"id": "access.redhat.com (CVE-2023-3195)"
+		},
+		{
+			"text": "https://bugzilla.redhat.com/show_bug.cgi?id=2214141",
+			"source": "関連文書",
+			"id": "bugzilla.redhat.com (2214141)"
+		},
+		{
+			"text": "https://github.com/ImageMagick/ImageMagick/commit/f620340935777b28fa3f7b0ed7ed6bd86946934c",
+			"source": "関連文書",
+			"id": "github.com (f620340935777b28fa3f7b0ed7ed6bd86946934c)"
+		},
+		{
+			"text": "https://github.com/ImageMagick/ImageMagick6/commit/85a370c79afeb45a97842b0959366af5236e9023",
+			"source": "関連文書",
+			"id": "github.com (85a370c79afeb45a97842b0959366af5236e9023)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/45DUUXYMAEEAW55GSLAXN25VPKCRAIDA/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (45DUUXYMAEEAW55GSLAXN25VPKCRAIDA)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/4UFQJCYJ23HWHNDOVKBHZQ7HCXXL6MM3/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (4UFQJCYJ23HWHNDOVKBHZQ7HCXXL6MM3)"
+		},
+		{
+			"text": "https://www.openwall.com/lists/oss-security/2023/05/29/1",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/05/29/1)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:fedoraproject:extra_packages_for_enterprise_linux",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Extra Packages For Enterprise Linux"
+		},
+		{
+			"text": "cpe:/a:imagemagick:imagemagick",
+			"version": "2.2",
+			"vendor": "ImageMagick",
+			"product": "ImageMagick"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-08T18:18+09:00",
+	"issued": "2023-12-08T18:18+09:00",
+	"modified": "2023-12-08T18:18+09:00"
+}
