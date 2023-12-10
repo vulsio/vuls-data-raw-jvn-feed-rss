@@ -1,0 +1,121 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-009206.html",
+	"title": "lfprojects の apptainer 等複数ベンダの製品における解放済みメモリの使用に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-009206.html",
+	"description": "lfprojects の apptainer 等複数ベンダの製品には、解放済みメモリの使用に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-009206",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-30549",
+			"source": "CVE",
+			"id": "CVE-2023-30549"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-30549",
+			"source": "NVD",
+			"id": "CVE-2023-30549"
+		},
+		{
+			"text": "https://access.redhat.com/security/cve/cve-2022-1184",
+			"source": "関連文書",
+			"id": "access.redhat.com (cve-2022-1184)"
+		},
+		{
+			"text": "https://github.com/apptainer/apptainer/commit/5a4964f5ba9c8d89a0e353b97f51fd607670a9f7",
+			"source": "関連文書",
+			"id": "github.com (5a4964f5ba9c8d89a0e353b97f51fd607670a9f7)"
+		},
+		{
+			"text": "https://github.com/apptainer/apptainer/releases/tag/v1.1.8",
+			"source": "関連文書",
+			"id": "github.com (v1.1.8)"
+		},
+		{
+			"text": "https://github.com/apptainer/apptainer/security/advisories/GHSA-j4rf-7357-f4cg",
+			"source": "関連文書",
+			"id": "github.com (GHSA-j4rf-7357-f4cg)"
+		},
+		{
+			"text": "https://github.com/torvalds/linux/commit/2220eaf90992c11d888fe771055d4de3303",
+			"source": "関連文書",
+			"id": "github.com (2220eaf90992c11d888fe771055d4de3303)"
+		},
+		{
+			"text": "https://github.com/torvalds/linux/commit/4f04351888a83e595571de672e0a4a8b74f",
+			"source": "関連文書",
+			"id": "github.com (4f04351888a83e595571de672e0a4a8b74f)"
+		},
+		{
+			"text": "https://lwn.net/Articles/932136/",
+			"source": "関連文書",
+			"id": "lwn.net (Articles/932136)"
+		},
+		{
+			"text": "https://lwn.net/Articles/932137/",
+			"source": "関連文書",
+			"id": "lwn.net (Articles/932137)"
+		},
+		{
+			"text": "https://security-tracker.debian.org/tracker/CVE-2022-1184",
+			"source": "関連文書",
+			"id": "security-tracker.debian.org (CVE-2022-1184)"
+		},
+		{
+			"text": "https://security.gentoo.org/glsa/202311-13",
+			"source": "関連文書",
+			"id": "security.gentoo.org (202311-13)"
+		},
+		{
+			"text": "https://sylabs.io/2023/04/response-to-cve-2023-30549/",
+			"source": "関連文書",
+			"id": "sylabs.io (response-to-cve-2023-30549)"
+		},
+		{
+			"text": "https://ubuntu.com/security/CVE-2022-1184",
+			"source": "関連文書",
+			"id": "ubuntu.com (CVE-2022-1184)"
+		},
+		{
+			"text": "https://www.suse.com/security/cve/CVE-2022-1184.html",
+			"source": "関連文書",
+			"id": "www.suse.com (CVE-2022-1184)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/416.html",
+			"id": "CWE-416",
+			"title": "解放済みメモリの使用(CWE-416)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:lfprojects:apptainer",
+			"version": "2.2",
+			"vendor": "lfprojects",
+			"product": "apptainer"
+		},
+		{
+			"text": "cpe:/a:sylabs:singularity",
+			"version": "2.2",
+			"vendor": "sylabs",
+			"product": "Singularity"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-12-05T11:20+09:00",
+	"issued": "2023-12-05T11:20+09:00",
+	"modified": "2023-12-05T11:20+09:00"
+}

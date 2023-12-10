@@ -1,0 +1,75 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-008899.html",
+	"title": "sqlparse project の sqlparse 等複数ベンダの製品における非効率的な正規表現の複雑さに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-008899.html",
+	"description": "sqlparse project の sqlparse 等複数ベンダの製品には、非効率的な正規表現の複雑さに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-008899",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-30608",
+			"source": "CVE",
+			"id": "CVE-2023-30608"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-30608",
+			"source": "NVD",
+			"id": "CVE-2023-30608"
+		},
+		{
+			"text": "https://github.com/andialbrecht/sqlparse/commit/c457abd5f097dd13fb21543381e7cfafe7d31cfb",
+			"source": "関連文書",
+			"id": "github.com (c457abd5f097dd13fb21543381e7cfafe7d31cfb)"
+		},
+		{
+			"text": "https://github.com/andialbrecht/sqlparse/commit/e75e35869473832a1eb67772b1adfee2db11b85a",
+			"source": "関連文書",
+			"id": "github.com (e75e35869473832a1eb67772b1adfee2db11b85a)"
+		},
+		{
+			"text": "https://github.com/andialbrecht/sqlparse/security/advisories/GHSA-rrm6-wvj7-cwh2",
+			"source": "関連文書",
+			"id": "github.com (GHSA-rrm6-wvj7-cwh2)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/05/msg00017.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00017)"
+		},
+		{
+			"text": "https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS",
+			"source": "関連文書",
+			"id": "owasp.org (Regular_expression_Denial_of_Service_-_ReDoS)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/1333.html",
+			"id": "CWE-1333",
+			"title": "非効率的な正規表現の複雑さ(CWE-1333)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:sqlparse_project:sqlparse",
+			"version": "2.2",
+			"vendor": "sqlparse project",
+			"product": "sqlparse"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-04T13:31+09:00",
+	"issued": "2023-12-04T13:31+09:00",
+	"modified": "2023-12-04T13:31+09:00"
+}

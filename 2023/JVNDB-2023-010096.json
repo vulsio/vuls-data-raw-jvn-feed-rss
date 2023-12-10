@@ -1,0 +1,65 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010096.html",
+	"title": "Vim の Vim 等複数ベンダの製品における NULL ポインタデリファレンスに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010096.html",
+	"description": "Vim の Vim 等複数ベンダの製品には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-010096",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-2609",
+			"source": "CVE",
+			"id": "CVE-2023-2609"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-2609",
+			"source": "NVD",
+			"id": "CVE-2023-2609"
+		},
+		{
+			"text": "https://github.com/vim/vim/commit/d1ae8366aff286d41e7f5bc513cc0a1af5130aad",
+			"source": "関連文書",
+			"id": "github.com (d1ae8366aff286d41e7f5bc513cc0a1af5130aad)"
+		},
+		{
+			"text": "https://huntr.dev/bounties/1679be5a-565f-4a44-a430-836412a0b622",
+			"source": "関連文書",
+			"id": "huntr.dev (1679be5a-565f-4a44-a430-836412a0b622)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PCLJN4QINITA3ZASKLEJ64C5TFNKELMO/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (PCLJN4QINITA3ZASKLEJ64C5TFNKELMO)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:vim:vim",
+			"version": "2.2",
+			"vendor": "Vim",
+			"product": "Vim"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-08T10:10+09:00",
+	"issued": "2023-12-08T10:10+09:00",
+	"modified": "2023-12-08T10:10+09:00"
+}
