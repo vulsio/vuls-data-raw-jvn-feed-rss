@@ -1,0 +1,81 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010870.html",
+	"title": "LibTIFF の LibTIFF 他複数ベンダの製品における NULL ポインタデリファレンスに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010870.html",
+	"description": "LibTIFF の LibTIFF 他複数ベンダの製品には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-010870",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-2731",
+			"source": "CVE",
+			"id": "CVE-2023-2731"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-2731",
+			"source": "NVD",
+			"id": "CVE-2023-2731"
+		},
+		{
+			"text": "https://access.redhat.com/security/cve/CVE-2023-2731",
+			"source": "関連文書",
+			"id": "access.redhat.com (CVE-2023-2731)"
+		},
+		{
+			"text": "https://bugzilla.redhat.com/show_bug.cgi?id=2207635",
+			"source": "関連文書",
+			"id": "bugzilla.redhat.com (2207635)"
+		},
+		{
+			"text": "https://github.com/libsdl-org/libtiff/commit/9be22b639ea69e102d3847dca4c53ef025e9527b",
+			"source": "関連文書",
+			"id": "github.com (9be22b639ea69e102d3847dca4c53ef025e9527b)"
+		},
+		{
+			"text": "https://gitlab.com/libtiff/libtiff/-/issues/548",
+			"source": "関連文書",
+			"id": "gitlab.com (issues/548)"
+		},
+		{
+			"text": "https://security.netapp.com/advisory/ntap-20230703-0009/",
+			"source": "関連文書",
+			"id": "security.netapp.com (ntap-20230703-0009)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:libtiff_project:libtiff",
+			"version": "2.2",
+			"vendor": "LibTIFF",
+			"product": "LibTIFF"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-11T15:56+09:00",
+	"issued": "2023-12-11T15:56+09:00",
+	"modified": "2023-12-11T15:56+09:00"
+}
