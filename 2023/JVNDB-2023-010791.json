@@ -1,0 +1,76 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010791.html",
+	"title": "レッドハットの libvirt 等複数ベンダの製品における有効期限後のメモリの解放の欠如に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-010791.html",
+	"description": "レッドハットの libvirt 等複数ベンダの製品には、有効期限後のメモリの解放の欠如に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-010791",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-2700",
+			"source": "CVE",
+			"id": "CVE-2023-2700"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-2700",
+			"source": "NVD",
+			"id": "CVE-2023-2700"
+		},
+		{
+			"text": "https://access.redhat.com/security/cve/CVE-2023-2700",
+			"source": "関連文書",
+			"id": "access.redhat.com (CVE-2023-2700)"
+		},
+		{
+			"text": "https://bugzilla.redhat.com/show_bug.cgi?id=2203653",
+			"source": "関連文書",
+			"id": "bugzilla.redhat.com (2203653)"
+		},
+		{
+			"text": "https://gitlab.com/libvirt/libvirt/-/commit/6425a311b8ad19d6f9c0b315bf1d722551ea3585#874a1e768ade6ceb4538931cbc06248e73223306",
+			"source": "関連文書",
+			"id": "gitlab.com (6425a311b8ad19d6f9c0b315bf1d722551ea3585#874a1e768ade6ceb4538931cbc06248e73223306)"
+		},
+		{
+			"text": "https://security.netapp.com/advisory/ntap-20230706-0001/",
+			"source": "関連文書",
+			"id": "security.netapp.com (ntap-20230706-0001)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/401.html",
+			"id": "CWE-401",
+			"title": "有効期限後のメモリの解放の欠如(CWE-401)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:redhat:libvirt",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "libvirt"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-11T11:30+09:00",
+	"issued": "2023-12-11T11:30+09:00",
+	"modified": "2023-12-11T11:30+09:00"
+}
