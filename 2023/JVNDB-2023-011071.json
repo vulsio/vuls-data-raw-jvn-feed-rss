@@ -1,0 +1,54 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-011071.html",
+	"title": "マイクロソフトの Azure RTOS USBX における NULL ポインタデリファレンスに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-011071.html",
+	"description": "マイクロソフトの Azure RTOS USBX には、NULL ポインタデリファレンスに関する脆弱性、境界外書き込みに関する脆弱性、期限切れのポインタデリファレンスに関する脆弱性が存在します。\r\n",
+	"identifier": "JVNDB-2023-011071",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-48697",
+			"source": "CVE",
+			"id": "CVE-2023-48697"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-48697",
+			"source": "NVD",
+			"id": "CVE-2023-48697"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/825.html",
+			"id": "CWE-825",
+			"title": "期限切れのポインタデリファレンス(CWE-825)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:microsoft:azure_rtos_usbx",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Azure RTOS USBX"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-12-12T14:45+09:00",
+	"issued": "2023-12-12T14:45+09:00",
+	"modified": "2023-12-12T14:45+09:00"
+}

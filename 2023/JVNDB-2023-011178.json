@@ -1,0 +1,76 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-011178.html",
+	"title": "sysstat の sysstat 他複数ベンダの製品における整数オーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-011178.html",
+	"description": "sysstat の sysstat 他複数ベンダの製品には、整数オーバーフローの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-011178",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-33204",
+			"source": "CVE",
+			"id": "CVE-2023-33204"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-33204",
+			"source": "NVD",
+			"id": "CVE-2023-33204"
+		},
+		{
+			"text": "https://github.com/sysstat/sysstat/pull/360",
+			"source": "関連文書",
+			"id": "github.com (pull/360)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/05/msg00026.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00026)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/7UUEKMNDMC6RZTI4O367ZD2YKCOX5THX/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (7UUEKMNDMC6RZTI4O367ZD2YKCOX5THX)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NUBFX3UNOSM7KFUIB3J32ASYT5ZRXJQV/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (NUBFX3UNOSM7KFUIB3J32ASYT5ZRXJQV)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/190.html",
+			"id": "CWE-190",
+			"title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:sysstat:sysstat",
+			"version": "2.2",
+			"vendor": "sysstat",
+			"product": "sysstat"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-12-12T16:45+09:00",
+	"issued": "2023-12-12T16:45+09:00",
+	"modified": "2023-12-12T16:45+09:00"
+}
