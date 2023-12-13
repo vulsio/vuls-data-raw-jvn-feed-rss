@@ -1,0 +1,63 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-011403.html",
+	"title": "エレコム製無線 LAN ルーターにおける OS コマンドインジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-011403.html",
+	"description": "エレコム株式会社が提供する複数の無線 LAN ルーターには、OS コマンドインジェクション (CWE-78) の脆弱性が存在します。\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社ゼロゼロワン 早川 宙也 氏\r\n",
+	"identifier": "JVNDB-2023-011403",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU97499577/index.html",
+			"source": "JVN",
+			"id": "JVNVU#97499577"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-49695",
+			"source": "CVE",
+			"id": "CVE-2023-49695"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+			"id": "CWE-78",
+			"title": "OSコマンドインジェクション(CWE-78)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:elecom:wrc-x3000gsa_firmware",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRC-X3000GSA ファームウェア"
+		},
+		{
+			"text": "cpe:/o:elecom:wrc-x3000gsn_firmware",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRC-X3000GSN ファームウェア"
+		},
+		{
+			"text": "cpe:/o:elecom:wrc-x3000gs_firmware",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRC-X3000GS ファームウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.2",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:A/AC:L/Au:S/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-12-13T14:23+09:00",
+	"issued": "2023-12-13T14:23+09:00",
+	"modified": "2023-12-13T14:23+09:00"
+}
