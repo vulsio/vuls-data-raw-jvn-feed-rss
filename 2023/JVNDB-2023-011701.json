@@ -1,0 +1,91 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-011701.html",
+	"title": "FreeRDP Project の FreeRDP 等複数ベンダの製品における境界外書き込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-011701.html",
+	"description": "FreeRDP Project の FreeRDP 等複数ベンダの製品には、境界外書き込みに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-011701",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-40567",
+			"source": "CVE",
+			"id": "CVE-2023-40567"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-40567",
+			"source": "NVD",
+			"id": "CVE-2023-40567"
+		},
+		{
+			"text": "https://github.com/FreeRDP/FreeRDP/blob/5be5553e0da72178a4b94cc1ffbdace9ceb153e5/libfreerdp/codec/clear.c#L612-L618",
+			"source": "関連文書",
+			"id": "github.com (clear.c#L612-L618)"
+		},
+		{
+			"text": "https://github.com/FreeRDP/FreeRDP/blob/5be5553e0da72178a4b94cc1ffbdace9ceb153e5/libfreerdp/codec/clear.c#L843-L845",
+			"source": "関連文書",
+			"id": "github.com (clear.c#L843-L845)"
+		},
+		{
+			"text": "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-2w9f-8wg4-8jfp",
+			"source": "関連文書",
+			"id": "github.com (GHSA-2w9f-8wg4-8jfp)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/10/msg00008.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00008)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/A6LLDAPEXRDJOM3PREDDD267SSNT77DP/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (A6LLDAPEXRDJOM3PREDDD267SSNT77DP)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IHMTGKCZXJPQOR5ZD2I4GPDNP2DKRXMF/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (IHMTGKCZXJPQOR5ZD2I4GPDNP2DKRXMF)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OH2ATH2BKDNKCJAU4WPPXK4SHLE3UJUV/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (OH2ATH2BKDNKCJAU4WPPXK4SHLE3UJUV)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:freerdp_project:freerdp",
+			"version": "2.2",
+			"vendor": "FreeRDP Project",
+			"product": "FreeRDP"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-12-14T11:03+09:00",
+	"issued": "2023-12-14T11:03+09:00",
+	"modified": "2023-12-14T11:03+09:00"
+}
