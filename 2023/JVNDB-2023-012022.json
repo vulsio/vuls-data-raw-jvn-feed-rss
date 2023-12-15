@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-012022.html",
+	"title": "redis における権限管理に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-012022.html",
+	"description": "redis には、権限管理に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-012022",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-41053",
+			"source": "CVE",
+			"id": "CVE-2023-41053"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-41053",
+			"source": "NVD",
+			"id": "CVE-2023-41053"
+		},
+		{
+			"text": "https://github.com/redis/redis/commit/9e505e6cd842338424e05883521ca1fb7d0f47f6",
+			"source": "関連文書",
+			"id": "github.com (9e505e6cd842338424e05883521ca1fb7d0f47f6)"
+		},
+		{
+			"text": "https://github.com/redis/redis/security/advisories/GHSA-q4jr-5p56-4xwc",
+			"source": "関連文書",
+			"id": "github.com (GHSA-q4jr-5p56-4xwc)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/OLBPIUUD273UGRN2WAYHPVUAULY36QVL/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (OLBPIUUD273UGRN2WAYHPVUAULY36QVL)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UA4MSJ623BH6HP5UHSJD2FOTN3QM5DQS/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (UA4MSJ623BH6HP5UHSJD2FOTN3QM5DQS)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/YLYNYT52EHR63E7L7SHRTHEPUMAFFDLX/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (YLYNYT52EHR63E7L7SHRTHEPUMAFFDLX)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/269.html",
+			"id": "CWE-269",
+			"title": "不適切な権限管理(CWE-269)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:redis:redis",
+			"version": "2.2",
+			"vendor": "redis",
+			"product": "redis"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "3.3",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+		}
+	],
+	"date": "2023-12-15T13:52+09:00",
+	"issued": "2023-12-15T13:52+09:00",
+	"modified": "2023-12-15T13:52+09:00"
+}
