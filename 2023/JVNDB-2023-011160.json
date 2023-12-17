@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-011160.html",
+	"title": "ombi におけるパストラバーサルの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-011160.html",
+	"description": "ombi には、パストラバーサルの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-011160",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-32322",
+			"source": "CVE",
+			"id": "CVE-2023-32322"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-32322",
+			"source": "NVD",
+			"id": "CVE-2023-32322"
+		},
+		{
+			"text": "https://docs.ombi.app/guides/installation/#windows",
+			"source": "関連文書",
+			"id": "docs.ombi.app (#windows)"
+		},
+		{
+			"text": "https://github.com/Ombi-app/Ombi/blob/v4.36.1/src/Ombi/Controllers/V2/SystemController.cs#L46",
+			"source": "関連文書",
+			"id": "github.com (SystemController.cs#L46)"
+		},
+		{
+			"text": "https://github.com/Ombi-app/Ombi/blob/v4.36.1/src/Ombi/Controllers/V2/SystemController.cs#L58",
+			"source": "関連文書",
+			"id": "github.com (SystemController.cs#L58)"
+		},
+		{
+			"text": "https://github.com/Ombi-app/Ombi/commit/b8a8f029d80454d582bc4a2a05175106809335d0",
+			"source": "関連文書",
+			"id": "github.com (b8a8f029d80454d582bc4a2a05175106809335d0)"
+		},
+		{
+			"text": "https://github.com/Ombi-app/Ombi/security/advisories/GHSA-28j3-84m7-gpjp",
+			"source": "関連文書",
+			"id": "github.com (GHSA-28j3-84m7-gpjp)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ombi:ombi",
+			"version": "2.2",
+			"vendor": "ombi",
+			"product": "ombi"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "4.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2023-12-12T16:15+09:00",
+	"issued": "2023-12-12T16:15+09:00",
+	"modified": "2023-12-12T16:15+09:00"
+}

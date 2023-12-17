@@ -1,0 +1,96 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-011662.html",
+	"title": "Vim の Vim 等複数ベンダの製品における解放済みメモリの使用に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-011662.html",
+	"description": "Vim の Vim 等複数ベンダの製品には、解放済みメモリの使用に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-011662",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-4752",
+			"source": "CVE",
+			"id": "CVE-2023-4752"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-4752",
+			"source": "NVD",
+			"id": "CVE-2023-4752"
+		},
+		{
+			"text": "http://seclists.org/fulldisclosure/2023/Oct/24",
+			"source": "関連文書",
+			"id": "seclists.org (Oct/24)"
+		},
+		{
+			"text": "https://github.com/vim/vim/commit/ee9166eb3b41846661a39b662dc7ebe8b5e15139",
+			"source": "関連文書",
+			"id": "github.com (ee9166eb3b41846661a39b662dc7ebe8b5e15139)"
+		},
+		{
+			"text": "https://huntr.dev/bounties/85f62dd7-ed84-4fa2-b265-8a369a318757",
+			"source": "関連文書",
+			"id": "huntr.dev (85f62dd7-ed84-4fa2-b265-8a369a318757)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/09/msg00035.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00035)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I56ITJAFMFAQ2G3BMGTCGM3GS62V2DTR/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (I56ITJAFMFAQ2G3BMGTCGM3GS62V2DTR)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ITRVK4FB74RZDIGTZJXOZMUW6X6F4TNF/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (ITRVK4FB74RZDIGTZJXOZMUW6X6F4TNF)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PFE3LDFRZ7EGWA5AU7YHYL62ELBOFZWQ/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (PFE3LDFRZ7EGWA5AU7YHYL62ELBOFZWQ)"
+		},
+		{
+			"text": "https://support.apple.com/kb/HT213984",
+			"source": "関連文書",
+			"id": "support.apple.com (HT213984)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/416.html",
+			"id": "CWE-416",
+			"title": "解放済みメモリの使用(CWE-416)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:vim:vim",
+			"version": "2.2",
+			"vendor": "Vim",
+			"product": "Vim"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-12-14T10:48+09:00",
+	"issued": "2023-12-14T10:48+09:00",
+	"modified": "2023-12-14T10:48+09:00"
+}
