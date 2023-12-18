@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-012612.html",
+	"title": "FIT2CLOUD の jumpserver における認証に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-012612.html",
+	"description": "FIT2CLOUD の jumpserver には、認証に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-012612",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-42442",
+			"source": "CVE",
+			"id": "CVE-2023-42442"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-42442",
+			"source": "NVD",
+			"id": "CVE-2023-42442"
+		},
+		{
+			"text": "https://github.com/jumpserver/jumpserver/blob/v3.6.1/apps/terminal/api/session/session.py#L91",
+			"source": "関連文書",
+			"id": "github.com (session.py#L91)"
+		},
+		{
+			"text": "https://github.com/jumpserver/jumpserver/commit/0a58bba59cd275bab8e0ae58bf4b359fbc5eb74a",
+			"source": "関連文書",
+			"id": "github.com (0a58bba59cd275bab8e0ae58bf4b359fbc5eb74a)"
+		},
+		{
+			"text": "https://github.com/jumpserver/jumpserver/security/advisories/GHSA-633x-3f4f-v9rw",
+			"source": "関連文書",
+			"id": "github.com (GHSA-633x-3f4f-v9rw)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+			"id": "CWE-287",
+			"title": "不適切な認証(CWE-287)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:fit2cloud:jumpserver",
+			"version": "2.2",
+			"vendor": "FIT2CLOUD",
+			"product": "jumpserver"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+		}
+	],
+	"date": "2023-12-18T15:04+09:00",
+	"issued": "2023-12-18T15:04+09:00",
+	"modified": "2023-12-18T15:04+09:00"
+}
