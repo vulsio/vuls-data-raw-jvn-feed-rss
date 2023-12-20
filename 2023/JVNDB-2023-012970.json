@@ -1,0 +1,100 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-012970.html",
+	"title": "GNU Project の GNU C Library 等複数ベンダの製品における有効期限後のメモリの解放の欠如に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-012970.html",
+	"description": "GNU Project の GNU C Library 等複数ベンダの製品には、有効期限後のメモリの解放の欠如に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-012970",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU98271228/",
+			"source": "JVN",
+			"id": "JVNVU#98271228"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-5156",
+			"source": "CVE",
+			"id": "CVE-2023-5156"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-5156",
+			"source": "NVD",
+			"id": "CVE-2023-5156"
+		},
+		{
+			"text": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-348-10",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-23-348-10"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2023/10/03/4",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/10/03/4)"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2023/10/03/5",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/10/03/5)"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2023/10/03/6",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/10/03/6)"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2023/10/03/8",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/10/03/8)"
+		},
+		{
+			"text": "https://access.redhat.com/security/cve/CVE-2023-5156",
+			"source": "関連文書",
+			"id": "access.redhat.com (CVE-2023-5156)"
+		},
+		{
+			"text": "https://bugzilla.redhat.com/show_bug.cgi?id=2240541",
+			"source": "関連文書",
+			"id": "bugzilla.redhat.com (2240541)"
+		},
+		{
+			"text": "https://sourceware.org/bugzilla/show_bug.cgi?id=30884",
+			"source": "関連文書",
+			"id": "sourceware.org (bugzilla/30884)"
+		},
+		{
+			"text": "https://sourceware.org/git/?p=glibc.git;a=commitdiff;h=ec6b95c3303c700eb89eebeda2d7264cc184a796",
+			"source": "関連文書",
+			"id": "sourceware.org (p=glibc.git;a=commitdiff;h=ec6b95c3303c700eb89eebeda2d7264cc184a796)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/401.html",
+			"id": "CWE-401",
+			"title": "有効期限後のメモリの解放の欠如(CWE-401)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:gnu:glibc",
+			"version": "2.2",
+			"vendor": "GNU Project",
+			"product": "GNU C Library"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-20T09:50+09:00",
+	"issued": "2023-12-20T09:50+09:00",
+	"modified": "2023-12-20T09:50+09:00"
+}
