@@ -1,0 +1,65 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-013220.html",
+	"title": "Roundcube.net の Webmail 等複数ベンダの製品におけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-013220.html",
+	"description": "Roundcube.net の Webmail 等複数ベンダの製品には、クロスサイトスクリプティングの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-013220",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-43770",
+			"source": "CVE",
+			"id": "CVE-2023-43770"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-43770",
+			"source": "NVD",
+			"id": "CVE-2023-43770"
+		},
+		{
+			"text": "https://github.com/roundcube/roundcubemail/commit/e92ec206a886461245e1672d8530cc93c618a49b",
+			"source": "関連文書",
+			"id": "github.com (e92ec206a886461245e1672d8530cc93c618a49b)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/09/msg00024.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00024)"
+		},
+		{
+			"text": "https://roundcube.net/news/2023/09/15/security-update-1.6.3-released",
+			"source": "関連文書",
+			"id": "roundcube.net (security-update-1.6.3-released)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:roundcube:webmail",
+			"version": "2.2",
+			"vendor": "Roundcube.net",
+			"product": "Webmail"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.1",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+		}
+	],
+	"date": "2023-12-20T12:28+09:00",
+	"issued": "2023-12-20T12:28+09:00",
+	"modified": "2023-12-20T12:28+09:00"
+}

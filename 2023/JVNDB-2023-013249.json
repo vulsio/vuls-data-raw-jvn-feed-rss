@@ -1,0 +1,75 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-013249.html",
+	"title": "Matrix の Synapse 等複数ベンダの製品における重要な情報の平文保存に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-013249.html",
+	"description": "Matrix の Synapse 等複数ベンダの製品には、重要な情報の平文保存に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-013249",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-41335",
+			"source": "CVE",
+			"id": "CVE-2023-41335"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-41335",
+			"source": "NVD",
+			"id": "CVE-2023-41335"
+		},
+		{
+			"text": "https://github.com/matrix-org/synapse/pull/16272",
+			"source": "関連文書",
+			"id": "github.com (pull/16272)"
+		},
+		{
+			"text": "https://github.com/matrix-org/synapse/security/advisories/GHSA-4f74-84v3-j9q5",
+			"source": "関連文書",
+			"id": "github.com (GHSA-4f74-84v3-j9q5)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2AFB2Y3S2VCPCN5P2XCZTG24MBMZ7DM4/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (2AFB2Y3S2VCPCN5P2XCZTG24MBMZ7DM4)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/65QPC55I4D27HIZP7H2NQ34EOXHPP4AO/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (65QPC55I4D27HIZP7H2NQ34EOXHPP4AO)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/N6P4QULVUE254WI7XF2LWWOGHCYVFXFY/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (N6P4QULVUE254WI7XF2LWWOGHCYVFXFY)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/312.html",
+			"id": "CWE-312",
+			"title": "重要な情報の平文保存(CWE-312)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:matrix:synapse",
+			"version": "2.2",
+			"vendor": "Matrix",
+			"product": "Synapse"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "3.7",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N"
+		}
+	],
+	"date": "2023-12-20T13:17+09:00",
+	"issued": "2023-12-20T13:17+09:00",
+	"modified": "2023-12-20T13:17+09:00"
+}
