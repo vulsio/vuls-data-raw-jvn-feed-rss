@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-013503.html",
+	"title": "chaijs の Node.js 用 get-func-name における非効率的な正規表現の複雑さに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-013503.html",
+	"description": "chaijs の Node.js 用 get-func-name には、非効率的な正規表現の複雑さに関する脆弱性、リソースの枯渇に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-013503",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-43646",
+			"source": "CVE",
+			"id": "CVE-2023-43646"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-43646",
+			"source": "NVD",
+			"id": "CVE-2023-43646"
+		},
+		{
+			"text": "https://github.com/chaijs/get-func-name/commit/f934b228b5e2cb94d6c8576d3aac05493f667c69",
+			"source": "関連文書",
+			"id": "github.com (f934b228b5e2cb94d6c8576d3aac05493f667c69)"
+		},
+		{
+			"text": "https://github.com/chaijs/get-func-name/security/advisories/GHSA-4q6p-r6v2-jvc5",
+			"source": "関連文書",
+			"id": "github.com (GHSA-4q6p-r6v2-jvc5)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/1333.html",
+			"id": "CWE-1333",
+			"title": "非効率的な正規表現の複雑さ(CWE-1333)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/400.html",
+			"id": "CWE-400",
+			"title": "リソースの枯渇(CWE-400)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:chaijs:get-func-name",
+			"version": "2.2",
+			"vendor": "chaijs",
+			"product": "get-func-name"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-21T11:44+09:00",
+	"issued": "2023-12-21T11:44+09:00",
+	"modified": "2023-12-21T11:44+09:00"
+}
