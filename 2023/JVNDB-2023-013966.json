@@ -1,0 +1,85 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-013966.html",
+	"title": "Python Software Foundation の urllib3 等複数ベンダの製品における情報漏えいに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-013966.html",
+	"description": "Python Software Foundation の urllib3 等複数ベンダの製品には、情報漏えいに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-013966",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-43804",
+			"source": "CVE",
+			"id": "CVE-2023-43804"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-43804",
+			"source": "NVD",
+			"id": "CVE-2023-43804"
+		},
+		{
+			"text": "https://github.com/urllib3/urllib3/commit/01220354d389cd05474713f8c982d05c9b17aafb",
+			"source": "関連文書",
+			"id": "github.com (01220354d389cd05474713f8c982d05c9b17aafb)"
+		},
+		{
+			"text": "https://github.com/urllib3/urllib3/commit/644124ecd0b6e417c527191f866daa05a5a2056d",
+			"source": "関連文書",
+			"id": "github.com (644124ecd0b6e417c527191f866daa05a5a2056d)"
+		},
+		{
+			"text": "https://github.com/urllib3/urllib3/security/advisories/GHSA-v845-jxx5-vc9f",
+			"source": "関連文書",
+			"id": "github.com (GHSA-v845-jxx5-vc9f)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/10/msg00012.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00012)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/5F5CUBAN5XMEBVBZPHFITBLMJV5FIJJ5/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (5F5CUBAN5XMEBVBZPHFITBLMJV5FIJJ5)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I3PR7C6RJ6JUBQKIJ644DMIJSUP36VDY/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (I3PR7C6RJ6JUBQKIJ644DMIJSUP36VDY)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/NDAGZXYJ7H2G3SB47M453VQVNAWKAEJJ/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (NDAGZXYJ7H2G3SB47M453VQVNAWKAEJJ)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:python:urllib3",
+			"version": "2.2",
+			"vendor": "Python Software Foundation",
+			"product": "urllib3"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.1",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+		}
+	],
+	"date": "2023-12-22T14:13+09:00",
+	"issued": "2023-12-22T14:13+09:00",
+	"modified": "2023-12-22T14:13+09:00"
+}

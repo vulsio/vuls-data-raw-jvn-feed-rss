@@ -1,0 +1,75 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-013944.html",
+	"title": "Vim の Vim 等複数ベンダの製品における NULL ポインタデリファレンスに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-013944.html",
+	"description": "Vim の Vim 等複数ベンダの製品には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-013944",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-5441",
+			"source": "CVE",
+			"id": "CVE-2023-5441"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-5441",
+			"source": "NVD",
+			"id": "CVE-2023-5441"
+		},
+		{
+			"text": "https://github.com/vim/vim/commit/20d161ace307e28690229b68584f2d84556f8960",
+			"source": "関連文書",
+			"id": "github.com (20d161ace307e28690229b68584f2d84556f8960)"
+		},
+		{
+			"text": "https://huntr.dev/bounties/b54cbdf5-3e85-458d-bb38-9ea2c0b669f2",
+			"source": "関連文書",
+			"id": "huntr.dev (b54cbdf5-3e85-458d-bb38-9ea2c0b669f2)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VDDWD25AZIHBAA44HQT75OWLQ5UMDKU3/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (VDDWD25AZIHBAA44HQT75OWLQ5UMDKU3)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VGTVLUV7UCXXCZAIQIUCLG6JXAVYT3HE/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (VGTVLUV7UCXXCZAIQIUCLG6JXAVYT3HE)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XPT7NMYJRLBPIALGSE24UWTY6F774GZW/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (XPT7NMYJRLBPIALGSE24UWTY6F774GZW)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:vim:vim",
+			"version": "2.2",
+			"vendor": "Vim",
+			"product": "Vim"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-22T13:48+09:00",
+	"issued": "2023-12-22T13:48+09:00",
+	"modified": "2023-12-22T13:48+09:00"
+}
