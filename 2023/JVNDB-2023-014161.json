@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-014161.html",
+	"title": "Python Software Foundation の Python における再帰制御に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-014161.html",
+	"description": "Python Software Foundation の Python には、再帰制御に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-014161",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-36632",
+			"source": "CVE",
+			"id": "CVE-2023-36632"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-36632",
+			"source": "NVD",
+			"id": "CVE-2023-36632"
+		},
+		{
+			"text": "https://docs.python.org/3/library/email.html",
+			"source": "関連文書",
+			"id": "docs.python.org (email)"
+		},
+		{
+			"text": "https://docs.python.org/3/library/email.utils.html",
+			"source": "関連文書",
+			"id": "docs.python.org (email.utils)"
+		},
+		{
+			"text": "https://github.com/Daybreak2019/PoC_python3.9_Vul/blob/main/RecursionError-email.utils.parseaddr.py",
+			"source": "関連文書",
+			"id": "github.com (RecursionError-email.utils.parseaddr.py)"
+		},
+		{
+			"text": "https://github.com/python/cpython/issues/103800",
+			"source": "関連文書",
+			"id": "github.com (issues/103800)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/674.html",
+			"id": "CWE-674",
+			"title": "不適切な再帰制御(CWE-674)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:python:python",
+			"version": "2.2",
+			"vendor": "Python Software Foundation",
+			"product": "Python"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-22T17:11+09:00",
+	"issued": "2023-12-22T17:11+09:00",
+	"modified": "2023-12-22T17:11+09:00"
+}
