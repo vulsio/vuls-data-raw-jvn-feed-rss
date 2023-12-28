@@ -1,0 +1,61 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-024639.html",
+	"title": "複数の Lenovo 製品における Time-of-check Time-of-use (TOCTOU) 競合状態の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-024639.html",
+	"description": "Lenovo の system update plugin、hardware scan plugin、hardware scan addin には、Time-of-check Time-of-use (TOCTOU) 競合状態の脆弱性が存在します。",
+	"identifier": "JVNDB-2022-024639",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-3700",
+			"source": "CVE",
+			"id": "CVE-2022-3700"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-3700",
+			"source": "NVD",
+			"id": "CVE-2022-3700"
+		},
+		{
+			"text": "https://support.lenovo.com/us/en/product_security/LEN-94532",
+			"source": "関連文書",
+			"id": "support.lenovo.com (LEN-94532)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/367.html",
+			"id": "CWE-367",
+			"title": "Time-of-check Time-of-use (TOCTOU) 競合状態(CWE-367)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:lenovo:hardware_scan_addin",
+			"version": "2.2",
+			"vendor": "Lenovo",
+			"product": "hardware scan addin"
+		},
+		{
+			"text": "cpe:/a:lenovo:hardware_scan_plugin",
+			"version": "2.2",
+			"vendor": "Lenovo",
+			"product": "hardware scan plugin"
+		},
+		{
+			"text": "cpe:/a:lenovo:system_update_plugin",
+			"version": "2.2",
+			"vendor": "Lenovo",
+			"product": "system update plugin"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:H"
+		}
+	],
+	"date": "2023-12-28T11:27+09:00",
+	"issued": "2023-12-28T11:27+09:00",
+	"modified": "2023-12-28T11:27+09:00"
+}

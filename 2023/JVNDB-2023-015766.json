@@ -1,0 +1,85 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-015766.html",
+	"title": "GNU Project の grub2 等複数ベンダの製品における境界外書き込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-015766.html",
+	"description": "GNU Project の grub2 等複数ベンダの製品には、境界外書き込みに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-015766",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-4692",
+			"source": "CVE",
+			"id": "CVE-2023-4692"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-4692",
+			"source": "NVD",
+			"id": "CVE-2023-4692"
+		},
+		{
+			"text": "https://access.redhat.com/security/cve/CVE-2023-4692",
+			"source": "関連文書",
+			"id": "access.redhat.com (CVE-2023-4692)"
+		},
+		{
+			"text": "https://bugzilla.redhat.com/show_bug.cgi?id=2236613",
+			"source": "関連文書",
+			"id": "bugzilla.redhat.com (2236613)"
+		},
+		{
+			"text": "https://dfir.ru/2023/10/03/cve-2023-4692-cve-2023-4693-vulnerabilities-in-the-grub-boot-manager/",
+			"source": "関連文書",
+			"id": "dfir.ru (cve-2023-4692-cve-2023-4693-vulnerabilities-in-the-grub-boot-manager)"
+		},
+		{
+			"text": "https://lists.gnu.org/archive/html/grub-devel/2023-10/msg00028.html",
+			"source": "関連文書",
+			"id": "lists.gnu.org (msg00028)"
+		},
+		{
+			"text": "https://seclists.org/oss-sec/2023/q4/37",
+			"source": "関連文書",
+			"id": "seclists.org (q4/37)"
+		},
+		{
+			"text": "https://security.gentoo.org/glsa/202311-14",
+			"source": "関連文書",
+			"id": "security.gentoo.org (202311-14)"
+		},
+		{
+			"text": "https://security.netapp.com/advisory/ntap-20231208-0002/",
+			"source": "関連文書",
+			"id": "security.netapp.com (ntap-20231208-0002)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:gnu:grub2",
+			"version": "2.2",
+			"vendor": "GNU Project",
+			"product": "grub2"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-12-28T11:49+09:00",
+	"issued": "2023-12-28T11:49+09:00",
+	"modified": "2023-12-28T11:49+09:00"
+}
