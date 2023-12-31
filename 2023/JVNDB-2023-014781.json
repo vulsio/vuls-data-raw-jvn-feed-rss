@@ -1,0 +1,51 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-014781.html",
+	"title": "ブラザー製 iPrint&Scan Desktop for Windows におけるファイルアクセス時のリンク解釈が不適切な脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-014781.html",
+	"description": "ブラザー工業株式会社が提供する iPrint&Scan Desktop for Windows に含まれる Log 出力機能は、出力先が通常のファイルなのか他のファイルへのシンボリックリンクなのかを確認していません(CWE-59)。\r\n\r\nこの脆弱性情報は、下記の方が製品開発者に直接報告し、調整を経て、 製品開発者が製品利用者への周知を目的に JPCERT/CC に報告し、JVN での公表に至りました。\r\n報告者: Chris Au 氏\r\n",
+	"identifier": "JVNDB-2023-014781",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU97943829/",
+			"source": "JVN",
+			"id": "JVNVU#97943829"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-51654",
+			"source": "CVE",
+			"id": "CVE-2023-51654"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+			"id": "CWE-59",
+			"title": "リンク解釈の問題(CWE-59)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:brother:iprintscan",
+			"version": "2.2",
+			"vendor": "ブラザー工業",
+			"product": "Brother iPrint&Scan"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.6",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:L/AC:L/Au:S/C:N/I:N/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-25T16:47+09:00",
+	"issued": "2023-12-25T16:47+09:00",
+	"modified": "2023-12-25T16:47+09:00"
+}

@@ -1,0 +1,54 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-015301.html",
+	"title": "Apache Software Foundation の Apache Tomcat における不完全なクリーンアップに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-015301.html",
+	"description": "Apache Software Foundation の Apache Tomcat には、未リリースの進行中のリファクタリングが含まれているため、Web アプリケーションがアップロードされたファイルのストリームを開いたが、閉じることができなかった場合、不完全なクリーンアップに関する脆弱性が存在します。\r\n",
+	"identifier": "JVNDB-2023-015301",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU93620838/",
+			"source": "JVN",
+			"id": "JVNVU#93620838"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-42794",
+			"source": "CVE",
+			"id": "CVE-2023-42794"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-42794",
+			"source": "NVD",
+			"id": "CVE-2023-42794"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2023/10/10/8",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/10/10/8)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/459.html",
+			"id": "CWE-459",
+			"title": "不完全なクリーンアップ(CWE-459)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:tomcat",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache Tomcat"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-27T12:19+09:00",
+	"issued": "2023-12-27T12:19+09:00",
+	"modified": "2023-12-27T12:19+09:00"
+}

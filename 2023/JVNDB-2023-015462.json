@@ -1,0 +1,776 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-015462.html",
+	"title": "インターネット技術タスクフォース (IETF) の http 等複数ベンダの製品におけるリソースの枯渇に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-015462.html",
+	"description": "インターネット技術タスクフォース (IETF) の http 等複数ベンダの製品には、リソースの枯渇に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-015462",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-44487",
+			"source": "CVE",
+			"id": "CVE-2023-44487"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+			"source": "NVD",
+			"id": "CVE-2023-44487"
+		},
+		{
+			"text": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+			"source": "CISA Known Exploited Vulnerabilities Catalog",
+			"id": "CVE-2023-44487"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2023/10/13/4",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/10/13/4)"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2023/10/13/9",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/10/13/9)"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2023/10/18/4",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/10/18/4)"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2023/10/18/8",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/10/18/8)"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2023/10/19/6",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/10/19/6)"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2023/10/20/8",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/10/20/8)"
+		},
+		{
+			"text": "https://access.redhat.com/security/cve/cve-2023-44487",
+			"source": "関連文書",
+			"id": "access.redhat.com (cve-2023-44487)"
+		},
+		{
+			"text": "https://arstechnica.com/security/2023/10/how-ddosers-used-the-http-2-protocol-to-deliver-attacks-of-unprecedented-size/",
+			"source": "関連文書",
+			"id": "arstechnica.com (how-ddosers-used-the-http-2-protocol-to-deliver-attacks-of-unprecedented-size)"
+		},
+		{
+			"text": "https://aws.amazon.com/security/security-bulletins/AWS-2023-011/",
+			"source": "関連文書",
+			"id": "aws.amazon.com (AWS-2023-011)"
+		},
+		{
+			"text": "https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/",
+			"source": "関連文書",
+			"id": "blog.cloudflare.com (technical-breakdown-http2-rapid-reset-ddos-attack)"
+		},
+		{
+			"text": "https://blog.cloudflare.com/zero-day-rapid-reset-http2-record-breaking-ddos-attack/",
+			"source": "関連文書",
+			"id": "blog.cloudflare.com (zero-day-rapid-reset-http2-record-breaking-ddos-attack)"
+		},
+		{
+			"text": "https://blog.litespeedtech.com/2023/10/11/rapid-reset-http-2-vulnerablilty/",
+			"source": "関連文書",
+			"id": "blog.litespeedtech.com (rapid-reset-http-2-vulnerablilty)"
+		},
+		{
+			"text": "https://blog.qualys.com/vulnerabilities-threat-research/2023/10/10/cve-2023-44487-http-2-rapid-reset-attack",
+			"source": "関連文書",
+			"id": "blog.qualys.com (cve-2023-44487-http-2-rapid-reset-attack)"
+		},
+		{
+			"text": "https://blog.vespa.ai/cve-2023-44487/",
+			"source": "関連文書",
+			"id": "blog.vespa.ai (cve-2023-44487)"
+		},
+		{
+			"text": "https://bugzilla.proxmox.com/show_bug.cgi?id=4988",
+			"source": "関連文書",
+			"id": "bugzilla.proxmox.com (4988)"
+		},
+		{
+			"text": "https://bugzilla.redhat.com/show_bug.cgi?id=2242803",
+			"source": "関連文書",
+			"id": "bugzilla.redhat.com (2242803)"
+		},
+		{
+			"text": "https://bugzilla.suse.com/show_bug.cgi?id=1216123",
+			"source": "関連文書",
+			"id": "bugzilla.suse.com (1216123)"
+		},
+		{
+			"text": "https://cgit.freebsd.org/ports/commit/?id=c64c329c2c1752f46b73e3e6ce9f4329be6629f9",
+			"source": "関連文書",
+			"id": "cgit.freebsd.org (commit/c64c329c2c1752f46b73e3e6ce9f4329be6629f9)"
+		},
+		{
+			"text": "https://cloud.google.com/blog/products/identity-security/google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps/",
+			"source": "関連文書",
+			"id": "cloud.google.com (google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps)"
+		},
+		{
+			"text": "https://cloud.google.com/blog/products/identity-security/how-it-works-the-novel-http2-rapid-reset-ddos-attack",
+			"source": "関連文書",
+			"id": "cloud.google.com (how-it-works-the-novel-http2-rapid-reset-ddos-attack)"
+		},
+		{
+			"text": "https://community.traefik.io/t/is-traefik-vulnerable-to-cve-2023-44487/20125",
+			"source": "関連文書",
+			"id": "community.traefik.io (is-traefik-vulnerable-to-cve-2023-44487/20125)"
+		},
+		{
+			"text": "https://discuss.hashicorp.com/t/hcsec-2023-32-vault-consul-and-boundary-affected-by-http-2-rapid-reset-denial-of-service-vulnerability-cve-2023-44487/59715",
+			"source": "関連文書",
+			"id": "discuss.hashicorp.com (hcsec-2023-32-vault-consul-and-boundary-affected-by-http-2-rapid-reset-denial-of-service-vulnerability-cve-2023-44487/59715)"
+		},
+		{
+			"text": "https://edg.io/lp/blog/resets-leaks-ddos-and-the-tale-of-a-hidden-cve",
+			"source": "関連文書",
+			"id": "edg.io (resets-leaks-ddos-and-the-tale-of-a-hidden-cve)"
+		},
+		{
+			"text": "https://gist.github.com/adulau/7c2bfb8e9cdbe4b35a5e131c66a0c088",
+			"source": "関連文書",
+			"id": "gist.github.com (7c2bfb8e9cdbe4b35a5e131c66a0c088)"
+		},
+		{
+			"text": "https://github.com/Azure/AKS/issues/3947",
+			"source": "関連文書",
+			"id": "github.com (issues/3947)"
+		},
+		{
+			"text": "https://github.com/Kong/kong/discussions/11741",
+			"source": "関連文書",
+			"id": "github.com (discussions/11741)"
+		},
+		{
+			"text": "https://github.com/advisories/GHSA-qppj-fm5r-hxr3",
+			"source": "関連文書",
+			"id": "github.com (GHSA-qppj-fm5r-hxr3)"
+		},
+		{
+			"text": "https://github.com/advisories/GHSA-vx74-f528-fxqg",
+			"source": "関連文書",
+			"id": "github.com (GHSA-vx74-f528-fxqg)"
+		},
+		{
+			"text": "https://github.com/advisories/GHSA-xpw8-rcwv-8f8p",
+			"source": "関連文書",
+			"id": "github.com (GHSA-xpw8-rcwv-8f8p)"
+		},
+		{
+			"text": "https://github.com/akka/akka-http/issues/4323",
+			"source": "関連文書",
+			"id": "github.com (issues/4323)"
+		},
+		{
+			"text": "https://github.com/alibaba/tengine/issues/1872",
+			"source": "関連文書",
+			"id": "github.com (issues/1872)"
+		},
+		{
+			"text": "https://github.com/arkrwn/PoC/tree/main/CVE-2023-44487",
+			"source": "関連文書",
+			"id": "github.com (CVE-2023-44487)"
+		},
+		{
+			"text": "https://github.com/bcdannyboy/CVE-2023-44487",
+			"source": "関連文書",
+			"id": "github.com (CVE-2023-44487)"
+		},
+		{
+			"text": "https://github.com/dotnet/announcements/issues/277",
+			"source": "関連文書",
+			"id": "github.com (issues/277)"
+		},
+		{
+			"text": "https://github.com/dotnet/core/blob/e4613450ea0da7fd2fc6b61dfb2c1c1dec1ce9ec/release-notes/6.0/6.0.23/6.0.23.md?plain=1#L73",
+			"source": "関連文書",
+			"id": "github.com (6.0.23.md?plain=1#L73)"
+		},
+		{
+			"text": "https://github.com/etcd-io/etcd/issues/16740",
+			"source": "関連文書",
+			"id": "github.com (issues/16740)"
+		},
+		{
+			"text": "https://github.com/facebook/proxygen/pull/466",
+			"source": "関連文書",
+			"id": "github.com (pull/466)"
+		},
+		{
+			"text": "https://github.com/grpc/grpc-go/pull/6703",
+			"source": "関連文書",
+			"id": "github.com (pull/6703)"
+		},
+		{
+			"text": "https://github.com/h2o/h2o/pull/3291",
+			"source": "関連文書",
+			"id": "github.com (pull/3291)"
+		},
+		{
+			"text": "https://github.com/h2o/h2o/security/advisories/GHSA-2m7v-gc89-fjqf",
+			"source": "関連文書",
+			"id": "github.com (GHSA-2m7v-gc89-fjqf)"
+		},
+		{
+			"text": "https://github.com/haproxy/haproxy/issues/2312",
+			"source": "関連文書",
+			"id": "github.com (issues/2312)"
+		},
+		{
+			"text": "https://github.com/icing/mod_h2/blob/0a864782af0a942aa2ad4ed960a6b32cd35bcf0a/mod_http2/README.md?plain=1#L239-L244",
+			"source": "関連文書",
+			"id": "github.com (README.md?plain=1#L239-L244)"
+		},
+		{
+			"text": "https://github.com/junkurihara/rust-rpxy/issues/97",
+			"source": "関連文書",
+			"id": "github.com (issues/97)"
+		},
+		{
+			"text": "https://github.com/kazu-yamamoto/http2/commit/f61d41a502bd0f60eb24e1ce14edc7b6df6722a1",
+			"source": "関連文書",
+			"id": "github.com (f61d41a502bd0f60eb24e1ce14edc7b6df6722a1)"
+		},
+		{
+			"text": "https://github.com/kazu-yamamoto/http2/issues/93",
+			"source": "関連文書",
+			"id": "github.com (issues/93)"
+		},
+		{
+			"text": "https://github.com/kubernetes/kubernetes/pull/121120",
+			"source": "関連文書",
+			"id": "github.com (pull/121120)"
+		},
+		{
+			"text": "https://github.com/line/armeria/pull/5232",
+			"source": "関連文書",
+			"id": "github.com (pull/5232)"
+		},
+		{
+			"text": "https://github.com/linkerd/website/pull/1695/commits/4b9c6836471bc8270ab48aae6fd2181bc73fd632",
+			"source": "関連文書",
+			"id": "github.com (4b9c6836471bc8270ab48aae6fd2181bc73fd632)"
+		},
+		{
+			"text": "https://github.com/micrictor/http2-rst-stream",
+			"source": "関連文書",
+			"id": "github.com (http2-rst-stream)"
+		},
+		{
+			"text": "https://github.com/microsoft/CBL-Mariner/pull/6381",
+			"source": "関連文書",
+			"id": "github.com (pull/6381)"
+		},
+		{
+			"text": "https://github.com/ninenines/cowboy/issues/1615",
+			"source": "関連文書",
+			"id": "github.com (issues/1615)"
+		},
+		{
+			"text": "https://github.com/nodejs/node/pull/50121",
+			"source": "関連文書",
+			"id": "github.com (pull/50121)"
+		},
+		{
+			"text": "https://github.com/openresty/openresty/issues/930",
+			"source": "関連文書",
+			"id": "github.com (issues/930)"
+		},
+		{
+			"text": "https://github.com/opensearch-project/data-prepper/issues/3474",
+			"source": "関連文書",
+			"id": "github.com (issues/3474)"
+		},
+		{
+			"text": "https://github.com/oqtane/oqtane.framework/discussions/3367",
+			"source": "関連文書",
+			"id": "github.com (discussions/3367)"
+		},
+		{
+			"text": "https://github.com/projectcontour/contour/pull/5826",
+			"source": "関連文書",
+			"id": "github.com (pull/5826)"
+		},
+		{
+			"text": "https://github.com/tempesta-tech/tempesta/issues/1986",
+			"source": "関連文書",
+			"id": "github.com (issues/1986)"
+		},
+		{
+			"text": "https://github.com/varnishcache/varnish-cache/issues/3996",
+			"source": "関連文書",
+			"id": "github.com (issues/3996)"
+		},
+		{
+			"text": "https://istio.io/latest/news/security/istio-security-2023-004/",
+			"source": "関連文書",
+			"id": "istio.io (istio-security-2023-004)"
+		},
+		{
+			"text": "https://linkerd.io/2023/10/12/linkerd-cve-2023-44487/",
+			"source": "関連文書",
+			"id": "linkerd.io (linkerd-cve-2023-44487)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/10/msg00020.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00020)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/10/msg00023.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00023)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/10/msg00024.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00024)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/10/msg00045.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00045)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/10/msg00047.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00047)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/11/msg00001.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00001)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/11/msg00012.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00012)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/2MBEPPC36UBVOZZNAXFHKLFGSLCMN5LI/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (2MBEPPC36UBVOZZNAXFHKLFGSLCMN5LI)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/3N4NJ7FR4X4FPZUGNTQAPSTVB2HB2Y4A/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (3N4NJ7FR4X4FPZUGNTQAPSTVB2HB2Y4A)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BFQD3KUEMFBHPAPBGLWQC34L4OWL5HAZ/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (BFQD3KUEMFBHPAPBGLWQC34L4OWL5HAZ)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/CLB4TW7KALB3EEQWNWCN7OUIWWVWWCG2/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (CLB4TW7KALB3EEQWNWCN7OUIWWVWWCG2)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/E72T67UPDRXHIDLO3OROR25YAMN4GGW5/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (E72T67UPDRXHIDLO3OROR25YAMN4GGW5)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FNA62Q767CFAFHBCDKYNPBMZWB7TWYVU/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (FNA62Q767CFAFHBCDKYNPBMZWB7TWYVU)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HT7T2R4MQKLIF4ODV4BDLPARWFPCJ5CZ/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (HT7T2R4MQKLIF4ODV4BDLPARWFPCJ5CZ)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/JIZSEFC3YKCGABA2BZW6ZJRMDZJMB7PJ/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (JIZSEFC3YKCGABA2BZW6ZJRMDZJMB7PJ)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/JMEXY22BFG5Q64HQCM5CK2Q7KDKVV4TY/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (JMEXY22BFG5Q64HQCM5CK2Q7KDKVV4TY)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/KSEGD2IWKNUO3DWY4KQGUQM5BISRWHQE/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (KSEGD2IWKNUO3DWY4KQGUQM5BISRWHQE)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LKYHSZQFDNR7RSA7LHVLLIAQMVYCUGBG/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (LKYHSZQFDNR7RSA7LHVLLIAQMVYCUGBG)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LNMZJCDHGLJJLXO4OXWJMTVQRNWOC7UL/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (LNMZJCDHGLJJLXO4OXWJMTVQRNWOC7UL)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VHUHTSXLXGXS7JYKBXTA3VINUPHTNGVU/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (VHUHTSXLXGXS7JYKBXTA3VINUPHTNGVU)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VSRDIV77HNKUSM7SJC5BKE5JSHLHU2NK/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (VSRDIV77HNKUSM7SJC5BKE5JSHLHU2NK)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WE2I52RHNNU42PX6NZ2RBUHSFFJ2LVZX/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (WE2I52RHNNU42PX6NZ2RBUHSFFJ2LVZX)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WLPRQ5TWUQQXYWBJM7ECYDAIL2YVKIUH/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (WLPRQ5TWUQQXYWBJM7ECYDAIL2YVKIUH)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/X6QXN4ORIVF6XBW4WWFE7VNPVC74S45Y/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (X6QXN4ORIVF6XBW4WWFE7VNPVC74S45Y)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/XFOIBB4YFICHDM7IBOP7PWXW3FX4HLL2/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (XFOIBB4YFICHDM7IBOP7PWXW3FX4HLL2)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ZB43REMKRQR62NJEI7I5NQ4FSXNLBKRT/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (ZB43REMKRQR62NJEI7I5NQ4FSXNLBKRT)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ZKQSIKIAT5TJ3WSLU3RDBQ35YX4GY4V3/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (ZKQSIKIAT5TJ3WSLU3RDBQ35YX4GY4V3)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ZLU6U2R2IC2K64NDPNMV55AUAO65MAF4/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (ZLU6U2R2IC2K64NDPNMV55AUAO65MAF4)"
+		},
+		{
+			"text": "https://lists.w3.org/Archives/Public/ietf-http-wg/2023OctDec/0025.html",
+			"source": "関連文書",
+			"id": "lists.w3.org (0025)"
+		},
+		{
+			"text": "https://mailman.nginx.org/pipermail/nginx-devel/2023-October/S36Q5HBXR7CAIMPLLPRSSSYR4PCMWILK.html",
+			"source": "関連文書",
+			"id": "mailman.nginx.org (S36Q5HBXR7CAIMPLLPRSSSYR4PCMWILK)"
+		},
+		{
+			"text": "https://martinthomson.github.io/h2-stream-limits/draft-thomson-httpbis-h2-stream-limits.html",
+			"source": "関連文書",
+			"id": "martinthomson.github.io (draft-thomson-httpbis-h2-stream-limits)"
+		},
+		{
+			"text": "https://msrc.microsoft.com/blog/2023/10/microsoft-response-to-distributed-denial-of-service-ddos-attacks-against-http/2/",
+			"source": "関連文書",
+			"id": "msrc.microsoft.com (microsoft-response-to-distributed-denial-of-service-ddos-attacks-against-http/2)"
+		},
+		{
+			"text": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-44487",
+			"source": "関連文書",
+			"id": "msrc.microsoft.com (CVE-2023-44487)"
+		},
+		{
+			"text": "https://news.ycombinator.com/item?id=37830987",
+			"source": "関連文書",
+			"id": "news.ycombinator.com (37830987)"
+		},
+		{
+			"text": "https://news.ycombinator.com/item?id=37830998",
+			"source": "関連文書",
+			"id": "news.ycombinator.com (37830998)"
+		},
+		{
+			"text": "https://news.ycombinator.com/item?id=37831062",
+			"source": "関連文書",
+			"id": "news.ycombinator.com (37831062)"
+		},
+		{
+			"text": "https://news.ycombinator.com/item?id=37837043",
+			"source": "関連文書",
+			"id": "news.ycombinator.com (37837043)"
+		},
+		{
+			"text": "https://openssf.org/blog/2023/10/10/http-2-rapid-reset-vulnerability-highlights-need-for-rapid-response/",
+			"source": "関連文書",
+			"id": "openssf.org (http-2-rapid-reset-vulnerability-highlights-need-for-rapid-response)"
+		},
+		{
+			"text": "https://seanmonstar.com/post/730794151136935936/hyper-http2-rapid-reset-unaffected",
+			"source": "関連文書",
+			"id": "seanmonstar.com (hyper-http2-rapid-reset-unaffected)"
+		},
+		{
+			"text": "https://security.gentoo.org/glsa/202311-09",
+			"source": "関連文書",
+			"id": "security.gentoo.org (202311-09)"
+		},
+		{
+			"text": "https://security.netapp.com/advisory/ntap-20231016-0001/",
+			"source": "関連文書",
+			"id": "security.netapp.com (ntap-20231016-0001)"
+		},
+		{
+			"text": "https://security.paloaltonetworks.com/CVE-2023-44487",
+			"source": "関連文書",
+			"id": "security.paloaltonetworks.com (CVE-2023-44487)"
+		},
+		{
+			"text": "https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.14",
+			"source": "関連文書",
+			"id": "tomcat.apache.org (security-10.html#Fixed_in_Apache_Tomcat_10.1.14)"
+		},
+		{
+			"text": "https://ubuntu.com/security/CVE-2023-44487",
+			"source": "関連文書",
+			"id": "ubuntu.com (CVE-2023-44487)"
+		},
+		{
+			"text": "https://www.bleepingcomputer.com/news/security/new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records/",
+			"source": "関連文書",
+			"id": "www.bleepingcomputer.com (new-http-2-rapid-reset-zero-day-attack-breaks-ddos-records)"
+		},
+		{
+			"text": "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+			"source": "関連文書",
+			"id": "www.cisa.gov (http2-rapid-reset-vulnerability-cve-2023-44487)"
+		},
+		{
+			"text": "https://www.darkreading.com/cloud/internet-wide-zero-day-bug-fuels-largest-ever-ddos-event",
+			"source": "関連文書",
+			"id": "www.darkreading.com (internet-wide-zero-day-bug-fuels-largest-ever-ddos-event)"
+		},
+		{
+			"text": "https://www.debian.org/security/2023/dsa-5521",
+			"source": "関連文書",
+			"id": "www.debian.org (dsa-5521)"
+		},
+		{
+			"text": "https://www.debian.org/security/2023/dsa-5522",
+			"source": "関連文書",
+			"id": "www.debian.org (dsa-5522)"
+		},
+		{
+			"text": "https://www.debian.org/security/2023/dsa-5540",
+			"source": "関連文書",
+			"id": "www.debian.org (dsa-5540)"
+		},
+		{
+			"text": "https://www.debian.org/security/2023/dsa-5549",
+			"source": "関連文書",
+			"id": "www.debian.org (dsa-5549)"
+		},
+		{
+			"text": "https://www.debian.org/security/2023/dsa-5558",
+			"source": "関連文書",
+			"id": "www.debian.org (dsa-5558)"
+		},
+		{
+			"text": "https://www.debian.org/security/2023/dsa-5570",
+			"source": "関連文書",
+			"id": "www.debian.org (dsa-5570)"
+		},
+		{
+			"text": "https://www.haproxy.com/blog/haproxy-is-not-affected-by-the-http-2-rapid-reset-attack-cve-2023-44487",
+			"source": "関連文書",
+			"id": "www.haproxy.com (haproxy-is-not-affected-by-the-http-2-rapid-reset-attack-cve-2023-44487)"
+		},
+		{
+			"text": "https://www.netlify.com/blog/netlify-successfully-mitigates-cve-2023-44487/",
+			"source": "関連文書",
+			"id": "www.netlify.com (netlify-successfully-mitigates-cve-2023-44487)"
+		},
+		{
+			"text": "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/",
+			"source": "関連文書",
+			"id": "www.nginx.com (http-2-rapid-reset-attack-impacting-f5-nginx-products)"
+		},
+		{
+			"text": "https://www.openwall.com/lists/oss-security/2023/10/10/6",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2023/10/10/6)"
+		},
+		{
+			"text": "https://www.phoronix.com/news/HTTP2-Rapid-Reset-Attack",
+			"source": "関連文書",
+			"id": "www.phoronix.com (HTTP2-Rapid-Reset-Attack)"
+		},
+		{
+			"text": "https://www.theregister.com/2023/10/10/http2_rapid_reset_zeroday/",
+			"source": "関連文書",
+			"id": "www.theregister.com (http2_rapid_reset_zeroday)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/400.html",
+			"id": "CWE-400",
+			"title": "リソースの枯渇(CWE-400)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:tomcat",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache Tomcat"
+		},
+		{
+			"text": "cpe:/a:apple:swiftnio_http%2f2",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "SwiftNIO HTTP/2"
+		},
+		{
+			"text": "cpe:/a:caddyserver:caddy",
+			"version": "2.2",
+			"vendor": "Light Code Labs",
+			"product": "Caddy"
+		},
+		{
+			"text": "cpe:/a:eclipse:jetty",
+			"version": "2.2",
+			"vendor": "Eclipse Foundation",
+			"product": "Jetty"
+		},
+		{
+			"text": "cpe:/a:envoyproxy:envoy",
+			"version": "2.2",
+			"vendor": "Envoy Proxy",
+			"product": "Envoy"
+		},
+		{
+			"text": "cpe:/a:f5:big-ip_access_policy_manager",
+			"version": "2.2",
+			"vendor": "F5 Networks",
+			"product": "BIG-IP Access Policy Manager (APM)"
+		},
+		{
+			"text": "cpe:/a:f5:big-ip_advanced_firewall_manager",
+			"version": "2.2",
+			"vendor": "F5 Networks",
+			"product": "BIG-IP Advanced Firewall Manager (AFM)"
+		},
+		{
+			"text": "cpe:/a:f5:big-ip_advanced_web_application_firewall",
+			"version": "2.2",
+			"vendor": "F5 Networks",
+			"product": "BIG-IP Advanced Web Application Firewall (WAF)"
+		},
+		{
+			"text": "cpe:/a:f5:big-ip_analytics",
+			"version": "2.2",
+			"vendor": "F5 Networks",
+			"product": "BIG-IP Analytics"
+		},
+		{
+			"text": "cpe:/a:f5:big-ip_application_acceleration_manager",
+			"version": "2.2",
+			"vendor": "F5 Networks",
+			"product": "BIG-IP Application Acceleration Manager (AAM)"
+		},
+		{
+			"text": "cpe:/a:f5:big-ip_application_security_manager",
+			"version": "2.2",
+			"vendor": "F5 Networks",
+			"product": "BIG-IP Application Security Manager (ASM)"
+		},
+		{
+			"text": "cpe:/a:f5:big-ip_application_visibility_and_reporting",
+			"version": "2.2",
+			"vendor": "F5 Networks",
+			"product": "BIG-IP Application Visibility and Reporting"
+		},
+		{
+			"text": "cpe:/a:f5:big-ip_carrier-grade_nat",
+			"version": "2.2",
+			"vendor": "F5 Networks",
+			"product": "BIG-IP Carrier-Grade Network Address Translation (CGNAT)"
+		},
+		{
+			"text": "cpe:/a:f5:big-ip_ddos_hybrid_defender",
+			"version": "2.2",
+			"vendor": "F5 Networks",
+			"product": "BIG-IP DDoS Hybrid Defender"
+		},
+		{
+			"text": "cpe:/a:f5:big-ip_domain_name_system",
+			"version": "2.2",
+			"vendor": "F5 Networks",
+			"product": "BIG-IP Domain Name System (DNS)"
+		},
+		{
+			"text": "cpe:/a:f5:big-ip_fraud_protection_service",
+			"version": "2.2",
+			"vendor": "F5 Networks",
+			"product": "BIG-IP Fraud Protection Service (FPS)"
+		},
+		{
+			"text": "cpe:/a:f5:big-ip_global_traffic_manager",
+			"version": "2.2",
+			"vendor": "F5 Networks",
+			"product": "BIG-IP Global Traffic Manager (GTM)"
+		},
+		{
+			"text": "cpe:/a:golang:go",
+			"version": "2.2",
+			"vendor": "The Go Project",
+			"product": "Go"
+		},
+		{
+			"text": "cpe:/a:golang:http2",
+			"version": "2.2",
+			"vendor": "The Go Project",
+			"product": "http2"
+		},
+		{
+			"text": "cpe:/a:golang:networking",
+			"version": "2.2",
+			"vendor": "The Go Project",
+			"product": "networking"
+		},
+		{
+			"text": "cpe:/a:ietf:http",
+			"version": "2.2",
+			"vendor": "インターネット技術タスクフォース (IETF)",
+			"product": "http"
+		},
+		{
+			"text": "cpe:/a:netty_project:netty",
+			"version": "2.2",
+			"vendor": "The Netty project",
+			"product": "Netty"
+		},
+		{
+			"text": "cpe:/a:nghttp2:nghttp2",
+			"version": "2.2",
+			"vendor": "nghttp2 project",
+			"product": "nghttp2"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2023-12-27T14:58+09:00",
+	"issued": "2023-12-27T14:58+09:00",
+	"modified": "2023-12-27T14:58+09:00"
+}

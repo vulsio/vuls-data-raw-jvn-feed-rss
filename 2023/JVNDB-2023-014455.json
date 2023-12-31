@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-014455.html",
+	"title": "iohk の hydra における脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-014455.html",
+	"description": "iohk の hydra には、不特定の脆弱性が存在します。",
+	"identifier": "JVNDB-2023-014455",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-38701",
+			"source": "CVE",
+			"id": "CVE-2023-38701"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-38701",
+			"source": "NVD",
+			"id": "CVE-2023-38701"
+		},
+		{
+			"text": "https://github.com/input-output-hk/hydra/blob/master/CHANGELOG.md#0120---2023-08-18",
+			"source": "関連文書",
+			"id": "github.com (CHANGELOG.md#0120---2023-08-18)"
+		},
+		{
+			"text": "https://github.com/input-output-hk/hydra/blob/master/hydra-plutus/src/Hydra/Contract/Commit.hs#L94-L97",
+			"source": "関連文書",
+			"id": "github.com (Commit.hs#L94-L97)"
+		},
+		{
+			"text": "https://github.com/input-output-hk/hydra/blob/master/hydra-plutus/src/Hydra/Contract/Util.hs#L32-L42",
+			"source": "関連文書",
+			"id": "github.com (Util.hs#L32-L42)"
+		},
+		{
+			"text": "https://github.com/input-output-hk/hydra/security/advisories/GHSA-6x9v-7x5r-w8w6",
+			"source": "関連文書",
+			"id": "github.com (GHSA-6x9v-7x5r-w8w6)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-noinfo",
+			"title": "情報不足(CWE-noinfo)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:iohk:hydra",
+			"version": "2.2",
+			"vendor": "iohk",
+			"product": "hydra"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.1",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
+		}
+	],
+	"date": "2023-12-25T10:41+09:00",
+	"issued": "2023-12-25T10:41+09:00",
+	"modified": "2023-12-25T10:41+09:00"
+}

@@ -1,0 +1,54 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-014993.html",
+	"title": "Gofiber の Go 用 Fiber におけるクロスサイトリクエストフォージェリの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-014993.html",
+	"description": "Gofiber の Go 用 Fiber には、クロスサイトリクエストフォージェリの脆弱性、検証および完全性チェックを行っていない Cookie への依存に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-014993",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-45141",
+			"source": "CVE",
+			"id": "CVE-2023-45141"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-45141",
+			"source": "NVD",
+			"id": "CVE-2023-45141"
+		},
+		{
+			"text": "https://github.com/gofiber/fiber/security/advisories/GHSA-mv73-f69x-444p",
+			"source": "関連文書",
+			"id": "github.com (GHSA-mv73-f69x-444p)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+			"id": "CWE-352",
+			"title": "クロスサイトリクエストフォージェリ(CWE-352)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/565.html",
+			"id": "CWE-565",
+			"title": "検証および完全性チェックを行っていない Cookie への依存(CWE-565)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:gofiber:fiber",
+			"version": "2.2",
+			"vendor": "Gofiber",
+			"product": "Fiber"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2023-12-26T16:47+09:00",
+	"issued": "2023-12-26T16:47+09:00",
+	"modified": "2023-12-26T16:47+09:00"
+}
