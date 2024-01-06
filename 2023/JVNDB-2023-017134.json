@@ -1,0 +1,86 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-017134.html",
+	"title": "Django Software Foundation の Django 等複数ベンダの製品における非効率的な正規表現の複雑さに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-017134.html",
+	"description": "Django Software Foundation の Django 等複数ベンダの製品には、非効率的な正規表現の複雑さに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-017134",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-36053",
+			"source": "CVE",
+			"id": "CVE-2023-36053"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-36053",
+			"source": "NVD",
+			"id": "CVE-2023-36053"
+		},
+		{
+			"text": "https://docs.djangoproject.com/en/4.2/releases/security/",
+			"source": "関連文書",
+			"id": "docs.djangoproject.com (security)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/07/msg00022.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00022)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NRDGTUN4LTI6HG4TWR3JYLSFVXPZT42A/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (NRDGTUN4LTI6HG4TWR3JYLSFVXPZT42A)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/XG5DYKPNDCEHJQ3TKPJQO7QGSR4FAYMS/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (XG5DYKPNDCEHJQ3TKPJQO7QGSR4FAYMS)"
+		},
+		{
+			"text": "https://www.debian.org/security/2023/dsa-5465",
+			"source": "関連文書",
+			"id": "www.debian.org (dsa-5465)"
+		},
+		{
+			"text": "https://www.djangoproject.com/weblog/2023/jul/03/security-releases/",
+			"source": "関連文書",
+			"id": "www.djangoproject.com (security-releases)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/1333.html",
+			"id": "CWE-1333",
+			"title": "非効率的な正規表現の複雑さ(CWE-1333)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:djangoproject:django",
+			"version": "2.2",
+			"vendor": "Django Software Foundation",
+			"product": "Django"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2024-01-05T17:10+09:00",
+	"issued": "2024-01-05T17:10+09:00",
+	"modified": "2024-01-05T17:10+09:00"
+}
