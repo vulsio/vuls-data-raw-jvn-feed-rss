@@ -1,0 +1,70 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-016374.html",
+	"title": "browserify の browserify-sign 等複数ベンダの製品におけるデジタル署名の検証に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-016374.html",
+	"description": "browserify の browserify-sign 等複数ベンダの製品には、デジタル署名の検証に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-016374",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-46234",
+			"source": "CVE",
+			"id": "CVE-2023-46234"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-46234",
+			"source": "NVD",
+			"id": "CVE-2023-46234"
+		},
+		{
+			"text": "https://github.com/browserify/browserify-sign/commit/85994cd6348b50f2fd1b73c54e20881416f44a30",
+			"source": "関連文書",
+			"id": "github.com (85994cd6348b50f2fd1b73c54e20881416f44a30)"
+		},
+		{
+			"text": "https://github.com/browserify/browserify-sign/security/advisories/GHSA-x9w5-v3q2-3rhw",
+			"source": "関連文書",
+			"id": "github.com (GHSA-x9w5-v3q2-3rhw)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/10/msg00040.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00040)"
+		},
+		{
+			"text": "https://www.debian.org/security/2023/dsa-5539",
+			"source": "関連文書",
+			"id": "www.debian.org (dsa-5539)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/347.html",
+			"id": "CWE-347",
+			"title": "デジタル署名の不適切な検証(CWE-347)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:browserify:browserify-sign",
+			"version": "2.2",
+			"vendor": "browserify",
+			"product": "browserify-sign"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+		}
+	],
+	"date": "2024-01-04T11:20+09:00",
+	"issued": "2024-01-04T11:20+09:00",
+	"modified": "2024-01-04T11:20+09:00"
+}
