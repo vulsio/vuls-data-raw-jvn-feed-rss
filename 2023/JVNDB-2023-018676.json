@@ -1,0 +1,67 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-018676.html",
+	"title": "複数の kloudq 製品における認証に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-018676.html",
+	"description": "tor loco min、tor equip gateway、tor shield 等複数の kloudq 製品には、認証に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-018676",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-41442",
+			"source": "CVE",
+			"id": "CVE-2023-41442"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-41442",
+			"source": "NVD",
+			"id": "CVE-2023-41442"
+		},
+		{
+			"text": "https://writeups.ayyappan.me/v/tor-iot-mqtt/",
+			"source": "関連文書",
+			"id": "writeups.ayyappan.me (tor-iot-mqtt)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+			"id": "CWE-287",
+			"title": "不適切な認証(CWE-287)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:kloudq:tor_equip_gateway",
+			"version": "2.2",
+			"vendor": "kloudq",
+			"product": "tor equip gateway"
+		},
+		{
+			"text": "cpe:/a:kloudq:tor_lenz",
+			"version": "2.2",
+			"vendor": "kloudq",
+			"product": "tor lenz"
+		},
+		{
+			"text": "cpe:/a:kloudq:tor_loco_min",
+			"version": "2.2",
+			"vendor": "kloudq",
+			"product": "tor loco min"
+		},
+		{
+			"text": "cpe:/a:kloudq:tor_shield",
+			"version": "2.2",
+			"vendor": "kloudq",
+			"product": "tor shield"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-01-11T16:57+09:00",
+	"issued": "2024-01-11T16:57+09:00",
+	"modified": "2024-01-11T16:57+09:00"
+}
