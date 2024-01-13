@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-019258.html",
+	"title": "Piwigo における SQL インジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-019258.html",
+	"description": "Piwigo には、SQL インジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-019258",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-37270",
+			"source": "CVE",
+			"id": "CVE-2023-37270"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-37270",
+			"source": "NVD",
+			"id": "CVE-2023-37270"
+		},
+		{
+			"text": "https://github.com/Piwigo/Piwigo/blob/c01ec38bc43f09424a8d404719c35f963d63cf00/include/dblayer/functions_mysqli.inc.php#L491",
+			"source": "関連文書",
+			"id": "github.com (functions_mysqli.inc.php#L491)"
+		},
+		{
+			"text": "https://github.com/Piwigo/Piwigo/blob/c01ec38bc43f09424a8d404719c35f963d63cf00/include/functions.inc.php#L621",
+			"source": "関連文書",
+			"id": "github.com (functions.inc.php#L621)"
+		},
+		{
+			"text": "https://github.com/Piwigo/Piwigo/commit/978425527d6c113887f845d75cf982bbb62d761a",
+			"source": "関連文書",
+			"id": "github.com (978425527d6c113887f845d75cf982bbb62d761a)"
+		},
+		{
+			"text": "https://github.com/Piwigo/Piwigo/security/advisories/GHSA-934w-qj9p-3qcx",
+			"source": "関連文書",
+			"id": "github.com (GHSA-934w-qj9p-3qcx)"
+		},
+		{
+			"text": "https://piwigo.org/release-13.8.0",
+			"source": "関連文書",
+			"id": "piwigo.org (release-13.8.0)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:piwigo:piwigo",
+			"version": "2.2",
+			"vendor": "Piwigo",
+			"product": "Piwigo"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-01-12T17:05+09:00",
+	"issued": "2024-01-12T17:05+09:00",
+	"modified": "2024-01-12T17:05+09:00"
+}
