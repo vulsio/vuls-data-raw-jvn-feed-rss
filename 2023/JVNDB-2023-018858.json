@@ -1,0 +1,74 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-018858.html",
+	"title": "Squid-cache.org の Squid における境界外読み取りに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-018858.html",
+	"description": "Squid-cache.org の Squid には、境界外読み取りに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-018858",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-49285",
+			"source": "CVE",
+			"id": "CVE-2023-49285"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-49285",
+			"source": "NVD",
+			"id": "CVE-2023-49285"
+		},
+		{
+			"text": "https://github.com/squid-cache/squid/commit/77b3fb4df0f126784d5fd4967c28ed40eb8d521b",
+			"source": "関連文書",
+			"id": "github.com (77b3fb4df0f126784d5fd4967c28ed40eb8d521b)"
+		},
+		{
+			"text": "https://github.com/squid-cache/squid/commit/deee944f9a12c9fd399ce52f3e2526bb573a9470",
+			"source": "関連文書",
+			"id": "github.com (deee944f9a12c9fd399ce52f3e2526bb573a9470)"
+		},
+		{
+			"text": "https://github.com/squid-cache/squid/security/advisories/GHSA-8w9r-p88v-mmx9",
+			"source": "関連文書",
+			"id": "github.com (GHSA-8w9r-p88v-mmx9)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2024/01/msg00003.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00003)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/A5QASTMCUSUEW3UOMKHZJB3FTONWSRXS/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (A5QASTMCUSUEW3UOMKHZJB3FTONWSRXS)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MEV66D3PAAY6K7TWDT3WZBLCPLASFJDC/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (MEV66D3PAAY6K7TWDT3WZBLCPLASFJDC)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:squid-cache:squid",
+			"version": "2.2",
+			"vendor": "Squid-cache.org",
+			"product": "Squid"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2024-01-12T10:43+09:00",
+	"issued": "2024-01-12T10:43+09:00",
+	"modified": "2024-01-12T10:43+09:00"
+}

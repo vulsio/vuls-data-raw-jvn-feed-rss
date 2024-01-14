@@ -1,0 +1,79 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-017926.html",
+	"title": "networktocode の nautobot におけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-017926.html",
+	"description": "networktocode の nautobot には、クロスサイトスクリプティングの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-017926",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-48705",
+			"source": "CVE",
+			"id": "CVE-2023-48705"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-48705",
+			"source": "NVD",
+			"id": "CVE-2023-48705"
+		},
+		{
+			"text": "https://docs.djangoproject.com/en/3.2/ref/utils/#django.utils.html.format_html",
+			"source": "関連文書",
+			"id": "docs.djangoproject.com (#django.utils.html.format_html)"
+		},
+		{
+			"text": "https://docs.djangoproject.com/en/3.2/ref/utils/#django.utils.safestring.mark_safe",
+			"source": "関連文書",
+			"id": "docs.djangoproject.com (#django.utils.safestring.mark_safe)"
+		},
+		{
+			"text": "https://github.com/nautobot/nautobot/commit/362850f5a94689a4c75e3188bf6de826c3b012b2",
+			"source": "関連文書",
+			"id": "github.com (362850f5a94689a4c75e3188bf6de826c3b012b2)"
+		},
+		{
+			"text": "https://github.com/nautobot/nautobot/commit/54abe23331b6c3d0d82bf1b028c679b1d200920d",
+			"source": "関連文書",
+			"id": "github.com (54abe23331b6c3d0d82bf1b028c679b1d200920d)"
+		},
+		{
+			"text": "https://github.com/nautobot/nautobot/pull/4832",
+			"source": "関連文書",
+			"id": "github.com (pull/4832)"
+		},
+		{
+			"text": "https://github.com/nautobot/nautobot/pull/4833",
+			"source": "関連文書",
+			"id": "github.com (pull/4833)"
+		},
+		{
+			"text": "https://github.com/nautobot/nautobot/security/advisories/GHSA-cf9f-wmhp-v4pr",
+			"source": "関連文書",
+			"id": "github.com (GHSA-cf9f-wmhp-v4pr)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:networktocode:nautobot",
+			"version": "2.2",
+			"vendor": "networktocode",
+			"product": "nautobot"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-01-10T14:27+09:00",
+	"issued": "2024-01-10T14:27+09:00",
+	"modified": "2024-01-10T14:27+09:00"
+}
