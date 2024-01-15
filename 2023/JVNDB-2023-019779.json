@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-019779.html",
+	"title": "dfinity の Rust 用 candid における無限ループに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-019779.html",
+	"description": "dfinity の Rust 用 candid には、無限ループに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-019779",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-6245",
+			"source": "CVE",
+			"id": "CVE-2023-6245"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-6245",
+			"source": "NVD",
+			"id": "CVE-2023-6245"
+		},
+		{
+			"text": "https://github.com/dfinity/candid/blob/master/spec/Candid.md",
+			"source": "関連文書",
+			"id": "github.com (Candid.md)"
+		},
+		{
+			"text": "https://github.com/dfinity/candid/pull/478",
+			"source": "関連文書",
+			"id": "github.com (pull/478)"
+		},
+		{
+			"text": "https://github.com/dfinity/candid/security/advisories/GHSA-7787-p7x6-fq3j",
+			"source": "関連文書",
+			"id": "github.com (GHSA-7787-p7x6-fq3j)"
+		},
+		{
+			"text": "https://internetcomputer.org/docs/current/references/candid-ref",
+			"source": "関連文書",
+			"id": "internetcomputer.org (candid-ref)"
+		},
+		{
+			"text": "https://internetcomputer.org/docs/current/references/ic-interface-spec",
+			"source": "関連文書",
+			"id": "internetcomputer.org (ic-interface-spec)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/835.html",
+			"id": "CWE-835",
+			"title": "無限ループ(CWE-835)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:dfinity:candid",
+			"version": "2.2",
+			"vendor": "dfinity",
+			"product": "candid"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2024-01-15T13:39+09:00",
+	"issued": "2024-01-15T13:39+09:00",
+	"modified": "2024-01-15T13:39+09:00"
+}
