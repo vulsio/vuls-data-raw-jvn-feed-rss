@@ -1,0 +1,30 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-001006.html",
+	"title": "OpenSSL における不正な RSA 公開鍵のチェックに時間を要する問題 (Security Advisory [15th January 2024])",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-001006.html",
+	"description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20240115.txt\" target=\"blank\">Security Advisory [15th January 2024]</a> (\"Excessive time spent checking invalid RSA public keys (CVE-2023-6237)\") が公開されました。\r\n\r\n深刻度 - 低 (Severity: Low)\r\nRSA の modulus である n が大きすぎる素数の積で構成された、RSA 公開鍵を EVP_PKEY_public_check() 関数でチェックする際に、時間を要する問題があります。\r\n\r\nなお、OpenSSL 3.0 および 3.1 の FIPS プロバイダーは本脆弱性の影響を受け、OpenSSL SSL/TLS 実装は本脆弱性の影響を受けません。",
+	"identifier": "JVNDB-2024-001006",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU90782686/index.html",
+			"source": "JVN",
+			"id": "JVNVU#90782686"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-6237",
+			"source": "CVE",
+			"id": "CVE-2023-6237"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		}
+	],
+	"date": "2024-01-17T11:04+09:00",
+	"issued": "2024-01-17T11:04+09:00",
+	"modified": "2024-01-17T11:04+09:00"
+}
