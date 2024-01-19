@@ -1,0 +1,54 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-021613.html",
+	"title": "Nextcloud の user oidc における認証アルゴリズムの不適切な実装に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-021613.html",
+	"description": "Nextcloud の user oidc には、認証アルゴリズムの不適切な実装に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-021613",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-39953",
+			"source": "CVE",
+			"id": "CVE-2023-39953"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-39953",
+			"source": "NVD",
+			"id": "CVE-2023-39953"
+		},
+		{
+			"text": "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-xx3h-v363-q36j",
+			"source": "関連文書",
+			"id": "github.com (GHSA-xx3h-v363-q36j)"
+		},
+		{
+			"text": "https://github.com/nextcloud/user_oidc/pull/642",
+			"source": "関連文書",
+			"id": "github.com (pull/642)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/303.html",
+			"id": "CWE-303",
+			"title": "認証アルゴリズムの不適切な実装(CWE-303)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:nextcloud:user_oidc",
+			"version": "2.2",
+			"vendor": "Nextcloud",
+			"product": "user oidc"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "4.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-01-19T16:27+09:00",
+	"issued": "2024-01-19T16:27+09:00",
+	"modified": "2024-01-19T16:27+09:00"
+}

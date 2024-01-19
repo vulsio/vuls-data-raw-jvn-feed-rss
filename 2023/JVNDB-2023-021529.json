@@ -1,0 +1,84 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-021529.html",
+	"title": "libp2p の Go 用 go-libp2p における制限またはスロットリング無しのリソースの割り当てに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-021529.html",
+	"description": "libp2p の Go 用 go-libp2p には、制限またはスロットリング無しのリソースの割り当てに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-021529",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-39533",
+			"source": "CVE",
+			"id": "CVE-2023-39533"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-39533",
+			"source": "NVD",
+			"id": "CVE-2023-39533"
+		},
+		{
+			"text": "https://github.com/golang/go/commit/2350afd2e8ab054390e284c95d5b089c142db017",
+			"source": "関連文書",
+			"id": "github.com (2350afd2e8ab054390e284c95d5b089c142db017)"
+		},
+		{
+			"text": "https://github.com/golang/go/issues/61460",
+			"source": "関連文書",
+			"id": "github.com (issues/61460)"
+		},
+		{
+			"text": "https://github.com/libp2p/go-libp2p/commit/0cce607219f3710addc7e18672cffd1f1d912fbb",
+			"source": "関連文書",
+			"id": "github.com (0cce607219f3710addc7e18672cffd1f1d912fbb)"
+		},
+		{
+			"text": "https://github.com/libp2p/go-libp2p/commit/445be526aea4ee0b1fa5388aa65d32b2816d3a00",
+			"source": "関連文書",
+			"id": "github.com (445be526aea4ee0b1fa5388aa65d32b2816d3a00)"
+		},
+		{
+			"text": "https://github.com/libp2p/go-libp2p/commit/e30fcf7dfd4715ed89a5e68d7a4f774d3b9aa92d",
+			"source": "関連文書",
+			"id": "github.com (e30fcf7dfd4715ed89a5e68d7a4f774d3b9aa92d)"
+		},
+		{
+			"text": "https://github.com/libp2p/go-libp2p/pull/2454",
+			"source": "関連文書",
+			"id": "github.com (pull/2454)"
+		},
+		{
+			"text": "https://github.com/libp2p/go-libp2p/security/advisories/GHSA-876p-8259-xjgg",
+			"source": "関連文書",
+			"id": "github.com (GHSA-876p-8259-xjgg)"
+		},
+		{
+			"text": "https://github.com/quic-go/quic-go/pull/4012",
+			"source": "関連文書",
+			"id": "github.com (pull/4012)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/770.html",
+			"id": "CWE-770",
+			"title": "制限またはスロットリング無しのリソースの割り当て(CWE-770)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:libp2p:go-libp2p",
+			"version": "2.2",
+			"vendor": "libp2p",
+			"product": "go-libp2p"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2024-01-19T15:46+09:00",
+	"issued": "2024-01-19T15:46+09:00",
+	"modified": "2024-01-19T15:46+09:00"
+}
