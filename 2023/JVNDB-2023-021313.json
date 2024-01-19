@@ -1,0 +1,79 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-021313.html",
+	"title": "Matrix の Sydent における証明書検証に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-021313.html",
+	"description": "Matrix の Sydent には、証明書検証に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-021313",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-38686",
+			"source": "CVE",
+			"id": "CVE-2023-38686"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-38686",
+			"source": "NVD",
+			"id": "CVE-2023-38686"
+		},
+		{
+			"text": "https://docs.python.org/3/library/ssl.html?highlight=ssl#security-considerations",
+			"source": "関連文書",
+			"id": "docs.python.org (ssl.html?highlight=ssl#security-considerations)"
+		},
+		{
+			"text": "https://github.com/matrix-org/sydent/commit/1cd748307c6b168b66154e6c4db715d4b9551261",
+			"source": "関連文書",
+			"id": "github.com (1cd748307c6b168b66154e6c4db715d4b9551261)"
+		},
+		{
+			"text": "https://github.com/matrix-org/sydent/pull/574",
+			"source": "関連文書",
+			"id": "github.com (pull/574)"
+		},
+		{
+			"text": "https://github.com/matrix-org/sydent/releases/tag/v2.5.6",
+			"source": "関連文書",
+			"id": "github.com (v2.5.6)"
+		},
+		{
+			"text": "https://github.com/matrix-org/sydent/security/advisories/GHSA-p6hw-wm59-3g5g",
+			"source": "関連文書",
+			"id": "github.com (GHSA-p6hw-wm59-3g5g)"
+		},
+		{
+			"text": "https://github.com/python/cpython/issues/91826",
+			"source": "関連文書",
+			"id": "github.com (issues/91826)"
+		},
+		{
+			"text": "https://peps.python.org/pep-0476/",
+			"source": "関連文書",
+			"id": "peps.python.org (pep-0476)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/295.html",
+			"id": "CWE-295",
+			"title": "不正な証明書検証(CWE-295)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:matrix:sydent",
+			"version": "2.2",
+			"vendor": "Matrix",
+			"product": "Sydent"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-01-19T11:52+09:00",
+	"issued": "2024-01-19T11:52+09:00",
+	"modified": "2024-01-19T11:52+09:00"
+}

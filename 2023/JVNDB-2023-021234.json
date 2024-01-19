@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-021234.html",
+	"title": "xithrius の Rust 用 twitch-tui における重要なデータの暗号化の欠如に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-021234.html",
+	"description": "xithrius の Rust 用 twitch-tui には、重要なデータの暗号化の欠如に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-021234",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-38688",
+			"source": "CVE",
+			"id": "CVE-2023-38688"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-38688",
+			"source": "NVD",
+			"id": "CVE-2023-38688"
+		},
+		{
+			"text": "https://github.com/Xithrius/twitch-tui/blob/340afc3c8c07a83289fe6ef614aa7563c8b70756/src/twitch/connection.rs#L23",
+			"source": "関連文書",
+			"id": "github.com (connection.rs#L23)"
+		},
+		{
+			"text": "https://github.com/Xithrius/twitch-tui/commit/74d13ddca35f8f0816f4933c229da1fd95c0350a",
+			"source": "関連文書",
+			"id": "github.com (74d13ddca35f8f0816f4933c229da1fd95c0350a)"
+		},
+		{
+			"text": "https://github.com/Xithrius/twitch-tui/security/advisories/GHSA-779w-xvpm-78jx",
+			"source": "関連文書",
+			"id": "github.com (GHSA-779w-xvpm-78jx)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/311.html",
+			"id": "CWE-311",
+			"title": "重要なデータの暗号化の欠如(CWE-311)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:xithrius:twitch-tui",
+			"version": "2.2",
+			"vendor": "xithrius",
+			"product": "twitch-tui"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-01-19T09:39+09:00",
+	"issued": "2024-01-19T09:39+09:00",
+	"modified": "2024-01-19T09:39+09:00"
+}
