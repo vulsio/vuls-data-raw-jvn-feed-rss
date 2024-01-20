@@ -1,0 +1,79 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-021708.html",
+	"title": "Minecraft 用 opencomputers におけるサーバサイドのリクエストフォージェリの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-021708.html",
+	"description": "Minecraft 用 opencomputers には、サーバサイドのリクエストフォージェリの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-021708",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-37261",
+			"source": "CVE",
+			"id": "CVE-2023-37261"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-37261",
+			"source": "NVD",
+			"id": "CVE-2023-37261"
+		},
+		{
+			"text": "https://github.com/MightyPirates/OpenComputers/blob/5b2ba76a4c242b369b9b6ac6196fd04d96580ad0/src/main/resources/application.conf#L966-L986",
+			"source": "関連文書",
+			"id": "github.com (application.conf#L966-L986)"
+		},
+		{
+			"text": "https://github.com/MightyPirates/OpenComputers/blob/5b2ba76a4c242b369b9b6ac6196fd04d96580ad0/src/main/scala/li/cil/oc/Settings.scala#L614-L637",
+			"source": "関連文書",
+			"id": "github.com (Settings.scala#L614-L637)"
+		},
+		{
+			"text": "https://github.com/MightyPirates/OpenComputers/commit/d13c015357fd6c42e0a1bdd6e1ef9462f0450a15",
+			"source": "関連文書",
+			"id": "github.com (d13c015357fd6c42e0a1bdd6e1ef9462f0450a15)"
+		},
+		{
+			"text": "https://github.com/MightyPirates/OpenComputers/issues/2365",
+			"source": "関連文書",
+			"id": "github.com (issues/2365)"
+		},
+		{
+			"text": "https://github.com/MightyPirates/OpenComputers/releases/tag/1.12.2-forge%2F1.8.3",
+			"source": "関連文書",
+			"id": "github.com (1.12.2-forge/1.8.3)"
+		},
+		{
+			"text": "https://github.com/MightyPirates/OpenComputers/security/advisories/GHSA-vvfj-xh7c-j2cm",
+			"source": "関連文書",
+			"id": "github.com (GHSA-vvfj-xh7c-j2cm)"
+		},
+		{
+			"text": "https://github.com/cc-tweaked/CC-Tweaked/security/advisories/GHSA-7p4w-mv69-2wm2",
+			"source": "関連文書",
+			"id": "github.com (GHSA-7p4w-mv69-2wm2)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/918.html",
+			"id": "CWE-918",
+			"title": "サーバサイドのリクエストフォージェリ(CWE-918)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:opencomputers:opencomputers",
+			"version": "2.2",
+			"vendor": "opencomputers",
+			"product": "opencomputers"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-01-19T17:06+09:00",
+	"issued": "2024-01-19T17:06+09:00",
+	"modified": "2024-01-19T17:06+09:00"
+}
