@@ -1,0 +1,95 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-020246.html",
+	"title": "複数の Moonlight Stream 製品における古典的バッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-020246.html",
+	"description": "moonlight-common-c、Moonlight、moonlight embedded 等複数の Moonlight Stream 製品には、古典的バッファオーバーフローの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-020246",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-42799",
+			"source": "CVE",
+			"id": "CVE-2023-42799"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-42799",
+			"source": "NVD",
+			"id": "CVE-2023-42799"
+		},
+		{
+			"text": "https://github.com/moonlight-stream/moonlight-common-c/commit/02b7742f4d19631024bd766bd2bb76715780004e",
+			"source": "関連文書",
+			"id": "github.com (02b7742f4d19631024bd766bd2bb76715780004e)"
+		},
+		{
+			"text": "https://github.com/moonlight-stream/moonlight-common-c/commit/50c0a51b10ecc5b3415ea78c21d96d679e2288f9",
+			"source": "関連文書",
+			"id": "github.com (50c0a51b10ecc5b3415ea78c21d96d679e2288f9)"
+		},
+		{
+			"text": "https://github.com/moonlight-stream/moonlight-common-c/security/advisories/GHSA-r8cf-45f4-vf8m",
+			"source": "関連文書",
+			"id": "github.com (GHSA-r8cf-45f4-vf8m)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/120.html",
+			"id": "CWE-120",
+			"title": "古典的バッファオーバーフロー(CWE-120)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:moonlight-stream:moonlight",
+			"version": "2.2",
+			"vendor": "Moonlight Stream",
+			"product": "Moonlight"
+		},
+		{
+			"text": "cpe:/a:moonlight-stream:moonlight-common-c",
+			"version": "2.2",
+			"vendor": "Moonlight Stream",
+			"product": "moonlight-common-c"
+		},
+		{
+			"text": "cpe:/a:moonlight-stream:moonlight_embedded",
+			"version": "2.2",
+			"vendor": "Moonlight Stream",
+			"product": "moonlight embedded"
+		},
+		{
+			"text": "cpe:/a:moonlight-stream:moonlight_switch",
+			"version": "2.2",
+			"vendor": "Moonlight Stream",
+			"product": "moonlight switch"
+		},
+		{
+			"text": "cpe:/a:moonlight-stream:moonlight_tv",
+			"version": "2.2",
+			"vendor": "Moonlight Stream",
+			"product": "moonlight tv"
+		},
+		{
+			"text": "cpe:/a:moonlight-stream:moonlight_vita",
+			"version": "2.2",
+			"vendor": "Moonlight Stream",
+			"product": "moonlight vita"
+		},
+		{
+			"text": "cpe:/a:moonlight-stream:moonlight_xbox",
+			"version": "2.2",
+			"vendor": "Moonlight Stream",
+			"product": "moonlight xbox"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-01-16T11:56+09:00",
+	"issued": "2024-01-16T11:56+09:00",
+	"modified": "2024-01-16T11:56+09:00"
+}

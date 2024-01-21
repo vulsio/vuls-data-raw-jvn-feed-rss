@@ -1,0 +1,65 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-020247.html",
+	"title": "Digium の Asterisk 等複数ベンダの製品における古典的バッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-020247.html",
+	"description": "Digium の Asterisk 等複数ベンダの製品には、古典的バッファオーバーフローの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-020247",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-37457",
+			"source": "CVE",
+			"id": "CVE-2023-37457"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-37457",
+			"source": "NVD",
+			"id": "CVE-2023-37457"
+		},
+		{
+			"text": "https://github.com/asterisk/asterisk/commit/a1ca0268254374b515fa5992f01340f7717113fa",
+			"source": "関連文書",
+			"id": "github.com (a1ca0268254374b515fa5992f01340f7717113fa)"
+		},
+		{
+			"text": "https://github.com/asterisk/asterisk/security/advisories/GHSA-98rc-4j27-74hh",
+			"source": "関連文書",
+			"id": "github.com (GHSA-98rc-4j27-74hh)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/12/msg00019.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00019)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/120.html",
+			"id": "CWE-120",
+			"title": "古典的バッファオーバーフロー(CWE-120)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:digium:asterisk",
+			"version": "2.2",
+			"vendor": "Digium",
+			"product": "Asterisk"
+		},
+		{
+			"text": "cpe:/a:sangoma:certified_asterisk",
+			"version": "2.2",
+			"vendor": "Sangoma",
+			"product": "certified asterisk"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+		}
+	],
+	"date": "2024-01-16T11:56+09:00",
+	"issued": "2024-01-16T11:56+09:00",
+	"modified": "2024-01-16T11:56+09:00"
+}

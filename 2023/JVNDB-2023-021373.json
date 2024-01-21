@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-021373.html",
+	"title": "nexb の scancode.io におけるコマンドインジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-021373.html",
+	"description": "nexb の scancode.io には、コマンドインジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-021373",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-39523",
+			"source": "CVE",
+			"id": "CVE-2023-39523"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-39523",
+			"source": "NVD",
+			"id": "CVE-2023-39523"
+		},
+		{
+			"text": "https://github.com/nexB/scancode.io/blob/main/scanpipe/pipes/fetch.py#L185",
+			"source": "関連文書",
+			"id": "github.com (fetch.py#L185)"
+		},
+		{
+			"text": "https://github.com/nexB/scancode.io/commit/07ec0de1964b14bf085a1c9a27ece2b61ab6105c",
+			"source": "関連文書",
+			"id": "github.com (07ec0de1964b14bf085a1c9a27ece2b61ab6105c)"
+		},
+		{
+			"text": "https://github.com/nexB/scancode.io/releases/tag/v32.5.1",
+			"source": "関連文書",
+			"id": "github.com (v32.5.1)"
+		},
+		{
+			"text": "https://github.com/nexB/scancode.io/security/advisories/GHSA-2ggp-cmvm-f62f",
+			"source": "関連文書",
+			"id": "github.com (GHSA-2ggp-cmvm-f62f)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/77.html",
+			"id": "CWE-77",
+			"title": "コマンドインジェクション(CWE-77)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:nexb:scancode.io",
+			"version": "2.2",
+			"vendor": "nexb",
+			"product": "scancode.io"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-01-19T12:26+09:00",
+	"issued": "2024-01-19T12:26+09:00",
+	"modified": "2024-01-19T12:26+09:00"
+}
