@@ -1,0 +1,75 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-001062.html",
+	"title": "ヤマハ製無線 LAN アクセスポイントに利用可能なデバッグ機能が存在している脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-001062.html",
+	"description": "ヤマハ株式会社が提供する無線 LAN アクセスポイント製品には、デバッグ機能が利用可能なまま残されています（CWE-489）。\r\n特定の操作により、デバッグ機能を有効化することが可能です。\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社ゼロゼロワン 早川 宙也 氏\r\n",
+	"identifier": "JVNDB-2024-001062",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU99896362/index.html",
+			"source": "JVN",
+			"id": "JVNVU#99896362"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-22366",
+			"source": "CVE",
+			"id": "CVE-2024-22366"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/489.html",
+			"id": "CWE-489",
+			"title": "アクティブ状態のデバッグコード(CWE-489)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:yamaha:wlx202",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "WLX202 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:yamaha:wlx212",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "WLX212 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:yamaha:wlx222",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "WLX222 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:yamaha:wlx313",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "WLX313 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:yamaha:wlx413",
+			"version": "2.2",
+			"vendor": "ヤマハ",
+			"product": "WLX413 ファームウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.2",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:A/AC:L/Au:S/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "6.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-01-24T15:40+09:00",
+	"issued": "2024-01-24T15:40+09:00",
+	"modified": "2024-01-24T15:40+09:00"
+}
