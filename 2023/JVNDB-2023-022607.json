@@ -1,0 +1,81 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-022607.html",
+	"title": "FRRouting Project の FRRouting 等複数ベンダの製品における境界外読み取りに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-022607.html",
+	"description": "FRRouting Project の FRRouting 等複数ベンダの製品には、境界外読み取りに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-022607",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-41360",
+			"source": "CVE",
+			"id": "CVE-2023-41360"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-41360",
+			"source": "NVD",
+			"id": "CVE-2023-41360"
+		},
+		{
+			"text": "https://github.com/FRRouting/frr/pull/14245",
+			"source": "関連文書",
+			"id": "github.com (pull/14245)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2023/09/msg00020.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00020)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/JLG64IF3FU7V76K4TKCCXVNEE6P2VUDO/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (JLG64IF3FU7V76K4TKCCXVNEE6P2VUDO)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LMJNX44SMJM25JZO7XWHDQCOB4SNJPIE/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (LMJNX44SMJM25JZO7XWHDQCOB4SNJPIE)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WXR6PIVY4SWO7HDT4EY733H4X32SCPM4/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (WXR6PIVY4SWO7HDT4EY733H4X32SCPM4)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:frrouting:frrouting",
+			"version": "2.2",
+			"vendor": "FRRouting Project",
+			"product": "FRRouting"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.1",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+		}
+	],
+	"date": "2024-01-24T10:05+09:00",
+	"issued": "2024-01-24T10:05+09:00",
+	"modified": "2024-01-24T10:05+09:00"
+}
