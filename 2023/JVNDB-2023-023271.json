@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-023271.html",
+	"title": "Progress Software Corporation の chef infra server における重要な情報のセキュアでない格納に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-023271.html",
+	"description": "Progress Software Corporation の chef infra server には、重要な情報のセキュアでない格納に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-023271",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-28864",
+			"source": "CVE",
+			"id": "CVE-2023-28864"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-28864",
+			"source": "NVD",
+			"id": "CVE-2023-28864"
+		},
+		{
+			"text": "https://blog.mondoo.com/chef-infra-server-cve-2023-28864-impact-and-remediation",
+			"source": "関連文書",
+			"id": "blog.mondoo.com (chef-infra-server-cve-2023-28864-impact-and-remediation)"
+		},
+		{
+			"text": "https://docs.chef.io/release_notes_server/",
+			"source": "関連文書",
+			"id": "docs.chef.io (release_notes_server)"
+		},
+		{
+			"text": "https://github.com/chef/chef-server/blob/8a2dc82148844767f7c7728633a03dcee812e56a/omnibus/files/server-ctl-cookbooks/infra-server/recipes/oc_bifrost.rb#L42",
+			"source": "関連文書",
+			"id": "github.com (oc_bifrost.rb#L42)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/922.html",
+			"id": "CWE-922",
+			"title": "重要な情報のセキュアでない格納(CWE-922)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:progress:chef_infra_server",
+			"version": "2.2",
+			"vendor": "Progress Software Corporation",
+			"product": "chef infra server"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-01-26T11:21+09:00",
+	"issued": "2024-01-26T11:21+09:00",
+	"modified": "2024-01-26T11:21+09:00"
+}
