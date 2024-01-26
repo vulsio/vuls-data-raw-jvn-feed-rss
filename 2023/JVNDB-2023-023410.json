@@ -1,0 +1,55 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-023410.html",
+	"title": "codecentric の spring boot admin 等複数ベンダの製品におけるコマンドインジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-023410.html",
+	"description": "codecentric の spring boot admin 等複数ベンダの製品には、コマンドインジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-023410",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-38286",
+			"source": "CVE",
+			"id": "CVE-2023-38286"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-38286",
+			"source": "NVD",
+			"id": "CVE-2023-38286"
+		},
+		{
+			"text": "https://github.com/p1n93r/SpringBootAdmin-thymeleaf-SSTI",
+			"source": "関連文書",
+			"id": "github.com (SpringBootAdmin-thymeleaf-SSTI)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/77.html",
+			"id": "CWE-77",
+			"title": "コマンドインジェクション(CWE-77)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:codecentric:spring_boot_admin",
+			"version": "2.2",
+			"vendor": "codecentric",
+			"product": "spring boot admin"
+		},
+		{
+			"text": "cpe:/a:thymeleaf:thymeleaf",
+			"version": "2.2",
+			"vendor": "Thymeleaf",
+			"product": "Thymeleaf"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-01-26T15:31+09:00",
+	"issued": "2024-01-26T15:31+09:00",
+	"modified": "2024-01-26T15:31+09:00"
+}
