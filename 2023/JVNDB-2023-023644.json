@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-023644.html",
+	"title": "pymedusa の medusa におけるサーバサイドのリクエストフォージェリの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-023644.html",
+	"description": "pymedusa の medusa には、サーバサイドのリクエストフォージェリの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-023644",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-50258",
+			"source": "CVE",
+			"id": "CVE-2023-50258"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-50258",
+			"source": "NVD",
+			"id": "CVE-2023-50258"
+		},
+		{
+			"text": "https://github.com/pymedusa/Medusa/blob/3d656652ab277e47689483912ed7fc443e7023e8/medusa/notifiers/discord.py#L64",
+			"source": "関連文書",
+			"id": "github.com (discord.py#L64)"
+		},
+		{
+			"text": "https://github.com/pymedusa/Medusa/blob/3d656652ab277e47689483912ed7fc443e7023e8/medusa/server/web/home/handler.py#L158",
+			"source": "関連文書",
+			"id": "github.com (handler.py#L158)"
+		},
+		{
+			"text": "https://github.com/pymedusa/Medusa/releases/tag/v1.0.19",
+			"source": "関連文書",
+			"id": "github.com (v1.0.19)"
+		},
+		{
+			"text": "https://github.com/pymedusa/Medusa/security/advisories/GHSA-3hph-6586-qv9g",
+			"source": "関連文書",
+			"id": "github.com (GHSA-3hph-6586-qv9g)"
+		},
+		{
+			"text": "https://securitylab.github.com/advisories/GHSL-2023-201_GHSL-2023-202_Medusa/",
+			"source": "関連文書",
+			"id": "securitylab.github.com (GHSL-2023-201_GHSL-2023-202_Medusa)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/918.html",
+			"id": "CWE-918",
+			"title": "サーバサイドのリクエストフォージェリ(CWE-918)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:pymedusa:medusa",
+			"version": "2.2",
+			"vendor": "pymedusa",
+			"product": "medusa"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+		}
+	],
+	"date": "2024-01-29T11:24+09:00",
+	"issued": "2024-01-29T11:24+09:00",
+	"modified": "2024-01-29T11:24+09:00"
+}
