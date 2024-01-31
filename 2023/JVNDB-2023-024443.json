@@ -1,0 +1,55 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-024443.html",
+	"title": "camsbiometrics の zkteco, essl, cams biometrics integration module 等複数ベンダの製品における SQL インジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-024443.html",
+	"description": "camsbiometrics の zkteco, essl, cams biometrics integration module 等複数ベンダの製品には、SQL インジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-024443",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-48050",
+			"source": "CVE",
+			"id": "CVE-2023-48050"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-48050",
+			"source": "NVD",
+			"id": "CVE-2023-48050"
+		},
+		{
+			"text": "https://github.com/luvsn/OdZoo/tree/main/exploits/odoo-biometric-attendance",
+			"source": "関連文書",
+			"id": "github.com (odoo-biometric-attendance)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:camsbiometrics:zkteco%2C_essl%2C_cams_biometrics_integration_module",
+			"version": "2.2",
+			"vendor": "camsbiometrics",
+			"product": "zkteco, essl, cams biometrics integration module"
+		},
+		{
+			"text": "cpe:/a:odoo:biometric_attendance",
+			"version": "2.2",
+			"vendor": "Odoo",
+			"product": "biometric attendance"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-01-31T15:05+09:00",
+	"issued": "2024-01-31T15:05+09:00",
+	"modified": "2024-01-31T15:05+09:00"
+}
