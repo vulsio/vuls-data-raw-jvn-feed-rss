@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-024764.html",
+	"title": "Yii Framework の yii2-authclient における脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-024764.html",
+	"description": "Yii Framework の yii2-authclient には、不特定の脆弱性が存在します。",
+	"identifier": "JVNDB-2023-024764",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-50708",
+			"source": "CVE",
+			"id": "CVE-2023-50708"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-50708",
+			"source": "NVD",
+			"id": "CVE-2023-50708"
+		},
+		{
+			"text": "https://github.com/yiisoft/yii2-authclient/blob/0d1c3880f4d79e20aa1d77c012650b54e69695ff/src/OAuth1.php#L158",
+			"source": "関連文書",
+			"id": "github.com (OAuth1.php#L158)"
+		},
+		{
+			"text": "https://github.com/yiisoft/yii2-authclient/blob/0d1c3880f4d79e20aa1d77c012650b54e69695ff/src/OAuth2.php#L121",
+			"source": "関連文書",
+			"id": "github.com (OAuth2.php#L121)"
+		},
+		{
+			"text": "https://github.com/yiisoft/yii2-authclient/blob/0d1c3880f4d79e20aa1d77c012650b54e69695ff/src/OpenIdConnect.php#L420",
+			"source": "関連文書",
+			"id": "github.com (OpenIdConnect.php#L420)"
+		},
+		{
+			"text": "https://github.com/yiisoft/yii2-authclient/commit/dabddf2154ab7e7703740205a069202554089248",
+			"source": "関連文書",
+			"id": "github.com (dabddf2154ab7e7703740205a069202554089248)"
+		},
+		{
+			"text": "https://github.com/yiisoft/yii2-authclient/security/advisories/GHSA-w8vh-p74j-x9xp",
+			"source": "関連文書",
+			"id": "github.com (GHSA-w8vh-p74j-x9xp)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:yiiframework:yii2-authclient",
+			"version": "2.2",
+			"vendor": "Yii Framework",
+			"product": "yii2-authclient"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-02-01T14:34+09:00",
+	"issued": "2024-02-01T14:34+09:00",
+	"modified": "2024-02-01T14:34+09:00"
+}
