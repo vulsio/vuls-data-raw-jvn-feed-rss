@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-025721.html",
+	"title": "humansignal の label studio におけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-025721.html",
+	"description": "humansignal の label studio には、クロスサイトスクリプティングの脆弱性が存在します。",
+	"identifier": "JVNDB-2023-025721",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-47115",
+			"source": "CVE",
+			"id": "CVE-2023-47115"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-47115",
+			"source": "NVD",
+			"id": "CVE-2023-47115"
+		},
+		{
+			"text": "https://docs.djangoproject.com/en/4.2/ref/views/#serving-files-in-development",
+			"source": "関連文書",
+			"id": "docs.djangoproject.com (#serving-files-in-development)"
+		},
+		{
+			"text": "https://github.com/HumanSignal/label-studio/blob/1.8.2/label_studio/users/functions.py#L18-L49",
+			"source": "関連文書",
+			"id": "github.com (functions.py#L18-L49)"
+		},
+		{
+			"text": "https://github.com/HumanSignal/label-studio/blob/1.8.2/label_studio/users/urls.py#L25-L26",
+			"source": "関連文書",
+			"id": "github.com (urls.py#L25-L26)"
+		},
+		{
+			"text": "https://github.com/HumanSignal/label-studio/commit/a7a71e594f32ec4af8f3f800d5ccb8662e275da3",
+			"source": "関連文書",
+			"id": "github.com (a7a71e594f32ec4af8f3f800d5ccb8662e275da3)"
+		},
+		{
+			"text": "https://github.com/HumanSignal/label-studio/security/advisories/GHSA-q68h-xwq5-mm7x",
+			"source": "関連文書",
+			"id": "github.com (GHSA-q68h-xwq5-mm7x)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:humansignal:label_studio",
+			"version": "2.2",
+			"vendor": "humansignal",
+			"product": "label studio"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-02-07T15:24+09:00",
+	"issued": "2024-02-07T15:24+09:00",
+	"modified": "2024-02-07T15:24+09:00"
+}

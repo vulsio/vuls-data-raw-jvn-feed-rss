@@ -2,9 +2,14 @@
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013805.html",
 	"title": "Zeroshell における OS コマンドインジェクションの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013805.html",
-	"description": "Zeroshell には、OS コマンドインジェクションの脆弱性が存在します。",
+	"description": "Zeroshell.org が提供していた Linux ディストリビューションである Zeroshell の Web インターフェースには、OS コマンドインジェクション (CWE-78) の脆弱性が存在します。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: MYTコンサルティング株式会社 日留川　紀彦 氏",
 	"identifier": "JVNDB-2020-013805",
 	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN44033918/index.html",
+			"source": "JVN",
+			"id": "JVN#44033918"
+		},
 		{
 			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-29390",
 			"source": "CVE",
@@ -16,9 +21,9 @@
 			"id": "CVE-2020-29390"
 		},
 		{
-			"text": "https://blog.quake.so/post/zeroshell_linux_router_rce/",
+			"text": "https://www.exploit-db.com/exploits/41040",
 			"source": "関連文書",
-			"id": "ZeroShell Linux Router 3.9.3 OS Command Injection vulnerability(CVE-2020-29390)"
+			"id": "Zeroshell 3.6.0/3.7.0 Net Services - Remote Code Execution"
 		},
 		{
 			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
@@ -28,19 +33,19 @@
 	],
 	"cpe": [
 		{
-			"text": "cpe:/a:zeroshell:zeroshell",
+			"text": "cpe:/o:zeroshell:zeroshell",
 			"version": "2.2",
-			"vendor": "zeroshell",
-			"product": "zeroshell"
+			"vendor": "Zeroshell.org",
+			"product": "Zeroshell"
 		}
 	],
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "10.0",
+			"score": "7.5",
 			"type": "Base",
 			"severity": "High",
-			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
 		},
 		{
 			"version": "3.0",
@@ -50,7 +55,7 @@
 			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
-	"date": "2021-07-13T17:18+09:00",
+	"date": "2024-02-07T12:10+09:00",
 	"issued": "2021-07-13T17:18+09:00",
-	"modified": "2021-07-13T17:18+09:00"
+	"modified": "2024-02-07T12:10+09:00"
 }
