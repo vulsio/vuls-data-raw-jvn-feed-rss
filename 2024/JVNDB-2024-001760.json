@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-001760.html",
+	"title": "vitejs の Node.js 用 vite における大文字と小文字の区別の不適切な処理に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-001760.html",
+	"description": "vitejs の Node.js 用 vite には、大文字と小文字の区別の不適切な処理に関する脆弱性、情報漏えいに関する脆弱性、アクセス制御に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-001760",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-23331",
+			"source": "CVE",
+			"id": "CVE-2024-23331"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-23331",
+			"source": "NVD",
+			"id": "CVE-2024-23331"
+		},
+		{
+			"text": "https://github.com/vitejs/vite/commit/91641c4da0a011d4c5352e88fc68389d4e1289a5",
+			"source": "関連文書",
+			"id": "github.com (91641c4da0a011d4c5352e88fc68389d4e1289a5)"
+		},
+		{
+			"text": "https://github.com/vitejs/vite/security/advisories/GHSA-c24v-8rfc-w8vw",
+			"source": "関連文書",
+			"id": "github.com (GHSA-c24v-8rfc-w8vw)"
+		},
+		{
+			"text": "https://vitejs.dev/config/server-options.html#server-fs-deny",
+			"source": "関連文書",
+			"id": "vitejs.dev (server-options.html#server-fs-deny)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/178.html",
+			"id": "CWE-178",
+			"title": "大文字と小文字の区別の不適切な処理(CWE-178)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/284.html",
+			"id": "CWE-284",
+			"title": "不適切なアクセス制御(CWE-284)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:vitejs:vite",
+			"version": "2.2",
+			"vendor": "vitejs",
+			"product": "vite"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-02-06T11:45+09:00",
+	"issued": "2024-02-06T11:45+09:00",
+	"modified": "2024-02-06T11:45+09:00"
+}
