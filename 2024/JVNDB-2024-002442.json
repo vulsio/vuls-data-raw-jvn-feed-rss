@@ -1,0 +1,54 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-002442.html",
+	"title": "vyperlang の Python 用 vyper における暗号アルゴリズムの使用に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-002442.html",
+	"description": "vyperlang の Python 用 vyper には、暗号アルゴリズムの使用に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-002442",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-24559",
+			"source": "CVE",
+			"id": "CVE-2024-24559"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-24559",
+			"source": "NVD",
+			"id": "CVE-2024-24559"
+		},
+		{
+			"text": "https://github.com/vyperlang/vyper/blob/c150fc49ee9375a930d177044559b83cb95f7963/vyper/ir/compile_ir.py#L585-L586",
+			"source": "関連文書",
+			"id": "github.com (compile_ir.py#L585-L586)"
+		},
+		{
+			"text": "https://github.com/vyperlang/vyper/security/advisories/GHSA-6845-xw22-ffxv",
+			"source": "関連文書",
+			"id": "github.com (GHSA-6845-xw22-ffxv)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/327.html",
+			"id": "CWE-327",
+			"title": "不完全、または危険な暗号アルゴリズムの使用(CWE-327)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:vyperlang:vyper",
+			"version": "2.2",
+			"vendor": "vyperlang",
+			"product": "vyper"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+		}
+	],
+	"date": "2024-02-14T15:06+09:00",
+	"issued": "2024-02-14T15:06+09:00",
+	"modified": "2024-02-14T15:06+09:00"
+}

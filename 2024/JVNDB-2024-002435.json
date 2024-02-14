@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-002435.html",
+	"title": "pixee の java code security toolkit におけるパストラバーサルの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-002435.html",
+	"description": "pixee の java code security toolkit には、パストラバーサルの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-002435",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-24569",
+			"source": "CVE",
+			"id": "CVE-2024-24569"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-24569",
+			"source": "NVD",
+			"id": "CVE-2024-24569"
+		},
+		{
+			"text": "https://github.com/pixee/java-security-toolkit/blob/7c8e93e6fb2420fb6003c54a741e267c4f883bab/src/main/java/io/github/pixee/security/ZipSecurity.java#L82-L87",
+			"source": "関連文書",
+			"id": "github.com (ZipSecurity.java#L82-L87)"
+		},
+		{
+			"text": "https://github.com/pixee/java-security-toolkit/commit/b885b03c9cfae53d62d239037f9654d973dd54d9",
+			"source": "関連文書",
+			"id": "github.com (b885b03c9cfae53d62d239037f9654d973dd54d9)"
+		},
+		{
+			"text": "https://github.com/pixee/java-security-toolkit/security/advisories/GHSA-qh4g-4m4w-jgv2",
+			"source": "関連文書",
+			"id": "github.com (GHSA-qh4g-4m4w-jgv2)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:pixee:java_code_security_toolkit",
+			"version": "2.2",
+			"vendor": "pixee",
+			"product": "java code security toolkit"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "4.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-02-14T14:57+09:00",
+	"issued": "2024-02-14T14:57+09:00",
+	"modified": "2024-02-14T14:57+09:00"
+}
