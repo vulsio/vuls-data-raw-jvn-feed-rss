@@ -1,0 +1,61 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000026.html",
+	"title": "ブラザー製 Web Based Management を実装しているプリンターやスキャナーにおける複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000026.html",
+	"description": "ブラザー工業株式会社が提供する Web Based Management を実装しているプリンターやスキャナーには、次の複数の脆弱性が存在します。\r\n<ul><li>認証不備 (CWE-287) - CVE-2024-21824</li><li>クロスサイトリクエストフォージェリ (CWE-352) - CVE-2024-22475</li></ul>\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が IPA に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 横浜国立大学 森井裕大 氏、乃万誉也 氏、安井浩基 氏、佐々木貴之 氏、吉岡克成 氏",
+	"identifier": "JVNDB-2024-000026",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN82749078/index.html",
+			"source": "JVN",
+			"id": "JVN#82749078"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-21824",
+			"source": "CVE",
+			"id": "CVE-2024-21824"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-22475",
+			"source": "CVE",
+			"id": "CVE-2024-22475"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+			"id": "CWE-352",
+			"title": "クロスサイトリクエストフォージェリ(CWE-352)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
+			"id": "CWE-287",
+			"title": "不適切な認証(CWE-287)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:brother:web_based_management",
+			"version": "2.2",
+			"vendor": "ブラザー工業",
+			"product": "Web Based Management"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "2.9",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:A/AC:M/Au:N/C:P/I:N/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-03-06T16:41+09:00",
+	"issued": "2024-03-06T16:41+09:00",
+	"modified": "2024-03-06T16:41+09:00"
+}

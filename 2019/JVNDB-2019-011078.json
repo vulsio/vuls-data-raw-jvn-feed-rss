@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-011078.html",
-	"title": "slicer69 doas における初期化されていないリソースの使用に関する脆弱性",
+	"title": "slicer69 doas における未チェックの戻り値に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-011078.html",
-	"description": "slicer69 doas には、初期化されていないリソースの使用に関する脆弱性が存在します。",
+	"description": "slicer69 doas には、未チェックの戻り値に関する脆弱性、例外的な状態のチェックに関する脆弱性、不正な認証に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2019-011078",
 	"references": [
 		{
@@ -16,9 +16,19 @@
 			"id": "CVE-2019-15900"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/1187.html",
-			"id": "CWE-1187",
-			"title": "初期化されていないリソースの使用(CWE-1187)"
+			"text": "https://cwe.mitre.org/data/definitions/252.html",
+			"id": "CWE-252",
+			"title": "未チェックの戻り値(CWE-252)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/754.html",
+			"id": "CWE-754",
+			"title": "例外的な状態における不適切なチェック(CWE-754)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/863.html",
+			"id": "CWE-863",
+			"title": "不正な認証(CWE-863)"
 		}
 	],
 	"cpe": [
@@ -45,7 +55,7 @@
 			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
-	"date": "2019-10-28T18:04+09:00",
+	"date": "2024-03-06T14:10+09:00",
 	"issued": "2019-10-28T18:04+09:00",
-	"modified": "2019-10-28T18:04+09:00"
+	"modified": "2024-03-06T14:10+09:00"
 }
