@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002438.html",
-	"title": "Microsoft Exchange Server における脆弱性",
+	"title": "Microsoft Exchange Server における信頼できないデータのデシリアライゼーションに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-002438.html",
-	"description": "Microsoft Exchange Server には、不特定の脆弱性が存在します。\r\n",
+	"description": "Microsoft Exchange Server には、信頼できないデータのデシリアライゼーションに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2022-002438",
 	"references": [
 		{
@@ -21,9 +21,14 @@
 			"id": "CVE-2022-41082"
 		},
 		{
-			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-			"id": "CWE-noinfo",
-			"title": "情報不足(CWE-noinfo)"
+			"text": "https://cisa.gov/known-exploited-vulnerabilities-catalog",
+			"source": "CISA Known Exploited Vulnerabilities Catalog",
+			"id": "CVE-2022-41082"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/502.html",
+			"id": "CWE-502",
+			"title": "信頼できないデータのデシリアライゼーション(CWE-502)"
 		}
 	],
 	"cpe": [
@@ -37,10 +42,10 @@
 	"cvss": [
 		{
 			"version": "3.0",
-			"score": "8.8",
+			"score": "8.0",
 			"type": "Base",
 			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2022-10-05T10:33+09:00",
