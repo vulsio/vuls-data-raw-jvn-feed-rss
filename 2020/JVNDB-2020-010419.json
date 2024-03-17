@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-010419.html",
-	"title": "HashiCorp Vault および Vault Enterprise における認証に関する脆弱性",
+	"title": "HashiCorp Vault および Vault Enterprise におけるスプーフィングによる認証回避に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-010419.html",
-	"description": "HashiCorp Vault および Vault Enterprise には、認証に関する脆弱性が存在します。\r\n",
+	"description": "HashiCorp Vault および Vault Enterprise には、スプーフィングによる認証回避に関する脆弱性、およびデータの信頼性についての不十分な検証に関する脆弱性が存在します。\r\n\r\n",
 	"identifier": "JVNDB-2020-010419",
 	"references": [
 		{
@@ -16,9 +16,14 @@
 			"id": "CVE-2020-16250"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
-			"id": "CWE-287",
-			"title": "不適切な認証(CWE-287)"
+			"text": "https://cwe.mitre.org/data/definitions/290.html",
+			"id": "CWE-290",
+			"title": "スプーフィングによる認証回避(CWE-290)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/345.html",
+			"id": "CWE-345",
+			"title": "データの信頼性についての不十分な検証(CWE-345)"
 		}
 	],
 	"cpe": [
@@ -39,10 +44,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "8.2",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N"
 		}
 	],
 	"date": "2021-01-14T16:06+09:00",
