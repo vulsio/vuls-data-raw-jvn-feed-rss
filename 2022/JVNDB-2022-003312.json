@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-003312.html",
-	"title": "jsonwebtoken における暗号アルゴリズムの使用に関する脆弱性",
+	"title": "jsonwebtoken におけるデジタル署名の検証に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-003312.html",
-	"description": "jsonwebtoken には、暗号アルゴリズムの使用に関する脆弱性が存在します。",
+	"description": "jsonwebtoken には、デジタル署名の検証に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2022-003312",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2022-23540"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/327.html",
-			"id": "CWE-327",
-			"title": "不完全、または危険な暗号アルゴリズムの使用(CWE-327)"
+			"text": "https://cwe.mitre.org/data/definitions/347.html",
+			"id": "CWE-347",
+			"title": "デジタル署名の不適切な検証(CWE-347)"
 		}
 	],
 	"cpe": [
@@ -32,10 +32,10 @@
 	"cvss": [
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "7.6",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L"
 		}
 	],
 	"date": "2023-02-14T12:05+09:00",

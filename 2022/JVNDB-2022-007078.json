@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-007078.html",
-	"title": "NVIDIA の NVIDIA Data Center GPU Manager における入力確認に関する脆弱性",
+	"title": "NVIDIA の NVIDIA Data Center GPU Manager における例外的な状態の処理に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-007078.html",
-	"description": "NVIDIA の NVIDIA Data Center GPU Manager には、入力確認に関する脆弱性が存在します。",
+	"description": "NVIDIA の NVIDIA Data Center GPU Manager には、例外的な状態の処理に関する脆弱性、境界外書き込みに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2022-007078",
 	"references": [
 		{
@@ -26,9 +26,14 @@
 			"id": "nvidia.custhelp.com (a_id/5328)"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-			"id": "CWE-20",
-			"title": "不適切な入力確認(CWE-20)"
+			"text": "https://cwe.mitre.org/data/definitions/755.html",
+			"id": "CWE-755",
+			"title": "例外的な状態における不適切な処理(CWE-755)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [

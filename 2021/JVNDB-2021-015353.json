@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-015353.html",
-	"title": "Concrete CMS における脆弱性",
+	"title": "Concrete CMS における不十分なランダム値の使用に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-015353.html",
-	"description": "Concrete CMS には、不特定の脆弱性が存在します。",
+	"description": "Concrete CMS には、不十分なランダム値の使用に関する脆弱性、危険なタイプのファイルの無制限アップロードに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2021-015353",
 	"references": [
 		{
@@ -21,9 +21,14 @@
 			"id": "A bypass of adding remote files in concrete5 FIlemanager leads to remote code execution"
 		},
 		{
-			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-			"id": "CWE-Other",
-			"title": "その他(CWE-Other)"
+			"text": "https://cwe.mitre.org/data/definitions/330.html",
+			"id": "CWE-330",
+			"title": "不十分なランダム値の使用(CWE-330)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/434.html",
+			"id": "CWE-434",
+			"title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
 		}
 	],
 	"cpe": [

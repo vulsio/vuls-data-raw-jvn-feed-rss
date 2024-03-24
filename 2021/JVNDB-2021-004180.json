@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-004180.html",
-	"title": "faad2 における脆弱性",
+	"title": "faad2 における境界外書き込みに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-004180.html",
-	"description": "faad2 には、不特定の脆弱性が存在します。",
+	"description": "faad2 には、境界外書き込みに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2021-004180",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "Dynamically allocate file name buffers. "
 		},
 		{
-			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-			"id": "CWE-Other",
-			"title": "その他(CWE-Other)"
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [
@@ -62,10 +62,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "8.8",
+			"score": "7.8",
 			"type": "Base",
 			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2021-11-16T15:39+09:00",
