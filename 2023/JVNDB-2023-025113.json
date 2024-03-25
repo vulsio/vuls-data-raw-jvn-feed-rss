@@ -1,10 +1,15 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-025113.html",
-	"title": "University at Buffalo の ls210d ファームウェアにおける脆弱性",
+	"title": "バッファロー製 LinkStation 200 シリーズにおける任意コード実行の脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-025113.html",
-	"description": "University at Buffalo の ls210d ファームウェアには、不特定の脆弱性が存在します。",
+	"description": "株式会社バッファローが提供する LinkStation 200 シリーズは、ネットワーク対応 HDD（NAS）です。\r\nLinkStation 200 シリーズには、ファームウェアアップデート時にダウンロードしたデータの完全性検証が十分に行われないことにより、システム上で不正なコードを実行させられる脆弱性（CWE-354、CVE-2023-51073）が存在します。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n",
 	"identifier": "JVNDB-2023-025113",
 	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU90953541/index.html",
+			"source": "JVN",
+			"id": "JVNVU#90953541"
+		},
 		{
 			"text": "https://www.cve.org/CVERecord?id=CVE-2023-51073",
 			"source": "CVE",
@@ -26,29 +31,89 @@
 			"id": "www.buffalotech.com"
 		},
 		{
-			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-			"id": "CWE-noinfo",
-			"title": "情報不足(CWE-noinfo)"
+			"text": "https://cwe.mitre.org/data/definitions/354.html",
+			"id": "CWE-354",
+			"title": "データの整合性検証不備(CWE-354)"
 		}
 	],
 	"cpe": [
 		{
-			"text": "cpe:/o:buffalo:ls210d_firmware",
+			"text": "cpe:/o:buffalo_inc:ls210dc_firmware",
 			"version": "2.2",
-			"vendor": "University at Buffalo",
-			"product": "ls210d ファームウェア"
+			"vendor": "バッファロー",
+			"product": "LS210DC ファームウェア"
+		},
+		{
+			"text": "cpe:/o:buffalo_inc:ls210dg_firmware",
+			"version": "2.2",
+			"vendor": "バッファロー",
+			"product": "LS210DG ファームウェア"
+		},
+		{
+			"text": "cpe:/o:buffalo_inc:ls210dnb_firmware",
+			"version": "2.2",
+			"vendor": "バッファロー",
+			"product": "LS210DNB ファームウェア"
+		},
+		{
+			"text": "cpe:/o:buffalo_inc:ls210dn_firmware",
+			"version": "2.2",
+			"vendor": "バッファロー",
+			"product": "LS210DN ファームウェア"
+		},
+		{
+			"text": "cpe:/o:buffalo_inc:ls210d_firmware",
+			"version": "2.2",
+			"vendor": "バッファロー",
+			"product": "LS210D ファームウェア"
+		},
+		{
+			"text": "cpe:/o:buffalo_inc:ls220db_firmware",
+			"version": "2.2",
+			"vendor": "バッファロー",
+			"product": "LS220DB ファームウェア"
+		},
+		{
+			"text": "cpe:/o:buffalo_inc:ls220dc_firmware",
+			"version": "2.2",
+			"vendor": "バッファロー",
+			"product": "LS220DC ファームウェア"
+		},
+		{
+			"text": "cpe:/o:buffalo_inc:ls220dg_firmware",
+			"version": "2.2",
+			"vendor": "バッファロー",
+			"product": "LS220DG ファームウェア"
+		},
+		{
+			"text": "cpe:/o:buffalo_inc:ls220dnb_firmware",
+			"version": "2.2",
+			"vendor": "バッファロー",
+			"product": "LS220DNB ファームウェア"
+		},
+		{
+			"text": "cpe:/o:buffalo_inc:ls220dn_firmware",
+			"version": "2.2",
+			"vendor": "バッファロー",
+			"product": "LS220DN ファームウェア"
+		},
+		{
+			"text": "cpe:/o:buffalo_inc:ls220d_firmware",
+			"version": "2.2",
+			"vendor": "バッファロー",
+			"product": "LS220D ファームウェア"
 		}
 	],
 	"cvss": [
 		{
 			"version": "3.0",
-			"score": "8.1",
+			"score": "5.3",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N"
 		}
 	],
-	"date": "2024-02-02T13:53+09:00",
+	"date": "2024-03-25T16:39+09:00",
 	"issued": "2024-02-02T13:53+09:00",
-	"modified": "2024-02-02T13:53+09:00"
+	"modified": "2024-03-25T16:39+09:00"
 }

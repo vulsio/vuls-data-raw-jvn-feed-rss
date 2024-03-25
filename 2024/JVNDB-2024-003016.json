@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003016.html",
+	"title": "ＫＤＤＩ製ホームゲートウェイ HGW BL1500HM における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003016.html",
+	"description": "ＫＤＤＩ株式会社が提供するホームゲートウェイ HGW BL1500HM には、次の複数の脆弱性が存在します。\r\n\r\n　* パスワードの強度が不十分 (CWE-1391) - CVE-2024-21865、CVE-2024-29071\r\n　* コマンドインジェクション (CWE-77) - CVE-2024-28041\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社ゼロゼロワン 早川 宙也 氏\r\n",
+	"identifier": "JVNDB-2024-003016",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU93546510/index.html",
+			"source": "JVN",
+			"id": "JVNVU#93546510"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-21865",
+			"source": "CVE",
+			"id": "CVE-2024-21865"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-28041",
+			"source": "CVE",
+			"id": "CVE-2024-28041"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-29071",
+			"source": "CVE",
+			"id": "CVE-2024-29071"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/1391.html",
+			"id": "CWE-1391",
+			"title": "弱い認証情報の使用(CWE-1391)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/77.html",
+			"id": "CWE-77",
+			"title": "コマンドインジェクション(CWE-77)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:kddi:hgw_bl1500hm_firmware",
+			"version": "2.2",
+			"vendor": "KDDI",
+			"product": "HGW BL1500HM ファームウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-03-25T14:49+09:00",
+	"issued": "2024-03-25T14:49+09:00",
+	"modified": "2024-03-25T14:49+09:00"
+}
