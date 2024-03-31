@@ -2,7 +2,7 @@
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-006982.html",
 	"title": "GNU Binutils における整数オーバーフローの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-006982.html",
-	"description": "GNU Binutils には、整数オーバーフローの脆弱性が存在します。",
+	"description": "GNU Binutils には、整数オーバーフローの脆弱性、境界外書き込みに関する脆弱性が存在します。",
 	"identifier": "JVNDB-2019-006982",
 	"references": [
 		{
@@ -19,6 +19,11 @@
 			"text": "https://cwe.mitre.org/data/definitions/190.html",
 			"id": "CWE-190",
 			"title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [
@@ -42,7 +47,7 @@
 			"score": "5.5",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
 		}
 	],
 	"date": "2019-07-30T17:57+09:00",

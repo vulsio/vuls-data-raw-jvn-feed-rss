@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-003737.html",
-	"title": "Squid における境界外読み取りに関する脆弱性",
+	"title": "Squid における整数オーバーフローの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-003737.html",
-	"description": "Squid には、境界外読み取りに関する脆弱性が存在します。",
+	"description": "Squid には、整数オーバーフローの脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2022-003737",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "Fwd: [ADVISORY] SQUID-2022:2 Buffer Over Read in SSPI and SMB"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/125.html",
-			"id": "CWE-125",
-			"title": "境界外読み取り(CWE-125)"
+			"text": "https://cwe.mitre.org/data/definitions/190.html",
+			"id": "CWE-190",
+			"title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
 		}
 	],
 	"cpe": [
@@ -37,10 +37,10 @@
 	"cvss": [
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "8.6",
 			"type": "Base",
 			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
 		}
 	],
 	"date": "2023-03-07T15:12+09:00",

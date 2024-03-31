@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-004333.html",
-	"title": "GNOME Evince における初期化されていないポインタのアクセスに関する脆弱性",
+	"title": "GNOME Evince における例外的な状態のチェックに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-004333.html",
-	"description": "GNOME Evince には、初期化されていないポインタのアクセスに関する脆弱性が存在します。",
+	"description": "GNOME Evince には、例外的な状態のチェックに関する脆弱性、初期化されていないリソースの使用に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-004333",
 	"references": [
 		{
@@ -16,9 +16,14 @@
 			"id": "CVE-2019-11459"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/824.html",
-			"id": "CWE-824",
-			"title": "初期化されていないポインタのアクセス(CWE-824)"
+			"text": "https://cwe.mitre.org/data/definitions/754.html",
+			"id": "CWE-754",
+			"title": "例外的な状態における不適切なチェック(CWE-754)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/908.html",
+			"id": "CWE-908",
+			"title": "初期化されていないリソースの使用(CWE-908)"
 		}
 	],
 	"cpe": [
