@@ -1,0 +1,60 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003049.html",
+	"title": "キーエンス製 KV STUDIO および KV REPLAY VIEWER における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003049.html",
+	"description": "株式会社キーエンスが提供する KV STUDIO および KV REPLAY VIEWER には、次の複数の脆弱性が存在します。\r\n\r\n　* 境界外書き込み（CWE-787）- CVE-2024-29218\r\n　* 境界外読み取り（CWE-125）- CVE-2024-29219\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: Michael Heinzl 氏",
+	"identifier": "JVNDB-2024-003049",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU95439120/index.html",
+			"source": "JVN",
+			"id": "JVNVU#95439120"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-29218",
+			"source": "CVE",
+			"id": "CVE-2024-29218"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-29219",
+			"source": "CVE",
+			"id": "CVE-2024-29219"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:keyence_kv_replay_viewer",
+			"version": "2.2",
+			"vendor": "株式会社キーエンス",
+			"product": "KV REPLAY VIEWER"
+		},
+		{
+			"text": "cpe:/a:misc:keyence_kv_studio",
+			"version": "2.2",
+			"vendor": "株式会社キーエンス",
+			"product": "KV STUDIO"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-04-01T11:42+09:00",
+	"issued": "2024-04-01T11:42+09:00",
+	"modified": "2024-04-01T11:42+09:00"
+}
