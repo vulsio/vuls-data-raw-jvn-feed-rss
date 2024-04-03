@@ -1,0 +1,50 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003051.html",
+	"title": "フルノシステムズ製マネージド・スイッチ ACERA 9010（MS モード以外で使用時）における初期パスワードに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003051.html",
+	"description": "株式会社フルノシステムズが提供するマネージド・スイッチ ACERA 9010 の工場出荷時設定では、パスワードが設定されておらず（CWE-258）、リモートアクセス機能が有効になっています。当該製品を MS モード以外で、パスワードおよびリモートアクセス機能を工場出荷時設定のまま使用している場合に、本脆弱性の影響を受けます。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。",
+	"identifier": "JVNDB-2024-003051",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU99285099/index.html",
+			"source": "JVN",
+			"id": "JVNVU#99285099"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-28744",
+			"source": "CVE",
+			"id": "CVE-2024-28744"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/258.html",
+			"id": "CWE-258",
+			"title": "設定ファイル内の空のパスワード(CWE-258)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:misc:furuno_systems_acera_9010-08",
+			"version": "2.2",
+			"vendor": "株式会社フルノシステムズ",
+			"product": "ACERA 9010-08"
+		},
+		{
+			"text": "cpe:/o:misc:furuno_systems_acera_9010-24",
+			"version": "2.2",
+			"vendor": "株式会社フルノシステムズ",
+			"product": "ACERA 9010-24"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-04-02T17:43+09:00",
+	"issued": "2024-04-02T17:43+09:00",
+	"modified": "2024-04-02T17:43+09:00"
+}
