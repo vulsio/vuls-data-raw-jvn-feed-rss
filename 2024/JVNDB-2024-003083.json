@@ -1,0 +1,30 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003083.html",
+	"title": "OpenSSL におけるサービス運用妨害 (DoS) の脆弱性 (Security Advisory [8th April 2024])",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003083.html",
+	"description": "深刻度 - 低 (Severity: Low)\r\nOpenSSL において、 TLSv1.3 セッションの処理時にメモリを多量に消費し、サービス運用妨害 (DoS) 状態となる問題 (CVE-2024-2511) が報告されています。本脆弱性は SSL_OP_NO_TICKET オプションが使用されている場合に発生する可能性があり、early_data が設定され、anti-replay 機能が有効になっている場合は発生しません。\r\n\r\nまた、本脆弱性は TLSv1.3 をサポートする TLS サーバーのみ影響を受け、TLS クライアントは影響を受けず、また OpenSSL の FIPS モジュールも影響を受けません。",
+	"identifier": "JVNDB-2024-003083",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU96443143/index.html",
+			"source": "JVN",
+			"id": "JVNVU#96443143"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-2511",
+			"source": "CVE",
+			"id": "CVE-2024-2511"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		}
+	],
+	"date": "2024-04-10T11:20+09:00",
+	"issued": "2024-04-10T11:20+09:00",
+	"modified": "2024-04-10T11:20+09:00"
+}
