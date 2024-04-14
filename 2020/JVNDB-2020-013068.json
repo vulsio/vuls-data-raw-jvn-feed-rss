@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013068.html",
-	"title": "grpc パッケージおよび @grpc/grpc-js パッケージにおけるインジェクションに関する脆弱性",
+	"title": "grpc パッケージおよび @grpc/grpc-js パッケージにおけるオブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013068.html",
-	"description": "grpc パッケージおよび @grpc/grpc-js パッケージには、インジェクションに関する脆弱性が存在します。",
+	"description": "grpc パッケージおよび @grpc/grpc-js パッケージには、オブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2020-013068",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2020-7768"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/74.html",
-			"id": "CWE-74",
-			"title": "インジェクション(CWE-74)"
+			"text": "https://cwe.mitre.org/data/definitions/1321.html",
+			"id": "CWE-1321",
+			"title": "オブジェクトプロトタイプ属性の不適切に制御された変更 (プロトタイプの汚染)(CWE-1321)"
 		}
 	],
 	"cpe": [
@@ -39,10 +39,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "9.8",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2021-06-17T16:09+09:00",

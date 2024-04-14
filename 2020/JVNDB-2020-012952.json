@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-012952.html",
-	"title": "json-ptr におけるインジェクションに関する脆弱性",
+	"title": "json-ptr におけるオブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-012952.html",
-	"description": "json-ptr には、インジェクションに関する脆弱性が存在します。",
+	"description": "json-ptr には、オブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2020-012952",
 	"references": [
 		{
@@ -26,9 +26,9 @@
 			"id": "SNYK-JAVA-ORGWEBJARSNPM-1038396 (Prototype Pollution)"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/74.html",
-			"id": "CWE-74",
-			"title": "インジェクション(CWE-74)"
+			"text": "https://cwe.mitre.org/data/definitions/1321.html",
+			"id": "CWE-1321",
+			"title": "オブジェクトプロトタイプ属性の不適切に制御された変更 (プロトタイプの汚染)(CWE-1321)"
 		}
 	],
 	"cpe": [
@@ -49,10 +49,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "7.3",
+			"score": "9.8",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2021-06-15T15:50+09:00",

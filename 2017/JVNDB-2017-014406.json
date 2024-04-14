@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-014406.html",
-	"title": "Insteon Hub ファームウェアにおけるバッファエラーの脆弱性",
+	"title": "Insteon Hub ファームウェアにおける境界外書き込みに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-014406.html",
-	"description": "Insteon Hub ファームウェアには、バッファエラーの脆弱性が存在します。",
+	"description": "Insteon Hub ファームウェアには、境界外書き込みに関する脆弱性が存在します。",
 	"identifier": "JVNDB-2017-014406",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "TALOS-2017-0483"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-			"id": "CWE-119",
-			"title": "バッファエラー(CWE-119)"
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [
@@ -44,10 +44,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "6.5",
+			"score": "8.1",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
 		}
 	],
 	"date": "2019-04-26T17:51+09:00",

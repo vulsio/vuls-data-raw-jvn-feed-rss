@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-012742.html",
-	"title": "Linux Kernel における古典的バッファオーバーフローの脆弱性",
+	"title": "Linux Kernel における整数オーバーフローの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-012742.html",
-	"description": "Linux Kernel には、古典的バッファオーバーフローの脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を CID-8cae8cd89f05 として公開しています。",
+	"description": "Linux Kernel には、整数オーバーフローの脆弱性、境界外書き込みに関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を CID-8cae8cd89f05 として公開しています。",
 	"identifier": "JVNDB-2021-012742",
 	"references": [
 		{
@@ -31,9 +31,14 @@
 			"id": "Sequoia: A Deep Root In Linux's Filesystem Layer"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/120.html",
-			"id": "CWE-120",
-			"title": "古典的バッファオーバーフロー(CWE-120)"
+			"text": "https://cwe.mitre.org/data/definitions/190.html",
+			"id": "CWE-190",
+			"title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [

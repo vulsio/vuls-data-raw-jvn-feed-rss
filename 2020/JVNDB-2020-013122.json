@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013122.html",
-	"title": "y18n における入力確認に関する脆弱性",
+	"title": "y18n におけるオブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013122.html",
-	"description": "y18n には、入力確認に関する脆弱性が存在します。",
+	"description": "y18n には、オブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2020-013122",
 	"references": [
 		{
@@ -26,9 +26,9 @@
 			"id": "SNYK-JS-Y18N-1021887 (Affecting y18n package, versions <3.2.2 || >=4.0.0 <4.0.1 || >=5.0.0 <5.0.5)"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-			"id": "CWE-20",
-			"title": "不適切な入力確認(CWE-20)"
+			"text": "https://cwe.mitre.org/data/definitions/1321.html",
+			"id": "CWE-1321",
+			"title": "オブジェクトプロトタイプ属性の不適切に制御された変更 (プロトタイプの汚染)(CWE-1321)"
 		}
 	],
 	"cpe": [
@@ -49,10 +49,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "7.3",
+			"score": "9.8",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2021-06-18T15:26+09:00",

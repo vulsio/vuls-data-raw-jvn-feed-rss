@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-003410.html",
-	"title": "Linux Kernel におけるバッファエラーの脆弱性",
+	"title": "Linux Kernel における競合状態に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-003410.html",
-	"description": "Linux Kernel には、バッファエラーの脆弱性が存在します。",
+	"description": "Linux Kernel には、競合状態に関する脆弱性、有効期限後のメモリの解放の欠如に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2019-003410",
 	"references": [
 		{
@@ -16,9 +16,14 @@
 			"id": "CVE-2019-3837"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-			"id": "CWE-119",
-			"title": "バッファエラー(CWE-119)"
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+			"id": "CWE-362",
+			"title": "競合状態(CWE-362)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/401.html",
+			"id": "CWE-401",
+			"title": "有効期限後のメモリの解放の欠如(CWE-401)"
 		}
 	],
 	"cpe": [
@@ -45,10 +50,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "5.5",
+			"score": "6.1",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H"
 		}
 	],
 	"date": "2019-05-16T16:23+09:00",

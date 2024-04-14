@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-010406.html",
-	"title": "dot-notes における入力確認に関する脆弱性",
+	"title": "dot-notes におけるオブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-010406.html",
-	"description": "dot-notes には、入力確認に関する脆弱性が存在します。",
+	"description": "dot-notes には、オブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2020-010406",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "SNYK-JS-DOTNOTES-598668 (Prototype Pollution)"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-			"id": "CWE-20",
-			"title": "不適切な入力確認(CWE-20)"
+			"text": "https://cwe.mitre.org/data/definitions/1321.html",
+			"id": "CWE-1321",
+			"title": "オブジェクトプロトタイプ属性の不適切に制御された変更 (プロトタイプの汚染)(CWE-1321)"
 		}
 	],
 	"cpe": [
@@ -41,6 +41,13 @@
 			"type": "Base",
 			"severity": "High",
 			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2021-01-12T17:50+09:00",

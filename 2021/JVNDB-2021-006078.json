@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006078.html",
-	"title": "postcss パッケージにおける脆弱性",
+	"title": "postcss パッケージにおける非効率的な正規表現の複雑さに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006078.html",
-	"description": "postcss パッケージには、不特定の脆弱性が存在します。",
+	"description": "postcss パッケージには、非効率的な正規表現の複雑さに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2021-006078",
 	"references": [
 		{
@@ -26,9 +26,9 @@
 			"id": "SNYK-JS-POSTCSS-1255640 (Regular Expression Denial of Service (ReDoS) Affecting postcss package, versions >=8.0.0 <8.2.13 <7.0.36)"
 		},
 		{
-			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-			"id": "CWE-Other",
-			"title": "その他(CWE-Other)"
+			"text": "https://cwe.mitre.org/data/definitions/1333.html",
+			"id": "CWE-1333",
+			"title": "非効率的な正規表現の複雑さ(CWE-1333)"
 		}
 	],
 	"cpe": [
@@ -49,10 +49,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "5.3",
+			"score": "7.5",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 		}
 	],
 	"date": "2021-12-24T17:21+09:00",

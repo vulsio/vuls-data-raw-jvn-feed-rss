@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005021.html",
-	"title": "InsideSecure MatrixSSL におけるバッファエラーの脆弱性",
+	"title": "InsideSecure MatrixSSL における境界外書き込みに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-005021.html",
-	"description": "InsideSecure MatrixSSL には、バッファエラーの脆弱性が存在します。",
+	"description": "InsideSecure MatrixSSL には、境界外書き込みに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2017-005021",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "TALOS-2017-0277"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-			"id": "CWE-119",
-			"title": "バッファエラー(CWE-119)"
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [
@@ -44,10 +44,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "8.2",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
 		}
 	],
 	"date": "2017-07-13T13:53+09:00",
