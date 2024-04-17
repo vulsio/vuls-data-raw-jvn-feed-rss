@@ -2,7 +2,7 @@
 	"about": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001923.html",
 	"title": "コンテック製 SolarView Compact における複数の脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2022/JVNDB-2022-001923.html",
-	"description": "株式会社コンテックが提供する SolarView Compact は、太陽光発電計測監視装置です。\r\nSolarView Compact には、次の複数の脆弱性が存在します。\r\n\r\nOS コマンドインジェクション (CWE-78) - CVE-2022-29303\r\nSolarView Compact で提供される Web サーバーのテストメール送信画面において、入力した値が適切に検証されないことにより、OS コマンドが実行される\r\n\r\nディレクトリトラバーサル (CWE-23) - CVE-2022-29298\r\nSolarView Compact で提供される Web サーバーのダウンロード画面において、URL が適切に検証されないことにより、意図しないファイルが参照される\r\n\r\n情報漏えい (CWE-200) - CVE-2022-29302\r\nSolarView Compact で提供される Web サーバーには、Web サーバーのコンテンツを編集可能な非公開の画面が存在し、それを経由して Web サーバー内のファイルを読み書きされる\r\n\r\nOS コマンドインジェクション (CWE-78) - CVE-2022-40881\r\nSolarView Compact で 提供される Web サーバーのネットワーク導通チェック画面において、入力した値が適切に検証されないことにより、OS コマンドが実行される\r\n\r\nOS コマンドインジェクション (CWE-78) - CVE-2023-23333\r\nSolarView Compact で提供される Web サーバーのダウンロード画面において、入力した値が適切に検証されないことにより、OS コマンドが実行される",
+	"description": "株式会社コンテックが提供する SolarView Compact は、太陽光発電計測監視装置です。\r\nSolarView Compact には、次の複数の脆弱性が存在します。\r\n\r\nOS コマンドインジェクション (CWE-78) - CVE-2022-29303\r\nSolarView Compact で提供される Web サーバーのテストメール送信画面において、入力した値が適切に検証されないことにより、OS コマンドが実行される\r\n\r\nディレクトリトラバーサル (CWE-23) - CVE-2022-29298\r\nSolarView Compact で提供される Web サーバーのダウンロード画面において、URL が適切に検証されないことにより、意図しないファイルが参照される\r\n\r\n情報漏えい (CWE-200) - CVE-2022-29302\r\nSolarView Compact で提供される Web サーバーには、Web サーバーのコンテンツを編集可能な非公開の画面が存在し、それを経由して Web サーバー内のファイルを読み書きされる\r\n\r\nOS コマンドインジェクション (CWE-78) - CVE-2022-40881\r\nSolarView Compact で 提供される Web サーバーのネットワーク導通チェック画面において、入力した値が適切に検証されないことにより、OS コマンドが実行される\r\n\r\nOS コマンドインジェクション (CWE-78) - CVE-2023-23333\r\nSolarView Compact で提供される Web サーバーのダウンロード画面において、入力した値が適切に検証されないことにより、OS コマンドが実行される\r\n\r\nCVE-2022-29298\r\nS2W Inc Jongheon Yan 氏が製品開発者に Ver.6.50 での本脆弱性の修正が不十分であることを直接報告しました。\r\nこれを受け製品開発者と調整し、本 JVN アドバイザリを更新しました。\r\n\r\n",
 	"identifier": "JVNDB-2022-001923",
 	"references": [
 		{
@@ -56,6 +56,11 @@
 			"id": "CVE-2022-40881"
 		},
 		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-23333",
+			"source": "NVD",
+			"id": "CVE-2023-23333"
+		},
+		{
 			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
 			"id": "CWE-78",
 			"title": "OSコマンドインジェクション(CWE-78)"
@@ -85,6 +90,18 @@
 			"product": "SolarView Compact SV-CPT-MC310F"
 		},
 		{
+			"text": "cpe:/o:contec:sv-cpt-mc310F_firmware",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "SolarView Compact SV-CPT-MC310F"
+		},
+		{
+			"text": "cpe:/o:contec:sv-cpt-mc310_firmware",
+			"version": "2.2",
+			"vendor": "株式会社コンテック",
+			"product": "SolarView Compact SV-CPT-MC310"
+		},
+		{
 			"text": "cpe:/o:contec:sv-cpt-mc310_firmware",
 			"version": "2.2",
 			"vendor": "株式会社コンテック",
@@ -106,7 +123,7 @@
 			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
-	"date": "2023-02-13T13:59+09:00",
+	"date": "2024-04-17T12:14+09:00",
 	"issued": "2022-05-27T13:56+09:00",
-	"modified": "2023-02-13T13:59+09:00"
+	"modified": "2024-04-17T12:14+09:00"
 }
