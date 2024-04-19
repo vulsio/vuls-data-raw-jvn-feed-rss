@@ -1,0 +1,45 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003103.html",
+	"title": "PuTTY SSH クライアントの ECDSA 署名処理に脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003103.html",
+	"description": "PuTTY SSH クライアント実装には、ECDSA 署名処理の実装に脆弱性があります。\r\nNIST P521 楕円曲線による ECDSA 秘密鍵を使っている場合、署名を行う際に生成する nonce に偏りがあります (CVE-2024-31497、CWE-1240)。\r\nその結果、ごく少数の署名データから秘密鍵を特定される可能性があります。",
+	"identifier": "JVNDB-2024-003103",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU91264077/index.html",
+			"source": "JVN",
+			"id": "JVNVU#91264077"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-31497",
+			"source": "CVE",
+			"id": "CVE-2024-31497"
+		},
+		{
+			"text": "https://www.openwall.com/lists/oss-security/2024/04/15/6",
+			"source": "関連文書",
+			"id": "oss-security mailing list (CVE-2024-31497: Secret Key Recovery of NIST P-521 Private Keys Through Biased ECDSA Nonces in PuTTY Client)"
+		},
+		{
+			"text": "https://datatracker.ietf.org/doc/html/rfc6979",
+			"source": "関連文書",
+			"id": "RFC6979 (Deterministic Usage of the Digital Signature Algorithm (DSA) and Elliptic Curve Digital Signature Algorithm (ECDSA))"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/1240.html",
+			"id": "CWE-1240",
+			"title": "危険な実装による暗号プリミティブの使用(CWE-1240)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:simon_tatham:putty",
+			"version": "2.2",
+			"vendor": "Simon Tatham",
+			"product": "PuTTY"
+		}
+	],
+	"date": "2024-04-19T13:56+09:00",
+	"issued": "2024-04-19T13:56+09:00",
+	"modified": "2024-04-19T13:56+09:00"
+}
