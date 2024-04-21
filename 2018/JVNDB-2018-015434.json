@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-015434.html",
-	"title": "Roav A1 Dashcam におけるバッファエラーの脆弱性",
+	"title": "Roav A1 Dashcam における境界外書き込みに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-015434.html",
-	"description": "Roav A1 Dashcam には、バッファエラーの脆弱性が存在します。",
+	"description": "Roav A1 Dashcam には、境界外書き込みに関する脆弱性が存在します。",
 	"identifier": "JVNDB-2018-015434",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "TALOS-2018-0687"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-			"id": "CWE-119",
-			"title": "バッファエラー(CWE-119)"
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [
@@ -37,17 +37,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "7.5",
+			"score": "5.8",
 			"type": "Base",
-			"severity": "High",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+			"severity": "Medium",
+			"vector": "AV:A/AC:L/Au:N/C:P/I:P/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "8.8",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2019-06-04T15:40+09:00",

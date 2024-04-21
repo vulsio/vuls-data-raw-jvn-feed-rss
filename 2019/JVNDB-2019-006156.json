@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-006156.html",
-	"title": "SDL2_image におけるバッファエラーの脆弱性",
+	"title": "SDL2_image における例外的な状態の処理に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-006156.html",
-	"description": "SDL2_image には、バッファエラーの脆弱性が存在します。",
+	"description": "SDL2_image には、例外的な状態の処理に関する脆弱性、境界外書き込みに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-006156",
 	"references": [
 		{
@@ -21,9 +21,14 @@
 			"id": "TALOS-2019-0820"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-			"id": "CWE-119",
-			"title": "バッファエラー(CWE-119)"
+			"text": "https://cwe.mitre.org/data/definitions/755.html",
+			"id": "CWE-755",
+			"title": "例外的な状態における不適切な処理(CWE-755)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [

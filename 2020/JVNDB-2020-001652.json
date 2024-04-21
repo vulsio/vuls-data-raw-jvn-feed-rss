@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001652.html",
-	"title": "dot-prop におけるリクエストの直接送信に関する脆弱性",
+	"title": "dot-prop におけるオブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001652.html",
-	"description": "dot-prop には、リクエストの直接送信に関する脆弱性が存在します。",
+	"description": "dot-prop には、オブジェクトプロトタイプ属性の不適切に制御された変更に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2020-001652",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "719856 (Prototype pollution in dot-prop)"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/425.html",
-			"id": "CWE-425",
-			"title": "リクエストの直接送信(CWE-425)"
+			"text": "https://cwe.mitre.org/data/definitions/1321.html",
+			"id": "CWE-1321",
+			"title": "オブジェクトプロトタイプ属性の不適切に制御された変更 (プロトタイプの汚染)(CWE-1321)"
 		}
 	],
 	"cpe": [
@@ -44,10 +44,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "7.3",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
 		}
 	],
 	"date": "2020-02-20T14:10+09:00",

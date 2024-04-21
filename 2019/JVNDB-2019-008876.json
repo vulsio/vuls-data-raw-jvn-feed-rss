@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-008876.html",
-	"title": "libexpat における XML 外部エンティティの脆弱性",
+	"title": "libexpat における境界外読み取りに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-008876.html",
-	"description": "libexpat には、XML 外部エンティティの脆弱性が存在します。",
+	"description": "libexpat には、境界外読み取りに関する脆弱性、DTD の再帰的なエンティティ参照の不適切な制限に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-008876",
 	"references": [
 		{
@@ -16,9 +16,14 @@
 			"id": "CVE-2019-15903"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/611.html",
-			"id": "CWE-611",
-			"title": "XML 外部エンティティ参照の不適切な制限(CWE-611)"
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/776.html",
+			"id": "CWE-776",
+			"title": "DTD の再帰的なエンティティ参照の不適切な制限(CWE-776)"
 		}
 	],
 	"cpe": [

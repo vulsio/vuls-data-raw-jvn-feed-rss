@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-014278.html",
-	"title": "Foscam C1 Indoor HD Camera のアプリケーションファームウェアにおけるバッファエラーの脆弱性",
+	"title": "Foscam C1 Indoor HD Camera のアプリケーションファームウェアにおける古典的バッファオーバーフローの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-014278.html",
-	"description": "Foscam C1 Indoor HD Camera のアプリケーションファームウェアには、バッファエラーの脆弱性が存在します。\r\n",
+	"description": "Foscam C1 Indoor HD Camera のアプリケーションファームウェアには、古典的バッファオーバーフローの脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2017-014278",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "TALOS-2017-0382"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-			"id": "CWE-119",
-			"title": "バッファエラー(CWE-119)"
+			"text": "https://cwe.mitre.org/data/definitions/120.html",
+			"id": "CWE-120",
+			"title": "古典的バッファオーバーフロー(CWE-120)"
 		}
 	],
 	"cpe": [
@@ -44,10 +44,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "9.1",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
 		}
 	],
 	"date": "2018-12-20T11:59+09:00",

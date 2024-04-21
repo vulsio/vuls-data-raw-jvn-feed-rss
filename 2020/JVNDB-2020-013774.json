@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013774.html",
-	"title": "pritunl electron client における権限管理に関する脆弱性",
+	"title": "pritunl electron client におけるリンク解釈に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-013774.html",
-	"description": "pritunl electron client には、権限管理に関する脆弱性が存在します。",
+	"description": "pritunl electron client には、リンク解釈に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2020-013774",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "Arbitrary File Write in Pritunl (CVE 2020-25989)"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/269.html",
-			"id": "CWE-269",
-			"title": "不適切な権限管理(CWE-269)"
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+			"id": "CWE-59",
+			"title": "リンク解釈の問題(CWE-59)"
 		}
 	],
 	"cpe": [
@@ -37,17 +37,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "10.0",
+			"score": "7.2",
 			"type": "Base",
 			"severity": "High",
-			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+			"vector": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "7.8",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2021-07-13T16:56+09:00",
