@@ -1,0 +1,35 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003109.html",
+	"title": "TensorFlow ベースの Keras モデルに含まれる Lambda レイヤにコードインジェクションが発生する問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003109.html",
+	"description": "Keras 2.13より前のバージョンで作成された TensorFlow ベースの Keras モデルにおいて、モデルに含まれる Lambda レイヤの安全性を確認できない問題が指摘されています。\r\n\r\nTensorFlow ベースの Keras モデルをロードして利用する際、load_model メソッドの引数である safe_mode を True に<a href=\"https://keras.io/api/models/model_saving_apis/model_saving_and_loading/#loadmodel-function\" target=blank>設定</a>することにより、Keras v3 保存形式のモデルに Lambda レイヤが含まれる場合に例外が発生し、レイヤ内でコードがデシリアライズされることを防ぐことができます。しかし、Keras 2.13より前のバージョンにおいてはこのチェック機構が存在しません。そのため、悪意のあるコードがデシリアライズされる Lambda レイヤがモデルに含まれる場合、そのモデルをロードすることによりシステム上で任意のコードが実行される可能性があります。",
+	"identifier": "JVNDB-2024-003109",
+	"references": [
+		{
+			"text": "https://jvn.jp/ta/JVNTA95942420/index.html",
+			"source": "JVN",
+			"id": "JVNTA#95942420"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-3660",
+			"source": "CVE",
+			"id": "CVE-2024-3660"
+		},
+		{
+			"text": "https://kb.cert.org/vuls/id/253266",
+			"source": "CERT-VN",
+			"id": "VU#253266"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:keras_keras",
+			"version": "2.2",
+			"vendor": "Keras",
+			"product": "Keras"
+		}
+	],
+	"date": "2024-04-22T17:21+09:00",
+	"issued": "2024-04-22T17:21+09:00",
+	"modified": "2024-04-22T17:21+09:00"
+}
