@@ -1,0 +1,61 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003119.html",
+	"title": "NETGEAR 製ルーターにおけるバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003119.html",
+	"description": "NETGEAR が提供する複数のルーターには、バッファオーバーフロー（CWE-121、CVE-2023-27368）の脆弱性が存在します。\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者：株式会社ゼロゼロワン 早川 宙也 氏",
+	"identifier": "JVNDB-2024-003119",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU91883072/index.html",
+			"source": "JVN",
+			"id": "JVNVU#91883072"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-27368",
+			"source": "CVE",
+			"id": "CVE-2023-27368"
+		},
+		{
+			"text": "https://claroty.com/team82/disclosure-dashboard/cve-2023-27368",
+			"source": "関連文書",
+			"id": "CVE-2023-27368"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/121.html",
+			"id": "CWE-121",
+			"title": "スタックベースのバッファオーバーフロー(CWE-121)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:netgear:rax35_firmware",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "RAX35 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:netgear:rax38_firmware",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "RAX38 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:netgear:rax40_firmware",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "RAX40 ファームウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-04-25T11:04+09:00",
+	"issued": "2024-04-25T11:04+09:00",
+	"modified": "2024-04-25T11:04+09:00"
+}
