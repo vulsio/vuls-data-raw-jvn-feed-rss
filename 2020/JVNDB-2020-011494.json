@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-011494.html",
-	"title": "Nitro Pro における整数オーバーフローの脆弱性",
+	"title": "Nitro Pro におけるバッファサイズの計算の誤りに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-011494.html",
-	"description": "Nitro Pro には、整数オーバーフローの脆弱性が存在します。",
+	"description": "Nitro Pro には、バッファサイズの計算の誤りに関する脆弱性、整数オーバーフローの脆弱性、境界外書き込みに関する脆弱性が存在します。",
 	"identifier": "JVNDB-2020-011494",
 	"references": [
 		{
@@ -21,9 +21,19 @@
 			"id": "TALOS-2020-1070 (Nitro Pro Indexed ColorSpace Rendering Code Execution Vulnerability)"
 		},
 		{
+			"text": "https://cwe.mitre.org/data/definitions/131.html",
+			"id": "CWE-131",
+			"title": "バッファサイズの計算の誤り(CWE-131)"
+		},
+		{
 			"text": "https://cwe.mitre.org/data/definitions/190.html",
 			"id": "CWE-190",
 			"title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [

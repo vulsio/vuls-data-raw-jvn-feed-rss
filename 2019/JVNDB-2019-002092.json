@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-002092.html",
-	"title": "Wireshark におけるバッファエラーの脆弱性",
+	"title": "Wireshark における境界条件の判定に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-002092.html",
-	"description": "Wireshark には、バッファエラーの脆弱性が存在します。",
+	"description": "Wireshark には、境界条件の判定に関する脆弱性、境界外書き込みに関する脆弱性が存在します。",
 	"identifier": "JVNDB-2019-002092",
 	"references": [
 		{
@@ -16,9 +16,14 @@
 			"id": "CVE-2019-9209"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-			"id": "CWE-119",
-			"title": "バッファエラー(CWE-119)"
+			"text": "https://cwe.mitre.org/data/definitions/193.html",
+			"id": "CWE-193",
+			"title": "境界条件の判定(CWE-193)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [
@@ -38,17 +43,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "4.3",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+			"vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "5.5",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
 		}
 	],
 	"date": "2019-04-02T16:28+09:00",

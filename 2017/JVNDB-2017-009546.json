@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-009546.html",
-	"title": "Google Chrome における境界外読み取りに関する脆弱性",
+	"title": "Google Chrome における整数オーバーフローの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-009546.html",
-	"description": "Google Chrome には、境界外読み取りに関する脆弱性が存在します。",
+	"description": "Google Chrome には、整数オーバーフローの脆弱性が存在します。",
 	"identifier": "JVNDB-2017-009546",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2017-5063"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/125.html",
-			"id": "CWE-125",
-			"title": "境界外読み取り(CWE-125)"
+			"text": "https://cwe.mitre.org/data/definitions/190.html",
+			"id": "CWE-190",
+			"title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
 		}
 	],
 	"cpe": [
@@ -39,10 +39,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "6.3",
+			"score": "8.8",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2017-11-15T16:47+09:00",

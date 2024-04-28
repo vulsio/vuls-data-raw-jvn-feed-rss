@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007709.html",
-	"title": "VembuBDR および VembuOffsiteDR における脆弱性",
+	"title": "VembuBDR および VembuOffsiteDR における OS コマンドインジェクションの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-007709.html",
-	"description": "VembuBDR および VembuOffsiteDR には、不特定の脆弱性が存在します。",
+	"description": "VembuBDR および VembuOffsiteDR には、OS コマンドインジェクションの脆弱性が存在します。",
 	"identifier": "JVNDB-2021-007709",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "VEMBU ZERO DAYS"
 		},
 		{
-			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-			"id": "CWE-noinfo",
-			"title": "情報不足(CWE-noinfo)"
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+			"id": "CWE-78",
+			"title": "OSコマンドインジェクション(CWE-78)"
 		}
 	],
 	"cpe": [
@@ -43,10 +43,10 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "7.5",
+			"score": "10.0",
 			"type": "Base",
 			"severity": "High",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
 		},
 		{
 			"version": "3.0",

@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-006729.html",
-	"title": "libssh2 における整数オーバーフローの脆弱性",
+	"title": "libssh2 における境界外読み取りに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-006729.html",
-	"description": "libssh2 には、整数オーバーフローの脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2019-3855 など、1.8.1 で修正されたさまざまな問題とは異なる脆弱性です。",
+	"description": "libssh2 には、境界外読み取りに関する脆弱性、整数オーバーフローの脆弱性が存在します。\r\n\r\n本脆弱性は、CVE-2019-3855 など、1.8.1 で修正されたさまざまな問題とは異なる脆弱性です。",
 	"identifier": "JVNDB-2019-006729",
 	"references": [
 		{
@@ -14,6 +14,11 @@
 			"text": "https://nvd.nist.gov/vuln/detail/CVE-2019-13115",
 			"source": "NVD",
 			"id": "CVE-2019-13115"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
 		},
 		{
 			"text": "https://cwe.mitre.org/data/definitions/190.html",

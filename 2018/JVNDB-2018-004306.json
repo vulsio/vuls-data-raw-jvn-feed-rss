@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-004306.html",
-	"title": "Bouncy Castle における暗号に関する脆弱性",
+	"title": "Bouncy Castle におけるデータの整合性検証不備に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-004306.html",
-	"description": "Bouncy Castle には、暗号に関する脆弱性が存在します。",
+	"description": "Bouncy Castle には、データの整合性検証不備に関する脆弱性が存在します。\r\n\r\n",
 	"identifier": "JVNDB-2018-004306",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "103453"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-310.html",
-			"id": "CWE-310",
-			"title": "暗号の問題(CWE-310)"
+			"text": "https://cwe.mitre.org/data/definitions/354.html",
+			"id": "CWE-354",
+			"title": "データの整合性検証不備(CWE-354)"
 		}
 	],
 	"cpe": [
@@ -37,17 +37,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "7.5",
+			"score": "3.6",
 			"type": "Base",
-			"severity": "High",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N"
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "4.4",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
 		}
 	],
 	"date": "2018-06-18T11:29+09:00",

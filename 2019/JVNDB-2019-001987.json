@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001987.html",
-	"title": "ThinkPHP および Open Source BMS における入力確認に関する脆弱性",
+	"title": "ThinkPHP および Open Source BMS における重要な機能に対する認証の欠如に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-001987.html",
-	"description": "ThinkPHP および Open Source BMS には、入力確認に関する脆弱性が存在します。",
+	"description": "ThinkPHP および Open Source BMS には、重要な機能に対する認証の欠如に関する脆弱性、コードインジェクションの脆弱性が存在します。",
 	"identifier": "JVNDB-2019-001987",
 	"references": [
 		{
@@ -16,6 +16,11 @@
 			"id": "CVE-2019-9082"
 		},
 		{
+			"text": "https://cisa.gov/known-exploited-vulnerabilities-catalog",
+			"source": "CISA Known Exploited Vulnerabilities Catalog",
+			"id": "CVE-2019-9082"
+		},
+		{
 			"text": "https://www.exploit-db.com/exploits/46488",
 			"source": "関連文書",
 			"id": "zzzphp CMS 1.6.1 - Cross-Site Request Forgery"
@@ -26,9 +31,14 @@
 			"id": "There is A RCE vulnerability in your system. #33"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-			"id": "CWE-20",
-			"title": "不適切な入力確認(CWE-20)"
+			"text": "https://cwe.mitre.org/data/definitions/306.html",
+			"id": "CWE-306",
+			"title": "重要な機能に対する認証の欠如(CWE-306)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+			"id": "CWE-94",
+			"title": "コード・インジェクション(CWE-94)"
 		}
 	],
 	"cpe": [
@@ -54,17 +64,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "10.0",
+			"score": "9.3",
 			"type": "Base",
 			"severity": "High",
-			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
+			"vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "8.8",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2019-04-01T12:10+09:00",

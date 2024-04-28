@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-008577.html",
-	"title": "Autodesk DWG アプリケーションにおける誤った領域へのリソースの漏えいに関する脆弱性",
+	"title": "Autodesk DWG アプリケーションにおける境界外書き込みに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-008577.html",
-	"description": "Autodesk DWG アプリケーションには、誤った領域へのリソースの漏えいに関する脆弱性が存在します。",
+	"description": "Autodesk DWG アプリケーションには、境界外書き込みに関する脆弱性が存在します。",
 	"identifier": "JVNDB-2021-008577",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "ZDI-22-470 (Autodesk AutoCAD PDF File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability)"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/668.html",
-			"id": "CWE-668",
-			"title": "誤った領域へのリソースの漏えい(CWE-668)"
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [
@@ -91,17 +91,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "4.3",
+			"score": "6.8",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "5.5",
+			"score": "7.8",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2022-03-22T16:20+09:00",

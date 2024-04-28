@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006918.html",
-	"title": "Chamilo における情報漏えいに関する脆弱性",
+	"title": "Chamilo における XML 外部エンティティの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-006918.html",
-	"description": "Chamilo には、情報漏えいに関する脆弱性が存在します。",
+	"description": "Chamilo には、XML 外部エンティティの脆弱性が存在します。",
 	"identifier": "JVNDB-2021-006918",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2021-32925"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-			"id": "CWE-200",
-			"title": "情報漏えい(CWE-200)"
+			"text": "https://cwe.mitre.org/data/definitions/611.html",
+			"id": "CWE-611",
+			"title": "XML 外部エンティティ参照の不適切な制限(CWE-611)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "6.4",
+			"score": "5.5",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+			"vector": "AV:N/AC:L/Au:S/C:P/I:N/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "9.1",
+			"score": "6.5",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:H"
 		}
 	],
 	"date": "2022-01-25T16:26+09:00",

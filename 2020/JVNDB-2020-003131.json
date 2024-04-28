@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003131.html",
-	"title": "WeeChat における NULL ポインタデリファレンスに関する脆弱性",
+	"title": "WeeChat におけるダウンロードしたコードの完全性検証不備に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003131.html",
-	"description": "WeeChat には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+	"description": "WeeChat には、ダウンロードしたコードの完全性検証不備に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2020-003131",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2020-9759"
 		},
 		{
-			"text": "http://cwe.mitre.org/data/definitions/476.html",
-			"id": "CWE-476",
-			"title": "NULL ポインタデリファレンス(CWE-476)"
+			"text": "https://cwe.mitre.org/data/definitions/494.html",
+			"id": "CWE-494",
+			"title": "ダウンロードしたコードの完全性検証不備(CWE-494)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "9.3",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+			"severity": "High",
+			"vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "7.8",
 			"type": "Base",
 			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2020-04-06T15:16+09:00",
