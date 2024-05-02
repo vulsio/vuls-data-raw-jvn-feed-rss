@@ -1,0 +1,40 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003173.html",
+	"title": "R プログラミング言語の実装において、安全でないデータのデシリアライゼーションが発生する問題（CVE-2024-27322）",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003173.html",
+	"description": "R プログラミング言語ではデータのシリアライズやデシリアライズがサポートされており、シリアライズされたデータは R Data Serialization（RDS）と呼ばれる形式で .rds ファイルや .rdx ファイルとして保存されます。また、R は遅延評価もサポートしており、Promise クラスを実装し必要なタイミングで呼び出すことにより実現できます。この Promise クラスのオブジェクトには、評価時に実行される式と、式の結果が格納される値とが含まれ、PROMSXMP と呼ばれる RDS 形式でシリアライズすることが可能です。\r\n\r\nR 1.4.0 から 4.4.0 より前のバージョンでは、RDS 形式によりシリアライズされた Promise クラスのオブジェクトが eval() 関数により読み込まれる際、そのオブジェクト内の値が未評価の状態で参照されると、オブジェクト内の式が直ちに（適切な遅延評価の実行タイミングより前に）実行されてしまう問題があります。そのため、攻撃者は悪意のあるコードを式として含む Promise クラスオブジェクトを .rds ファイルや .rdx ファイルにシリアライズし、それらのファイルをロードさせることにより、システム内で任意のコードをデシリアライズさせ、実行させることが可能になります。\r\n\r\nこの問題に対して、CVE-2024-27322 が採番されています。\r\n",
+	"identifier": "JVNDB-2024-003173",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU96606632/index.html",
+			"source": "JVN",
+			"id": "JVNVU#96606632"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27322",
+			"source": "CVE",
+			"id": "CVE-2024-27322"
+		},
+		{
+			"text": "https://kb.cert.org/vuls/id/238194",
+			"source": "CERT-VN",
+			"id": "CERT/CC Vulnerability Note VU#238194"
+		},
+		{
+			"text": "https://hiddenlayer.com/research/r-bitrary-code-execution/",
+			"source": "関連文書",
+			"id": "R-BITRARY CODE EXECUTION: VULNERABILITY IN R’S DESERIALIZATION"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:r_project:r",
+			"version": "2.2",
+			"vendor": "R Project",
+			"product": "R"
+		}
+	],
+	"date": "2024-05-02T11:43+09:00",
+	"issued": "2024-05-02T11:43+09:00",
+	"modified": "2024-05-02T11:43+09:00"
+}
