@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-010010.html",
-	"title": "Schneider Electric Modicon M221 における情報管理に関する脆弱性",
+	"title": "Schneider Electric Modicon M221 における Capture-replay による認証回避に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-010010.html",
-	"description": "Schneider Electric Modicon M221 には、情報管理に関する脆弱性が存在します。",
+	"description": "Schneider Electric Modicon M221 には、Capture-replay による認証回避に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2018-010010",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "ICSA-18-240-01"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/199.html",
-			"id": "CWE-199",
-			"title": "情報管理の問題(CWE-199)"
+			"text": "https://cwe.mitre.org/data/definitions/294.html",
+			"id": "CWE-294",
+			"title": "Capture-replay による認証回避(CWE-294)"
 		}
 	],
 	"cpe": [
@@ -37,10 +37,10 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "7.5",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
 		},
 		{
 			"version": "3.0",

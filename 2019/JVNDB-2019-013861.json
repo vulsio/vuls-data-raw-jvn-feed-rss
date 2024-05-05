@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013861.html",
-	"title": "Apache Solr における入力確認に関する脆弱性",
+	"title": "Apache Solr におけるインジェクションに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013861.html",
-	"description": "Apache Solr には、入力確認に関する脆弱性が存在します。",
+	"description": "Apache Solr には、インジェクションに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-013861",
 	"references": [
 		{
@@ -16,9 +16,14 @@
 			"id": "CVE-2019-17558"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-			"id": "CWE-20",
-			"title": "不適切な入力確認(CWE-20)"
+			"text": "https://cisa.gov/known-exploited-vulnerabilities-catalog",
+			"source": "CISA Known Exploited Vulnerabilities Catalog",
+			"id": "CVE-2019-17558"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/74.html",
+			"id": "CWE-74",
+			"title": "インジェクション(CWE-74)"
 		}
 	],
 	"cpe": [
@@ -32,10 +37,10 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "6.0",
+			"score": "4.6",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
+			"vector": "AV:N/AC:H/Au:S/C:P/I:P/A:P"
 		},
 		{
 			"version": "3.0",

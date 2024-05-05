@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-008997.html",
-	"title": "Kaseya VSA における脆弱性",
+	"title": "Kaseya VSA における危険なタイプのファイルの無制限アップロードに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-008997.html",
-	"description": "Kaseya VSA には、不特定の脆弱性が存在します。",
+	"description": "Kaseya VSA には、危険なタイプのファイルの無制限アップロードに関する脆弱性が存在します。",
 	"identifier": "JVNDB-2021-008997",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "KASEYA VSA LIMITED DISCLOSURE"
 		},
 		{
-			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-			"id": "CWE-noinfo",
-			"title": "情報不足(CWE-noinfo)"
+			"text": "https://cwe.mitre.org/data/definitions/434.html",
+			"id": "CWE-434",
+			"title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
 		}
 	],
 	"cpe": [
@@ -37,10 +37,10 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "7.5",
+			"score": "10.0",
 			"type": "Base",
 			"severity": "High",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
 		},
 		{
 			"version": "3.0",

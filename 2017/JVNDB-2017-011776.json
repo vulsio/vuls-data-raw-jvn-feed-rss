@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-011776.html",
-	"title": "複数の VMware 製品におけるバッファエラーの脆弱性",
+	"title": "複数の VMware 製品における境界外書き込みに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-011776.html",
-	"description": "VMware ESXi、Workstation、および Fusion には、バッファエラーの脆弱性が存在します。",
+	"description": "VMware ESXi、Workstation、および Fusion には、境界外書き込みに関する脆弱性が存在します。",
 	"identifier": "JVNDB-2017-011776",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2017-4933"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-			"id": "CWE-119",
-			"title": "バッファエラー(CWE-119)"
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [
@@ -51,10 +51,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "8.8",
 			"type": "Base",
 			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2018-01-25T17:26+09:00",

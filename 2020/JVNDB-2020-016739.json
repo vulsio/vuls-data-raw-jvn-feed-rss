@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-016739.html",
-	"title": "c-ares lib における解放済みメモリの使用に関する脆弱性",
+	"title": "c-ares lib における二重解放に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-016739.html",
-	"description": "c-ares lib には、解放済みメモリの使用に関する脆弱性、および古典的バッファオーバーフローの脆弱性が存在します。\r\n",
+	"description": "c-ares lib には、二重解放に関する脆弱性、解放済みメモリの使用に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2020-016739",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "Bug 1866838 (CVE-2020-14354) - CVE-2020-14354 c-ares: ares_destroy() with pending ares_getaddrinfo() leads to Use-After-Free"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/120.html",
-			"id": "CWE-120",
-			"title": "古典的バッファオーバーフロー(CWE-120)"
+			"text": "https://cwe.mitre.org/data/definitions/415.html",
+			"id": "CWE-415",
+			"title": "二重解放(CWE-415)"
 		},
 		{
 			"text": "https://cwe.mitre.org/data/definitions/416.html",
