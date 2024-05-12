@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-010746.html",
-	"title": "Requests パッケージにおける証明書・パスワードの管理に関する脆弱性",
+	"title": "Requests パッケージにおける認証情報の不十分な保護に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-010746.html",
-	"description": "Requests パッケージには、証明書・パスワードの管理に関する脆弱性が存在します。",
+	"description": "Requests パッケージには、認証情報の不十分な保護に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2018-010746",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "Debian Bug report logs - #910766"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
-			"id": "CWE-255",
-			"title": "証明書・パスワードの管理(CWE-255)"
+			"text": "https://cwe.mitre.org/data/definitions/522.html",
+			"id": "CWE-522",
+			"title": "認証情報の不十分な保護(CWE-522)"
 		}
 	],
 	"cpe": [
@@ -50,10 +50,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "7.5",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
 		}
 	],
 	"date": "2018-12-20T17:59+09:00",

@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001696.html",
-	"title": "Android および iOS 用 Global TV アプリケーションにおける情報漏えいに関する脆弱性",
+	"title": "Android および iOS 用 Global TV アプリケーションにおける重要な情報の平文での送信に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001696.html",
-	"description": "Android および iOS 用 Global TV アプリケーションには、情報漏えいに関する脆弱性が存在します。",
+	"description": "Android および iOS 用 Global TV アプリケーションには、重要な情報の平文での送信に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2020-001696",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "Global TV Android & iOS Applications - Unencrypted Analytics (CVE-2020-8506)"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-			"id": "CWE-200",
-			"title": "情報漏えい(CWE-200)"
+			"text": "https://cwe.mitre.org/data/definitions/319.html",
+			"id": "CWE-319",
+			"title": "重要な情報の平文での送信(CWE-319)"
 		}
 	],
 	"cpe": [
@@ -37,17 +37,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "4.0",
+			"score": "5.0",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N"
+			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
 		},
 		{
 			"version": "3.0",
-			"score": "6.5",
+			"score": "5.3",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
 		}
 	],
 	"date": "2020-02-21T14:56+09:00",

@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-005583.html",
-	"title": "GIFLIB および sam2p におけるバッファエラーの脆弱性",
+	"title": "GIFLIB および sam2p における配列インデックスの検証に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-005583.html",
-	"description": "GIFLIB および sam2p には、バッファエラーの脆弱性が存在します。",
+	"description": "GIFLIB および sam2p には、配列インデックスの検証に関する脆弱性、境界外書き込みに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2018-005583",
 	"references": [
 		{
@@ -16,9 +16,14 @@
 			"id": "CVE-2018-11489"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-			"id": "CWE-119",
-			"title": "バッファエラー(CWE-119)"
+			"text": "https://cwe.mitre.org/data/definitions/129.html",
+			"id": "CWE-129",
+			"title": "配列インデックスの不適切な検証(CWE-129)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [

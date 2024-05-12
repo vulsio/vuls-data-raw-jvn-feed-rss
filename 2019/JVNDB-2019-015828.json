@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-015828.html",
-	"title": "FortiOS における情報漏えいに関する脆弱性",
+	"title": "FortiOS における重要な機能に対する認証の欠如に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-015828.html",
-	"description": "FortiOS には、情報漏えいに関する脆弱性が存在します。",
+	"description": "FortiOS には、重要な機能に対する認証の欠如に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-015828",
 	"references": [
 		{
@@ -16,9 +16,14 @@
 			"id": "CVE-2019-5591"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-			"id": "CWE-200",
-			"title": "情報漏えい(CWE-200)"
+			"text": "https://cisa.gov/known-exploited-vulnerabilities-catalog",
+			"source": "CISA Known Exploited Vulnerabilities Catalog",
+			"id": "CVE-2019-5591"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/306.html",
+			"id": "CWE-306",
+			"title": "重要な機能に対する認証の欠如(CWE-306)"
 		}
 	],
 	"cpe": [
@@ -32,17 +37,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "3.3",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+			"severity": "Low",
+			"vector": "AV:A/AC:L/Au:N/C:P/I:N/A:N"
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "6.5",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
 		}
 	],
 	"date": "2020-11-17T17:12+09:00",

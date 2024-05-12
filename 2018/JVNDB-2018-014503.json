@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-014503.html",
-	"title": "react-dev-utils におけるクロスサイトリクエストフォージェリの脆弱性",
+	"title": "react-dev-utils における OS コマンドインジェクションの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-014503.html",
-	"description": "react-dev-utils には、クロスサイトリクエストフォージェリの脆弱性が存在します。",
+	"description": "react-dev-utils には、OS コマンドインジェクションの脆弱性が存在します。",
 	"identifier": "JVNDB-2018-014503",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2018-6342"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
-			"id": "CWE-352",
-			"title": "クロスサイトリクエストフォージェリ(CWE-352)"
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+			"id": "CWE-78",
+			"title": "OSコマンドインジェクション(CWE-78)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "9.3",
+			"score": "10.0",
 			"type": "Base",
 			"severity": "High",
-			"vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+			"vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C"
 		},
 		{
 			"version": "3.0",
-			"score": "8.8",
+			"score": "9.8",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2019-03-25T16:24+09:00",

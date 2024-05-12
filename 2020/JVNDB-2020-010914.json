@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-010914.html",
-	"title": "複数の Qualcomm 製品 における脆弱性",
+	"title": "複数の Qualcomm 製品 における重要な情報の平文での送信に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-010914.html",
-	"description": "複数の Qualcomm 製品 には、不特定の脆弱性が存在します。",
+	"description": "複数の Qualcomm 製品 には、重要な情報の平文での送信に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2020-010914",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "Security Advisory 0058"
 		},
 		{
-			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
-			"id": "CWE-noinfo",
-			"title": "情報不足(CWE-noinfo)"
+			"text": "https://cwe.mitre.org/data/definitions/319.html",
+			"id": "CWE-319",
+			"title": "重要な情報の平文での送信(CWE-319)"
 		}
 	],
 	"cpe": [
@@ -91,17 +91,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "3.3",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+			"severity": "Low",
+			"vector": "AV:A/AC:L/Au:N/C:P/I:N/A:N"
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "6.5",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
 		}
 	],
 	"date": "2021-02-12T18:09+09:00",
