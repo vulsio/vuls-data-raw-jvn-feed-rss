@@ -1,0 +1,40 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003183.html",
+	"title": "DHCP のオプション 121 を利用した VPN のカプセル化回避の問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003183.html",
+	"description": "DHCP のオプション 121 をサポートする環境で VPN 接続する場合、トラフィックの宛先を強制的に変更し、VPN トンネル外に送信することでカプセル化を回避することができる問題 (CVE-2024-3661) が報告されています。\r\n本問題の報告者は、この問題を「TunnelVision」と呼んでいます。\r\n\r\nDHCP RFC 3442 では、ネットワーク管理者がクライアントのルーティングテーブルにスタティックルートを指定できる「オプション 121 クラスレススタティックルート」を定義しています。このオプション 121 をサポートする環境において、VPN クライアントと同じローカルネットワーク上の攻撃者は、本オプションを悪用しルーティングテーブルを操作して、VPN クライアントのトラフィックを VPN 以外の不正なネットワークに強制的に送信する可能性があります (CVE-2024-3661：TunnelVision)。その後、VPN 宛のトラフィックをローカルネットワークにリダイレクトし、VPN を完全にバイパスできます。報告者はこの攻撃を「Decloaking攻撃」と呼んでいます。\r\nこの際、クライアント側からは VPN に接続され続けているように見えます。\r\n\r\n",
+	"identifier": "JVNDB-2024-003183",
+	"references": [
+		{
+			"text": "https://jvn.jp/ta/JVNTA94876636/index.html",
+			"source": "JVN",
+			"id": "JVNTA#94876636"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-3661",
+			"source": "CVE",
+			"id": "CVE-2024-3661"
+		},
+		{
+			"text": "https://www.leviathansecurity.com/research/tunnelvision",
+			"source": "関連文書",
+			"id": "TunnelVision"
+		},
+		{
+			"text": "https://www.wireguard.com/netns/#the-new-namespace-solution",
+			"source": "関連文書",
+			"id": "Routing & Network Namespaces"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"date": "2024-05-13T14:58+09:00",
+	"issued": "2024-05-13T14:58+09:00",
+	"modified": "2024-05-13T14:58+09:00"
+}
