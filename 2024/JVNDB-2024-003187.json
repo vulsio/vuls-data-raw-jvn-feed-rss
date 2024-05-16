@@ -1,0 +1,85 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003187.html",
+	"title": "フィールドロジック製 DataCube における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003187.html",
+	"description": "株式会社フィールドロジックが提供する DataCube には、次の複数の脆弱性が存在します。\r\n\r\n　* リクエストの直接送信 (CWE-425) - CVE-2024-25830\r\n　\r\n　* 反射型クロスサイトスクリプティング (CWE-79) - CVE-2024-25831\r\n　\r\n　* アップロードするファイルの検証不備 (CWE-434) - CVE-2024-25832\r\n　\r\n　* SQLインジェクション (CWE-89) - CVE-2024-25833\r\n\r\nCVE-2024-25830、CVE-2024-25831、CVE-2024-25832、CVE-2024-25833\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者：NeroTeam Security Labs Thomas J. Knudsen 氏、Samy Younsi 氏\r\n\r\nCVE-2024-25832\r\nこの脆弱性情報は、上記報告に基づく調整中に、下記の方から JPCERT/CC に報告がありました。\r\n報告者：CV3TR4CK 氏\r\n",
+	"identifier": "JVNDB-2024-003187",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU95350607/index.html",
+			"source": "JVN",
+			"id": "JVNVU#95350607"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-25830",
+			"source": "CVE",
+			"id": "CVE-2024-25830"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-25831",
+			"source": "CVE",
+			"id": "CVE-2024-25831"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-25832",
+			"source": "CVE",
+			"id": "CVE-2024-25832"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-25833",
+			"source": "CVE",
+			"id": "CVE-2024-25833"
+		},
+		{
+			"text": "https://neroteam.com/blog/f-logic-datacube3-vulnerability-report",
+			"source": "関連文書",
+			"id": "F-logic DataCube3 vulnerability report."
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/425.html",
+			"id": "CWE-425",
+			"title": "リクエストの直接送信(CWE-425)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/434.html",
+			"id": "CWE-434",
+			"title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:f-logic:datacube3_firmware",
+			"version": "2.2",
+			"vendor": "株式会社フィールドロジック",
+			"product": "DataCube3 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:f-logic:datacube4_firmware",
+			"version": "2.2",
+			"vendor": "株式会社フィールドロジック",
+			"product": "DataCube4 ファームウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-05-16T16:21+09:00",
+	"issued": "2024-05-16T16:21+09:00",
+	"modified": "2024-05-16T16:21+09:00"
+}
