@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013600.html",
-	"title": "PHP における解放済みメモリの使用に関する脆弱性",
+	"title": "PHP における境界外読み取りに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013600.html",
-	"description": "PHP には、解放済みメモリの使用に関する脆弱性が存在します。",
+	"description": "PHP には、境界外読み取りに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-013600",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2019-11050"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/416.html",
-			"id": "CWE-416",
-			"title": "解放済みメモリの使用(CWE-416)"
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
 		}
 	],
 	"cpe": [
@@ -45,10 +45,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "9.1",
+			"score": "6.5",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L"
 		}
 	],
 	"date": "2020-01-10T14:18+09:00",

@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-004532.html",
-	"title": "Istio および Envoy における情報漏えいに関する脆弱性",
+	"title": "Istio および Envoy における脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-004532.html",
-	"description": "Istio および Envoy には、情報漏えいに関する脆弱性が存在します。",
+	"description": "Istio および Envoy には、不特定の脆弱性が存在します。",
 	"identifier": "JVNDB-2020-004532",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2020-11767"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-			"id": "CWE-200",
-			"title": "情報漏えい(CWE-200)"
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-noinfo",
+			"title": "情報不足(CWE-noinfo)"
 		}
 	],
 	"cpe": [
@@ -38,17 +38,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "4.3",
+			"score": "2.6",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+			"severity": "Low",
+			"vector": "AV:N/AC:H/Au:N/C:P/I:N/A:N"
 		},
 		{
 			"version": "3.0",
-			"score": "6.5",
+			"score": "3.1",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N"
 		}
 	],
 	"date": "2020-05-20T10:11+09:00",

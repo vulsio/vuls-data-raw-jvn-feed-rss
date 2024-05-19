@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008220.html",
-	"title": "pdns におけるバッファエラーの脆弱性",
+	"title": "pdns における境界外書き込みに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008220.html",
-	"description": "pdns には、バッファエラーの脆弱性が存在します。",
+	"description": "pdns には、境界外書き込みに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2018-008220",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "Bug 1579271"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-			"id": "CWE-119",
-			"title": "バッファエラー(CWE-119)"
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
 		}
 	],
 	"cpe": [
@@ -44,10 +44,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "7.3",
+			"score": "7.8",
 			"type": "Base",
 			"severity": "High",
-			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2018-10-11T18:12+09:00",

@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013879.html",
-	"title": "dnsmasq におけるリソースの枯渇に関する脆弱性",
+	"title": "dnsmasq における制限またはスロットリング無しのリソースの割り当てに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-013879.html",
-	"description": "dnsmasq には、リソースの枯渇に関する脆弱性が存在します。",
+	"description": "dnsmasq には、制限またはスロットリング無しのリソースの割り当てに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-013879",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "Bug 1764425 (CVE-2019-14834) - CVE-2019-14834 dnsmasq: memory leak in in a infinite while(1) loop in the create_helper() function in /src/helper.c"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/400.html",
-			"id": "CWE-400",
-			"title": "リソースの枯渇(CWE-400)"
+			"text": "https://cwe.mitre.org/data/definitions/770.html",
+			"id": "CWE-770",
+			"title": "制限またはスロットリング無しのリソースの割り当て(CWE-770)"
 		}
 	],
 	"cpe": [
@@ -37,17 +37,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "4.3",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+			"vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "5.3",
+			"score": "3.7",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
 		}
 	],
 	"date": "2020-01-20T18:06+09:00",
