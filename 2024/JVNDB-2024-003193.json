@@ -1,0 +1,30 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003193.html",
+	"title": "OpenSSL におけるサービス運用妨害 (DoS) の脆弱性 (Security Advisory [16th May 2024])",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003193.html",
+	"description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20240516.txt\"target=\"blank\">OpenSSL Security Advisory [16th May 2024]</a>（\"Excessive time spent checking DSA keys and parameters (CVE-2024-4603)\"）が公開されました。\r\n\r\n深刻度−低 (Severity: Low)\r\n長すぎる DSA 公開キーまたは DSA パラメータを EVP_PKEY_param_check() 関数または EVP_PKEY_public_check() 関数でチェックする際に、時間を要する問題があります。\r\n\r\nなお、OpenSSL 3.0 および 3.1 の FIPS プロバイダーは本脆弱性の影響を受け、OpenSSL SSL/TLS 実装は本脆弱性の影響を受けません。",
+	"identifier": "JVNDB-2024-003193",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU94875946/",
+			"source": "JVN",
+			"id": "JVNVU#94875946"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-4603",
+			"source": "CVE",
+			"id": "CVE-2024-4603"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		}
+	],
+	"date": "2024-05-20T11:11+09:00",
+	"issued": "2024-05-20T11:11+09:00",
+	"modified": "2024-05-20T11:11+09:00"
+}
