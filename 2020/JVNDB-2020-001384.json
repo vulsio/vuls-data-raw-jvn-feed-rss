@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001384.html",
-	"title": "Wireshark におけるインジェクションに関する脆弱性",
+	"title": "Wireshark における NULL ポインタデリファレンスに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-001384.html",
-	"description": "Wireshark には、インジェクションに関する脆弱性が存在します。",
+	"description": "Wireshark には、NULL ポインタデリファレンスに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2020-001384",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2020-7045"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/74.html",
-			"id": "CWE-74",
-			"title": "インジェクション(CWE-74)"
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "3.3",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+			"severity": "Low",
+			"vector": "AV:A/AC:L/Au:N/C:N/I:N/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "6.5",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
 		}
 	],
 	"date": "2020-02-05T10:23+09:00",

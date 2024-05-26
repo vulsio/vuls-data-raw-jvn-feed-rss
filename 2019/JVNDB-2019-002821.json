@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-002821.html",
-	"title": "ovirt の REST API におけるパーミッションに関する脆弱性",
+	"title": "ovirt の REST API における認証の欠如に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-002821.html",
-	"description": "ovirt の REST API には、パーミッションに関する脆弱性が存在します。",
+	"description": "ovirt の REST API には、認証の欠如に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-002821",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2019-3879"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/275.html",
-			"id": "CWE-275",
-			"title": "パーミッションの問題(CWE-275)"
+			"text": "https://cwe.mitre.org/data/definitions/862.html",
+			"id": "CWE-862",
+			"title": "認証の欠如(CWE-862)"
 		}
 	],
 	"cpe": [
@@ -45,10 +45,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "6.5",
+			"score": "8.1",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
 		}
 	],
 	"date": "2019-04-24T09:16+09:00",

@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-015562.html",
-	"title": "Linux Kernel におけるリソースの枯渇に関する脆弱性",
+	"title": "Linux Kernel における有効なライフタイム後のリソースの解放の欠如に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-015562.html",
-	"description": "Linux Kernel には、リソースの枯渇に関する脆弱性が存在します。\r\n",
+	"description": "Linux Kernel には、有効なライフタイム後のリソースの解放の欠如に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-015562",
 	"references": [
 		{
@@ -26,9 +26,9 @@
 			"id": "[fuse-devel] Kernel Hung in FUSE"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/400.html",
-			"id": "CWE-400",
-			"title": "リソースの枯渇(CWE-400)"
+			"text": "https://cwe.mitre.org/data/definitions/772.html",
+			"id": "CWE-772",
+			"title": "有効なライフタイム後のリソースの解放の欠如(CWE-772)"
 		}
 	],
 	"cpe": [
@@ -42,17 +42,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "4.9",
+			"score": "4.7",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+			"vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
 		},
 		{
 			"version": "3.0",
-			"score": "5.5",
+			"score": "4.7",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+			"vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H"
 		}
 	],
 	"date": "2020-06-10T17:09+09:00",

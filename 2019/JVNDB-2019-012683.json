@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-012683.html",
-	"title": "Ruby におけるインジェクションに関する脆弱性",
+	"title": "Ruby におけるコードインジェクションの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-012683.html",
-	"description": "Ruby には、インジェクションに関する脆弱性が存在します。",
+	"description": "Ruby には、コードインジェクションの脆弱性が存在します。",
 	"identifier": "JVNDB-2019-012683",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "327512 (Potential command injection in `Shell#[]` and `Shell#test`)"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/74.html",
-			"id": "CWE-74",
-			"title": "インジェクション(CWE-74)"
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+			"id": "CWE-94",
+			"title": "コード・インジェクション(CWE-94)"
 		}
 	],
 	"cpe": [
@@ -43,17 +43,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "7.5",
+			"score": "6.8",
 			"type": "Base",
-			"severity": "High",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "8.1",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2019-12-11T10:16+09:00",

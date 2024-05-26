@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003726.html",
-	"title": "Linux Kernel における情報漏えいに関する脆弱性",
+	"title": "Linux Kernel における初期化されていないリソースの使用に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003726.html",
-	"description": "Linux Kernel には、情報漏えいに関する脆弱性が存在します。",
+	"description": "Linux Kernel には、初期化されていないリソースの使用に関する脆弱性、リソースの初期化の不備に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2020-003726",
 	"references": [
 		{
@@ -16,9 +16,14 @@
 			"id": "CVE-2020-11494"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-			"id": "CWE-200",
-			"title": "情報漏えい(CWE-200)"
+			"text": "http://cwe.mitre.org/data/definitions/908.html",
+			"id": "CWE-908",
+			"title": "初期化されていないリソースの使用(CWE-908)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/909.html",
+			"id": "CWE-909",
+			"title": "リソースの初期化の不備(CWE-909)"
 		}
 	],
 	"cpe": [
@@ -39,10 +44,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "5.5",
+			"score": "4.4",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
 		}
 	],
 	"date": "2020-04-23T14:08+09:00",

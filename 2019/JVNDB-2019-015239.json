@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-015239.html",
-	"title": "Proofpoint Email Protection における入力確認に関する脆弱性",
+	"title": "Proofpoint Email Protection における不適切な比較に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-015239.html",
-	"description": "Proofpoint Email Protection には、入力確認に関する脆弱性が存在します。\r\n",
+	"description": "Proofpoint Email Protection には、不適切な比較に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-015239",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "moohax/Proof-Pudding"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-			"id": "CWE-20",
-			"title": "不適切な入力確認(CWE-20)"
+			"text": "https://cwe.mitre.org/data/definitions/697.html",
+			"id": "CWE-697",
+			"title": "不適切な比較(CWE-697)"
 		}
 	],
 	"cpe": [
@@ -37,17 +37,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "6.4",
+			"score": "4.3",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
+			"vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
 		},
 		{
 			"version": "3.0",
-			"score": "9.1",
+			"score": "3.7",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
 		}
 	],
 	"date": "2020-04-21T12:05+09:00",

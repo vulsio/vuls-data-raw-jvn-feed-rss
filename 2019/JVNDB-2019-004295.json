@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-004295.html",
-	"title": "Cloud Foundry BOSH Backup and Restore CLI における認証に関する脆弱性",
+	"title": "Cloud Foundry BOSH Backup and Restore CLI におけるデータの信頼性についての不十分な検証に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-004295.html",
-	"description": "Cloud Foundry BOSH Backup and Restore CLI には、認証に関する脆弱性が存在します。",
+	"description": "Cloud Foundry BOSH Backup and Restore CLI には、データの信頼性についての不十分な検証に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2019-004295",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2019-3786"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
-			"id": "CWE-287",
-			"title": "不適切な認証(CWE-287)"
+			"text": "https://cwe.mitre.org/data/definitions/345.html",
+			"id": "CWE-345",
+			"title": "データの信頼性についての不十分な検証(CWE-345)"
 		}
 	],
 	"cpe": [
@@ -39,10 +39,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "6.5",
+			"score": "7.1",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N"
 		}
 	],
 	"date": "2019-05-30T15:47+09:00",

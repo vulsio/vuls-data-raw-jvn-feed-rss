@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-008690.html",
-	"title": "Linux Kernel におけるリソース管理に関する脆弱性",
+	"title": "Linux Kernel における有効期限後のメモリの解放の欠如に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-008690.html",
-	"description": "Linux Kernel には、リソース管理に関する脆弱性が存在します。",
+	"description": "Linux Kernel には、有効期限後のメモリの解放の欠如に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2019-008690",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2019-15807"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-			"id": "CWE-399",
-			"title": "リソース管理の問題(CWE-399)"
+			"text": "https://cwe.mitre.org/data/definitions/401.html",
+			"id": "CWE-401",
+			"title": "有効期限後のメモリの解放の欠如(CWE-401)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "7.8",
+			"score": "4.7",
 			"type": "Base",
-			"severity": "High",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+			"severity": "Medium",
+			"vector": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "4.7",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H"
 		}
 	],
 	"date": "2019-09-05T10:18+09:00",
