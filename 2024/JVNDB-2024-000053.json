@@ -1,0 +1,55 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000053.html",
+	"title": "UnifierおよびUnifier Castにおける複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000053.html",
+	"description": "横河レンタ・リース株式会社が提供するUnifierおよびUnifier Castには、次の複数の脆弱性が存在します。<ul><li>Cast Launcherによる不適切なファイルアクセス権設定（CWE-276）- CVE-2024-23847</li><li>coejobhookコマンド実行時における権限チェックの欠如（CWE-862）- CVE-024-36246</li></ul>\r\nCVE-2024-23847\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者がIPAに報告し、JPCERT/CCが開発者との調整を行いました。\r\n\r\nCVE-2024-36246\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。\r\n発見者：エムオーテックス株式会社 小椋 大靖 氏",
+	"identifier": "JVNDB-2024-000053",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN17680667/index.html",
+			"source": "JVN",
+			"id": "JVN#17680667"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-23847",
+			"source": "CVE",
+			"id": "CVE-2024-23847"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-36246",
+			"source": "CVE",
+			"id": "CVE-2024-36246"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:yokogawa_renta_unifier",
+			"version": "2.2",
+			"vendor": "横河レンタ・リース株式会社",
+			"product": "Unifier"
+		},
+		{
+			"text": "cpe:/a:misc:yokogawa_renta_unifier_cast",
+			"version": "2.2",
+			"vendor": "横河レンタ・リース株式会社",
+			"product": "Unifier Cast"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-05-28T12:17+09:00",
+	"issued": "2024-05-28T12:17+09:00",
+	"modified": "2024-05-28T12:17+09:00"
+}
