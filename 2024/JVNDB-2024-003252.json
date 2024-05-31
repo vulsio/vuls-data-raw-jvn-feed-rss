@@ -1,0 +1,35 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003252.html",
+	"title": "OpenSSL における解放済みメモリ使用（user-after-free）の脆弱性（Security Advisory [28th May 2024]）",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003252.html",
+	"description": "OpenSSL Project より、<a href=\"https://www.openssl.org/news/secadv/20240528.txt\"target=\"blank\">OpenSSL Security Advisory [28th May 2024]</a> （\"Use After Free with SSL_free_buffers (CVE-2024-4741)\"）が公開されました。\r\n\r\n深刻度−低（Severity：Low）\r\nOpenSSL の SSL_free_buffers 関数には、解放済みメモリ使用（use-after-free）の脆弱性（CWE-416、CVE-2024-4741）が存在します。\r\n\r\nなお、本脆弱性の影響を受けるのは SSL_free_buffers 関数を直接呼び出した場合のみであり、当該関数を直接呼び出すことのないアプリケーションは本脆弱性の影響を受けません。\r\n\r\n",
+	"identifier": "JVNDB-2024-003252",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU96872634/index.html",
+			"source": "JVN",
+			"id": "JVNVU#96872634"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-4741",
+			"source": "CVE",
+			"id": "CVE-2024-4741"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/416.html",
+			"id": "CWE-416",
+			"title": "解放済みメモリの使用(CWE-416)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		}
+	],
+	"date": "2024-05-31T11:56+09:00",
+	"issued": "2024-05-31T11:56+09:00",
+	"modified": "2024-05-31T11:56+09:00"
+}
