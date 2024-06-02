@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-011963.html",
-	"title": "Linux Kernel におけるリソースの枯渇に関する脆弱性",
+	"title": "Linux Kernel における有効期限後のメモリの解放の欠如に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-011963.html",
-	"description": "Linux Kernel には、リソースの枯渇に関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を CID-853acf7caf10 として公開しています。",
+	"description": "Linux Kernel には、有効期限後のメモリの解放の欠如に関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を CID-853acf7caf10 として公開しています。",
 	"identifier": "JVNDB-2019-011963",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2019-19073"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/400.html",
-			"id": "CWE-400",
-			"title": "リソースの枯渇(CWE-400)"
+			"text": "https://cwe.mitre.org/data/definitions/401.html",
+			"id": "CWE-401",
+			"title": "有効期限後のメモリの解放の欠如(CWE-401)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "7.8",
+			"score": "2.1",
 			"type": "Base",
-			"severity": "High",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "4.0",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
 		}
 	],
 	"date": "2019-11-21T17:12+09:00",

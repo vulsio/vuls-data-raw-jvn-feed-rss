@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003500.html",
-	"title": "libevt におけるバッファエラーの脆弱性",
+	"title": "libevt における境界外読み取りに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003500.html",
-	"description": "libevt には、バッファエラーの脆弱性が存在します。",
+	"description": "libevt には、境界外読み取りに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2018-003500",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2018-8754"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-			"id": "CWE-119",
-			"title": "バッファエラー(CWE-119)"
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
 		}
 	],
 	"cpe": [
@@ -38,17 +38,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "7.5",
+			"score": "2.1",
 			"type": "Base",
-			"severity": "High",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "5.5",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
 		}
 	],
 	"date": "2018-05-25T14:06+09:00",

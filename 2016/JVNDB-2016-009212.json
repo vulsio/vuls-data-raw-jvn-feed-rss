@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-009212.html",
-	"title": "openjpeg におけるバッファエラーの脆弱性",
+	"title": "openjpeg におけるヒープベースのバッファオーバーフローの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-009212.html",
-	"description": "openjpeg には、バッファエラーの脆弱性が存在します。",
+	"description": "openjpeg には、ヒープベースのバッファオーバーフローの脆弱性、無限ループに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2016-009212",
 	"references": [
 		{
@@ -21,9 +21,14 @@
 			"id": "Bug 1405135"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
-			"id": "CWE-119",
-			"title": "バッファエラー(CWE-119)"
+			"text": "https://cwe.mitre.org/data/definitions/122.html",
+			"id": "CWE-122",
+			"title": "ヒープベースのバッファオーバーフロー(CWE-122)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/835.html",
+			"id": "CWE-835",
+			"title": "無限ループ(CWE-835)"
 		}
 	],
 	"cpe": [

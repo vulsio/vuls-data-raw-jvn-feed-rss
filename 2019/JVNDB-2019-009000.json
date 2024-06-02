@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-009000.html",
-	"title": "Android のカーネルおける情報漏えいに関する脆弱性",
+	"title": "Android のカーネルおけるエラーメッセージによる情報漏えいに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-009000.html",
-	"description": "Android のカーネルには、情報漏えいに関する脆弱性が存在します。\r\n",
+	"description": "Android のカーネルには、エラーメッセージによる情報漏えいに関する脆弱性、到達可能なアサーションに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-009000",
 	"references": [
 		{
@@ -16,9 +16,14 @@
 			"id": "CVE-2019-9455"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-			"id": "CWE-200",
-			"title": "情報漏えい(CWE-200)"
+			"text": "http://cwe.mitre.org/data/definitions/209.html",
+			"id": "CWE-209",
+			"title": "エラーメッセージによる情報漏えい(CWE-209)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/617.html",
+			"id": "CWE-617",
+			"title": "到達可能なアサーション(CWE-617)"
 		}
 	],
 	"cpe": [
@@ -39,10 +44,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "4.4",
+			"score": "2.3",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N"
 		}
 	],
 	"date": "2019-09-11T09:41+09:00",

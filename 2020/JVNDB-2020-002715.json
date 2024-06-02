@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-002715.html",
-	"title": "SAP Business Objects Business Intelligence Platform におけるコードインジェクションの脆弱性",
+	"title": "SAP Business Objects Business Intelligence Platform における解放済みメモリの使用に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-002715.html",
-	"description": "SAP Business Objects Business Intelligence Platform (Crystal Reports) には、コードインジェクションの脆弱性が存在します。",
+	"description": "SAP Business Objects Business Intelligence Platform (Crystal Reports) には、解放済みメモリの使用に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2020-002715",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2020-6208"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
-			"id": "CWE-94",
-			"title": "コード・インジェクション(CWE-94)"
+			"text": "https://cwe.mitre.org/data/definitions/416.html",
+			"id": "CWE-416",
+			"title": "解放済みメモリの使用(CWE-416)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "4.6",
+			"score": "4.4",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+			"vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "8.8",
+			"score": "8.2",
 			"type": "Base",
 			"severity": "High",
-			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H"
 		}
 	],
 	"date": "2020-03-24T15:25+09:00",

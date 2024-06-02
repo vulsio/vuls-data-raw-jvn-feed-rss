@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-009723.html",
-	"title": "libgcrypt20 における競合状態に関する脆弱性",
+	"title": "libgcrypt20 における観測可能な不一致に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-009723.html",
-	"description": "libgcrypt20 には、競合状態に関する脆弱性が存在します。",
+	"description": "libgcrypt20 には、観測可能な不一致に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-009723",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2019-13627"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
-			"id": "CWE-362",
-			"title": "競合状態(CWE-362)"
+			"text": "https://cwe.mitre.org/data/definitions/203.html",
+			"id": "CWE-203",
+			"title": "観測可能な不一致(CWE-203)"
 		}
 	],
 	"cpe": [
@@ -38,17 +38,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "6.8",
+			"score": "2.6",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+			"severity": "Low",
+			"vector": "AV:L/AC:H/Au:N/C:P/I:P/A:N"
 		},
 		{
 			"version": "3.0",
-			"score": "8.1",
+			"score": "6.3",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
 		}
 	],
 	"date": "2019-09-30T10:49+09:00",

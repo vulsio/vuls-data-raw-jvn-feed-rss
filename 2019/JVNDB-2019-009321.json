@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-009321.html",
-	"title": "Linux Kernel における情報漏えいに関する脆弱性",
+	"title": "Linux Kernel における不適切な同期に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-009321.html",
-	"description": "Linux Kernel には、情報漏えいに関する脆弱性が存在します。",
+	"description": "Linux Kernel には、不適切な同期に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-009321",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "CVE-2019-15031: Linux kernel: powerpc: data leak with FP/VMX triggerable by interrupt in transaction"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-			"id": "CWE-200",
-			"title": "情報漏えい(CWE-200)"
+			"text": "https://cwe.mitre.org/data/definitions/662.html",
+			"id": "CWE-662",
+			"title": "不適切な同期(CWE-662)"
 		}
 	],
 	"cpe": [
@@ -44,10 +44,10 @@
 		},
 		{
 			"version": "3.0",
-			"score": "7.1",
+			"score": "4.4",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L"
 		}
 	],
 	"date": "2019-09-18T16:09+09:00",
