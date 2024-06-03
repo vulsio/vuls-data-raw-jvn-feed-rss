@@ -1,0 +1,165 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003253.html",
+	"title": "シャープ製および東芝テック製の複合機（MFP）における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003253.html",
+	"description": "シャープ株式会社および東芝テック株式会社が提供する複数の複合機（MFP）には、次の複数の脆弱性が存在します。\r\n\r\n　* スタックベースのバッファオーバーフロー（CWE-121） - CVE-2024-28038\r\n　* 不適切なアクセス権限付加（CWE-732） - CVE-2024-28955\r\n　* 重要な情報の平文保存（CWE-312） - CVE-2024-29146\r\n　* パスワードの平文保存（CWE-256） - CVE-2024-29978\r\n　* 復元可能な形式でのパスワード保存（CWE-257） - CVE-2024-32151\r\n　* パストラバーサル（CWE-22） - CVE-2024-33605\r\n　* アクセス制限不備（CWE-284） - CVE-2024-33610、CVE-2024-33616\r\n　* ネゴシエーション中の安全性の低いアルゴリズムの選択（CWE-767） - CVE-2024-34162\r\n　* ハードコードされた認証情報の使用（CWE-798） - CVE-2024-35244、CVE-2024-36248\r\n　* クロスサイトスクリプティング（CWE-79） - CVE-2024-36249\r\n　* 境界外読み取り（CWE-125） - CVE-2024-36251、CVE-2024-36254\r\n\r\n次の脆弱性に関しては、Pierre Barre 氏が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行い公表に至りました。\r\nCVE-2024-28038、CVE-2024-28955、CVE-2024-29146、CVE-2024-29978、CVE-2024-32151、CVE-2024-33605、CVE-2024-33610、CVE-2024-33616、CVE-2024-34162、CVE-2024-35244、CVE-2024-36248、CVE-2024-36251、CVE-2024-36254\r\n\r\n次の脆弱性に関しては、開発者が複数の発見者から直接報告を受け調整し、製品利用者への周知を目的に開発者が JPCERT/CC に報告し、公表に至りました。\r\nCVE-2024-33610、CVE-2024-36249、CVE-2024-36251、CVE-2024-36254",
+	"identifier": "JVNDB-2024-003253",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU93051062/index.html",
+			"source": "JVN",
+			"id": "JVNVU#93051062"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-28038",
+			"source": "CVE",
+			"id": "CVE-2024-28038"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-28955",
+			"source": "CVE",
+			"id": "CVE-2024-28955"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-29146",
+			"source": "CVE",
+			"id": "CVE-2024-29146"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-29978",
+			"source": "CVE",
+			"id": "CVE-2024-29978"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-32151",
+			"source": "CVE",
+			"id": "CVE-2024-32151"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-33605",
+			"source": "CVE",
+			"id": "CVE-2024-33605"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-33610",
+			"source": "CVE",
+			"id": "CVE-2024-33610"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-33616",
+			"source": "CVE",
+			"id": "CVE-2024-33616"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-34162",
+			"source": "CVE",
+			"id": "CVE-2024-34162"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-35244",
+			"source": "CVE",
+			"id": "CVE-2024-35244"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-36248",
+			"source": "CVE",
+			"id": "CVE-2024-36248"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-36249",
+			"source": "CVE",
+			"id": "CVE-2024-36249"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-36251",
+			"source": "CVE",
+			"id": "CVE-2024-36251"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-36254",
+			"source": "CVE",
+			"id": "CVE-2024-36254"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/121.html",
+			"id": "CWE-121",
+			"title": "スタックベースのバッファオーバーフロー(CWE-121)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/256.html",
+			"id": "CWE-256",
+			"title": "認証情報の平文保存(CWE-256)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/257.html",
+			"id": "CWE-257",
+			"title": "復元可能な形式でのパスワード保存(CWE-257)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/284.html",
+			"id": "CWE-284",
+			"title": "不適切なアクセス制御(CWE-284)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/312.html",
+			"id": "CWE-312",
+			"title": "重要な情報の平文保存(CWE-312)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/732.html",
+			"id": "CWE-732",
+			"title": "重要なリソースに対する不適切なパーミッションの割り当て(CWE-732)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/767.html",
+			"id": "CWE-767",
+			"title": "公開メソッドによる重要な内部変数へのアクセス(CWE-767)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/798.html",
+			"id": "CWE-798",
+			"title": "ハードコードされた認証情報の使用(CWE-798)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:sharp:multiple_product",
+			"version": "2.2",
+			"vendor": "シャープ株式会社",
+			"product": "(複数の製品)"
+		},
+		{
+			"text": "cpe:/a:toshibatec:multiple_product",
+			"version": "2.2",
+			"vendor": "東芝テック",
+			"product": "(複数の製品)"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.1",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+		}
+	],
+	"date": "2024-06-03T13:38+09:00",
+	"issued": "2024-06-03T13:38+09:00",
+	"modified": "2024-06-03T13:38+09:00"
+}
