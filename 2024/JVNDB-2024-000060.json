@@ -1,0 +1,60 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000060.html",
+	"title": "スマートフォンアプリ「FreeFrom - the nostr client」における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000060.html",
+	"description": "FreeFrom株式会社が提供するスマートフォンアプリ「FreeFrom - the nostr client」には、次の複数の脆弱性が存在します。\r\n<ul><li>デジタル署名の検証不備（CWE-347） - CVE-2024-36277</li><li>入力データの保護を難読化や暗号化のみに依存し完全性を確認していない（CWE-649） - CVE-2024-36279</li><li>暗号化処理におけるナンスおよび鍵ペアの再利用（CWE-323） - CVE-2024-36289</li></ul>\r\nこの脆弱性が当該製品に存在することを下記の方々が製品開発者に直接報告し、製品開発者との調整を経て、製品利用者への周知を目的にJVNでの公表に至りました。\r\n報告者：兵庫県立大学 木村 隼人 氏、国立研究開発法人 情報通信研究機構 伊藤 竜馬 氏、日本電気株式会社/横浜国立大学 峯松 一彦 氏、兵庫県立大学 五十部 孝典 氏",
+	"identifier": "JVNDB-2024-000060",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN55045256/index.html",
+			"source": "JVN",
+			"id": "JVN#55045256"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-36277",
+			"source": "CVE",
+			"id": "CVE-2024-36277"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-36279",
+			"source": "CVE",
+			"id": "CVE-2024-36279"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-36289",
+			"source": "CVE",
+			"id": "CVE-2024-36289"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:freefrom_android_app_freefrom-the_nostr_client",
+			"version": "2.2",
+			"vendor": "FreeFrom株式会社",
+			"product": "Android アプリ「FreeFrom - the nostr client」"
+		},
+		{
+			"text": "cpe:/a:misc:freefrom_iOS_app_freefrom-the_nostr_client",
+			"version": "2.2",
+			"vendor": "FreeFrom株式会社",
+			"product": "iOS アプリ「FreeFrom - the nostr client」"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+		}
+	],
+	"date": "2024-06-07T12:20+09:00",
+	"issued": "2024-06-07T12:20+09:00",
+	"modified": "2024-06-07T12:20+09:00"
+}
