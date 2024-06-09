@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-012594.html",
-	"title": "Unbound における入力確認に関する脆弱性",
+	"title": "Unbound における OS コマンドインジェクションの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-012594.html",
-	"description": "Unbound には、入力確認に関する脆弱性が存在します。",
+	"description": "Unbound には、OS コマンドインジェクションの脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-012594",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2019-18934"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-20.html",
-			"id": "CWE-20",
-			"title": "不適切な入力確認(CWE-20)"
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+			"id": "CWE-78",
+			"title": "OSコマンドインジェクション(CWE-78)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "9.3",
+			"score": "6.8",
 			"type": "Base",
-			"severity": "High",
-			"vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "7.3",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
 		}
 	],
 	"date": "2019-12-09T09:54+09:00",

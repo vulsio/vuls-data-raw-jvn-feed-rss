@@ -2,7 +2,7 @@
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-011222.html",
 	"title": "libxslt における解放済みメモリの使用に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-011222.html",
-	"description": "libxslt には、解放済みメモリの使用に関する脆弱性が存在します。",
+	"description": "libxslt には、解放済みメモリの使用に関する脆弱性、初期化されていないリソースの使用に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-011222",
 	"references": [
 		{
@@ -19,6 +19,11 @@
 			"text": "https://cwe.mitre.org/data/definitions/416.html",
 			"id": "CWE-416",
 			"title": "解放済みメモリの使用(CWE-416)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/908.html",
+			"id": "CWE-908",
+			"title": "初期化されていないリソースの使用(CWE-908)"
 		}
 	],
 	"cpe": [
@@ -38,17 +43,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "6.8",
+			"score": "5.1",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+			"vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "7.5",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2019-10-30T17:43+09:00",

@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-007141.html",
-	"title": "Das U-Boot におけるリソース管理に関する脆弱性",
+	"title": "Das U-Boot における再帰制御に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-007141.html",
-	"description": "Das U-Boot には、リソース管理に関する脆弱性が存在します。",
+	"description": "Das U-Boot には、再帰制御に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-007141",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "ICSA-19-344-03"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-			"id": "CWE-399",
-			"title": "リソース管理の問題(CWE-399)"
+			"text": "https://cwe.mitre.org/data/definitions/674.html",
+			"id": "CWE-674",
+			"title": "不適切な再帰制御(CWE-674)"
 		}
 	],
 	"cpe": [
@@ -37,17 +37,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "6.4",
+			"score": "3.6",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:P/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "9.1",
+			"score": "7.1",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
 		}
 	],
 	"date": "2019-12-11T17:57+09:00",

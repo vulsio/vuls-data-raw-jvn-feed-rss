@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-002998.html",
-	"title": "IBM Tivoli Storage Manager におけるアクセス制御に関する脆弱性",
+	"title": "IBM Tivoli Storage Manager における重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-002998.html",
-	"description": "IBM Tivoli Storage Manager (IBM Spectrum Protect) には、アクセス制御に関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を IBM X-Force ID: 157981 として公開しています。",
+	"description": "IBM Tivoli Storage Manager (IBM Spectrum Protect) には、重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性が存在します。\r\n\r\nベンダは、本脆弱性を IBM X-Force ID: 157981 として公開しています。",
 	"identifier": "JVNDB-2019-002998",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2019-4093"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/284.html",
-			"id": "CWE-284",
-			"title": "不適切なアクセス制御(CWE-284)"
+			"text": "https://cwe.mitre.org/data/definitions/732.html",
+			"id": "CWE-732",
+			"title": "重要なリソースに対する不適切なパーミッションの割り当て(CWE-732)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "3.2",
+			"score": "3.6",
 			"type": "Base",
 			"severity": "Low",
-			"vector": "AV:L/AC:L/Au:S/C:P/I:P/A:N"
+			"vector": "AV:L/AC:L/Au:N/C:P/I:P/A:N"
 		},
 		{
 			"version": "3.0",
-			"score": "7.1",
+			"score": "4.4",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
 		}
 	],
 	"date": "2019-05-07T15:16+09:00",

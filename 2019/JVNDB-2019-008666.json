@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-008666.html",
-	"title": "WordPress 用 nd-restaurant-reservations プラグインにおける認可・権限・アクセス制御に関する脆弱性",
+	"title": "WordPress 用 nd-restaurant-reservations プラグインにおける重要な機能に対する認証の欠如に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-008666.html",
-	"description": "WordPress 用 nd-restaurant-reservations プラグインには、認可・権限・アクセス制御に関する脆弱性が存在します。",
+	"description": "WordPress 用 nd-restaurant-reservations プラグインには、重要な機能に対する認証の欠如に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-008666",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "ND Restaurant Reservations <= 1.3 - Unauthenticated Options Change"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-			"id": "CWE-264",
-			"title": "認可・権限・アクセス制御(CWE-264)"
+			"text": "https://cwe.mitre.org/data/definitions/306.html",
+			"id": "CWE-306",
+			"title": "重要な機能に対する認証の欠如(CWE-306)"
 		}
 	],
 	"cpe": [
@@ -37,17 +37,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
-			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
-		},
-		{
-			"version": "3.0",
 			"score": "7.5",
 			"type": "Base",
 			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2019-09-04T17:53+09:00",
