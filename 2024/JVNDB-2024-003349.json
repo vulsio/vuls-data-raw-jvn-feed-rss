@@ -1,0 +1,74 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003349.html",
+	"title": "TenWeb, Inc. の WordPress 用 Photo Gallery におけるパストラバーサルの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003349.html",
+	"description": "TenWeb, Inc. の WordPress 用 Photo Gallery には、パストラバーサルの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-003349",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-5481",
+			"source": "CVE",
+			"id": "CVE-2024-5481"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-5481",
+			"source": "NVD",
+			"id": "CVE-2024-5481"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/photo-gallery/trunk/filemanager/controller.php#L178",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (controller.php#L178)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/photo-gallery/trunk/filemanager/controller.php#L436",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (controller.php#L436)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/photo-gallery/trunk/filemanager/controller.php#L512",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (controller.php#L512)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset/3098798/",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (changeset/3098798)"
+		},
+		{
+			"text": "https://wordpress.org/plugins/photo-gallery/#developers",
+			"source": "関連文書",
+			"id": "wordpress.org (#developers)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/76c38826-4d49-4204-b6b6-b01d01373fa9?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (76c38826-4d49-4204-b6b6-b01d01373fa9?source=cve)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:10web:photo_gallery",
+			"version": "2.2",
+			"vendor": "TenWeb, Inc.",
+			"product": "Photo Gallery"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-06-12T10:41+09:00",
+	"issued": "2024-06-12T10:41+09:00",
+	"modified": "2024-06-12T10:41+09:00"
+}
