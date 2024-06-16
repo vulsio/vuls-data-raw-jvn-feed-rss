@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-005002.html",
-	"title": "Ivanti LANDESK Management Suite における証明書・パスワードの管理に関する脆弱性",
+	"title": "Ivanti LANDESK Management Suite における重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-005002.html",
-	"description": "Ivanti LANDESK Management Suite (LDMS、別名 Endpoint Manager) には、証明書・パスワードの管理に関する脆弱性が存在します。",
+	"description": "Ivanti LANDESK Management Suite (LDMS、別名 Endpoint Manager) には、重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-005002",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "[CVE-2019-12373] LANDesk Management Server - Administrator Password Disclosure"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-255.html",
-			"id": "CWE-255",
-			"title": "証明書・パスワードの管理(CWE-255)"
+			"text": "https://cwe.mitre.org/data/definitions/732.html",
+			"id": "CWE-732",
+			"title": "重要なリソースに対する不適切なパーミッションの割り当て(CWE-732)"
 		}
 	],
 	"cpe": [
@@ -37,17 +37,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "2.7",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+			"severity": "Low",
+			"vector": "AV:A/AC:L/Au:S/C:P/I:N/A:N"
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "9.0",
 			"type": "Base",
 			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
 		}
 	],
 	"date": "2019-06-13T17:23+09:00",

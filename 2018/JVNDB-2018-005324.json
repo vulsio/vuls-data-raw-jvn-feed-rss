@@ -2,7 +2,7 @@
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-005324.html",
 	"title": "PHP Scripts Mall Website Seller Script におけるクロスサイトリクエストフォージェリの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-005324.html",
-	"description": "PHP Scripts Mall Website Seller Script には、クロスサイトリクエストフォージェリの脆弱性が存在します。",
+	"description": "PHP Scripts Mall Website Seller Script には、クロスサイトリクエストフォージェリの脆弱性、クロスサイトスクリプティングの脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2018-005324",
 	"references": [
 		{
@@ -24,6 +24,11 @@
 			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
 			"id": "CWE-352",
 			"title": "クロスサイトリクエストフォージェリ(CWE-352)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
 		}
 	],
 	"cpe": [
@@ -37,10 +42,10 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "6.8",
+			"score": "6.0",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+			"vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P"
 		},
 		{
 			"version": "3.0",

@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-013274.html",
-	"title": "Intel System Defense Utility における認可・権限・アクセス制御に関する脆弱性",
+	"title": "Intel System Defense Utility における重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-013274.html",
-	"description": "Intel(R) System Defense Utility には、認可・権限・アクセス制御に関する脆弱性が存在します。",
+	"description": "Intel(R) System Defense Utility には、重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性が存在します。",
 	"identifier": "JVNDB-2018-013274",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2018-3705"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-264.html",
-			"id": "CWE-264",
-			"title": "認可・権限・アクセス制御(CWE-264)"
+			"text": "https://cwe.mitre.org/data/definitions/732.html",
+			"id": "CWE-732",
+			"title": "重要なリソースに対する不適切なパーミッションの割り当て(CWE-732)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "4.6",
+			"score": "2.1",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:N/I:N/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "7.8",
+			"score": "5.5",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
 		}
 	],
 	"date": "2019-02-18T15:56+09:00",

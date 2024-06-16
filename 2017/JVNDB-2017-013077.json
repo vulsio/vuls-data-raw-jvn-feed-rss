@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-013077.html",
-	"title": "Android の Upstream カーネルにおける情報漏えいに関する脆弱性",
+	"title": "Android の Upstream カーネルにおける境界外読み取りに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-013077.html",
-	"description": "Android の Upstream カーネルには、情報漏えいに関する脆弱性が存在します。\r\n\r\n本脆弱性は、Android ID: A-70526974 として公開されています。",
+	"description": "Android の Upstream カーネルには、境界外読み取りに関する脆弱性が存在します。\r\n\r\n本脆弱性は、Android ID: A-70526974 として公開されています。",
 	"identifier": "JVNDB-2017-013077",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2017-13305"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
-			"id": "CWE-200",
-			"title": "情報漏えい(CWE-200)"
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
 		}
 	],
 	"cpe": [
@@ -38,17 +38,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "3.6",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:P/I:N/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "5.3",
+			"score": "7.1",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H"
 		}
 	],
 	"date": "2018-05-24T15:57+09:00",

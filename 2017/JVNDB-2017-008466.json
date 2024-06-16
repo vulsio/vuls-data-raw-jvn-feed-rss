@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-008466.html",
-	"title": "Open vSwitch におけるリソースの枯渇に関する脆弱性",
+	"title": "Open vSwitch における有効なライフタイム後のリソースの解放の欠如に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-008466.html",
-	"description": "Open vSwitch (OvS) には、リソースの枯渇に関する脆弱性が存在します。\r\n\r\nなお、ベンダは、本脆弱性に対して異議を唱えています。\r\n詳細については、以下の NVD の Current Description を確認してください。\r\nhttps://nvd.nist.gov/vuln/detail/CVE-2017-14970",
+	"description": "Open vSwitch (OvS) には、有効なライフタイム後のリソースの解放の欠如に関する脆弱性が存在します。\r\n\r\nなお、ベンダは、本脆弱性に対して異議を唱えています。\r\n詳細については、以下の NVD の Current Description を確認してください。\r\nhttps://nvd.nist.gov/vuln/detail/CVE-2017-14970",
 	"identifier": "JVNDB-2017-008466",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2017-14970"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/400.html",
-			"id": "CWE-400",
-			"title": "リソースの枯渇(CWE-400)"
+			"text": "https://cwe.mitre.org/data/definitions/772.html",
+			"id": "CWE-772",
+			"title": "有効なライフタイム後のリソースの解放の欠如(CWE-772)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "4.3",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+			"vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "5.9",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
 		}
 	],
 	"date": "2017-10-19T17:15+09:00",
