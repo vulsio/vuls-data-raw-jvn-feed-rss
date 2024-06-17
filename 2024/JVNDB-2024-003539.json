@@ -1,0 +1,341 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003539.html",
+	"title": "東芝テック製および沖電気製複合機 (MFP) における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003539.html",
+	"description": "東芝テック株式会社および沖電気工業株式会社が提供する複数の複合機 (MFP) には、次の複数の脆弱性が存在します。\r\n\r\n　* XML エンティティ拡張インジェクション (CWE-776) - CVE-2024-27141、CVE-2024-27142\r\n　* 不要な権限による実行 (CWE-250) - CVE-2024-27143、CVE-2024-27146、CVE-2024-27147、CVE-2024-3498\r\n　* インストール時のファイルアクセス権の設定が不適切 (CWE-276) - CVE-2024-27148、CVE-2024-27149、CVE-2024-27150、CVE-2024-27151、CVE-2024-27152、CVE-2024-27153、CVE-2024-27155、CVE-2024-27167、CVE-2024-27171\r\n　* パストラバーサル (CWE-22) - CVE-2024-27144、CVE-2024-27145、CVE-2024-27173、CVE-2024-27174、CVE-2024-27176、CVE-2024-27177、CVE-2024-27178\r\n　* ログファイルに含まれる機微な情報 (CWE-532) - CVE-2024-27154、CVE-2024-27156、CVE-2024-27157\r\n　* パスワードの平文保存 (CWE-256) - CVE-2024-27166\r\n　* デバッグメッセージによる情報漏えい (CWE-1295) - CVE-2024-27179\r\n　* デフォルト認証情報の使用 (CWE-1392) - CVE-2024-27158\r\n　* ハードコードされた認証情報の使用 (CWE-798) - CVE-2024-27159、CVE-2024-27160、CVE-2024-27161、CVE-2024-27168、CVE-2024-27170\r\n　* ハードコードされたパスワードの使用 (CWE-259) - CVE-2024-27164\r\n　* クロスサイトスクリプティング (CWE-79) - CVE-2024-27162\r\n　* 重要な情報の平文送信 (CWE-319) - CVE-2024-27163\r\n　* 権限侵害 (CWE-272) - CVE-2024-27165\r\n　* 重要な機能に対する認証の欠如 (CWE-306) - CVE-2024-27169\r\n　* OS コマンドインジェクション (CWE-78) - CVE-2024-27172\r\n　* ファイル名やパス名の外部制御 (CWE-73) - CVE-2024-27175\r\n　* Time-of-check Time-of-use (TOCTOU) 競合状態 (CWE-367) - CVE-2024-27180\r\n　* 代替パスまたはチャネルの使用による認証回避 (CWE-288) - CVE-2024-3496\r\n　* 相対パストラバーサル (CWE-23) - CVE-2024-3497\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n",
+	"identifier": "JVNDB-2024-003539",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU97136265/index.html",
+			"source": "JVN",
+			"id": "JVNVU#97136265"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27141",
+			"source": "CVE",
+			"id": "CVE-2024-27141"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27142",
+			"source": "CVE",
+			"id": "CVE-2024-27142"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27143",
+			"source": "CVE",
+			"id": "CVE-2024-27143"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27146",
+			"source": "CVE",
+			"id": "CVE-2024-27146"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27147",
+			"source": "CVE",
+			"id": "CVE-2024-27147"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-3498",
+			"source": "CVE",
+			"id": "CVE-2024-3498"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27148",
+			"source": "CVE",
+			"id": "CVE-2024-27148"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27149",
+			"source": "CVE",
+			"id": "CVE-2024-27149"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27150",
+			"source": "CVE",
+			"id": "CVE-2024-27150"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27151",
+			"source": "CVE",
+			"id": "CVE-2024-27151"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27152",
+			"source": "CVE",
+			"id": "CVE-2024-27152"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27153",
+			"source": "CVE",
+			"id": "CVE-2024-27153"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27155",
+			"source": "CVE",
+			"id": "CVE-2024-27155"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27167",
+			"source": "CVE",
+			"id": "CVE-2024-27167"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27171",
+			"source": "CVE",
+			"id": "CVE-2024-27171"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27144",
+			"source": "CVE",
+			"id": "CVE-2024-27144"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27145",
+			"source": "CVE",
+			"id": "CVE-2024-27145"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27173",
+			"source": "CVE",
+			"id": "CVE-2024-27173"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27174",
+			"source": "CVE",
+			"id": "CVE-2024-27174"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27176",
+			"source": "CVE",
+			"id": "CVE-2024-27176"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27177",
+			"source": "CVE",
+			"id": "CVE-2024-27177"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27178",
+			"source": "CVE",
+			"id": "CVE-2024-27178"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27154",
+			"source": "CVE",
+			"id": "CVE-2024-27154"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27156",
+			"source": "CVE",
+			"id": "CVE-2024-27156"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27157",
+			"source": "CVE",
+			"id": "CVE-2024-27157"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27166",
+			"source": "CVE",
+			"id": "CVE-2024-27166"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27179",
+			"source": "CVE",
+			"id": "CVE-2024-27179"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27158",
+			"source": "CVE",
+			"id": "CVE-2024-27158"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27159",
+			"source": "CVE",
+			"id": "CVE-2024-27159"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27160",
+			"source": "CVE",
+			"id": "CVE-2024-27160"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27161",
+			"source": "CVE",
+			"id": "CVE-2024-27161"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27168",
+			"source": "CVE",
+			"id": "CVE-2024-27168"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27170",
+			"source": "CVE",
+			"id": "CVE-2024-27170"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27164",
+			"source": "CVE",
+			"id": "CVE-2024-27164"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27162",
+			"source": "CVE",
+			"id": "CVE-2024-27162"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27163",
+			"source": "CVE",
+			"id": "CVE-2024-27163"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27165",
+			"source": "CVE",
+			"id": "CVE-2024-27165"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27169",
+			"source": "CVE",
+			"id": "CVE-2024-27169"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27172",
+			"source": "CVE",
+			"id": "CVE-2024-27172"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27175",
+			"source": "CVE",
+			"id": "CVE-2024-27175"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-27180",
+			"source": "CVE",
+			"id": "CVE-2024-27180"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-3496",
+			"source": "CVE",
+			"id": "CVE-2024-3496"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-3497",
+			"source": "CVE",
+			"id": "CVE-2024-3497"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/1295",
+			"id": "CWE-1295",
+			"title": "不要な情報を表示するデバッグメッセージ(CWE-1295)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/1392.html",
+			"id": "CWE-1392",
+			"title": "デフォルトの認証情報の使用(CWE-1392)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/23.html",
+			"id": "CWE-23",
+			"title": "相対パストラバーサル(CWE-23)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/250.html",
+			"id": "CWE-250",
+			"title": "不要な特権による実行(CWE-250)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/256.html",
+			"id": "CWE-256",
+			"title": "認証情報の平文保存(CWE-256)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/259.html",
+			"id": "CWE-259",
+			"title": "ハードコードされたパスワードの使用(CWE-259)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/272.html",
+			"id": "CWE-272",
+			"title": "最小権限の違反(CWE-272)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/276.html",
+			"id": "CWE-276",
+			"title": "不適切なデフォルトパーミッション(CWE-276)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/288.html",
+			"id": "CWE-288",
+			"title": "代替パスまたはチャネルを使用した認証回避(CWE-288)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/306.html",
+			"id": "CWE-306",
+			"title": "重要な機能に対する認証の欠如(CWE-306)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/319.html",
+			"id": "CWE-319",
+			"title": "重要な情報の平文での送信(CWE-319)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/367.html",
+			"id": "CWE-367",
+			"title": "Time-of-check Time-of-use (TOCTOU) 競合状態(CWE-367)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/532.html",
+			"id": "CWE-532",
+			"title": "ログファイルからの情報漏えい(CWE-532)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/73.html",
+			"id": "CWE-73",
+			"title": "ファイル名やパス名の外部制御(CWE-73)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/776.html",
+			"id": "CWE-776",
+			"title": "DTD の再帰的なエンティティ参照の不適切な制限(CWE-776)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+			"id": "CWE-78",
+			"title": "OSコマンドインジェクション(CWE-78)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/798.html",
+			"id": "CWE-798",
+			"title": "ハードコードされた認証情報の使用(CWE-798)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:oki_electric_industry_multiple_product",
+			"version": "2.2",
+			"vendor": "沖電気工業株式会社",
+			"product": "(複数の製品)"
+		},
+		{
+			"text": "cpe:/a:toshibatec:multiple_product",
+			"version": "2.2",
+			"vendor": "東芝テック",
+			"product": "(複数の製品)"
+		}
+	],
+	"date": "2024-06-17T14:31+09:00",
+	"issued": "2024-06-17T14:31+09:00",
+	"modified": "2024-06-17T14:31+09:00"
+}
