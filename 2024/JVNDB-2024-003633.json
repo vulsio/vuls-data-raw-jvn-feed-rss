@@ -1,0 +1,70 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003633.html",
+	"title": "レッドハットの Red Hat OpenShift Container Platform および openshift distributed tracing におけるスプーフィングによる認証回避に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003633.html",
+	"description": "レッドハットの Red Hat OpenShift Container Platform および openshift distributed tracing には、スプーフィングによる認証回避に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-003633",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-5037",
+			"source": "CVE",
+			"id": "CVE-2024-5037"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-5037",
+			"source": "NVD",
+			"id": "CVE-2024-5037"
+		},
+		{
+			"text": "https://access.redhat.com/security/cve/CVE-2024-5037",
+			"source": "関連文書",
+			"id": "access.redhat.com (CVE-2024-5037)"
+		},
+		{
+			"text": "https://bugzilla.redhat.com/show_bug.cgi?id=2272339",
+			"source": "関連文書",
+			"id": "bugzilla.redhat.com (2272339)"
+		},
+		{
+			"text": "https://github.com/kubernetes/kubernetes/pull/123540",
+			"source": "関連文書",
+			"id": "github.com (pull/123540)"
+		},
+		{
+			"text": "https://github.com/openshift/telemeter/blob/a9417a6062c3a31ed78c06ea3a0613a52f2029b2/pkg/authorize/jwt/client_authorizer.go#L78",
+			"source": "関連文書",
+			"id": "github.com (client_authorizer.go#L78)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/290.html",
+			"id": "CWE-290",
+			"title": "スプーフィングによる認証回避(CWE-290)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:redhat:openshift_container_platform",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat OpenShift Container Platform"
+		},
+		{
+			"text": "cpe:/a:redhat:openshift_distributed_tracing",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "openshift distributed tracing"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-06-19T09:49+09:00",
+	"issued": "2024-06-19T09:49+09:00",
+	"modified": "2024-06-19T09:49+09:00"
+}

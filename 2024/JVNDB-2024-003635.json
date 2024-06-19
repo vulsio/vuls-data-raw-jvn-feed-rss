@@ -1,0 +1,76 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003635.html",
+	"title": "複数の opentelemetry 製品におけるバッファエラーの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003635.html",
+	"description": "opentelemetry の configgrpc、confighttp、opentelemetry collector には、バッファエラーの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-003635",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-36129",
+			"source": "CVE",
+			"id": "CVE-2024-36129"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-36129",
+			"source": "NVD",
+			"id": "CVE-2024-36129"
+		},
+		{
+			"text": "https://github.com/open-telemetry/opentelemetry-collector/pull/10289",
+			"source": "関連文書",
+			"id": "github.com (pull/10289)"
+		},
+		{
+			"text": "https://github.com/open-telemetry/opentelemetry-collector/pull/10323",
+			"source": "関連文書",
+			"id": "github.com (pull/10323)"
+		},
+		{
+			"text": "https://github.com/open-telemetry/opentelemetry-collector/security/advisories/GHSA-c74f-6mfw-mm4v",
+			"source": "関連文書",
+			"id": "github.com (GHSA-c74f-6mfw-mm4v)"
+		},
+		{
+			"text": "https://opentelemetry.io/blog/2024/cve-2024-36129",
+			"source": "関連文書",
+			"id": "opentelemetry.io (cve-2024-36129)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:opentelemetry:configgrpc",
+			"version": "2.2",
+			"vendor": "opentelemetry",
+			"product": "configgrpc"
+		},
+		{
+			"text": "cpe:/a:opentelemetry:confighttp",
+			"version": "2.2",
+			"vendor": "opentelemetry",
+			"product": "confighttp"
+		},
+		{
+			"text": "cpe:/a:opentelemetry:opentelemetry_collector",
+			"version": "2.2",
+			"vendor": "opentelemetry",
+			"product": "opentelemetry collector"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2024-06-19T10:06+09:00",
+	"issued": "2024-06-19T10:06+09:00",
+	"modified": "2024-06-19T10:06+09:00"
+}
