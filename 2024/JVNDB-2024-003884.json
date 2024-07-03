@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003884.html",
+	"title": "wpexpertplugins の WordPress 用 post meta data manager におけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003884.html",
+	"description": "wpexpertplugins の WordPress 用 post meta data manager には、クロスサイトスクリプティングの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-003884",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-6264",
+			"source": "CVE",
+			"id": "CVE-2024-6264"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-6264",
+			"source": "NVD",
+			"id": "CVE-2024-6264"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/post-meta-data-manager/trunk/includes/admin/html/pmdm_wp_display_post_metadata_html.php#L23",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (pmdm_wp_display_post_metadata_html.php#L23)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/post-meta-data-manager/trunk/includes/admin/html/pmdm_wp_display_term_metadata_html.php#L32",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (pmdm_wp_display_term_metadata_html.php#L32)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/post-meta-data-manager/trunk/includes/admin/html/pmdm_wp_display_user_metadata_html.php#L31",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (pmdm_wp_display_user_metadata_html.php#L31)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset/3109558/",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (changeset/3109558)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/9dd6828b-6235-4284-bce6-be23b79ac70e?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (9dd6828b-6235-4284-bce6-be23b79ac70e?source=cve)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:wpexpertplugins:post_meta_data_manager",
+			"version": "2.2",
+			"vendor": "wpexpertplugins",
+			"product": "post meta data manager"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-07-03T15:52+09:00",
+	"issued": "2024-07-03T15:52+09:00",
+	"modified": "2024-07-03T15:52+09:00"
+}
