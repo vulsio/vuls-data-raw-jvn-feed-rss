@@ -1,0 +1,54 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003935.html",
+	"title": "flowiseai の flowise におけるインジェクションに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003935.html",
+	"description": "flowiseai の flowise には、インジェクションに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-003935",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-36420",
+			"source": "CVE",
+			"id": "CVE-2024-36420"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-36420",
+			"source": "NVD",
+			"id": "CVE-2024-36420"
+		},
+		{
+			"text": "https://github.com/FlowiseAI/Flowise/blob/e93ce07851cdc0fcde12374f301b8070f2043687/packages/server/src/index.ts#L982",
+			"source": "関連文書",
+			"id": "github.com (index.ts#L982)"
+		},
+		{
+			"text": "https://securitylab.github.com/advisories/GHSL-2023-232_GHSL-2023-234_Flowise/",
+			"source": "関連文書",
+			"id": "securitylab.github.com (GHSL-2023-232_GHSL-2023-234_Flowise)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/74.html",
+			"id": "CWE-74",
+			"title": "インジェクション(CWE-74)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:flowiseai:flowise",
+			"version": "2.2",
+			"vendor": "flowiseai",
+			"product": "flowise"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-07-04T12:06+09:00",
+	"issued": "2024-07-04T12:06+09:00",
+	"modified": "2024-07-04T12:06+09:00"
+}
