@@ -1,0 +1,35 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003986.html",
+	"title": "Apache Tomcat におけるサービス運用妨害 (DoS) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-003986.html",
+	"description": "Apache Tomcat にはサービス運用妨害 (DoS) の脆弱性が存在します。\r\n\r\nThe Apache Software Foundation から、 Apache Tomcat の脆弱性に対するアップデートが公開されました。\r\n　* HTTP/2 ストリームを処理する際、 HTTP ヘッダーを適切に処理しないため、アクティブな HTTP/2 ストリームが誤ってカウントされ、クローズされるはずの接続がオープンされたままとなる問題 (CVE-2024-34750)\r\n",
+	"identifier": "JVNDB-2024-003986",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU90387090/index.html",
+			"source": "JVN",
+			"id": "JVNVU#90387090"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-34750",
+			"source": "CVE",
+			"id": "CVE-2024-34750"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-noinfo",
+			"title": "情報不足(CWE-noinfo)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:tomcat",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache Tomcat"
+		}
+	],
+	"date": "2024-07-05T11:54+09:00",
+	"issued": "2024-07-05T11:54+09:00",
+	"modified": "2024-07-05T11:54+09:00"
+}
