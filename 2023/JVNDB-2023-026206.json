@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-026206.html",
+	"title": "businessdirectoryplugin の WordPress 用 business directory における CSV ファイル内の数式要素の中和に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-026206.html",
+	"description": "businessdirectoryplugin の WordPress 用 business directory には、CSV ファイル内の数式要素の中和に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-026206",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-5527",
+			"source": "CVE",
+			"id": "CVE-2023-5527"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-5527",
+			"source": "NVD",
+			"id": "CVE-2023-5527"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/business-directory-plugin/trunk/includes/admin/class-csv-exporter.php",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class-csv-exporter.php)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/business-directory-plugin/trunk/includes/admin/helpers/csv/class-csv-exporter.php",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class-csv-exporter.php)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset/3102475/business-directory-plugin/trunk/includes/admin/helpers/csv/class-csv-exporter.php",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class-csv-exporter.php)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/ed037e94-68b4-4efc-9d1a-fffc4aff1c45?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (ed037e94-68b4-4efc-9d1a-fffc4aff1c45?source=cve)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/1236.html",
+			"id": "CWE-1236",
+			"title": "CSV ファイル内の数式要素の不適切な中和(CWE-1236)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:businessdirectoryplugin:business_directory",
+			"version": "2.2",
+			"vendor": "businessdirectoryplugin",
+			"product": "business directory"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-07-08T13:07+09:00",
+	"issued": "2024-07-08T13:07+09:00",
+	"modified": "2024-07-08T13:07+09:00"
+}
