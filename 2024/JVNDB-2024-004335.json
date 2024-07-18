@@ -1,0 +1,50 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-004335.html",
+	"title": "lighttpd における解放済みメモリ使用 (use-after-free) の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-004335.html",
+	"description": "lighttpd は、 CPU 性能やメモリ容量が限られている低リソース環境向けの軽量な Web サーバーソフトウェアです。\r\nVDOO の研究者によって、 lighttpd 1.4.50 およびそれ以前のバージョンの HTTP ヘッダー解析コードに解放済みメモリ使用 (use-after-free) の脆弱性が発見され、 2018 年 10 月リリースのバージョン 1.4.51 によって修正されました。 VDOO からは、この脆弱性の説明を含む記事が 2018 年 11 月に公開されています <a href=\"https://blogvdoo.wordpress.com/2018/11/06/giving-back-securing-open-source-iot-projects/\"target=\"blank\">(Giving Back - Securing Open Source IoT Projects - VDOO</a> ) 。\r\nしかし、この脆弱性に対して CVE はアサインされていませんでした。\r\n2024 年 4 月になって、この脆弱性が多くの製品にまだ存在していることを示す調査結果が Binarly や runZero から公表されました (<a href=\"https://www.binarly.io/blog/lighttpd-gains-new-life\"target=\"blank\">lighttpd vulnerability unfixed since 2018</a> (Binarly) 、 <a href=\"https://www.runzero.com/blog/lighttpd/\"target=\"blank\">How to find outdated lighttpd services</a> (runZero)) 。\r\n2024 年 6 月、この脆弱性に対して <a href=\"https://www.cve.org/CVERecord?id=CVE-2018-25103\"target=\"blank\">CVE-2018-25103</a> がアサインされました。\r\n",
+	"identifier": "JVNDB-2024-004335",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU97186853/index.html",
+			"source": "JVN",
+			"id": "JVNVU#97186853"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2018-25103",
+			"source": "CVE",
+			"id": "CVE-2018-25103"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/312260",
+			"source": "CERT-VN",
+			"id": "Use-after-free vulnerability in lighttpd version 1.4.50 and earlier"
+		},
+		{
+			"text": "https://www.runzero.com/blog/lighttpd/",
+			"source": "関連文書",
+			"id": "How to find outdated lighttpd services"
+		},
+		{
+			"text": "https://www.binarly.io/blog/lighttpd-gains-new-life",
+			"source": "関連文書",
+			"id": "lighttpd vulnerability unfixed since 2018"
+		},
+		{
+			"text": "https://blogvdoo.wordpress.com/2018/11/06/giving-back-securing-open-source-iot-projects/",
+			"source": "関連文書",
+			"id": "Giving Back - Securing Open Source IoT Projects"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:lighttpd:lighttpd",
+			"version": "2.2",
+			"vendor": "LIGHTTPD",
+			"product": "lighttpd"
+		}
+	],
+	"date": "2024-07-18T14:24+09:00",
+	"issued": "2024-07-18T14:24+09:00",
+	"modified": "2024-07-18T14:24+09:00"
+}
