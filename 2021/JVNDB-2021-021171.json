@@ -1,0 +1,82 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-021171.html",
+	"title": "Puma の puma 等複数ベンダの製品における HTTP リクエストスマグリングに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-021171.html",
+	"description": "Puma の puma 等複数ベンダの製品には、HTTP リクエストスマグリングに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2021-021171",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2021-41136",
+			"source": "CVE",
+			"id": "CVE-2021-41136"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-41136",
+			"source": "NVD",
+			"id": "CVE-2021-41136"
+		},
+		{
+			"text": "https://github.com/puma/puma/commit/acdc3ae571dfae0e045cf09a295280127db65c7f",
+			"source": "関連文書",
+			"id": "github.com (acdc3ae571dfae0e045cf09a295280127db65c7f)"
+		},
+		{
+			"text": "https://github.com/puma/puma/security/advisories/GHSA-48w2-rm65-62xx",
+			"source": "関連文書",
+			"id": "github.com (GHSA-48w2-rm65-62xx)"
+		},
+		{
+			"text": "https://lists.debian.org/debian-lts-announce/2022/08/msg00015.html",
+			"source": "関連文書",
+			"id": "lists.debian.org (msg00015)"
+		},
+		{
+			"text": "https://security.gentoo.org/glsa/202208-28",
+			"source": "関連文書",
+			"id": "security.gentoo.org (202208-28)"
+		},
+		{
+			"text": "https://www.debian.org/security/2022/dsa-5146",
+			"source": "関連文書",
+			"id": "www.debian.org (dsa-5146)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/444.html",
+			"id": "CWE-444",
+			"title": "HTTP リクエストスマグリング(CWE-444)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:puma:puma",
+			"version": "2.2",
+			"vendor": "Puma",
+			"product": "puma"
+		},
+		{
+			"text": "cpe:/o:debian:debian_linux",
+			"version": "2.2",
+			"vendor": "Debian",
+			"product": "Debian GNU/Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "3.6",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "AV:N/AC:H/Au:S/C:P/I:P/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "3.7",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-07-18T11:42+09:00",
+	"issued": "2024-07-18T11:42+09:00",
+	"modified": "2024-07-18T11:42+09:00"
+}

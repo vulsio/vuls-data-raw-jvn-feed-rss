@@ -1,0 +1,72 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-021174.html",
+	"title": "Composer の Composer 等複数ベンダの製品におけるコマンドインジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-021174.html",
+	"description": "Composer の Composer 等複数ベンダの製品には、コマンドインジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2021-021174",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2021-41116",
+			"source": "CVE",
+			"id": "CVE-2021-41116"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2021-41116",
+			"source": "NVD",
+			"id": "CVE-2021-41116"
+		},
+		{
+			"text": "https://github.com/composer/composer/commit/ca5e2f8d505fd3bfac6f7c85b82f2740becbc0aa",
+			"source": "関連文書",
+			"id": "github.com (ca5e2f8d505fd3bfac6f7c85b82f2740becbc0aa)"
+		},
+		{
+			"text": "https://github.com/composer/composer/security/advisories/GHSA-frqg-7g38-6gcf",
+			"source": "関連文書",
+			"id": "github.com (GHSA-frqg-7g38-6gcf)"
+		},
+		{
+			"text": "https://www.sonarsource.com/blog/securing-developer-tools-package-managers/",
+			"source": "関連文書",
+			"id": "www.sonarsource.com (securing-developer-tools-package-managers)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/77.html",
+			"id": "CWE-77",
+			"title": "コマンドインジェクション(CWE-77)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:getcomposer:composer",
+			"version": "2.2",
+			"vendor": "Composer",
+			"product": "Composer"
+		},
+		{
+			"text": "cpe:/a:tenable:tenable.sc",
+			"version": "2.2",
+			"vendor": "Tenable, Inc.",
+			"product": "Tenable.Sc"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-07-18T11:42+09:00",
+	"issued": "2024-07-18T11:42+09:00",
+	"modified": "2024-07-18T11:42+09:00"
+}

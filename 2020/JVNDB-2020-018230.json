@@ -1,0 +1,77 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-018230.html",
+	"title": "GNU Project の GNU Binutils 等複数ベンダの製品における境界外読み取りに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-018230.html",
+	"description": "GNU Project の GNU Binutils 等複数ベンダの製品には、境界外読み取りに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2020-018230",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2020-35448",
+			"source": "CVE",
+			"id": "CVE-2020-35448"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2020-35448",
+			"source": "NVD",
+			"id": "CVE-2020-35448"
+		},
+		{
+			"text": "https://security.gentoo.org/glsa/202107-24",
+			"source": "関連文書",
+			"id": "security.gentoo.org (202107-24)"
+		},
+		{
+			"text": "https://security.netapp.com/advisory/ntap-20210129-0008/",
+			"source": "関連文書",
+			"id": "security.netapp.com (ntap-20210129-0008)"
+		},
+		{
+			"text": "https://sourceware.org/bugzilla/show_bug.cgi?id=26574",
+			"source": "関連文書",
+			"id": "sourceware.org (bugzilla/26574)"
+		},
+		{
+			"text": "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git%3Bh=8642dafaef21aa6747cec01df1977e9c52eb4679",
+			"source": "関連文書",
+			"id": "sourceware.org (gitweb.cgi?p=binutils-gdb.git;h=8642dafaef21aa6747cec01df1977e9c52eb4679)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:gnu:binutils",
+			"version": "2.2",
+			"vendor": "GNU Project",
+			"product": "GNU Binutils"
+		},
+		{
+			"text": "cpe:/a:netapp:ontap_select_deploy_administration_utility",
+			"version": "2.2",
+			"vendor": "NetApp",
+			"product": "ONTAP Select Deploy administration utility"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "3.3",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+		}
+	],
+	"date": "2024-07-18T10:07+09:00",
+	"issued": "2024-07-18T10:07+09:00",
+	"modified": "2024-07-18T10:07+09:00"
+}
