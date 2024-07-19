@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-004366.html",
+	"title": "WordPress 用 depicter における権限管理に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-004366.html",
+	"description": "WordPress 用 depicter には、権限管理に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-004366",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-4390",
+			"source": "CVE",
+			"id": "CVE-2024-4390"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-4390",
+			"source": "NVD",
+			"id": "CVE-2024-4390"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/depicter/trunk/app/src/Controllers/Ajax/SecurityAjaxController.php#L14",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (SecurityAjaxController.php#L14)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=3103357%40depicter%2Ftrunk&old=3090538%40depicter%2Ftrunk&sfp_email=&sfph_mail=",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (changeset?sfp_email=&sfph_mail=&reponame=&new=3103357@depicter/trunk&old=3090538@depicter/trunk&sfp_email=&sfph_mail=)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/dd7c3a5d-b8aa-45cb-983c-55ba7e3d72f3?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (dd7c3a5d-b8aa-45cb-983c-55ba7e3d72f3?source=cve)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/269.html",
+			"id": "CWE-269",
+			"title": "不適切な権限管理(CWE-269)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:depicter:depicter",
+			"version": "2.2",
+			"vendor": "depicter",
+			"product": "depicter"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-07-19T10:32+09:00",
+	"issued": "2024-07-19T10:32+09:00",
+	"modified": "2024-07-19T10:32+09:00"
+}
