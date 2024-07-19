@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-004383.html",
+	"title": "WordPress 用 Custom Field Suite における SQL インジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-004383.html",
+	"description": "WordPress 用 Custom Field Suite には、SQL インジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-004383",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-3561",
+			"source": "CVE",
+			"id": "CVE-2024-3561"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-3561",
+			"source": "NVD",
+			"id": "CVE-2024-3561"
+		},
+		{
+			"text": "https://en-gb.wordpress.org/plugins/custom-field-suite/",
+			"source": "関連文書",
+			"id": "en-gb.wordpress.org (custom-field-suite)"
+		},
+		{
+			"text": "https://github.com/mgibbs189/custom-field-suite/blob/963dfcede18ff4ad697498556d9058db07d74fa3/includes/fields/term.php#L58",
+			"source": "関連文書",
+			"id": "github.com (term.php#L58)"
+		},
+		{
+			"text": "https://mgibbs189.github.io/custom-field-suite/field-types/term.html",
+			"source": "関連文書",
+			"id": "mgibbs189.github.io (term)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/afc00118-e87e-475a-8ad6-b68d09ee2e44?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (afc00118-e87e-475a-8ad6-b68d09ee2e44?source=cve)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:custom_field_suite_project:custom_field_suite",
+			"version": "2.2",
+			"vendor": "Custom Field Suite",
+			"product": "Custom Field Suite"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-07-19T14:19+09:00",
+	"issued": "2024-07-19T14:19+09:00",
+	"modified": "2024-07-19T14:19+09:00"
+}
