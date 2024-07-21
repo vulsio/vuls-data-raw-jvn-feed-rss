@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-004269.html",
+	"title": "evm project の Rust 用 evm における脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-004269.html",
+	"description": "evm project の Rust 用 evm には、不特定の脆弱性が存在します。",
+	"identifier": "JVNDB-2024-004269",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-21629",
+			"source": "CVE",
+			"id": "CVE-2024-21629"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-21629",
+			"source": "NVD",
+			"id": "CVE-2024-21629"
+		},
+		{
+			"text": "https://github.com/rust-ethereum/evm/blob/release-v041/src/executor/stack/executor.rs#L1012C25-L1012C69",
+			"source": "関連文書",
+			"id": "github.com (executor.rs#L1012C25-L1012C69)"
+		},
+		{
+			"text": "https://github.com/rust-ethereum/evm/commit/d8991ec727ad0fb64fe9957a3cd307387a6701e4",
+			"source": "関連文書",
+			"id": "github.com (d8991ec727ad0fb64fe9957a3cd307387a6701e4)"
+		},
+		{
+			"text": "https://github.com/rust-ethereum/evm/pull/264",
+			"source": "関連文書",
+			"id": "github.com (pull/264)"
+		},
+		{
+			"text": "https://github.com/rust-ethereum/evm/security/advisories/GHSA-27wg-99g8-2v4v",
+			"source": "関連文書",
+			"id": "github.com (GHSA-27wg-99g8-2v4v)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-noinfo",
+			"title": "情報不足(CWE-noinfo)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:evm_project:evm",
+			"version": "2.2",
+			"vendor": "evm project",
+			"product": "evm"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+		}
+	],
+	"date": "2024-07-16T10:28+09:00",
+	"issued": "2024-07-16T10:28+09:00",
+	"modified": "2024-07-16T10:28+09:00"
+}

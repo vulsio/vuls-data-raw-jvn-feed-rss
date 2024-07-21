@@ -1,0 +1,71 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-018211.html",
+	"title": "Linux Foundation の Indy Node におけるデジタル署名の検証に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-018211.html",
+	"description": "Linux Foundation の Indy Node には、デジタル署名の検証に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2020-018211",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2020-11093",
+			"source": "CVE",
+			"id": "CVE-2020-11093"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2020-11093",
+			"source": "NVD",
+			"id": "CVE-2020-11093"
+		},
+		{
+			"text": "https://github.com/hyperledger/indy-node/blob/master/CHANGELOG.md#1124",
+			"source": "関連文書",
+			"id": "github.com (CHANGELOG.md#1124)"
+		},
+		{
+			"text": "https://github.com/hyperledger/indy-node/blob/master/docs/source/auth_rules.md",
+			"source": "関連文書",
+			"id": "github.com (auth_rules.md)"
+		},
+		{
+			"text": "https://github.com/hyperledger/indy-node/commit/55056f22c83b7c3520488b615e1577e0f895d75a",
+			"source": "関連文書",
+			"id": "github.com (55056f2)"
+		},
+		{
+			"text": "https://github.com/hyperledger/indy-node/security/advisories/GHSA-wh2w-39f4-rpv2",
+			"source": "関連文書",
+			"id": "github.com (GHSA-wh2w-39f4-rpv2)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/347.html",
+			"id": "CWE-347",
+			"title": "デジタル署名の不適切な検証(CWE-347)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:linuxfoundation:indy-node",
+			"version": "2.2",
+			"vendor": "Linux Foundation",
+			"product": "Indy Node"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "5.0",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+		}
+	],
+	"date": "2024-07-17T13:22+09:00",
+	"issued": "2024-07-17T13:22+09:00",
+	"modified": "2024-07-17T13:22+09:00"
+}
