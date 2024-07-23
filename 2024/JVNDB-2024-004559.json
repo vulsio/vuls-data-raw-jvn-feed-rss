@@ -1,0 +1,49 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-004559.html",
+	"title": "三菱電機製 MELIPC シリーズ MI5122-VW における「スマートデバイス通信ゲートウェイ」のインストール先フォルダに不適切なアクセス許可設定",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-004559.html",
+	"description": "三菱電機株式会社が提供する MELIPC シリーズ MI5122-VW には、「スマートデバイス通信ゲートウェイ」がプリインストールされています。\r\nこのソフトウェアに関連するフォルダのアクセス許可には Everyone も含まれているため、一般ユーザ権限で当該フォルダ内のファイルを変更可能です (CWE-276、<a href=\"https://www.cve.org/CVERecord?id=CVE-2024-3904\"target=\"blank\">CVE-2024-3904</a>) 。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、 JPCERT/CC が開発者との調整を行いました。",
+	"identifier": "JVNDB-2024-004559",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU91215350/",
+			"source": "JVN",
+			"id": "JVNVU#91215350"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-3904",
+			"source": "CVE",
+			"id": "CVE-2024-3904"
+		},
+		{
+			"text": "https://www.cisa.gov/news-events/ics-advisories/icsa-24-191-02",
+			"source": "ICS-CERT ADVISORY",
+			"id": "ICSA-24-191-02"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/276.html",
+			"id": "CWE-276",
+			"title": "不適切なデフォルトパーミッション(CWE-276)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:mitsubishielectric:melipc_series_mi5122-vw",
+			"version": "2.2",
+			"vendor": "三菱電機",
+			"product": "MELIPC シリーズ MI5122-VW"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-07-22T17:40+09:00",
+	"issued": "2024-07-22T17:40+09:00",
+	"modified": "2024-07-22T17:40+09:00"
+}
