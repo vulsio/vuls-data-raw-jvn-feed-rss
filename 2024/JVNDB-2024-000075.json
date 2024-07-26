@@ -1,0 +1,44 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000075.html",
+	"title": "ORCにおけるスタックベースのバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000075.html",
+	"description": "GStreamerが提供するORCは、通常、GStreamerのプラグイン開発に利用されます。ORCのorcparse.cに、スタックベースのバッファオーバーフロー（CWE-121）の脆弱性が存在します。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。\r\n報告者：NTTセキュリティホールディングス株式会社 川古谷　裕平 氏",
+	"identifier": "JVNDB-2024-000075",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN02030803/index.html",
+			"source": "JVN",
+			"id": "JVN#02030803"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-40897",
+			"source": "CVE",
+			"id": "CVE-2024-40897"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:gstreamer_project:orc",
+			"version": "2.2",
+			"vendor": "GStreamer",
+			"product": "ORC"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-07-26T12:08+09:00",
+	"issued": "2024-07-26T12:08+09:00",
+	"modified": "2024-07-26T12:08+09:00"
+}
