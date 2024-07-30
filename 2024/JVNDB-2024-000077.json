@@ -1,0 +1,56 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000077.html",
+	"title": "FFRI AMCにおけるOSコマンドインジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000077.html",
+	"description": "株式会社ＦＦＲＩセキュリティが提供するFFRI AMCは、エンドポイントセキュリティ製品FFRI yarai、ActSecureχ用の管理コンソールです。\r\nFFRI AMCには、通知プログラム設定を有効にし実行ファイルパスにバッチファイル（拡張子 .bat）またはコマンドファイル（拡張子 .cmd）を設定している環境にて特定の条件を満たす場合、OSコマンドインジェクション（CWE-78）の脆弱性が存在します。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者がJPCERT/CCに報告し、JPCERT/CCが開発者との調整を行いました。",
+	"identifier": "JVNDB-2024-000077",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN26734798/index.html",
+			"source": "JVN",
+			"id": "JVN#26734798"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-40895",
+			"source": "CVE",
+			"id": "CVE-2024-40895"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+			"id": "CWE-78",
+			"title": "OSコマンドインジェクション(CWE-78)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ffri:ffri_amc",
+			"version": "2.2",
+			"vendor": "株式会社ＦＦＲＩセキュリティ",
+			"product": "FFRI AMC"
+		},
+		{
+			"text": "cpe:/a:nec:actsecure_x_managed_security_service",
+			"version": "2.2",
+			"vendor": "日本電気",
+			"product": "ActSecure χ"
+		},
+		{
+			"text": "cpe:/a:skygroup:edr_plus_pack",
+			"version": "2.2",
+			"vendor": "Ｓｋｙ株式会社",
+			"product": "EDR プラスパック"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.1",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-07-30T12:31+09:00",
+	"issued": "2024-07-30T12:31+09:00",
+	"modified": "2024-07-30T12:31+09:00"
+}
