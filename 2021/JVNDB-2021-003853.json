@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-003853.html",
-	"title": "Joomla! における暗号強度に関する脆弱性",
+	"title": "Joomla! における暗号の脆弱な PRNG の使用に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-003853.html",
-	"description": "Joomla! には、暗号強度に関する脆弱性が存在します。",
+	"description": "Joomla! には、暗号の脆弱な PRNG の使用に関する脆弱性が存在します。",
 	"identifier": "JVNDB-2021-003853",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2021-23126"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/326.html",
-			"id": "CWE-326",
-			"title": "不適切な暗号強度(CWE-326)"
+			"text": "https://cwe.mitre.org/data/definitions/338.html",
+			"id": "CWE-338",
+			"title": "暗号における脆弱な PRNG の使用(CWE-338)"
 		}
 	],
 	"cpe": [
@@ -36,6 +36,13 @@
 			"type": "Base",
 			"severity": "Medium",
 			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+		},
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
 		}
 	],
 	"date": "2021-11-08T16:35+09:00",

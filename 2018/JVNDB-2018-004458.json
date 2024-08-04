@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-004458.html",
-	"title": "Nagios XI における環境設定に関する脆弱性",
+	"title": "Nagios XI における SQL インジェクションの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-004458.html",
-	"description": "Nagios XI には、環境設定に関する脆弱性、および認証に関する脆弱性が存在します。",
+	"description": "Nagios XI には、SQL インジェクションの脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2018-004458",
 	"references": [
 		{
@@ -16,14 +16,9 @@
 			"id": "CVE-2018-8733"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
-			"id": "CWE-287",
-			"title": "不適切な認証(CWE-287)"
-		},
-		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-16.html",
-			"id": "CWE-16",
-			"title": "環境設定(CWE-16)"
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
 		}
 	],
 	"cpe": [
@@ -37,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "6.4",
+			"score": "7.5",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P"
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "8.2",
+			"score": "9.8",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2018-06-20T17:10+09:00",

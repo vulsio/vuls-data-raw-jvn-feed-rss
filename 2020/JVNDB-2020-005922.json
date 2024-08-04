@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005922.html",
-	"title": "FreeRDP における整数オーバーフローの脆弱性",
+	"title": "FreeRDP における整数オーバーフローの発生によるバッファオーバーフローの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-005922.html",
-	"description": "FreeRDP には、整数オーバーフローの脆弱性が存在します。",
+	"description": "FreeRDP には、整数オーバーフローの発生によるバッファオーバーフローの脆弱性が存在します。",
 	"identifier": "JVNDB-2020-005922",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2020-11038"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/190.html",
-			"id": "CWE-190",
-			"title": "整数オーバーフローまたはラップアラウンド(CWE-190)"
+			"text": "https://cwe.mitre.org/data/definitions/680.html",
+			"id": "CWE-680",
+			"title": "整数オーバーフローの発生によるバッファオーバーフロー(CWE-680)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "7.5",
+			"score": "5.5",
 			"type": "Base",
-			"severity": "High",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:S/C:N/I:P/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "9.8",
+			"score": "5.4",
 			"type": "Base",
-			"severity": "Critical",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L"
 		}
 	],
 	"date": "2020-06-25T11:33+09:00",

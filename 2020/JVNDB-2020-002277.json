@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-002277.html",
-	"title": "Kaseya Traverse における OS コマンドインジェクションの脆弱性",
+	"title": "Kaseya Traverse における SQL インジェクションの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-002277.html",
-	"description": "Kaseya Traverse には、OS コマンドインジェクションの脆弱性が存在します。",
+	"description": "Kaseya Traverse には、SQL インジェクションの脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2020-002277",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2020-8427"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
-			"id": "CWE-78",
-			"title": "OSコマンドインジェクション(CWE-78)"
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "9.0",
+			"score": "7.5",
 			"type": "Base",
 			"severity": "High",
-			"vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C"
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "8.8",
+			"score": "9.8",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2020-03-10T16:38+09:00",

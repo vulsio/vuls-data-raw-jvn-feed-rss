@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003578.html",
-	"title": "hoek におけるアクセス制御に関する脆弱性",
+	"title": "hoek における不変と仮定されるデータの変更に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-003578.html",
-	"description": "hoek には、アクセス制御に関する脆弱性が存在します。",
+	"description": "hoek には、不変と仮定されるデータの変更に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2018-003578",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2018-3728"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/284.html",
-			"id": "CWE-284",
-			"title": "不適切なアクセス制御(CWE-284)"
+			"text": "https://cwe.mitre.org/data/definitions/471.html",
+			"id": "CWE-471",
+			"title": "不変と仮定されるデータの変更(CWE-471)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "4.0",
-			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N"
-		},
-		{
-			"version": "3.0",
 			"score": "6.5",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+			"vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
 		}
 	],
 	"date": "2018-05-28T17:03+09:00",

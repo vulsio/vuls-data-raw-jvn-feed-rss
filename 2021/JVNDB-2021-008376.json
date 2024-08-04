@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-008376.html",
-	"title": "Android における誤った領域へのリソースの漏えいに関する脆弱性",
+	"title": "Android における重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2021/JVNDB-2021-008376.html",
-	"description": "Android には、誤った領域へのリソースの漏えいに関する脆弱性が存在します。\r\n\r\n本脆弱性は、Android ID: A-175124820 として公開されています。",
+	"description": "Android には、重要なリソースに対する不適切なパーミッションの割り当てに関する脆弱性が存在します。\r\n\r\n本脆弱性は、Android ID: A-175124820 として公開されています。",
 	"identifier": "JVNDB-2021-008376",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2021-0552"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/668.html",
-			"id": "CWE-668",
-			"title": "誤った領域へのリソースの漏えい(CWE-668)"
+			"text": "https://cwe.mitre.org/data/definitions/732.html",
+			"id": "CWE-732",
+			"title": "重要なリソースに対する不適切なパーミッションの割り当て(CWE-732)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "4.4",
+			"score": "2.1",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+			"severity": "Low",
+			"vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
 		},
 		{
 			"version": "3.0",
-			"score": "7.3",
+			"score": "5.5",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
 		}
 	],
 	"date": "2022-03-14T18:00+09:00",

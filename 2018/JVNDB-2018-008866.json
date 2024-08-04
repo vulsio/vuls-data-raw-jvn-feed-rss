@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008866.html",
-	"title": "MikroTik RouterOS における認証に関する脆弱性",
+	"title": "MikroTik RouterOS におけるパストラバーサルの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008866.html",
-	"description": "MikroTik RouterOS には、認証に関する脆弱性が存在します。",
+	"description": "MikroTik RouterOS には、パストラバーサルの脆弱性が存在します。",
 	"identifier": "JVNDB-2018-008866",
 	"references": [
 		{
@@ -16,14 +16,19 @@
 			"id": "CVE-2018-14847"
 		},
 		{
+			"text": "https://cisa.gov/known-exploited-vulnerabilities-catalog",
+			"source": "CISA Known Exploited Vulnerabilities Catalog",
+			"id": "CVE-2018-14847"
+		},
+		{
 			"text": "https://www.exploit-db.com/exploits/45578/",
 			"source": "関連文書",
 			"id": "MicroTik RouterOS < 6.43rc3 - Remote Root"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-287.html",
-			"id": "CWE-287",
-			"title": "不適切な認証(CWE-287)"
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
 		}
 	],
 	"cpe": [
@@ -37,17 +42,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "6.4",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N"
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "9.1",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
 		}
 	],
 	"date": "2018-10-31T14:25+09:00",

@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-004732.html",
-	"title": "Wireshark の DAAP ディセクタの epan/dissectors/packet-daap.c の dissect_daap_one_tag 関数におけるリソース管理に関する脆弱性",
+	"title": "Wireshark の DAAP ディセクタの epan/dissectors/packet-daap.c の dissect_daap_one_tag 関数における再帰制御に関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-004732.html",
-	"description": "Wireshark の DAAP ディセクタの epan/dissectors/packet-daap.c の dissect_daap_one_tag 関数には、リソース管理に関する脆弱性が存在します。",
+	"description": "Wireshark の DAAP ディセクタの epan/dissectors/packet-daap.c の dissect_daap_one_tag 関数には、再帰制御に関する脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2017-004732",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2017-9617"
 		},
 		{
-			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-399.html",
-			"id": "CWE-399",
-			"title": "リソース管理の問題(CWE-399)"
+			"text": "https://cwe.mitre.org/data/definitions/674.html",
+			"id": "CWE-674",
+			"title": "不適切な再帰制御(CWE-674)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "4.3",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+			"vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
 		},
 		{
 			"version": "3.0",
-			"score": "7.5",
+			"score": "5.5",
 			"type": "Base",
-			"severity": "High",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
 		}
 	],
 	"date": "2017-07-06T13:59+09:00",

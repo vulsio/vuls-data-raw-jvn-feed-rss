@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003196.html",
-	"title": "複数の MikroTik ルータにおけるリソースの枯渇に関する脆弱性",
+	"title": "複数の MikroTik ルータにおける制限またはスロットリング無しのリソースの割り当てに関する脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-003196.html",
-	"description": "複数の MikroTik ルータには、リソースの枯渇に関する脆弱性が存在します。",
+	"description": "複数の MikroTik ルータには、制限またはスロットリング無しのリソースの割り当てに関する脆弱性が存在します。",
 	"identifier": "JVNDB-2020-003196",
 	"references": [
 		{
@@ -21,9 +21,9 @@
 			"id": "Microtik SSH Daemon 6.44.3 Denial Of Service"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/400.html",
-			"id": "CWE-400",
-			"title": "リソースの枯渇(CWE-400)"
+			"text": "https://cwe.mitre.org/data/definitions/770.html",
+			"id": "CWE-770",
+			"title": "制限またはスロットリング無しのリソースの割り当て(CWE-770)"
 		}
 	],
 	"cpe": [
@@ -91,10 +91,10 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "5.0",
+			"score": "7.8",
 			"type": "Base",
-			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
 		},
 		{
 			"version": "3.0",

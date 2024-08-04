@@ -1,8 +1,8 @@
 {
 	"about": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-009713.html",
-	"title": "Jenkins Project Inheritance プラグインにおける不正な認証に関する脆弱性",
+	"title": "Jenkins Project Inheritance プラグインにおけるクロスサイトリクエストフォージェリの脆弱性",
 	"link": "https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-009713.html",
-	"description": "Jenkins Project Inheritance プラグインには、不正な認証に関する脆弱性が存在します。",
+	"description": "Jenkins Project Inheritance プラグインには、クロスサイトリクエストフォージェリの脆弱性が存在します。\r\n",
 	"identifier": "JVNDB-2019-009713",
 	"references": [
 		{
@@ -16,9 +16,9 @@
 			"id": "CVE-2019-10408"
 		},
 		{
-			"text": "https://cwe.mitre.org/data/definitions/863.html",
-			"id": "CWE-863",
-			"title": "不正な認証(CWE-863)"
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+			"id": "CWE-352",
+			"title": "クロスサイトリクエストフォージェリ(CWE-352)"
 		}
 	],
 	"cpe": [
@@ -32,17 +32,17 @@
 	"cvss": [
 		{
 			"version": "2.0",
-			"score": "4.0",
+			"score": "4.3",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N"
+			"vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
 		},
 		{
 			"version": "3.0",
 			"score": "4.3",
 			"type": "Base",
 			"severity": "Medium",
-			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
 		}
 	],
 	"date": "2019-09-30T10:26+09:00",
