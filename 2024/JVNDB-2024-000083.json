@@ -1,0 +1,44 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000083.html",
+	"title": "リコーJavaTM PlatformのファームウェアアップデートによりTLS1.0、TLS1.1が有効になる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000083.html",
+	"description": "株式会社リコーが提供するJavaTM Platformはプリンタおよび複合機の拡張機能であり、TLS通信等をサポートします。\r\nJavaTM PlatformのファームウェアのアップデートにはRICOH Firmware Update Tool (JavaTM Platform)を使用しますが、アップデート前に\"TLS1.0：無効\"、\"TLS1.1：無効\"に設定していても、アップデート後には当該設定の初期値である\"TLS1.0：有効\"、\"TLS1.1：有効\"に変更されます（CWE-1188）。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 ",
+	"identifier": "JVNDB-2024-000083",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN78728294/index.html",
+			"source": "JVN",
+			"id": "JVN#78728294"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-41995",
+			"source": "CVE",
+			"id": "CVE-2024-41995"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ricoh:javatm_platform",
+			"version": "2.2",
+			"vendor": "リコー",
+			"product": "JavaTM Platform"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "2.4",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N"
+		}
+	],
+	"date": "2024-08-06T14:11+09:00",
+	"issued": "2024-08-06T14:11+09:00",
+	"modified": "2024-08-06T14:11+09:00"
+}
