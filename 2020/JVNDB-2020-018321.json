@@ -1,0 +1,55 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-018321.html",
+	"title": "NETGEAR 製の複数製品にバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-018321.html",
+	"description": "NETGEAR 製の複数製品にはバッファオーバーフローの脆弱性があります。\r\n\r\n多くの NETGEAR 製品では、製品の管理機能を提供する目的で、httpd プロセスで動作する Web サーバが組み込まれています。複数の Netgear 製品で動作する Web サーバにおいて、upgrade_check.cgi ハンドラの処理中に攻撃者が任意長のヘッダサイズを指定することが可能なため、スタックベースのバッファオーバーフローが発生する脆弱性が発見されました。\r\n\r\n本脆弱性は以下の諸問題のため、影響が深刻化するおそれがあります。\r\n\r\n1. 当該製品では httpd が root 権限で動作している\r\n2. NETGEAR 製品では、バッファオーバーフロー対策に用いられる Stack cookie (カナリア値) が使用されていないものが多い\r\n3. 本脆弱性の攻撃には認証を必要としない\r\n4. CSRF 対策のトークンがチェックされる前の段階で本脆弱性の攻撃が可能\r\n5. 機器の情報が /currentsetting.htm ページを閲覧するだけで取得できるため、攻撃者にとって攻撃対象の選定が容易\r\n\r\nなお、一部の当該機器を対象とした、本脆弱性の実証コードが公開されています。\r\n",
+	"identifier": "JVNDB-2020-018321",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU96632139/",
+			"source": "JVN",
+			"id": "JVNVU#96632139"
+		},
+		{
+			"text": "https://kb.cert.org/vuls/id/576779",
+			"source": "CERT-VN",
+			"id": "VU#576779"
+		},
+		{
+			"text": "https://www.zerodayinitiative.com/advisories/ZDI-20-712/",
+			"source": "関連文書",
+			"id": "ZDI-20-712 | Zero Day Initiative"
+		},
+		{
+			"text": "https://blog.grimm-co.com/2020/06/soho-device-exploitation.html",
+			"source": "関連文書",
+			"id": "GRIMM"
+		},
+		{
+			"text": "https://github.com/grimm-co/NotQuite0DayFriday/tree/master/2020.06.15-netgear",
+			"source": "関連文書",
+			"id": "grimm-co / NotQuite0DayFriday - Github"
+		},
+		{
+			"text": "https://docs.google.com/spreadsheets/d/1Tzq97rRisoZwKNQ1pUYE6phwl4LL7KnZxc828n-hXW0/",
+			"source": "関連文書",
+			"id": "Netgear devices affected by - Google Sheets"
+		},
+		{
+			"text": "https://insights.sei.cmu.edu/cert/2019/10/its-time-to-retire-your-unsupported-things.html",
+			"source": "関連文書",
+			"id": "CERT/CC Blog"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:netgear:multiple_product",
+			"version": "2.2",
+			"vendor": "ネットギア",
+			"product": "(複数の製品)"
+		}
+	],
+	"date": "2024-08-22T12:07+09:00",
+	"issued": "2024-08-22T12:07+09:00",
+	"modified": "2024-08-22T12:07+09:00"
+}

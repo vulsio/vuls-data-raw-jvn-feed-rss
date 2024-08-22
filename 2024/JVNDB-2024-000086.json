@@ -1,0 +1,50 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000086.html",
+	"title": "複数のセーフィー製品におけるサーバ証明書の検証不備の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000086.html",
+	"description": "セーフィー株式会社が提供する複数の製品には、サーバ証明書検証不備の脆弱性（CWE-295）が存在します。\r\nまた、当該製品はポート11029/tcpやBluetooth経由で操作する機能がありますが、その通信内容はAES暗号化されています。当該製品のユーザーは、機器固有の情報にもとづき、当該機器との通信用暗号鍵をクラウドサーバーから入手可能です。したがって、機器固有の情報を入手したユーザーは、（自分が所有している機器でなくとも）当該機器を直接操作することが可能となります。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。\r\n報告者：三井物産セキュアディレクション株式会社 塚本 泰三 氏",
+	"identifier": "JVNDB-2024-000086",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN83440451/index.html",
+			"source": "JVN",
+			"id": "JVN#83440451"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-39771",
+			"source": "CVE",
+			"id": "CVE-2024-39771"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:safie_qbic_cloud_cc-2l",
+			"version": "2.2",
+			"vendor": "セーフィー株式会社",
+			"product": "QBiC CLOUD CC-2L"
+		},
+		{
+			"text": "cpe:/a:misc:safie_safie_one",
+			"version": "2.2",
+			"vendor": "セーフィー株式会社",
+			"product": "Safie One"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "4.2",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-08-22T12:07+09:00",
+	"issued": "2024-08-22T12:07+09:00",
+	"modified": "2024-08-22T12:07+09:00"
+}
