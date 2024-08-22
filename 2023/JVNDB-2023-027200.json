@@ -1,0 +1,35 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-027200.html",
+	"title": "UEFI 実装に組み込まれた画像処理ライブラリにおける複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-027200.html",
+	"description": "UEFI 実装に用いられる複数の画像処理ライブラリに、種々の脆弱性が発見されています。\r\n\r\n多くの UEFI 実装では、ブート処理の初期段階において EFI システムパーティション (ESP) に保存されているブートロゴ画像を読み込み、画面に表示させています。この画像処理を行うライブラリは複数のベンダにより開発され様々な UEFI 実装に組み込まれていますが、それらの画像処理ライブラリに複数の脆弱性が発見されています。\r\n\r\n本脆弱性を悪用する攻撃手法は発見者により「<a href=\"https://binarly.io/posts/finding_logofail_the_dangers_of_image_parsing_during_system_boot/\"target=\"blank\">LogoFAIL</a>」と呼称されています。",
+	"identifier": "JVNDB-2023-027200",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU90984676/index.html",
+			"source": "JVN",
+			"id": "JVNVU#90984676"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/811862",
+			"source": "CERT-VN",
+			"id": "VU#811862"
+		},
+		{
+			"text": "https://binarly.io/posts/finding_logofail_the_dangers_of_image_parsing_during_system_boot/",
+			"source": "関連文書",
+			"id": "Finding LogoFAIL: The Dangers of Image Parsing During System Boot"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"date": "2024-08-22T11:24+09:00",
+	"issued": "2024-08-22T11:24+09:00",
+	"modified": "2024-08-22T11:24+09:00"
+}
