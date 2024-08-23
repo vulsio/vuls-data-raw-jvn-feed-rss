@@ -1,0 +1,40 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-018322.html",
+	"title": "勾配降下法を使用する機械学習モデルに、誤った識別をさせるような入力を作成することが可能な問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-018322.html",
+	"description": "勾配降下法を用いて学習させたモデルを用いた分類を行う場合に、任意の分類結果が得られるような入力を意図的に作成することが可能です。これは、<a href=\"https://arxiv.org/ftp/arxiv/papers/1911/1911.11034.pdf\" target=\"blank\">Kumar et al.</a> による攻撃分類では、perturbation attacks や adversarial examples in the physical domain に該当します。\r\n\r\n攻撃対象のシステムに対して、攻撃者がデータの入力や出力の確認などを行うことができる余地が大きいほど、攻撃が成功する可能性は大きくなります。\r\nまた、学習プロセスに関する情報（教師データ、学習結果、学習モデル、テストデータなど）があれば、攻撃はより容易に行えるようになります。\r\n\r\n現状では、<a href=\"https://github.com/Trusted-AI/adversarial-robustness-toolbox/tree/main/notebooks\" target=\"blank\">数秒</a>で攻撃できるものから何週間も必要になるものまで様々な事例が知られています。",
+	"identifier": "JVNDB-2020-018322",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU99619336/index.html",
+			"source": "JVN",
+			"id": "JVNVU#99619336"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/425163/",
+			"source": "CERT-VN",
+			"id": "VU#425163"
+		},
+		{
+			"text": "https://arxiv.org/abs/1611.03814",
+			"source": "関連文書",
+			"id": "Towards the Science of Security and Privacy in Machine Learning"
+		},
+		{
+			"text": "https://arxiv.org/abs/1712.03141",
+			"source": "関連文書",
+			"id": "Wild Patterns: Ten Years After the Rise of Adversarial Machine Learning"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"date": "2024-08-23T11:44+09:00",
+	"issued": "2024-08-23T11:44+09:00",
+	"modified": "2024-08-23T11:44+09:00"
+}
