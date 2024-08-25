@@ -1,0 +1,54 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-005675.html",
+	"title": "ggerganov の llama.cpp における境界外読み取りに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-005675.html",
+	"description": "ggerganov の llama.cpp には、境界外読み取りに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-005675",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-42478",
+			"source": "CVE",
+			"id": "CVE-2024-42478"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-42478",
+			"source": "NVD",
+			"id": "CVE-2024-42478"
+		},
+		{
+			"text": "https://github.com/ggerganov/llama.cpp/commit/b72942fac998672a79a1ae3c03b340f7e629980b",
+			"source": "関連文書",
+			"id": "github.com (b72942fac998672a79a1ae3c03b340f7e629980b)"
+		},
+		{
+			"text": "https://github.com/ggerganov/llama.cpp/security/advisories/GHSA-5vm9-p64x-gqw9",
+			"source": "関連文書",
+			"id": "github.com (GHSA-5vm9-p64x-gqw9)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ggerganov:llama.cpp",
+			"version": "2.2",
+			"vendor": "ggerganov",
+			"product": "llama.cpp"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-08-19T11:21+09:00",
+	"issued": "2024-08-19T11:21+09:00",
+	"modified": "2024-08-19T11:21+09:00"
+}
