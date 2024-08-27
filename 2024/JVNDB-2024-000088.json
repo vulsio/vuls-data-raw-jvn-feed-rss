@@ -1,0 +1,93 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000088.html",
+	"title": "エレコム製無線LANルーターおよび無線アクセスポイントにおける複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000088.html",
+	"description": "エレコム株式会社が提供する無線LANルーターおよび無線アクセスポイントには、次の複数の脆弱性が存在します。\r\n<ul><li>easysetup.cgiおよびmenu.cgiの入力値処理の不備に起因するクロスサイトスクリプティング（CWE-79）- CVE-2024-34577、CVE-2024-42412</li><li>Telnet機能における認証の欠如（CWE-306）- CVE-2024-39300</li><li>common.cgiの入力値処理の不備に起因するスタックベースのバッファオーバーフロー（CWE-121）- CVE-2024-43689</li></ul>\r\n\r\nCVE-2024-34577\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。\r\n報告者：GMOサイバーセキュリティ byイエラエ株式会社 石井 健太郎 氏\r\n\r\nCVE-2024-39300\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。\r\n報告者：笹部哲郎 氏\r\n\r\nCVE-2024-42412、CVE-2024-43689\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。\r\n報告者：株式会社Flatt Security RyotaK 氏",
+	"identifier": "JVNDB-2024-000088",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN24885537/index.html",
+			"source": "JVN",
+			"id": "JVN#24885537"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-34577",
+			"source": "CVE",
+			"id": "CVE-2024-34577"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-39300",
+			"source": "CVE",
+			"id": "CVE-2024-39300"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-42412",
+			"source": "CVE",
+			"id": "CVE-2024-42412"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-43689",
+			"source": "CVE",
+			"id": "CVE-2024-43689"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:elecom:wab-i1750-ps",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WAB-I1750-PS"
+		},
+		{
+			"text": "cpe:/a:elecom:wab-s1167-ps",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WAB-S1167-PS"
+		},
+		{
+			"text": "cpe:/o:elecom:wrc-x3000gs2-b_firmware",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRC-X3000GS2-B ファームウェア"
+		},
+		{
+			"text": "cpe:/o:elecom:wrc-x3000gs2-w_firmware",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRC-X3000GS2-W ファームウェア"
+		},
+		{
+			"text": "cpe:/o:elecom:wrc-x3000gs2a-b_firmware",
+			"version": "2.2",
+			"vendor": "エレコム株式会社",
+			"product": "WRC-X3000GS2A-B ファームウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-08-27T12:28+09:00",
+	"issued": "2024-08-27T12:28+09:00",
+	"modified": "2024-08-27T12:28+09:00"
+}
