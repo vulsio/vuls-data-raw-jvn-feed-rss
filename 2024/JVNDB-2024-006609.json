@@ -1,0 +1,84 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-006609.html",
+	"title": "WordPress 用 GiveWP における信頼できないデータのデシリアライゼーションに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-006609.html",
+	"description": "WordPress 用 GiveWP には、信頼できないデータのデシリアライゼーションに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-006609",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-5932",
+			"source": "CVE",
+			"id": "CVE-2024-5932"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-5932",
+			"source": "NVD",
+			"id": "CVE-2024-5932"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/give/tags/3.12.0/includes/login-register.php#L235",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (login-register.php#L235)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/give/tags/3.12.0/includes/process-donation.php#L420",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (process-donation.php#L420)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/give/tags/3.12.0/src/DonorDashboards/Tabs/EditProfileTab/AvatarRoute.php#L51",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (AvatarRoute.php#L51)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/give/tags/3.12.0/vendor/tecnickcom/tcpdf/tcpdf.php#L7861",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (tcpdf.php#L7861)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/give/tags/3.12.0/vendor/vendor-prefixed/fakerphp/faker/src/Faker/ValidGenerator.php#L80",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (ValidGenerator.php#L80)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset/3132247/",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (changeset/3132247)"
+		},
+		{
+			"text": "https://www.wordfence.com/blog/2024/08/4998-bounty-awarded-and-100000-wordpress-sites-protected-against-unauthenticated-remote-code-execution-vulnerability-patched-in-givewp-wordpress-plugin/",
+			"source": "関連文書",
+			"id": "www.wordfence.com (4998-bounty-awarded-and-100000-wordpress-sites-protected-against-unauthenticated-remote-code-execution-vulnerability-patched-in-givewp-wordpress-plugin)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/93e2d007-8157-42c5-92ad-704dc80749a3?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (93e2d007-8157-42c5-92ad-704dc80749a3?source=cve)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/502.html",
+			"id": "CWE-502",
+			"title": "信頼できないデータのデシリアライゼーション(CWE-502)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:givewp:givewp",
+			"version": "2.2",
+			"vendor": "GiveWP",
+			"product": "GiveWP"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-08-27T10:07+09:00",
+	"issued": "2024-08-27T10:07+09:00",
+	"modified": "2024-08-27T10:07+09:00"
+}
