@@ -1,0 +1,35 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-007376.html",
+	"title": "OpenSSL におけるサービス運用妨害 (DoS) の脆弱性 (Security Advisory [3rd September 2024])",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-007376.html",
+	"description": "OpenSSL Project より、<a href=\"https://openssl-library.org/news/secadv/20240903.txt\"target=\"blank\">OpenSSL Security Advisory [3rd September 2024]</a> （\"Possible denial of service in X.509 name checks (CVE-2024-6119)\"）が公開されました。\r\n\r\n深刻度−中 (Severity：Moderate)\r\nOpenSSL を用いるアプリケーションにおいて X.509 サーバ証明書の検証を行う際、Subject Alternative Name フィールド内の otherName の検証時に誤ったメモリアドレスを参照してアクセスエラーが生じる問題 (CWE-843、CVE-2024-6119) が報告されています。\r\n\r\nなお本脆弱性は、証明書チェーンの検証には影響を与えません。一般的に TLS サーバがクライアント証明書を要求することは少なく、要求する場合においても識別子に対する名前のチェックは行われないため、影響は限定的となります。",
+	"identifier": "JVNDB-2024-007376",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU91755094/",
+			"source": "JVN",
+			"id": "JVNVU#91755094"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-6119",
+			"source": "CVE",
+			"id": "CVE-2024-6119"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/843.html",
+			"id": "CWE-843",
+			"title": "型の取り違え(CWE-843)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		}
+	],
+	"date": "2024-09-06T11:10+09:00",
+	"issued": "2024-09-06T11:10+09:00",
+	"modified": "2024-09-06T11:10+09:00"
+}
