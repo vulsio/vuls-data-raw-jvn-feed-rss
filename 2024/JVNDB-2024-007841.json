@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-007841.html",
+	"title": "fishaudio の bert-vits2 における OS コマンドインジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-007841.html",
+	"description": "fishaudio の bert-vits2 には、OS コマンドインジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-007841",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-39686",
+			"source": "CVE",
+			"id": "CVE-2024-39686"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-39686",
+			"source": "NVD",
+			"id": "CVE-2024-39686"
+		},
+		{
+			"text": "https://github.com/fishaudio/Bert-VITS2/blob/3f8c537f4aeb281df3fb3c455eed9a1b64871a81/webui_preprocess.py#L82C9-L82C57",
+			"source": "関連文書",
+			"id": "github.com (webui_preprocess.py#L82C9-L82C57)"
+		},
+		{
+			"text": "https://github.com/fishaudio/Bert-VITS2/blob/76653b5b6d657143721df2ed6c5c246b4b1d9277/webui_preprocess.py#L130-L133",
+			"source": "関連文書",
+			"id": "github.com (webui_preprocess.py#L130-L133)"
+		},
+		{
+			"text": "https://securitylab.github.com/advisories/GHSL-2024-045_GHSL-2024-047_fishaudio_Bert-VITS2/",
+			"source": "関連文書",
+			"id": "securitylab.github.com (GHSL-2024-045_GHSL-2024-047_fishaudio_Bert-VITS2)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+			"id": "CWE-78",
+			"title": "OSコマンドインジェクション(CWE-78)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:fishaudio:bert-vits2",
+			"version": "2.2",
+			"vendor": "fishaudio",
+			"product": "bert-vits2"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-09-12T10:39+09:00",
+	"issued": "2024-09-12T10:39+09:00",
+	"modified": "2024-09-12T10:39+09:00"
+}

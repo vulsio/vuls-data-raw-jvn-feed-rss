@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-007791.html",
+	"title": "fish.audio の bert-vits2 におけるパストラバーサルの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-007791.html",
+	"description": "fish.audio の bert-vits2 には、パストラバーサルの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-007791",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-39688",
+			"source": "CVE",
+			"id": "CVE-2024-39688"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-39688",
+			"source": "NVD",
+			"id": "CVE-2024-39688"
+		},
+		{
+			"text": "https://github.com/fishaudio/Bert-VITS2/blob/76653b5b6d657143721df2ed6c5c246b4b1d9277/webui_preprocess.py#L130-L133",
+			"source": "関連文書",
+			"id": "github.com (webui_preprocess.py#L130-L133)"
+		},
+		{
+			"text": "https://github.com/fishaudio/Bert-VITS2/blob/76653b5b6d657143721df2ed6c5c246b4b1d9277/webui_preprocess.py#L34",
+			"source": "関連文書",
+			"id": "github.com (webui_preprocess.py#L34)"
+		},
+		{
+			"text": "https://securitylab.github.com/advisories/GHSL-2024-045_GHSL-2024-047_fishaudio_Bert-VITS2/",
+			"source": "関連文書",
+			"id": "securitylab.github.com (GHSL-2024-045_GHSL-2024-047_fishaudio_Bert-VITS2)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:fish.audio:bert-vits2",
+			"version": "2.2",
+			"vendor": "fish.audio",
+			"product": "bert-vits2"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-09-12T10:14+09:00",
+	"issued": "2024-09-12T10:14+09:00",
+	"modified": "2024-09-12T10:14+09:00"
+}

@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-007834.html",
+	"title": "bitapps の WordPress 用 file manager における競合状態に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-007834.html",
+	"description": "bitapps の WordPress 用 file manager には、競合状態に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-007834",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-7627",
+			"source": "CVE",
+			"id": "CVE-2024-7627"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-7627",
+			"source": "NVD",
+			"id": "CVE-2024-7627"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/file-manager/trunk/backend/app/Providers/FileEditValidator.php#L39",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (FileEditValidator.php#L39)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/file-manager/trunk/backend/app/Providers/FileEditValidator.php#L88",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (FileEditValidator.php#L88)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset/3138710/",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (changeset/3138710)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/5f29de7a-3f15-4b6d-aad7-6a08151e2113?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (5f29de7a-3f15-4b6d-aad7-6a08151e2113?source=cve)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+			"id": "CWE-362",
+			"title": "競合状態(CWE-362)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:bitapps:file_manager",
+			"version": "2.2",
+			"vendor": "bitapps",
+			"product": "file manager"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.1",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-09-12T10:39+09:00",
+	"issued": "2024-09-12T10:39+09:00",
+	"modified": "2024-09-12T10:39+09:00"
+}
