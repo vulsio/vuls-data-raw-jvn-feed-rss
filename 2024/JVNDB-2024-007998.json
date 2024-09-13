@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-007998.html",
+	"title": "openHAB におけるパストラバーサルの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-007998.html",
+	"description": "openHAB には、パストラバーサルの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-007998",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-42468",
+			"source": "CVE",
+			"id": "CVE-2024-42468"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-42468",
+			"source": "NVD",
+			"id": "CVE-2024-42468"
+		},
+		{
+			"text": "https://github.com/openhab/openhab-webui/blob/1c03c60f84388b9d7da0231df2d4ebb1e17d3fcf/bundles/org.openhab.ui.cometvisu/src/main/java/org/openhab/ui/cometvisu/internal/servlet/CometVisuServlet.java#L75",
+			"source": "関連文書",
+			"id": "github.com (CometVisuServlet.java#L75)"
+		},
+		{
+			"text": "https://github.com/openhab/openhab-webui/commit/630e8525835c698cf58856aa43782d92b18087f2",
+			"source": "関連文書",
+			"id": "github.com (630e8525835c698cf58856aa43782d92b18087f2)"
+		},
+		{
+			"text": "https://github.com/openhab/openhab-webui/security/advisories/GHSA-pcwp-26pw-j98w",
+			"source": "関連文書",
+			"id": "github.com (GHSA-pcwp-26pw-j98w)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openhab:openhab",
+			"version": "2.2",
+			"vendor": "openHAB",
+			"product": "openHAB"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-09-13T15:55+09:00",
+	"issued": "2024-09-13T15:55+09:00",
+	"modified": "2024-09-13T15:55+09:00"
+}
