@@ -1,0 +1,50 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-015263.html",
+	"title": "HTTPS 通信監視機器によるセキュリティ強度低下の問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-015263.html",
+	"description": "多くの組織で、マルウェア検知などの目的のために HTTPS 通信の監視を行うネットワーク機器が導入されています。\r\nCERT/CC は 2015 年 3 月のブログ記事 <a href=\"https://insights.sei.cmu.edu/cert/2015/03/the-risks-of-ssl-inspection.html\" target=blank>The Risks of SSL Inspection</a> において、HTTPS 通信監視機器の導入によるセキュリティ上のトレードオフについて論じています。\r\n\r\nHTTPS 通信監視機器を導入する場合、その製品が Transport Layer Security (TLS) の証明書検証を適切に行っていることを確認してください。TLS による適切な保護がなされない状態で通信が行われたり、検証失敗を示すエラーメッセージをクライアントアプリケーションに伝えなかったりする製品は、HTTPS で保護されるべき通信のセキュリティ強度を低下させます。\r\n\r\nTLS やその前身である Secure Sockets Layer (SSL) は、クライアントとサーバ間の通信を暗号化するためのプロトコルです。これらのプロトコル (および、さらに SSL/TLS を使用する HTTPS などのプロトコル) では、通信相手が正当なサーバであることを確認する手段として、X.509 証明書による検証を行います。これらの X.509 証明書は、信頼できる認証機関が、サーバに対してしかるべき審査を行ったうえで発行することが想定されています。\r\n\r\nHTTPS 通信監視機器は、いわゆる中間者 (man-in-the-middle) 攻撃を行う形で動作します。クライアント側で警告を出すことなく HTTPS 通信を監視するためには、専用の証明書をクライアント側にインストールしておく必要があります。ウェブブラウザなどのクライアント側アプリケーションではこの証明書を使用して HTTPS 通信監視機器との間で行われる暗号通信の検証を行い、信頼できる通信であると判断します。この構成の問題点は、本来想定している通信相手であるウェブサーバの証明書をクライアント自身が検証できないこと、また HTTPS 通信監視機器とウェブサーバ間の通信プロトコルや暗号方式がクライアント側には分からないことです。クライアント側で検証できるのは、自身と HTTPS 通信監視機器との間の通信のみであり、サーバとの間の HTTPS 通信は検証できないため、HTTPS 通信監視機器が行っている検証処理を信頼するしかありません。\r\n\r\n最近公開された論文 <a href=\"https://jhalderm.com/pub/papers/interception-ndss17.pdf\" target=blank>The Security Impact of HTTPS Interception</a> では、HTTPS 通信監視機器の導入によるいくつかのセキュリティ上の問題に焦点をあてています。多くの HTTPS 通信監視機器では、通信相手となるサーバの証明書チェーンを正しく検証していないため、当該機器とサーバ間の通信において中間者攻撃を受ける可能性があります。さらに、証明書チェーンの検証エラーがクライアントに伝えられることはほとんどなく、クライアントからは正当なサーバと通信が行われたように見えます。この論文では、HTTPS 通信監視機器を経由して通信しているクライアントをサーバ側から識別する手法を提示し、実際のトラフィックからどの程度 HTTPS 通信監視機器が使用されているかの調査を行っています。なお、ウェブサイト <a href=\"https://badssl.com/\" target=blank>badssl.com</a> では、使用している HTTPS 通信監視機器が証明書チェーンを適切に検証しているかを、クライアント側から確認することが可能です。また、クライアントはこのウェブサイトを利用して、ウェブブラウザなどのクライアントアプリケーションでは許可しないウェブサイトへのアクセスを HTTPS 通信監視機器経由で許可してしまっているかどうかを確認することも可能です。たとえば、製品によっては、サーバとの通信において古いプロトコルバージョンや弱い暗号化方式を使用することがあります。クライアントと HTTPS 通信監視機器との間の通信で強い暗号化方式が使用されている場合、ユーザは当該機器から先の通信方式の問題に気づきません。\r\n",
+	"identifier": "JVNDB-2017-015263",
+	"references": [
+		{
+			"text": "https://jvn.jp/ta/JVNTA96603741/index.html",
+			"source": "JVN",
+			"id": "JVNTA#96603741"
+		},
+		{
+			"text": "https://www.cisa.gov/news-events/alerts/2017/03/16/https-interception-weakens-tls-security",
+			"source": "ICS-CERT ALERT",
+			"id": "TA17-075A"
+		},
+		{
+			"text": "https://insights.sei.cmu.edu/cert/2015/03/the-risks-of-ssl-inspection.html",
+			"source": "関連文書",
+			"id": "The Risks of SSL Inspection"
+		},
+		{
+			"text": "https://jhalderm.com/pub/papers/interception-ndss17.pdf",
+			"source": "関連文書",
+			"id": "The Security Impact of HTTPS Interception"
+		},
+		{
+			"text": "https://badssl.com/",
+			"source": "関連文書",
+			"id": "badssl.com"
+		},
+		{
+			"text": "https://www.us-cert.gov/ncas/alerts/TA15-120A",
+			"source": "関連文書",
+			"id": "Securing End-to-End Communications"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"date": "2024-09-11T18:11+09:00",
+	"issued": "2024-09-11T18:11+09:00",
+	"modified": "2024-09-11T18:11+09:00"
+}

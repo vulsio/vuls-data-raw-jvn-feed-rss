@@ -1,0 +1,30 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-027251.html",
+	"title": "SSH 接続の安全性を低下させる攻撃手法 Terrapin Attack について",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-027251.html",
+	"description": "SSH 接続においてハンドシェイク中にシーケンス番号の操作を可能とする攻撃手法「Terrapin Attack」が報告されています。\r\n\r\n通常、SSH 接続時のハンドシェイク処理では、シーケンス番号順にパケットがやり取りされ、途中のパケットが削除された状態で次のパケットを受信すると、シーケンス番号が一致しないことが検出され、接続が中断されます。\r\nTerrapin Attack では、SSH 接続のハンドシェイク通信を傍受および改ざん可能な攻撃者によりハンドシェイク中に IGNORE メッセージが挿入されると、シーケンス番号の不整合が正常に検出できなくなります。その結果、サーバから送信される EXT_INFO メッセージを削除することも可能になります。EXT_INFO メッセージは SSH のセキュリティを向上させる拡張機能を含むため、EXT_INFO が削除されることにより、SSH の安全性を低下させられる可能性があります。\r\n\r\n",
+	"identifier": "JVNDB-2023-027251",
+	"references": [
+		{
+			"text": "https://jvn.jp/ta/JVNTA95077890/index.html",
+			"source": "JVN",
+			"id": "JVNTA#95077890"
+		},
+		{
+			"text": "https://terrapin-attack.com/",
+			"source": "関連文書",
+			"id": "Terrapin Attack"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"date": "2024-09-11T18:11+09:00",
+	"issued": "2024-09-11T18:11+09:00",
+	"modified": "2024-09-11T18:11+09:00"
+}

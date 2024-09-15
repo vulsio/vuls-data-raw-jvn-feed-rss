@@ -1,0 +1,80 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-009751.html",
+	"title": "Mirai 等のマルウェアで構築されたボットネットによる DDoS 攻撃の脅威",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-009751.html",
+	"description": "近年、IoT 機器を使用した大規模なボットネットが構築され、分散型サービス運用妨害 (DDoS) 攻撃に使用されています。システムやネットワークの保護のために、IoT 機器および接続されているハードウェアを保護することが重要です。\r\n\r\n2016 年 9 月 20 日、<a href=\"https://krebsonsecurity.com/\" target=\"blank\">Krebs on Security</a> が最大で 620Gbps を超える<a href=\"https://krebsonsecurity.com/2016/09/krebsonsecurity-hit-with-record-ddos/\" target=\"blank\">大規模な DDoS 攻撃を受けました</a> 。この DDoS 攻撃は、Mirai と呼ばれるマルウェアに感染した IoT 機器によって構築されたボットネットから行われました。Mirai は、脆弱な IoT 機器を定期的にスキャンして感染し、ボットネットに取り込みます。Mirai は初期設定で使われることの多いユーザ名・パスワードの組み合わせ 62　組からなるリストを使用して、脆弱な機器をスキャンします。多くの IoT 機器は保護が全くされていない、または不十分なため、この短いリストでも<a href=\"https://news.sophos.com/en-us/category/serious-security/\" target=\"blank\">数十万の機器</a>へのアクセスが可能になります。Mirai の作者を名乗る人物によると、<a href=\"https://www.pcworld.com/article/410530/iot-malware-behind-record-ddos-attack-is-now-available-to-all-hackers.html\" target=\"blank\">38 万を超える IoT 機器</a>が Mirai に感染し、Krebs on Security に対する攻撃に使用されたとのことです。\r\n\r\n9 月下旬には、フランスのウェブホスト OVH に対して、Mirai を使用した<a href=\"https://arstechnica.com/information-technology/2016/09/botnet-of-145k-cameras-reportedly-deliver-internets-biggest-ddos-ever/\" target=\"blank\">最大で 1.5Tbps</a> にもなる DDoS 攻撃が行われました。\r\n\r\nMirai の影響を受けた IoT 機器は主に、<a href=\"https://www.darkreading.com/cyberattacks-data-breaches/iot-ddos-attack-code-released\" target=\"blank\">家庭用ルータ、ネットワークカメラ、デジタルビデオレコーダでした</a>。9 月末には Mirai のソースコードが公開されたため、他の DDoS 攻撃に広く使用される可能性があります。\r\n\r\n10 月初旬、Krebs on Security は、IoT ボットネットによる攻撃を引き起こす、<a href=\"https://krebsonsecurity.com/2016/10/source-code-for-iot-botnet-mirai-released/\" target=\"blank\">Mirai とは別系統のマルウェア</a>について言及しています。この別系統のマルウェアはまだソースコードが明らかになっていませんが、Bashlite と呼ばれています。Bashlite も Mirai 同様、初期設定で使われることの多いユーザ名・パスワードを使用してシステムに感染します。セキュリティ企業 Level 3 Communications は、Bashlite に感染したおよそ 100 万もの IoT 機器</a>からなるボットネットが構築されている可能性があると述べています。\r\n",
+	"identifier": "JVNDB-2016-009751",
+	"references": [
+		{
+			"text": "https://jvn.jp/ta/JVNTA95530271/index.html",
+			"source": "JVN",
+			"id": "JVNTA#95530271"
+		},
+		{
+			"text": "https://www.cisa.gov/news-events/alerts/2014/01/17/udp-based-amplification-attacks",
+			"source": "CERT-TA",
+			"id": "TA14-017A"
+		},
+		{
+			"text": "https://www.cisa.gov/news-events/news/choosing-and-protecting-passwords",
+			"source": "US-CERT Security Tip",
+			"id": "Choosing and Protecting Passwords"
+		},
+		{
+			"text": "https://www.cisa.gov/news-events/ics-alerts/ics-alert-16-286-01",
+			"source": "ICS-CERT ALERT",
+			"id": "ICS-ALERT-16-286-01"
+		},
+		{
+			"text": "https://krebsonsecurity.com/2016/09/krebsonsecurity-hit-with-record-ddos/",
+			"source": "関連文書",
+			"id": "KrebsOnSecurity Hit With Record DDoS"
+		},
+		{
+			"text": "https://news.sophos.com/en-us/category/serious-security/",
+			"source": "関連文書",
+			"id": "Mirai “internet of things” malware from Krebs DDoS attack goes open source"
+		},
+		{
+			"text": "https://www.pcworld.com/article/410530/iot-malware-behind-record-ddos-attack-is-now-available-to-all-hackers.html",
+			"source": "関連文書",
+			"id": "Smart device malware behind record DDoS attack is now available to all hackers"
+		},
+		{
+			"text": "https://arstechnica.com/information-technology/2016/09/botnet-of-145k-cameras-reportedly-deliver-internets-biggest-ddos-ever/",
+			"source": "関連文書",
+			"id": "Record-breaking DDoS reportedly delivered by >145k hacked cameras"
+		},
+		{
+			"text": "https://www.darkreading.com/cyberattacks-data-breaches/iot-ddos-attack-code-released",
+			"source": "関連文書",
+			"id": "IoT DDoS Attack Code Released"
+		},
+		{
+			"text": "https://krebsonsecurity.com/2016/10/source-code-for-iot-botnet-mirai-released/",
+			"source": "関連文書",
+			"id": "Source Code for IoT Botnet ‘Mirai’ Released"
+		},
+		{
+			"text": "https://www.cisa.gov/sites/default/files/publications/DDoS%20Quick%20Guide.pdf",
+			"source": "関連文書",
+			"id": "DDoS Quick Guide"
+		},
+		{
+			"text": "https://isc.sans.edu/diary/What+is+happening+on+2323TCP/21563",
+			"source": "関連文書",
+			"id": "What is happening on 2323/TCP?"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"date": "2024-09-11T18:11+09:00",
+	"issued": "2024-09-11T18:11+09:00",
+	"modified": "2024-09-11T18:11+09:00"
+}

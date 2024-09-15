@@ -1,0 +1,40 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-015264.html",
+	"title": "Windows 8 およびそれ以降のバージョンにおいて、アドレス空間配置のランダム化が適切に行われない脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-015264.html",
+	"description": "Microsoft Windows 8 では、システム全体への ASLR 強制の実装方法が変更されました。この変更により、十分なエントロピーを持って ASLR 強制の動作を行わせるためには system-wide bottom-up ASLR を有効にすることが必要となりました。\r\nEMET や Windows Defender Exploit Guard でシステム全体への ASLR 強制を有効に設定した場合には bottom-up ASLR が有効にされないため、ASLR を有効にしていない実行ファイルのメモリ上への再配置ランダム化が適切に行われません。\r\n\r\n\r\n<b>アドレス空間配置のランダム化 (ASLR, Address Space Layout Randomization)</b>\r\n\r\nWindows Vista では、<a href=\"https://blogs.technet.microsoft.com/srd/2010/12/08/on-the-effectiveness-of-dep-and-aslr/\"target=\"blank\">メモリ上のコードを使った攻撃への対策</a>として ASLR という機能が追加されました。実行モジュールをメモリ上に読み込む位置を予測不可能にすることで、ROP (Return-oriented programming) などのように、特定のメモリアドレスにあるコードを悪用した攻撃が成功する確率を減らすものです。\r\nただし、実行ファイルを作成する際にオプション <a href=\"https://msdn.microsoft.com/en-us/library/bb384887.aspx\"target=\"blank\">/DYNAMICBASE</a> をつけてリンクされていなければ、ASLR 機能は有効にはなりません。\r\n\r\n<b>EMET と Windows Defender Exploit Guard</b>\r\n\r\nASLR やその他の脆弱性緩和手法を有効にしていないアプリケーションを保護するために、Microsoft EMET がリリースされました。EMET の GUI (グラフィカルユーザインターフェース) では、脆弱性緩和手法をシステム全体に適用したりアプリケーションごとに適用したりといった設定を行うことが可能です。\r\nシステム全体への適用では、Windows OS 自体に実装された脆弱性緩和手法を有効にします。アプリケーションごとの適用では、EMET のライブラリが当該アプリケーション固有のプロセス空間にロードされます。\r\nWindows 10 の Fall Creators Update からは、EMET の機能は <a href=\"https://blogs.technet.microsoft.com/mmpc/2017/10/23/windows-defender-exploit-guard-reduce-the-attack-surface-against-next-generation-malware/\"target=\"blank\">Windows Defender Exploit Guard</a> に受け継がれました。\r\n\r\n<b>ASLR の強制と Windows 8</b>\r\n\r\nEMET と Windows Defender Exploit Guard は、/DYNAMICBASE オプション付きでリンクされていないコードに対しても強制的に ASLR を有効にすることができます。これは、アプリケーションごとに、もしくはシステム全体に対して設定することができます。Windows 8 より前のバージョンでは、システム全体に ASLR を強制するかどうかはレジストリキー HKLM\\SYSTEM\\CurrentControlSet\\Control\\SessionManager\\Memory Management\\MoveImages の値で制御します。このレジストリキーの値を 0xFFFFFFFF に設定することで、Windows はリロケーションテーブルを持つ実行ファイルのロード時に ASLR を適用するようになります。これによって、システムの再起動ごとに、また異なるシステム間において、ロードされるメモリ位置が変化するようになります。\r\nWindows 8 からは、システム全体に ASLR を強制する実装方法が変更されました。Windows 8 からは、システム全体への ASLR 強制はレジストリキー HKLM\\System\\CurrentControlSet\\Control\\Session Manager\\Kernel\\MitigationOptions の値で制御されます。また、システム全体への ASLR 適用時には、じゅうぶんなエントロピーを持った状態で ASLR の強制を行うために、システム全体に対して <a href=\"https://blogs.technet.microsoft.com/srd/2013/12/11/software-defense-mitigating-common-exploitation-techniques/\"target=\"blank\">bottom-up ASLR</a> が適用されている必要があります。\r\n\r\n<b>問題点</b>\r\n\r\nEMET と Windows Defender Exploit Guard では、システム全体に対する ASLR を有効にする際、bottom-up ASLR を有効にしていません。\r\nWindows Defender Exploit Guard では、bottom-up ASLR の設定をシステム全体に適用するオプションが設けられていますが、GUI の初期設定値 \"On by default\" ではレジストリ値の適切な変更を行いません。この結果、/DYNAMICBASE オプション付きでリンクされていないプログラムには、エントロピーが不十分なまま ASLR が適用されることになり、このようなプログラムの再配置先は予測可能になってしまいます。\r\n",
+	"identifier": "JVNDB-2017-015264",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU91363799/index.html",
+			"source": "JVN",
+			"id": "JVNVU#91363799"
+		},
+		{
+			"text": "https://jvn.jp/vu/JVNVU90967793/index.html",
+			"source": "JVN",
+			"id": "JVNVU#90967793"
+		},
+		{
+			"text": "https://insights.sei.cmu.edu/cert/2012/06/amd-video-drivers-prevent-the-use-of-the-most-secure-setting-for-microsofts-exploit-mitigation-exper.html",
+			"source": "CERT/CC blog",
+			"id": "AMD Video Drivers Prevent the Use of the Most Secure Setting for Microsoft's Exploit Mitigation Experience Toolkit (EMET)"
+		},
+		{
+			"text": "https://www.kb.cert.org/vuls/id/817544",
+			"source": "CERT-VN",
+			"id": "VU#817544"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:microsoft:windows_8",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft Windows 8"
+		}
+	],
+	"date": "2024-09-11T18:11+09:00",
+	"issued": "2024-09-11T18:11+09:00",
+	"modified": "2024-09-11T18:11+09:00"
+}

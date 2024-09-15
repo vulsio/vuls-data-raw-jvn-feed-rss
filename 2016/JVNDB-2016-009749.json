@@ -1,0 +1,45 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-009749.html",
+	"title": "国内のウェブサイトに SQL インジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2016/JVNDB-2016-009749.html",
+	"description": "日本国内のウェブサイトにおける SQL インジェクションの脆弱性が、国内外から JPCERT/CC に複数報告されています。\r\n\r\nオー プンソースの SQL インジェクション脆弱性診断ツール sqlmap を使用して、日本国内のウェブサイトで動作するウェブアプリケーションの脆弱性を検出しようとする海外からのアクセスが発生しています。こうしたアクセスは組織規模の大小によらず、中小企業や個人のウェブサイトに対しても行われています。SQL インジェクションの脆弱性が存在するウェブサイトでは、ユーザや開発者の意図しない SQL 文が実行され、様々な影響を受ける可能性があります。\r\n\r\nsqlmap は、おもに次の 5 つの手法を使用します。\r\n\r\n　* Boolean-based blind\r\n　　WHERE 句、HAVING 句の真偽値を使用して情報を取得する\r\n\r\n　* Time-based blind\r\n　　データベース側の応答時間差により情報を取得する\r\n\r\n　* Error-based\r\n　　データベース側からのエラー応答から情報を取得する\r\n\r\n　* UNION query-based\r\n　　別々のテーブルの検索結果を結合するクエリを使用して情報を取得する\r\n\r\n　* Stacked queries\r\n　　1 回のトランザクションで複数のクエリを実行させる\r\n\r\nこれらの手法による攻撃は、静的プレースホルダを使用するなど、通常の SQL インジェクション対策で防ぐことが可能です。",
+	"identifier": "JVNDB-2016-009749",
+	"references": [
+		{
+			"text": "https://jvn.jp/ta/JVNTA99929369/index.html",
+			"source": "JVN",
+			"id": "JVNTA#99929369"
+		},
+		{
+			"text": "https://www.ipa.go.jp/files/000017320.pdf",
+			"source": "関連文書",
+			"id": "安全な SQL の呼び出し方"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/iLogScanner/",
+			"source": "関連文書",
+			"id": "ウェブサイトの攻撃兆候検出ツール iLogScanner"
+		},
+		{
+			"text": "https://www.owasp.org/index.php/SQL_Injection",
+			"source": "関連文書",
+			"id": "SQL Injection"
+		},
+		{
+			"text": "http://sqlmap.org/",
+			"source": "関連文書",
+			"id": "sqlmap: automatic SQL injection and database takeover tool"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"date": "2024-09-11T18:11+09:00",
+	"issued": "2024-09-11T18:11+09:00",
+	"modified": "2024-09-11T18:11+09:00"
+}

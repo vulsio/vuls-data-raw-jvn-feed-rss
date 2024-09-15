@@ -1,0 +1,30 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-008768.html",
+	"title": "Microsoft Windows における証明書に関する問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2015/JVNDB-2015-008768.html",
+	"description": "マイクロソフト ターミナル サービス ライセンス証明機関 (CA) により発行された X.509 デジタル証明書がコード署名に使われていることが、マルウエア \"Flame\" の解析において発見されました。\r\n\r\nMircosoft は、問題となる証明書を無効にするアップデートを公開しました。\r\n\r\n\r\nMSRC blog では、次のように述べられています。\r\n\r\n　　\"We identified that an older cryptography algorithm could be exploited and then be used to sign code as if it originated from Microsoft. Specifically, our Terminal Server Licensing Service, which allowed customers to authorize Remote Desktop services in their enterprise, used that older algorithm and provided certificates with the ability to sign code, thus permitting code to be signed as if it came from Microsoft.\"\r\n\r\nまた、Security Research & Defense blog では、次のように述べられています。\r\n\r\n　　\"What we found is that certificates issued by our Terminal Services licensing certification authority, which are intended to only be used for license server verification, could also be used to sign code as Microsoft. Specifically, when an enterprise customer requests a Terminal Services activation license, the certificate issued by Microsoft in response to the request allows code signing without accessing Microsoft’s internal PKI infrastructure.\"\r\n\r\n問題となる証明書は、次の通りです。詳細は、Security Research & Defense blog で提供されています。\r\n\r\n　　Certificate: Microsoft Enforced Licensing Intermediate PCA\r\n　　Issued by: Microsoft Root Authority\r\n　　Thumbprint: 2a 83 e9 02 05 91 a5 5f c6 dd ad 3f b1 02 79 4c 52 b2 4e 70\r\n\r\n　　Certificate: Microsoft Enforced Licensing Intermediate PCA\r\n　　Issued by: Microsoft Root Authority\r\n　　Thumbprint: 3a 85 00 44 d8 a1 95 cd 40 1a 68 0c 01 2c b0 a3 b5 f8 dc 08\r\n\r\n　　Certificate: Microsoft Enforced Licensing Registration Authority CA (SHA1)\r\n　　Issued by: Microsoft Root Certificate Authority\r\n　　Thumbprint: fa 66 60 a9 4a b4 5f 6a 88 c0 d7 87 4d 89 a8 63 d7 4d ee 97\r\n\r\n",
+	"identifier": "JVNDB-2015-008768",
+	"references": [
+		{
+			"text": "https://jvn.jp/ta/JVNTA12-156A/index.html",
+			"source": "JVN",
+			"id": "JVNTA12-156A"
+		},
+		{
+			"text": "http://software.fujitsu.com/jp/security/vulnerabilities/2012.html",
+			"source": "関連文書",
+			"id": "TA12-156Aに対する富士通の情報"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:microsoft:multiple_product",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "(複数の製品)"
+		}
+	],
+	"date": "2024-09-11T18:11+09:00",
+	"issued": "2024-09-11T18:11+09:00",
+	"modified": "2024-09-11T18:11+09:00"
+}

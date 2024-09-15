@@ -1,0 +1,30 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-018328.html",
+	"title": "Web Rehosting サービスにおいて複数ウェブサイトに跨ったコンテンツの改ざん・盗聴等が行われる問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2020/JVNDB-2020-018328.html",
+	"description": "NTT セキュアプラットフォーム研究所および早稲田大学の研究チームにより、Web Rehosting と呼ばれるサービスを利用するユーザのブラウザ上で複数ウェブサイトのコンテンツを跨ったコンテンツ改ざんや盗聴などが可能となるセキュリティ上の問題が発見されました。この問題は研究チームにより <a href=\"https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/\" target=\"blank\">NDSS 2020</a> において公表されました。\r\n\r\nWeb Rehosting サービスとは、本研究において提唱されたウェブサービス群の名称であり、指定された他のウェブサイトからコンテンツを取得し、変換などの処理を加えた後に自らのサーバに再度ホスティングして表示させる（再ホストする）機能を持っています。Web Rehosting サービスに該当するサービスとして、ウェブインターフェースから閲覧したいURLを指定する Web プロキシ、ウェブサイト全体を翻訳する Web 翻訳、ウェブサイトのスナップショットを保存する Web アーカイブなどが含まれます。\r\n\r\nWeb Rehosting に該当するサービスが対策を講じていない場合、ユーザのブラウザリソースの一部が悪意ある第三者によって不正に操作され、セキュリティ・プライバシー上の被害を受ける可能性があります。Web Rehosting の運用者が対策を講じる上では、当記事の「対策方法」を参照してください。\r\n\r\n詳細については、<a href=\"https://jvn.jp/ta/JVNTA96129397/index.html\">JVNTA#96129397</a> を参照してください。\r\n\r\n本文書はサービス事業者やユーザへの注意喚起を目的として、NTT セキュアプラットフォーム研究所の渡邉卓弥氏、塩治榮太朗氏、秋山満昭氏、および JPCERT/CC が共同で執筆しました。",
+	"identifier": "JVNDB-2020-018328",
+	"references": [
+		{
+			"text": "https://jvn.jp/ta/JVNTA96129397/index.html",
+			"source": "JVN",
+			"id": "JVNTA#96129397"
+		},
+		{
+			"text": "https://www.ndss-symposium.org/ndss-paper/melting-pot-of-origins-compromising-the-intermediary-web-services-that-rehost-websites/",
+			"source": "関連文書",
+			"id": "Melting Pot of Origins: Compromising the Intermediary Web Services that Rehost Websites"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:multiple_vendors",
+			"version": "2.2",
+			"vendor": "（複数のベンダ）",
+			"product": "（複数の製品）"
+		}
+	],
+	"date": "2024-09-12T12:23+09:00",
+	"issued": "2024-09-11T17:01+09:00",
+	"modified": "2024-09-12T12:23+09:00"
+}

@@ -1,0 +1,30 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-009030.html",
+	"title": "Apple iOS に対する攻撃手法 Masque Attack",
+	"link": "https://jvndb.jvn.jp/ja/contents/2014/JVNDB-2014-009030.html",
+	"description": "Masque Attack と呼ばれる攻撃手法により、特定の条件のもとで、正規の Apple iOS アプリがマルウェアに置き換えられる可能性があります。\r\n\r\nFireEye の研究者により、Masque Attack と呼ばれる攻撃手法が発見され、FireEye 社のブログで公開されています。\r\n\r\nApple iOS には、同一の bundle identifier を持つアプリをインストールする際、コード署名証明書が同一でなくてもインストールされてしまう問題があります。\r\nMasque Attack ではこの問題を悪用し、既存アプリと同じ bundle identifier を持ったアプリを、Apple が提供する App Store や自社向けアプリを提供するための provisioning system 以外からインストールさせます。結果として、アプリが管理しているデータは削除されずに残されたまま、既存アプリの本体がインストールされたアプリに置き換えられます。\r\n\r\nなお、Mobile Safari などプリインストールされているアプリは、影響を受けないとのことです。\r\n\r\n",
+	"identifier": "JVNDB-2014-009030",
+	"references": [
+		{
+			"text": "https://jvn.jp/ta/JVNTA14-317A/index.html",
+			"source": "JVN",
+			"id": "JVNTA14-317A"
+		},
+		{
+			"text": "https://www.cisa.gov/news-events/alerts/2014/11/13/apple-ios-masque-attack-technique",
+			"source": "ICS-CERT ALERT",
+			"id": "TA14-317A"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:apple:iphone_os",
+			"version": "2.2",
+			"vendor": "アップル",
+			"product": "iOS"
+		}
+	],
+	"date": "2024-09-11T18:11+09:00",
+	"issued": "2024-09-11T18:11+09:00",
+	"modified": "2024-09-11T18:11+09:00"
+}
