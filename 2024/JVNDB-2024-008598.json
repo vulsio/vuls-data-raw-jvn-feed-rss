@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-008598.html",
+	"title": "pulp project の pulp における安全でない継承されたパーミッションに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-008598.html",
+	"description": "pulp project の pulp には、安全でない継承されたパーミッションに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-008598",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-7143",
+			"source": "CVE",
+			"id": "CVE-2024-7143"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-7143",
+			"source": "NVD",
+			"id": "CVE-2024-7143"
+		},
+		{
+			"text": "https://access.redhat.com/errata/RHSA-2024:6765",
+			"source": "関連文書",
+			"id": "access.redhat.com (RHSA-2024:6765)"
+		},
+		{
+			"text": "https://access.redhat.com/security/cve/CVE-2024-7143",
+			"source": "関連文書",
+			"id": "access.redhat.com (CVE-2024-7143)"
+		},
+		{
+			"text": "https://bugzilla.redhat.com/show_bug.cgi?id=2300125",
+			"source": "関連文書",
+			"id": "bugzilla.redhat.com (2300125)"
+		},
+		{
+			"text": "https://github.com/pulp/pulpcore/blob/93f241f34c503da0fbac94bdba739feda2636e12/pulpcore/tasking/_util.py#L108",
+			"source": "関連文書",
+			"id": "github.com (_util.py#L108)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/277.html",
+			"id": "CWE-277",
+			"title": "安全でない継承されたパーミッション(CWE-277)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:pulpproject:pulp",
+			"version": "2.2",
+			"vendor": "pulp project",
+			"product": "pulp"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"
+		}
+	],
+	"date": "2024-09-20T14:22+09:00",
+	"issued": "2024-09-20T14:22+09:00",
+	"modified": "2024-09-20T14:22+09:00"
+}
