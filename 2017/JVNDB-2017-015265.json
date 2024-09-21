@@ -1,0 +1,61 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-015265.html",
+	"title": "AssetView for MacOS の「ファイル転送Webサービス」に複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-015265.html",
+	"description": "株式会社ハンモックが提供する AssetView for MacOS のサーバ側モジュールである「ファイル転送Webサービス」には、次の複数の脆弱性が存在します。\r\n　* ディレクトリトラバーサルの脆弱性 (CWE-22) - CVE-2017-2240\r\n　* SQL インジェクションの脆弱性 (CWE-89) - CVE-2017-2241\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: 株式会社リクルートテクノロジーズ　RECRUIT RED TEAM　西村宗晃 氏\r\n",
+	"identifier": "JVNDB-2017-015265",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU93377948/index.html",
+			"source": "JVN",
+			"id": "JVNVU#93377948"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2240",
+			"source": "CVE",
+			"id": "CVE-2017-2240"
+		},
+		{
+			"text": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-2241",
+			"source": "CVE",
+			"id": "CVE-2017-2241"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hammock:assetview",
+			"version": "2.2",
+			"vendor": "株式会社ハンモック",
+			"product": "AssetView"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "6.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+		}
+	],
+	"date": "2024-09-20T18:09+09:00",
+	"issued": "2024-09-20T18:09+09:00",
+	"modified": "2024-09-20T18:09+09:00"
+}
