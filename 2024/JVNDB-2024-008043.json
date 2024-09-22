@@ -1,0 +1,54 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-008043.html",
+	"title": "ThimPress の WordPress 用 LearnPress における SQL インジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-008043.html",
+	"description": "ThimPress の WordPress 用 LearnPress には、SQL インジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-008043",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-8522",
+			"source": "CVE",
+			"id": "CVE-2024-8522"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-8522",
+			"source": "NVD",
+			"id": "CVE-2024-8522"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/learnpress/trunk/inc/jwt/rest-api/version1/class-lp-rest-courses-v1-controller.php#L441",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class-lp-rest-courses-v1-controller.php#L441)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/e495507d-7eac-4f38-ab6f-b8f0809b2be4?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (e495507d-7eac-4f38-ab6f-b8f0809b2be4?source=cve)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:thimpress:learnpress",
+			"version": "2.2",
+			"vendor": "ThimPress",
+			"product": "LearnPress"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-09-17T11:05+09:00",
+	"issued": "2024-09-17T11:05+09:00",
+	"modified": "2024-09-17T11:05+09:00"
+}
