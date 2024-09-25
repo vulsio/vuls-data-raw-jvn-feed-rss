@@ -1,0 +1,74 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-008828.html",
+	"title": "sigstore の sigstore-go における無限ループに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-008828.html",
+	"description": "sigstore の sigstore-go には、無限ループに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-008828",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-45395",
+			"source": "CVE",
+			"id": "CVE-2024-45395"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-45395",
+			"source": "NVD",
+			"id": "CVE-2024-45395"
+		},
+		{
+			"text": "https://github.com/sigstore/sigstore-go/blob/725e508ed4933e6f5b5206e32af4bbe76f587b54/pkg/verify/signature.go#L183-L193",
+			"source": "関連文書",
+			"id": "github.com (signature.go#L183-L193)"
+		},
+		{
+			"text": "https://github.com/sigstore/sigstore-go/blob/725e508ed4933e6f5b5206e32af4bbe76f587b54/pkg/verify/tlog.go#L74-L178",
+			"source": "関連文書",
+			"id": "github.com (tlog.go#L74-L178)"
+		},
+		{
+			"text": "https://github.com/sigstore/sigstore-go/blob/725e508ed4933e6f5b5206e32af4bbe76f587b54/pkg/verify/tsa.go#L59-L68",
+			"source": "関連文書",
+			"id": "github.com (tsa.go#L59-L68)"
+		},
+		{
+			"text": "https://github.com/sigstore/sigstore-go/commit/01e70e89e58226286d7977b4dba43b6be472b12c",
+			"source": "関連文書",
+			"id": "github.com (01e70e89e58226286d7977b4dba43b6be472b12c)"
+		},
+		{
+			"text": "https://github.com/sigstore/sigstore-go/security/advisories/GHSA-cq38-jh5f-37mq",
+			"source": "関連文書",
+			"id": "github.com (GHSA-cq38-jh5f-37mq)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/835.html",
+			"id": "CWE-835",
+			"title": "無限ループ(CWE-835)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/835.html",
+			"id": "CWE-835",
+			"title": "無限ループ(CWE-835)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:sigstore:sigstore-go",
+			"version": "2.2",
+			"vendor": "sigstore",
+			"product": "sigstore-go"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2024-09-25T10:20+09:00",
+	"issued": "2024-09-25T10:20+09:00",
+	"modified": "2024-09-25T10:20+09:00"
+}
