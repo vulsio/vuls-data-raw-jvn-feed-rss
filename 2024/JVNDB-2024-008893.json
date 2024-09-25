@@ -1,0 +1,35 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-008893.html",
+	"title": "Apache Tomcat Connector（mod_jk）における不適切なデフォルトパーミッションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-008893.html",
+	"description": "The Apache Software Foundation から、Apache Tomcat Connector（mod_jk）の脆弱性に対するアップデートが公開されました。\r\n\r\n　* Unix 系システムの JkShmFile ディレクティブによって設定されたメモリマップファイルに対するデフォルトのパーミッションが正しくないため、ローカルユーザーが mod_jk 設定情報とステータス情報を含む共有メモリの内容を表示および変更できる問題（CVE-2024-46544、CWE-276）\r\n\r\n\r\n",
+	"identifier": "JVNDB-2024-008893",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU95995488/index.html",
+			"source": "JVN",
+			"id": "JVNVU#95995488"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-46544",
+			"source": "CVE",
+			"id": "CVE-2024-46544"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/276.html",
+			"id": "CWE-276",
+			"title": "不適切なデフォルトパーミッション(CWE-276)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:apache:tomcat",
+			"version": "2.2",
+			"vendor": "Apache Software Foundation",
+			"product": "Apache Tomcat"
+		}
+	],
+	"date": "2024-09-25T13:39+09:00",
+	"issued": "2024-09-25T13:39+09:00",
+	"modified": "2024-09-25T13:39+09:00"
+}

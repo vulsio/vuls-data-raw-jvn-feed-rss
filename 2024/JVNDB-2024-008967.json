@@ -1,0 +1,76 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-008967.html",
+	"title": "micropython における境界外書き込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-008967.html",
+	"description": "micropython には、境界外書き込みに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-008967",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-8948",
+			"source": "CVE",
+			"id": "CVE-2024-8948"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-8948",
+			"source": "NVD",
+			"id": "CVE-2024-8948"
+		},
+		{
+			"text": "https://github.com/micropython/micropython/commit/908ab1ceca15ee6fd0ef82ca4cba770a3ec41894",
+			"source": "関連文書",
+			"id": "github.com (908ab1ceca15ee6fd0ef82ca4cba770a3ec41894)"
+		},
+		{
+			"text": "https://github.com/micropython/micropython/issues/13041",
+			"source": "関連文書",
+			"id": "github.com (issues/13041)"
+		},
+		{
+			"text": "https://vuldb.com/?id.277766",
+			"source": "関連文書",
+			"id": "vuldb.com (id.277766)"
+		},
+		{
+			"text": "https://vuldb.com/?submit.409317",
+			"source": "関連文書",
+			"id": "vuldb.com (submit.409317)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/122.html",
+			"id": "CWE-122",
+			"title": "ヒープベースのバッファオーバーフロー(CWE-122)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:micropython:micropython",
+			"version": "2.2",
+			"vendor": "micropython",
+			"product": "micropython"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2024-09-25T15:24+09:00",
+	"issued": "2024-09-25T15:24+09:00",
+	"modified": "2024-09-25T15:24+09:00"
+}
