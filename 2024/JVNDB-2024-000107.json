@@ -1,0 +1,44 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000107.html",
+	"title": "RevoWorksクラウドにおける意図しないプロセス実行が可能となる脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000107.html",
+	"description": "ジェイズ・コミュニケーション株式会社が提供するRevoWorksクラウドは、クライアントPC上にローカル環境から分離した環境（以下、「分離環境」）を構築します。分離環境内では、ウェブブラウザを実行するとともに、許可されていないプロセスを検知し実行を抑制する機能が提供されていますが、許可されていないプロセスを検知する機能に不備があります（CWE-863）。\r\n\r\nこの脆弱性情報は、製品利用者への周知を&#12140;的に、開発者がIPAに報告し、JPCERT/CCが開発者との調整を行いました。",
+	"identifier": "JVNDB-2024-000107",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN39280069/index.html",
+			"source": "JVN",
+			"id": "JVN#39280069"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47560",
+			"source": "CVE",
+			"id": "CVE-2024-47560"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:jscom:revoworks_cloudclient",
+			"version": "2.2",
+			"vendor": "ジェイズ・コミュニケーション株式会社",
+			"product": "RevoWorksクラウドクライアント"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-09-30T12:38+09:00",
+	"issued": "2024-09-30T12:38+09:00",
+	"modified": "2024-09-30T12:38+09:00"
+}
