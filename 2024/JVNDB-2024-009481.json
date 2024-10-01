@@ -1,0 +1,44 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-009481.html",
+	"title": "複数のセイコーエプソン製品の Web Config における初期パスワードに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-009481.html",
+	"description": "セイコーエプソンが提供する複数の製品に導入されている Web Config は、Web ブラウザー上で製品本体の状態を確認したり設定を変更したりするためのソフトウェアです。初期状態では管理者パスワードが設定されておらず、使用者が当該機器をネットワークに接続しWeb Config の設定作業を最初にする際に、パスワードの設定を要求してきます。\r\nそのため、当該製品をネットワークに接続してWeb Config の設定を一度も行っていない場合、想定していない第三者によって任意のパスワードを設定され管理者権限で操作される可能性があります（CWE-1188）。\r\n\r\nこの脆弱性情報は、下記の方が CERT/CC に報告し、CERT/CC からの要請を受け JPCERT/CC が開発者との調整を行いました。\r\n報告者： George Puckett 氏",
+	"identifier": "JVNDB-2024-009481",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU95133448/index.html",
+			"source": "JVN",
+			"id": "JVNVU#95133448"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=\tCVE-2024-47295",
+			"source": "CVE",
+			"id": "CVE-2024-47295"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/1188.html",
+			"id": "CWE-1188",
+			"title": "リソースの安全ではないデフォルト値への初期化(CWE-1188)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:epson:web_config",
+			"version": "2.2",
+			"vendor": "セイコーエプソン株式会社",
+			"product": "Web Config"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.1",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-10-01T12:16+09:00",
+	"issued": "2024-10-01T12:16+09:00",
+	"modified": "2024-10-01T12:16+09:00"
+}
