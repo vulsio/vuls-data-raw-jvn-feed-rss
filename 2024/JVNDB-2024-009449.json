@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-009449.html",
+	"title": "rollupjs の Node.js 用 rollup におけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-009449.html",
+	"description": "rollupjs の Node.js 用 rollup には、クロスサイトスクリプティングの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-009449",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47068",
+			"source": "CVE",
+			"id": "CVE-2024-47068"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-47068",
+			"source": "NVD",
+			"id": "CVE-2024-47068"
+		},
+		{
+			"text": "https://github.com/rollup/rollup/blob/b86ffd776cfa906573d36c3f019316d02445d9ef/src/ast/nodes/MetaProperty.ts#L157-L162",
+			"source": "関連文書",
+			"id": "github.com (MetaProperty.ts#L157-L162)"
+		},
+		{
+			"text": "https://github.com/rollup/rollup/blob/b86ffd776cfa906573d36c3f019316d02445d9ef/src/ast/nodes/MetaProperty.ts#L180-L185",
+			"source": "関連文書",
+			"id": "github.com (MetaProperty.ts#L180-L185)"
+		},
+		{
+			"text": "https://github.com/rollup/rollup/commit/2ef77c00ec2635d42697cff2c0567ccc8db34fb4",
+			"source": "関連文書",
+			"id": "github.com (2ef77c00ec2635d42697cff2c0567ccc8db34fb4)"
+		},
+		{
+			"text": "https://github.com/rollup/rollup/commit/e2552c9e955e0a61f70f508200ee9f752f85a541",
+			"source": "関連文書",
+			"id": "github.com (e2552c9e955e0a61f70f508200ee9f752f85a541)"
+		},
+		{
+			"text": "https://github.com/rollup/rollup/security/advisories/GHSA-gcx4-mw62-g8wm",
+			"source": "関連文書",
+			"id": "github.com (GHSA-gcx4-mw62-g8wm)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:rollupjs:rollup",
+			"version": "2.2",
+			"vendor": "rollupjs",
+			"product": "rollup"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.1",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-10-01T10:25+09:00",
+	"issued": "2024-10-01T10:25+09:00",
+	"modified": "2024-10-01T10:25+09:00"
+}
