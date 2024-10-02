@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-009548.html",
+	"title": "RestSharp におけるインジェクションに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-009548.html",
+	"description": "RestSharp には、インジェクションに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-009548",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-45302",
+			"source": "CVE",
+			"id": "CVE-2024-45302"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-45302",
+			"source": "NVD",
+			"id": "CVE-2024-45302"
+		},
+		{
+			"text": "https://github.com/restsharp/RestSharp/blob/777bf194ec2d14271e7807cc704e73ec18fcaf7e/src/RestSharp/Request/HttpRequestMessageExtensions.cs#L32",
+			"source": "関連文書",
+			"id": "github.com (HttpRequestMessageExtensions.cs#L32)"
+		},
+		{
+			"text": "https://github.com/restsharp/RestSharp/commit/0fba5e727d241b1867bd71efc912594075c2934b",
+			"source": "関連文書",
+			"id": "github.com (0fba5e727d241b1867bd71efc912594075c2934b)"
+		},
+		{
+			"text": "https://github.com/restsharp/RestSharp/security/advisories/GHSA-4rr6-2v9v-wcpc",
+			"source": "関連文書",
+			"id": "github.com (GHSA-4rr6-2v9v-wcpc)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/74.html",
+			"id": "CWE-74",
+			"title": "インジェクション(CWE-74)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/93.html",
+			"id": "CWE-93",
+			"title": "CRLF インジェクション(CWE-93)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:restsharp:restsharp",
+			"version": "2.2",
+			"vendor": "RestSharp",
+			"product": "RestSharp"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-10-02T11:03+09:00",
+	"issued": "2024-10-02T11:03+09:00",
+	"modified": "2024-10-02T11:03+09:00"
+}
