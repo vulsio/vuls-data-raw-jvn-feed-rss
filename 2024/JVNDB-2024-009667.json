@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-009667.html",
+	"title": "ジェイテクトエレクトロニクス製 Kostac PLC Programming Software における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-009667.html",
+	"description": "株式会社ジェイテクトエレクトロニクスが提供する Kostac PLC Programming Software には、次の複数の脆弱性が存在します。\r\n\r\n　* 境界外書き込み（CWE-787）- CVE-2024-47134\r\n　* スタックベースのバッファオーバーフロー（CWE-121）- CVE-2024-47135\r\n　* 境界外読み取り（CWE-125）- CVE-2024-47136\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: Michael Heinzl 氏",
+	"identifier": "JVNDB-2024-009667",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU92808077/index.html",
+			"source": "JVN",
+			"id": "JVNVU#92808077"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47134",
+			"source": "CVE",
+			"id": "CVE-2024-47134"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47135",
+			"source": "CVE",
+			"id": "CVE-2024-47135"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47136",
+			"source": "CVE",
+			"id": "CVE-2024-47136"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/121.html",
+			"id": "CWE-121",
+			"title": "スタックベースのバッファオーバーフロー(CWE-121)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:jtekt:kostac_plc",
+			"version": "2.2",
+			"vendor": "株式会社ジェイテクトエレクトロニクス",
+			"product": "Kostac PLC Programming Software"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-10-03T11:57+09:00",
+	"issued": "2024-10-03T11:57+09:00",
+	"modified": "2024-10-03T11:57+09:00"
+}
