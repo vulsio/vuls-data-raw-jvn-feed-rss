@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-009906.html",
+	"title": "LibreNMS におけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-009906.html",
+	"description": "LibreNMS には、クロスサイトスクリプティングの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-009906",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47523",
+			"source": "CVE",
+			"id": "CVE-2024-47523"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-47523",
+			"source": "NVD",
+			"id": "CVE-2024-47523"
+		},
+		{
+			"text": "https://github.com/librenms/librenms/blob/4777247327c793ed0a3306d0464b95176008177b/includes/html/print-alert-transports.php#L40",
+			"source": "関連文書",
+			"id": "github.com (print-alert-transports.php#L40)"
+		},
+		{
+			"text": "https://github.com/librenms/librenms/commit/ee1afba003d33667981e098c83295f599d88439c",
+			"source": "関連文書",
+			"id": "github.com (ee1afba003d33667981e098c83295f599d88439c)"
+		},
+		{
+			"text": "https://github.com/librenms/librenms/security/advisories/GHSA-7f84-28qh-9486",
+			"source": "関連文書",
+			"id": "github.com (GHSA-7f84-28qh-9486)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:librenms:librenms",
+			"version": "2.2",
+			"vendor": "LibreNMS",
+			"product": "LibreNMS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-10-08T10:21+09:00",
+	"issued": "2024-10-08T10:21+09:00",
+	"modified": "2024-10-08T10:21+09:00"
+}
