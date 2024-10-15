@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-010203.html",
+	"title": "azure の uamqp における解放済みメモリの使用に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-010203.html",
+	"description": "azure の uamqp には、解放済みメモリの使用に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-010203",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-25110",
+			"source": "CVE",
+			"id": "CVE-2024-25110"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-25110",
+			"source": "NVD",
+			"id": "CVE-2024-25110"
+		},
+		{
+			"text": "https://github.com/Azure/azure-uamqp-c/commit/30865c9ccedaa32ddb036e87a8ebb52c3f18f695",
+			"source": "関連文書",
+			"id": "github.com (30865c9ccedaa32ddb036e87a8ebb52c3f18f695)"
+		},
+		{
+			"text": "https://github.com/Azure/azure-uamqp-c/security/advisories/GHSA-c646-4whf-r67v",
+			"source": "関連文書",
+			"id": "github.com (GHSA-c646-4whf-r67v)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/416.html",
+			"id": "CWE-416",
+			"title": "解放済みメモリの使用(CWE-416)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+			"id": "CWE-94",
+			"title": "コード・インジェクション(CWE-94)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:azure:uamqp",
+			"version": "2.2",
+			"vendor": "azure",
+			"product": "uamqp"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.1",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-10-15T10:03+09:00",
+	"issued": "2024-10-15T10:03+09:00",
+	"modified": "2024-10-15T10:03+09:00"
+}
