@@ -1,0 +1,44 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000112.html",
+	"title": "学科学習システム「MUSASI」バージョン3における認証処理に関する問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000112.html",
+	"description": "株式会社ノイマンが提供する学科学習システム「MUSASI」では、認証処理をクライアント側で行っています（CWE-603）。クライアント側では、認証を完了する前、ユーザーIDが入力された段階で、サーバーから当該ユーザーの認証情報を取得しています。",
+	"identifier": "JVNDB-2024-000112",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN31982676/index.html",
+			"source": "JVN",
+			"id": "JVN#31982676"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-45785",
+			"source": "CVE",
+			"id": "CVE-2024-45785"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:neumann_musasi",
+			"version": "2.2",
+			"vendor": "株式会社ノイマン",
+			"product": "学科学習システム「MUSASI」"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-10-18T12:09+09:00",
+	"issued": "2024-10-18T12:09+09:00",
+	"modified": "2024-10-18T12:09+09:00"
+}

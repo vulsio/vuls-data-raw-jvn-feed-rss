@@ -1,0 +1,44 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000113.html",
+	"title": "オンライン学科教習ツール「N-LINE」におけるHTMLインジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000113.html",
+	"description": "株式会社ノイマンが提供するオンライン学科教習ツール「N-LINE」には、入力処理の不備に起因するHTMLインジェクション（CWE-94）の脆弱性が存在します。細工されたデータが受講生側デバイスから入力されると、インストラクター側の画面表示に悪影響を及ぼす可能性があります。\r\n\r\nこの脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。\r\n報告者：株式会社フォアーゼット 蔀 綾人 氏",
+	"identifier": "JVNDB-2024-000113",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN57285747/index.html",
+			"source": "JVN",
+			"id": "JVN#57285747"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47158",
+			"source": "CVE",
+			"id": "CVE-2024-47158"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-94.html",
+			"id": "CWE-94",
+			"title": "コード・インジェクション(CWE-94)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:neumann_n-line",
+			"version": "2.2",
+			"vendor": "株式会社ノイマン",
+			"product": "オンライン学科教習ツール「N-LINE」"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.4",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L"
+		}
+	],
+	"date": "2024-10-18T12:15+09:00",
+	"issued": "2024-10-18T12:15+09:00",
+	"modified": "2024-10-18T12:15+09:00"
+}
