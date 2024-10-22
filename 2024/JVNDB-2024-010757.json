@@ -1,0 +1,35 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-010757.html",
+	"title": "OpenSSL における境界外書き込みの脆弱性 (OpenSSL Security Advisory [16th October 2024])",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-010757.html",
+	"description": "OpenSSL Projectより、<a href=\"https://openssl-library.org/news/secadv/20241016.txt\"target=\"blank\">OpenSSL Security Advisory [16th October 2024]</a> (\"Low-level invalid GF(2^m) parameters lead to OOB memory access (CVE-2024-9143)\") が公開されました。\r\n\r\n深刻度 - 低 (Severity：Low)\r\nOpenSSL において、信頼できない値を用いて低レベルの GF(2^m) 楕円曲線 API を使用すると、メモリの境界外読み取りまたは書き込みが発生する問題 (CWE-787、CVE-2024-9143) が報告されています。\r\nただし、楕円曲線暗号を使用するプロトコルでは、いわゆる「名前付きの曲線」のみがサポートされるか、もしくは曲線パラメータを指定できる場合においても、本脆弱性を悪用できるような問題のある入力値を表現できないバイナリ曲線のエンコーディングが指定されています。そのため、本脆弱性が悪用可能となるようなアプリケーションが稼働している可能性は低いと指摘されていることに留意してください。\r\n",
+	"identifier": "JVNDB-2024-010757",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU90424473/index.html",
+			"source": "JVN",
+			"id": "JVNVU#90424473"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-9143",
+			"source": "CVE",
+			"id": "CVE-2024-9143"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		}
+	],
+	"date": "2024-10-21T17:29+09:00",
+	"issued": "2024-10-21T17:29+09:00",
+	"modified": "2024-10-21T17:29+09:00"
+}
