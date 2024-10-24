@@ -1,0 +1,78 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-010998.html",
+	"title": "複数の WAVLINK 製品における境界外書き込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-010998.html",
+	"description": "WAVLINK の WL-WN530H4 ファームウェア、wn530hg4 ファームウェア、wn572hg3 ファームウェアには、境界外書き込みに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-010998",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-10194",
+			"source": "CVE",
+			"id": "CVE-2024-10194"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-10194",
+			"source": "NVD",
+			"id": "CVE-2024-10194"
+		},
+		{
+			"text": "https://docs.google.com/document/d/1PodIMRe1f0Ql83jUXV5VIoc-Xsf9VC1K",
+			"source": "関連文書",
+			"id": "docs.google.com (1PodIMRe1f0Ql83jUXV5VIoc-Xsf9VC1K)"
+		},
+		{
+			"text": "https://vuldb.com/?submit.422834",
+			"source": "関連文書",
+			"id": "vuldb.com (submit.422834)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/121.html",
+			"id": "CWE-121",
+			"title": "スタックベースのバッファオーバーフロー(CWE-121)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:wavlink:wn530h4_firmware",
+			"version": "2.2",
+			"vendor": "WAVLINK",
+			"product": "WL-WN530H4 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:wavlink:wn530hg4_firmware",
+			"version": "2.2",
+			"vendor": "WAVLINK",
+			"product": "wn530hg4 ファームウェア"
+		},
+		{
+			"text": "cpe:/o:wavlink:wn572hg3_firmware",
+			"version": "2.2",
+			"vendor": "WAVLINK",
+			"product": "wn572hg3 ファームウェア"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "8.3",
+			"type": "Base",
+			"severity": "High",
+			"vector": "AV:A/AC:L/Au:N/C:C/I:C/A:C"
+		},
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-10-24T09:51+09:00",
+	"issued": "2024-10-24T09:51+09:00",
+	"modified": "2024-10-24T09:51+09:00"
+}
