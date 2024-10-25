@@ -1,0 +1,65 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-011079.html",
+	"title": "Sangoma の Asterisk および certified asterisk におけるパストラバーサルの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-011079.html",
+	"description": "Sangoma の Asterisk および certified asterisk には、パストラバーサルの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-011079",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-49215",
+			"source": "CVE",
+			"id": "CVE-2024-49215"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-49215",
+			"source": "NVD",
+			"id": "CVE-2024-49215"
+		},
+		{
+			"text": "https://gist.github.com/hyp164D1/5d68b9b7a504f1416272a825ce65966a",
+			"source": "関連文書",
+			"id": "gist.github.com (5d68b9b7a504f1416272a825ce65966a)"
+		},
+		{
+			"text": "https://github.com/asterisk/asterisk/blob/20.5.0/main/manager.c#L3755",
+			"source": "関連文書",
+			"id": "github.com (manager.c#L3755)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:sangoma:asterisk",
+			"version": "2.2",
+			"vendor": "Sangoma",
+			"product": "Asterisk"
+		},
+		{
+			"text": "cpe:/a:sangoma:certified_asterisk",
+			"version": "2.2",
+			"vendor": "Sangoma",
+			"product": "certified asterisk"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-10-25T10:12+09:00",
+	"issued": "2024-10-25T10:12+09:00",
+	"modified": "2024-10-25T10:12+09:00"
+}
