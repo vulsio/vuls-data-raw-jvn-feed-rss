@@ -1,0 +1,115 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-011256.html",
+	"title": "シャープ製および東芝テック製複合機（MFP）における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-011256.html",
+	"description": "シャープ株式会社および東芝テック株式会社が提供する複数の複合機（MFP）には、次の複数の脆弱性が存在します。\r\n\r\n<ul>\r\n<li>領域外メモリ参照（CWE-125）\r\n<ul>\r\n<li>CVE-2024-42420</li>\r\n<li>デバイス Web ページにおけるキーワード検索の入力データ判定処理、SOAP 通信におけるリクエストパラメタの解析処理および実行処理に不備があり、領域外メモリ参照が発生する可能性がある</li>\r\n</ul>\r\n</li>\r\n<li>領域外メモリ参照（CWE-125）\r\n<ul>\r\n<li>CVE-2024-43424</li>\r\n<li>HTTP リクエストのヘッダ解析処理に不備があり、領域外メモリ参照が発生する可能性がある</li>\r\n</ul>\r\n</li>\r\n<li>領域外メモリ参照（CWE-125）\r\n<ul>\r\n<li>CVE-2024-45829</li>\r\n<li>デバイス Web ページからのデータダウンロード処理において、HTTP リクエストのクエリパラメタ解析処理に不備があり、領域外メモリ参照が発生する可能性がある</li>\r\n</ul>\r\n</li>\r\n<li>パストラバーサル（CWE-22）\r\n<ul>\r\n<li>CVE-2024-45842</li>\r\n<li>HTTP PUT リクエストの URI 判定処理に不備があり、意図しないファイルへのアクセスが可能</li>\r\n</ul>\r\n</li>\r\n<li>設定登録 API のアクセス制限不備（CWE-749）\r\n<ul>\r\n<li>CVE-2024-47005</li>\r\n<li>管理者のみに使用を制限する想定の設定登録 API を管理者権限を持っていないユーザが実行可能</li>\r\n</ul>\r\n</li>\r\n<li>認証処理の不備（CWE-288）\r\n<ul>\r\n<li>CVE-2024-47406</li>\r\n<li>HTTP リクエストの認証判定処理に不備があり、認証機能を回避される可能性がある</li>\r\n</ul>\r\n</li>\r\n<li>HTTP リクエストのクエリパラメタ解析処理の不備（CWE-644）\r\n<ul>\r\n<li>CVE-2024-47549</li>\r\n<li>デバイス Web ページからの設定情報ダウンロード処理において、HTTP リクエストのクエリパラメタ解析処理に不備があり、HTTP レスポンスのヘッダに入力データが不適切な形で混入する&nbsp;</li>\r\n</ul>\r\n</li>\r\n<li>反射型クロスサイトスクリプティング（CWE-79）\r\n<ul>\r\n<li>CVE-2024-47801</li>\r\n<li>HTTP リクエストのクエリパラメタの判定処理の不備に起因するクロスサイトスクリプティングの脆弱性</li>\r\n</ul>\r\n</li>\r\n<li>格納型クロスサイトスクリプティング（CWE-79）\r\n<ul>\r\n<li>CVE-2024-48870</li>\r\n<li>デバイス Web ページの URI 情報登録における入力値判定処理の不備に起因するクロスサイトスクリプティングの脆弱性</li>\r\n</ul>\r\n</li>\r\n</ul>\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、シャープ株式会社が JPCERT/CC に報告し、JPCERT/CC がシャープ株式会社との調整を行いました。\r\n",
+	"identifier": "JVNDB-2024-011256",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU95063136/index.html",
+			"source": "JVN",
+			"id": "JVNVU#95063136"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-42420",
+			"source": "CVE",
+			"id": "CVE-2024-42420"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-43424",
+			"source": "CVE",
+			"id": "CVE-2024-43424"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-45829",
+			"source": "CVE",
+			"id": "CVE-2024-45829"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-45842",
+			"source": "CVE",
+			"id": "CVE-2024-45842"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47005",
+			"source": "CVE",
+			"id": "CVE-2024-47005"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47406",
+			"source": "CVE",
+			"id": "CVE-2024-47406"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47549",
+			"source": "CVE",
+			"id": "CVE-2024-47549"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47801",
+			"source": "CVE",
+			"id": "CVE-2024-47801"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-48870",
+			"source": "CVE",
+			"id": "CVE-2024-48870"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-22.html",
+			"id": "CWE-22",
+			"title": "パス・トラバーサル(CWE-22)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/288.html",
+			"id": "CWE-288",
+			"title": "代替パスまたはチャネルを使用した認証回避(CWE-288)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/644.html",
+			"id": "CWE-644",
+			"title": "HTTP ヘッダのスクリプト構文の不適切な無効化(CWE-644)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/749.html",
+			"id": "CWE-749",
+			"title": "危険なメソッドや機能の公開(CWE-749)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:sharp:multiple_product",
+			"version": "2.2",
+			"vendor": "シャープ株式会社",
+			"product": "(複数の製品)"
+		},
+		{
+			"text": "cpe:/a:toshibatec:multiple_product",
+			"version": "2.2",
+			"vendor": "東芝テック",
+			"product": "(複数の製品)"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.1",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+		}
+	],
+	"date": "2024-10-28T16:25+09:00",
+	"issued": "2024-10-28T16:25+09:00",
+	"modified": "2024-10-28T16:25+09:00"
+}
