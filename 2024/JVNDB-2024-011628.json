@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-011628.html",
+	"title": "rurban の Perl 用 cpanel::json::xs における境界外読み取りに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-011628.html",
+	"description": "rurban の Perl 用 cpanel::json::xs には、境界外読み取りに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-011628",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2022-48623",
+			"source": "CVE",
+			"id": "CVE-2022-48623"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2022-48623",
+			"source": "NVD",
+			"id": "CVE-2022-48623"
+		},
+		{
+			"text": "https://github.com/briandfoy/cpan-security-advisory/blob/9374f98bef51e1ae887f293234050551c079776f/cpansa/CPANSA-Cpanel-JSON-XS.yml#L25-L36",
+			"source": "関連文書",
+			"id": "github.com (CPANSA-Cpanel-JSON-XS.yml#L25-L36)"
+		},
+		{
+			"text": "https://github.com/rurban/Cpanel-JSON-XS/commit/41f32396eee9395a40f9ed80145c37622560de9b",
+			"source": "関連文書",
+			"id": "github.com (41f32396eee9395a40f9ed80145c37622560de9b)"
+		},
+		{
+			"text": "https://github.com/rurban/Cpanel-JSON-XS/issues/208",
+			"source": "関連文書",
+			"id": "github.com (issues/208)"
+		},
+		{
+			"text": "https://metacpan.org/release/RURBAN/Cpanel-JSON-XS-4.33/changes",
+			"source": "関連文書",
+			"id": "metacpan.org (changes)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:rurban:cpanel%3A%3Ajson%3A%3Axs",
+			"version": "2.2",
+			"vendor": "rurban",
+			"product": "cpanel::json::xs"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.1",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+		}
+	],
+	"date": "2024-10-31T13:47+09:00",
+	"issued": "2024-10-31T13:47+09:00",
+	"modified": "2024-10-31T13:47+09:00"
+}

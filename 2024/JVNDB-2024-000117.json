@@ -1,0 +1,44 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000117.html",
+	"title": "Web Image Monitorを実装している複数のリコー製レーザープリンタおよび複合機（MFP）におけるスタックベースのバッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000117.html",
+	"description": "株式会社リコーが提供するWeb Image Monitorは、リコー製レーザープリンタおよび複合機（MFP）本体内部で動作するウェブサーバです。Web Image MonitorにはHTTPリクエストの解析処理の不備に起因した、スタックベースのバッファオーバーフロー（CWE-121）の脆弱性が存在します。\r\n\r\nこの脆弱性情報は、次の方が製品開発者に直接報告し、製品開発者との調整を経て、製品利用者への周知を目的に JVN での公表に至りました。\r\n報告者：広州大学サイバースペース先端技術研究所 Zhihong Tian 氏、Hui Lu 氏、Guocheng Wu 氏、Xingchi Chen 氏",
+	"identifier": "JVNDB-2024-000117",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN87770340/index.html",
+			"source": "JVN",
+			"id": "JVN#87770340"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47939",
+			"source": "CVE",
+			"id": "CVE-2024-47939"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ricoh:web_image_monitor",
+			"version": "2.2",
+			"vendor": "リコー",
+			"product": "Web Image Monitor"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-10-31T14:25+09:00",
+	"issued": "2024-10-31T14:25+09:00",
+	"modified": "2024-10-31T14:25+09:00"
+}
