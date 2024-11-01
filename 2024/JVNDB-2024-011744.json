@@ -1,0 +1,56 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-011744.html",
+	"title": "センチュリー・システムズ製 FutureNet NXR シリーズにおける REST-API 機能が意図せず有効化される問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-011744.html",
+	"description": "センチュリー・システムズ株式会社が提供するルータである FutureNet NXR シリーズには、http-server（GUI）機能もしくは WEB 認証機能を有効にした状態で機器を起動した場合、REST-API 機能が自動的に有効となる問題（CWE-684）が存在します。\r\n工場出荷時設定では http-server（GUI）機能が有効となっているため、明示的に http-server（GUI）機能および WEB 認証機能を無効に設定していない場合には REST-API 機能は有効となります。\r\nなお、REST-API 機能で使用するユーザ名およびパスワードは、明示的に設定していなければ、工場出荷時設定のものが使われます。\r\n\r\nこの脆弱性情報は、製品利用者への周知を目的に、開発者が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n\r\n",
+	"identifier": "JVNDB-2024-011744",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU95001899/index.html",
+			"source": "JVN",
+			"id": "JVNVU#95001899"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-50357",
+			"source": "CVE",
+			"id": "CVE-2024-50357"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/684.html",
+			"id": "CWE-684",
+			"title": "指定された機能の不適切な提供(CWE-684)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:centurysys:futurenet_nxr-g050",
+			"version": "2.2",
+			"vendor": "センチュリー・システムズ",
+			"product": "FutureNet NXR-G050 シリーズ"
+		},
+		{
+			"text": "cpe:/o:centurysys:futurenet_nxr-g060",
+			"version": "2.2",
+			"vendor": "センチュリー・システムズ",
+			"product": "FutureNet NXR-G060 シリーズ"
+		},
+		{
+			"text": "cpe:/o:centurysys:futurenet_nxr-g110",
+			"version": "2.2",
+			"vendor": "センチュリー・システムズ",
+			"product": "FutureNet NXR-G110 シリーズ"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-11-01T12:00+09:00",
+	"issued": "2024-11-01T12:00+09:00",
+	"modified": "2024-11-01T12:00+09:00"
+}
