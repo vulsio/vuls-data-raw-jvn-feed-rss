@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-011860.html",
+	"title": "Repute Infosystems の WordPress 用 BookingPress における SQL インジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-011860.html",
+	"description": "Repute Infosystems の WordPress 用 BookingPress には、SQL インジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-011860",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-10540",
+			"source": "CVE",
+			"id": "CVE-2024-10540"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-10540",
+			"source": "NVD",
+			"id": "CVE-2024-10540"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/bookingpress-appointment-booking/trunk/core/classes/class.bookingpress.php#L358",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class.bookingpress.php#L358)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/bookingpress-appointment-booking/trunk/core/classes/frontend/class.bookingpress_appointment_bookings.php#L3683",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class.bookingpress_appointment_bookings.php#L3683)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/bookingpress-appointment-booking/trunk/core/classes/frontend/class.bookingpress_appointment_bookings.php#L4620",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class.bookingpress_appointment_bookings.php#L4620)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset/3179229/bookingpress-appointment-booking/trunk/core/classes/frontend/class.bookingpress_appointment_bookings.php",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class.bookingpress_appointment_bookings.php)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/21690b9c-ffec-4195-8c0f-2b1801552bc6?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (21690b9c-ffec-4195-8c0f-2b1801552bc6?source=cve)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:reputeinfosystems:bookingpress",
+			"version": "2.2",
+			"vendor": "Repute Infosystems",
+			"product": "BookingPress"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-11-05T11:55+09:00",
+	"issued": "2024-11-05T11:55+09:00",
+	"modified": "2024-11-05T11:55+09:00"
+}
