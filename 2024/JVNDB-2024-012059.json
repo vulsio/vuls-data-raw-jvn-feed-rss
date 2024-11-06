@@ -1,0 +1,75 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-012059.html",
+	"title": "Pallets project の quart および Werkzeug におけるリソースの枯渇に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-012059.html",
+	"description": "Pallets project の quart および Werkzeug には、リソースの枯渇に関する脆弱性、制限またはスロットリング無しのリソースの割り当てに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-012059",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-49767",
+			"source": "CVE",
+			"id": "CVE-2024-49767"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-49767",
+			"source": "NVD",
+			"id": "CVE-2024-49767"
+		},
+		{
+			"text": "https://github.com/pallets/quart/commit/5e78c4169b8eb66b91ead3e62d44721b9e1644ee",
+			"source": "関連文書",
+			"id": "github.com (5e78c4169b8eb66b91ead3e62d44721b9e1644ee)"
+		},
+		{
+			"text": "https://github.com/pallets/werkzeug/commit/50cfeebcb0727e18cc52ffbeb125f4a66551179b",
+			"source": "関連文書",
+			"id": "github.com (50cfeebcb0727e18cc52ffbeb125f4a66551179b)"
+		},
+		{
+			"text": "https://github.com/pallets/werkzeug/releases/tag/3.0.6",
+			"source": "関連文書",
+			"id": "github.com (3.0.6)"
+		},
+		{
+			"text": "https://github.com/pallets/werkzeug/security/advisories/GHSA-q34m-jh98-gwm2",
+			"source": "関連文書",
+			"id": "github.com (GHSA-q34m-jh98-gwm2)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/400.html",
+			"id": "CWE-400",
+			"title": "リソースの枯渇(CWE-400)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/770.html",
+			"id": "CWE-770",
+			"title": "制限またはスロットリング無しのリソースの割り当て(CWE-770)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:palletsprojects:quart",
+			"version": "2.2",
+			"vendor": "Pallets project",
+			"product": "quart"
+		},
+		{
+			"text": "cpe:/a:palletsprojects:werkzeug",
+			"version": "2.2",
+			"vendor": "Pallets project",
+			"product": "Werkzeug"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2024-11-06T11:44+09:00",
+	"issued": "2024-11-06T11:44+09:00",
+	"modified": "2024-11-06T11:44+09:00"
+}

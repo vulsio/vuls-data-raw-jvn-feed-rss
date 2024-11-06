@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-012056.html",
+	"title": "argo workflows project の Kubernetes 用 argo workflows におけるグローバル変数への過剰な依存に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-012056.html",
+	"description": "argo workflows project の Kubernetes 用 argo workflows には、グローバル変数への過剰な依存に関する脆弱性、競合状態に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-012056",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47827",
+			"source": "CVE",
+			"id": "CVE-2024-47827"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-47827",
+			"source": "NVD",
+			"id": "CVE-2024-47827"
+		},
+		{
+			"text": "https://github.com/argoproj/argo-workflows/blob/ce7f9bfb9b45f009b3e85fabe5e6410de23c7c5f/workflow/metrics/metrics_k8s_request.go#L75",
+			"source": "関連文書",
+			"id": "github.com (metrics_k8s_request.go#L75)"
+		},
+		{
+			"text": "https://github.com/argoproj/argo-workflows/commit/524406451f4dfa57bf3371fb85becdb56a2b309a",
+			"source": "関連文書",
+			"id": "github.com (524406451f4dfa57bf3371fb85becdb56a2b309a)"
+		},
+		{
+			"text": "https://github.com/argoproj/argo-workflows/pull/13641",
+			"source": "関連文書",
+			"id": "github.com (pull/13641)"
+		},
+		{
+			"text": "https://github.com/argoproj/argo-workflows/security/advisories/GHSA-ghjw-32xw-ffwr",
+			"source": "関連文書",
+			"id": "github.com (GHSA-ghjw-32xw-ffwr)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/1108.html",
+			"id": "CWE-1108",
+			"title": "グローバル変数への過剰な依存(CWE-1108)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-362.html",
+			"id": "CWE-362",
+			"title": "競合状態(CWE-362)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:argo_workflows_project:argo_workflows",
+			"version": "2.2",
+			"vendor": "argo workflows project",
+			"product": "argo workflows"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "4.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2024-11-06T11:40+09:00",
+	"issued": "2024-11-06T11:40+09:00",
+	"modified": "2024-11-06T11:40+09:00"
+}
