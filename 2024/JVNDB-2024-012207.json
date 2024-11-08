@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-012207.html",
+	"title": "ODude の WordPress 用 crypto tool におけるクロスサイトリクエストフォージェリの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-012207.html",
+	"description": "ODude の WordPress 用 crypto tool には、クロスサイトリクエストフォージェリの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-012207",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-9990",
+			"source": "CVE",
+			"id": "CVE-2024-9990"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-9990",
+			"source": "NVD",
+			"id": "CVE-2024-9990"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/crypto/tags/2.10/includes/class-crypto_connect_ajax_register.php#L31",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class-crypto_connect_ajax_register.php#L31)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/crypto/tags/2.10/includes/class-crypto_connect_ajax_register.php#L65",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class-crypto_connect_ajax_register.php#L65)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/cea39157-94aa-4982-983e-9c3e4b1af86d?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (cea39157-94aa-4982-983e-9c3e4b1af86d?source=cve)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-352.html",
+			"id": "CWE-352",
+			"title": "クロスサイトリクエストフォージェリ(CWE-352)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:odude:crypto_tool",
+			"version": "2.2",
+			"vendor": "ODude",
+			"product": "crypto tool"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-11-08T11:03+09:00",
+	"issued": "2024-11-08T11:03+09:00",
+	"modified": "2024-11-08T11:03+09:00"
+}

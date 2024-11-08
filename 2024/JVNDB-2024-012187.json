@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-012187.html",
+	"title": "Agendaless Consulting の Waitress における Time-of-check Time-of-use (TOCTOU) 競合状態の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-012187.html",
+	"description": "Agendaless Consulting の Waitress には、Time-of-check Time-of-use (TOCTOU) 競合状態の脆弱性、HTTP リクエストスマグリングに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-012187",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-49768",
+			"source": "CVE",
+			"id": "CVE-2024-49768"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-49768",
+			"source": "NVD",
+			"id": "CVE-2024-49768"
+		},
+		{
+			"text": "https://github.com/Pylons/waitress/commit/e4359018537af376cf24bd13616d861e2fb76f65",
+			"source": "関連文書",
+			"id": "github.com (e4359018537af376cf24bd13616d861e2fb76f65)"
+		},
+		{
+			"text": "https://github.com/Pylons/waitress/security/advisories/GHSA-9298-4cf8-g4wj",
+			"source": "関連文書",
+			"id": "github.com (GHSA-9298-4cf8-g4wj)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/367.html",
+			"id": "CWE-367",
+			"title": "Time-of-check Time-of-use (TOCTOU) 競合状態(CWE-367)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/444.html",
+			"id": "CWE-444",
+			"title": "HTTP リクエストスマグリング(CWE-444)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:agendaless:waitress",
+			"version": "2.2",
+			"vendor": "Agendaless Consulting",
+			"product": "Waitress"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "4.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-11-08T10:27+09:00",
+	"issued": "2024-11-08T10:27+09:00",
+	"modified": "2024-11-08T10:27+09:00"
+}
