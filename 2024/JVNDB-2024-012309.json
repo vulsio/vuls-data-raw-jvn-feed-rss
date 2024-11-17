@@ -1,0 +1,54 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-012309.html",
+	"title": "HashiCorp の Consul におけるエンコードおよびエスケープに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-012309.html",
+	"description": "HashiCorp の Consul には、エンコードおよびエスケープに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-012309",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-10006",
+			"source": "CVE",
+			"id": "CVE-2024-10006"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-10006",
+			"source": "NVD",
+			"id": "CVE-2024-10006"
+		},
+		{
+			"text": "https://discuss.hashicorp.com/t/hcsec-2024-23-consul-l7-intentions-vulnerable-to-headers-bypass",
+			"source": "関連文書",
+			"id": "discuss.hashicorp.com (hcsec-2024-23-consul-l7-intentions-vulnerable-to-headers-bypass)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/116.html",
+			"id": "CWE-116",
+			"title": "不適切なエンコード、または出力のエスケープ(CWE-116)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/644.html",
+			"id": "CWE-644",
+			"title": "HTTP ヘッダのスクリプト構文の不適切な無効化(CWE-644)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:hashicorp:consul",
+			"version": "2.2",
+			"vendor": "HashiCorp",
+			"product": "Consul"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.8",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N"
+		}
+	],
+	"date": "2024-11-11T12:25+09:00",
+	"issued": "2024-11-11T12:25+09:00",
+	"modified": "2024-11-11T12:25+09:00"
+}
