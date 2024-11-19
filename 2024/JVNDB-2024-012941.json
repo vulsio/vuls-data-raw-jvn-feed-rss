@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-012941.html",
+	"title": "Rakuten Turbo 5G における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-012941.html",
+	"description": "楽天モバイル株式会社が提供する Rakuten Turbo 5G には、次の複数の脆弱性が存在します。\r\n\r\n　* 重要な機能に対する認証の欠如（CWE-306） - CVE-2024-47865\r\n　* OS コマンドインジェクション（CWE-78） - CVE-2024-48895\r\n　* 認証なしで機微なシステム情報へアクセス可能（CWE-497） - CVE-2024-52033\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者：NeroTeam Security Labs Samy Younsi 氏\r\n",
+	"identifier": "JVNDB-2024-012941",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU90667116/index.html",
+			"source": "JVN",
+			"id": "JVNVU#90667116"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47865",
+			"source": "CVE",
+			"id": "CVE-2024-47865"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-48895",
+			"source": "CVE",
+			"id": "CVE-2024-48895"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-52033",
+			"source": "CVE",
+			"id": "CVE-2024-52033"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/306.html",
+			"id": "CWE-306",
+			"title": "重要な機能に対する認証の欠如(CWE-306)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/497.html",
+			"id": "CWE-497",
+			"title": "認可されていない制御領域への重要情報の漏えい(CWE-497)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-78.html",
+			"id": "CWE-78",
+			"title": "OSコマンドインジェクション(CWE-78)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:rakuten:rakuten_turbo_5g",
+			"version": "2.2",
+			"vendor": "楽天モバイル株式会社",
+			"product": "Rakuten Turbo 5G"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-11-19T10:17+09:00",
+	"issued": "2024-11-19T10:17+09:00",
+	"modified": "2024-11-19T10:17+09:00"
+}
