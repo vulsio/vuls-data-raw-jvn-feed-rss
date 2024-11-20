@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013083.html",
+	"title": "AlgolPlus の WordPress 用 advanced order export for woocommerce における信頼できないデータのデシリアライゼーションに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013083.html",
+	"description": "AlgolPlus の WordPress 用 advanced order export for woocommerce には、信頼できないデータのデシリアライゼーションに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-013083",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-10828",
+			"source": "CVE",
+			"id": "CVE-2024-10828"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-10828",
+			"source": "NVD",
+			"id": "CVE-2024-10828"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/woo-order-export-lite/trunk/classes/PHPExcel/Shared/XMLWriter.php#L83",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (XMLWriter.php#L83)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/woo-order-export-lite/trunk/classes/core/trait-woe-core-extractor.php#L996",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (trait-woe-core-extractor.php#L996)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/a1c6eed6-7b3f-4b37-85f8-6613527daa54?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (a1c6eed6-7b3f-4b37-85f8-6613527daa54?source=cve)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/502.html",
+			"id": "CWE-502",
+			"title": "信頼できないデータのデシリアライゼーション(CWE-502)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:algolplus:advanced_order_export_for_woocommerce",
+			"version": "2.2",
+			"vendor": "AlgolPlus",
+			"product": "advanced order export for woocommerce"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-11-20T14:51+09:00",
+	"issued": "2024-11-20T14:51+09:00",
+	"modified": "2024-11-20T14:51+09:00"
+}
