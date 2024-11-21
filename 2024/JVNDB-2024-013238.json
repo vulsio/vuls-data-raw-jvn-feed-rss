@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013238.html",
+	"title": "ThimPress の WordPress 用 learnpress export import におけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013238.html",
+	"description": "ThimPress の WordPress 用 learnpress export import には、クロスサイトスクリプティングの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-013238",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-9609",
+			"source": "CVE",
+			"id": "CVE-2024-9609"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-9609",
+			"source": "NVD",
+			"id": "CVE-2024-9609"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/learnpress-import-export/trunk/inc/admin/providers/learnpress/class-lp-import-learnpress.php#L90",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class-lp-import-learnpress.php#L90)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/learnpress-import-export/trunk/inc/admin/views/import.php#L23",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (import.php#L23)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset/3186901/learnpress-import-export/trunk/inc/admin/providers/learnpress/class-lp-import-learnpress.php",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class-lp-import-learnpress.php)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset/3186901/learnpress-import-export/trunk/inc/admin/views/import.php",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (import.php)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/c7429367-f9f4-4859-9537-0f543e32870a?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (c7429367-f9f4-4859-9537-0f543e32870a?source=cve)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:thimpress:learnpress_export_import",
+			"version": "2.2",
+			"vendor": "ThimPress",
+			"product": "learnpress export import"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.1",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-11-21T12:14+09:00",
+	"issued": "2024-11-21T12:14+09:00",
+	"modified": "2024-11-21T12:14+09:00"
+}
