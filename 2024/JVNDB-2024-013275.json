@@ -1,0 +1,131 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013275.html",
+	"title": "containers project の common 等複数ベンダの製品におけるリンク解釈に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013275.html",
+	"description": "containers project の common 等複数ベンダの製品には、リンク解釈に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-013275",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-9341",
+			"source": "CVE",
+			"id": "CVE-2024-9341"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-9341",
+			"source": "NVD",
+			"id": "CVE-2024-9341"
+		},
+		{
+			"text": "https://access.redhat.com/errata/RHSA-2024:7925",
+			"source": "関連文書",
+			"id": "access.redhat.com (RHSA-2024:7925)"
+		},
+		{
+			"text": "https://access.redhat.com/errata/RHSA-2024:8039",
+			"source": "関連文書",
+			"id": "access.redhat.com (RHSA-2024:8039)"
+		},
+		{
+			"text": "https://access.redhat.com/errata/RHSA-2024:8112",
+			"source": "関連文書",
+			"id": "access.redhat.com (RHSA-2024:8112)"
+		},
+		{
+			"text": "https://access.redhat.com/errata/RHSA-2024:8238",
+			"source": "関連文書",
+			"id": "access.redhat.com (RHSA-2024:8238)"
+		},
+		{
+			"text": "https://access.redhat.com/errata/RHSA-2024:8263",
+			"source": "関連文書",
+			"id": "access.redhat.com (RHSA-2024:8263)"
+		},
+		{
+			"text": "https://access.redhat.com/errata/RHSA-2024:8428",
+			"source": "関連文書",
+			"id": "access.redhat.com (RHSA-2024:8428)"
+		},
+		{
+			"text": "https://access.redhat.com/errata/RHSA-2024:8690",
+			"source": "関連文書",
+			"id": "access.redhat.com (RHSA-2024:8690)"
+		},
+		{
+			"text": "https://access.redhat.com/errata/RHSA-2024:8694",
+			"source": "関連文書",
+			"id": "access.redhat.com (RHSA-2024:8694)"
+		},
+		{
+			"text": "https://access.redhat.com/errata/RHSA-2024:8846",
+			"source": "関連文書",
+			"id": "access.redhat.com (RHSA-2024:8846)"
+		},
+		{
+			"text": "https://access.redhat.com/errata/RHSA-2024:9454",
+			"source": "関連文書",
+			"id": "access.redhat.com (RHSA-2024:9454)"
+		},
+		{
+			"text": "https://access.redhat.com/errata/RHSA-2024:9459",
+			"source": "関連文書",
+			"id": "access.redhat.com (RHSA-2024:9459)"
+		},
+		{
+			"text": "https://access.redhat.com/security/cve/CVE-2024-9341",
+			"source": "関連文書",
+			"id": "access.redhat.com (CVE-2024-9341)"
+		},
+		{
+			"text": "https://bugzilla.redhat.com/show_bug.cgi?id=2315691",
+			"source": "関連文書",
+			"id": "bugzilla.redhat.com (2315691)"
+		},
+		{
+			"text": "https://github.com/containers/common/blob/384f77532f67afc8a73d8e0c4adb0d195df57714/pkg/subscriptions/subscriptions.go#L169",
+			"source": "関連文書",
+			"id": "github.com (subscriptions.go#L169)"
+		},
+		{
+			"text": "https://github.com/containers/common/blob/384f77532f67afc8a73d8e0c4adb0d195df57714/pkg/subscriptions/subscriptions.go#L349",
+			"source": "関連文書",
+			"id": "github.com (subscriptions.go#L349)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-59.html",
+			"id": "CWE-59",
+			"title": "リンク解釈の問題(CWE-59)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:containers_project:common",
+			"version": "2.2",
+			"vendor": "containers project",
+			"product": "common"
+		},
+		{
+			"text": "cpe:/a:redhat:openshift_container_platform",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat OpenShift Container Platform"
+		},
+		{
+			"text": "cpe:/o:redhat:enterprise_linux",
+			"version": "2.2",
+			"vendor": "レッドハット",
+			"product": "Red Hat Enterprise Linux"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.2",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:N"
+		}
+	],
+	"date": "2024-11-25T10:26+09:00",
+	"issued": "2024-11-25T10:26+09:00",
+	"modified": "2024-11-25T10:26+09:00"
+}

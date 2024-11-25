@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013305.html",
+	"title": "litestar における制限またはスロットリング無しのリソースの割り当てに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013305.html",
+	"description": "litestar には、制限またはスロットリング無しのリソースの割り当てに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-013305",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-52581",
+			"source": "CVE",
+			"id": "CVE-2024-52581"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-52581",
+			"source": "NVD",
+			"id": "CVE-2024-52581"
+		},
+		{
+			"text": "https://github.com/litestar-org/litestar/blob/main/litestar/_multipart.py#L97",
+			"source": "関連文書",
+			"id": "github.com (_multipart.py#L97)"
+		},
+		{
+			"text": "https://github.com/litestar-org/litestar/commit/53c1473b5ff7502816a9a339ffc90731bb0c2138",
+			"source": "関連文書",
+			"id": "github.com (53c1473b5ff7502816a9a339ffc90731bb0c2138)"
+		},
+		{
+			"text": "https://github.com/litestar-org/litestar/security/advisories/GHSA-gjcc-jvgw-wvwj",
+			"source": "関連文書",
+			"id": "github.com (GHSA-gjcc-jvgw-wvwj)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/770.html",
+			"id": "CWE-770",
+			"title": "制限またはスロットリング無しのリソースの割り当て(CWE-770)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:litestar:litestar",
+			"version": "2.2",
+			"vendor": "litestar",
+			"product": "litestar"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2024-11-25T11:56+09:00",
+	"issued": "2024-11-25T11:56+09:00",
+	"modified": "2024-11-25T11:56+09:00"
+}
