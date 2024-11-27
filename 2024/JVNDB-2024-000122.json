@@ -1,0 +1,44 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000122.html",
+	"title": "HAProxyにおけるHTTPリクエストスマグリングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000122.html",
+	"description": "HAProxy Projectが提供するHAProxyのHTTP/3の実装には、不正な形式のHTTPヘッダーを受け入れる問題があり、この不正なヘッダーを含むリクエストをHTTP/1.1に準拠していないバックエンドサーバーへ転送した場合、HTTPリクエストスマグリング（CWE-444）攻撃に悪用される可能性があります。\r\n\r\nこの脆弱性情報は、下記の方が製品開発者に直接報告し、製品開発者との調整を経て、製品利用者への周知を目的に JVN での公表に至りました。\r\n報告者: 株式会社ＦＦＲＩセキュリティ 茂木裕貴 氏",
+	"identifier": "JVNDB-2024-000122",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN88385716/index.html",
+			"source": "JVN",
+			"id": "JVN#88385716"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-53008",
+			"source": "CVE",
+			"id": "CVE-2024-53008"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:haproxy:haproxy",
+			"version": "2.2",
+			"vendor": "HAProxy Technologies",
+			"product": "HAProxy"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+		}
+	],
+	"date": "2024-11-27T12:08+09:00",
+	"issued": "2024-11-27T12:08+09:00",
+	"modified": "2024-11-27T12:08+09:00"
+}
