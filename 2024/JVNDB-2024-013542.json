@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013542.html",
+	"title": "tonyc の Perl 用 imager における境界外書き込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013542.html",
+	"description": "tonyc の Perl 用 imager には、境界外書き込みに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-013542",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-53901",
+			"source": "CVE",
+			"id": "CVE-2024-53901"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-53901",
+			"source": "NVD",
+			"id": "CVE-2024-53901"
+		},
+		{
+			"text": "https://github.com/briandfoy/cpan-security-advisory/issues/167",
+			"source": "関連文書",
+			"id": "github.com (issues/167)"
+		},
+		{
+			"text": "https://github.com/briandfoy/cpan-security-advisory/issues/171",
+			"source": "関連文書",
+			"id": "github.com (issues/171)"
+		},
+		{
+			"text": "https://github.com/tonycoz/imager/issues/534",
+			"source": "関連文書",
+			"id": "github.com (issues/534)"
+		},
+		{
+			"text": "https://metacpan.org/release/TONYC/Imager-1.025/changes",
+			"source": "関連文書",
+			"id": "metacpan.org (changes)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/120.html",
+			"id": "CWE-120",
+			"title": "古典的バッファオーバーフロー(CWE-120)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:tonyc:imager",
+			"version": "2.2",
+			"vendor": "tonyc",
+			"product": "imager"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2024-11-27T10:32+09:00",
+	"issued": "2024-11-27T10:32+09:00",
+	"modified": "2024-11-27T10:32+09:00"
+}

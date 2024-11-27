@@ -1,0 +1,86 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013511.html",
+	"title": "EMQX の neuron における古典的バッファオーバーフローの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013511.html",
+	"description": "EMQX の neuron には、古典的バッファオーバーフローの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-013511",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-10964",
+			"source": "CVE",
+			"id": "CVE-2024-10964"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-10964",
+			"source": "NVD",
+			"id": "CVE-2024-10964"
+		},
+		{
+			"text": "https://github.com/emqx/neuron/issues/2280",
+			"source": "関連文書",
+			"id": "github.com (issues/2280)"
+		},
+		{
+			"text": "https://github.com/emqx/neuron/pull/2286",
+			"source": "関連文書",
+			"id": "github.com (pull/2286)"
+		},
+		{
+			"text": "https://github.com/emqx/neuron/pull/2286/commits/3e3a583d72548af1740b3e61a5eab3b628cc439e",
+			"source": "関連文書",
+			"id": "github.com (3e3a583d72548af1740b3e61a5eab3b628cc439e)"
+		},
+		{
+			"text": "https://vuldb.com/?id.283410",
+			"source": "関連文書",
+			"id": "vuldb.com (id.283410)"
+		},
+		{
+			"text": "https://vuldb.com/?submit.435372",
+			"source": "関連文書",
+			"id": "vuldb.com (submit.435372)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-119.html",
+			"id": "CWE-119",
+			"title": "バッファエラー(CWE-119)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/120.html",
+			"id": "CWE-120",
+			"title": "古典的バッファオーバーフロー(CWE-120)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/120.html",
+			"id": "CWE-120",
+			"title": "古典的バッファオーバーフロー(CWE-120)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:emqx:neuron",
+			"version": "2.2",
+			"vendor": "EMQX",
+			"product": "neuron"
+		}
+	],
+	"cvss": [
+		{
+			"version": "2.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+		},
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-11-27T10:09+09:00",
+	"issued": "2024-11-27T10:09+09:00",
+	"modified": "2024-11-27T10:09+09:00"
+}
