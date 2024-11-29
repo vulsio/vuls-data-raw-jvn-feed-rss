@@ -1,0 +1,83 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013702.html",
+	"title": "富士電機製複数製品における複数の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-013702.html",
+	"description": "富士電機株式会社が提供する遠隔監視ソフトウェア TELLUS および TELLUS Lite、表示器の作画ソフトウェア V-SFT に含まれているシミュレータモジュールおよび遠隔監視ソフトウェア V-Server および V-Server Lite には、次の複数の脆弱性が存在します。\r\n\r\n　* V-SFT、TELLUS、TELLLUS Lite における複数のスタックベースのバッファオーバーフロー (CWE-121) - CVE-2024-38309\r\n　* TELLUS、TELLUS Liteにおける境界外読み取り (CWE-125) - CVE-2024-38389\r\n　* V-Server、V-Server Liteにおける境界外読み取り (CWE-125) - CVE-2024-38658\r\n\r\nこの脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が開発者との調整を行いました。\r\n報告者: Michael Heinzl 氏\r\n\r\n",
+	"identifier": "JVNDB-2024-013702",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU97531313/index.html",
+			"source": "JVN",
+			"id": "JVNVU#97531313"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-38309",
+			"source": "CVE",
+			"id": "CVE-2024-38309"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-38389",
+			"source": "CVE",
+			"id": "CVE-2024-38389"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-38658",
+			"source": "CVE",
+			"id": "CVE-2024-38658"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/121.html",
+			"id": "CWE-121",
+			"title": "スタックベースのバッファオーバーフロー(CWE-121)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:fujielectric:tellus",
+			"version": "2.2",
+			"vendor": "富士電機",
+			"product": "TELLUS"
+		},
+		{
+			"text": "cpe:/a:fujielectric:tellus_lite",
+			"version": "2.2",
+			"vendor": "富士電機",
+			"product": "TELLUS Lite"
+		},
+		{
+			"text": "cpe:/a:fujielectric:v-server",
+			"version": "2.2",
+			"vendor": "富士電機",
+			"product": "V-Server"
+		},
+		{
+			"text": "cpe:/a:fujielectric:v-server_lite",
+			"version": "2.2",
+			"vendor": "富士電機",
+			"product": "V-Server Lite"
+		},
+		{
+			"text": "cpe:/a:fujielectric:v-sft",
+			"version": "2.2",
+			"vendor": "富士電機",
+			"product": "V-SFT"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-11-29T12:36+09:00",
+	"issued": "2024-11-29T12:36+09:00",
+	"modified": "2024-11-29T12:36+09:00"
+}

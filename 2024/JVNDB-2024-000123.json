@@ -1,0 +1,62 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000123.html",
+	"title": "複数のFCNT製Android端末における認証回避の脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-000123.html",
+	"description": "複数のFCNT製Android端末には、端末内の任意のアプリや通知などをユーザが非表示に設定できる「プライバシーモード」などのセキュリティ機能が提供されています。\r\nこれらのセキュリティ機能の設定画面を表示するには本来認証が必要ですが、特定の条件下において認証なしで設定画面の表示および設定変更が可能となる、認証回避（CWE-306）の脆弱性が存在します。",
+	"identifier": "JVNDB-2024-000123",
+	"references": [
+		{
+			"text": "https://jvn.jp/jp/JVN43845108/index.html",
+			"source": "JVN",
+			"id": "JVN#43845108"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-53701",
+			"source": "CVE",
+			"id": "CVE-2024-53701"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-Other",
+			"title": "その他(CWE-Other)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/o:kddi:arrows",
+			"version": "2.2",
+			"vendor": "KDDI",
+			"product": "arrows"
+		},
+		{
+			"text": "cpe:/o:nttdocomo:arrows",
+			"version": "2.2",
+			"vendor": "株式会社NTTドコモ",
+			"product": "arrows"
+		},
+		{
+			"text": "cpe:/o:nttdocomo:arrows",
+			"version": "2.2",
+			"vendor": "株式会社NTTドコモ",
+			"product": "arrows"
+		},
+		{
+			"text": "cpe:/o:softbank:arrows",
+			"version": "2.2",
+			"vendor": "ソフトバンク株式会社",
+			"product": "arrows"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "3.1",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:P/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+		}
+	],
+	"date": "2024-11-29T14:21+09:00",
+	"issued": "2024-11-29T14:21+09:00",
+	"modified": "2024-11-29T14:21+09:00"
+}
