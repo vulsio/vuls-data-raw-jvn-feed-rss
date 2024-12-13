@@ -1,0 +1,30 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-014614.html",
+	"title": "PDQ Deploy のサービス実行中に資格情報が窃取される問題",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-014614.html",
+	"description": "PDQ Deploy の「Deploy User」 Run Mode でネットワーク内の対象マシンにソフトウェアやアップデートを展開する場合、PDQ Deploy は「Deploy User」として指定されたアカウントの資格情報を用いて対象デバイスに接続し、サービスを実行します。その際、PDQ Deploy はアカウントの資格情報を一時的にデバイス上に保存しますが、そのタイミングで対象デバイス上でパスワードダンプツールなどを使用されると、一時保存された資格情報が窃取される可能性があります。\r\n",
+	"identifier": "JVNDB-2024-014614",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU93812400/index.html",
+			"source": "JVN",
+			"id": "JVNVU#93812400"
+		},
+		{
+			"text": "https://kb.cert.org/vuls/id/164934",
+			"source": "CERT-VN",
+			"id": "VU#164934"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misc:pdq_pdq_deploy",
+			"version": "2.2",
+			"vendor": "PDQ.com Corporation",
+			"product": "PDQ Deploy"
+		}
+	],
+	"date": "2024-12-13T12:20+09:00",
+	"issued": "2024-12-13T12:20+09:00",
+	"modified": "2024-12-13T12:20+09:00"
+}
