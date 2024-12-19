@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015113.html",
+	"title": "cilium における重要な情報の平文での送信に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015113.html",
+	"description": "cilium には、重要な情報の平文での送信に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-015113",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-25630",
+			"source": "CVE",
+			"id": "CVE-2024-25630"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-25630",
+			"source": "NVD",
+			"id": "CVE-2024-25630"
+		},
+		{
+			"text": "https://docs.cilium.io/en/stable/security/network/encryption-wireguard/#encryption-wg",
+			"source": "関連文書",
+			"id": "docs.cilium.io (#encryption-wg)"
+		},
+		{
+			"text": "https://github.com/cilium/cilium/releases/tag/v1.14.7",
+			"source": "関連文書",
+			"id": "github.com (v1.14.7)"
+		},
+		{
+			"text": "https://github.com/cilium/cilium/security/advisories/GHSA-7496-fgv9-xw82",
+			"source": "関連文書",
+			"id": "github.com (GHSA-7496-fgv9-xw82)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/311.html",
+			"id": "CWE-311",
+			"title": "重要なデータの暗号化の欠如(CWE-311)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/319.html",
+			"id": "CWE-319",
+			"title": "重要な情報の平文での送信(CWE-319)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:cilium:cilium",
+			"version": "2.2",
+			"vendor": "cilium",
+			"product": "cilium"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2024-12-19T11:27+09:00",
+	"issued": "2024-12-19T11:27+09:00",
+	"modified": "2024-12-19T11:27+09:00"
+}
