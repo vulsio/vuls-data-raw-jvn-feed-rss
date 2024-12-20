@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015284.html",
+	"title": "GStreamer における初期化されていないリソースの使用に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015284.html",
+	"description": "GStreamer には、初期化されていないリソースの使用に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-015284",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47540",
+			"source": "CVE",
+			"id": "CVE-2024-47540"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-47540",
+			"source": "NVD",
+			"id": "CVE-2024-47540"
+		},
+		{
+			"text": "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/8057.patch",
+			"source": "関連文書",
+			"id": "gitlab.freedesktop.org (8057.patch)"
+		},
+		{
+			"text": "https://gstreamer.freedesktop.org/security/sa-2024-0017.html",
+			"source": "関連文書",
+			"id": "gstreamer.freedesktop.org (sa-2024-0017)"
+		},
+		{
+			"text": "https://securitylab.github.com/advisories/GHSL-2024-197_GStreamer/",
+			"source": "関連文書",
+			"id": "securitylab.github.com (GHSL-2024-197_GStreamer)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/457.html",
+			"id": "CWE-457",
+			"title": "初期化されていない変数の使用(CWE-457)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/908.html",
+			"id": "CWE-908",
+			"title": "初期化されていないリソースの使用(CWE-908)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:gstreamer_project:gstreamer",
+			"version": "2.2",
+			"vendor": "GStreamer",
+			"product": "GStreamer"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2024-12-20T10:46+09:00",
+	"issued": "2024-12-20T10:46+09:00",
+	"modified": "2024-12-20T10:46+09:00"
+}

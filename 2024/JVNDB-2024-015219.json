@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015219.html",
+	"title": "LibreNMS におけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015219.html",
+	"description": "LibreNMS には、クロスサイトスクリプティングの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-015219",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-47526",
+			"source": "CVE",
+			"id": "CVE-2024-47526"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-47526",
+			"source": "NVD",
+			"id": "CVE-2024-47526"
+		},
+		{
+			"text": "https://github.com/librenms/librenms/blob/0e741e365aa974a74aee6b43d1b4b759158a5c7e/includes/html/forms/alert-templates.inc.php#L40",
+			"source": "関連文書",
+			"id": "github.com (alert-templates.inc.php#L40)"
+		},
+		{
+			"text": "https://github.com/librenms/librenms/blob/0e741e365aa974a74aee6b43d1b4b759158a5c7e/includes/html/modal/alert_template.inc.php#L205",
+			"source": "関連文書",
+			"id": "github.com (alert_template.inc.php#L205)"
+		},
+		{
+			"text": "https://github.com/librenms/librenms/commit/f259edc19b9f0ccca484c60b1ba70a0bfff97ef5",
+			"source": "関連文書",
+			"id": "github.com (f259edc19b9f0ccca484c60b1ba70a0bfff97ef5)"
+		},
+		{
+			"text": "https://github.com/librenms/librenms/security/advisories/GHSA-gcgp-q2jq-fw52",
+			"source": "関連文書",
+			"id": "github.com (GHSA-gcgp-q2jq-fw52)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:librenms:librenms",
+			"version": "2.2",
+			"vendor": "LibreNMS",
+			"product": "LibreNMS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "2.4",
+			"type": "Base",
+			"severity": "Low",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N"
+		}
+	],
+	"date": "2024-12-20T09:37+09:00",
+	"issued": "2024-12-20T09:37+09:00",
+	"modified": "2024-12-20T09:37+09:00"
+}
