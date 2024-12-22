@@ -1,0 +1,100 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-027668.html",
+	"title": "decidim の decidim 等複数ベンダの製品における有効期限後または解放後のリソースの操作に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-027668.html",
+	"description": "decidim の decidim 等複数ベンダの製品には、有効期限後または解放後のリソースの操作に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-027668",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-48220",
+			"source": "CVE",
+			"id": "CVE-2023-48220"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-48220",
+			"source": "NVD",
+			"id": "CVE-2023-48220"
+		},
+		{
+			"text": "https://github.com/decidim/decidim/blob/d2d390578050772d1bdb6d731395f1afc39dcbfc/decidim-core/config/initializers/devise.rb#L134",
+			"source": "関連文書",
+			"id": "github.com (devise.rb#L134)"
+		},
+		{
+			"text": "https://github.com/decidim/decidim/commit/073e60e2e4224dd81815a784002ebba30f2ebb34",
+			"source": "関連文書",
+			"id": "github.com (073e60e2e4224dd81815a784002ebba30f2ebb34)"
+		},
+		{
+			"text": "https://github.com/decidim/decidim/commit/b12800717a689c295a9ea680a38ca9f823d2c454",
+			"source": "関連文書",
+			"id": "github.com (b12800717a689c295a9ea680a38ca9f823d2c454)"
+		},
+		{
+			"text": "https://github.com/decidim/decidim/releases/tag/v0.26.9",
+			"source": "関連文書",
+			"id": "github.com (v0.26.9)"
+		},
+		{
+			"text": "https://github.com/decidim/decidim/releases/tag/v0.27.5",
+			"source": "関連文書",
+			"id": "github.com (v0.27.5)"
+		},
+		{
+			"text": "https://github.com/decidim/decidim/releases/tag/v0.28.0",
+			"source": "関連文書",
+			"id": "github.com (v0.28.0)"
+		},
+		{
+			"text": "https://github.com/decidim/decidim/security/advisories/GHSA-w3q8-m492-4pwp",
+			"source": "関連文書",
+			"id": "github.com (GHSA-w3q8-m492-4pwp)"
+		},
+		{
+			"text": "https://github.com/scambra/devise_invitable/blob/41f58970ff76fb64382a9b9ea1bd530f7c3adab2/lib/devise_invitable/models.rb#L198",
+			"source": "関連文書",
+			"id": "github.com (models.rb#L198)"
+		},
+		{
+			"text": "https://github.com/scambra/devise_invitable/commit/94d859c7de0829bf63f679ae5dd3cab2b866a098",
+			"source": "関連文書",
+			"id": "github.com (94d859c7de0829bf63f679ae5dd3cab2b866a098)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/672.html",
+			"id": "CWE-672",
+			"title": "有効期限後または解放後のリソースの操作(CWE-672)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/672.html",
+			"id": "CWE-672",
+			"title": "有効期限後または解放後のリソースの操作(CWE-672)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:decidim:decidim",
+			"version": "2.2",
+			"vendor": "decidim",
+			"product": "decidim"
+		},
+		{
+			"text": "cpe:/a:scambra:devise_invitable",
+			"version": "2.2",
+			"vendor": "scambra",
+			"product": "devise invitable"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.4",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+		}
+	],
+	"date": "2024-12-18T11:34+09:00",
+	"issued": "2024-12-18T11:34+09:00",
+	"modified": "2024-12-18T11:34+09:00"
+}
