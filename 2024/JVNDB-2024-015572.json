@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015572.html",
+	"title": "LibreNMS におけるクロスサイトスクリプティングの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015572.html",
+	"description": "LibreNMS には、クロスサイトスクリプティングの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-015572",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-32479",
+			"source": "CVE",
+			"id": "CVE-2024-32479"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-32479",
+			"source": "NVD",
+			"id": "CVE-2024-32479"
+		},
+		{
+			"text": "https://github.com/librenms/librenms/blob/a61c11db7e8ef6a437ab55741658be2be7d14d34/app/Http/Controllers/ServiceTemplateController.php#L67C23-L67C23",
+			"source": "関連文書",
+			"id": "github.com (ServiceTemplateController.php#L67C23-L67C23)"
+		},
+		{
+			"text": "https://github.com/librenms/librenms/commit/19344f0584d4d6d4526fdf331adc60530e3f685b",
+			"source": "関連文書",
+			"id": "github.com (19344f0584d4d6d4526fdf331adc60530e3f685b)"
+		},
+		{
+			"text": "https://github.com/librenms/librenms/security/advisories/GHSA-72m9-7c8x-pmmw",
+			"source": "関連文書",
+			"id": "github.com (GHSA-72m9-7c8x-pmmw)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-79.html",
+			"id": "CWE-79",
+			"title": "クロスサイトスクリプティング(CWE-79)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:librenms:librenms",
+			"version": "2.2",
+			"vendor": "LibreNMS",
+			"product": "LibreNMS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.4",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+		}
+	],
+	"date": "2025-01-06T15:19+09:00",
+	"issued": "2025-01-06T15:19+09:00",
+	"modified": "2025-01-06T15:19+09:00"
+}

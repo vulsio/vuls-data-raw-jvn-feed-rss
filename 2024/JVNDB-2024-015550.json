@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015550.html",
+	"title": "ThemeIsle の WordPress 用 RSS Aggregator by Feedzy における SQL インジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015550.html",
+	"description": "ThemeIsle の WordPress 用 RSS Aggregator by Feedzy には、SQL インジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-015550",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-1317",
+			"source": "CVE",
+			"id": "CVE-2024-1317"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-1317",
+			"source": "NVD",
+			"id": "CVE-2024-1317"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/feedzy-rss-feeds/tags/4.4.2/includes/admin/feedzy-rss-feeds-import.php#L2623",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (feedzy-rss-feeds-import.php#L2623)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset/3033749/feedzy-rss-feeds/tags/4.4.3/includes/admin/feedzy-rss-feeds-admin.php?old=3030538&old_path=feedzy-rss-feeds%2Ftags%2F4.4.2%2Fincludes%2Fadmin%2Ffeedzy-rss-feeds-admin.php",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (feedzy-rss-feeds-admin.php?old=3030538&old_path=feedzy-rss-feeds/tags/4.4.2/includes/admin/feedzy-rss-feeds-admin.php)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/cf57aeaa-e37e-4b22-aeaa-f0a9f4877484?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (cf57aeaa-e37e-4b22-aeaa-f0a9f4877484?source=cve)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:themeisle:rss_aggregator_by_feedzy",
+			"version": "2.2",
+			"vendor": "ThemeIsle",
+			"product": "RSS Aggregator by Feedzy"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2025-01-06T14:11+09:00",
+	"issued": "2025-01-06T14:11+09:00",
+	"modified": "2025-01-06T14:11+09:00"
+}
