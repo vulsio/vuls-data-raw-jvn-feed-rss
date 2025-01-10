@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-027807.html",
+	"title": "Wazuh Inc. の Wazuh における NULL ポインタデリファレンスに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-027807.html",
+	"description": "Wazuh Inc. の Wazuh には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-027807",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-49275",
+			"source": "CVE",
+			"id": "CVE-2023-49275"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-49275",
+			"source": "NVD",
+			"id": "CVE-2023-49275"
+		},
+		{
+			"text": "https://github.com/wazuh/wazuh/blob/e1d5231b31b68a75f3b8b33f833155b362411078/src/analysisd/decoders/syscollector.c#L1573",
+			"source": "関連文書",
+			"id": "github.com (syscollector.c#L1573)"
+		},
+		{
+			"text": "https://github.com/wazuh/wazuh/blob/e1d5231b31b68a75f3b8b33f833155b362411078/src/analysisd/decoders/syscollector.c#L1578",
+			"source": "関連文書",
+			"id": "github.com (syscollector.c#L1578)"
+		},
+		{
+			"text": "https://github.com/wazuh/wazuh/security/advisories/GHSA-4mq7-w9r6-9975",
+			"source": "関連文書",
+			"id": "github.com (GHSA-4mq7-w9r6-9975)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:wazuh:wazuh",
+			"version": "2.2",
+			"vendor": "Wazuh Inc.",
+			"product": "Wazuh"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2025-01-10T14:40+09:00",
+	"issued": "2025-01-10T14:40+09:00",
+	"modified": "2025-01-10T14:40+09:00"
+}

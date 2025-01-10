@@ -1,0 +1,74 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-016154.html",
+	"title": "sigstore の cosign における制限またはスロットリング無しのリソースの割り当てに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-016154.html",
+	"description": "sigstore の cosign には、制限またはスロットリング無しのリソースの割り当てに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-016154",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-29903",
+			"source": "CVE",
+			"id": "CVE-2024-29903"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-29903",
+			"source": "NVD",
+			"id": "CVE-2024-29903"
+		},
+		{
+			"text": "https://github.com/sigstore/cosign/blob/14795db16417579fac0c00c11e166868d7976b61/pkg/cosign/verify.go#L948-L955",
+			"source": "関連文書",
+			"id": "github.com (verify.go#L948-L955)"
+		},
+		{
+			"text": "https://github.com/sigstore/cosign/blob/286a98a4a99c1b2f32f84b0d560e324100312280/pkg/oci/remote/signatures.go#L56-L70",
+			"source": "関連文書",
+			"id": "github.com (signatures.go#L56-L70)"
+		},
+		{
+			"text": "https://github.com/sigstore/cosign/commit/629f5f8fa672973503edde75f84dcd984637629e",
+			"source": "関連文書",
+			"id": "github.com (629f5f8fa672973503edde75f84dcd984637629e)"
+		},
+		{
+			"text": "https://github.com/sigstore/cosign/releases/tag/v2.2.4",
+			"source": "関連文書",
+			"id": "github.com (v2.2.4)"
+		},
+		{
+			"text": "https://github.com/sigstore/cosign/security/advisories/GHSA-95pr-fxf5-86gv",
+			"source": "関連文書",
+			"id": "github.com (GHSA-95pr-fxf5-86gv)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/770.html",
+			"id": "CWE-770",
+			"title": "制限またはスロットリング無しのリソースの割り当て(CWE-770)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/770.html",
+			"id": "CWE-770",
+			"title": "制限またはスロットリング無しのリソースの割り当て(CWE-770)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:sigstore:cosign",
+			"version": "2.2",
+			"vendor": "sigstore",
+			"product": "cosign"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2025-01-10T16:28+09:00",
+	"issued": "2025-01-10T16:28+09:00",
+	"modified": "2025-01-10T16:28+09:00"
+}

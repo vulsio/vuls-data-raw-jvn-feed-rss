@@ -1,0 +1,74 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-016116.html",
+	"title": "argoproj の argo cd における過度な認証試行の不適切な制限に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-016116.html",
+	"description": "argoproj の argo cd には、過度な認証試行の不適切な制限に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-016116",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-21662",
+			"source": "CVE",
+			"id": "CVE-2024-21662"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-21662",
+			"source": "NVD",
+			"id": "CVE-2024-21662"
+		},
+		{
+			"text": "https://argo-cd.readthedocs.io/en/stable/security_considerations/#cve-2020-8827-insufficient-anti-automationanti-brute-force",
+			"source": "関連文書",
+			"id": "argo-cd.readthedocs.io (#cve-2020-8827-insufficient-anti-automationanti-brute-force)"
+		},
+		{
+			"text": "https://github.com/argoproj/argo-cd/commit/17b0df1168a4c535f6f37e95f25ed7cd81e1fa4d",
+			"source": "関連文書",
+			"id": "github.com (17b0df1168a4c535f6f37e95f25ed7cd81e1fa4d)"
+		},
+		{
+			"text": "https://github.com/argoproj/argo-cd/commit/6e181d72b31522f886a2afa029d5b26d7912ec7b",
+			"source": "関連文書",
+			"id": "github.com (6e181d72b31522f886a2afa029d5b26d7912ec7b)"
+		},
+		{
+			"text": "https://github.com/argoproj/argo-cd/commit/cebb6538f7944c87ca2fecb5d17f8baacc431456",
+			"source": "関連文書",
+			"id": "github.com (cebb6538f7944c87ca2fecb5d17f8baacc431456)"
+		},
+		{
+			"text": "https://github.com/argoproj/argo-cd/security/advisories/GHSA-2vgg-9h6w-m454",
+			"source": "関連文書",
+			"id": "github.com (GHSA-2vgg-9h6w-m454)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/307.html",
+			"id": "CWE-307",
+			"title": "過度な認証試行の不適切な制限(CWE-307)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/307.html",
+			"id": "CWE-307",
+			"title": "過度な認証試行の不適切な制限(CWE-307)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:argoproj:argo_cd",
+			"version": "2.2",
+			"vendor": "argoproj",
+			"product": "argo cd"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.1",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+		}
+	],
+	"date": "2025-01-10T14:32+09:00",
+	"issued": "2025-01-10T14:32+09:00",
+	"modified": "2025-01-10T14:32+09:00"
+}
