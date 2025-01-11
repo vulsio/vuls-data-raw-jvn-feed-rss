@@ -1,0 +1,70 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-016219.html",
+	"title": "インテルの Intel Wireless for Open Source 等複数ベンダの製品における初期化に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-016219.html",
+	"description": "インテルの Intel Wireless for Open Source 等複数ベンダの製品には、初期化に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-016219",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-28084",
+			"source": "CVE",
+			"id": "CVE-2024-28084"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-28084",
+			"source": "NVD",
+			"id": "CVE-2024-28084"
+		},
+		{
+			"text": "https://git.kernel.org/pub/scm/network/wireless/iwd.git/commit/?id=52a47c9fd428904de611a90cbf8b223af879684d",
+			"source": "関連文書",
+			"id": "git.kernel.org (commit/52a47c9fd428904de611a90cbf8b223af879684d)"
+		},
+		{
+			"text": "https://git.kernel.org/pub/scm/network/wireless/iwd.git/commit/?id=d34b4e16e045142590ed7cb653e01ed0ae5362eb",
+			"source": "関連文書",
+			"id": "git.kernel.org (commit/d34b4e16e045142590ed7cb653e01ed0ae5362eb)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/4KSGT4IZ23CJBOQA3AFYEMBJ5OHFZBMK/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (4KSGT4IZ23CJBOQA3AFYEMBJ5OHFZBMK)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/AYRPQ3OLV3GGLUCDYWBHU34DLBLM62XJ/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (AYRPQ3OLV3GGLUCDYWBHU34DLBLM62XJ)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/665.html",
+			"id": "CWE-665",
+			"title": "不適切な初期化(CWE-665)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:intel:inet_wireless_daemon",
+			"version": "2.2",
+			"vendor": "インテル",
+			"product": "Intel Wireless for Open Source"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2025-01-10T18:32+09:00",
+	"issued": "2025-01-10T18:32+09:00",
+	"modified": "2025-01-10T18:32+09:00"
+}
