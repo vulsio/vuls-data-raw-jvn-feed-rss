@@ -1,0 +1,107 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015720.html",
+	"title": "マイクロソフトの複数の Microsoft 製品における権限を昇格される脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015720.html",
+	"description": "マイクロソフトの 複数の Microsoft 製品には、Open Management Infrastructure に不備があるため、権限を昇格される脆弱性が存在します。\r\n",
+	"identifier": "JVNDB-2024-015720",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-21330",
+			"source": "CVE",
+			"id": "CVE-2024-21330"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-21330",
+			"source": "NVD",
+			"id": "CVE-2024-21330"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/security-alert/2023/0313-ms.html",
+			"source": "IPA CFA",
+			"id": "Microsoft 製品の脆弱性対策について(2024年3月)"
+		},
+		{
+			"text": "https://www.jpcert.or.jp/at/2024/at240007.html",
+			"source": "JPCERT-AT",
+			"id": "JPCERT-AT-2024-0007"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/122.html",
+			"id": "CWE-122",
+			"title": "ヒープベースのバッファオーバーフロー(CWE-122)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:microsoft:azure_automation",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Azure Automation"
+		},
+		{
+			"text": "cpe:/a:microsoft:azure_hdinsights",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Azure HDInsight"
+		},
+		{
+			"text": "cpe:/a:microsoft:azure_security_center",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Azure Security Center"
+		},
+		{
+			"text": "cpe:/a:microsoft:azure_sentinel",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Azure Sentinel"
+		},
+		{
+			"text": "cpe:/a:microsoft:container_monitoring_solution",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Container Monitoring Solution"
+		},
+		{
+			"text": "cpe:/a:microsoft:log_analytics_agent",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Log Analytics Agent"
+		},
+		{
+			"text": "cpe:/a:microsoft:open_management_infrastructure",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Open Management Infrastructure"
+		},
+		{
+			"text": "cpe:/a:microsoft:operations_management_suite_agent_for_linux",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Operations Management Suite Agent for Linux (OMS)"
+		},
+		{
+			"text": "cpe:/a:microsoft:system_center",
+			"version": "2.2",
+			"vendor": "マイクロソフト",
+			"product": "Microsoft System Center"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2025-01-07T14:31+09:00",
+	"issued": "2025-01-07T14:31+09:00",
+	"modified": "2025-01-07T14:31+09:00"
+}

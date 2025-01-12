@@ -1,0 +1,107 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015507.html",
+	"title": "FreeRADIUS の FreeRADIUS 等複数ベンダの製品におけるデータの整合性検証不備に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-015507.html",
+	"description": "FreeRADIUS の FreeRADIUS 等複数ベンダの製品には、データの整合性検証不備に関する脆弱性、通信チャネルで送信中のメッセージの整合性への不適切な強制に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-015507",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-3596",
+			"source": "CVE",
+			"id": "CVE-2024-3596"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-3596",
+			"source": "NVD",
+			"id": "CVE-2024-3596"
+		},
+		{
+			"text": "http://www.openwall.com/lists/oss-security/2024/07/09/4",
+			"source": "関連文書",
+			"id": "www.openwall.com (oss-security/2024/07/09/4)"
+		},
+		{
+			"text": "https://datatracker.ietf.org/doc/draft-ietf-radext-deprecating-radius/",
+			"source": "関連文書",
+			"id": "datatracker.ietf.org (draft-ietf-radext-deprecating-radius)"
+		},
+		{
+			"text": "https://datatracker.ietf.org/doc/html/rfc2865",
+			"source": "関連文書",
+			"id": "datatracker.ietf.org (rfc2865)"
+		},
+		{
+			"text": "https://networkradius.com/assets/pdf/radius_and_md5_collisions.pdf",
+			"source": "関連文書",
+			"id": "networkradius.com (radius_and_md5_collisions)"
+		},
+		{
+			"text": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0014",
+			"source": "関連文書",
+			"id": "psirt.global.sonicwall.com (SNWLID-2024-0014)"
+		},
+		{
+			"text": "https://www.blastradius.fail/",
+			"source": "関連文書",
+			"id": "www.blastradius.fail"
+		},
+		{
+			"text": "https://security.netapp.com/advisory/ntap-20240822-0001/",
+			"source": "関連文書",
+			"id": "security.netapp.com (ntap-20240822-0001)"
+		},
+		{
+			"text": "https://today.ucsd.edu/story/computer-scientists-discover-vulnerabilities-in-a-popular-security-protocol",
+			"source": "関連文書",
+			"id": "today.ucsd.edu (computer-scientists-discover-vulnerabilities-in-a-popular-security-protocol)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/354.html",
+			"id": "CWE-354",
+			"title": "データの整合性検証不備(CWE-354)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/924.html",
+			"id": "CWE-924",
+			"title": "通信チャネルで送信中のメッセージの整合性への不適切な強制(CWE-924)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:broadcom:brocade_sannav",
+			"version": "2.2",
+			"vendor": "Broadcom",
+			"product": "Brocade SANnav"
+		},
+		{
+			"text": "cpe:/a:freeradius:freeradius",
+			"version": "2.2",
+			"vendor": "FreeRADIUS",
+			"product": "FreeRADIUS"
+		},
+		{
+			"text": "cpe:/o:broadcom:fabric_operating_system",
+			"version": "2.2",
+			"vendor": "Broadcom",
+			"product": "Fabric Operating System"
+		},
+		{
+			"text": "cpe:/o:sonicwall:sonicos",
+			"version": "2.2",
+			"vendor": "SonicWALL",
+			"product": "SonicOS"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.0",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+		}
+	],
+	"date": "2025-01-06T09:59+09:00",
+	"issued": "2025-01-06T09:59+09:00",
+	"modified": "2025-01-06T09:59+09:00"
+}
