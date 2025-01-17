@@ -1,0 +1,81 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2025/JVNDB-2025-001032.html",
+	"title": "複数の Ivanti 製品における境界外書き込みに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2025/JVNDB-2025-001032.html",
+	"description": "Ivanti の connect secure、neurons for zero-trust access、policy secure には、境界外書き込みに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2025-001032",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2025-0282",
+			"source": "CVE",
+			"id": "CVE-2025-0282"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2025-0282",
+			"source": "NVD",
+			"id": "CVE-2025-0282"
+		},
+		{
+			"text": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+			"source": "CISA Known Exploited Vulnerabilities Catalog",
+			"id": "CVE-2025-0282"
+		},
+		{
+			"text": "https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-Policy-Secure-ZTA-Gateways-CVE-2025-0282-CVE-2025-0283",
+			"source": "関連文書",
+			"id": "forums.ivanti.com (Security-Advisory-Ivanti-Connect-Secure-Policy-Secure-ZTA-Gateways-CVE-2025-0282-CVE-2025-0283)"
+		},
+		{
+			"text": "https://cloud.google.com/blog/topics/threat-intelligence/ivanti-connect-secure-vpn-zero-day",
+			"source": "関連文書",
+			"id": "cloud.google.com (ivanti-connect-secure-vpn-zero-day)"
+		},
+		{
+			"text": "https://www.cisa.gov/cisa-mitigation-instructions-cve-2025-0282",
+			"source": "関連文書",
+			"id": "www.cisa.gov (cisa-mitigation-instructions-cve-2025-0282)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/121.html",
+			"id": "CWE-121",
+			"title": "スタックベースのバッファオーバーフロー(CWE-121)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/787.html",
+			"id": "CWE-787",
+			"title": "境界外書き込み(CWE-787)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:ivanti:connect_secure",
+			"version": "2.2",
+			"vendor": "Ivanti",
+			"product": "connect secure"
+		},
+		{
+			"text": "cpe:/a:ivanti:neurons_for_zero-trust_access",
+			"version": "2.2",
+			"vendor": "Ivanti",
+			"product": "neurons for zero-trust access"
+		},
+		{
+			"text": "cpe:/a:ivanti:policy_secure",
+			"version": "2.2",
+			"vendor": "Ivanti",
+			"product": "policy secure"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.0",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+		}
+	],
+	"date": "2025-01-16T17:25+09:00",
+	"issued": "2025-01-16T17:25+09:00",
+	"modified": "2025-01-16T17:25+09:00"
+}
