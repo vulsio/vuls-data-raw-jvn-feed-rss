@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-017252.html",
+	"title": "Vela の worker におけるログファイルからの情報漏えいに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-017252.html",
+	"description": "Vela の worker には、ログファイルからの情報漏えいに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-017252",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-28236",
+			"source": "CVE",
+			"id": "CVE-2024-28236"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-28236",
+			"source": "NVD",
+			"id": "CVE-2024-28236"
+		},
+		{
+			"text": "https://github.com/go-vela/worker/commit/e1572743b008e4fbce31ebb1dcd23bf6a1a30297",
+			"source": "関連文書",
+			"id": "github.com (e1572743b008e4fbce31ebb1dcd23bf6a1a30297)"
+		},
+		{
+			"text": "https://github.com/go-vela/worker/security/advisories/GHSA-pwx5-6wxg-px5h",
+			"source": "関連文書",
+			"id": "github.com (GHSA-pwx5-6wxg-px5h)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/532.html",
+			"id": "CWE-532",
+			"title": "ログファイルからの情報漏えい(CWE-532)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/532.html",
+			"id": "CWE-532",
+			"title": "ログファイルからの情報漏えい(CWE-532)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:go-vela:worker",
+			"version": "2.2",
+			"vendor": "Vela",
+			"product": "worker"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2025-01-23T11:35+09:00",
+	"issued": "2025-01-23T11:35+09:00",
+	"modified": "2025-01-23T11:35+09:00"
+}
