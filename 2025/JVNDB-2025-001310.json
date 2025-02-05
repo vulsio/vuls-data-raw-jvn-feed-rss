@@ -1,0 +1,79 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2025/JVNDB-2025-001310.html",
+	"title": "bitapps の WordPress 用 contact form builder におけるサーバサイドのリクエストフォージェリの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2025/JVNDB-2025-001310.html",
+	"description": "bitapps の WordPress 用 contact form builder には、サーバサイドのリクエストフォージェリの脆弱性が存在します。",
+	"identifier": "JVNDB-2025-001310",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-13450",
+			"source": "CVE",
+			"id": "CVE-2024-13450"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-13450",
+			"source": "NVD",
+			"id": "CVE-2024-13450"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/bit-form/trunk/includes/Admin/Form/AdminFormHandler.php#L1072",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (AdminFormHandler.php#L1072)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/bit-form/trunk/includes/Admin/Form/AdminFormHandler.php#L1312",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (AdminFormHandler.php#L1312)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/bit-form/trunk/includes/Core/Integration/WebHooks/WebHooksHandler.php#L190",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (WebHooksHandler.php#L190)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/bit-form/trunk/includes/Core/Integration/WebHooks/WebHooksHandler.php#L51",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (WebHooksHandler.php#L51)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/bit-form/trunk/includes/Core/Integration/WebHooks/WebHooksHandler.php#L96",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (WebHooksHandler.php#L96)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset/3227207/",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (changeset/3227207)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/d935f4c5-5d69-42d9-be22-7a44d9aa885a?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (d935f4c5-5d69-42d9-be22-7a44d9aa885a?source=cve)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/918.html",
+			"id": "CWE-918",
+			"title": "サーバサイドのリクエストフォージェリ(CWE-918)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:bitapps:contact_form_builder",
+			"version": "2.2",
+			"vendor": "bitapps",
+			"product": "contact form builder"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N"
+		}
+	],
+	"date": "2025-02-05T15:53+09:00",
+	"issued": "2025-02-05T15:53+09:00",
+	"modified": "2025-02-05T15:53+09:00"
+}
