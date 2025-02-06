@@ -1,0 +1,59 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018272.html",
+	"title": "weDevs の WordPress 用 WP Project Manager における SQL インジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018272.html",
+	"description": "weDevs の WordPress 用 WP Project Manager には、SQL インジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-018272",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-12195",
+			"source": "CVE",
+			"id": "CVE-2024-12195"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-12195",
+			"source": "NVD",
+			"id": "CVE-2024-12195"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/wedevs-project-manager/tags/2.6.14/src/Task_List/Controllers/Task_List_Controller.php#L688",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (Task_List_Controller.php#L688)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset/3213295/wedevs-project-manager",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (wedevs-project-manager)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/798d120a-edec-4af9-b574-46f9beabc491?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (798d120a-edec-4af9-b574-46f9beabc491?source=cve)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:wedevs:wp_project_manager",
+			"version": "2.2",
+			"vendor": "weDevs",
+			"product": "WP Project Manager"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "6.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2025-02-06T16:57+09:00",
+	"issued": "2025-02-06T16:57+09:00",
+	"modified": "2025-02-06T16:57+09:00"
+}

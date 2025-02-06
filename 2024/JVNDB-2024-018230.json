@@ -1,0 +1,89 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018230.html",
+	"title": "Gofiber の Go 用 Fiber における同一生成元ポリシー違反に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018230.html",
+	"description": "Gofiber の Go 用 Fiber には、同一生成元ポリシー違反に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-018230",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-25124",
+			"source": "CVE",
+			"id": "CVE-2024-25124"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-25124",
+			"source": "NVD",
+			"id": "CVE-2024-25124"
+		},
+		{
+			"text": "http://blog.portswigger.net/2016/10/exploiting-cors-misconfigurations-for.html",
+			"source": "関連文書",
+			"id": "blog.portswigger.net (exploiting-cors-misconfigurations-for)"
+		},
+		{
+			"text": "https://codeql.github.com/codeql-query-help/javascript/js-cors-misconfiguration-for-credentials",
+			"source": "関連文書",
+			"id": "codeql.github.com (js-cors-misconfiguration-for-credentials)"
+		},
+		{
+			"text": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSNotSupportingCredentials",
+			"source": "関連文書",
+			"id": "developer.mozilla.org (CORSNotSupportingCredentials)"
+		},
+		{
+			"text": "https://fetch.spec.whatwg.org/#cors-protocol-and-credentials",
+			"source": "関連文書",
+			"id": "fetch.spec.whatwg.org (#cors-protocol-and-credentials)"
+		},
+		{
+			"text": "https://github.com/gofiber/fiber/commit/f0cd3b44b086544a37886232d0530601f2406c23",
+			"source": "関連文書",
+			"id": "github.com (f0cd3b44b086544a37886232d0530601f2406c23)"
+		},
+		{
+			"text": "https://github.com/gofiber/fiber/releases/tag/v2.52.1",
+			"source": "関連文書",
+			"id": "github.com (v2.52.1)"
+		},
+		{
+			"text": "https://github.com/gofiber/fiber/security/advisories/GHSA-fmg4-x8pw-hjhg",
+			"source": "関連文書",
+			"id": "github.com (GHSA-fmg4-x8pw-hjhg)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/346.html",
+			"id": "CWE-346",
+			"title": "同一生成元ポリシー違反(CWE-346)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/346.html",
+			"id": "CWE-346",
+			"title": "同一生成元ポリシー違反(CWE-346)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/942.html",
+			"id": "CWE-942",
+			"title": "過度に許容されるクロスドメインホワイトリスト(CWE-942)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:gofiber:fiber",
+			"version": "2.2",
+			"vendor": "Gofiber",
+			"product": "Fiber"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "9.8",
+			"type": "Base",
+			"severity": "Critical",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2025-02-06T14:32+09:00",
+	"issued": "2025-02-06T14:32+09:00",
+	"modified": "2025-02-06T14:32+09:00"
+}

@@ -1,0 +1,69 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018244.html",
+	"title": "Kurrent, Inc. の EventStoreDB における認証情報の不十分な保護に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018244.html",
+	"description": "Kurrent, Inc. の EventStoreDB には、認証情報の不十分な保護に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-018244",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-26133",
+			"source": "CVE",
+			"id": "CVE-2024-26133"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-26133",
+			"source": "NVD",
+			"id": "CVE-2024-26133"
+		},
+		{
+			"text": "https://developers.eventstore.com/cloud/ops/#upgrading-eventstoredb-version",
+			"source": "関連文書",
+			"id": "developers.eventstore.com (#upgrading-eventstoredb-version)"
+		},
+		{
+			"text": "https://developers.eventstore.com/server/v22.10/upgrade-guide.html#upgrade-guide-for-eventstoredb-22-10",
+			"source": "関連文書",
+			"id": "developers.eventstore.com (upgrade-guide.html#upgrade-guide-for-eventstoredb-22-10)"
+		},
+		{
+			"text": "https://github.com/EventStore/EventStore/commit/6d4edee18c7fe886abffe58fa1f97d72681b24bf",
+			"source": "関連文書",
+			"id": "github.com (6d4edee18c7fe886abffe58fa1f97d72681b24bf)"
+		},
+		{
+			"text": "https://github.com/EventStore/EventStore/security/advisories/GHSA-6r53-v8hj-x684",
+			"source": "関連文書",
+			"id": "github.com (GHSA-6r53-v8hj-x684)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/256.html",
+			"id": "CWE-256",
+			"title": "認証情報の平文保存(CWE-256)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/522.html",
+			"id": "CWE-522",
+			"title": "認証情報の不十分な保護(CWE-522)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:kurrent:eventstoredb",
+			"version": "2.2",
+			"vendor": "Kurrent, Inc.",
+			"product": "EventStoreDB"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "4.9",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
+		}
+	],
+	"date": "2025-02-06T15:22+09:00",
+	"issued": "2025-02-06T15:22+09:00",
+	"modified": "2025-02-06T15:22+09:00"
+}
