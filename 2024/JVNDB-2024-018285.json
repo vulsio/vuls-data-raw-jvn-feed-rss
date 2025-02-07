@@ -1,0 +1,74 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018285.html",
+	"title": "Misskey における危険なタイプのファイルの無制限アップロードに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018285.html",
+	"description": "Misskey には、危険なタイプのファイルの無制限アップロードに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-018285",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-25636",
+			"source": "CVE",
+			"id": "CVE-2024-25636"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-25636",
+			"source": "NVD",
+			"id": "CVE-2024-25636"
+		},
+		{
+			"text": "https://github.com/misskey-dev/misskey/blob/2024.2.0-beta.10/packages/backend/src/core/activitypub/ApResolverService.ts#L69-L119",
+			"source": "関連文書",
+			"id": "github.com (ApResolverService.ts#L69-L119)"
+		},
+		{
+			"text": "https://github.com/misskey-dev/misskey/blob/2024.2.0-beta.10/packages/backend/src/core/activitypub/models/ApNoteService.ts#L112-L308",
+			"source": "関連文書",
+			"id": "github.com (ApNoteService.ts#L112-L308)"
+		},
+		{
+			"text": "https://github.com/misskey-dev/misskey/blob/2024.2.0-beta.10/packages/backend/src/server/api/endpoints/ap/show.ts#L125-L143",
+			"source": "関連文書",
+			"id": "github.com (show.ts#L125-L143)"
+		},
+		{
+			"text": "https://github.com/misskey-dev/misskey/commit/9a70ce8f5ea9df00001894809f5ce7bc69b14c8a",
+			"source": "関連文書",
+			"id": "github.com (9a70ce8f5ea9df00001894809f5ce7bc69b14c8a)"
+		},
+		{
+			"text": "https://github.com/misskey-dev/misskey/security/advisories/GHSA-qqrm-9grj-6v32",
+			"source": "関連文書",
+			"id": "github.com (GHSA-qqrm-9grj-6v32)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/434.html",
+			"id": "CWE-434",
+			"title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/434.html",
+			"id": "CWE-434",
+			"title": "危険なタイプのファイルの無制限アップロード(CWE-434)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:misskey:misskey",
+			"version": "2.2",
+			"vendor": "Misskey",
+			"product": "Misskey"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "8.8",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2025-02-06T17:27+09:00",
+	"issued": "2025-02-06T17:27+09:00",
+	"modified": "2025-02-06T17:27+09:00"
+}

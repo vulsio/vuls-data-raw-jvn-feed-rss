@@ -1,0 +1,80 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018347.html",
+	"title": "c-ares project の c-ares 等複数ベンダの製品における境界外読み取りに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018347.html",
+	"description": "c-ares project の c-ares 等複数ベンダの製品には、境界外読み取りに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-018347",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-25629",
+			"source": "CVE",
+			"id": "CVE-2024-25629"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-25629",
+			"source": "NVD",
+			"id": "CVE-2024-25629"
+		},
+		{
+			"text": "https://github.com/c-ares/c-ares/commit/a804c04ddc8245fc8adf0e92368709639125e183",
+			"source": "関連文書",
+			"id": "github.com (a804c04ddc8245fc8adf0e92368709639125e183)"
+		},
+		{
+			"text": "https://github.com/c-ares/c-ares/security/advisories/GHSA-mg26-v6qh-x48q",
+			"source": "関連文書",
+			"id": "github.com (GHSA-mg26-v6qh-x48q)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2P76QYINQNPEHUTEEDOUYIRZ2X6UVZ5K/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (2P76QYINQNPEHUTEEDOUYIRZ2X6UVZ5K)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CSCMTSPDIE2UHU34TIXQQHZ6JTE3Y3VF/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (CSCMTSPDIE2UHU34TIXQQHZ6JTE3Y3VF)"
+		},
+		{
+			"text": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GX37LFPFQ3T6FFMMFYQTEGIQXXN7F27U/",
+			"source": "関連文書",
+			"id": "lists.fedoraproject.org (GX37LFPFQ3T6FFMMFYQTEGIQXXN7F27U)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/125.html",
+			"id": "CWE-125",
+			"title": "境界外読み取り(CWE-125)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/127.html",
+			"id": "CWE-127",
+			"title": "バッファアンダーリード(CWE-127)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:c-ares_project:c-ares",
+			"version": "2.2",
+			"vendor": "c-ares project",
+			"product": "c-ares"
+		},
+		{
+			"text": "cpe:/o:fedoraproject:fedora",
+			"version": "2.2",
+			"vendor": "Fedora Project",
+			"product": "Fedora"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.5",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2025-02-07T11:13+09:00",
+	"issued": "2025-02-07T11:13+09:00",
+	"modified": "2025-02-07T11:13+09:00"
+}

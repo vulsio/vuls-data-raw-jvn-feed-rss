@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018359.html",
+	"title": "Python 用 Cryptography における NULL ポインタデリファレンスに関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018359.html",
+	"description": "Python 用 Cryptography には、NULL ポインタデリファレンスに関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-018359",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-26130",
+			"source": "CVE",
+			"id": "CVE-2024-26130"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-26130",
+			"source": "NVD",
+			"id": "CVE-2024-26130"
+		},
+		{
+			"text": "https://github.com/pyca/cryptography/commit/97d231672763cdb5959a3b191e692a362f1b9e55",
+			"source": "関連文書",
+			"id": "github.com (97d231672763cdb5959a3b191e692a362f1b9e55)"
+		},
+		{
+			"text": "https://github.com/pyca/cryptography/pull/10423",
+			"source": "関連文書",
+			"id": "github.com (pull/10423)"
+		},
+		{
+			"text": "https://github.com/pyca/cryptography/security/advisories/GHSA-6vqw-3v5j-54x4",
+			"source": "関連文書",
+			"id": "github.com (GHSA-6vqw-3v5j-54x4)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
+		},
+		{
+			"text": "http://cwe.mitre.org/data/definitions/476.html",
+			"id": "CWE-476",
+			"title": "NULL ポインタデリファレンス(CWE-476)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:cryptography.io:cryptography",
+			"version": "2.2",
+			"vendor": "Cryptography",
+			"product": "Cryptography"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.5",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+		}
+	],
+	"date": "2025-02-07T11:20+09:00",
+	"issued": "2025-02-07T11:20+09:00",
+	"modified": "2025-02-07T11:20+09:00"
+}
