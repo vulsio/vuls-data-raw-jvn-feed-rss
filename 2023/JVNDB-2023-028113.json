@@ -1,0 +1,72 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-028113.html",
+	"title": "複数の ARM Ltd. 製品における解放済みメモリの使用に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2023/JVNDB-2023-028113.html",
+	"description": "5th gen gpu architecture kernel driver、Bifrost GPU Kernel Driver、Midgard GPU Kernel Driver 等複数の ARM Ltd. 製品には、解放済みメモリの使用に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2023-028113",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2023-6241",
+			"source": "CVE",
+			"id": "CVE-2023-6241"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2023-6241",
+			"source": "NVD",
+			"id": "CVE-2023-6241"
+		},
+		{
+			"text": "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities",
+			"source": "関連文書",
+			"id": "developer.arm.com (Mali GPU Driver Vulnerabilities)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/416.html",
+			"id": "CWE-416",
+			"title": "解放済みメモリの使用(CWE-416)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/416.html",
+			"id": "CWE-416",
+			"title": "解放済みメモリの使用(CWE-416)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:arm:5th_gen_gpu_architecture_kernel_driver",
+			"version": "2.2",
+			"vendor": "ARM Ltd.",
+			"product": "5th gen gpu architecture kernel driver"
+		},
+		{
+			"text": "cpe:/a:arm:bifrost_gpu_kernel_driver",
+			"version": "2.2",
+			"vendor": "ARM Ltd.",
+			"product": "Bifrost GPU Kernel Driver"
+		},
+		{
+			"text": "cpe:/a:arm:midgard_gpu_kernel_driver",
+			"version": "2.2",
+			"vendor": "ARM Ltd.",
+			"product": "Midgard GPU Kernel Driver"
+		},
+		{
+			"text": "cpe:/a:arm:valhall_gpu_kernel_driver",
+			"version": "2.2",
+			"vendor": "ARM Ltd.",
+			"product": "Valhall GPU Kernel Driver"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.0",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+		}
+	],
+	"date": "2025-02-12T15:24+09:00",
+	"issued": "2025-02-12T15:24+09:00",
+	"modified": "2025-02-12T15:24+09:00"
+}
