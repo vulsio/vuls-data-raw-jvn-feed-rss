@@ -1,0 +1,35 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2025/JVNDB-2025-001531.html",
+	"title": "OpenSSL における、RFC7250 ハンドシェイクによる認証の失敗を検知できない問題 (OpenSSL Security Advisory [11th February 2025])",
+	"link": "https://jvndb.jvn.jp/ja/contents/2025/JVNDB-2025-001531.html",
+	"description": "OpenSSL Project より、<a href=\"https://openssl-library.org/news/secadv/20250211.txt\" target=\"blank\">OpenSSL Security Advisory [11th February 2025]</a>) (\"RFC7250 handshakes with unauthenticated servers don't abort as expected (CVE-2024-12797)\") が公開されました。\r\n\r\n深刻度−高 (Severity：High)\r\n当該バージョンの OpenSSL には、RFC7250 で定義された Raw Public Key (RPK) を用いてサーバ認証を行う際に、認証の失敗をクライアント側で検知できない脆弱性が存在します (CWE-392、CVE-2024-12797)。\r\nRPK はサーバ、クライアントともにデフォルトで無効化されているため、双方において RPK が明示的に有効化され、かつ SSL_VERIFY_PEER モードの設定によりサーバ認証が強制されている場合にのみ、本脆弱性の影響を受けます。\r\nただし、クライアント側で SSL_get_verify_result() を呼び出して認証の失敗を検知する実装を行っている場合は、本脆弱性の影響を回避することが可能です。\r\n",
+	"identifier": "JVNDB-2025-001531",
+	"references": [
+		{
+			"text": "https://jvn.jp/vu/JVNVU91390536/index.html",
+			"source": "JVN",
+			"id": "JVNVU#91390536"
+		},
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-12797",
+			"source": "CVE",
+			"id": "CVE-2024-12797"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/392.html",
+			"id": "CWE-392",
+			"title": "エラー状態のレポートの欠如(CWE-392)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:openssl:openssl",
+			"version": "2.2",
+			"vendor": "OpenSSL Project",
+			"product": "OpenSSL"
+		}
+	],
+	"date": "2025-02-14T16:21+09:00",
+	"issued": "2025-02-14T16:21+09:00",
+	"modified": "2025-02-14T16:21+09:00"
+}
