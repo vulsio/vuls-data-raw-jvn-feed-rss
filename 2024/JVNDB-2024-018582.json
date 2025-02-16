@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018582.html",
+	"title": "WordPress 用 WP User Manager における認証の欠如に関する脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018582.html",
+	"description": "WordPress 用 WP User Manager には、認証の欠如に関する脆弱性が存在します。",
+	"identifier": "JVNDB-2024-018582",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-10216",
+			"source": "CVE",
+			"id": "CVE-2024-10216"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-10216",
+			"source": "NVD",
+			"id": "CVE-2024-10216"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/wp-user-manager/trunk/vendor-dist/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php#L102",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (Sidebar_Manager.php#L102)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/wp-user-manager/trunk/vendor-dist/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php#L79",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (Sidebar_Manager.php#L79)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/changeset/3194404/wp-user-manager/trunk/includes/class-wp-user-manager.php",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class-wp-user-manager.php)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/3ab4e9c6-68b0-4113-bff0-c1d3c2d3dea4?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (3ab4e9c6-68b0-4113-bff0-c1d3c2d3dea4?source=cve)"
+		},
+		{
+			"text": "https://cwe.mitre.org/data/definitions/862.html",
+			"id": "CWE-862",
+			"title": "認証の欠如(CWE-862)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:wpusermanager:wp_user_manager",
+			"version": "2.2",
+			"vendor": "WP User Manager",
+			"product": "WP User Manager"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "4.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+		}
+	],
+	"date": "2025-02-12T09:42+09:00",
+	"issued": "2025-02-12T09:42+09:00",
+	"modified": "2025-02-12T09:42+09:00"
+}

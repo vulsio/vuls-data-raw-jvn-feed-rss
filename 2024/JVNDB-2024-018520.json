@@ -1,0 +1,64 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018520.html",
+	"title": "davidlingren の WordPress 用 media library assistant における SQL インジェクションの脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-018520.html",
+	"description": "davidlingren の WordPress 用 media library assistant には、SQL インジェクションの脆弱性が存在します。",
+	"identifier": "JVNDB-2024-018520",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-2871",
+			"source": "CVE",
+			"id": "CVE-2024-2871"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-2871",
+			"source": "NVD",
+			"id": "CVE-2024-2871"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/includes/class-mla-shortcode-custom-list.php#L151",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class-mla-shortcode-custom-list.php#L151)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/includes/class-mla-shortcode-custom-list.php#L1798",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class-mla-shortcode-custom-list.php#L1798)"
+		},
+		{
+			"text": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/includes/class-mla-shortcode-custom-list.php#L1949",
+			"source": "関連文書",
+			"id": "plugins.trac.wordpress.org (class-mla-shortcode-custom-list.php#L1949)"
+		},
+		{
+			"text": "https://www.wordfence.com/threat-intel/vulnerabilities/id/9e63fb84-a16b-447f-be73-e01f30881445?source=cve",
+			"source": "関連文書",
+			"id": "www.wordfence.com (9e63fb84-a16b-447f-be73-e01f30881445?source=cve)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-89.html",
+			"id": "CWE-89",
+			"title": "SQLインジェクション(CWE-89)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:davidlingren:media_library_assistant",
+			"version": "2.2",
+			"vendor": "davidlingren",
+			"product": "media library assistant"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "7.7",
+			"type": "Base",
+			"severity": "High",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+		}
+	],
+	"date": "2025-02-10T14:55+09:00",
+	"issued": "2025-02-10T14:55+09:00",
+	"modified": "2025-02-10T14:55+09:00"
+}
