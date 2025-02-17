@@ -1,0 +1,79 @@
+{
+	"about": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-019024.html",
+	"title": "Ruby on Rails project の Rails における脆弱性",
+	"link": "https://jvndb.jvn.jp/ja/contents/2024/JVNDB-2024-019024.html",
+	"description": "Ruby on Rails project の Rails には、不特定の脆弱性が存在します。",
+	"identifier": "JVNDB-2024-019024",
+	"references": [
+		{
+			"text": "https://www.cve.org/CVERecord?id=CVE-2024-26144",
+			"source": "CVE",
+			"id": "CVE-2024-26144"
+		},
+		{
+			"text": "https://nvd.nist.gov/vuln/detail/CVE-2024-26144",
+			"source": "NVD",
+			"id": "CVE-2024-26144"
+		},
+		{
+			"text": "https://discuss.rubyonrails.org/t/possible-sensitive-session-information-leak-in-active-storage/84945",
+			"source": "関連文書",
+			"id": "discuss.rubyonrails.org (possible-sensitive-session-information-leak-in-active-storage/84945)"
+		},
+		{
+			"text": "https://github.com/rails/rails/commit/723f54566023e91060a67b03353e7c03e7436433",
+			"source": "関連文書",
+			"id": "github.com (723f54566023e91060a67b03353e7c03e7436433)"
+		},
+		{
+			"text": "https://github.com/rails/rails/commit/78fe149509fac5b05e54187aaaef216fbb5fd0d3",
+			"source": "関連文書",
+			"id": "github.com (78fe149509fac5b05e54187aaaef216fbb5fd0d3)"
+		},
+		{
+			"text": "https://github.com/rails/rails/security/advisories/GHSA-8h22-8cf7-hq6g",
+			"source": "関連文書",
+			"id": "github.com (GHSA-8h22-8cf7-hq6g)"
+		},
+		{
+			"text": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/activestorage/CVE-2024-26144.yml",
+			"source": "関連文書",
+			"id": "github.com (CVE-2024-26144.yml)"
+		},
+		{
+			"text": "https://security.netapp.com/advisory/ntap-20240510-0013/",
+			"source": "関連文書",
+			"id": "security.netapp.com (ntap-20240510-0013)"
+		},
+		{
+			"text": "https://jvndb.jvn.jp/ja/cwe/CWE-200.html",
+			"id": "CWE-200",
+			"title": "情報漏えい(CWE-200)"
+		},
+		{
+			"text": "https://www.ipa.go.jp/security/vuln/scap/cwe.html",
+			"id": "CWE-noinfo",
+			"title": "情報不足(CWE-noinfo)"
+		}
+	],
+	"cpe": [
+		{
+			"text": "cpe:/a:rubyonrails:ruby_on_rails",
+			"version": "2.2",
+			"vendor": "Ruby on Rails project",
+			"product": "Rails"
+		}
+	],
+	"cvss": [
+		{
+			"version": "3.0",
+			"score": "5.3",
+			"type": "Base",
+			"severity": "Medium",
+			"vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+		}
+	],
+	"date": "2025-02-17T10:51+09:00",
+	"issued": "2025-02-17T10:51+09:00",
+	"modified": "2025-02-17T10:51+09:00"
+}
